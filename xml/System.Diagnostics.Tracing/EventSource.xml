@@ -1,0 +1,2678 @@
+<Type Name="EventSource" FullName="System.Diagnostics.Tracing.EventSource">
+  <TypeSignature Language="C#" Value="public class EventSource : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventSource extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the ability to create events for event tracing for Windows (ETW).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is intended to be inherited by a user class that provides specific events to be used for ETW. The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=fullName> methods are called to log the events.  
+  
+> [!IMPORTANT]
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ The basic functionality of <xref:System.Diagnostics.Tracing.EventSource> is sufficient for most applications.  If you want more control over the ETW manifest that is created, you can apply the <xref:System.Diagnostics.Tracing.EventAttribute> attribute to the methods. For advanced event source applications, it is possible to intercept the commands being sent to the derived event source and change the filtering, or to cause actions (such as dumping a data structure) to be performed by the inheritor.  An event source can be activated with Windows ETW controllers, such as the Logman tool, immediately.  It is also possible to programmatically control and intercept the data dispatcher.  The <xref:System.Diagnostics.Tracing.EventListener> class provides additional functionality.  
+  
+ Starting with [!INCLUDE[net_v46](~/includes/net-v46-md.md)], <xref:System.Diagnostics.Tracing.EventSource> provides channel support and some of the event source validation rules have been relaxed. This means:  
+  
+-   <xref:System.Diagnostics.Tracing.EventSource> types may now implement interfaces. This enables the use of event source types in advanced logging systems that use interfaces to define a common logging target.  
+  
+-   The concept of a utility event source type has been introduced. This feature enables sharing code across multiple event source types in a project to enable scenarios such as optimized <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> overloads.  
+  
+ For a version of the <xref:System.Diagnostics.Tracing.EventSource> class that provides features such as channel support you are targeting [!INCLUDE[net_v451](~/includes/net-v451-md.md)] or earlier, see [Microsoft EventSource Library 1.0.16](https://www.nuget.org/packages/Microsoft.Diagnostics.Tracing.EventSource).  
+  
+   
+  
+## Examples  
+ The following example shows a simple implementation of the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTraceSmall#1](~/samples/snippets/csharp/VS_Snippets_CLR/etwtracesmall/cs/program.cs#1)]
+ [!code-vb[ETWTraceSmall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtracesmall/vb/program.vb#1)]  
+  
+ The following example shows a more complex implementation of the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#1](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#1)]
+ [!code-vb[ETWTrace#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EventSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EventSource (bool throwOnEventWriteErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool throwOnEventWriteErrors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="throwOnEventWriteErrors" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="throwOnEventWriteErrors">
+          <see langword="true" /> to throw an exception when an error occurs in the underlying Windows code; otherwise, <see langword="false" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class and specifies whether to throw an exception when an error occurs in the underlying Windows code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EventSource (System.Diagnostics.Tracing.EventSourceSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.Tracing.EventSourceSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Diagnostics.Tracing.EventSourceSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">A bitwise combination of the enumeration values that specify the configuration settings to apply to the event source.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class with the specified configuration settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifying `settings` when the <xref:System.Diagnostics.Tracing.EventSource> is constructed enables you to  specify whether the event is written in a manifest-based or a self-describing format. In addition, you can specify that an exception should be raised when an error occurs during the event-writing process.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventSource (string eventSourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventSourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventSourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventSourceName">The name to apply to the event source. Must not be <see langword="null" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class with the specified name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventSourceName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EventSource (System.Diagnostics.Tracing.EventSourceSettings settings, string[] traits);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.Tracing.EventSourceSettings settings, string[] traits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Diagnostics.Tracing.EventSourceSettings" />
+        <Parameter Name="traits" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="settings">A bitwise combination of the enumeration values that specify the configuration settings to apply to the event source.</param>
+        <param name="traits">The key-value pairs that specify traits for the event source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> to be used with non-contract events that contains the specified settings and traits.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Traits provide additional information for an event and are interpreted by an event listener. Traits are specified as key-value pairs and if not specified in pairs, an exception will occur. You can retrieve a trait by passing the key to the <xref:System.Diagnostics.Tracing.EventSource.GetTrait%2A>, method.  
+  
+ Specifying `settings` when the <xref:System.Diagnostics.Tracing.EventSource> is constructed enables you to  specify whether the event is written in a manifest-based or a self-describing format. In addition, you can specify that an exception should be raised when an error occurs during the event-writing process.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="traits" /> is not specified in key-value pairs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventSource (string eventSourceName, System.Diagnostics.Tracing.EventSourceSettings config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventSourceName, valuetype System.Diagnostics.Tracing.EventSourceSettings config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventSourceName" Type="System.String" />
+        <Parameter Name="config" Type="System.Diagnostics.Tracing.EventSourceSettings" />
+      </Parameters>
+      <Docs>
+        <param name="eventSourceName">The name to apply to the event source. Must not be <see langword="null" />.</param>
+        <param name="config">A bitwise combination of the enumeration values that specify the configuration settings to apply to the event source.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class with the specified name and settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifying `settings` when the <xref:System.Diagnostics.Tracing.EventSource> is constructed enables you to  specify whether the event is written in a manifest-based or a self-describing format. In addition, you can specify that an exception should be raised when an error occurs during the event-writing process.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventSourceName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventSource (string eventSourceName, System.Diagnostics.Tracing.EventSourceSettings config, string[] traits);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventSourceName, valuetype System.Diagnostics.Tracing.EventSourceSettings config, string[] traits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="eventSourceName" Type="System.String" />
+        <Parameter Name="config" Type="System.Diagnostics.Tracing.EventSourceSettings" />
+        <Parameter Name="traits" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="eventSourceName">The name to apply to the event source. Must not be <see langword="null" />.</param>
+        <param name="config">A bitwise combination of the enumeration values that specify the configuration settings to apply to the event source.</param>
+        <param name="traits">The key-value pairs that specify traits for the event source.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class with the specified configuration settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Traits provide additional information for an event and are interpreted by an event listener. Traits are specified as key-value pairs and if not specified in pairs, an exception will occur. You can retrieve a trait by passing the key to the <xref:System.Diagnostics.Tracing.EventSource.GetTrait%2A>, method.  
+  
+ Specifying `config` when the <xref:System.Diagnostics.Tracing.EventSource> is constructed enables you to  specify whether the event is written in a manifest-based or a self-describing format. In addition, you can specify that an exception should be raised when an error occurs during the event-writing process.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventSourceName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="traits" /> is not specified in key-value pairs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConstructionException">
+      <MemberSignature Language="C#" Value="public Exception ConstructionException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ConstructionException" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.ConstructionException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Gets any exception that was thrown during the construction of the event source.</summary>
+        <value>The exception that was thrown during the construction of the event source, or <see langword="null" /> if no exception was thrown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.Tracing.EventSource> constructors do not throw exceptions. Instead, any exception that is thrown is assigned to the <xref:System.Diagnostics.Tracing.EventSource.ConstructionException%2A> property and logged by the <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentThreadActivityId">
+      <MemberSignature Language="C#" Value="public static Guid CurrentThreadActivityId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Guid CurrentThreadActivityId" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.CurrentThreadActivityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Gets the activity ID of the current thread.</summary>
+        <value>The activity ID of the current thread.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call `Dispose` when you are finished using the <xref:System.Diagnostics.Tracing.EventSource>. The `Dispose` method leaves the <xref:System.Diagnostics.Tracing.EventSource> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Diagnostics.Tracing.EventSource> so the garbage collector can reclaim the memory that the <xref:System.Diagnostics.Tracing.EventSource> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call `Dispose` before you release your last reference to the <xref:System.Diagnostics.Tracing.EventSource>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Diagnostics.Tracing.EventSource> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. `Finalize` invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Diagnostics.Tracing.EventSource> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier the Dispose Method call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EventCommandExecuted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Diagnostics.Tracing.EventCommandEventArgs&gt; EventCommandExecuted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Diagnostics.Tracing.EventCommandEventArgs&gt; EventCommandExecuted" />
+      <MemberSignature Language="DocId" Value="E:System.Diagnostics.Tracing.EventSource.EventCommandExecuted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Diagnostics.Tracing.EventCommandEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a command comes from an event listener.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~EventSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows the <see cref="T:System.Diagnostics.Tracing.EventSource" /> object to attempt to free resources and perform other cleanup operations before the  object is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateManifest">
+      <MemberSignature Language="C#" Value="public static string GenerateManifest (Type eventSourceType, string assemblyPathToIncludeInManifest);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateManifest(class System.Type eventSourceType, string assemblyPathToIncludeInManifest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventSourceType" Type="System.Type" />
+        <Parameter Name="assemblyPathToIncludeInManifest" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventSourceType">The type of the event source.</param>
+        <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) to include in the [provider](http://msdn.microsoft.com/library/windows/desktop/aa384022\(v=vs.85\).aspx) element of the manifest.</param>
+        <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
+        <returns>The XML data string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The information about the XML schema for the event manifest, see [Event Manifest Schema](http://go.microsoft.com/fwlink/?LinkId=228077) in the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateManifest">
+      <MemberSignature Language="C#" Value="public static string GenerateManifest (Type eventSourceType, string assemblyPathToIncludeInManifest, System.Diagnostics.Tracing.EventManifestOptions flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateManifest(class System.Type eventSourceType, string assemblyPathToIncludeInManifest, valuetype System.Diagnostics.Tracing.EventManifestOptions flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String,System.Diagnostics.Tracing.EventManifestOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventSourceType" Type="System.Type" />
+        <Parameter Name="assemblyPathToIncludeInManifest" Type="System.String" />
+        <Parameter Name="flags" Type="System.Diagnostics.Tracing.EventManifestOptions" />
+      </Parameters>
+      <Docs>
+        <param name="eventSourceType">The type of the event source.</param>
+        <param name="assemblyPathToIncludeInManifest">The path to the assembly file (.dll) file to include in the [provider](http://msdn.microsoft.com/library/windows/desktop/aa384022\(v=vs.85\).aspx) element of the manifest.</param>
+        <param name="flags">A bitwise combination of the enumeration values that specify how the manifest is generated.</param>
+        <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
+        <returns>The XML data string or <see langword="null" /> (see remarks).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `flags` specifies `OnlyIfNeededForRegistration` and the `eventSourceType` specified does not require explicit registration, <xref:System.Diagnostics.Tracing.EventSource.GenerateManifest%2A> returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGuid">
+      <MemberSignature Language="C#" Value="public static Guid GetGuid (Type eventSourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetGuid(class System.Type eventSourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GetGuid(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventSourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="eventSourceType">The type of the event source.</param>
+        <summary>Gets the unique identifier for this implementation of the event source.</summary>
+        <returns>A unique identifier for this event source type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public static string GetName (Type eventSourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetName(class System.Type eventSourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GetName(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventSourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="eventSourceType">The type of the event source.</param>
+        <summary>Gets the friendly name of the event source.</summary>
+        <returns>The friendly name of the event source. The default is the simple name of the class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSources">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Diagnostics.Tracing.EventSource&gt; GetSources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Diagnostics.Tracing.EventSource&gt; GetSources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GetSources" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Diagnostics.Tracing.EventSource&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a snapshot of all the event sources for the application domain.</summary>
+        <returns>An enumeration of all the event sources in the application domain.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTrait">
+      <MemberSignature Language="C#" Value="public string GetTrait (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetTrait(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GetTrait(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the trait to get.</param>
+        <summary>Gets the trait value associated with the specified key.</summary>
+        <returns>The trait value associated with the specified key. If the key is not found, returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Traits provide additional information for an event and are interpreted by an event listener. Traits are specified as key-value pairs when the event source is constructed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Guid">
+      <MemberSignature Language="C#" Value="public Guid Guid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Guid" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.Guid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The unique identifier for the event source.</summary>
+        <value>A unique identifier for the event source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.IsEnabled" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the current event source is enabled.</summary>
+        <returns>
+          <see langword="true" /> if the current event source is enabled; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled (System.Diagnostics.Tracing.EventLevel level, System.Diagnostics.Tracing.EventKeywords keywords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled(valuetype System.Diagnostics.Tracing.EventLevel level, valuetype System.Diagnostics.Tracing.EventKeywords keywords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="level" Type="System.Diagnostics.Tracing.EventLevel" />
+        <Parameter Name="keywords" Type="System.Diagnostics.Tracing.EventKeywords" />
+      </Parameters>
+      <Docs>
+        <param name="level">The level of the event source.</param>
+        <param name="keywords">The keyword of the event source.</param>
+        <summary>Determines whether the current event source that has the specified level and keyword is enabled.</summary>
+        <returns>
+          <see langword="true" /> if the event source is enabled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The result of this method is only an approximation of whether a particular event is active.  Use it to avoid expensive computation for logging when logging is disabled.   Event sources may have additional filtering that determines their activity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled (System.Diagnostics.Tracing.EventLevel level, System.Diagnostics.Tracing.EventKeywords keywords, System.Diagnostics.Tracing.EventChannel channel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled(valuetype System.Diagnostics.Tracing.EventLevel level, valuetype System.Diagnostics.Tracing.EventKeywords keywords, valuetype System.Diagnostics.Tracing.EventChannel channel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="level" Type="System.Diagnostics.Tracing.EventLevel" />
+        <Parameter Name="keywords" Type="System.Diagnostics.Tracing.EventKeywords" />
+        <Parameter Name="channel" Type="System.Diagnostics.Tracing.EventChannel" />
+      </Parameters>
+      <Docs>
+        <param name="level">The event level to check. An event source will be considered enabled when its level is greater than or equal to <c>level</c>.</param>
+        <param name="keywords">The event keywords to check.</param>
+        <param name="channel">The event channel to check.</param>
+        <summary>Determines whether the current event source is enabled for events with the specified level, keywords and channel.</summary>
+        <returns>
+          <see langword="true" /> if the event source is enabled for the specified event level, keywords and channel; otherwise, <see langword="false" />.  
+  
+ The result of this method is only an approximation of whether a particular event is active.  Use it to avoid expensive computation for logging when logging is disabled.   Event sources may have additional filtering that determines their activity..</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The friendly name of the class that is derived from the event source.</summary>
+        <value>The friendly name of the derived class.  The default is the simple name of the class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEventCommand">
+      <MemberSignature Language="C#" Value="protected virtual void OnEventCommand (System.Diagnostics.Tracing.EventCommandEventArgs command);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEventCommand(class System.Diagnostics.Tracing.EventCommandEventArgs command) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="command" Type="System.Diagnostics.Tracing.EventCommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="command">The arguments for the event.</param>
+        <summary>Called when the current event source is updated by the controller.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendCommand">
+      <MemberSignature Language="C#" Value="public static void SendCommand (System.Diagnostics.Tracing.EventSource eventSource, System.Diagnostics.Tracing.EventCommand command, System.Collections.Generic.IDictionary&lt;string,string&gt; commandArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SendCommand(class System.Diagnostics.Tracing.EventSource eventSource, valuetype System.Diagnostics.Tracing.EventCommand command, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; commandArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.SendCommand(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventCommand,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventSource" Type="System.Diagnostics.Tracing.EventSource" />
+        <Parameter Name="command" Type="System.Diagnostics.Tracing.EventCommand" />
+        <Parameter Name="commandArguments" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="eventSource">The event source to send the command to.</param>
+        <param name="command">The event command to send.</param>
+        <param name="commandArguments">The arguments for the event command.</param>
+        <summary>Sends a command to a specified event source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Diagnostics.Tracing.EventSource.SendCommand%2A> forwards the command to the <xref:System.Diagnostics.Tracing.EventSource.OnEventCommand%2A> callback.  What the <xref:System.Diagnostics.Tracing.EventSource> does with the command and its arguments is specific to the event source.  The command and command arguments are passed to the <xref:System.Diagnostics.Tracing.EventSource.OnEventCommand%2A> callback of the specified event source.   If possible, the current event source should not affect other event listeners' filtering events; however, that may not be possible if the command causes a garbage collection, a system flush, or some other global activity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentThreadActivityId">
+      <MemberSignature Language="C#" Value="public static void SetCurrentThreadActivityId (Guid activityId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCurrentThreadActivityId(valuetype System.Guid activityId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="activityId">The current thread's new activity ID, or <see cref="F:System.Guid.Empty" /> to indicate that work on the current thread is not associated with any activity.</param>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Sets the activity ID on the current thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId%2A> method sets the activity ID on a per-thread basis. All events on the thread will have that activity ID until a new activity is started on the same thread.  
+  
+ This method is called only by libraries that manage their own threads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentThreadActivityId">
+      <MemberSignature Language="C#" Value="public static void SetCurrentThreadActivityId (Guid activityId, out Guid oldActivityThatWillContinue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCurrentThreadActivityId(valuetype System.Guid activityId, valuetype System.Guid oldActivityThatWillContinue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid,System.Guid@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityId" Type="System.Guid" />
+        <Parameter Name="oldActivityThatWillContinue" Type="System.Guid&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="activityId">The current thread's new activity ID, or <see cref="F:System.Guid.Empty" /> to indicate that work on the current thread is not associated with any activity.</param>
+        <param name="oldActivityThatWillContinue">When this method returns, contains the previous activity ID on the current thread.</param>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Sets the activity ID on the current thread, and returns the previous activity ID.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can call the <xref:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId%28System.Guid%2CSystem.Guid%40%29> method to temporarily overwrite the current thread's activity ID with a new activity ID. You must then restore the previous activity ID by passing the `oldActivityThatWillContinue` argument to the <xref:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId%28System.Guid%29> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Settings">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.Tracing.EventSourceSettings Settings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Tracing.EventSourceSettings Settings" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.Settings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Tracing.EventSourceSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the settings applied to this event source.</summary>
+        <value>The settings applied to this event source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Obtains a string representation of the current event source instance.</summary>
+        <returns>The name and unique identifier that identify the current event source.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (string eventName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string eventName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">The name of the event to write.</param>
+        <summary>Writes an event without fields, but with the specified name and default options.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (string eventName, System.Diagnostics.Tracing.EventSourceOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write(System.String,System.Diagnostics.Tracing.EventSourceOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="options" Type="System.Diagnostics.Tracing.EventSourceOptions" />
+      </Parameters>
+      <Docs>
+        <param name="eventName">The name of the event to write.</param>
+        <param name="options">The options such as level, keywords and operation code for the event.</param>
+        <summary>Writes an event without fields, but with the specified name and options.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, T data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, !!T data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="data" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that defines the event and its associated data. This type must be an anonymous type or marked with the <see cref="T:System.Diagnostics.Tracing.EventSourceAttribute" /> attribute.</typeparam>
+        <param name="eventName">The name of the event.</param>
+        <param name="data">The event data. This type must be an anonymous type or marked with the <see cref="T:System.Diagnostics.Tracing.EventDataAttribute" /> attribute.</param>
+        <summary>Writes an event with the specified name and data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `eventName` is `null`, the event name is automatically derived from the type T’s event data (<xref:System.Diagnostics.Tracing.EventDataAttribute.Name%2A>) or determined based on the name of type `T`. The public instance properties of `data` will be written recursively to create the event fields.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, System.Diagnostics.Tracing.EventSourceOptions options, T data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions options, !!T data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="options" Type="System.Diagnostics.Tracing.EventSourceOptions" />
+        <Parameter Name="data" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that defines the event and its associated data. This type must be an anonymous type or marked with the <see cref="T:System.Diagnostics.Tracing.EventSourceAttribute" /> attribute.</typeparam>
+        <param name="eventName">The name of the event.</param>
+        <param name="options">The event options.</param>
+        <param name="data">The event data. This type must be an anonymous type or marked with the <see cref="T:System.Diagnostics.Tracing.EventDataAttribute" /> attribute.</param>
+        <summary>Writes an event with the specified name, event data and options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `eventName` is `null`, the event name is automatically derived from the type T’s event data (<xref:System.Diagnostics.Tracing.EventDataAttribute.Name%2A>) or determined based on the name of type `T`. The public instance properties of `data` will be written recursively to create the event fields.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, ref System.Diagnostics.Tracing.EventSourceOptions options, ref T data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions options, !!T data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="options" Type="System.Diagnostics.Tracing.EventSourceOptions&amp;" RefType="ref" />
+        <Parameter Name="data" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that defines the event and its associated data. This type must be an anonymous type or marked with the <see cref="T:System.Diagnostics.Tracing.EventSourceAttribute" /> attribute.</typeparam>
+        <param name="eventName">The name of the event.</param>
+        <param name="options">The event options.</param>
+        <param name="data">The event data. This type must be an anonymous type or marked with the <see cref="T:System.Diagnostics.Tracing.EventDataAttribute" /> attribute.</param>
+        <summary>Writes an event with the specified name, options and event data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `eventName` is `null`, the event name is automatically derived from the type T’s event data (<xref:System.Diagnostics.Tracing.EventDataAttribute.Name%2A>) or determined based on the name of type `T`. The public instance properties of `data` will be written recursively to create the event fields.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, ref System.Diagnostics.Tracing.EventSourceOptions options, ref Guid activityId, ref Guid relatedActivityId, ref T data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions options, valuetype System.Guid activityId, valuetype System.Guid relatedActivityId, !!T data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,System.Guid@,System.Guid@,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="options" Type="System.Diagnostics.Tracing.EventSourceOptions&amp;" RefType="ref" />
+        <Parameter Name="activityId" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="relatedActivityId" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="data" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that defines the event and its associated data. This type must be an anonymous type or marked with the <see cref="T:System.Diagnostics.Tracing.EventSourceAttribute" /> attribute.</typeparam>
+        <param name="eventName">The name of the event.</param>
+        <param name="options">The event options.</param>
+        <param name="activityId">The ID of the activity associated with the event.</param>
+        <param name="relatedActivityId">The ID of an associated activity, or <see cref="F:System.Guid.Empty" /> if there is no associated activity.</param>
+        <param name="data">The event data. This type must be an anonymous type or marked with the <see cref="T:System.Diagnostics.Tracing.EventDataAttribute" /> attribute.</param>
+        <summary>Writes an event with the specified name, options, related activity and event data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `eventName` is `null`, the event name is automatically derived from the type T’s event data (<xref:System.Diagnostics.Tracing.EventDataAttribute.Name%2A>) or determined based on the name of type `T`. The public instance properties of `data` will be written recursively to create the event fields.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier. This value should be between 0 and 65535.</param>
+        <summary>Writes an event by using the provided event identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method overload to write an event. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
+ [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, byte[] arg1);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, unsigned int8[] arg1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A byte array argument.</param>
+        <summary>Writes an event by using the provided event identifier and byte array argument.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(byte[] arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, int arg1);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int32 arg1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">An integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and 32-bit integer argument.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(int  arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method overload to write an event. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#8](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#8)]
+ [!code-vb[ETWTrace#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A 64 bit integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and 64-bit integer argument.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="args">An array of objects.</param>
+        <summary>Writes an event by using the provided event identifier and array of arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the compiler calls this overload if the parameters for the call do not match one of the other method overloads. This overload is much slower than the other overloads, because it does the following:  
+  
+1.  It allocates an array to hold the variable argument.  
+  
+2.  It casts each parameter to an object (which causes allocations for primitive types).  
+  
+3.  It assigns these objects to the array.  
+  
+4.  It calls the function, which then determines the type of each argument so it can be serialized for ETW.  
+  
+ The high overhead for this overload is not significant when tracing low-volume events, because the method is used only when the provider is enabled. However, for high-volume events, the performance overhead can be significant.  You can avoid using <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=fullName> for high-volume payloads by creating a new, faster  overload with the <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> method.  
+  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A string argument.</param>
+        <summary>Writes an event by using the provided event identifier and string argument.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method overload to write an event. This code example is part of a larger example provided for the <xref:System.Diagnostics.Tracing.EventSource> class.  
+  
+ [!code-csharp[ETWTrace#5](~/samples/snippets/csharp/VS_Snippets_CLR/etwtrace/cs/program.cs#5)]
+ [!code-vb[ETWTrace#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/etwtrace/vb/program.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, int arg1, int arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int32 arg1, int32 arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int32" />
+        <Parameter Name="arg2" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">An integer argument.</param>
+        <param name="arg2">An integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and 32-bit integer arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```csharp  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(int arg1, int arg2, int arg3)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, int arg1, string arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int32 arg1, string arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int32" />
+        <Parameter Name="arg2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier. This value should be between 0 and 65535.</param>
+        <param name="arg1">A 32-bit integer argument.</param>
+        <param name="arg2">A string argument.</param>
+        <summary>Writes an event by using the provided event identifier and 32-bit integer and string arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1, byte[] arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1, unsigned int8[] arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int64" />
+        <Parameter Name="arg2" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A 64-bit integer argument.</param>
+        <param name="arg2">A byte array argument.</param>
+        <summary>Writes the event data using the specified indentifier and 64-bit integer and byte array arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(Int64 arg1, Byte[] arg2)  
+{  
+ base.WriteEvent(2, arg1, arg2);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1, long arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1, int64 arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int64" />
+        <Parameter Name="arg2" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A 64 bit integer argument.</param>
+        <param name="arg2">A 64 bit integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and 64-bit arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1, string arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1, string arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int64" />
+        <Parameter Name="arg2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A 64-bit integer argument.</param>
+        <param name="arg2">A string argument.</param>
+        <summary>Writes an event by using the provided event identifier and 64-bit integer, and string arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(Int64 arg1, string arg2)  
+{  
+ base.WriteEvent(2, arg1, arg2);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, int arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, int32 arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.String" />
+        <Parameter Name="arg2" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A string argument.</param>
+        <param name="arg2">A 32 bit integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, long arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, int64 arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.String" />
+        <Parameter Name="arg2" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A string argument.</param>
+        <param name="arg2">A 64 bit integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, string arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, string arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.String" />
+        <Parameter Name="arg2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A string argument.</param>
+        <param name="arg2">A string argument.</param>
+        <summary>Writes an event by using the provided event identifier and string arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, int arg1, int arg2, int arg3);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int32 arg1, int32 arg2, int32 arg3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int32" />
+        <Parameter Name="arg2" Type="System.Int32" />
+        <Parameter Name="arg3" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">An integer argument.</param>
+        <param name="arg2">An integer argument.</param>
+        <param name="arg3">An integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and 32-bit integer arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1, long arg2, long arg3);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1, int64 arg2, int64 arg3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.Int64" />
+        <Parameter Name="arg2" Type="System.Int64" />
+        <Parameter Name="arg3" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A 64 bit integer argument.</param>
+        <param name="arg2">A 64 bit integer argument.</param>
+        <param name="arg3">A 64 bit integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and 64-bit arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, int arg2, int arg3);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, int32 arg2, int32 arg3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.String" />
+        <Parameter Name="arg2" Type="System.Int32" />
+        <Parameter Name="arg3" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A string argument.</param>
+        <param name="arg2">A 32 bit integer argument.</param>
+        <param name="arg3">A 32 bit integer argument.</param>
+        <summary>Writes an event by using the provided event identifier and arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvent">
+      <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, string arg2, string arg3);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, string arg2, string arg3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="arg1" Type="System.String" />
+        <Parameter Name="arg2" Type="System.String" />
+        <Parameter Name="arg3" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.  This value should be between 0 and 65535.</param>
+        <param name="arg1">A string argument.</param>
+        <param name="arg2">A string argument.</param>
+        <param name="arg3">A string argument.</param>
+        <summary>Writes an event by using the provided event identifier and string arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEventCore">
+      <MemberSignature Language="C#" Value="protected void WriteEventCore (int eventId, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventCore(int32 eventId, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="eventDataCount" Type="System.Int32" />
+        <Parameter Name="data" Type="System.Diagnostics.Tracing.EventSource+EventData*" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">The event identifier.</param>
+        <param name="eventDataCount">The number of event data items.</param>
+        <param name="data">The structure that contains the event data.</param>
+        <summary>Creates a new <see cref="Overload:System.Diagnostics.Tracing.EventSource.WriteEvent" /> overload by using the provided event identifier and event data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `eventid` should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ This protected method  enables users to define new <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> overloads that are faster than the provided overloads.   Creating a new overload involves unsafe code.  The basic procedure is to stack-allocate an array of event data descriptors that matches the number of payload items.   For each payload item, set the correct size and value in the event data array.Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> with the initialized array.  
+  
+ The following example shows how to add a <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> overload that accepts four arguments. An example would be if you have a logging event that logs a string and 3 integers.  
+  
+```csharp  
+  
+[Event(1)]  
+public void LogTime(string tag, int hour, int minute, int second)   
+{  
+    WriteEvent(1, tag, hour, minute, second);  
+}  
+  
+```  
+  
+ You could do this without calling <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A>, but it would be slower than it needs to be. That is because it uses arrays and reflection to figure out what to do. If you log these at a high rate (> 1000 / sec), it can be worth making a fast helper, as shown in the following example. The method shadows the existing <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A>. Thus the original caller code (LogTime) does not actually change, but the C# compiler will use the more specialized version which will be faster.  
+  
+ To compile unsafe code, you must specify the [/unsafe (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/unsafe-compiler-option.md) compiler option.  
+  
+```csharp  
+class AnotherEventSource : EventSource {  
+  
+    [NonEvent]  
+    public unsafe void WriteEvent(int eventId, string arg1, int arg2, int arg3, int arg4)  
+    {  
+  
+        fixed (char* arg1Ptr = arg1)  
+        {  
+            EventData* dataDesc = stackalloc EventProvider.EventData[4];  
+  
+            dataDesc[0].DataPointer = (IntPtr)arg1Ptr;  
+            dataDesc[0].Size = (arg1.Length + 1) * 2; // Size in bytes, including a null terminator.   
+            dataDesc[1].DataPointer = (IntPtr)(&arg2);  
+            dataDesc[1].Size = 4;  
+            dataDesc[2].DataPointer = (IntPtr)(&arg3);  
+            dataDesc[2].Size = 4;  
+            dataDesc[3].DataPointer = (IntPtr)(&arg4);  
+            dataDesc[3].Size = 4;  
+  
+            WriteEventCore(eventId, 4, (IntPtr)dataDesc);  
+        }  
+    }  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEventWithRelatedActivityId">
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid relatedActivityId, object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityId(int32 eventId, valuetype System.Guid relatedActivityId, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="relatedActivityId" Type="System.Guid" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
+        <param name="relatedActivityId">The related activity identifier.</param>
+        <param name="args">An array of objects that contain data about the event.</param>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Writes an event that indicates that the current activity is related to another activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> method logs a transfer event. The activity of the current thread is logged with the event, and this allows two activities to be related by a consumer of events.  
+  
+ Your ETW event method calling this function must follow these guidelines:  
+  
+1.  Specify the first parameter as a <xref:System.Guid> named `relatedActivityId`.  
+  
+2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode> or <xref:System.Diagnostics.Tracing.EventOpcode> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
+  
+3.  Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> passing in the event ID, followed by the related ID GUID, followed by all the parameters the event method is passed, in the same order.  
+  
+ If `args` is not used, it is converted to an empty array for the resulting call to ETW.  
+  
+   
+  
+## Examples  
+ The following code example shows how you might can specify an event source that calls <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A>.  
+  
+ [!code-csharp[System.Diagnostics.EventSource.WriteEventWithId#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.eventsource.writeeventwithid/cs/program.cs#1)]
+ [!code-vb[System.Diagnostics.EventSource.WriteEventWithId#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.diagnostics.eventsource.writeeventwithid/vb/module1.vb#1)]  
+[!code-csharp[System.Diagnostics.EventSource.WriteEventWithId#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.eventsource.writeeventwithid/cs/program.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEventWithRelatedActivityIdCore">
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityIdCore (int eventId, Guid* relatedActivityId, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityIdCore(int32 eventId, valuetype System.Guid* relatedActivityId, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventId" Type="System.Int32" />
+        <Parameter Name="relatedActivityId" Type="System.Guid*" />
+        <Parameter Name="eventDataCount" Type="System.Int32" />
+        <Parameter Name="data" Type="System.Diagnostics.Tracing.EventSource+EventData*" />
+      </Parameters>
+      <Docs>
+        <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
+        <param name="relatedActivityId">A pointer to the GUID of the related activity ID.</param>
+        <param name="eventDataCount">The number of items in the <c>data</c> field.</param>
+        <param name="data">A pointer to the first item in the event data field.</param>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Writes an event that indicates that the current activity is related to another activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> is similar to the <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId%2A> method but offers better performance, bevcause it does not have to unbox the `childActivityID` and `data` arguments.  
+  
+ Your ETW event method calling this function must follow these guidelines:  
+  
+1.  Specify the first parameter as a <xref:System.Guid> named `relatedActivityId`.  
+  
+2.  Specify either <xref:System.Diagnostics.Tracing.EventOpcode> or <xref:System.Diagnostics.Tracing.EventOpcode> as the <xref:System.Diagnostics.Tracing.EventAttribute.Opcode%2A?displayProperty=fullName> property.  
+  
+3.  Call <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A> passing in the event ID, followed by the related ID GUID, followed by all the parameters the event method is passed, in the same order.  
+  
+   
+  
+## Examples  
+ The following C# code example shows how to define a method overload that calls <xref:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore%2A>.  
+  
+ [!code-csharp[System.Diagnostics.EventSource.WriteEventWithId#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.eventsource.writeeventwithid/cs/program.cs#5)]
+ [!code-vb[System.Diagnostics.EventSource.WriteEventWithId#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.diagnostics.eventsource.writeeventwithid/vb/module1.vb#5)]  
+[!code-csharp[System.Diagnostics.EventSource.WriteEventWithId#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.diagnostics.eventsource.writeeventwithid/cs/program.cs#3)]
+[!code-vb[System.Diagnostics.EventSource.WriteEventWithId#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.diagnostics.eventsource.writeeventwithid/vb/module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="WriteEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event by using the provided event identifier and optional arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `WriteEvent` method provides overloads with combinations of string and integer arguments. If none of these combinations match the parameters for the call, the compiler uses the [WriteEvent(Int32, Object\<xref:System.Diagnostics.Tracing.EventSource.WriteEvent%28System.Int32%2CSystem.Object%5B%5D%29?displayProperty=fullName> overload, which is considerably slower than the other overloads. See the overload page for details.  
+  
+ In all cases, the `eventid` parameter should be greater than 0 or less than 65535 or errors can occur in the operation. If errors do occur, you can get more information about the source of the error by checking the output stream of the debugger, if you have a debugger attached to the process firing events. You can also look for errors reported in the ETW event stream, if you have an ETW listener on the event source where the error occurs.  
+  
+ When you implement a method that is identified as an ETW event in an <xref:System.Diagnostics.Tracing.EventSource>-derived class. You must call the base class <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method passing the <xref:System.Diagnostics.Tracing.EventAttribute.EventId%2A> and the same arguments as the implemented method similar to the following example.  
+  
+```  
+[Event(2, Level = EventLevel.Informational)]  
+public void Info1(string arg1)  
+{  
+ base.WriteEvent(2, arg1);  
+}  
+```  
+  
+ You can also create a custom overload by using the <xref:System.Diagnostics.Tracing.EventSource.WriteEventCore%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

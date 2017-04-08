@@ -1,0 +1,27 @@
+<Type Name="BookmarkCallback" FullName="System.Activities.BookmarkCallback">
+  <TypeSignature Language="C#" Value="public delegate void BookmarkCallback(NativeActivityContext context, Bookmark bookmark, object value);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BookmarkCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.BookmarkCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+    <Parameter Name="bookmark" Type="System.Activities.Bookmark" />
+    <Parameter Name="value" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="context">The execution environment of the activity handling the <see cref="T:System.Activities.Bookmark" /> resumption.</param>
+    <param name="bookmark">The <see cref="T:System.Activities.Bookmark" /> being resumed.</param>
+    <param name="value">The data associated with the <see cref="T:System.Activities.Bookmark" /> resumption.</param>
+    <summary>Represents the method that is called when a <see cref="T:System.Activities.Bookmark" /> is resumed.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

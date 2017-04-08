@@ -1,0 +1,13 @@
+<Namespace Name="System.Runtime.CompilerServices">
+  <Docs>
+    <summary>The <see cref="N:System.Runtime.CompilerServices" /> namespace provides functionality for compiler writers who use managed code to specify attributes in metadata that affect the run-time behavior of the common language runtime.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This namespace is primarily for compiler writers, although several of its classes, such as <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>, are used in a wide variety of applications.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

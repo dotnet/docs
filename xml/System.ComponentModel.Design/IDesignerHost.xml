@@ -1,0 +1,729 @@
+<Type Name="IDesignerHost" FullName="System.ComponentModel.Design.IDesignerHost">
+  <TypeSignature Language="C#" Value="public interface IDesignerHost : IServiceProvider, System.ComponentModel.Design.IServiceContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerHost implements class System.ComponentModel.Design.IServiceContainer, class System.IServiceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignerHost" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.Design.IServiceContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an interface for managing designer transactions and components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.Design.IDesignerHost> is an interface that works with the .NET Framework forms designer architecture to provide support for designer transaction and component management.  
+  
+ The .NET Framework does not provide an implementation of this interface. The interface is implemented by development tools that support designers.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to obtain the <xref:System.ComponentModel.Design.IDesignerHost> service interface from a designer or sited component.  
+  
+ [!code-cpp[DesignerHostAcquisition#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerHostAcquisition/CPP/source.cpp#1)]
+ [!code-csharp[DesignerHostAcquisition#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerHostAcquisition/CS/source.cs#1)]
+ [!code-vb[DesignerHostAcquisition#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerHostAcquisition/VB/source.vb#1)]  
+  
+ The following example code demonstrates using the <xref:System.ComponentModel.Design.IDesignerHost> interface to list project components.  
+  
+ [!code-cpp[IDesignerHostExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IDesignerHostExample/CPP/idesignerhostexample.cpp#1)]
+ [!code-csharp[IDesignerHostExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IDesignerHostExample/CS/idesignerhostexample.cs#1)]
+ [!code-vb[IDesignerHostExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDesignerHostExample/VB/idesignerhostexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="usage">
+      <para>To obtain an implementation of <see cref="T:System.ComponentModel.Design.IDesignerHost" /> from a development environment, call <see cref="M:System.ComponentModel.Component.GetService(System.Type)" /> while your component is active in design mode, passing the type of <see cref="T:System.ComponentModel.Design.IDesignerHost" /> to request an <see cref="T:System.ComponentModel.Design.IDesignerHost" /> service interface.  
+  
+ <see cref="T:System.ComponentModel.Design.IDesignerHost" /> provides the following members related to designer state:  
+  
+-   The <see cref="P:System.ComponentModel.Design.IDesignerHost.Loading" /> property indicates whether a designer or document is being loaded.  
+  
+-   The <see cref="E:System.ComponentModel.Design.IDesignerHost.Activated" /> event occurs when a designer is activated before display.  
+  
+-   The <see cref="E:System.ComponentModel.Design.IDesignerHost.Deactivated" /> event occurs when a designer is deactivated.  
+  
+-   The <see cref="E:System.ComponentModel.Design.IDesignerHost.LoadComplete" /> event occurs after a document is loaded.  
+  
+-   The <see cref="M:System.ComponentModel.Design.IDesignerHost.Activate" /> method activates the designer.  
+  
+ <see cref="T:System.ComponentModel.Design.IDesignerHost" /> provides the following members related to managing components:  
+  
+-   The <see cref="P:System.ComponentModel.Design.IDesignerHost.Container" /> property indicates the container for the designer host.  
+  
+-   The <see cref="P:System.ComponentModel.Design.IDesignerHost.RootComponent" /> property indicates the base class for the root component.  
+  
+-   The <see cref="P:System.ComponentModel.Design.IDesignerHost.RootComponentClassName" /> property indicates the name of the class of the root component.  
+  
+-   The <see cref="M:System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type)" /> method creates the specified type of component.  
+  
+-   The <see cref="M:System.ComponentModel.Design.IDesignerHost.DestroyComponent(System.ComponentModel.IComponent)" /> method destroys the specified component.  
+  
+-   The <see cref="M:System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)" /> method gets the designer associated with a specified component.  
+  
+-   The <see cref="M:System.ComponentModel.Design.IDesignerHost.GetType(System.String)" /> method gets an instance of the type with the specified name.  
+  
+ <see cref="T:System.ComponentModel.Design.IDesignerHost" /> provides the following members related to managing transactions:  
+  
+-   The <see cref="P:System.ComponentModel.Design.IDesignerHost.InTransaction" /> property indicates whether the designer is in a transaction.  
+  
+-   The <see cref="P:System.ComponentModel.Design.IDesignerHost.TransactionDescription" /> property indicates the current transaction description.  
+  
+-   The <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" /> event occurs when a transaction has been completed.  
+  
+-   The <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" /> event occurs when a transaction is about to be completed.  
+  
+-   The <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpened" /> event occurs when a transaction has begun.  
+  
+-   The <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpening" /> event occurs when a transaction is about to begin.  
+  
+-   The <see cref="M:System.ComponentModel.Design.IDesignerHost.CreateTransaction" /> method creates and returns a new transaction.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.Activate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Activates the designer that this host is hosting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Designers should be activated before they display their user interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activated">
+      <MemberSignature Language="C#" Value="public event EventHandler Activated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Activated" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.Activated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when this designer is activated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A designer is activated before it is displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Container">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IContainer Container { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IContainer Container" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.Container" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the container for this designer host.</summary>
+        <value>The <see cref="T:System.ComponentModel.IContainer" /> for this host.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.ComponentModel.IContainer> contains the components of the current design mode document. You can list or access any of the components of the current design mode document through the <xref:System.ComponentModel.IContainer.Components%2A> member of this <xref:System.ComponentModel.IContainer>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateComponent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent CreateComponent (Type componentClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.IComponent CreateComponent(class System.Type componentClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="componentClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="componentClass">The type of the component to create.</param>
+        <summary>Creates a component of the specified type and adds it to the design document.</summary>
+        <returns>The newly created component.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the type cannot be resolved into an object that implements <xref:System.ComponentModel.IComponent>, an exception is thrown.  
+  
+ This method does not specify a name for the component. The method creates the component and adds it to the designer container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateComponent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent CreateComponent (Type componentClass, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.IComponent CreateComponent(class System.Type componentClass, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="componentClass" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="componentClass">The type of the component to create.</param>
+        <param name="name">The name for the component.</param>
+        <summary>Creates a component of the specified type and name, and adds it to the design document.</summary>
+        <returns>The newly created component.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the type cannot be resolved into an object that implements <xref:System.ComponentModel.IComponent>, an exception is thrown.  
+  
+ This method creates the component and adds it to the designer container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTransaction">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerTransaction CreateTransaction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.DesignerTransaction CreateTransaction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.CreateTransaction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerTransaction</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.ComponentModel.Design.DesignerTransaction" /> that can encapsulate event sequences to improve performance and enable undo and redo support functionality.</summary>
+        <returns>A new instance of <see cref="T:System.ComponentModel.Design.DesignerTransaction" />. When you complete the steps in your transaction, you should call <see cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" /> on this object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a <xref:System.ComponentModel.Design.DesignerTransaction> that can be used to encapsulate a series of operations. Designer transactions can improve performance, reduce flicker caused by multiple updates during a process of operations, and enable most operations to be undone.  
+  
+ Lengthy operations that involve multiple components can raise many events. These events can cause side effects, such as flicker or degraded performance. When operating on multiple components at one time, or setting multiple properties on a single component, you can improve performance by performing these changes within a transaction. Some operations handle the <xref:System.ComponentModel.Design.IDesignerHost.TransactionOpening> and <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosed> events and perform work only when a transaction is not in progress. For more information on using transactions, see the documentation for <xref:System.ComponentModel.Design.DesignerTransaction>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTransaction">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerTransaction CreateTransaction (string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.DesignerTransaction CreateTransaction(string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.CreateTransaction(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerTransaction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="description">A title or description for the newly created transaction.</param>
+        <summary>Creates a <see cref="T:System.ComponentModel.Design.DesignerTransaction" /> that can encapsulate event sequences to improve performance and enable undo and redo support functionality, using the specified transaction description.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.Design.DesignerTransaction" />. When you have completed the steps in your transaction, you should call <see cref="M:System.ComponentModel.Design.DesignerTransaction.Commit" /> on this object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a <xref:System.ComponentModel.Design.DesignerTransaction> that can be used to encapsulate a series of operations. Designer transactions can improve performance, reduce flicker caused by multiple updates during a process of operations, and enable most operations to be undone.  
+  
+ Lengthy operations that involve multiple components can raise many events. These events can cause side effects, such as flicker or degraded performance. When operating on multiple components at one time, or setting multiple properties on a single component, you can improve performance by performing these changes within a transaction. Some operations handle the <xref:System.ComponentModel.Design.IDesignerHost.TransactionOpening> and <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosed> events and perform work only when a transaction is not in progress. For more information on using transactions, see the documentation for <xref:System.ComponentModel.Design.DesignerTransaction>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivated">
+      <MemberSignature Language="C#" Value="public event EventHandler Deactivated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Deactivated" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.Deactivated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when this designer is deactivated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A designer is deactivated just before it is no longer displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestroyComponent">
+      <MemberSignature Language="C#" Value="public void DestroyComponent (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DestroyComponent(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.DestroyComponent(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to destroy.</param>
+        <summary>Destroys the specified component and removes it from the designer container.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesigner">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.IDesigner GetDesigner (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.IDesigner GetDesigner(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.IDesigner</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to retrieve the designer for.</param>
+        <summary>Gets the designer instance that contains the specified component.</summary>
+        <returns>An <see cref="T:System.ComponentModel.Design.IDesigner" />, or <see langword="null" /> if there is no designer for the specified component.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public Type GetType (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerHost.GetType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">The name of the type to load.</param>
+        <summary>Gets an instance of the specified, fully qualified type name.</summary>
+        <returns>The type object for the specified type name, or <see langword="null" /> if the type cannot be found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InTransaction">
+      <MemberSignature Language="C#" Value="public bool InTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.InTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the designer host is currently in a transaction.</summary>
+        <value>
+          <see langword="true" /> if a transaction is in progress; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadComplete">
+      <MemberSignature Language="C#" Value="public event EventHandler LoadComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LoadComplete" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.LoadComplete" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when this designer completes loading its document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs after a designer completes loading its document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Loading">
+      <MemberSignature Language="C#" Value="public bool Loading { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Loading" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.Loading" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the designer host is currently loading the document.</summary>
+        <value>
+          <see langword="true" /> if the designer host is currently loading the document; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootComponent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent RootComponent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent RootComponent" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.RootComponent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the instance of the base class used as the root component for the current design.</summary>
+        <value>The instance of the root component class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This base class is typically a <xref:System.Windows.Forms.Form> or <xref:System.Windows.Forms.UserControl> instance; it defines the class for which the user's derived class extends.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootComponentClassName">
+      <MemberSignature Language="C#" Value="public string RootComponentClassName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootComponentClassName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.RootComponentClassName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the fully qualified name of the class being designed.</summary>
+        <value>The fully qualified name of the base component class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionClosed">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.DesignerTransactionCloseEventHandler TransactionClosed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.DesignerTransactionCloseEventHandler TransactionClosed" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerTransactionCloseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds an event handler for the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs after a transaction is closed.  
+  
+ A transaction can sometimes change multiple values. The transaction methods provide a way to prevent performance and flicker problems by avoiding repetitive processing. These methods defer processing until after the transaction has closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionClosing">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.DesignerTransactionCloseEventHandler TransactionClosing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.DesignerTransactionCloseEventHandler TransactionClosing" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerTransactionCloseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds an event handler for the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs just before a transaction is completed.  
+  
+ A transaction can sometimes change multiple values. The transaction methods provide a way to prevent performance and flicker problems by avoiding repetitive processing. These methods defer processing until after the transaction has closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionDescription">
+      <MemberSignature Language="C#" Value="public string TransactionDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TransactionDescription" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesignerHost.TransactionDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the description of the current transaction.</summary>
+        <value>A description of the current transaction.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The description is the last description specified with <xref:System.ComponentModel.Design.IDesignerHost.CreateTransaction%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionOpened">
+      <MemberSignature Language="C#" Value="public event EventHandler TransactionOpened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TransactionOpened" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.TransactionOpened" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds an event handler for the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpened" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs when a transaction has begun.  
+  
+ A transaction can sometimes change multiple values. The transaction methods provide a way to prevent performance and flicker problems by avoiding repetitive processing. These methods defer processing until after the transaction has closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionOpening">
+      <MemberSignature Language="C#" Value="public event EventHandler TransactionOpening;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TransactionOpening" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.IDesignerHost.TransactionOpening" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds an event handler for the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionOpening" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs when a transaction is about to begin.  
+  
+ This method allows designer host clients to perform operations before other handlers are notified that a transaction has begun. The specified handler is called only when the first call to <xref:System.ComponentModel.Design.IDesignerHost.CreateTransaction%2A> is made. Subsequent calls do not generate this event until all transaction objects have been disposed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

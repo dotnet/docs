@@ -1,0 +1,114 @@
+<Type Name="UndoAction" FullName="System.Windows.Controls.UndoAction">
+  <TypeSignature Language="C#" Value="public enum UndoAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UndoAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.UndoAction" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>How the undo stack caused or is affected by a text change.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="Clear" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Clear = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Clear" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This change will clear the undo stack</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="Create" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Create = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Create" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This change will create a new undo unit</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="Merge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Merge = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Merge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This change will merge into the previous undo unit</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This change will not affect the undo stack at all</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Redo">
+      <MemberSignature Language="C#" Value="Redo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Redo = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Redo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This change is the result of a call to Redo()</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Undo">
+      <MemberSignature Language="C#" Value="Undo" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Undo = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Undo" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This change is the result of a call to Undo()</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

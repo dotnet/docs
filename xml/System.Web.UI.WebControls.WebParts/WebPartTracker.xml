@@ -1,0 +1,102 @@
+<Type Name="WebPartTracker" FullName="System.Web.UI.WebControls.WebParts.WebPartTracker">
+  <TypeSignature Language="C#" Value="public sealed class WebPartTracker : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartTracker extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTracker" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Monitors Web Parts connections for circular connections.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A Web Parts connection is a link or association between two <xref:System.Web.UI.WebControls.WebParts.WebPart> (or other server or user) controls that enables them to share data. In every Web Parts connection, one control acts as a provider of data and another as a consumer of data.  
+  
+ When a Web Parts control is both a provider and a consumer, and the provided data depends on the consumed data, there is the possibility of creating a connection that results in an infinite loop between Web Parts controls. These loops are called circular connections. A developer can prevent a circular connection by using the <xref:System.Web.UI.WebControls.WebParts.WebPartTracker> class to track the number of connections for a provider connection point and a Web Parts control. The provider connection point and the control are specified in the <xref:System.Web.UI.WebControls.WebParts.WebPartTracker.%23ctor%2A> constructor.  
+  
+ If a circular connection is detected, the <xref:System.Web.UI.WebControls.WebParts.WebPartTracker> object sets the <xref:System.Web.UI.WebControls.WebParts.WebPart.ConnectErrorMessage%2A?displayProperty=fullName> property on the provider Web Parts control. The <xref:System.Web.UI.WebControls.WebParts.WebPartTracker.IsCircularConnection%2A> property will return `true`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartTracker (System.Web.UI.WebControls.WebParts.WebPart webPart, System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart webPart, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTracker.#ctor(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="providerConnectionPoint" Type="System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">The control to track for circular connections.</param>
+        <param name="providerConnectionPoint">The connection point used with <c>webPart</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTracker" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="webPart" /> or <paramref name="providerConnectionPoint" /> is not provided.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="providerConnectionPoint" /> is not a valid type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCircularConnection">
+      <MemberSignature Language="C#" Value="public bool IsCircularConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCircularConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTracker.IsCircularConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a provider connection point is involved in more than one connection with a Web Parts control.</summary>
+        <value>
+          <see langword="true" /> if the provider connection point is used in more than one connection with the Web Parts control; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTracker.System#IDisposable#Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

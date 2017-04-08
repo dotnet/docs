@@ -153,6 +153,3 @@ string s = String.Empty;
 |[Using the StringBuilder Class](../../../standard/base-types/stringbuilder.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
 |[LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
 |[C# Programming Guide](../../../csharp/programming-guide/index.md)|Provides links to topics that explain programming constructs in C#.|  
-  
-## Featured Book Chapter  
- [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)

@@ -1,0 +1,129 @@
+<Type Name="SmoothingMode" FullName="System.Drawing.Drawing2D.SmoothingMode">
+  <TypeSignature Language="C#" Value="public enum SmoothingMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SmoothingMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.SmoothingMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether smoothing (antialiasing) is applied to lines and curves and the edges of filled areas.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default, None, and HighSpeed are equivalent and specify rendering without smoothing applied.  
+  
+ AntiAlias and HighQuality are equivalent and specify rendering with smoothing applied.  
+  
+> [!NOTE]
+>  When the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property is specified by using the <xref:System.Drawing.Drawing2D.SmoothingMode> enumeration, it does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Graphics.TextRenderingHint%2A?displayProperty=fullName> property and the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
+  
+> [!NOTE]
+>  When the<xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property is specified by using the <xref:System.Drawing.Drawing2D.SmoothingMode> enumeration, it does not affect areas filled by a path gradient brush. Areas filled by using a <xref:System.Drawing.Drawing2D.PathGradientBrush> object are rendered the same way (aliased) regardless of the setting for the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AntiAlias">
+      <MemberSignature Language="C#" Value="AntiAlias" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.SmoothingMode AntiAlias = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.AntiAlias" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies antialiased rendering.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.SmoothingMode Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no antialiasing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HighQuality">
+      <MemberSignature Language="C#" Value="HighQuality" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.SmoothingMode HighQuality = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.HighQuality" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies antialiased rendering.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HighSpeed">
+      <MemberSignature Language="C#" Value="HighSpeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.SmoothingMode HighSpeed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.HighSpeed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no antialiasing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.SmoothingMode Invalid = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an invalid mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.SmoothingMode None = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.SmoothingMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.SmoothingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no antialiasing.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

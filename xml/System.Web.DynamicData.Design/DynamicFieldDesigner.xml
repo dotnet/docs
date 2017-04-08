@@ -1,0 +1,226 @@
+<Type Name="DynamicFieldDesigner" FullName="System.Web.DynamicData.Design.DynamicFieldDesigner">
+  <TypeSignature Language="C#" Value="public class DynamicFieldDesigner : System.Web.UI.Design.WebControls.DataControlFieldDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicFieldDesigner extends System.Web.UI.Design.WebControls.DataControlFieldDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.Design.DynamicFieldDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.DataControlFieldDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.DynamicData.DynamicField" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicFieldDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicFieldDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.Design.DynamicFieldDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.DataControlField CreateField ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.WebControls.DataControlField CreateField() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateField" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlField</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an empty <see cref="T:System.Web.DynamicData.DynamicField" /> object.</summary>
+        <returns>An empty field object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateField> method is called when the designer does not have schema information about the field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.DataControlField CreateField (System.Web.UI.Design.IDataSourceFieldSchema fieldSchema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.WebControls.DataControlField CreateField(class System.Web.UI.Design.IDataSourceFieldSchema fieldSchema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateField(System.Web.UI.Design.IDataSourceFieldSchema)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fieldSchema" Type="System.Web.UI.Design.IDataSourceFieldSchema" />
+      </Parameters>
+      <Docs>
+        <param name="fieldSchema">Schema information that contains the structure of the data field.</param>
+        <summary>Creates a new <see cref="T:System.Web.DynamicData.DynamicField" /> object by using the specified data field information.</summary>
+        <returns>A new field object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTemplateField">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.TemplateField CreateTemplateField (System.Web.UI.WebControls.DataControlField dataControlField, System.Web.UI.WebControls.DataBoundControl dataBoundControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.WebControls.TemplateField CreateTemplateField(class System.Web.UI.WebControls.DataControlField dataControlField, class System.Web.UI.WebControls.DataBoundControl dataBoundControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateTemplateField(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TemplateField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataControlField" Type="System.Web.UI.WebControls.DataControlField" />
+        <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.DataBoundControl" />
+      </Parameters>
+      <Docs>
+        <param name="dataControlField">The data field object.</param>
+        <param name="dataBoundControl">The data-bound control that contains the data field object.</param>
+        <summary>Creates a <see cref="T:System.Web.UI.WebControls.TemplateField" /> field for the specified data field.</summary>
+        <returns>The new template field.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.CreateTemplateField%2A> method is invoked by the designer when it converts a data control field into a <xref:System.Web.UI.WebControls.TemplateField> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultNodeText">
+      <MemberSignature Language="C#" Value="public override string DefaultNodeText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultNodeText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.Design.DynamicFieldDesigner.DefaultNodeText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default text that is displayed for the data field in the fields editor.</summary>
+        <value>The default text that is displayed for the data field in the fields editor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNodeText">
+      <MemberSignature Language="C#" Value="public override string GetNodeText (System.Web.UI.WebControls.DataControlField dataControlField);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetNodeText(class System.Web.UI.WebControls.DataControlField dataControlField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataControlField" Type="System.Web.UI.WebControls.DataControlField" />
+      </Parameters>
+      <Docs>
+        <param name="dataControlField">The data field object.</param>
+        <summary>Gets the name that is displayed for the data field in the fields editor.</summary>
+        <returns>The name that is displayed for the data field in the fields editor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateContent">
+      <MemberSignature Language="C#" Value="public string GetTemplateContent (System.Web.UI.WebControls.DataControlField dataControlField, System.Web.UI.WebControls.DataBoundControlMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetTemplateContent(class System.Web.UI.WebControls.DataControlField dataControlField, valuetype System.Web.UI.WebControls.DataBoundControlMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicFieldDesigner.GetTemplateContent(System.Web.UI.WebControls.DataControlField,System.Web.UI.WebControls.DataBoundControlMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataControlField" Type="System.Web.UI.WebControls.DataControlField" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+      </Parameters>
+      <Docs>
+        <param name="dataControlField">The data field object.</param>
+        <param name="mode">The display mode for the specified data field.</param>
+        <summary>Gets the content of the template field.</summary>
+        <returns>The content of the template field.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public override bool IsEnabled (System.Web.UI.WebControls.DataBoundControl parent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsEnabled(class System.Web.UI.WebControls.DataBoundControl parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DynamicFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Web.UI.WebControls.DataBoundControl" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The data-bound control whose data control fields are being edited.</param>
+        <summary>Gets a value that indicates whether the data field is enabled in the fields editor.</summary>
+        <returns>
+          <see langword="true" /> if the data field is enabled in the fields editor; <see langword="false" /> if the data field will not be displayed in the fields editor.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.DynamicData.Design.DynamicFieldDesigner.IsEnabled%2A> method returns `false`, the data field will not be displayed in the fields editor. This occurs when the data-bound control does not contain the field yet  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsesSchema">
+      <MemberSignature Language="C#" Value="public override bool UsesSchema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UsesSchema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.Design.DynamicFieldDesigner.UsesSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether schema information is used to load the data fields.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

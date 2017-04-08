@@ -1,0 +1,89 @@
+<Type Name="ListViewAlignment" FullName="System.Windows.Forms.ListViewAlignment">
+  <TypeSignature Language="C#" Value="public enum ListViewAlignment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewAlignment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewAlignment" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how items align in the <see cref="T:System.Windows.Forms.ListView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.ListView.Alignment%2A> property and the <xref:System.Windows.Forms.ListView.ArrangeIcons%2A> method of the <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewAlignment Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewAlignment.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When the user moves an item, it remains where it is dropped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewAlignment Left = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewAlignment.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Items are aligned to the left of the <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SnapToGrid">
+      <MemberSignature Language="C#" Value="SnapToGrid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewAlignment SnapToGrid = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewAlignment.SnapToGrid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Items are aligned to an invisible grid in the control. When the user moves an item, it moves to the closest juncture in the grid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewAlignment Top = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewAlignment.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Items are aligned to the top of the <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

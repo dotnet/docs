@@ -1,0 +1,226 @@
+<Type Name="EnvelopeVersion" FullName="System.ServiceModel.EnvelopeVersion">
+  <TypeSignature Language="C#" Value="public sealed class EnvelopeVersion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnvelopeVersion extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.EnvelopeVersion" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information related to the version of SOAP associated with a message and its exchange.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SOAP versions currently available are SOAP 1.1 and SOAP 1.2. There is an <xref:System.ServiceModel.EnvelopeVersion> for each of these versions of SOAP that can be recovered using the <xref:System.ServiceModel.EnvelopeVersion.Soap11%2A> and <xref:System.ServiceModel.EnvelopeVersion.Soap12%2A> properties. There is also a <xref:System.ServiceModel.EnvelopeVersion.None%2A> message version that is used to sent and receive XML messages that do not use SOAP formatting. The processing roles associated with each message version can be recovered using the <xref:System.ServiceModel.EnvelopeVersion.NextDestinationActorValue%2A> property and the <xref:System.ServiceModel.EnvelopeVersion.GetUltimateDestinationActorValues%2A> method.  
+  
+   
+  
+## Examples  
+ The following code shows how to access the methods and properties of <xref:System.ServiceModel.EnvelopeVersion>.  
+  
+ [!code-csharp[S_UEEnvelopeVersion#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueenvelopeversion/cs/program.cs#0)]
+ [!code-vb[S_UEEnvelopeVersion#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueenvelopeversion/vb/module1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetUltimateDestinationActorValues">
+      <MemberSignature Language="C#" Value="public string[] GetUltimateDestinationActorValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetUltimateDestinationActorValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EnvelopeVersion.GetUltimateDestinationActorValues" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a string that contains the URI name for the SOAP role associated with the current message version for the ultimate destination.</summary>
+        <returns>An empty string if SOAP1.1 is used; a string that contains http://www.w3.org/2003/05/soap-envelope/role/ultimateReceiver if SOAP1.2 is used.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ultimate receiver is `null` if <xref:System.ServiceModel.EnvelopeVersion.None%2A> is specified.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEnvelopeVersion#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueenvelopeversion/cs/program.cs#5)]
+ [!code-vb[S_UEEnvelopeVersion#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueenvelopeversion/vb/module1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextDestinationActorValue">
+      <MemberSignature Language="C#" Value="public string NextDestinationActorValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NextDestinationActorValue" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.EnvelopeVersion.NextDestinationActorValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that contains the URI name for the SOAP role associated with the current message version for the next destination.</summary>
+        <value>A string that contains http://schemas.xmlsoap.org/soap/actor/next if SOAP1.1 is used; a string that contains http://www.w3.org/2003/05/soap-envelope/role/next if SOAP1.2 is used; and an empty string if the message version is none.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEEnvelopeVersion#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueenvelopeversion/cs/program.cs#4)]
+ [!code-vb[S_UEEnvelopeVersion#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueenvelopeversion/vb/module1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.EnvelopeVersion None { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.EnvelopeVersion None" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.EnvelopeVersion.None" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the envelope version not using a version of SOAP.</summary>
+        <value>The envelope version not using a SOAP formatting.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ServiceModel.EnvelopeVersion.None%2A> message version is used this means that a SOAP envelope is not written out and the message emits the contents of the body. This enables an [!INCLUDE[indigo1](~/includes/indigo1-md.md)] channel to communicate with an endpoint that is expecting XML with no SOAP formatting. The XML payload lives in the body of a message and is the only thing emitted when it hits the encoder.  
+  
+ Similarly, when the arbitrary chunk of XML is received it is wrapped up in a Message for propagation up the channel stack. The required headers are inserted and the message is processed as if it had been a SOAP message.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEnvelopeVersion#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueenvelopeversion/cs/program.cs#3)]
+ [!code-vb[S_UEEnvelopeVersion#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueenvelopeversion/vb/module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Soap11">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.EnvelopeVersion Soap11 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.EnvelopeVersion Soap11" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.EnvelopeVersion.Soap11" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the SOAP1.1 envelope version.</summary>
+        <value>The SOAP1.1 <see cref="T:System.ServiceModel.EnvelopeVersion" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the schema for [SOAP 1.1](http://go.microsoft.com/fwlink/?LinkID=96641).  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEnvelopeVersion#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueenvelopeversion/cs/program.cs#1)]
+ [!code-vb[S_UEEnvelopeVersion#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueenvelopeversion/vb/module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Soap12">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.EnvelopeVersion Soap12 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.EnvelopeVersion Soap12" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.EnvelopeVersion.Soap12" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the SOAP1.2 envelope version.</summary>
+        <value>The SOAP1.2 <see cref="T:System.ServiceModel.EnvelopeVersion" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] the schema for [SOAP 1.2](http://go.microsoft.com/fwlink/?LinkID=96642).  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEnvelopeVersion#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueenvelopeversion/cs/program.cs#2)]
+ [!code-vb[S_UEEnvelopeVersion#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueenvelopeversion/vb/module1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EnvelopeVersion.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a string that represents the current envelope version.</summary>
+        <returns>The string representation of the current envelope version.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a human-readable string that is culture-sensitive.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEnvelopeVersion#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueenvelopeversion/cs/program.cs#6)]
+ [!code-vb[S_UEEnvelopeVersion#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueenvelopeversion/vb/module1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

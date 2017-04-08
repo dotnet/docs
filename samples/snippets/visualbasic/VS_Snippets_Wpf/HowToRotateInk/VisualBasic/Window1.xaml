@@ -1,0 +1,16 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="HowToRotateInk"
+    Height="300" Width="480"
+    >
+    <Canvas>
+      <InkCanvas Name="inkCanvas1" Height="200" Width="200" Canvas.Top="20" Canvas.Left="20" Background="LightBlue" >
+        
+      </InkCanvas>
+      <Border Name="canvas1" ClipToBounds="True" Height="200" Width="200" Canvas.Top="20" Canvas.Left="240" Background="LightGreen" >
+        <InkPresenter Name="inkPresenter1"/>
+      </Border>
+      <Button Click="button_Click" Canvas.Top="240" Canvas.Left="170">Copy and Rotate Strokes</Button>
+    </Canvas>
+</Window>

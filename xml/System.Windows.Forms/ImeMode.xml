@@ -1,0 +1,280 @@
+<Type Name="ImeMode" FullName="System.Windows.Forms.ImeMode">
+  <TypeSignature Language="C#" Value="public enum ImeMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImeMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImeMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies a value that determines the Input Method Editor (IME) status of an object when the object is selected.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An Input Method Editor (IME) allows users to enter and edit Chinese, Japanese, and Korean characters. The IME is an essential component for writing Chinese, Japanese, and Korean scripts. These writing systems have more characters than can be encoded for a regular keyboard. The IMEs for these languages use sequences of base characters that describe an individual character or group of characters to allow you to enter a larger set of characters. Base characters can be component letters from Hangul syllables, phonetic components for Japanese Kanji characters, or various combinations for Chinese characters.  
+  
+> [!IMPORTANT]
+>  The user can interactively change the <xref:System.Windows.Forms.Control.ImeMode%2A?displayProperty=fullName> unless it has been programmatically set to Disable. In this case, the user will not be able to use the IME.  
+>   
+>  The <xref:System.Windows.Forms.Control.ImeMode%2A> property is ignored on Windows 8 when the global input mode is in effect. For more info, see [Switch Text Input Changed from Per-Thread to Per-User](http://go.microsoft.com/fwlink/?LinkID=256509).  
+  
+   
+  
+## Examples  
+ The following example shows how to set the value of a control's <xref:System.Windows.Forms.Control.ImeMode%2A> property.  
+  
+ [!code-cpp[InputLanguageChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/InputLanguageChanged/CPP/form1.cpp#1)]
+ [!code-csharp[InputLanguageChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/InputLanguageChanged/CS/form1.cs#1)]
+ [!code-vb[InputLanguageChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/InputLanguageChanged/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alpha">
+      <MemberSignature Language="C#" Value="Alpha" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode Alpha = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.Alpha" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Alphanumeric single-byte characters(SBC). This setting is valid for Korean and Japanese IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlphaFull">
+      <MemberSignature Language="C#" Value="AlphaFull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode AlphaFull = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.AlphaFull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Alphanumeric double-byte characters. This setting is valid for Korean and Japanese IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="Close" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode Close = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.Close" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>IME closed. This setting is valid for Chinese IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="Disable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode Disable = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.Disable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME is disabled. With this setting, the users cannot turn the IME on from the keyboard, and the IME floating window is hidden.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hangul">
+      <MemberSignature Language="C#" Value="Hangul" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode Hangul = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.Hangul" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hangul SBC. This setting is valid for the Korean IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HangulFull">
+      <MemberSignature Language="C#" Value="HangulFull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode HangulFull = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.HangulFull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hangul DBC. This setting is valid for the Korean IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hiragana">
+      <MemberSignature Language="C#" Value="Hiragana" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode Hiragana = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.Hiragana" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hiragana DBC. This setting is valid for the Japanese IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode Inherit = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Inherits the IME mode of the parent control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Katakana">
+      <MemberSignature Language="C#" Value="Katakana" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode Katakana = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.Katakana" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Katakana DBC. This setting is valid for the Japanese IME only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set the value of a control's <xref:System.Windows.Forms.Control.ImeMode%2A> property to Katakana.  
+  
+ [!code-cpp[InputLanguageChanged#1](~/samples/snippets/cpp/VS_Snippets_Winforms/InputLanguageChanged/CPP/form1.cpp#1)]
+ [!code-csharp[InputLanguageChanged#1](~/samples/snippets/csharp/VS_Snippets_Winforms/InputLanguageChanged/CS/form1.cs#1)]
+ [!code-vb[InputLanguageChanged#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/InputLanguageChanged/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KatakanaHalf">
+      <MemberSignature Language="C#" Value="KatakanaHalf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode KatakanaHalf = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.KatakanaHalf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Katakana SBC. This setting is valid for the Japanese IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoControl">
+      <MemberSignature Language="C#" Value="NoControl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode NoControl = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.NoControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>None (Default).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Off">
+      <MemberSignature Language="C#" Value="Off" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode Off = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.Off" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME is off. This mode indicates that the IME is off, meaning that the object behaves the same as English entry mode. This setting is valid for Japanese, Simplified Chinese, and Traditional Chinese IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="On">
+      <MemberSignature Language="C#" Value="On" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode On = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.On" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME is on. This value indicates that the IME is on and characters specific to Chinese or Japanese can be entered. This setting is valid for Japanese, Simplified Chinese, and Traditional Chinese IME only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHalf">
+      <MemberSignature Language="C#" Value="OnHalf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ImeMode OnHalf = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ImeMode.OnHalf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>IME on HalfShape. This setting is valid for Chinese IME only.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

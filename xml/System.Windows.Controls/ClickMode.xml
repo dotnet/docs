@@ -1,0 +1,84 @@
+<Type Name="ClickMode" FullName="System.Windows.Controls.ClickMode">
+  <TypeSignature Language="C#" Value="public enum ClickMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClickMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ClickMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies when the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows three buttons that respond to clicks in three different ways.  
+  
+-   Hover - the first button changes colors when the user hovers with the mouse over the button.  
+  
+-   Press - the second button requires that the mouse be pressed while the mouse pointer is in the button.  
+  
+-   Release - the third button does not reset the background color of the buttons until the mouse is pressed and released in the button.  
+  
+ [!code-xml[ClickModes_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ClickModes_snip/CSharp/Pane1.xaml#1)]  
+  
+ [!code-csharp[ClickModes_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/ClickModes_snip/CSharp/Pane1.xaml.cs#2)]
+ [!code-vb[ClickModes_snip#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClickModes_snip/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Hover">
+      <MemberSignature Language="C#" Value="Hover" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ClickMode Hover = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Hover" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised when the mouse hovers over a control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Press">
+      <MemberSignature Language="C#" Value="Press" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ClickMode Press = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Press" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised as soon as a button is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Release">
+      <MemberSignature Language="C#" Value="Release" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ClickMode Release = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ClickMode.Release" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ClickMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see cref="E:System.Windows.Controls.Primitives.ButtonBase.Click" /> event should be raised when a button is pressed and released.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

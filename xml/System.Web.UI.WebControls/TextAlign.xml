@@ -1,0 +1,57 @@
+<Type Name="TextAlign" FullName="System.Web.UI.WebControls.TextAlign">
+  <TypeSignature Language="C#" Value="public enum TextAlign" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextAlign extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TextAlign" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the text associated with a check box or radio button control appears to the left or to the right of the control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TextAlign> enumeration represents the different text alignment options for check box and radio button controls.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextAlign Left = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextAlign.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text associated with a check box or radio button control appears to the left of the control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextAlign Right = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextAlign.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text associated with a check box or radio button control appears to the right of the control.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

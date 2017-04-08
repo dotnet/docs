@@ -1,0 +1,112 @@
+<Type Name="RoleManagerEventArgs" FullName="System.Web.Security.RoleManagerEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class RoleManagerEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoleManagerEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleManagerEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides event data for the <see cref="E:System.Web.Security.RoleManagerModule.GetRoles" /> event of the <see cref="T:System.Web.Security.RoleManagerModule" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.RoleManagerEventArgs> object provides event information to the <xref:System.Web.Security.RoleManagerModule.GetRoles> event of the <xref:System.Web.Security.RoleManagerModule> class. The <xref:System.Web.Security.RoleManagerEventArgs> object provides access to the <xref:System.Web.HttpContext> of the current request, and a `Boolean`<xref:System.Web.Security.RoleManagerEventArgs.RolesPopulated%2A> property is used to enable or cancel creation of a <xref:System.Web.Security.RolePrincipal> by the<xref:System.Web.Security.RoleManagerModule>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoleManagerEventArgs (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleManagerEventArgs.#ctor(System.Web.HttpContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.Web.HttpContext" /> of the current request.</param>
+        <summary>Creates an instance of the <see cref="T:System.Web.Security.RoleManagerEventArgs" /> class and sets the <see cref="P:System.Web.Security.RoleManagerEventArgs.Context" /> property to the specified <see cref="T:System.Web.HttpContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.RoleManagerEventArgs> object provides event information to the <xref:System.Web.Security.RoleManagerModule.GetRoles> event of the <xref:System.Web.Security.RoleManagerModule> class. The <xref:System.Web.Security.RoleManagerEventArgs> object provides access to the <xref:System.Web.HttpContext> of the current request, and a `Boolean`<xref:System.Web.Security.RoleManagerEventArgs.RolesPopulated%2A> property is used to enable or cancel creation of a <xref:System.Web.Security.RolePrincipal> by the <xref:System.Web.Security.RoleManagerModule>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.RoleManagerEventArgs.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpContext" /> for the current request.</summary>
+        <value>The <see cref="T:System.Web.HttpContext" /> for the current request</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.RoleManagerEventArgs> object provides event information to the <xref:System.Web.Security.RoleManagerModule.GetRoles> event of the <xref:System.Web.Security.RoleManagerModule> class. The <xref:System.Web.Security.RoleManagerEventArgs.Context%2A> property provides access to the <xref:System.Web.HttpContext> of the current request.  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Web.Security.RoleManagerModule.GetRoles> event included in the Global.asax file for an ASP.NET application. The <xref:System.Web.Security.RoleManagerModule.GetRoles> event adds a trace notification for an application where trace is enabled in the Web.config file.  
+  
+ [!code-csharp[System.Web.Security.RoleManagerModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.RoleManagerModule/CS/global.asax#1)]
+ [!code-vb[System.Web.Security.RoleManagerModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.RoleManagerModule/VB/global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RolesPopulated">
+      <MemberSignature Language="C#" Value="public bool RolesPopulated { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RolesPopulated" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.RoleManagerEventArgs.RolesPopulated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether role information has been applied to the current user.</summary>
+        <value>
+          <see langword="true" /> if role information has been applied to the current user; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.RoleManagerEventArgs.RolesPopulated%2A> property is used to enable or cancel creation of a <xref:System.Web.Security.RolePrincipal> by the <xref:System.Web.Security.RoleManagerModule>.  
+  
+ If set to `true` in the <xref:System.Web.Security.RoleManagerModule.GetRoles> event, then the <xref:System.Web.Security.RoleManagerModule> assumes that role membership for the current user has been verified and any required role membership information has been set up for the current user. No action is taken by the <xref:System.Web.Security.RoleManagerModule> to create a <xref:System.Web.Security.RolePrincipal> object for the current user.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

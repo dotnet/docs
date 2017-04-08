@@ -1,0 +1,849 @@
+<Type Name="OracleTimeSpan" FullName="System.Data.OracleClient.OracleTimeSpan">
+  <TypeSignature Language="C#" Value="public struct OracleTimeSpan : IComparable, System.Data.SqlTypes.INullable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit OracleTimeSpan extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleTimeSpan" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.OracleClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Data.SqlTypes.INullable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IComparable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a time interval and corresponds to the Oracle 9i <see langword="INTERVAL DAY TO SECOND" /> data type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Oracle `INTERVAL DAY TO SECOND` data type (Oracle 9i or later) contains an interval of time in days, hours, minutes, and seconds, and has a fixed size of 11 bytes.  
+  
+ To obtain an <xref:System.Data.OracleClient.OracleTimeSpan> object, call the <xref:System.Data.OracleClient.OracleDataReader.GetOracleTimeSpan%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleTimeSpan (System.Data.OracleClient.OracleTimeSpan from);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.OracleClient.OracleTimeSpan from) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="from" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="from">An existing <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure from which to create the new structure.</param>
+        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure from an existing one.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleTimeSpan (long ticks);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 ticks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ticks" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="ticks">A time period expressed in 100-nanosecond units.</param>
+        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to the specified number of ticks.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleTimeSpan (TimeSpan ts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan ts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ts" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="ts">The specified <see cref="T:System.TimeSpan" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure with the specified <see cref="T:System.TimeSpan" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleTimeSpan (int hours, int minutes, int seconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 hours, int32 minutes, int32 seconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hours" Type="System.Int32" />
+        <Parameter Name="minutes" Type="System.Int32" />
+        <Parameter Name="seconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hours">Number of hours.</param>
+        <param name="minutes">Number of minutes.</param>
+        <param name="seconds">Number of seconds.</param>
+        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to a specified number of hours, minutes, and seconds.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> value less than <see cref="F:System.Data.OracleClient.OracleTimeSpan.MinValue" /> or greater than <see cref="F:System.Data.OracleClient.OracleTimeSpan.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleTimeSpan (int days, int hours, int minutes, int seconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 days, int32 hours, int32 minutes, int32 seconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="days" Type="System.Int32" />
+        <Parameter Name="hours" Type="System.Int32" />
+        <Parameter Name="minutes" Type="System.Int32" />
+        <Parameter Name="seconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="days">Number of days.</param>
+        <param name="hours">Number of hours.</param>
+        <param name="minutes">Number of minutes.</param>
+        <param name="seconds">Number of seconds.</param>
+        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to a specified number of days, hours, minutes, and seconds.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> value less than <see cref="F:System.Data.OracleClient.OracleTimeSpan.MinValue" /> or greater than <see cref="F:System.Data.OracleClient.OracleTimeSpan.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleTimeSpan (int days, int hours, int minutes, int seconds, int milliseconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 days, int32 hours, int32 minutes, int32 seconds, int32 milliseconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="days" Type="System.Int32" />
+        <Parameter Name="hours" Type="System.Int32" />
+        <Parameter Name="minutes" Type="System.Int32" />
+        <Parameter Name="seconds" Type="System.Int32" />
+        <Parameter Name="milliseconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="days">Number of days.</param>
+        <param name="hours">Number of hours.</param>
+        <param name="minutes">Number of minutes.</param>
+        <param name="seconds">Number of seconds.</param>
+        <param name="milliseconds">Number of milliseconds.</param>
+        <summary>Initializes a new <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to a specified number of days, hours, minutes, seconds, and milliseconds.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The parameters specify an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> value less than <see cref="F:System.Data.OracleClient.OracleTimeSpan.MinValue" /> or greater than <see cref="F:System.Data.OracleClient.OracleTimeSpan.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.CompareTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to be compared.</param>
+        <summary>Compares this <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to the supplied object and returns an indication of their relative values.</summary>
+        <returns>A signed number indicating the relative values of the instance of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure and the object.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than the object.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is the same as the object.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than the object, or the object is a null reference (<see langword="Nothing" /> in Visual Basic).  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Days">
+      <MemberSignature Language="C#" Value="public int Days { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Days" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Days" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of whole days represented by this instance.</summary>
+        <value>The day component of this instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to be compared.</param>
+        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleTimeSpan.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the object is an instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> and the two are equal, otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean Equals (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean Equals(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.Equals(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structures to determine whether they are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two values are equal, otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean GreaterThan (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean GreaterThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.GreaterThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether the first is greater than the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean GreaterThanOrEqual (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.GreaterThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether the first is greater than or equal to the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> will be <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hours">
+      <MemberSignature Language="C#" Value="public int Hours { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Hours" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Hours" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of whole hours represented by this instance.</summary>
+        <value>The hour component of this instance between 0 and 23.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNull">
+      <MemberSignature Language="C#" Value="public bool IsNull { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.IsNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="P:System.Data.OracleClient.OracleTimeSpan.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure is null.</summary>
+        <value>
+          <see langword="true" /> if <see cref="P:System.Data.OracleClient.OracleTimeSpan.Value" /> is null, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean LessThan (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean LessThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.LessThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether the first is less than the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean LessThanOrEqual (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean LessThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.LessThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether the first is less than or equal to the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxValue">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleTimeSpan MaxValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleTimeSpan MaxValue" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleTimeSpan.MaxValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleTimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the maximum valid date value for an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value is 10675199.02:48:05.4775807. To obtain a value greater than <xref:System.Data.OracleClient.OracleTimeSpan.MaxValue>, use the Oracle SELECT TO_CHAR statement. For more information about the ranges supported by the Oracle 9i `INTERVAL DAY TO SECOND` data type, see your Oracle documentation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Milliseconds">
+      <MemberSignature Language="C#" Value="public int Milliseconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Milliseconds" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Milliseconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of whole milliseconds represented by this instance.</summary>
+        <value>The millisecond component of this instance between 0 and 999.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minutes">
+      <MemberSignature Language="C#" Value="public int Minutes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Minutes" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Minutes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of whole minutes represented by this instance.</summary>
+        <value>The minute component of this instance between 0 and 59.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinValue">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleTimeSpan MinValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleTimeSpan MinValue" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleTimeSpan.MinValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleTimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the minimum valid date value for an <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value is -10675199.02:48:05.4775808. To obtain a value less than <xref:System.Data.OracleClient.OracleTimeSpan.MinValue>, use the Oracle SELECT TO_CHAR statement. For more information about the ranges supported by the Oracle 9i `INTERVAL DAY TO SECOND` data type, see your Oracle documentation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEquals">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean NotEquals (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean NotEquals(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.NotEquals(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether they are not equal.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleTimeSpan Null;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleTimeSpan Null" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleTimeSpan.Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleTimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a null value that can be assigned to the <see cref="P:System.Data.OracleClient.OracleTimeSpan.Value" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` functions as a constant for the <xref:System.Data.OracleClient.OracleTimeSpan> structure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Equality (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Equality(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structures to determine whether they are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two values are equal, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleTimeSpan.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static TimeSpan op_Explicit (System.Data.OracleClient.OracleTimeSpan x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.TimeSpan op_Explicit(valuetype System.Data.OracleClient.OracleTimeSpan x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Explicit(System.Data.OracleClient.OracleTimeSpan)~System.TimeSpan" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleTimeSpan op_Explicit (string x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleTimeSpan op_Explicit(string x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Explicit(System.String)~System.Data.OracleClient.OracleTimeSpan" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleTimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_GreaterThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether the first is greater than the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleTimeSpan.GreaterThan%28System.Data.OracleClient.OracleTimeSpan%2CSystem.Data.OracleClient.OracleTimeSpan%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_GreaterThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether the first is greater than or equal to the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleTimeSpan.GreaterThanOrEqual%28System.Data.OracleClient.OracleTimeSpan%2CSystem.Data.OracleClient.OracleTimeSpan%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_Inequality(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Performs a logical comparison of two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether they are equal.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleTimeSpan.NotEquals%28System.Data.OracleClient.OracleTimeSpan%2CSystem.Data.OracleClient.OracleTimeSpan%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThan (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_LessThan(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether the first is less than the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleTimeSpan.LessThan%28System.Data.OracleClient.OracleTimeSpan%2CSystem.Data.OracleClient.OracleTimeSpan%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleTimeSpan x, System.Data.OracleClient.OracleTimeSpan y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleTimeSpan x, valuetype System.Data.OracleClient.OracleTimeSpan y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.op_LessThanOrEqual(System.Data.OracleClient.OracleTimeSpan,System.Data.OracleClient.OracleTimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleTimeSpan" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleTimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</param>
+        <summary>Compares two instances of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> to determine whether the first is less than or equal to the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleTimeSpan.LessThanOrEqual%28System.Data.OracleClient.OracleTimeSpan%2CSystem.Data.OracleClient.OracleTimeSpan%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleTimeSpan Parse (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleTimeSpan Parse(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleTimeSpan</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">The <see langword="String" /> to be parsed.</param>
+        <summary>Converts the specified <see cref="T:System.String" /> representation of a date and time to its <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> equivalent.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure equal to the date and time represented by the specified <see langword="String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seconds">
+      <MemberSignature Language="C#" Value="public int Seconds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Seconds" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Seconds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of whole seconds represented by this instance.</summary>
+        <value>The second component of this instance between 0 and 59.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleTimeSpan.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts this <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure to a <see cref="T:System.String" />.</summary>
+        <returns>A <see langword="String" /> representing the <see cref="P:System.Data.OracleClient.OracleTimeSpan.Value" /> property of this <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public TimeSpan Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Value" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleTimeSpan.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</summary>
+        <value>The value of this <see cref="T:System.Data.OracleClient.OracleTimeSpan" /> structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

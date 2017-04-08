@@ -1,0 +1,521 @@
+<Type Name="PrimitiveTypeKind" FullName="System.Data.Metadata.Edm.PrimitiveTypeKind">
+  <TypeSignature Language="C#" Value="public enum PrimitiveTypeKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PrimitiveTypeKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PrimitiveTypeKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the primitive types as defined by EDM.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No content here will be updated; please do not add material here.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Binary">
+      <MemberSignature Language="C#" Value="Binary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Binary = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Binary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Binary type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Boolean">
+      <MemberSignature Language="C#" Value="Boolean" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Boolean = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Boolean" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Boolean type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Byte">
+      <MemberSignature Language="C#" Value="Byte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Byte = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Byte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Byte type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTime">
+      <MemberSignature Language="C#" Value="DateTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind DateTime = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.DateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The DateTime type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeOffset">
+      <MemberSignature Language="C#" Value="DateTimeOffset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind DateTimeOffset = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.DateTimeOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The DateTimeOffset type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Decimal">
+      <MemberSignature Language="C#" Value="Decimal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Decimal = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Decimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Decimal type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Double">
+      <MemberSignature Language="C#" Value="Double" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Double = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Double type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Geography">
+      <MemberSignature Language="C#" Value="Geography" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Geography = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Geography" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geography type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyCollection">
+      <MemberSignature Language="C#" Value="GeographyCollection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyCollection = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyCollection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geographic collection type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyLineString">
+      <MemberSignature Language="C#" Value="GeographyLineString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyLineString = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyLineString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geographic line string type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiLineString">
+      <MemberSignature Language="C#" Value="GeographyMultiLineString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyMultiLineString = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiLineString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geographic multi-line string type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiPoint">
+      <MemberSignature Language="C#" Value="GeographyMultiPoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyMultiPoint = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiPoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geographic multi-point type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyMultiPolygon">
+      <MemberSignature Language="C#" Value="GeographyMultiPolygon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyMultiPolygon = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyMultiPolygon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geographic multi-polygon type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyPoint">
+      <MemberSignature Language="C#" Value="GeographyPoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyPoint = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyPoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geographic point type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeographyPolygon">
+      <MemberSignature Language="C#" Value="GeographyPolygon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeographyPolygon = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeographyPolygon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geographic polygon type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Geometry">
+      <MemberSignature Language="C#" Value="Geometry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Geometry = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Geometry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geometry Type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryCollection">
+      <MemberSignature Language="C#" Value="GeometryCollection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryCollection = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryCollection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geometric collection type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryLineString">
+      <MemberSignature Language="C#" Value="GeometryLineString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryLineString = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryLineString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geometric line string type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiLineString">
+      <MemberSignature Language="C#" Value="GeometryMultiLineString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryMultiLineString = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiLineString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geometric multi-line string type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiPoint">
+      <MemberSignature Language="C#" Value="GeometryMultiPoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryMultiPoint = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiPoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geometric multi-point type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryMultiPolygon">
+      <MemberSignature Language="C#" Value="GeometryMultiPolygon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryMultiPolygon = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryMultiPolygon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geometric multi-polygon type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryPoint">
+      <MemberSignature Language="C#" Value="GeometryPoint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryPoint = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryPoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geometric point type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometryPolygon">
+      <MemberSignature Language="C#" Value="GeometryPolygon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind GeometryPolygon = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.GeometryPolygon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Geometric polygon type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Guid">
+      <MemberSignature Language="C#" Value="Guid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Guid = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Guid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Guid type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int16">
+      <MemberSignature Language="C#" Value="Int16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Int16 = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int16" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Int16 type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int32">
+      <MemberSignature Language="C#" Value="Int32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Int32 = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Int32 type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int64">
+      <MemberSignature Language="C#" Value="Int64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Int64 = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Int64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Int64 type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SByte">
+      <MemberSignature Language="C#" Value="SByte" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind SByte = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.SByte" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SByte type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Single = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Single type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind String = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The String type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="Time" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PrimitiveTypeKind Time = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PrimitiveTypeKind.Time" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Time type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

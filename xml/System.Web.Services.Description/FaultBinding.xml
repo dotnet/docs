@@ -1,0 +1,90 @@
+<Type Name="FaultBinding" FullName="System.Web.Services.Description.FaultBinding">
+  <TypeSignature Language="C#" Value="public sealed class FaultBinding : System.Web.Services.Description.MessageBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FaultBinding extends System.Web.Services.Description.MessageBinding" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.FaultBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.MessageBinding</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtensionPoint("Extensions")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the format for any error messages that might be output as a result of the operation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `FaultBinding` class corresponds to the Web Services Description Language (WSDL) `<fault>` element enclosed by the `<operation>` element, which in turn corresponds to the <xref:System.Web.Services.Description.OperationBinding> class. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the `FaultBinding` class.  
+  
+ [!code-cpp[FaultBindingCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_Remoting/FaultBindingCollection_Add/CPP/faultbindingcollection_add.cpp#1)]
+ [!code-csharp[FaultBindingCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_Remoting/FaultBindingCollection_Add/CS/faultbindingcollection_add.cs#1)]
+ [!code-vb[FaultBindingCollection_Add#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/FaultBindingCollection_Add/VB/faultbindingcollection_add.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FaultBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.FaultBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.FaultBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extensions">
+      <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.FaultBinding.Extensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of extensibility elements associated with the current <see cref="T:System.Web.Services.Description.FaultBinding" />.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" />. The default value is a collection with a <see cref="P:System.Collections.CollectionBase.Count" /> of zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the `Extensions` property.  
+  
+ FaultBindingCollection_Add#1  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

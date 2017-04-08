@@ -1,0 +1,32 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MenuItemCommands" Height="300" Width="300"
+    >
+  <StackPanel>
+    <Menu>
+      <MenuItem Header="_Edit">
+        <MenuItem Command="ApplicationCommands.Copy"/>
+        <MenuItem Command="ApplicationCommands.Cut"/>
+        <MenuItem Command="ApplicationCommands.Paste"/>
+      </MenuItem>
+      <MenuItem Header="_Font">
+        <MenuItem Header="_Bold" IsCheckable="True"
+                  Checked="Bold_Checked"
+                  Unchecked="Bold_Unchecked"/>
+        <MenuItem Header="_Italic" IsCheckable="True"
+                  Checked="Italic_Checked"
+                  Unchecked="Italic_Unchecked"/>
+        <Separator/>
+        <MenuItem Header="I_ncrease Font Size"
+                  Click="IncreaseFont_Click"/>
+        <MenuItem Header="_Decrease Font Size"
+                  Click="DecreaseFont_Click"/>
+      </MenuItem>
+    </Menu>
+    <TextBox Name="textBox1" TextWrapping="Wrap"
+             Margin="2">
+      The quick brown fox jumps over the lazy dog.
+    </TextBox>
+  </StackPanel>
+</Window>

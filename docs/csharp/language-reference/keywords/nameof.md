@@ -142,8 +142,23 @@ NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of ins
   
  Because the argument needs to be an expression syntactically, there are many things disallowed that are not useful to list.  The following are worth mentioning that produce errors: predefined types (for example, `int` or `void`), nullable types (`Point?`), array types (`Customer[,]`), pointer types (`Buffer*`), qualified alias (`A::B`), and unbound generic types (`Dictionary<,>`), preprocessing symbols (`DEBUG`), and labels (`loop:`).  
   
- If you need to get the fully-qualified name, you can use the `typeof` expression along with `nameof`.  
+ If you need to get the fully-qualified name, you can use the `typeof` expression along with `nameof`.  For example:
+```csharp  
+class C {
+    void f(int i) {  
+        Log($"{typeof(C)}.{nameof(f)}", "method entry");  
+    }
+}
   
+``` 
+
+ Unfortunately `typeof` is not a constant expression like `nameof`, so `typeof` cannot be used in conjunction with `nameof` in all the same places as `nameof`.  For example, the following would cause a CS0182 compile error:
+ ```csharp  
+[DebuggerDisplay("={" + typeof(C) + nameof(GetString) + "()}")]  
+class C {  
+    string GetString() { }  
+}  
+```    
  In the examples you see that you can use a type name and access an instance method name.  You do not need to have an instance of the type, as required in evaluated expressions.  Using the type name can be very convenient in some situations, and since you are just referring to the name and not using instance data, you do not need to contrive an instance variable or expression.  
   
  You can reference the members of a class in attribute expressions on the class.  

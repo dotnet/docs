@@ -1,0 +1,219 @@
+<Type Name="Trustee" FullName="System.Messaging.Trustee">
+  <TypeSignature Language="C#" Value="public class Trustee" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Trustee extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.Trustee" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a user account, group account, or logon session to which an access control entry applies.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The trustee is the entity to whom you are granting or denying access rights when you create an access control entry. Set the <xref:System.Messaging.Trustee.TrusteeType%2A> member (either directly or using the <xref:System.Messaging.Trustee.%23ctor%2A> constructor) to specify whether the trustee is a user, computer, or other type. If you do not specify the trustee type before setting permissions for the trustee, the type defaults to `Unknown`.  
+  
+ You must specify a value for the <xref:System.Messaging.Trustee.Name%2A> property before using the <xref:System.Messaging.Trustee> to set permissions. The <xref:System.Messaging.Trustee.Name%2A> contains the name of the user, group, or computer account to which the new access rights will be assigned. Optionally, you can set the <xref:System.Messaging.Trustee.SystemName%2A> property to identify the name of the system on which the trustee account is looked up to resolve the name's security identifier. If you do not specify a value for <xref:System.Messaging.Trustee.SystemName%2A>, the local computer looks up the account name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Trustee ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Trustee.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Trustee" /> class without setting any of its read/write properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must specify a value for the <xref:System.Messaging.Trustee.Name%2A> property before using the <xref:System.Messaging.Trustee> instance to set permissions. Optionally, you can set the <xref:System.Messaging.Trustee.SystemName%2A> property to identify the name of the system on which the trustee account is looked up to resolve the name's security identifier. If you do not specify a value for <xref:System.Messaging.Trustee.SystemName%2A>, the local computer looks up the account name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Trustee (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Trustee.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The value to assign to the <see cref="P:System.Messaging.Trustee.Name" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Trustee" /> class of type <see langword="Unknown" />, setting the <see cref="P:System.Messaging.Trustee.Name" /> property to the value specified, and the <see cref="P:System.Messaging.Trustee.SystemName" /> to <see langword="null" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this overload to set the trustee account and specify that the local computer be used to look up the account. The <xref:System.Messaging.Trustee.TrusteeType%2A> property is set to `Unknown`, but you can modify that value before using this instance of <xref:System.Messaging.Trustee> to set permissions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Trustee (string name, string systemName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string systemName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Trustee.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="systemName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The value to assign to the <see cref="P:System.Messaging.Trustee.Name" /> property.</param>
+        <param name="systemName">The value to assign to the <see cref="P:System.Messaging.Trustee.SystemName" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Trustee" /> class of type <see langword="Unknown" />, setting the <see cref="P:System.Messaging.Trustee.Name" /> and the <see langword="SystemName" /> properties to the values specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this overload to set the trustee account and specify that a network computer be used to look up the account. The <xref:System.Messaging.Trustee.TrusteeType%2A> property is set to `Unknown`, but you can modify that value before using this instance of <xref:System.Messaging.Trustee> to set permissions.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Trustee (string name, string systemName, System.Messaging.TrusteeType trusteeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string systemName, valuetype System.Messaging.TrusteeType trusteeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Trustee.#ctor(System.String,System.String,System.Messaging.TrusteeType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="systemName" Type="System.String" />
+        <Parameter Name="trusteeType" Type="System.Messaging.TrusteeType" />
+      </Parameters>
+      <Docs>
+        <param name="name">The value to assign to the <see cref="P:System.Messaging.Trustee.Name" /> property.</param>
+        <param name="systemName">The value to assign to the <see cref="P:System.Messaging.Trustee.SystemName" /> property.</param>
+        <param name="trusteeType">A <see cref="T:System.Messaging.TrusteeType" /> that indicates the account type of the trustee.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Trustee" /> class of the specified type, setting the <see cref="P:System.Messaging.Trustee.Name" /> and the <see cref="P:System.Messaging.Trustee.SystemName" /> properties to the values specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this overload when the trustee type is known to set the trustee account and specify a network computer to be used to look up the account.  
+  
+ This overload sets the <xref:System.Messaging.Trustee.TrusteeType%2A> property at construction, but you can modify that value before using this instance of <xref:System.Messaging.Trustee> to set permissions. The `Unknown` trustee type (which the other overloads of the constructor set by default) should be used only when you do not know the kind of trust that is being used, but know that it is valid.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Trustee.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the trustee.</summary>
+        <value>The name of the account to which the new rights will be assigned. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must specify a value for the <xref:System.Messaging.Trustee.Name%2A> property before using the <xref:System.Messaging.Trustee> to set permissions. The <xref:System.Messaging.Trustee.Name%2A> contains the name of the user, group, or computer account to which the new access rights will be assigned.  
+  
+ If you do not specify a value for the <xref:System.Messaging.Trustee.SystemName%2A> property, the account you identify in the <xref:System.Messaging.Trustee.Name%2A> property is looked up on the local computer. If you do specify a <xref:System.Messaging.Trustee.SystemName%2A>, the account is looked up on the computer you specify.  
+  
+ If you are not connected to the network (for example, if you are in workgroup mode), the <xref:System.Messaging.Trustee.Name%2A> property can be any local user or group. In this case, you should not specify any value for <xref:System.Messaging.Trustee.SystemName%2A>, as workgroup mode is local by definition.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Messaging.Trustee.Name" /> property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemName">
+      <MemberSignature Language="C#" Value="public string SystemName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SystemName" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Trustee.SystemName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the computer on which to look up the trustee's account.</summary>
+        <value>The local or remote computer on which the account exists. The default is <see langword="null" />, which indicates that the name will be looked up on the local computer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must specify a value for <xref:System.Messaging.Trustee.Name%2A> before you use this instance of <xref:System.Messaging.Trustee> to set permissions, but <xref:System.Messaging.Trustee.SystemName%2A> is optional. If you leave <xref:System.Messaging.Trustee.SystemName%2A>`null`, the local computer is used to look up the account you specify in the <xref:System.Messaging.Trustee.Name%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrusteeType">
+      <MemberSignature Language="C#" Value="public System.Messaging.TrusteeType TrusteeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.TrusteeType TrusteeType" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Trustee.TrusteeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.TrusteeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the trustee, which identifies whether the trustee is a user, group, computer, domain, or alias.</summary>
+        <value>A <see cref="T:System.Messaging.TrusteeType" /> that indicates what type of account the trustee has on the system. The default is <see langword="Unknown" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Trustee.TrusteeType%2A> indicates what type of account the trustee is associated with on the domain controller or on the local computer. This can be, for example, a user account, a group account, or a computer account.  
+  
+ If you are specifying a predefined group name for the <xref:System.Messaging.Trustee.Name%2A> property, such as Everyone, the <xref:System.Messaging.Trustee.TrusteeType%2A> is `Group`, rather than `Alias`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The trustee type specified is not one of the <see cref="T:System.Messaging.TrusteeType" /> enumeration members.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

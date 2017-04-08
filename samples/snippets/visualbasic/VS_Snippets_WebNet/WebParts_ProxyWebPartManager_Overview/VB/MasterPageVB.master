@@ -1,0 +1,27 @@
+<!-- <snippet1> -->
+<%@ Master Language="VB" %>
+<%@ register tagprefix="uc1" 
+    tagname="DisplayModeMenuVB"
+    src="~/displaymodemenuvb.ascx" %>
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Master page with connections in content pages</title>
+</head>
+<body>
+    <h2>Contoso, Ltd.</h2>
+    <hr />
+    <form id="form1" runat="server">
+    <asp:webpartmanager runat="server" id="WebPartManager1" />
+    <uc1:displaymodemenuvb id="menu1" runat="server" />
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" 
+          runat="server" />
+    </div>
+    </form>
+</body>
+</html>
+<!-- </snippet1> -->

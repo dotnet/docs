@@ -1,0 +1,668 @@
+<Type Name="PageParserFilter" FullName="System.Web.UI.PageParserFilter">
+  <TypeSignature Language="C#" Value="public abstract class PageParserFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PageParserFilter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.PageParserFilter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an abstract base class for a page parser filter that is used by the ASP.NET parser to determine whether an item is allowed in the page at parse time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how you can create a class that derives from the <xref:System.Web.UI.PageParserFilter> class to govern the behavior of the ASP.NET page parser. The `CustomPageParserFilter` is a parser filter that explicitly rejects code in the page. It does this by overriding the <xref:System.Web.UI.PageParserFilter.AllowCode%2A> property.  
+  
+ [!code-csharp[System.Web.UI.PageParserFilter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.PageParserFilter/CS/CustomPageParserFilter.cs#2)]
+ [!code-vb[System.Web.UI.PageParserFilter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.PageParserFilter/VB/CustomPageParserFilter.vb#2)]  
+  
+ To use the `CustomPageParserFilter` sample, place the class in your App_Code directory. You must configure the ASP.NET parsers to use the filter in the `pages` section of your site's Web.config configuration file. The following example configuration file shows the configuration for `CustomPageParserFilter`. When configured to use a parser filter, the ASP.NET parser throws an exception during the build if it encounters code in a page.  
+  
+ `<?xml version="1.0" ?>`  
+  
+ `<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">`  
+  
+ `<system.web>`  
+  
+ `<pages`  
+  
+ `pageParserFilterType="Samples.AspNet.CS.CustomPageParserFilter">`  
+  
+ `</pages>`  
+  
+ `</system.web>`  
+  
+ `</configuration>`  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PageParserFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PageParserFilter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddControl">
+      <MemberSignature Language="C#" Value="protected void AddControl (Type type, System.Collections.IDictionary attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddControl(class System.Type type, class System.Collections.IDictionary attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AddControl(System.Type,System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="attributes" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="type">The control type that the <see cref="T:System.Web.UI.ControlBuilder" /> represents.</param>
+        <param name="attributes">The <see cref="T:System.Collections.IDictionary" /> object that holds all the specified tag attributes.</param>
+        <summary>Adds a <see cref="T:System.Web.UI.ControlBuilder" /> object in the page control tree at the current page parser position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.PageParserFilter.AddControl%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowBaseType">
+      <MemberSignature Language="C#" Value="public virtual bool AllowBaseType (Type baseType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AllowBaseType(class System.Type baseType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowBaseType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="baseType">A <see cref="T:System.Type" /> that represents the potential base class of the current page.</param>
+        <summary>Determines whether the page can be derived from the specified <see cref="T:System.Type" />.</summary>
+        <returns>
+          <see langword="true" /> if the page can inherit from the specified type; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateParser> class determines whether a base type is permitted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowCode">
+      <MemberSignature Language="C#" Value="public virtual bool AllowCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowCode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.AllowCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether an ASP.NET parser filter permits code on the page.</summary>
+        <value>
+          <see langword="true" /> if a parser filter permits code; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateParser> class checks any associated <xref:System.Web.UI.PageParserFilter> instance to determine whether a page can contain code that can be compiled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowControl">
+      <MemberSignature Language="C#" Value="public virtual bool AllowControl (Type controlType, System.Web.UI.ControlBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AllowControl(class System.Type controlType, class System.Web.UI.ControlBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowControl(System.Type,System.Web.UI.ControlBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controlType" Type="System.Type" />
+        <Parameter Name="builder" Type="System.Web.UI.ControlBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="controlType">A <see cref="T:System.Type" /> that represents the type of control to add.</param>
+        <param name="builder">A <see cref="T:System.Web.UI.ControlBuilder" /> used to build the specified type of control.</param>
+        <summary>Gets a value indicating whether the specified control type is allowed for this page.</summary>
+        <returns>
+          <see langword="true" /> if the control can be used with the current page; otherwise, <see langword="false" />. The default value is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateParser> class checks to see whether controls are permitted in a page at parse time. Override the <xref:System.Web.UI.PageParserFilter.AllowControl%2A> method to reject or permit specific controls in your pages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowServerSideInclude">
+      <MemberSignature Language="C#" Value="public virtual bool AllowServerSideInclude (string includeVirtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AllowServerSideInclude(string includeVirtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowServerSideInclude(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeVirtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="includeVirtualPath">The virtual path to the included file.</param>
+        <summary>Determines whether a parser permits a specific server-side include on a page.</summary>
+        <returns>
+          <see langword="true" /> if a parser permits the specific server-side include; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override the <xref:System.Web.UI.PageParserFilter.AllowServerSideInclude%2A> method to reject all or specific server-side includes. For more information about server-side include syntax, see [Server-Side Include Directive Syntax](http://msdn.microsoft.com/en-us/42a6925a-f68c-4690-a9c4-d710358886a9).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowVirtualReference">
+      <MemberSignature Language="C#" Value="public virtual bool AllowVirtualReference (string referenceVirtualPath, System.Web.UI.VirtualReferenceType referenceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool AllowVirtualReference(string referenceVirtualPath, valuetype System.Web.UI.VirtualReferenceType referenceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.AllowVirtualReference(System.String,System.Web.UI.VirtualReferenceType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="referenceVirtualPath" Type="System.String" />
+        <Parameter Name="referenceType" Type="System.Web.UI.VirtualReferenceType" />
+      </Parameters>
+      <Docs>
+        <param name="referenceVirtualPath">The virtual path to a resource, such as a master page file, ASP.NET page, or user control.</param>
+        <param name="referenceType">A <see cref="T:System.Web.UI.VirtualReferenceType" /> value that identifies the type of resource.</param>
+        <summary>Determines whether a parser permits a virtual reference to a specific type of resource on a page.</summary>
+        <returns>
+          <see langword="true" /> if the parser permits a virtual reference to a specific type of resource; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateParser> class determines whether a particular type of resource can be referenced from a page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalledFromParseControl">
+      <MemberSignature Language="C#" Value="protected bool CalledFromParseControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CalledFromParseControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.CalledFromParseControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the parser filter was called from the page.</summary>
+        <value>
+          <see langword="true" /> if a parser filter was called from the page; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is set to `true` when an implementation of the <xref:System.Web.UI.PageParserFilter> class is invoked by calling the `ParseControl`method of the <xref:System.Web.UI.Page> class or by calling the `ParseControl` method of the `TemplateControl` reference of the <xref:System.Web.UI.Page> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompilationMode">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.CompilationMode GetCompilationMode (System.Web.UI.CompilationMode current);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Web.UI.CompilationMode GetCompilationMode(valuetype System.Web.UI.CompilationMode current) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.GetCompilationMode(System.Web.UI.CompilationMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CompilationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="System.Web.UI.CompilationMode" />
+      </Parameters>
+      <Docs>
+        <param name="current">The current compilation mode for the page.</param>
+        <summary>Retrieves the current compilation mode for the page.</summary>
+        <returns>One of the <see cref="T:System.Web.UI.CompilationMode" /> values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateControlParser> class checks any associated <xref:System.Web.UI.PageParserFilter> instance to apply a compilation mode to the currently processed page. The default implementation of the <xref:System.Web.UI.PageParserFilter.GetCompilationMode%2A> method simply returns the <xref:System.Web.UI.CompilationMode> value that is passed in the current parameter. Override the <xref:System.Web.UI.PageParserFilter.GetCompilationMode%2A> method to use a specific or different <xref:System.Web.UI.CompilationMode> value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNoCompileUserControlType">
+      <MemberSignature Language="C#" Value="public virtual Type GetNoCompileUserControlType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetNoCompileUserControlType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.GetNoCompileUserControlType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Type" /> that should be used for pages or controls that are not dynamically compiled.</summary>
+        <returns>The return <see cref="T:System.Type" /> that should be used for pages or controls that are not dynamically compiled. The default is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the <xref:System.Web.UI.PageParserFilter.GetNoCompileUserControlType%2A> method to specify the return type of pages or controls that are treated as if they are not dynamically compiled. The default is `null`.  
+  
+ <xref:System.Web.UI.PageParserFilter.GetNoCompileUserControlType%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected virtual void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a filter used for a page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.PageParserFilter> class does not expose well-defined public constructors, it is initialized by the page parsers that use the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method. Override the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method to add your own custom initialization steps when an instance of <xref:System.Web.UI.PageParserFilter> is created and used by ASP.NET. The `virtualPath` parameter passed to the <xref:System.Web.UI.PageParserFilter.Initialize%2A> method sets the <xref:System.Web.UI.PageParserFilter.VirtualPath%2A> property, and cannot be `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="protected int Line { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.Line" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the line number that is currently being parsed in the file.</summary>
+        <value>The integer value representing the line in the file that the parser filter is currently processing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a custom <xref:System.Web.UI.PageParserFilter> implementation, use the <xref:System.Web.UI.PageParserFilter.Line%2A> property to report where errors occur during parsing.  
+  
+ <xref:System.Web.UI.PageParserFilter.Line%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfControlsAllowed">
+      <MemberSignature Language="C#" Value="public virtual int NumberOfControlsAllowed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfControlsAllowed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.NumberOfControlsAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of controls that a parser filter can parse for a single page.</summary>
+        <value>The maximum number of controls a parser filter can parse for a page. The default value is 0, which indicates that no controls are parsed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ASP.NET page parser keeps track of the controls it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an <xref:System.Web.HttpException> exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfDirectDependenciesAllowed">
+      <MemberSignature Language="C#" Value="public virtual int NumberOfDirectDependenciesAllowed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfDirectDependenciesAllowed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.NumberOfDirectDependenciesAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of direct file dependencies that the page parser permits for a single page.</summary>
+        <value>The maximum number of direct file dependencies the page parser can parse for a page. The default is 0, which that indicates no dependencies are allowed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateParser> class keeps track of the number of direct and indirect file dependencies it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseComplete">
+      <MemberSignature Language="C#" Value="public virtual void ParseComplete (System.Web.UI.ControlBuilder rootBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ParseComplete(class System.Web.UI.ControlBuilder rootBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ParseComplete(System.Web.UI.ControlBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootBuilder" Type="System.Web.UI.ControlBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="rootBuilder">The <see cref="T:System.Web.UI.ControlBuilder" /> associated with the page parsing.</param>
+        <summary>Called by an ASP.NET page parser to notify a filter when the parsing of a page is complete.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreprocessDirective">
+      <MemberSignature Language="C#" Value="public virtual void PreprocessDirective (string directiveName, System.Collections.IDictionary attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PreprocessDirective(string directiveName, class System.Collections.IDictionary attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.PreprocessDirective(System.String,System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="directiveName" Type="System.String" />
+        <Parameter Name="attributes" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="directiveName">The page directive.</param>
+        <param name="attributes">A collection of attributes and values parsed from the page.</param>
+        <summary>Allows the page parser filter to preprocess page directives.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The page parser calls the <xref:System.Web.UI.PageParserFilter.PreprocessDirective%2A> method for each directive encountered during parsing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCodeConstruct">
+      <MemberSignature Language="C#" Value="public virtual bool ProcessCodeConstruct (System.Web.UI.CodeConstructType codeType, string code);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ProcessCodeConstruct(valuetype System.Web.UI.CodeConstructType codeType, string code) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessCodeConstruct(System.Web.UI.CodeConstructType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codeType" Type="System.Web.UI.CodeConstructType" />
+        <Parameter Name="code" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="codeType">One of the <see cref="T:System.Web.UI.CodeConstructType" /> enumeration values that identifies the type of the code construct.</param>
+        <param name="code">The string literal that contains the code inside the code construct.</param>
+        <summary>Returns a value that indicates whether a code block should be processed by subsequent parser filters.</summary>
+        <returns>
+          <see langword="true" /> if the parser should process a code construct further; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the <xref:System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A> method to parse code contained in code constructs when implementing a custom <xref:System.Web.UI.PageParserFilter>. After processing the code, this method returns `true` if the parser should process the code further; otherwise, it returns `false`.  
+  
+ The type of allowed code constructs are the <xref:System.Web.UI.CodeConstructType> enumeration values.  
+  
+ <xref:System.Web.UI.PageParserFilter.ProcessCodeConstruct%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessDataBindingAttribute">
+      <MemberSignature Language="C#" Value="public virtual bool ProcessDataBindingAttribute (string controlId, string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ProcessDataBindingAttribute(string controlId, string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controlId" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="controlId">The ID of the control that contains the data binding attribute.</param>
+        <param name="name">The name of the attribute with the data binding expression.</param>
+        <param name="value">The data binding expression.</param>
+        <summary>Returns a value that indicates whether the parser filter processes a data binding expression in an attribute.</summary>
+        <returns>
+          <see langword="true" /> if the parser filter processes data binding attributes; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the <xref:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute%2A> method to allow the parser filter to process data binding expressions when implementing a custom <xref:System.Web.UI.PageParserFilter> class. An example of a data binding expression used with an attribute is `<%# expression %>`.  
+  
+ <xref:System.Web.UI.PageParserFilter.ProcessDataBindingAttribute%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessEventHookup">
+      <MemberSignature Language="C#" Value="public virtual bool ProcessEventHookup (string controlId, string eventName, string handlerName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ProcessEventHookup(string controlId, string eventName, string handlerName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.ProcessEventHookup(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="controlId" Type="System.String" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="handlerName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="controlId">The ID of the control whose event has the event handler to process.</param>
+        <param name="eventName">The event name of the <c>controlID</c> to filter on.</param>
+        <param name="handlerName">The handler of the <c>eventName</c> name to filter on.</param>
+        <summary>Returns a value that indicates whether event handlers should be processed further by the parser filter.</summary>
+        <returns>
+          <see langword="true" /> if the parser processes event handlers; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the <xref:System.Web.UI.PageParserFilter.ProcessEventHookup%2A> method to allow the parser to process event hookups when implementing a custom <xref:System.Web.UI.PageParserFilter> class. An example of an event handler is providing a handler for the <xref:System.Web.UI.WebControls.Button.Click> event of the <xref:System.Web.UI.WebControls.Button> control.  
+  
+ <xref:System.Web.UI.PageParserFilter.ProcessEventHookup%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPageProperty">
+      <MemberSignature Language="C#" Value="protected void SetPageProperty (string filter, string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetPageProperty(string filter, string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParserFilter.SetPageProperty(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filter">A string containing the value of the filter on an expression. For an example, see <see cref="T:System.Web.UI.PropertyEntry" />.</param>
+        <param name="name">The name of the property to set a value for.</param>
+        <param name="value">The value of the property to set.</param>
+        <summary>Sets a property on a control derived from the <see cref="T:System.Web.UI.TemplateControl" /> class, which includes the <see cref="T:System.Web.UI.Page" />, <see cref="T:System.Web.UI.UserControl" />, and <see cref="T:System.Web.UI.MasterPage" /> controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.PageParserFilter.SetPageProperty%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalNumberOfDependenciesAllowed">
+      <MemberSignature Language="C#" Value="public virtual int TotalNumberOfDependenciesAllowed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalNumberOfDependenciesAllowed" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.TotalNumberOfDependenciesAllowed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of direct and indirect file dependencies that the page parser permits for a single page.</summary>
+        <value>The maximum number of direct and indirect file dependencies the page parser can parse for a page. The default is 0, which indicates that no dependencies are allowed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplateParser> class keeps track of the number of direct and indirect file dependencies it parses, and if the number exceeds the limit set by a <xref:System.Web.UI.PageParserFilter> instance, it throws an exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualPath">
+      <MemberSignature Language="C#" Value="protected string VirtualPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VirtualPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParserFilter.VirtualPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the virtual path to the page currently being parsed.</summary>
+        <value>A virtual path to an ASP.NET page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.PageParserFilter.VirtualPath%2A> property is never `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

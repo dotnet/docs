@@ -1,0 +1,66 @@
+<Type Name="DotNetFrameworkArchitecture" FullName="Microsoft.Build.Utilities.DotNetFrameworkArchitecture">
+  <TypeSignature Language="C#" Value="public enum DotNetFrameworkArchitecture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DotNetFrameworkArchitecture extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.DotNetFrameworkArchitecture" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Used to specify the targeted bitness of the .NET Framework for some methods of ToolLocationHelper</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bitness32">
+      <MemberSignature Language="C#" Value="Bitness32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.DotNetFrameworkArchitecture Bitness32 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Bitness32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.DotNetFrameworkArchitecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the 32-bit .NET Framework</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bitness64">
+      <MemberSignature Language="C#" Value="Bitness64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.DotNetFrameworkArchitecture Bitness64 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Bitness64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.DotNetFrameworkArchitecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the 64-bit .NET Framework</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="Current" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.DotNetFrameworkArchitecture Current = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.DotNetFrameworkArchitecture.Current" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Utilities.DotNetFrameworkArchitecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the .NET Framework that is currently being run under.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

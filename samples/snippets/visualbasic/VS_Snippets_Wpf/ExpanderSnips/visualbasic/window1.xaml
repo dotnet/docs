@@ -1,0 +1,21 @@
+<Window x:Class="ExpanderSnips.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ExpanderSnips"
+    Loaded="InitializeExpander"
+    >
+    <StackPanel>
+      <Expander Name ="myExpander" Collapsed="expanderHasCollapsed" 
+                Header ="expanderTitle" Content="expanderContent"/>
+      <Expander Name ="yourExpander" Expanded="expanderHasExpanded" 
+                Header ="expanderTitle" Content="expanderContent"/>
+
+      <Expander Name ="myExpanderOpensUp" ExpandDirection="Up" 
+                Header ="expanderTitle" Content="expanderContent"/>
+
+      <Expander Name ="myExpanderIsExpanded" IsExpanded="True"  
+                Header ="expanderTitle" Content="expanderContent"/>
+
+
+    </StackPanel>
+</Window>

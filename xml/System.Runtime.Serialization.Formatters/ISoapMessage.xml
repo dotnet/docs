@@ -1,0 +1,145 @@
+<Type Name="ISoapMessage" FullName="System.Runtime.Serialization.Formatters.ISoapMessage">
+  <TypeSignature Language="C#" Value="public interface ISoapMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISoapMessage" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.ISoapMessage" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an interface for an object that contains the names and types of parameters required during serialization of a SOAP RPC (Remote Procedure Call).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an object that supports this interface is the root of a serialization graph, SOAP is produced in RPC format. The <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface contains the method call parameter types used during deserialization of a method call.  
+  
+ To support SOAP RPC calls that are based on the <xref:System.Runtime.Serialization.Formatters.ISoapMessage> interface and do not use the <xref:System.Runtime.Remoting.Messaging.IRemotingFormatter> functionality, set the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter.TopObject%2A?displayProperty=fullName> property to an object that supports this interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.Header[] Headers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Messaging.Header[] Headers" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Messaging.Header[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the out-of-band data of the method call.</summary>
+        <value>The out-of-band data of the method call.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodName">
+      <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.MethodName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the called method.</summary>
+        <value>The name of the called method.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParamNames">
+      <MemberSignature Language="C#" Value="public string[] ParamNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ParamNames" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the parameter names of the method call.</summary>
+        <value>The parameter names of the method call.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParamTypes">
+      <MemberSignature Language="C#" Value="public Type[] ParamTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] ParamTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the parameter types of a method call.</summary>
+        <value>The parameter types of a method call.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParamValues">
+      <MemberSignature Language="C#" Value="public object[] ParamValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object[] ParamValues" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.ParamValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the parameter values of a method call.</summary>
+        <value>The parameter values of a method call.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlNameSpace">
+      <MemberSignature Language="C#" Value="public string XmlNameSpace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XmlNameSpace" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.ISoapMessage.XmlNameSpace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML namespace of the SOAP RPC (Remote Procedure Call) <see cref="P:System.Runtime.Serialization.Formatters.ISoapMessage.MethodName" /> element.</summary>
+        <value>The XML namespace name where the object that contains the called method is located.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

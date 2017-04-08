@@ -1,0 +1,106 @@
+<Type Name="DBID" FullName="Microsoft.VisualBasic.Compatibility.VB6.DBID">
+  <TypeSignature Language="C#" Value="public struct DBID" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed DBID extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a <see langword="Structure" /> that is used internally in an application that has been upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="dbkind">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.DBKINDENUM dbkind;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualBasic.Compatibility.VB6.DBKINDENUM dbkind" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.dbkind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.DBKINDENUM</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="uGuid">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.UGUID uGuid;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualBasic.Compatibility.VB6.UGUID uGuid" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.uGuid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.UGUID</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="uName">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.UNAME uName;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Microsoft.VisualBasic.Compatibility.VB6.UNAME uName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.DBID.uName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.UNAME</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /> <see langword="Structure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

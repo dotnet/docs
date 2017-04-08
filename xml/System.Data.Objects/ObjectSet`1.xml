@@ -1,0 +1,282 @@
+<Type Name="ObjectSet&lt;TEntity&gt;" FullName="System.Data.Objects.ObjectSet&lt;TEntity&gt;">
+  <TypeSignature Language="C#" Value="public class ObjectSet&lt;TEntity&gt; : System.Data.Objects.ObjectQuery&lt;TEntity&gt;, System.Collections.Generic.IEnumerable&lt;TEntity&gt;, System.Data.Objects.IObjectSet&lt;TEntity&gt;, System.Linq.IQueryable&lt;TEntity&gt; where TEntity : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectSet`1&lt;class TEntity&gt; extends System.Data.Objects.ObjectQuery`1&lt;!TEntity&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!TEntity&gt;, class System.Collections.IEnumerable, class System.Data.Objects.IObjectSet`1&lt;!TEntity&gt;, class System.Linq.IQueryable, class System.Linq.IQueryable`1&lt;!TEntity&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectSet`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TEntity">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Data.Objects.ObjectQuery&lt;TEntity&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">TEntity</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;TEntity&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Data.Objects.IObjectSet&lt;TEntity&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Linq.IQueryable&lt;TEntity&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TEntity">The entity type.</typeparam>
+    <summary>Represents a typed entity set that is used to perform create, read, update, and delete operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.ObjectSet%601> class allows you to operate on a typed entity set without having to specify the entity set name as an argument to each method call. The <xref:System.Data.Objects.ObjectSet%601> class extends the functionality of the <xref:System.Data.Objects.ObjectQuery%601> class to provide object context functionality, such as adding and deleting objects, in the context of a typed entity set that is accessed from the <xref:System.Data.Objects.ObjectContext>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddObject">
+      <MemberSignature Language="C#" Value="public void AddObject (TEntity entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddObject(!TEntity entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.AddObject(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="entity">The object to add.</param>
+        <summary>Adds an object to the object context in the current entity set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.AddObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyCurrentValues">
+      <MemberSignature Language="C#" Value="public TEntity ApplyCurrentValues (TEntity currentEntity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TEntity ApplyCurrentValues(!TEntity currentEntity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.ApplyCurrentValues(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TEntity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="currentEntity" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="currentEntity">The detached object that has property updates to apply to the original object. The entity key of <c>currentEntity</c> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <summary>Copies the scalar values from the supplied object into the object in the <see cref="T:System.Data.Objects.ObjectContext" /> that has the same key.</summary>
+        <returns>The updated object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyOriginalValues">
+      <MemberSignature Language="C#" Value="public TEntity ApplyOriginalValues (TEntity originalEntity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TEntity ApplyOriginalValues(!TEntity originalEntity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.ApplyOriginalValues(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TEntity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="originalEntity" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="originalEntity">The detached object that has property updates to apply to the original object. The entity key of <c>originalEntity</c> must match the <see cref="P:System.Data.Objects.ObjectStateEntry.EntityKey" /> property of an entry in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <summary>Sets the <see cref="P:System.Data.Objects.ObjectStateEntry.OriginalValues" /> property of an <see cref="T:System.Data.Objects.ObjectStateEntry" /> to match the property values of a supplied object.</summary>
+        <returns>The updated object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.ApplyOriginalValues%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attach">
+      <MemberSignature Language="C#" Value="public void Attach (TEntity entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Attach(!TEntity entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.Attach(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="entity">The object to attach.</param>
+        <summary>Attaches an object or object graph to the object context in the current entity set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.AttachTo%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject">
+      <MemberSignature Language="C#" Value="public TEntity CreateObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TEntity CreateObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.CreateObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TEntity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new entity type object.</summary>
+        <returns>The new entity type object, or an instance of a proxy type that corresponds to the entity type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T CreateObject&lt;T&gt; () where T : class, TEntity;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T CreateObject&lt;class (!TEntity) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.CreateObject``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+            <BaseTypeName>TEntity</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">Type of object to be returned.</typeparam>
+        <summary>Creates an instance of the specified type.</summary>
+        <returns>An instance of the requested type <paramref name="T" />, or an instance of a proxy type that corresponds to the type <paramref name="T" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteObject">
+      <MemberSignature Language="C#" Value="public void DeleteObject (TEntity entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteObject(!TEntity entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.DeleteObject(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="entity">An object that represents the entity to delete. The object can be in any state except <see cref="F:System.Data.EntityState.Detached" />.</param>
+        <summary>Marks an object for deletion.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.DeleteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Detach">
+      <MemberSignature Language="C#" Value="public void Detach (TEntity entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Detach(!TEntity entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectSet`1.Detach(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="entity">Object to be detached. Only the <c>entity</c> is removed; if there are any related objects that are being tracked by the same <see cref="T:System.Data.Objects.ObjectStateManager" />, those will not be detached automatically.</param>
+        <summary>Removes the object from the object context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a wrapper around the <xref:System.Data.Objects.ObjectContext.Detach%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntitySet">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EntitySet EntitySet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EntitySet EntitySet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectSet`1.EntitySet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EntitySet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the metadata of the entity set represented by this <see cref="T:System.Data.Objects.ObjectSet`1" /> instance.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.EntitySet" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

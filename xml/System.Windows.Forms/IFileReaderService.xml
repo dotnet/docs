@@ -1,0 +1,45 @@
+<Type Name="IFileReaderService" FullName="System.Windows.Forms.IFileReaderService">
+  <TypeSignature Language="C#" Value="public interface IFileReaderService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFileReaderService" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IFileReaderService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a method that opens a file from the current directory.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OpenFileFromSource">
+      <MemberSignature Language="C#" Value="public System.IO.Stream OpenFileFromSource (string relativePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream OpenFileFromSource(string relativePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IFileReaderService.OpenFileFromSource(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="relativePath">The file to open.</param>
+        <summary>Opens a file from the current directory.</summary>
+        <returns>A stream of the specified file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `relativePath` is relative to the current directory.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

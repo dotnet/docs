@@ -1,0 +1,102 @@
+<Type Name="ManagementBindAttribute" FullName="System.Management.Instrumentation.ManagementBindAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ManagementBindAttribute : System.Management.Instrumentation.ManagementNewInstanceAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManagementBindAttribute extends System.Management.Instrumentation.ManagementNewInstanceAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementBindAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Management.Instrumentation.ManagementNewInstanceAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The ManagementBind attribute indicates that a method is used to return the instance of a WMI class associated with a specific key value.  
+  
+ Note: the WMI .NET libraries are now considered in final state, and no further development, enhancements, or updates will be available for non-security related issues affecting these libraries. The [MI APIs](https://msdn.microsoft.com/en-us/library/jj152383%28v=vs.80%29.aspx) should be used for all new development.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute marks the method that the infrastructure uses to perform the WMI get operation. The method must take the key values of the corresponding WMI class as parameters and return the associated instance of the WMI class.  
+  
+ **Important** The method parameters must have exactly the same name and type as the key parameters of the class. The key parameters are identified by the .<xref:System.Management.Instrumentation.ManagementKeyAttribute> attribute  
+  
+ The method must assign values to all instrumented properties of the class.  
+  
+ When the WMI Provider Extensions infrastructure requires this binding functionality, it first searches for a constructor with this attribute. If none is found, it then searches for a static method that returns the WMI class type.  
+  
+ The target of this attribute must be either a method or a static method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the ManagementBind attribute to mark the constructor of a class.  
+  
+ [C#]  
+  
+```  
+// Use the ManagementBind attribute to specify that this constructor  
+// is used to attach a class instance to a specific WMI  
+// instance. The constructor should set the values of the  
+// key properties of the WMI instance.  
+[ManagementBind]  
+public ClassConstructor(int Id)  
+{  
+     // Set this class instance to a specific instance  
+     // by assigning property values and   
+     // giving unique values to the key properties.   
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementBindAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.ManagementBindAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementBindAttribute" /> class. This is the default constructor.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public Type Schema { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Schema" />
+      <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.ManagementBindAttribute.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that defines the type of output that the method that is marked with the ManagementEnumerator attribute will output.</summary>
+        <value>A <see cref="T:System.Type" /> value that indicates the type of output that the method marked with the <see cref="ManagementBind" /> attribute will output.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the returned type is <xref:System.Object?displayProperty=fullName>, then the output should be treated as a value of type <xref:System.Object?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

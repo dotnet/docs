@@ -1,0 +1,406 @@
+<Type Name="KeyedHashAlgorithm" FullName="System.Security.Cryptography.KeyedHashAlgorithm">
+  <TypeSignature Language="C#" Value="public abstract class KeyedHashAlgorithm : System.Security.Cryptography.HashAlgorithm" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit KeyedHashAlgorithm extends System.Security.Cryptography.HashAlgorithm" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.KeyedHashAlgorithm" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.HashAlgorithm</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the abstract class from which all implementations of keyed hash algorithms must derive.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Hash functions map binary strings of an arbitrary length to small binary strings of a fixed length. A cryptographic hash function has the property that it is computationally infeasible to find two distinct inputs that hash to the same value. Small changes to the data result in large, unpredictable changes in the hash.  
+  
+ A keyed hash algorithm is a key-dependent, one-way hash function used as a message authentication code. Only someone who knows the key can verify the hash. Keyed hash algorithms provide authenticity without secrecy.  
+  
+ Hash functions are commonly used with digital signatures and for data integrity. The <xref:System.Security.Cryptography.HMACSHA1> class is an example of a keyed hash algorithm.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to derive from the <xref:System.Security.Cryptography.KeyedHashAlgorithm> class.  
+  
+ [!code-csharp[KeyedHashAlgorithm#1](~/samples/snippets/csharp/VS_Snippets_CLR/keyedhashalgorithm/cs/program.cs#1)]
+ [!code-vb[KeyedHashAlgorithm#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/keyedhashalgorithm/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected KeyedHashAlgorithm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.KeyedHashAlgorithm" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of an abstract class. Application code creates a new instance of a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.KeyedHashAlgorithm Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.KeyedHashAlgorithm Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeyedHashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the default implementation of a keyed hash algorithm.</summary>
+        <returns>A new <see cref="T:System.Security.Cryptography.HMACSHA1" /> instance, unless the default settings have been changed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this overload uses the <xref:System.Security.Cryptography.HMACSHA1> implementation of a keyed hash algorithm. If you want to specify a different implementation, use the <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create%28System.String%29> overload, which lets you specify an algorithm name, instead. The cryptography configuration system defines the default implementation of the <xref:System.Security.Cryptography.KeyedHashAlgorithm> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.KeyedHashAlgorithm Create (string algName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.KeyedHashAlgorithm Create(string algName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.KeyedHashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="algName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="algName">The keyed hash algorithm implementation to use. The following table shows the valid values for the <c>algName</c> parameter and the algorithms they map to.  
+  
+ <list type="table">  
+<listheader>  
+<term> Parameter value  
+  
+ </term>  
+<description> Implements  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> System.Security.Cryptography.HMAC  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA1" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.KeyedHashAlgorithm  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA1" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> HMACMD5  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACMD5" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.HMACMD5  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACMD5" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> HMACRIPEMD160  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACRIPEMD160" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.HMACRIPEMD160  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACRIPEMD160" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> HMACSHA1  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA1" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.HMACSHA1  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA1" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> HMACSHA256  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA256" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.HMACSHA256  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA256" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> HMACSHA384  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA384" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.HMACSHA384  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA384" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> HMACSHA512  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA512" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.HMACSHA512  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.HMACSHA512" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> MACTripleDES  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.MACTripleDES" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> System.Security.Cryptography.MACTripleDES  
+  
+ </term>  
+<description> <see cref="T:System.Security.Cryptography.MACTripleDES" />  
+  
+ </description>  
+</item>  
+</list></param>
+        <summary>Creates an instance of the specified implementation of a keyed hash algorithm.</summary>
+        <returns>A new instance of the specified keyed hash algorithm.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports a number of algorithms, including MD5, SHA-1, SHA-256, and RIPEMD160. For a full list, see the supported values for the `algName` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.KeyedHashAlgorithm.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Security.Cryptography.KeyedHashAlgorithm" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the `Finalize` method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. `Finalize` invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Cryptography.KeyedHashAlgorithm> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public virtual byte[] Key { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Key" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.KeyedHashAlgorithm.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key to use in the hash algorithm.</summary>
+        <value>The key to use in the hash algorithm.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is the public accessor for the <xref:System.Security.Cryptography.KeyedHashAlgorithm.KeyValue> field.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Security.Cryptography.KeyedHashAlgorithm.Key%2A> property to retrieve the key used in the current <xref:System.Security.Cryptography.KeyedHashAlgorithm> object. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.KeyedHashAlgorithm> class.  
+  
+ [!code-cpp[System.Security.Cryptography.KeyedHashAlgorithm#22](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.KeyedHashAlgorithm/CPP/contosokeyedhash.cpp#22)]
+ [!code-csharp[System.Security.Cryptography.KeyedHashAlgorithm#22](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.KeyedHashAlgorithm/CS/contosokeyedhash.cs#22)]
+ [!code-vb[System.Security.Cryptography.KeyedHashAlgorithm#22](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.KeyedHashAlgorithm/VB/contosokeyedhash.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">An attempt was made to change the <see cref="P:System.Security.Cryptography.KeyedHashAlgorithm.Key" /> property after hashing has begun.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyValue">
+      <MemberSignature Language="C#" Value="protected byte[] KeyValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family unsigned int8[] KeyValue" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.KeyedHashAlgorithm.KeyValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The key to use in the hash algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is accessed through the <xref:System.Security.Cryptography.KeyedHashAlgorithm.Key%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,429 @@
+<Type Name="ServiceMetadataBehavior" FullName="System.ServiceModel.Description.ServiceMetadataBehavior">
+  <TypeSignature Language="C#" Value="public class ServiceMetadataBehavior : System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceMetadataBehavior extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceMetadataBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Controls the publication of service metadata and associated information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Add a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> object to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A?displayProperty=fullName> collection (or the [\&lt;serviceMetadata\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) element in an application configuration file) to enable or disable the publication of service metadata. However, adding the behavior to a service is not sufficient to enable metadata publication:  
+  
+-   To enable WS-Transfer GET metadata retrieval, you must also add an endpoint to your service in which the contract is `IMetadataExchange`. For an example, see [How to: Publish Metadata for a Service Using Code](~/docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md). The `IMetadataExchange` endpoint can be configured as can any other endpoint.  
+  
+-   To enable HTTP GET metadata retrieval, set the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property to `true`. [!INCLUDE[crabout](~/includes/crabout-md.md)] the address of HTTP GET metadata, see <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A>.  
+  
+ The address of the `IMetadataExchange` endpoint follows the normal rules regarding the combination of base addresses and endpoint addresses. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Publishing Metadata](~/docs/framework/wcf/feature-details/publishing-metadata.md).  
+  
+ To enable the publication of metadata using a configuration file, add the [\&lt;serviceMetadata\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicemetadata.md) element to the [\&lt;serviceBehaviors\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicebehaviors.md) element and associate the element with the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) element for which you want to publish metadata. For an example, see [How to: Publish Metadata for a Service Using a Configuration File](~/docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md). The class has the following members:  
+  
+-   The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property specifies whether metadata is returned for HTTP/GET requests.  
+  
+-   The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> property (in conjunction with the base addresses) specifies the HTTP/GET address.  
+  
+-   The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> property specifies whether metadata is returned for an HTTPS/GET request.  
+  
+-   The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> property (in conjunction with the base addresses) specifies the HTTPS/GET address.  
+  
+-   The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.MetadataExporter%2A> property returns the underlying exporter.  
+  
+ Typically the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> is used from an application configuration file. See the Example section for a code example.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in a configuration file to enable metadata support for HTTP GET and WS-Transfer GET requests.  
+  
+ [!code-csharp[ServiceMetadataBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/servicemetadatabehavior/cs/hostapplication.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceMetadataBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceMetadataBehavior.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceMetadataBehavior" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> with the following values:  
+  
+-   The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled%2A> property is `false`.  
+  
+-   The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled%2A> property is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalMetadataLocation">
+      <MemberSignature Language="C#" Value="public Uri ExternalMetadataLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ExternalMetadataLocation" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataBehavior.ExternalMetadataLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.UriTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that is the location of service metadata.</summary>
+        <value>The location of the service metadata.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns a reference to an external metadata location to clients. The <xref:System.ServiceModel.Description.ServiceMetadataBehavior.ExternalMetadataLocation%2A> property can be relative or absolute. If relative, the address is resolved by the client relative to the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> or <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A>, depending on how the client retrieved the metadata.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value is absolute and the schema is neither http nor https.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpGetBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding HttpGetBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding HttpGetBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a binding used to configure metadata retrieval when the transport is HTTP.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.Binding" /> that can be used to retrieve metadata over the HTTP protocol.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In previous versions of WCF, metadata retrieval was accomplished using HTTP GET to access the service help page through a web browser. Only the <xref:System.ServiceModel.Channels.HttpTransportBindingElement> was  supported.  For metadata retrieval using HTTPS GET, only the <xref:System.ServiceModel.Channels.HttpsTransportBindingElement> was supported.   The HttpGetBinding and HttpsGetBinding properties enable the usage of bindings for metadata retrieval using HTTP GET (or HTTPS GET) and the bindings used to access service web pages to be configurable, either programmatically or through configuration files.  
+  
+ For more information about retrieving help pages, use the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageBinding%2A>and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageBinding%2A>properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpGetEnabled">
+      <MemberSignature Language="C#" Value="public bool HttpGetEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HttpGetEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to publish service metadata for retrieval using an HTTP/GET request.</summary>
+        <value>
+          <see langword="true" /> if the WSDL is published; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> is relative, the address at which the metadata is published is the base address and the service address plus a `?wsdl` querystring.  
+  
+ If the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> is absolute the address at which the metadata is published is the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> value plus a `?wsdl` querystring.  
+  
+ For example, if the service address is `http://localhost:8080/CalculatorService` and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> is an empty string, the HTTP/GET metadata address is `http://localhost:8080/CalculatorService?wsdl`.  
+  
+ If you do not enable this property and do not change <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> or set it to a relative address, an exception is thrown at runtime when the service host is opened without a base address for HTTP.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in a configuration file to enable metadata support for HTTP/GET and WS-Transfer/GET requests.  
+  
+ [!code-csharp[ServiceMetadataBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/servicemetadatabehavior/cs/hostapplication.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpGetUrl">
+      <MemberSignature Language="C#" Value="public Uri HttpGetUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri HttpGetUrl" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.UriTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of metadata publication for HTTP/GET requests.</summary>
+        <value>The absolute or relative location of the metadata.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> is relative, the address at which the metadata is published is the base address and the service address plus a `?wsdl` querystring.  
+  
+ If the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> is absolute the address at which the metadata is published is this value plus a `?wsdl` querystring.  
+  
+ For example, if the service address is `http://localhost:8080/CalculatorService` and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpGetUrl%2A> is an empty string, the HTTP/GET metadata address is `http://localhost:8080/CalculatorService?wsdl`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in a configuration file to enable metadata support for HTTP/GET and WS-Transfer/GET requests.  
+  
+ [!code-csharp[ServiceMetadataBehavior#1](~/samples/snippets/csharp/VS_Snippets_CFX/servicemetadatabehavior/cs/hostapplication.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpsGetBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding HttpsGetBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding HttpsGetBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a binding used to configure metadata retrieval when the transport is HTTPS.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.Binding" /> that can be used to retrieve metadata over the HTTPS protocol.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In previous versions of WCF, metadata retrieval was accomplished using HTTP GET to access the service help page through a web browser. Only the <xref:System.ServiceModel.Channels.HttpTransportBindingElement> was  supported.  For metadata retrieval using HTTPS GET, only the <xref:System.ServiceModel.Channels.HttpsTransportBindingElement> was supported.   The HttpGetBinding and HttpsGetBinding properties enable the usage of bindings for metadata retrieval using HTTP GET (or HTTPS GET) and the bindings used to access service web pages to be configurable, either programmatically or through configuration files.  
+  
+ For more information about retrieving help pages, use the <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpHelpPageBinding%2A>and <xref:System.ServiceModel.Description.ServiceDebugBehavior.HttpsHelpPageBinding%2A>properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpsGetEnabled">
+      <MemberSignature Language="C#" Value="public bool HttpsGetEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HttpsGetEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to publish service metadata for retrieval using an HTTPS/GET request.</summary>
+        <value>
+          <see langword="true" /> if the WSDL is published; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> is relative, the address at which the metadata is published is the base address and the service address plus a `?wsdl` querystring.  
+  
+ If the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> is absolute the address at which the metadata is published is the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> value plus a `?wsdl` querystring.  
+  
+ For example, if the service address is `https://localhost:8080/CalculatorService` and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> is an empty string, the HTTPS/GET metadata address is `https://localhost:8080/CalculatorService?wsdl`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpsGetUrl">
+      <MemberSignature Language="C#" Value="public Uri HttpsGetUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri HttpsGetUrl" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.UriTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of metadata publication for HTTPS/GET requests.</summary>
+        <value>The address of HTTPS metadata.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> is relative, the address at which the metadata is published is the base address and the service address plus a `?wsdl` querystring.  
+  
+ If the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> is absolute the address at which the metadata is published is the value of <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> value plus a `?wsdl` querystring.  
+  
+ For example, if the service address is `https://localhost:8080/CalculatorService` and the <xref:System.ServiceModel.Description.ServiceMetadataBehavior.HttpsGetUrl%2A> is an empty string, the HTTPS/GET metadata address is `https://localhost:8080/CalculatorService?wsdl`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataExporter">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.MetadataExporter MetadataExporter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.MetadataExporter MetadataExporter" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceMetadataBehavior.MetadataExporter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.MetadataExporter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the internal <see cref="T:System.ServiceModel.Description.MetadataExporter" /> object used to publish the service metadata.</summary>
+        <value>The internal <see cref="T:System.ServiceModel.Description.MetadataExporter" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.MetadataExporter> object to modify the publication of the service metadata.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MexContractName">
+      <MemberSignature Language="C#" Value="public const string MexContractName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string MexContractName" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.ServiceMetadataBehavior.MexContractName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the string <c>IMetadataContract</c>.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.AddBindingParameters (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceMetadataBehavior.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="description">The service description to be configured.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <param name="endpoints">The endpoints to be configured.</param>
+        <param name="parameters">The binding parameters to be configured.</param>
+        <summary>Implementation of <see cref="T:System.ServiceModel.Description.IServiceBehavior" /> that configures the underlying bindings to support the behavior.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceMetadataBehavior.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="description">The service description to be modified.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>Implementation of <see cref="T:System.ServiceModel.Description.IServiceBehavior" /> that configures the underlying bindings to support the behavior on the service.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Either the <paramref name="description" /> or the <paramref name="serviceHostBase" /> are <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The destination address of the <paramref name="serviceHostBase" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.Validate">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.Validate (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.Validate(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceMetadataBehavior.System#ServiceModel#Description#IServiceBehavior#Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="description">The service description to be validated.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>Implementation of <see cref="T:System.ServiceModel.Description.IServiceBehavior" /> that validates that the service description can support the behavior.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,49 @@
+<Type Name="IStoryFragmentProvider" FullName="System.Windows.Xps.Packaging.IStoryFragmentProvider">
+  <TypeSignature Language="C#" Value="public interface IStoryFragmentProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStoryFragmentProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.IStoryFragmentProvider" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a method for adding the <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> part of the markup to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package, see chapter 9 in the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://go.microsoft.com/fwlink/?LinkId=67000).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddStoryFragment">
+      <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsStructure AddStoryFragment ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Xps.Packaging.XpsStructure AddStoryFragment() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.IStoryFragmentProvider.AddStoryFragment" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Xps.Packaging.XpsStructure</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> element to an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package.</summary>
+        <returns>An <see cref="T:System.Windows.Xps.Packaging.XpsStructure" /> that represents a <see cref="T:System.Windows.Documents.DocumentStructures.StoryFragments" /> element in an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the <xref:System.Windows.Documents.DocumentStructures.StoryFragments> element of an [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] package, see chapter 9 in the [!INCLUDE[TLA#tla_xps](~/includes/tlasharptla-xps-md.md)] specification, which you can obtain at [XPS: Specification and License Downloads](http://go.microsoft.com/fwlink/?LinkId=67000).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

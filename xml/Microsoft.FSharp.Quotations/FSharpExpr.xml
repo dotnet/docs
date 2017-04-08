@@ -1,0 +1,1622 @@
+<Type Name="FSharpExpr" FullName="Microsoft.FSharp.Quotations.FSharpExpr">
+  <TypeSignature Language="C#" Value="public class FSharpExpr" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable FSharpExpr extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Quotations.FSharpExpr" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Class</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompiledName("FSharpExpr")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddressOf">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr AddressOf (Microsoft.FSharp.Quotations.FSharpExpr target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr AddressOf(class Microsoft.FSharp.Quotations.FSharpExpr target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.AddressOf(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressSet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr AddressSet (Microsoft.FSharp.Quotations.FSharpExpr target, Microsoft.FSharp.Quotations.FSharpExpr value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr AddressSet(class Microsoft.FSharp.Quotations.FSharpExpr target, class Microsoft.FSharp.Quotations.FSharpExpr value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.AddressSet(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="value" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="target">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Application (Microsoft.FSharp.Quotations.FSharpExpr functionExpr, Microsoft.FSharp.Quotations.FSharpExpr argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Application(class Microsoft.FSharp.Quotations.FSharpExpr functionExpr, class Microsoft.FSharp.Quotations.FSharpExpr argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Application(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="functionExpr" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="argument" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="functionExpr">To be added.</param>
+        <param name="argument">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Applications">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Applications (Microsoft.FSharp.Quotations.FSharpExpr functionExpr, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Applications(class Microsoft.FSharp.Quotations.FSharpExpr functionExpr, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Applications(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="functionExpr" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="arguments" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="functionExpr">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Call">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Call (System.Reflection.MethodInfo methodInfo, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Call(class System.Reflection.MethodInfo methodInfo, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Call(System.Reflection.MethodInfo,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" />
+        <Parameter Name="arguments" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="methodInfo">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Call">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Call (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.MethodInfo methodInfo, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Call(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.MethodInfo methodInfo, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Call(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.MethodInfo,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="methodInfo" Type="System.Reflection.MethodInfo" />
+        <Parameter Name="arguments" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="methodInfo">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cast&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; Cast&lt;T&gt; (Microsoft.FSharp.Quotations.FSharpExpr source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; Cast&lt;T&gt;(class Microsoft.FSharp.Quotations.FSharpExpr source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Cast``1(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coerce">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Coerce (Microsoft.FSharp.Quotations.FSharpExpr source, Type target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Coerce(class Microsoft.FSharp.Quotations.FSharpExpr source, class System.Type target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Coerce(Microsoft.FSharp.Quotations.FSharpExpr,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="target" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomAttributes">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; CustomAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; CustomAttributes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Quotations.FSharpExpr.CustomAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr DefaultValue (Type expressionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr DefaultValue(class System.Type expressionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.DefaultValue(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="expressionType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Deserialize (Type qualifyingType, Microsoft.FSharp.Collections.FSharpList&lt;Type&gt; spliceTypes, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; spliceExprs, byte[] bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Deserialize(class System.Type qualifyingType, class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Type&gt; spliceTypes, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; spliceExprs, unsigned int8[] bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Deserialize(System.Type,Microsoft.FSharp.Collections.FSharpList{System.Type},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr},System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifyingType" Type="System.Type" />
+        <Parameter Name="spliceTypes" Type="Microsoft.FSharp.Collections.FSharpList&lt;System.Type&gt;" />
+        <Parameter Name="spliceExprs" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+        <Parameter Name="bytes" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="qualifyingType">To be added.</param>
+        <param name="spliceTypes">To be added.</param>
+        <param name="spliceExprs">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize40">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Deserialize40 (Type qualifyingType, Type[] referencedTypes, Type[] spliceTypes, Microsoft.FSharp.Quotations.FSharpExpr[] spliceExprs, byte[] bytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Deserialize40(class System.Type qualifyingType, class System.Type[] referencedTypes, class System.Type[] spliceTypes, class Microsoft.FSharp.Quotations.FSharpExpr[] spliceExprs, unsigned int8[] bytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Deserialize40(System.Type,System.Type[],System.Type[],Microsoft.FSharp.Quotations.FSharpExpr[],System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifyingType" Type="System.Type" />
+        <Parameter Name="referencedTypes" Type="System.Type[]" />
+        <Parameter Name="spliceTypes" Type="System.Type[]" />
+        <Parameter Name="spliceExprs" Type="Microsoft.FSharp.Quotations.FSharpExpr[]" />
+        <Parameter Name="bytes" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="qualifyingType">To be added.</param>
+        <param name="referencedTypes">To be added.</param>
+        <param name="spliceTypes">To be added.</param>
+        <param name="spliceExprs">To be added.</param>
+        <param name="bytes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldGet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr FieldGet (System.Reflection.FieldInfo fieldInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr FieldGet(class System.Reflection.FieldInfo fieldInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.FieldGet(System.Reflection.FieldInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fieldInfo" Type="System.Reflection.FieldInfo" />
+      </Parameters>
+      <Docs>
+        <param name="fieldInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldGet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr FieldGet (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.FieldInfo fieldInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr FieldGet(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.FieldInfo fieldInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.FieldGet(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.FieldInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="fieldInfo" Type="System.Reflection.FieldInfo" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="fieldInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldSet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr FieldSet (System.Reflection.FieldInfo fieldInfo, Microsoft.FSharp.Quotations.FSharpExpr value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr FieldSet(class System.Reflection.FieldInfo fieldInfo, class Microsoft.FSharp.Quotations.FSharpExpr value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.FieldSet(System.Reflection.FieldInfo,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fieldInfo" Type="System.Reflection.FieldInfo" />
+        <Parameter Name="value" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="fieldInfo">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldSet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr FieldSet (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.FieldInfo fieldInfo, Microsoft.FSharp.Quotations.FSharpExpr value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr FieldSet(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.FieldInfo fieldInfo, class Microsoft.FSharp.Quotations.FSharpExpr value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.FieldSet(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.FieldInfo,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="fieldInfo" Type="System.Reflection.FieldInfo" />
+        <Parameter Name="value" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="fieldInfo">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForIntegerRangeLoop">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr ForIntegerRangeLoop (Microsoft.FSharp.Quotations.FSharpVar loopVariable, Microsoft.FSharp.Quotations.FSharpExpr start, Microsoft.FSharp.Quotations.FSharpExpr endExpr, Microsoft.FSharp.Quotations.FSharpExpr body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr ForIntegerRangeLoop(class Microsoft.FSharp.Quotations.FSharpVar loopVariable, class Microsoft.FSharp.Quotations.FSharpExpr start, class Microsoft.FSharp.Quotations.FSharpExpr endExpr, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ForIntegerRangeLoop(Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="loopVariable" Type="Microsoft.FSharp.Quotations.FSharpVar" />
+        <Parameter Name="start" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="endExpr" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="loopVariable">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="endExpr">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFreeVars">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Quotations.FSharpVar&gt; GetFreeVars ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.FSharp.Quotations.FSharpVar&gt; GetFreeVars() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.GetFreeVars" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Quotations.FSharpVar&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalVar&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; GlobalVar&lt;T&gt; (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; GlobalVar&lt;T&gt;(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.GlobalVar``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfThenElse">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr IfThenElse (Microsoft.FSharp.Quotations.FSharpExpr guard, Microsoft.FSharp.Quotations.FSharpExpr thenExpr, Microsoft.FSharp.Quotations.FSharpExpr elseExpr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr IfThenElse(class Microsoft.FSharp.Quotations.FSharpExpr guard, class Microsoft.FSharp.Quotations.FSharpExpr thenExpr, class Microsoft.FSharp.Quotations.FSharpExpr elseExpr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.IfThenElse(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="guard" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="thenExpr" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="elseExpr" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="guard">To be added.</param>
+        <param name="thenExpr">To be added.</param>
+        <param name="elseExpr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lambda">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Lambda (Microsoft.FSharp.Quotations.FSharpVar parameter, Microsoft.FSharp.Quotations.FSharpExpr body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Lambda(class Microsoft.FSharp.Quotations.FSharpVar parameter, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Lambda(Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="Microsoft.FSharp.Quotations.FSharpVar" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Let">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Let (Microsoft.FSharp.Quotations.FSharpVar letVariable, Microsoft.FSharp.Quotations.FSharpExpr letExpr, Microsoft.FSharp.Quotations.FSharpExpr body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Let(class Microsoft.FSharp.Quotations.FSharpVar letVariable, class Microsoft.FSharp.Quotations.FSharpExpr letExpr, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Let(Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="letVariable" Type="Microsoft.FSharp.Quotations.FSharpVar" />
+        <Parameter Name="letExpr" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="letVariable">To be added.</param>
+        <param name="letExpr">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LetRecursive">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr LetRecursive (Microsoft.FSharp.Collections.FSharpList&lt;Tuple&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; bindings, Microsoft.FSharp.Quotations.FSharpExpr body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr LetRecursive(class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Tuple`2&lt;class Microsoft.FSharp.Quotations.FSharpVar, class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; bindings, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.LetRecursive(Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr}},Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindings" Type="Microsoft.FSharp.Collections.FSharpList&lt;System.Tuple&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="bindings">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewArray">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewArray (Type elementType, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewArray(class System.Type elementType, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewArray(System.Type,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="System.Type" />
+        <Parameter Name="elements" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">To be added.</param>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewDelegate">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewDelegate (Type delegateType, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpVar&gt; parameters, Microsoft.FSharp.Quotations.FSharpExpr body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewDelegate(class System.Type delegateType, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpVar&gt; parameters, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewDelegate(System.Type,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpVar},Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delegateType" Type="System.Type" />
+        <Parameter Name="parameters" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpVar&gt;" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="delegateType">To be added.</param>
+        <param name="parameters">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewObject">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewObject (System.Reflection.ConstructorInfo constructorInfo, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewObject(class System.Reflection.ConstructorInfo constructorInfo, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewObject(System.Reflection.ConstructorInfo,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorInfo" Type="System.Reflection.ConstructorInfo" />
+        <Parameter Name="arguments" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="constructorInfo">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewRecord">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewRecord (Type recordType, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewRecord(class System.Type recordType, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewRecord(System.Type,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="elements" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewTuple">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewTuple (Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewTuple(class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewTuple(Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elements" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewUnionCase">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewUnionCase (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewUnionCase(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewUnionCase(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="arguments" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="arguments">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyGet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr PropertyGet (System.Reflection.PropertyInfo property, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr PropertyGet(class System.Reflection.PropertyInfo property, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.PropertyGet(System.Reflection.PropertyInfo,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Reflection.PropertyInfo" />
+        <Parameter Name="indexerArgs" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="property">To be added.</param>
+        <param name="indexerArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyGet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr PropertyGet (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.PropertyInfo property, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr PropertyGet(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.PropertyInfo property, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.PropertyGet(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.PropertyInfo,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="property" Type="System.Reflection.PropertyInfo" />
+        <Parameter Name="indexerArgs" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="property">To be added.</param>
+        <param name="indexerArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertySet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr PropertySet (System.Reflection.PropertyInfo property, Microsoft.FSharp.Quotations.FSharpExpr value, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr PropertySet(class System.Reflection.PropertyInfo property, class Microsoft.FSharp.Quotations.FSharpExpr value, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.PropertySet(System.Reflection.PropertyInfo,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Reflection.PropertyInfo" />
+        <Parameter Name="value" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="indexerArgs" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="property">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="indexerArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertySet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr PropertySet (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.PropertyInfo property, Microsoft.FSharp.Quotations.FSharpExpr value, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr PropertySet(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.PropertyInfo property, class Microsoft.FSharp.Quotations.FSharpExpr value, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.PropertySet(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.PropertyInfo,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="property" Type="System.Reflection.PropertyInfo" />
+        <Parameter Name="value" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="indexerArgs" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <param name="property">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="indexerArgs">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Quote">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Quote (Microsoft.FSharp.Quotations.FSharpExpr inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Quote(class Microsoft.FSharp.Quotations.FSharpExpr inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Quote(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Please use Expr.QuoteTyped or Expr.QuoteRaw to distinguish between typed and raw quotation literals")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inner" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteRaw">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr QuoteRaw (Microsoft.FSharp.Quotations.FSharpExpr inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr QuoteRaw(class Microsoft.FSharp.Quotations.FSharpExpr inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.QuoteRaw(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inner" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteTyped">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr QuoteTyped (Microsoft.FSharp.Quotations.FSharpExpr inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr QuoteTyped(class Microsoft.FSharp.Quotations.FSharpExpr inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.QuoteTyped(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inner" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterReflectedDefinitions">
+      <MemberSignature Language="C#" Value="public static void RegisterReflectedDefinitions (System.Reflection.Assembly assembly, string resource, byte[] serializedValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void RegisterReflectedDefinitions(class System.Reflection.Assembly assembly, string resource, unsigned int8[] serializedValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.RegisterReflectedDefinitions(System.Reflection.Assembly,System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="resource" Type="System.String" />
+        <Parameter Name="serializedValue" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="resource">To be added.</param>
+        <param name="serializedValue">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterReflectedDefinitions">
+      <MemberSignature Language="C#" Value="public static void RegisterReflectedDefinitions (System.Reflection.Assembly assembly, string resource, byte[] serializedValue, Type[] referencedTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void RegisterReflectedDefinitions(class System.Reflection.Assembly assembly, string resource, unsigned int8[] serializedValue, class System.Type[] referencedTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.RegisterReflectedDefinitions(System.Reflection.Assembly,System.String,System.Byte[],System.Type[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="resource" Type="System.String" />
+        <Parameter Name="serializedValue" Type="System.Byte[]" />
+        <Parameter Name="referencedTypes" Type="System.Type[]" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="resource">To be added.</param>
+        <param name="serializedValue">To be added.</param>
+        <param name="referencedTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sequential">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Sequential (Microsoft.FSharp.Quotations.FSharpExpr first, Microsoft.FSharp.Quotations.FSharpExpr second);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Sequential(class Microsoft.FSharp.Quotations.FSharpExpr first, class Microsoft.FSharp.Quotations.FSharpExpr second) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Sequential(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="first" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="second" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="first">To be added.</param>
+        <param name="second">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Substitute">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Quotations.FSharpExpr Substitute (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; substitution);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Quotations.FSharpExpr Substitute(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Quotations.FSharpVar, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; substitution) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Substitute(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="substitution" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="substitution">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (bool full);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(bool full) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ToString(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="full" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="full">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryFinally">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr TryFinally (Microsoft.FSharp.Quotations.FSharpExpr body, Microsoft.FSharp.Quotations.FSharpExpr compensation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr TryFinally(class Microsoft.FSharp.Quotations.FSharpExpr body, class Microsoft.FSharp.Quotations.FSharpExpr compensation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TryFinally(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="compensation" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="body">To be added.</param>
+        <param name="compensation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetReflectedDefinition">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; TryGetReflectedDefinition (System.Reflection.MethodBase methodBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; TryGetReflectedDefinition(class System.Reflection.MethodBase methodBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TryGetReflectedDefinition(System.Reflection.MethodBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodBase" Type="System.Reflection.MethodBase" />
+      </Parameters>
+      <Docs>
+        <param name="methodBase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryWith">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr TryWith (Microsoft.FSharp.Quotations.FSharpExpr body, Microsoft.FSharp.Quotations.FSharpVar filterVar, Microsoft.FSharp.Quotations.FSharpExpr filterBody, Microsoft.FSharp.Quotations.FSharpVar catchVar, Microsoft.FSharp.Quotations.FSharpExpr catchBody);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr TryWith(class Microsoft.FSharp.Quotations.FSharpExpr body, class Microsoft.FSharp.Quotations.FSharpVar filterVar, class Microsoft.FSharp.Quotations.FSharpExpr filterBody, class Microsoft.FSharp.Quotations.FSharpVar catchVar, class Microsoft.FSharp.Quotations.FSharpExpr catchBody) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TryWith(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="filterVar" Type="Microsoft.FSharp.Quotations.FSharpVar" />
+        <Parameter Name="filterBody" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="catchVar" Type="Microsoft.FSharp.Quotations.FSharpVar" />
+        <Parameter Name="catchBody" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="body">To be added.</param>
+        <param name="filterVar">To be added.</param>
+        <param name="filterBody">To be added.</param>
+        <param name="catchVar">To be added.</param>
+        <param name="catchBody">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TupleGet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr TupleGet (Microsoft.FSharp.Quotations.FSharpExpr tuple, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr TupleGet(class Microsoft.FSharp.Quotations.FSharpExpr tuple, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TupleGet(Microsoft.FSharp.Quotations.FSharpExpr,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tuple" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tuple">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Quotations.FSharpExpr.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeTest">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr TypeTest (Microsoft.FSharp.Quotations.FSharpExpr source, Type target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr TypeTest(class Microsoft.FSharp.Quotations.FSharpExpr source, class System.Type target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TypeTest(Microsoft.FSharp.Quotations.FSharpExpr,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="target" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="target">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnionCaseTest">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr UnionCaseTest (Microsoft.FSharp.Quotations.FSharpExpr source, Microsoft.FSharp.Reflection.UnionCaseInfo unionCase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr UnionCaseTest(class Microsoft.FSharp.Quotations.FSharpExpr source, class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.UnionCaseTest(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Reflection.UnionCaseInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="unionCase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Value (object value, Type expressionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Value(object value, class System.Type expressionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Value(System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="expressionType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="expressionType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Value&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Value&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Value``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueWithName">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr ValueWithName (object value, Type expressionType, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr ValueWithName(object value, class System.Type expressionType, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ValueWithName(System.Object,System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="expressionType" Type="System.Type" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="expressionType">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueWithName&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr ValueWithName&lt;T&gt; (T value, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr ValueWithName&lt;T&gt;(!!T value, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ValueWithName``1(``0,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Var">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Var (Microsoft.FSharp.Quotations.FSharpVar variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Var(class Microsoft.FSharp.Quotations.FSharpVar variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Var(Microsoft.FSharp.Quotations.FSharpVar)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="Microsoft.FSharp.Quotations.FSharpVar" />
+      </Parameters>
+      <Docs>
+        <param name="variable">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VarSet">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr VarSet (Microsoft.FSharp.Quotations.FSharpVar variable, Microsoft.FSharp.Quotations.FSharpExpr value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr VarSet(class Microsoft.FSharp.Quotations.FSharpVar variable, class Microsoft.FSharp.Quotations.FSharpExpr value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.VarSet(Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="Microsoft.FSharp.Quotations.FSharpVar" />
+        <Parameter Name="value" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="variable">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WhileLoop">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr WhileLoop (Microsoft.FSharp.Quotations.FSharpExpr guard, Microsoft.FSharp.Quotations.FSharpExpr body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr WhileLoop(class Microsoft.FSharp.Quotations.FSharpExpr guard, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.WhileLoop(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="guard" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="guard">To be added.</param>
+        <param name="body">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithValue">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr WithValue (object value, Type expressionType, Microsoft.FSharp.Quotations.FSharpExpr definition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr WithValue(object value, class System.Type expressionType, class Microsoft.FSharp.Quotations.FSharpExpr definition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.WithValue(System.Object,System.Type,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="expressionType" Type="System.Type" />
+        <Parameter Name="definition" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="expressionType">To be added.</param>
+        <param name="definition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; WithValue&lt;T&gt; (T value, Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; definition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; WithValue&lt;T&gt;(!!T value, class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; definition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.WithValue``1(``0,Microsoft.FSharp.Quotations.FSharpExpr{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="definition" Type="Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <param name="definition">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

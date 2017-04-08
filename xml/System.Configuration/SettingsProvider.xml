@@ -1,0 +1,160 @@
+<Type Name="SettingsProvider" FullName="System.Configuration.SettingsProvider">
+  <TypeSignature Language="C#" Value="public abstract class SettingsProvider : System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SettingsProvider extends System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.Provider.ProviderBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Acts as a base class for deriving custom settings providers in the application settings architecture.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A settings provider defines the mechanism for storing configuration data used in the application settings architecture. The .NET Framework contains a single default settings provider, <xref:System.Configuration.LocalFileSettingsProvider>, which stores configuration data to the local file system. However, you can create alternate storage mechanisms by deriving from the abstract <xref:System.Configuration.SettingsProvider> class. The provider that a wrapper class uses is determined by decorating the wrapper class with the <xref:System.Configuration.SettingsProviderAttribute>. If this attribute is not provided, the default, <xref:System.Configuration.LocalFileSettingsProvider>, is used.  
+  
+ When you create a custom settings provider, at minimum, you must provide implementations for the three methods of this class: <xref:System.Configuration.SettingsProvider.GetPropertyValues%2A>, <xref:System.Configuration.SettingsProvider.SetPropertyValues%2A> and <xref:System.Configuration.SettingsProvider.ApplicationName%2A>.  
+  
+ For client applications, you can add more standardized functionality to a custom provider by also implementing the <xref:System.Configuration.IApplicationSettingsProvider> interface. This interface mirrors methods found in the <xref:System.Configuration.ApplicationSettingsBase> class, which mainly enables versioning support.  
+  
+ Typically, you should design settings providers to be single-instanced to avoid storage resource contention. Providers should also be thread-safe because they can be called simultaneously from multiple wrapper instances in a single application domain or from multiple applications in different domains.  
+  
+ At minimum, a settings provider must recognize three attributes—<xref:System.Configuration.ApplicationScopedSettingAttribute>, <xref:System.Configuration.UserScopedSettingAttribute>, and <xref:System.Configuration.DefaultSettingValueAttribute>. For a full listing of attributes that can be applied to application settings, see [Application Settings Attributes](~/docs/framework/winforms/advanced/application-settings-attributes.md). A custom setting provider should resolve attributes applied to settings properties in the following manner:  
+  
+1.  If the provider can fulfill the request implied by the attribute, obviously it should do so.  
+  
+2.  If the provider cannot fulfill the request, it should ignore it silently.  
+  
+3.  If two or more properties conflict; for example, a property being decorated with both <xref:System.Configuration.ApplicationScopedSettingAttribute> and <xref:System.Configuration.UserScopedSettingAttribute>; the provider should throw a <xref:System.Configuration.ConfigurationException>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SettingsProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Configuration.SettingsProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is this default protected constructor for this abstract class. Derived custom settings providers are not required to provide an explicit constructor because the <xref:System.Configuration.Provider.ProviderBase.Initialize%2A> method typically performs all initialization.  
+  
+ Client code typically does not directly instantiate a settings provider; instead, you use the following procedure to find a settings provider for a particular settings property:  
+  
+1.  Call the <xref:System.ComponentModel.Component.GetService%2A> method on the current <xref:System.ComponentModel.Component> or <xref:System.ComponentModel.ISite> to return a reference to the current <xref:System.Configuration.ISettingsProviderService>.  
+  
+2.  Call the <xref:System.Configuration.ISettingsProviderService.GetSettingsProvider%2A> method of the <xref:System.Configuration.ISettingsProviderService> retrieved in the first step to return the settings provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationName">
+      <MemberSignature Language="C#" Value="public abstract string ApplicationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProvider.ApplicationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the currently running application.</summary>
+        <value>A <see cref="T:System.String" /> that contains the application's shortened name, which does not contain a full path or extension, for example, <c>SimpleAppSettings</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsProvider.ApplicationName%2A> and <xref:System.Configuration.Provider.ProviderBase.Name%2A> properties help to disambiguate similarly named setting properties in different applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValues">
+      <MemberSignature Language="C#" Value="public abstract System.Configuration.SettingsPropertyValueCollection GetPropertyValues (System.Configuration.SettingsContext context, System.Configuration.SettingsPropertyCollection collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.SettingsPropertyValueCollection GetPropertyValues(class System.Configuration.SettingsContext context, class System.Configuration.SettingsPropertyCollection collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProvider.GetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsPropertyValueCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Configuration.SettingsContext" />
+        <Parameter Name="collection" Type="System.Configuration.SettingsPropertyCollection" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.Configuration.SettingsContext" /> describing the current application use.</param>
+        <param name="collection">A <see cref="T:System.Configuration.SettingsPropertyCollection" /> containing the settings property group whose values are to be retrieved.</param>
+        <summary>Returns the collection of settings property values for the specified application instance and settings property group.</summary>
+        <returns>A <see cref="T:System.Configuration.SettingsPropertyValueCollection" /> containing the values for the specified settings property group.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsProvider.GetPropertyValues%2A> method must be implemented to handle special settings, those marked with <xref:System.Configuration.SpecialSettingAttribute>, as well as reconcile application and user settings.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyValues">
+      <MemberSignature Language="C#" Value="public abstract void SetPropertyValues (System.Configuration.SettingsContext context, System.Configuration.SettingsPropertyValueCollection collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetPropertyValues(class System.Configuration.SettingsContext context, class System.Configuration.SettingsPropertyValueCollection collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProvider.SetPropertyValues(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Configuration.SettingsContext" />
+        <Parameter Name="collection" Type="System.Configuration.SettingsPropertyValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.Configuration.SettingsContext" /> describing the current application usage.</param>
+        <param name="collection">A <see cref="T:System.Configuration.SettingsPropertyValueCollection" /> representing the group of property settings to set.</param>
+        <summary>Sets the values of the specified group of property settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Configuration.ApplicationSettingsBase> contains the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method, which is called to persist the values of all of its settings properties. This method enumerates through all the settings providers associated with its settings properties, and calls the <xref:System.Configuration.SettingsProvider.SetPropertyValues%2A> method for each <xref:System.Configuration.SettingsProvider> to perform the actual serialization operation.  
+  
+ The <xref:System.Configuration.SettingsProvider.SetPropertyValues%2A> method should be implemented with security in mind:  
+  
+-   Only fully trusted code should be allowed to update application settings. Partially trusted code should be allowed to update only user application settings. Untrusted code is not typically allowed to update application settings.  
+  
+-   Usage quotas should be considered to guard against resource attacks by partially trusted applications.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

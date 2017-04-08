@@ -1,0 +1,621 @@
+<Type Name="HtmlTableCell" FullName="System.Web.UI.HtmlControls.HtmlTableCell">
+  <TypeSignature Language="C#" Value="public class HtmlTableCell : System.Web.UI.HtmlControls.HtmlContainerControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlTableCell extends System.Web.UI.HtmlControls.HtmlContainerControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTableCell" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlContainerControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.ConstructorNeedsTag(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the <see langword="&lt;td&gt;" /> and <see langword="&lt;th&gt;" /> HTML elements in an <see cref="T:System.Web.UI.HtmlControls.HtmlTableRow" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<td>` element represents a data cell in a table, while the `<th>` element represents a table heading cell. Use the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class to programmatically control the `<td>` and `<th>` HTML elements in an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTableCell> class allows you to customize the appearance of a cell in a table by specifying the background color, the border color, the height, and the width. These attributes are set using the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BgColor%2A>, <xref:System.Web.UI.HtmlControls.HtmlTableCell.BorderColor%2A>, <xref:System.Web.UI.HtmlControls.HtmlTableCell.Height%2A>, and <xref:System.Web.UI.HtmlControls.HtmlTableCell.Width%2A> properties.  
+  
+ You can control how the content of a cell is displayed by specifying the vertical and horizontal alignment of the contents. You can also specify whether the content automatically continues on the next line when the end of the cell is reached. The horizontal alignment is controlled by the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Align%2A> property, while the <xref:System.Web.UI.HtmlControls.HtmlTableCell.VAlign%2A> property controls the vertical alignment. The <xref:System.Web.UI.HtmlControls.HtmlTableCell.NoWrap%2A> property indicates whether text wrapping is disabled.  
+  
+ By using the <xref:System.Web.UI.HtmlControls.HtmlTableCell.ColSpan%2A> or the <xref:System.Web.UI.HtmlControls.HtmlTableCell.RowSpan%2A> property, you can control the number of columns or rows that a cell occupies. For example, you can create a cell that occupies two columns in a table by setting the <xref:System.Web.UI.HtmlControls.HtmlTableCell.ColSpan%2A> property to `2`.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlTableCell>, see the <xref:System.Web.UI.HtmlControls.HtmlTableCell.%23ctor%2A> constructor.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use an <xref:System.Web.UI.HtmlControls.HtmlTableCell> to modify the contents of a cell in a table. Note that the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> collection of an <xref:System.Web.UI.HtmlControls.HtmlTable> control contains a collection of the rows (<xref:System.Web.UI.HtmlControls.HtmlTableRow> objects) in the table. The <xref:System.Web.UI.HtmlControls.HtmlTableRow.Cells%2A> collection of an <xref:System.Web.UI.HtmlControls.HtmlTableRow> object is a collection of the cells (<xref:System.Web.UI.HtmlControls.HtmlTableCell> objects) in a row.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCell#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCell/CS/htmltablecellcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCell#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCell/VB/htmltablecellvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlTableCell ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTableCell.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class using default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. This constructor is used to create an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object that represents the `<td>` element for a table data cell.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlTableCell>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The "td" literal string.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableCell> controls and place the table on the Web page. Note how the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's default constructor is used to create a `<td>` element, while its overloaded constructor that takes a string parameter is used with the literal string "th" to create a `<th>` element.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlTableCell (string tagName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tagName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTableCell.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tagName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tagName">The element name of the tag.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class, using the specified tag name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. It allows you to create an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object that represents a cell in an <xref:System.Web.UI.HtmlControls.HtmlTable> control. It is commonly used to create an <xref:System.Web.UI.HtmlControls.HtmlTableCell> object that represents a `<th>` element for a table heading cell. Although you can use this constructor to create a `<td>` element for a table data cell, you typically use the default constructor.  
+  
+> [!NOTE]
+>  Although this constructor allows you to specify the cell element to create, the `<th>` element is the only supported cell element. For future compatibility, this constructor allows you to create other HTML cell elements that could become available.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlTableCell>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The value of the `tagName` parameter.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control with <xref:System.Web.UI.HtmlControls.HtmlTableCell> controls and place the table on the Web page. Note how the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's default constructor is used to create a `<td>` element, while its overloaded constructor that takes a string parameter is used with the literal "th" to create a `<th>` element.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="public string Align { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Align" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.Align" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal alignment of the content in the cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+        <value>The horizontal alignment of the content in the cell represented by an instance of <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Align%2A> property to specify the horizontal alignment of the content in a cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class.  
+  
+> [!NOTE]
+>  Setting this property affects only the cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. To apply the same alignment to the cells of an entire row in the table, set the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Align%2A> property of the row represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableRow> class.  
+  
+ The following table lists the values that can be used for this property.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Left`|Aligns the contents of a cell with the left edge of the cell.|  
+|`Center`|Aligns the contents of a cell in the middle of the cell.|  
+|`Right`|Aligns the contents of a cell with the right edge of the cell.|  
+  
+> [!NOTE]
+>  You can also use `Justify` and `Char` as values for this property; however, not all browsers support these features.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Align%2A> property to programmatically control the alignment of the contents of the cells in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BgColor">
+      <MemberSignature Language="C#" Value="public string BgColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BgColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.BgColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+        <value>The background color of the cell represented by an instance of <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BgColor%2A> property to specify the background color of the cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. You can specify a color either by name or by using a hexadecimal value, preceded by the pound character (#), in the form #RRGGBB. RR, GG, and BB represent hexadecimal values from 0 to 255 that indicate the red, green, and blue components of a color, respectively. For example, the value #0000FF represents the color blue. It specifies the minimum value (00) for the red and green components, while specifying the maximum value (FF) for the blue component.  
+  
+ The following table shows the sixteen predefined HTML color names and corresponding hexadecimal values that can be used for the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BgColor%2A> property. For more information on HTML colors, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+  
+|Color name|Hexadecimal value|  
+|----------------|-----------------------|  
+|Aqua|#00FFFF|  
+|Black|#000000|  
+|Blue|#0000FF|  
+|Fuchsia|#FF00FF|  
+|Gray|#808080|  
+|Green|#008000|  
+|Lime|#00FF00|  
+|Maroon|#800000|  
+|Navy|#000080|  
+|Olive|#808000|  
+|Purple|#800080|  
+|Red|#FF0000|  
+|Silver|#C0C0C0|  
+|Teal|#008080|  
+|White|#FFFFFF|  
+|Yellow|#FFFF00|  
+  
+ The available colors for use with the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BgColor%2A> property can be determined from the <xref:System.Drawing.KnownColor> enumeration.  
+  
+ Color names are case-insensitive.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BgColor%2A> property to programmatically control the background color of the cells in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public string BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border color of the cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+        <value>The border color of the cell represented by an instance of <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BorderColor%2A> property to specify the border color of the cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. You can specify a color either by name or by using a hexadecimal value, preceded by the pound character (#), in the form #RRGGBB. RR, GG, and BB represent hexadecimal values from 0 to 255 that indicate the red, green, and blue components of a color, respectively. For example, the value #0000FF represents the color blue. It specifies the minimum value (00) for the red and green components, while specifying the maximum value (FF) for the blue component.  
+  
+ The following table shows the sixteen predefined HTML color names and corresponding hexadecimal values that can be used for the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BorderColor%2A> property. For more information on HTML colors, see the [World Wide Web Consortium (W3C) Web](http://go.microsoft.com/fwlink/?linkid=37125) site.  
+  
+|Color name|Hexadecimal value|  
+|----------------|-----------------------|  
+|Aqua|#00FFFF|  
+|Black|#000000|  
+|Blue|#0000FF|  
+|Fuchsia|#FF00FF|  
+|Gray|#808080|  
+|Green|#008000|  
+|Lime|#00FF00|  
+|Maroon|#800000|  
+|Navy|#000080|  
+|Olive|#808000|  
+|Purple|#800080|  
+|Red|#FF0000|  
+|Silver|#C0C0C0|  
+|Teal|#008080|  
+|White|#FFFFFF|  
+|Yellow|#FFFF00|  
+  
+ The available colors for use with the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BorderColor%2A> property can be determined from the <xref:System.Drawing.KnownColor> enumeration.  
+  
+ Color names are case-insensitive.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.BorderColor%2A> property to programmatically control the border color of the cells in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColSpan">
+      <MemberSignature Language="C#" Value="public int ColSpan { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColSpan" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.ColSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of columns occupied by a cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+        <value>The number of columns occupied by the cell represented by an instance of <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />. The default value is <see langword="-1" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class, use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.ColSpan%2A> property to specify the number of columns the cell occupies. This allows you to create a cell in the table that occupies more than one column. For example, suppose you have a table that contains two columns and two rows. You can create a table heading cell that spans both columns. Set the <xref:System.Web.UI.HtmlControls.HtmlTableCell.ColSpan%2A> property of the leftmost cell in the first row to `2` to indicate that this cell takes up two columns in the table.  
+  
+> [!CAUTION]
+>  When spanning columns, be sure to define one fewer cell in the row for each column that you span. For example, if you span two columns, define one fewer cell in the current row. Otherwise, that row will be longer than the number of columns in the table and the table will not be displayed as expected.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.ColSpan%2A> property to specify that the cell in the first row of the <xref:System.Web.UI.HtmlControls.HtmlTable> control takes up two columns.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellColSpan#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellColSpan/CS/htmltablecellcolspancs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellColSpan#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellColSpan/VB/htmltablecellcolspanvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public string Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Height" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height (in pixels) of the cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+        <value>The height (in pixels) of the cell represented by an instance of <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Height%2A> property to specify the height (in pixels) of the cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. When you specify the height of a cell, all cells in the same row automatically share that height.  
+  
+> [!NOTE]
+>  If you specify a height that is smaller than is required to display the contents of the cell, this property is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Height%2A> property to programmatically control the height of the cells in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoWrap">
+      <MemberSignature Language="C#" Value="public bool NoWrap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NoWrap" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.NoWrap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.MinimizableAttributeTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the text in a cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class automatically continues on the next line when it reaches the end of the cell.</summary>
+        <value>
+          <see langword="true" /> if the text does not automatically wrap in the cell; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.NoWrap%2A> property to specify or determine whether the text in a cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class automatically continues on the next line when it reaches the end of the cell.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.NoWrap%2A> property to programmatically control whether the text wraps in the cells of an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndTag">
+      <MemberSignature Language="C#" Value="protected override void RenderEndTag (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderEndTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTableCell.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> control's end tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTableCell.RenderEndTag%2A> method provides additional formatting after calling the base class's <xref:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag%2A> method. The additional formatting makes the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control's rendered HTML easier to read by adding a line return after the closing tag.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTableCell.RenderEndTag%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowSpan">
+      <MemberSignature Language="C#" Value="public int RowSpan { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowSpan" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.RowSpan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of rows occupied by a cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+        <value>The number of rows occupied by a cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class. The default value is <see langword="-1" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class, use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.RowSpan%2A> property to specify the number of rows the cell occupies. This allows you to create a cell in the table that occupies more than one row. For example, suppose you have a table that contains two columns and two rows. You can create a column that overlaps both rows. Set the <xref:System.Web.UI.HtmlControls.HtmlTableCell.RowSpan%2A> property of the leftmost cell in the first column to `2` to indicate that this cell takes up two rows in the table.  
+  
+> [!CAUTION]
+>  When spanning rows, be sure to define one fewer cell in the column for each row that you span. For example, if you span two rows, define one fewer cell in that column. Otherwise, that column will be longer than the number of rows in the table and the table will not be displayed as expected.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.RowSpan%2A> property to specify that the cell in the first column of the <xref:System.Web.UI.HtmlControls.HtmlTable> control spans two rows.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellRowSpan#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellRowSpan/CS/htmltablecellrowspancs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellRowSpan#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellRowSpan/VB/htmltablecellrowspanvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VAlign">
+      <MemberSignature Language="C#" Value="public string VAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.VAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the vertical alignment for the content of a cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+        <value>The vertical alignment for the content of a cell represented by an instance of <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.VAlign%2A> property to specify the vertical alignment of the content in a cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class.  
+  
+> [!NOTE]
+>  Setting this property affects only the cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. To apply the same vertical alignment to the cells of an entire row in the table, set the <xref:System.Web.UI.HtmlControls.HtmlTableRow.VAlign%2A> property of the row represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableRow> class.  
+  
+ The following table lists the values that can be used for this property.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Top`|Aligns the contents of a cell with the upper edge of the cell.|  
+|`Middle`|Aligns the contents of a cell in the center of the cell.|  
+|`Bottom`|Aligns the contents of a cell with the lower edge of the cell.|  
+  
+> [!NOTE]
+>  You can also use `BaseLine` as a value for this property. However, not all browsers support this feature.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.VAlign%2A> property to programmatically control the vertical alignment of the contents of the cells in an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellBehavior#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellBehavior/CS/htmltablecellbehaviorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellBehavior#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellBehavior/VB/htmltablecellbehaviorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public string Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Width" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTableCell.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width (in pixels) of the cell represented by an instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" /> class.</summary>
+        <value>The width (in pixels) of the cell represented by an instance of <see cref="T:System.Web.UI.HtmlControls.HtmlTableCell" />. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Width%2A> property to specify the width (in pixels) of the cell represented by an instance of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. When you specify the width for a cell, all cells in the same column automatically share that width.  
+  
+> [!NOTE]
+>  If you specify a width that is smaller than is required to display the contents of the cell, this property is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Width%2A> property to programmatically control the width of the cells in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTblCellAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTblCellAppearance/CS/htmltablecellappearancecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTblCellAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTblCellAppearance/VB/htmltablecellappearancevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

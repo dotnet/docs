@@ -1,0 +1,52 @@
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.Pane1"
+>
+
+  <StackPanel>
+
+    <TextBlock Width="200" TextWrapping="Wrap" HorizontalAlignment="Left">
+      Move the Slider controls to change the size of the blue rectangle.
+      The Value properites of these Slider controls are bound to the
+      Height and Width properties of the rectangle.
+    </TextBlock>
+
+    <TextBlock Margin="0,10,0,0"  Foreground="Blue">
+      <TextBlock Text="(Height,Width) = "/>
+      (
+      <TextBlock Text="{Binding ElementName=RectangleHeight,Path=Value}"/>
+      ,
+      <TextBlock Text="{Binding ElementName=RectangleWidth,Path=Value}"/>
+      )
+    </TextBlock>
+    
+    <TextBlock Margin="10,10,0,0">Height</TextBlock>
+    <!--<SnippetMinimum>-->
+    <Slider Name="RectangleHeight"  Margin="10, 0, 0, 0" 
+      Width="100" Orientation="Horizontal" HorizontalAlignment="Left" 
+      Value="50" Minimum="0" Maximum="200" 
+      SmallChange="1" LargeChange="10"
+      TickPlacement="BottomRight" TickFrequency="10"/>
+    <!--</SnippetMinimum>-->
+
+    <TextBlock Margin="10,0,0,0">Width</TextBlock>
+    <!--<SnippetRectangleWidth>-->
+    <Slider Name="RectangleWidth" Margin="10, 0, 0, 0" 
+      Width="100" Orientation="Horizontal" HorizontalAlignment="Left" 
+      Value="50" Minimum="0" Maximum="200"
+      SmallChange="1" LargeChange="10"
+      TickPlacement="BottomRight" TickFrequency="10"/>
+    <!--</SnippetRectangleWidth>-->
+
+    <!--<SnippetBindingRectangle>-->
+    <Rectangle Fill="Blue" HorizontalAlignment="Left" 
+               Margin="50,20,0,0" 
+               Height="{Binding ElementName=RectangleHeight,Path=Value}" 
+               Width="{Binding ElementName=RectangleWidth,Path=Value}"/>
+    <!--</SnippetBindingRectangle>-->
+
+  </StackPanel>
+
+</Window>
+  

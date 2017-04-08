@@ -1,0 +1,142 @@
+<Type Name="WorkflowViewService" FullName="System.Activities.Presentation.View.WorkflowViewService">
+  <TypeSignature Language="C#" Value="public class WorkflowViewService : System.Activities.Presentation.Services.ViewService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowViewService extends System.Activities.Presentation.Services.ViewService" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.WorkflowViewService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.Services.ViewService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Handles the mapping of activity designer visual elements and their underlying model items.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowViewService (System.Activities.Presentation.EditingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The editing tool that is used to manipulate objects on the design surface.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.View.WorkflowViewService" /> class that uses the specified <see cref="T:System.Activities.Presentation.EditingContext" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateViewElement">
+      <MemberSignature Language="C#" Value="protected System.Activities.Presentation.WorkflowViewElement CreateViewElement (System.Activities.Presentation.Model.ModelItem modelItem);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Activities.Presentation.WorkflowViewElement CreateViewElement(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.CreateViewElement(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.WorkflowViewElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">One entity in the editing model of an activity designer.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> that supports the type of the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
+        <returns>A workflow view element that supports the same type as the model item argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModel">
+      <MemberSignature Language="C#" Value="public override System.Activities.Presentation.Model.ModelItem GetModel (System.Windows.DependencyObject view);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Activities.Presentation.Model.ModelItem GetModel(class System.Windows.DependencyObject view) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.GetModel(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="view" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="view">A workflow view element that contains the model item.</param>
+        <summary>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that maps to the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A model item that maps to a dependency object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public override System.Windows.DependencyObject GetView (System.Activities.Presentation.Model.ModelItem model);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.DependencyObject GetView(class System.Activities.Presentation.Model.ModelItem model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.GetView(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="model" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="model">One entity in the editing model of an activity designer.</param>
+        <summary>Creates a new <see cref="T:System.Workflow.ComponentModel.DependencyObject" /> that maps to the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
+        <returns>A dependency object that maps to a model item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewElement">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.WorkflowViewElement GetViewElement (System.Activities.Presentation.Model.ModelItem modelItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.WorkflowViewElement GetViewElement(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.WorkflowViewService.GetViewElement(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.WorkflowViewElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">One entity in the editing model of an activity designer.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.WorkflowViewElement" /> that maps to the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
+        <returns>A new view element that maps to a specified model item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewCreated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.View.ViewCreatedEventArgs&gt; ViewCreated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.View.ViewCreatedEventArgs&gt; ViewCreated" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.WorkflowViewService.ViewCreated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Activities.Presentation.View.ViewCreatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the workflow view is created.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

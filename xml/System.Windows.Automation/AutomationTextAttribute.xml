@@ -1,0 +1,52 @@
+<Type Name="AutomationTextAttribute" FullName="System.Windows.Automation.AutomationTextAttribute">
+  <TypeSignature Language="C#" Value="public class AutomationTextAttribute : System.Windows.Automation.AutomationIdentifier" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutomationTextAttribute extends System.Windows.Automation.AutomationIdentifier" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationTextAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.AutomationIdentifier</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Identifies [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] text attributes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived from <xref:System.Windows.Automation.AutomationIdentifier>.  
+  
+ The list of text attributes supported by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] can be found at <xref:System.Windows.Automation.TextPattern>.  
+  
+ The <xref:System.Windows.Automation.AutomationTextAttribute> class is effectively abstract, as it has no constructor and cannot be instantiated by applications.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LookupById">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.AutomationTextAttribute LookupById (int id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.AutomationTextAttribute LookupById(int32 id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationTextAttribute.LookupById(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="id">The numerical identifier.</param>
+        <summary>Retrieves a <see cref="T:System.Windows.Automation.AutomationTextAttribute" /> that encapsulates a specified numerical identifier.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

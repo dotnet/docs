@@ -1,0 +1,19 @@
+<Namespace Name="System.Collections.Specialized">
+  <Docs>
+    <summary>The <see cref="N:System.Collections.Specialized" /> namespace contains specialized and strongly-typed collections; for example, a linked list dictionary, a bit vector, and collections that contain only strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specialized collections are collections with highly specific purposes. <xref:System.Collections.Specialized.NameValueCollection> is based on <xref:System.Collections.Specialized.NameObjectCollectionBase>; however, <xref:System.Collections.Specialized.NameValueCollection> accepts multiple values per key, whereas <xref:System.Collections.Specialized.NameObjectCollectionBase> accepts only one value per key.  
+  
+ Some strongly typed collections in the <xref:System.Collections.Specialized> namespace are <xref:System.Collections.Specialized.StringCollection> and <xref:System.Collections.Specialized.StringDictionary>, both of which contain values that are exclusively strings.  
+  
+ The <xref:System.Collections.Specialized.CollectionsUtil> class creates instances of case-insensitive collections.  
+  
+ Some collections transform.  For example, the <xref:System.Collections.Specialized.HybridDictionary> class starts as a <xref:System.Collections.Specialized.ListDictionary> and becomes a <xref:System.Collections.Hashtable> when it becomes large.  The <xref:System.Collections.ObjectModel.KeyedCollection%602> is a list but it also creates a lookup dictionary when the number of elements reaches a specified threshold.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

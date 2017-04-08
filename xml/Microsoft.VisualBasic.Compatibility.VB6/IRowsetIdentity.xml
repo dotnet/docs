@@ -1,0 +1,65 @@
+<Type Name="IRowsetIdentity" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity">
+  <TypeSignature Language="C#" Value="public interface IRowsetIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetIdentity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0C733A09-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowsetIdentity" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsSameRow">
+      <MemberSignature Language="C#" Value="public int IsSameRow (int hThisRow, int hThatRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 IsSameRow(int32 hThisRow, int32 hThatRow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity.IsSameRow(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hThisRow" Type="System.Int32" />
+        <Parameter Name="hThatRow" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hThisRow">The handle of an active row.</param>
+        <param name="hThatRow">The handle of an active row.</param>
+        <summary>Compares two row handles to see whether they refer to the same row instance.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

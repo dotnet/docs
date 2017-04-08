@@ -1,0 +1,1378 @@
+<Type Name="Vector3D" FullName="System.Windows.Media.Media3D.Vector3D">
+  <TypeSignature Language="C#" Value="public struct Vector3D : IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Vector3D extends System.ValueType implements class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.Vector3D" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.Media3D.Vector3DConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Media.Media3D.Converters.Vector3DValueSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a displacement in [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] space.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Duration"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="x,y,z"/>  
+-or  
+<object property="x y z"/>  
+```  
+  
+<a name="xamlValues_MinWidth"></a>   
+## XAML Values  
+ *x*  
+ The <xref:System.Windows.Media.Media3D.Vector3D.X%2A> component of this <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ *y*  
+ The <xref:System.Windows.Media.Media3D.Vector3D.Y%2A> component of this <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ *z*  
+ The <xref:System.Windows.Media.Media3D.Vector3D.Z%2A> component of this <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+   
+  
+## Examples  
+ This example shows how to subtract <xref:System.Windows.Media.Media3D.Vector3D> structures using the overloaded subtraction (`-`) operator and the <xref:System.Windows.Media.Media3D.Vector3D> static <xref:System.Windows.Media.Media3D.Vector3D.Subtract%2A> method.  
+  
+ The following code shows how to use the <xref:System.Windows.Media.Media3D.Vector3D> subtraction methods.  First, the <xref:System.Windows.Media.Media3D.Vector3D> structures are instantiated.  The <xref:System.Windows.Media.Media3D.Vector3D> structures are subtracted using the overloaded (`-`) operator, and then they are subtracted using the static <xref:System.Windows.Media.Media3D.Vector3D.Subtract%2A> method.  
+  
+ [!code-csharp[3DGallery_procedural_snip#Subtract3DVectorsExample_csharp](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Misc3DOperationsExample.cs#subtract3dvectorsexample_csharp)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Vector3D (double x, double y, double z);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x, float64 y, float64 z) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="y" Type="System.Double" />
+        <Parameter Name="z" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">The new <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure's <see cref="P:System.Windows.Media.Media3D.Vector3D.X" /> value.</param>
+        <param name="y">The new <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure's <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" /> value.</param>
+        <param name="z">The new <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure's <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> value.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn2)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D Add (System.Windows.Media.Media3D.Vector3D vector, System.Windows.Media.Media3D.Point3D point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Point3D Add(valuetype System.Windows.Media.Media3D.Vector3D vector, valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Add(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="point" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure used to translate the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</param>
+        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to be translated.</param>
+        <summary>Translates the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure by the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure and returns the result as a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+        <returns>The result of translating <paramref name="point" /> by <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.Media3D.Vector3D.Add%2A> method to translate a <xref:System.Windows.Media.Media3D.Point3D> structure by a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn4)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D Add (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D Add(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Add(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to add.</param>
+        <param name="vector2">The second <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to add.</param>
+        <summary>Adds two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The sum of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add two <xref:System.Windows.Media.Media3D.Vector3D> structures.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn3)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AngleBetween">
+      <MemberSignature Language="C#" Value="public static double AngleBetween (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 AngleBetween(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.AngleBetween(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to evaluate.</param>
+        <param name="vector2">The second <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to evaluate.</param>
+        <summary>Retrieves the angle required to rotate the first specified  <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure into the second specified  <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The angle in degrees needed to rotate <paramref name="vector1" /> into <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Signed angles do not extend into [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] space, so an angle between 0 and 180 degrees is returned.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the angle between two <xref:System.Windows.Media.Media3D.Vector3D> structures.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN22](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn22)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN22](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn22)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossProduct">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D CrossProduct (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D CrossProduct(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.CrossProduct(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to evaluate.</param>
+        <param name="vector2">The second <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to evaluate.</param>
+        <summary>Calculates the cross product of two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures.</summary>
+        <returns>The cross product of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN23](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn23)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn23)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D Divide (System.Windows.Media.Media3D.Vector3D vector, double scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D Divide(valuetype System.Windows.Media.Media3D.Vector3D vector, float64 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Divide(System.Windows.Media.Media3D.Vector3D,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="scalar" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be divided.</param>
+        <param name="scalar">The scalar to divide <c>vector</c> by.</param>
+        <summary>Divides the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure by the specified scalar and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
+        <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to divide a <xref:System.Windows.Media.Media3D.Vector3D> structure by a scalar.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN16](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn16)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DotProduct">
+      <MemberSignature Language="C#" Value="public static double DotProduct (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 DotProduct(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.DotProduct(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to evaluate.</param>
+        <param name="vector2">The second <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to evaluate.</param>
+        <summary>Calculates the dot product of two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures.</summary>
+        <returns>The dot product of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to calculate the dot product of two <xref:System.Windows.Media.Media3D.Vector3D> structures.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN24](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn24)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn24)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to compare.</param>
+        <summary>Determines whether the specified object is a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure and whether the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> properties of the specified <see cref="T:System.Object" /> are equal to the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> properties of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure and is identical with this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure; <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `o` is not a <xref:System.Windows.Media.Media3D.Vector3D> structure, this method returns `false`.  
+  
+ <xref:System.Windows.Media.Media3D.Vector3D> values are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Vector3D> values that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example shows how to check if an <xref:System.Object> and a <xref:System.Windows.Media.Media3D.Vector3D> structure are equal.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN27](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn27)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn27)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.Media3D.Vector3D value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Media.Media3D.Vector3D value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Equals(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="value">The instance of Vector to compare against this instance.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures for equality.</summary>
+        <returns>
+          <see langword="true" /> if instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Media3D.Vector3D> values are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Vector3D> values that are logically equal might fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Equals(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">First <see cref="T:System.Windows.Media.Media3D.Vector3D" /> to compare.</param>
+        <param name="vector2">Second <see cref="T:System.Windows.Media.Media3D.Vector3D" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures for equality.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> components of <paramref name="vector1" /> and <paramref name="vector2" /> are equal; <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Windows.Media.Media3D.Vector3D> structures are equal if the values of their <xref:System.Windows.Media.Media3D.Vector3D.X%2A>, <xref:System.Windows.Media.Media3D.Vector3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Vector3D.Z%2A> properties are the same.  
+  
+ <xref:System.Windows.Media.Media3D.Vector3D> values are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Vector3D> values that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example checks whether two <xref:System.Windows.Media.Media3D.Vector3D> structures are equal.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN26](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn26)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN26](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn26)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>A hash code for this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the hashcode of a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN33](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn33)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN33](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public double Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <value>The length of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The length of a <xref:System.Windows.Media.Media3D.Vector3D> is sometimes referred to as the magnitude.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the length of a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN19](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn19)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LengthSquared">
+      <MemberSignature Language="C#" Value="public double LengthSquared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LengthSquared" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.LengthSquared" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the square of the length of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <value>The square of the length of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The length of a <xref:System.Windows.Media.Media3D.Vector3D> is sometimes referred to as the magnitude.  
+  
+   
+  
+## Examples  
+ The following example shows how to get the square of the length of a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN20](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn20)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D Multiply (double scalar, System.Windows.Media.Media3D.Vector3D vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D Multiply(float64 scalar, valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalar" Type="System.Double" />
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="scalar">The scalar to multiply.</param>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to multiply.</param>
+        <summary>Multiplies the specified scalar by the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
+        <returns>The result of multiplying <paramref name="scalar" /> and <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to multiply a scalar by a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn13)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D Multiply (System.Windows.Media.Media3D.Vector3D vector, double scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D Multiply(valuetype System.Windows.Media.Media3D.Vector3D vector, float64 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Windows.Media.Media3D.Vector3D,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="scalar" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to multiply.</param>
+        <param name="scalar">The scalar to multiply.</param>
+        <summary>Multiplies the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure by the specified scalar and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
+        <returns>The result of multiplying <paramref name="vector" /> and <paramref name="scalar" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to multiply a <xref:System.Windows.Media.Media3D.Vector3D> structure by a scalar.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn13)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D Multiply (System.Windows.Media.Media3D.Vector3D vector, System.Windows.Media.Media3D.Matrix3D matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D Multiply(valuetype System.Windows.Media.Media3D.Vector3D vector, valuetype System.Windows.Media.Media3D.Matrix3D matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Multiply(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="matrix" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to transform.</param>
+        <param name="matrix">The transformation to apply to the <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</param>
+        <summary>Transforms the coordinate space of the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure using the specified <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <returns>Returns the result of transforming <paramref name="vector" /> by <paramref name="matrix3D" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.Media3D.Vector3D.Multiply%2A> method to transform a <xref:System.Windows.Media.Media3D.Vector3D> structure by a <xref:System.Windows.Media.Media3D.Matrix3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN15](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn15)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Negate">
+      <MemberSignature Language="C#" Value="public void Negate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Negate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Negate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Negates a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The vector has the same magnitude as before, but its direction is now opposite.  
+  
+   
+  
+## Examples  
+ The following example shows how to negate a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN30](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn30)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN30](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn30)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normalize">
+      <MemberSignature Language="C#" Value="public void Normalize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Normalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Normalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Normalizes the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A normalized <xref:System.Windows.Media.Media3D.Vector3D> maintains its direction but its magnitude becomes `1`. The resulting <xref:System.Windows.Media.Media3D.Vector3D> is often called a unit vector. A <xref:System.Windows.Media.Media3D.Vector3D> is normalized by dividing the <xref:System.Windows.Media.Media3D.Vector3D> by its magnitude.  
+  
+   
+  
+## Examples  
+ The following example shows how to normalize a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN21](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn21)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn21)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D op_Addition (System.Windows.Media.Media3D.Vector3D vector, System.Windows.Media.Media3D.Point3D point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Addition(valuetype System.Windows.Media.Media3D.Vector3D vector, valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Addition(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="point" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure used to translate the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</param>
+        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to be translated.</param>
+        <summary>Translates the specified <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure by the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure and returns the result as a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
+        <returns>The result of translating <paramref name="point" /> by <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the overloaded addition operator to translate a <xref:System.Windows.Media.Media3D.Point3D> structure by a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN2](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn2)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Addition (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Addition(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Addition(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to add.</param>
+        <param name="vector2">The second <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to add.</param>
+        <summary>Adds two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The sum of <paramref name="vector1" /> and <paramref name="vector2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the overloaded addition operator to add two <xref:System.Windows.Media.Media3D.Vector3D> structures.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN3](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn3)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Division">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Division (System.Windows.Media.Media3D.Vector3D vector, double scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Division(valuetype System.Windows.Media.Media3D.Vector3D vector, float64 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Division(System.Windows.Media.Media3D.Vector3D,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="scalar" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be divided.</param>
+        <param name="scalar">The scalar to divide <c>vector</c> by.</param>
+        <summary>Divides the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure by the specified scalar and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
+        <returns>The result of dividing <paramref name="vector" /> by <paramref name="scalar" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the overloaded addition operator to divide a <xref:System.Windows.Media.Media3D.Vector3D> structure by a scalar.  
+  
+ [!code-csharp[vectorexamples_snip#OverloadedDivisionOperatorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/VectorExamples_snip/CSharp/VectorExample.cs#overloadeddivisionoperatorexample)]
+ [!code-vb[vectorexamples_snip#OverloadedDivisionOperatorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VectorExamples_snip/visualbasic/vectorexample.vb#overloadeddivisionoperatorexample)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Equality(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to compare.</param>
+        <param name="vector2">The second <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures for equality.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> components of <paramref name="vector1" /> and <paramref name="vector2" /> are equal; <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Windows.Media.Media3D.Vector3D> structures are equal if the values of their <xref:System.Windows.Media.Media3D.Vector3D.X%2A>, <xref:System.Windows.Media.Media3D.Vector3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Vector3D.Z%2A> properties are the same.  
+  
+ <xref:System.Windows.Media.Media3D.Vector3D> values are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Vector3D> values that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the overloaded equality operator to check if two <xref:System.Windows.Media.Media3D.Vector3D> structures are equal.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN25](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn25)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN25](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D op_Explicit (System.Windows.Media.Media3D.Vector3D vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Explicit(valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Explicit(System.Windows.Media.Media3D.Vector3D)~System.Windows.Media.Media3D.Point3D" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Size3D op_Explicit (System.Windows.Media.Media3D.Vector3D vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Size3D op_Explicit(valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Explicit(System.Windows.Media.Media3D.Vector3D)~System.Windows.Media.Media3D.Size3D" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Size3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Inequality(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The first <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to compare.</param>
+        <param name="vector2">The second <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structures for inequality.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> components of <paramref name="vector3D1" /> and <paramref name="vector3D2" /> are different; <see langword="false" /> otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Windows.Media.Media3D.Vector3D> structures are not equal if the values of their <xref:System.Windows.Media.Media3D.Vector3D.X%2A>, <xref:System.Windows.Media.Media3D.Vector3D.Y%2A>, and <xref:System.Windows.Media.Media3D.Vector3D.Z%2A> properties are different.  
+  
+ <xref:System.Windows.Media.Media3D.Vector3D> values are described using <xref:System.Double> values. Because the value of a <xref:System.Double> can lose precision when operated upon, a comparison between two <xref:System.Windows.Media.Media3D.Vector3D> values that are logically equal might fail.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the overloaded inequality operator to check if two <xref:System.Windows.Media.Media3D.Vector3D> structures are not equal.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN29](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn29)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN29](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn29)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Multiply (double scalar, System.Windows.Media.Media3D.Vector3D vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Multiply(float64 scalar, valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Double,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scalar" Type="System.Double" />
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="scalar">The scalar to multiply.</param>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to multiply.</param>
+        <summary>Multiplies the specified scalar by the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
+        <returns>The result of multiplying <paramref name="scalar" /> and <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to multiple a scalar by a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN11](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn11)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Multiply (System.Windows.Media.Media3D.Vector3D vector, double scalar);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Multiply(valuetype System.Windows.Media.Media3D.Vector3D vector, float64 scalar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Windows.Media.Media3D.Vector3D,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="scalar" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to multiply.</param>
+        <param name="scalar">The scalar to multiply.</param>
+        <summary>Multiplies the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure by the specified scalar and returns the result as a <see cref="T:System.Windows.Media.Media3D.Vector3D" />.</summary>
+        <returns>The result of multiplying <paramref name="vector" /> and <paramref name="scalar" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to multiply a <xref:System.Windows.Media.Media3D.Vector3D> structure by a scalar.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN10](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn10)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Multiply (System.Windows.Media.Media3D.Vector3D vector, System.Windows.Media.Media3D.Matrix3D matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Multiply(valuetype System.Windows.Media.Media3D.Vector3D vector, valuetype System.Windows.Media.Media3D.Matrix3D matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Multiply(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Matrix3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="matrix" Type="System.Windows.Media.Media3D.Matrix3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to transform.</param>
+        <param name="matrix">The transformation to apply to the <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</param>
+        <summary>Transforms the coordinate space of the specified <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure using the specified <see cref="T:System.Windows.Media.Media3D.Matrix3D" /> structure.</summary>
+        <returns>The result of transforming <paramref name="vector" /> by <paramref name="matrix" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the overloaded multiplication operator to transform a <xref:System.Windows.Media.Media3D.Vector3D> structure by a <xref:System.Windows.Media.Media3D.Matrix3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN12](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn12)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D op_Subtraction (System.Windows.Media.Media3D.Vector3D vector, System.Windows.Media.Media3D.Point3D point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Point3D op_Subtraction(valuetype System.Windows.Media.Media3D.Vector3D vector, valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Subtraction(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="point" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be subtracted from.</param>
+        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <c>vector</c>.</param>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The result of subtracting <paramref name="point" /> from <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the overloaded subtraction operator to subtract a <xref:System.Windows.Media.Media3D.Point3D> structure from a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN8](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn8)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_Subtraction (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_Subtraction(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_Subtraction(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be subtracted from.</param>
+        <param name="vector2">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to subtract from <c>vector1</c>.</param>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The result of subtracting <paramref name="vector2" /> from <paramref name="vector1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the overloaded subtraction operator to subtract a <xref:System.Windows.Media.Media3D.Vector3D> structure from a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN6](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn6)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_UnaryNegation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D op_UnaryNegation (System.Windows.Media.Media3D.Vector3D vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Media.Media3D.Vector3D op_UnaryNegation(valuetype System.Windows.Media.Media3D.Vector3D vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.op_UnaryNegation(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to negate.</param>
+        <summary>Negates a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure with <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> values opposite of the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> values of <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Windows.Media.Media3D.Vector3D> structure has the same magnitude (<xref:System.Windows.Media.Media3D.Vector3D.Length%2A>) as `vector` but its direction is opposite of that of `vector`.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the overloaded negation operator to negate a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN31](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn31)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN31](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn31)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D Parse (string source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D Parse(string source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The <see cref="T:System.String" /> representation of the [!INCLUDE[TLA2#tla_3d](~/includes/tla2sharptla-3d-md.md)] vector.</param>
+        <summary>Converts a <see cref="T:System.String" /> representation of a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] vector into the equivalent <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The equivalent <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.Media3D.Vector3D.Parse%2A> method to convert a string representation of a vector3D into a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN28](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn28)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn28)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Point3D Subtract (System.Windows.Media.Media3D.Vector3D vector, System.Windows.Media.Media3D.Point3D point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Point3D Subtract(valuetype System.Windows.Media.Media3D.Vector3D vector, valuetype System.Windows.Media.Media3D.Point3D point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Subtract(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Point3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="point" Type="System.Windows.Media.Media3D.Point3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be subtracted from.</param>
+        <param name="point">The <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to subtract from <c>vector</c>.</param>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The result of subtracting <paramref name="point" /> from <paramref name="vector" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN9](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn9)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Media3D.Vector3D Subtract (System.Windows.Media.Media3D.Vector3D vector1, System.Windows.Media.Media3D.Vector3D vector2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Media.Media3D.Vector3D Subtract(valuetype System.Windows.Media.Media3D.Vector3D vector1, valuetype System.Windows.Media.Media3D.Vector3D vector2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.Subtract(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector1" Type="System.Windows.Media.Media3D.Vector3D" />
+        <Parameter Name="vector2" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="vector1">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to be subtracted from.</param>
+        <param name="vector2">The <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure to subtract from <c>vector1</c>.</param>
+        <summary>Subtracts a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure from a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>The result of subtracting <paramref name="vector2" /> from <paramref name="vector1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to subtract a <xref:System.Windows.Media.Media3D.Vector3D> structure from a <xref:System.Windows.Media.Media3D.Vector3D> structure.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN7](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn7)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The string specifying the format to use.  
+  
+ -or-  
+  
+ <see langword="null" /> to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="provider">The <see langword="IFormatProvider" /> to use to format the value.  
+  
+ -or-  
+  
+ <see langword="null" /> to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>This member is part of the [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] infrastructure and is not intended to be used directly by your code. For a description of this member, see <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <returns>String representation of this object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>A string containing the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> values of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN32](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn32)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN32](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn32)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.Vector3D.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">Culture-specific formatting information.</param>
+        <summary>Creates a <see cref="T:System.String" /> representation of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <returns>Returns a <see cref="T:System.String" /> containing the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" />, <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" />, and <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> values of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public double X { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 X" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Windows.Media.Media3D.Vector3D.X" /> component of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <value>The <see cref="P:System.Windows.Media.Media3D.Vector3D.X" /> component of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure. The default value is <c>0</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to calculate the dot product of two <xref:System.Windows.Media.Media3D.Vector3D> structures.  It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Vector3D> structure when the structure is being declared and after the structure has been declared.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN24](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn24)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn24)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public double Y { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Y" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" /> component of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <value>The <see cref="P:System.Windows.Media.Media3D.Vector3D.Y" /> component of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure. The default value is <c>0</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to calculate the dot product of two <xref:System.Windows.Media.Media3D.Vector3D> structures.  It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Vector3D> structure when the structure is being declared and after the structure has been declared.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN24](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn24)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn24)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Z">
+      <MemberSignature Language="C#" Value="public double Z { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Z" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.Vector3D.Z" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> component of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure.</summary>
+        <value>The <see cref="P:System.Windows.Media.Media3D.Vector3D.Z" /> component of this <see cref="T:System.Windows.Media.Media3D.Vector3D" /> structure. The default value is <c>0</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to calculate the dot product of two <xref:System.Windows.Media.Media3D.Vector3D> structures.  It also shows how to assign values to a <xref:System.Windows.Media.Media3D.Vector3D> structure when the structure is being declared and after the structure has been declared.  
+  
+ [!code-csharp[vector3dsample#Mil3dVectorSample3DN24](~/samples/snippets/csharp/VS_Snippets_Wpf/Vector3DSample/CSharp/Window1.xaml.cs#mil3dvectorsample3dn24)]
+ [!code-vb[vector3dsample#Mil3dVectorSample3DN24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Vector3DSample/visualbasic/window1.xaml.vb#mil3dvectorsample3dn24)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

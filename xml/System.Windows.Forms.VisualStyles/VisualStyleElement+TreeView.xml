@@ -1,0 +1,33 @@
+<Type Name="VisualStyleElement+TreeView" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+TreeView">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.TreeView" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/TreeView extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of the tree view control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Branch>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Glyph>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView.Item>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for the tree view part specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,78 @@
+<!--<Snippet1>-->
+
+ <html>
+ <head>
+    <script language="C#" runat=server>
+ 
+       void ValidateBtn_Click(Object sender, EventArgs e) {
+ 
+          if (Page.IsValid == true) {
+             lblOutput.Text = "Required field is filled!";
+          }
+          else {
+             lblOutput.Text = "Required field is empty!";
+          }
+       }
+ 
+    </script>
+ 
+ </head>
+ <body>
+ 
+ <h3><font face="Verdana">RequiredField Validator Sample</font></h3>
+ <p>
+ 
+ <form runat="server">
+ 
+    <table bgcolor="#eeeeee" cellpadding=10>
+       <tr valign="top">
+          <td colspan=3>
+             <asp:Label ID="lblOutput" 
+                  Text="Fill in the required field below"
+                  ForeColor="red" 
+                  Font-Name="Verdana" 
+                  Font-Size="10" runat=server /><br>
+          </td>
+       </tr>
+ 
+       <tr>
+          <td colspan=3>
+             <font face=Verdana size=2><b>Credit Card Information</b></font>
+          </td>
+       </tr>
+     
+       <tr>
+          <td align=right>
+             <font face=Verdana size=2>Card Number:</font>
+          </td>
+          <td>
+             <asp:TextBox id=TextBox1 runat=server />
+          </td>
+          <td>
+             <asp:RequiredFieldValidator id="RequiredFieldValidator2"
+                  ControlToValidate="TextBox1"
+                  Display="Static"
+                  Width="100%" runat=server>
+                  *
+             </asp:RequiredFieldValidator>
+ 
+          </td>
+       </tr>
+       <tr>
+          <td></td>
+          <td>
+             <asp:Button id=Button1 
+                  text="Validate" 
+                  OnClick="ValidateBtn_Click" 
+                  runat=server />
+          </td>
+          <td></td>
+       </tr>
+    </table>
+ 
+ </form>
+ 
+ </body>
+ </html>
+    
+<!--</Snippet1>-->

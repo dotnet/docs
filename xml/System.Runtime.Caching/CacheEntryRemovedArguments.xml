@@ -1,0 +1,126 @@
+<Type Name="CacheEntryRemovedArguments" FullName="System.Runtime.Caching.CacheEntryRemovedArguments">
+  <TypeSignature Language="C#" Value="public class CacheEntryRemovedArguments" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CacheEntryRemovedArguments extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryRemovedArguments" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about a cache entry that was removed from the cache.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties of <xref:System.Runtime.Caching.CacheEntryRemovedArguments> class represent the cache entry itself, the <xref:System.Runtime.Caching.ObjectCache> instance that the entry was removed from, and the reason for the removal. The constructor of the <xref:System.Runtime.Caching.CacheEntryRemovedArguments> class uses these arguments to create a new instance of the class.  
+  
+ A <xref:System.Runtime.Caching.CacheEntryRemovedArguments> object is typically created in a callback method to pass information about a removed cache entry back to an application when a cache entry is removed from the cache.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CacheEntryRemovedArguments (System.Runtime.Caching.ObjectCache source, System.Runtime.Caching.CacheEntryRemovedReason reason, System.Runtime.Caching.CacheItem cacheItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Caching.ObjectCache source, valuetype System.Runtime.Caching.CacheEntryRemovedReason reason, class System.Runtime.Caching.CacheItem cacheItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.CacheEntryRemovedArguments.#ctor(System.Runtime.Caching.ObjectCache,System.Runtime.Caching.CacheEntryRemovedReason,System.Runtime.Caching.CacheItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.Runtime.Caching.ObjectCache" />
+        <Parameter Name="reason" Type="System.Runtime.Caching.CacheEntryRemovedReason" />
+        <Parameter Name="cacheItem" Type="System.Runtime.Caching.CacheItem" />
+      </Parameters>
+      <Docs>
+        <param name="source">The <see cref="T:System.Runtime.Caching.ObjectCache" /> instance from which <c>cacheItem</c> was removed.</param>
+        <param name="reason">One of the enumeration values that indicate why <c>cacheItem</c> was removed.</param>
+        <param name="cacheItem">An instance of the cached entry that was removed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Caching.CacheEntryRemovedArguments" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Developers typically use the <xref:System.Runtime.Caching.CacheEntryRemovedArguments> class when they want to be notified after a cache entry has been removed from the cache.  
+  
+ When a cache implementation is about to remove one or more cache entries from the cache, the cache implementation calls the <xref:System.Runtime.Caching.CacheEntryRemovedCallback> delegate that was registered in the application. When a cache implementation calls the delegate, it typically calls the <xref:System.Runtime.Caching.CacheEntryRemovedArguments.%23ctor%2A> constructor to pass to the callback a new <xref:System.Runtime.Caching.CacheEntryRemovedArguments> instance that contains information about the cache entry that is being removed. The callback notifies the application that registered the callback about the cache entry that is being removed. After the constructor returns, the <xref:System.Runtime.Caching.CacheEntryRemovedArguments> instance contains the details about the removal of the cache entry.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="cacheItem" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheItem">
+      <MemberSignature Language="C#" Value="public System.Runtime.Caching.CacheItem CacheItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Caching.CacheItem CacheItem" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryRemovedArguments.CacheItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of a cache entry that was removed from the cache.</summary>
+        <value>An instance of the <see cref="T:System.Runtime.Caching.CacheItem" /> class that was removed from the cache.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovedReason">
+      <MemberSignature Language="C#" Value="public System.Runtime.Caching.CacheEntryRemovedReason RemovedReason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Caching.CacheEntryRemovedReason RemovedReason" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryRemovedArguments.RemovedReason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates why a cache entry was removed.</summary>
+        <value>One of the enumeration values that indicates why the entry was removed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.CacheEntryRemovedReason> enumeration indicates one of a predefined set of reasons for the removal, such as that the entry was explicitly removed or that it expired.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public System.Runtime.Caching.ObjectCache Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Caching.ObjectCache Source" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.CacheEntryRemovedArguments.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.ObjectCache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the source <see cref="T:System.Runtime.Caching.ObjectCache" /> instance that originally contained the removed cache entry.</summary>
+        <value>A reference to the cache that originally contained the removed cache entry.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

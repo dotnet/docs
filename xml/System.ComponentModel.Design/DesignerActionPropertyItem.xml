@@ -1,0 +1,204 @@
+<Type Name="DesignerActionPropertyItem" FullName="System.ComponentModel.Design.DesignerActionPropertyItem">
+  <TypeSignature Language="C#" Value="public sealed class DesignerActionPropertyItem : System.ComponentModel.Design.DesignerActionItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerActionPropertyItem extends System.ComponentModel.Design.DesignerActionItem" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionPropertyItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.DesignerActionItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a panel item that is associated with a property in a class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionPropertyItem> class represents individual items in a smart tag panel. Each item is typically associated with a property in a class that is derived from the <xref:System.ComponentModel.Design.DesignerActionList> class and supplied by the component author. The association is maintained through the name of the property, as stored in the <xref:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName%2A> property.  
+  
+ Individual panel items are associated together to form a panel by a call to the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method of the <xref:System.ComponentModel.Design.DesignerActionList> class.  
+  
+ To display the value of the associated property, that property must have a `get` accessor method; to allow editing, the property must have a `set` accessor method. The way in which the panel allows direct editing of a property item by the user depends on the supporting type information present for the data type of the associated property. The following table shows the likely scheme.  
+  
+|Property type information|Property item editing user interface (UI)|  
+|-------------------------------|-------------------------------------------------|  
+|Has an associated type editor (<xref:System.Drawing.Design.UITypeEditor>)|The type editor associated with the underlying property is displayed for editing the property's value.|  
+|Has an associated type converter to a known type (<xref:System.ComponentModel.TypeConverter>)|The type editor for the known type is displayed for editing the property's value. For example, a type converter to <xref:System.String> will likely display a <xref:System.Windows.Forms.TextBox>.|  
+|Boolean value|The item is displayed using a binary UI, such as a check mark.|  
+|None of the above.|The item is displayed as a non-editable text string using the data type's <xref:System.Object.ToString%2A> method.|  
+  
+ All fundamental types, such as <xref:System.Boolean?displayProperty=fullName>, and common [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data types, such as <xref:System.String?displayProperty=fullName>, supply standard type converters and editors. For more information about type converters, see [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56) or [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada). For more information about type editors, see [How to: Implement a UI Type Editor](http://msdn.microsoft.com/library/ed961fb9-ee02-4666-b511-05f3204bb75c).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionPropertyItem (string memberName, string displayName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName, string displayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="memberName">The case-sensitive name of the property associated with this panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionPropertyItem" /> class, with the specified property and display names.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.%23ctor%28System.String%2CSystem.String%29> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> properties to `null`.  
+  
+ The `memberName` parameter refers to the name of the associated property that is a member of the programmer-supplied class derived from the <xref:System.ComponentModel.Design.DesignerActionList> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionPropertyItem (string memberName, string displayName, string category);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName, string displayName, string category) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="memberName">The case-sensitive name of the property associated with this panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <param name="category">The case-sensitive <see cref="T:System.String" /> used to group similar items on the panel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionPropertyItem" /> class, with the specified property and category names, and display text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.%23ctor%28System.String%2CSystem.String%2CSystem.String%29> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null`.  
+  
+ For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+  
+ The `memberName` parameter refers to the name of the associated property that is a member of the programmer-supplied class derived from <xref:System.ComponentModel.Design.DesignerActionList>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionPropertyItem (string memberName, string displayName, string category, string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName, string displayName, string category, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionPropertyItem.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="memberName">The case-sensitive name of the property associated with this panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <param name="category">The case-sensitive <see cref="T:System.String" /> used to group similar items on the panel.</param>
+        <param name="description">Supplemental text for this item, used in ToolTips or the status bar.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionPropertyItem" /> class, with the specified property and category names, and display and description text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+  
+ The `memberName` parameter refers to the name of the associated property that is a member of the programmer-supplied class derived from the <xref:System.ComponentModel.Design.DesignerActionList> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects. For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberName">
+      <MemberSignature Language="C#" Value="public string MemberName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the property that this item is associated with.</summary>
+        <value>A <see cref="T:System.String" /> that contains the name of the associated property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName%2A> property specifies which property—in the class derived from the <xref:System.ComponentModel.Design.DesignerActionList> class—the item should be bound to. When the programmer interacts with the panel item through the user interface (UI), this associated property will be set.  
+  
+ <xref:System.ComponentModel.Design.DesignerActionPropertyItem.MemberName%2A> is set in the constructor. Its value is case-sensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedComponent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent RelatedComponent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent RelatedComponent" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a component that contributes its items to the current panel.</summary>
+        <value>The contributing component, which should have an associated designer that supplies <see cref="T:System.ComponentModel.Design.DesignerActionItem" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With the <xref:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent%2A> property, another component can lend its pull-model panel items to the current list. For example, a user control might aggregate the <xref:System.ComponentModel.Design.DesignerActionItem> objects from one or more of its constituent controls.  
+  
+ This property works in conjunction with the <xref:System.ComponentModel.Design.DesignerActionItem.AllowAssociate%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

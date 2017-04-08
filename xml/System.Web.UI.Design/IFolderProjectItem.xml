@@ -1,0 +1,80 @@
+<Type Name="IFolderProjectItem" FullName="System.Web.UI.Design.IFolderProjectItem">
+  <TypeSignature Language="C#" Value="public interface IFolderProjectItem" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFolderProjectItem" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IFolderProjectItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for a project folder in a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddDocument">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.IDocumentProjectItem AddDocument (string name, byte[] content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IDocumentProjectItem AddDocument(string name, unsigned int8[] content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IFolderProjectItem.AddDocument(System.String,System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IDocumentProjectItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="content" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the document.</param>
+        <param name="content">An array of type <see cref="T:System.Byte" /> containing the document contents.</param>
+        <summary>Adds a document to a project folder in a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
+        <returns>An <see cref="T:System.Web.UI.Design.IDocumentProjectItem" /> representing the added document.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFolder">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.IFolderProjectItem AddFolder (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IFolderProjectItem AddFolder(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IFolderProjectItem.AddFolder(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IFolderProjectItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name for the new folder.</param>
+        <summary>Creates a new folder in a project folder of a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
+        <returns>An <see cref="T:System.Web.UI.Design.IFolderProjectItem" /> representing the new folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Children { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Children" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IFolderProjectItem.Children" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of items in a project folder in a design host, such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> containing the items in the project folder of the design host.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

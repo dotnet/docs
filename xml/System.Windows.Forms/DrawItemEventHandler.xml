@@ -1,0 +1,41 @@
+<Type Name="DrawItemEventHandler" FullName="System.Windows.Forms.DrawItemEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DrawItemEventHandler(object sender, DrawItemEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawItemEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.DrawItemEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see langword="DrawItem" /> event of a <see cref="T:System.Windows.Forms.ComboBox" />, <see cref="T:System.Windows.Forms.ListBox" />, <see cref="T:System.Windows.Forms.MenuItem" />, or <see cref="T:System.Windows.Forms.TabControl" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Windows.Forms.DrawItemEventArgs> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a menu with an owner-drawn menu item. This example uses the `AddHandler` statement and the `AddressOf` operator to designate a delegate to handle the <xref:System.Windows.Forms.MenuItem.DrawItem?displayProperty=fullName> event. To run the example place paste it in a form that imports the System, System.Windows.Forms, and System.Drawing namespaces. Ensure all events are associated with their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.MenuItemOwnerDraw#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.MenuItemOwnerDraw/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.MenuItemOwnerDraw#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MenuItemOwnerDraw/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.MenuItemOwnerDraw#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MenuItemOwnerDraw/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

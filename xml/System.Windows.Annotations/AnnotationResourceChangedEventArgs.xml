@@ -1,0 +1,113 @@
+<Type Name="AnnotationResourceChangedEventArgs" FullName="System.Windows.Annotations.AnnotationResourceChangedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class AnnotationResourceChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnotationResourceChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationResourceChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Annotations.Annotation.AnchorChanged" /> and <see cref="E:System.Windows.Annotations.Annotation.CargoChanged" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationResourceChangedEventArgs> data includes the <xref:System.Windows.Annotations.Annotation> that raised the event, the anchor or cargo resource associated with the event, and the action that was taken - <xref:System.Windows.Annotations.AnnotationAction>, <xref:System.Windows.Annotations.AnnotationAction>, or <xref:System.Windows.Annotations.AnnotationAction>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationResourceChangedEventArgs (System.Windows.Annotations.Annotation annotation, System.Windows.Annotations.AnnotationAction action, System.Windows.Annotations.AnnotationResource resource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Annotations.Annotation annotation, valuetype System.Windows.Annotations.AnnotationAction action, class System.Windows.Annotations.AnnotationResource resource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationResourceChangedEventArgs.#ctor(System.Windows.Annotations.Annotation,System.Windows.Annotations.AnnotationAction,System.Windows.Annotations.AnnotationResource)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="annotation" Type="System.Windows.Annotations.Annotation" />
+        <Parameter Name="action" Type="System.Windows.Annotations.AnnotationAction" />
+        <Parameter Name="resource" Type="System.Windows.Annotations.AnnotationResource" />
+      </Parameters>
+      <Docs>
+        <param name="annotation">The annotation that raised the event.</param>
+        <param name="action">The action of the event.</param>
+        <param name="resource">The <see cref="P:System.Windows.Annotations.Annotation.Anchors" /> or <see cref="P:System.Windows.Annotations.Annotation.Cargos" /> resource of the event.</param>
+        <summary>Initializes a new instance of the <see cref="M:System.Windows.Annotations.AnnotationResourceChangedEventArgs.#ctor(System.Windows.Annotations.Annotation,System.Windows.Annotations.AnnotationAction,System.Windows.Annotations.AnnotationResource)" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="annotation" /> or <paramref name="action" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="action" /> is not a valid <see cref="T:System.Windows.Annotations.AnnotationAction" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.AnnotationAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Annotations.AnnotationAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationResourceChangedEventArgs.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the action of the annotation <see cref="P:System.Windows.Annotations.AnnotationResourceChangedEventArgs.Resource" />.</summary>
+        <value>The action of the annotation <see cref="P:System.Windows.Annotations.AnnotationResourceChangedEventArgs.Resource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationResourceChangedEventHandler> is called when an <xref:System.Windows.Annotations.Annotation.Anchors%2A> or <xref:System.Windows.Annotations.Annotation.Cargos%2A> resource is <xref:System.Windows.Annotations.AnnotationAction>, <xref:System.Windows.Annotations.AnnotationAction>, or <xref:System.Windows.Annotations.AnnotationAction>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotation">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.Annotation Annotation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.Annotation Annotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationResourceChangedEventArgs.Annotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Annotations.Annotation" /> that raised the event.</summary>
+        <value>The <see cref="T:System.Windows.Annotations.Annotation" /> that raised the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resource">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.AnnotationResource Resource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.AnnotationResource Resource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationResourceChangedEventArgs.Resource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.AnnotationResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Annotations.Annotation.Anchors" /> or <see cref="P:System.Windows.Annotations.Annotation.Cargos" /> resource associated with the event.</summary>
+        <value>The annotation anchor or cargo resource that was <see cref="F:System.Windows.Annotations.AnnotationAction.Added" />, <see cref="F:System.Windows.Annotations.AnnotationAction.Removed" />, or <see cref="F:System.Windows.Annotations.AnnotationAction.Modified" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

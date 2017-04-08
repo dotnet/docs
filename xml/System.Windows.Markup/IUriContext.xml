@@ -1,0 +1,59 @@
+<Type Name="IUriContext" FullName="System.Windows.Markup.IUriContext">
+  <TypeSignature Language="C#" Value="public interface IUriContext" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUriContext" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IUriContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("PresentationCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a service that can use application context to resolve a provided relative URI to an absolute URI.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.IUriContext> implemented as a service enables type converters to use an application-specific context that might be able to complete a URI-type property.  
+  
+ Type converters and markup extensions can query for <xref:System.Windows.Markup.IUriContext> as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md) and [Service Contexts Available to Type Converters and Markup Extensions](~/docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
+  
+ <xref:System.Windows.Markup.IUriContext> is not just for value conversion and service context. Class logic for UI elements or other classes that support containment might also implement <xref:System.Windows.Markup.IUriContext> services as a recognized pattern that child elements can call for base URI information, or store base URI information that is obtained from XAML parsing of the root element.  
+  
+ In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly PresentationCore. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.IUriContext> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+## WPF Usage Notes  
+ Example scenarios for <xref:System.Windows.Markup.IUriContext> exist in WPF.  
+  
+ As an example of a value converter, the <xref:System.Windows.Media.FontFamilyConverter> class can use a relative URI that is provided for properties such as <xref:System.Windows.Controls.Page.FontFamily%2A?displayProperty=fullName>, if <xref:System.Windows.Markup.IUriContext> is available as a service on the <xref:System.ComponentModel.ITypeDescriptorContext> input.  
+  
+ As an example of the element case, <xref:System.Windows.Documents.Hyperlink> implements <xref:System.Windows.Markup.IUriContext> so that it can pass through base URI values when parsed, which then modifies <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BaseUri">
+      <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.IUriContext.BaseUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the base URI of the current application context.</summary>
+        <value>The base URI of the application context.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

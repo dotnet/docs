@@ -1,0 +1,1862 @@
+<Type Name="FileRecordSequence" FullName="System.IO.Log.FileRecordSequence">
+  <TypeSignature Language="C#" Value="public sealed class FileRecordSequence : IDisposable, System.IO.Log.IRecordSequence" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileRecordSequence extends System.Object implements class System.IDisposable, class System.IO.Log.IRecordSequence" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.FileRecordSequence" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IO.Log.IRecordSequence</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Implements an <see cref="T:System.IO.Log.IRecordSequence" /> on top of a file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Log.FileRecordSequence> is a record sequence based on a single log file in the file system. It is a simple implementation of the <xref:System.IO.Log.IRecordSequence> interface, on top of a simple file-based log.  
+  
+ To manipulate a file-based log, the account that your application is running in must have sufficient privileges, as dictated by the file system security at the time the <xref:System.IO.Log.FileRecordSequence> is constructed. In addition, a demand for FullTrust is made at construction time. The permission verification results are cached thereafter in keeping with the Windows security model. You should ensure that you do not accidentally expose the contents of the record sequence to an unauthorized user.  
+  
+   
+  
+## Examples  
+ The following example creates a record sequence, appends record to it, and finally reads the records.  
+  
+ [!code-csharp[IRecordSequence#1](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#1)]
+ [!code-vb[IRecordSequence#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileRecordSequence (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">A relative or absolute path for the file that this <see cref="T:System.IO.Log.FileRecordSequence" /> instance will encapsulate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.FileRecordSequence" /> class with a specified file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates read/write access to the file, and opens the file with share Read access. This means that requests to open the file for writing by this or another process fails until this <xref:System.IO.Log.FileRecordSequence> instance has been disposed of, but read attempts will succeed. If `path` is not found, a new file is created with a size of 0 bytes.  
+  
+   
+  
+## Examples  
+ The following example creates a record sequence, appends record to it, reads the records, and finally diposes the sequence.  
+  
+ [!code-csharp[IRecordSequence#1](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#1)]
+ [!code-vb[IRecordSequence#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The file specified by <paramref name="path" /> is not valid.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> cannot be found.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileRecordSequence (string path, System.IO.FileAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.#ctor(System.String,System.IO.FileAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+      </Parameters>
+      <Docs>
+        <param name="path">A relative or absolute path for the file that this <see cref="T:System.IO.Log.FileRecordSequence" /> instance will encapsulate.</param>
+        <param name="access">A valid <see cref="T:System.IO.FileAccess" /> value that controls the kind of access users have to a log file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.FileRecordSequence" /> class with a specified file and an access mode.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The file specified by <paramref name="path" /> is not valid.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> cannot be found.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileRecordSequence (string path, System.IO.FileAccess access, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileAccess access, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.#ctor(System.String,System.IO.FileAccess,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="access" Type="System.IO.FileAccess" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="path">A relative or absolute path for the file that this <see cref="T:System.IO.Log.FileRecordSequence" /> instance will encapsulate.</param>
+        <param name="access">A valid <see cref="T:System.IO.FileAccess" /> value that controls the kind of access users have to a log file.</param>
+        <param name="size">The size of the log file to be opened.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.FileRecordSequence" /> class with a specified file, an access mode, and a file size.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the parameters are out of the valid range.</exception>
+        <exception cref="T:System.ArgumentException">The file specified by <paramref name="path" /> is not valid.</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> cannot be found.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvanceBaseSequenceNumber">
+      <MemberSignature Language="C#" Value="public void AdvanceBaseSequenceNumber (System.IO.Log.SequenceNumber newBaseSequenceNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AdvanceBaseSequenceNumber(valuetype System.IO.Log.SequenceNumber newBaseSequenceNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.AdvanceBaseSequenceNumber(System.IO.Log.SequenceNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newBaseSequenceNumber" Type="System.IO.Log.SequenceNumber" />
+      </Parameters>
+      <Docs>
+        <param name="newBaseSequenceNumber">The new base sequence number of the record sequence.</param>
+        <summary>Moves the base sequence number of the log forward. This method cannot be inherited.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="newBaseSequenceNumber" /> is invalid.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="newBaseSequenceNumber" /> is not between the base and last sequence numbers of this sequence.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred while modifying the sequence.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Append">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Append (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.Append(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />. This method cannot be inherited.</summary>
+        <returns>The sequence number of the appended log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+   
+  
+## Examples  
+ The following example creates a record sequence, appends record to it, and finally reads the records.  
+  
+ [!code-csharp[FileRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/filerecordsequence/cs/filerecordsequence.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Append">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Append (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.Append(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />. This method cannot be inherited.</summary>
+        <returns>The sequence number of the appended log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+   
+  
+## Examples  
+ The following example shows how you can create a record sequence with this method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[IRecordSequence#3](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[IRecordSequence#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Append">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Append (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, System.IO.Log.ReservationCollection reservations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.Append(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="reservations" Type="System.IO.Log.ReservationCollection" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="reservations">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the reservation that should be used for this record.</param>
+        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />, using space previously reserved in the sequence. This method cannot be inherited.</summary>
+        <returns>The sequence number of the appended log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
+  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence..</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Append">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Append (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, System.IO.Log.ReservationCollection reservations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.Append(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="reservations" Type="System.IO.Log.ReservationCollection" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="reservations">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the reservation that should be used for this record.</param>
+        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />, using space previously reserved in the sequence. This method cannot be inherited.</summary>
+        <returns>The sequence number of the appended log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
+  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence..</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseSequenceNumber">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber BaseSequenceNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber BaseSequenceNumber" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRecordSequence.BaseSequenceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the sequence number of the first valid record in the current <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
+        <value>The lowest sequence number that corresponds to a valid record in the <see cref="T:System.IO.Log.FileRecordSequence" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid sequence numbers are greater than or equal to <xref:System.IO.Log.FileRecordSequence.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.FileRecordSequence.LastSequenceNumber%2A>. All other sequence numbers are invalid.  
+  
+ The value of this property can be changed by calling the <xref:System.IO.Log.FileRecordSequence.WriteRestartArea%2A> or <xref:System.IO.Log.FileRecordSequence.AdvanceBaseSequenceNumber%2A> method.  
+  
+   
+  
+## Examples  
+ The following example shows using <xref:System.IO.Log.FileRecordSequence.BaseSequenceNumber%2A> in a loop:  
+  
+ [!code-csharp[IRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#2)]
+ [!code-vb[IRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginAppend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginAppend (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAppend(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginAppend(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the append is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous append request from other requests.</param>
+        <summary>Begins an asynchronous append operation. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous append, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> method, to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginAppend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginAppend (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAppend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the append is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous append request from other requests.</param>
+        <summary>Begins an asynchronous append operation. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous append, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> method, to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginAppend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginAppend (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, System.IO.Log.ReservationCollection reservations, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAppend(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservations, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginAppend(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="reservations" Type="System.IO.Log.ReservationCollection" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="reservations">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the reservation that should be used for this record.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the append is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous append request from other requests.</param>
+        <summary>Begins an asynchronous append operation using space previously reserved in the sequence. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous append, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> method, to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
+  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginAppend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginAppend (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, System.IO.Log.ReservationCollection reservations, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAppend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservations, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="reservations" Type="System.IO.Log.ReservationCollection" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="reservations">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the reservation that should be used for this record.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the append is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous append request from other requests.</param>
+        <summary>Begins an asynchronous append operation using space previously reserved in the sequence. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous append, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> method, to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ The appended record will consume space that has been previously reserved, using a reservation specified by the `reservations` parameter. If the append succeeds, it will consume the smallest reservation area that can hold the data, and that reservation area will be removed from the collection.  
+  
+ Normally, this method completes before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginFlush">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginFlush (System.IO.Log.SequenceNumber sequenceNumber, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginFlush(valuetype System.IO.Log.SequenceNumber sequenceNumber, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginFlush(System.IO.Log.SequenceNumber,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sequenceNumber" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sequenceNumber">The sequence number of the latest record that must be written. If <see cref="T:System.IO.Log.SequenceNumber" /> is invalid, then all records must be written.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the flush is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous flush request from other requests.</param>
+        <summary>Begins an asynchronous flush operation, using space previously reserved in the sequence. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous flush operation, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by the current method to the <xref:System.IO.Log.FileRecordSequence.EndFlush%2A> method to ensure that the flush completes and resources are freed appropriately. If an error occurs during an asynchronous flush, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndFlush%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Calling this method ensures that all records that have been appended to the <xref:System.IO.Log.FileRecordSequence> are durably written.  
+  
+ If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous flush request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndFlush%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">One or more of the arguments is invalid.  
+  
+ <paramref name="sequenceNumber" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="sequenceNumber" /> is not between the base and last sequence numbers of this sequence.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred while flushing the data.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginReserveAndAppend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReserveAndAppend (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, System.IO.Log.ReservationCollection reservationCollection, long[] reservations, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReserveAndAppend(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservationCollection, int64[] reservations, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginReserveAndAppend(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.Int64[],System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="reservationCollection" Type="System.IO.Log.ReservationCollection" />
+        <Parameter Name="reservations" Type="System.Int64[]" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="reservationCollection">The reservation collection to make reservations in.</param>
+        <param name="reservations">The reservations to make, in bytes.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the append is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous append request from other requests.</param>
+        <summary>Begins an asynchronous reserve and append operation. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents this asynchronous operation, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method, to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
+  
+ Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginReserveAndAppend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginReserveAndAppend (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, System.IO.Log.ReservationCollection reservationCollection, long[] reservations, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginReserveAndAppend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservationCollection, int64[] reservations, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginReserveAndAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.Int64[],System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="reservationCollection" Type="System.IO.Log.ReservationCollection" />
+        <Parameter Name="reservations" Type="System.Int64[]" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="reservationCollection">The reservation collection to make reservations in.</param>
+        <param name="reservations">The reservations to make, in bytes.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the append is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous append request from other requests.</param>
+        <summary>Begins an asynchronous reserve and append operation. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents this asynchronous operation, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method, to ensure that the append operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous append, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
+  
+ Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginWriteRestartArea">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginWriteRestartArea (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber newBaseSeqNum, System.IO.Log.ReservationCollection reservation, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginWriteRestartArea(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber newBaseSeqNum, class System.IO.Log.ReservationCollection reservation, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginWriteRestartArea(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="newBaseSeqNum" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="reservation" Type="System.IO.Log.ReservationCollection" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="newBaseSeqNum">The new base sequence number. The specified sequence number must be greater than or equal to the current base sequence number.</param>
+        <param name="reservation">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the reservation that should be used for this restart area.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the restart area write is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous restart area write request from other requests.</param>
+        <summary>Begins an asynchronous restart area write operation, using space previously reserved in the sequence. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous restart area write operation, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.FileRecordSequence.EndWriteRestartArea%2A> method, to assure that the restart area write operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous restart area write operation, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndWriteRestartArea%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ When the operation successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+  
+ If a <xref:System.IO.Log.ReservationCollection> is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can hold the data, and that reservation will be removed from the collection.  
+  
+ If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndWriteRestartArea%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="newBaseSeqNum" /> is not between the base and last sequence numbers of this sequence.  
+  
+ -or-  
+  
+ A new or existing archive tail or base of the active log is invalid.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence.  
+  
+ -or-  
+  
+ <paramref name="newBaseSeqNum" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginWriteRestartArea">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginWriteRestartArea (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber newBaseSeqNum, System.IO.Log.ReservationCollection reservation, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginWriteRestartArea(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber newBaseSeqNum, class System.IO.Log.ReservationCollection reservation, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.BeginWriteRestartArea(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="newBaseSeqNum" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="reservation" Type="System.IO.Log.ReservationCollection" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="newBaseSeqNum">The new base sequence number. The specified sequence number must be greater than or equal to the current base sequence number.</param>
+        <param name="reservation">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the reservation that should be used for this restart area.</param>
+        <param name="callback">An optional asynchronous callback, to be called when the restart area write is complete.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous restart area write request from other requests.</param>
+        <summary>Begins an asynchronous restart area write operation, using space previously reserved in the sequence. This method cannot be inherited.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> that represents the asynchronous restart area write operation, which could still be pending.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should pass the <xref:System.IAsyncResult> returned by this method to the <xref:System.IO.Log.FileRecordSequence.EndWriteRestartArea%2A> method, to assure that the restart area write operation has completed and resources can be freed appropriately. If an error has occurred during an asynchronous restart area write operation, an exception is not thrown until the <xref:System.IO.Log.FileRecordSequence.EndWriteRestartArea%2A> method is called with the <xref:System.IAsyncResult> returned by this method.  
+  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ When the operation successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+  
+ If a <xref:System.IO.Log.ReservationCollection> is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can hold the data, and that reservation will be removed from the collection.  
+  
+ If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndWriteRestartArea%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="newBaseSeqNum" /> is not between the base and last sequence numbers of this sequence.  
+  
+ -or-  
+  
+ A new or existing archive tail or base of the active log is invalid.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence.  
+  
+ -or-  
+  
+ <paramref name="newBaseSeqNum" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReservationCollection">
+      <MemberSignature Language="C#" Value="public System.IO.Log.ReservationCollection CreateReservationCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Log.ReservationCollection CreateReservationCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.CreateReservationCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.ReservationCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.IO.Log.ReservationCollection" />. This method cannot be inherited.</summary>
+        <returns>The newly created <see cref="T:System.IO.Log.ReservationCollection" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Immediately releases the unmanaged resources used by an object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IO.IOException">An I/O error occurred while flushing the data.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndAppend">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber EndAppend (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber EndAppend(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.EndAppend(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the outstanding asynchronous I/O request.</param>
+        <summary>Ends an asynchronous append operation. This method cannot be inherited.</summary>
+        <returns>The sequence number of the appended log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.FileRecordSequence.EndAppend%2A> is called.  
+  
+ This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.FileRecordSequence.BeginAppend%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="result" /> is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see langword="End" /> has already been called for this asynchronous operation.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndFlush">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber EndFlush (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber EndFlush(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.EndFlush(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the outstanding asynchronous I/O request.</param>
+        <summary>Ends an asynchronous flush operation. This method cannot be inherited.</summary>
+        <returns>The sequence number of the last record written.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method blocks until the I/O operation has completed. Errors that occur during an asynchronous flush request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.FileRecordSequence.EndFlush%2A> is called.  
+  
+ This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.FileRecordSequence.BeginFlush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="result" /> is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see langword="End" /> has already been called for this asynchronous operation.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndReserveAndAppend">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber EndReserveAndAppend (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber EndReserveAndAppend(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.EndReserveAndAppend(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the outstanding asynchronous I/O request.</param>
+        <summary>Ends an asynchronous reserve and append operation. This method cannot be inherited.</summary>
+        <returns>The sequence number of the appended log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> is called.  
+  
+ This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.FileRecordSequence.BeginReserveAndAppend%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="result" /> is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see langword="End" /> has already been called for this asynchronous operation.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndWriteRestartArea">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber EndWriteRestartArea (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber EndWriteRestartArea(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.EndWriteRestartArea(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the outstanding asynchronous I/O request.</param>
+        <summary>Ends an asynchronous restart area write operation. This method cannot be inherited.</summary>
+        <returns>The sequence number of the written log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method blocks until the I/O operation has completed. Errors that occur during an asynchronous write request, such as a disk failure during the I/O request, become visible when <xref:System.IO.Log.FileRecordSequence.EndWriteRestartArea%2A> is called.  
+  
+ This method must be called exactly once on every <xref:System.IAsyncResult> returned by the <xref:System.IO.Log.FileRecordSequence.BeginWriteRestartArea%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="result" /> is invalid.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see langword="End" /> has already been called for this asynchronous operation.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Flush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Flush() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.Flush" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ensures that all appended records have been written. This method cannot be inherited.</summary>
+        <returns>The sequence number of the last record written.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method ensures that all records that have been appended to the <xref:System.IO.Log.FileRecordSequence> have been durably written.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">An I/O error occurred while flushing the data.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Flush (System.IO.Log.SequenceNumber sequenceNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Flush(valuetype System.IO.Log.SequenceNumber sequenceNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.Flush(System.IO.Log.SequenceNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sequenceNumber" Type="System.IO.Log.SequenceNumber" />
+      </Parameters>
+      <Docs>
+        <param name="sequenceNumber">The sequence number of the latest record that must be written. If this <see cref="T:System.IO.Log.SequenceNumber" /> is invalid, then all records must be written.</param>
+        <summary>Ensures that all appended records have been written. This method cannot be inherited.</summary>
+        <returns>The sequence number of the last record written.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method ensures that all records with sequence numbers up to and including the specified sequence number have been durably written.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="sequenceNumber" /> is not between the base and last sequence numbers of this sequence.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="sequenceNumber" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred while flushing the data.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSequenceNumber">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber LastSequenceNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber LastSequenceNumber" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRecordSequence.LastSequenceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the sequence number which is greater than the last record appended.</summary>
+        <value>A sequence number which is greater than the last record appended.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains a sequence number that is guaranteed to be larger than the sequence number of the last appended record. Valid sequence numbers are greater than or equal to <xref:System.IO.Log.FileRecordSequence.BaseSequenceNumber%2A> and less than <xref:System.IO.Log.FileRecordSequence.LastSequenceNumber%2A>. All other sequence numbers are invalid.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumRecordLength">
+      <MemberSignature Language="C#" Value="public long MaximumRecordLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaximumRecordLength" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRecordSequence.MaximumRecordLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the largest record that can be appended to or read from this sequence, in bytes.</summary>
+        <value>The size of the largest record that can be appended to or read from this sequence, in bytes.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadLogRecords">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.IO.Log.LogRecord&gt; ReadLogRecords (System.IO.Log.SequenceNumber start, System.IO.Log.LogRecordEnumeratorType logRecordEnum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.Log.LogRecord&gt; ReadLogRecords(valuetype System.IO.Log.SequenceNumber start, valuetype System.IO.Log.LogRecordEnumeratorType logRecordEnum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.ReadLogRecords(System.IO.Log.SequenceNumber,System.IO.Log.LogRecordEnumeratorType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.Log.LogRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="logRecordEnum" Type="System.IO.Log.LogRecordEnumeratorType" />
+      </Parameters>
+      <Docs>
+        <param name="start">The sequence number of the first record where the reading starts.</param>
+        <param name="logRecordEnum">A valid <see cref="T:System.IO.Log.LogRecordEnumeratorType" /> value that specifies the manner (that is, forward or backward) in which records should be read from a <see cref="T:System.IO.Log.LogRecordSequence" />.</param>
+        <summary>Returns an enumerable collection of records in the sequence. This method cannot be inherited.</summary>
+        <returns>An enumerable collection of records in the sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns an enumerable collection of records in the sequence. The order of the enumerated records depends on the value of the `logRecordEnum` parameter.  
+  
+   
+  
+## Examples  
+ The following example shows how you can use this method to read the records in a log sequence.  
+  
+ [!code-csharp[IRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#2)]
+ [!code-vb[IRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with write-only access.</exception>
+        <exception cref="T:System.IO.IOException">The record sequence is corrupted.  
+  
+ -or-  
+  
+ The record was written with an incompatible version of the record sequence.</exception>
+        <exception cref="T:System.InvalidOperationException">The enumeration has ended.  
+  
+ -or-  
+  
+ The enumeration has not been started. A call to <see cref="M:System.Collections.IEnumerator.MoveNext" /> must be made.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadRestartAreas">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.IO.Log.LogRecord&gt; ReadRestartAreas ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IO.Log.LogRecord&gt; ReadRestartAreas() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.ReadRestartAreas" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IO.Log.LogRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerable collection of the restart areas in the sequence. This method cannot be inherited.</summary>
+        <returns>An enumerable collection of the restart areas in the sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The restart areas are enumerated in reverse sequence number order, that is, from the highest sequence number to the lowest sequence number. Only restart areas with sequence numbers between the last sequence number and the base sequence number are enumerated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with write-only access.</exception>
+        <exception cref="T:System.IO.IOException">The record sequence is corrupted.  
+  
+ -or-  
+  
+ The record was written with an incompatible version of the record sequence.</exception>
+        <exception cref="T:System.InvalidOperationException">The enumeration has ended.  
+  
+ -or-  
+  
+ The enumeration has not been started. A call to <see cref="M:System.Collections.IEnumerator.MoveNext" /> must be made.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReserveAndAppend">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber ReserveAndAppend (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, System.IO.Log.ReservationCollection reservationCollection, long[] reservations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber ReserveAndAppend(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservationCollection, int64[] reservations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.ReserveAndAppend(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.Int64[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="reservationCollection" Type="System.IO.Log.ReservationCollection" />
+        <Parameter Name="reservations" Type="System.Int64[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="reservationCollection">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the collection to make reservations in.</param>
+        <param name="reservations">The reservations to make, in bytes.</param>
+        <summary>Automatically makes a single reservation and appends a record to the sequence. This method cannot be inherited.</summary>
+        <returns>The sequence number of the appended log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
+  
+ Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence..</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReserveAndAppend">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber ReserveAndAppend (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions, System.IO.Log.ReservationCollection reservationCollection, long[] reservations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber ReserveAndAppend(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions, class System.IO.Log.ReservationCollection reservationCollection, int64[] reservations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.ReserveAndAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.Int64[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="nextUndoRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="previousRecord" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="recordAppendOptions" Type="System.IO.Log.RecordAppendOptions" />
+        <Parameter Name="reservationCollection" Type="System.IO.Log.ReservationCollection" />
+        <Parameter Name="reservations" Type="System.Int64[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="nextUndoRecord">The sequence number of the next record in the user-specified order.</param>
+        <param name="previousRecord">The sequence number of the next record in Previous order.</param>
+        <param name="recordAppendOptions">A valid value of <see cref="T:System.IO.Log.RecordAppendOptions" /> that specifies how the data should be written.</param>
+        <param name="reservationCollection">The reservation collection to make reservations in.</param>
+        <param name="reservations">The reservations to make, in bytes.</param>
+        <summary>Automatically makes a single reservation and appends a record to the sequence. This method cannot be inherited.</summary>
+        <returns>The sequence number of the appended log record.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data contained in the `data` parameter will be concatenated into a single byte array for appending as the record. However, no provision is made for splitting data back into array segments when the record is read.  
+  
+ The specified reservations are added to the provided reservation collection in an atomic operation with a record append operation. If the append fails, no space is reserved.  
+  
+ Normally, this method may complete before the record has been written. To ensure that a record has been written, either specify the <xref:System.IO.Log.RecordAppendOptions> flag using the `recordAppendOptions` parameter, or call the <xref:System.IO.Log.FileRecordSequence.Flush%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">One or more of the arguments are out of range.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence..</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReservedBytes">
+      <MemberSignature Language="C#" Value="public long ReservedBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ReservedBytes" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRecordSequence.ReservedBytes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of bytes that have been reserved.</summary>
+        <value>The total size of all reservations made in this record sequence.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RestartSequenceNumber">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber RestartSequenceNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber RestartSequenceNumber" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRecordSequence.RestartSequenceNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the sequence number of the most recently written restart area.</summary>
+        <value>The sequence number of the most recently written restart area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RetryAppend">
+      <MemberSignature Language="C#" Value="public bool RetryAppend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RetryAppend" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.FileRecordSequence.RetryAppend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether or not appends are automatically retried if the log is full.</summary>
+        <value>
+          <see langword="true" /> if appends are automatically retried if the log is full; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is `true`, and an <xref:System.IO.Log.FileRecordSequence.Append%2A> call fails because there is not enough space in the sequence, the record sequence will try to free space and retry the append.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ObjectDisposedException">The property was accessed after the sequence has been disposed of.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TailPinned">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.IO.Log.TailPinnedEventArgs&gt; TailPinned;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.IO.Log.TailPinnedEventArgs&gt; TailPinned" />
+      <MemberSignature Language="DocId" Value="E:System.IO.Log.FileRecordSequence.TailPinned" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.IO.Log.TailPinnedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the record sequence determines that the tail must be moved forward. This method cannot be inherited.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can fire this event when the record sequence has run out of space. When this event is fired, the tail of the sequence (that is, the base sequence number) is moved forward to free up space.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRestartArea">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (ArraySegment&lt;byte&gt; data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.WriteRestartArea(System.ArraySegment{System.Byte})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />. This method cannot be inherited.</summary>
+        <returns>The sequence number of the written restart area.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ The data in the byte array segments will be concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRestartArea">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.WriteRestartArea(System.Collections.Generic.IList{System.ArraySegment{System.Byte}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />. This method cannot be inherited.</summary>
+        <returns>The sequence number of the written restart area.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ The data in the byte array segments will be concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRestartArea">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber newBaseSeqNum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber newBaseSeqNum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.WriteRestartArea(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="newBaseSeqNum" Type="System.IO.Log.SequenceNumber" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="newBaseSeqNum">The new base sequence number. The specified sequence number must be greater than or equal to the current base sequence number.</param>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />. This method cannot be inherited.</summary>
+        <returns>The sequence number of the written restart area.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+  
+ When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="newBaseSeqNum" /> is not between the base and last sequence numbers of this sequence.  
+  
+ -or-  
+  
+ A new or existing archive tail or base of the active log is invalid.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="newBaseSeqNum" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRestartArea">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber newBaseSeqNum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber newBaseSeqNum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.WriteRestartArea(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="newBaseSeqNum" Type="System.IO.Log.SequenceNumber" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="newBaseSeqNum">The new base sequence number. The specified sequence number must be greater than or equal to the current base sequence number.</param>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />. This method cannot be inherited.</summary>
+        <returns>The sequence number of the written restart area.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+  
+ When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="newBaseSeqNum" /> is not between the base and last sequence numbers of this sequence.  
+  
+ -or-  
+  
+ A new or existing archive tail or base of the active log is invalid.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="newBaseSeqNum" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRestartArea">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber newBaseSeqNum, System.IO.Log.ReservationCollection reservations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber newBaseSeqNum, class System.IO.Log.ReservationCollection reservations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.WriteRestartArea(System.ArraySegment{System.Byte},System.IO.Log.SequenceNumber,System.IO.Log.ReservationCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="newBaseSeqNum" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="reservations" Type="System.IO.Log.ReservationCollection" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="newBaseSeqNum">The new base sequence number. The specified sequence number must be greater than or equal to the current base sequence number.</param>
+        <param name="reservations">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the reservation that should be used for this restart area.</param>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />. This method cannot be inherited.</summary>
+        <returns>The sequence number of the written restart area.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+  
+ If a reservation is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can contain the data, and that reservation will be removed from the collection.  
+  
+ When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+  
+ If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="newBaseSeqNum" /> is not between the base and last sequence numbers of this sequence.  
+  
+ -or-  
+  
+ A new or existing archive tail or base of the active log is invalid.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence.  
+  
+ -or-  
+  
+ <paramref name="newBaseSeqNum" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRestartArea">
+      <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; data, System.IO.Log.SequenceNumber newBaseSeqNum, System.IO.Log.ReservationCollection reservations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; data, valuetype System.IO.Log.SequenceNumber newBaseSeqNum, class System.IO.Log.ReservationCollection reservations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.FileRecordSequence.WriteRestartArea(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.ReservationCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.SequenceNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="newBaseSeqNum" Type="System.IO.Log.SequenceNumber" />
+        <Parameter Name="reservations" Type="System.IO.Log.ReservationCollection" />
+      </Parameters>
+      <Docs>
+        <param name="data">A list of byte array segments that will be concatenated and appended as the record.</param>
+        <param name="newBaseSeqNum">The new base sequence number. The specified sequence number must be greater than or equal to the current base sequence number.</param>
+        <param name="reservations">A <see cref="T:System.IO.Log.ReservationCollection" /> that contains the reservation that should be used for this restart area.</param>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />. This method cannot be inherited.</summary>
+        <returns>The sequence number of the written restart area.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ When a restart area is written, the data in the byte array segments are concatenated into a single byte array for appending as the record. No provision is made for splitting data back into array segments when the restart area is read.  
+  
+ If a reservation is specified, the written restart area will consume space that has been previously reserved, using a reservation contained in the collection. If the method succeeds, it will consume the smallest reservation that can contain the data, and that reservation will be removed from the collection.  
+  
+ When this method successfully completes, the base sequence number has been updated. All log records with sequence numbers less than the new base sequence number are inaccessible.  
+  
+ If a record sequence has been disposed of, or if you pass an invalid argument, exceptions are thrown immediately within this operation. Errors that occurred during an asynchronous append request, for example, a disk failure during the I/O request, will result in exceptions being thrown when the <xref:System.IO.Log.FileRecordSequence.EndReserveAndAppend%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or more of the arguments are <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="newBaseSeqNum" /> is not between the base and last sequence numbers of this sequence.  
+  
+ -or-  
+  
+ A new or existing archive tail or base of the active log is invalid.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="reservations" /> was not created by this record sequence.  
+  
+ -or-  
+  
+ <paramref name="newBaseSeqNum" /> is not valid for this sequence.</exception>
+        <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
+        <exception cref="T:System.IO.IOException">The request cannot be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="WriteRestartArea">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a record sequence, appends record to it, and finally reads the records.  
+  
+ [!code-csharp[IRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#0)]
+ [!code-vb[IRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

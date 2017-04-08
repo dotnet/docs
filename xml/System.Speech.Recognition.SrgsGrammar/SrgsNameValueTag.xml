@@ -1,0 +1,317 @@
+<Type Name="SrgsNameValueTag" FullName="System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag">
+  <TypeSignature Language="C#" Value="public class SrgsNameValueTag : System.Speech.Recognition.SrgsGrammar.SrgsElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsNameValueTag extends System.Speech.Recognition.SrgsGrammar.SrgsElement" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Speech.Recognition.SrgsGrammar.SrgsElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplayString ()}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an element for associating a semantic value with a phrase in a grammar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This object is similar to the `tag` element defined by the World Wide Web Consortium (W3C) [Speech Recognition Grammar Specification (SRGS) Version 1.0.](http://go.microsoft.com/fwlink/?LinkId=201761). However, the <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value%2A> property of this object cannot be script. The contents of <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value%2A> can be of the type <xref:System.Boolean>, <xref:System.Double>, <xref:System.Int32>, or <xref:System.String>. String values must be enclosed in double quotes.  
+  
+ To add semantics as script, use <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag>.  
+  
+   
+  
+## Examples  
+ The following example creates a grammar for choosing the cities for a flight. The example uses <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.%23ctor%2A> to assign a semantic value to each city, which is the code for the city's airport.  
+  
+ The example constructs two <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> instances, each of which specifies a semantic key. Both rule references target the same <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object, named `cities`, but tag the recognition result from the rule reference with a different semantic key. The semantic key identifies a recognized city as the departure city or the arrival city for the flight. The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the keys to retrieve the semantics values created using <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.%23ctor%2A> from the recognition result.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+using System.Speech.Recognition.SrgsGrammar;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+  
+    // Initialize a SpeechRecognitionEngine object.  
+    {  
+      using (SpeechRecognitionEngine recognizer =  
+         new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US")))  
+      {  
+  
+        // Build a rule with a list of cities, assign a semantic value to each city.  
+        SrgsItem chi = new SrgsItem("Chicago");  
+        chi.Add(new SrgsNameValueTag("ORD"));  
+        SrgsItem bos = new SrgsItem("Boston");  
+        bos.Add(new SrgsNameValueTag("BOS"));  
+        SrgsItem mia = new SrgsItem("Miami");  
+        mia.Add(new SrgsNameValueTag("MIA"));  
+        SrgsItem dal = new SrgsItem("Dallas");  
+        dal.Add(new SrgsNameValueTag("DFW"));  
+  
+        SrgsOneOf cities = new SrgsOneOf(new SrgsItem[] { chi, bos, mia, dal });  
+        SrgsRule citiesRule = new SrgsRule("flightCities");  
+        citiesRule.Add(cities);  
+  
+        // Build the root rule, add rule references to the cities rule.  
+        SrgsRule flightBooker = new SrgsRule("bookFlight");  
+        flightBooker.Add(new SrgsItem("I want to fly from"));  
+        flightBooker.Add(new SrgsRuleRef(citiesRule, "departureCity"));  
+        flightBooker.Add(new SrgsItem("to"));  
+        flightBooker.Add(new SrgsRuleRef(citiesRule, "arrivalCity"));  
+  
+        // Build an SrgsDocument object from the flightBooker rule and add the cities rule.  
+        SrgsDocument cityChooser = new SrgsDocument(flightBooker);  
+        cityChooser.Rules.Add(citiesRule);  
+  
+        // Create a Grammar object from the SrgsDocument and load it to the recognizer.  
+        Grammar departArrive = new Grammar(cityChooser);  
+        departArrive.Name = ("Cities Grammar");  
+        recognizer.LoadGrammarAsync(departArrive);  
+  
+        // Configure recognizer input.  
+        recognizer.SetInputToDefaultAudioDevice();  
+  
+        // Attach a handler for the SpeechRecognized event.  
+        recognizer.SpeechRecognized +=  
+          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+  
+        // Start asynchronous recognition.  
+        recognizer.RecognizeAsync();  
+        Console.WriteLine("Starting asynchronous recognition...");  
+  
+        // Keep the console window open.  
+        Console.ReadLine();  
+      }  
+    }  
+  
+    // Handle the SpeechRecognized event.  
+    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+    {  
+      Console.WriteLine("Speech recognized: " + e.Result.Text);  
+      Console.WriteLine();  
+      Console.WriteLine("Semantic results:");  
+      Console.WriteLine("  The departure city is: " + e.Result.Semantics["departureCity"].Value);  
+      Console.WriteLine("  The destination city is: " + e.Result.Semantics["arrivalCity"].Value);  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsNameValueTag ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsNameValueTag (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value used to set the <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> class, specifying a value for the instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a grammar for choosing the cities for a flight. The example uses <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.%23ctor%2A> to assign a semantic value to each city, which is the code for the city's airport.  
+  
+ The example constructs two <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> instances, each of which specifies a semantic key. Both rule references target the same <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object, named `cities`, but tag the recognition result from the rule reference with a different semantic key. The semantic key identifies a recognized city as the departure city or the arrival city for the flight. The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the keys to retrieve the semantics values created using <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.%23ctor%2A> from the recognition result.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+using System.Speech.Recognition.SrgsGrammar;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+  
+    // Initialize a SpeechRecognitionEngine object.  
+    {  
+      using (SpeechRecognitionEngine recognizer =  
+         new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US")))  
+      {  
+  
+        // Build a rule with a list of cities, assign a semantic value to each city.  
+        SrgsItem chi = new SrgsItem("Chicago");  
+        chi.Add(new SrgsNameValueTag("ORD"));  
+        SrgsItem bos = new SrgsItem("Boston");  
+        bos.Add(new SrgsNameValueTag("BOS"));  
+        SrgsItem mia = new SrgsItem("Miami");  
+        mia.Add(new SrgsNameValueTag("MIA"));  
+        SrgsItem dal = new SrgsItem("Dallas");  
+        dal.Add(new SrgsNameValueTag("DFW"));  
+  
+        SrgsOneOf cities = new SrgsOneOf(new SrgsItem[] { chi, bos, mia, dal });  
+        SrgsRule citiesRule = new SrgsRule("flightCities");  
+        citiesRule.Add(cities);  
+  
+        // Build the root rule, add rule references to the cities rule.  
+        SrgsRule flightBooker = new SrgsRule("bookFlight");  
+        flightBooker.Add(new SrgsItem("I want to fly from"));  
+        flightBooker.Add(new SrgsRuleRef(citiesRule, "departureCity"));  
+        flightBooker.Add(new SrgsItem("to"));  
+        flightBooker.Add(new SrgsRuleRef(citiesRule, "arrivalCity"));  
+  
+        // Build an SrgsDocument object from the flightBooker rule and add the cities rule.  
+        SrgsDocument cityChooser = new SrgsDocument(flightBooker);  
+        cityChooser.Rules.Add(citiesRule);  
+  
+        // Create a Grammar object from the SrgsDocument and load it to the recognizer.  
+        Grammar departArrive = new Grammar(cityChooser);  
+        departArrive.Name = ("Cities Grammar");  
+        recognizer.LoadGrammarAsync(departArrive);  
+  
+        // Configure recognizer input.  
+        recognizer.SetInputToDefaultAudioDevice();  
+  
+        // Attach a handler for the SpeechRecognized event.  
+        recognizer.SpeechRecognized +=  
+          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+  
+        // Start asynchronous recognition.  
+        recognizer.RecognizeAsync();  
+        Console.WriteLine("Starting asynchronous recognition...");  
+  
+        // Keep the console window open.  
+        Console.ReadLine();  
+      }  
+    }  
+  
+    // Handle the SpeechRecognized event.  
+    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+    {  
+      Console.WriteLine("Speech recognized: " + e.Result.Text);  
+      Console.WriteLine();  
+      Console.WriteLine("Semantic results:");  
+      Console.WriteLine("  The departure city is: " + e.Result.Semantics["departureCity"].Value);  
+      Console.WriteLine("  The destination city is: " + e.Result.Semantics["arrivalCity"].Value);  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsNameValueTag (string name, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The string used to set the <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Name" /> property on the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> object.</param>
+        <param name="value">The object used to set the <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" /> property on the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> class, specifying a name and a value for the instance.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.  
+  
+ <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> instance.</summary>
+        <value>A string that contains the name of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> instance.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Name" /> to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Name" /> to an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value contained in the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> instance.</summary>
+        <value>The value contained in the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The valid types for the <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value%2A> property are:  
+  
+-   <xref:System.Boolean>  
+  
+-   <xref:System.Double>  
+  
+-   <xref:System.Int32>  
+  
+-   <xref:System.String>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" /> to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.Value" /> to an invalid type.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

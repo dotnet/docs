@@ -1,0 +1,1036 @@
+<Type Name="NativeActivityMetadata" FullName="System.Activities.NativeActivityMetadata">
+  <TypeSignature Language="C#" Value="public struct NativeActivityMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NativeActivityMetadata extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.NativeActivityMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the set of arguments, child activities, variables, and delegates that a configured <see cref="T:System.Activities.NativeActivity" /> introduces to the execution environment.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public void AddArgument (System.Activities.RuntimeArgument argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArgument(class System.Activities.RuntimeArgument argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddArgument(System.Activities.RuntimeArgument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.RuntimeArgument" />
+      </Parameters>
+      <Docs>
+        <param name="argument">The argument to add to the collection.</param>
+        <summary>Adds an argument to the collection of arguments of an activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChild">
+      <MemberSignature Language="C#" Value="public void AddChild (System.Activities.Activity child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(class System.Activities.Activity child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddChild(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="child">The activity to add.</param>
+        <summary>Adds the specified activity to the metadata’s list of child activities.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An activity added using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> is a child activity that the parent activity can schedule directly. These activities are to be provided by the consumer of the activity. An example of this is the <xref:System.Activities.Statements.Sequence.Activities%2A> collection of a <xref:System.Activities.Statements.Sequence> activity. These activities (and any activities they add using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A>) have access to variables added through <xref:System.Activities.NativeActivityMetadata.AddVariable%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChild">
+      <MemberSignature Language="C#" Value="public void AddChild (System.Activities.Activity child, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(class System.Activities.Activity child, object origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddChild(System.Activities.Activity,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Activities.Activity" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="child">The activity to add.</param>
+        <param name="origin">The origin of the activity.</param>
+        <summary>Adds the specified activity to the metadata’s list of child activities.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDefaultExtensionProvider&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void AddDefaultExtensionProvider&lt;T&gt; (Func&lt;T&gt; extensionProvider) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDefaultExtensionProvider&lt;class T&gt;(class System.Func`1&lt;!!T&gt; extensionProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddDefaultExtensionProvider``1(System.Func{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="extensionProvider" Type="System.Func&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the extension provider.</typeparam>
+        <param name="extensionProvider">The function that returns the extension.</param>
+        <summary>Adds the specified extension provider to the collection of default extension providers for the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the host does not provide an extension of type `T`, then this extension provider is evaluated to provide one.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDelegate">
+      <MemberSignature Language="C#" Value="public void AddDelegate (System.Activities.ActivityDelegate activityDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDelegate(class System.Activities.ActivityDelegate activityDelegate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddDelegate(System.Activities.ActivityDelegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityDelegate" Type="System.Activities.ActivityDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="activityDelegate">The delegate to add.</param>
+        <summary>Adds the specified delegate to the metadata’s list of delegates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDelegate">
+      <MemberSignature Language="C#" Value="public void AddDelegate (System.Activities.ActivityDelegate activityDelegate, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDelegate(class System.Activities.ActivityDelegate activityDelegate, object origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddDelegate(System.Activities.ActivityDelegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityDelegate" Type="System.Activities.ActivityDelegate" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="activityDelegate">The delegate to add.</param>
+        <param name="origin">The origin of the delegate.</param>
+        <summary>Adds the specified delegate to the metadata’s list of delegates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImplementationChild">
+      <MemberSignature Language="C#" Value="public void AddImplementationChild (System.Activities.Activity implementationChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImplementationChild(class System.Activities.Activity implementationChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddImplementationChild(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationChild" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="implementationChild">The activity to add.</param>
+        <summary>Adds the specified activity to the metadata’s list of implementation activities.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An activity added using <xref:System.Activities.NativeActivityMetadata.AddImplementationChild%2A> is a child activity that the parent activity can schedule directly.  These activities are implementation details of the activity. These activities (and any activities they add using <xref:System.Activities.NativeActivityMetadata.AddChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A>) have access to this activity’s arguments as well as variables added through <xref:System.Activities.NativeActivityMetadata.AddImplementationVariable%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImplementationDelegate">
+      <MemberSignature Language="C#" Value="public void AddImplementationDelegate (System.Activities.ActivityDelegate implementationDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImplementationDelegate(class System.Activities.ActivityDelegate implementationDelegate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddImplementationDelegate(System.Activities.ActivityDelegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationDelegate" Type="System.Activities.ActivityDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="implementationDelegate">The delegate to add.</param>
+        <summary>Adds the specified delegate to the metadata’s list of implementation delegates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImplementationVariable">
+      <MemberSignature Language="C#" Value="public void AddImplementationVariable (System.Activities.Variable implementationVariable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImplementationVariable(class System.Activities.Variable implementationVariable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddImplementationVariable(System.Activities.Variable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationVariable" Type="System.Activities.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="implementationVariable">The variable to add.</param>
+        <summary>Adds the specified variable to the metadata’s collection of implementation variables.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportedChild">
+      <MemberSignature Language="C#" Value="public void AddImportedChild (System.Activities.Activity importedChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImportedChild(class System.Activities.Activity importedChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddImportedChild(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedChild" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="importedChild">The activity to add.</param>
+        <summary>Adds the specified activity to the metadata’s list of imported child activities.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An imported child activity is a child activity that the parent activity does not schedule directly. Rather, then parent uses this activity to configure some other child activity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportedChild">
+      <MemberSignature Language="C#" Value="public void AddImportedChild (System.Activities.Activity importedChild, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImportedChild(class System.Activities.Activity importedChild, object origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddImportedChild(System.Activities.Activity,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedChild" Type="System.Activities.Activity" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="importedChild">The activity to add.</param>
+        <param name="origin">The origin of the activity.</param>
+        <summary>Adds the specified activity to the metadata’s list of imported child activities.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportedDelegate">
+      <MemberSignature Language="C#" Value="public void AddImportedDelegate (System.Activities.ActivityDelegate importedDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImportedDelegate(class System.Activities.ActivityDelegate importedDelegate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddImportedDelegate(System.Activities.ActivityDelegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedDelegate" Type="System.Activities.ActivityDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="importedDelegate">The delegate to add.</param>
+        <summary>Adds the specified delegate to the metadata’s list of imported delegates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddImportedDelegate">
+      <MemberSignature Language="C#" Value="public void AddImportedDelegate (System.Activities.ActivityDelegate importedDelegate, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddImportedDelegate(class System.Activities.ActivityDelegate importedDelegate, object origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddImportedDelegate(System.Activities.ActivityDelegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedDelegate" Type="System.Activities.ActivityDelegate" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="importedDelegate">The delegate to add.</param>
+        <param name="origin">The origin of the delegate.</param>
+        <summary>Adds the specified delegate to the metadata’s list of imported delegates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddValidationError">
+      <MemberSignature Language="C#" Value="public void AddValidationError (System.Activities.Validation.ValidationError validationError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddValidationError(class System.Activities.Validation.ValidationError validationError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddValidationError(System.Activities.Validation.ValidationError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationError" Type="System.Activities.Validation.ValidationError" />
+      </Parameters>
+      <Docs>
+        <param name="validationError">The validation error to add.</param>
+        <summary>Adds the specified validation error to the metadata’s collection of validation errors.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddValidationError">
+      <MemberSignature Language="C#" Value="public void AddValidationError (string validationErrorMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddValidationError(string validationErrorMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddValidationError(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationErrorMessage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="validationErrorMessage">A message that describes the validation error.</param>
+        <summary>Adds a validation error to the metadata’s collection of validation errors using the specified description.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddVariable">
+      <MemberSignature Language="C#" Value="public void AddVariable (System.Activities.Variable variable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddVariable(class System.Activities.Variable variable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddVariable(System.Activities.Variable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Activities.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="variable">The variable to add.</param>
+        <summary>Adds the specified variable to the metadata’s collection of variables.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Variables added using this method are considered part of the activity’s publicly configurable surface, that is, they are to be provided by the consumer of the activity. An activity’s implementation cannot access variables added using this method. Activities added through <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A> or <xref:System.Activities.NativeActivityMetadata.AddChild%2A> (and any of their non-implementation child activities) can access variables added using this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddVariable">
+      <MemberSignature Language="C#" Value="public void AddVariable (System.Activities.Variable variable, object origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddVariable(class System.Activities.Variable variable, object origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.AddVariable(System.Activities.Variable,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variable" Type="System.Activities.Variable" />
+        <Parameter Name="origin" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="variable">The variable to add.</param>
+        <param name="origin">The origin of the variable.</param>
+        <summary>Adds the specified variable to the metadata’s collection of variables.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bind">
+      <MemberSignature Language="C#" Value="public void Bind (System.Activities.Argument binding, System.Activities.RuntimeArgument argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Bind(class System.Activities.Argument binding, class System.Activities.RuntimeArgument argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.Bind(System.Activities.Argument,System.Activities.RuntimeArgument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="binding" Type="System.Activities.Argument" />
+        <Parameter Name="argument" Type="System.Activities.RuntimeArgument" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.Activities.Argument" /> to bind.</param>
+        <param name="argument">The <see cref="T:System.Activities.RuntimeArgument" /> to bind.</param>
+        <summary>Binds the specified <see cref="T:System.Activities.Argument" /> to the specified <see cref="T:System.Activities.RuntimeArgument" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Environment">
+      <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment Environment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReferenceEnvironment Environment" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivityMetadata.Environment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.LocationReferenceEnvironment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the activity’s <see cref="T:System.Activities.LocationReferenceEnvironment" /> of arguments, variables, delegate arguments, or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</summary>
+        <value>The activity’s location reference environment of arguments, variables, delegate arguments, or symbols introduced by a <see cref="T:System.Activities.Hosting.SymbolResolver" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines whether the specified object is equal to this metadata instance.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to this metadata instance; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArgumentsWithReflection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt; GetArgumentsWithReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.RuntimeArgument&gt; GetArgumentsWithReflection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.GetArgumentsWithReflection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of arguments obtained by using reflection.</summary>
+        <returns>A collection of arguments.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Argument> and returns them in a collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildrenWithReflection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; GetChildrenWithReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Activity&gt; GetChildrenWithReflection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.GetChildrenWithReflection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of child activities using reflection.</summary>
+        <returns>A collection of child activities.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Activity>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Activity>, and returns them in a collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDelegatesWithReflection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; GetDelegatesWithReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.ActivityDelegate&gt; GetDelegatesWithReflection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.GetDelegatesWithReflection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of delegates using reflection.</summary>
+        <returns>A collection of delegates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.ActivityDelegate>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.ActivityDelegate>, and returns them in a collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a unique identifier for this metadata instance.</summary>
+        <returns>An integer that uniquely identifies this metadata instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVariablesWithReflection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; GetVariablesWithReflection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Variable&gt; GetVariablesWithReflection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.GetVariablesWithReflection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of variables using reflection.</summary>
+        <returns>A collection of variables.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses an activity’s <xref:System.ComponentModel.TypeDescriptor> to examine all public properties of type <xref:System.Activities.Variable>, or `IList<T>` or `ICollection<T>` where `T` derives from <xref:System.Activities.Variable>, and returns them in a collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasViolations">
+      <MemberSignature Language="C#" Value="public bool HasViolations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasViolations" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.NativeActivityMetadata.HasViolations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether there are any validation errors in the metadata.</summary>
+        <value>
+          <see langword="true" /> if validation errors are present; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Activities.NativeActivityMetadata left, System.Activities.NativeActivityMetadata right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.NativeActivityMetadata left, valuetype System.Activities.NativeActivityMetadata right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.op_Equality(System.Activities.NativeActivityMetadata,System.Activities.NativeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Activities.NativeActivityMetadata" />
+        <Parameter Name="right" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first item to compare.</param>
+        <param name="right">The second item to compare.</param>
+        <summary>Returns a value that indicates whether the two specified metadata instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two items are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Activities.NativeActivityMetadata left, System.Activities.NativeActivityMetadata right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.NativeActivityMetadata left, valuetype System.Activities.NativeActivityMetadata right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.op_Inequality(System.Activities.NativeActivityMetadata,System.Activities.NativeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Activities.NativeActivityMetadata" />
+        <Parameter Name="right" Type="System.Activities.NativeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first item to compare.</param>
+        <param name="right">The second item to compare.</param>
+        <summary>Returns a value that indicates whether the two specified metadata instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two items are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireExtension">
+      <MemberSignature Language="C#" Value="public void RequireExtension (Type extensionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequireExtension(class System.Type extensionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.RequireExtension(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extensionType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="extensionType">The type of the extension.</param>
+        <summary>Specifies that the activity requires an extension of the specified type at runtime.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the host fails to provide an extension of the specified type, validation fails.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireExtension&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void RequireExtension&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequireExtension&lt;class T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.RequireExtension``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of the extension.</typeparam>
+        <summary>Specifies that the activity requires an extension of the specified generic type at runtime.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the host fails to provide an extension of the specified type, validation fails.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArgumentsCollection">
+      <MemberSignature Language="C#" Value="public void SetArgumentsCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetArgumentsCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.RuntimeArgument&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetArgumentsCollection(System.Collections.ObjectModel.Collection{System.Activities.RuntimeArgument})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arguments" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="arguments">The arguments to add.</param>
+        <summary>Adds the specified collection of arguments to the activity’s arguments.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetChildrenCollection">
+      <MemberSignature Language="C#" Value="public void SetChildrenCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; children);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetChildrenCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Activity&gt; children) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetChildrenCollection(System.Collections.ObjectModel.Collection{System.Activities.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="children" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="children">The activities to add.</param>
+        <summary>Adds the specified collection as child activities of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddChild%2A> for each item in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDelegatesCollection">
+      <MemberSignature Language="C#" Value="public void SetDelegatesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; delegates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDelegatesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.ActivityDelegate&gt; delegates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetDelegatesCollection(System.Collections.ObjectModel.Collection{System.Activities.ActivityDelegate})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delegates" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="delegates">The delegates to add.</param>
+        <summary>Adds the specified collection as delegates of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddDelegate%2A> for each item in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImplementationChildrenCollection">
+      <MemberSignature Language="C#" Value="public void SetImplementationChildrenCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; implementationChildren);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImplementationChildrenCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Activity&gt; implementationChildren) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetImplementationChildrenCollection(System.Collections.ObjectModel.Collection{System.Activities.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationChildren" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="implementationChildren">The activities to add.</param>
+        <summary>Adds the specified collection as implementation child activities of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationChild%2A> for each item in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImplementationDelegatesCollection">
+      <MemberSignature Language="C#" Value="public void SetImplementationDelegatesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; implementationDelegates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImplementationDelegatesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.ActivityDelegate&gt; implementationDelegates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetImplementationDelegatesCollection(System.Collections.ObjectModel.Collection{System.Activities.ActivityDelegate})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationDelegates" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="implementationDelegates">The delegates to add.</param>
+        <summary>Adds the specified collection as implementation delegates of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationDelegate%2A> for each item in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImplementationVariablesCollection">
+      <MemberSignature Language="C#" Value="public void SetImplementationVariablesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; implementationVariables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImplementationVariablesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Variable&gt; implementationVariables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetImplementationVariablesCollection(System.Collections.ObjectModel.Collection{System.Activities.Variable})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementationVariables" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="implementationVariables">The delegates to add.</param>
+        <summary>Adds the specified collection as implementation variables of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImplementationVariable%2A> for each item in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImportedChildrenCollection">
+      <MemberSignature Language="C#" Value="public void SetImportedChildrenCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt; importedChildren);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImportedChildrenCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Activity&gt; importedChildren) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetImportedChildrenCollection(System.Collections.ObjectModel.Collection{System.Activities.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedChildren" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="importedChildren">The activities to add.</param>
+        <summary>Adds the specified collection as imported child activities of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImportedChild%2A> for each item in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImportedDelegatesCollection">
+      <MemberSignature Language="C#" Value="public void SetImportedDelegatesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt; importedDelegates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetImportedDelegatesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.ActivityDelegate&gt; importedDelegates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetImportedDelegatesCollection(System.Collections.ObjectModel.Collection{System.Activities.ActivityDelegate})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importedDelegates" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.ActivityDelegate&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="importedDelegates">The delegates to add.</param>
+        <summary>Adds the specified collection as imported delegates of the activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the equivalent of calling <xref:System.Activities.NativeActivityMetadata.AddImportedDelegate%2A> for each item in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValidationErrorsCollection">
+      <MemberSignature Language="C#" Value="public void SetValidationErrorsCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.ValidationError&gt; validationErrors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValidationErrorsCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Validation.ValidationError&gt; validationErrors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetValidationErrorsCollection(System.Collections.ObjectModel.Collection{System.Activities.Validation.ValidationError})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validationErrors" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.ValidationError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="validationErrors">The validation errors to add.</param>
+        <summary>Adds the specified collection of validation errors to the metadata’s collection of validation errors.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVariablesCollection">
+      <MemberSignature Language="C#" Value="public void SetVariablesCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt; variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetVariablesCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Variable&gt; variables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.NativeActivityMetadata.SetVariablesCollection(System.Collections.ObjectModel.Collection{System.Activities.Variable})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="variables" Type="System.Collections.ObjectModel.Collection&lt;System.Activities.Variable&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="variables">The variables to add.</param>
+        <summary>Adds the specified collection of variables to the activity’s variables.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="AddValidationError">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a validation error to the metadata’ collection of validation errors.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Imperative Code-Based Validation](~/docs/framework/windows-workflow-foundation/imperative-code-based-validation.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

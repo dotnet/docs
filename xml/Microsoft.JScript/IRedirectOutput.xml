@@ -1,0 +1,45 @@
+<Type Name="IRedirectOutput" FullName="Microsoft.JScript.IRedirectOutput">
+  <TypeSignature Language="C#" Value="public interface IRedirectOutput" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRedirectOutput" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IRedirectOutput" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("5B807FA1-00CD-46ee-A493-FD80AC944715")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods that capture output that would otherwise go to the console. This interface is implemented by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetOutputStream">
+      <MemberSignature Language="C#" Value="public void SetOutputStream (Microsoft.JScript.IMessageReceiver output);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutputStream(class Microsoft.JScript.IMessageReceiver output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IRedirectOutput.SetOutputStream(Microsoft.JScript.IMessageReceiver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="output" Type="Microsoft.JScript.IMessageReceiver" />
+      </Parameters>
+      <Docs>
+        <param name="output">The output to redirect.</param>
+        <summary>When implemented in a class, redirects the specified output stream to a new stream or data storage.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,449 @@
+<Type Name="SecurityTokenRequirement" FullName="System.IdentityModel.Selectors.SecurityTokenRequirement">
+  <TypeSignature Language="C#" Value="public class SecurityTokenRequirement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityTokenRequirement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenRequirement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies security token requirements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application code typically does not need to use the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> class, unless a custom security token, security token manager, security token provider, or security token authenticator are created. The <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> class is used by a security token manager to specify what is required of a security token, such as the key size, key type, and how the key can be used. When a security token can be identified that matches the specified criteria, a <xref:System.IdentityModel.Selectors.SecurityTokenProvider> and <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> can be obtained to provide security tokens for outgoing SOAP messages and to authenticate security tokens for incoming SOAP messages, respectively. For example, the default security token manager for outgoing SOAP messages has the <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager.CreateSecurityTokenProvider%28System.IdentityModel.Selectors.SecurityTokenRequirement%29> method that takes a <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> parameter that can be called to obtain a security token provider that matches the criteria specified in the security token requirement.  
+  
+   
+  
+## Examples  
+ <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager>  
+  
+ <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager>  
+  
+ <xref:System.IdentityModel.Selectors.SecurityTokenProvider>  
+  
+ <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator>  
+  
+ <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager.CreateSecurityTokenAuthenticator%28System.IdentityModel.Selectors.SecurityTokenRequirement%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%40%29>  
+  
+ <xref:System.ServiceModel.ClientCredentialsSecurityTokenManager.CreateSecurityTokenProvider%28System.IdentityModel.Selectors.SecurityTokenRequirement%29>  
+  
+ <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager.CreateSecurityTokenAuthenticator%28System.IdentityModel.Selectors.SecurityTokenRequirement%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%40%29>  
+  
+ <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager.CreateSecurityTokenProvider%28System.IdentityModel.Selectors.SecurityTokenRequirement%29>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityTokenRequirement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenRequirement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public TValue GetProperty&lt;TValue&gt; (string property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TValue GetProperty&lt;TValue&gt;(string property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenRequirement.GetProperty``1(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">The type of the property to get.</typeparam>
+        <param name="property">To be added.</param>
+        <summary>Gets the specified property for the current <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> instance.</summary>
+        <returns>The value of the property to get.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.GetProperty%2A> method first calls the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TryGetProperty%60%601%28System.String%2C%60%600%40%29> method to determine if the property specified in the `propertyName` parameter has been set. Secondly, the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.GetProperty%2A> method verifies that when a property value is returned that it can be set to the type specified in the `TValue` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOptionalTokenProperty">
+      <MemberSignature Language="C#" Value="public static string IsOptionalTokenProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string IsOptionalTokenProperty" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.IsOptionalTokenProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value of the token property if it is optional.</summary>
+        <value>A value of the token property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySize">
+      <MemberSignature Language="C#" Value="public int KeySize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the required size of the key associated with a security token.</summary>
+        <value>The size of the key, in bits, associated with a security token. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize%2A> property can also be accessed by getting the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> property, which is a collection of property values. The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize%2A> property is stored at the index matching the value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySizeProperty%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize" /> property is set to a value less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="KeySizeProperty">
+      <MemberSignature Language="C#" Value="public static string KeySizeProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string KeySizeProperty" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySizeProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies the name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize" /> property.</summary>
+        <value>The name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the required key size, use the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySize%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyType">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyType KeyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Tokens.SecurityKeyType KeyType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKeyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of key (asymmetric or symmetric) associated with a security token.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyType" /> that specifies the type of key (asymmetric or symmetric) associated with a security token. The default value is <see langword="SymmetricKey" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> property can also be accessed by getting the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> property, which is a collection of property values. The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> property is stored at the index matching the value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyTypeProperty%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTypeProperty">
+      <MemberSignature Language="C#" Value="public static string KeyTypeProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string KeyTypeProperty" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyTypeProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies the name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType" /> property.</summary>
+        <value>The name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the required key type, use the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyUsage">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityKeyUsage KeyUsage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Tokens.SecurityKeyUsage KeyUsage" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKeyUsage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies how the key associated with a security token can be used.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyUsage" /> that specifies how the key associated with a security token can be used. The default value is <see cref="F:System.IdentityModel.Tokens.SecurityKeyUsage.Signature" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage%2A> property can also be accessed by getting the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> property, which is a collection of property values. The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage%2A> property is stored at the index matching the value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsageProperty%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyUsageProperty">
+      <MemberSignature Language="C#" Value="public static string KeyUsageProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string KeyUsageProperty" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsageProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies the name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage" /> property.</summary>
+        <value>The name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the key usage requirement, use the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsage%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerAuthenticationMode">
+      <MemberSignature Language="C#" Value="public static string PeerAuthenticationMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string PeerAuthenticationMode" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.PeerAuthenticationMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for a property that specifies the peer authentication method.</summary>
+        <value>The name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for a property that specifies the peer authentication method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add the capability to set the peer authentication mode, derive a class from <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> and expose a property or constructor. Within the constructor or property add the peer authentication mode to the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> collection using the value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.PeerAuthenticationMode%2A> property as an index into the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the non-static properties for the current <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> instance.</summary>
+        <value>An <see cref="T:System.Collections.Generic.IDictionary`2" /> that contains a collection of the non-static properties for the current <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the values of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeySizeProperty%2A>, <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyTypeProperty%2A>, <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.KeyUsageProperty%2A>, <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenTypeProperty%2A> properties as indexes into the collection to get a specific property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireCryptographicToken">
+      <MemberSignature Language="C#" Value="public bool RequireCryptographicToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequireCryptographicToken" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the security token must be capable of performing cryptographic operations, such as encryption.</summary>
+        <value>
+          <see langword="true" /> if the security token must be capable of performing cryptographic operations; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some security tokens, such as the <xref:System.IdentityModel.Tokens.UserNameSecurityToken>, are not secure enough to perform cryptographic operations and should only be used for authentication.  
+  
+ The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken%2A> property can also be accessed by getting the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> property, which is a collection of property values. The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken%2A> property is stored at the index matching the value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicTokenProperty%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireCryptographicTokenProperty">
+      <MemberSignature Language="C#" Value="public static string RequireCryptographicTokenProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string RequireCryptographicTokenProperty" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicTokenProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken" /> property.</summary>
+        <value>The name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.RequireCryptographicToken" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenType">
+      <MemberSignature Language="C#" Value="public string TokenType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TokenType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the required security token type.</summary>
+        <value>The required security token type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use one of the static properties of the <xref:System.IdentityModel.Tokens.SecurityTokenTypes> class to set this property.  
+  
+ The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType%2A> property can also be accessed by getting the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties%2A> property, which is a collection of property values. The value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType%2A> property is stored at the index matching the value of the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenTypeProperty%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenTypeProperty">
+      <MemberSignature Language="C#" Value="public static string TokenTypeProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string TokenTypeProperty" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenTypeProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies the name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType" /> property.</summary>
+        <value>The name of the index in the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> collection for the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the required security token type, use the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.TokenType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetProperty&lt;TValue&gt; (string property, out TValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetProperty&lt;TValue&gt;(string property, !!TValue value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenRequirement.TryGetProperty``1(System.String,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="result" Type="TValue&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">The type of property to return in the <c>result</c> parameter.</typeparam>
+        <param name="property">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>Gets the specified property for the current <see cref="T:System.IdentityModel.Selectors.SecurityTokenRequirement" /> instance.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.IdentityModel.Selectors.SecurityTokenRequirement.Properties" /> property contains a property value for the property specified in the <paramref name="propertyName" /> property; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get the property value of the specified property and verify that property value can be set to the type specified in the `TValue` parameter, call the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement.GetProperty%60%601%28System.String%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A properties exists with the name specified in the <paramref name="propertyName" /> parameter, but it is not of the same type that is specified in the <paramref name="TValue" /> parameter.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

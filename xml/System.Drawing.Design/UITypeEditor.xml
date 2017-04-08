@@ -1,0 +1,326 @@
+<Type Name="UITypeEditor" FullName="System.Drawing.Design.UITypeEditor">
+  <TypeSignature Language="C#" Value="public class UITypeEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi UITypeEditor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Design.UITypeEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class that can be used to design value editors that can provide a user interface (UI) for representing and editing the values of objects of the supported data types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Design.UITypeEditor> class provides a base class that you can derive from and extend to implement a custom type editor for the design-time environment. Typically, your custom type editor interacts with the <xref:System.Windows.Forms.PropertyGrid> control.  
+  
+ Custom type editors are useful in situations where a text-box value editor is insufficient to effectively select the values of certain types.  
+  
+ To implement a custom design-time UI type editor, you must perform the following steps:  
+  
+-   Define a class that derives from <xref:System.Drawing.Design.UITypeEditor>.  
+  
+-   Override the <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method to handle the user interface, user input processing, and value assignment.  
+  
+-   Override the <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A> method to inform the Properties window of the type of editor style that the editor will use.  
+  
+ You can add additional support for painting a value's representation in the Properties window by performing the following steps:  
+  
+-   Override the <xref:System.Drawing.Design.UITypeEditor.GetPaintValueSupported%2A> method to indicate that the editor supports displaying the value's representation.  
+  
+-   Override the <xref:System.Drawing.Design.UITypeEditor.PaintValue%2A> method to implement the display of the value's representation.  
+  
+-   Override the <xref:System.Drawing.Design.UITypeEditor> constructor method if the editor should have initialization behavior.  
+  
+> [!NOTE]
+>  The <xref:System.Drawing.Design.UITypeEditor> class does not support right-to-left (RTL) layouts.  
+  
+ For more information about enhancing design-time support, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2). For more information on implementing a <xref:System.Drawing.Design.UITypeEditor>, see [User Interface Type Editors Overview](http://msdn.microsoft.com/library/f068b4ea-6e8c-4c0b-aefd-188b337240da).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates that a <xref:System.Drawing.Design.UITypeEditor> can be associated with an integer, double, or float property using an <xref:System.ComponentModel.EditorAttribute> to provide an angle selection interface from the Properties window in design mode. This example uses the <xref:System.Windows.Forms.Design.IWindowsFormsEditorService> interface to display a drop-down control in the Properties window in design mode. Compile the code and add the assembly to the Toolbox using the **Customize Toolbox** command on the **Tools** menu of Visual Studio. Create an instance of the `AngleTestControl` and click the drop-down button next to the Angle property in the Properties window to configure the property using the editor.  
+  
+ [!code-cpp[AngleEditor#1](~/samples/snippets/cpp/VS_Snippets_Winforms/AngleEditor/CPP/angleeditor.cpp#1)]
+ [!code-csharp[AngleEditor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AngleEditor/CS/angleeditor.cs#1)]
+ [!code-vb[AngleEditor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/AngleEditor/VB/angleeditor.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UITypeEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.UITypeEditor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditValue">
+      <MemberSignature Language="C#" Value="public object EditValue (IServiceProvider provider, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object EditValue(class System.IServiceProvider provider, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="provider">An <see cref="T:System.IServiceProvider" /> that this editor can use to obtain services.</param>
+        <param name="value">The object to edit.</param>
+        <summary>Edits the value of the specified object using the editor style indicated by the <see cref="M:System.Drawing.Design.UITypeEditor.GetEditStyle" /> method.</summary>
+        <returns>The new value of the object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method launches the user interface for value editing, and is called by the Properties window when a user attempts to edit the value of a type that this editor is configured to edit the value of. A service provider is provided so that the editor can obtain any required services.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditValue">
+      <MemberSignature Language="C#" Value="public virtual object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <param name="provider">An <see cref="T:System.IServiceProvider" /> that this editor can use to obtain services.</param>
+        <param name="value">The object to edit.</param>
+        <summary>Edits the specified object's value using the editor style indicated by the <see cref="M:System.Drawing.Design.UITypeEditor.GetEditStyle" /> method.</summary>
+        <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A service provider is provided so that the editor can obtain any required services.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditStyle">
+      <MemberSignature Language="C#" Value="public System.Drawing.Design.UITypeEditorEditStyle GetEditStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.GetEditStyle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the editor style used by the <see cref="M:System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object)" /> method.</summary>
+        <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> enumeration value that indicates the style of editor used by the current <see cref="T:System.Drawing.Design.UITypeEditor" />. By default, this method will return <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Drawing.Design.UITypeEditor> does not override and implement this method, <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A> will return <xref:System.Drawing.Design.UITypeEditorEditStyle> by default.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditStyle">
+      <MemberSignature Language="C#" Value="public virtual System.Drawing.Design.UITypeEditorEditStyle GetEditStyle (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Design.UITypeEditorEditStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <summary>Gets the editor style used by the <see cref="M:System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object)" /> method.</summary>
+        <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value that indicates the style of editor used by the <see cref="M:System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object)" /> method. If the <see cref="T:System.Drawing.Design.UITypeEditor" /> does not support this method, then <see cref="M:System.Drawing.Design.UITypeEditor.GetEditStyle" /> will return <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPaintValueSupported">
+      <MemberSignature Language="C#" Value="public bool GetPaintValueSupported ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetPaintValueSupported() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.GetPaintValueSupported" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether this editor supports painting a representation of an object's value.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="M:System.Drawing.Design.UITypeEditor.PaintValue(System.Object,System.Drawing.Graphics,System.Drawing.Rectangle)" /> is implemented; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPaintValueSupported">
+      <MemberSignature Language="C#" Value="public virtual bool GetPaintValueSupported (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetPaintValueSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+        <summary>Indicates whether the specified context supports painting a representation of an object's value within the specified context.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="M:System.Drawing.Design.UITypeEditor.PaintValue(System.Object,System.Drawing.Graphics,System.Drawing.Rectangle)" /> is implemented; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDropDownResizable">
+      <MemberSignature Language="C#" Value="public virtual bool IsDropDownResizable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDropDownResizable" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Design.UITypeEditor.IsDropDownResizable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether drop-down editors should be resizable by the user.</summary>
+        <value>
+          <see langword="true" /> if drop-down editors are resizable; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintValue">
+      <MemberSignature Language="C#" Value="public virtual void PaintValue (System.Drawing.Design.PaintValueEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PaintValue(class System.Drawing.Design.PaintValueEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Drawing.Design.PaintValueEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Drawing.Design.PaintValueEventArgs" /> that indicates what to paint and where to paint it.</param>
+        <summary>Paints a representation of the value of an object using the specified <see cref="T:System.Drawing.Design.PaintValueEventArgs" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Editors should paint within the boundaries of the specified rectangle. This rectangle indicates the area of the Properties window to draw a representation of the value within.  
+  
+ Starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], the rectangle specified by <xref:System.Drawing.Design.PaintValueEventArgs.Bounds%2A> will be resized based on the system DPI setting when the app.config file contains the following entry:  
+  
+```  
+<appSettings>  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+</appSettings>  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintValue">
+      <MemberSignature Language="C#" Value="public void PaintValue (object value, System.Drawing.Graphics canvas, System.Drawing.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PaintValue(object value, class System.Drawing.Graphics canvas, valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.UITypeEditor.PaintValue(System.Object,System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="canvas" Type="System.Drawing.Graphics" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object whose value this type editor will display.</param>
+        <param name="canvas">A drawing canvas on which to paint the representation of the object's value.</param>
+        <param name="rectangle">A <see cref="T:System.Drawing.Rectangle" /> within whose boundaries to paint the value.</param>
+        <summary>Paints a representation of the value of the specified object to the specified canvas.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Editors should paint within the boundaries of the specified rectangle. This rectangle indicates the area of the Properties window to draw a representation of the value within.  
+  
+ Starting with the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], the rectangle specified by <xref:System.Drawing.Design.PaintValueEventArgs.Bounds%2A> will be resized based on the system DPI setting when the app.config file contains the following entry:  
+  
+```  
+<appSettings>  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+</appSettings>  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

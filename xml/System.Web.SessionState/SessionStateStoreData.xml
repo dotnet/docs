@@ -1,0 +1,138 @@
+<Type Name="SessionStateStoreData" FullName="System.Web.SessionState.SessionStateStoreData">
+  <TypeSignature Language="C#" Value="public class SessionStateStoreData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionStateStoreData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateStoreData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents session-state data for a session store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SessionState.SessionStateStoreData> class is used by ASP.NET and implementers of a custom session-state store to pass session-state information to and from the <xref:System.Web.SessionState.SessionStateModule>.  
+  
+ The <xref:System.Web.SessionState.SessionStateStoreData> class is used to represent session-state data for a session store to the <xref:System.Web.SessionState.SessionStateModule>. The <xref:System.Web.SessionState.SessionStateStoreData> object contains the session-state variable names and values, static object references, and <xref:System.Web.SessionState.SessionStateStoreData.Timeout%2A> information for the current session.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SessionStateStoreData (System.Web.SessionState.ISessionStateItemCollection sessionItems, System.Web.HttpStaticObjectsCollection staticObjects, int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.SessionState.ISessionStateItemCollection sessionItems, class System.Web.HttpStaticObjectsCollection staticObjects, int32 timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.SessionState.SessionStateStoreData.#ctor(System.Web.SessionState.ISessionStateItemCollection,System.Web.HttpStaticObjectsCollection,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sessionItems" Type="System.Web.SessionState.ISessionStateItemCollection" />
+        <Parameter Name="staticObjects" Type="System.Web.HttpStaticObjectsCollection" />
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sessionItems">The session variables and values for the current session.</param>
+        <param name="staticObjects">The <see cref="T:System.Web.HttpStaticObjectsCollection" /> for the current session.</param>
+        <param name="timeout">The <see cref="P:System.Web.SessionState.SessionStateStoreData.Timeout" /> for the current session.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.SessionState.SessionStateStoreData" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SessionState.SessionStateStoreData> class is used to represent session-state data for a session store to the <xref:System.Web.SessionState.SessionStateModule>. The <xref:System.Web.SessionState.SessionStateStoreData> object contains the session-state variable names and values, static object references, and <xref:System.Web.SessionState.SessionStateStoreData.Timeout%2A> information for the current session.  
+  
+ The <xref:System.Web.SessionState.SessionStateStoreData> class is used by ASP.NET and implementers of a custom session-state store to pass session-state information to and from the <xref:System.Web.SessionState.SessionStateModule>.  
+  
+ Custom session-store implementers construct a <xref:System.Web.SessionState.SessionStateStoreData> object in implementations of the <xref:System.Web.SessionState.SessionStateStoreProviderBase.GetItem%2A>, <xref:System.Web.SessionState.SessionStateStoreProviderBase.GetItemExclusive%2A>, and <xref:System.Web.SessionState.SessionStateStoreProviderBase.CreateNewStoreData%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public virtual System.Web.SessionState.ISessionStateItemCollection Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SessionState.ISessionStateItemCollection Items" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateStoreData.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.SessionState.ISessionStateItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The session variables and values for the current session.</summary>
+        <value>An <see cref="T:System.Web.SessionState.ISessionStateItemCollection" /> object that contains variables and values for the current session.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.SessionState.SessionStateStoreData.Items%2A> property references the session-state variables that are exposed to ASP.NET application code using the <xref:System.Web.SessionState.HttpSessionState> class, which is accessed using the <xref:System.Web.HttpContext.Session%2A> property of the current <xref:System.Web.HttpContext> or the <xref:System.Web.UI.Page> instance.  
+  
+ By default, session-state variables are managed using the <xref:System.Web.SessionState.SessionStateItemCollection> object. Custom session-store implementers can supply their own implementation of the <xref:System.Web.SessionState.ISessionStateItemCollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticObjects">
+      <MemberSignature Language="C#" Value="public virtual System.Web.HttpStaticObjectsCollection StaticObjects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpStaticObjectsCollection StaticObjects" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateStoreData.StaticObjects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpStaticObjectsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of objects declared by <see langword="&lt;object Runat=&quot;Server&quot; Scope=&quot;Session&quot;/&gt;" /> tags within the ASP.NET application file Global.asax.</summary>
+        <value>An <see cref="T:System.Web.HttpStaticObjectsCollection" /> containing objects declared in the Global.asax file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The  
+  
+ <xref:System.Web.SessionState.SessionStateStoreData.StaticObjects%2A> property is provided for compatibility with earlier versions of ASP.  
+  
+ Custom session-store implementers can obtain a reference to the <xref:System.Web.HttpStaticObjectsCollection> class for the current <xref:System.Web.HttpContext> instance using the <xref:System.Web.SessionState.SessionStateUtility.GetSessionStaticObjects%2A> method.  
+  
+> [!NOTE]
+>  Custom objects stored in the <xref:System.Web.SessionState.SessionStateStoreData.StaticObjects%2A> collection must support binary serialization. For more information, see [Binary Serialization](~/docs/framework/serialization/binary-serialization.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public virtual int Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
+      <MemberSignature Language="DocId" Value="P:System.Web.SessionState.SessionStateStoreData.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the amount of time, in minutes, allowed between requests before the session-state provider terminates the session.</summary>
+        <value>The time-out period in minutes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

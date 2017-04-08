@@ -1,0 +1,171 @@
+<Type Name="ClassInterfaceAttribute" FullName="System.Runtime.InteropServices.ClassInterfaceAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ClassInterfaceAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClassInterfaceAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ClassInterfaceAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates the type of class interface to be generated for a class exposed to COM, if an interface is generated at all.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to assemblies or classes.  
+  
+ This attribute controls whether the Type Library Exporter (Tlbexp.exe) automatically generates a class interface for the attributed class. A class interface carries the same name as the class itself, but the name is prefixed with an underscore. When exposed, the class interface contains all the `public`, non- `static` members of the managed class, including members inherited from its base class. Managed classes cannot access a class interface and have no need to as they can access the class members directly. Tlbexp.exe generates a unique interface identifier (IID) for the class interface.  
+  
+ Class interfaces can be dual or dispatch-only interfaces. Optionally, you can suppress the generation of the class interface and provide a custom interface instead. You expose or suppress a class interface by specifying a <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> enumeration member. When you apply <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> to an assembly, the attribute pertains to all classes in the assembly unless the individual classes override the setting with their own attribute.  
+  
+ Although class interfaces eliminate the task of explicitly defining interfaces for each class, their use in production applications is strongly discouraged. Dual class interfaces allow clients to bind to a specific interface layout that is subject to change as the class evolves. For example, consider a managed class that exposes a class interface to COM clients. The first version of the class contains methods `North` and `South`. An unmanaged client can bind to the class interface, which provides `North` as the first method in the class interface and method `South` as the second method. Now consider the next version of the class, which has a new method, `East`, inserted between methods `North` and `South`. Unmanaged clients that try to bind to the new class through the old class interface end up calling method `East` when they intend to call method `South`, because the positioning of methods within the interface has changed. Moreover, any change to the layout of a base class also affects the layout of the class interface for all derived classes. Managed clients, which bind directly to classes, do not exhibit the same versioning problems. For specific guidelines on using a class interface, see [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md).  
+  
+ The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) always applies to imported classes the <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> enumeration member to indicate that existing COM classes never expose managed interfaces.  
+  
+   
+  
+## Examples  
+ The following example shows how to apply the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> with the <xref:System.Runtime.InteropServices.ClassInterfaceType> value <xref:System.Runtime.InteropServices.ClassInterfaceType>, which generates an `IDispatch` interface for `MyClass`.  
+  
+ [!code-cpp[Classic ClassInterfaceAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ClassInterfaceAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ClassInterfaceAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ClassInterfaceAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic ClassInterfaceAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ClassInterfaceAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClassInterfaceAttribute (short classInterfaceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 classInterfaceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Int16)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="classInterfaceType" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="classInterfaceType">Describes the type of interface that is generated for a class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.ClassInterfaceType" /> enumeration value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor takes an underlying 16-bit signed integer that represents each <xref:System.Runtime.InteropServices.ClassInterfaceType> enumeration member. The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) uses this constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClassInterfaceAttribute (System.Runtime.InteropServices.ClassInterfaceType classInterfaceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Runtime.InteropServices.ClassInterfaceType classInterfaceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="classInterfaceType" Type="System.Runtime.InteropServices.ClassInterfaceType" />
+      </Parameters>
+      <Docs>
+        <param name="classInterfaceType">One of the <see cref="T:System.Runtime.InteropServices.ClassInterfaceType" /> values that describes the type of interface that is generated for a class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" /> class with the specified <see cref="T:System.Runtime.InteropServices.ClassInterfaceType" /> enumeration member.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For readable code that is less prone to error, always use this constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ClassInterfaceType Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.InteropServices.ClassInterfaceType Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ClassInterfaceAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.ClassInterfaceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Runtime.InteropServices.ClassInterfaceType" /> value that describes which type of interface should be generated for the class.</summary>
+        <value>The <see cref="T:System.Runtime.InteropServices.ClassInterfaceType" /> value that describes which type of interface should be generated for the class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

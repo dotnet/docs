@@ -1,0 +1,73 @@
+<Type Name="GridViewColumnHeaderRole" FullName="System.Windows.Controls.GridViewColumnHeaderRole">
+  <TypeSignature Language="C#" Value="public enum GridViewColumnHeaderRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridViewColumnHeaderRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridViewColumnHeaderRole" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the state or role of a <see cref="T:System.Windows.Controls.GridViewColumnHeader" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role of a <xref:System.Windows.Controls.GridViewColumnHeader> is defined by the read-only <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Floating">
+      <MemberSignature Language="C#" Value="Floating" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridViewColumnHeaderRole Floating = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumnHeaderRole.Floating" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.GridViewColumnHeaderRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column header is the object of a drag-and-drop operation to move a column.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridViewColumnHeaderRole Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumnHeaderRole.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.GridViewColumnHeaderRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column header displays above its associated column.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="Padding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.GridViewColumnHeaderRole Padding = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumnHeaderRole.Padding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.GridViewColumnHeaderRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column header is the last header in the row of column headers and is used for padding.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

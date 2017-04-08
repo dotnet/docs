@@ -1,0 +1,84 @@
+<Type Name="SocketInformation" FullName="System.Net.Sockets.SocketInformation">
+  <TypeSignature Language="C#" Value="public struct SocketInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SocketInformation extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketInformation" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates the information that is necessary to duplicate a <see cref="T:System.Net.Sockets.Socket" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Net.Sockets.Socket.DuplicateAndClose%2A?displayProperty=fullName> creates a <xref:System.Net.Sockets.SocketInformation> instance for use with the <xref:System.Net.Sockets.Socket.%23ctor%28System.Net.Sockets.SocketInformation%29?displayProperty=fullName> constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Net.Sockets.SocketInformationOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.SocketInformationOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketInformation.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the options for a <see cref="T:System.Net.Sockets.Socket" />.</summary>
+        <value>A <see cref="T:System.Net.Sockets.SocketInformationOptions" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Options include <xref:System.Net.Sockets.SocketInformationOptions>, <xref:System.Net.Sockets.SocketInformationOptions>, <xref:System.Net.Sockets.SocketInformationOptions>, and <xref:System.Net.Sockets.SocketInformationOptions>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolInformation">
+      <MemberSignature Language="C#" Value="public byte[] ProtocolInformation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ProtocolInformation" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketInformation.ProtocolInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the protocol information for a <see cref="T:System.Net.Sockets.Socket" />.</summary>
+        <value>An array of type <see cref="T:System.Byte" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

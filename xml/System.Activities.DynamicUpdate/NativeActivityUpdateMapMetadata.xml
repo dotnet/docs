@@ -1,0 +1,90 @@
+<Type Name="NativeActivityUpdateMapMetadata" FullName="System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata">
+  <TypeSignature Language="C#" Value="public class NativeActivityUpdateMapMetadata : System.Activities.DynamicUpdate.UpdateMapMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NativeActivityUpdateMapMetadata extends System.Activities.DynamicUpdate.UpdateMapMetadata" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.DynamicUpdate.UpdateMapMetadata</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents native activity update map metadata.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. [!INCLUDE[crabout](~/includes/crabout-md.md)] workflow versioning, workflow identity, and dynamic update, see the following topics.  
+  
+ [Workflow Versioning](http://go.microsoft.com/fwlink/?LinkID=271561)  
+ Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
+  
+ [Dynamic Update](http://go.microsoft.com/fwlink/?LinkId=271563)  
+ Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
+  
+ [Using WorkflowApplication Identity and Versioning](http://go.microsoft.com/fwlink/?LinkId=271564)  
+ Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
+  
+ [Side by Side Versioning in WorkflowServiceHost](http://go.microsoft.com/fwlink/?LinkId=271565)  
+ Describes how to host multiple versions of a workflow on a single endpoint.  
+  
+ [How to: Host Multiple Versions of a Workflow Side-by-Side](http://go.microsoft.com/fwlink/?LinkId=271566)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
+  
+ [How to: Update the Definition of a Running Workflow Instance](http://go.microsoft.com/fwlink/?LinkId=271567)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating persisted workflow instances to use a new workflow definition.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SaveOriginalValue">
+      <MemberSignature Language="C#" Value="public void SaveOriginalValue (System.Activities.Activity updatedChildActivity, object originalValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveOriginalValue(class System.Activities.Activity updatedChildActivity, object originalValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue(System.Activities.Activity,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatedChildActivity" Type="System.Activities.Activity" />
+        <Parameter Name="originalValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="updatedChildActivity">The updated child activity.</param>
+        <param name="originalValue">The original value.</param>
+        <summary>Indicates the object to save the original value for the current activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveOriginalValue">
+      <MemberSignature Language="C#" Value="public void SaveOriginalValue (string propertyName, object originalValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveOriginalValue(string propertyName, object originalValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="originalValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The property name.</param>
+        <param name="originalValue">The original value.</param>
+        <summary>Indicates the object to save the original value for the current activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

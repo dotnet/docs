@@ -1,0 +1,225 @@
+<Type Name="DesignerActionUIService" FullName="System.ComponentModel.Design.DesignerActionUIService">
+  <TypeSignature Language="C#" Value="public sealed class DesignerActionUIService : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerActionUIService extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionUIService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Manages the user interface (UI) for a smart tag panel. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can control the display of your designer's <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> with the <xref:System.ComponentModel.Design.DesignerActionUIService> class. <xref:System.ComponentModel.Design.DesignerActionUIService> provides a straightforward interface for displaying the items for each component, including the following methods and events:  
+  
+-   The <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> and <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> methods display and hide the items for a component.  
+  
+-   The <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event indicates when the UI changes for a component.  
+  
+ Use the <xref:System.ComponentModel.Design.DesignerActionService> to manage the <xref:System.ComponentModel.Design.DesignerActionList> collections associated with your component.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.Design.DesignerActionUIService.Refresh%2A> method to update a smart tag panel. This example is part of a larger example available in the <xref:System.ComponentModel.Design.DesignerActionService> class overview.  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#11)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DesignerActionUIStateChange">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler DesignerActionUIStateChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler DesignerActionUIStateChange" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a request is made to show or hide a smart tag panel.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists the set of specialized classes associated with the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event.  
+  
+|Specialized type|Description|  
+|----------------------|-----------------|  
+|<xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs>|Adds information specific to smart tag panel management. This class is specialized from <xref:System.EventArgs>.|  
+|<xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler>|Connects the <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> with its handler.|  
+|<xref:System.ComponentModel.Design.DesignerActionUIStateChangeType>|Denotes whether the smart tag panel is being displayed or hidden.|  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionUIService.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.DesignerActionUIService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.ComponentModel.Design.DesignerActionUIService.Dispose%2A> when you are finished using the <xref:System.ComponentModel.Design.DesignerActionUIService>. The <xref:System.ComponentModel.Design.DesignerActionUIService.Dispose%2A> method leaves the <xref:System.ComponentModel.Design.DesignerActionUIService> in an unusable state. After calling <xref:System.ComponentModel.Design.DesignerActionUIService.Dispose%2A>, you must release all references to the <xref:System.ComponentModel.Design.DesignerActionUIService> so the garbage collector can reclaim the memory that the <xref:System.ComponentModel.Design.DesignerActionUIService> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.ComponentModel.Design.DesignerActionUIService.Dispose%2A> before you release your last reference to the <xref:System.ComponentModel.Design.DesignerActionUIService>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ComponentModel.Design.DesignerActionUIService> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideUI">
+      <MemberSignature Language="C#" Value="public void HideUI (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void HideUI(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionUIService.HideUI(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component whose smart tag panel should be hidden.</param>
+        <summary>Hides the smart tag panel for a component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the smart tag panel is currently being displayed, the <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> method will hide it. This method raises the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, stipulating <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType> as the event type.  
+  
+> [!NOTE]
+>  The <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> and <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> methods are implemented only to raise their corresponding events. The actual functionality is found in the handlers for these events, which are part of the design-time environment.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionUIService.Refresh(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to refresh.</param>
+        <summary>Updates the smart tag panel.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionUIService.Refresh%2A> method updates the internal `DesignerAction`<xref:System.Windows.Forms.Design.Behavior.Glyph>, as well as the smart tag panel.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.Design.DesignerActionUIService.Refresh%2A> method to update a smart tag panel. This example is part of a larger example available in the <xref:System.ComponentModel.Design.DesignerActionService> class overview.  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#11)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldAutoShow">
+      <MemberSignature Language="C#" Value="public bool ShouldAutoShow (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldAutoShow(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionUIService.ShouldAutoShow(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to automatically show.</param>
+        <summary>Indicates whether to automatically show the smart tag panel.</summary>
+        <returns>
+          <see langword="true" /> to automatically show the smart tag panel; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowUI">
+      <MemberSignature Language="C#" Value="public void ShowUI (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowUI(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionUIService.ShowUI(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component whose smart tag panel should be displayed.</param>
+        <summary>Displays the smart tag panel for a component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the smart tag panel is currently hidden, the <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> method will display the panel. This method raises the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, stipulating <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType> as the event type.  
+  
+> [!NOTE]
+>  The <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> and <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> methods are implemented only to raise their corresponding events. The actual functionality is found in the handlers for these events, which are part of the design-time environment.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

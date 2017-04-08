@@ -1,0 +1,191 @@
+<Type Name="PropertyValueEditorCommands" FullName="System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands">
+  <TypeSignature Language="C#" Value="public static class PropertyValueEditorCommands" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PropertyValueEditorCommands extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables the use of standard commands to control the editing of property values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_PropertyValueEditorCommands#0](WFD_PropertyValueEditorCommands#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbortTransaction">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand AbortTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand AbortTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.AbortTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command that the editor raises to abort an attempt to update a property value.</summary>
+        <value>The <see cref="T:System.Windows.Input.RoutedCommand" /> that aborts a transaction.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this command is executed when there are not any open transactions, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTransaction">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand BeginTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand BeginTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.BeginTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command that the editor raises to begin an attempt to update a property value.</summary>
+        <value>The <see cref="T:System.Windows.Input.RoutedCommand" /> that begins a transaction.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommitTransaction">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand CommitTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand CommitTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.CommitTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command that the editor raises to commit an update of a property value.</summary>
+        <value>The <see cref="T:System.Windows.Input.RoutedCommand" /> that commits a transaction.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this command is executed when there are not any open transactions, an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinishEditing">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand FinishEditing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand FinishEditing" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.FinishEditing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command that the editor raises to indicate to the host that the updating of a property value is complete.</summary>
+        <value>A <see cref="T:System.Windows.Input.RoutedCommand" /> that indicates that the updating of a value is complete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enables the host to do cleanup or potentially change the focus to a different <xref:System.Windows.UIElement>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowDialogEditor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand ShowDialogEditor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand ShowDialogEditor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.ShowDialogEditor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command that the editor raises to switch the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainer" /> to <see cref="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.Dialog" /> editing mode.</summary>
+        <value>A <see cref="T:System.Windows.Input.RoutedCommand" /> that switches the edit mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowExtendedPinnedEditor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand ShowExtendedPinnedEditor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand ShowExtendedPinnedEditor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.ShowExtendedPinnedEditor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command that the editor raises to switch the  <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainer" /> to <see cref="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.ExtendedPinned" /> editing mode.</summary>
+        <value>A <see cref="T:System.Windows.Input.RoutedCommand" /> that switches the edit mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowExtendedPopupEditor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand ShowExtendedPopupEditor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand ShowExtendedPopupEditor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.ShowExtendedPopupEditor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command that the editor raises to switch the  <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainer" /> to <see cref="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.ExtendedPopup" /> editing mode.</summary>
+        <value>A <see cref="T:System.Windows.Input.RoutedCommand" /> that switches the edit mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowInlineEditor">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand ShowInlineEditor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand ShowInlineEditor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands.ShowInlineEditor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command that the editor raises to switch the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainer" /> to <see cref="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.Inline" /> editing mode.</summary>
+        <value>A <see cref="T:System.Windows.Input.RoutedCommand" /> that switches the edit mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

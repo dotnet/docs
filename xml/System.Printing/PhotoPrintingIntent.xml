@@ -1,0 +1,115 @@
+<Type Name="PhotoPrintingIntent" FullName="System.Printing.PhotoPrintingIntent">
+  <TypeSignature Language="C#" Value="public enum PhotoPrintingIntent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PhotoPrintingIntent extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PhotoPrintingIntent" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the quality of output when a photograph is printed. The printer driver translates the <see cref="T:System.Printing.PhotoPrintingIntent" /> into quantitative values for resolution and other quality factors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of this type are used primarily for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.PhotoPrintingIntentCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, they specify the quality levels that the printer supports.  
+  
+-   As a <xref:System.Printing.PrintTicket.PhotoPrintingIntent%2A> value, which is a property of <xref:System.Printing.PrintTicket>, instructs the printer to use a particular quality.  
+  
+ The Unknown value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to Unknown. If some other <xref:System.Printing.PrintTicket> producing application has created a PrintTicket document that sets the photo printing intent feature to an unrecognized option (that is, an option that is not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have Unknown as the value of the <xref:System.Printing.PrintTicket.PhotoPrintingIntent%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information, see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PhotoPrintingIntent None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PhotoPrintingIntent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No photo-printing intent. The user sets specific quantitative properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotoBest">
+      <MemberSignature Language="C#" Value="PhotoBest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PhotoPrintingIntent PhotoBest = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.PhotoBest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PhotoPrintingIntent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Best quality photo printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotoDraft">
+      <MemberSignature Language="C#" Value="PhotoDraft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PhotoPrintingIntent PhotoDraft = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.PhotoDraft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PhotoPrintingIntent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Draft quality photo printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PhotoStandard">
+      <MemberSignature Language="C#" Value="PhotoStandard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PhotoPrintingIntent PhotoStandard = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.PhotoStandard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PhotoPrintingIntent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Standard quality photo printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PhotoPrintingIntent Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PhotoPrintingIntent.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PhotoPrintingIntent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

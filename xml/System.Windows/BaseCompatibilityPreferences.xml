@@ -1,0 +1,96 @@
+<Type Name="BaseCompatibilityPreferences" FullName="System.Windows.BaseCompatibilityPreferences">
+  <TypeSignature Language="C#" Value="public static class BaseCompatibilityPreferences" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BaseCompatibilityPreferences extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.BaseCompatibilityPreferences" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains properties that specify how an application should behave relative to new WPF features that are in the WindowsBase assembly.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FlowDispatcherSynchronizationContextPriority">
+      <MemberSignature Language="C#" Value="public static bool FlowDispatcherSynchronizationContextPriority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool FlowDispatcherSynchronizationContextPriority" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.FlowDispatcherSynchronizationContextPriority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether information about the <see cref="P:System.Windows.Threading.DispatcherOperation.Priority" /> is saved to the <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" />.</summary>
+        <value>
+          <see langword="true" /> if information about the <see cref="P:System.Windows.Threading.DispatcherOperation.Priority" /> is saved to the <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `false`.  If your app targets WPF 4.5, the default is `true`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineDispatcherSynchronizationContextSend">
+      <MemberSignature Language="C#" Value="public static bool InlineDispatcherSynchronizationContextSend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool InlineDispatcherSynchronizationContextSend" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.InlineDispatcherSynchronizationContextSend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="M:System.Windows.Threading.DispatcherSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" /> method puts the delegates on the dispatcher queue or if the delegate is directly invoked.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="M:System.Windows.Threading.DispatcherSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)" /> method puts the delegates on the dispatcher queue or if the delegate is directly invoked; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `false`.  If your app targets WPF 4.5, the default is `true`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReuseDispatcherSynchronizationContextInstance">
+      <MemberSignature Language="C#" Value="public static bool ReuseDispatcherSynchronizationContextInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool ReuseDispatcherSynchronizationContextInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.BaseCompatibilityPreferences.ReuseDispatcherSynchronizationContextInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a single <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" /> is used for multiple dispatcher operations.</summary>
+        <value>true if a single <see cref="T:System.Windows.Threading.DispatcherSynchronizationContext" /> is used for multiple dispatcher operations; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property depends which version of WPF that your app targets.  If your app targets WPF 4.0 or earlier, the default is `true`.  If your app targets WPF 4.5, the default is `false`.  If you use this property to change the behavior of WPF, you must change the property’s value early in the app’s lifetime, such in the constructor of the class that inherits from Application.  After the value is read, you cannot change it again.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

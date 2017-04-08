@@ -1,0 +1,128 @@
+<Type Name="DataControlRowState" FullName="System.Web.UI.WebControls.DataControlRowState">
+  <TypeSignature Language="C#" Value="public enum DataControlRowState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataControlRowState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlRowState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the state of a row in a data control, such as <see cref="T:System.Web.UI.WebControls.DetailsView" /> or <see cref="T:System.Web.UI.WebControls.GridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataControlRowState> enumeration identifies the state of a row in a data control such as <xref:System.Web.UI.WebControls.DetailsView> or <xref:System.Web.UI.WebControls.GridView>. A row's state can be one or a combination of the <xref:System.Web.UI.WebControls.DataControlRowState> values, so use bitwise operations to determine whether the state of the row includes a <xref:System.Web.UI.WebControls.DataControlRowState> value, rather than an equivalence test. The <xref:System.Web.UI.WebControls.DataControlRowState> enumeration is used for any type of row, not just <xref:System.Web.UI.WebControls.DataControlRowType> rows (typically, the state of header and footer rows is set to Normal).  
+  
+ You can use the <xref:System.Web.UI.WebControls.DataControlRowState> enumeration to identify the state of a <xref:System.Web.UI.WebControls.GridViewRow> or <xref:System.Web.UI.WebControls.DetailsViewRow> object when enumerating through a <xref:System.Web.UI.WebControls.GridViewRowCollection> or <xref:System.Web.UI.WebControls.DetailsViewRowCollection> collection, respectively. If you are writing a data control that uses rows, you can use the <xref:System.Web.UI.WebControls.DataControlRowState> enumeration to identify when to render different colors for a row (the Alternate value), or controls that are enabled or disabled for editing a row (the Edit and Insert values).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlRowState> enumeration to render a user interface (UI) based on the state of a row in a <xref:System.Web.UI.WebControls.GridView> control. The `RadioButtonField` class, which is a custom field control that derives from the <xref:System.Web.UI.WebControls.CheckBoxField> control, renders a data-bound radio button for every row in a <xref:System.Web.UI.WebControls.GridView> control. When the row is displaying data to a user, and is not in edit mode, the <xref:System.Web.UI.WebControls.RadioButton> control is disabled. When the user updates a row in <xref:System.Web.UI.WebControls.GridView> and the row is in edit mode, the <xref:System.Web.UI.WebControls.RadioButton> control is rendered as enabled so that it can be clicked. The example uses bitwise AND operators, because the row state might be a combination of one or more <xref:System.Web.UI.WebControls.DataControlRowState> values. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.DataControlField> class.  
+  
+ [!code-csharp[Samples.AspNet.RadioButtonField#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Samples.AspNet.RadioButtonField/CS/radiobuttonfield.cs#3)]
+ [!code-vb[Samples.AspNet.RadioButtonField#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Samples.AspNet.RadioButtonField/VB/radiobuttonfield.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alternate">
+      <MemberSignature Language="C#" Value="Alternate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowState Alternate = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Alternate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the data control row is an alternate row.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Alternate state can be combined with other states, such as Normal, Edit, or Insert, at any time. These rows might be affected by the `AlternateRowStyle` property of the data control, if set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Edit">
+      <MemberSignature Language="C#" Value="Edit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowState Edit = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Edit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the row is in an edit state, often the result of clicking an edit button for the row. Typically, the <see cref="F:System.Web.UI.WebControls.DataControlRowState.Edit" /> and <see cref="F:System.Web.UI.WebControls.DataControlRowState.Insert" /> states are mutually exclusive.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowState Insert = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the row is a new row, often the result of clicking an insert button to add a new row. Typically, the <see cref="F:System.Web.UI.WebControls.DataControlRowState.Insert" /> and <see cref="F:System.Web.UI.WebControls.DataControlRowState.Edit" /> states are mutually exclusive.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowState Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the data control row is in a normal state. The <see cref="F:System.Web.UI.WebControls.DataControlRowState.Normal" /> state is mutually exclusive with other states except the <see cref="F:System.Web.UI.WebControls.DataControlRowState.Alternate" /> state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="Selected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowState Selected = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowState.Selected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the row has been selected by the user.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

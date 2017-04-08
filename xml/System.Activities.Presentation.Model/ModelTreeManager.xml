@@ -1,0 +1,149 @@
+<Type Name="ModelTreeManager" FullName="System.Activities.Presentation.Model.ModelTreeManager">
+  <TypeSignature Language="C#" Value="public class ModelTreeManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelTreeManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelTreeManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the root model item and the model service, and enables you to sync the model tree with the XAML text.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelTreeManager (System.Activities.Presentation.EditingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelTreeManager.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.Model.ModelTreeManager" /> class, using the specified context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The model service is published on the editing context passed to the constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateModelItem">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem CreateModelItem (System.Activities.Presentation.Model.ModelItem parent, object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.Model.ModelItem CreateModelItem(class System.Activities.Presentation.Model.ModelItem parent, object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelTreeManager.CreateModelItem(System.Activities.Presentation.Model.ModelItem,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The parent item.</param>
+        <param name="instance">The instance.</param>
+        <summary>Creates a model item based on the specified parent and instance.</summary>
+        <returns>Returns a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that contains the new model item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditingScopeCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.Model.EditingScopeEventArgs&gt; EditingScopeCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.Model.EditingScopeEventArgs&gt; EditingScopeCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Model.ModelTreeManager.EditingScopeCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Activities.Presentation.Model.EditingScopeEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the editing scope is completed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelItem">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem GetModelItem (object instance, bool shouldExpandModelTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.Model.ModelItem GetModelItem(object instance, bool shouldExpandModelTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelTreeManager.GetModelItem(System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="shouldExpandModelTree" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance.</param>
+        <param name="shouldExpandModelTree">
+          <see langword="True" /> if the manager should expand the model tree; otherwise, <see langword="false" />.</param>
+        <summary>Returns the model item for the manager.</summary>
+        <returns>The model item for the manager.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load (object rootInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(object rootInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelTreeManager.Load(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootInstance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="rootInstance">The root instance to load.</param>
+        <summary>Loads the specified root instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem Root { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem Root" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelTreeManager.Root" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root.</summary>
+        <value>The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> object that contains the root.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

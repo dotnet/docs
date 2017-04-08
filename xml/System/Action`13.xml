@@ -1,0 +1,151 @@
+<Type Name="Action&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt;" FullName="System.Action&lt;T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13&gt;">
+  <TypeSignature Language="C#" Value="public delegate void Action&lt;in T1,in T2,in T3,in T4,in T5,in T6,in T7,in T8,in T9,in T10,in T11,in T12,in T13&gt;(T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8, T9 arg9, T10 arg10, T11 arg11, T12 arg12, T13 arg13);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Action`13&lt;- T1, - T2, - T3, - T4, - T5, - T6, - T7, - T8, - T9, - T10, - T11, - T12, - T13&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Action`13" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T2">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T3">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T4">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T5">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T6">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T7">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T8">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T9">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T10">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T11">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T12">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T13">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="arg1" Type="T1" />
+    <Parameter Name="arg2" Type="T2" />
+    <Parameter Name="arg3" Type="T3" />
+    <Parameter Name="arg4" Type="T4" />
+    <Parameter Name="arg5" Type="T5" />
+    <Parameter Name="arg6" Type="T6" />
+    <Parameter Name="arg7" Type="T7" />
+    <Parameter Name="arg8" Type="T8" />
+    <Parameter Name="arg9" Type="T9" />
+    <Parameter Name="arg10" Type="T10" />
+    <Parameter Name="arg11" Type="T11" />
+    <Parameter Name="arg12" Type="T12" />
+    <Parameter Name="arg13" Type="T13" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T1">The type of the first parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T2">The type of the second parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T3">The type of the third parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T4">The type of the fourth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T5">The type of the fifth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T6">The type of the sixth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T7">The type of the seventh parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T8">The type of the eighth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T9">The type of the ninth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T10">The type of the tenth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T11">The type of the eleventh parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T12">The type of the twelfth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T13">The type of the thirteenth parameter of the method that this delegate encapsulates.</typeparam>
+    <param name="arg1">The first parameter of the method that this delegate encapsulates.</param>
+    <param name="arg2">The second parameter of the method that this delegate encapsulates.</param>
+    <param name="arg3">The third parameter of the method that this delegate encapsulates.</param>
+    <param name="arg4">The fourth parameter of the method that this delegate encapsulates.</param>
+    <param name="arg5">The fifth parameter of the method that this delegate encapsulates.</param>
+    <param name="arg6">The sixth parameter of the method that this delegate encapsulates.</param>
+    <param name="arg7">The seventh parameter of the method that this delegate encapsulates.</param>
+    <param name="arg8">The eighth parameter of the method that this delegate encapsulates.</param>
+    <param name="arg9">The ninth parameter of the method that this delegate encapsulates.</param>
+    <param name="arg10">The tenth parameter of the method that this delegate encapsulates.</param>
+    <param name="arg11">The eleventh parameter of the method that this delegate encapsulates.</param>
+    <param name="arg12">The twelfth parameter of the method that this delegate encapsulates.</param>
+    <param name="arg13">The thirteenth parameter of the method that this delegate encapsulates.</param>
+    <summary>Encapsulates a method that has 13 parameters and does not return a value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Action%6013> delegate to pass a method as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have 13 parameters that are all passed to it by value, and it must not return a value. (In C#, the method must return `void`. In Visual Basic, it must be defined by the `Sub`…`End Sub` construct. It can also be a method that returns a value that is ignored.) Typically, such a method is used to perform an operation.  
+  
+> [!NOTE]
+>  To reference a method that has 13 parameters and returns a value, use the generic <xref:System.Func%6014> delegate instead.  
+  
+ You can also use the <xref:System.Action%6013> delegate with anonymous methods and lambda expressions.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

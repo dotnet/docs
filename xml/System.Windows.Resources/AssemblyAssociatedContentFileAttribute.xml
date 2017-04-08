@@ -1,0 +1,60 @@
+<Type Name="AssemblyAssociatedContentFileAttribute" FullName="System.Windows.Resources.AssemblyAssociatedContentFileAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AssemblyAssociatedContentFileAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyAssociatedContentFileAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Resources.AssemblyAssociatedContentFileAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This attribute is interpreted during the [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] compilation process to associate loose content with a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AssemblyAssociatedContentFileAttribute (string relativeContentFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relativeContentFilePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Resources.AssemblyAssociatedContentFileAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relativeContentFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="relativeContentFilePath">The path to the associated content.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Resources.AssemblyAssociatedContentFileAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelativeContentFilePath">
+      <MemberSignature Language="C#" Value="public string RelativeContentFilePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelativeContentFilePath" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Resources.AssemblyAssociatedContentFileAttribute.RelativeContentFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path to the associated content.</summary>
+        <value>The path, as declared in the attribute.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

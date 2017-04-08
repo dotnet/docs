@@ -1,0 +1,41 @@
+<Type Name="KnownTypesProvider" FullName="System.Web.ApplicationServices.KnownTypesProvider">
+  <TypeSignature Language="C#" Value="public static class KnownTypesProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit KnownTypesProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.KnownTypesProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Creates an array of <see cref="T:System.Type" /> objects that contain the types of individual profile properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetKnownTypes">
+      <MemberSignature Language="C#" Value="public static Type[] GetKnownTypes (System.Reflection.ICustomAttributeProvider knownTypeAttributeTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type[] GetKnownTypes(class System.Reflection.ICustomAttributeProvider knownTypeAttributeTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.KnownTypesProvider.GetKnownTypes(System.Reflection.ICustomAttributeProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="knownTypeAttributeTarget" Type="System.Reflection.ICustomAttributeProvider" />
+      </Parameters>
+      <Docs>
+        <param name="knownTypeAttributeTarget">A provider object.</param>
+        <summary>Creates an array of <see cref="T:System.Type" /> objects that contain the types of individual profile properties.</summary>
+        <returns>An array of types of individual profile properties.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

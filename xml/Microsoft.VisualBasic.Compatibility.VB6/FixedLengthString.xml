@@ -1,0 +1,295 @@
+<Type Name="FixedLengthString" FullName="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString">
+  <TypeSignature Language="C#" Value="public class FixedLengthString" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi FixedLengthString extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Emulates the behavior of a Visual Basic 6.0 fixed-length string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Visual Basic 6.0, a `String` could be declared with a fixed length. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], fixed-length strings are no longer supported and a new <xref:System.String> is allocated every time the length of the <xref:System.String> is changed.  
+  
+ The `FixedLengthString` class can be used to emulate the behavior of a Visual Basic 6.0 string, which enables you to declare a string with a fixed length. A `FixedLengthString` cannot be converted to a <xref:System.String>; you must either reference the <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value%2A> property or call the <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.ToString%2A> method to convert the type.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declare and use a `FixedLengthString`.  
+  
+```  
+Private Sub DemoFixedLengthString()  
+    ' Declare a string that has a length of 7 characters and assign the  
+    ' initial string. The additional 5 positions will be padded with  
+    ' spaces.  
+    Dim fixedString As New FixedLengthString(7, "He")  
+    ' Display the string in a message box.  
+    MsgBox(fixedString.ToString)  
+    ' Assign a new value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display again. Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
+End Sub  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FixedLengthString (int MaxChars);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(int32 MaxChars) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="MaxChars" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="MaxChars">An <see langword="Integer" /> that specifies the length of the string.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" /> class, specifying the length.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Visual Basic 6.0, you can specify the length of a string in its declaration. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you cannot declare a string to have a fixed length unless you use the <xref:Microsoft.VisualBasic.VBFixedStringAttribute> attribute in the declaration.  
+  
+ Use this class to declare a fixed-length string without using the attribute.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declare and use a <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString>.  
+  
+```  
+Private Sub DemoFixedLengthString()  
+    ' Declare a string that has a length of 7 characters.   
+    Dim fixedString As New FixedLengthString(7)  
+    ' Assign a value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display the string in a message box.  
+    ' Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
+End Sub  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FixedLengthString (int MaxChars, string InitialValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(int32 MaxChars, string InitialValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.#ctor(System.Int32,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="MaxChars" Type="System.Int32" />
+        <Parameter Name="InitialValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="MaxChars">An <see langword="Integer" /> that specifies the length of the string.</param>
+        <param name="InitialValue">A <see cref="T:System.String" /> that specifies the initial contents.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" /> class, specifying the length and the initial value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Visual Basic 6.0, you can specify the length of a string in its declaration. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you cannot declare a string to have a fixed length unless you use the <xref:Microsoft.VisualBasic.VBFixedStringAttribute> attribute in the declaration.  
+  
+ Use this class to declare a fixed length string without using the attribute.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declare and use a <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString>.  
+  
+```  
+Private Sub DemoFixedLengthString()  
+    ' Declare a string that has a length of 7 characters and assign the  
+    ' initial string. The additional 5 positions will be padded with  
+    ' spaces.  
+    Dim fixedString As New FixedLengthString(7, "He")  
+    ' Display the string in a message box.  
+    MsgBox(fixedString.ToString)  
+    ' Assign a new value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display again. Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
+End Sub  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_nMaxChars">
+      <MemberSignature Language="C#" Value="protected int m_nMaxChars;" />
+      <MemberSignature Language="ILAsm" Value=".field family int32 m_nMaxChars" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_nMaxChars" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the length of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="m_strValue">
+      <MemberSignature Language="C#" Value="protected string m_strValue;" />
+      <MemberSignature Language="ILAsm" Value=".field family string m_strValue" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_strValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the value of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" /> to a <see cref="T:System.String" />.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the value of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString> class can be used to emulate the behavior of a Visual Basic 6.0 string, which enables you to declare a string with a fixed length. A <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString> cannot be converted to a <xref:System.String>; you must either reference the <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value%2A> property or call the <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.ToString%2A> method to convert the type.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declare and use a <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString>.  
+  
+```  
+Private Sub DemoFixedLengthString()  
+    ' Declare a string that has a length of 7 characters and assign the  
+    ' initial string. The additional 5 positions will be padded with  
+    ' spaces.  
+    Dim fixedString As New FixedLengthString(7, "He")  
+    ' Display the string in a message box.  
+    MsgBox(fixedString.ToString)  
+    ' Assign a new value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display again. Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
+End Sub  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the contents of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" />.</summary>
+        <value>A <see cref="T:System.String" /> that contains the value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString> class can be used to emulate the behavior of a Visual Basic 6.0 string, which enables you to declare a string with a fixed length. A <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString> cannot be converted to a <xref:System.String>; you must either reference the <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value%2A> property or call the <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.ToString%2A> method to convert the type.  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to declare and use a <xref:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString>.  
+  
+```  
+Private Sub DemoFixedLengthString()  
+    ' Declare a string that has a length of 7 characters and assign the  
+    ' initial string. The additional 5 positions will be padded with  
+    ' spaces.  
+    Dim fixedString As New FixedLengthString(7, "He")  
+    ' Display the string in a message box.  
+    MsgBox(fixedString.ToString)  
+    ' Assign a new value to the string.  
+    fixedString.Value = "Hello World"  
+    ' Display again. Note that only the first 7 characters are shown.  
+    MsgBox(fixedString.ToString)  
+End Sub  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

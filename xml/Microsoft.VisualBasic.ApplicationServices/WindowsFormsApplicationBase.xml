@@ -1,0 +1,1316 @@
+<Type Name="WindowsFormsApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase">
+  <TypeSignature Language="C#" Value="public class WindowsFormsApplicationBase : Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi WindowsFormsApplicationBase extends Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties, methods, and events related to the current application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties exposed by the `My.Application` object return data that is associated only with the current application or DLL. No system-level information can be altered with `My.Application`.  
+  
+ The `My.Application` object consists of the following classes:  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase> provides members that are available in all projects.  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> provides members that are available in Windows Forms applications.  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase> provides members that are available in console applications.  
+  
+   
+  
+## Examples  
+ This example uses a loop to iterate through the application's open forms, selects the forms that can be accessed directly by the current thread, and displays their titles in a <xref:System.Windows.Forms.ListBox> control. For information about how to access the open forms, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms%2A>.  
+  
+ [!code-vb[VbVbalrMyApplication#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#10)]  
+  
+ This example requires that your Windows Forms application have a form named `Form1` that contains a list box named `ListBox1`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsFormsApplicationBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WindowsFormsApplicationBase (Microsoft.VisualBasic.ApplicationServices.AuthenticationMode authenticationMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(valuetype Microsoft.VisualBasic.ApplicationServices.AuthenticationMode authenticationMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor(Microsoft.VisualBasic.ApplicationServices.AuthenticationMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="authenticationMode" Type="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode" />
+      </Parameters>
+      <Docs>
+        <param name="authenticationMode">
+          <see cref="T:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode" />. Specifies the application's authentication mode.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase" /> class with the specified authentication mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `authenticationMode` parameter is the <xref:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode> enumeration value, then this constructor attempts to set the current thread's <xref:System.Threading.Thread.CurrentPrincipal%2A> property to the <xref:System.Security.Principal.WindowsPrincipal> for the current user.  
+  
+ If the `authenticationMode` parameter is the <xref:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode> enumeration value, then this constructor leaves the current thread's <xref:System.Threading.Thread.CurrentPrincipal%2A> property unchanged.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationContext">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ApplicationContext ApplicationContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ApplicationContext ApplicationContext" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ApplicationContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ApplicationContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ApplicationContext" /> object for the current thread of a Windows Forms application.</summary>
+        <value>This property returns the <see cref="T:System.Windows.Forms.ApplicationContext" /> object for the current thread. That object contains contextual information about the thread.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an advanced member; it does not appear in IntelliSense unless you click the **All** tab.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoEvents">
+      <MemberSignature Language="C#" Value="public void DoEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DoEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Processes all Windows messages currently in the message queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.DoEvents` method allows your application to handle other events that might be raised while you code runs. The `My.Application.DoEvents` method has the same behavior as the <xref:System.Windows.Forms.Application.DoEvents%2A> method.  
+  
+ When you run a Windows Forms application, it creates a new form, which then waits for events to be handled. Each time the form handles an event, such as a button click, it processes all the code associated with that event. All other events wait in the queue. While your code handles the event, your application does not respond. For example, the window does not repaint if another window is dragged on top.  
+  
+ If you call `My.Application.DoEvents` in your code, your application can handle the other events. For example, if your code adds data to a <xref:System.Windows.Forms.ListBox> in a loop, and after each step of the loop it calls `My.Application.DoEvents`, your form repaints when another window is dragged over it. If you remove `My.Application.DoEvents` from your code, your form will not repaint until the click event handler of the button is finished executing.  
+  
+ Typically, you use this method in a loop to process messages.  
+  
+> [!NOTE]
+>  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. Use multithreading to make the form directly handle the events. For more information, see [Multithreaded Applications](http://msdn.microsoft.com/library/a06a1a56-dd16-44e8-bc01-2c2255511bc6).  
+  
+> [!CAUTION]
+>  If a method that handles a user interface (UI) event calls the `My.Application.DoEvents` method, the method might be re-entered before it finishes. This can happen because the `My.Application.DoEvents` method processes Windows messages, and Windows messages can raise events.  
+  
+ The following table lists an example of a task involving the `My.Application.DoEvents` method.  
+  
+|To|See|  
+|-|-|  
+|Allow a form to respond to UI input while busy|[Walkthrough: Handling Events](~/docs/visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.DoEvents` method to allow the UI for `TextBox1` to update.  
+  
+ [!code-vb[VbVbalrMyApplication#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#6)]  
+  
+ This code should be in a form that has a `TextBox1` component with a `Text` property.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableVisualStyles">
+      <MemberSignature Language="C#" Value="protected bool EnableVisualStyles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableVisualStyles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.EnableVisualStyles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether this application will use the Windows XP styles for windows, controls, and so on.</summary>
+        <value>A <see cref="T:System.Boolean" /> value that indicates whether this application will use the XP Windows styles for windows, controls, and so on.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> method uses this property to determine whether to call <xref:System.Windows.Forms.Application.EnableVisualStyles%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideSplashScreen">
+      <MemberSignature Language="C#" Value="protected void HideSplashScreen ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyinstance void HideSplashScreen() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hides the application's splash screen.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class creates the splash screen on a separate thread. This method marshals the call to the correct thread.  
+  
+ This method is called when the main form is done loading.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSingleInstance">
+      <MemberSignature Language="C#" Value="protected bool IsSingleInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleInstance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.IsSingleInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether this application is a single-instance application.</summary>
+        <value>A <see cref="T:System.Boolean" /> value that indicates whether this application is a single-instance application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run%2A> method uses this property to determine whether this application is a single-instance application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MainForm">
+      <MemberSignature Language="C#" Value="protected System.Windows.Forms.Form MainForm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Form MainForm" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Form</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the main form for this application.</summary>
+        <value>Gets or sets the main form for this application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `MainForm` property to get or set the <xref:System.Windows.Forms.Form> object that the Visual Basic Application Startup/Shutdown model uses as the application's main form.  
+  
+ This property supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application Startup/Shutdown model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ The changes to this property are not persisted when the application closes. To change the main form permanently, you must change the setting in the **Project Designer**.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumSplashScreenDisplayTime">
+      <MemberSignature Language="C#" Value="public int MinimumSplashScreenDisplayTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumSplashScreenDisplayTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines the minimum length of time, in milliseconds, for which the splash screen is displayed.</summary>
+        <value>
+          <see langword="Integer" />. The minimum length of time, in milliseconds, for which the splash screen is displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.MinimumSplashScreenDisplayTime` property allows you to specify the minimum length of time you want the application's splash screen to be displayed. If the main form finishes initializing in less time than what is specified by this property, the splash screen remains until the requested amount of time passes, at which time the main form is displayed. If your application takes longer to start, the splash screen is closed once the main form becomes active.  
+  
+ When you add a splash screen to your application using the Project Designer, it sets the `My.Application.MinimumSplashScreenDisplayTime` property to 2000, giving a minimum display time of two seconds.  
+  
+ This property supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ You should set the `My.Application.MinimumSplashScreenDisplayTime` property in a method that overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> or <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method. Code that overrides methods of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class should be entered in the ApplicationEvents.vb file, which is hidden by default.  
+  
+||  
+|-|  
+|To access the Code Editor window for overriding members|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example demonstrates how to set the `My.Application.MinimumSplashScreenDisplayTime` property by overriding the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> property.  
+  
+ [!code-vb[VbVbalrMyApplication#51](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/FakeMyEvents.vb#51)]  
+  
+ This example requires that the project have a splash screen.  
+  
+ You must enter this code in the Code Editor window for application events. For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkAvailabilityChanged">
+      <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler NetworkAvailabilityChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler NetworkAvailabilityChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.NetworkAvailabilityChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the network availability changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application raises the `NetworkAvailabilityChanged` event every time that the availability of the network changes. You can use the <xref:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.IsNetworkAvailable%2A> property of the `e` parameter to get the new state of the network connection. To get the current state of the network connection, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
+  
+ This event is raised on the application's main thread with the other user-interface events. This enables the event handler to access directly the application's UI. However, if the application is busy handling another user-interface event when this event is raised, this event cannot be processed until the other event handler finishes or calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoEvents%2A> method.  
+  
+ The <xref:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged> event provides the same functionality as this event but is available for all application types.  
+  
+ The code for the `NetworkAvailabilityChanged` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
+  
+||  
+|-|  
+|To access the Code Editor window for application events|  
+|1.  Have a project selected in **Solution Explorer.** Click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).|  
+  
+> [!NOTE]
+>  Many network hubs will provide a network connection even if the hub is disconnected from a larger network. Consequently, for wired connections, this event indicates change in the connection between the computer and a hub.  
+  
+> [!NOTE]
+>  The `NetworkAvailabilityChanged` event is not raised by applications when they are run on Windows 95 and Windows 98, or when they are run by a non-administrator on Windows 2000. If your application might run on those operating systems, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property to check for network availability.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example calls the `SetConnectionStatus` method of the default `Form1` class when the network availability changes.  
+  
+ You must enter the code in the Code Editor window for application events. To access this window, follow the instructions from this topic's Remarks section.  
+  
+ The project should have a form named `Form1`. It should have a method named `SetConnectionStatus` that takes a `Boolean` parameter.  
+  
+ [!code-vb[VbVbalrMyApplication#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/FakeMyEvents.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateMainForm">
+      <MemberSignature Language="C#" Value="protected virtual void OnCreateMainForm ();" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void OnCreateMainForm() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, allows a designer to emit code that configures the splash screen and main form.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method does nothing. However, when you select a main form for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides this method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
+  
+ This method is called by the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateSplashScreen">
+      <MemberSignature Language="C#" Value="protected virtual void OnCreateSplashScreen ();" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void OnCreateSplashScreen() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, allows a designer to emit code that initializes the splash screen.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method does nothing. If you select a splash screen for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A> property to a new instance of the splash-screen form.  
+  
+ This method is called by the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitialize">
+      <MemberSignature Language="C#" Value="protected virtual bool OnInitialize (System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; commandLineArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance bool OnInitialize(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; commandLineArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize(System.Collections.ObjectModel.ReadOnlyCollection{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.STAThread</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commandLineArgs" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="commandLineArgs">A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see langword="String" />, containing the command-line arguments as strings for the current application.</param>
+        <summary>Sets the visual styles, text display styles, and current principal for the main application thread (if the application uses Windows authentication), and initializes the splash screen, if defined.</summary>
+        <returns>A <see cref="T:System.Boolean" /> indicating if application startup should continue.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method sets the visual styles, text display styles, and current principal for the main application thread (if the application uses Windows authentication), and calls `ShowSplashScreen` if neither `/nosplash` nor `-nosplash` is used as a command-line argument.  
+  
+ This method calls the following methods:  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A>.  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="None." />
+      </Docs>
+    </Member>
+    <Member MemberName="OnRun">
+      <MemberSignature Language="C#" Value="protected virtual void OnRun ();" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void OnRun() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnRun" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides the starting point for when the main application is ready to start running, after the initialization is done.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, before it enters the Windows Forms message loop, this method calls the `OnCreateMainForm` (to create the application's main form) and `HideSplashScreen` (to close the splash screen) methods:  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A>. Provides a way for a designer to emit code that initializes the main form.  
+  
+     By default, this method does nothing. However, when you select a main form for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A>. If the application has a splash screen defined and it is open, this method closes the splash screen.  
+  
+     By default, this method closes the splash screen.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnShutdown">
+      <MemberSignature Language="C#" Value="protected virtual void OnShutdown ();" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void OnShutdown() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnShutdown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, allows for code to run when the application shuts down.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not run if an unhandled exception occurs in the main application.  
+  
+ By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStartup">
+      <MemberSignature Language="C#" Value="protected virtual bool OnStartup (Microsoft.VisualBasic.ApplicationServices.StartupEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance bool OnStartup(class Microsoft.VisualBasic.ApplicationServices.StartupEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup(Microsoft.VisualBasic.ApplicationServices.StartupEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">
+          <see cref="T:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs" />. Contains the command-line arguments of the application and indicates whether the application startup should be canceled.</param>
+        <summary>When overridden in a derived class, allows for code to run when the application starts.</summary>
+        <returns>A <see cref="T:System.Boolean" /> that indicates if the application should continue starting up.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. The event handler can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the event argument. If <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> is `True`, this method returns `False` to cancel the application startup. Otherwise, this method returns `True`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStartupNextInstance">
+      <MemberSignature Language="C#" Value="protected virtual void OnStartupNextInstance (Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void OnStartupNextInstance(class Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance(Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgs" Type="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgs">
+          <see cref="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />. Contains the command-line arguments of the subsequent application instance and indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.</param>
+        <summary>When overridden in a derived class, allows for code to run when a subsequent instance of a single-instance application starts.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event. The event handler can set the <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground%2A> property of the event argument. If <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground%2A> is `True`, the method activates the main form. Otherwise, the main form is left in its current state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUnhandledException">
+      <MemberSignature Language="C#" Value="protected virtual bool OnUnhandledException (Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance bool OnUnhandledException(class Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnUnhandledException(Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">
+          <see cref="T:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs" />.</param>
+        <summary>When overridden in a derived class, allows for code to run when an unhandled exception occurs in the application.</summary>
+        <returns>A <see cref="T:System.Boolean" /> that indicates whether the <see cref="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" /> event was raised.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event as long as a debugger is not attached and the user is handling the `UnhandledException` event. The event handler can set the <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> property. If <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> is `False`, or if the event is not handled, the application exits upon return from the exception handler. Otherwise, control of the application is returned to the Windows Forms message loop.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenForms">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.FormCollection OpenForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.FormCollection OpenForms" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OpenForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all the application's open forms.</summary>
+        <value>A <see cref="T:System.Windows.Forms.FormCollection" /> object that contains all of the application's open forms.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.OpenForms` property gets a collection of all the application's open forms. The behavior is identical to the <xref:System.Windows.Forms.Application.OpenForms%2A?displayProperty=fullName> property.  
+  
+> [!NOTE]
+>  The `My.Application.OpenForms` property returns all open forms, regardless of which thread opened them. You should check the <xref:System.Windows.Forms.Control.InvokeRequired%2A> property of each form before accessing it; otherwise, it might throw an <xref:System.InvalidOperationException> exception.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example loops over the application's open forms, selects the ones directly accessible by the current thread, and displays their titles in a <xref:System.Windows.Forms.ListBox> control. This example requires that your Windows Forms application have a form named `Form1` that contains a list box named `ListBox1`.  
+  
+ [!code-vb[VbVbalrMyApplication#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#10)]  
+  
+ This example loops over the application's open forms and displays their titles in a <xref:System.Windows.Forms.ListBox> control.  
+  
+ [!code-vb[VbVbalrMyApplication#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions that are related to user interfaces and the Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public void Run (string[] commandLine);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void Run(string[] commandLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Run(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commandLine" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="commandLine">Array of type <see langword="String" />. The command line from <see langword="Sub Main" />.</param>
+        <summary>Sets up and starts the Visual Basic Application model.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Run` method provides support for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. This method should be called only from the application's `Sub Main`. By default, the `Sub Main` of a Windows Forms application calls this method. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access all environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.RegistryPermission">Controls the ability to access registry variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveMySettingsOnExit">
+      <MemberSignature Language="C#" Value="public bool SaveMySettingsOnExit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveMySettingsOnExit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SaveMySettingsOnExit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether the application saves the user settings on exit.</summary>
+        <value>
+          <see langword="Boolean" />. <see langword="True" /> indicates that the application saves the user settings on exit. Otherwise, the settings are not implicitly saved.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SaveMySettingsOnExit` property allows the user to change how the application saves settings, at run time. You can explicitly save setting changes by using the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method of the `My.Settings` object. For more information about changing and saving settings, see [Application Properties](http://msdn.microsoft.com/library/0ad4926f-636e-41f8-a5b1-faf9d9b0a254).  
+  
+ The changes to this property are not persisted when the application closes. To change the `SaveMySettingsOnExit` property permanently, you must change the setting in the **Project Designer**:  
+  
+||  
+|-|  
+|To change the setting in the Project Designer|  
+|1.  Have a project selected in **Solution Explorer**. Click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Select **Save My.Settings on Shutdown**.|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example has two parts.  
+  
+-   The `InitializeSaveMySettingsOnExit` subroutine, which initializes the checked state of a <xref:System.Windows.Forms.CheckBox> control to the current value of the `SaveMySettingsOnExit` property.  
+  
+-   The `SaveMySettingsOnExit_CheckedChanged` subroutine, which handles changes to a <xref:System.Windows.Forms.CheckBox> control to update the `My.Application.SaveMySettingsOnExit` property.  
+  
+ [!code-vb[VbVbalrMyApplication#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#12)]  
+  
+ For this example to work, your application must have a <xref:System.Windows.Forms.CheckBox> control named `SaveMySettingsOnExit`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowSplashScreen">
+      <MemberSignature Language="C#" Value="protected void ShowSplashScreen ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyinstance void ShowSplashScreen() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines if the application has a splash screen defined, and if it does, displays it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method calls `OnCreateSplashScreen` in a thread-safe way.  
+  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A> method contains the code that displays the splash screen for at least the number of milliseconds specified by the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A> property. To use this functionality, you must set the `My.Application.MinimumSplashScreenDisplayTime` property in a method that overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShowSplashScreen%2A> or <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method, or add the splash screen to your application using the **Project Designer**. For more information, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MinimumSplashScreenDisplayTime%2A>.  
+  
+ This method is called by the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shutdown">
+      <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.ApplicationServices.ShutdownEventHandler Shutdown;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.ApplicationServices.ShutdownEventHandler Shutdown" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.ShutdownEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the application shuts down.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application raises the `Shutdown` event before it exits. This allows you to control how the application closes its resources. This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ The code for the `Shutdown` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
+  
+||  
+|-|  
+|To access the Code Editor window for application events|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example logs messages when the application shuts down.  
+  
+ [!code-vb[VbVbalrMyApplication#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/FakeMyEvents.vb#13)]  
+  
+ You must enter the code in the Code Editor window for application events. To access this window, follow the instructions from this topic's Remarks section. For more information, see [How to: Log Messages When the Application Starts or Shuts Down](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-messages-when-the-application-starts-or-shuts-down.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShutdownStyle">
+      <MemberSignature Language="C#" Value="protected Microsoft.VisualBasic.ApplicationServices.ShutdownMode ShutdownStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualBasic.ApplicationServices.ShutdownMode ShutdownStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ShutdownStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.ShutdownMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines what happens when the application's main form closes.</summary>
+        <value>A <see cref="T:Microsoft.VisualBasic.ApplicationServices.ShutdownMode" /> enumeration value, indicating what the application should do when the main form closes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ApplicationContext.OnMainFormClosed%2A> method checks the value of this property to determine if the application should shut down when the main form is closed, or if another open form should be promoted as the new main form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SplashScreen">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Form SplashScreen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Form SplashScreen" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Form</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the splash screen for this application.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Form" /> object that the application uses as the splash screen.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.SplashScreen` property allows you to get or set the <xref:System.Windows.Forms.Form> object that the application uses as the splash screen, the first graphic form that is displayed while an application is being started.  
+  
+ This property supports the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ The changes to this property are not persisted when the application closes. To change the splash screen permanently, you must change the setting in the **Project Designer**.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.SplashScreen` property and the `My.Application.Startup` event to update the splash screen with status information as the application starts.  
+  
+ [!code-vb[VbVbalrMyApplication#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/FakeMyEvents.vb#14)]  
+  
+ This example requires that the project have a splash screen named `SplashScreen1`. The splash screen needs to have a property named `Status` that updates its user interface.  
+  
+ You must enter this code in the Code Editor window for application events. For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The same value is assigned to this property and the <see cref="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Startup">
+      <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.ApplicationServices.StartupEventHandler Startup;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.ApplicationServices.StartupEventHandler Startup" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.StartupEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the application starts.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A normal (non-single-instance) application raises the `Startup` event every time it starts. A single-instance application raises the `Startup` event when it starts only if the application is not already active; otherwise, it raises the `StartupNextInstance` event. For more information, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance>.  
+  
+ This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ You can use the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the `e` parameter to control the loading of an application's startup form. When the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property is set to `True`, the startup form does not start. In that case, your code should call an alternate startup code path.  
+  
+ You can use the <xref:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine%2A> property of the `e` parameter or the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs%2A> property to access the application's command-line arguments.  
+  
+ The code for the `Startup` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
+  
+||  
+|-|  
+|To access the Code Editor window for application events|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br /><br /> For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.SplashScreen` property and the `My.Application.Startup` event to update the splash screen with status information as the application starts.  
+  
+ [!code-vb[VbVbalrMyApplication#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/FakeMyEvents.vb#14)]  
+  
+ This example requires that the project have a splash screen named `SplashScreen1`. The splash screen needs to have property named `Status` that updates its user interface.  
+  
+ You must enter the code in the Code Editor window for application events. To access this window, follow the instructions from this topic's Remarks section. For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Controls the ability to add an event handler for this event. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StartupNextInstance">
+      <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventHandler StartupNextInstance;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventHandler StartupNextInstance" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when attempting to start a single-instance application and the application is already active.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A single-instance application raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event when you attempt to restart the application when it is already active. When a single-instance application starts for the first time, it raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. For more information, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup>.  
+  
+ This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ This event is raised on the application's main thread with the other user-interface events. This allows the event handler to access directly the application's user interface. However, if the application is busy handling another user-interface event when this event is raised, this event cannot be processed until the other event handler finishes or calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoEvents%2A> method.  
+  
+> [!NOTE]
+>  The `StartupNextInstance` event is raised only in single-instance applications. To enable single-instance behavior for your application, you must check the **Make single instance application** check box in the Project Designer.  
+  
+||  
+|-|  
+|To make an application single instance|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Select the **Make single instance application** check box.|  
+  
+ You must use the <xref:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine%2A> property of the `e` parameter to access the arguments for subsequent attempts to start a single-instance application. The <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs%2A> property provides the arguments used to start the first instance of a single-instance application.  
+  
+ The code for the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
+  
+||  
+|-|  
+|To access the Code Editor window for application events|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).|  
+  
+ The following table lists examples of tasks involving the `My.Application.StartupNextInstance` event.  
+  
+|To|See|  
+|-|-|  
+|Check the command-line arguments of the first application instance|<xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs%2A>|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|Yes|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `e` parameter of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event handler to examine the application's command-line arguments. If an argument is found that starts with `/input=`, the rest of that argument is displayed.  
+  
+ [!code-vb[VbVbalrMyApplication#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/FakeMyEvents.vb#15)]  
+  
+ You must enter the code in the Code Editor window for application events. To access this window, follow the instructions from this topic's Remarks section. For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnhandledException">
+      <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventHandler UnhandledException;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventHandler UnhandledException" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the application encounters an unhandled exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application raises the `UnhandledException` event when it encounters an unhandled exception. This event is part of the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+ You can use the <xref:System.Threading.ThreadExceptionEventArgs.Exception%2A> property of the `e` parameter to access the unhandled exception that caused this event.  
+  
+ You can use the <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> property of the `e` parameter to control whether the application exits. By default, <xref:Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs.ExitApplication%2A> is `True`. Therefore, the application exits after completing the `UnhandledException` event handler. You can set the value to `False` in the `UnhandledException` event handler to keep the application running, and have it return to a waiting state.  
+  
+ The code for the `UnhandledException` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
+  
+||  
+|-|  
+|To access the Code Editor window for application events|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.|  
+  
+ For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+> [!NOTE]
+>  The Visual Basic compiler prevents applications that are built for debugging from raising this event, to enable a debugger to handle the unhandled exceptions. This means that if you are testing your application by running it under the Visual Studio Integrated Development Environment debugger, your `UnhandledException` event handler will not be called. For more information about building applications for debugging, see [/debug (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/debug.md).  
+  
+## Tasks  
+ The following table lists examples of tasks that involve the `My.Application.UnhandledException` event.  
+  
+|To|See|  
+|-|-|  
+|Log unhandled exceptions|[How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|No|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|No|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.UnhandledException` event to log any unhandled exceptions.  
+  
+ You must enter the code in the Code Editor window for application events. To access this window, follow the procedure found in this topic's Remarks section. For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+ Because the `UnhandledException` event is not raised when a debugger is attached to the application, you have to run this example outside the Visual Studio Integrated Development Environment.  
+  
+ [!code-vb[VbVbalrMyApplication#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/FakeMyEvents.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Controls the ability to add an event handler for this event. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCompatibleTextRendering">
+      <MemberSignature Language="C#" Value="protected static bool UseCompatibleTextRendering { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool UseCompatibleTextRendering" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, this property allows a designer to specify the default text rendering engine for the application's forms.</summary>
+        <value>
+          <see langword="Boolean" />. A value of <see langword="False" /> indicates that the application should use the default text rendering engine for [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)]. A value of <see langword="True" /> indicates that the application should use the text rendering engine for Visual Basic .NET 2002 and Visual Basic .NET 2003.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this property returns `False` to indicate that the GDI text rendering engine for [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)] be used for the application's forms. However, you can override this property to return `True` and specify that the application's forms use the GDI+ text rendering engine, which is used in Visual Basic .NET 2002 and Visual Basic .NET 2003.  
+  
+ This property is called by the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> constructor.  
+  
+ Code that overrides methods of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class should be entered in the ApplicationEvents.vb file, which is hidden by default.  
+  
+||  
+|-|  
+|To access the Code Editor window for overriding members|  
+|1.  With a project selected in **Solution Explorer**, click **Properties** on the **Project** menu.<br />2.  Click the **Application** tab.<br />3.  Click the **View Application Events** button to open the Code Editor.<br />     For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).|  
+  
+   
+  
+## Examples  
+ This example demonstrates how to set the GDI+ text rendering engine as the application's default rendering engine by overriding the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property.  
+  
+```  
+Protected Overloads Shared ReadOnly Property UseCompatibleTextRendering() As Boolean  
+    Get  
+        ' Use the GDI+ text rendering engine.  
+        Return True  
+    End Get  
+End Property  
+```  
+  
+ You must enter this code in the Code Editor window for application events. For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

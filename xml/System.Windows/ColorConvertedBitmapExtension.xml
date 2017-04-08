@@ -1,0 +1,97 @@
+<Type Name="ColorConvertedBitmapExtension" FullName="System.Windows.ColorConvertedBitmapExtension">
+  <TypeSignature Language="C#" Value="public class ColorConvertedBitmapExtension : System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColorConvertedBitmapExtension extends System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.ColorConvertedBitmapExtension" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.Windows.Media.Imaging.ColorConvertedBitmap))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements a markup extension that enables <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> creation. A <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> does not have an embedded profile, the profile instead being based on source and destination values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by a markup extension are not typically called from user code. This extension supports the [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)].  
+  
+<a name="xamlTextUsage_ColorConvertedBitmapExtension"></a>   
+## XAML Text Usage  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [ColorConvertedBitmap Markup Extension](~/docs/framework/wpf/advanced/colorconvertedbitmap-markup-extension.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorConvertedBitmapExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.ColorConvertedBitmapExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ColorConvertedBitmapExtension" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorConvertedBitmapExtension (object image);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object image) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.ColorConvertedBitmapExtension.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="image" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="image">A string that is parsed to determine three [!INCLUDE[TLA2#tla_uri#plural](~/includes/tla2sharptla-urisharpplural-md.md)]: image source, source color context, and destination color context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ColorConvertedBitmapExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.ColorConvertedBitmapExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">An object that can provide services for the markup extension. This service is expected to provide results for <see cref="T:System.Windows.Markup.IUriContext" />.</param>
+        <summary>Returns an object that should be set on the property where this extension is applied. For <see cref="T:System.Windows.ColorConvertedBitmapExtension" />, this is the completed <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" />.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Imaging.ColorConvertedBitmap" /> based on the values passed to the constructor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

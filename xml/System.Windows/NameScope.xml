@@ -1,0 +1,639 @@
+<Type Name="NameScope" FullName="System.Windows.NameScope">
+  <TypeSignature Language="C#" Value="public class NameScope : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Windows.Markup.INameScopeDictionary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameScope extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, object&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable, class System.Windows.Markup.INameScope, class System.Windows.Markup.INameScopeDictionary" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.NameScope" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.INameScopeDictionary</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("PresentationFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements base WPF support for the <see cref="T:System.Windows.Markup.INameScope" /> methods that store or retrieve name-object mappings into a particular XAML namescope. Adds attached property support to make it simpler to get or set XAML namescope names dynamically at the element level..</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements built-in XAML namescope support for WPF treatment of XAML. <xref:System.Windows.NameScope> assists in creation of initial XAML namescopes based on parsing XAML, such as when instantiating styles and templates. It also supports creation of XAML namescopes by processes that occur outside of normal XAML loading of elements by the WPF XAML processor implementation.  
+  
+ <xref:System.Windows.NameScope> is generally more devoted to supplying infrastructure than for common user code scenarios that involve working with a XAML namescope. For most scenarios, the <xref:System.Windows.FrameworkElement.FindName%2A> methods exposed on <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> are more appropriate methods to call to search for elements by XAML-defined name. The <xref:System.Windows.FrameworkElement.Name%2A> properties exposed by <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> are more appropriate properties to use to set the initial name as markup attributes.  
+  
+ The various methods of <xref:System.Windows.NameScope> are used by base elements and other classes that maintain XAML namescopes in order to support <xref:System.Windows.Markup.INameScope.RegisterName%2A> and <xref:System.Windows.Markup.INameScope.FindName%2A>. You generally use the API in the <xref:System.Windows.NameScope> class only if you are replacing or augmenting the base element behavior for how they process XAML namescopes for root elements of a XAML page, and as part of templates (which use a separate XAML namescope from the rest of the page).  
+  
+ In [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], <xref:System.Windows.NameScope> provides collection interface implementations such that you can access the collections of names that are held by a XAML namescope, including adding to it through calls to an <xref:System.Windows.NameScope.Add%2A> method.  
+  
+ For more information on XAML namescope concepts, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
+  
+ Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).  
+  
+<a name="xamlTextUsage_NameScope"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.NameScope" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="item">A <see cref="T:System.Collections.Generic.KeyValuePair`2" /> (key is <see cref="T:System.String" />, value is <see cref="T:System.Object" />) that represents the name mapping to add to the XAML namescope.</param>
+        <summary>Adds an item to the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Either or both components of <paramref name="item" /> are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Add(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The string key, which is the name of the XAML namescope mapping to add.</param>
+        <param name="value">The object value, which is the object reference of the XAML namescope mapping to add.</param>
+        <summary>Adds an item to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method basically wraps <xref:System.Windows.NameScope.Add%2A> so that it is not necessary to involve the <xref:System.Collections.Generic.KeyValuePair%602> type in your usage.  
+  
+ Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all items from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to find in the collection, specified as a <see cref="T:System.Collections.Generic.KeyValuePair`2" /> (key is <see cref="T:System.String" />, value is <see cref="T:System.Object" />).</param>
+        <summary>Determines whether the collection contains a specified item.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Collections.Generic.KeyValuePair`2" /> identifies an existing mapping in this <see cref="T:System.Windows.NameScope" /> . <see langword="false" /> if the specified <see cref="T:System.Collections.Generic.KeyValuePair`2" /> does not exist in the current <see cref="T:System.Windows.NameScope" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Generally you are only interested in whether a name is already defined in the XAML namescope, and what object reference value it is mapped to is immaterial. For this scenario, you can call <xref:System.Windows.NameScope.ContainsKey%2A> instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public bool ContainsKey (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.ContainsKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The string key to find.</param>
+        <summary>Returns whether a provided name already exists in this <see cref="T:System.Windows.NameScope" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <paramref name="key" /> identifies a name for an existing mapping in this <see cref="T:System.Windows.NameScope" />. <see langword="false" /> if the specified <paramref name="key" /> does not exist in the current <see cref="T:System.Windows.NameScope" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Collections.Generic.KeyValuePair&lt;string,object&gt;[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the collection The array must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the collection to an array, starting at a particular array index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the number of items in the collection of mapped names in this <see cref="T:System.Windows.NameScope" />.</summary>
+        <value>The number of items in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindName">
+      <MemberSignature Language="C#" Value="public object FindName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FindName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.FindName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Name portion of an existing mapping to retrieve the object portion for.</param>
+        <summary>Returns the corresponding object in the XAML namescope maintained by this <see cref="T:System.Windows.NameScope" />, based on a provided name string.</summary>
+        <returns>The requested object that is mapped with <paramref name="name" />. Can return <see langword="null" /> if <paramref name="name" /> was provided as <see langword="null" /> or empty string, or if no matching object was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Several base elements (<xref:System.Windows.FrameworkElement>, <xref:System.Windows.FrameworkElement>) also expose a `FindName` method with identical functionality. The base element versions perform a XAML namescope search within the conventional logical tree, working towards the root element. Once the XAML namescope is determined, that XAML namescope is queried for the requested name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNameScope">
+      <MemberSignature Language="C#" Value="public static System.Windows.Markup.INameScope GetNameScope (System.Windows.DependencyObject dependencyObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.INameScope GetNameScope(class System.Windows.DependencyObject dependencyObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.GetNameScope(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.INameScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object to get the XAML namescope from.</param>
+        <summary>Provides the attached property get accessor for the <see cref="P:System.Windows.NameScope.NameScope" /> attached property.</summary>
+        <returns>A XAML namescope, as an <see cref="T:System.Windows.Markup.INameScope" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The purpose of this method is both to implement the `get` accessor for using <xref:System.Windows.NameScope.NameScope%2A> as an attached property in XAML usage, and to provide the accessor for performing the equivalent operation in code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <value>Always returns <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[string key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The string name for the XAML name mapping to get or set.</param>
+        <summary>Gets or sets the item with the specified key.</summary>
+        <value>The value of the object mapped by the XAML name provided as <paramref name="key" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is provided as <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is provided as <see langword="null" /> for a set operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the keys in the <see cref="T:System.Windows.NameScope" /> dictionary.</summary>
+        <value>A collection of the keys in the <see cref="T:System.Windows.NameScope" /> dictionary.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameScopeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty NameScopeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty NameScopeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.NameScope.NameScopeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.NameScope.NameScope" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterName">
+      <MemberSignature Language="C#" Value="public void RegisterName (string name, object scopedElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterName(string name, object scopedElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.RegisterName(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="scopedElement" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name to use for mapping the given object.</param>
+        <param name="scopedElement">The object to be mapped to the provided name.</param>
+        <summary>Registers a new name-object pair into the current XAML namescope.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> or <paramref name="scopedElement" /> was provided as <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> was provided as empty string  
+  
+ \- or -  
+  
+ <paramref name="name" /> provided was rejected by the parser, because it contained characters that are invalid for a XAML name  
+  
+ \- or -  
+  
+ <paramref name="name" /> provided would result in a duplicate name registration.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to remove from the collection, specified as a <see cref="T:System.Collections.Generic.KeyValuePair`2" /> (key is <see cref="T:System.String" />, value is <see cref="T:System.Object" />).</param>
+        <summary>Removes the specific object from the collection.</summary>
+        <returns>
+          <see langword="true" /> if item was successfully removed from the collection, otherwise <see langword="false" />. Also returns <see langword="false" /> if the item was not found in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because <xref:System.Windows.NameScope> is a dictionary there is no concept of first occurrence; any given <xref:System.Collections.Generic.KeyValuePair%602> is guaranteed unique.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The string key, which is the name of the XAML namescope mapping to remove.</param>
+        <summary>Removes a mapping for a specified name from the collection.</summary>
+        <returns>
+          <see langword="true" /> if item was successfully removed from the collection, otherwise <see langword="false" />. Also returns <see langword="false" /> if the item was not found in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method basically wraps <xref:System.Windows.NameScope.UnregisterName%2A>, returning `false` in cases that otherwise would have raised exceptions in <xref:System.Windows.NameScope.UnregisterName%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNameScope">
+      <MemberSignature Language="C#" Value="public static void SetNameScope (System.Windows.DependencyObject dependencyObject, System.Windows.Markup.INameScope value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNameScope(class System.Windows.DependencyObject dependencyObject, class System.Windows.Markup.INameScope value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.SetNameScope(System.Windows.DependencyObject,System.Windows.Markup.INameScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Markup.INameScope" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">Object to change XAML namescope for.</param>
+        <param name="value">The new XAML namescope, using an interface cast.</param>
+        <summary>Provides the attached property set accessor for the <see cref="P:System.Windows.NameScope.NameScope" /> attached property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The purpose of this method is both to act as the `set` accessor for using <xref:System.Windows.NameScope.NameScope%2A> as an attached property in XAML usage, and to provide the accessor for performing the equivalent operation in code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; IEnumerable&lt;KeyValuePair&lt;string,object&gt;&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An enumerator that iterates through a collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.TryGetValue(System.String,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the value to get.</param>
+        <param name="value">When this method returns, contains the value associated with the specified key, if the key is found; otherwise, a null object. This parameter is passed uninitialized.</param>
+        <summary>Gets the value associated with the specified key.</summary>
+        <returns>true if the <see cref="T:System.Windows.NameScope" /> contains a mapping for the name provided as <paramref name="key" />. Otherwise, false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterName">
+      <MemberSignature Language="C#" Value="public void UnregisterName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.UnregisterName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the mapping to remove.</param>
+        <summary>Removes a name-object mapping from the XAML namescope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before calling this method, you can use <xref:System.Windows.NameScope.FindName%2A> to determine whether a specific name-object mapping exists.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> was provided as empty string.  
+  
+ \- or -  
+  
+ <paramref name="name" /> provided had not been registered.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;object&gt; Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;object&gt; Values" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the values in the <see cref="T:System.Windows.NameScope" /> dictionary.</summary>
+        <value>A collection of the values in the <see cref="T:System.Windows.NameScope" /> dictionary.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

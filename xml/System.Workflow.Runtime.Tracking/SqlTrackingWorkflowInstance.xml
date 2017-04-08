@@ -1,0 +1,440 @@
+<Type Name="SqlTrackingWorkflowInstance" FullName="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance">
+  <TypeSignature Language="C#" Value="public class SqlTrackingWorkflowInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlTrackingWorkflowInstance extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides access to tracking data maintained in a SQL database by the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> for a workflow instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects are returned by a call to both <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A?displayProperty=fullName> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> and provide access to the tracking data maintained in a SQL database by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> for a specific workflow instance. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class optimizes its access to the database for its properties, which maintain collections. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#137](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#137)]
+ [!code-vb[WF_Samples#137](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#137)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivityEvents">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.ActivityTrackingRecord&gt; ActivityEvents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Workflow.Runtime.Tracking.ActivityTrackingRecord&gt; ActivityEvents" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.ActivityEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.ActivityTrackingRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of activity tracking records that have been sent for this workflow instance to a <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> database by the run-time tracking infrastructure.</summary>
+        <value>The list of <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingRecord" /> objects sent for this workflow instance to the tracking database by the run-time tracking infrastructure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `true`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.ActivityEvents%2A> contains all activity tracking records sent for this workflow instance up to the current time; if <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `false`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.ActivityEvents%2A> contains the activity tracking records sent up until the last <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A>.  
+  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.ActivityEvents%2A> contains activity tracking records sent to a database by the run-time tracking infrastructure for this workflow instance. Activity tracking records are sent by the workflow run-time engine tracking infrastructure only when the workflow instance emits an activity status event that corresponds to an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> specified in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoRefresh">
+      <MemberSignature Language="C#" Value="public bool AutoRefresh { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoRefresh" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether property data for this <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> should be automatically updated when it is accessed.</summary>
+        <value>
+          <see langword="true" /> if property data should be automatically refreshed when it is accessed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To optimize database performance, properties that maintain collections of queried data, such as <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.ActivityEvents%2A>, query the database for new elements only when the property is accessed, and the collection for such a property is only updated on an as-required basis when the property is accessed. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class maintains two timestamps for each property: one that indicates the time that tracking data for the collection was last loaded, and another that indicates the last time the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> was refreshed. When you get one of the collection properties, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> loads any tracking data that was added to the database between the last time tracking data for the collection was loaded and the last time the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> was refreshed and adds this data to the collection maintained by the property. The timestamp that indicates the last time data was loaded for the property is then set to the value of the timestamp that indicates the last refresh. If these two timestamps are equal, additional tracking data is not loaded for the property when it is accessed. Set <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> to `true` to perform a refresh every time a collection property is accessed and ensure that the tracking data returned in the collection maintained by that property is always current. If <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `false`, you must call <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A> to reset the timestamp that corresponds to the last refresh.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialized">
+      <MemberSignature Language="C#" Value="public DateTime Initialized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Initialized" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.DateTime" /> that indicates the time at which the first <see cref="T:System.Workflow.Runtime.Tracking.TrackingChannel" /> for this workflow instance was requested by the workflow run-time engine.</summary>
+        <value>A <see cref="T:System.DateTime" /> that indicates the time at which the first <see cref="T:System.Workflow.Runtime.Tracking.TrackingChannel" /> for this workflow instance was requested by the workflow run-time engine.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
+ [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokedWorkflows">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&gt; InvokedWorkflows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&gt; InvokedWorkflows" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.InvokedWorkflows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects that correspond to workflows that have been invoked by this workflow.</summary>
+        <value>A list of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects that correspond to workflows that have been invoked by this workflow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `true`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.InvokedWorkflows%2A> contains a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> for each of the workflow instances that has been invoked by this workflow instance up to the current time; if <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `false`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.InvokedWorkflows%2A> contains a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> for each of the workflow instances that has been invoked by this workflow instance up until the last <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A>.  
+  
+ The contents of this property are determined by the tracking data for this workflow instance contained in the SQL database managed by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. This tracking data corresponds to tracking records that are sent by the run-time tracking infrastructure for tracking events that are specified by the track points in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> associated with this workflow instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokingWorkflowInstanceId">
+      <MemberSignature Language="C#" Value="public Guid InvokingWorkflowInstanceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InvokingWorkflowInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.InvokingWorkflowInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Guid" /> of the workflow instance that invoked this workflow instance.</summary>
+        <value>The <see cref="T:System.Guid" /> of the workflow instance that invoked this workflow instance or an empty <see cref="T:System.Guid" /> if this workflow instance was not invoked by another workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of this property are determined by the tracking data for this workflow instance contained in the SQL database managed by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. This tracking data corresponds to tracking records that are sent by the run-time tracking infrastructure for tracking events that are specified by the track points in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> associated with this workflow instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Updates the property data for this <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A> does not actually load any data for the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance>. To optimize database performance, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class loads data for its collection properties on an as-required basis. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class maintains two timestamps for each property: one that indicates the time that tracking data for the collection was last loaded, and another that indicates the last time the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> was refreshed. When you get one of the collection properties, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> loads any tracking data that was added to the database between the last time tracking data for the collection was loaded and the last time the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> was refreshed and adds this data to the collection maintained by the property. The timestamp that indicates the last time data was loaded for the property is then set to the value of the timestamp that indicates the last refresh. If these two timestamps are equal, additional tracking data is not loaded for the property when it is accessed. <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A> sets the timestamp that corresponds to the last refresh to <xref:System.DateTime.utcNow%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowStatus Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.Runtime.WorkflowStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the status of the workflow instance.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.WorkflowStatus" /> that represents the current status of the workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> is determined based on the tracking data for the workflow instance, specifically on the workflow tracking records sent by the run-time tracking infrastructure; therefore <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> depends, in part, on the <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> objects in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the workflow instance. <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.TrackingWorkflowEvent%2A?displayProperty=fullName> in each <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> maps to one of the <xref:System.Workflow.Runtime.WorkflowStatus> values. If no workflow tracking records have been sent by the run-time tracking infrastructure for this workflow instance, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> is <xref:System.Workflow.Runtime.WorkflowStatus>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
+ [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserEvents">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.UserTrackingRecord&gt; UserEvents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Workflow.Runtime.Tracking.UserTrackingRecord&gt; UserEvents" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.UserEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.UserTrackingRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of user tracking records that have been sent for this workflow instance to a <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> database by the run-time tracking infrastructure.</summary>
+        <value>The list of <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingRecord" /> objects sent for this workflow instance to the tracking database by the run-time tracking infrastructure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `true`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.UserEvents%2A> contains all user tracking records sent for this workflow instance up to the current time; if <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `false`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.UserEvents%2A> contains the user tracking records sent up until the last <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A>.  
+  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.UserEvents%2A> contains user tracking records sent to a database by the run-time tracking infrastructure for this workflow instance. User tracking records are sent by the workflow run-time engine tracking infrastructure only when the workflow instance emits a user event that corresponds to a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> specified in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowDefinition">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity WorkflowDefinition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity WorkflowDefinition" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Workflow.ComponentModel.Activity" /> that represents the current workflow definition for the workflow instance.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.Activity" /> that represents the current workflow definition for the workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of this property are determined by the tracking data for this workflow instance contained in the SQL database managed by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. This tracking data corresponds to tracking records that are sent by the run-time tracking infrastructure for tracking events that are specified by the track points in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> associated with this workflow instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowDefinitionUpdated">
+      <MemberSignature Language="C#" Value="public bool WorkflowDefinitionUpdated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WorkflowDefinitionUpdated" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowDefinitionUpdated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the workflow has been updated since the last time <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowDefinition" /> was loaded.</summary>
+        <value>
+          <see langword="true" /> if the workflow has been updated; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of this property are determined by the tracking data for this workflow instance contained in the SQL database managed by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. This tracking data corresponds to tracking records that are sent by the run-time tracking infrastructure for tracking events that are specified by the track points in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> associated with this workflow instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowEvents">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.WorkflowTrackingRecord&gt; WorkflowEvents { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Workflow.Runtime.Tracking.WorkflowTrackingRecord&gt; WorkflowEvents" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.WorkflowTrackingRecord&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of workflow tracking records that have been sent for this workflow instance to a <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> database by the run-time tracking infrastructure.</summary>
+        <value>The list of <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord" /> objects sent for this workflow instance to the tracking database by the run-time tracking infrastructure.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `true`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowEvents%2A> contains all workflow tracking records sent for this workflow instance up to the current time; if <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.AutoRefresh%2A> is `false`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowEvents%2A> contains the workflow tracking records sent up until the last <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Refresh%2A>.  
+  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowEvents%2A> contains workflow tracking records sent to a database by the run-time tracking infrastructure for this workflow instance. Workflow tracking records are sent by the workflow run-time engine tracking infrastructure only when the workflow instance emits a workflow status event that corresponds to a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> specified in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowInstanceId">
+      <MemberSignature Language="C#" Value="public Guid WorkflowInstanceId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid WorkflowInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Guid" /> of the workflow instance for which this <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> applies.</summary>
+        <value>The <see cref="T:System.Guid" /> of the workflow instance for which this <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> applies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
+ [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowInstanceInternalId">
+      <MemberSignature Language="C#" Value="public long WorkflowInstanceInternalId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 WorkflowInstanceInternalId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a number that can be used to find related records in separate views for this workflow instance.</summary>
+        <value>A number that can be used to find related records in separate views for this workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is an internal join operation. <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A> provides a more efficient way to access data for a workflow instance in a SQL database than by using a workflow instance <xref:System.Guid>. Use <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A> to find related records for this workflow instance in separate views.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
+ [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowType">
+      <MemberSignature Language="C#" Value="public Type WorkflowType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type WorkflowType" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the <see cref="T:System.Type" /> of the workflow instance.</summary>
+        <value>The <see cref="T:System.Type" /> of the workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain information about all <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects contained in a list of displayed workflows. The code creates a `ListViewItem` for each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> found in a `displayedWorkflows` variable. Each <xref:System.Windows.Forms.ListViewItem> contains a string representation of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowInstanceInternalId%2A>, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Status%2A> properties. It then adds the item to a `workflowStatusList`. The code uses the previously named property values and a string version of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance.Initialized%2A> property to create a new `WorkflowStatusInfo` object that is also added to the `workflowStatusList`.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the Mainform.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[Wf_samples#288](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#288)]
+ [!code-vb[Wf_samples#288](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#288)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

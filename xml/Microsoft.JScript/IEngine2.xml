@@ -1,0 +1,285 @@
+<Type Name="IEngine2" FullName="Microsoft.JScript.IEngine2">
+  <TypeSignature Language="C#" Value="public interface IEngine2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEngine2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IEngine2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("BFF6C97F-0705-4394-88B8-A03A4B8B4CD7")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines extra functionality that is needed by an IActiveScript host. Implemented by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> engine.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaEngine Clone (AppDomain domain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.Vsa.IJSVsaEngine Clone(class System.AppDomain domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.Clone(System.AppDomain)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.IJSVsaEngine</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+      </Parameters>
+      <Docs>
+        <param name="domain">The application domain in which to create the new engine.</param>
+        <summary>When implemented in a class, creates a new identical engine that runs in a new application domain, with the same compiled state and named items. This is not implemented in JScript.</summary>
+        <returns>The new engine.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompileEmpty">
+      <MemberSignature Language="C#" Value="public bool CompileEmpty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CompileEmpty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.CompileEmpty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, triggers compilation of all the state currently in the engine. All references, code items, host items, and resources are run through the compiler.</summary>
+        <returns>
+          <see langword="true" /> if the compilation was successful, otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectEvents">
+      <MemberSignature Language="C#" Value="public void ConnectEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConnectEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.ConnectEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, communicates to the engine that it can connect any registered event sources that have events to any global event handlers. This is not implemented in JScript.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectEvents">
+      <MemberSignature Language="C#" Value="public void DisconnectEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisconnectEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.DisconnectEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, directs the engine to unhook event sources from event handlers. This is not implemented in JScript.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAssembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly GetAssembly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetAssembly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.GetAssembly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets the compiled assembly that is produced by the compilation step.</summary>
+        <returns>The compiled assembly.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalScope">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.IVsaScriptScope GetGlobalScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IVsaScriptScope GetGlobalScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.GetGlobalScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.IVsaScriptScope</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets the global scope object.</summary>
+        <returns>The global scope object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModule">
+      <MemberSignature Language="C#" Value="public System.Reflection.Module GetModule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Module GetModule() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.GetModule" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Module</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, gets the code module from the compiled assembly.</summary>
+        <returns>The code module from the compiled assembly.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitVsaEngine">
+      <MemberSignature Language="C#" Value="public void InitVsaEngine (string rootMoniker, Microsoft.JScript.Vsa.IJSVsaSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitVsaEngine(string rootMoniker, class Microsoft.JScript.Vsa.IJSVsaSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.InitVsaEngine(System.String,Microsoft.JScript.Vsa.IJSVsaSite)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootMoniker" Type="System.String" />
+        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaSite" />
+      </Parameters>
+      <Docs>
+        <param name="rootMoniker">The root moniker of the script engine. For more information, see <see cref="P:Microsoft.Vsa.IVsaEngine.RootMoniker" />.</param>
+        <param name="site">The host-implemented <see cref="T:Microsoft.Vsa.IVsaSite" /> object that is used by the script engine to communicate with the host. For more information, see <see cref="P:Microsoft.Vsa.IVsaEngine.Site" />.</param>
+        <summary>When implemented in a class, initializes the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interrupt">
+      <MemberSignature Language="C#" Value="public void Interrupt ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Interrupt() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.Interrupt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, calls <see cref="M:System.Threading.Thread.Abort" /> on the thread that is running the script code.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method should not be called on the thread that is used to run code. If you do this, you stop your own thread.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterEventSource">
+      <MemberSignature Language="C#" Value="public void RegisterEventSource (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterEventSource(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.RegisterEventSource(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of an added item that provides events.</param>
+        <summary>When implemented in a class, specifies the name of an item that is marked as an event source, so that the <see cref="M:Microsoft.JScript.IEngine2.ConnectEvents" /> method can determine which events to connect. This is not implemented in JScript.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Restart">
+      <MemberSignature Language="C#" Value="public void Restart ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Restart() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.Restart" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, this method is called by the debugger when it has to reset the engine to a clean state before evaluating a new expression. The method resets the added items and the global scope back to their original state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public void Run (AppDomain domain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Run(class System.AppDomain domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.Run(System.AppDomain)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+      </Parameters>
+      <Docs>
+        <param name="domain">The application domain in which to run the compiled code.</param>
+        <summary>When implemented in a class, runs the compiled code in the specified application domain. This is not implemented in JScript because managed engines do not support running code in user-provided application domains.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunEmpty">
+      <MemberSignature Language="C#" Value="public void RunEmpty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RunEmpty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IEngine2.RunEmpty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a class, runs the compiled code in the current <see cref="T:System.AppDomain" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

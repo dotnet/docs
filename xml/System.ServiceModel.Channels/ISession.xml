@@ -1,0 +1,70 @@
+<Type Name="ISession" FullName="System.ServiceModel.Channels.ISession">
+  <TypeSignature Language="C#" Value="public interface ISession" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISession" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ISession" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the interface to establish a shared context among parties that exchange messages by providing an ID for the communication session.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.ISession> interface is the base interface for all sessions. It contains a <xref:System.ServiceModel.Channels.ISession.Id%2A> property for identifying the session.  
+  
+ A session is a shared context among all participants in a communication exchange. This shared context is characterized by the following three properties:  
+  
+-   Session establishment - a process for establishing shared context among all participants.  
+  
+-   Message correlation - a method for correlating a group of messages to an instance of shared context.  
+  
+-   The <xref:System.ServiceModel.Channels.ISession> interface is not informed as to the number of participants in a session or the lifetime of a session.  
+  
+ These session properties are provided by associating an ID with a session.  
+  
+ <xref:System.ServiceModel.Channels.ISession> is inherited by:  
+  
+-   <xref:System.ServiceModel.Channels.IInputSession>  
+  
+-   <xref:System.ServiceModel.Channels.IOutputSession>  
+  
+-   <xref:System.ServiceModel.Channels.IDuplexSession>  
+  
+-   <xref:System.ServiceModel.Channels.ISessionChannel%601> of type <xref:System.ServiceModel.Channels.ISession>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISession.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ID that uniquely identifies the session.</summary>
+        <value>The ID that uniquely identifies the session.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the session is interrupted, it can be retrieved using the <xref:System.ServiceModel.Channels.ISession.Id%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

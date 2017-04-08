@@ -1,0 +1,115 @@
+<Type Name="NamespaceDefinition" FullName="System.Reflection.Metadata.NamespaceDefinition">
+  <TypeSignature Language="C#" Value="public struct NamespaceDefinition" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit NamespaceDefinition extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.NamespaceDefinition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExportedTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.ExportedTypeHandle&gt; ExportedTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.ExportedTypeHandle&gt; ExportedTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.ExportedTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.ExportedTypeHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.StringHandle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceDefinitions">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.NamespaceDefinitionHandle&gt; NamespaceDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.NamespaceDefinitionHandle&gt; NamespaceDefinitions" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.NamespaceDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.NamespaceDefinitionHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.NamespaceDefinitionHandle Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.NamespaceDefinitionHandle Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.NamespaceDefinitionHandle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeDefinitions">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt; TypeDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;valuetype System.Reflection.Metadata.TypeDefinitionHandle&gt; TypeDefinitions" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.NamespaceDefinition.TypeDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Reflection.Metadata.TypeDefinitionHandle&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,22 @@
+<!-- <SnippetFigureLengthExampleWholePage> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="SDKSample.FigureLengthExample" >
+
+  <FlowDocumentReader>
+    <FlowDocument >
+      <Paragraph>
+        Raw text inside the paragraph
+        <Figure Name="myFigure" Width="300">
+          <Paragraph FontStyle="Italic" MouseDown="OnMouseDownDecreaseWidth" >
+            Text inside of paragraph that is inside Figure...
+          </Paragraph>
+        </Figure>
+      </Paragraph>
+    </FlowDocument>
+  </FlowDocumentReader>
+
+
+
+</Page>
+<!-- </SnippetFigureLengthExampleWholePage> -->

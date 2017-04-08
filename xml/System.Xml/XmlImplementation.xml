@@ -1,0 +1,197 @@
+<Type Name="XmlImplementation" FullName="System.Xml.XmlImplementation">
+  <TypeSignature Language="C#" Value="public class XmlImplementation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlImplementation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlImplementation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the context for a set of <see cref="T:System.Xml.XmlDocument" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `XmlDocument` objects that are created from the same implementation share the same <xref:System.Xml.XmlNameTable>. This enables users to compare attribute and element names between the objects more efficiently.  
+  
+ Although the `XmlDocument` objects share the same implementation, to move nodes from one document to another, you must use the <xref:System.Xml.XmlDocument.ImportNode%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlImplementation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlImplementation" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlImplementation (System.Xml.XmlNameTable nt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNameTable nt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.#ctor(System.Xml.XmlNameTable)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="nt" Type="System.Xml.XmlNameTable" />
+      </Parameters>
+      <Docs>
+        <param name="nt">An <see cref="T:System.Xml.XmlNameTable" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlImplementation" /> class with the <see cref="T:System.Xml.XmlNameTable" /> specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDocument">
+      <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDocument CreateDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDocument CreateDocument() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.CreateDocument" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Xml.XmlDocument" />.</summary>
+        <returns>The new <see langword="XmlDocument" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `XmlDocument` objects created from the same implementation share the same name table. This enables users to compare attribute and element names between the objects more efficiently.  
+  
+ Although the `XmlDocument` objects share the same implementation, to move nodes from one document to another, you must use the <xref:System.Xml.XmlDocument.ImportNode%2A> method.  
+  
+   
+  
+## Examples  
+ The following example creates two `XmlDocument` objects from the same implementation.  
+  
+ [!code-cpp[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlImplementation.CreateDocument Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlImplementation.CreateDocument Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasFeature">
+      <MemberSignature Language="C#" Value="public bool HasFeature (string strFeature, string strVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasFeature(string strFeature, string strVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.HasFeature(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="strFeature" Type="System.String" />
+        <Parameter Name="strVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="strFeature">The package name of the feature to test. This name is not case-sensitive.</param>
+        <param name="strVersion">This is the version number of the package name to test. If the version is not specified (<see langword="null" />), supporting any version of the feature causes the method to return <see langword="true" />.</param>
+        <summary>Tests if the Document Object Model (DOM) implementation implements a specific feature.</summary>
+        <returns>
+          <see langword="true" /> if the feature is implemented in the specified version; otherwise, <see langword="false" />.  
+  
+ The following table shows the combinations that cause <see langword="HasFeature" /> to return <see langword="true" />.  
+  
+ <list type="table">  
+<listheader>  
+<term> strFeature  
+  
+ </term>  
+<description> strVersion  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> XML  
+  
+ </term>  
+<description> 1.0  
+  
+ </description>  
+</item>  
+<item>  
+<term> XML  
+  
+ </term>  
+<description> 2.0  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

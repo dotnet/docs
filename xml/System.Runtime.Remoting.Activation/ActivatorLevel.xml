@@ -1,0 +1,116 @@
+<Type Name="ActivatorLevel" FullName="System.Runtime.Remoting.Activation.ActivatorLevel">
+  <TypeSignature Language="C#" Value="public enum ActivatorLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ActivatorLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Activation.ActivatorLevel" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the appropriate position for a <see cref="T:System.Activator" /> in the chain of activators.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The design of activators allows for more than one activator to participate in the activation process, and additional activators can be added to the chain by using <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A?displayProperty=fullName>. Because each activator is responsible for calling the next one in the chain, an activator can position itself anywhere in the chain. The <xref:System.Runtime.Remoting.Activation.ActivatorLevel> enumerator helps activators find the appropriate position in the chain.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppDomain">
+      <MemberSignature Language="C#" Value="AppDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel AppDomain = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.AppDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Finds or creates a <see cref="T:System.AppDomain" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Construction">
+      <MemberSignature Language="C#" Value="Construction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel Construction = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Construction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Constructs a blank object and runs the constructor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="Context" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel Context = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Context" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Finds or creates a suitable context.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Machine">
+      <MemberSignature Language="C#" Value="Machine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel Machine = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Machine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Finds a suitable computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Process">
+      <MemberSignature Language="C#" Value="Process" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel Process = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Process" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Starts a process.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

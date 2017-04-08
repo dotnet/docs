@@ -1,0 +1,154 @@
+<Type Name="RegExpPrototype" FullName="Microsoft.JScript.RegExpPrototype">
+  <TypeSignature Language="C#" Value="public class RegExpPrototype : Microsoft.JScript.JSObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegExpPrototype extends Microsoft.JScript.JSObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.RegExpPrototype" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.JSObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.RegExpObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="compile">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.RegExpObject compile (object thisob, object source, object flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.RegExpObject compile(object thisob, object source, object flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpPrototype.compile(System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject, Microsoft.JScript.JSBuiltin.RegExp_compile)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.RegExpObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="flags" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="source">The regular expression pattern to search for.</param>
+        <param name="flags">Flags for the ignore case, global, and multiline modes.</param>
+        <summary>Creates and compiles a new <see cref="T:Microsoft.JScript.RegExpObject" /> object for the specified regular expression pattern and flags.</summary>
+        <returns>A new <see cref="T:Microsoft.JScript.RegExpObject" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="constructor">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.RegExpConstructor constructor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.JScript.RegExpConstructor constructor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpPrototype.constructor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.RegExpConstructor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
+        <value>A reference to a prototype-based object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="exec">
+      <MemberSignature Language="C#" Value="public static object exec (object thisob, object input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object exec(object thisob, object input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpPrototype.exec(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject, Microsoft.JScript.JSBuiltin.RegExp_exec)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="input" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="input">The regular expression pattern to search for.</param>
+        <summary>Runs a search for the specified regular expression pattern on the specified object.</summary>
+        <returns>The result of the search for the regular expression pattern.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="test">
+      <MemberSignature Language="C#" Value="public static bool test (object thisob, object input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool test(object thisob, object input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpPrototype.test(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject, Microsoft.JScript.JSBuiltin.RegExp_test)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="input" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <param name="input">The regular expression pattern to search for.</param>
+        <summary>Tests the search for the specified regular expression pattern on the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the search succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toString">
+      <MemberSignature Language="C#" Value="public static string toString (object thisob);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toString(object thisob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpPrototype.toString(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.JSFunction(Microsoft.JScript.JSFunctionAttributeEnum.HasThisObject, Microsoft.JScript.JSBuiltin.RegExp_toString)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that this method is acting upon.</param>
+        <summary>Creates a string representation of the specified object that contains the regular expression pattern and flags.</summary>
+        <returns>A string representation of <paramref name="thisob" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

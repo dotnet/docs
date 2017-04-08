@@ -1,0 +1,1187 @@
+<Type Name="SetModule" FullName="Microsoft.FSharp.Collections.SetModule">
+  <TypeSignature Language="C#" Value="public static class SetModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed SetModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.SetModule" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.RequireQualifiedAccess</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; Add&lt;T&gt; (T value, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; Add&lt;T&gt;(!!T value, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Add``1(``0,Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("add")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Contains&lt;T&gt; (T element, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool Contains&lt;T&gt;(!!T element, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Contains``1(``0,Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("contains")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="T" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="element">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Count&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Count&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Count``1(Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("count")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Difference&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; Difference&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; Difference&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Difference``1(Microsoft.FSharp.Collections.FSharpSet{``0},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("difference")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set1" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+        <Parameter Name="set2" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set1">To be added.</param>
+        <param name="set2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; Empty&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; Empty&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Empty``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("empty")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.GeneralizableValue</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Exists&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool Exists&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Exists``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("exists")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; Filter&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; Filter&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Filter``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("filter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fold&lt;T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static TState Fold&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt; folder, TState state, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TState Fold&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TState&gt;&gt; folder, !!TState state, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Fold``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``1,Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("fold")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="folder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt;" />
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TState">To be added.</typeparam>
+        <param name="folder">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FoldBack&lt;T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static TState FoldBack&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt; folder, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set, TState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TState FoldBack&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, !!TState&gt;&gt; folder, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set, !!TState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.FoldBack``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``1}},Microsoft.FSharp.Collections.FSharpSet{``0},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("foldBack")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="folder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt;" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+        <Parameter Name="state" Type="TState" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TState">To be added.</typeparam>
+        <param name="folder">To be added.</param>
+        <param name="set">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForAll&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool ForAll&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForAll&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.ForAll``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("forall")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; Intersect&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; Intersect&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Intersect``1(Microsoft.FSharp.Collections.FSharpSet{``0},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("intersect")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set1" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+        <Parameter Name="set2" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set1">To be added.</param>
+        <param name="set2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IntersectMany&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; IntersectMany&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;&gt; sets);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; IntersectMany&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt;&gt; sets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.IntersectMany``1(System.Collections.Generic.IEnumerable{Microsoft.FSharp.Collections.FSharpSet{``0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("intersectMany")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sets" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sets">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsEmpty&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsEmpty&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.IsEmpty``1(Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("isEmpty")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsProperSubset&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsProperSubset&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsProperSubset&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.IsProperSubset``1(Microsoft.FSharp.Collections.FSharpSet{``0},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("isProperSubset")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set1" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+        <Parameter Name="set2" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set1">To be added.</param>
+        <param name="set2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsProperSuperset&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsProperSuperset&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsProperSuperset&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.IsProperSuperset``1(Microsoft.FSharp.Collections.FSharpSet{``0},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("isProperSuperset")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set1" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+        <Parameter Name="set2" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set1">To be added.</param>
+        <param name="set2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubset&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsSubset&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsSubset&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.IsSubset``1(Microsoft.FSharp.Collections.FSharpSet{``0},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("isSubset")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set1" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+        <Parameter Name="set2" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set1">To be added.</param>
+        <param name="set2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSuperset&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsSuperset&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsSuperset&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.IsSuperset``1(Microsoft.FSharp.Collections.FSharpSet{``0},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("isSuperset")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set1" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+        <Parameter Name="set2" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set1">To be added.</param>
+        <param name="set2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Iterate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Iterate&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; action, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Iterate&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; action, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Iterate``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("iter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="action">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;TResult&gt; Map&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!TResult&gt; Map&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxElement&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T MaxElement&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T MaxElement&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.MaxElement``1(Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("maxElement")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinElement&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T MinElement&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T MinElement&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.MinElement``1(Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("minElement")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; OfArray&lt;T&gt; (T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; OfArray&lt;T&gt;(!!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.OfArray``1(``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofArray")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfList&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; OfList&lt;T&gt; (Microsoft.FSharp.Collections.FSharpList&lt;T&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; OfList&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.OfList``1(Microsoft.FSharp.Collections.FSharpList{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="elements" Type="Microsoft.FSharp.Collections.FSharpList&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfSeq&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; OfSeq&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; OfSeq&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.OfSeq``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofSeq")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Partition&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;,Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;&gt; Partition&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt;, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt;&gt; Partition&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Partition``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("partition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;,Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; Remove&lt;T&gt; (T value, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; Remove&lt;T&gt;(!!T value, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Remove``1(``0,Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("remove")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Singleton&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; Singleton&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; Singleton&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Singleton``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("singleton")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] ToArray&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[] ToArray&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.ToArray``1(Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toArray")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToList&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;T&gt; ToList&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; ToList&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.ToList``1(Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpList&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSeq&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; ToSeq&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; ToSeq&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.ToSeq``1(Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toSeq")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; Union&lt;T&gt; (Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set1, Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; set2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; Union&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set1, class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; set2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.Union``1(Microsoft.FSharp.Collections.FSharpSet{``0},Microsoft.FSharp.Collections.FSharpSet{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("union")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="set1" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+        <Parameter Name="set2" Type="Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="set1">To be added.</param>
+        <param name="set2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnionMany&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; UnionMany&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;&gt; sets);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; UnionMany&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt;&gt; sets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.SetModule.UnionMany``1(System.Collections.Generic.IEnumerable{Microsoft.FSharp.Collections.FSharpSet{``0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("unionMany")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sets" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Collections.FSharpSet&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sets">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

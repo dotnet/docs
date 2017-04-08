@@ -1,0 +1,24 @@
+﻿<!--<SnippetButtonContentMARKUP1>-->
+<Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.ButtonContentWindow"
+    Title="Button Content">
+  <!--</SnippetButtonContentMARKUP1>-->
+  
+  <!--<SnippetButtonContentMARKUP2>-->
+  <Button Margin="20">
+    <!-- Button Content -->
+    <DockPanel Width="200" Height="180">
+      <Label DockPanel.Dock="Top" HorizontalAlignment="Center">Click Me!</Label>
+      <Border Background="Black" BorderBrush="Yellow" BorderThickness="2" 
+        CornerRadius="2" Margin="5">
+        <MediaElement Source="media/wpf.wmv" Stretch="Fill" />
+      </Border>
+    </DockPanel>
+  </Button>
+  <!--</SnippetButtonContentMARKUP2>-->
+  
+  <!--<SnippetButtonContentMARKUP3>-->
+</Window>
+<!--</SnippetButtonContentMARKUP3>-->

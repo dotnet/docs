@@ -1,0 +1,617 @@
+<Type Name="GenericWebPart" FullName="System.Web.UI.WebControls.WebParts.GenericWebPart">
+  <TypeSignature Language="C#" Value="public class GenericWebPart : System.Web.UI.WebControls.WebParts.WebPart" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenericWebPart extends System.Web.UI.WebControls.WebParts.WebPart" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebParts.WebPart</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Wraps server controls that are not <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls so that they can appear and behave as true <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls at run time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control exists to provide a run-time wrapper for server controls that are not <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, so that such controls can be used in Web Parts pages and applications. When developers add server controls--such as user controls, ASP.NET server controls, or existing custom controls--to a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> control, the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control automatically wraps the server controls at run time so they can exhibit the same functionality as true <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
+  
+ The following table compares and contrasts <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls and <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
+  
+|<xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control|<xref:System.Web.UI.WebControls.WebParts.WebPart> control|  
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+|Exists to equip server controls that are not <xref:System.Web.UI.WebControls.WebParts.WebPart> controls with Web Parts functionality, so that any ASP.NET, custom, or user control can participate in Web Parts applications.|Exists to create custom ASP.NET controls that have native Web Parts functionality built in. This includes personalization, connections, import and export, and drag-and-drop capabilities.|  
+|Is never declared in the markup of a page. It exists only to wrap server controls at run time, and to give the wrapped control (or child control) the full functionality of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.|Can be declared in the markup of a page at design time, like an ASP.NET server control, except that it is declared in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.|  
+|Includes and integrates its child control into the Web Parts personalization process so that it can act as a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control. This occurs automatically, which makes it simple for developers to use server controls and user controls in Web Parts applications.|Is automatically included in the Web Parts personalization process.|  
+|Can be accessed programmatically at run time (by using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetGenericWebPart%2A> method and passing to it the child server control), like a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control or a standard ASP.NET control.|Can be accessed programmatically at run time, like a standard ASP.NET control.|  
+  
+ Users benefit from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control because it provides a consistent user experience. Any server control can be made to function like a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and will have the same consistent user interface (UI) elements such as verbs, icons, a title, and a header. Developers benefit from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control because it enables them to reuse existing user controls and server controls within Web Parts applications.  
+  
+> [!NOTE]
+>  When you create Web Parts pages, you do not have to do anything to enable an existing user control or custom control to be wrapped with the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control. Simply add your server or user control to a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone, either programmatically or by declaring it in the page's markup, and the Web Parts control set automatically wraps your control with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object at run time.  
+  
+ Because server controls that are placed in <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones are wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control at run time, developers can use ordinary server and user controls exactly as if they were <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. Note that, if you declare custom controls that inherit from the base <xref:System.Web.UI.Control> class within a <xref:System.Web.UI.WebControls.WebParts.WebPartZone>, these controls cannot support the use of the intrinsic <xref:System.Web.UI.WebControls.WebParts.WebPart> properties. Thus, you cannot declare the <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties on such controls, including properties such as the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A> property and the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A> property. In contrast, other types of server controls (such as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, user controls, and custom controls that inherit from <xref:System.Web.UI.WebControls.WebControl>) can declare these properties, because they support the use of expando properties.  
+  
+ Expando properties are actually strings that can be added to a class dynamically as a property, by means of the <xref:System.Web.UI.IAttributeAccessor> interface. Controls that implement this interface, including the <xref:System.Web.UI.WebControls.WebControl> class and its children, can use expando properties. Because the base <xref:System.Web.UI.Control> class does not support expando properties, when a custom control that inherits from the <xref:System.Web.UI.Control> class is placed in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> and wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control at run time, the Web Parts control set cannot dynamically add the intrinsic <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties to the custom control. You have two choices in this case. You can use the custom control without the <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties, or you can implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface in the custom control, enabling it to use the properties.  
+  
+ As an example of how controls that inherit from <xref:System.Web.UI.WebControls.WebControl> can use the <xref:System.Web.UI.WebControls.WebParts.IWebPart> properties, if you declare an ASP.NET <xref:System.Web.UI.WebControls.Calendar> control in the markup of a page (within a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone) at design time, even though this control does not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class and does not natively contain <xref:System.Web.UI.WebControls.WebParts.WebPart> members, you can still treat it exactly like a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. You can declare <xref:System.Web.UI.WebControls.WebParts.WebPart> properties on the calendar control, such as <xref:System.Web.UI.WebControls.WebParts.IWebPart.Title%2A>, <xref:System.Web.UI.WebControls.WebParts.IWebPart.Description%2A>, and others. At run time, you can use the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetGenericWebPart%2A> method, which returns the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control that is dynamically wrapping the calendar control, and work with it programmatically exactly as you would with a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, with access to all the same properties, events, and methods.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control has a critical property that allows you to access its underlying server control: the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A> property. This property allows developers to programmatically access the server control. The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A> property is also used by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control to access personalization data from the child control, and to perform authorization, if the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property is set.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control has several other properties, all of which override properties inherited from the base <xref:System.Web.UI.WebControls.WebParts.WebPart> class. As noted, you can use these properties with any child control, so that it can behave as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. One important property is the <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property; it determines whether all the exportable properties, or only those marked as non-sensitive, can be exported. The UI-oriented properties inherited from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, such as <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl%2A>, <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Description%2A>, <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Height%2A>, <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Title%2A>, <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleUrl%2A>, and <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Width%2A>, can be set in the declarative markup for any server control that is placed in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone.  
+  
+ Important methods in the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class include the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateControlCollection%2A> method, which creates the collection of controls (including child controls) associated with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control, and the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Render%2A> method, which delegates all rendering to the wrapped child controls. The constructors on the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class are protected and are intended either for internal use or for extensibility scenarios.  
+  
+ There are some additional helpful insights for working with <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls. If you want to set default values for the overridden properties in the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class, your user control or custom server control can implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> and <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interfaces, and override their members. At run time, the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control will get its values for the implemented properties from the child control that implements the interfaces. If your control defines any of its properties as personalizable (by using the `Personalizable` metadata attribute), the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control automatically enables those properties for personalization at run time, just like the personalizable properties on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ If you want to provide Web Parts editing features for your control, you can implement the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface. At run time, when the <xref:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts%2A> method is called, the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control's code for the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.WebBrowsableObject%2A> property will call into the same property in the child control, and use the child control's implementation to create associated custom <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control automatically wraps a server control that is not a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time.  
+  
+ The first part of the code example contains a Web Parts page with two <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls. Within each zone is a standard ASP.NET server control. Because the controls are in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone, they will be automatically wrapped with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control when the page is compiled. So, you can declare <xref:System.Web.UI.WebControls.WebParts.WebPart> class properties on these controls. After you load the page in a browser, if you click the **Display All Property Values** button, the details for each control are displayed in a label. To show how the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control works, the <xref:System.Web.UI.WebControls.Calendar> control in the first zone has some of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> properties set in the declarative markup of the .aspx page, whereas the <xref:System.Web.UI.WebControls.BulletedList> control does not. After you load the page, note the differences in the property values for the two controls, and that both have a parent <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_GenericWebPart_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpartcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_GenericWebPart_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpartvb.aspx#1)]  -->  
+  
+ The second part of the code example shows a partial class that accesses some properties of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control programmatically. Notice that in the `Page_Load` method, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.GetGenericWebPart%2A> method is used to retrieve the run-time instance of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control that wraps a server control. This approach of getting a reference to the parent <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control enables you to work programmatically with an ordinary server or user control as if it were a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time.  
+  
+ [!code-csharp[WebParts_GenericWebPart_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpart.cs#3)]
+ [!code-vb[WebParts_GenericWebPart_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpart.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>There are few occasions where it is necessary to inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> class. One such case would be if a developer wants to implement some custom action in the constructor when a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control is created. For example, you might want to store the child control somewhere other than the control collection within the <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> class. If you inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> class, you also need to inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> class and override its <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreateWebPart(System.Web.UI.Control)" /> method to enable it to create your custom control.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected GenericWebPart (System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.#ctor(System.Web.UI.Control)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">A server control that becomes the child control of the <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control instance.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control by passing in a reference to a control that becomes the child control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.%23ctor%28System.Web.UI.Control%29> constructor is called by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control in its <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CreateWebPart%2A> method, to initialize an instance of a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control by passing in a reference to a child server control. After the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object is created, you can reference the child control using the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="control" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="control" /> is of type <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />.  
+  
+ \- or -  
+  
+ <paramref name="control" /> has a <see langword="null" /> or empty <see cref="P:System.Web.UI.Control.ID" /> property.  
+  
+ \- or -  
+  
+ <paramref name="control" /> has been output-cached.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CatalogIconImageUrl">
+      <MemberSignature Language="C#" Value="public override string CatalogIconImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CatalogIconImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image that represents a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control in a catalog of controls.</summary>
+        <value>A string that represents the URL to an image used to represent the control in a catalog. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Web Parts applications often provide a catalog (or list) of controls that users can add to a page. The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl%2A> property on a control contains the URL to an image that represents the control when it appears in a catalog. This property overrides the base property so that you can access the property on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ You can set values for the property on your control in the declarative markup of a Web page, as well as programmatically. To provide a default value for the property whenever the control is used, you can implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> overview topic.  
+  
+ The first part of the code example shows how the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl%2A> property is set declaratively on a server control within a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_GenericWebPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpartcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_GenericWebPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpartvb.aspx#2)]  -->  
+  
+ The second part of the code example demonstrates the method that programmatically accesses the value of the property when a user clicks the **Display All Property Values** button.  
+  
+ [!code-csharp[WebParts_GenericWebPart_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpart.cs#4)]
+ [!code-vb[WebParts_GenericWebPart_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpart.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildControl">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Control ChildControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control ChildControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the child control that is wrapped by a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control at run time.</summary>
+        <value>A <see cref="T:System.Web.UI.Control" /> that refers to the wrapped child control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A> property provides the means to access the child control wrapped by a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control. For example, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A> property to extract personalization data from the child control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatic use of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A> property. The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A> property is accessed programmatically to retrieve information about the child control of a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> overview topic.  
+  
+ [!code-csharp[WebParts_GenericWebPart_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpart.cs#4)]
+ [!code-vb[WebParts_GenericWebPart_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpart.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChildControls">
+      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateChildControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called by the ASP.NET page framework to notify server controls that use composition-based implementation to create any child controls they contain in preparation for posting back or rendering.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlCollection">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateControlCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Overrides the base method to create a read-only collection that consists of the child control wrapped by a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control.</summary>
+        <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains the child control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateControlCollection%2A> method creates a private, read-only collection that consists of a single control, which is the child control of a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control. This collection is created so that developers cannot manually add other controls to a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control.  
+  
+ If you want to create a custom <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control without adding the child control to the private collection, you can derive from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class, override the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.%23ctor%2A> constructor, and provide a different method for storing the child control referenced by the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEditorParts">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.EditorPartCollection CreateEditorParts ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.WebControls.WebParts.EditorPartCollection CreateEditorParts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateEditorParts" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.EditorPartCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls that can be used to edit the child control of a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control when it is in edit mode.</summary>
+        <returns>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> that contains custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls associated with a server control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateEditorParts%2A> method is called when a control enters edit display mode. This method overrides the base method inherited from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class because, in the case of a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control, it is the child control that is being edited, not the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control itself. The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CreateEditorParts%2A> method casts the child control to the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface, which enables the control to be edited.  
+  
+ This overridden method is what enables server controls that do not derive from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class--including ASP.NET server controls, and custom server controls--to be edited as normal <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public override string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a brief phrase that summarizes what a control does, for use in ToolTips and catalogs of server controls.</summary>
+        <value>A string that briefly summarizes the control's functionality. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Description%2A> property value is typically used as a descriptive string for a control in catalogs that provide lists of server controls, and as a ToolTip in a control's title bar. The content of the property appears in a ToolTip when a user positions the mouse pointer over the title text in a control's title bar.  
+  
+ This property overrides the base property so that you can access the property on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ You can set values for the property on your control in the declarative markup of a Web page, as well as programmatically. To provide a default value for the property whenever the control is used, you can implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Description%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> overview topic.  
+  
+ The first part of the code example shows how the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Description%2A> property is set declaratively on a server control within a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_GenericWebPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpartcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_GenericWebPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpartvb.aspx#2)]  -->  
+  
+ The second part of the code example demonstrates how to access the property programmatically to display its value in a label.  
+  
+ [!code-csharp[WebParts_GenericWebPart_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpart.cs#4)]
+ [!code-vb[WebParts_GenericWebPart_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpart.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Height" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height (in pixels) of a control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that indicates the height of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property overrides the base property so that you can get or set the height on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public override sealed string ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ID of a control. This value is not inheritable.</summary>
+        <value>A string that contains the ID of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.GenericWebPart.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Delegates rendering the contents of the control to the child control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtitle">
+      <MemberSignature Language="C#" Value="public override string Subtitle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subtitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Subtitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that is concatenated with the <see cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Title" /> property value to form a complete title for a control.</summary>
+        <value>A string that serves as a subtitle for the control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Subtitle%2A> property optionally to return a standard subtitle string that will be appended to your custom <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control's title.  
+  
+ This property overrides the base property so that you can access the property on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ If you implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart.Subtitle%2A> property in a user control or custom control to provide a default value, the Web Parts control set automatically appends it to the value of the control's <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Title%2A> property at run time to create a complete title.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public override string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title of a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control.</summary>
+        <value>A string that represents the title of the part control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visible title text in a part control's title bar is set by the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Title%2A> property.  
+  
+ If you do not supply a title for a control, the Web Parts control set automatically calculates a default string to use as a title. For more information, see <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A>. Also, it is possible to provide a default subtitle that is appended to the title string. For details, see <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Subtitle%2A>.  
+  
+ This property overrides the base property so that you can access the property on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ You can set values for the property on your control in the declarative markup of a Web page, as well as programmatically. To provide a default value for the property whenever the control is used, you can implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Title%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> overview topic.  
+  
+ The first part of the code example shows how the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Title%2A> property is set declaratively on a server control within a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_GenericWebPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpartcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_GenericWebPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpartvb.aspx#2)]  -->  
+  
+ The second part of the code example demonstrates how to access the property programmatically to display its value in a label.  
+  
+ [!code-csharp[WebParts_GenericWebPart_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpart.cs#4)]
+ [!code-vb[WebParts_GenericWebPart_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpart.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleIconImageUrl">
+      <MemberSignature Language="C#" Value="public override string TitleIconImageUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TitleIconImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleIconImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to an image used to represent a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control in the control's own title bar.</summary>
+        <value>A string that represents the URL to an image. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleIconImageUrl%2A> property provides a way to associate an icon with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control. The icon appears in the control's own title bar. For thematic consistency, application developers often make this icon similar to the image that represents the control in a catalog of Web Parts controls (the image referenced in the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.CatalogIconImageUrl%2A> property).  
+  
+ As it is implemented in the Web Parts control set, the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleIconImageUrl%2A> property can be personalized by end users to change the image or icon that appears in a control's title bar.  
+  
+ This property overrides the base property so that you can access the property on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ You can set values for the property on your control in the declarative markup of a Web page, as well as programmatically. To provide a default value for the property whenever the control is used, you can implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleIconImageUrl%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> overview topic.  
+  
+ The first part of the code example shows how the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleIconImageUrl%2A> property is set declaratively on a server control within a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_GenericWebPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpartcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_GenericWebPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpartvb.aspx#2)]  -->  
+  
+ The second part of the code example demonstrates how to access the property programmatically to display its value in a label.  
+  
+ [!code-csharp[WebParts_GenericWebPart_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpart.cs#4)]
+ [!code-vb[WebParts_GenericWebPart_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpart.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleUrl">
+      <MemberSignature Language="C#" Value="public override string TitleUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TitleUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a URL to supplemental information about a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control.</summary>
+        <value>A string that represents a URL to more information about a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you assign a URL to the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleUrl%2A> property, the title of the control becomes a link. This property provides a convenient way for end users to access additional information about a control. The additional information could include copyright data, contact data, details about the creator of the control, or a summary of the purpose of a control.  
+  
+ This property overrides the base property so that you can access the property on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ You can set values for the property on your control in the declarative markup of a Web page, as well as programmatically. To provide a default value for the property whenever the control is used, you can implement the <xref:System.Web.UI.WebControls.WebParts.IWebPart> interface.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates declarative and programmatic use of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleUrl%2A> property. The complete source code for the example is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> overview topic.  
+  
+ The first part of the code example shows how the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.TitleUrl%2A> property is set declaratively on a server control within a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_GenericWebPart_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpartcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_GenericWebPart_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpartvb.aspx#2)]  -->  
+  
+ The second part of the code example demonstrates how to access the property programmatically to display its value in a label.  
+  
+ [!code-csharp[WebParts_GenericWebPart_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/CS/genericwebpart.cs#4)]
+ [!code-vb[WebParts_GenericWebPart_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_GenericWebPart_Overview/VB/genericwebpart.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbs">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerbCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of custom verbs associated with a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" /> that contains custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects associated with a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control. The default value is <see cref="F:System.Web.UI.WebControls.WebParts.WebPartVerbCollection.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Verbs derive from the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> class, and provide user interface (UI) actions that users can perform on a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control. Usually, verbs are represented in the UI as buttons, links, or menu items. There are standard verbs for opening, closing, editing, and minimizing a control, and other verbs for exporting a definition for the control or loading a Help file. These verbs are not included in the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs%2A> collection, because the collection contains only custom verbs.  
+  
+ This property overrides the base property so that you can access the property on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control. If you child control implements the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface and thus overrides its <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A?displayProperty=fullName> property, the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control uses the child control's implementation when the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs%2A?displayProperty=fullName> property is invoked on the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control.  
+  
+ When you create custom verbs and add them to the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> collection, you can then access the verbs programmatically from a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs%2A> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebBrowsableObject">
+      <MemberSignature Language="C#" Value="public override object WebBrowsableObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object WebBrowsableObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.WebBrowsableObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the child control, to enable the control to be edited by custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
+        <value>An <see cref="T:System.Object" /> that consists of the child control of a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a child control implements the <xref:System.Web.UI.WebControls.WebParts.IWebEditable> interface, and overrides its <xref:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject%2A> property, when a user selects the control for editing, the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control will call into the child control through the <xref:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject%2A> property, and use the child control's implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts%2A> method. This mechanism allows a server or user control that is not a <xref:System.Web.UI.WebControls.WebParts.WebPart> control to work with custom associated <xref:System.Web.UI.WebControls.WebParts.EditorPart> controls in a Web Parts application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit Width" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.GenericWebPart.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Unit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width (in pixels) of the control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Unit" /> that indicates the width of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property overrides the base property so that you can get or set the width on the child control as if it were a true <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

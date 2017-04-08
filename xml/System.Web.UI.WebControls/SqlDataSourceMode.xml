@@ -1,0 +1,72 @@
+<Type Name="SqlDataSourceMode" FullName="System.Web.UI.WebControls.SqlDataSourceMode">
+  <TypeSignature Language="C#" Value="public enum SqlDataSourceMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlDataSourceMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> or <see cref="T:System.Web.UI.WebControls.AccessDataSource" /> control retrieves data as a <see cref="T:System.Data.IDataReader" /> or <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceMode> enumeration is used by the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.AccessDataSource> controls to describe the data retrieval mode that the data source control uses when the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is called. When the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to DataSet, data is loaded into a <xref:System.Data.DataSet> structure. This enables scenarios where user interface controls such as <xref:System.Web.UI.WebControls.GridView> offer sorting and paging capabilities. When the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to DataReader, data is retrieved by an <xref:System.Data.IDataReader> object, which is a read-only, forward-only cursor.  
+  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceMode> enumeration is only used to describe how the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> command retrieves data; it has no effect on other operations the <xref:System.Web.UI.WebControls.SqlDataSource> control performs, such as <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A>, or <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> of a <xref:System.Web.UI.WebControls.SqlDataSource> control to DataReader when retrieving a simple list of items from a SQL Server database into a <xref:System.Web.UI.WebControls.ListBox> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> to DataSet when retrieving a set of data into a <xref:System.Web.UI.WebControls.GridView> control that has sorting enabled.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_4sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_4sql/CS/sql4cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_4sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_4sql/VB/sql4vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataReader">
+      <MemberSignature Language="C#" Value="DataReader" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.SqlDataSourceMode DataReader = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SqlDataSourceMode.DataReader" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves data from the underlying data storage as an <see cref="T:System.Data.IDataReader" /></summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSet">
+      <MemberSignature Language="C#" Value="DataSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.SqlDataSourceMode DataSet = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SqlDataSourceMode.DataSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SqlDataSourceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves data from the underlying data storage into a <see cref="T:System.Data.DataSet" /> structure.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

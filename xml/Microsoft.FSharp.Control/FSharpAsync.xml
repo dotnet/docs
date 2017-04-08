@@ -1,0 +1,974 @@
+<Type Name="FSharpAsync" FullName="Microsoft.FSharp.Control.FSharpAsync">
+  <TypeSignature Language="C#" Value="public sealed class FSharpAsync" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FSharpAsync extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.FSharpAsync" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompiledName("FSharpAsync")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsBeginEnd&lt;TArg,T&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;TArg,AsyncCallback,object&gt;,IAsyncResult&gt;,Microsoft.FSharp.Core.FSharpFunc&lt;IAsyncResult,T&gt;,Microsoft.FSharp.Core.FSharpFunc&lt;IAsyncResult,Microsoft.FSharp.Core.Unit&gt;&gt; AsBeginEnd&lt;TArg,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TArg,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; computation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`3&lt;class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`3&lt;!!TArg, class System.AsyncCallback, object&gt;, class System.IAsyncResult&gt;, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.IAsyncResult, !!T&gt;, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.IAsyncResult, class Microsoft.FSharp.Core.Unit&gt;&gt; AsBeginEnd&lt;TArg, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TArg, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; computation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.AsBeginEnd``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Control.FSharpAsync{``1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;TArg,System.AsyncCallback,System.Object&gt;,System.IAsyncResult&gt;,Microsoft.FSharp.Core.FSharpFunc&lt;System.IAsyncResult,T&gt;,Microsoft.FSharp.Core.FSharpFunc&lt;System.IAsyncResult,Microsoft.FSharp.Core.Unit&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TArg" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TArg,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TArg">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitEvent&lt;TDel,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; AwaitEvent&lt;TDel,T&gt; (Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt; event, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction) where TDel : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; AwaitEvent&lt;(class System.Delegate) TDel, T&gt;(class Microsoft.FSharp.Control.IEvent`2&lt;!!TDel, !!T&gt; event, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.AwaitEvent``2(Microsoft.FSharp.Control.IEvent{``0,``1},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDel">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="event" Type="Microsoft.FSharp.Control.IEvent&lt;TDel,T&gt;" />
+        <Parameter Name="cancelAction" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TDel">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="event">To be added.</param>
+        <param name="cancelAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitIAsyncResult">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;bool&gt; AwaitIAsyncResult (IAsyncResult iar, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;bool&gt; AwaitIAsyncResult(class System.IAsyncResult iar, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.AwaitIAsyncResult(System.IAsyncResult,Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iar" Type="System.IAsyncResult" />
+        <Parameter Name="millisecondsTimeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="iar">To be added.</param>
+        <param name="millisecondsTimeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitTask">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; AwaitTask (System.Threading.Tasks.Task task);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; AwaitTask(class System.Threading.Tasks.Task task) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.AwaitTask(System.Threading.Tasks.Task)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="task" Type="System.Threading.Tasks.Task" />
+      </Parameters>
+      <Docs>
+        <param name="task">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitTask&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; AwaitTask&lt;T&gt; (System.Threading.Tasks.Task&lt;T&gt; task);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; AwaitTask&lt;T&gt;(class System.Threading.Tasks.Task`1&lt;!!T&gt; task) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.AwaitTask``1(System.Threading.Tasks.Task{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="task" Type="System.Threading.Tasks.Task&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="task">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitWaitHandle">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;bool&gt; AwaitWaitHandle (System.Threading.WaitHandle waitHandle, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;bool&gt; AwaitWaitHandle(class System.Threading.WaitHandle waitHandle, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.AwaitWaitHandle(System.Threading.WaitHandle,Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="waitHandle" Type="System.Threading.WaitHandle" />
+        <Parameter Name="millisecondsTimeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="waitHandle">To be added.</param>
+        <param name="millisecondsTimeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelDefaultToken">
+      <MemberSignature Language="C#" Value="public static void CancelDefaultToken ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static void CancelDefaultToken() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.CancelDefaultToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancellationToken">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;System.Threading.CancellationToken&gt; CancellationToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.FSharp.Control.FSharpAsync`1&lt;valuetype System.Threading.CancellationToken&gt; CancellationToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Control.FSharpAsync.CancellationToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.Threading.CancellationToken&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Catch&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.FSharpChoice&lt;T,Exception&gt;&gt; Catch&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.FSharpChoice`2&lt;!!T, class System.Exception&gt;&gt; Catch&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.Catch``1(Microsoft.FSharp.Control.FSharpAsync{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.FSharpChoice&lt;T,System.Exception&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCancellationToken">
+      <MemberSignature Language="C#" Value="public static System.Threading.CancellationToken DefaultCancellationToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Threading.CancellationToken DefaultCancellationToken" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Control.FSharpAsync.DefaultCancellationToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.CancellationToken</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromBeginEnd&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; FromBeginEnd&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;AsyncCallback,object&gt;,IAsyncResult&gt; beginAction, Microsoft.FSharp.Core.FSharpFunc&lt;IAsyncResult,T&gt; endAction, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; FromBeginEnd&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`2&lt;class System.AsyncCallback, object&gt;, class System.IAsyncResult&gt; beginAction, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.IAsyncResult, !!T&gt; endAction, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.FromBeginEnd``1(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{System.AsyncCallback,System.Object},System.IAsyncResult},Microsoft.FSharp.Core.FSharpFunc{System.IAsyncResult,``0},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="beginAction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;System.AsyncCallback,System.Object&gt;,System.IAsyncResult&gt;" />
+        <Parameter Name="endAction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.IAsyncResult,T&gt;" />
+        <Parameter Name="cancelAction" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="beginAction">To be added.</param>
+        <param name="endAction">To be added.</param>
+        <param name="cancelAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromBeginEnd&lt;TArg1,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; FromBeginEnd&lt;TArg1,T&gt; (TArg1 arg, Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;TArg1,AsyncCallback,object&gt;,IAsyncResult&gt; beginAction, Microsoft.FSharp.Core.FSharpFunc&lt;IAsyncResult,T&gt; endAction, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; FromBeginEnd&lt;TArg1, T&gt;(!!TArg1 arg, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`3&lt;!!TArg1, class System.AsyncCallback, object&gt;, class System.IAsyncResult&gt; beginAction, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.IAsyncResult, !!T&gt; endAction, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.FromBeginEnd``2(``0,Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,System.AsyncCallback,System.Object},System.IAsyncResult},Microsoft.FSharp.Core.FSharpFunc{System.IAsyncResult,``1},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TArg1" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="arg" Type="TArg1" />
+        <Parameter Name="beginAction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;TArg1,System.AsyncCallback,System.Object&gt;,System.IAsyncResult&gt;" />
+        <Parameter Name="endAction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.IAsyncResult,T&gt;" />
+        <Parameter Name="cancelAction" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TArg1">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="arg">To be added.</param>
+        <param name="beginAction">To be added.</param>
+        <param name="endAction">To be added.</param>
+        <param name="cancelAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromBeginEnd&lt;TArg1,TArg2,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; FromBeginEnd&lt;TArg1,TArg2,T&gt; (TArg1 arg1, TArg2 arg2, Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;TArg1,TArg2,AsyncCallback,object&gt;,IAsyncResult&gt; beginAction, Microsoft.FSharp.Core.FSharpFunc&lt;IAsyncResult,T&gt; endAction, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; FromBeginEnd&lt;TArg1, TArg2, T&gt;(!!TArg1 arg1, !!TArg2 arg2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`4&lt;!!TArg1, !!TArg2, class System.AsyncCallback, object&gt;, class System.IAsyncResult&gt; beginAction, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.IAsyncResult, !!T&gt; endAction, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.FromBeginEnd``3(``0,``1,Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1,System.AsyncCallback,System.Object},System.IAsyncResult},Microsoft.FSharp.Core.FSharpFunc{System.IAsyncResult,``2},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TArg1" />
+        <TypeParameter Name="TArg2" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="arg1" Type="TArg1" />
+        <Parameter Name="arg2" Type="TArg2" />
+        <Parameter Name="beginAction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;TArg1,TArg2,System.AsyncCallback,System.Object&gt;,System.IAsyncResult&gt;" />
+        <Parameter Name="endAction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.IAsyncResult,T&gt;" />
+        <Parameter Name="cancelAction" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TArg1">To be added.</typeparam>
+        <typeparam name="TArg2">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <param name="beginAction">To be added.</param>
+        <param name="endAction">To be added.</param>
+        <param name="cancelAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromBeginEnd&lt;TArg1,TArg2,TArg3,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; FromBeginEnd&lt;TArg1,TArg2,TArg3,T&gt; (TArg1 arg1, TArg2 arg2, TArg3 arg3, Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;TArg1,TArg2,TArg3,AsyncCallback,object&gt;,IAsyncResult&gt; beginAction, Microsoft.FSharp.Core.FSharpFunc&lt;IAsyncResult,T&gt; endAction, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; FromBeginEnd&lt;TArg1, TArg2, TArg3, T&gt;(!!TArg1 arg1, !!TArg2 arg2, !!TArg3 arg3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`5&lt;!!TArg1, !!TArg2, !!TArg3, class System.AsyncCallback, object&gt;, class System.IAsyncResult&gt; beginAction, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.IAsyncResult, !!T&gt; endAction, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt;&gt; cancelAction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.FromBeginEnd``4(``0,``1,``2,Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1,``2,System.AsyncCallback,System.Object},System.IAsyncResult},Microsoft.FSharp.Core.FSharpFunc{System.IAsyncResult,``3},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TArg1" />
+        <TypeParameter Name="TArg2" />
+        <TypeParameter Name="TArg3" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="arg1" Type="TArg1" />
+        <Parameter Name="arg2" Type="TArg2" />
+        <Parameter Name="arg3" Type="TArg3" />
+        <Parameter Name="beginAction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;TArg1,TArg2,TArg3,System.AsyncCallback,System.Object&gt;,System.IAsyncResult&gt;" />
+        <Parameter Name="endAction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.IAsyncResult,T&gt;" />
+        <Parameter Name="cancelAction" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TArg1">To be added.</typeparam>
+        <typeparam name="TArg2">To be added.</typeparam>
+        <typeparam name="TArg3">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <param name="arg3">To be added.</param>
+        <param name="beginAction">To be added.</param>
+        <param name="endAction">To be added.</param>
+        <param name="cancelAction">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromContinuations&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; FromContinuations&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;,Microsoft.FSharp.Core.FSharpFunc&lt;Exception,Microsoft.FSharp.Core.Unit&gt;,Microsoft.FSharp.Core.FSharpFunc&lt;OperationCanceledException,Microsoft.FSharp.Core.Unit&gt;&gt;,Microsoft.FSharp.Core.Unit&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; FromContinuations&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`3&lt;class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt;, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Exception, class Microsoft.FSharp.Core.Unit&gt;, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.OperationCanceledException, class Microsoft.FSharp.Core.Unit&gt;&gt;, class Microsoft.FSharp.Core.Unit&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.FromContinuations``1(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{System.Exception,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{System.OperationCanceledException,Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="callback" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;,Microsoft.FSharp.Core.FSharpFunc&lt;System.Exception,Microsoft.FSharp.Core.Unit&gt;,Microsoft.FSharp.Core.FSharpFunc&lt;System.OperationCanceledException,Microsoft.FSharp.Core.Unit&gt;&gt;,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ignore&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; Ignore&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; Ignore&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.Ignore``1(Microsoft.FSharp.Control.FSharpAsync{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCancel">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;IDisposable&gt; OnCancel (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; interruption);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class System.IDisposable&gt; OnCancel(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; interruption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.OnCancel(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.IDisposable&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interruption" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="interruption">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parallel&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T[]&gt; Parallel&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; computations);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T[]&gt; Parallel&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; computations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.Parallel``1(System.Collections.Generic.IEnumerable{Microsoft.FSharp.Control.FSharpAsync{``0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T[]&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computations" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computations">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunSynchronously&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T RunSynchronously&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt; cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T RunSynchronously&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.RunSynchronously``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="cancellationToken" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sleep">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; Sleep (int millisecondsDueTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; Sleep(int32 millisecondsDueTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.Sleep(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="millisecondsDueTime" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="millisecondsDueTime">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public static void Start (Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; computation, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt; cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Start(class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; computation, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.Start(Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="cancellationToken" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="computation">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsTask&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; StartAsTask&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.Tasks.TaskCreationOptions&gt; taskCreationOptions, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt; cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Threading.Tasks.Task`1&lt;!!T&gt; StartAsTask&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.Tasks.TaskCreationOptions&gt; taskCreationOptions, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.StartAsTask``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpOption{System.Threading.Tasks.TaskCreationOptions},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="taskCreationOptions" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.Tasks.TaskCreationOptions&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="cancellationToken" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="taskCreationOptions">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartChild&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; StartChild&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; StartChild&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; millisecondsTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.StartChild``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="millisecondsTimeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="millisecondsTimeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartChildAsTask&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; StartChildAsTask&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.Tasks.TaskCreationOptions&gt; taskCreationOptions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; StartChildAsTask&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.Tasks.TaskCreationOptions&gt; taskCreationOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.StartChildAsTask``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpOption{System.Threading.Tasks.TaskCreationOptions})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="taskCreationOptions" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.Tasks.TaskCreationOptions&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="taskCreationOptions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartImmediate">
+      <MemberSignature Language="C#" Value="public static void StartImmediate (Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; computation, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt; cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void StartImmediate(class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; computation, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.StartImmediate(Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="cancellationToken" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="computation">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartWithContinuations&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void StartWithContinuations&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; continuation, Microsoft.FSharp.Core.FSharpFunc&lt;Exception,Microsoft.FSharp.Core.Unit&gt; exceptionContinuation, Microsoft.FSharp.Core.FSharpFunc&lt;OperationCanceledException,Microsoft.FSharp.Core.Unit&gt; cancellationContinuation, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt; cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void StartWithContinuations&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; continuation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Exception, class Microsoft.FSharp.Core.Unit&gt; exceptionContinuation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.OperationCanceledException, class Microsoft.FSharp.Core.Unit&gt; cancellationContinuation, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.StartWithContinuations``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{System.Exception,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{System.OperationCanceledException,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="continuation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="exceptionContinuation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Exception,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="cancellationContinuation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.OperationCanceledException,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="cancellationToken" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="continuation">To be added.</param>
+        <param name="exceptionContinuation">To be added.</param>
+        <param name="cancellationContinuation">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwitchToContext">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; SwitchToContext (System.Threading.SynchronizationContext syncContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; SwitchToContext(class System.Threading.SynchronizationContext syncContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.SwitchToContext(System.Threading.SynchronizationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="syncContext" Type="System.Threading.SynchronizationContext" />
+      </Parameters>
+      <Docs>
+        <param name="syncContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwitchToNewThread">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; SwitchToNewThread ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; SwitchToNewThread() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.SwitchToNewThread" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SwitchToThreadPool">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; SwitchToThreadPool ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; SwitchToThreadPool() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.SwitchToThreadPool" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCancelled&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; TryCancelled&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;OperationCanceledException,Microsoft.FSharp.Core.Unit&gt; compensation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; TryCancelled&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.OperationCanceledException, class Microsoft.FSharp.Core.Unit&gt; compensation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsync.TryCancelled``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{System.OperationCanceledException,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="compensation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.OperationCanceledException,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">To be added.</param>
+        <param name="compensation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

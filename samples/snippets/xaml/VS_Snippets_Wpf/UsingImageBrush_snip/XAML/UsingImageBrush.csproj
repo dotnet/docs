@@ -1,0 +1,89 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <AssemblyName>Microsoft.Samples.Graphics.UsingImageBrush</AssemblyName>
+    <TargetType>$(OutputType)</TargetType>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>Microsoft.Samples.Graphics.UsingImageBrush</RootNamespace>
+    <ProjectGuid>{47346FA0-138A-4469-A17B-A121A75852D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <ProductVersion>10.0.20821</ProductVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="app.xaml" />
+    <Page Include="AlignmentExample.xaml" />
+    <Page Include="PaintingWithImagesExample.xaml" />
+    <Page Include="MyWindow.xaml" />
+    <Page Include="StretchModes.xaml" />
+    <Page Include="TextFillsExample.xaml" />
+    <Page Include="TileSizeExample.xaml" />
+    <Page Include="TilingExample.xaml" />
+    <Page Include="InteractiveExample.xaml" />
+    <Page Include="TiledImageBrushExample.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlignmentExample.xaml.cs">
+      <DependentUpon>AlignmentExample.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app.xaml.cs">
+      <DependentUpon>app.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MyWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextFillsExample.xaml.cs">
+      <DependentUpon>TextFillsExample.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TileSizeExample.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TilingExample.xaml.cs">
+      <DependentUpon>TilingExample.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InteractiveExample.xaml.cs">
+      <DependentUpon>InteractiveExample.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="App.ico" />
+    <Resource Include="sampleImages\*.*" />
+  </ItemGroup>
+</Project>

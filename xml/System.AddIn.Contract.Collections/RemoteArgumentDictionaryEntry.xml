@@ -1,0 +1,73 @@
+<Type Name="RemoteArgumentDictionaryEntry" FullName="System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry">
+  <TypeSignature Language="C#" Value="public struct RemoteArgumentDictionaryEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit RemoteArgumentDictionaryEntry extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a key/value pair in an <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentDictionaryContract" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RemoteArgumentDictionaryEntry (System.AddIn.Contract.RemoteArgument key, System.AddIn.Contract.RemoteArgument value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.AddIn.Contract.RemoteArgument key, valuetype System.AddIn.Contract.RemoteArgument value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry.#ctor(System.AddIn.Contract.RemoteArgument,System.AddIn.Contract.RemoteArgument)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="key" Type="System.AddIn.Contract.RemoteArgument" />
+        <Parameter Name="value" Type="System.AddIn.Contract.RemoteArgument" />
+      </Parameters>
+      <Docs>
+        <param name="key">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> that contains the key in the new <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" />.</param>
+        <param name="value">The <see cref="T:System.AddIn.Contract.RemoteArgument" /> that contains the value in the new <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" />.</param>
+        <summary>Initializes an instance of the <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> structure with the specified key and value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument Key;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.AddIn.Contract.RemoteArgument Key" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry.Key" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.RemoteArgument</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the key in the key/value pair that this <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> represents.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument Value;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.AddIn.Contract.RemoteArgument Value" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry.Value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.RemoteArgument</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the value in the key/value pair that this <see cref="T:System.AddIn.Contract.Collections.RemoteArgumentDictionaryEntry" /> represents.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

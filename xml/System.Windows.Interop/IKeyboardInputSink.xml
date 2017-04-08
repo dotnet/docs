@@ -1,0 +1,271 @@
+<Type Name="IKeyboardInputSink" FullName="System.Windows.Interop.IKeyboardInputSink">
+  <TypeSignature Language="C#" Value="public interface IKeyboardInputSink" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IKeyboardInputSink" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.IKeyboardInputSink" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a keyboard sink for components that manages tabbing, accelerators, and mnemonics across interop boundaries and between HWNDs. This interface implements keyboard message management in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]-[!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] interoperation scenarios.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A keyboard sink handles input from particular subsets of the overall keyboard input model for [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] and [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], and enables some keyboard input to be processed and directed to HWNDs other than the one with current keyboard focus.  
+  
+ If your component contains other components, and maintains a tab order, your component must also implement <xref:System.Windows.Interop.IKeyboardInputSite> and keep track of which component has focus.  
+  
+ For a discussion of the input architecture specifically implemented for [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] interop, see [Windows Forms and WPF Interoperability Input Architecture](~/docs/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture.md).  
+  
+ <xref:System.Windows.Interop.HwndSource> and <xref:System.Windows.Interop.HwndHost> each implement the <xref:System.Windows.Interop.IKeyboardInputSink> interface, through explicit interface definitions. The explicit definitions supply default behaviors, and can also be accessed if necessary through an <xref:System.Windows.Interop.IKeyboardInputSink> interface cast of <xref:System.Windows.Interop.HwndSource> or <xref:System.Windows.Interop.HwndHost>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HasFocusWithin">
+      <MemberSignature Language="C#" Value="public bool HasFocusWithin ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasFocusWithin() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value that indicates whether the sink or one of its contained components has focus.</summary>
+        <returns>
+          <see langword="true" /> if the sink or one of its contained components has focus; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is necessary for forwarding <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> calls to child components with focus from within the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> implementation. Call <xref:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin%2A> recursively until you reach the level of specific focus and forward <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> there.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyboardInputSite">
+      <MemberSignature Language="C#" Value="public System.Windows.Interop.IKeyboardInputSite KeyboardInputSite { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Interop.IKeyboardInputSite KeyboardInputSite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.IKeyboardInputSite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to the component's container's <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> interface.</summary>
+        <value>A reference to the container's <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property should initially be set to `null`. Any container that adds the sink to its components list will set <xref:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite%2A> before any other methods are called, and it can be set multiple times after that. You should set the property to `null` again before disposal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMnemonic">
+      <MemberSignature Language="C#" Value="public bool OnMnemonic (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnMnemonic(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Interop.MSG&amp;" RefType="ref" />
+        <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
+      </Parameters>
+      <Docs>
+        <param name="msg">The message for the mnemonic and associated data. Do not modify this message structure. It is passed by reference for performance reasons only.</param>
+        <param name="modifiers">Modifier keys.</param>
+        <summary>Called when one of the mnemonics (access keys) for this sink is invoked.</summary>
+        <returns>
+          <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA#tla_win](~/includes/tlasharptla-win-md.md)] message must be WM_CHAR, WM_SYSCHAR, WM_DEADCHAR or WM_SYSDEADCHAR.  
+  
+ If the component has contained components, the message must be passed in your implementation by calling each contained component's <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A> method.  
+  
+ An interface that returns `true` from <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> will not call <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A>. Implementations can choose to perform all specific key combination handling in <xref:System.Windows.Interop.IKeyboardInputSink.TranslateChar%2A>.and bypass <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterKeyboardInputSink">
+      <MemberSignature Language="C#" Value="public System.Windows.Interop.IKeyboardInputSite RegisterKeyboardInputSink (System.Windows.Interop.IKeyboardInputSink sink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Interop.IKeyboardInputSite RegisterKeyboardInputSink(class System.Windows.Interop.IKeyboardInputSink sink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.IKeyboardInputSite</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sink" Type="System.Windows.Interop.IKeyboardInputSink" />
+      </Parameters>
+      <Docs>
+        <param name="sink">The <see cref="T:System.Windows.Interop.IKeyboardInputSink" /> sink of the contained component.</param>
+        <summary>Registers the <see cref="T:System.Windows.Interop.IKeyboardInputSink" /> interface of a contained component.</summary>
+        <returns>The <see cref="T:System.Windows.Interop.IKeyboardInputSite" /> site of the contained component.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Components with child components should maintain internal collections of sites and use this method to add a new sink and return the new site. You only need to maintain the site collection, because the sink can be obtained from the site.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabInto">
+      <MemberSignature Language="C#" Value="public bool TabInto (System.Windows.Input.TraversalRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TabInto(class System.Windows.Input.TraversalRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Windows.Input.TraversalRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Specifies whether focus should be set to the first or the last tab stop.</param>
+        <summary>Sets focus on either the first tab stop or the last tab stop of the sink.</summary>
+        <returns>
+          <see langword="true" /> if the focus has been set as requested; <see langword="false" />, if there are no tab stops.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Input.FocusNavigationDirection> and <xref:System.Windows.Input.FocusNavigationDirection> are the only relevant values that should be passed to this method in the <xref:System.Windows.Input.TraversalRequest>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateAccelerator">
+      <MemberSignature Language="C#" Value="public bool TranslateAccelerator (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TranslateAccelerator(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Interop.MSG&amp;" RefType="ref" />
+        <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
+      </Parameters>
+      <Docs>
+        <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
+        <param name="modifiers">Modifier keys.</param>
+        <summary>Processes keyboard input at the keydown message level.</summary>
+        <returns>
+          <see langword="true" /> if the message was handled by the method implementation; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The message must either be WM_KEYDOWN or WM_SYSKEYDOWN.  
+  
+ If the component is unable to handle the input translations and has child components that might have translations, it typically calls <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> method on the child component that holds the current focus before returning a result.  
+  
+ If the message cannot be handled immediately, you can re-dispatch it from within the <xref:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator%2A> implementation if necessary, and then return `false`.  
+  
+ A primary scenario for translating accelerator keys is handling the VK_TAB keydown message and determining whether to set focus within the component, to call <xref:System.Windows.Interop.IKeyboardInputSink.TabInto%2A> to a child component, or to call <xref:System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops%2A> on the parent site because the tab sequence has reached the beginning or end bounds. Certain components may choose to not handle the tab key in this fashion.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateChar">
+      <MemberSignature Language="C#" Value="public bool TranslateChar (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TranslateChar(valuetype System.Windows.Interop.MSG msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Interop.MSG&amp;" RefType="ref" />
+        <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
+      </Parameters>
+      <Docs>
+        <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
+        <param name="modifiers">Modifier keys.</param>
+        <summary>Processes WM_CHAR, WM_SYSCHAR, WM_DEADCHAR, and WM_SYSDEADCHAR input messages before <see cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" /> is called.</summary>
+        <returns>
+          <see langword="true" /> if the message was processed and <see cref="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" /> should not be called; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you implement this method to return `true`, the input architecture will not call <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A> for that key message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

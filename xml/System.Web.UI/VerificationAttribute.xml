@@ -1,0 +1,464 @@
+<Type Name="VerificationAttribute" FullName="System.Web.UI.VerificationAttribute">
+  <TypeSignature Language="C#" Value="public sealed class VerificationAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VerificationAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the metadata attribute of a Web content accessibility rule. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.Web.UI.VerificationAttribute> class defines a Web content accessibility rule that can be verified. For more information on Web Content Accessibility Guidelines, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+  
+ The minimal amount of information required to define an instance of a <xref:System.Web.UI.VerificationAttribute> includes:  
+  
+-   A guideline that the verification rule represents. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.Guideline%2A> property.  
+  
+-   A checkpoint of the guideline. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.Checkpoint%2A> property.  
+  
+-   A checkpoint priority.  The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.Priority%2A> property.  
+  
+-   A <xref:System.Web.UI.VerificationReportLevel> enumeration value that represents the reporting level that should be rule belongs to. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.VerificationReportLevel%2A> property.  
+  
+-   A message that is reported when the verification rule is true. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.Message%2A> property.  
+  
+ Optional properties of the verification rule that can be specified when creating an instance:  
+  
+-   A <xref:System.Web.UI.VerificationRule> enumeration value that represents how the verification rule should be interpreted. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.VerificationRule%2A> property.  
+  
+-   A <xref:System.Web.UI.VerificationConditionalOperator> enumeration value that represents the operator in the conditional expression used to test the verification rule. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property.  
+  
+-   An accessibility reference guideline URL. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.GuidelineUrl%2A> property.  
+  
+-   A conditional value representing the right side of a conditional expression. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A> property.  
+  
+-   A conditional property representing the left side of a conditional expression. The value specified in the constructor sets the <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A> property.  
+  
+ The <xref:System.Web.UI.VerificationAttribute> metadata can be defined class, property, and indexer declarations.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.VerificationAttribute> class. In the verification metadata definition, the guidelines used are "WCAG," the Web Content Accessibility Guideline, and "ADA," Americans with Disabilities Act Guidelines. For more information, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+  
+ The checkpoints used are "1.1" and "1194.22(a)" for WCAG and ADA, respectively, checkpoints for ensuring that a text equivalent exists for non-text elements. The <xref:System.Web.UI.VerificationAttribute> is applied to the `ImageText` property that represents the text equivalent of another property called `ImageProperty`. If the `ImageText` property is not set, the accessibility verification will return the message "The image is missing a text equivalent."  
+  
+ [!code-csharp[System.Web.UI.VerificationAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.VerificationAttribute/cs/VerificationAttributeExample.cs#1)]
+ [!code-vb[System.Web.UI.VerificationAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.VerificationAttribute/vb/VerificationAttributeExample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="guideline" Type="System.String" />
+        <Parameter Name="checkpoint" Type="System.String" />
+        <Parameter Name="reportLevel" Type="System.Web.UI.VerificationReportLevel" />
+        <Parameter Name="priority" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="guideline">The accessibility guideline the verification rule describes.</param>
+        <param name="checkpoint">The checkpoint within the guideline.</param>
+        <param name="reportLevel">One of the <see cref="T:System.Web.UI.VerificationReportLevel" /> values.</param>
+        <param name="priority">The priority of the checkpoint.</param>
+        <param name="message">The message displayed when the verification rule is true.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.VerificationAttribute" /> class with accessibility guideline, checkpoint, reporting level, checkpoint priority, and error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.%23ctor%2A> constructor of the <xref:System.Web.UI.VerificationAttribute> class specifies the minimal amount of information needed to define a verification rule. The following default values for the <xref:System.Web.UI.VerificationAttribute> instance are assumed:  
+  
+-   The <xref:System.Web.UI.VerificationAttribute.VerificationRule%2A> property is set as <xref:System.Web.UI.VerificationRule>.  
+  
+-   The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property is set as <xref:System.Web.UI.VerificationConditionalOperator>.  
+  
+-   The <xref:System.Web.UI.VerificationAttribute.GuidelineUrl%2A> property is set as an empty string ("").  
+  
+-   The <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A> property is set as an empty string ("").  
+  
+-   The <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A> property is set as an empty string ("").  
+  
+-   To specify values of the properties in the preceding list beyond their default values, use the <xref:System.Web.UI.VerificationAttribute.%23ctor%2A> or <xref:System.Web.UI.VerificationAttribute.%23ctor%2A> constructor overloads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message, System.Web.UI.VerificationRule rule, string conditionalProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message, valuetype System.Web.UI.VerificationRule rule, string conditionalProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String,System.Web.UI.VerificationRule,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="guideline" Type="System.String" />
+        <Parameter Name="checkpoint" Type="System.String" />
+        <Parameter Name="reportLevel" Type="System.Web.UI.VerificationReportLevel" />
+        <Parameter Name="priority" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="rule" Type="System.Web.UI.VerificationRule" />
+        <Parameter Name="conditionalProperty" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="guideline">The accessibility guideline the verification rule describes.</param>
+        <param name="checkpoint">The checkpoint within the guideline.</param>
+        <param name="reportLevel">One of the <see cref="T:System.Web.UI.VerificationReportLevel" /> values.</param>
+        <param name="priority">The priority of the checkpoint.</param>
+        <param name="message">The message displayed when the verification rule is true.</param>
+        <param name="rule">One of the <see cref="T:System.Web.UI.VerificationRule" />.values.</param>
+        <param name="conditionalProperty">The left side of a conditional expression used to verify the accessibility rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.VerificationAttribute" /> class with accessibility guideline, checkpoint, reporting level, checkpoint priority, error message, <see cref="T:System.Web.UI.VerificationRule" />.value, and related conditional property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `conditionalProperty` parameter is another property that is used as part of the conditional expression to evaluate the verification rule. For example, if the rule parameter is <xref:System.Web.UI.VerificationRule> then the related property specified by `conditionalProperty` must not be an empty string ("").  
+  
+ The following default values for the <xref:System.Web.UI.VerificationAttribute> instance are assumed:  
+  
+-   The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property is set as <xref:System.Web.UI.VerificationConditionalOperator>.  
+  
+-   The <xref:System.Web.UI.VerificationAttribute.GuidelineUrl%2A> property is set as an empty string ("").  
+  
+-   The <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A> property is set as an empty string ("").  
+  
+ To specify values of the properties in the preceding list beyond their default values, use the <xref:System.Web.UI.VerificationAttribute.%23ctor%2A> constructor overload.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VerificationAttribute (string guideline, string checkpoint, System.Web.UI.VerificationReportLevel reportLevel, int priority, string message, System.Web.UI.VerificationRule rule, string conditionalProperty, System.Web.UI.VerificationConditionalOperator conditionalOperator, string conditionalValue, string guidelineUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string guideline, string checkpoint, valuetype System.Web.UI.VerificationReportLevel reportLevel, int32 priority, string message, valuetype System.Web.UI.VerificationRule rule, string conditionalProperty, valuetype System.Web.UI.VerificationConditionalOperator conditionalOperator, string conditionalValue, string guidelineUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.VerificationAttribute.#ctor(System.String,System.String,System.Web.UI.VerificationReportLevel,System.Int32,System.String,System.Web.UI.VerificationRule,System.String,System.Web.UI.VerificationConditionalOperator,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="guideline" Type="System.String" />
+        <Parameter Name="checkpoint" Type="System.String" />
+        <Parameter Name="reportLevel" Type="System.Web.UI.VerificationReportLevel" />
+        <Parameter Name="priority" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="rule" Type="System.Web.UI.VerificationRule" />
+        <Parameter Name="conditionalProperty" Type="System.String" />
+        <Parameter Name="conditionalOperator" Type="System.Web.UI.VerificationConditionalOperator" />
+        <Parameter Name="conditionalValue" Type="System.String" />
+        <Parameter Name="guidelineUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="guideline">The accessibility guideline the verification rule describes.</param>
+        <param name="checkpoint">The checkpoint within the guideline.</param>
+        <param name="reportLevel">One of the <see cref="T:System.Web.UI.VerificationReportLevel" /> values.</param>
+        <param name="priority">The priority of the checkpoint.</param>
+        <param name="message">The message displayed when the verification rule is true.</param>
+        <param name="rule">One of the <see cref="T:System.Web.UI.VerificationRule" />.values.</param>
+        <param name="conditionalProperty">The left side of a conditional expression used to verify the accessibility rule.</param>
+        <param name="conditionalOperator">One of the <see cref="T:System.Web.UI.VerificationConditionalOperator" /> values.</param>
+        <param name="conditionalValue">The right hand side of a conditional expression used to verify the accessibility rule.</param>
+        <param name="guidelineUrl">A reference URL for <c>guideline</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.VerificationAttribute" /> class with accessibility guideline, checkpoint, reporting level, checkpoint priority, error message, <see cref="T:System.Web.UI.VerificationRule" />.value, related conditional property, a related conditional property value, and a reference guideline URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Web.UI.VerificationAttribute.%23ctor%2A> allows you to create an instance of the <xref:System.Web.UI.VerificationAttribute> class with all the possible properties specified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checkpoint">
+      <MemberSignature Language="C#" Value="public string Checkpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Checkpoint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.Checkpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the accessibility checkpoint reference in the specified <see cref="P:System.Web.UI.VerificationAttribute.Guideline" /> property.</summary>
+        <value>A string representing the checkpoint reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.Checkpoint%2A> property is set when the <xref:System.Web.UI.VerificationAttribute> instance is created and is required.  
+  
+ For the Web Content Accessibility Guidelines defined on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125) the <xref:System.Web.UI.VerificationAttribute.Checkpoint%2A> property is specified as a guideline number followed by a period (.) followed by a checkpoint number.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalProperty">
+      <MemberSignature Language="C#" Value="public string ConditionalProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConditionalProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.ConditionalProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the left side of a conditional expression used as part of the verification accessibility checkpoint.</summary>
+        <value>The left side of the conditional expression. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `conditionalProperty` parameter, the default value of an empty string ("") is used.  
+  
+ The <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A> property is the right side, or value, of a conditional expression that is use in the verification of the accessibility checkpoint. The left side of the conditional expression is specified with the <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionalValue">
+      <MemberSignature Language="C#" Value="public string ConditionalValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConditionalValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.ConditionalValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the right side of a conditional expression used as part of the verification accessibility checkpoint.</summary>
+        <value>The right side of a conditional expression. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `conditionalValue` parameter, the default value of an empty string ("") is used.  
+  
+ The <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A> property is the right side, or value, of a conditional expression that is use in the verification of the accessibility checkpoint. The left side of the conditional expression is specified with the <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Guideline">
+      <MemberSignature Language="C#" Value="public string Guideline { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Guideline" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.Guideline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the guideline that used for accessibility checking.</summary>
+        <value>A string representing the guideline.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.Guideline%2A> property is set when the <xref:System.Web.UI.VerificationAttribute> instance is created and is required.  
+  
+ Examples of guidelines include "WCAG 1.1" and "ADA508".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GuidelineUrl">
+      <MemberSignature Language="C#" Value="public string GuidelineUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GuidelineUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.GuidelineUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URL the can be used to get more information on the accessibility guidelines given in the <see cref="P:System.Web.UI.VerificationAttribute.Guideline" /> property.</summary>
+        <value>The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.GuidelineUrl%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `guidelineUrl` parameter, the default value of an empty string ("") is used.  
+  
+ The string entered for the <xref:System.Web.UI.VerificationAttribute.GuidelineUrl%2A> property is not checked for correctness.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a message string when the accessibility checkpoint verification rule is true.</summary>
+        <value>An error string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.Message%2A> property is set when the <xref:System.Web.UI.VerificationAttribute> instance is created and is required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public int Priority { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Priority" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the priority of the accessibility checkpoint.</summary>
+        <value>An integer representing the priority.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.Priority%2A> property defines the <xref:System.Web.UI.VerificationAttribute.Checkpoint%2A> property's impact on accessibility. Both the <xref:System.Web.UI.VerificationAttribute.Checkpoint%2A> and <xref:System.Web.UI.VerificationAttribute.Priority%2A> property are set when the <xref:System.Web.UI.VerificationAttribute> instance is created and is required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerificationConditionalOperator">
+      <MemberSignature Language="C#" Value="public System.Web.UI.VerificationConditionalOperator VerificationConditionalOperator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationConditionalOperator VerificationConditionalOperator" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.VerificationConditionalOperator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationConditionalOperator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.VerificationConditionalOperator" /> enumeration value indication how the accessibility checkpoint is verified.</summary>
+        <value>One of the <see cref="T:System.Web.UI.VerificationConditionalOperator" /> enumeration values. The default value is <see cref="F:System.Web.UI.VerificationConditionalOperator.Equals" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.VerificationConditionalOperator%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `conditionalOperator` parameter, the default value of <xref:System.Web.UI.VerificationConditionalOperator> is used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerificationReportLevel">
+      <MemberSignature Language="C#" Value="public System.Web.UI.VerificationReportLevel VerificationReportLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationReportLevel VerificationReportLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.VerificationReportLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationReportLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.VerificationReportLevel" /> enumeration value indicating how the accessibility checkpoint is used.</summary>
+        <value>One of the <see cref="T:System.Web.UI.VerificationReportLevel" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.VerificationReportLevel%2A> property is set when the <xref:System.Web.UI.VerificationAttribute> instance is created and is required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerificationRule">
+      <MemberSignature Language="C#" Value="public System.Web.UI.VerificationRule VerificationRule { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.VerificationRule VerificationRule" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.VerificationAttribute.VerificationRule" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.VerificationRule" /> enumeration value indicating how the accessibility checkpoint is used.</summary>
+        <value>One of the <see cref="T:System.Web.UI.VerificationRule" /> enumeration values. The default value is <see cref="F:System.Web.UI.VerificationRule.Required" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.VerificationAttribute.VerificationRule%2A> property can be set when the <xref:System.Web.UI.VerificationAttribute> instance is created, but is optional. If you use a constructor that does not take a `rule` parameter, the default value of <xref:System.Web.UI.VerificationRule> is used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

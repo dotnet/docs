@@ -1,0 +1,212 @@
+<Type Name="AspNetCompatibilityRequirementsAttribute" FullName="System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AspNetCompatibilityRequirementsAttribute : Attribute, System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AspNetCompatibilityRequirementsAttribute extends System.Attribute implements class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Applied to a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service to indicate whether that service can be run in [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When applied to a service implementation class, this attribute indicates whether this service requires or supports [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode to be enabled for the hosting application domain (AppDomain).  
+  
+ AppDomains hosting [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services can run in two different hosting modes:  
+  
+-   Mixed Transports Mode (Default): In this mode, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services do not participate in the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] HTTP pipeline. This guarantees that a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service behaves consistently, independent of hosting environment and transport.  
+  
+-   [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] Compatibility Mode: In this mode, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services participate in the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] HTTP pipeline in a manner similar to ASMX services. [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] features such as File Authorization, UrlAuthorization, and HTTP Session State are applicable to [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services running in this mode.  
+  
+ The hosting mode is controlled by the application-level configuration flag `aspNetCompatibilityEnabled`.  
+  
+ `<system.serviceModel>`  
+  
+ `<serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>`  
+  
+ `</system.serviceModel>`  
+  
+ This flag is `false` by default and thus [!INCLUDE[indigo2](~/includes/indigo2-md.md)] services run in the Mixed Transports Mode unless you explicitly opt into the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode, see [\&lt;serviceHostingEnvironment\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
+  
+ Use the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> property to do this. At runtime, applications can detect if [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode is enabled by checking the value of the static property <xref:System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled%2A>.  
+  
+   
+  
+## Examples  
+ Service developers can ensure that their service is only run in ASP.NET Compatibility Mode by setting the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> property on the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> as shown in the following example  
+  
+ [!code-csharp[S_AspNetCompatibility#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_aspnetcompatibility/cs/service.cs#1)]
+ [!code-vb[S_AspNetCompatibility#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_aspnetcompatibility/vb/service.vb#1)]  
+  
+ [!code-csharp[S_AspNetCompatibility#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_aspnetcompatibility/cs/service.cs#2)]
+ [!code-vb[S_AspNetCompatibility#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_aspnetcompatibility/vb/service.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AspNetCompatibilityRequirementsAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequirementsMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode RequirementsMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode RequirementsMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the level of [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility required by the service.</summary>
+        <value>The <see cref="T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode" /> that indicates the services required degree of [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility. The default value is <see cref="F:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> property to set the hosting mode in code. This can also be done by setting an application-level configuration flag `aspNetCompatibilityEnabled`. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][\&lt;serviceHostingEnvironment\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
+  
+ At runtime, applications can detect whether [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility mode is enabled by checking the value of the static property <xref:System.ServiceModel.ServiceHostingEnvironment.AspNetCompatibilityEnabled%2A>.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_AspNetCompatibility#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_aspnetcompatibility/cs/service.cs#2)]
+ [!code-vb[S_AspNetCompatibility#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_aspnetcompatibility/vb/service.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value is not a valid one for the <see cref="T:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode" /><see langword="enum" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.AddBindingParameters (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="description">The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> of the service.</param>
+        <param name="serviceHostBase">The <see cref="T:System.ServiceModel.ServiceHostBase" /> used to host the service.</param>
+        <param name="endpoints">The <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> that contains the endpoints for the service.</param>
+        <param name="parameters">The <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> that contains the parameters that the binding elements for the service can access.</param>
+        <summary>Adds custom data that the binding elements can access to support the implementation of the contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="description">The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> of the service.</param>
+        <param name="serviceHostBase">The <see cref="T:System.ServiceModel.ServiceHostBase" /> for hosting the service.</param>
+        <summary>Checks that the type of hosting is consistent with the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility requirements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="description" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The service hosting is not compatible with the [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] compatibility requirements.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.Validate">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.Validate (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.Validate(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.System#ServiceModel#Description#IServiceBehavior#Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="description">The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> of the service.</param>
+        <param name="serviceHostBase">The <see cref="T:System.ServiceModel.ServiceHostBase" /> for hosting the service.</param>
+        <summary>Validates the service behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] infrastructure and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

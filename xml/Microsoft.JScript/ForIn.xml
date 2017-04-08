@@ -1,0 +1,55 @@
+<Type Name="ForIn" FullName="Microsoft.JScript.ForIn">
+  <TypeSignature Language="C#" Value="public sealed class ForIn : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ForIn extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ForIn" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the JScript <see langword="for...in" /> statement. This class belongs to the abstract syntax tree category.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the `for...in` statement acts on a <xref:Microsoft.JScript.JSObject>, it iterates through the properties of the object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="JScriptGetEnumerator">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerator JScriptGetEnumerator (object coll);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerator JScriptGetEnumerator(object coll) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ForIn.JScriptGetEnumerator(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="coll" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="coll">The collection for which to get an enumerator.</param>
+        <summary>Returns an enumerator that iterates through the specified collection.</summary>
+        <returns>An enumerator that iterates through <paramref name="coll" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `coll` is a <xref:Microsoft.JScript.JSObject>, this method iterates through the properties of the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

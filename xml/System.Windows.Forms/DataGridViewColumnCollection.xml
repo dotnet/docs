@@ -1,0 +1,1802 @@
+<Type Name="DataGridViewColumnCollection" FullName="System.Windows.Forms.DataGridViewColumnCollection">
+  <TypeSignature Language="C#" Value="public class DataGridViewColumnCollection : System.Windows.Forms.BaseCollection, System.Collections.IList" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewColumnCollection extends System.Windows.Forms.BaseCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.BaseCollection</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataGridViewColumn" /> objects in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can retrieve an instance of this class through the <xref:System.Windows.Forms.DataGridView.Columns%2A> property of the <xref:System.Windows.Forms.DataGridView> control. The collection maintains a reference to the control through the <xref:System.Windows.Forms.DataGridViewColumnCollection.DataGridView%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewColumnCollection (System.Windows.Forms.DataGridView dataGridView);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridView dataGridView) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.#ctor(System.Windows.Forms.DataGridView)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataGridView" Type="System.Windows.Forms.DataGridView" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridView">The <see cref="T:System.Windows.Forms.DataGridView" /> that created this collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumnCollection" /> class for the given <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual int Add (System.Windows.Forms.DataGridViewColumn dataGridViewColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Add(System.Windows.Forms.DataGridViewColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataGridViewColumn" Type="System.Windows.Forms.DataGridViewColumn" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridViewColumn">The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to add.</param>
+        <summary>Adds the given column to the collection.</summary>
+        <returns>The index of the column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this method.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc2#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dataGridViewColumn" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
+  
+ -or-  
+  
+ <paramref name="dataGridViewColumn" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.  
+  
+ -or-  
+  
+ The <paramref name="dataGridViewColumn" /><see cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewColumnSortMode.Automatic" /> and the <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" /> or <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />. Use the control <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#BeginInit" /> and <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#EndInit" /> methods to temporarily set conflicting property values.  
+  
+ -or-  
+  
+ The <paramref name="dataGridViewColumn" /><see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader" /> and the <see cref="P:System.Windows.Forms.DataGridView.ColumnHeadersVisible" /> property value is <see langword="false" />.  
+  
+ -or-  
+  
+ <paramref name="dataGridViewColumn" /> has an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" /> and a <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value of <see langword="true" />.  
+  
+ -or-  
+  
+ <paramref name="dataGridViewColumn" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> property value that would cause the combined <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> values of all columns in the control to exceed 65535.  
+  
+ -or-  
+  
+ <paramref name="dataGridViewColumn" /> has <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> and <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property values that would display it among a set of adjacent columns with the opposite <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value.  
+  
+ -or-  
+  
+ The <see cref="T:System.Windows.Forms.DataGridView" /> control contains at least one row and <paramref name="dataGridViewColumn" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.CellType" /> property value of <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual int Add (string columnName, string headerText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(string columnName, string headerText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+        <Parameter Name="headerText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The name by which the column will be referred.</param>
+        <param name="headerText">The text for the column's header.</param>
+        <summary>Adds a <see cref="T:System.Windows.Forms.DataGridViewTextBoxColumn" /> with the given column name and column header text to the collection.</summary>
+        <returns>The index of the column.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `columnName` and `headerText` parameters are related to the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A> and <xref:System.Windows.Forms.DataGridViewColumn.HeaderText%2A> properties, respectively.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
+  
+ -or-  
+  
+ The <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" /> or <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />, which conflicts with the default column <see cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewColumnSortMode.Automatic" />.  
+  
+ -or-  
+  
+ The default column <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> property value of 100 would cause the combined <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> values of all columns in the control to exceed 65535.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public virtual void AddRange (System.Windows.Forms.DataGridViewColumn[] dataGridViewColumns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Windows.Forms.DataGridViewColumn[] dataGridViewColumns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.AddRange(System.Windows.Forms.DataGridViewColumn[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataGridViewColumns" Type="System.Windows.Forms.DataGridViewColumn[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="dataGridViewColumns">An array of <see cref="T:System.Windows.Forms.DataGridViewColumn" /> objects to add.</param>
+        <summary>Adds a range of columns to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewSizingScenarios#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/CS/sizingscenarios.cs#40)]
+ [!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/vb/sizingscenarios.vb#40)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dataGridViewColumns" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
+  
+ -or-  
+  
+ At least one of the values in <paramref name="dataGridViewColumns" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ At least one of the columns in <paramref name="dataGridViewColumns" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.  
+  
+ -or-  
+  
+ At least one of the columns in <paramref name="dataGridViewColumns" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.CellType" /> property value of <see langword="null" /> and the <see cref="T:System.Windows.Forms.DataGridView" /> control contains at least one row.  
+  
+ -or-  
+  
+ At least one of the columns in <paramref name="dataGridViewColumns" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewColumnSortMode.Automatic" /> and the <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" /> or <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />. Use the control <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#BeginInit" /> and <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#EndInit" /> methods to temporarily set conflicting property values.  
+  
+ -or-  
+  
+ At least one of the columns in <paramref name="dataGridViewColumns" /> has an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader" /> and the <see cref="P:System.Windows.Forms.DataGridView.ColumnHeadersVisible" /> property value is <see langword="false" />.  
+  
+ -or-  
+  
+ At least one of the columns in <paramref name="dataGridViewColumns" /> has an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" /> and a <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value of <see langword="true" />.  
+  
+ -or-  
+  
+ The columns in <paramref name="dataGridViewColumns" /> have <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> property values that would cause the combined <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> values of all columns in the control to exceed 65535.  
+  
+ -or-  
+  
+ At least two of the values in <paramref name="dataGridViewColumns" /> are references to the same <see cref="T:System.Windows.Forms.DataGridViewColumn" />.  
+  
+ -or-  
+  
+ At least one of the columns in <paramref name="dataGridViewColumns" /> has <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> and <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property values that would display it among a set of adjacent columns with the opposite <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public virtual void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this method. This example is part of a larger example available in [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewFillColumnsDemo#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/CS/fillcolumns.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler CollectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler CollectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the collection changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Examples of collection changes include additions or removals of columns.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridViewColumnCollection> named `DataGridViewColumnCollection1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#372](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#372)]
+ [!code-vb[System.Windows.Forms.EventExamples#372](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#372)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public virtual bool Contains (string columnName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string columnName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The name of the column to look for.</param>
+        <summary>Determines whether the collection contains the column referred to by the given name.</summary>
+        <returns>
+          <see langword="true" /> if the column is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="columnName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public virtual bool Contains (System.Windows.Forms.DataGridViewColumn dataGridViewColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Contains(System.Windows.Forms.DataGridViewColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataGridViewColumn" Type="System.Windows.Forms.DataGridViewColumn" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridViewColumn">The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to look for.</param>
+        <summary>Determines whether the collection contains the given column.</summary>
+        <returns>
+          <see langword="true" /> if the given column is in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Forms.DataGridViewColumn[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Windows.Forms.DataGridViewColumn[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.CopyTo(System.Windows.Forms.DataGridViewColumn[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Windows.Forms.DataGridViewColumn[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The destination <see cref="T:System.Windows.Forms.DataGridViewColumn" /> array.</param>
+        <param name="index">The index of the destination array at which to start copying.</param>
+        <summary>Copies the items from the collection to the given array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataGridView">
+      <MemberSignature Language="C#" Value="protected System.Windows.Forms.DataGridView DataGridView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridView DataGridView" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.DataGridView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridView" /> upon which the collection performs column-related operations.</summary>
+        <value>
+          <see cref="T:System.Windows.Forms.DataGridView" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnCount">
+      <MemberSignature Language="C#" Value="public int GetColumnCount (System.Windows.Forms.DataGridViewElementStates includeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetColumnCount(valuetype System.Windows.Forms.DataGridViewElementStates includeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount(System.Windows.Forms.DataGridViewElementStates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+      </Parameters>
+      <Docs>
+        <param name="includeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter for inclusion.</param>
+        <summary>Returns the number of columns that meet the given filter requirements.</summary>
+        <returns>The number of columns that meet the filter requirements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates how to use this method to get the number of selected columns.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewSelectedCollections#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectedCollections/CS/DataGridViewSelectedCollections.cs#30)]
+ [!code-vb[System.Windows.Forms.DataGridViewSelectedCollections#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectedCollections/VB/DataGridViewSelectedCollections.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnsWidth">
+      <MemberSignature Language="C#" Value="public int GetColumnsWidth (System.Windows.Forms.DataGridViewElementStates includeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetColumnsWidth(valuetype System.Windows.Forms.DataGridViewElementStates includeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetColumnsWidth(System.Windows.Forms.DataGridViewElementStates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+      </Parameters>
+      <Docs>
+        <param name="includeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter for inclusion.</param>
+        <summary>Returns the width, in pixels, required to display all of the columns that meet the given filter requirements.</summary>
+        <returns>The width, in pixels, that is necessary to display all of the columns that meet the filter requirements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFirstColumn">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumn GetFirstColumn (System.Windows.Forms.DataGridViewElementStates includeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataGridViewColumn GetFirstColumn(valuetype System.Windows.Forms.DataGridViewElementStates includeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn(System.Windows.Forms.DataGridViewElementStates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+      </Parameters>
+      <Docs>
+        <param name="includeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represents the filter for inclusion.</param>
+        <summary>Returns the first column in display order that meets the given inclusion-filter requirements.</summary>
+        <returns>The first column in display order that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The first column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
+  
+ This method lets you determine the first column that fits the given criteria without having to compare index values directly.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn%2A> method to swap the first displayed column and the last displayed column.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#170)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#170)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#170)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="includeFilter" /> is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFirstColumn">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumn GetFirstColumn (System.Windows.Forms.DataGridViewElementStates includeFilter, System.Windows.Forms.DataGridViewElementStates excludeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataGridViewColumn GetFirstColumn(valuetype System.Windows.Forms.DataGridViewElementStates includeFilter, valuetype System.Windows.Forms.DataGridViewElementStates excludeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetFirstColumn(System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+        <Parameter Name="excludeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+      </Parameters>
+      <Docs>
+        <param name="includeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter to apply for inclusion.</param>
+        <param name="excludeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter to apply for exclusion.</param>
+        <summary>Returns the first column in display order that meets the given inclusion-filter and exclusion-filter requirements.</summary>
+        <returns>The first column in display order that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The first column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
+  
+ This method lets you determine the first column that fits the given criteria without having to compare index values directly.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">At least one of the filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLastColumn">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumn GetLastColumn (System.Windows.Forms.DataGridViewElementStates includeFilter, System.Windows.Forms.DataGridViewElementStates excludeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataGridViewColumn GetLastColumn(valuetype System.Windows.Forms.DataGridViewElementStates includeFilter, valuetype System.Windows.Forms.DataGridViewElementStates excludeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetLastColumn(System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+        <Parameter Name="excludeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+      </Parameters>
+      <Docs>
+        <param name="includeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter to apply for inclusion.</param>
+        <param name="excludeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter to apply for exclusion.</param>
+        <summary>Returns the last column in display order that meets the given filter requirements.</summary>
+        <returns>The last displayed column in display order that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The last column in display order is the column with the highest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value, regardless of whether the column is actually visible on the screen.  
+  
+ This method lets you determine the last column that fits the given criteria without having to compare index values directly.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetLastColumn%2A> method to swap the last displayed column and the first displayed column.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#170)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#170)]
+ [!code-vb[System.Windows.Forms.DataGridView.ButtonDemos#170](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/VB/datagridviewcolumndemo.vb#170)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">At least one of the filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextColumn">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumn GetNextColumn (System.Windows.Forms.DataGridViewColumn dataGridViewColumnStart, System.Windows.Forms.DataGridViewElementStates includeFilter, System.Windows.Forms.DataGridViewElementStates excludeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataGridViewColumn GetNextColumn(class System.Windows.Forms.DataGridViewColumn dataGridViewColumnStart, valuetype System.Windows.Forms.DataGridViewElementStates includeFilter, valuetype System.Windows.Forms.DataGridViewElementStates excludeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetNextColumn(System.Windows.Forms.DataGridViewColumn,System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataGridViewColumnStart" Type="System.Windows.Forms.DataGridViewColumn" />
+        <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+        <Parameter Name="excludeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridViewColumnStart">The column from which to start searching for the next column.</param>
+        <param name="includeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter to apply for inclusion.</param>
+        <param name="excludeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter to apply for exclusion.</param>
+        <summary>Gets the first column after the given column in display order that meets the given filter requirements.</summary>
+        <returns>The next column that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The next column in display order is the column with the lowest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value higher than the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value of the specified column, regardless of whether the column is actually visible on the screen.  
+  
+ This method lets you determine the next column after the current column that fits the given criteria without having to compare index values directly.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dataGridViewColumnStart" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">At least one of the filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreviousColumn">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumn GetPreviousColumn (System.Windows.Forms.DataGridViewColumn dataGridViewColumnStart, System.Windows.Forms.DataGridViewElementStates includeFilter, System.Windows.Forms.DataGridViewElementStates excludeFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.DataGridViewColumn GetPreviousColumn(class System.Windows.Forms.DataGridViewColumn dataGridViewColumnStart, valuetype System.Windows.Forms.DataGridViewElementStates includeFilter, valuetype System.Windows.Forms.DataGridViewElementStates excludeFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.GetPreviousColumn(System.Windows.Forms.DataGridViewColumn,System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewElementStates)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataGridViewColumnStart" Type="System.Windows.Forms.DataGridViewColumn" />
+        <Parameter Name="includeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+        <Parameter Name="excludeFilter" Type="System.Windows.Forms.DataGridViewElementStates" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridViewColumnStart">The column from which to start searching for the previous column.</param>
+        <param name="includeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter to apply for inclusion.</param>
+        <param name="excludeFilter">A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that represent the filter to apply for exclusion.</param>
+        <summary>Gets the last column prior to the given column in display order that meets the given filter requirements.</summary>
+        <returns>The previous column that meets the given filter requirements, or <see langword="null" /> if no column is found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The previous column in display order is the column with the highest <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value lower than the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> value of the specified column, regardless of whether the column is actually visible on the screen.  
+  
+ This method lets you determine the first column before the current column that fits the given criteria without having to compare index values directly.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dataGridViewColumnStart" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">At least one of the filter values is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Forms.DataGridViewColumn dataGridViewColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.IndexOf(System.Windows.Forms.DataGridViewColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataGridViewColumn" Type="System.Windows.Forms.DataGridViewColumn" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridViewColumn">The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to return the index of.</param>
+        <summary>Gets the index of the given <see cref="T:System.Windows.Forms.DataGridViewColumn" /> in the collection.</summary>
+        <returns>The index of the given <see cref="T:System.Windows.Forms.DataGridViewColumn" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public virtual void Insert (int columnIndex, System.Windows.Forms.DataGridViewColumn dataGridViewColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 columnIndex, class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Insert(System.Int32,System.Windows.Forms.DataGridViewColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="dataGridViewColumn" Type="System.Windows.Forms.DataGridViewColumn" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">The zero-based index at which to insert the given column.</param>
+        <param name="dataGridViewColumn">The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to insert.</param>
+        <summary>Inserts a column at the given index in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this method. For more information, see [How to: Add an Unbound Column to a Data-Bound Windows Forms DataGridView Control](~/docs/framework/winforms/controls/unbound-column-to-a-data-bound-datagridview.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#010](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#010)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#010](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#010)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dataGridViewColumn" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
+  
+ -or-  
+  
+ <paramref name="dataGridViewColumn" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.  
+  
+ -or-  
+  
+ The <paramref name="dataGridViewColumn" /><see cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewColumnSortMode.Automatic" /> and the <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" /> or <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />. Use the control <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#BeginInit" /> and <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#EndInit" /> methods to temporarily set conflicting property values.  
+  
+ -or-  
+  
+ The <paramref name="dataGridViewColumn" /><see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader" /> and the <see cref="P:System.Windows.Forms.DataGridView.ColumnHeadersVisible" /> property value is <see langword="false" />.  
+  
+ -or-  
+  
+ <paramref name="dataGridViewColumn" /> has an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" /> and a <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value of <see langword="true" />.  
+  
+ -or-  
+  
+ <paramref name="dataGridViewColumn" /> has <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> and <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property values that would display it among a set of adjacent columns with the opposite <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value.  
+  
+ -or-  
+  
+ The <see cref="T:System.Windows.Forms.DataGridView" /> control contains at least one row and <paramref name="dataGridViewColumn" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.CellType" /> property value of <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumn this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewColumn Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the column to get or set.</param>
+        <summary>Gets or sets the column at the given index in the collection.</summary>
+        <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> at the given index.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or greater than the number of columns in the collection minus one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumn this[string columnName] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewColumn Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The name of the column to get or set.</param>
+        <summary>Gets or sets the column of the given name in the collection.</summary>
+        <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> identified by the <paramref name="columnName" /> parameter.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="columnName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="protected override System.Collections.ArrayList List { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList List" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.List" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of elements contained in the <see cref="T:System.Windows.Forms.BaseCollection" /> instance.</summary>
+        <value>An <see cref="T:System.Collections.ArrayList" /> containing the elements of the collection. This property returns <see langword="null" /> unless overridden in a derived class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCollectionChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.CollectionChangeEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.DataGridViewColumnCollection.CollectionChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.DataGridViewColumnCollection.OnCollectionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.DataGridViewColumnCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.DataGridViewColumnCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual void Remove (string columnName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string columnName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="columnName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="columnName">The name of the column to delete.</param>
+        <summary>Removes the column with the specified name from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of a column is indicated by the <xref:System.Windows.Forms.DataGridViewColumn.Name%2A?displayProperty=fullName> property.  
+  
+ To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this method. For more information, see [How to: Remove Autogenerated Columns from a Windows Forms DataGridView Control](~/docs/framework/winforms/controls/remove-autogenerated-columns-from-a-wf-datagridview-control.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#110](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#110)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#110](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#110)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="columnName" /> does not match the name of any column in the collection.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="columnName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual void Remove (System.Windows.Forms.DataGridViewColumn dataGridViewColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.Remove(System.Windows.Forms.DataGridViewColumn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataGridViewColumn" Type="System.Windows.Forms.DataGridViewColumn" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridViewColumn">The column to delete.</param>
+        <summary>Removes the specified column from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="dataGridViewColumn" /> is not in the collection.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dataGridViewColumn" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the column to delete.</param>
+        <summary>Removes the column at the given index in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To remove a column that is automatically generated when binding to a data source, call this method in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete?displayProperty=fullName> event handler.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or greater than the number of columns in the control minus one.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the current collection. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the entire contents of the collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source collection is greater than the available space from <paramref name="index" /> to the end of <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source element cannot be cast automatically to the type of <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#ICollection#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements in the collection.</summary>
+        <value>The number of elements in the <see cref="T:System.Windows.Forms.DataGridViewColumnCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the collection is synchronized.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An <see cref="T:System.Object" /> that can be used to synchronize access to the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to add to the end of the collection. The value can be <see langword="null" />.</param>
+        <summary>Adds an object to the end of the collection.</summary>
+        <returns>The index at which <paramref name="value" /> has been added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.DataGridViewColumn" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
+  
+ -or-  
+  
+ The column indicated by <paramref name="value" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.  
+  
+ -or-  
+  
+ The <see cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" /> property value of the column indicated by <paramref name="value" /> is <see cref="F:System.Windows.Forms.DataGridViewColumnSortMode.Automatic" /> and the <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" /> or <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />. Use the control <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#BeginInit" /> and <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#EndInit" /> methods to temporarily set conflicting property values.  
+  
+ -or-  
+  
+ The <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value of the column indicated by <paramref name="value" /> is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader" /> and the <see cref="P:System.Windows.Forms.DataGridView.ColumnHeadersVisible" /> property value is <see langword="false" />.  
+  
+ -or-  
+  
+ The column indicated by <paramref name="value" /> has an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" /> and a <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value of <see langword="true" />.  
+  
+ -or-  
+  
+ The column indicated by <paramref name="value" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> property value that would cause the combined <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> values of all columns in the control to exceed 65535.  
+  
+ -or-  
+  
+ The column indicated by <paramref name="value" /> has <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> and <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property values that would display it among a set of adjacent columns with the opposite <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value.  
+  
+ -or-  
+  
+ The <see cref="T:System.Windows.Forms.DataGridView" /> control contains at least one row and the column indicated by <paramref name="value" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.CellType" /> property value of <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Clear">
+      <MemberSignature Language="C#" Value="void IList.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the collection. The value can be <see langword="null" />.</param>
+        <summary>Determines whether an object is in the collection.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is found in the <see cref="T:System.Windows.Forms.DataGridViewColumnCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the collection. The value can be <see langword="null" />.</param>
+        <summary>Determines the index of a specific item in the collection.</summary>
+        <returns>The zero-based index of the first occurrence of <paramref name="value" /> within the collection, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The <see cref="T:System.Object" /> to insert. The value can be <see langword="null" />.</param>
+        <summary>Inserts an element into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.DataGridViewColumn" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" />  
+  
+ -or-  
+  
+ The column indicated by <paramref name="value" /> already belongs to a <see cref="T:System.Windows.Forms.DataGridView" /> control.  
+  
+ -or-  
+  
+ The <see cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" /> property value of the column indicated by <paramref name="value" /> is <see cref="F:System.Windows.Forms.DataGridViewColumnSortMode.Automatic" /> and the <see cref="P:System.Windows.Forms.DataGridView.SelectionMode" /> property value is <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" /> or <see cref="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />. Use the control <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#BeginInit" /> and <see cref="M:System.Windows.Forms.DataGridView.System#ComponentModel#ISupportInitialize#EndInit" /> methods to temporarily set conflicting property values.  
+  
+ -or-  
+  
+ The <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value of the column indicated by <paramref name="value" /> is <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader" /> and the <see cref="P:System.Windows.Forms.DataGridView.ColumnHeadersVisible" /> property value is <see langword="false" />.  
+  
+ -or-  
+  
+ The column indicated by <paramref name="value" /> has an <see cref="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" /> property value of <see cref="F:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill" /> and a <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value of <see langword="true" />.  
+  
+ -or-  
+  
+ The column indicated by <paramref name="value" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> property value that would cause the combined <see cref="P:System.Windows.Forms.DataGridViewColumn.FillWeight" /> values of all columns in the control to exceed 65535.  
+  
+ -or-  
+  
+ The column indicated by <paramref name="value" /> has <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> and <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property values that would display it among a set of adjacent columns with the opposite <see cref="P:System.Windows.Forms.DataGridViewColumn.Frozen" /> property value.  
+  
+ -or-  
+  
+ The <see cref="T:System.Windows.Forms.DataGridView" /> control contains at least one row and the column indicated by <paramref name="value" /> has a <see cref="P:System.Windows.Forms.DataGridViewColumn.CellType" /> property value of <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the column to get.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ This implementation does not support setting this property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">This property is being set.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">When getting this property, <paramref name="index" /> is less than zero or greater than the number of columns in the collection minus one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the collection. The value can be <see langword="null" />.</param>
+        <summary>Removes the first occurrence of the specified object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="value" /> is not a <see cref="T:System.Windows.Forms.DataGridViewColumn" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not in the collection.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.RemoveAt">
+      <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The location of the element to delete.</param>
+        <summary>Removes the element with the specified index from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.DataGridViewColumnCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or greater than the number of columns in the control minus one.</exception>
+        <exception cref="T:System.InvalidOperationException">The associated <see cref="T:System.Windows.Forms.DataGridView" /> control is performing one of the following actions that temporarily prevents new columns from being added:  
+  
+-   Selecting all cells in the control.  
+  
+-   Clearing the selection.  
+  
+-   Updating column <see cref="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" /> property values.  
+  
+ -or-  
+  
+ This method is being called from a handler for one of the following <see cref="T:System.Windows.Forms.DataGridView" /> events:  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidating" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.CellValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowEnter" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowLeave" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidated" />  
+  
+-   <see cref="E:System.Windows.Forms.DataGridView.RowValidating" /></exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

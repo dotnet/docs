@@ -1,0 +1,323 @@
+<Type Name="EndpointDispatcher" FullName="System.ServiceModel.Dispatcher.EndpointDispatcher">
+  <TypeSignature Language="C#" Value="public sealed class EndpointDispatcher" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EndpointDispatcher extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.EndpointDispatcher" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the run-time object that exposes properties that enable the insertion of run-time extensions or modifications for messages in service applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> and the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=fullName> classes expose the runtime customization points for endpoints in a service. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> can be used to control which messages it can process and some endpoint-related information. The <xref:System.ServiceModel.Dispatcher.DispatchRuntime> has a large number of properties used to insert custom extensions into the endpoint-wide runtime.  
+  
+ The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object is responsible for processing messages from a <xref:System.ServiceModel.Dispatcher.ChannelDispatcher?displayProperty=fullName> when the destination address of a message matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property and the message action matches the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> property. If two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects can accept a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property value determines the higher priority endpoint.  
+  
+ Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> object to configure or extend the process of receiving messages from the associated <xref:System.ServiceModel.Dispatcher.ChannelDispatcher>, converting from message objects to objects used as parameters, and invoking an endpoint operation as well as the reverse process.  
+  
+ Typically, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> for an endpoint is obtained by implementing the <xref:System.ServiceModel.Description.IEndpointBehavior> interface, but you can access the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> from the other behavior interfaces.  
+  
+ You can use the following <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> properties:  
+  
+-   The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property allows you to get or set a <xref:System.ServiceModel.Dispatcher.MessageFilter> object that the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ChannelDispatcher%2A> uses to identify whether the endpoint can process a particular message.  
+  
+-   The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ChannelDispatcher%2A> property gets the associated <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> object, which sends and receives messages to and from the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> and which can be used to inspect or modify other channel-related values and behaviors.  
+  
+-   The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> gets the <xref:System.ServiceModel.Dispatcher.MessageFilter> object that is used to identify whether a message is destined for this contract.  
+  
+-   The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractName%2A> and <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractNamespace%2A> properties return the name and namespace of the endpoint contract.  
+  
+-   The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> property returns the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object that you can use to modify run-time values or insert custom run-time extensions for the entire endpoint.  
+  
+-   The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.EndpointAddress%2A> property gets the address of the endpoint.  
+  
+-   The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property returns the priority of the composite filter that the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ChannelDispatcher%2A> uses to establish which endpoint is to handle the message.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to locate the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=fullName> for the endpoint and inserts a custom message inspector using an endpoint behavior.  
+  
+ [!code-csharp[IEndpointBehavior#4](~/samples/snippets/csharp/VS_Snippets_CFX/iendpointbehavior/cs/iendpointbehaviormessageinspector.cs#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndpointDispatcher (System.ServiceModel.EndpointAddress address, string contractName, string contractNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address, string contractName, string contractNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointDispatcher.#ctor(System.ServiceModel.EndpointAddress,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="contractNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">The endpoint address.</param>
+        <param name="contractName">The name of the endpoint contract.</param>
+        <param name="contractNamespace">The namespace of the endpoint contract.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.EndpointDispatcher" /> class with the specified address, contract name, and contract namespace.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create an endpoint that is not in the description.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndpointDispatcher (System.ServiceModel.EndpointAddress address, string contractName, string contractNamespace, bool isSystemEndpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address, string contractName, string contractNamespace, bool isSystemEndpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.EndpointDispatcher.#ctor(System.ServiceModel.EndpointAddress,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="contractNamespace" Type="System.String" />
+        <Parameter Name="isSystemEndpoint" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="address">The endpoint address.</param>
+        <param name="contractName">The name of the endpoint contract.</param>
+        <param name="contractNamespace">The namespace of the endpoint contract.</param>
+        <param name="isSystemEndpoint">
+          <see langword="true" /> to indicate that the endpoint is created internally by the server and not by the user; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.EndpointDispatcher" /> class with the specified address, contract name, contract namespace, and whether the endpoint is a public, system endpoint.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressFilter">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.MessageFilter AddressFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.MessageFilter AddressFilter" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.MessageFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> object that is used to identify whether a particular message is destined for the endpoint address.</summary>
+        <value>The address filter used to route the message to the appropriate endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher?displayProperty=fullName> has an <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> for each endpoint the channel can support. The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> property is a <xref:System.ServiceModel.Dispatcher.MessageFilter?displayProperty=fullName> object that matches the destination endpoint address of the message. The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> combines the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> value with the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> value to determine whether to route a message to this endpoint.  
+  
+ In the case where two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects that match can process a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property is used to select an endpoint.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelDispatcher">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.ChannelDispatcher ChannelDispatcher { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.ChannelDispatcher ChannelDispatcher" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ChannelDispatcher" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.ChannelDispatcher</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the associated <see cref="T:System.ServiceModel.Dispatcher.ChannelDispatcher" /> object, which can be used to inspect or modify other channel-related values and behaviors.</summary>
+        <value>The channel dispatcher which can be used to inspect or modify other channel-related values and behaviors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> object receives a message from a channel and uses the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A>, <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A>, and <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> properties to determine by which endpoint the message is processed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractFilter">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.MessageFilter ContractFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.MessageFilter ContractFilter" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.MessageFilter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> object that is used to identify whether a message is destined for this contract.</summary>
+        <value>The filter used to route messages to the appropriate contract.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> property is a <xref:System.ServiceModel.Dispatcher.MessageFilter> object that is matched against the action of a message. The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> combines the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> value with the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> value to determine whether to route a message to this endpoint.  
+  
+ In the case where two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects that match can process a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property is used to select an endpoint.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractName">
+      <MemberSignature Language="C#" Value="public string ContractName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContractName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the endpoint contract name.</summary>
+        <value>The name of the endpoint contract.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractNamespace">
+      <MemberSignature Language="C#" Value="public string ContractNamespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContractNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the namespace of the endpoint contract.</summary>
+        <value>The namespace of the endpoint contract.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchRuntime">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.DispatchRuntime DispatchRuntime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.DispatchRuntime DispatchRuntime" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Dispatcher.DispatchRuntime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Dispatcher.DispatchRuntime" /> object used to inspect, modify, or extend run-time behavior across a service endpoint or a client callback endpoint.</summary>
+        <value>The <see cref="P:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime" /> object used to inspect, modify, or extend run-time behavior across a service endpoint or a client callback endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> property to obtain the <xref:System.ServiceModel.Dispatcher.DispatchRuntime> object to modify run-time values or insert custom run-time extensions for the entire endpoint. From the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.DispatchRuntime%2A> property, you can also navigate to the <xref:System.ServiceModel.Dispatcher.DispatchOperation?displayProperty=fullName> collection for the endpoint.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> to locate the <xref:System.ServiceModel.Dispatcher.DispatchRuntime?displayProperty=fullName> for the endpoint and inserts a custom message inspector using an endpoint behavior.  
+  
+ [!code-csharp[IEndpointBehavior#4](~/samples/snippets/csharp/VS_Snippets_CFX/iendpointbehavior/cs/iendpointbehaviormessageinspector.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress EndpointAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress EndpointAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.EndpointAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the address of the endpoint.</summary>
+        <value>The address of the endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterPriority">
+      <MemberSignature Language="C#" Value="public int FilterPriority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FilterPriority" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the priority of the <see cref="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter" /> and the <see cref="P:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter" /> combination when the <see cref="P:System.ServiceModel.Dispatcher.EndpointDispatcher.ChannelDispatcher" /> is selecting endpoints.</summary>
+        <value>The priority of the filter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> combines the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.AddressFilter%2A> value with the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.ContractFilter%2A> value to determine whether to route a message to this endpoint.  
+  
+ In the case where two <xref:System.ServiceModel.Dispatcher.EndpointDispatcher> objects that match can process a message, the <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property is used to select an endpoint.  
+  
+ If two endpoints can process a message and the value of their <xref:System.ServiceModel.Dispatcher.EndpointDispatcher.FilterPriority%2A> property matches, a <xref:System.ServiceModel.Dispatcher.MultipleFilterMatchesException?displayProperty=fullName> is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSystemEndpoint">
+      <MemberSignature Language="C#" Value="public bool IsSystemEndpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemEndpoint" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.EndpointDispatcher.IsSystemEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the endpoint is created internally by the server and not by the user.</summary>
+        <value>
+          <see langword="true" /> if the endpoint was generated by the system; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

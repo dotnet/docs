@@ -1,0 +1,280 @@
+﻿<Window x:Class="ScrollBarStyleExample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ScrollBarStyleExample"
+    >
+  <Window.Resources>
+    <!--<SnippetCustomScrollBarTemplate>-->
+    <!-- GRADIENTS -->
+    <LinearGradientBrush x:Key="ButtonGradient" 
+                         StartPoint="0,0" EndPoint="0,1">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Color="#FDB6CADF" Offset="0" />
+        <GradientStop Color="#FCC3C5FF" Offset="0.1" />
+        <GradientStop Color="#FCC4D0EF" Offset="0.3" />
+        <GradientStop Color="#FDB7C2DF" Offset="0.6" />
+        <GradientStop Color="#FE95B3CF" Offset="0.8" />
+        <GradientStop Color="#FE96AACF" Offset="1" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="VerticalScrollGradient" 
+                         StartPoint="0,0" EndPoint="1,0">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Color="#FDB6CADF" Offset="0" />
+        <GradientStop Color="#FCC3C5FF" Offset="0.1" />
+        <GradientStop Color="#FCC4D0EF" Offset="0.3" />
+        <GradientStop Color="#FDB7C2DF" Offset="0.6" />
+        <GradientStop Color="#FE95B3CF" Offset="0.8" />
+        <GradientStop Color="#FE96AACF" Offset="1" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <!-- SCROLLBAR TEMPLATES -->
+    <Style x:Key="Scrollbar_LineButton" TargetType="{x:Type RepeatButton}">
+      <Setter Property="OverridesDefaultStyle" Value="true"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type RepeatButton}">
+            <Border 
+              BorderBrush="Transparent" 
+              BorderThickness="1" 
+              CornerRadius="6" 
+              Background="{DynamicResource ButtonGradient}">
+              <ContentPresenter x:Name="ContentSite" />
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+      <Setter Property="Height" Value="12" />
+      <Setter Property="Width" Value="12" />
+      <Setter Property="Foreground" Value="Gray" />
+      <Setter Property="FontSize" Value="6pt" />
+      <Setter Property="FontWeight" Value="Bold" />
+      <Setter Property="FontFamily" Value="Lucida Sans" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+      <Setter Property="HorizontalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="ScrollBar_TrackRepeater"  TargetType="{x:Type RepeatButton}">
+      <Setter Property="OverridesDefaultStyle" Value="true"/>
+      <Setter Property="IsTabStop" Value="false" />
+      <Setter Property="Focusable" Value="false" />
+      <Setter Property="Command" Value="ScrollBar.PageUpCommand" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type RepeatButton}">
+            <Rectangle Fill="Transparent" />
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <!--<SnippetPageUpCommand>-->
+    <Style x:Key="ScrollBar_UpTrack" 
+           BasedOn="{StaticResource ScrollBar_TrackRepeater}" 
+           TargetType="{x:Type RepeatButton}">
+      <Setter Property="Command" Value="ScrollBar.PageUpCommand" />
+    </Style>
+    <!--</SnippetPageUpCommand>-->
+    <!--<SnippetPageDownCommand>-->
+    <Style x:Key="ScrollBar_DownTrack" 
+           BasedOn="{StaticResource ScrollBar_TrackRepeater}" 
+           TargetType="{x:Type RepeatButton}">
+      <Setter Property="Command" Value="ScrollBar.PageDownCommand" />
+    </Style>
+    <!--</SnippetPageDownCommand>-->
+
+
+    <!--<SnippetPageLeftCommand>-->
+    <Style x:Key="ScrollBar_LeftTrack" 
+           BasedOn="{StaticResource ScrollBar_TrackRepeater}" 
+           TargetType="{x:Type RepeatButton}">
+      <Setter Property="Command" Value="ScrollBar.PageLeftCommand" />
+    </Style>
+    <!--</SnippetPageLeftCommand>-->
+
+    <!--<SnippetPageRightCommand>-->
+    <Style x:Key="ScrollBar_RightTrack" 
+           BasedOn="{StaticResource ScrollBar_TrackRepeater}" 
+           TargetType="{x:Type RepeatButton}">
+      <Setter Property="Command" Value="ScrollBar.PageRightCommand" />
+    </Style>
+    <!--</SnippetPageRightCommand>-->
+
+    <Style x:Key="ScrollBar_VerticalThumb" TargetType="{x:Type Thumb}">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Thumb}">
+            <Border CornerRadius="6" 
+              BorderBrush="Transparent"     
+              BorderThickness="0" 
+              Background="{DynamicResource VerticalScrollGradient}" />
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+      <Setter Property="MinHeight" Value="10" />
+      <Setter Property="MinWidth" Value="10" />
+    </Style>
+
+
+    <Style x:Key="ScrollBar_HorizontalThumb" TargetType="{x:Type Thumb}">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Thumb}">
+            <Border CornerRadius="6" 
+              BorderBrush="Transparent"     
+              BorderThickness="0" 
+              Background="{DynamicResource ButtonGradient}" />
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type ScrollBar}">
+      <Setter Property="Background" Value="Transparent" />
+      <Setter Property="MinWidth" Value="10" />
+      <!--Define a default vertical ScrollBar template with 
+          2 RepeatButtons and Track-->
+      <Setter Property="Template">
+        <Setter.Value>
+          <!--<SnippetTrackDefinition>-->
+          <ControlTemplate TargetType="{x:Type ScrollBar}">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="12"/>
+              </Grid.ColumnDefinitions>
+              <Grid.RowDefinitions>
+                <RowDefinition Height="12" />
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="12" />
+              </Grid.RowDefinitions>
+              <Border Grid.Row="1" BorderThickness="0" 
+                      Background="Transparent" CornerRadius="4"/>
+              <!--<SnippetLineUpCommand>-->
+              <RepeatButton Grid.Row="0" 
+                            Style="{DynamicResource Scrollbar_LineButton}" 
+                            Command="ScrollBar.LineUpCommand" Content=" ^" />
+              <!--</SnippetLineUpCommand>-->
+              
+              <!--IsDirectionReversed set to true draws a ScrollBar with a 
+                  Track whose lowest value is at the bottom.
+                  The default orientation of a ScrollBar is for the Track
+                  values to decrease from top to bottom.-->
+              <!--<SnippetRepeatButtonStyle>-->
+              <Track Grid.Row="1" Name="PART_Track"
+                     IsDirectionReversed="true">
+                <Track.DecreaseRepeatButton>
+                  <RepeatButton Style="{DynamicResource ScrollBar_UpTrack}"/>
+                </Track.DecreaseRepeatButton>
+                <Track.Thumb>
+                  <Thumb Style="{DynamicResource ScrollBar_HorizontalThumb}"/>
+                </Track.Thumb>
+                <Track.IncreaseRepeatButton>
+                  <RepeatButton Style="{DynamicResource ScrollBar_DownTrack}"/>
+                </Track.IncreaseRepeatButton>
+              </Track>
+              <!--</SnippetRepeatButtonStyle>-->
+              <!--<SnippetLineDownCommand>-->
+              <RepeatButton Grid.Row="2" 
+                            Style="{DynamicResource Scrollbar_LineButton}" 
+                            Command="ScrollBar.LineDownCommand" Content=" v" />
+              <!--</SnippetLineDownCommand>-->
+            </Grid>
+          </ControlTemplate>
+          <!--</SnippetTrackDefinition>-->
+        </Setter.Value>
+      </Setter>
+      <Style.Triggers>
+        <Trigger Property="Orientation" Value="Horizontal" >
+          <Setter Property="Background" Value="Transparent" />
+          <Setter Property="MinHeight" Value="10" />
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="{x:Type ScrollBar}">
+                <Grid>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="12"/>
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="12" />
+                  </Grid.ColumnDefinitions>
+                  <Border Grid.Column="1" BorderThickness="0" 
+                        Background="Transparent" CornerRadius="4"/>
+                  <!--<SnippetLineLeftCommand>-->
+                  <RepeatButton Grid.Column="0" 
+                                Style="{DynamicResource Scrollbar_LineButton}" 									
+                                Command="ScrollBar.LineLeftCommand" Content=" &lt;" />
+                  <!--</SnippetLineLeftCommand>-->
+                  <Track Grid.Column="1" Name="PART_Track">
+                    <Track.DecreaseRepeatButton>
+                      <RepeatButton Style="{DynamicResource ScrollBar_LeftTrack}"/>
+                    </Track.DecreaseRepeatButton>
+                    <Track.Thumb>
+                      <Thumb Style="{DynamicResource ScrollBar_HorizontalThumb}"/>
+                    </Track.Thumb>
+                    <Track.IncreaseRepeatButton>
+                      <RepeatButton Style="{DynamicResource ScrollBar_RightTrack}"/>
+                    </Track.IncreaseRepeatButton>
+                  </Track>
+                  <!--<SnippetLineRightCommand>-->
+                  <RepeatButton Grid.Column="2" 
+                                Style="{DynamicResource Scrollbar_LineButton}" 									
+                                Command="ScrollBar.LineRightCommand" Content=" &gt;" />
+                  <!--</SnippetLineRightCommand>-->
+                </Grid>
+              </ControlTemplate>
+            </Setter.Value>
+          </Setter>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+
+    <!-- BUTTON TEMPLATE -->
+    <Style TargetType="{x:Type Button}">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Button}">
+            <Border x:Name="OuterBorder"
+              CornerRadius="3" 
+              Background="{DynamicResource ButtonGradient}">
+              <Border
+                x:Name="InnerBorder"
+                CornerRadius="3"
+                Background="VerticalGradient Transparent #33000000"
+                Padding="{TemplateBinding Padding}">
+                <ContentPresenter x:Name="ContentSite" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" />
+              </Border>
+            </Border>
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsPressed" Value="true">
+                <Setter TargetName="InnerBorder" Property="Background" 
+                        Value="VerticalGradient #10000000 #20000000" />
+              </Trigger>
+              <Trigger Property="IsEnabled" Value="false">
+                <Setter TargetName="InnerBorder" Property="Background" 
+                        Value="VerticalGradient #50302A90 #40201040"  />
+                <Setter Property="BorderBrush" Value="Silver"  />
+                <Setter Property="Foreground" Value="SlateGray"  />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+      <Setter Property="Height" Value="18" />
+      <Setter Property="Foreground" Value="MidnightBlue" />
+    </Style>
+    <!--</SnippetCustomScrollBarTemplate>-->
+
+  </Window.Resources>
+
+  <StackPanel>
+    <ScrollBar Width="2in" Orientation="Horizontal"/>
+    <ScrollBar Height="3in" Orientation="Vertical" />
+  </StackPanel>
+
+</Window>

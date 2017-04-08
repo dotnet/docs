@@ -1,0 +1,166 @@
+<Type Name="AspNetMemoryMonitor" FullName="System.Web.Hosting.AspNetMemoryMonitor">
+  <TypeSignature Language="C#" Value="public sealed class AspNetMemoryMonitor : IDisposable, IObservable&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;, IObservable&lt;System.Web.Hosting.RecycleLimitInfo&gt;, System.Web.Hosting.IApplicationMonitor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AspNetMemoryMonitor extends System.Object implements class System.IDisposable, class System.IObservable`1&lt;class System.Web.Hosting.LowPhysicalMemoryInfo&gt;, class System.IObservable`1&lt;class System.Web.Hosting.RecycleLimitInfo&gt;, class System.Web.Hosting.IApplicationMonitor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.AspNetMemoryMonitor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IObservable&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IObservable&lt;System.Web.Hosting.RecycleLimitInfo&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.Hosting.IApplicationMonitor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>ASP.NET default implementation of memory monitor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultLowPhysicalMemoryObserver">
+      <MemberSignature Language="C#" Value="public IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt; DefaultLowPhysicalMemoryObserver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IObserver`1&lt;class System.Web.Hosting.LowPhysicalMemoryInfo&gt; DefaultLowPhysicalMemoryObserver" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Hosting.AspNetMemoryMonitor.DefaultLowPhysicalMemoryObserver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default low-memory observer. Setting this property unsubscribes the 'default' observer that was there before. There can only be one 'default.' To provide additional observers, use the <see cref="Overload:System.Web.Hosting.AspNetMemoryMonitor.Subscribe" /> method.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRecycleLimitObserver">
+      <MemberSignature Language="C#" Value="public IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt; DefaultRecycleLimitObserver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IObserver`1&lt;class System.Web.Hosting.RecycleLimitInfo&gt; DefaultRecycleLimitObserver" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Hosting.AspNetMemoryMonitor.DefaultRecycleLimitObserver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default recycle limit observer. Setting this property unsubscribes the 'default' observer that was there before. There can only be one 'default.' To provide additional observers, use the <see cref="Overload:System.Web.Hosting.AspNetMemoryMonitor.Subscribe" /> method.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the memory monitor.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Start monitoring and firing notifications.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stop monitoring and firing notifications.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe">
+      <MemberSignature Language="C#" Value="public IDisposable Subscribe (IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt; observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Subscribe(class System.IObserver`1&lt;class System.Web.Hosting.LowPhysicalMemoryInfo&gt; observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Subscribe(System.IObserver{System.Web.Hosting.LowPhysicalMemoryInfo})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="System.IObserver&lt;System.Web.Hosting.LowPhysicalMemoryInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="observer">The low-memory observer to subscribe to.</param>
+        <summary>Subscribes a low-memory observer in addition to the default low-memory observer.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe">
+      <MemberSignature Language="C#" Value="public IDisposable Subscribe (IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt; observer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Subscribe(class System.IObserver`1&lt;class System.Web.Hosting.RecycleLimitInfo&gt; observer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.AspNetMemoryMonitor.Subscribe(System.IObserver{System.Web.Hosting.RecycleLimitInfo})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="System.IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="observer">The recycle limit observer to subscribe to.</param>
+        <summary>Subscribes a recycle limit observer in addition to the default recycle limit observer.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,100 @@
+<Type Name="ImageMapEventArgs" FullName="System.Web.UI.WebControls.ImageMapEventArgs">
+  <TypeSignature Language="C#" Value="public class ImageMapEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageMapEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ImageMapEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ImageMap.Click" /> event of an <see cref="T:System.Web.UI.WebControls.ImageMap" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageMap.Click> event is raised when a <xref:System.Web.UI.WebControls.HotSpot> object in an <xref:System.Web.UI.WebControls.ImageMap> control is clicked. To allow a <xref:System.Web.UI.WebControls.HotSpot> object to raise the <xref:System.Web.UI.WebControls.ImageMap.Click> event, you must first set either the <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property or the <xref:System.Web.UI.WebControls.HotSpot.HotSpotMode%2A?displayProperty=fullName> property to `HotSpotMode.PostBack`. To control the actions programmatically that are performed when a postback <xref:System.Web.UI.WebControls.HotSpot> is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event.  
+  
+ A <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property stores a string that is associated with the behavior of the <xref:System.Web.UI.WebControls.HotSpot> object when clicked. This string is passed in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> event data when the <xref:System.Web.UI.WebControls.HotSpot> is clicked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event. The <xref:System.Web.UI.WebControls.ImageMap> control contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.Click> event is handled by the `VoteMap_Clicked` event handler. The `VoteMap_Clicked` examines the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property, sent in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> data, to determine which <xref:System.Web.UI.WebControls.RectangleHotSpot> object is associated with the event. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageMapEventArgs (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageMapEventArgs.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.String" /> object assigned to the <see cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" /> property of the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object that was clicked.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ImageMapEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ImageMapEventArgs> class.  
+  
+ The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.ImageMapEventArgs> class.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.ImageMapEventArgs.PostBackValue%2A>|The string assigned to the `value` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostBackValue">
+      <MemberSignature Language="C#" Value="public string PostBackValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PostBackValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageMapEventArgs.PostBackValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.String" /> assigned to the <see cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" /> property of the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object that was clicked.</summary>
+        <value>The <see cref="T:System.String" /> assigned to the <see cref="P:System.Web.UI.WebControls.HotSpot.PostBackValue" /> property of the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object that was clicked.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to programmatically access the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property of the <xref:System.Web.UI.WebControls.HotSpot> object in an <xref:System.Web.UI.WebControls.ImageMap> control that was clicked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an event handler for the <xref:System.Web.UI.WebControls.ImageMap.Click> event. The <xref:System.Web.UI.WebControls.ImageMap> control contains two <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.HotSpotMode%2A?displayProperty=fullName> property is set to `HotSpotMode.PostBack`, which causes the page to post back to the server each time a user clicks one of the <xref:System.Web.UI.WebControls.RectangleHotSpot> objects. The <xref:System.Web.UI.WebControls.ImageMap.Click> event is handled by the `VoteMap_Clicked` event handler. The handler examines the <xref:System.Web.UI.WebControls.HotSpot.PostBackValue%2A> property, sent in the <xref:System.Web.UI.WebControls.ImageMapEventArgs> data to determine which <xref:System.Web.UI.WebControls.RectangleHotSpot> object is associated with the event. For this example to work correctly, you must supply your own image for the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property and update the path to the image appropriately so that the application can locate it.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageMapClass2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageMapClass2/CS/imagemapclass2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageMapClass2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageMapClass2/VB/imagemapclass2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

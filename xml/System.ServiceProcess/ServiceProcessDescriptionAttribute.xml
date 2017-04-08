@@ -1,0 +1,74 @@
+<Type Name="ServiceProcessDescriptionAttribute" FullName="System.ServiceProcess.ServiceProcessDescriptionAttribute">
+  <TypeSignature Language="C#" Value="public class ServiceProcessDescriptionAttribute : System.ComponentModel.DescriptionAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceProcessDescriptionAttribute extends System.ComponentModel.DescriptionAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceProcessDescriptionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.DescriptionAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.All)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies a description for a property or event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A visual designer can display the description when referencing the component member, such as in a Properties window. Access the <xref:System.ServiceProcess.ServiceProcessDescriptionAttribute.Description%2A> property to get or set the text associated with this attribute.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceProcessDescriptionAttribute (string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceProcessDescriptionAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="description">The application-defined description text.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceProcessDescriptionAttribute" /> class, using the specified description.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The description you specify in the <xref:System.ServiceProcess.ServiceProcessDescriptionAttribute.%23ctor%2A> constructor is displayed by a visual designer when you access the property, event, or extender to which the attribute applies.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public override string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceProcessDescriptionAttribute.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets description text associated with the service process.</summary>
+        <value>An application-defined description.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

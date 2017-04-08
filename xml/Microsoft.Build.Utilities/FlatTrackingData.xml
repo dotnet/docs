@@ -1,0 +1,627 @@
+<Type Name="FlatTrackingData" FullName="Microsoft.Build.Utilities.FlatTrackingData">
+  <TypeSignature Language="C#" Value="public class FlatTrackingData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlatTrackingData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.FlatTrackingData" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class is used to track file dependencies during a build.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlatTrackingData (Microsoft.Build.Framework.ITaskItem[] tlogFiles, bool skipMissingFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITaskItem[] tlogFiles, bool skipMissingFiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITaskItem[],System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tlogFiles" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="skipMissingFiles" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="tlogFiles">The .write. tlog files to interpret</param>
+        <param name="skipMissingFiles">Ignore files that do not exist on disk</param>
+        <summary>Constructor</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlatTrackingData (Microsoft.Build.Framework.ITaskItem[] tlogFiles, DateTime missingFileTimeUtc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITaskItem[] tlogFiles, valuetype System.DateTime missingFileTimeUtc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITaskItem[],System.DateTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tlogFiles" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="missingFileTimeUtc" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="tlogFiles">The .write. tlog files to interpret</param>
+        <param name="missingFileTimeUtc">The DateTime that should be recorded for missing file.</param>
+        <summary>Constructor</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlatTrackingData (Microsoft.Build.Framework.ITask ownerTask, Microsoft.Build.Framework.ITaskItem[] tlogFiles, bool skipMissingFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITask ownerTask, class Microsoft.Build.Framework.ITaskItem[] tlogFiles, bool skipMissingFiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ownerTask" Type="Microsoft.Build.Framework.ITask" />
+        <Parameter Name="tlogFiles" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="skipMissingFiles" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="ownerTask">The task that is using file tracker</param>
+        <param name="tlogFiles">The tlog files to interpret</param>
+        <param name="skipMissingFiles">Ignore files that do not exist on disk</param>
+        <summary>Constructor</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlatTrackingData (Microsoft.Build.Framework.ITask ownerTask, Microsoft.Build.Framework.ITaskItem[] tlogFiles, DateTime missingFileTimeUtc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITask ownerTask, class Microsoft.Build.Framework.ITaskItem[] tlogFiles, valuetype System.DateTime missingFileTimeUtc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],System.DateTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ownerTask" Type="Microsoft.Build.Framework.ITask" />
+        <Parameter Name="tlogFiles" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="missingFileTimeUtc" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="ownerTask">The task that is using file tracker</param>
+        <param name="tlogFiles">The tlog files to interpret</param>
+        <param name="missingFileTimeUtc">The DateTime that should be recorded for missing file.</param>
+        <summary>Constructor</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlatTrackingData (Microsoft.Build.Framework.ITaskItem[] tlogFiles, Microsoft.Build.Framework.ITaskItem[] tlogFilesToIgnore, DateTime missingFileTimeUtc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITaskItem[] tlogFiles, class Microsoft.Build.Framework.ITaskItem[] tlogFilesToIgnore, valuetype System.DateTime missingFileTimeUtc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],System.DateTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tlogFiles" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="tlogFilesToIgnore" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="missingFileTimeUtc" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="tlogFiles">The .write. tlog files to interpret</param>
+        <param name="tlogFilesToIgnore">The TLogs to ignore.</param>
+        <param name="missingFileTimeUtc">The DateTime that should be recorded for missing file.</param>
+        <summary>Constructor</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FlatTrackingData (Microsoft.Build.Framework.ITaskItem[] tlogFiles, Microsoft.Build.Framework.ITaskItem[] tlogFilesToIgnore, DateTime missingFileTimeUtc, string[] excludedInputPaths, System.Collections.Generic.IDictionary&lt;string,DateTime&gt; sharedLastWriteTimeUtcCache);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITaskItem[] tlogFiles, class Microsoft.Build.Framework.ITaskItem[] tlogFilesToIgnore, valuetype System.DateTime missingFileTimeUtc, string[] excludedInputPaths, class System.Collections.Generic.IDictionary`2&lt;string, valuetype System.DateTime&gt; sharedLastWriteTimeUtcCache) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.#ctor(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],System.DateTime,System.String[],System.Collections.Generic.IDictionary{System.String,System.DateTime})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tlogFiles" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="tlogFilesToIgnore" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="missingFileTimeUtc" Type="System.DateTime" />
+        <Parameter Name="excludedInputPaths" Type="System.String[]" />
+        <Parameter Name="sharedLastWriteTimeUtcCache" Type="System.Collections.Generic.IDictionary&lt;System.String,System.DateTime&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="tlogFiles">The .tlog files to interpret</param>
+        <param name="tlogFilesToIgnore">The .tlog files to ignore</param>
+        <param name="missingFileTimeUtc">The date and time that should be recorded for missing file.</param>
+        <param name="excludedInputPaths">The set of paths that contain files to be ignored, including any subdirectories.</param>
+        <param name="sharedLastWriteTimeUtcCache">Cache to be used which can be shared between multiple <c>FlatTrackingData</c> instances.</param>
+        <summary>Constructor</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DependencyTable">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,DateTime&gt; DependencyTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, valuetype System.DateTime&gt; DependencyTable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.DependencyTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the dependency table.</summary>
+        <value>Returns the dependency table.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileIsExcludedFromDependencyCheck">
+      <MemberSignature Language="C#" Value="public bool FileIsExcludedFromDependencyCheck (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FileIsExcludedFromDependencyCheck(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.FileIsExcludedFromDependencyCheck(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">Name of the file to test.</param>
+        <summary>Returns <see langword="true" /> if the specified file is excluded from tracked dependency checking.</summary>
+        <returns>
+          <see langword="true" /> if the file is excluded.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinalizeTLogs">
+      <MemberSignature Language="C#" Value="public static void FinalizeTLogs (bool trackedOperationsSucceeded, Microsoft.Build.Framework.ITaskItem[] readTLogNames, Microsoft.Build.Framework.ITaskItem[] writeTLogNames, Microsoft.Build.Framework.ITaskItem[] trackedFilesToRemoveFromTLogs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void FinalizeTLogs(bool trackedOperationsSucceeded, class Microsoft.Build.Framework.ITaskItem[] readTLogNames, class Microsoft.Build.Framework.ITaskItem[] writeTLogNames, class Microsoft.Build.Framework.ITaskItem[] trackedFilesToRemoveFromTLogs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.FinalizeTLogs(System.Boolean,Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="trackedOperationsSucceeded" Type="System.Boolean" />
+        <Parameter Name="readTLogNames" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="writeTLogNames" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="trackedFilesToRemoveFromTLogs" Type="Microsoft.Build.Framework.ITaskItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="trackedOperationsSucceeded">True indicates that tracked operations succeeded.</param>
+        <param name="readTLogNames">TLogs to be read.</param>
+        <param name="writeTLogNames">TLogs to be written.</param>
+        <param name="trackedFilesToRemoveFromTLogs">Tracked files to be removed from TLogs.</param>
+        <summary>Compact and finalize the Tlogs based on the success of the tracked execution.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once tracked operations have been completed then we need to compact / finalize the Tlogs based on the success of the tracked execution. If it fails, then we clean out the TLogs. If it succeeds then we clean temporary files from the TLogs and re-write them.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLastWriteTimeUtc">
+      <MemberSignature Language="C#" Value="public DateTime GetLastWriteTimeUtc (string file);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetLastWriteTimeUtc(string file) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.GetLastWriteTimeUtc(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="file" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="file">Name of the file</param>
+        <summary>Returns cached value for last write time of file. Updates the cache the first            time the file is checked.</summary>
+        <returns>the last write time of the file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUpToDate">
+      <MemberSignature Language="C#" Value="public static bool IsUpToDate (Microsoft.Build.Utilities.Task hostTask, Microsoft.Build.Utilities.UpToDateCheckType upToDateCheckType, Microsoft.Build.Framework.ITaskItem[] readTLogNames, Microsoft.Build.Framework.ITaskItem[] writeTLogNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUpToDate(class Microsoft.Build.Utilities.Task hostTask, valuetype Microsoft.Build.Utilities.UpToDateCheckType upToDateCheckType, class Microsoft.Build.Framework.ITaskItem[] readTLogNames, class Microsoft.Build.Framework.ITaskItem[] writeTLogNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.IsUpToDate(Microsoft.Build.Utilities.Task,Microsoft.Build.Utilities.UpToDateCheckType,Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hostTask" Type="Microsoft.Build.Utilities.Task" />
+        <Parameter Name="upToDateCheckType" Type="Microsoft.Build.Utilities.UpToDateCheckType" />
+        <Parameter Name="readTLogNames" Type="Microsoft.Build.Framework.ITaskItem[]" />
+        <Parameter Name="writeTLogNames" Type="Microsoft.Build.Framework.ITaskItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="hostTask">The host task.</param>
+        <param name="upToDateCheckType">UpToDateCheckType</param>
+        <param name="readTLogNames">The array of read tlogs</param>
+        <param name="writeTLogNames">The array of write tlogs</param>
+        <summary>Checks to see if the tracking data indicates that everything is up to date according to UpToDateCheckType.</summary>
+        <returns>Returns true if everything is up to date; false otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If things are not up to date, then the TLogs are compacted to remove all entries in preparation to re-track execution of work.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUpToDate">
+      <MemberSignature Language="C#" Value="public static bool IsUpToDate (Microsoft.Build.Utilities.TaskLoggingHelper Log, Microsoft.Build.Utilities.UpToDateCheckType upToDateCheckType, Microsoft.Build.Utilities.FlatTrackingData inputs, Microsoft.Build.Utilities.FlatTrackingData outputs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUpToDate(class Microsoft.Build.Utilities.TaskLoggingHelper Log, valuetype Microsoft.Build.Utilities.UpToDateCheckType upToDateCheckType, class Microsoft.Build.Utilities.FlatTrackingData inputs, class Microsoft.Build.Utilities.FlatTrackingData outputs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.IsUpToDate(Microsoft.Build.Utilities.TaskLoggingHelper,Microsoft.Build.Utilities.UpToDateCheckType,Microsoft.Build.Utilities.FlatTrackingData,Microsoft.Build.Utilities.FlatTrackingData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Log" Type="Microsoft.Build.Utilities.TaskLoggingHelper" />
+        <Parameter Name="upToDateCheckType" Type="Microsoft.Build.Utilities.UpToDateCheckType" />
+        <Parameter Name="inputs" Type="Microsoft.Build.Utilities.FlatTrackingData" />
+        <Parameter Name="outputs" Type="Microsoft.Build.Utilities.FlatTrackingData" />
+      </Parameters>
+      <Docs>
+        <param name="Log">TaskLoggingHelper from the host task</param>
+        <param name="upToDateCheckType">UpToDateCheckType to use</param>
+        <param name="inputs">FlatTrackingData structure containing the inputs</param>
+        <param name="outputs">FlatTrackingData structure containing the outputs</param>
+        <summary>Simple check of up to date state according to the tracking data and the UpToDateCheckType.</summary>
+        <returns>Returns true if everything is up to date; false otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No tracking log compaction will take place when using this overload  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MissingFiles">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; MissingFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; MissingFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.MissingFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets missing files that have been detected in the TLog</summary>
+        <value>Returns missing files that have been detected in the TLog</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewestFileName">
+      <MemberSignature Language="C#" Value="public string NewestFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewestFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path for the newest file we have seen.</summary>
+        <value>Returns the path for the newest file we have seen.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewestFileTime">
+      <MemberSignature Language="C#" Value="public DateTime NewestFileTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime NewestFileTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestFileTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time for the newest file we have seen</summary>
+        <value>Returns the time for the newest file we have seen.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewestFileTimeUtc">
+      <MemberSignature Language="C#" Value="public DateTime NewestFileTimeUtc { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime NewestFileTimeUtc" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestFileTimeUtc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the UTC time for the newest file we have seen.</summary>
+        <value>Returns the UTC time for the newest file we have seen.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewestTLogFileName">
+      <MemberSignature Language="C#" Value="public string NewestTLogFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewestTLogFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestTLogFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the newest TLog file.</summary>
+        <value>Returns the path of the newest TLog file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewestTLogTime">
+      <MemberSignature Language="C#" Value="public DateTime NewestTLogTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime NewestTLogTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestTLogTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time of the newest Tlog.</summary>
+        <value>Returns the time of the newest Tlog.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewestTLogTimeUtc">
+      <MemberSignature Language="C#" Value="public DateTime NewestTLogTimeUtc { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime NewestTLogTimeUtc" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.NewestTLogTimeUtc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the UTC time of the newest Tlog.</summary>
+        <value>Returns the time of the newest Tlog.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldestFileName">
+      <MemberSignature Language="C#" Value="public string OldestFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OldestFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.OldestFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path for the oldest file we have seen.</summary>
+        <value>Returns the path for the oldest file we have seen.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldestFileTime">
+      <MemberSignature Language="C#" Value="public DateTime OldestFileTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime OldestFileTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.OldestFileTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time for the oldest file we have seen.</summary>
+        <value>Returns the time for the oldest file we have seen.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldestFileTimeUtc">
+      <MemberSignature Language="C#" Value="public DateTime OldestFileTimeUtc { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime OldestFileTimeUtc" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.OldestFileTimeUtc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the UTC time for the oldest file we have seen.</summary>
+        <value>Returns the UTC time for the oldest file we have seen.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveTlog">
+      <MemberSignature Language="C#" Value="public void SaveTlog ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveTlog() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.SaveTlog" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This method will re-write the tlogs from the output table.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveTlog">
+      <MemberSignature Language="C#" Value="public void SaveTlog (Microsoft.Build.Utilities.DependencyFilter includeInTLog);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveTlog(class Microsoft.Build.Utilities.DependencyFilter includeInTLog) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.SaveTlog(Microsoft.Build.Utilities.DependencyFilter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeInTLog" Type="Microsoft.Build.Utilities.DependencyFilter" />
+      </Parameters>
+      <Docs>
+        <param name="includeInTLog">The dependency filter.</param>
+        <summary>This method will re-write the tlogs from the current table</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipMissingFiles">
+      <MemberSignature Language="C#" Value="public bool SkipMissingFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SkipMissingFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.SkipMissingFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a switch that specifies whether files in the TLog, but which no longer exist, be skipped or recorded.</summary>
+        <value>Returns the switch that specifies whether files in the TLog, but which no longer exist, be skipped or recorded.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TlogFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] TlogFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] TlogFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.TlogFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the TLog files that back this structure.</summary>
+        <value>Returns the TLog files that back this structure.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TlogsAvailable">
+      <MemberSignature Language="C#" Value="public bool TlogsAvailable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TlogsAvailable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.TlogsAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a switch that specifies whether all the TLogs that were passed to us are available on disk.</summary>
+        <value>Returns a switch that specifies whether all the TLogs that were passed to us are available on disk.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TreatRootMarkersAsEntries">
+      <MemberSignature Language="C#" Value="public bool TreatRootMarkersAsEntries { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TreatRootMarkersAsEntries" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.FlatTrackingData.TreatRootMarkersAsEntries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a switch that specifies whether root markers in the TLog be treated as file accesses, or only as markers.</summary>
+        <value>Returns a switch that specifies whether root markers in the TLog be treated as file accesses, or only as markers.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFileEntryDetails">
+      <MemberSignature Language="C#" Value="public void UpdateFileEntryDetails ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateFileEntryDetails() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.FlatTrackingData.UpdateFileEntryDetails" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Update the current state of entry details for the dependency table</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

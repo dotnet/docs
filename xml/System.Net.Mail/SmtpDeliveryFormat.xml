@@ -1,0 +1,69 @@
+<Type Name="SmtpDeliveryFormat" FullName="System.Net.Mail.SmtpDeliveryFormat">
+  <TypeSignature Language="C#" Value="public enum SmtpDeliveryFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SmtpDeliveryFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpDeliveryFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The delivery format to use for sending outgoing e-mail using the Simple Mail Transport Protocol (SMTP).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="International">
+      <MemberSignature Language="C#" Value="International" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpDeliveryFormat International = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryFormat.International" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.SmtpDeliveryFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A delivery format where non-ASCII characters in the envelope and header fields used in the Simple Mail Transport Protocol (SMTP) for mail messages are encoded with UTF-8 characters.  
+  
+ The extensions to support international e-mail are defined in IETF RFC 6530, 6531, and 6532.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SevenBit">
+      <MemberSignature Language="C#" Value="SevenBit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpDeliveryFormat SevenBit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryFormat.SevenBit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.SmtpDeliveryFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A delivery format using 7-bit ASCII.  
+  
+ The traditional delivery format used in the Simple Mail Transport Protocol (SMTP) for mail messages.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

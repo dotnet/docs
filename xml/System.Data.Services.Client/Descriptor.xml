@@ -1,0 +1,39 @@
+<Type Name="Descriptor" FullName="System.Data.Services.Client.Descriptor">
+  <TypeSignature Language="C#" Value="public abstract class Descriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Descriptor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.Descriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Abstract class from which <see cref="T:System.Data.Services.Client.EntityDescriptor" /> is derived.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Client.EntityStates State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Client.EntityStates State" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.Descriptor.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the state of the object at the time this instance was constructed.</summary>
+        <value>An <see cref="T:System.Data.Services.Client.EntityStates" /> of the object returned at the time this instance was constructed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

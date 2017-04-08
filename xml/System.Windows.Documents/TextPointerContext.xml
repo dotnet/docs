@@ -1,0 +1,106 @@
+<Type Name="TextPointerContext" FullName="System.Windows.Documents.TextPointerContext">
+  <TypeSignature Language="C#" Value="public enum TextPointerContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextPointerContext extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextPointerContext" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines the category of content that is adjacent to a <see cref="T:System.Windows.Documents.TextPointer" /> in a specified <see cref="T:System.Windows.Documents.LogicalDirection" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[TextPointer_Snippets#_TextPointer_GetNextContextPosition](~/samples/snippets/csharp/VS_Snippets_Wpf/TextPointer_Snippets/CSharp/Window1.xaml.cs#_textpointer_getnextcontextposition)]
+ [!code-vb[TextPointer_Snippets#_TextPointer_GetNextContextPosition](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextPointer_Snippets/visualbasic/window1.xaml.vb#_textpointer_getnextcontextposition)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ElementEnd">
+      <MemberSignature Language="C#" Value="ElementEnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext ElementEnd = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.ElementEnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to the closing tag of a <see cref="T:System.Windows.Documents.TextElement" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementStart">
+      <MemberSignature Language="C#" Value="ElementStart" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext ElementStart = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.ElementStart" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to the opening tag of a <see cref="T:System.Windows.Documents.TextElement" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EmbeddedElement">
+      <MemberSignature Language="C#" Value="EmbeddedElement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext EmbeddedElement = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.EmbeddedElement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to an embedded <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to the beginning or end of content.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext Text = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to text.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

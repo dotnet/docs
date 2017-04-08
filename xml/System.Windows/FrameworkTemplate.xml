@@ -1,0 +1,471 @@
+<Type Name="FrameworkTemplate" FullName="System.Windows.FrameworkTemplate">
+  <TypeSignature Language="C#" Value="public abstract class FrameworkTemplate : System.Windows.Threading.DispatcherObject, System.Windows.Markup.INameScope, System.Windows.Markup.IQueryAmbient" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FrameworkTemplate extends System.Windows.Threading.DispatcherObject implements class System.Windows.Markup.INameScope, class System.Windows.Markup.IQueryAmbient" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkTemplate" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.INameScope</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IQueryAmbient</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("VisualTree")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables the instantiation of a tree of <see cref="T:System.Windows.FrameworkElement" /> and/or <see cref="T:System.Windows.FrameworkContentElement" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FrameworkTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkTemplate" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindName">
+      <MemberSignature Language="C#" Value="public object FindName (string name, System.Windows.FrameworkElement templatedParent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object FindName(string name, class System.Windows.FrameworkElement templatedParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.FindName(System.String,System.Windows.FrameworkElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="templatedParent" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="name">The string name.</param>
+        <param name="templatedParent">The context of the <see cref="T:System.Windows.FrameworkElement" /> where this template is applied.</param>
+        <summary>Finds the element associated with the specified name defined within this template.</summary>
+        <returns>The element associated with the specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasContent">
+      <MemberSignature Language="C#" Value="public bool HasContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasContent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.HasContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this template has optimized content.</summary>
+        <value>
+          <see langword="true" /> if this template has optimized content; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSealed">
+      <MemberSignature Language="C#" Value="public bool IsSealed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSealed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.IsSealed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this object is in an immutable state so it cannot be changed.</summary>
+        <value>
+          <see langword="true " />if this object is in an immutable state; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadContent">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject LoadContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.DependencyObject LoadContent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.LoadContent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Loads the content of the template as an instance of an object and returns the root element of the content.</summary>
+        <returns>The root element of the content. Calling this multiple times returns separate instances.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterName">
+      <MemberSignature Language="C#" Value="public void RegisterName (string name, object scopedElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterName(string name, object scopedElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.RegisterName(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="scopedElement" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name to register.</param>
+        <param name="scopedElement">The object to be mapped to the provided name.</param>
+        <summary>Registers a new name/object pair into the current name scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resources">
+      <MemberSignature Language="C#" Value="public System.Windows.ResourceDictionary Resources { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.ResourceDictionary Resources" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.Resources" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.Ambient</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.ResourceDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of resources that can be used within the scope of this template.</summary>
+        <value>The resources that can be used within the scope of this template.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlPropertyElementUsage_Resources"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.Resources>  
+    oneOrMoreResourceElements  
+  </object.Resources>  
+</object>  
+- or -   
+<object>  
+  <object.Resources>  
+    <ResourceDictionary Source="externalDictionarySource"/>  
+  </object.Resources>  
+</object>  
+```  
+  
+<a name="xamlValues_Resources"></a>   
+## XAML Values  
+ *oneOrMoreResourceElements*  
+ One or more resource elements. To be referenced later in either [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) or [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) syntax in XAML, a resource element MUST have an `x:Key` attribute.  
+  
+ \<ResourceDictionary Source="*externalDictionarySource*"/>  
+ An external file that defines a <xref:System.Windows.ResourceDictionary>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Seal">
+      <MemberSignature Language="C#" Value="public void Seal ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Seal() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.Seal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Locks the template so it cannot be changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeResources">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeResources (System.Windows.Markup.XamlDesignerSerializationManager manager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeResources(class System.Windows.Markup.XamlDesignerSerializationManager manager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.ShouldSerializeResources(System.Windows.Markup.XamlDesignerSerializationManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manager" Type="System.Windows.Markup.XamlDesignerSerializationManager" />
+      </Parameters>
+      <Docs>
+        <param name="manager">The <see cref="T:System.Windows.Markup.XamlDesignerSerializationManager" />.</param>
+        <summary>Returns a value that indicates whether serialization processes should serialize the value of the <see cref="P:System.Windows.FrameworkTemplate.Resources" /> property on instances of this class.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.FrameworkTemplate.Resources" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeVisualTree">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeVisualTree ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeVisualTree() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.ShouldSerializeVisualTree" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether serialization processes should serialize the value of the <see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> property on instances of this class.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.INameScope.FindName">
+      <MemberSignature Language="C#" Value="object INameScope.FindName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Windows.Markup.INameScope.FindName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.System#Windows#Markup#INameScope#FindName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name identifier for the object being requested.</param>
+        <summary>Returns an object that has the provided identifying name.</summary>
+        <returns>The object, if found. Returns <see langword="null" /> if no object of that name was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.FrameworkTemplate> instance is cast to an <xref:System.Windows.Markup.INameScope> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable">
+      <MemberSignature Language="C#" Value="bool IQueryAmbient.IsAmbientPropertyAvailable (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.System#Windows#Markup#IQueryAmbient#IsAmbientPropertyAvailable(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the requested ambient property.</param>
+        <summary>Queries whether a specified ambient property is available in the current scope.</summary>
+        <returns>
+          <see langword="true" /> if the requested ambient property is available; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Template">
+      <MemberSignature Language="C#" Value="public System.Windows.TemplateContent Template { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TemplateContent Template" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.Template" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.Ambient</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.TemplateContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to the object that records or plays the XAML nodes for the template when the template is defined or applied by a writer.</summary>
+        <value>A reference to the object that records or plays the XAML nodes for the template.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterName">
+      <MemberSignature Language="C#" Value="public void UnregisterName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.UnregisterName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the mapping to remove.</param>
+        <summary>Removes a name/object mapping from the XAML namescope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see "XAML Namescopes in Styles and Templates" in [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateTemplatedParent">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateTemplatedParent (System.Windows.FrameworkElement templatedParent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateTemplatedParent(class System.Windows.FrameworkElement templatedParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templatedParent" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="templatedParent">The element this template is applied to.</param>
+        <summary>When overridden in a derived class, supplies rules for the element this template is applied to.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base implementation specifies that the templated parent must be a non-null <xref:System.Windows.FrameworkElement>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualTree">
+      <MemberSignature Language="C#" Value="public System.Windows.FrameworkElementFactory VisualTree { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.FrameworkElementFactory VisualTree" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkTemplate.VisualTree" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FrameworkElementFactory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root node of the template.</summary>
+        <value>The root node of the template.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlPropertyElementUsage_VisualTree"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <VisualTreeRootNode > VisualTreeNodeContents  
+  </VisualTreeRootNode >  
+</object>  
+```  
+  
+<a name="xamlValues_VisualTree"></a>   
+## XAML Values  
+ *VisualTreeRootNode*  
+ A single XAML element as the immediate child of the <xref:System.Windows.FrameworkTemplate> subclass. Templates must have a single root node. In order to generate a useful template, the element chosen as *VisualTreeRootNode* is expected to support a content model of its own, often a model that supports multiple child elements.  
+  
+ *VisualTreeNodeContents*  
+ One or more elements that complete the intended template. If the element chosen as *VisualTreeRootNode* only supports a single child, then there can only be one element declared as *VisualTreeNodeContents*. It is also possible (though uncommon) to provide text content if the chosen *VisualTreeRootNode* supports a text content property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

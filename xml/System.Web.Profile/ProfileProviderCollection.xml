@@ -1,0 +1,119 @@
+<Type Name="ProfileProviderCollection" FullName="System.Web.Profile.ProfileProviderCollection">
+  <TypeSignature Language="C#" Value="public sealed class ProfileProviderCollection : System.Configuration.SettingsProviderCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileProviderCollection extends System.Configuration.SettingsProviderCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileProviderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.SettingsProviderCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A collection of objects that inherit the <see cref="T:System.Web.Profile.ProfileProvider" /> abstract class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class. You can access a specific profile provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Profile.SqlProfileProvider>. This enables you to manage user profile properties from multiple data stores in a single application. It also allows you to access members of a specific profile provider that are not members of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
+  
+   
+  
+## Examples  
+ The following code example lists the providers enabled for an application and their respective types.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.ProfileManager#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/CS/Providerscs.aspx#9)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.ProfileManager#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager/VB/Providersvb.aspx#9)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileProviderCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProviderCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new, empty profile provider collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not intended to be used from your code. The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override void Add (System.Configuration.Provider.ProviderBase provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Configuration.Provider.ProviderBase" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The profile provider to add to the collection.</param>
+        <summary>Adds a profile provider to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be used from your code.  
+  
+ Profile provider instances are added to the `ProfileProviderCollection` for an application using the [providers Element for profile (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/9e998377-b07f-44c1-ad9b-20a60e83c18f) section of the  configuration element. You can access the profile provider collection using the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="provider" /> is not of a type that inherits the <see cref="T:System.Web.Profile.ProfileProvider" /> abstract class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Profile.ProfileProvider this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Profile.ProfileProvider Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileProviderCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Profile.ProfileProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the profile provider.</param>
+        <summary>Returns the profile provider referenced by the specified provider name.</summary>
+        <value>An object that inherits the <see cref="T:System.Web.Profile.ProfileProvider" /> abstract class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The profile providers for an application are exposed as a read-only <xref:System.Web.Profile.ProfileProviderCollection> through the <xref:System.Web.Profile.ProfileManager.Providers%2A> property of the <xref:System.Web.Profile.ProfileManager> class. You can access a specific profile provider in the collection by name and cast it as the specific provider type, such as <xref:System.Web.Profile.SqlProfileProvider>. This enables you to manage user profile properties from multiple data stores in a single application. It also allows you to access members of a specific profile provider that are not members of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

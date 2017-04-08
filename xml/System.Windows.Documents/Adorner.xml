@@ -1,0 +1,202 @@
+<Type Name="Adorner" FullName="System.Windows.Documents.Adorner">
+  <TypeSignature Language="C#" Value="public abstract class Adorner : System.Windows.FrameworkElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Adorner extends System.Windows.FrameworkElement" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Adorner" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.FrameworkElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Abstract class that represents a <see cref="T:System.Windows.FrameworkElement" /> that decorates a <see cref="T:System.Windows.UIElement" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An adorner is a custom <xref:System.Windows.FrameworkElement> that is bound to a <xref:System.Windows.UIElement>. Adorners are rendered in an adorner layer, which is a rendering surface that is always on top of the adorned element or a collection of adorned elements; rendering of an adorner is independent from rendering of the <xref:System.Windows.UIElement> that the adorner is bound to. An adorner is typically positioned relative to the element to which it is bound, using the standard 2-D coordinate origin located at the upper-left of the adorned element.  
+  
+> [!NOTE]
+>  The parent of an <xref:System.Windows.Documents.Adorner> is the <xref:System.Windows.Documents.AdornerLayer> that renders the <xref:System.Windows.Documents.Adorner>, not the element being adorned.  
+  
+> [!NOTE]
+>  Anything placed in the adorner layer is rendered on top of the rest of any styles you have set. In other words, adorners are always visually on top and cannot be overridden using z-order.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Adorner (System.Windows.UIElement adornedElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement adornedElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Adorner.#ctor(System.Windows.UIElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="adornedElement" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="adornedElement">The element to bind the adorner to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Adorner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When implementing a class that inherits from <xref:System.Windows.Documents.Adorner>, ensure that the inheriting class's constructor calls the base class constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">*adornedElement* is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AdornedElement">
+      <MemberSignature Language="C#" Value="public System.Windows.UIElement AdornedElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement AdornedElement" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Adorner.AdornedElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.UIElement" /> that this adorner is bound to.</summary>
+        <value>The element that this adorner is bound to. The default value is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesiredTransform">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Media.GeneralTransform GetDesiredTransform (System.Windows.Media.GeneralTransform transform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.GeneralTransform GetDesiredTransform(class System.Windows.Media.GeneralTransform transform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Adorner.GetDesiredTransform(System.Windows.Media.GeneralTransform)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeneralTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transform" Type="System.Windows.Media.GeneralTransform" />
+      </Parameters>
+      <Docs>
+        <param name="transform">The transform that is currently applied to the adorned element.</param>
+        <summary>Returns a <see cref="T:System.Windows.Media.Transform" /> for the adorner, based on the transform that is currently applied to the adorned element.</summary>
+        <returns>A transform to apply to the adorner.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An adorner may need to be transformed differently than the element it decorates. For instance, adorners which act like points, such as resize handles, should be translated and rotated along with the adorned element, but not scaled. By contrast, an adorner that displays a marquee on an element might require the same transform as the adorned element.  
+  
+ This method is called by the associated <xref:System.Windows.Documents.AdornerLayer> to provide an opportunity to filter unwanted or unneeded transforms. Implementations of this method should examine the incoming transform (which is the transform for the adorned element) and remove aspects that are not useful or should not be applied to the adorner itself. This method can also be used to add additional transform details at this time, for instance adding a translation that enables the adorner to control its position relative to the adorned element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutClip">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry GetLayoutClip (System.Windows.Size layoutSlotSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Geometry GetLayoutClip(valuetype System.Windows.Size layoutSlotSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Adorner.GetLayoutClip(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="layoutSlotSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="layoutSlotSize">The available size provided by the element.</param>
+        <summary>For a description of this member, see <see cref="M:System.Windows.UIElement.GetLayoutClip(System.Windows.Size)" />.</summary>
+        <returns>The potential clipping geometry. See Remarks.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation always returns `null`.  
+  
+ This method overrides <xref:System.Windows.FrameworkElement.GetLayoutClip%2A>.  
+  
+ To ensure that adorners are always rendered topmost, clipping constraints are ignored unless <xref:System.Windows.Documents.Adorner.IsClipEnabled%2A> is `true`. This enables an adorner to render outside of the adorned element's bounding rectangle.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClipEnabled">
+      <MemberSignature Language="C#" Value="public bool IsClipEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClipEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Adorner.IsClipEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether clipping of the adorner is enabled.</summary>
+        <value>A <see langword="Boolean" /> value indicating whether clipping of the adorner is enabled.  
+  
+ If this property is <see langword="false" />, the adorner is not clipped.  
+  
+ If this property is <see langword="true" />, the adorner is clipped using the same clipping geometry as the adorned element.  
+  
+ The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enabling clipping an adorner incurs a substantial performance cost. In general, clipping of the adorner should be disabled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Adorner.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">A size to constrain the adorner to.</param>
+        <summary>Implements any custom measuring behavior for the adorner.</summary>
+        <returns>A <see cref="T:System.Windows.Size" /> object representing the amount of layout space needed by the adorner.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, an adorner will size to match the adorned element.  
+  
+ This method overrides <xref:System.Windows.FrameworkElement.MeasureOverride%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

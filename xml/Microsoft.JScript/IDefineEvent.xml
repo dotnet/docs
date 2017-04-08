@@ -1,0 +1,48 @@
+<Type Name="IDefineEvent" FullName="Microsoft.JScript.IDefineEvent">
+  <TypeSignature Language="C#" Value="public interface IDefineEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDefineEvent" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IDefineEvent" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("D1A19408-BB6B-43eb-BB6F-E7CF6AF047D7")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines extra functionality that is needed by an active script host.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddEvent">
+      <MemberSignature Language="C#" Value="public object AddEvent (string code, int startLine);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddEvent(string code, int32 startLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IDefineEvent.AddEvent(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="startLine" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="code">The code that contains the event.</param>
+        <param name="startLine">The line number where the code starts.</param>
+        <summary>Used by an active script host to define an event.</summary>
+        <returns>The event, if it was successfully added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

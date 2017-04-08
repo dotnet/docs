@@ -1,0 +1,408 @@
+<Type Name="IDataParameter" FullName="System.Data.IDataParameter">
+  <TypeSignature Language="C#" Value="public interface IDataParameter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataParameter" />
+  <TypeSignature Language="DocId" Value="T:System.Data.IDataParameter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a parameter to a Command object, and optionally, its mapping to <see cref="T:System.Data.DataSet" /> columns; and is implemented by .NET Framework data providers that access data sources.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.IDataParameter> interface allows an inheriting class to implement a Parameter class, which represents a parameter to a Command object. For more information about Parameter classes, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
+  
+ An application does not create an instance of the <xref:System.Data.IDataParameter> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDataParameter>.  
+  
+ Classes that inherit <xref:System.Data.IDataParameter> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.IDataParameter> interface defines the <xref:System.Data.IDataParameter.DbType%2A> property. In turn, the <xref:System.Data.OleDb.OleDbParameter> class inherits this property, and also defines the <xref:System.Data.OleDb.OleDbParameter.OleDbType%2A> property.  
+  
+   
+  
+## Examples  
+ The following example creates multiple instances of the derived class, <xref:System.Data.SqlClient.SqlParameter>, through the <xref:System.Data.SqlClient.SqlParameterCollection> collection within the <xref:System.Data.SqlClient.SqlDataAdapter>. These parameters are used to select data from the data source and place the data in the <xref:System.Data.DataSet>. This example assumes that a <xref:System.Data.DataSet> and a <xref:System.Data.SqlClient.SqlDataAdapter> have already been created with the appropriate schema, commands, and connection.  
+  
+ [!code-csharp[Classic WebData SqlParameter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlParameter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>To promote consistency among .NET Framework data providers, name the inheriting class in the form <paramref name="Prv" /> Parameter where <paramref name="Prv" /> is the uniform prefix given to all classes in a specific .NET Framework data provider namespace. For example, <paramref name="Sql" /> is the prefix of the <see cref="T:System.Data.SqlClient.SqlCommand" /> class in the <see langword="System.Data.SqlClient" /> namespace.  
+  
+ When you inherit from the <see cref="T:System.Data.IDataParameter" /> interface, you should implement the following constructors:  
+  
+ <list type="table">  
+<listheader>  
+<term> Item  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> PrvParameter()  
+  
+ </term>  
+<description> Initializes a new instance of the Parameter class.  
+  
+ </description>  
+</item>  
+<item>  
+<term> PrvParameter(string name, PrvDbType dataType)  
+  
+ </term>  
+<description> Initializes a new instance of the Parameter class with the parameter name and data type.  
+  
+ </description>  
+</item>  
+<item>  
+<term> PrvParameter(string name, object value)  
+  
+ </term>  
+<description> Initializes a new instance of the Parameter class with the parameter name and an object that is the value of the Parameter.  
+  
+ </description>  
+</item>  
+<item>  
+<term> PrvParameter(string name, PrvDbType dataType, int size)  
+  
+ </term>  
+<description> Initializes a new instance of the Parameter class with the parameter name, data type, and width.  
+  
+ </description>  
+</item>  
+<item>  
+<term> PrvParameter(string name, PrvDbType dataType, int size, string srcColumn)  
+  
+ </term>  
+<description> Initializes a new instance of the DbParameter class with the parameter name, data type, width, and source column name.  
+  
+ </description>  
+</item>  
+<item>  
+<term> PrvParameter(string parameterName, PrvDbType dbType, int size, ParameterDirection direction, Boolean isNullable, Byte precision, Byte scale, string srcColumn, DataRowVersion srcVersion, object value)  
+  
+ </term>  
+<description> Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class with the parameter name, data type, width, source column name, parameter direction, numeric precision, and other properties.  
+  
+ </description>  
+</item>  
+</list></para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="DbType">
+      <MemberSignature Language="C#" Value="public System.Data.DbType DbType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DbType DbType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.DbType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DbType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.DbType" /> of the parameter.</summary>
+        <value>One of the <see cref="T:System.Data.DbType" /> values. The default is <see cref="F:System.Data.DbType.String" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The PrvDbType (where Prv represents the provider-specific prefix) and <xref:System.Data.SqlClient.SqlParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> changes the PrvDbType to a supporting PrvDbType.  
+  
+ For a list of the supported data types, see the appropriate .NET Framework data provider PrvDbType member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property was not set to a valid <see cref="T:System.Data.DbType" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public System.Data.ParameterDirection Direction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ParameterDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.ParameterDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the parameter is input-only, output-only, bidirectional, or a stored procedure return value parameter.</summary>
+        <value>One of the <see cref="T:System.Data.ParameterDirection" /> values. The default is <see langword="Input" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Data.ParameterDirection> is output, and execution of the associated <xref:System.Data.SqlClient.SqlCommand> does not return a value, the <xref:System.Data.IDataParameter> contains a null value.  
+  
+ After the last row from the last resultset is read, `Output`, `InputOut`, and `ReturnValue` parameters are updated.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData SqlParameter.Direction Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Direction Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlParameter.Direction Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Direction Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property was not set to one of the valid <see cref="T:System.Data.ParameterDirection" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullable">
+      <MemberSignature Language="C#" Value="public bool IsNullable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.IsNullable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the parameter accepts null values.</summary>
+        <value>
+          <see langword="true" /> if null values are accepted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Null values are handled using the <xref:System.DBNull> class.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData SqlParameter.IsNullable Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.IsNullable Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlParameter.IsNullable Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.IsNullable Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterName">
+      <MemberSignature Language="C#" Value="public string ParameterName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.ParameterName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Data.IDataParameter" />.</summary>
+        <value>The name of the <see cref="T:System.Data.IDataParameter" />. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.IDataParameter.ParameterName%2A> is specified in the form @paramname. You must set <xref:System.Data.IDataParameter.ParameterName%2A> before executing a command that relies on parameters.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData SqlParameter.ParameterName Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.ParameterName Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlParameter.ParameterName Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.ParameterName Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceColumn">
+      <MemberSignature Language="C#" Value="public string SourceColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.SourceColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the source column that is mapped to the <see cref="T:System.Data.DataSet" /> and used for loading or returning the <see cref="P:System.Data.IDataParameter.Value" />.</summary>
+        <value>The name of the source column that is mapped to the <see cref="T:System.Data.DataSet" />. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The link betwen the value of the <xref:System.Data.IDataParameter> and the <xref:System.Data.DataTable> may be bidirectional depending on the value of the <xref:System.Data.IDataParameter.Direction%2A> property.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData SqlParameter.SourceColumn Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceColumn Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlParameter.SourceColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceColumn Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceVersion">
+      <MemberSignature Language="C#" Value="public System.Data.DataRowVersion SourceVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowVersion SourceVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.SourceVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.DataRowVersion" /> to use when loading <see cref="P:System.Data.IDataParameter.Value" />.</summary>
+        <value>One of the <see cref="T:System.Data.DataRowVersion" /> values. The default is <see langword="Current" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used by the <xref:System.Data.IDbDataAdapter.UpdateCommand%2A> during the <xref:System.Data.Common.DbDataAdapter.Update%2A> to determine whether the original or current value is used for a parameter value. This allows primary keys to be updated. This property is ignored by the <xref:System.Data.IDbDataAdapter.InsertCommand%2A> and <xref:System.Data.IDbDataAdapter.DeleteCommand%2A>. This property is set to the version of the <xref:System.Data.DataRow> used by the <xref:System.Data.DataRow.Item%2A> property, or the <xref:System.Data.DataRow.GetChildRows%2A> method of the <xref:System.Data.DataRow> object.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData SqlParameter.SourceVersion Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceVersion Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlParameter.SourceVersion Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.SourceVersion Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The property was not set one of the <see cref="T:System.Data.DataRowVersion" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Data.IDataParameter.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the parameter.</summary>
+        <value>An <see cref="T:System.Object" /> that is the value of the parameter. The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For input parameters, the value is bound to the <xref:System.Data.IDbCommand> that is sent to the server. For output and return value parameters, the value is set on completion of the <xref:System.Data.IDbCommand> and after the <xref:System.Data.IDataReader> is closed.  
+  
+ When sending a null parameter value to the server, the user must specify `DBNull`, not null. The null value in the system is an empty object that has no value. `DBNull` is used to represent null values.  
+  
+ If the application specifies the database type, the bound value is converted to that type when the provider sends the data to the server. The provider attempts to convert any type of value if it supports the <xref:System.IConvertible> interface. Conversion errors may result if the specified type is not compatible with the value.  
+  
+ The <xref:System.Data.SqlClient.SqlParameter.Value%2A> property is overwritten by <xref:System.Data.Common.DbDataAdapter.Update%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the implementing class, <xref:System.Data.SqlClient.SqlParameter>, and sets some of its properties.  
+  
+ [!code-csharp[Classic WebData SqlParameter.Value Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Value Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData SqlParameter.Value Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData SqlParameter.Value Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,267 @@
+<Type Name="ListViewDeletedEventArgs" FullName="System.Web.UI.WebControls.ListViewDeletedEventArgs">
+  <TypeSignature Language="C#" Value="public class ListViewDeletedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewDeletedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDeletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.ListView.ItemDeleted> event when a Delete button in the control is clicked or the <xref:System.Web.UI.WebControls.ListView.DeleteItem%2A> method is called, but after the <xref:System.Web.UI.WebControls.ListView> control deletes the item. (A Delete button is a button whose `CommandName` property is set to "Delete".) This enables you to provide an event-handling method that performs a custom routine whenever this event occurs, such as checking the results of a delete operation.  
+  
+ A <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs> object is passed to the event-handling method. This object enables you to determine the number of items affected and any exceptions that might have occurred. To determine the number of items that were affected by the delete operation, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows%2A> property. To determine whether any exceptions occurred, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception%2A> property. You can indicate whether you have handled the exception in the event-handling method by setting the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled%2A> property.  
+  
+> [!NOTE]
+>  If an exception occurs during the delete operation and the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled%2A> property is set to `false`, the <xref:System.Web.UI.WebControls.ListView> control re-throws the exception.  
+  
+ To access the key fields of the deleted item, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property. To access non-key fields of the deleted item, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property. For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs> class, see the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs> object to determine whether an exception occurred during a delete operation. The <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs> object is passed to the event-handling method for the <xref:System.Web.UI.WebControls.ListView.ItemDeleted> event.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsVB.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewDeletedEventArgs (int affectedRows, Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 affectedRows, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDeletedEventArgs.#ctor(System.Int32,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="affectedRows" Type="System.Int32" />
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="affectedRows">The number of rows that were affected by the delete operation.</param>
+        <param name="exception">The exception that was raised when the delete operation was performed, if any. If no exception was raised, use <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListViewDeletedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs> class.  
+  
+> [!NOTE]
+>  This constructor is primarily used by control developers when they raise events.  
+  
+ The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs> class.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
+|<xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception%2A>|The value of the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled%2A>|`false`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectedRows">
+      <MemberSignature Language="C#" Value="public int AffectedRows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AffectedRows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rows that were affected by the delete operation.</summary>
+        <value>The number of rows that were affected by the delete operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows%2A> property to determine the number of items that were affected by the delete operation, as reported by the data source control. This property is typically used to determine whether the correct number of items were deleted in the following ways:  
+  
+-   To verify that only a single item was deleted. Sometimes an incorrectly written delete statement can delete multiple items.  
+  
+-   To verify that an item was deleted if an error occurs during the delete operation but no exception was raised.  
+  
+-   To verify that an item was deleted when a data source control that supports optimistic concurrency (such as the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.ObjectDataSource> controls) has its <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property set to the `ConflictOptions.CompareAllValues` enumeration value. Under this setting, an item that has been modified by another user might not be deleted.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows%2A> property to verify that an item was deleted during the delete operation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception, if any, that was raised during the delete operation.</summary>
+        <value>The exception that was raised during the delete operation, if any; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception%2A> property to get the exception that was raised during the delete operation, if any. If no exceptions were raised, this property returns `null`.  
+  
+> [!NOTE]
+>  If an exception was raised and you handle the exception in the event handler, set the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled%2A> property to `true`. Otherwise, the <xref:System.Web.UI.WebControls.ListView> control re-throws the exception.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception%2A> property to determine whether an exception occurred during a delete operation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionHandled">
+      <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether an exception that was raised during the delete operation was handled in the event handler.</summary>
+        <value>
+          <see langword="true" /> if the exception was handled in the event handler; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an exception is raised during the delete operation, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled%2A> property to indicate whether you handled the exception during the event. If this property is set to `true`, the exception is considered handled and is not re-thrown. If this property is set to `false`, the <xref:System.Web.UI.WebControls.ListView> control re-throws the exception. To determine which exception was raised, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled%2A> property to indicate that the exception was handled in the event handler.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key or keys for the deleted item.</summary>
+        <value>The key or keys for the deleted item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property to access the values of the key fields (as specified by the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A?displayProperty=fullName> property) for a deleted item. For example, you can use these values to keep a log of deleted items.  
+  
+> [!NOTE]
+>  This property contains only the key fields. To access the non-key fields, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The object contains <xref:System.Collections.DictionaryEntry> objects that represent the key fields of the deleted item.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property to access the values of the key fields for a deleted item.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsKeysCS.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsKeysVB.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Values" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the non-key field values for the deleted item.</summary>
+        <value>The non-key field values for the deleted item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property to access the values of the non-key fields for a deleted item. For example, you can use these values to keep a log of deleted items.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property is populated only when two-way binding expressions are used in the <xref:System.Web.UI.WebControls.ListView> templates, such as the <xref:System.Web.UI.WebControls.ListView.ItemTemplate%2A> template. For more information about two-way binding expressions, see [Data-Binding Expression Syntax](http://msdn.microsoft.com/en-us/676beb1d-ddfa-4153-bba8-3c86dcb7ceca).  
+  
+ The <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property returns an object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The object contains <xref:System.Collections.DictionaryEntry> objects that represent the non-key fields of the deleted item.  
+  
+> [!NOTE]
+>  This property does not contain the key fields (as specified by the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A?displayProperty=fullName> property) for the deleted item. To access the key fields, use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values%2A> property to access the values of the non-key fields for a deleted item.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewDeletedEventArgs#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/CS/ListViewDeletedEventArgsKeysCS.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewDeletedEventArgs#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewDeletedEventArgs/VB/ListViewDeletedEventArgsKeysVB.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

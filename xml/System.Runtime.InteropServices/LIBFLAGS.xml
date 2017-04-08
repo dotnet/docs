@@ -1,0 +1,102 @@
+<Type Name="LIBFLAGS" FullName="System.Runtime.InteropServices.LIBFLAGS">
+  <TypeSignature Language="C#" Value="public enum LIBFLAGS" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LIBFLAGS extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.LIBFLAGS" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.LIBFLAGS" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about the `LIBFLAGS` enumeration, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LIBFLAG_FCONTROL">
+      <MemberSignature Language="C#" Value="LIBFLAG_FCONTROL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.LIBFLAGS LIBFLAG_FCONTROL = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.LIBFLAGS.LIBFLAG_FCONTROL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.LIBFLAGS</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type library describes controls, and should not be displayed in type browsers intended for nonvisual objects.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LIBFLAG_FHASDISKIMAGE">
+      <MemberSignature Language="C#" Value="LIBFLAG_FHASDISKIMAGE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.LIBFLAGS LIBFLAG_FHASDISKIMAGE = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.LIBFLAGS.LIBFLAG_FHASDISKIMAGE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.LIBFLAGS</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type library exists in a persisted form on disk.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LIBFLAG_FHIDDEN">
+      <MemberSignature Language="C#" Value="LIBFLAG_FHIDDEN" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.LIBFLAGS LIBFLAG_FHIDDEN = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.LIBFLAGS.LIBFLAG_FHIDDEN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.LIBFLAGS</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type library should not be displayed to users, although its use is not restricted. Should be used by controls. Hosts should create a new type library that wraps the control with extended properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LIBFLAG_FRESTRICTED">
+      <MemberSignature Language="C#" Value="LIBFLAG_FRESTRICTED" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.LIBFLAGS LIBFLAG_FRESTRICTED = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.LIBFLAGS.LIBFLAG_FRESTRICTED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.LIBFLAGS</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type library is restricted, and should not be displayed to users.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DataGridVB", "DataGridVB\", "{05D2605F-A120-4F55-A342-5C11138AD536}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/DataGridVB"
+		Debug.AspNetCompiler.PhysicalPath = "DataGridVB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\DataGridVB\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/DataGridVB"
+		Release.AspNetCompiler.PhysicalPath = "DataGridVB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\DataGridVB\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51009"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DataGridCS", "DataGridCS\", "{54EF92F4-882C-4588-A6E5-16949FAFB890}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/DataGridCS"
+		Debug.AspNetCompiler.PhysicalPath = "DataGridCS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\DataGridCS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/DataGridCS"
+		Release.AspNetCompiler.PhysicalPath = "DataGridCS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\DataGridCS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59853"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05D2605F-A120-4F55-A342-5C11138AD536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D2605F-A120-4F55-A342-5C11138AD536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05D2605F-A120-4F55-A342-5C11138AD536}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{05D2605F-A120-4F55-A342-5C11138AD536}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{54EF92F4-882C-4588-A6E5-16949FAFB890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EF92F4-882C-4588-A6E5-16949FAFB890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EF92F4-882C-4588-A6E5-16949FAFB890}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EF92F4-882C-4588-A6E5-16949FAFB890}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

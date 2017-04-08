@@ -1,0 +1,235 @@
+<Type Name="PolicyConversionContext" FullName="System.ServiceModel.Description.PolicyConversionContext">
+  <TypeSignature Language="C#" Value="public abstract class PolicyConversionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PolicyConversionContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.PolicyConversionContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a class used to retrieve binding assertions in metadata and to attach implementing binding elements at the appropriate scope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation of the <xref:System.ServiceModel.Description.PolicyConversionContext> is passed to <xref:System.ServiceModel.Description.IPolicyExportExtension> and <xref:System.ServiceModel.Description.IPolicyImportExtension> objects to export and import, respectively, custom policy assertions to and from metadata. On export, a collection of policy assertions are retrieved in order to add custom assertions. On import, the assertions are retrieved in order to import specific ones and configure binding elements appropriately.  
+  
+-   The <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A> method returns all policy assertions that are for the binding.  
+  
+-   The <xref:System.ServiceModel.Description.PolicyConversionContext.GetFaultBindingAssertions%2A> method returns all policy assertions for a specific fault message.  
+  
+-   The <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A> method returns all policy assertions for a specific message.  
+  
+-   The <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> method returns all policy assertions for a specific operation.  
+  
+-   The <xref:System.ServiceModel.Description.PolicyConversionContext.BindingElements%2A> property gets the binding elements for the binding being described or configured.  
+  
+-   The <xref:System.ServiceModel.Description.PolicyConversionContext.Contract%2A> property gets the contract description for which the binding is being described or configured.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method that writes all policy assertions to the console. The code comments describe how to locate a specific custom policy assertion, create and insert an implementing binding element, and remove the assertion from the collection.  
+  
+ [!code-csharp[S_UEPolicyConversionContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#0)]  
+  
+ The following code example shows how to register <xref:System.ServiceModel.Description.IPolicyImportExtension> implementations using the `<policyImporters>` configuration section.  
+  
+ <!-- TODO: review snippet reference [!code[S_UEPolicyConversionContext#100](~/samples/snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]  -->  
+  
+ The following code example demonstrates how a custom binding element can implement <xref:System.ServiceModel.Description.IPolicyExportExtension> to attach a custom policy assertion to the binding assertions.  
+  
+ [!code-csharp[S_UEPolicyConversionContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PolicyConversionContext (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> for the policy context.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.PolicyConversionContext" /> class using the specified endpoint.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingElements">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.BindingElementCollection BindingElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.BindingElementCollection BindingElements" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.PolicyConversionContext.BindingElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BindingElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of binding elements to which custom binding elements that implement policy assertions are added.</summary>
+        <value>A <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> that contains the binding elements for an endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contract">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ContractDescription Contract { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ContractDescription Contract" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.PolicyConversionContext.Contract" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the contract for the endpoint.</summary>
+        <value>The contract for the endpoint.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBindingAssertions">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Description.PolicyAssertionCollection GetBindingAssertions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Description.PolicyAssertionCollection GetBindingAssertions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.PolicyAssertionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of policy assertions from metadata.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.ICollection`1" /> of type <see cref="T:System.Xml.XmlElement" /> that contains binding policy assertions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
+  
+   
+  
+## Examples  
+ The following code example shows an implementation of the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method that writes all policy assertions to the console. The code comments describe how to locate a specific custom policy assertion, create and insert an implementing binding element, and remove the assertion from the collection.  
+  
+ [!code-csharp[S_UEPolicyConversionContext#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#0)]  
+  
+ The following code example shows how to register <xref:System.ServiceModel.Description.IPolicyImportExtension> implementations using the `<policyImporters>` configuration section.  
+  
+ <!-- TODO: review snippet reference [!code[S_UEPolicyConversionContext#100](~/samples/snippets/common/VS_Snippets_CFX/s_uepolicyconversioncontext/common/app.config#100)]  -->  
+  
+ The following code example demonstrates how a custom binding element can implement <xref:System.ServiceModel.Description.IPolicyExportExtension> to attach a custom policy assertion to the binding assertions.  
+  
+ [!code-csharp[S_UEPolicyConversionContext#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_uepolicyconversioncontext/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFaultBindingAssertions">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Description.PolicyAssertionCollection GetFaultBindingAssertions (System.ServiceModel.Description.FaultDescription fault);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Description.PolicyAssertionCollection GetFaultBindingAssertions(class System.ServiceModel.Description.FaultDescription fault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.GetFaultBindingAssertions(System.ServiceModel.Description.FaultDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.PolicyAssertionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fault" Type="System.ServiceModel.Description.FaultDescription" />
+      </Parameters>
+      <Docs>
+        <param name="fault">The <see cref="T:System.ServiceModel.Description.FaultDescription" /> object for which policy assertions are to be added or for which bindings are to be configured.</param>
+        <summary>Returns a collection of policy assertions for the specified SOAP fault.</summary>
+        <returns>A collection of policy assertions for the specified SOAP fault.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetFaultBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessageBindingAssertions">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Description.PolicyAssertionCollection GetMessageBindingAssertions (System.ServiceModel.Description.MessageDescription message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Description.PolicyAssertionCollection GetMessageBindingAssertions(class System.ServiceModel.Description.MessageDescription message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions(System.ServiceModel.Description.MessageDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.PolicyAssertionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Description.MessageDescription" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.ServiceModel.Description.MessageDescription" /> for which there are binding assertions.</param>
+        <summary>Gets a collection of policy assertions for a message.</summary>
+        <returns>A collection of policy assertions for the specified message.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetMessageBindingAssertions%2A> is not a copy. You can add and remove assertions as needed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOperationBindingAssertions">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Description.PolicyAssertionCollection GetOperationBindingAssertions (System.ServiceModel.Description.OperationDescription operation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Description.PolicyAssertionCollection GetOperationBindingAssertions(class System.ServiceModel.Description.OperationDescription operation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions(System.ServiceModel.Description.OperationDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.PolicyAssertionCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" />
+      </Parameters>
+      <Docs>
+        <param name="operation">The <see cref="T:System.ServiceModel.Description.OperationDescription" /> object for which policy assertions are to be added or for which bindings are to be configured.</param>
+        <summary>Returns a collection of policy assertions for the specified operation.</summary>
+        <returns>The policy assertions for the operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection returned from <xref:System.ServiceModel.Description.PolicyConversionContext.GetOperationBindingAssertions%2A> is not a copy. You can add and remove assertions as necessary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

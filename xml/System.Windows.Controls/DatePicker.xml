@@ -1,0 +1,1214 @@
+<Type Name="DatePicker" FullName="System.Windows.Controls.DatePicker">
+  <TypeSignature Language="C#" Value="public class DatePicker : System.Windows.Controls.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi DatePicker extends System.Windows.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DatePicker" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_Root", Type=typeof(System.Windows.Controls.Grid))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_TextBox", Type=typeof(System.Windows.Controls.Primitives.DatePickerTextBox))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_Button", Type=typeof(System.Windows.Controls.Button))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.TemplatePart(Name="PART_Popup", Type=typeof(System.Windows.Controls.Primitives.Popup))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a control that allows the user to select a date.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.DatePicker> control allows the user to select a date by either typing it into a text field or by using a drop-down <xref:System.Windows.Controls.Calendar> control.  
+  
+ Many of a <xref:System.Windows.Controls.DatePicker> control's properties are for managing its built-in <xref:System.Windows.Controls.Calendar>, and function identically to the equivalent property in <xref:System.Windows.Controls.Calendar>. In particular, the <xref:System.Windows.Controls.DatePicker.IsTodayHighlighted%2A?displayProperty=fullName>, <xref:System.Windows.Controls.DatePicker.FirstDayOfWeek%2A?displayProperty=fullName>, <xref:System.Windows.Controls.DatePicker.BlackoutDates%2A?displayProperty=fullName>, <xref:System.Windows.Controls.DatePicker.DisplayDateStart%2A?displayProperty=fullName>, <xref:System.Windows.Controls.DatePicker.DisplayDateEnd%2A?displayProperty=fullName>, <xref:System.Windows.Controls.DatePicker.DisplayDate%2A?displayProperty=fullName>, and <xref:System.Windows.Controls.DatePicker.SelectedDate%2A?displayProperty=fullName> properties function identically to their <xref:System.Windows.Controls.Calendar> counterparts.  For more information, see <xref:System.Windows.Controls.Calendar>.  
+  
+ Users can type a date directly into a text field, which sets the <xref:System.Windows.Controls.DatePicker.Text%2A> property. If the <xref:System.Windows.Controls.DatePicker> cannot convert the entered string to a valid date, the <xref:System.Windows.Controls.DatePicker.DateValidationError> event will be raised. By default, this causes an exception, but an event handler for <xref:System.Windows.Controls.DatePicker.DateValidationError> can set the <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A> property to `false` and prevent an exception from being raised.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Controls.DatePicker> supports only the Gregorian calendar.  
+  
+## Customizing the DatePicker Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.DatePicker> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md). To see the parts and states that are specific to the <xref:System.Windows.Controls.DatePicker>, see [DatePicker Syles and Templates](~/docs/framework/wpf/controls/datepicker-syles-and-templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style. If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+<a name="xamlObjectElementUsage_DatePicker"></a>   
+## XAML Object Element Usage  
+  
+```  
+<DatePicker .../>  
+```  
+  
+   
+  
+## Examples  
+ The following illustration shows a <xref:System.Windows.Controls.DatePicker>.  
+  
+ ![DatePicker control](~/add/media/ndp-datepicker.png "DatePicker control")  
+DatePicker Control  
+  
+ The following example creates the <xref:System.Windows.Controls.DatePicker> shown in the previous illustration. The <xref:System.Windows.Controls.DatePicker> does the following:  
+  
+-   Displays the date using unabbreviated days of the week and month names.  
+  
+-   Limits the drop-down calendar to display dates only in the year 2009.  
+  
+-   Displays Monday as the first day of the week.  
+  
+ [!code-csharp[DatePickerSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#1)]
+ [!code-vb[DatePickerSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#1)]
+ [!code-xml[DatePickerSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DatePicker ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePicker.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DatePicker" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlackoutDates">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.CalendarBlackoutDatesCollection BlackoutDates { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.CalendarBlackoutDatesCollection BlackoutDates" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.BlackoutDates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CalendarBlackoutDatesCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a collection of dates that are marked as not selectable.</summary>
+        <value>A collection of dates that cannot be selected. The default value is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dates in this collection will appear as disabled on the drop-down calendar.  If the user types a date that is not selectable, the <xref:System.Windows.Controls.DatePicker.DateValidationError> event occurs.  
+  
+ To make all past dates not selectable, you can use the <xref:System.Windows.Controls.CalendarBlackoutDatesCollection.AddDatesInPast%2A> method provided by the collection returned by this property.  
+  
+ Adding a date to this collection when it is already selected or adding a date outside the range specified by <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and  <xref:System.Windows.Controls.DatePicker.DisplayDateEnd%2A> will cause an <xref:System.ArgumentOutOfRangeException>.  
+  
+<a name="xamlPropertyElementUsage_BlackoutDates"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.BlackoutDates>  
+    oneOrMoreCalendarDateRanges  
+  </object.BlackoutDates>  
+</object>  
+```  
+  
+<a name="xamlValues_BlackoutDates"></a>   
+## XAML Values  
+ *oneOrMoreCalendarDateRanges*  
+ One or more object elements of type <xref:System.Windows.Controls.CalendarDateRange>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that displays the dates in August 2009 and specifies that each Saturday and Sunday is not selectable.  
+  
+ [!code-csharp[DatePickerSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#2)]
+ [!code-vb[DatePickerSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#2)]
+ [!code-xml[DatePickerSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#2)]  
+  
+ The <xref:System.Windows.Controls.DatePicker> handles the <xref:System.Windows.Controls.DatePicker.DateValidationError> event, as shown in the following code. If the user enters a date that is not selectable, the example displays a message. If the user enters text that is not a valid date, an exception is thrown.  
+  
+ [!code-csharp[DatePickerSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#3)]
+ [!code-vb[DatePickerSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#3)]  
+  
+ The preceding example produces output that is similar to the following illustration.  
+  
+ ![DatePicker with dates that are not selectable](~/add/media/ndp-datepickblackout.png "DatePicker with dates that are not selectable")  
+DatePicker with dates that are not selectable  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarClosed">
+      <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler CalendarClosed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler CalendarClosed" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DatePicker.CalendarClosed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the drop-down <see cref="T:System.Windows.Controls.Calendar" /> is closed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_CalendarClosed"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker CalendarClosed="eventhandler"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> and provides instructions to the user.  When the user opens or closes the <xref:System.Windows.Controls.Calendar>, the instructions are updated.  
+  
+ [!code-xml[DatePickerSnippets#7](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#7)]  
+  
+ [!code-csharp[DatePickerSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#8)]
+ [!code-vb[DatePickerSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarOpened">
+      <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler CalendarOpened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler CalendarOpened" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DatePicker.CalendarOpened" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the drop-down <see cref="T:System.Windows.Controls.Calendar" /> is opened.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_CalendarOpened"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker CalendarOpened="eventhandler"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> and provides instructions to the user.  When the user opens or closes the <xref:System.Windows.Controls.Calendar>, the instructions are updated.  
+  
+ [!code-xml[DatePickerSnippets#7](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#7)]  
+  
+ [!code-csharp[DatePickerSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#8)]
+ [!code-vb[DatePickerSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style CalendarStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style CalendarStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.CalendarStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style that is used when rendering the calendar.</summary>
+        <value>The style that is used when rendering the calendar.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Controls.DatePicker.CalendarStyle%2A> property to specify the appearance of the drop-down calendar.  
+  
+<a name="dependencyPropertyInfo_CalendarStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.CalendarStyleProperty>|  
+|Metadata properties set to **true**|None|  
+  
+<a name="xamlAttributeUsage_CalendarStyle"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker CalendarStyle="{resourceExtension styleResourceKey}"/>  
+```  
+  
+<a name="xamlValues_CalendarStyle"></a>   
+## XAML Values  
+ *resourceExtension*  
+ One of the following: `StaticResource` or `DynamicResource`. For more information, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *styleResourceKey*  
+ The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Style> for <xref:System.Windows.Controls.Calendar> and assigns the style to the <xref:System.Windows.Controls.DatePicker.CalendarStyle%2A> property.  
+  
+ [!code-xml[DatePickerSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalendarStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CalendarStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CalendarStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.CalendarStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.CalendarStyle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateValidationError">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Controls.DatePickerDateValidationErrorEventArgs&gt; DateValidationError;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Controls.DatePickerDateValidationErrorEventArgs&gt; DateValidationError" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DatePicker.DateValidationError" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Controls.DatePickerDateValidationErrorEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when <see cref="P:System.Windows.Controls.DatePicker.Text" /> is set to a value that cannot be interpreted as a date or when the date cannot be selected.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the <xref:System.Windows.Controls.DatePicker.DateValidationError> event occurs, if you set the <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A?displayProperty=fullName> property to `true`, one of the following exceptions is raised:  
+  
+|Exception type|Condition|  
+|--------------------|---------------|  
+|<xref:System.FormatException>|The text entered cannot be parsed to a valid date, and the exception is not suppressed.|  
+|<xref:System.ArgumentOutOfRangeException>|The text entered parses to a date that is not selectable.|  
+  
+<a name="xamlAttributeUsage_DateValidationError"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker DateValidationError="eventhandler"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that displays the dates in August 2009 and specifies that each Saturday and Sunday is not selectable.  
+  
+ [!code-csharp[DatePickerSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#2)]
+ [!code-vb[DatePickerSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#2)]
+ [!code-xml[DatePickerSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#2)]  
+  
+ The <xref:System.Windows.Controls.DatePicker> handles the <xref:System.Windows.Controls.DatePicker.DateValidationError> event, as shown in the following code. If the user enters a date that is not selectable, the example displays a message. If the user enters text that is not a valid date, an exception is thrown.  
+  
+ [!code-csharp[DatePickerSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#3)]
+ [!code-vb[DatePickerSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayDate">
+      <MemberSignature Language="C#" Value="public DateTime DisplayDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime DisplayDate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.DisplayDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the date to display.</summary>
+        <value>The date to display. The default is <see cref="P:System.DateTime.Today" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property affects the <xref:System.Windows.Controls.Calendar> of the <xref:System.Windows.Controls.DatePicker>.  For more information, see the <xref:System.Windows.Controls.Calendar.DisplayDate%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_DisplayDate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.DisplayDateProperty>|  
+|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+ This property allows the developer to specify a date to display if <xref:System.Windows.Controls.DatePicker.SelectedDate%2A> is `null`.  
+  
+<a name="xamlAttributeUsage_DisplayDate"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker DisplayDate="dateTimeString"/>  
+```  
+  
+<a name="xamlValues_DisplayDate"></a>   
+## XAML Values  
+ *dateTimeString*  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that is initialized with its calendar open and displaying July 7, 2009.  
+  
+ [!code-xml[DatePickerSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified date is not in the range defined by <see cref="P:System.Windows.Controls.DatePicker.DisplayDateStart" />. and <see cref="P:System.Windows.Controls.DatePicker.DisplayDateEnd" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayDateEnd">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; DisplayDateEnd { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; DisplayDateEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.DisplayDateEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the last date to be displayed.</summary>
+        <value>The last date to display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property affects the <xref:System.Windows.Controls.Calendar> of the <xref:System.Windows.Controls.DatePicker>.  For more information, see the <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_DisplayDateEnd"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.DisplayDateEndProperty>|  
+|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+<a name="xamlAttributeUsage_DisplayDateEnd"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker DisplayDateEnd="dateTimeString"/>  
+```  
+  
+<a name="xamlValues_DisplayDateEnd"></a>   
+## XAML Values  
+ *dateTimeString*  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that limits the drop-down calendar to display dates only in the year 2009.  
+  
+ [!code-csharp[DatePickerSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#1)]
+ [!code-vb[DatePickerSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#1)]
+ [!code-xml[DatePickerSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayDateEndProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayDateEndProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayDateEndProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.DisplayDateEndProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.DisplayDateEnd" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayDateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayDateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayDateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.DisplayDateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.DisplayDate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayDateStart">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; DisplayDateStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; DisplayDateStart" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.DisplayDateStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the first date to be displayed.</summary>
+        <value>The first date to display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property affects the <xref:System.Windows.Controls.Calendar> of the <xref:System.Windows.Controls.DatePicker>.  For more information, see the <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_DisplayDateStart"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.DisplayDateStartProperty>|  
+|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+<a name="xamlAttributeUsage_DisplayDateStart"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker DisplayDateStart="dateTimeString"/>  
+```  
+  
+<a name="xamlValues_DisplayDateStart"></a>   
+## XAML Values  
+ *dateTimeString*  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that limits the drop-down calendar to display dates only in the year 2009.  
+  
+ [!code-csharp[DatePickerSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#1)]
+ [!code-vb[DatePickerSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#1)]
+ [!code-xml[DatePickerSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayDateStartProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayDateStartProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayDateStartProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.DisplayDateStartProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.DisplayDateStart" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstDayOfWeek">
+      <MemberSignature Language="C#" Value="public DayOfWeek FirstDayOfWeek { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DayOfWeek FirstDayOfWeek" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.FirstDayOfWeek" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DayOfWeek</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the day that is considered the beginning of the week.</summary>
+        <value>A <see cref="T:System.DayOfWeek" /> that represents the beginning of the week. The default is the <see cref="P:System.Globalization.DateTimeFormatInfo.FirstDayOfWeek" /> that is determined by the current culture.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property affects the <xref:System.Windows.Controls.Calendar> of the <xref:System.Windows.Controls.DatePicker>.  For more information, see the <xref:System.Windows.Controls.Calendar.FirstDayOfWeek%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_FirstDayOfWeek"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.FirstDayOfWeekProperty>|  
+|Metadata properties set to **true**|None|  
+  
+<a name="xamlAttributeUsage_FirstDayOfWeek"></a>   
+## XAML Attribute Usage  
+ \<DatePicker **FirstDayOfWeek**="<xref:System.DayOfWeek>"/>  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that displays Monday as the first day of the week.  
+  
+ [!code-csharp[DatePickerSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#1)]
+ [!code-vb[DatePickerSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#1)]
+ [!code-xml[DatePickerSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstDayOfWeekProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FirstDayOfWeekProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FirstDayOfWeekProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.FirstDayOfWeekProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.FirstDayOfWeek" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasEffectiveKeyboardFocus">
+      <MemberSignature Language="C#" Value="protected override bool HasEffectiveKeyboardFocus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasEffectiveKeyboardFocus" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.HasEffectiveKeyboardFocus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Controls.DatePicker" /> has focus.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.DatePicker" /> has focus; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDropDownOpen">
+      <MemberSignature Language="C#" Value="public bool IsDropDownOpen { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDropDownOpen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.IsDropDownOpen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the drop-down <see cref="T:System.Windows.Controls.Calendar" /> is open or closed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Calendar" /> is open; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_IsDropDownOpen"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.IsDropDownOpenProperty>|  
+|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+ Setting this property will cause the <xref:System.Windows.Controls.Calendar> drop-down to open or close.  
+  
+<a name="xamlAttributeUsage_IsDropDownOpen"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker IsDropDownOpen="bool"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that is initialized with its calendar open and displays July 7, 2009.  
+  
+ [!code-xml[DatePickerSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDropDownOpenProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsDropDownOpenProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsDropDownOpenProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.IsDropDownOpenProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.IsDropDownOpen" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTodayHighlighted">
+      <MemberSignature Language="C#" Value="public bool IsTodayHighlighted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTodayHighlighted" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.IsTodayHighlighted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the current date will be highlighted.</summary>
+        <value>
+          <see langword="true" /> if the current date is highlighted; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property affects the <xref:System.Windows.Controls.Calendar> of the <xref:System.Windows.Controls.DatePicker>.  For more information, see the <xref:System.Windows.Controls.Calendar.IsTodayHighlighted%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_IsTodayHighlighted"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.IsTodayHighlightedProperty>|  
+|Metadata properties set to **true**|None|  
+  
+<a name="xamlAttributeUsage_IsTodayHighlighted"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker IsTodayHighlighted="bool"/>  
+```  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that does not highlight the current date.  
+  
+ [!code-xml[DatePickerSnippets#4](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTodayHighlightedProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsTodayHighlightedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsTodayHighlightedProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.IsTodayHighlightedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.IsTodayHighlighted" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePicker.OnApplyTemplate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Builds the visual tree for the <see cref="T:System.Windows.Controls.DatePicker" /> control when a new template is applied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is invoked whenever application code or an internal process, such as rebuilding layout pass, calls the <xref:System.Windows.FrameworkElement.ApplyTemplate%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCalendarClosed">
+      <MemberSignature Language="C#" Value="protected virtual void OnCalendarClosed (System.Windows.RoutedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCalendarClosed(class System.Windows.RoutedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePicker.OnCalendarClosed(System.Windows.RoutedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The data for the event.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.DatePicker.CalendarClosed" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Controls.DatePicker.OnCalendarClosed(System.Windows.RoutedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.DatePicker.OnCalendarClosed(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCalendarOpened">
+      <MemberSignature Language="C#" Value="protected virtual void OnCalendarOpened (System.Windows.RoutedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCalendarOpened(class System.Windows.RoutedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePicker.OnCalendarOpened(System.Windows.RoutedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.RoutedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The data for the event.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.DatePicker.CalendarOpened" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Controls.DatePicker.OnCalendarOpened(System.Windows.RoutedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.DatePicker.OnCalendarOpened(System.Windows.RoutedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePicker.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Automation.Peers.DatePickerAutomationPeer" /> for use by the automation infrastructure.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.DatePickerAutomationPeer" /> for the <see cref="T:System.Windows.Controls.DatePicker" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new <xref:System.Windows.Automation.Peers.DatePickerAutomationPeer> instance if one has not been created for the control instance; otherwise, it returns the <xref:System.Windows.Automation.Peers.DatePickerAutomationPeer> previously created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDateValidationError">
+      <MemberSignature Language="C#" Value="protected virtual void OnDateValidationError (System.Windows.Controls.DatePickerDateValidationErrorEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDateValidationError(class System.Windows.Controls.DatePickerDateValidationErrorEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePicker.OnDateValidationError(System.Windows.Controls.DatePickerDateValidationErrorEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Controls.DatePickerDateValidationErrorEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Controls.DatePickerDateValidationErrorEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.DatePicker.DateValidationError" /> event.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Controls.DatePicker.OnDateValidationError(System.Windows.Controls.DatePickerDateValidationErrorEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.DatePicker.OnDateValidationError(System.Windows.Controls.DatePickerDateValidationErrorEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedDateChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectedDateChanged (System.Windows.Controls.SelectionChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedDateChanged(class System.Windows.Controls.SelectionChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePicker.OnSelectedDateChanged(System.Windows.Controls.SelectionChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Controls.SelectionChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The data for the event.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.DatePicker.SelectedDateChanged" /> routed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The control raises the <xref:System.Windows.Controls.DatePicker.SelectedDateChanged> event by calling <xref:System.Windows.UIElement.RaiseEvent%2A>. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Controls.DatePicker.OnSelectedDateChanged(System.Windows.Controls.SelectionChangedEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Controls.DatePicker.OnSelectedDateChanged(System.Windows.Controls.SelectionChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedDate">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; SelectedDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; SelectedDate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.SelectedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the currently selected date.</summary>
+        <value>The date currently selected. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property affects the <xref:System.Windows.Controls.Calendar> of the <xref:System.Windows.Controls.DatePicker>.  For more information, see the <xref:System.Windows.Controls.Calendar.SelectedDate%2A?displayProperty=fullName> property.  
+  
+<a name="dependencyPropertyInfo_SelectedDate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.SelectedDateProperty>|  
+|Metadata properties set to **true**|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
+  
+<a name="xamlAttributeUsage_SelectedDate"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker SelectedDate="dateTimeString"/>  
+```  
+  
+<a name="xamlValues_SelectedDate"></a>   
+## XAML Values  
+ *dateTimeString*  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that has the date August 10, 2009 selected.  The example also binds the <xref:System.Windows.Controls.DatePicker.Text%2A?displayProperty=fullName> property to a <xref:System.Windows.Controls.TextBlock>.  
+  
+ [!code-xml[DatePickerSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified date is not in the range defined by <see cref="P:System.Windows.Controls.DatePicker.DisplayDateStart" /> and <see cref="P:System.Windows.Controls.DatePicker.DisplayDateEnd" />, or the specified date is in the <see cref="P:System.Windows.Controls.DatePicker.BlackoutDates" /> collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedDateChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Controls.SelectionChangedEventArgs&gt; SelectedDateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Controls.SelectionChangedEventArgs&gt; SelectedDateChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.DatePicker.SelectedDateChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Controls.SelectionChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Controls.DatePicker.SelectedDate" /> property is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_SelectedDatesChanged"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker SelectedDateChanged="eventhandler"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedDateChangedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent SelectedDateChangedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent SelectedDateChangedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.SelectedDateChangedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.DatePicker.SelectedDateChanged" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedDateFormat">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DatePickerFormat SelectedDateFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.DatePickerFormat SelectedDateFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.SelectedDateFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DatePickerFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format that is used to display the selected date.</summary>
+        <value>The format that is used to display the selected date. The default is <see cref="F:System.Windows.Controls.DatePickerFormat.Long" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_SelectedDateFormat"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.SelectedDateFormatProperty>|  
+|Metadata properties set to **true**|None|  
+  
+<a name="xamlAttributeUsage_SelectedDateFormat"></a>   
+## XAML Attribute Usage  
+ \<DatePicker **SelectedDateFormat**="<xref:System.Windows.Controls.DatePickerFormat>"/>  
+  
+   
+  
+## Examples  
+ The following example creates that <xref:System.Windows.Controls.DatePicker> that displays the date using unabbreviated days of the week and month names.  
+  
+ [!code-csharp[DatePickerSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#1)]
+ [!code-vb[DatePickerSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#1)]
+ [!code-xml[DatePickerSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified format is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedDateFormatProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectedDateFormatProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectedDateFormatProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.SelectedDateFormatProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.SelectedDateFormat" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedDateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectedDateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectedDateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.SelectedDateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.SelectedDate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DatePicker.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text that is displayed by the <see cref="T:System.Windows.Controls.DatePicker" />, or sets the selected date.</summary>
+        <value>The text displayed by the <see cref="T:System.Windows.Controls.DatePicker" />. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A user can set the <xref:System.Windows.Controls.DatePicker.SelectedDate%2A> of a <xref:System.Windows.Controls.DatePicker> by typing a date into its text box. The <xref:System.Windows.Controls.DatePicker> attempts to parse any string entered into this property as a date. While the <xref:System.Windows.Controls.DatePicker.Text%2A> property can be set to any string that can be parsed by the <xref:System.DateTime.Parse%2A> method date, the format of the string that is returned depends on the value of the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property. This means that the <xref:System.Windows.Controls.DatePicker> might display a string that is different than what the user typed.  
+  
+ If <xref:System.Windows.Controls.DatePicker.Text%2A> is set to a date that is selectable and valid, the <xref:System.Windows.Controls.DatePicker.DateValidationError> event occurs. If you handle the <xref:System.Windows.Controls.DatePicker.DateValidationError> event and set the <xref:System.Windows.Controls.DatePickerDateValidationErrorEventArgs.ThrowException%2A> property to `true`, a <xref:System.FormatException> or <xref:System.ArgumentOutOfRangeException> is raised.  
+  
+<a name="dependencyPropertyInfo_Text"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.DatePicker.TextProperty>|  
+|Metadata properties set to **true**|None|  
+  
+<a name="xamlAttributeUsage_Text"></a>   
+## XAML Attribute Usage  
+  
+```  
+<DatePicker Text="dateTimeString"/>  
+```  
+  
+<a name="xamlValues_Text"></a>   
+## XAML Values  
+ *dateTimeString*  
+ A date that is in one of the formats that are listed in the [DateTime XAML Syntax](~/docs/framework/wpf/advanced/datetime-xaml-syntax.md) topic.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that has the date August 10, 2009 selected.  The example also binds the <xref:System.Windows.Controls.DatePicker.Text%2A?displayProperty=fullName> property to a <xref:System.Windows.Controls.TextBlock>. Because the <xref:System.Windows.Controls.DatePicker.SelectedDateFormat%2A> property is set to <xref:System.Windows.Controls.DatePickerFormat>, the <xref:System.Windows.Controls.DatePicker> and <xref:System.Windows.Controls.TextBlock> displays the date using unabbreviated days of the week and month names even if the user enters a short form of a date.  
+  
+ [!code-xml[DatePickerSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePicker.TextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.DatePicker.Text" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DatePicker.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a text representation of the selected date.</summary>
+        <returns>A text representation of the selected date, or an empty string if <see cref="P:System.Windows.Controls.DatePicker.SelectedDate" /> is <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

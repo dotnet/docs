@@ -1,0 +1,320 @@
+<Type Name="ServiceSecurityAuditBehavior" FullName="System.ServiceModel.Description.ServiceSecurityAuditBehavior">
+  <TypeSignature Language="C#" Value="public sealed class ServiceSecurityAuditBehavior : System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceSecurityAuditBehavior extends System.Object implements class System.ServiceModel.Description.IServiceBehavior" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceSecurityAuditBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IServiceBehavior</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Specifies the audit behavior of security events. In general, the security events consist of authentication events such as transport, message or negotiate authentication and authorization event. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<see cref="T:System.ServiceModel.ServiceAuthorizationManager" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class is used to audit [!INCLUDE[indigo1](~/includes/indigo1-md.md)] authentication events. When auditing is enabled, either successful or failed authentication attempts (or both) can be audited. The events are written to one of three event logs: application, security, or the default log for the operating system version. The event logs can all be viewed using the Windows Event viewer.  
+  
+ Use this class to specify which event log is written to, as well as kinds of authentication events to write. You can also specify whether to suppress audit failures by setting the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `false` (the default is `true`).  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] auditing security events for [!INCLUDE[indigo2](~/includes/indigo2-md.md)] applications, see [Auditing](~/docs/framework/wcf/feature-details/auditing-security-events.md).  
+  
+ To specify audit behavior in configuration, use the [\&lt;serviceSecurityAudit\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md).  
+  
+   
+  
+## Examples  
+ The following code creates an instance of the <xref:System.ServiceModel.ServiceHost> class and adds a new <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to its collection of behaviors.  
+  
+ [!code-csharp[AuditingSecurityEvents#1](~/samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#1)]
+ [!code-vb[AuditingSecurityEvents#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceSecurityAuditBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceSecurityAuditBehavior.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceSecurityAuditBehavior" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instance is created with the following default settings:  
+  
+-   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A> = <xref:System.ServiceModel.AuditLogLocation>;  
+  
+-   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> = `true`;  
+  
+-   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A> = <xref:System.ServiceModel.AuditLevel>;  
+  
+-   <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel%2A> = <xref:System.ServiceModel.AuditLevel>.  
+  
+   
+  
+## Examples  
+ The following code creates an instance of the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class.  
+  
+ [!code-csharp[AuditingSecurityEvents#2](~/samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#2)]
+ [!code-vb[AuditingSecurityEvents#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuditLogLocation">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.AuditLogLocation AuditLogLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.AuditLogLocation AuditLogLocation" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.AuditLogLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location where secure-related event logs are written.</summary>
+        <value>The <see cref="T:System.ServiceModel.AuditLogLocation" />. The default value is <see cref="F:System.ServiceModel.AuditLogLocation.Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To be able to write to `AuditLogLocation.Security`, the running thread (or process) must possess `SeAuditPrivilege`.  
+  
+ You can also set this value using the [\&lt;serviceSecurityAudit\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) in a client application configuration file.  
+  
+   
+  
+## Examples  
+ The following code creates an instance of the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class and sets this property.  
+  
+ [!code-csharp[AuditingSecurityEvents#2](~/samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#2)]
+ [!code-vb[AuditingSecurityEvents#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <see langword="set" /> and <see langword="value" /> are not valid members of <see cref="T:System.ServiceModel.AuditLogLocation" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageAuthenticationAuditLevel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.AuditLevel MessageAuthenticationAuditLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.AuditLevel MessageAuthenticationAuditLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.AuditLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of authentication events to audit at the message level.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.AuditLevel" /> enumeration values. The default is <see cref="F:System.ServiceModel.AuditLevel.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service applications have two levels where security can be enforced. At the *service* level, all methods of the service are enforced by the same security policy. Individual methods in the service can have a different (more stringent) security policy. Use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.MessageAuthenticationAuditLevel%2A> property to control which message level events are audited.  
+  
+ You can also set this value using the [\&lt;serviceSecurityAudit\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) in a client application configuration file.  
+  
+   
+  
+## Examples  
+ The following code creates an instance of the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class and sets this property.  
+  
+ [!code-csharp[AuditingSecurityEvents#3](~/samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#3)]
+ [!code-vb[AuditingSecurityEvents#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <see langword="set" /> and <see langword="value" /> are not valid members of <see cref="T:System.ServiceModel.AuditLevel" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceAuthorizationAuditLevel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.AuditLevel ServiceAuthorizationAuditLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.AuditLevel ServiceAuthorizationAuditLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.AuditLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of authorization events to audit at the service level.</summary>
+        <value>One of the <see cref="T:System.ServiceModel.AuditLevel" /> enumeration values. The default is <see langword="None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] service applications have two levels where security can be enforced. At the *service* level, all methods of the service are enforced by the same security policy. Individual methods in the service can have a different (more stringent) security policy. Use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A> property to control which service level events are audited.  
+  
+ You can also set this value using the [\&lt;serviceSecurityAudit\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) in a client application configuration file.  
+  
+   
+  
+## Examples  
+ The following code creates an instance of the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class and sets this property.  
+  
+ [!code-csharp[AuditingSecurityEvents#3](~/samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#3)]
+ [!code-vb[AuditingSecurityEvents#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <see langword="set" /> and <see langword="value" /> are not valid members of <see cref="T:System.ServiceModel.AuditLevel" />. The default is <see cref="F:System.ServiceModel.AuditLevel.None" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressAuditFailure">
+      <MemberSignature Language="C#" Value="public bool SuppressAuditFailure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressAuditFailure" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether failure to audit affects the application.</summary>
+        <value>
+          <see langword="true" /> if failure to audit does not affect the application; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `false`, failure to audit causes an exception to be thrown and results in user request failure.  
+  
+ You can also set this value using the [\&lt;serviceSecurityAudit\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) in a client application configuration file.  
+  
+   
+  
+## Examples  
+ The following code creates an instance of the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> class and sets this property.  
+  
+ [!code-csharp[AuditingSecurityEvents#4](~/samples/snippets/csharp/VS_Snippets_CFX/auditingsecurityevents/cs/auditingsecurityevents.cs#4)]
+ [!code-vb[AuditingSecurityEvents#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/auditingsecurityevents/vb/auditingsecurityevents.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.AddBindingParameters">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.AddBindingParameters (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase, System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, System.ServiceModel.Channels.BindingParameterCollection parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.AddBindingParameters(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints, class System.ServiceModel.Channels.BindingParameterCollection parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceSecurityAuditBehavior.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+        <Parameter Name="endpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+        <Parameter Name="parameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="description">The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> of the service.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <param name="endpoints">The service endpoints.</param>
+        <param name="parameters">A <see cref="T:System.ServiceModel.Channels.BindingParameterCollection" />.</param>
+        <summary>Passes custom data to binding elements to support the contract implementation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to add custom data objects to the `parameters` collection that binding elements can use to acquire extra information to enable them to support the contract.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <see langword="set" /> and <paramref name="parameters" /> are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.ApplyDispatchBehavior (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceSecurityAuditBehavior.System#ServiceModel#Description#IServiceBehavior#ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="description">The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> of the service.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>Provides the ability to change run-time property values or insert custom extension objects such as error handlers, message or parameter interceptors, security extensions, and other custom extension objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to inspect or modify the <xref:System.ServiceModel.ServiceHostBase> object that is being constructed to support some custom execution scenario.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceHostBase" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Description.IServiceBehavior.Validate">
+      <MemberSignature Language="C#" Value="void IServiceBehavior.Validate (System.ServiceModel.Description.ServiceDescription description, System.ServiceModel.ServiceHostBase serviceHostBase);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IServiceBehavior.Validate(class System.ServiceModel.Description.ServiceDescription description, class System.ServiceModel.ServiceHostBase serviceHostBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceSecurityAuditBehavior.System#ServiceModel#Description#IServiceBehavior#Validate(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.ServiceModel.Description.ServiceDescription" />
+        <Parameter Name="serviceHostBase" Type="System.ServiceModel.ServiceHostBase" />
+      </Parameters>
+      <Docs>
+        <param name="description">The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> of the service.</param>
+        <param name="serviceHostBase">The host of the service.</param>
+        <summary>Not implemented.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

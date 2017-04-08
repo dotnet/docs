@@ -1,52 +1,79 @@
 {
-    "need_generate_intellisense": false,
-    "need_preview_pull_request": true,
-    "need_pr_comments": false,
-    "need_generate_pdf_url_template": true,
-    "git_repository_branch_open_to_public_contributors": "master",
-    "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/core-docs",
-    "branch_target_mapping": {
-        "live": [
-            "Publish",
-            "Pdf"
+  "need_generate_intellisense": false,
+  "need_preview_pull_request": true,
+  "need_pr_comments": false,
+  "need_generate_pdf_url_template": false,
+  "git_repository_branch_open_to_public_contributors": "master",
+  "git_repository_url_open_to_public_contributors": "https://github.com/dotnet/docs",
+  "docsets_to_publish": [
+    {
+      "docset_name": "core-docs",
+      "build_source_folder": ".",
+      "build_output_subfolder": ".",
+      "locale": "en-us",
+      "monikers": ["netframework-4.5.1","netframework-4.5.2","netframework-4.5","netframework-4.6","netframework-4.6.1","netframework-4.6.2","netframework-4.7","netcore-1.0","netcore-1.1.0","netstandard-1.0","netstandard-1.1","netstandard-1.2","netstandard-1.3","netstandard-1.4","netstandard-1.5","netstandard-1.6","xamarinios-10.8","xamarinandroid-7.1","xamarinmac-3.0"],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "customized_template_paths": [
+         "_dependentPackages/memberpage.plugins/content"
+      ],
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
+          "_dependentPackages/splitToc/tools/run.ps1"
         ],
-        "master": [
-            "Publish",
-            "Pdf"
+        "docset_postbuild": [
+          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
         ]
-    },
-    "docsets_to_publish": [{
-        "docset_name": "core-docs",
-        "build_source_folder": ".",
-        "build_output_subfolder": ".",
-        "locale": "en-us",
-        "version": 0,
-        "open_to_public_contributors": true,
-        "type_mapping": {
-            "Conceptual": "Content",
-            "ManagedReference": "Content",
-            "RestApi": "Content"
-        },
-        "build_entry_point": "docs"
-    }],
-    "notification_subscribers": [],
-    "Targets": {
-        "Pdf": {
-            "template_folder": "_themes.pdf"
-        }
-    },
-    "skip_source_output_uploading": false,
-    "dependent_repositories": [{
+      }
+    }
+  ],
+  "notification_subscribers": [],
+  "branches_to_filter": [],
+  "skip_source_output_uploading": false,
+  "dependent_repositories": [{
         "path_to_root": "_themes",
         "url": "https://github.com/Microsoft/templates.docs.msft",
-        "branch": "master"
-    }, {
-        "path_to_root": "api_ref",
-        "url": "https://github.com/docascode/coreapi.git",
         "branch": "master"
     }, {
         "path_to_root": "_themes.pdf",
         "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
         "branch": "master"
-    }]
+    }],
+  "dependent_packages": [
+    {
+      "id": "Microsoft.DocAsCode.ECMA2Yaml",
+      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
+      "path_to_root": "_dependentPackages/ECMA2Yaml",
+      "target_framework": "net45",
+      "version": "latest"
+    },
+    {
+      "id": "memberpage.plugins",
+      "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
+      "path_to_root": "_dependentPackages/memberpage.plugins",
+      "target_framework": "net45",
+      "version": "latest"
+    },
+    {
+      "id": "SplitToc",
+      "nuget_feed": "https://www.myget.org/F/op-dev/api/v2",
+      "path_to_root": "_dependentPackages/splitToc",
+      "target_framework": "net45",
+      "version": "latest"
+    }
+  ],
+  "ECMA2Yaml": {
+    "SourceXmlFolder": "xml",
+    "SourceMetadataFolder": "add\\metadata",
+    "OutputYamlFolder": "api",
+    "Flatten": true
+  },
+  "toc_path_need_to_split": "api/toc.yml"
 }

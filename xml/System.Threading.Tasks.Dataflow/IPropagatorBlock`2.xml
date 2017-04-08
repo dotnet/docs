@@ -1,0 +1,37 @@
+<Type Name="IPropagatorBlock&lt;TInput,TOutput&gt;" FullName="System.Threading.Tasks.Dataflow.IPropagatorBlock&lt;TInput,TOutput&gt;">
+  <TypeSignature Language="C#" Value="public interface IPropagatorBlock&lt;in TInput,out TOutput&gt; : System.Threading.Tasks.Dataflow.ISourceBlock&lt;out TOutput&gt;, System.Threading.Tasks.Dataflow.ITargetBlock&lt;in TInput&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropagatorBlock`2&lt;- TInput, + TOutput&gt; implements class System.Threading.Tasks.Dataflow.IDataflowBlock, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!TOutput&gt;, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TInput&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.IPropagatorBlock`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
+    <AssemblyVersion>4.6.0.0</AssemblyVersion>
+    <AssemblyVersion>4.6.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TInput">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TOutput">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.ISourceBlock&lt;TOutput&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TInput">To be added.</typeparam>
+    <typeparam name="TOutput">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

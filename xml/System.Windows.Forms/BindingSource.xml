@@ -1,0 +1,3000 @@
+<Type Name="BindingSource" FullName="System.Windows.Forms.BindingSource">
+  <TypeSignature Language="C#" Value="public class BindingSource : System.ComponentModel.Component, System.Collections.IList, System.ComponentModel.IBindingListView, System.ComponentModel.ICancelAddNew, System.ComponentModel.ISupportInitializeNotification, System.ComponentModel.ITypedList, System.Windows.Forms.ICurrencyManagerProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingSource extends System.ComponentModel.Component implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.IBindingList, class System.ComponentModel.IBindingListView, class System.ComponentModel.ICancelAddNew, class System.ComponentModel.ISupportInitialize, class System.ComponentModel.ISupportInitializeNotification, class System.ComponentModel.ITypedList, class System.Windows.Forms.ICurrencyManagerProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.IBindingListView</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ICancelAddNew</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitializeNotification</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ITypedList</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Forms.ICurrencyManagerProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ComplexBindingProperties("DataSource", "DataMember")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("CurrentChanged")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("DataSource")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.BindingSourceDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates the data source for a form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource> component serves many purposes. First, it simplifies binding controls on a form to data by providing currency management, change notification, and other services between Windows Forms controls and data sources. This is accomplished by attaching the <xref:System.Windows.Forms.BindingSource> component to your data source using the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property. For complex binding scenarios you can optionally set the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property to a specific column or list in the data source. You then bind controls to the <xref:System.Windows.Forms.BindingSource>. All further interaction with the data is accomplished with calls to the <xref:System.Windows.Forms.BindingSource> component. For examples on how the <xref:System.Windows.Forms.BindingSource> can simplify the binding process, see [How to: Bind Windows Forms Controls to DBNull Database Values](~/docs/framework/winforms/controls/how-to-bind-windows-forms-controls-to-dbnull-database-values.md) and [How to: Handle Errors and Exceptions that Occur with Databinding](~/docs/framework/winforms/controls/how-to-handle-errors-and-exceptions-that-occur-with-databinding.md). Navigation and updating of the data source is accomplished through methods such as <xref:System.Windows.Forms.BindingSource.MoveNext%2A>, <xref:System.Windows.Forms.BindingSource.MoveLast%2A>, and <xref:System.Windows.Forms.BindingSource.Remove%2A>. Operations such as sorting and filtering are handled through the <xref:System.Windows.Forms.BindingSource.Sort%2A> and <xref:System.Windows.Forms.BindingSource.Filter%2A> properties. For more information on using sorting and filtering with the <xref:System.Windows.Forms.BindingSource>, see [How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](~/docs/framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md).  
+  
+ In addition, the <xref:System.Windows.Forms.BindingSource> component can act as a strongly typed data source. Typically the type of the underlying data source is fixed through one of the following mechanisms:  
+  
+-   Use the <xref:System.Windows.Forms.BindingSource.Add%2A> method to add an item to the <xref:System.Windows.Forms.BindingSource> component.  
+  
+-   Set the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property to a list, single object, or type.  
+  
+ Both of these mechanisms create a strongly-typed list. For more information on how to use the <xref:System.Windows.Forms.BindingSource> to bind to a type, see [How to: Bind a Windows Forms Control to a Type](~/docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md). You can also use the <xref:System.Windows.Forms.BindingSource> to bind your controls to a factory object. For more information on how to do this, see [How to: Bind a Windows Forms Control to a Factory Object](~/docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-factory-object.md).  
+  
+> [!NOTE]
+>  Because a <xref:System.Windows.Forms.BindingSource> handles both simple and complex data sources, terminology is problematic. Within this class documentation, the term *list* refers to a data collection within the hosted data source, and *item* denotes a single element. When discussing functionality associated with complex data sources, the equivalent terms *table* and *row* are used.  
+  
+ <xref:System.Windows.Forms.BindingSource> provides members for accessing the underlying data. The current item can be retrieved through the <xref:System.Windows.Forms.BindingSource.Current%2A> property, and the entire list can be retrieved through the <xref:System.Windows.Forms.BindingSource.List%2A> property. Editing operations are supported on the current item through <xref:System.Windows.Forms.BindingSource.Current%2A> and the <xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A>, <xref:System.Windows.Forms.BindingSource.EndEdit%2A>, <xref:System.Windows.Forms.BindingSource.CancelEdit%2A> and <xref:System.Windows.Forms.BindingSource.Add%2A> and <xref:System.Windows.Forms.BindingSource.AddNew%2A> methods. Although currency management is handled automatically for all underlying data source types, this class exposes a number of events, such as <xref:System.Windows.Forms.BindingSource.CurrentItemChanged> and <xref:System.Windows.Forms.BindingSource.DataSourceChanged>, that allow for customization.  
+  
+ Data sources that are bound to a <xref:System.Windows.Forms.BindingSource> component can also be navigated and managed with the <xref:System.Windows.Forms.BindingNavigator> class, which provides a VCR-like user interface (UI) for navigating items within a list. Although <xref:System.Windows.Forms.BindingNavigator> can be bound to any data source, it was designed to integrate with a <xref:System.Windows.Forms.BindingSource> component through its <xref:System.Windows.Forms.BindingNavigator.BindingSource%2A?displayProperty=fullName> property.  
+  
+ The default property for the <xref:System.Windows.Forms.BindingSource> class is <xref:System.Windows.Forms.BindingSource.DataSource%2A>. The default event is <xref:System.Windows.Forms.BindingSource.CurrentChanged>.  
+  
+> [!CAUTION]
+>  Many of the members of the <xref:System.Windows.Forms.BindingSource> class operate on the underlying list represented by the <xref:System.Windows.Forms.BindingSource.List%2A> property and simply refer their operation to the underlying list. Therefore, when the <xref:System.Windows.Forms.BindingSource> is bound to a custom implementation of <xref:System.Collections.IList>, the exact behavior of these members may differ from the behavior described in the class documentation. For example, the <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> method calls <xref:System.Collections.IList.RemoveAt%2A?displayProperty=fullName>. The <xref:System.Windows.Forms.BindingSource> documentation describes the <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> method with the understanding that the <xref:System.Collections.IList.RemoveAt%2A> method for the underlying <xref:System.Collections.IList> is correctly implemented.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a <xref:System.Windows.Forms.ListBox> bound to a <xref:System.Windows.Forms.BindingSource>. The <xref:System.Windows.Forms.BindingSource> is bound to a <xref:System.ComponentModel.BindingList%601> that contains a list of fonts.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceAndBindingListOfT#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceAndBindingListOfT/CS/Form1.cs#0)]
+ [!code-vb[System.Windows.Forms.BindingSourceAndBindingListOfT#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceAndBindingListOfT/VB/Form1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BindingSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingSource" /> class to the default property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the default <xref:System.Windows.Forms.BindingSource> property values initialized by this constructor.  
+  
+|Property|Default value|  
+|--------------|-------------------|  
+|<xref:System.Windows.Forms.BindingSource.DataSource%2A>|`null`|  
+|<xref:System.Windows.Forms.BindingSource.DataMember%2A>|<xref:System.String.Empty>|  
+|<xref:System.Windows.Forms.BindingSource.Sort%2A>|`null`|  
+|<xref:System.Windows.Forms.BindingSource.Filter%2A>|`null`|  
+|<xref:System.Windows.Forms.BindingSource.RaiseListChangedEvents%2A>|`true`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BindingSource (System.ComponentModel.IContainer container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.#ctor(System.ComponentModel.IContainer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="container" Type="System.ComponentModel.IContainer" />
+      </Parameters>
+      <Docs>
+        <param name="container">The <see cref="T:System.ComponentModel.IContainer" /> to add the current <see cref="T:System.Windows.Forms.BindingSource" /> to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingSource" /> class and adds the <see cref="T:System.Windows.Forms.BindingSource" /> to the specified container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor calls the default constructor, and then adds the current <xref:System.Windows.Forms.BindingSource> to the specified container. It is not typically used by the solutions programmer, but instead by authors of design-time environments.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BindingSource (object dataSource, string dataMember);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object dataSource, string dataMember) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.#ctor(System.Object,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataSource" Type="System.Object" />
+        <Parameter Name="dataMember" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dataSource">The data source for the <see cref="T:System.Windows.Forms.BindingSource" />.</param>
+        <param name="dataMember">The specific column or list name within the data source to bind to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingSource" /> class with the specified data source and data member.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual int Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">An <see cref="T:System.Object" /> to be added to the internal list.</param>
+        <summary>Adds an existing item to the internal list.</summary>
+        <returns>The zero-based index at which <paramref name="value" /> was added to the underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.Add%2A> method refers the call to the underlying list's `Add` method.  
+  
+ The internal list must contain homogenous types. If the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property has not already been set, then the first object added to the list defines the type for the list.  
+  
+ This method raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event.  
+  
+   
+  
+## Examples  
+ The following code example how to use the <xref:System.Windows.Forms.BindingSource.Add%2A> method. To run this example, paste the code into a Windows Form, and call the `PopulateBindingSourceWithFonts` method from the form's constructor.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceMethods#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/CS/Form1.cs#6)]
+ [!code-vb[System.Windows.Forms.BindingSourceMethods#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/VB/Form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="value" /> differs in type from the existing items in the underlying list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddingNew">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.AddingNewEventHandler AddingNew;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.AddingNewEventHandler AddingNew" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.AddingNew" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AddingNewEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before an item is added to the underlying list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.AddingNew> event occurs before a new object is added to the underlying list represented by the <xref:System.Windows.Forms.BindingSource.List%2A> property. This event is fired after the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method is called, but before the new item is created and added to the underlying list. By handling this event, the programmer can provide custom item creation and insertion behavior without being forced to derive from the <xref:System.Windows.Forms.BindingSource> class. This is accomplished in the event handler by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs?displayProperty=fullName> parameter to the new item. The new object created in the <xref:System.Windows.Forms.BindingSource.AddingNew> event must be of the same type as the type contained in the list or an exception will occur. You cannot set the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property when bound to a <xref:System.Data.DataView> or <xref:System.Data.DataTable> because you cannot add a new <xref:System.Data.DataRowView> to the list.  
+  
+ For more information about supplying custom new item functionality, see the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method. For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. New items are added to the list by the <xref:System.Windows.Forms.BindingSource.AddingNew> event handler. This code example is part of a larger example provided in [How to: Customize Item Addition with the Windows Forms BindingSource](~/docs/framework/winforms/controls/how-to-customize-item-addition-with-the-windows-forms-bindingsource.md).  
+  
+ [!code-cpp[System.Windows.Forms.DataConnector.AddingNew#8](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/CPP/form1.cpp#8)]
+ [!code-csharp[System.Windows.Forms.DataConnector.AddingNew#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/CS/form1.cs#8)]
+ [!code-vb[System.Windows.Forms.DataConnector.AddingNew#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/VB/form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.ComponentModel.AddingNewEventArgs.NewObject" /> is not the same type as the type contained in the list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNew">
+      <MemberSignature Language="C#" Value="public virtual object AddNew ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object AddNew() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.AddNew" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Adds a new item to the underlying list.</summary>
+        <returns>The <see cref="T:System.Object" /> that was created and added to the list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.AddNew%2A> method adds a new item to the underlying list represented by the <xref:System.Windows.Forms.BindingSource.List%2A> property. This method sets up the following series of actions:  
+  
+1.  The <xref:System.Windows.Forms.BindingSource.EndEdit%2A> method is automatically called to commit any pending edit operations.  
+  
+2.  The <xref:System.Windows.Forms.BindingSource.AddingNew> event is automatically raised. This event can be programmatically handled to construct the new item. This is accomplished in the event handler by setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs?displayProperty=fullName> parameter to the new item. The new object created in the <xref:System.Windows.Forms.BindingSource.AddingNew> event must be of the same type as the type contained in the list or an exception will occur.  
+  
+     If the <xref:System.Windows.Forms.BindingSource.AddingNew> event is not handled, and the underlying list is an <xref:System.ComponentModel.IBindingList>, then the request is passed to the list's <xref:System.ComponentModel.IBindingList.AddNew%2A?displayProperty=fullName> method. If the underlying list is not an <xref:System.ComponentModel.IBindingList>, the item is automatically created through its public default constructor. In either case, the new item is added to the end of the list.  
+  
+3.  The new item is added immediately to the internal list unless the data source implements the <xref:System.ComponentModel.IEditableObject> interface. In this case, the new item is not committed until an explicit call to <xref:System.Windows.Forms.BindingSource.System%23ComponentModel%23ICancelAddNew%23EndNew%2A> is made or until a new list operation is initiated. Before it is committed, the new item can be rolled back by calling <xref:System.Windows.Forms.BindingSource.CancelEdit%2A>, in which case the new item is discarded.  
+  
+ This method raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event.  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. New items are added to the list by the <xref:System.Windows.Forms.BindingSource.AddingNew> event handler. This code example is part of a larger example provided in [How to: Customize Item Addition with the Windows Forms BindingSource](~/docs/framework/winforms/controls/how-to-customize-item-addition-with-the-windows-forms-bindingsource.md).  
+  
+ [!code-cpp[System.Windows.Forms.DataConnector.AddingNew#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/CPP/form1.cpp#7)]
+ [!code-csharp[System.Windows.Forms.DataConnector.AddingNew#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/CS/form1.cs#7)]
+ [!code-vb[System.Windows.Forms.DataConnector.AddingNew#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.AddingNew/VB/form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.BindingSource.AllowNew" /> property is set to <see langword="false" />.  
+  
+ -or-  
+  
+ A public default constructor could not be found for the current item type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowEdit">
+      <MemberSignature Language="C#" Value="public virtual bool AllowEdit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowEdit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.AllowEdit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether items in the underlying list can be edited.</summary>
+        <value>
+          <see langword="true" /> to indicate list items can be edited; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.AllowEdit%2A> property is typically used by other components to determine if editing of items in the list is allowed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowNew">
+      <MemberSignature Language="C#" Value="public virtual bool AllowNew { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowNew" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.AllowNew" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="M:System.Windows.Forms.BindingSource.AddNew" /> method can be used to add items to the list.</summary>
+        <value>
+          <see langword="true" /> if <see cref="M:System.Windows.Forms.BindingSource.AddNew" /> can be used to add items to the list; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property depends on the underlying data source type. If the underlying list implements the <xref:System.ComponentModel.IBindingList> interface, this property will delegate to the underlying list. Otherwise, this property will return `false` if the underlying list has any of the following characteristics:  
+  
+-   It has a fixed size, as determined by the <xref:System.Collections.IList.IsFixedSize%2A?displayProperty=fullName> property.  
+  
+-   It is read-only, as determined by the <xref:System.Collections.IList.IsReadOnly%2A?displayProperty=fullName> property.  
+  
+-   The item's type does not have a default constructor.  
+  
+> [!NOTE]
+>  Once the value of this property is set, the getter no longer refers the call to the underlying list. Instead, it simply returns the value that was previously set until the <xref:System.Windows.Forms.BindingSource.ResetAllowNew%2A> method is called.  
+  
+ Setting this property raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=fullName> set to <xref:System.ComponentModel.ListChangedType?displayProperty=fullName>.  
+  
+ If you set the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property to `true` and the underlying list type does not have a default constructor, you must handle the <xref:System.Windows.Forms.BindingSource.AddingNew> event and create the appropriate type.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property of the <xref:System.Windows.Forms.BindingSource> component to permit the user to add new items to the <xref:System.Windows.Forms.BindingSource> component's underlying list. Setting this property to `true` causes the bound <xref:System.Windows.Forms.DataGridView> control to display its row for new records.  
+  
+ [!code-cpp[System.Windows.Forms.DataConnector.ItemChangedEventMode#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ItemChangedEventMode/CPP/form1.cpp#6)]
+ [!code-csharp[System.Windows.Forms.DataConnector.ItemChangedEventMode#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ItemChangedEventMode/CS/form1.cs#6)]
+ [!code-vb[System.Windows.Forms.DataConnector.ItemChangedEventMode#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ItemChangedEventMode/VB/form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">This property is set to <see langword="true" /> when the underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property has a fixed size or is read-only.</exception>
+        <exception cref="T:System.MissingMethodException">The property is set to <see langword="true" /> and the <see cref="E:System.Windows.Forms.BindingSource.AddingNew" /> event is not handled when the underlying list type does not have a default constructor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowRemove">
+      <MemberSignature Language="C#" Value="public virtual bool AllowRemove { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowRemove" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.AllowRemove" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether items can be removed from the underlying list.</summary>
+        <value>
+          <see langword="true" /> to indicate list items can be removed from the list; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.AllowRemove%2A> property is typically used by other components to determine if editing of items in the list is allowed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplySort">
+      <MemberSignature Language="C#" Value="public virtual void ApplySort (System.ComponentModel.ListSortDescriptionCollection sorts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplySort(class System.ComponentModel.ListSortDescriptionCollection sorts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ApplySort(System.ComponentModel.ListSortDescriptionCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sorts" Type="System.ComponentModel.ListSortDescriptionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="sorts">A <see cref="T:System.ComponentModel.ListSortDescriptionCollection" /> containing the sort descriptions to apply to the data source.</param>
+        <summary>Sorts the data source with the specified sort descriptions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.IBindingListView> implements multi-column sorting as a set of property descriptor-direction pairs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The data source is not an <see cref="T:System.ComponentModel.IBindingListView" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplySort">
+      <MemberSignature Language="C#" Value="public virtual void ApplySort (System.ComponentModel.PropertyDescriptor property, System.ComponentModel.ListSortDirection sort);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplySort(class System.ComponentModel.PropertyDescriptor property, valuetype System.ComponentModel.ListSortDirection sort) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.ComponentModel.PropertyDescriptor" />
+        <Parameter Name="sort" Type="System.ComponentModel.ListSortDirection" />
+      </Parameters>
+      <Docs>
+        <param name="property">A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that describes the property by which to sort the data source.</param>
+        <param name="sort">A <see cref="T:System.ComponentModel.ListSortDirection" /> indicating how the list should be sorted.</param>
+        <summary>Sorts the data source using the specified property descriptor and sort direction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.IBindingList> implements single column sorting using a <xref:System.ComponentModel.PropertyDescriptor> to indicate a property to sort by and a <xref:System.ComponentModel.ListSortDirection> indicating whether the property contents should be sorted in ascending or descending order.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The data source is not an <see cref="T:System.ComponentModel.IBindingList" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingComplete">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.BindingCompleteEventHandler BindingComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.BindingCompleteEventHandler BindingComplete" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.BindingComplete" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BindingCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when all the clients have been bound to this <see cref="T:System.Windows.Forms.BindingSource" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.BindingComplete> event occurs after all the clients, typically controls, have been bound to the current <xref:System.Windows.Forms.BindingSource>. The handler of this event can take the appropriate action based on the success, error, or exceptions in the binding process, by examining the <xref:System.Windows.Forms.BindingCompleteEventArgs.BindingCompleteState%2A> property of the <xref:System.Windows.Forms.BindingCompleteEventArgs> parameter.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates handling the <xref:System.Windows.Forms.BindingSource.BindingComplete> event. To run this code, paste it into an empty code file.  
+  
+ [!code-cpp[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/CPP/form1.cpp#3)]
+ [!code-csharp[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/CS/form1.cs#3)]
+ [!code-vb[System.Windows.Forms.DataConnectorBindingComplete#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorBindingComplete/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelEdit">
+      <MemberSignature Language="C#" Value="public void CancelEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.CancelEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels the current edit operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method discards modifications to data since the last save or load operation if both of the following conditions are met:  
+  
+-   The data source implements the <xref:System.ComponentModel.IEditableObject> interface.  
+  
+-   The <xref:System.Windows.Forms.BindingSource.EndEdit%2A> method has not been called yet.  
+  
+ This method calls the <xref:System.Windows.Forms.CurrencyManager.CancelCurrentEdit%2A> method of the underlying <xref:System.Windows.Forms.CurrencyManager>, and is scoped to row-level changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public virtual void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.Clear%2A> method removes all elements from the underlying list represented by the <xref:System.Windows.Forms.BindingSource.List%2A> property and sets the <xref:System.Windows.Forms.BindingSource.Count%2A> property to zero.  
+  
+ This method raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public virtual bool Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property. The value can be <see langword="null" />.</param>
+        <summary>Determines whether an object is an item in the list.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="value" /> parameter is found in the <see cref="P:System.Windows.Forms.BindingSource.List" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the implementation is dependent on the underlying list's `Contains` method, typically the following characteristics apply:  
+  
+-   <xref:System.Windows.Forms.BindingSource.List%2A> is searched starting at the first element and ending at the last element.  
+  
+-   The underlying method performs a linear search; therefore, the average execution time is proportional to the value of the <xref:System.Windows.Forms.BindingSource.Count%2A> property.  
+  
+-   The underlying method determines equality by calling the <xref:System.Object.Equals%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public virtual void CopyTo (Array arr, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array arr, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arr" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="arr">The destination array.</param>
+        <param name="index">The index in the destination array at which to start the copy operation.</param>
+        <summary>Copies the contents of the <see cref="P:System.Windows.Forms.BindingSource.List" /> to the specified array, starting at the specified index value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to combine items from multiple sources into a single array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of items in the underlying list, taking the current <see cref="P:System.Windows.Forms.BindingSource.Filter" /> value into consideration.</summary>
+        <value>The total number of filtered items in the underlying list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.Count%2A> property gets the number of items in the underlying list represented by the <xref:System.Windows.Forms.BindingSource.List%2A> property as modified by the value of the <xref:System.Windows.Forms.BindingSource.Filter%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Windows.Forms.BindingSource.List%2A>, <xref:System.Windows.Forms.BindingSource.RemoveAt%2A>, and <xref:System.Windows.Forms.BindingSource.Count%2A> members. To run this example, paste the code into a form that contains a <xref:System.Windows.Forms.BindingSource> named `BindingSource1`, two labels named `label1` and `label2`, and a button named `button1`. Associate the `button1_Click` method with the <xref:System.Windows.Forms.Control.Click> event for `button1`. Visual Basic users will need to add a reference to System.Data.dll.  
+  
+ [!code-csharp[System.Windows.Forms.DataConnectorFilterAndSort#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorFilterAndSort/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.DataConnectorFilterAndSort#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorFilterAndSort/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencyManager">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.CurrencyManager CurrencyManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CurrencyManager CurrencyManager" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.CurrencyManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CurrencyManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the currency manager associated with this <see cref="T:System.Windows.Forms.BindingSource" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with this <see cref="T:System.Windows.Forms.BindingSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want to access the currency manager for another binding to the same data member use the <xref:System.Windows.Forms.BindingSource.GetRelatedCurrencyManager%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public object Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current item in the list.</summary>
+        <value>An <see cref="T:System.Object" /> that represents the current item in the underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property, or <see langword="null" /> if the list has no items.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.BindingSource.Current%2A> property to access the current item, but use the <xref:System.Windows.Forms.BindingSource.List%2A> property to get the entire list. To determine the type of the current object, use the <xref:System.Object.GetType%2A>, or <xref:System.Object.ToString%2A> methods.  
+  
+ To change the current item, set the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a new integral value, or use one of the navigation methods such as <xref:System.Windows.Forms.BindingSource.MoveNext%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Windows.Forms.BindingSource.Current%2A> property. To run this example, paste the code into a form and call the `PopulateBindingSourceWithFonts` method from the form's <xref:System.Windows.Forms.Form.Load> event handling method.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceMethods#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/CS/Form1.cs#6)]
+ [!code-vb[System.Windows.Forms.BindingSourceMethods#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/VB/Form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler CurrentChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CurrentChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.CurrentChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the currently bound item changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.CurrentChanged> event is raised whenever the <xref:System.Windows.Forms.BindingSource.Current%2A> property changes for any of the following reasons:  
+  
+-   The current position of the <xref:System.Windows.Forms.BindingSource.List%2A> changes.  
+  
+-   The <xref:System.Windows.Forms.BindingSource.DataSource%2A> or <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties change.  
+  
+-   The membership of the underlying <xref:System.Windows.Forms.BindingSource.List%2A> changes, which causes <xref:System.Windows.Forms.BindingSource.Position%2A> to refer to a different item. Examples include adding or deleting an item before the current item, deleting or moving the current item itself, or moving an item to the current position.  
+  
+-   The underlying list is refreshed by a new sorting or filtering operation.  
+  
+ When this event is triggered, the <xref:System.Windows.Forms.BindingSource.Current%2A> property will already contain its new value.  
+  
+ <xref:System.Windows.Forms.BindingSource.CurrentChanged> is the default event for the <xref:System.Windows.Forms.BindingSource> class.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentItemChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler CurrentItemChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CurrentItemChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.CurrentItemChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a property value of the <see cref="P:System.Windows.Forms.BindingSource.Current" /> property has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.CurrentItemChanged> event is raised in response to all of the circumstances that raise the <xref:System.Windows.Forms.BindingSource.CurrentChanged> event. Additionally, <xref:System.Windows.Forms.BindingSource.CurrentItemChanged> is also fired whenever the value of one of the properties of <xref:System.Windows.Forms.BindingSource.Current%2A> is changed.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataError">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.BindingManagerDataErrorEventHandler DataError;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.BindingManagerDataErrorEventHandler DataError" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.DataError" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BindingManagerDataErrorEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a currency-related exception is silently handled by the <see cref="T:System.Windows.Forms.BindingSource" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is informational and reports CLS-compliant exceptions only. To determine what type of exception occurred, handle this event and check the <xref:System.Windows.Forms.BindingManagerDataErrorEventArgs.Exception%2A> property of the <xref:System.Windows.Forms.BindingManagerDataErrorEventArgs>.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMember">
+      <MemberSignature Language="C#" Value="public string DataMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.DataMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataMemberListEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the specific list in the data source to which the connector currently binds to.</summary>
+        <value>The name of a list (or row) in the <see cref="P:System.Windows.Forms.BindingSource.DataSource" />. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.BindingSource.DataSource%2A> contains multiple lists (or tables) of data, you should set the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property to the name of one of the sources.  
+  
+ Setting this property raises the <xref:System.Windows.Forms.BindingSource.DataMemberChanged> event  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMemberChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DataMemberChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataMemberChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.DataMemberChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.BindingSource.DataMember" /> property value has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.DataMemberChanged> event occurs after the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property changes.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.DataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.AttributeProvider(typeof(System.ComponentModel.IListSource))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data source that the connector binds to.</summary>
+        <value>An <see cref="T:System.Object" /> that acts as a data source. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.DataSource%2A> property can be set to a number of data sources, including types, objects, and lists of types. The resulting data source will be exposed as a list. The following table shows some of the common data sources and the resulting list evaluation.  
+  
+|DataSource property|List results|  
+|-------------------------|------------------|  
+|`null`|An empty <xref:System.ComponentModel.IBindingList> of objects. Adding an item sets the list to the type of the added item.|  
+|`null` with <xref:System.Windows.Forms.BindingSource.DataMember%2A> set|Not supported, raises <xref:System.ArgumentException>.|  
+|Non-list type or object of type "T"|Empty <xref:System.ComponentModel.IBindingList> of type "T".|  
+|Array instance|<xref:System.ComponentModel.IBindingList> containing the array elements.|  
+|<xref:System.Collections.IEnumerable> instance|An <xref:System.ComponentModel.IBindingList> containing the <xref:System.Collections.IEnumerable> items.|  
+|List instance containing type "T"|<xref:System.ComponentModel.IBindingList> instance containing type "T".|  
+  
+ In addition, <xref:System.Windows.Forms.BindingSource.DataSource%2A> can be set to other list types such as <xref:System.ComponentModel.IListSource> and <xref:System.ComponentModel.ITypedList> and the <xref:System.Windows.Forms.BindingSource> will handle them appropriately. In this case, the type contained in the list should have a default constructor.  
+  
+ When setting a data source, if the supplied reference contains more than one list or table, you must set the <xref:System.Windows.Forms.BindingSource.DataMember%2A> property to a string that specifies the list to bind to. Setting this property raises the <xref:System.Windows.Forms.BindingSource.DataSourceChanged> event.  
+  
+> [!NOTE]
+>  If you make any changes to the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property value, you should do so on the user interface (UI) thread to ensure that the UI reflects the changes.  
+  
+ The <xref:System.Windows.Forms.BindingSource.DataSource%2A> property is the default property for the <xref:System.Windows.Forms.BindingSource> class.  
+  
+   
+  
+## Examples  
+ The following code example assigns a list of customers to the <xref:System.Windows.Forms.BindingSource.DataSource%2A> of a <xref:System.Windows.Forms.BindingSource> component. This code example is part of a larger example provided at [How to: Raise Change Notifications Using the BindingSource ResetItem Method](~/docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md).  
+  
+ [!code-cpp[System.Windows.Forms.DataConnector.ResetItem#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CPP/form1.cpp#6)]
+ [!code-csharp[System.Windows.Forms.DataConnector.ResetItem#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CS/form1.cs#6)]
+ [!code-vb[System.Windows.Forms.DataConnector.ResetItem#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/VB/form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.DataSourceChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.BindingSource.DataSource" /> property value has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.DataSourceChanged> event occurs after the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property changes.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.BindingSource" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.BindingSource> references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EndEdit">
+      <MemberSignature Language="C#" Value="public void EndEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.EndEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Applies pending changes to the underlying data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.BindingSource.EndEdit%2A> method is called, all pending changes are applied to the underlying data source.  
+  
+ This method has no effect unless the objects contained by the data source implement the <xref:System.ComponentModel.IEditableObject> interface. If the objects do not implement the <xref:System.ComponentModel.IEditableObject> interface, changes to the data are copied to the underlying data source immediately after each change.  
+  
+ This method raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public virtual string Filter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression used to filter which rows are viewed.</summary>
+        <value>A string that specifies how rows are to be filtered. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically used in complex data-binding scenarios, the <xref:System.Windows.Forms.BindingSource.Filter%2A> property allows you to view a subset of the <xref:System.Windows.Forms.BindingSource.DataSource%2A>. Only underlying lists that implement the <xref:System.ComponentModel.IBindingListView> interface support filtering.  
+  
+ When <xref:System.Windows.Forms.BindingSource.Filter%2A> is not `null`, the <xref:System.Windows.Forms.BindingSource> passes this property to the underlying list. If you set this property during object initialization, the call will be deferred until after initialization is complete.  
+  
+ To form a filter value, specify the name of a column followed by an operator and a value to filter on. The accepted filter syntax depends on the underlying data source. If the underlying data source is a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, or <xref:System.Data.DataView>, you can specify Boolean expressions using the syntax documented for the <xref:System.Data.DataColumn.Expression%2A?displayProperty=fullName> property.  
+  
+ The value of the <xref:System.Windows.Forms.BindingSource.Filter%2A> property affects the value of the <xref:System.Windows.Forms.BindingSource.Count%2A> property. Additionally, the <xref:System.Windows.Forms.BindingSource.Filter%2A> value will persist when the data source changes. To stop filtering the <xref:System.Windows.Forms.BindingSource.DataSource%2A>, call the <xref:System.Windows.Forms.BindingSource.RemoveFilter%2A> method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Forms.BindingSource.Filter%2A> property with a <xref:System.Data.DataView>. To run this example, paste the code into a Windows Form and call `PopulateDataViewAndFilter` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. Your form should import the <xref:System.Xml> and <xref:System.IO> namespaces.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceMethods#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/CS/Form1.cs#3)]
+ [!code-vb[System.Windows.Forms.BindingSourceMethods#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public virtual int Find (System.ComponentModel.PropertyDescriptor prop, object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Find(class System.ComponentModel.PropertyDescriptor prop, object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Find(System.ComponentModel.PropertyDescriptor,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to search for.</param>
+        <param name="key">The value of <c>prop</c> to match.</param>
+        <summary>Searches for the index of the item that has the given property descriptor.</summary>
+        <returns>The zero-based index of the item that has the given value for <see cref="T:System.ComponentModel.PropertyDescriptor" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is typically used in complex data-binding cases to locate the first row where the value of the field specified by the `prop` parameter equals the value of the `key` parameter  
+  
+ This method simply refers the request to the underlying list's <xref:System.ComponentModel.IBindingList.Find%2A?displayProperty=fullName> method. For example, if the underlying data source is a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, or <xref:System.Data.DataView>, this method calls the <xref:System.Data.DataView.System%23ComponentModel%23IBindingList%23Find%2A?displayProperty=fullName> method. The behavior of <xref:System.ComponentModel.IBindingList.Find%2A?displayProperty=fullName>, such as the value returned if no matching item is found, depends on the implementation of the method in the underlying list.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.BindingSource.Find%2A> method. For the complete example see the class overview topic.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceAndBindingListOfT#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceAndBindingListOfT/CS/Form1.cs#4)]
+ [!code-vb[System.Windows.Forms.BindingSourceAndBindingListOfT#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceAndBindingListOfT/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The underlying list is not of type <see cref="T:System.ComponentModel.IBindingList" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public int Find (string propertyName, object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Find(string propertyName, object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Find(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to search for.</param>
+        <param name="key">The value of the item with the specified <c>propertyName</c> to find.</param>
+        <summary>Returns the index of the item in the list with the specified property name and value.</summary>
+        <returns>The zero-based index of the item with the specified property name and value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.Find%2A> method can only be used when the underlying list is an <xref:System.ComponentModel.IBindingList> with searching implemented. This method simply refers the request to the underlying list's <xref:System.ComponentModel.IBindingList.Find%2A?displayProperty=fullName> method. For example, if the underlying data source is a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, or <xref:System.Data.DataView>, this method converts `propertyName` to a <xref:System.ComponentModel.PropertyDescriptor> and calls the <xref:System.Data.DataView.System%23ComponentModel%23IBindingList%23Find%2A> method. The behavior of <xref:System.Windows.Forms.BindingSource.Find%2A>, such as the value returned if no matching item is found, depends on the implementation of the method in the underlying list.  
+  
+ The property name comparison is case-insensitive.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Forms.BindingSource.Find%2A> method with a <xref:System.Data.DataView>. To run this example, paste the code into a Windows Form and call `PopulateDataViewAndFind` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. Your form should import the <xref:System.Xml> and <xref:System.IO> namespaces.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceMethods#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.BindingSourceMethods#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying list is not a <see cref="T:System.ComponentModel.IBindingList" /> with searching functionality implemented.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="propertyName" /> does not match a property in the list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an enumerator for the <see cref="P:System.Windows.Forms.BindingSource.List" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="P:System.Windows.Forms.BindingSource.List" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemProperties">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetItemProperties (System.ComponentModel.PropertyDescriptor[] listAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetItemProperties(class System.ComponentModel.PropertyDescriptor[] listAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listAccessors" Type="System.ComponentModel.PropertyDescriptor[]" />
+      </Parameters>
+      <Docs>
+        <param name="listAccessors">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects to find in the list as bindable.</param>
+        <summary>Retrieves an array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects representing the bindable properties of the data source list type.</summary>
+        <returns>An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that represents the properties on this list type used to bind data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetListName">
+      <MemberSignature Language="C#" Value="public virtual string GetListName (System.ComponentModel.PropertyDescriptor[] listAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetListName(class System.ComponentModel.PropertyDescriptor[] listAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.GetListName(System.ComponentModel.PropertyDescriptor[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listAccessors" Type="System.ComponentModel.PropertyDescriptor[]" />
+      </Parameters>
+      <Docs>
+        <param name="listAccessors">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects to find in the list as bindable.</param>
+        <summary>Gets the name of the list supplying data for the binding.</summary>
+        <returns>The name of the list supplying the data for binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRelatedCurrencyManager">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.CurrencyManager GetRelatedCurrencyManager (string dataMember);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.CurrencyManager GetRelatedCurrencyManager(string dataMember) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.GetRelatedCurrencyManager(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CurrencyManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataMember" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dataMember">The name of column or list, within the data source to retrieve the currency manager for.</param>
+        <summary>Gets the related currency manager for the specified data member.</summary>
+        <returns>The related <see cref="T:System.Windows.Forms.CurrencyManager" /> for the specified data member.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `dataMember` is `null` or an empty string (""), <xref:System.Windows.Forms.BindingSource.GetRelatedCurrencyManager%2A> returns the main currency manager; otherwise, it checks for another <xref:System.Windows.Forms.BindingSource> bound to the specified data member and returns its currency manager.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public virtual int IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property. The value can be <see langword="null" />.</param>
+        <summary>Searches for the specified object and returns the index of the first occurrence within the entire list.</summary>
+        <returns>The zero-based index of the first occurrence of the <paramref name="value" /> parameter; otherwise, -1 if <paramref name="value" /> is not in the list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the implementation is dependent on the underlying list's `IndexOf` method, typically the following characteristics apply:  
+  
+-   The <xref:System.Windows.Forms.BindingSource.List%2A> is searched starting at the first element and ending at the last element.  
+  
+-   The underlying method performs a linear search; therefore, the average execution time is proportional to the value of the <xref:System.Windows.Forms.BindingSource.Count%2A> property.  
+  
+-   The underlying method determines equality by calling the <xref:System.Object.Equals%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public virtual void Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The <see cref="T:System.Object" /> to insert. The value can be <see langword="null" />.</param>
+        <summary>Inserts an item into the list at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or greater than <see cref="P:System.Windows.Forms.BindingSource.Count" />.</exception>
+        <exception cref="T:System.NotSupportedException">The list is read-only or has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBindingSuspended">
+      <MemberSignature Language="C#" Value="public bool IsBindingSuspended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBindingSuspended" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsBindingSuspended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the list binding is suspended.</summary>
+        <value>
+          <see langword="true" /> to indicate the binding is suspended; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedSize">
+      <MemberSignature Language="C#" Value="public virtual bool IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the underlying list has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the underlying list has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the list has a fixed size, it does not allow the addition or removal of elements after the list has been created, but you can modify existing elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the underlying list is read-only.</summary>
+        <value>
+          <see langword="true" /> if the list is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A list that is read-only does not allow the addition, removal, or modification of any list items after the list is created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSorted">
+      <MemberSignature Language="C#" Value="public virtual bool IsSorted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSorted" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsSorted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the items in the underlying list are sorted.</summary>
+        <value>
+          <see langword="true" /> if the list is an <see cref="T:System.ComponentModel.IBindingList" /> and is sorted; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.BindingSource.IsSorted%2A> always returns `false` if the list is not an <xref:System.ComponentModel.IBindingList>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public virtual bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> to indicate the list is synchronized; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual object this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to retrieve.</param>
+        <summary>Gets or sets the list element at the specified index.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.Item%2A> property represents the indexer for this class. It accepts `null` as a valid value and allows duplicate items within the list.  
+  
+ Setting a value will raise the <xref:System.Windows.Forms.BindingSource.ListChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or is equal to or greater than <see cref="P:System.Windows.Forms.BindingSource.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="public System.Collections.IList List { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList List" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.List" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list that the connector is bound to.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> that represents the list, or <see langword="null" /> if there is no underlying list associated with this <see cref="T:System.Windows.Forms.BindingSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource> class uniformly handles different data sources. Ideally the <xref:System.Windows.Forms.BindingSource.List%2A> property should be set to a general <xref:System.Collections.IList>. However, sometimes it may be necessary to cast this property to a more specific type. The following table shows the underlying list type, which depends on the type or value of the data source.  
+  
+|Data source type|Underlying list description|  
+|----------------------|---------------------------------|  
+|<xref:System.Windows.Forms.BindingSource.DataSource%2A> and <xref:System.Windows.Forms.BindingSource.DataMember%2A> are `null`|An empty <xref:System.Collections.ArrayList>.|  
+|<xref:System.Windows.Forms.BindingSource.DataSource%2A> is `null`, but <xref:System.Windows.Forms.BindingSource.DataMember%2A> is not `null`|None; an attempt to get the <xref:System.Windows.Forms.BindingSource.List%2A> will throw an <xref:System.ArgumentException>.|  
+|An <xref:System.Array> instance|An <xref:System.Array>.|  
+|An <xref:System.ComponentModel.IListSource> instance|The return value from a call to the <xref:System.ComponentModel.IListSource.GetList%2A> method of this <xref:System.ComponentModel.IListSource> instance.|  
+|An <xref:System.ComponentModel.IBindingList> instance|An <xref:System.ComponentModel.IBindingList>.|  
+|An <xref:System.Collections.IList> instance|An <xref:System.Collections.IList>.|  
+|A non-<xref:System.Collections.IList> instance of type "T"|A <xref:System.ComponentModel.BindingList%601> with one element.|  
+|An <xref:System.ComponentModel.ICustomTypeDescriptor> instance|An <xref:System.Collections.ArrayList> with one element.|  
+|An <xref:System.Collections.IEnumerable>|An <xref:System.Collections.ArrayList> with the elements copied over.|  
+|The <xref:System.Array> type with <xref:System.Windows.Forms.BindingSource.DataMember%2A> of item type "T"|A <xref:System.ComponentModel.BindingList%601>.|  
+|A <xref:System.Type> that represents an <xref:System.ComponentModel.IListSource> or <xref:System.ComponentModel.ITypedList>|An instance created by a call to the <xref:System.Activator.CreateInstance%28System.Type%29> method of the <xref:System.Activator> class. A <xref:System.NotSupportedException> may be thrown.|  
+|The <xref:System.Collections.IList> type with <xref:System.Windows.Forms.BindingSource.DataMember%2A> of item type "T"<br /><br /> -or-<br /><br /> A non-<xref:System.Collections.IList> type|A <xref:System.ComponentModel.BindingList%601>.|  
+|The <xref:System.ComponentModel.ICustomTypeDescriptor> type|None; an attempt to get the <xref:System.Windows.Forms.BindingSource.List%2A> will throw an <xref:System.NotSupportedException>.|  
+  
+ If the type retrieved is the <xref:System.Collections.IList> interface, the underlying collection may be more complex, such as an <xref:System.Collections.ArrayList> or <xref:System.Data.DataView> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Windows.Forms.BindingSource.List%2A>, <xref:System.Windows.Forms.BindingSource.RemoveAt%2A>, and <xref:System.Windows.Forms.BindingSource.Count%2A> members. To run this example, paste the code into a form that contains a <xref:System.Windows.Forms.BindingSource> named `BindingSource1`, two labels named `label1` and `label2`, and a button named `button1`. Associate the `button1_Click` method with the <xref:System.Windows.Forms.Control.Click> event for `button1`. Visual Basic users will need to add a reference to System.Data.dll.  
+  
+ [!code-csharp[System.Windows.Forms.DataConnectorFilterAndSort#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorFilterAndSort/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.DataConnectorFilterAndSort#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorFilterAndSort/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.ListChangedEventHandler ListChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.ListChangedEventHandler ListChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.ListChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ListChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the underlying list changes or an item in the list changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.ListChanged> event occurs when there is a change to the membership or metadata of the underlying list represented by the <xref:System.Windows.Forms.BindingSource.List%2A> property. For example, this event is raised when items are added, removed, or moved, or the <xref:System.Windows.Forms.BindingSource.DataSource%2A> or <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties change. The values of the <xref:System.Windows.Forms.BindingSource.Sort%2A> and <xref:System.Windows.Forms.BindingSource.Filter%2A> properties will persist when this event occurs.  
+  
+ This event can be completely suppressed by setting the <xref:System.Windows.Forms.BindingSource.RaiseListChangedEvents%2A> property to `false`. For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates handling the <xref:System.Windows.Forms.BindingSource.ListChanged> event of the <xref:System.Windows.Forms.BindingSource> component to detect when the <xref:System.Windows.Forms.BindingSource> component's underlying list is changed.  
+  
+ [!code-cpp[System.Windows.Forms.DataConnector.ItemChangedEventMode#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ItemChangedEventMode/CPP/form1.cpp#9)]
+ [!code-csharp[System.Windows.Forms.DataConnector.ItemChangedEventMode#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ItemChangedEventMode/CS/form1.cs#9)]
+ [!code-vb[System.Windows.Forms.DataConnector.ItemChangedEventMode#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ItemChangedEventMode/VB/form1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveFirst">
+      <MemberSignature Language="C#" Value="public void MoveFirst ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveFirst() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.MoveFirst" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Moves to the first item in the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes the current value of the <xref:System.Windows.Forms.BindingSource.Position%2A> property to 0, the first item in the underlying data source.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Windows.Forms.BindingSource.MoveNext%2A>, <xref:System.Windows.Forms.BindingSource.MoveFirst%2A>, <xref:System.Windows.Forms.BindingSource.Current%2A>, and <xref:System.Windows.Forms.BindingSource.Position%2A> members. To run this example, paste the code into a form that imports the <xref:System.Drawing.Drawing2D> namespace and contains a <xref:System.Windows.Forms.BindingSource> named `BindingSource1` and a button named `button1`. Associate the `Form1_Load` and `Form1_Paint` methods with the <xref:System.Windows.Forms.Form.Load> and <xref:System.Windows.Forms.Control.Paint> events for the form, and associate the `button1_click` method with the <xref:System.Windows.Forms.Control.Click> event for `button1`. Visual Basic users will need to add a reference to System.Data.dll.  
+  
+ [!code-cpp[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/cpp/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveLast">
+      <MemberSignature Language="C#" Value="public void MoveLast ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveLast() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.MoveLast" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Moves to the last item in the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes the current value of the <xref:System.Windows.Forms.BindingSource.Position%2A> property to the index of the last item in the underlying data source, which is equal to the value of the <xref:System.Windows.Forms.BindingSource.Count%2A> property minus 1.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public void MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Moves to the next item in the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes the current value of the <xref:System.Windows.Forms.BindingSource.Position%2A> property to the next item in the underlying data source.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Windows.Forms.BindingSource.MoveNext%2A>, <xref:System.Windows.Forms.BindingSource.MoveFirst%2A>, <xref:System.Windows.Forms.BindingSource.Current%2A>, and <xref:System.Windows.Forms.BindingSource.Position%2A> members. To run this example, paste the code into a form that imports the <xref:System.Drawing.Drawing2D> namespace and contains a <xref:System.Windows.Forms.BindingSource> named `BindingSource1` and a button named `button1`. Associate the `Form1_Load` and `Form1_Paint` methods with the <xref:System.Windows.Forms.Form.Load> and <xref:System.Windows.Forms.Control.Paint> events for the form, and associate the `button1_click` method with the <xref:System.Windows.Forms.Control.Click> event for `button1`. Visual Basic users will need to add a reference to System.Data.dll.  
+  
+ [!code-cpp[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/cpp/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MovePrevious">
+      <MemberSignature Language="C#" Value="public void MovePrevious ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MovePrevious() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.MovePrevious" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Moves to the previous item in the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method changes the current value of the <xref:System.Windows.Forms.BindingSource.Position%2A> property to the previous item in the underlying data source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAddingNew">
+      <MemberSignature Language="C#" Value="protected virtual void OnAddingNew (System.ComponentModel.AddingNewEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAddingNew(class System.ComponentModel.AddingNewEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.AddingNewEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.AddingNew" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnAddingNew%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnAddingNew(System.ComponentModel.AddingNewEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingComplete">
+      <MemberSignature Language="C#" Value="protected virtual void OnBindingComplete (System.Windows.Forms.BindingCompleteEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBindingComplete(class System.Windows.Forms.BindingCompleteEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.BindingCompleteEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.BindingComplete" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnBindingComplete%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnCurrentChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCurrentChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.CurrentChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnCurrentChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnCurrentChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentItemChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnCurrentItemChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCurrentItemChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnCurrentItemChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.CurrentItemChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnCurrentItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnCurrentItemChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnCurrentItemChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataError">
+      <MemberSignature Language="C#" Value="protected virtual void OnDataError (System.Windows.Forms.BindingManagerDataErrorEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataError(class System.Windows.Forms.BindingManagerDataErrorEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnDataError(System.Windows.Forms.BindingManagerDataErrorEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.BindingManagerDataErrorEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.BindingManagerDataErrorEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.DataError" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnDataError%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnDataError(System.Windows.Forms.BindingManagerDataErrorEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnDataError(System.Windows.Forms.BindingManagerDataErrorEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataMemberChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDataMemberChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataMemberChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnDataMemberChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.DataMemberChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnDataMemberChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnDataMemberChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnDataMemberChanged(System.EventArgs)" /> method so that registered delegates receive the event.  
+  
+ The <see cref="M:System.Windows.Forms.BindingSource.OnDataMemberChanged(System.EventArgs)" /> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataSourceChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDataSourceChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataSourceChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnDataSourceChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.DataSourceChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnDataSourceChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnDataSourceChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnDataSourceChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnListChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnListChanged (System.ComponentModel.ListChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnListChanged(class System.ComponentModel.ListChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnListChanged(System.ComponentModel.ListChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.ListChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.ListChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnListChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnListChanged(System.ComponentModel.ListChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnListChanged(System.ComponentModel.ListChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPositionChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPositionChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPositionChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.OnPositionChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.ComponentModel.ListChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingSource.PositionChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingSource.OnPositionChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingSource.OnPositionChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingSource.OnPositionChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public int Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the current item in the underlying list.</summary>
+        <value>A zero-based index that specifies the position of the current item in the underlying list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property, out-of-range values are treated in the following manner:  
+  
+-   Negative values are treated as 0.  
+  
+-   Values greater than or equal to <xref:System.Windows.Forms.BindingSource.Count%2A> are treated as <xref:System.Windows.Forms.BindingSource.Count%2A> minus 1.  
+  
+ Changing the <xref:System.Windows.Forms.BindingSource.Position%2A> property will adjust the <xref:System.Windows.Forms.BindingSource.Current%2A> property likewise.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Windows.Forms.BindingSource.MoveNext%2A>, <xref:System.Windows.Forms.BindingSource.MoveFirst%2A>, <xref:System.Windows.Forms.BindingSource.Current%2A>, and <xref:System.Windows.Forms.BindingSource.Position%2A> members. To run this example, paste the code into a form that imports the <xref:System.Drawing.Drawing2D> namespace and contains a <xref:System.Windows.Forms.BindingSource> named `BindingSource1` and a button named `button1`. Associate the `Form1_Load` and `Form1_Paint` methods with the <xref:System.Windows.Forms.Form.Load> and <xref:System.Windows.Forms.Control.Paint> events for the form, and associate the `button1_click` method with the <xref:System.Windows.Forms.Control.Click> event for `button1`. Visual Basic users will need to add a reference to System.Data.dll.  
+  
+ [!code-cpp[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/cpp/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.DataConnectorCurrent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorCurrent/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PositionChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler PositionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PositionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.PositionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the value of the <see cref="P:System.Windows.Forms.BindingSource.Position" /> property has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.PositionChanged> event occurs after the <xref:System.Windows.Forms.BindingSource.Position%2A> property has changed.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseListChangedEvents">
+      <MemberSignature Language="C#" Value="public bool RaiseListChangedEvents { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RaiseListChangedEvents" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.RaiseListChangedEvents" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether <see cref="E:System.Windows.Forms.BindingSource.ListChanged" /> events should be raised.</summary>
+        <value>
+          <see langword="true" /> if <see cref="E:System.Windows.Forms.BindingSource.ListChanged" /> events should be raised; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.BindingSource.RaiseListChangedEvents%2A> property is `false`, it suspends the raising of <xref:System.Windows.Forms.BindingSource.ListChanged> events. This event indicates that the bound list has been modified in some way, including adding, deleting, inserting, or modifying items.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual void Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The item to remove from the underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property.</param>
+        <summary>Removes the specified item from the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.Remove%2A> method causes the list to be searched for the `value` parameter. If found, this method will attempt to remove the item from the <xref:System.Windows.Forms.BindingSource.List%2A>. This attempt will fail if the list has a fixed size or is read-only. These two conditions can be tested with the <xref:System.Windows.Forms.BindingSource.IsFixedSize%2A> and <xref:System.Windows.Forms.BindingSource.IsReadOnly%2A> properties, respectively.  
+  
+ This method raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The underlying list has a fixed size or is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>Removes the item at the specified index in the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These two conditions can be tested with the <xref:System.Windows.Forms.BindingSource.IsFixedSize%2A> and <xref:System.Windows.Forms.BindingSource.IsReadOnly%2A> properties, respectively.  
+  
+ This method raises the <xref:System.Windows.Forms.BindingSource.ListChanged> event.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Windows.Forms.BindingSource.List%2A>, <xref:System.Windows.Forms.BindingSource.RemoveAt%2A>, and <xref:System.Windows.Forms.BindingSource.Count%2A> members. To run this example, paste the code into a form that contains a <xref:System.Windows.Forms.BindingSource> named `BindingSource1`, two labels named `label1` and `label2`, and a button named `button1`. Associate the `button1_Click` method with the <xref:System.Windows.Forms.Control.Click> event for `button1`. Visual Basic users will need to add a reference to System.Data.dll.  
+  
+ [!code-csharp[System.Windows.Forms.DataConnectorFilterAndSort#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorFilterAndSort/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.DataConnectorFilterAndSort#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorFilterAndSort/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or greater than the value of the <see cref="P:System.Windows.Forms.BindingSource.Count" /> property.</exception>
+        <exception cref="T:System.NotSupportedException">The underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property is read-only or has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCurrent">
+      <MemberSignature Language="C#" Value="public void RemoveCurrent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCurrent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.RemoveCurrent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the current item from the list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A> method is equivalent to the <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.BindingSource.AllowRemove" /> property is <see langword="false" />.  
+  
+ -or-  
+  
+ <see cref="P:System.Windows.Forms.BindingSource.Position" /> is less than zero or greater than <see cref="P:System.Windows.Forms.BindingSource.Count" />.</exception>
+        <exception cref="T:System.NotSupportedException">The underlying list represented by the <see cref="P:System.Windows.Forms.BindingSource.List" /> property is read-only or has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFilter">
+      <MemberSignature Language="C#" Value="public virtual void RemoveFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveFilter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.RemoveFilter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the filter associated with the <see cref="T:System.Windows.Forms.BindingSource" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.RemoveFilter%2A> method refers the request to the underlying list's <xref:System.ComponentModel.IBindingListView.RemoveFilter%2A?displayProperty=fullName> method. Only lists that implement <xref:System.ComponentModel.IBindingListView> support filtering.  
+  
+ By default, a call to this method is equivalent to setting the <xref:System.Windows.Forms.BindingSource.Filter%2A> property to `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The underlying list does not support filtering.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveSort">
+      <MemberSignature Language="C#" Value="public virtual void RemoveSort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveSort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.RemoveSort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the sort associated with the <see cref="T:System.Windows.Forms.BindingSource" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.RemoveSort%2A> method refers the request to the underlying list's <xref:System.ComponentModel.IBindingList.RemoveSort%2A?displayProperty=fullName> method. Only lists that implement <xref:System.ComponentModel.IBindingList> support sorting.  
+  
+ By default, a call to this method is equivalent to setting the <xref:System.Windows.Forms.BindingSource.Sort%2A> property to `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The underlying list does not support sorting.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetAllowNew">
+      <MemberSignature Language="C#" Value="public virtual void ResetAllowNew ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetAllowNew() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResetAllowNew" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reinitializes the <see cref="P:System.Windows.Forms.BindingSource.AllowNew" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.ResetAllowNew%2A> method reinitializes the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property to reflect the value of the corresponding <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property in the underlying list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetBindings">
+      <MemberSignature Language="C#" Value="public void ResetBindings (bool metadataChanged);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetBindings(bool metadataChanged) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResetBindings(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadataChanged" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="metadataChanged">
+          <see langword="true" /> if the data schema has changed; <see langword="false" /> if only values have changed.</param>
+        <summary>Causes a control bound to the <see cref="T:System.Windows.Forms.BindingSource" /> to reread all the items in the list and refresh their displayed values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method informs all controls bound to the <xref:System.Windows.Forms.BindingSource> to refresh their values. The method does this by raising the <xref:System.Windows.Forms.BindingSource.ListChanged> event at least once; the `metaDataChanged` parameter indicates the nature of the underlying change.  
+  
+-   A `metaDataChanged` value of `true` indicates that the data schema of <xref:System.Windows.Forms.BindingSource> has changed. A <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=fullName> set to <xref:System.ComponentModel.ListChangedType?displayProperty=fullName>.  
+  
+-   A `metaDataChanged` value of `false` indicates that only the values of one or more items have changed.  
+  
+ Regardless of the value of `metaDataChanged`, a <xref:System.Windows.Forms.BindingSource.ListChanged> event is raised with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=fullName> set to <xref:System.ComponentModel.ListChangedType?displayProperty=fullName>. As a consequence, calling <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> with a parameter of `true` will raise two <xref:System.Windows.Forms.BindingSource.ListChanged> events.  
+  
+ <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> is automatically called whenever another member makes major changes to the data-binding, such as setting the <xref:System.Windows.Forms.BindingSource.DataSource%2A> or <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties. However, the programmer can also call this method explicitly.  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind an array list, which does not provide change notification. An item is removed from the list, and the bound controls are notified of the change by calling the <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method. This code example is part of a larger example provided in [How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource](~/docs/framework/winforms/controls/reflect-data-source-updates-in-a-wf-control-with-the-bindingsource.md).  
+  
+ [!code-cpp[System.Windows.Forms.DataConnector.ResetBindings#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/CPP/form1.cpp#3)]
+ [!code-csharp[System.Windows.Forms.DataConnector.ResetBindings#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/CS/form1.cs#3)]
+ [!code-vb[System.Windows.Forms.DataConnector.ResetBindings#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetCurrentItem">
+      <MemberSignature Language="C#" Value="public void ResetCurrentItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetCurrentItem() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResetCurrentItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes a control bound to the <see cref="T:System.Windows.Forms.BindingSource" /> to reread the currently selected item and refresh its displayed value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method will cause the <xref:System.Windows.Forms.BindingSource.ListChanged> event to occur, specifying the item changed at the current position.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetItem">
+      <MemberSignature Language="C#" Value="public void ResetItem (int itemIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetItem(int32 itemIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResetItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="itemIndex">The zero-based index of the item that has changed.</param>
+        <summary>Causes a control bound to the <see cref="T:System.Windows.Forms.BindingSource" /> to reread the item at the specified index, and refresh its displayed value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method notifies all controls bound to the item at the specified <xref:System.Windows.Forms.BindingSource.Position%2A> to refresh their values. The method does this by raising the <xref:System.Windows.Forms.BindingSource.ListChanged> event with <xref:System.ComponentModel.ListChangedEventArgs.ListChangedType?displayProperty=fullName> set to <xref:System.ComponentModel.ListChangedType?displayProperty=fullName>.  
+  
+ <xref:System.Windows.Forms.BindingSource.ResetItem%2A> is automatically called whenever changes are made to the value of an individual item. However, the programmer can also call this method explicitly.  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. The list does not raise change notifications, so the <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method on the <xref:System.Windows.Forms.BindingSource> is used to raise the <xref:System.Windows.Forms.BindingSource.ListChanged> event. This code example is part of a larger example provided in [How to: Raise Change Notifications Using the BindingSource ResetItem Method](~/docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md).  
+  
+ [!code-cpp[System.Windows.Forms.DataConnector.ResetItem#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CPP/form1.cpp#7)]
+ [!code-csharp[System.Windows.Forms.DataConnector.ResetItem#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CS/form1.cs#7)]
+ [!code-vb[System.Windows.Forms.DataConnector.ResetItem#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/VB/form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeBinding">
+      <MemberSignature Language="C#" Value="public void ResumeBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResumeBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.ResumeBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resumes data binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.BindingSource.SuspendBinding%2A> and <xref:System.Windows.Forms.BindingSource.ResumeBinding%2A> are two methods that allow the temporary suspension and resumption of data binding in a simple-binding scenario. You would typically suspend data binding if the user must be allowed to make several edits to data fields before validation occurs. For example, if one field must be changed in accordance with a second, but where validating the first field would cause the second field to be in error.  
+  
+> [!NOTE]
+>  Using <xref:System.Windows.Forms.BindingSource.SuspendBinding%2A> prevents changes from being pushed into the data source until <xref:System.Windows.Forms.BindingSource.ResumeBinding%2A> is called, but does not actually prevent any events from occurring. Controls that use complex data binding, such as the <xref:System.Windows.Forms.DataGridView> control, update their values based on change events such as the <xref:System.Windows.Forms.CurrencyManager.ListChanged> event, so calling <xref:System.Windows.Forms.BindingSource.SuspendBinding%2A> will not prevent them from receiving changes to the data source. For this reason, this <xref:System.Windows.Forms.BindingSource.SuspendBinding%2A> and <xref:System.Windows.Forms.BindingSource.ResumeBinding%2A> are designed for use with simple-bound controls, such as the <xref:System.Windows.Forms.TextBox> control. Alternatively you can use these methods in a complex binding scenario if you suppress <xref:System.Windows.Forms.BindingSource.ListChanged> events by setting the <xref:System.Windows.Forms.BindingSource.RaiseListChangedEvents%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="public string Sort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Sort" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.Sort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the column names used for sorting, and the sort order for viewing the rows in the data source.</summary>
+        <value>A case-sensitive string containing the column name followed by "ASC" (for ascending) or "DESC" (for descending). The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.Sort%2A> property is a case-sensitive string that specifies the column names used to sort the rows, along with the sort direction. Columns are sorted ascending by default. Multiple columns can be separated by commas, such as `"State, ZipCode DESC"`.  
+  
+ To support sorting, the underlying list must implement the <xref:System.ComponentModel.IBindingList> or <xref:System.ComponentModel.IBindingListView> interfaces. This capability can be queried through the <xref:System.Windows.Forms.BindingSource.SupportsSorting%2A> property. Multicolumn sorting is available when the <xref:System.Windows.Forms.BindingSource.SupportsAdvancedSorting%2A> property is `true`.  
+  
+ Setting the <xref:System.Windows.Forms.BindingSource.Sort%2A> property will change the internal list depending on its type:  
+  
+-   If the list is of type <xref:System.ComponentModel.IBindingList>, the <xref:System.ComponentModel.IBindingList.SortProperty%2A?displayProperty=fullName> and <xref:System.ComponentModel.IBindingList.SortDirection%2A?displayProperty=fullName> properties are set in the internal list.  
+  
+-   If the list is of type <xref:System.ComponentModel.IBindingListView>, the <xref:System.ComponentModel.IBindingListView.SortDescriptions%2A?displayProperty=fullName> property is set.  
+  
+ The internal list's sort properties are only changed when the sort string is not `null`. The `get` accessor for this property will not retrieve the sort value of the internal list; instead, it will return the `set` accessor value. The value of the <xref:System.Windows.Forms.BindingSource.Sort%2A> property will persist when the data source changes.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Forms.BindingSource.Sort%2A> property to perform basic sorting with a <xref:System.Data.DataView>. To run this example, paste the code into a Windows Form and call `PopulateDataViewAndSort` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. Your form should import the <xref:System.Xml> and <xref:System.IO> namespaces.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceMethods#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/CS/Form1.cs#2)]
+ [!code-vb[System.Windows.Forms.BindingSourceMethods#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/VB/Form1.vb#2)]  
+  
+ The following example shows how to use the <xref:System.Windows.Forms.BindingSource.Sort%2A> property to perform advanced sorting with a <xref:System.Data.DataView>. To run this example, paste the code into a Windows Form and call `PopulateDataViewAndAdvancedSort` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method. Your form should import the <xref:System.Xml> and <xref:System.IO> namespaces.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceMethods#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/CS/Form1.cs#4)]
+ [!code-vb[System.Windows.Forms.BindingSourceMethods#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMethods/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortDescriptions">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.ListSortDescriptionCollection SortDescriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ListSortDescriptionCollection SortDescriptions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SortDescriptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ListSortDescriptionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of sort descriptions applied to the data source.</summary>
+        <value>If the data source is an <see cref="T:System.ComponentModel.IBindingListView" />, a <see cref="T:System.ComponentModel.ListSortDescriptionCollection" /> that contains the sort descriptions applied to the list; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the list is not an <xref:System.ComponentModel.IBindingListView>, the <xref:System.Windows.Forms.BindingSource.SortDescriptions%2A> always returns `null`.  
+  
+ The <xref:System.ComponentModel.ListSortDescriptionCollection> is a read-only collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortDirection">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.ListSortDirection SortDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.ListSortDirection SortDirection" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SortDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ListSortDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the direction the items in the list are sorted.</summary>
+        <value>One of the <see cref="T:System.ComponentModel.ListSortDirection" /> values indicating the direction the list is sorted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the underlying list is not an <xref:System.ComponentModel.IBindingList>, the <xref:System.Windows.Forms.BindingSource.SortDirection%2A> property will always return <xref:System.ComponentModel.ListSortDirection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortProperty">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptor SortProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor SortProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SortProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ComponentModel.PropertyDescriptor" /> that is being used for sorting the list.</summary>
+        <value>If the list is an <see cref="T:System.ComponentModel.IBindingList" />, the <see cref="T:System.ComponentModel.PropertyDescriptor" /> that is being used for sorting; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the list is not an <xref:System.ComponentModel.IBindingList>, <xref:System.Windows.Forms.BindingSource.SortProperty%2A> always returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsAdvancedSorting">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsAdvancedSorting { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsAdvancedSorting" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsAdvancedSorting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the data source supports multi-column sorting.</summary>
+        <value>
+          <see langword="true" /> if the list is an <see cref="T:System.ComponentModel.IBindingListView" /> and supports multi-column sorting; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the list is not an <xref:System.ComponentModel.IBindingListView>, <xref:System.Windows.Forms.BindingSource.SupportsAdvancedSorting%2A> always returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsChangeNotification">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsChangeNotification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsChangeNotification" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsChangeNotification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the data source supports change notification.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsFiltering">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsFiltering { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsFiltering" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsFiltering" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the data source supports filtering.</summary>
+        <value>
+          <see langword="true" /> if the list is an <see cref="T:System.ComponentModel.IBindingListView" /> and supports filtering; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the list is not an <xref:System.ComponentModel.IBindingListView>, <xref:System.Windows.Forms.BindingSource.SupportsFiltering%2A> always returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsSearching">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsSearching { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsSearching" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsSearching" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the data source supports searching with the <see cref="M:System.Windows.Forms.BindingSource.Find(System.ComponentModel.PropertyDescriptor,System.Object)" /> method.</summary>
+        <value>
+          <see langword="true" /> if the list is a <see cref="T:System.ComponentModel.IBindingList" /> and supports the searching with the <see cref="Overload:System.Windows.Forms.BindingSource.Find" /> method; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the data source is not an <xref:System.ComponentModel.IBindingList>, <xref:System.Windows.Forms.BindingSource.SupportsSearching%2A> always returns `false`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.BindingSource.SupportsSearching%2A> member. For the complete example see the class overview topic.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceAndBindingListOfT#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceAndBindingListOfT/CS/Form1.cs#4)]
+ [!code-vb[System.Windows.Forms.BindingSourceAndBindingListOfT#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceAndBindingListOfT/VB/Form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsSorting">
+      <MemberSignature Language="C#" Value="public virtual bool SupportsSorting { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsSorting" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SupportsSorting" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the data source supports sorting.</summary>
+        <value>
+          <see langword="true" /> if the data source is an <see cref="T:System.ComponentModel.IBindingList" /> and supports sorting; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the data source is not an <xref:System.ComponentModel.IBindingList>, the <xref:System.Windows.Forms.BindingSource.SupportsSorting%2A> property always returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendBinding">
+      <MemberSignature Language="C#" Value="public void SuspendBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.SuspendBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Suspends data binding to prevent changes from updating the bound data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.BindingSource.SuspendBinding%2A> and <xref:System.Windows.Forms.BindingSource.ResumeBinding%2A> are two methods that allow the temporary suspension and resumption of data binding in a simple-binding scenario. You would typically suspend data binding if the user must be allowed to make several edits to data fields before validation occurs. For example, if one field must be changed in accordance with a second, but where validating the first field would cause the second field to be in error.  
+  
+> [!NOTE]
+>  Using <xref:System.Windows.Forms.BindingSource.SuspendBinding%2A> and prevents changes from being pushed into the data source until <xref:System.Windows.Forms.BindingSource.ResumeBinding%2A> is called, but does not actually prevent any events from occurring. Controls that use complex data binding, such as the <xref:System.Windows.Forms.DataGridView> control, update their values based on change events such as the <xref:System.Windows.Forms.CurrencyManager.ListChanged> event, so calling <xref:System.Windows.Forms.BindingSource.SuspendBinding%2A> will not prevent them from receiving changes to the data source. For this reason, this <xref:System.Windows.Forms.BindingSource.SuspendBinding%2A> and <xref:System.Windows.Forms.BindingSource.ResumeBinding%2A> are designed for use with simple-bound controls, such as the <xref:System.Windows.Forms.TextBox> control. Alternatively you can use these methods in a complex binding scenario if you suppress <xref:System.Windows.Forms.BindingSource.ListChanged> events by setting the <xref:System.Windows.Forms.BindingSource.RaiseListChangedEvents%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public virtual object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the underlying list.</summary>
+        <value>An object that can be used to synchronize access to the underlying list.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.IBindingList.AddIndex">
+      <MemberSignature Language="C#" Value="void IBindingList.AddIndex (System.ComponentModel.PropertyDescriptor property);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.IBindingList.AddIndex(class System.ComponentModel.PropertyDescriptor property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#IBindingList#AddIndex(System.ComponentModel.PropertyDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.ComponentModel.PropertyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="property">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to add to the indexes used for searching.</param>
+        <summary>Adds the <see cref="T:System.ComponentModel.PropertyDescriptor" /> to the indexes used for searching.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the underlying list is an <xref:System.ComponentModel.IBindingList> type, this method will add the <xref:System.ComponentModel.PropertyDescriptor> to the indexes; otherwise, calling this method will throw a <xref:System.NotSupportedException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The underlying list is not an <see cref="T:System.ComponentModel.IBindingList" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.IBindingList.RemoveIndex">
+      <MemberSignature Language="C#" Value="void IBindingList.RemoveIndex (System.ComponentModel.PropertyDescriptor prop);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.IBindingList.RemoveIndex(class System.ComponentModel.PropertyDescriptor prop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#IBindingList#RemoveIndex(System.ComponentModel.PropertyDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> to remove from the indexes used for searching.</param>
+        <summary>Removes the <see cref="T:System.ComponentModel.PropertyDescriptor" /> from the indexes used for searching.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the underlying list is not a <xref:System.ComponentModel.IBindingList?displayProperty=fullName>, this method will always throw a <xref:System.NotSupportedException>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ICancelAddNew.CancelNew">
+      <MemberSignature Language="C#" Value="void ICancelAddNew.CancelNew (int position);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ICancelAddNew.CancelNew(int32 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#ICancelAddNew#CancelNew(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="position">The index of the item that was added to the collection.</param>
+        <summary>Discards a pending new item from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.System%23ComponentModel%23ICancelAddNew%23CancelNew%2A> method rolls back a pending addition of an item previously added to the collection at the index specified by `position`. The `position` parameter is necessary because several new items can be simultaneously pending.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ICancelAddNew.EndNew">
+      <MemberSignature Language="C#" Value="void ICancelAddNew.EndNew (int position);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ICancelAddNew.EndNew(int32 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#ICancelAddNew#EndNew(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="position">The index of the item that was added to the collection.</param>
+        <summary>Commits a pending new item to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingSource.System%23ComponentModel%23ICancelAddNew%23EndNew%2A> method commits a pending addition of an item previously added to the collection at the index specified by `position`. The `position` parameter is necessary because several new items can be simultaneously pending.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the <see cref="T:System.Windows.Forms.BindingSource" /> that initialization is starting.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitialize#EndInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the <see cref="T:System.Windows.Forms.BindingSource" /> that initialization is complete.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitializeNotification.IsInitialized">
+      <MemberSignature Language="C#" Value="bool System.ComponentModel.ISupportInitializeNotification.IsInitialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitializeNotification#IsInitialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.BindingSource" /> is initialized.</summary>
+        <value>
+          <see langword="true" /> to indicate the <see cref="T:System.Windows.Forms.BindingSource" /> is initialized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.BindingSource> instance is cast to an <xref:System.ComponentModel.ISupportInitializeNotification> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,85 @@
+<Type Name="DownloadStringCompletedEventArgs" FullName="System.Net.DownloadStringCompletedEventArgs">
+  <TypeSignature Language="C#" Value="public class DownloadStringCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DownloadStringCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Net.DownloadStringCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Net.WebClient.DownloadStringCompleted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class are passed to the <xref:System.Net.DownloadStringCompletedEventHandler>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates downloading a string asynchronously.  
+  
+ [!code-cpp[NCLWebClientAsync#28](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#28)]
+ [!code-csharp[NCLWebClientAsync#28](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#28)]
+ [!code-vb[NCLWebClientAsync#28](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#28)]  
+  
+ The following method is called when the download completes.  
+  
+ [!code-cpp[NCLWebClientAsync#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#29)]
+ [!code-csharp[NCLWebClientAsync#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#29)]
+ [!code-vb[NCLWebClientAsync#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#29)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public string Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Result" />
+      <MemberSignature Language="DocId" Value="P:System.Net.DownloadStringCompletedEventArgs.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data that is downloaded by a <see cref="Overload:System.Net.WebClient.DownloadStringAsync" /> method.</summary>
+        <value>A <see cref="T:System.String" /> that contains the downloaded data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> and <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> properties before using the data that is returned by this property. If the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A> property's value is an <xref:System.Exception> object or the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property's value is `true`, the asynchronous operation did not complete correctly and the <xref:System.Net.DownloadDataCompletedEventArgs.Result%2A> property's value will not be valid.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of this property.  
+  
+ [!code-cpp[NCLWebClientAsync#29](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#29)]
+ [!code-csharp[NCLWebClientAsync#29](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#29)]
+ [!code-vb[NCLWebClientAsync#29](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#29)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

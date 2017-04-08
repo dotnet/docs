@@ -1,0 +1,2494 @@
+<Type Name="Shortcut" FullName="System.Windows.Forms.Shortcut">
+  <TypeSignature Language="C#" Value="public enum Shortcut" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Shortcut extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Shortcut" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies shortcut keys that can be used by menu items.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.MenuItem.Shortcut%2A> property of the <xref:System.Windows.Forms.MenuItem> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alt0">
+      <MemberSignature Language="C#" Value="Alt0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt0 = int32(262192)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt1">
+      <MemberSignature Language="C#" Value="Alt1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt1 = int32(262193)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt2">
+      <MemberSignature Language="C#" Value="Alt2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt2 = int32(262194)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt3">
+      <MemberSignature Language="C#" Value="Alt3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt3 = int32(262195)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt4">
+      <MemberSignature Language="C#" Value="Alt4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt4 = int32(262196)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt5">
+      <MemberSignature Language="C#" Value="Alt5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt5 = int32(262197)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt6">
+      <MemberSignature Language="C#" Value="Alt6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt6 = int32(262198)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt7">
+      <MemberSignature Language="C#" Value="Alt7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt7 = int32(262199)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt8">
+      <MemberSignature Language="C#" Value="Alt8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt8 = int32(262200)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt9">
+      <MemberSignature Language="C#" Value="Alt9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Alt9 = int32(262201)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Alt9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltBksp">
+      <MemberSignature Language="C#" Value="AltBksp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltBksp = int32(262152)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltBksp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+BACKSPACE.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltDownArrow">
+      <MemberSignature Language="C#" Value="AltDownArrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltDownArrow = int32(262184)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltDownArrow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+DOWNARROW.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF1">
+      <MemberSignature Language="C#" Value="AltF1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF1 = int32(262256)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF10">
+      <MemberSignature Language="C#" Value="AltF10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF10 = int32(262265)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF10" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F10.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF11">
+      <MemberSignature Language="C#" Value="AltF11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF11 = int32(262266)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F11.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF12">
+      <MemberSignature Language="C#" Value="AltF12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF12 = int32(262267)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F12.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF2">
+      <MemberSignature Language="C#" Value="AltF2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF2 = int32(262257)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF3">
+      <MemberSignature Language="C#" Value="AltF3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF3 = int32(262258)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF4">
+      <MemberSignature Language="C#" Value="AltF4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF4 = int32(262259)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF5">
+      <MemberSignature Language="C#" Value="AltF5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF5 = int32(262260)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF6">
+      <MemberSignature Language="C#" Value="AltF6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF6 = int32(262261)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF7">
+      <MemberSignature Language="C#" Value="AltF7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF7 = int32(262262)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF8">
+      <MemberSignature Language="C#" Value="AltF8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF8 = int32(262263)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltF9">
+      <MemberSignature Language="C#" Value="AltF9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltF9 = int32(262264)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltF9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+F9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltLeftArrow">
+      <MemberSignature Language="C#" Value="AltLeftArrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltLeftArrow = int32(262181)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltLeftArrow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+LEFTARROW.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltRightArrow">
+      <MemberSignature Language="C#" Value="AltRightArrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltRightArrow = int32(262183)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltRightArrow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+RIGHTARROW.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AltUpArrow">
+      <MemberSignature Language="C#" Value="AltUpArrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut AltUpArrow = int32(262182)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.AltUpArrow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys ALT+UPARROW.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl0">
+      <MemberSignature Language="C#" Value="Ctrl0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl0 = int32(131120)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl1">
+      <MemberSignature Language="C#" Value="Ctrl1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl1 = int32(131121)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl2">
+      <MemberSignature Language="C#" Value="Ctrl2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl2 = int32(131122)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl3">
+      <MemberSignature Language="C#" Value="Ctrl3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl3 = int32(131123)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl4">
+      <MemberSignature Language="C#" Value="Ctrl4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl4 = int32(131124)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl5">
+      <MemberSignature Language="C#" Value="Ctrl5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl5 = int32(131125)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl6">
+      <MemberSignature Language="C#" Value="Ctrl6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl6 = int32(131126)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl7">
+      <MemberSignature Language="C#" Value="Ctrl7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl7 = int32(131127)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl8">
+      <MemberSignature Language="C#" Value="Ctrl8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl8 = int32(131128)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ctrl9">
+      <MemberSignature Language="C#" Value="Ctrl9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ctrl9 = int32(131129)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ctrl9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlA">
+      <MemberSignature Language="C#" Value="CtrlA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlA = int32(131137)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+A.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlB">
+      <MemberSignature Language="C#" Value="CtrlB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlB = int32(131138)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+B.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlC">
+      <MemberSignature Language="C#" Value="CtrlC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlC = int32(131139)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+C.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlD">
+      <MemberSignature Language="C#" Value="CtrlD" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlD = int32(131140)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlD" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+D.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlDel">
+      <MemberSignature Language="C#" Value="CtrlDel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlDel = int32(131118)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlDel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+DELETE.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlE">
+      <MemberSignature Language="C#" Value="CtrlE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlE = int32(131141)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+E.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF">
+      <MemberSignature Language="C#" Value="CtrlF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF = int32(131142)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF1">
+      <MemberSignature Language="C#" Value="CtrlF1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF1 = int32(131184)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF10">
+      <MemberSignature Language="C#" Value="CtrlF10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF10 = int32(131193)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF10" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F10.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF11">
+      <MemberSignature Language="C#" Value="CtrlF11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF11 = int32(131194)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F11.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF12">
+      <MemberSignature Language="C#" Value="CtrlF12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF12 = int32(131195)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F12.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF2">
+      <MemberSignature Language="C#" Value="CtrlF2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF2 = int32(131185)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF3">
+      <MemberSignature Language="C#" Value="CtrlF3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF3 = int32(131186)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF4">
+      <MemberSignature Language="C#" Value="CtrlF4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF4 = int32(131187)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF5">
+      <MemberSignature Language="C#" Value="CtrlF5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF5 = int32(131188)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF6">
+      <MemberSignature Language="C#" Value="CtrlF6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF6 = int32(131189)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF7">
+      <MemberSignature Language="C#" Value="CtrlF7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF7 = int32(131190)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF8">
+      <MemberSignature Language="C#" Value="CtrlF8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF8 = int32(131191)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlF9">
+      <MemberSignature Language="C#" Value="CtrlF9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlF9 = int32(131192)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlF9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+F9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlG">
+      <MemberSignature Language="C#" Value="CtrlG" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlG = int32(131143)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlG" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+G.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlH">
+      <MemberSignature Language="C#" Value="CtrlH" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlH = int32(131144)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+H.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlI">
+      <MemberSignature Language="C#" Value="CtrlI" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlI = int32(131145)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+I.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlIns">
+      <MemberSignature Language="C#" Value="CtrlIns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlIns = int32(131117)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlIns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+INSERT.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlJ">
+      <MemberSignature Language="C#" Value="CtrlJ" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlJ = int32(131146)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlJ" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+J.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlK">
+      <MemberSignature Language="C#" Value="CtrlK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlK = int32(131147)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+K.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlL">
+      <MemberSignature Language="C#" Value="CtrlL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlL = int32(131148)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+L.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlM">
+      <MemberSignature Language="C#" Value="CtrlM" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlM = int32(131149)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlM" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+M.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlN">
+      <MemberSignature Language="C#" Value="CtrlN" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlN = int32(131150)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+N.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlO">
+      <MemberSignature Language="C#" Value="CtrlO" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlO = int32(131151)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlO" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+O.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlP">
+      <MemberSignature Language="C#" Value="CtrlP" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlP = int32(131152)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+P.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlQ">
+      <MemberSignature Language="C#" Value="CtrlQ" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlQ = int32(131153)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlQ" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+Q.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlR">
+      <MemberSignature Language="C#" Value="CtrlR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlR = int32(131154)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+R.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlS">
+      <MemberSignature Language="C#" Value="CtrlS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlS = int32(131155)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+S.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift0">
+      <MemberSignature Language="C#" Value="CtrlShift0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift0 = int32(196656)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift1">
+      <MemberSignature Language="C#" Value="CtrlShift1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift1 = int32(196657)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift2">
+      <MemberSignature Language="C#" Value="CtrlShift2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift2 = int32(196658)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift3">
+      <MemberSignature Language="C#" Value="CtrlShift3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift3 = int32(196659)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift4">
+      <MemberSignature Language="C#" Value="CtrlShift4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift4 = int32(196660)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift5">
+      <MemberSignature Language="C#" Value="CtrlShift5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift5 = int32(196661)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift6">
+      <MemberSignature Language="C#" Value="CtrlShift6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift6 = int32(196662)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift7">
+      <MemberSignature Language="C#" Value="CtrlShift7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift7 = int32(196663)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift8">
+      <MemberSignature Language="C#" Value="CtrlShift8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift8 = int32(196664)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShift9">
+      <MemberSignature Language="C#" Value="CtrlShift9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShift9 = int32(196665)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShift9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftA">
+      <MemberSignature Language="C#" Value="CtrlShiftA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftA = int32(196673)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+A.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftB">
+      <MemberSignature Language="C#" Value="CtrlShiftB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftB = int32(196674)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+B.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftC">
+      <MemberSignature Language="C#" Value="CtrlShiftC" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftC = int32(196675)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftC" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+C.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftD">
+      <MemberSignature Language="C#" Value="CtrlShiftD" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftD = int32(196676)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftD" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+D.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftE">
+      <MemberSignature Language="C#" Value="CtrlShiftE" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftE = int32(196677)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+E.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF">
+      <MemberSignature Language="C#" Value="CtrlShiftF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF = int32(196678)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF1">
+      <MemberSignature Language="C#" Value="CtrlShiftF1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF1 = int32(196720)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF10">
+      <MemberSignature Language="C#" Value="CtrlShiftF10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF10 = int32(196729)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF10" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F10.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF11">
+      <MemberSignature Language="C#" Value="CtrlShiftF11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF11 = int32(196730)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F11.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF12">
+      <MemberSignature Language="C#" Value="CtrlShiftF12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF12 = int32(196731)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F12.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF2">
+      <MemberSignature Language="C#" Value="CtrlShiftF2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF2 = int32(196721)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF3">
+      <MemberSignature Language="C#" Value="CtrlShiftF3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF3 = int32(196722)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF4">
+      <MemberSignature Language="C#" Value="CtrlShiftF4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF4 = int32(196723)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF5">
+      <MemberSignature Language="C#" Value="CtrlShiftF5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF5 = int32(196724)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF6">
+      <MemberSignature Language="C#" Value="CtrlShiftF6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF6 = int32(196725)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF7">
+      <MemberSignature Language="C#" Value="CtrlShiftF7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF7 = int32(196726)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF8">
+      <MemberSignature Language="C#" Value="CtrlShiftF8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF8 = int32(196727)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftF9">
+      <MemberSignature Language="C#" Value="CtrlShiftF9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftF9 = int32(196728)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftF9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+F9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftG">
+      <MemberSignature Language="C#" Value="CtrlShiftG" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftG = int32(196679)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftG" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+G.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftH">
+      <MemberSignature Language="C#" Value="CtrlShiftH" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftH = int32(196680)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftH" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+H.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftI">
+      <MemberSignature Language="C#" Value="CtrlShiftI" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftI = int32(196681)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+I.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftJ">
+      <MemberSignature Language="C#" Value="CtrlShiftJ" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftJ = int32(196682)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftJ" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+J.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftK">
+      <MemberSignature Language="C#" Value="CtrlShiftK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftK = int32(196683)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+K.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftL">
+      <MemberSignature Language="C#" Value="CtrlShiftL" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftL = int32(196684)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+L.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftM">
+      <MemberSignature Language="C#" Value="CtrlShiftM" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftM = int32(196685)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftM" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+M.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftN">
+      <MemberSignature Language="C#" Value="CtrlShiftN" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftN = int32(196686)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+N.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftO">
+      <MemberSignature Language="C#" Value="CtrlShiftO" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftO = int32(196687)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftO" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+O.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftP">
+      <MemberSignature Language="C#" Value="CtrlShiftP" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftP = int32(196688)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+P.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftQ">
+      <MemberSignature Language="C#" Value="CtrlShiftQ" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftQ = int32(196689)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftQ" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+Q.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftR">
+      <MemberSignature Language="C#" Value="CtrlShiftR" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftR = int32(196690)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftR" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+R.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftS">
+      <MemberSignature Language="C#" Value="CtrlShiftS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftS = int32(196691)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+S.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftT">
+      <MemberSignature Language="C#" Value="CtrlShiftT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftT = int32(196692)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+T.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftU">
+      <MemberSignature Language="C#" Value="CtrlShiftU" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftU = int32(196693)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftU" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+U.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftV">
+      <MemberSignature Language="C#" Value="CtrlShiftV" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftV = int32(196694)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftV" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+V.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftW">
+      <MemberSignature Language="C#" Value="CtrlShiftW" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftW = int32(196695)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftW" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+W.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftX">
+      <MemberSignature Language="C#" Value="CtrlShiftX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftX = int32(196696)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+X.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftY">
+      <MemberSignature Language="C#" Value="CtrlShiftY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftY = int32(196697)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+Y.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlShiftZ">
+      <MemberSignature Language="C#" Value="CtrlShiftZ" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlShiftZ = int32(196698)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlShiftZ" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+SHIFT+Z.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlT">
+      <MemberSignature Language="C#" Value="CtrlT" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlT = int32(131156)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+T.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlU">
+      <MemberSignature Language="C#" Value="CtrlU" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlU = int32(131157)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlU" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+U.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlV">
+      <MemberSignature Language="C#" Value="CtrlV" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlV = int32(131158)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlV" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+V.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlW">
+      <MemberSignature Language="C#" Value="CtrlW" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlW = int32(131159)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlW" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+W.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlX">
+      <MemberSignature Language="C#" Value="CtrlX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlX = int32(131160)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+X.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlY">
+      <MemberSignature Language="C#" Value="CtrlY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlY = int32(131161)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+Y.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CtrlZ">
+      <MemberSignature Language="C#" Value="CtrlZ" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut CtrlZ = int32(131162)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.CtrlZ" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys CTRL+Z.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Del">
+      <MemberSignature Language="C#" Value="Del" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Del = int32(46)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Del" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key DELETE.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F1">
+      <MemberSignature Language="C#" Value="F1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F1 = int32(112)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F10">
+      <MemberSignature Language="C#" Value="F10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F10 = int32(121)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F10" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F10.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F11">
+      <MemberSignature Language="C#" Value="F11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F11 = int32(122)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F11.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F12">
+      <MemberSignature Language="C#" Value="F12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F12 = int32(123)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F12.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F2">
+      <MemberSignature Language="C#" Value="F2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F2 = int32(113)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F3">
+      <MemberSignature Language="C#" Value="F3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F3 = int32(114)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F4">
+      <MemberSignature Language="C#" Value="F4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F4 = int32(115)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F5">
+      <MemberSignature Language="C#" Value="F5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F5 = int32(116)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F6">
+      <MemberSignature Language="C#" Value="F6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F6 = int32(117)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F7">
+      <MemberSignature Language="C#" Value="F7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F7 = int32(118)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F8">
+      <MemberSignature Language="C#" Value="F8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F8 = int32(119)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F9">
+      <MemberSignature Language="C#" Value="F9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut F9 = int32(120)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.F9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key F9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ins">
+      <MemberSignature Language="C#" Value="Ins" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut Ins = int32(45)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.Ins" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut key INSERT.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No shortcut key is associated with the menu item.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftDel">
+      <MemberSignature Language="C#" Value="ShiftDel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftDel = int32(65582)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftDel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+DELETE.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF1">
+      <MemberSignature Language="C#" Value="ShiftF1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF1 = int32(65648)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF10">
+      <MemberSignature Language="C#" Value="ShiftF10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF10 = int32(65657)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF10" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F10.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF11">
+      <MemberSignature Language="C#" Value="ShiftF11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF11 = int32(65658)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F11.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF12">
+      <MemberSignature Language="C#" Value="ShiftF12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF12 = int32(65659)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F12.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF2">
+      <MemberSignature Language="C#" Value="ShiftF2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF2 = int32(65649)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF3">
+      <MemberSignature Language="C#" Value="ShiftF3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF3 = int32(65650)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF4">
+      <MemberSignature Language="C#" Value="ShiftF4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF4 = int32(65651)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF5">
+      <MemberSignature Language="C#" Value="ShiftF5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF5 = int32(65652)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF6">
+      <MemberSignature Language="C#" Value="ShiftF6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF6 = int32(65653)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF7">
+      <MemberSignature Language="C#" Value="ShiftF7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF7 = int32(65654)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF8">
+      <MemberSignature Language="C#" Value="ShiftF8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF8 = int32(65655)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftF9">
+      <MemberSignature Language="C#" Value="ShiftF9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftF9 = int32(65656)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftF9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+F9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftIns">
+      <MemberSignature Language="C#" Value="ShiftIns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Shortcut ShiftIns = int32(65581)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Shortcut.ShiftIns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shortcut keys SHIFT+INSERT.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

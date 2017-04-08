@@ -1,0 +1,256 @@
+<Type Name="NestedContainer" FullName="System.ComponentModel.NestedContainer">
+  <TypeSignature Language="C#" Value="public class NestedContainer : System.ComponentModel.Container, IDisposable, System.ComponentModel.INestedContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NestedContainer extends System.ComponentModel.Container implements class System.ComponentModel.IContainer, class System.ComponentModel.INestedContainer, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.NestedContainer" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Container</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INestedContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the base implementation for the <see cref="T:System.ComponentModel.INestedContainer" /> interface, which enables containers to have an owning component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.NestedContainer> class is a simple implementation of the <xref:System.ComponentModel.INestedContainer> interface, which defines a component that logically contains zero or more other components and is owned by a parent component. The behavior of nested containers differs from a standard <xref:System.ComponentModel.Container> in a number of ways, including the following:  
+  
+-   Site characteristics such as <xref:System.ComponentModel.Component.DesignMode%2A> and <xref:System.ComponentModel.Component.GetService%2A> are routed through the owning component’s site.  
+  
+-   The site’s <xref:System.ComponentModel.ISite.Name%2A> property is a qualified name that includes the owning component’s name followed by a period (.) and the child component’s name.  
+  
+-   <xref:System.ComponentModel.NestedContainer.GetService%2A> provides support for the <xref:System.ComponentModel.INestedContainer> as a service.  
+  
+-   When the owning component is disposed, the container is disposed as well.  
+  
+ In addition, designers treat nested containers differently. A designer host is only interested in one container—the one associated with the host. Therefore, component add and remove events are not raised when a component is added to or removed from a nested container. However, because services flow through to the nested container, component change events are raised when a component in a nested container is changed.  
+  
+ This disparity in event tracking also impacts undo functionality, which is closely tied to serialization. The standard undo engine uses <xref:System.ComponentModel.Design.IReferenceService> to track changes made to components. If the undo engine cannot identify a name for a component through the reference service, the engine will ignore any changes for that component. This service automatically recognizes changes to contained components only if they are exposed as public read-only properties of the same name in their owners. Otherwise, the developer must pass component change events up to the owner. For example, if a nested component’s `Text` property is resurfaced on its owning component as an `Address` property, when the `Text` property is changed, a property change must be programmatically made for the corresponding `Address` property or else that change will not be tracked by undo.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NestedContainer (System.ComponentModel.IComponent owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.NestedContainer.#ctor(System.ComponentModel.IComponent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.ComponentModel.IComponent" /> that owns this nested container.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.NestedContainer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor enlists in its owner's <xref:System.ComponentModel.IComponent.Disposed> event so that the nested container's <xref:System.ComponentModel.NestedContainer.Dispose%2A> method will automatically be called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="owner" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSite">
+      <MemberSignature Language="C#" Value="protected override System.ComponentModel.ISite CreateSite (System.ComponentModel.IComponent component, string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ComponentModel.ISite CreateSite(class System.ComponentModel.IComponent component, string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.NestedContainer.CreateSite(System.ComponentModel.IComponent,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ISite</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to create a site for.</param>
+        <param name="name">The name to assign to <c>component</c>, or <see langword="null" /> to skip the name assignment.</param>
+        <summary>Creates a site for the component within the container.</summary>
+        <returns>The newly created <see cref="T:System.ComponentModel.ISite" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `name` parameter is `null`, the <xref:System.ComponentModel.IComponent> is added to the nested container without an identifying name.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="component" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.NestedContainer.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the resources used by the nested container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.NestedContainer> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="protected override object GetService (Type service);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetService(class System.Type service) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.NestedContainer.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="service" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="service">The <see cref="T:System.Type" /> of the service to retrieve.</param>
+        <summary>Gets the service object of the specified type, if it is available.</summary>
+        <returns>An <see cref="T:System.Object" /> that implements the requested service, or <see langword="null" /> if the service cannot be resolved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.ComponentModel.Container.GetService%2A?displayProperty=fullName> method. This implementation only resolves requests for the <xref:System.ComponentModel.INestedContainer> and <xref:System.ComponentModel.IContainer> services.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent Owner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Owner" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.NestedContainer.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the owning component for this nested container.</summary>
+        <value>The <see cref="T:System.ComponentModel.IComponent" /> that owns this nested container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The owning component is the characteristic that differentiates nested containers from ordinary containers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerName">
+      <MemberSignature Language="C#" Value="protected virtual string OwnerName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OwnerName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.NestedContainer.OwnerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the owning component.</summary>
+        <value>The name of the owning component.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property may be overridden to provide a custom owner name. The default implementation searches the owner's site for <xref:System.ComponentModel.INestedSite> and calls <xref:System.ComponentModel.INestedSite.FullName%2A>, or <xref:System.ComponentModel.ISite.Name%2A> if there is no nested site. If neither is available, this property returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="PersistableIdleAction" FullName="System.Activities.PersistableIdleAction">
+  <TypeSignature Language="C#" Value="public enum PersistableIdleAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PersistableIdleAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.PersistableIdleAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the action that occurs when a workflow becomes idle when persistence is allowed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> function is invoked when the scheduler has no more pending work items and the workflow runtime can persist. Note that the <xref:System.Activities.WorkflowApplication.Idle%2A> function is invoked when persistence is not allowed, and both <xref:System.Activities.WorkflowApplication.Idle%2A> and <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> are invoked in that order when persistence is allowed. None is the default action if no <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> handler is provided.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.PersistableIdleAction None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that no action is taken.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Persist">
+      <MemberSignature Language="C#" Value="Persist" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.PersistableIdleAction Persist = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.Persist" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should persist the workflow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unload">
+      <MemberSignature Language="C#" Value="Unload" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.PersistableIdleAction Unload = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.PersistableIdleAction.Unload" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.PersistableIdleAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see cref="T:System.Activities.WorkflowApplication" /> should persist and unload the workflow.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,61 @@
+<Type Name="UninstallAction" FullName="System.Configuration.Install.UninstallAction">
+  <TypeSignature Language="C#" Value="public enum UninstallAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UninstallAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Install.UninstallAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.Install</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies what an installer should do during an uninstallation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following sample creates a custom uninstaller that inherits the <xref:System.Configuration.Install.Installer> class. In the overridden <xref:System.Configuration.Install.Installer.Uninstall%2A> function, the <xref:System.Configuration.Install.UninstallAction> enumeration is set based on user input. If the input is "n", the custom uninstaller will not take any action on the resource in the event log entered by the user. Otherwise, it will remove the resource from the event log.  
+  
+ [!code-cpp[UninstallAction_NoAction_Remove_3#1](~/samples/snippets/cpp/VS_Snippets_CLR/UninstallAction_NoAction_Remove_3/CPP/uninstallaction_noaction_remove_3.cpp#1)]
+ [!code-csharp[UninstallAction_NoAction_Remove_3#1](~/samples/snippets/csharp/VS_Snippets_CLR/UninstallAction_NoAction_Remove_3/CS/uninstallaction_noaction_remove_3.cs#1)]
+ [!code-vb[UninstallAction_NoAction_Remove_3#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/UninstallAction_NoAction_Remove_3/VB/uninstallaction_noaction_remove_3.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NoAction">
+      <MemberSignature Language="C#" Value="NoAction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.Install.UninstallAction NoAction = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.Install.UninstallAction.NoAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Leaves the resource created by the installer as is.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="Remove" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.Install.UninstallAction Remove = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.Install.UninstallAction.Remove" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.UninstallAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Removes the resource the installer created.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

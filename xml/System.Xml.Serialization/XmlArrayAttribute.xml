@@ -1,0 +1,385 @@
+<Type Name="XmlArrayAttribute" FullName="System.Xml.Serialization.XmlArrayAttribute">
+  <TypeSignature Language="C#" Value="public class XmlArrayAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlArrayAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlArrayAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that the <see cref="T:System.Xml.Serialization.XmlSerializer" /> must serialize a particular class member as an array of XML elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlArrayAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
+  
+ You can apply the <xref:System.Xml.Serialization.XmlArrayAttribute> to a public field or read/write property that returns an array of objects. You can also apply it to collections and fields that return an <xref:System.Collections.ArrayList> or any field that returns an object that implements the <xref:System.Collections.IEnumerable> interface.  
+  
+ When you apply the <xref:System.Xml.Serialization.XmlArrayAttribute> to a class member, the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method of the <xref:System.Xml.Serialization.XmlSerializer> class generates a nested sequence of XML elements from that member. An XML schema document (an .xsd file), indicates such an array as a `complexType`. For example, if the class to be serialized represents a purchase order, you can generate an array of purchased items by applying the <xref:System.Xml.Serialization.XmlArrayAttribute> to a public field that returns an array of objects that represent order items.  
+  
+ If no attributes are applied to a public field or property that returns an array of complex or primitive type objects, the <xref:System.Xml.Serialization.XmlSerializer> generates a nested sequence of XML elements by default. To more precisely control what XML elements are generated, apply an <xref:System.Xml.Serialization.XmlArrayItemAttribute> and an <xref:System.Xml.Serialization.XmlArrayAttribute> to the field or property. For example, by default, the name of the generated XML element is derived from the member identifier You can change the name of the generated XML element by setting the <xref:System.Xml.Serialization.XmlArrayAttribute.ElementName%2A> property.  
+  
+ If you serialize an array that contains items of a specific type and all the classes derived from that type, you must use the <xref:System.Xml.Serialization.XmlArrayItemAttribute> to declare each of the types.  
+  
+> [!NOTE]
+>  You can use `XmlArray` in your code instead of the longer <xref:System.Xml.Serialization.XmlArrayAttribute>.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example serializes a class instance into an XML document that contains several object arrays. The <xref:System.Xml.Serialization.XmlArrayAttribute> is applied to the members that become XML element arrays.  
+  
+ [!code-cpp[Classic XmlArrayAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlArrayAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlArrayAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlArrayAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlArrayAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlArrayAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlArrayAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlArrayAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlArrayAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example assigns the <xref:System.Xml.Serialization.XmlArrayAttribute> to two arrays.  
+  
+ [!code-cpp[Classic XmlArrayAttribute.XmlArrayAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlArrayAttribute.XmlArrayAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlArrayAttribute.XmlArrayAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlArrayAttribute.XmlArrayAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlArrayAttribute.XmlArrayAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlArrayAttribute.XmlArrayAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlArrayAttribute (string elementName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlArrayAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="elementName">The name of the XML element that the <see cref="T:System.Xml.Serialization.XmlSerializer" /> generates.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlArrayAttribute" /> class and specifies the XML element name generated in the XML document instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example assigns the <xref:System.Xml.Serialization.XmlArrayAttribute> to two arrays, and serializes a class instance that contains those arrays.  
+  
+ [!code-cpp[Classic XmlArrayAttribute.XmlArrayAttribute1 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlArrayAttribute.XmlArrayAttribute1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlArrayAttribute.XmlArrayAttribute1 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlArrayAttribute.XmlArrayAttribute1 Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlArrayAttribute.XmlArrayAttribute1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlArrayAttribute.XmlArrayAttribute1 Example/VB/source.vb#1)]
+ [!code-xml[Classic XmlArrayAttribute.XmlArrayAttribute1 Example#1](~/samples/snippets/common/VS_Snippets_Remoting/Classic XmlArrayAttribute.XmlArrayAttribute1 Example/Common/MyClass1.xml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementName">
+      <MemberSignature Language="C#" Value="public string ElementName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayAttribute.ElementName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML element name given to the serialized array.</summary>
+        <value>The XML element name of the serialized array. The default is the name of the member to which the <see cref="T:System.Xml.Serialization.XmlArrayAttribute" /> is assigned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify an <xref:System.Xml.Serialization.XmlArrayAttribute.ElementName%2A> when you want the generated XML element name to differ from the member's identifier.  
+  
+ You can set the same <xref:System.Xml.Serialization.XmlArrayAttribute.ElementName%2A> value to more than one member as long as the generated XML document uses XML namespaces to distinguish between the identically named members. For more details about using namespaces and creating prefixed names in the XML document, see <xref:System.Xml.Serialization.XmlSerializerNamespaces>.  
+  
+   
+  
+## Examples  
+ The following example serializes an instance of the `Library` class that contains a property named `Books` that returns an array of `Book` items. The example uses the <xref:System.Xml.Serialization.XmlArrayAttribute.ElementName%2A> property to specify that the array of XML elements should be named `My_Books` rather than `Books`.  
+  
+ [!code-cpp[Classic XmlArrayAttribute.ElementName Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlArrayAttribute.ElementName Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlArrayAttribute.ElementName Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlArrayAttribute.ElementName Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlArrayAttribute.ElementName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlArrayAttribute.ElementName Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Form">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaForm Form { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaForm Form" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayAttribute.Form" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaForm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the XML element name generated by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> is qualified or unqualified.</summary>
+        <value>One of the <see cref="T:System.Xml.Schema.XmlSchemaForm" /> values. The default is <see langword="XmlSchemaForm.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlArrayAttribute.Form%2A> property determines whether an XML element name is qualified or unqualified. The <xref:System.Xml.Serialization.XmlArrayAttribute.Form%2A> property conforms to the 1999 World Wide Web Consortium (www.w3.org) document titled "Namespaces in XML."  
+  
+ If the <xref:System.Xml.Serialization.XmlAttributeAttribute.Namespace%2A> property is set to any value, attempting to set the <xref:System.Xml.Serialization.XmlElementAttribute.Form%2A> property to `XmlSchemaForm.Unqualified` throws an exception.  
+  
+ The default setting, `XmlSchemaForm.None`, instructs the <xref:System.Xml.Serialization.XmlSerializer> to check the schema for the XML document to determine whether the namespace is qualified. If the schema does not specify a value for an individual element or attribute, the <xref:System.Xml.Serialization.XmlSerializer> uses the `elementFormDefault` and `attributeFormDefault` values to determine whether an element or attribute is qualified. The following XML code shows a schema:  
+  
+```  
+<schema elementFormDefault="qualified"   
+attributeFormDefault="unqualified"... >  
+   <element name="Name"/>  
+   <attribute name="Number"/>  
+</schema>  
+```  
+  
+ When the <xref:System.Xml.Serialization.XmlSerializer> reads the schema, the <xref:System.Xml.Serialization.XmlAttributeAttribute.Form%2A> value for both the `Name` and `Number` is `XmlSchemaForm.None`, but the `Name` element is qualified, while the `Number` element is unqualified.  
+  
+   
+  
+## Examples  
+ The following example serializes an instance of the `Enterprises` class. Two XML elements have the same local name (`Company`) but different prefixes. The example sets the <xref:System.Xml.Serialization.XmlArrayAttribute.Form%2A> property is set to `XmlForm.Qualified` to ensure that the qualified names occur in the XML instance.  
+  
+ [!code-cpp[Classic XmlArrayAttribute.Form Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlArrayAttribute.Form Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlArrayAttribute.Form Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlArrayAttribute.Form Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlArrayAttribute.Form Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlArrayAttribute.Form Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullable">
+      <MemberSignature Language="C#" Value="public bool IsNullable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayAttribute.IsNullable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Xml.Serialization.XmlSerializer" /> must serialize a member as an empty XML tag with the <see langword="xsi:nil" /> attribute set to <see langword="true" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xml.Serialization.XmlSerializer" /> generates the <see langword="xsi:nil" /> attribute; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML schema specification for structures allows an XML document to explicitly signal that an element's content is missing. Such an element contains the attribute `xsi:nil` set to `true`. For more information, see the World Wide Web Consortium (www.w3.org) specification titled "XML Schema Part 1: Structures."  
+  
+ If the <xref:System.Xml.Serialization.XmlArrayAttribute.IsNullable%2A> property is set to `true`, the `xsi:nil` attribute is generated for class members that have been set to `null`. For example, if you set a field named `MyStringArray` to `null`, the <xref:System.Xml.Serialization.XmlSerializer> generates the following XML code.  
+  
+```  
+<MyStringArray xsi:nil = "true" />  
+```  
+  
+ If the <xref:System.Xml.Serialization.XmlArrayAttribute.IsNullable%2A> property is `false`, no XML element is generated.  
+  
+> [!NOTE]
+>  You cannot apply the <xref:System.Xml.Serialization.XmlArrayAttribute.IsNullable%2A> property to a member typed as a value type because a value type cannot contain `null`.  
+  
+   
+  
+## Examples  
+ The following example contains two arrays: one with the <xref:System.Xml.Serialization.XmlArrayAttribute.IsNullable%2A> property set to `true`, and another with the <xref:System.Xml.Serialization.XmlArrayAttribute.IsNullable%2A> property set to `false`.  
+  
+ [!code-cpp[Classic XmlArrayAttribute.IsNullable Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlArrayAttribute.IsNullable Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlArrayAttribute.IsNullable Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlArrayAttribute.IsNullable Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlArrayAttribute.IsNullable Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlArrayAttribute.IsNullable Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayAttribute.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the namespace of the XML element.</summary>
+        <value>The namespace of the XML element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlArrayAttribute.Namespace%2A> property allows you to create qualified XML element names. The <xref:System.Xml.Serialization.XmlArrayAttribute.Namespace%2A> property conforms to the rules for creating an XML namespace as found in the 1999 World Wide Web Consortium (www.w3.org) document titled "Namespaces in XML."  
+  
+ To create namespaces that are associated with a prefix, you must create an instance of the <xref:System.Xml.Serialization.XmlSerializerNamespaces> class that contains the namespaces and prefixes used in the XML document. As you set the namespace for each <xref:System.Xml.Serialization.XmlArrayAttribute>, it must match one of the namespaces in the <xref:System.Xml.Serialization.XmlSerializerNamespaces>. When the XML is generated, each array is correctly prefixed with the prefix associated with the specified namespace.  
+  
+   
+  
+## Examples  
+ The following example serializes an instance of the `Library` class that contains two members, one that contain book titles, and another that contain periodical titles. Although both XML elements are named `Titles`, each contains a different prefix. The example also includes an instance of the <xref:System.Xml.Serialization.XmlSerializerNamespaces> class that contains the namespaces and prefixes used to qualify the two element names.  
+  
+ [!code-cpp[Classic XmlArrayAttribute.Namespace Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlArrayAttribute.Namespace Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlArrayAttribute.Namespace Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlArrayAttribute.Namespace Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlArrayAttribute.Namespace Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlArrayAttribute.Namespace Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlArrayAttribute.Order" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the explicit order in which the elements are serialized or deserialized.</summary>
+        <value>The order of the code generation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Xml.Serialization.CodeGenerationOptions> enumeration to instruct the <xref:System.Web.Services.Description.ServiceDescriptionImporter> to generate code that sets the <xref:System.Xml.Serialization.XmlElementAttribute.Order%2A> property.  
+  
+> [!IMPORTANT]
+>  Once the <xref:System.Xml.Serialization.XmlElementAttribute.Order%2A> property has been used on one public property or field in a type, it must be applied to all public properties and fields for that type and all inherited types.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

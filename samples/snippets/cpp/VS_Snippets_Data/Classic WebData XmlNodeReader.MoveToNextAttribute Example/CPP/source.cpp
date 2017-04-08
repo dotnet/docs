@@ -1,0 +1,47 @@
+
+
+// <Snippet1>
+#using <System.Xml.dll>
+
+using namespace System;
+using namespace System::IO;
+using namespace System::Xml;
+int main()
+{
+   XmlNodeReader^ reader = nullptr;
+   try
+   {
+      
+      //Create and load the XML document.
+      XmlDocument^ doc = gcnew XmlDocument;
+      doc->LoadXml( "<book genre='novel' ISBN='1-861003-78'> "
+      "<title>Pride And Prejudice</title>"
+      "<price>19.95</price>"
+      "</book>" );
+      
+      //Load the XmlNodeReader 
+      reader = gcnew XmlNodeReader( doc );
+      
+      //Read the attributes on the book element.
+      reader->MoveToContent();
+      while ( reader->MoveToNextAttribute() )
+      {
+         Console::WriteLine( "{0} = {1}", reader->Name, reader->Value );
+      }
+      
+      //Move the reader to the title element.
+      reader->Read();
+      
+      //Read the title and price elements.
+      Console::WriteLine( reader->ReadElementString() );
+      Console::WriteLine( reader->ReadElementString() );
+   }
+   finally
+   {
+      if ( reader != nullptr )
+            reader->Close();
+   }
+
+}
+
+// </Snippet1>

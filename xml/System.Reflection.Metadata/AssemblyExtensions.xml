@@ -1,0 +1,58 @@
+<Type Name="AssemblyExtensions" FullName="System.Reflection.Metadata.AssemblyExtensions">
+  <TypeSignature Language="C#" Value="public static class AssemblyExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AssemblyExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.AssemblyExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Loader</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TryGetRawMetadata">
+      <MemberSignature Language="C#" Value="public static bool TryGetRawMetadata (this System.Reflection.Assembly assembly, out byte* blob, out int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetRawMetadata(class System.Reflection.Assembly assembly, unsigned int8* blob, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.AssemblyExtensions.TryGetRawMetadata(System.Reflection.Assembly,System.Byte*@,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Loader</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" RefType="this" />
+        <Parameter Name="blob" Type="System.Byte*&amp;" RefType="out" />
+        <Parameter Name="length" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="blob">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

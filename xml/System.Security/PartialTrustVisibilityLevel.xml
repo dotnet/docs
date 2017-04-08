@@ -1,0 +1,76 @@
+<Type Name="PartialTrustVisibilityLevel" FullName="System.Security.PartialTrustVisibilityLevel">
+  <TypeSignature Language="C#" Value="public enum PartialTrustVisibilityLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PartialTrustVisibilityLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.PartialTrustVisibilityLevel" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the default partial-trust visibility for code that is marked with the <see cref="T:System.Security.AllowPartiallyTrustedCallersAttribute" /> (APTCA) attribute.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.PartialTrustVisibilityLevel> is passed as a property setting parameter to the <xref:System.Security.AllowPartiallyTrustedCallersAttribute.%23ctor%2A?displayProperty=fullName> constructor. If no parameter is passed to the constructor, the default is VisibleToAllHosts.  
+  
+ You enable partially trusted assemblies that are identified as NotVisibleByDefault by adding them to the <xref:System.AppDomainSetup.PartialTrustVisibleAssemblies%2A> property of their application domain. If you enable an assembly that references (directly or indirectly) other partially trusted assemblies that are NotVisibleByDefault, those other assemblies should be enabled as well.  
+  
+ When an APTCA library that specifies a <xref:System.Security.PartialTrustVisibilityLevel> and that is eligible for code sharing is loaded for the first time, it is loaded into the shared domain. Whenever that assembly is loaded with the same <xref:System.Security.PartialTrustVisibilityLevel> into another domain, it will be shared. However, if the assembly is loaded with a different <xref:System.Security.PartialTrustVisibilityLevel>, it will not be shared.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NotVisibleByDefault">
+      <MemberSignature Language="C#" Value="NotVisibleByDefault" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.PartialTrustVisibilityLevel NotVisibleByDefault = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PartialTrustVisibilityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The assembly has been audited for partial trust, but it is not visible to partial-trust code in all hosts. To make the assembly visible to partial-trust code, add it to the <see cref="P:System.AppDomainSetup.PartialTrustVisibleAssemblies" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleToAllHosts">
+      <MemberSignature Language="C#" Value="VisibleToAllHosts" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.PartialTrustVisibilityLevel VisibleToAllHosts = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.PartialTrustVisibilityLevel.VisibleToAllHosts" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.PartialTrustVisibilityLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The assembly can always be called by partial-trust code.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

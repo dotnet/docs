@@ -1,0 +1,273 @@
+<Type Name="IndexOutOfRangeException" FullName="System.IndexOutOfRangeException">
+  <TypeSignature Language="C#" Value="public sealed class IndexOutOfRangeException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit IndexOutOfRangeException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.IndexOutOfRangeException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when an attempt is made to access an element of an array or collection with an index that is outside its bounds.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.IndexOutOfRangeException> exception is thrown when an invalid index is used to access a member of an array or a collection, or to read or write from a particular location in a buffer. This exception  inherits from the <xref:System.Exception> class but adds no unique members.  
+  
+ Typically, an <xref:System.IndexOutOfRangeException> exception is thrown as a result of developer error. Instead of handling the exception, you should diagnose the cause of the error and correct your code. The most common causes of the error are:  
+  
+-   Forgetting that the upper bound of a collection or a zero-based array is one less than its number of members or elements, as the following example illustrates.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/length1.cs#3)]
+     [!code-vb[System.IndexOutOfRangeException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/length1.vb#3)]  
+  
+     To correct the error, you can use code like the following.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/length2.cs#4)]
+     [!code-vb[System.IndexOutOfRangeException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/length2.vb#4)]  
+  
+     Alternately, instead of iterating all the elements in the array by their index, you can use the  (in C#) or the  (in Visual Basic).  
+  
+-   Attempting to assign an array element to another array that has not been adequately dimensioned and that has fewer elements than the original array. The following example attempts to assign the last element in the `value1` array to the same element in the `value2` array. However, the `value2` array has been incorrectly dimensioned to have six instead of seven elements. As a result, the assignment throws an <xref:System.IndexOutOfRangeException> exception.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/Uninit1.cs#10)]
+     [!code-vb[System.IndexOutOfRangeException#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/Uninit1.vb#10)]  
+  
+-   Using a value returned by a search method to iterate a portion of an array or collection starting at a particular index position. If you forget to check whether the search operation found a match, the runtime throws an <xref:System.IndexOutOfRangeException> exception, as shown in this example.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/negative1.cs#5)]
+     [!code-vb[System.IndexOutOfRangeException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/negative1.vb#5)]  
+  
+     In this case, the <xref:System.Collections.Generic.List%601.IndexOf%2A?displayProperty=fullName> method returns -1, which is an invalid index value, when it fails to find a match. To correct this error, check the search method's return value before iterating the array, as shown in this example.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/negative2.cs#6)]
+     [!code-vb[System.IndexOutOfRangeException#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/negative2.vb#6)]  
+  
+-   Trying to use or enumerate a result set, collection, or array returned by a query without testing whether the returned object has any valid data.  
+  
+-   Using a computed value to define the starting index, the ending index, or the number of items to be iterated. If the result of the computation is unexpected, it might result in an <xref:System.IndexOutOfRangeException> exception. You should check your program's logic in calculating the index value and validate the value before iterating the array or collection. The following conditions must all be true; otherwise, an <xref:System.IndexOutOfRangeException> exception is thrown:  
+  
+    -   The starting index must be greater than or equal to <xref:System.Array.GetLowerBound%2A?displayProperty=fullName> for the dimension of the array that you want to iterate, or greater than or equal to 0 for a collection.  
+  
+    -   The ending index cannot exceed <xref:System.Array.GetUpperBound%2A?displayProperty=fullName> for the dimension of the array that you want to iterate, or cannot be greater than or equal to the `Count` property of a collection.  
+  
+    -   The following equation must be true for the dimension of the array that you want to iterate:  
+  
+        ```  
+        start_index >= lower_bound And start_index + items_to_iterate – 1 <= upper_bound  
+        ```  
+  
+         For a collection, the following equation must be true:  
+  
+        ```  
+        start_index >= 0 And start_index + items_to_iterate <= Count  
+        ```  
+  
+        > [!TIP]
+        >  The starting index of an array or collection can never be a negative number.  
+  
+-   Assuming that an array must be zero-based. Arrays that are not zero-based can be created by the [Array.CreateInstance(Type, Int32\[\], Int32\<xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=fullName> method and can be returned by COM interop, although they aren’t CLS-compliant. The following example illustrates the <xref:System.IndexOutOfRangeException> that is thrown when you try to iterate a non-zero-based array created by the [Array.CreateInstance(Type, Int32\[\], Int32\<xref:System.Array.CreateInstance%28System.Type%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%29?displayProperty=fullName> method.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/nonzero1.cs#1)]
+     [!code-vb[System.IndexOutOfRangeException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/nonzero1.vb#1)]  
+  
+     To correct the error, as the following example does, you can call the <xref:System.Array.GetLowerBound%2A> method instead of making assumptions about the starting index of an array.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/nonzero2.cs#2)]
+     [!code-vb[System.IndexOutOfRangeException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/nonzero2.vb#2)]  
+  
+     Note that when you call the <xref:System.Array.GetLowerBound%2A> method to get the starting index of an array, you should also call the <xref:System.Array.GetUpperBound%28System.Int32%29?displayProperty=fullName> method to get its ending index.  
+  
+-   Confusing an index and the value at that index in a numeric array or collection. This issue usually occurs when using the `foreach` statement (in C#) or the `For Each` statement (in Visual Basic). The following example illustrates the problem.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/foreach1.cs#7)]
+     [!code-vb[System.IndexOutOfRangeException#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/foreach1.vb#7)]  
+  
+     The iteration construct returns each value in an array or collection, not its index. To eliminate the exception, use this code.  
+  
+     [!code-csharp[System.IndexOutOfRangeException#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.indexoutofrangeexception/cs/foreach2.cs#8)]
+     [!code-vb[System.IndexOutOfRangeException#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.indexoutofrangeexception/vb/foreach2.vb#8)]  
+  
+-   Providing an invalid column name to the <xref:System.Data.DataView.Sort%2A?displayProperty=fullName> property.  
+  
+-   Violating thread safety. Operations such as reading from the same <xref:System.IO.StreamReader> object, writing to the same <xref:System.IO.StreamWriter> object from multiple threads, or enumerating the objects in a <xref:System.Collections.Hashtable> from different threads can throw an <xref:System.IndexOutOfRangeException> if the object isn’t accessed in a thread-safe way. This exception is typically intermittent because it relies on a race condition.  
+  
+ Using hard-coded index values to manipulate an array is likely to throw an exception if the index value is incorrect or invalid, or if the size of the array being manipulation is unexpected. To prevent an operation from throwing an  <xref:System.IndexOutOfRangeException> exception, you can do the following:  
+  
+-   Iterate the elements of the array using the [foreach](https://msdn.microsoft.com/library/ttw7t8t6.aspx) statement (in C#) or the [For Each...Next](https://msdn.microsoft.com/library/5ebk1751.aspx) construct (in Visual Basic)  instead of iterating elements by index.  
+  
+-   Iterate the elements by index starting with the index returned by the <xref:System.Array.GetLowerBound%2A?displayProperty=fullName> method and ending with the index returned by the <xref:System.Array.GetUpperBound%2A?displayProperty=fullName> method.  
+  
+-   If you are assigning elements in one array to another, ensure that  the target array has at least as many elements as the source array by comparing their <xref:System.Array.Length%2A?displayProperty=fullName> properties.  
+  
+ For a list of initial property values for an instance of <xref:System.IndexOutOfRangeException>, see the <xref:System.IndexOutOfRangeException> constructors.  
+  
+ The following intermediate language (IL) instructions throw <xref:System.IndexOutOfRangeException>:  
+  
+-   ldelem.\<type>  
+  
+-   ldelema  
+  
+-   stelem.\<type>  
+  
+ <xref:System.IndexOutOfRangeException> uses the HRESULT COR_E_INDEXOUTOFRANGE, which has the value 0x80131508.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IndexOutOfRangeException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IndexOutOfRangeException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IndexOutOfRangeException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "An array index is out of range." This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.IndexOutOfRangeException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IndexOutOfRangeException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IndexOutOfRangeException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IndexOutOfRangeException" /> class with a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.IndexOutOfRangeException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IndexOutOfRangeException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IndexOutOfRangeException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IndexOutOfRangeException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The `InnerException` property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the `InnerException` property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.IndexOutOfRangeException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

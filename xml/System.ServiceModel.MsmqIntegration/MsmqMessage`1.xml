@@ -1,0 +1,662 @@
+<Type Name="MsmqMessage&lt;T&gt;" FullName="System.ServiceModel.MsmqIntegration.MsmqMessage&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class MsmqMessage&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MsmqMessage`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqMessage`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.MessageContract(IsWrapped=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">Represents the message body.</typeparam>
+    <summary>The <see cref="T:System.ServiceModel.MsmqIntegration.MsmqMessage`1" /> class encapsulates aMessage Queuing (MSMQ) message that is sent and received, over a Message Queuing integration channel, to and from an existing Message Queuing application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601> class to access the properties of the Message Queuing message.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#1](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#1)]
+ [!code-vb[UEMsmqMessage#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <exception cref="T:System.ArgumentNullException">Message body is null.</exception>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MsmqMessage (T body);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqIntegration.MsmqMessage`1.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="body" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="body">The message body with which to initialize the new instance of the <see cref="T:System.ServiceModel.MsmqIntegration.MsmqMessage`1" /> class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MsmqIntegration.MsmqMessage`1" /> class with the provided message body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A Message Queuing (MSMQ) message can be constructed with a body of type T.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#2](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#2)]
+ [!code-vb[UEMsmqMessage#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Message body is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AcknowledgeType">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Messaging.AcknowledgeTypes&gt; AcknowledgeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Messaging.AcknowledgeTypes&gt; AcknowledgeType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.AcknowledgeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Messaging.AcknowledgeTypes&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Messaging.AcknowledgeTypes" /> that is associated with this message.</summary>
+        <value>The <see cref="T:System.Messaging.AcknowledgeTypes" /> that is associated with this message. May be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies the type of acknowledgment messages that are requested by the sending application. The application can use this property to request notification of certain events. For example, the application might want to be notified when the message reaches its destination queue, when the message is retrieved, or if the message times out before it reaches its destination queue or is retrieved. For member details, see <xref:System.Messaging.AcknowledgeTypes>.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#3](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#3)]
+ [!code-vb[UEMsmqMessage#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Acknowledgment">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Messaging.Acknowledgment&gt; Acknowledgment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Messaging.Acknowledgment&gt; Acknowledgment" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.Acknowledgment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Messaging.Acknowledgment&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Messaging.Acknowledgment" /> that is associated with this message.</summary>
+        <value>The <see cref="T:System.Messaging.Acknowledgment" /> that is associated with this message. The default value is Acknowledgement.None.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you receive a message from an administration queue, you can use this property to verify the status of the original message.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#4](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#4)]
+ [!code-vb[UEMsmqMessage#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdministrationQueue">
+      <MemberSignature Language="C#" Value="public Uri AdministrationQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AdministrationQueue" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.AdministrationQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Uri" /> of the administration queue that is associated with this message.</summary>
+        <value>The <see cref="T:System.Uri" /> of the administration queue that is associated with this message. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The administration queue that is associated with a message will receive any acknowledgment messages that indicate whether the original message reached its destination queue and whether it has been removed from the queue.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#5](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#5)]
+ [!code-vb[UEMsmqMessage#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppSpecific">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; AppSpecific { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; AppSpecific" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.AppSpecific" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Int32" /> value that represents any additional application-specific information that is associated with this message.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents any additional application-specific information that is associated with this message. The default value is <see langword="null" /> when accessed by the sending application and 0 when accessed by the receiving application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#6](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#6)]
+ [!code-vb[UEMsmqMessage#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrivedTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ArrivedTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ArrivedTime" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.ArrivedTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.DateTime" /> that indicates when the message arrived in the destination queue.</summary>
+        <value>A <see cref="T:System.DateTime" /> that indicates when the message arrived in the destination queue.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#7](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#7)]
+ [!code-vb[UEMsmqMessage#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authenticated">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Authenticated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Authenticated" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.Authenticated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the message is authenticated.</summary>
+        <value>
+          <see langword="true" /> if the message is authenticated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message is authenticated when the sender requests authentication or sends the message to a message queue that is configured to require authentication.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#8](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#8)]
+ [!code-vb[UEMsmqMessage#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public T Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Body" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the body of the message.</summary>
+        <value>The body of the message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#9](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#9)]
+ [!code-vb[UEMsmqMessage#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Message body is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyType">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; BodyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; BodyType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.BodyType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Int32" /> value that indicates the type of the body of the message.</summary>
+        <value>An <see cref="T:System.Int32" /> value that indicates the type of the body of the message. May be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing (MSMQ) recognizes the body contents as an object or as a serialized stream. The `BodyType` property indicates the type of the object within the Body property of the message.  
+  
+ The ActiveX formatter performs binding between native types and the object in a message body. If you use the ActiveX formatter, the formatter sets the `BodyType` property for you.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#10](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#10)]
+ [!code-vb[UEMsmqMessage#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrelationId">
+      <MemberSignature Language="C#" Value="public string CorrelationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CorrelationId" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.CorrelationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.String" /> that contains the correlation identifier for this message.</summary>
+        <value>A <see cref="T:System.String" /> that contains the correlation identifier for this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When Message Queuing (MSMQ) generates an acknowledgment or report message, it uses this property to specify the message identifier of the original message. The application that sent the original message, when it receives an acknowledgment or report message, can get this property from the message it receives to verify the message identifier of the original message.  
+  
+ The application can also use this property to correlate messages for its own purposes.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#11](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#11)]
+ [!code-vb[UEMsmqMessage#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationQueue">
+      <MemberSignature Language="C#" Value="public Uri DestinationQueue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri DestinationQueue" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.DestinationQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Uri" /> of the destination queue for this message.</summary>
+        <value>The <see cref="T:System.Uri" /> of the destination queue for this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#12](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#12)]
+ [!code-vb[UEMsmqMessage#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extension">
+      <MemberSignature Language="C#" Value="public byte[] Extension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Extension" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.Extension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of <see cref="T:System.Byte" /> that contains any additional, application-defined information that is associated with this message.</summary>
+        <value>An array of <see cref="T:System.Byte" /> that contains any additional, application-defined information that is associated with this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to store additional information, such as a large binary object.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#13](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#13)]
+ [!code-vb[UEMsmqMessage#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.String" /> that contains the message identifier for this message.</summary>
+        <value>A <see cref="T:System.String" /> that contains the message identifier for this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can only be accessed after the message is sent.  
+  
+ Message Queuing (MSMQ) generates a message identifier for the message when it is sent. The identifier is composed of 20 bytes and includes two parts: the machine GUID of the sending computer, and a message identifier that is unique on the sending computer. The combination of these two parts forms a message identifier that is unique on the network.  
+  
+ Message Queuing generates message identifiers for all messages, including acknowledgment and report messages. Message Queuing sends an acknowledgment message in response to the arrival or failure of a message that is sent by an application.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#14](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#14)]
+ [!code-vb[UEMsmqMessage#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.Label" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.String" /> that contains the message label.</summary>
+        <value>A <see cref="T:System.String" /> that contains the message label.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The message label has no intrinsic meaning to Message Queuing (MSMQ). It is used to identify messages in a human-readable way. Your applications are responsible for interpreting message labels. You do not need to make the message label unique.  
+  
+ You can use the message label for various purposes, such as displaying it or selectively processing messages based on their labels.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#15](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#15)]
+ [!code-vb[UEMsmqMessage#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageType">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Messaging.MessageType&gt; MessageType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Messaging.MessageType&gt; MessageType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.MessageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Messaging.MessageType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Messaging.MessageType" /> that is associated with this message.</summary>
+        <value>The <see cref="T:System.Messaging.MessageType" /> that is associated with this message. May be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing (MSMQ) sets this property when it sends a message. A message can have one of the following types:  
+  
+-   <xref:System.Messaging.MessageType>: A message sent by an application.  
+  
+-   <xref:System.Messaging.MessageType>: A message that Message Queuing generates when an application sends a normal message and requests an acknowledgment. For example, Message Queuing can generate a positive or negative acknowledgment to indicate whether the original message arrived at its destination queue, or whether it was retrieved from the destination queue by the receiving application. Message Queuing returns the appropriate acknowledgment message to the administration queue specified by the sending application.  
+  
+-   <xref:System.Messaging.MessageType>: Whenever an application sends a message, if the local Queue Manager has a report queue defined, Message Queuing generates a report message and sends it to the report queue. If tracing is enabled, Message Queuing sends a report message to the report queue each time the original message enters or leaves a Message Queuing server.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#16](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#16)]
+ [!code-vb[UEMsmqMessage#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Messaging.MessagePriority&gt; Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Messaging.MessagePriority&gt; Priority" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Messaging.MessagePriority&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Messaging.MessagePriority" /> that is associated with this message.</summary>
+        <value>The <see cref="T:System.Messaging.MessagePriority" /> that is associated with this message. May be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The message priority affects how Message Queuing (MSMQ) handles the message both while the message is in transit and when it reaches its destination queue. A message with a higher priority is given preference during routing, and is inserted closer to the front of its destination queue. Messages with the same priority are placed in the destination queue according to their arrival times.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#17](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#17)]
+ [!code-vb[UEMsmqMessage#17](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseQueue">
+      <MemberSignature Language="C#" Value="public Uri ResponseQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ResponseQueue" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.ResponseQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Uri" /> of the message queue that receives response messages from the receiving application.</summary>
+        <value>This property defaults to <see langword="null" />.  
+  
+ This property identifies the queue that receives response messages that the receiving application returns to the sending application. The sending application specifies the response queue when it sends messages to the receiving application. The sending application can specify any available queue as the response queue.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#18](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#18)]
+ [!code-vb[UEMsmqMessage#18](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderId">
+      <MemberSignature Language="C#" Value="public byte[] SenderId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SenderId" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.SenderId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array of <see cref="T:System.Byte" /> that contains the sender identifier of the sending application.</summary>
+        <value>An array of <see cref="T:System.Byte" /> that contains the sender identifier of the sending application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing (MSMQ) attaches the sender identifier of the sending application to the message. This property can be used by the receiving application to perform authorization checks.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#19](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#19)]
+ [!code-vb[UEMsmqMessage#19](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SentTime">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; SentTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; SentTime" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.SentTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.DateTime" /> that indicates when the message was sent by the queue manager of the sending application's computer.</summary>
+        <value>A <see cref="T:System.DateTime" /> that indicates when the message was sent by the queue manager of the sending application's computer. May be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The sent time is adjusted to the local time of the sending application's computer. The source and destination queues may be on computers with different time zones.  
+  
+ The default for this property is `null`.  
+  
+   
+  
+## Examples  
+ [!code-csharp[UEMsmqMessage#20](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#20)]
+ [!code-vb[UEMsmqMessage#20](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeToReachQueue">
+      <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; TimeToReachQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; TimeToReachQueue" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqMessage`1.TimeToReachQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.TimeSpan" /> that indicates the maximum amount of time allowed for the message to reach the destination queue.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that indicates the maximum amount of time allowed for the message to reach the destination queue. May be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the interval specified by this property expires before the message reaches its destination queue, Message Queuing (MSMQ) discards the message in one of two ways. If the message's <xref:System.Messaging.Message.UseDeadLetterQueue%2A> property is `true`, the message is sent to the dead-letter queue. Otherwise, the message is dropped.  
+  
+ The default for this property is `null`.  
+  
+   
+  
+## Examples  
+ <!-- TODO: review snippet reference [!code-csharp[UEMsmqMessage#21](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#21)]  -->
+ <!-- TODO: review snippet reference [!code-vb[UEMsmqMessage#21](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#21)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

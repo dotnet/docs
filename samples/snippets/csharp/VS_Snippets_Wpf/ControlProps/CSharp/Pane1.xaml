@@ -1,0 +1,75 @@
+<StackPanel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ControlProps.Pane1"
+>
+
+  <TextBlock FontSize = "24.0">Control Properties</TextBlock>
+  <TextBlock FontSize = "12.0">Click the buttons to see the properties change.</TextBlock>
+
+  <!--<Snippet11>-->
+  <Button Name="btn" Background="Red" 
+          Click="ChangeBackground">
+    Background
+  </Button>
+  <!--</Snippet11>-->
+
+  <!--<Snippet12>-->
+  <Button Name="btn1" Foreground="Black" 
+          Click="ChangeForeground">
+    Foreground
+  </Button>
+  <!--</Snippet12>-->
+
+  <!--<Snippet13>-->
+  <Button Name="btn2" FontFamily="Arial" 
+          Click="ChangeFontFamily">
+    FontFamily
+  </Button>
+  <!--</Snippet13>-->
+
+  <!--<Snippet14>-->
+  <Button Name="btn3" FontSize="10.0" 
+          Click="ChangeFontSize">
+    FontSize
+  </Button>
+  <!--</Snippet14>-->
+
+  <!--<Snippet15>-->
+  <Button Name="btn4" FontStyle="Normal" 
+          Click="ChangeFontStyle">
+    FontStyle
+  </Button>
+  <!--</Snippet15>-->
+
+  <!--<Snippet16>-->
+  <Button Name="btn5" FontWeight="Normal" 
+          Click="ChangeFontWeight">
+    FontWeight
+  </Button>
+  <!--</Snippet16>-->
+
+  <!--<Snippet17>-->
+  <Button Name="btn6" BorderBrush="Red" 
+          Click="ChangeBorderBrush">
+    BorderBrush
+  </Button>
+  <!--</Snippet17>-->
+
+  <!--<Snippet18>-->
+  <Button Name="btn7" 
+          HorizontalContentAlignment="Left"
+          Click="ChangeHorizontalContentAlignment">
+    HorizontalContentAlignment
+  </Button>
+  <!--</Snippet18>-->
+
+  <!--<Snippet19>-->
+  <Button Name="btn8" Height="50"
+          VerticalContentAlignment="Top" 
+          Click="ChangeVerticalContentAlignment">
+    VerticalContentAlignment
+  </Button>
+  <!--</Snippet19>-->
+
+</StackPanel>

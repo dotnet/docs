@@ -1,0 +1,120 @@
+<Type Name="LayoutInformation" FullName="System.Windows.Controls.Primitives.LayoutInformation">
+  <TypeSignature Language="C#" Value="public static class LayoutInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LayoutInformation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.LayoutInformation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods that provide additional information about the layout state of an element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method to translate the bounding box of a <xref:System.Windows.FrameworkElement> into a <xref:System.Windows.Media.GeometryDrawing>.  
+  
+ [!code-csharp[LayoutInformation#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[LayoutInformation#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutInformation/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetLayoutClip">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Geometry GetLayoutClip (System.Windows.FrameworkElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Geometry GetLayoutClip(class System.Windows.FrameworkElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutClip(System.Windows.FrameworkElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.FrameworkElement" /> whose layout clip is desired.</param>
+        <summary>Returns a <see cref="T:System.Windows.Media.Geometry" /> that represents the visible region of an element.</summary>
+        <returns>A <see cref="T:System.Windows.Media.Geometry" /> that represents the visible region of an <paramref name="element" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Windows.FrameworkElement.LayoutTransform%2A> has been applied to the `element`, the returned <xref:System.Windows.Media.Geometry> can be non-rectangular.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutExceptionElement">
+      <MemberSignature Language="C#" Value="public static System.Windows.UIElement GetLayoutExceptionElement (System.Windows.Threading.Dispatcher dispatcher);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.UIElement GetLayoutExceptionElement(class System.Windows.Threading.Dispatcher dispatcher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutExceptionElement(System.Windows.Threading.Dispatcher)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="System.Windows.Threading.Dispatcher" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher">The <see cref="T:System.Windows.Threading.Dispatcher" /> object that defines the scope of the operation. There is one dispatcher per layout engine instance.</param>
+        <summary>Returns a <see cref="T:System.Windows.UIElement" /> that was being processed by the layout engine at the moment of an unhandled exception.</summary>
+        <returns>A <see cref="T:System.Windows.UIElement" /> that was being processed by the layout engine at the moment of an unhandled exception.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can view the result of this operation from an application exception handler to fix problems in the layout of an application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">Occurs when <paramref name="dispatcher" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLayoutSlot">
+      <MemberSignature Language="C#" Value="public static System.Windows.Rect GetLayoutSlot (System.Windows.FrameworkElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Rect GetLayoutSlot(class System.Windows.FrameworkElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot(System.Windows.FrameworkElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.FrameworkElement" /> whose layout slot is desired.</param>
+        <summary>Returns a <see cref="T:System.Windows.Rect" /> that represents the layout partition that is reserved for a child element.</summary>
+        <returns>A <see cref="T:System.Windows.Rect" /> that represents the layout slot of the element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.Primitives.LayoutInformation.GetLayoutSlot%2A> method to translate the bounding box of a <xref:System.Windows.FrameworkElement> into a <xref:System.Windows.Media.GeometryDrawing>.  
+  
+ [!code-csharp[LayoutInformation#2](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[LayoutInformation#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/LayoutInformation/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

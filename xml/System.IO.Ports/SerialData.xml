@@ -1,0 +1,57 @@
+<Type Name="SerialData" FullName="System.IO.Ports.SerialData">
+  <TypeSignature Language="C#" Value="public enum SerialData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerialData extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialData" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of character that was received on the serial port of the <see cref="T:System.IO.Ports.SerialPort" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.IO.Ports.SerialPort.DataReceived> event. You examine the type of character that was received by retrieving the value of the eceivedEventArgs.EventType property of the eceivedEventArgs class. The eceivedEventArgs.EventType property contains one of the values from the <xref:System.IO.Ports.SerialData> enumeration.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Chars">
+      <MemberSignature Language="C#" Value="Chars" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialData Chars = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialData.Chars" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.SerialData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A character was received and placed in the input buffer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Eof">
+      <MemberSignature Language="C#" Value="Eof" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialData Eof = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialData.Eof" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Ports.SerialData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The end of file character was received and placed in the input buffer.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

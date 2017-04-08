@@ -1,0 +1,129 @@
+<Type Name="AddInSegmentType" FullName="System.AddIn.Hosting.AddInSegmentType">
+  <TypeSignature Language="C#" Value="public enum AddInSegmentType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AddInSegmentType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInSegmentType" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of a pipeline segment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this context, the type of a pipeline segment identifies the category of pipeline segment: add-in, add-in-side adapter, add-in view, contract, host-side adapter, or the host view of the add-in. If a pipeline segment's class has a <xref:System.AddIn.Pipeline.QualificationDataAttribute> attribute, you can obtain the data specified in the attribute with the <xref:System.AddIn.Hosting.AddInToken.QualificationData%2A> property of an <xref:System.AddIn.Hosting.AddInToken> object.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.AddIn.Hosting.AddInSegmentType> enumeration to evaluate an add-in's qualification data.  
+  
+ [!code-csharp[AddInP3Host#11](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#11)]
+ [!code-vb[AddInP3Host#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddIn">
+      <MemberSignature Language="C#" Value="AddIn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSegmentType AddIn = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.AddIn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSegmentType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an add-in segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AddInSideAdapter">
+      <MemberSignature Language="C#" Value="AddInSideAdapter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSegmentType AddInSideAdapter = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.AddInSideAdapter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSegmentType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an add-in-side adapter segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AddInView">
+      <MemberSignature Language="C#" Value="AddInView" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSegmentType AddInView = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.AddInView" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSegmentType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an add-in view segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Contract">
+      <MemberSignature Language="C#" Value="Contract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSegmentType Contract = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.Contract" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSegmentType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a contract segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HostSideAdapter">
+      <MemberSignature Language="C#" Value="HostSideAdapter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSegmentType HostSideAdapter = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.HostSideAdapter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSegmentType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a host-side adapter segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HostViewOfAddIn">
+      <MemberSignature Language="C#" Value="HostViewOfAddIn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Hosting.AddInSegmentType HostViewOfAddIn = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.AddInSegmentType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the host view of the add-in segment.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

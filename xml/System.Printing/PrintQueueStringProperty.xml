@@ -1,0 +1,96 @@
+<Type Name="PrintQueueStringProperty" FullName="System.Printing.PrintQueueStringProperty">
+  <TypeSignature Language="C#" Value="public class PrintQueueStringProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintQueueStringProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueStringProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents one, and only one, of three possible properties of a print queue: <see cref="P:System.Printing.PrintQueue.Location" />, <see cref="P:System.Printing.PrintQueue.Comment" />, or <see cref="P:System.Printing.PrintQueue.ShareName" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object of this class is primarily used as a parameter for one of the overloaded <xref:System.Printing.PrintServer.InstallPrintQueue%2A> methods of a <xref:System.Printing.PrintServer>. This method makes it possible to install a print queue while initializing only one of its three major <xref:System.String> properties. Having three separate overloads of the method is not possible because they would have the same signature and no two overloads of a method can have the same signature. If you want to install a print queue and initialize two or more of its major string properties, there is another overload, <xref:System.Printing.PrintServer.InstallPrintQueue%2A>, that substitutes three <xref:System.String> parameters for the <xref:System.Printing.PrintQueueStringProperty> parameter. These parameters are used to set the major String properties in this order: <xref:System.Printing.PrintQueue.ShareName%2A>, <xref:System.Printing.PrintQueue.Comment%2A>, and <xref:System.Printing.PrintQueue.Location%2A>. Use an empty string for a parameter that corresponds to a property you do not want to initialize.  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintQueueStringProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueStringProperty.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueStringProperty" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueueStringProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the print queue property that is represented.</summary>
+        <value>A <see cref="T:System.String" /> with the value of the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, if the <xref:System.Printing.PrintQueueStringProperty.Type%2A> is <xref:System.Printing.PrintQueueStringPropertyType>, the <xref:System.Printing.PrintQueueStringProperty.Name%2A> might be "Department Supply Room"; but if the <xref:System.Printing.PrintQueueStringProperty.Type%2A> is <xref:System.Printing.PrintQueueStringPropertyType>, the <xref:System.Printing.PrintQueueStringProperty.Name%2A> might be "Use only A4 size paper with this printer."  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.Printing.PrintQueueStringPropertyType Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Printing.PrintQueueStringPropertyType Type" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueueStringProperty.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStringPropertyType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that identifies which of the three possible properties of a print queue is being represented.</summary>
+        <value>A <see cref="T:System.Printing.PrintQueueStringPropertyType" /> that specifies the kind of print queue property that is being represented.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Printing.PrintServer.InstallPrintQueue%2A> method of a <xref:System.Printing.PrintServer> uses this information to ensure that the <xref:System.Printing.PrintQueueStringProperty.Name%2A> value is assigned to the correct property of the <xref:System.Printing.PrintQueue> being installed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,90 @@
+<Type Name="IClientMessageFormatter" FullName="System.ServiceModel.Dispatcher.IClientMessageFormatter">
+  <TypeSignature Language="C#" Value="public interface IClientMessageFormatter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientMessageFormatter" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IClientMessageFormatter" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods that are used to control the conversion of messages into objects and objects into messages for client applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> interface to create a custom client formatter that serializes objects into messages and deserializes messages into objects for a particular operation.  
+  
+ Attach custom [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client formatters to the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to handle this conversion explicitly.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeserializeReply">
+      <MemberSignature Language="C#" Value="public object DeserializeReply (System.ServiceModel.Channels.Message message, object[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DeserializeReply(class System.ServiceModel.Channels.Message message, object[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientMessageFormatter.DeserializeReply(System.ServiceModel.Channels.Message,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="parameters" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="message">The inbound message.</param>
+        <param name="parameters">Any <see langword="out" /> values.</param>
+        <summary>Converts a message into a return value and <see langword="out" /> parameters that are passed back to the calling operation.</summary>
+        <returns>The return value of the operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Called after a reply message is received. Implement to convert the reply message into a return value (and any `out` parameters) that is returned to the calling application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeRequest">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message SerializeRequest (System.ServiceModel.Channels.MessageVersion messageVersion, object[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message SerializeRequest(class System.ServiceModel.Channels.MessageVersion messageVersion, object[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientMessageFormatter.SerializeRequest(System.ServiceModel.Channels.MessageVersion,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageVersion" Type="System.ServiceModel.Channels.MessageVersion" />
+        <Parameter Name="parameters" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="messageVersion">The version of the SOAP message to use.</param>
+        <param name="parameters">The parameters passed to the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client operation.</param>
+        <summary>Converts an <see cref="T:System.Object" /> array into an outbound <see cref="T:System.ServiceModel.Channels.Message" />.</summary>
+        <returns>The SOAP message sent to the service operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Called after an operation is invoked on the client but prior to serializing the outbound message. Implement to convert the parameter objects into the outbound message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

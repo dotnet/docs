@@ -1,0 +1,88 @@
+<Type Name="SpeechDetectedEventArgs" FullName="System.Speech.Recognition.SpeechDetectedEventArgs">
+  <TypeSignature Language="C#" Value="public class SpeechDetectedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SpeechDetectedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SpeechDetectedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Returns data from <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected" /> or <see cref="E:System.Speech.Recognition.SpeechRecognizer.SpeechDetected" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `SpeechDetected` event is raised by the <xref:System.Speech.Recognition.SpeechRecognizer> and <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes.  
+  
+ **SpeechDetected** events are generated when a recognition engine can identify audio input as human speech.  
+  
+ <xref:System.Speech.Recognition.SpeechDetectedEventArgs> derives from <xref:System.EventArgs>.  
+  
+   
+  
+## Examples  
+ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected?displayProperty=fullName> events. The handler initializes a display every time speech is detected and displays status information, including audio position.  
+  
+```  
+_recognizer.SpeechDetected +=  
+  delegate(object sender, SpeechDetectedEventArgs eventArgs)   
+  {  
+  
+    // Clear previous recognition information.  
+    _audioDeviceStatusLabel.Enabled = true;  
+    _audioDeviceStatusLabel.Visible = true;  
+    Utils.DisplayAudioInputFormat(_audioStateLabel, _recognizer);  
+    Utils.DisplayRecognizerState(_recognizerStateLabel, _recognizer.State);  
+    Utils.DisplaySpeechDetected(_speechDetectedLabel, eventArgs.AudioPosition);  
+  };  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AudioPosition">
+      <MemberSignature Language="C#" Value="public TimeSpan AudioPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AudioPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SpeechDetectedEventArgs.AudioPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the position in the audio stream where speech was detected.</summary>
+        <value>Returns the location of a detected phrase within a recognition engine’s speech buffer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The example below creates a handler for <xref:System.Speech.Recognition.SpeechRecognizer.SpeechDetected?displayProperty=fullName> or <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechDetected?displayProperty=fullName> events. The handler initializes a display each time speech is detected and displays status information, including audio position.  
+  
+```  
+_recognizer.SpeechDetected +=  
+  delegate(object sender, SpeechDetectedEventArgs eventArgs)   
+  {  
+  
+    // Clear previous recognition information.  
+    _audioDeviceStatusLabel.Enabled = true;  
+    _audioDeviceStatusLabel.Visible = true;  
+    Utils.DisplayAudioInputFormat(_audioStateLabel, _recognizer);  
+    Utils.DisplayRecognizerState(_recognizerStateLabel, _recognizer.State);  
+    Utils.DisplaySpeechDetected(_speechDetectedLabel, eventArgs.AudioPosition);  
+  };  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

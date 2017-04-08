@@ -1,0 +1,2463 @@
+<Type Name="Matrix4x4" FullName="System.Numerics.Matrix4x4">
+  <TypeSignature Language="C#" Value="public struct Matrix4x4 : IEquatable&lt;System.Numerics.Matrix4x4&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Matrix4x4 extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Numerics.Matrix4x4&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Numerics.Matrix4x4" />
+  <AssemblyInfo>
+    <AssemblyName>System.Numerics.Vectors</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Numerics</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Numerics.Matrix4x4&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a 4x4 matrix.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Matrix4x4 (System.Numerics.Matrix3x2 value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Numerics.Matrix3x2 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.#ctor(System.Numerics.Matrix3x2)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Numerics.Matrix3x2" />
+      </Parameters>
+      <Docs>
+        <param name="value">A 3x2 matrix.</param>
+        <summary>Creates a <see cref="T:System.Numerics.Matrix4x4" /> object from a specified <see cref="T:System.Numerics.Matrix3x2" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a 4x4 matrix whose <xref:System.Numerics.Matrix4x4>, <xref:System.Numerics.Matrix4x4.M14>, <xref:System.Numerics.Matrix4x4.M23>, <xref:System.Numerics.Matrix4x4.M24>, <xref:System.Numerics.Matrix4x4.M31>, <xref:System.Numerics.Matrix4x4.M32>, <xref:System.Numerics.Matrix4x4.M34>, and <xref:System.Numerics.Matrix4x4.M43> components are zero, and whose <xref:System.Numerics.Matrix4x4.M33> and <xref:System.Numerics.Matrix4x4.M44> components are one.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Matrix4x4 (float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 m11, float32 m12, float32 m13, float32 m14, float32 m21, float32 m22, float32 m23, float32 m24, float32 m31, float32 m32, float32 m33, float32 m34, float32 m41, float32 m42, float32 m43, float32 m44) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="m11" Type="System.Single" />
+        <Parameter Name="m12" Type="System.Single" />
+        <Parameter Name="m13" Type="System.Single" />
+        <Parameter Name="m14" Type="System.Single" />
+        <Parameter Name="m21" Type="System.Single" />
+        <Parameter Name="m22" Type="System.Single" />
+        <Parameter Name="m23" Type="System.Single" />
+        <Parameter Name="m24" Type="System.Single" />
+        <Parameter Name="m31" Type="System.Single" />
+        <Parameter Name="m32" Type="System.Single" />
+        <Parameter Name="m33" Type="System.Single" />
+        <Parameter Name="m34" Type="System.Single" />
+        <Parameter Name="m41" Type="System.Single" />
+        <Parameter Name="m42" Type="System.Single" />
+        <Parameter Name="m43" Type="System.Single" />
+        <Parameter Name="m44" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="m11">The value to assign to the first element in the first row.</param>
+        <param name="m12">The value to assign to the second element in the first row.</param>
+        <param name="m13">The value to assign to the third element in the first row.</param>
+        <param name="m14">The value to assign to the fourth element in the first row.</param>
+        <param name="m21">The value to assign to the first element in the second row.</param>
+        <param name="m22">The value to assign to the second element in the second row.</param>
+        <param name="m23">The value to assign to the third element in the second row.</param>
+        <param name="m24">The value to assign to the third element in the second row.</param>
+        <param name="m31">The value to assign to the first element in the third row.</param>
+        <param name="m32">The value to assign to the second element in the third row.</param>
+        <param name="m33">The value to assign to the third element in the third row.</param>
+        <param name="m34">The value to assign to the fourth element in the third row.</param>
+        <param name="m41">The value to assign to the first element in the fourth row.</param>
+        <param name="m42">The value to assign to the second element in the fourth row.</param>
+        <param name="m43">The value to assign to the third element in the fourth row.</param>
+        <param name="m44">The value to assign to the fourth element in the fourth row.</param>
+        <summary>Creates a 4x4 matrix from the specified components.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Add (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 Add(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Add(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The first matrix.</param>
+        <param name="value2">The second matrix.</param>
+        <summary>Adds each element in one matrix with its corresponding element in a second matrix.</summary>
+        <returns>The matrix that contains the summed values of <paramref name="value1" /> and <paramref name="value2" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBillboard">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateBillboard (System.Numerics.Vector3 objectPosition, System.Numerics.Vector3 cameraPosition, System.Numerics.Vector3 cameraUpVector, System.Numerics.Vector3 cameraForwardVector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateBillboard(valuetype System.Numerics.Vector3 objectPosition, valuetype System.Numerics.Vector3 cameraPosition, valuetype System.Numerics.Vector3 cameraUpVector, valuetype System.Numerics.Vector3 cameraForwardVector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectPosition" Type="System.Numerics.Vector3" />
+        <Parameter Name="cameraPosition" Type="System.Numerics.Vector3" />
+        <Parameter Name="cameraUpVector" Type="System.Numerics.Vector3" />
+        <Parameter Name="cameraForwardVector" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="objectPosition">The position of the object that the billboard will rotate around.</param>
+        <param name="cameraPosition">The position of the camera.</param>
+        <param name="cameraUpVector">The up vector of the camera.</param>
+        <param name="cameraForwardVector">The forward vector of the camera.</param>
+        <summary>Creates a spherical billboard that rotates around a specified object position.</summary>
+        <returns>The created billboard.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConstrainedBillboard">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateConstrainedBillboard (System.Numerics.Vector3 objectPosition, System.Numerics.Vector3 cameraPosition, System.Numerics.Vector3 rotateAxis, System.Numerics.Vector3 cameraForwardVector, System.Numerics.Vector3 objectForwardVector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateConstrainedBillboard(valuetype System.Numerics.Vector3 objectPosition, valuetype System.Numerics.Vector3 cameraPosition, valuetype System.Numerics.Vector3 rotateAxis, valuetype System.Numerics.Vector3 cameraForwardVector, valuetype System.Numerics.Vector3 objectForwardVector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateConstrainedBillboard(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectPosition" Type="System.Numerics.Vector3" />
+        <Parameter Name="cameraPosition" Type="System.Numerics.Vector3" />
+        <Parameter Name="rotateAxis" Type="System.Numerics.Vector3" />
+        <Parameter Name="cameraForwardVector" Type="System.Numerics.Vector3" />
+        <Parameter Name="objectForwardVector" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="objectPosition">The position of the object that the billboard will rotate around.</param>
+        <param name="cameraPosition">The position of the camera.</param>
+        <param name="rotateAxis">The axis to rotate the billboard around.</param>
+        <param name="cameraForwardVector">The forward vector of the camera.</param>
+        <param name="objectForwardVector">The forward vector of the object.</param>
+        <summary>Creates a cylindrical billboard that rotates around a specified axis.</summary>
+        <returns>The billboard matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromAxisAngle">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateFromAxisAngle (System.Numerics.Vector3 axis, float angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateFromAxisAngle(valuetype System.Numerics.Vector3 axis, float32 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateFromAxisAngle(System.Numerics.Vector3,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="axis" Type="System.Numerics.Vector3" />
+        <Parameter Name="angle" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="axis">The axis to rotate around.</param>
+        <param name="angle">The angle to rotate around <c>axis</c>, in radians.</param>
+        <summary>Creates a matrix that rotates around an arbitrary vector.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromQuaternion">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateFromQuaternion (System.Numerics.Quaternion quaternion);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateFromQuaternion(valuetype System.Numerics.Quaternion quaternion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateFromQuaternion(System.Numerics.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quaternion" Type="System.Numerics.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="quaternion">The source Quaternion.</param>
+        <summary>Creates a rotation matrix from the specified Quaternion rotation value.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFromYawPitchRoll">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateFromYawPitchRoll (float yaw, float pitch, float roll);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateFromYawPitchRoll(float32 yaw, float32 pitch, float32 roll) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateFromYawPitchRoll(System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="yaw" Type="System.Single" />
+        <Parameter Name="pitch" Type="System.Single" />
+        <Parameter Name="roll" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="yaw">The angle of rotation, in radians, around the Y axis.</param>
+        <param name="pitch">The angle of rotation, in radians, around the X axis.</param>
+        <param name="roll">The angle of rotation, in radians, around the Z axis.</param>
+        <summary>Creates a rotation matrix from the specified yaw, pitch, and roll.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLookAt">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateLookAt (System.Numerics.Vector3 cameraPosition, System.Numerics.Vector3 cameraTarget, System.Numerics.Vector3 cameraUpVector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateLookAt(valuetype System.Numerics.Vector3 cameraPosition, valuetype System.Numerics.Vector3 cameraTarget, valuetype System.Numerics.Vector3 cameraUpVector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateLookAt(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cameraPosition" Type="System.Numerics.Vector3" />
+        <Parameter Name="cameraTarget" Type="System.Numerics.Vector3" />
+        <Parameter Name="cameraUpVector" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="cameraPosition">The position of the camera.</param>
+        <param name="cameraTarget">The target towards which the camera is pointing.</param>
+        <param name="cameraUpVector">The direction that is "up" from the camera's point of view.</param>
+        <summary>Creates a view matrix.</summary>
+        <returns>The view matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrthographic">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateOrthographic (float width, float height, float zNearPlane, float zFarPlane);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateOrthographic(float32 width, float32 height, float32 zNearPlane, float32 zFarPlane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateOrthographic(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="zNearPlane" Type="System.Single" />
+        <Parameter Name="zFarPlane" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="width">The width of the view volume.</param>
+        <param name="height">The height of the view volume.</param>
+        <param name="zNearPlane">The minimum Z-value of the view volume.</param>
+        <param name="zFarPlane">The maximum Z-value of the view volume.</param>
+        <summary>Creates an orthographic perspective matrix from the given view volume dimensions.</summary>
+        <returns>The orthographic projection matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrthographicOffCenter">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateOrthographicOffCenter (float left, float right, float bottom, float top, float zNearPlane, float zFarPlane);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateOrthographicOffCenter(float32 left, float32 right, float32 bottom, float32 top, float32 zNearPlane, float32 zFarPlane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateOrthographicOffCenter(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Single" />
+        <Parameter Name="right" Type="System.Single" />
+        <Parameter Name="bottom" Type="System.Single" />
+        <Parameter Name="top" Type="System.Single" />
+        <Parameter Name="zNearPlane" Type="System.Single" />
+        <Parameter Name="zFarPlane" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="left">The minimum X-value of the view volume.</param>
+        <param name="right">The maximum X-value of the view volume.</param>
+        <param name="bottom">The minimum Y-value of the view volume.</param>
+        <param name="top">The maximum Y-value of the view volume.</param>
+        <param name="zNearPlane">The minimum Z-value of the view volume.</param>
+        <param name="zFarPlane">The maximum Z-value of the view volume.</param>
+        <summary>Creates a customized orthographic projection matrix.</summary>
+        <returns>The orthographic projection matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePerspective">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreatePerspective (float width, float height, float nearPlaneDistance, float farPlaneDistance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreatePerspective(float32 width, float32 height, float32 nearPlaneDistance, float32 farPlaneDistance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreatePerspective(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="nearPlaneDistance" Type="System.Single" />
+        <Parameter Name="farPlaneDistance" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="width">The width of the view volume at the near view plane.</param>
+        <param name="height">The height of the view volume at the near view plane.</param>
+        <param name="nearPlaneDistance">The distance to the near view plane.</param>
+        <param name="farPlaneDistance">The distance to the far view plane.</param>
+        <summary>Creates a perspective projection matrix from the given view volume dimensions.</summary>
+        <returns>The perspective projection matrix.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="nearPlaneDistance" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ <paramref name="farPlaneDistance" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ <paramref name="nearPlaneDistance" /> is greater than or equal to <paramref name="farPlaneDistance" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePerspectiveFieldOfView">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreatePerspectiveFieldOfView (float fieldOfView, float aspectRatio, float nearPlaneDistance, float farPlaneDistance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreatePerspectiveFieldOfView(float32 fieldOfView, float32 aspectRatio, float32 nearPlaneDistance, float32 farPlaneDistance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreatePerspectiveFieldOfView(System.Single,System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fieldOfView" Type="System.Single" />
+        <Parameter Name="aspectRatio" Type="System.Single" />
+        <Parameter Name="nearPlaneDistance" Type="System.Single" />
+        <Parameter Name="farPlaneDistance" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="fieldOfView">The field of view in the y direction, in radians.</param>
+        <param name="aspectRatio">The aspect ratio, defined as view space width divided by height.</param>
+        <param name="nearPlaneDistance">The distance to the near view plane.</param>
+        <param name="farPlaneDistance">The distance to the far view plane.</param>
+        <summary>Creates a perspective projection matrix based on a field of view, aspect ratio, and near and far view plane distances.</summary>
+        <returns>The perspective projection matrix.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="fieldOfView" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ <paramref name="fieldOfView" /> is greater than or equal to <see cref="F:System.Math.PI" />.  
+  
+ <paramref name="nearPlaneDistance" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ <paramref name="farPlaneDistance" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ <paramref name="nearPlaneDistance" /> is greater than or equal to <paramref name="farPlaneDistance" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePerspectiveOffCenter">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreatePerspectiveOffCenter (float left, float right, float bottom, float top, float nearPlaneDistance, float farPlaneDistance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreatePerspectiveOffCenter(float32 left, float32 right, float32 bottom, float32 top, float32 nearPlaneDistance, float32 farPlaneDistance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreatePerspectiveOffCenter(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Single" />
+        <Parameter Name="right" Type="System.Single" />
+        <Parameter Name="bottom" Type="System.Single" />
+        <Parameter Name="top" Type="System.Single" />
+        <Parameter Name="nearPlaneDistance" Type="System.Single" />
+        <Parameter Name="farPlaneDistance" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="left">The minimum x-value of the view volume at the near view plane.</param>
+        <param name="right">The maximum x-value of the view volume at the near view plane.</param>
+        <param name="bottom">The minimum y-value of the view volume at the near view plane.</param>
+        <param name="top">The maximum y-value of the view volume at the near view plane.</param>
+        <param name="nearPlaneDistance">The distance to the near view plane.</param>
+        <param name="farPlaneDistance">The distance to the far view plane.</param>
+        <summary>Creates a customized perspective projection matrix.</summary>
+        <returns>The perspective projection matrix.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="nearPlaneDistance" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ <paramref name="farPlaneDistance" /> is less than or equal to zero.  
+  
+ -or-  
+  
+ <paramref name="nearPlaneDistance" /> is greater than or equal to <paramref name="farPlaneDistance" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReflection">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateReflection (System.Numerics.Plane value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateReflection(valuetype System.Numerics.Plane value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateReflection(System.Numerics.Plane)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Numerics.Plane" />
+      </Parameters>
+      <Docs>
+        <param name="value">The plane about which to create a reflection.</param>
+        <summary>Creates a matrix that reflects the coordinate system about a specified plane.</summary>
+        <returns>A new matrix expressing the reflection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRotationX">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateRotationX (float radians);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateRotationX(float32 radians) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationX(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="radians" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="radians">The amount, in radians, by which to rotate around the X axis.</param>
+        <summary>Creates a matrix for rotating points around the X axis.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRotationX">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateRotationX (float radians, System.Numerics.Vector3 centerPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateRotationX(float32 radians, valuetype System.Numerics.Vector3 centerPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationX(System.Single,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="radians" Type="System.Single" />
+        <Parameter Name="centerPoint" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="radians">The amount, in radians, by which to rotate around the X axis.</param>
+        <param name="centerPoint">The center point.</param>
+        <summary>Creates a matrix for rotating points around the X axis from a center point.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRotationY">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateRotationY (float radians);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateRotationY(float32 radians) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationY(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="radians" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="radians">The amount, in radians, by which to rotate around the Y-axis.</param>
+        <summary>Creates a matrix for rotating points around the Y axis.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRotationY">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateRotationY (float radians, System.Numerics.Vector3 centerPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateRotationY(float32 radians, valuetype System.Numerics.Vector3 centerPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationY(System.Single,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="radians" Type="System.Single" />
+        <Parameter Name="centerPoint" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="radians">The amount, in radians, by which to rotate around the Y-axis.</param>
+        <param name="centerPoint">The center point.</param>
+        <summary>The amount, in radians, by which to rotate around the Y axis from a center point.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRotationZ">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateRotationZ (float radians);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateRotationZ(float32 radians) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationZ(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="radians" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="radians">The amount, in radians, by which to rotate around the Z-axis.</param>
+        <summary>Creates a matrix for rotating points around the Z axis.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRotationZ">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateRotationZ (float radians, System.Numerics.Vector3 centerPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateRotationZ(float32 radians, valuetype System.Numerics.Vector3 centerPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateRotationZ(System.Single,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="radians" Type="System.Single" />
+        <Parameter Name="centerPoint" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="radians">The amount, in radians, by which to rotate around the Z-axis.</param>
+        <param name="centerPoint">The center point.</param>
+        <summary>Creates a matrix for rotating points around the Z axis from a center point.</summary>
+        <returns>The rotation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScale">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateScale (System.Numerics.Vector3 scales);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateScale(valuetype System.Numerics.Vector3 scales) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scales" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="scales">The scale to use.</param>
+        <summary>Creates a scaling matrix from the specified vector scale.</summary>
+        <returns>The scaling matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScale">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateScale (float scale);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateScale(float32 scale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scale" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="scale">The uniform scaling factor.</param>
+        <summary>Creates a uniform scaling matrix that scale equally on each axis.</summary>
+        <returns>The scaling matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScale">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateScale (System.Numerics.Vector3 scales, System.Numerics.Vector3 centerPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateScale(valuetype System.Numerics.Vector3 scales, valuetype System.Numerics.Vector3 centerPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Numerics.Vector3,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scales" Type="System.Numerics.Vector3" />
+        <Parameter Name="centerPoint" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="scales">The vector that contains the amount to scale on each axis.</param>
+        <param name="centerPoint">The center point.</param>
+        <summary>Creates a scaling matrix with a center point.</summary>
+        <returns>The scaling matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScale">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateScale (float scale, System.Numerics.Vector3 centerPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateScale(float32 scale, valuetype System.Numerics.Vector3 centerPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scale" Type="System.Single" />
+        <Parameter Name="centerPoint" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="scale">The uniform scaling factor.</param>
+        <param name="centerPoint">The center point.</param>
+        <summary>Creates a uniform scaling matrix that scales equally on each axis with a center point.</summary>
+        <returns>The scaling matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScale">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateScale (float xScale, float yScale, float zScale);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateScale(float32 xScale, float32 yScale, float32 zScale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xScale" Type="System.Single" />
+        <Parameter Name="yScale" Type="System.Single" />
+        <Parameter Name="zScale" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="xScale">The value to scale by on the X axis.</param>
+        <param name="yScale">The value to scale by on the Y axis.</param>
+        <param name="zScale">The value to scale by on the Z axis.</param>
+        <summary>Creates a scaling matrix from the specified X, Y, and Z components.</summary>
+        <returns>The scaling matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScale">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateScale (float xScale, float yScale, float zScale, System.Numerics.Vector3 centerPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateScale(float32 xScale, float32 yScale, float32 zScale, valuetype System.Numerics.Vector3 centerPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateScale(System.Single,System.Single,System.Single,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xScale" Type="System.Single" />
+        <Parameter Name="yScale" Type="System.Single" />
+        <Parameter Name="zScale" Type="System.Single" />
+        <Parameter Name="centerPoint" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="xScale">The value to scale by on the X axis.</param>
+        <param name="yScale">The value to scale by on the Y axis.</param>
+        <param name="zScale">The value to scale by on the Z axis.</param>
+        <param name="centerPoint">The center point.</param>
+        <summary>Creates a scaling matrix that is offset by a given center point.</summary>
+        <returns>The scaling matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateShadow">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateShadow (System.Numerics.Vector3 lightDirection, System.Numerics.Plane plane);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateShadow(valuetype System.Numerics.Vector3 lightDirection, valuetype System.Numerics.Plane plane) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateShadow(System.Numerics.Vector3,System.Numerics.Plane)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lightDirection" Type="System.Numerics.Vector3" />
+        <Parameter Name="plane" Type="System.Numerics.Plane" />
+      </Parameters>
+      <Docs>
+        <param name="lightDirection">The direction from which the light that will cast the shadow is coming.</param>
+        <param name="plane">The plane onto which the new matrix should flatten geometry so as to cast a shadow.</param>
+        <summary>Creates a matrix that flattens geometry into a specified plane as if casting a shadow from a specified light source.</summary>
+        <returns>A new matrix that can be used to flatten geometry onto the specified plane from the specified direction.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTranslation">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateTranslation (System.Numerics.Vector3 position);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateTranslation(valuetype System.Numerics.Vector3 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateTranslation(System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="position">The amount to translate in each axis.</param>
+        <summary>Creates a translation matrix from the specified 3-dimensional vector.</summary>
+        <returns>The translation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTranslation">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateTranslation (float xPosition, float yPosition, float zPosition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateTranslation(float32 xPosition, float32 yPosition, float32 zPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateTranslation(System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xPosition" Type="System.Single" />
+        <Parameter Name="yPosition" Type="System.Single" />
+        <Parameter Name="zPosition" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="xPosition">The amount to translate on the X axis.</param>
+        <param name="yPosition">The amount to translate on the Y axis.</param>
+        <param name="zPosition">The amount to translate on the Z axis.</param>
+        <summary>Creates a translation matrix from the specified X, Y, and Z components.</summary>
+        <returns>The translation matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWorld">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 CreateWorld (System.Numerics.Vector3 position, System.Numerics.Vector3 forward, System.Numerics.Vector3 up);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 CreateWorld(valuetype System.Numerics.Vector3 position, valuetype System.Numerics.Vector3 forward, valuetype System.Numerics.Vector3 up) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.CreateWorld(System.Numerics.Vector3,System.Numerics.Vector3,System.Numerics.Vector3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="position" Type="System.Numerics.Vector3" />
+        <Parameter Name="forward" Type="System.Numerics.Vector3" />
+        <Parameter Name="up" Type="System.Numerics.Vector3" />
+      </Parameters>
+      <Docs>
+        <param name="position">The position of the object.</param>
+        <param name="forward">The forward direction of the object.</param>
+        <param name="up">The upward direction of the object. Its value is usually <c>[0, 1, 0]</c>.</param>
+        <summary>Creates a world matrix with the specified parameters.</summary>
+        <returns>The world matrix.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `position` is used in translation operations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decompose">
+      <MemberSignature Language="C#" Value="public static bool Decompose (System.Numerics.Matrix4x4 matrix, out System.Numerics.Vector3 scale, out System.Numerics.Quaternion rotation, out System.Numerics.Vector3 translation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Decompose(valuetype System.Numerics.Matrix4x4 matrix, valuetype System.Numerics.Vector3 scale, valuetype System.Numerics.Quaternion rotation, valuetype System.Numerics.Vector3 translation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Decompose(System.Numerics.Matrix4x4,System.Numerics.Vector3@,System.Numerics.Quaternion@,System.Numerics.Vector3@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="scale" Type="System.Numerics.Vector3&amp;" RefType="out" />
+        <Parameter Name="rotation" Type="System.Numerics.Quaternion&amp;" RefType="out" />
+        <Parameter Name="translation" Type="System.Numerics.Vector3&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">The source matrix.</param>
+        <param name="scale">When this method returns, contains the scaling component of the transformation matrix if the operation succeeded.</param>
+        <param name="rotation">When this method returns, contains the rotation component of the transformation matrix if the operation succeeded.</param>
+        <param name="translation">When the method returns, contains the translation component of the transformation matrix if the operation succeeded.</param>
+        <summary>Attempts to extract the scale, translation, and rotation components from the given scale, rotation, or translation matrix. The return value indicates whether the operation succeeded.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="matrix" /> was decomposed successfully; otherwise,  <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Numerics.Matrix4x4 other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Numerics.Matrix4x4 other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Equals(System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="other">The other matrix.</param>
+        <summary>Returns a value that indicates whether this instance and another 4x4 matrix are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two matrices are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance.</param>
+        <summary>Returns a value that indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" /><see langword="" />. If <paramref name="obj" /> is <see langword="null" />, the method returns <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current instance and `obj` are equal if `obj` is a <xref:System.Numerics.Matrix4x4> object and the corresponding elements of each matrix are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeterminant">
+      <MemberSignature Language="C#" Value="public float GetDeterminant ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetDeterminant() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.GetDeterminant" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calculates the determinant of the current 4x4 matrix.</summary>
+        <returns>The determinant.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Identity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Numerics.Matrix4x4 Identity" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix4x4.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the multiplicative identity matrix.</summary>
+        <value>Gets the multiplicative identity matrix.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invert">
+      <MemberSignature Language="C#" Value="public static bool Invert (System.Numerics.Matrix4x4 matrix, out System.Numerics.Matrix4x4 result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Invert(valuetype System.Numerics.Matrix4x4 matrix, valuetype System.Numerics.Matrix4x4 result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Invert(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="result" Type="System.Numerics.Matrix4x4&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">The matrix to invert.</param>
+        <param name="result">When this method returns, contains the inverted matrix if the operation succeeded.</param>
+        <summary>Inverts the specified matrix. The return value indicates whether the operation succeeded.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="matrix" /> was converted successfully; otherwise,  <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIdentity">
+      <MemberSignature Language="C#" Value="public bool IsIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsIdentity" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix4x4.IsIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the current matrix is the identity matrix.</summary>
+        <value>
+          <see langword="true" /> if the current matrix is the identity matrix; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lerp">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Lerp (System.Numerics.Matrix4x4 matrix1, System.Numerics.Matrix4x4 matrix2, float amount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 Lerp(valuetype System.Numerics.Matrix4x4 matrix1, valuetype System.Numerics.Matrix4x4 matrix2, float32 amount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Lerp(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="matrix2" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="amount" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">The first matrix.</param>
+        <param name="matrix2">The second matrix.</param>
+        <param name="amount">The relative weighting of <c>matrix2</c>.</param>
+        <summary>Performs a linear interpolation from one matrix to a second matrix based on a value that specifies the weighting of the second matrix.</summary>
+        <returns>The interpolated matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M11">
+      <MemberSignature Language="C#" Value="public float M11;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M11" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first element of the first row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M12">
+      <MemberSignature Language="C#" Value="public float M12;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M12" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second element of the first row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M13">
+      <MemberSignature Language="C#" Value="public float M13;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M13" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M13" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The third element of the first row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M14">
+      <MemberSignature Language="C#" Value="public float M14;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M14" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M14" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The fourth element of the first row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M21">
+      <MemberSignature Language="C#" Value="public float M21;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M21" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M21" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first element of the second row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M22">
+      <MemberSignature Language="C#" Value="public float M22;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M22" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M22" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second element of the second row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M23">
+      <MemberSignature Language="C#" Value="public float M23;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M23" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M23" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The third element of the second row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M24">
+      <MemberSignature Language="C#" Value="public float M24;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M24" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M24" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The fourth element of the second row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M31">
+      <MemberSignature Language="C#" Value="public float M31;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M31" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M31" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first element of the third row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M32">
+      <MemberSignature Language="C#" Value="public float M32;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M32" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second element of the third row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M33">
+      <MemberSignature Language="C#" Value="public float M33;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M33" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M33" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The third element of the third row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M34">
+      <MemberSignature Language="C#" Value="public float M34;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M34" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M34" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The fourth element of the third row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M41">
+      <MemberSignature Language="C#" Value="public float M41;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M41" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M41" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first element of the fourth row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M42">
+      <MemberSignature Language="C#" Value="public float M42;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M42" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M42" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second element of the fourth row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M43">
+      <MemberSignature Language="C#" Value="public float M43;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M43" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M43" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The third element of the fourth row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="M44">
+      <MemberSignature Language="C#" Value="public float M44;" />
+      <MemberSignature Language="ILAsm" Value=".field public float32 M44" />
+      <MemberSignature Language="DocId" Value="F:System.Numerics.Matrix4x4.M44" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The fourth element of the fourth row.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Multiply (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 Multiply(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Multiply(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The first matrix.</param>
+        <param name="value2">The second matrix.</param>
+        <summary>Returns the matrix that results from multiplying two matrices together.</summary>
+        <returns>The product matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Multiply (System.Numerics.Matrix4x4 value1, float value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 Multiply(valuetype System.Numerics.Matrix4x4 value1, float32 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Multiply(System.Numerics.Matrix4x4,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The matrix to scale.</param>
+        <param name="value2">The scaling value to use.</param>
+        <summary>Returns the matrix that results from scaling all the elements of a specified matrix by a scalar factor.</summary>
+        <returns>The scaled matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Negate">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Negate (System.Numerics.Matrix4x4 value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 Negate(valuetype System.Numerics.Matrix4x4 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Negate(System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value">The matrix to negate.</param>
+        <summary>Negates the specified matrix by multiplying all its values by -1.</summary>
+        <returns>The negated matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_Addition (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_Addition(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Addition(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The first matrix.</param>
+        <param name="value2">The second matrix.</param>
+        <summary>Adds each element in one matrix with its corresponding element in a second matrix.</summary>
+        <returns>The matrix that contains the summed values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Matrix4x4.op_Addition%2A> method defines the operaton of the addition operator for <xref:System.Numerics.Matrix4x4> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Equality(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The first matrix to compare.</param>
+        <param name="value2">The second matrix to care</param>
+        <summary>Returns a value that indicates whether the specified matrices are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value1" /> and <paramref name="value2" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two matrices are equal if all their corresponding elements are equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Inequality(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The first matrix to compare.</param>
+        <param name="value2">The second matrix to compare.</param>
+        <summary>Returns a value that indicates whether the specified matrices are not equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value1" /> and <paramref name="value2" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_Multiply (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_Multiply(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Multiply(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The first matrix.</param>
+        <param name="value2">The second matrix.</param>
+        <summary>Returns the matrix that results from multiplying two matrices together.</summary>
+        <returns>The product matrix.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Matrix4x4.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Matrix4x4> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_Multiply (System.Numerics.Matrix4x4 value1, float value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_Multiply(valuetype System.Numerics.Matrix4x4 value1, float32 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Multiply(System.Numerics.Matrix4x4,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The matrix to scale.</param>
+        <param name="value2">The scaling value to use.</param>
+        <summary>Returns the matrix that results from scaling all the elements of a specified matrix by a scalar factor.</summary>
+        <returns>The scaled matrix.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Matrix4x4.op_Multiply%2A> method defines the operation of the multiplication operator for <xref:System.Numerics.Matrix4x4> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_Subtraction (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_Subtraction(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_Subtraction(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The first matrix.</param>
+        <param name="value2">The second matrix.</param>
+        <summary>Subtracts each element in a second matrix from its corresponding element in a first matrix.</summary>
+        <returns>The matrix containing the values that result from subtracting each element in <paramref name="value2" /> from its corresponding element in <paramref name="value1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Matrix4x4.op_Subtraction%2A> method defines the operation of the subtraction operator for <xref:System.Numerics.Matrix4x4> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_UnaryNegation">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 op_UnaryNegation (System.Numerics.Matrix4x4 value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Matrix4x4 op_UnaryNegation(valuetype System.Numerics.Matrix4x4 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.op_UnaryNegation(System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value">The matrix to negate.</param>
+        <summary>Negates the specified matrix by multiplying all its values by -1.</summary>
+        <returns>The negated matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Subtract (System.Numerics.Matrix4x4 value1, System.Numerics.Matrix4x4 value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 Subtract(valuetype System.Numerics.Matrix4x4 value1, valuetype System.Numerics.Matrix4x4 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Subtract(System.Numerics.Matrix4x4,System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="value2" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="value1">The first matrix.</param>
+        <param name="value2">The second matrix.</param>
+        <summary>Subtracts each element in a second matrix from its corresponding element in a first matrix.</summary>
+        <returns>The matrix containing the values that result from subtracting each element in <paramref name="value2" /> from its corresponding element in <paramref name="value1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents this matrix.</summary>
+        <returns>The string representation of this matrix.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The numeric values in the returned string are formatted by using the conventions of the current culture. For example, for the en-US culture, the returned string might appear as `{ {M11:1.1 M12:1.2 M13:1.3 M14:1.4} {M21:2.1 M22:2.2 M23:2.3 M24:2.4} {M31:3.1 M32:3.2 M33:3.3 M34:3.4} {M41:4.1 M42:4.2 M43:4.3 M44:4.4} }`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Transform (System.Numerics.Matrix4x4 value, System.Numerics.Quaternion rotation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 Transform(valuetype System.Numerics.Matrix4x4 value, valuetype System.Numerics.Quaternion rotation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Transform(System.Numerics.Matrix4x4,System.Numerics.Quaternion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Numerics.Matrix4x4" />
+        <Parameter Name="rotation" Type="System.Numerics.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="value">The matrix to transform.</param>
+        <param name="rotation">The rotation t apply.</param>
+        <summary>Transforms the specified matrix by applying the specified Quaternion rotation.</summary>
+        <returns>The transformed matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translation">
+      <MemberSignature Language="C#" Value="public System.Numerics.Vector3 Translation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Numerics.Vector3 Translation" />
+      <MemberSignature Language="DocId" Value="P:System.Numerics.Matrix4x4.Translation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the translation component of this matrix.</summary>
+        <value>The translation component of the current instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transpose">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Matrix4x4 Transpose (System.Numerics.Matrix4x4 matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Matrix4x4 Transpose(valuetype System.Numerics.Matrix4x4 matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Numerics.Matrix4x4.Transpose(System.Numerics.Matrix4x4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Matrix4x4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="System.Numerics.Matrix4x4" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">The matrix to transpose.</param>
+        <summary>Transposes the rows and columns of a matrix.</summary>
+        <returns>The transposed matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

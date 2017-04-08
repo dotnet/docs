@@ -1,0 +1,312 @@
+<Type Name="Help" FullName="System.Windows.Forms.Help">
+  <TypeSignature Language="C#" Value="public class Help" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Help extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Help" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates the HTML Help 1.0 engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create a new instance of the <xref:System.Windows.Forms.Help> class. To provide Help for an application, call the static <xref:System.Windows.Forms.Help.ShowHelp%2A> and <xref:System.Windows.Forms.Help.ShowHelpIndex%2A> methods.  
+  
+ You can use <xref:System.Windows.Forms.Help> to show compiled Help files (.chm) or HTML files in the HTML Help format. Compiled Help files provide a table of contents, an index, search capability, and keyword links in pages. Shortcuts work only in compiled Help files.  
+  
+ You can generate HTML Help 1.x files by using HTML Help Workshop. For more information about HTML Help, see "HTML Help Workshop" and other HTML Help topics at [Microsoft HTML Help](http://go.microsoft.com/fwlink/?LinkId=178661).  
+  
+   
+  
+## Examples  
+ The following code example displays a form that contains three buttons that can be used to interact with the Mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
+  
+ For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator?displayProperty=fullName> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+  
+ The example uses the <xref:System.Windows.Forms.Help.ShowHelp%2A> method to display the different Help tabs and Help topics, and the <xref:System.Windows.Forms.Help.ShowHelpIndex%2A> method to display the Help index.  
+  
+ [!code-cpp[System.Windows.Forms.Help#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Help/CPP/helpsnippet.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Help#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Help/CS/helpsnippet.cs#1)]
+ [!code-vb[System.Windows.Forms.Help#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Help/VB/helpsnippet.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public static void ShowHelp (System.Windows.Forms.Control parent, string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelp(class System.Windows.Forms.Control parent, string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.Forms.Control" />
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">A <see cref="T:System.Windows.Forms.Control" /> that identifies the parent of the Help dialog box.</param>
+        <param name="url">The path and name of the Help file.</param>
+        <summary>Displays the contents of the Help file at the specified URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Windows.Forms.Help.ShowHelp%2A> method. To run this example, paste the following code into a form that contains a button named `Button1`.  
+  
+ [!code-cpp[System.Windows.Forms.HelpExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.HelpExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.HelpExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public static void ShowHelp (System.Windows.Forms.Control parent, string url, string keyword);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelp(class System.Windows.Forms.Control parent, string url, string keyword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.Forms.Control" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="keyword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">A <see cref="T:System.Windows.Forms.Control" /> that identifies the parent of the Help dialog box.</param>
+        <param name="url">The path and name of the Help file.</param>
+        <param name="keyword">The keyword to display Help for.</param>
+        <summary>Displays the contents of the Help file found at the specified URL for a specific keyword.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+  
+ If you provide the keyword `null`, the table of contents for the Help file will be displayed.  
+  
+   
+  
+## Examples  
+ The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
+  
+ For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator?displayProperty=fullName> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+  
+ This example shows only the call to the <xref:System.Windows.Forms.Help.ShowHelp%2A> method. See the <xref:System.Windows.Forms.Help> class overview for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.Help#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Help/CPP/helpsnippet.cpp#4)]
+ [!code-csharp[System.Windows.Forms.Help#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Help/CS/helpsnippet.cs#4)]
+ [!code-vb[System.Windows.Forms.Help#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Help/VB/helpsnippet.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public static void ShowHelp (System.Windows.Forms.Control parent, string url, System.Windows.Forms.HelpNavigator navigator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelp(class System.Windows.Forms.Control parent, string url, valuetype System.Windows.Forms.HelpNavigator navigator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String,System.Windows.Forms.HelpNavigator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.Forms.Control" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="navigator" Type="System.Windows.Forms.HelpNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="parent">A <see cref="T:System.Windows.Forms.Control" /> that identifies the parent of the Help dialog box.</param>
+        <param name="url">The path and name of the Help file.</param>
+        <param name="navigator">One of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</param>
+        <summary>Displays the contents of the Help file found at the specified URL for a specific topic.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+  
+ Compiled Help files provide table of contents, index, search, and keyword links in pages. You can use the following values for the `navigator` parameter: <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Help.ShowHelp%2A> method to open a Help file to its index page. To run this example, paste the following code into a form that contains a button named `Button2`.  
+  
+ [!code-cpp[System.Windows.Forms.HelpExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.HelpExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.HelpExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpExample/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.HelpExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public static void ShowHelp (System.Windows.Forms.Control parent, string url, System.Windows.Forms.HelpNavigator command, object parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelp(class System.Windows.Forms.Control parent, string url, valuetype System.Windows.Forms.HelpNavigator command, object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String,System.Windows.Forms.HelpNavigator,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.Forms.Control" />
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="command" Type="System.Windows.Forms.HelpNavigator" />
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parent">A <see cref="T:System.Windows.Forms.Control" /> that identifies the parent of the Help dialog box.</param>
+        <param name="url">The path and name of the Help file.</param>
+        <param name="command">One of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</param>
+        <param name="parameter">A string that contains the topic identifier.</param>
+        <summary>Displays the contents of the Help file located at the URL supplied by the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Compiled Help files provide table-of-contents, index, search, and keyword links in pages. You can use the `param` parameter to provide additional refinement of the <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator> command. If the value specified in the `command` parameter is <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be an `empty string`. If the `command` parameter references <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, <xref:System.Windows.Forms.HelpNavigator>, or <xref:System.Windows.Forms.HelpNavigator>, this value should be a string that contains the topic name, or the keyword or numeric identifier of the topic to display.  
+  
+ The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+  
+   
+  
+## Examples  
+ The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
+  
+ For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator?displayProperty=fullName> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+  
+ This example shows only the call to the <xref:System.Windows.Forms.Help.ShowHelp%2A> method. See the <xref:System.Windows.Forms.Help> class overview for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.Help#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Help/CPP/helpsnippet.cpp#3)]
+ [!code-csharp[System.Windows.Forms.Help#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Help/CS/helpsnippet.cs#3)]
+ [!code-vb[System.Windows.Forms.Help#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Help/VB/helpsnippet.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="parameter" /> is an integer.</exception>
+        <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelpIndex">
+      <MemberSignature Language="C#" Value="public static void ShowHelpIndex (System.Windows.Forms.Control parent, string url);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelpIndex(class System.Windows.Forms.Control parent, string url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelpIndex(System.Windows.Forms.Control,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.Forms.Control" />
+        <Parameter Name="url" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parent">A <see cref="T:System.Windows.Forms.Control" /> that identifies the parent of the Help dialog box.</param>
+        <param name="url">The path and name of the Help file.</param>
+        <summary>Displays the index of the specified Help file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `url` parameter can be of the form C:\path\sample.chm or /folder/file.htm.  
+  
+   
+  
+## Examples  
+ The following code example displays a form with three buttons that can be used to interact with the mspaint.chm Help file. The **Show Help Index** button displays the **Index** tab for the Help file. The **Show Help** button displays content in the Help file based on the value that is selected in the **Help Navigator** list. The **Show Keyword** button displays content in the Help file based on the keyword that is specified in the **Keyword** text box.  
+  
+ For example, to show the Ovals Help page by the index value, select the <xref:System.Windows.Forms.HelpNavigator?displayProperty=fullName> value in the **Help Navigator** drop-down list, type **ovals** in the **Parameter** text box, and then click the **Show Help** button. To show the "To paint with a brush" Help topic by the keyword, type **mspaint.chm::/paint_brush.htm** in the **Keyword** text box, and then click the **Show Keyword** button.  
+  
+ This example shows only the call to the <xref:System.Windows.Forms.Help.ShowHelpIndex%2A> method. See the <xref:System.Windows.Forms.Help> class overview for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.Help#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Help/CPP/helpsnippet.cpp#2)]
+ [!code-csharp[System.Windows.Forms.Help#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Help/CS/helpsnippet.cs#2)]
+ [!code-vb[System.Windows.Forms.Help#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Help/VB/helpsnippet.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Net.WebPermission">for accessing an HTML Help file through an HTTP request. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing an HTML Help file not served from an HTTP server. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPopup">
+      <MemberSignature Language="C#" Value="public static void ShowPopup (System.Windows.Forms.Control parent, string caption, System.Drawing.Point location);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowPopup(class System.Windows.Forms.Control parent, string caption, valuetype System.Drawing.Point location) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowPopup(System.Windows.Forms.Control,System.String,System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.Forms.Control" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="location" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="parent">A <see cref="T:System.Windows.Forms.Control" /> that identifies the parent of the Help dialog box.</param>
+        <param name="caption">The message to display in the pop-up window.</param>
+        <param name="location">A value that specifies the horizontal and vertical coordinates at which to display the pop-up window, relative to the upper-left corner of the screen.</param>
+        <summary>Displays a Help pop-up window.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.Control.KeyUp> event with the <xref:System.Windows.Forms.Help> class to display pop-up style help to the user.  
+  
+ [!code-cpp[Control.KeyUp#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.KeyUp/CPP/form1.cpp#1)]
+ [!code-csharp[Control.KeyUp#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyUp/CS/form1.cs#1)]
+ [!code-vb[Control.KeyUp#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyUp/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

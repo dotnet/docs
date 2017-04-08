@@ -1,0 +1,295 @@
+<Type Name="WebPartDescription" FullName="System.Web.UI.WebControls.WebParts.WebPartDescription">
+  <TypeSignature Language="C#" Value="public class WebPartDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartDescription extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartDescription" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control that you can display in a catalog of Web Parts controls without having to create an instance of the control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Web.UI.WebControls.WebParts.WebPart> controls are displayed in a catalog of controls that users can add to a page, some basic information about each control is required. For example, it is useful to have a title for the control, and a description, so that as users view a catalog they have enough information to decide whether to add a control to the page. However, a catalog of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls can potentially contain many controls, and it could affect the performance of an application if an instance of every <xref:System.Web.UI.WebControls.WebParts.WebPart> control must be created to extract the information to display in the catalog.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class exists so that it is not necessary to create an instance of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control to retrieve the information about the control that is displayed in a catalog of controls. In the Web Parts control set, a <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object is also used in conjunction with the various <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls when a page is in catalog display mode.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class has two overloads of its constructor, one that takes a <xref:System.Web.UI.WebControls.WebParts.WebPart> control as a parameter when an instance is available (the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.%23ctor%2A> constructor), and one that takes several strings with information about the control as parameters (the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.%23ctor%2A> constructor).  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class also has several properties designed to contain the description information for <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The following table summarizes the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> properties, and what property each one corresponds to in a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+|Description property|Related part control property|  
+|--------------------------|-----------------------------------|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A>|<xref:System.Web.UI.Control.ID%2A>|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A>|<xref:System.Web.UI.WebControls.WebParts.Part.Title%2A>|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Description%2A>|<xref:System.Web.UI.WebControls.WebParts.Part.Description%2A>|  
+|<xref:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl%2A>|<xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A>|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class. Ordinarily, this type is used primarily by the Web Parts control set, but this code example is simply showing basic programmatic usage of the main description properties.  
+  
+ The code example has four parts:  
+  
+-   A user control that enables users to change display modes on a Web page.  
+  
+-   A custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+-   A Web page to host the other controls.  
+  
+-   An explanation of how the code example works.  
+  
+ The first part of the code example is the user control. The source code for the user control comes from another topic. For more details about the user control, see the topic [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartDescription_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/DisplayModeMenuCS.ascx#7)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartDescription_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/DisplayModeMenuVB.ascx#7)]  -->  
+  
+ The second part of the code example is a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses the approach of dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_WebPartDescription_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/textdisplaywebpart.cs#3)]
+ [!code-vb[WebParts_WebPartDescription_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/textdisplaywebpart.vb#3)]  
+  
+ The third part of the code example is the Web page. Near the top are two `Register` directives: one that registers the user control, and the other to register the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control whose source file is located in the App_Code folder of your site. The page contains an `<asp:catalogzone>` element, which in turn contains declarative references to two controls: the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`, and a <xref:System.Web.UI.WebControls.BulletedList> Web server control that will be treated as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control at run time because the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control will wrap it with a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object. Note that in the code for the `Button1_Click` method, the available <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects for the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in the catalog are retrieved using the <xref:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions%2A> method, and then the description details are all written out to the page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartDescription_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/wpDescriptioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartDescription_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/wpDescriptionvb.aspx#1)]  -->  
+  
+ After you load the page in a browser, use the **Display Mode** drop-down list control and select **Catalog** to change the page to catalog display mode. In the catalog, you should see the two controls that are available to be added to the page. Click the **List WebPartDescription Information** button, and the code writes out the values of all available <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects to the page. This demonstrates that you can retrieve description details for <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a catalog without having to create instances of the controls themselves.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartDescription (System.Web.UI.WebControls.WebParts.WebPart part);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart part) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDescription.#ctor(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="part" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="part">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control whose information is contained in a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDescription" />.</param>
+        <summary>Initializes a new instance of the class when a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control instance is available.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.%23ctor%2A> constructor is used for creating a new <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object based on an existing <xref:System.Web.UI.WebControls.WebParts.WebPart> control. This constructor simply calls the other overload, the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.%23ctor%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor, obtaining the required parameter values from properties on the `part` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Web.UI.Control.ID" /> property of <paramref name="part" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartDescription (string id, string title, string description, string imageUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string title, string description, string imageUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDescription.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="imageUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The value to assign to the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDescription.ID" />.</param>
+        <param name="title">The value to assign to the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDescription.Title" />.</param>
+        <param name="description">The value to assign to the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDescription.Description" />.</param>
+        <param name="imageUrl">The value to assign to the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl" />.</param>
+        <summary>Initializes a new instance of the class by using several strings that contain description information for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.%23ctor%2A> constructor is used to create a new instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class when a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is not available. For example, this occurs in the case of an <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control when it imports a description file for a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. It gets the information it needs to create a <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object directly from the description file, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> instance is not present.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="id" /> or <paramref name="title" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CatalogIconImageUrl">
+      <MemberSignature Language="C#" Value="public string CatalogIconImageUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CatalogIconImageUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a URL containing the path to an image used as an icon for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that contains a URL; the default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A?displayProperty=fullName> property. If that property is set on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, then the property in the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object will also have a value.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl%2A> property applies only when a page is in catalog display mode, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being displayed in a catalog of controls. If the control has an icon assigned to it in the property value, the icon appears in the catalog next to the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl%2A> property. For the full code required to run this code example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class overview topic.  
+  
+ The following code in the `Button1_Click` method of a Web page demonstrates how to get the collection of <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects in a catalog using the <xref:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions%2A> method, and then to display the details of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in the catalog by looping through the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects. Note that the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl%2A> property value is retrieved in the following code.  
+  
+ [!code-csharp[WebParts_WebPartDescription_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/wpDescriptioncs.aspx#2)]
+ [!code-vb[WebParts_WebPartDescription_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/wpDescriptionvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDescription.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text of a description for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that contains the description for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control; the default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Description%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A?displayProperty=fullName> property. If that property is set on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, then the property in the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> object will also have a value.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Description%2A> property applies only when a page is in catalog display mode, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being displayed in a catalog of controls. If the control has a description assigned to it, the description appears in the catalog as a ToolTip on the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Description%2A> property. For the full code required to run this code example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class overview topic.  
+  
+ The following code in the `Button1_Click` method of a Web page demonstrates how to get the collection of <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects in a catalog using the <xref:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions%2A> method, and then to display the details of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in the catalog by looping through the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects. Note that the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Description%2A> property value is retrieved in the following code.  
+  
+ [!code-csharp[WebParts_WebPartDescription_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/wpDescriptioncs.aspx#2)]
+ [!code-vb[WebParts_WebPartDescription_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/wpDescriptionvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public string ID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDescription.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ID of a corresponding <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that contains the ID of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property cannot be `null`; it must always have a value. The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property corresponds directly to the <xref:System.Web.UI.Control.ID%2A?displayProperty=fullName> property.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property applies only when a page is in catalog display mode, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being displayed in a catalog of controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property. For the full code required to run this code example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class overview topic.  
+  
+ The following code in the `Button1_Click` method of a Web page demonstrates how to get the collection of <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects in a catalog using the <xref:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions%2A> method, and then to display the details of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in the catalog by looping through the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects. Note that the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.ID%2A> property value is retrieved in the following code.  
+  
+ [!code-csharp[WebParts_WebPartDescription_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/wpDescriptioncs.aspx#2)]
+ [!code-vb[WebParts_WebPartDescription_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/wpDescriptionvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDescription.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the title text of a corresponding <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <value>A string that contains the title of the corresponding control. The default value is a calculated string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property corresponds directly to the <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A?displayProperty=fullName> property. Whatever the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPart> control has for its <xref:System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle%2A> property, that becomes the value of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property; otherwise, the title is a calculated value.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property applies only when a page is in catalog display mode, and a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is being displayed in a catalog of controls. Whatever title is assigned to a <xref:System.Web.UI.WebControls.WebParts.WebPart> control appears next to the control in the catalog.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatic use of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property. For the full code required to run this code example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class overview topic.  
+  
+ The following code in the `Button1_Click` method of a Web page demonstrates how to get the collection of <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects in a catalog using the <xref:System.Web.UI.WebControls.WebParts.CatalogPart.GetAvailableWebPartDescriptions%2A> method, and then to display the details of each <xref:System.Web.UI.WebControls.WebParts.WebPart> control in the catalog by looping through the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> objects. Note that the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.Title%2A> property value is retrieved in the following code.  
+  
+ [!code-csharp[WebParts_WebPartDescription_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/CS/wpDescriptioncs.aspx#2)]
+ [!code-vb[WebParts_WebPartDescription_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartDescription_Overview/VB/wpDescriptionvb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the class that contains information about a specific <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads for the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.%23ctor%2A> constructor each return a new instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription> class, which contains information about a specific <xref:System.Web.UI.WebControls.WebParts.WebPart> control. The difference between the overloads is the scenario in which the new instance is created. In some cases, when the application has an available instance of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.%23ctor%2A> constructor is used. When the application does not have a control instance, as is the case when a control description file is being imported through the <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> control, the <xref:System.Web.UI.WebControls.WebParts.WebPartDescription.%23ctor%2A> constructor is used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

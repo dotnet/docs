@@ -1,0 +1,58 @@
+﻿<Window x:Class="SDKSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+>
+  <Grid>
+	  
+	<Grid.ColumnDefinitions>
+	  <ColumnDefinition Width="200"/>
+	  <ColumnDefinition Width="150"/>
+	</Grid.ColumnDefinitions>
+	<Grid.RowDefinitions>
+	  <RowDefinition/>
+	</Grid.RowDefinitions>
+	  
+	<StackPanel Grid.Column="0" Grid.Row="0">
+      <Expander Name="myExpander" Background="Tan" 
+                HorizontalAlignment="Left" Header="My Expander" 
+                ExpandDirection="Down" IsExpanded="True" Width="100">
+        <TextBlock TextWrapping="Wrap">
+          Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua
+        </TextBlock>
+      </Expander>
+	</StackPanel>
+	  
+	<StackPanel Grid.Column="1" Grid.Row="0">
+          <TextBlock Margin="0, 10, 3, 3" FontSize="12" TextWrapping="Wrap">
+	      Click to change the ExpandDirection property on My Expander
+          </TextBlock>
+		<StackPanel>
+			<RadioButton Name="ExpandDown" Margin="0,10,0,10" 
+						IsChecked="True"
+						Checked="ChangeExpandDirection"
+						GroupName="ExpandDirectionProperty">
+			Expand Down
+			</RadioButton>
+			<RadioButton Name="ExpandUp" Margin="0,0,0,10"
+						Checked="ChangeExpandDirection"
+						GroupName="ExpandDirectionProperty">
+			Expand Up
+			</RadioButton>
+			<RadioButton Name="ExpandLeft" Margin="0,0,0,10"
+						Checked="ChangeExpandDirection"
+						GroupName="ExpandDirectionProperty">
+			Expand Left
+			</RadioButton>
+			<RadioButton Name="ExpandRight" Margin="0,0,0,10"
+						Checked="ChangeExpandDirection"
+						GroupName="ExpandDirectionProperty">
+			Expand Right
+			</RadioButton>
+		</StackPanel>
+	</StackPanel>
+	  
+  </Grid>
+	
+</Window>

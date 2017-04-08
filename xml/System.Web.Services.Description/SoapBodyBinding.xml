@@ -1,0 +1,258 @@
+<Type Name="SoapBodyBinding" FullName="System.Web.Services.Description.SoapBodyBinding">
+  <TypeSignature Language="C#" Value="public class SoapBodyBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapBodyBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapBodyBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionFormatExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtension("body", "http://schemas.xmlsoap.org/wsdl/soap/", typeof(System.Web.Services.Description.InputBinding), typeof(System.Web.Services.Description.OutputBinding), typeof(System.Web.Services.Description.MimePart))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an extensibility element added to an <see cref="T:System.Web.Services.Description.InputBinding" /> or an <see cref="T:System.Web.Services.Description.OutputBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class specifies how messages, either abstract type definitions or concrete schema definitions, appear within the SOAP body element of the transmission.  
+  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapOperationBinding#3](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapOperationBinding/CPP/soapoperationbinding.cpp#3)]
+ [!code-csharp[SoapOperationBinding#3](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapOperationBinding/CS/soapoperationbinding.cs#3)]
+ [!code-vb[SoapOperationBinding#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapOperationBinding/VB/soapoperationbinding.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapBodyBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapBodyBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.SoapBodyBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public string Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Encoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("encodingStyle")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string containing a list of space-delimited URIs. The URIs represent the encoding style (or styles) to be used to encode messages within the SOAP body.</summary>
+        <value>A string containing a list of URIs. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property should be set only if the value of the <xref:System.Web.Services.Description.SoapBodyBinding.Use%2A> property is `Encoded`. Otherwise this property value will be ignored.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapBindingStyle_Rpc#3](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBindingStyle_Rpc/CPP/soapbindingstyle_rpc.cpp#3)]
+ [!code-csharp[SoapBindingStyle_Rpc#3](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBindingStyle_Rpc/CS/soapbindingstyle_rpc.cs#3)]
+ [!code-vb[SoapBindingStyle_Rpc#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBindingStyle_Rpc/VB/soapbindingstyle_rpc.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("namespace")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the URI representing the location of the specifications for encoding of content not specifically defined by the <see cref="P:System.Web.Services.Description.SoapBodyBinding.Encoding" /> property.</summary>
+        <value>A string containing a URI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property will return an empty string ("") if the property value has not been set. The value should only be set if the value of the <xref:System.Web.Services.Description.SoapBodyBinding.Use%2A> property is `Encoded`. Otherwise the property value will be ignored, thus leading to unexpected behavior by the XML Web service.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapBindingStyle_Rpc#4](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBindingStyle_Rpc/CPP/soapbindingstyle_rpc.cpp#4)]
+ [!code-csharp[SoapBindingStyle_Rpc#4](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBindingStyle_Rpc/CS/soapbindingstyle_rpc.cs#4)]
+ [!code-vb[SoapBindingStyle_Rpc#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBindingStyle_Rpc/VB/soapbindingstyle_rpc.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parts">
+      <MemberSignature Language="C#" Value="public string[] Parts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Parts" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Parts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating which parts of the transmitted message appear within the SOAP body portion of the transmission.</summary>
+        <value>A string array containing the names of the appropriate message parts.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some parts of the transmitted message can appear in portions other than the SOAP body, such as when SOAP is used with a <xref:System.Web.Services.Description.MimeMultipartRelatedBinding>. In such a case, the other members of the <xref:System.Web.Services.Description.MimePart.Extensions%2A> property determine the locations of the other parts of the message.  
+  
+ This property returns exactly the same information as the <xref:System.Web.Services.Description.SoapBodyBinding.PartsString%2A> property, but the results are returned within an array rather than within a space-delimited string.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapBodyBinding_Parts#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapBodyBinding_Parts/CPP/soapbodybinding_parts.cpp#1)]
+ [!code-csharp[SoapBodyBinding_Parts#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapBodyBinding_Parts/CS/soapbodybinding_parts.cs#1)]
+ [!code-vb[SoapBodyBinding_Parts#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapBodyBinding_Parts/VB/soapbodybinding_parts.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartsString">
+      <MemberSignature Language="C#" Value="public string PartsString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PartsString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.PartsString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("parts")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating which parts of the transmitted message appear within the SOAP body portion of the transmission.</summary>
+        <value>A space-delimited string containing the appropriate message parts.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some parts of the transmitted message can appear in portions other than the SOAP body, such as when SOAP is used with a <xref:System.Web.Services.Description.MimeMultipartRelatedBinding>. In such a case, the other members of the <xref:System.Web.Services.Description.MimePart.Extensions%2A> property determine the locations of other parts of the message.  
+  
+ This property returns exactly the same information as the <xref:System.Web.Services.Description.SoapBodyBinding.Parts%2A> property, but the results are returned within a space-delimited string rather than within an array. PartsString is used internally for xml serialization and shouldn't be called directly. To return the transmitted message parts appearing within the SOAP body portion of the transmission, use the <xref:System.Web.Services.Description.SoapBodyBinding.Parts%2A> property.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapFaultBinding_ctor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapFaultBinding_ctor/CPP/soapfaultbinding_ctor.cpp#1)]
+ [!code-csharp[SoapFaultBinding_ctor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapFaultBinding_ctor/CS/soapfaultbinding_ctor.cs#1)]
+ [!code-vb[SoapFaultBinding_ctor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapFaultBinding_ctor/VB/soapfaultbinding_ctor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Use">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapBindingUse Use { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.SoapBindingUse Use" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapBodyBinding.Use" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("use")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.SoapBindingUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the message parts are encoded using specified encoding rules, or define the concrete schema of the message.</summary>
+        <value>One of the <see cref="T:System.Web.Services.Description.SoapBindingUse" /> values. The default is <see langword="Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Description.SoapBodyBinding.Namespace%2A> and <xref:System.Web.Services.Description.SoapBodyBinding.Encoding%2A> properties depend on the value of this property. Their values should be set only if the value of this property is `Encoded`. Otherwise the XML Web service will produce unexpected behavior.  
+  
+   
+  
+## Examples  
+ SoapBinding_SoapOperationBinding#9  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

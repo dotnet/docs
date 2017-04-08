@@ -1,0 +1,667 @@
+<Type Name="BuildManager" FullName="System.Web.Compilation.BuildManager">
+  <TypeSignature Language="C#" Value="public sealed class BuildManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BuildManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of methods to help manage the compilation of an ASP.NET application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.BuildManager> class manages the process of compiling assemblies and pages for an application. It is a sealed class and cannot be inherited.  
+  
+ <xref:System.Web.Compilation.BuildManager> contains static members that provide information about the compiled assemblies.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddCompilationDependency">
+      <MemberSignature Language="C#" Value="public static void AddCompilationDependency (string dependency);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddCompilationDependency(string dependency) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.AddCompilationDependency(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependency" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dependency">A string that represents a dependency.</param>
+        <summary>Specifies a string that represents a dependency that the build manager uses to help determine if a clean build is required.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method must be called during the `Application_PreStartInit` stage of the application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="dependency" /> parameter is <see langword="null" /> or an empty string.</exception>
+        <exception cref="T:System.InvalidOperationException">The method was called after the <see langword="Application_PreStartInit" /> stage of the application.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddReferencedAssembly">
+      <MemberSignature Language="C#" Value="public static void AddReferencedAssembly (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddReferencedAssembly(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.AddReferencedAssembly(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The assembly to add.</param>
+        <summary>Adds an assembly to the application's set of referenced assemblies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is equivalent to adding the assembly to the application-level Web.config file. The method must be called during the `Application_PreStartInit` stage of the application.  
+  
+ The <xref:System.Web.Compilation.BuildManager.GetReferencedAssemblies%2A> method will return the set of assemblies that are determined from configuration files and any assemblies that were added by using this method.  
+  
+ If an attempt is made to add an assembly that has already been added, the duplicate entry is ignored.  
+  
+ This method must be called before the `Application_Start` event in the Global.asax file occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="assembly" /> parameter is <see langword="null" /> or empty.</exception>
+        <exception cref="T:System.InvalidOperationException">The method was not called before the <see langword="Application_Start" /> event in the Global.asax file occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BatchCompilationEnabled">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;bool&gt; BatchCompilationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Nullable`1&lt;bool&gt; BatchCompilationEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.BatchCompilationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether batch compilation is enabled.</summary>
+        <value>
+          <see langword="true" /> if batch compilation is always enabled, <see langword="false" /> if batch compilation is never enabled, or <see langword="null" /> if the compilation setting is determined from the configuration file. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to turn batch compilation on or off programmatically. It corresponds to the `batch` attribute of the `compilation` element in the Web.config file. For more information, see [compilation Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/7c319582-074a-4d2a-a787-03b9d4541c12).  
+  
+ The property can be set only in the `PreApplicationStart` method. For more information about the `PreApplicationStart` method, see <xref:System.Web.PreApplicationStartMethodAttribute>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The property was not set in the <see langword="PreApplicationStart" /> method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeAssemblies">
+      <MemberSignature Language="C#" Value="public static System.Collections.IList CodeAssemblies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.IList CodeAssemblies" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.CodeAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of assemblies built from the App_Code directory.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> collection that contains the assemblies built from the App_Code directory.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCachedFile">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream CreateCachedFile (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream CreateCachedFile(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.CreateCachedFile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">The name of the file to create.</param>
+        <summary>Creates a cached file.</summary>
+        <returns>The <see cref="T:System.IO.Stream" /> object for the new file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method and the <xref:System.Web.Compilation.BuildManager.ReadCachedFile%2A> method enable you to perform caching that persists across application domain restarts in partial-trust environments. It is used by the MVC framework to cache results of the controller lookup.  
+  
+ To cache data, you write to the <xref:System.IO.Stream> object that is returned by this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceFromVirtualPath">
+      <MemberSignature Language="C#" Value="public static object CreateInstanceFromVirtualPath (string virtualPath, Type requiredBaseType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateInstanceFromVirtualPath(string virtualPath, class System.Type requiredBaseType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="requiredBaseType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path of the file to create an instance of.</param>
+        <param name="requiredBaseType">The base type that defines the object to be created.</param>
+        <summary>Processes a file, given its virtual path, and creates an instance of the result.</summary>
+        <returns>The <see cref="T:System.Object" /> that represents the instance of the processed file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath%2A> method works for compiled and non-compile pages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCachedBuildDependencySet">
+      <MemberSignature Language="C#" Value="public static System.Web.Compilation.BuildDependencySet GetCachedBuildDependencySet (System.Web.HttpContext context, string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Compilation.BuildDependencySet GetCachedBuildDependencySet(class System.Web.HttpContext context, string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet(System.Web.HttpContext,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.BuildDependencySet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context of the request.</param>
+        <param name="virtualPath">The virtual path from which to determine the build dependency set.</param>
+        <summary>Returns a build dependency set for a virtual path if the path is located in the ASP.NET cache.</summary>
+        <returns>A <see cref="T:System.Web.Compilation.BuildDependencySet" /> object that is stored in the cache, or <see langword="null" /> if the <see cref="T:System.Web.Compilation.BuildDependencySet" /> object cannot be retrieved from the cache.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCachedBuildDependencySet">
+      <MemberSignature Language="C#" Value="public static System.Web.Compilation.BuildDependencySet GetCachedBuildDependencySet (System.Web.HttpContext context, string virtualPath, bool ensureIsUpToDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Compilation.BuildDependencySet GetCachedBuildDependencySet(class System.Web.HttpContext context, string virtualPath, bool ensureIsUpToDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet(System.Web.HttpContext,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.BuildDependencySet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="ensureIsUpToDate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="context">The context of the request.</param>
+        <param name="virtualPath">The virtual path from which to determine the build dependency set.</param>
+        <param name="ensureIsUpToDate">
+          <see langword="true" /> to specify that only a current build dependency set should be returned, or <see langword="false" /> to indicate that any available build dependency set should be returned, even if it is not current. The default is <see langword="true" />.</param>
+        <summary>Returns a build dependency set for a virtual path if the path is located in the ASP.NET cache, even if the content is not current.</summary>
+        <returns>A <see cref="T:System.Web.Compilation.BuildDependencySet" /> object that is stored in the cache, or <see langword="null" /> if the <see cref="T:System.Web.Compilation.BuildDependencySet" /> object cannot be retrieved from the cache.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `ensureIsUpToDate` parameter value is set to `true`, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload behaves like the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload. Both overloads return a current build dependency set if one exists, otherwise they return `null`.  
+  
+ However, the <xref:System.Web.Compilation.BuildManager.GetCachedBuildDependencySet%2A?displayProperty=fullName> method overload includes the option to return any build dependency set that is available, even an outdated one. If the `ensureIsUpToDate` parameter value is set to `false`, the method will return any available build dependency set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledAssembly">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Assembly GetCompiledAssembly (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.Assembly GetCompiledAssembly(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCompiledAssembly(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to build into an assembly.</param>
+        <summary>Compiles a file into an assembly using the specified virtual path.</summary>
+        <returns>An <see cref="T:System.Reflection.Assembly" /> object that is compiled from the specified virtual path, which is cached to either memory or to disk.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledCustomString">
+      <MemberSignature Language="C#" Value="public static string GetCompiledCustomString (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetCompiledCustomString(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCompiledCustomString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path of the file to build.</param>
+        <summary>Compiles a file, given its virtual path, and returns a custom string that the build provider persists in cache.</summary>
+        <returns>A string, as returned by the <see cref="M:System.Web.Compilation.BuildProvider.GetCustomString(System.CodeDom.Compiler.CompilerResults)" /> method, that is cached to disk or memory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledType">
+      <MemberSignature Language="C#" Value="public static Type GetCompiledType (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetCompiledType(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetCompiledType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to build into a type.</param>
+        <summary>Compiles a file, given its virtual path, and returns the compiled type.</summary>
+        <returns>A <see cref="T:System.Type" /> object that represents the type generated from compiling the virtual path.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">An error occurred when compiling the virtual path.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalAsaxType">
+      <MemberSignature Language="C#" Value="public static Type GetGlobalAsaxType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetGlobalAsaxType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetGlobalAsaxType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an object that represents the compiled type for the Global.asax file.</summary>
+        <returns>An object that represents the compiled type for the Global.asax file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception is thrown if this method is called before the Global.asax file has been compiled.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to call this method before the Global.asax page was compiled.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectFactory">
+      <MemberSignature Language="C#" Value="public static System.Web.Util.IWebObjectFactory GetObjectFactory (string virtualPath, bool throwIfNotFound);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Util.IWebObjectFactory GetObjectFactory(string virtualPath, bool throwIfNotFound) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetObjectFactory(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.IWebObjectFactory</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="throwIfNotFound" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path.</param>
+        <param name="throwIfNotFound">
+          <see langword="true" /> to throw an error if the virtual path does not exist; otherwise, <see langword="false" />. If the virtual path does not exist and <c>throwIfNotFound</c> is <see langword="false" />, this method returns <see langword="null" />.</param>
+        <summary>Gets an object factory for the specified virtual path.</summary>
+        <returns>The object factory.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns an object that enables you to generate a type by compiling the virtual path. It returns an object regardless of whether the Web site is precompiled.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The virtual path does not exist.  
+  
+ -or-  
+  
+ A higher-level exception already existed when this method was called.  
+  
+ -or-  
+  
+ This method was called while the compilation process was building top-level files.  
+  
+ -or-  
+  
+ This is a precompiled application and the virtual path was not found in the cache.  
+  
+ -or-  
+  
+ A circular reference was detected.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedAssemblies">
+      <MemberSignature Language="C#" Value="public static System.Collections.ICollection GetReferencedAssemblies ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ICollection GetReferencedAssemblies() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetReferencedAssemblies" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a list of assembly references that all page compilations must reference.</summary>
+        <returns>An <see cref="T:System.Collections.ICollection" /> collection of assembly references.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection of assemblies that is returned from the <xref:System.Web.Compilation.BuildManager.GetReferencedAssemblies%2A> method includes assemblies specified in the  element of the Web.config file, assemblies built from custom code in the App_Code directory, and assemblies in other top-level folders.  
+  
+ <xref:System.Web.Compilation.BuildManager.GetReferencedAssemblies%2A> is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public static Type GetType (string typeName, bool throwOnError);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetType(string typeName, bool throwOnError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetType(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="throwOnError" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">The name of the type.</param>
+        <param name="throwOnError">
+          <see langword="true" /> to throw an exception if a <see cref="T:System.Type" /> object cannot be generated for the type name; otherwise, <see langword="false" />.</param>
+        <summary>Finds a type in the top-level assemblies or in assemblies that are defined in configuration, and optionally throws an exception on failure.</summary>
+        <returns>A <see cref="T:System.Type" /> object that represents the requested <paramref name="typeName" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A top-level assembly refers to the Global.asax file, or to a file that is in the App_GlobalResources, App_WebReferences, App_Code, or App_Browsers directory.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="typeName" /> is invalid.  
+  
+ \- or -  
+  
+ <paramref name="typeName" /> is ambiguous.  
+  
+ \- or -  
+  
+ <paramref name="typeName" /> could not be found, and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public static Type GetType (string typeName, bool throwOnError, bool ignoreCase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetType(string typeName, bool throwOnError, bool ignoreCase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetType(System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="throwOnError" Type="System.Boolean" />
+        <Parameter Name="ignoreCase" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">The name of the type.</param>
+        <param name="throwOnError">
+          <see langword="true" /> to throw an exception if a <see cref="T:System.Type" /> cannot be generated for the type name; otherwise, <see langword="false" />.</param>
+        <param name="ignoreCase">
+          <see langword="true" /> if <c>typeName</c> is case-sensitive; otherwise, <see langword="false" />.</param>
+        <summary>Finds a type in the top-level assemblies, or in assemblies that are defined in configuration, by using a case-insensitive search and optionally throwing an exception on failure.</summary>
+        <returns>A <see cref="T:System.Type" /> object that represents the requested <paramref name="typeName" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A top-level assembly refers to the Global.asax file, or to a file that is in the App_GlobalResources, App_WebReferences, App_Code, or App_Browsers directory.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">
+          <paramref name="typeName" /> is invalid.  
+  
+ \- or -  
+  
+ <paramref name="typeName" /> is ambiguous.  
+  
+ \- or -  
+  
+ <paramref name="typeName" /> could not be found, and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVirtualPathDependencies">
+      <MemberSignature Language="C#" Value="public static System.Collections.ICollection GetVirtualPathDependencies (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ICollection GetVirtualPathDependencies(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.GetVirtualPathDependencies(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path used to determine the dependencies.</param>
+        <summary>Provides a collection of virtual-path dependencies for a specified virtual path.</summary>
+        <returns>An <see cref="T:System.Collections.ICollection" /> collection of files represented by virtual paths that are caching dependencies for the virtual path.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPrecompiledApp">
+      <MemberSignature Language="C#" Value="public static bool IsPrecompiledApp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsPrecompiledApp" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.IsPrecompiledApp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the application is precompiled.</summary>
+        <value>
+          <see langword="true" /> if the application is precompiled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUpdatablePrecompiledApp">
+      <MemberSignature Language="C#" Value="public static bool IsUpdatablePrecompiledApp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsUpdatablePrecompiledApp" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.IsUpdatablePrecompiledApp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the application is precompiled as updatable.</summary>
+        <value>
+          <see langword="true" /> if the application is precompiled as updatable; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCachedFile">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream ReadCachedFile (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream ReadCachedFile(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManager.ReadCachedFile(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">The name of the file to read.</param>
+        <summary>Reads a cached file.</summary>
+        <returns>The <see cref="T:System.IO.Stream" /> object for the file, or <see langword="null" /> if the file does not exist.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method and the <xref:System.Web.Compilation.BuildManager.CreateCachedFile%2A> method enable you to perform caching that persists across application domain restarts in partial-trust environments. It is used by the MVC framework to cache results of the controller lookup.  
+  
+ To retrieve cached data, you read from the <xref:System.IO.Stream> object that is returned by this method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFramework">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Versioning.FrameworkName TargetFramework { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Runtime.Versioning.FrameworkName TargetFramework" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManager.TargetFramework" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Versioning.FrameworkName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the target version of the .NET Framework for the current Web site.</summary>
+        <value>The target version of the .NET Framework for the current Web site.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property supports the ASP.NET multi-targeting feature, which enables you to use the latest version of [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to develop applications that will run with earlier versions of the .NET Framework. A build provider can use this property to make sure that the provider generates code that is appropriate for the targeted version of the .NET Framework. For example, you might want to generate different code depending on whether a Web site targets the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] or the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)]. For more information about multi-targeting, see [.NET Framework Multi-Targeting for ASP.NET Web Projects](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76).  
+  
+ If the Web site does not have a Web.config file, ASP.NET assumes that the target framework version is the version that is associated with the IIS application pool that the site is running under. For a file-system Web site that is running in Visual Studio, the default framework version is the current version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
+  
+ If the Web site does have a Web.config file, ASP.NET determines the target framework by examining the Web.config file.  
+  
+## Web Sites that Target the .NET Framework 2.0  
+ Web applications that target the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] are compiled as if the target were the [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)]. The build process does not differentiate between the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] and the [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] because the Web.config file does not indicate compiler version or target framework when one of those versions is targeted. (For the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)], the Web.config file specifies the compiler version, and for the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the Web.config file specifies the target framework.) Therefore, for Web applications that target the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], this property returns a target framework moniker that indicates the [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)].  
+  
+ This normally will not cause any problems. [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] prevents you from creating references to [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] features in a project that is targeted for the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)]. For example, [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] does not provide item templates for WCF services in a project that is targeted for [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)], because WCF was introduced with the [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] and is not compatible with the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)].  
+  
+ If you plan to deploy a Web site in a [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] run-time environment and you use a tool other than [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to reference features that are compatible only with [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)], the project might build without generating errors or warnings. However, the application might generate errors when the Web site runs on the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds a type in the top-level assemblies or in assemblies that are defined in configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A top-level assembly refers to the Global.asax file, or to a file that is in the App_GlobalResources, App_WebReferences, App_Code, or App_Browsers directory.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

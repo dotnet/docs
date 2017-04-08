@@ -1,0 +1,330 @@
+<Type Name="BulletDecorator" FullName="System.Windows.Controls.Primitives.BulletDecorator">
+  <TypeSignature Language="C#" Value="public class BulletDecorator : System.Windows.Controls.Decorator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BulletDecorator extends System.Windows.Controls.Decorator" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.BulletDecorator" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Decorator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a layout control that aligns a bullet and another visual object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Primitives.BulletDecorator> has two content properties: <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> and <xref:System.Windows.Controls.Decorator.Child%2A>. The <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> property defines the <xref:System.Windows.UIElement> to use as a bullet. The <xref:System.Windows.Controls.Decorator.Child%2A> property defines a <xref:System.Windows.UIElement> that visually aligns with the bullet.  
+  
+ A <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> always aligns with the first line of text when the <xref:System.Windows.Controls.Decorator.Child%2A> object is a <xref:System.Windows.Controls.TextBlock>. If the <xref:System.Windows.Controls.Decorator.Child%2A> object is not a <xref:System.Windows.Controls.TextBlock>, the <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> aligns to the center of the <xref:System.Windows.Controls.Decorator.Child%2A> object. For more information about layout of a <xref:System.Windows.Controls.Primitives.BulletDecorator>, see [How to: Create a BulletDecorator](http://msdn.microsoft.com/en-us/d9532e9a-a2a5-47b9-aa37-c36f841b34ae).  
+  
+ The following illustration shows examples of <xref:System.Windows.Controls.Primitives.BulletDecorator> controls.  
+  
+ ![3 BulletDecorators: CheckBox, RadioButton, TextBox](~/add/media/bulletdecorator.png "3 BulletDecorators: CheckBox, RadioButton, TextBox")  
+  
+   
+  
+## Examples  
+ The following examples show how to define a <xref:System.Windows.Controls.Primitives.BulletDecorator> control.  
+  
+ [!code-csharp[BulletPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BulletPanelExample/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[BulletPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BulletPanelExample/VisualBasic/Window1.xaml.vb#1)]
+ [!code-xml[BulletPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BulletPanelExample/CSharp/Window1.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BulletDecorator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.BulletDecorator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.BulletDecorator.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arrangeSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="arrangeSize">The available <see cref="T:System.Windows.Size" /> to use to lay out the content of the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control.</param>
+        <summary>Overrides the default content arrangement behavior for the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control.</summary>
+        <returns>The computed size of the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.BulletDecorator.ArrangeOverride%2A> method determines the size and position of the <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> and the <xref:System.Windows.Controls.Decorator.Child%2A> objects. The <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> is aligned vertically with the first line of the <xref:System.Windows.Controls.Decorator.Child%2A> content.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Background">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.BulletDecorator.Background" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color for a <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control.</summary>
+        <value>The background color for the <see cref="P:System.Windows.Controls.Primitives.BulletDecorator.Bullet" /> and <see cref="P:System.Windows.Controls.Decorator.Child" /> of a <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.BulletDecorator.Background%2A> property defines the <xref:System.Windows.Media.Brush> to use to fill the area within the <xref:System.Windows.Controls.Primitives.BulletDecorator>. For some parent layout elements, the area that is defined for the <xref:System.Windows.Controls.Primitives.BulletDecorator> may extend beyond its <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> and <xref:System.Windows.Controls.Decorator.Child%2A> content. For example, if the <xref:System.Windows.Controls.Primitives.BulletDecorator> is the single child of a cell in a <xref:System.Windows.Controls.Grid> control, the <xref:System.Windows.Controls.Primitives.BulletDecorator.Background%2A> property applies to the whole cell. This occurs because the content in a <xref:System.Windows.Controls.Grid> cell is stretched in all directions to fill the cell, by default. However, if you set the <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> property to <xref:System.Windows.VerticalAlignment> for the <xref:System.Windows.Controls.Primitives.BulletDecorator>, the <xref:System.Windows.Controls.Primitives.BulletDecorator.Background%2A> property only affects the actual content area of the <xref:System.Windows.Controls.Primitives.BulletDecorator>. Alternatively, you can enclose the <xref:System.Windows.Controls.Primitives.BulletDecorator> in a <xref:System.Windows.Controls.Panel> element.  
+  
+<a name="dependencyPropertyInfo_Background"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.BulletDecorator.BackgroundProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
+  
+   
+  
+## Examples  
+ The following examples show how to set the <xref:System.Windows.Controls.Primitives.BulletDecorator.Background%2A> property on a <xref:System.Windows.Controls.Primitives.BulletDecorator> control.  
+  
+ [!code-csharp[BulletPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BulletPanelExample/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[BulletPanelExample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BulletPanelExample/VisualBasic/Window1.xaml.vb#1)]
+ [!code-xml[BulletPanelExample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/BulletPanelExample/CSharp/Window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.BulletDecorator.BackgroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.BulletDecorator.Background" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bullet">
+      <MemberSignature Language="C#" Value="public System.Windows.UIElement Bullet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement Bullet" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.BulletDecorator.Bullet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object to use as the bullet in a <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" />.</summary>
+        <value>The <see cref="T:System.Windows.UIElement" /> to use as the bullet. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> property is a content property of the <xref:System.Windows.Controls.Primitives.BulletDecorator> control and defines the <xref:System.Windows.UIElement> to display as a bullet for the <xref:System.Windows.Controls.Decorator.Child%2A> object.  
+  
+ The bullet that is defined by setting the <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> property to a <xref:System.Windows.UIElement> is the first visual element in a <xref:System.Windows.Controls.Primitives.BulletDecorator> control. The single <xref:System.Windows.Controls.Decorator.Child%2A> element is the second visual element.  
+  
+<a name="xamlPropertyElementUsage_Bullet"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.Bullet>  
+    <UIElement .../>  
+  </object.Bullet>  
+</object>  
+```  
+  
+   
+  
+## Examples  
+ The following examples show how to set the <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> property.  
+  
+ [!code-csharp[ExpanderRichContent#BulletDecorator](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderRichContent/CSharp/Window1.xaml.cs#bulletdecorator)]
+ [!code-vb[ExpanderRichContent#BulletDecorator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpanderRichContent/VisualBasic/Window1.xaml.vb#bulletdecorator)]
+ [!code-xml[ExpanderRichContent#BulletDecorator](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderRichContent/CSharp/Window1.xaml#bulletdecorator)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualChild">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.BulletDecorator.GetVisualChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The specified index for the child element.</param>
+        <summary>Gets the child element that is at the specified index.</summary>
+        <returns>The <see cref="T:System.Windows.Media.Visual" /> child element that is at the specified index.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visual child elements of a <xref:System.Windows.Controls.Primitives.BulletDecorator> are the <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> and the <xref:System.Windows.Controls.Decorator.Child%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than or equal to <see cref="P:System.Windows.Controls.Primitives.BulletDecorator.VisualChildrenCount" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalChildren">
+      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.BulletDecorator.LogicalChildren" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an enumerator for the logical child elements of the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control.</summary>
+        <value>The enumerator that provides access to the logical child elements of the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The logical child elements for a <xref:System.Windows.Controls.Primitives.BulletDecorator> control include the <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> and <xref:System.Windows.Controls.Decorator.Child%2A>. If you set both properties, they are enumerated in the following order: <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A>, <xref:System.Windows.Controls.Decorator.Child%2A>.  
+  
+ The number of visual child elements is the same as the number of logical child elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.BulletDecorator.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">The upper <see cref="T:System.Windows.Size" /> limit of the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" />.</param>
+        <summary>Overrides the default measurement behavior for the objects of a <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control.</summary>
+        <returns>The required <see cref="T:System.Windows.Size" /> for the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control, based on the size of its <see cref="P:System.Windows.Controls.Primitives.BulletDecorator.Bullet" /> and <see cref="P:System.Windows.Controls.Decorator.Child" /> objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRender">
+      <MemberSignature Language="C#" Value="protected override void OnRender (System.Windows.Media.DrawingContext dc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext dc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.BulletDecorator.OnRender(System.Windows.Media.DrawingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dc" Type="System.Windows.Media.DrawingContext" />
+      </Parameters>
+      <Docs>
+        <param name="dc">The <see cref="T:System.Windows.Media.DrawingContext" /> for the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" />.</param>
+        <summary>Renders the content of a <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a <xref:System.Windows.Rect> structure that is sized for the <xref:System.Windows.Controls.Primitives.BulletDecorator> content. This rectangular structure is displayed with the specified <xref:System.Windows.Controls.Primitives.BulletDecorator.Background%2A> color and no border.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualChildrenCount">
+      <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.BulletDecorator.VisualChildrenCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of visual child elements for the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" /> control.</summary>
+        <value>The number of visual elements that are defined for the <see cref="T:System.Windows.Controls.Primitives.BulletDecorator" />. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.BulletDecorator.VisualChildrenCount%2A> can be 0, 1, or 2. If either the <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> or a <xref:System.Windows.Controls.Decorator.Child%2A> element is defined, the <xref:System.Windows.Controls.Primitives.BulletDecorator.VisualChildrenCount%2A> is 1. If both the <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> and a <xref:System.Windows.Controls.Decorator.Child%2A> element are defined, the <xref:System.Windows.Controls.Primitives.BulletDecorator.VisualChildrenCount%2A> is 2.  
+  
+ The number of visual child elements is the same as the number of logical child elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

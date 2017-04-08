@@ -1,0 +1,210 @@
+<Type Name="HierarchicalVirtualizationConstraints" FullName="System.Windows.Controls.HierarchicalVirtualizationConstraints">
+  <TypeSignature Language="C#" Value="public struct HierarchicalVirtualizationConstraints" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit HierarchicalVirtualizationConstraints extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the sizes of a control's viewport and cache. This structure is used by the <see cref="T:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo" /> interface.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HierarchicalVirtualizationConstraints (System.Windows.Controls.VirtualizationCacheLength cacheLength, System.Windows.Controls.VirtualizationCacheLengthUnit cacheLengthUnit, System.Windows.Rect viewport);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Controls.VirtualizationCacheLength cacheLength, valuetype System.Windows.Controls.VirtualizationCacheLengthUnit cacheLengthUnit, valuetype System.Windows.Rect viewport) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.#ctor(System.Windows.Controls.VirtualizationCacheLength,System.Windows.Controls.VirtualizationCacheLengthUnit,System.Windows.Rect)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cacheLength" Type="System.Windows.Controls.VirtualizationCacheLength" />
+        <Parameter Name="cacheLengthUnit" Type="System.Windows.Controls.VirtualizationCacheLengthUnit" />
+        <Parameter Name="viewport" Type="System.Windows.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="cacheLength">The size of the cache before and after the viewport.</param>
+        <param name="cacheLengthUnit">The type of unit that is used by the <see cref="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLength" /> property.</param>
+        <param name="viewport">The size of the cache before and after the viewport.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheLength">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.VirtualizationCacheLength CacheLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.VirtualizationCacheLength CacheLength" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.VirtualizationCacheLength</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the cache before and after the viewport.</summary>
+        <value>The size of the cache before and after the viewport.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheLengthUnit">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.VirtualizationCacheLengthUnit CacheLengthUnit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.VirtualizationCacheLengthUnit CacheLengthUnit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLengthUnit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.VirtualizationCacheLengthUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of unit that is used by the <see cref="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLength" /> property.</summary>
+        <value>The type of unit that is used by the <see cref="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLength" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oCompare" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="oCompare">The object to compare.</param>
+        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.HierarchicalVirtualizationConstraints comparisonConstraints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints comparisonConstraints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.Equals(System.Windows.Controls.HierarchicalVirtualizationConstraints)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparisonConstraints" Type="System.Windows.Controls.HierarchicalVirtualizationConstraints" />
+      </Parameters>
+      <Docs>
+        <param name="comparisonConstraints">The <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> to compare.</param>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />.</summary>
+        <returns>A hash code for this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.HierarchicalVirtualizationConstraints constraints1, System.Windows.Controls.HierarchicalVirtualizationConstraints constraints2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints constraints1, valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints constraints2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.op_Equality(System.Windows.Controls.HierarchicalVirtualizationConstraints,System.Windows.Controls.HierarchicalVirtualizationConstraints)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraints1" Type="System.Windows.Controls.HierarchicalVirtualizationConstraints" />
+        <Parameter Name="constraints2" Type="System.Windows.Controls.HierarchicalVirtualizationConstraints" />
+      </Parameters>
+      <Docs>
+        <param name="constraints1">The first <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> to compare.</param>
+        <param name="constraints2">The second <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> to compare.</param>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.HierarchicalVirtualizationConstraints constraints1, System.Windows.Controls.HierarchicalVirtualizationConstraints constraints2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints constraints1, valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints constraints2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.op_Inequality(System.Windows.Controls.HierarchicalVirtualizationConstraints,System.Windows.Controls.HierarchicalVirtualizationConstraints)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraints1" Type="System.Windows.Controls.HierarchicalVirtualizationConstraints" />
+        <Parameter Name="constraints2" Type="System.Windows.Controls.HierarchicalVirtualizationConstraints" />
+      </Parameters>
+      <Docs>
+        <param name="constraints1">The first <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> to compare.</param>
+        <param name="constraints2">The second <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> to compare.</param>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> objects are unequal.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" /> objects are unequal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Viewport">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect Viewport { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Viewport" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.Viewport" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the area that displays the items of the control.</summary>
+        <value>The area that displays the items of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

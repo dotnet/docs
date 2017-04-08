@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PolicyLibrary", "PolicyLibrary\PolicyLibrary.vbproj", "{7D2526B4-F914-4C6E-983E-C2143612534D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Service", "Service\Service.vbproj", "{2C3B5F29-ABD3-4EAD-96F6-FB46D8309335}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Client", "Client\Client.vbproj", "{BF7C4795-3C32-448C-B391-C35434DA980B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C3B5F29-ABD3-4EAD-96F6-FB46D8309335} = {2C3B5F29-ABD3-4EAD-96F6-FB46D8309335}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D2526B4-F914-4C6E-983E-C2143612534D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2526B4-F914-4C6E-983E-C2143612534D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2526B4-F914-4C6E-983E-C2143612534D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2526B4-F914-4C6E-983E-C2143612534D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3B5F29-ABD3-4EAD-96F6-FB46D8309335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3B5F29-ABD3-4EAD-96F6-FB46D8309335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3B5F29-ABD3-4EAD-96F6-FB46D8309335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3B5F29-ABD3-4EAD-96F6-FB46D8309335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF7C4795-3C32-448C-B391-C35434DA980B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF7C4795-3C32-448C-B391-C35434DA980B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF7C4795-3C32-448C-B391-C35434DA980B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF7C4795-3C32-448C-B391-C35434DA980B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

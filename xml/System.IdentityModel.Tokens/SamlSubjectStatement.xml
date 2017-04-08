@@ -1,0 +1,241 @@
+<Type Name="SamlSubjectStatement" FullName="System.IdentityModel.Tokens.SamlSubjectStatement">
+  <TypeSignature Language="C#" Value="public abstract class SamlSubjectStatement : System.IdentityModel.Tokens.SamlStatement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SamlSubjectStatement extends System.IdentityModel.Tokens.SamlStatement" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlSubjectStatement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SamlStatement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a claim for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify the subject of the security token. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlSubjectStatement>. A <xref:System.IdentityModel.Tokens.SamlSubjectStatement> asserts the principal that is the subject of the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token. This principal is specified in the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SamlSubjectStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubjectStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSubjectStatement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SamlSubjectStatement (System.IdentityModel.Tokens.SamlSubject samlSubject);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SamlSubject samlSubject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubjectStatement.#ctor(System.IdentityModel.Tokens.SamlSubject)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="samlSubject" Type="System.IdentityModel.Tokens.SamlSubject" />
+      </Parameters>
+      <Docs>
+        <param name="samlSubject">A <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> that identifies the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlSubjectStatement" /> class using the specified subject.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddClaimsToList">
+      <MemberSignature Language="C#" Value="protected abstract void AddClaimsToList (System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddClaimsToList(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubjectStatement.AddClaimsToList(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="claims">An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that contains the set of claims to add to.</param>
+        <summary>Adds a claim based on the properties of this instance to the specified collection of claims.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlSubjectStatement.AddClaimsToList%2A> method adds a claim to the `claims` parameter based on the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claims" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePolicy">
+      <MemberSignature Language="C#" Value="public override System.IdentityModel.Policy.IAuthorizationPolicy CreatePolicy (System.IdentityModel.Claims.ClaimSet issuer, System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator samlAuthenticator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Policy.IAuthorizationPolicy CreatePolicy(class System.IdentityModel.Claims.ClaimSet issuer, class System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator samlAuthenticator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubjectStatement.CreatePolicy(System.IdentityModel.Claims.ClaimSet,System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Policy.IAuthorizationPolicy</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="issuer" Type="System.IdentityModel.Claims.ClaimSet" />
+        <Parameter Name="samlAuthenticator" Type="System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" />
+      </Parameters>
+      <Docs>
+        <param name="issuer">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> that represents the issuer of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</param>
+        <param name="samlAuthenticator">A <see cref="T:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator" /> to authenticate the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</param>
+        <summary>Creates an authorization policy for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
+        <returns>An <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" /> that represents an authorization policy for the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.CreatePolicy%2A> method to get an authorization policy for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the properties of this instance are read-only.</summary>
+        <value>
+          <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make this instance of the <xref:System.IdentityModel.Tokens.SamlSubjectStatement> class read-only, call the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.MakeReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeReadOnly">
+      <MemberSignature Language="C#" Value="public override void MakeReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void MakeReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubjectStatement.MakeReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes this instance to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SamlSubject">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SamlSubject SamlSubject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SamlSubject SamlSubject" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SamlSubject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> that identifies the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property corresponds to the `<saml:Subject>` element that is defined in the Assertions and Protocol for the OASIS SAML specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly" /> property is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSubject">
+      <MemberSignature Language="C#" Value="protected void SetSubject (System.IdentityModel.Tokens.SamlSubject samlSubject);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetSubject(class System.IdentityModel.Tokens.SamlSubject samlSubject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlSubjectStatement.SetSubject(System.IdentityModel.Tokens.SamlSubject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="samlSubject" Type="System.IdentityModel.Tokens.SamlSubject" />
+      </Parameters>
+      <Docs>
+        <param name="samlSubject">A <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> that identifies the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</param>
+        <summary>Sets the subject of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject%2A> property, the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.SetSubject%2A> method can be called to set the subject of a <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token when the <xref:System.IdentityModel.Tokens.SamlSubjectStatement.IsReadOnly%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="samlSubject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

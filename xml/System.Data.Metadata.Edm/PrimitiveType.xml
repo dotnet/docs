@@ -1,0 +1,174 @@
+<Type Name="PrimitiveType" FullName="System.Data.Metadata.Edm.PrimitiveType">
+  <TypeSignature Language="C#" Value="public sealed class PrimitiveType : System.Data.Metadata.Edm.SimpleType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrimitiveType extends System.Data.Metadata.Edm.SimpleType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PrimitiveType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.SimpleType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] primitive types, conceptual model primitive types, and storage provider-specific primitive types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Simple Types](http://msdn.microsoft.com/en-us/ddf09722-81b5-451b-a086-1dcf25a4f7d4).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuiltInTypeKind">
+      <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.BuiltInTypeKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClrEquivalentType">
+      <MemberSignature Language="C#" Value="public Type ClrEquivalentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ClrEquivalentType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.ClrEquivalentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns an equivalent common language runtime (CLR) type of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />. Note that the <see cref="P:System.Data.Metadata.Edm.PrimitiveType.ClrEquivalentType" /> property always returns a non-nullable type value.</summary>
+        <value>A <see cref="T:System.Type" /> object that represents an equivalent common language runtime (CLR) type of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FacetDescriptions">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt; FacetDescriptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.FacetDescription&gt; FacetDescriptions" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.FacetDescriptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.FacetDescription&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of facet descriptions for this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</summary>
+        <value>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains the list of facet descriptions for this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEdmPrimitiveType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmType GetEdmPrimitiveType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.EdmType GetEdmPrimitiveType() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the equivalent <see cref="T:System.Data.Metadata.Edm.EdmType" /> of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</summary>
+        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that is an equivalent of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType%2A> returns the model equivalent type for this type, For example, if this instance is `nvarchar` and its base type is a conceptual model string, then the return type is a conceptual model string.  
+  
+ If the type is actually already a model type, then the return type is "this".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEdmPrimitiveType">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.PrimitiveType GetEdmPrimitiveType (System.Data.Metadata.Edm.PrimitiveTypeKind primitiveTypeKind);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.PrimitiveType GetEdmPrimitiveType(valuetype System.Data.Metadata.Edm.PrimitiveTypeKind primitiveTypeKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType(System.Data.Metadata.Edm.PrimitiveTypeKind)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveTypeKind" Type="System.Data.Metadata.Edm.PrimitiveTypeKind" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveTypeKind">A value of type <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</param>
+        <summary>Returns the equivalent <see cref="T:System.Data.Metadata.Edm.EdmType" /> of a <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</summary>
+        <returns>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that is an equivalent of a specified <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEdmPrimitiveTypes">
+      <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt; GetEdmPrimitiveTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.PrimitiveType&gt; GetEdmPrimitiveTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.PrimitiveType.GetEdmPrimitiveTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the list of primitive types.</summary>
+        <returns>A collection of type <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> that contains the list of primitive types.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimitiveTypeKind">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.PrimitiveTypeKind PrimitiveTypeKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.PrimitiveTypeKind PrimitiveTypeKind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.PrimitiveType.PrimitiveTypeKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Data.Metadata.Edm.PrimitiveTypeKind" /> enumeration value that indicates a primitive type of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.PrimitiveTypeKind" /> enumeration value that indicates a primitive type of this <see cref="T:System.Data.Metadata.Edm.PrimitiveType" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

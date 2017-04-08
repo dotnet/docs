@@ -1,0 +1,140 @@
+<Type Name="EventLogEntryType" FullName="System.Diagnostics.EventLogEntryType">
+  <TypeSignature Language="C#" Value="public enum EventLogEntryType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventLogEntryType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogEntryType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Internals</AssemblyName>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the event type of an event log entry.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of an event log entry provides additional information for the entry.  Applications set the entry type when they write the entry to the event log.  
+  
+ Each event must be of a single type; the event types cannot be combined for an entry.  The Event Viewer uses this type to determine which icon to display in the list view of the log.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Diagnostics.EventLogEntryType> class to add information about triggered events to a log file. In this example, a `switch` statement is used to determine the event type. Each `case` statement uses the <xref:System.Diagnostics.EventLogEntryType> to specify the event type, gets the message and ID, and then writes the information to the log.  
+  
+ [!code-cpp[EventLogEntryType_6#2](~/samples/snippets/cpp/VS_Snippets_CLR/EventLogEntryType_6/CPP/eventlogentrytype_6.cpp#2)]
+ [!code-csharp[EventLogEntryType_6#2](~/samples/snippets/csharp/VS_Snippets_CLR/EventLogEntryType_6/CS/eventlogentrytype_6.cs#2)]
+ [!code-vb[EventLogEntryType_6#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLogEntryType_6/VB/eventlogentrytype_6.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType Error = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Internals</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An error event. This indicates a significant problem the user should know about; usually a loss of functionality or data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FailureAudit">
+      <MemberSignature Language="C#" Value="FailureAudit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType FailureAudit = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.FailureAudit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Internals</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A failure audit event. This indicates a security event that occurs when an audited access attempt fails; for example, a failed attempt to open a file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Information">
+      <MemberSignature Language="C#" Value="Information" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType Information = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Information" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Internals</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An information event. This indicates a significant, successful operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuccessAudit">
+      <MemberSignature Language="C#" Value="SuccessAudit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType SuccessAudit = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.SuccessAudit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Internals</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A success audit event. This indicates a security event that occurs when an audited access attempt is successful; for example, logging on successfully.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Warning">
+      <MemberSignature Language="C#" Value="Warning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogEntryType Warning = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogEntryType.Warning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Internals</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.EventLogEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A warning event. This indicates a problem that is not immediately significant, but that may signify conditions that could cause future problems.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

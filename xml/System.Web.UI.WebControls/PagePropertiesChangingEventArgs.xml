@@ -1,0 +1,102 @@
+<Type Name="PagePropertiesChangingEventArgs" FullName="System.Web.UI.WebControls.PagePropertiesChangingEventArgs">
+  <TypeSignature Language="C#" Value="public class PagePropertiesChangingEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PagePropertiesChangingEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagePropertiesChangingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ListView.PagePropertiesChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.ListView.PagePropertiesChanging?displayProperty=fullName> event whenever the <xref:System.Web.UI.WebControls.ListView.SetPageProperties%2A?displayProperty=fullName> method is called. This occurs when a button in a <xref:System.Web.UI.WebControls.DataPager> control that is associated with the <xref:System.Web.UI.WebControls.ListView> control is clicked, and a new <xref:System.Web.UI.WebControls.ListView.StartRowIndex%2A?displayProperty=fullName> or <xref:System.Web.UI.WebControls.ListView.MaximumRows%2A?displayProperty=fullName> value is specified by the <xref:System.Web.UI.WebControls.DataPager> control. This enables you to provide a custom routine whenever this event occurs, such as clearing the <xref:System.Web.UI.WebControls.ListView.SelectedIndex%2A> or <xref:System.Web.UI.WebControls.ListView.EditIndex%2A> properties of the <xref:System.Web.UI.WebControls.ListView> control.  
+  
+ A <xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs> object is passed to the event handler. This object enables you to determine the index of the first item in the page that was selected by the user. You can also determine the maximum number of items to display on each page.  
+  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs> class, see the <xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.%23ctor%2A> constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PagePropertiesChangingEventArgs (int startRowIndex, int maximumRows);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 startRowIndex, int32 maximumRows) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="startRowIndex" Type="System.Int32" />
+        <Parameter Name="maximumRows" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startRowIndex">The index of the first item of the page.</param>
+        <param name="maximumRows">The maximum number of items to display on each page of data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.PagePropertiesChangingEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is primarily used by control developers when raising events.  
+  
+ The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.StartRowIndex%2A>|The value of the `startRowIndex` parameter.|  
+|<xref:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.MaximumRows%2A>|The value of the `maximumRows` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumRows">
+      <MemberSignature Language="C#" Value="public int MaximumRows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumRows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.MaximumRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of items to display on each page of data.</summary>
+        <value>The maximum number of items to display in a page of data in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartRowIndex">
+      <MemberSignature Language="C#" Value="public int StartRowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StartRowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PagePropertiesChangingEventArgs.StartRowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the first item of the page.</summary>
+        <value>The index of the first item to display in a page of data in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

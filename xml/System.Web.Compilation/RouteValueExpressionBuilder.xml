@@ -1,0 +1,190 @@
+<Type Name="RouteValueExpressionBuilder" FullName="System.Web.Compilation.RouteValueExpressionBuilder">
+  <TypeSignature Language="C#" Value="public class RouteValueExpressionBuilder : System.Web.Compilation.ExpressionBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteValueExpressionBuilder extends System.Web.Compilation.ExpressionBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.RouteValueExpressionBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Compilation.ExpressionBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.RouteValueExpressionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.Compilation.ExpressionPrefix("Routes")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Retrieves the value that corresponds to a specified URL parameter in a routed page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.RouteValueExpressionBuilder> class makes it possible to use markup to set the property of a server control to the value of one of the URL parameters in a routed page.  
+  
+   
+  
+## Examples  
+ The following example shows how to use markup to display the value of the URL parameter `searchterm`. The route is defined by using `http://www.contoso.com/search/{searchterm}` as the URL pattern.  
+  
+```  
+<asp:Label ID="Label1" runat="server"  
+    text="<%$ RouteValue:searchterm %>">  
+</asp:Label>  
+```  
+  
+ If the page is requested with the URL `http://www.contoso.com/search/Bicycles`, the <xref:System.Web.UI.WebControls.Label> control displays "Bicycles".  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteValueExpressionBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteValueExpressionBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.RouteValueExpressionBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateExpression">
+      <MemberSignature Language="C#" Value="public override object EvaluateExpression (object target, System.Web.UI.BoundPropertyEntry entry, object parsedData, System.Web.Compilation.ExpressionBuilderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EvaluateExpression(object target, class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteValueExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="entry" Type="System.Web.UI.BoundPropertyEntry" />
+        <Parameter Name="parsedData" Type="System.Object" />
+        <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
+      </Parameters>
+      <Docs>
+        <param name="target">The control that the expression is bound to.</param>
+        <param name="entry">The property that the expression is bound to.</param>
+        <param name="parsedData">(This parameter is not used in this implementation.)</param>
+        <param name="context">Properties for the control or page.</param>
+        <summary>Retrieves the value that corresponds to a specified route key.</summary>
+        <returns>The value that corresponds to the URL parameter that is specified for the current page. The method returns <see langword="null" /> if <paramref name="target" /> is <see langword="null" /> or if it does not derive from <see cref="T:System.Web.UI.Control" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET calls this method when an expression of the form `<%$ RouteValue:urlparameter %>` is encountered in a no-compile page. This method overrides the <xref:System.Web.Compilation.ExpressionBuilder.EvaluateExpression%2A> method by calling the <xref:System.Web.Compilation.RouteValueExpressionBuilder.GetRouteValue%2A> method. It gets the <xref:System.Web.UI.Page> object from the `context` parameter, and it gets the expression, the control type, and the property name from the `entry` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCodeExpression">
+      <MemberSignature Language="C#" Value="public override System.CodeDom.CodeExpression GetCodeExpression (System.Web.UI.BoundPropertyEntry entry, object parsedData, System.Web.Compilation.ExpressionBuilderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.CodeExpression GetCodeExpression(class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteValueExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Web.UI.BoundPropertyEntry" />
+        <Parameter Name="parsedData" Type="System.Object" />
+        <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
+      </Parameters>
+      <Docs>
+        <param name="entry">The property that the expression is bound to.</param>
+        <param name="parsedData">The object that represents parsed data, as returned by <see cref="M:System.Web.Compilation.ExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />.</param>
+        <param name="context">Properties for the control or page.</param>
+        <summary>Returns a code expression that is used to perform the property assignment in the generated page class.</summary>
+        <returns>An expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when the CodeDOM is created for a page or control. The <xref:System.CodeDom.CodeExpression> object that is returned represents the code expression to add to the property assignment in the generated page class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRouteValue">
+      <MemberSignature Language="C#" Value="public static object GetRouteValue (System.Web.UI.Page page, string key, Type controlType, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetRouteValue(class System.Web.UI.Page page, string key, class System.Type controlType, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.RouteValueExpressionBuilder.GetRouteValue(System.Web.UI.Page,System.String,System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Web.UI.Page" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="controlType" Type="System.Type" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="page">The current page.</param>
+        <param name="key">The URL parameter.</param>
+        <param name="controlType">The type of the control that the expression is bound to.</param>
+        <param name="propertyName">The name of the property that is being set by the expression.</param>
+        <summary>Retrieves the value that corresponds to the specified URL parameter.</summary>
+        <returns>The value that corresponds to the specified URL parameter for the current page. If <paramref name="page" /> is <see langword="null" />, if the <see cref="P:System.Web.UI.Page.RouteData" /> property of <paramref name="page" /> is <see langword="null" />, or if <paramref name="key" /> is empty or <see langword="null" />, the method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method retrieves the appropriate value for the specified `key` value by using the <xref:System.Web.UI.Page.RouteData%2A> property of `page`. It then uses the `controlType` and `propertyName` values to find the appropriate type converter in order to convert the retrieved value into the correct type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsEvaluate">
+      <MemberSignature Language="C#" Value="public override bool SupportsEvaluate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsEvaluate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.RouteValueExpressionBuilder.SupportsEvaluate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether an expression can be evaluated in a page that is not compiled.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.RouteValueExpressionBuilder.SupportsEvaluate%2A> property indicates whether the <xref:System.Web.Compilation.RouteValueExpressionBuilder.EvaluateExpression%2A> method has been implemented in the class in order to return a value for the expression in a page that is not compiled. The <xref:System.Web.Compilation.RouteValueExpressionBuilder> class can evaluate an expression in a page that is not compiled. Therefore, it always returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,185 @@
+<Type Name="RibbonSplitButtonAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer">
+  <TypeSignature Language="C#" Value="public class RibbonSplitButtonAutomationPeer : System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer, System.Windows.Automation.Provider.IInvokeProvider, System.Windows.Automation.Provider.IToggleProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonSplitButtonAutomationPeer extends System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer implements class System.Windows.Automation.Provider.IInvokeProvider, class System.Windows.Automation.Provider.IToggleProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Peers.RibbonMenuButtonAutomationPeer</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IInvokeProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IToggleProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonSplitButtonAutomationPeer (System.Windows.Controls.Ribbon.RibbonSplitButton owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonSplitButton owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonSplitButton)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Windows.Controls.Ribbon.RibbonSplitButton" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The element associated with this automation peer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationControlTypeCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the control type for the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />. This method is called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
+        <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.SplitButton" /> enumeration value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPattern">
+      <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="patternInterface" Type="System.Windows.Automation.Peers.PatternInterface" />
+      </Parameters>
+      <Docs>
+        <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
+        <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />.</summary>
+        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If one of the following cases occurs, this method returns an object that supports the specified control pattern.  
+  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> that is associated with this <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> can be checked.  
+  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface> and the <xref:System.Windows.Controls.Ribbon.RibbonSplitButton> that is associated with this <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> cannot be checked.  
+  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+  
+-   `patternInterface` equals <xref:System.Windows.Automation.Peers.PatternInterface>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IInvokeProvider.Invoke">
+      <MemberSignature Language="C#" Value="void IInvokeProvider.Invoke ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IInvokeProvider.Invoke() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.System#Windows#Automation#Provider#IInvokeProvider#Invoke" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sends a request to activate the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IInvokeProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> is not enabled.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> can be checked. Use <see cref="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#Toggle" /> instead.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IToggleProvider.Toggle">
+      <MemberSignature Language="C#" Value="void IToggleProvider.Toggle ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IToggleProvider.Toggle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#Toggle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cycles through the checked states of the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Windows.Automation.ElementNotEnabledException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> is not enabled.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> cannot be checked.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Automation.Provider.IToggleProvider.ToggleState">
+      <MemberSignature Language="C#" Value="System.Windows.Automation.ToggleState System.Windows.Automation.Provider.IToggleProvider.ToggleState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ToggleState System.Windows.Automation.Provider.IToggleProvider.ToggleState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer.System#Windows#Automation#Provider#IToggleProvider#ToggleState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ToggleState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the checked state of the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />.</summary>
+        <value>The checked state of the <see cref="T:System.Windows.Controls.Ribbon.RibbonSplitButton" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Automation.Peers.RibbonSplitButtonAutomationPeer> instance is cast to an <xref:System.Windows.Automation.Provider.IToggleProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

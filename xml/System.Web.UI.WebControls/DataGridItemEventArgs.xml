@@ -1,0 +1,121 @@
+<Type Name="DataGridItemEventArgs" FullName="System.Web.UI.WebControls.DataGridItemEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridItemEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridItemEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridItemEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.DataGrid.ItemCreated" /> and <see cref="E:System.Web.UI.WebControls.DataGrid.ItemDataBound" /> events of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event is raised when an item in the <xref:System.Web.UI.WebControls.DataGrid> control is created.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.ItemDataBound> event is raised when an item in the <xref:System.Web.UI.WebControls.DataGrid> control is bound to a data source.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.DataGridItemEventArgs>, see the <xref:System.Web.UI.WebControls.DataGridItemEventArgs.%23ctor%2A> constructor.  
+  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCreated> event to display the order in which the items in the <xref:System.Web.UI.WebControls.DataGrid> control are created.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridItemEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItemEventArgs Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridItemEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItemEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridItemDataBound2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound2/CS/datagriditemdatabound2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridItemDataBound2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound2/VB/datagriditemdatabound2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridItemEventArgs (System.Web.UI.WebControls.DataGridItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataGridItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridItemEventArgs.#ctor(System.Web.UI.WebControls.DataGridItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.WebControls.DataGridItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">A <see cref="T:System.Web.UI.WebControls.DataGridItem" /> that represents an item in the <see cref="T:System.Web.UI.WebControls.DataGrid" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataGridItemEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> class.  
+  
+ When an instance of <xref:System.Web.UI.WebControls.DataGridItemEventArgs> is created by a call to this constructor, the following property is initialized to the specified value.  
+  
+|Item|Description|  
+|----------|-----------------|  
+|Item|The `item` parameter.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridItemEventArgs> class.  
+  
+ [!code-csharp[Classic DataGridItemEventArgs.DataGridItemEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItemEventArgs.DataGridItemEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridItemEventArgs.DataGridItemEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItemEventArgs.DataGridItemEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataGridItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataGridItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridItemEventArgs.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataGridItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the referenced item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control when the event is raised.</summary>
+        <value>The referenced item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control when the event is raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to programmatically access the item referenced in the <xref:System.Web.UI.WebControls.DataGrid> control when the event is raised.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataGridItemEventArgs.Item%2A> property to display the order in which the items in the <xref:System.Web.UI.WebControls.DataGrid> control are created.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGridItemEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGridItemEventArgs Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGridItemEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGridItemEventArgs Example/VB/sourcevb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridItemDataBound#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridItemDataBound/CS/datagriditemdataboundcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridItemDataBound#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridItemDataBound/VB/datagriditemdataboundvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

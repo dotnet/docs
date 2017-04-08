@@ -1,0 +1,84 @@
+<Type Name="RegexWorker" FullName="System.Web.Configuration.RegexWorker">
+  <TypeSignature Language="C#" Value="public class RegexWorker" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegexWorker extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RegexWorker" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used internally at run time by <see cref="T:System.Web.Configuration.BrowserCapabilitiesFactory" /> and <see cref="T:System.Web.Configuration.BrowserCapabilitiesCodeGenerator" /> to parse request data and identify the browser.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegexWorker (System.Web.HttpBrowserCapabilities browserCaps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RegexWorker.#ctor(System.Web.HttpBrowserCapabilities)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="browserCaps" Type="System.Web.HttpBrowserCapabilities" />
+      </Parameters>
+      <Docs>
+        <param name="browserCaps">The <see cref="T:System.Web.Configuration.HttpCapabilitiesBase" /> object to be configured.</param>
+        <summary>Creates a new instance of <see cref="T:System.Web.Configuration.RegexWorker" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public string this[string key] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RegexWorker.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The specified key.</param>
+        <summary>Accessor to this class.</summary>
+        <value>The internal value associated with the specified<paramref name="key" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRegex">
+      <MemberSignature Language="C#" Value="public bool ProcessRegex (string target, string regexExpression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ProcessRegex(string target, string regexExpression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RegexWorker.ProcessRegex(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.String" />
+        <Parameter Name="regexExpression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="target">The capabilities value from an internal collection of browsers.</param>
+        <param name="regexExpression">The specified request-header value.</param>
+        <summary>Used internally at run time to determine whether the specified request-header value matches any of the capabilities of an internal collection of browsers.</summary>
+        <returns>
+          <see langword="true" /> if the specified request-header value matches any of the capabilities of an internal collection of browsers; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

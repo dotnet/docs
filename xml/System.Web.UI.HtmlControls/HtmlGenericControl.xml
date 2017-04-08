@@ -1,0 +1,163 @@
+<Type Name="HtmlGenericControl" FullName="System.Web.UI.HtmlControls.HtmlGenericControl">
+  <TypeSignature Language="C#" Value="public class HtmlGenericControl : System.Web.UI.HtmlControls.HtmlContainerControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlGenericControl extends System.Web.UI.HtmlControls.HtmlContainerControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlGenericControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlContainerControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.ConstructorNeedsTag(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the methods, properties, and events for all HTML server control elements not represented by a specific .NET Framework class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to represent an HTML server control element not directly represented by a .NET Framework class, such as `<span>`, `<div>`, `<body>`, or `<font>`.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlGenericControl>, see the <xref:System.Web.UI.HtmlControls.HtmlGenericControl.%23ctor%2A> constructor.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133) and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlGenericControl> class to represent the `<body>` element.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlGenericControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlGenericControl Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlGenericControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlGenericControl Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlGenericControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlGenericControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlGenericControl" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlGenericControl> class using the default values. It is commonly used to dynamically create a server-side `<span>` element.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlGenericControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|`TagName`|The "span" literal string.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlGenericControl> class using the default constructor.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlGenericControlDefaultConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlGenericControlDefaultConstructor/CS/htmlgenericcontrolconstructorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlGenericControlDefaultConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlGenericControlDefaultConstructor/VB/htmlgenericcontrolconstructorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlGenericControl (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlGenericControl.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">The name of the element for which this instance of the class is created.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlGenericControl" /> class with the specified tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlGenericControl> class using the specified tag. This allows you to dynamically create any HTML server control element not directly represented by a .NET Framework class.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlGenericControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|`TagName`|The value of the `tag` parameter.|  
+  
+> [!NOTE]
+>  If the `tag` parameter is `null`, the <xref:System.Web.UI.HtmlControls.HtmlGenericControl.TagName%2A> property is set to <xref:System.String.Empty?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlGenericControl> class using the overloaded constructor.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlGenericControlOverloadConstructor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlGenericControlOverloadConstructor/CS/htmlgenericcontrolconstructoroverloadcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlGenericControlOverloadConstructor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlGenericControlOverloadConstructor/VB/htmlgenericcontrolconstructoroverloadvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagName">
+      <MemberSignature Language="C#" Value="public string TagName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TagName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlGenericControl.TagName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the HTML element represented by the <see cref="T:System.Web.UI.HtmlControls.HtmlGenericControl" /> control.</summary>
+        <value>The tag name of an element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to programmatically determine the element name of the HTML server control. For example, the <xref:System.Web.UI.HtmlControls.HtmlGenericControl.TagName%2A> property for a server-side `<span id="MySpan" runat= "server"/>` element contains the value "span".  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlGenericControl.TagName%2A> property to programmatically change a tag name from "Body" to "Font" and back.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlGenericControl.TagName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlGenericControl.TagName Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlGenericControl.TagName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlGenericControl.TagName Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

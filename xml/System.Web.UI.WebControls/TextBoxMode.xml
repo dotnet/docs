@@ -1,0 +1,289 @@
+<Type Name="TextBoxMode" FullName="System.Web.UI.WebControls.TextBoxMode">
+  <TypeSignature Language="C#" Value="public enum TextBoxMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextBoxMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TextBoxMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the behavior mode of the text box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TextBoxMode> enumeration represents the different display options for <xref:System.Web.UI.WebControls.TextBox> controls.  
+  
+ SingleLine mode displays the <xref:System.Web.UI.WebControls.TextBox> control as a single row. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox> control, the text will scroll horizontally.  
+  
+ MultiLine mode displays the height of the <xref:System.Web.UI.WebControls.TextBox> based on the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property, and allows data entry on multiple lines. The text will automatically wrap if the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property is set to `true`. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox>, the text will scroll accordingly and scroll bars will appear.  
+  
+ The behavior of Password mode is similar to SingleLine mode except that all characters entered in the <xref:System.Web.UI.WebControls.TextBox> control are masked and are not saved in view state.  
+  
+ The remaining options correspond to `type` attribute values for the `input` element in the HTML5 specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="Color" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Color = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Color" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents color entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="Date" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Date = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Date" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents date entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTime">
+      <MemberSignature Language="C#" Value="DateTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode DateTime = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.DateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents date-time entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeLocal">
+      <MemberSignature Language="C#" Value="DateTimeLocal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode DateTimeLocal = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.DateTimeLocal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents local date-time entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Email">
+      <MemberSignature Language="C#" Value="Email" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Email = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Email" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents email address entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Month">
+      <MemberSignature Language="C#" Value="Month" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Month = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Month" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents month entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiLine">
+      <MemberSignature Language="C#" Value="MultiLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode MultiLine = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.MultiLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents multiline entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Number">
+      <MemberSignature Language="C#" Value="Number" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Number = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Number" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents number entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="Password" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Password = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Password" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents password entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Phone">
+      <MemberSignature Language="C#" Value="Phone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Phone = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Phone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents phone number entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="Range" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Range = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Range" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents numeric range entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Search">
+      <MemberSignature Language="C#" Value="Search" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Search = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Search" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents search string entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleLine">
+      <MemberSignature Language="C#" Value="SingleLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode SingleLine = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.SingleLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents single-line entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="Time" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Time = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Time" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents time entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="Url" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Url = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Url" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents URL entry mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Week">
+      <MemberSignature Language="C#" Value="Week" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Week = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Week" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents week entry mode.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

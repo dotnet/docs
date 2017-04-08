@@ -1,0 +1,97 @@
+<Type Name="PngBitmapEncoder" FullName="System.Windows.Media.Imaging.PngBitmapEncoder">
+  <TypeSignature Language="C#" Value="public sealed class PngBitmapEncoder : System.Windows.Media.Imaging.BitmapEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PngBitmapEncoder extends System.Windows.Media.Imaging.BitmapEncoder" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.PngBitmapEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Imaging.BitmapEncoder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an encoder that is used to encode [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] format images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] format bitmaps support frame level metadata. They do not support preview, global thumbnails, frame level thumbnails, global metadata, or multiple frames.  
+  
+ Encoding does not work in partial trust. See [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md) for information on partial trust.  
+  
+<a name="xamlTextUsage_No"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PngBitmapEncoder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.PngBitmapEncoder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.PngBitmapEncoder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.PngBitmapEncoder> to encode a new bitmap image.  
+  
+ [!code-cpp[pngbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/PngBitmapDecoderEncoder/CPP/PngEncoderDecoder.cpp#3)]
+ [!code-csharp[pngbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PngBitmapDecoderEncoder/CSharp/PngEncoderDecoder.cs#3)]
+ [!code-vb[pngbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PngBitmapDecoderEncoder/VB/PngEncoderDecoder.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interlace">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.PngInterlaceOption Interlace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Imaging.PngInterlaceOption Interlace" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.PngBitmapEncoder.Interlace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.PngInterlaceOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] bitmap should interlace.</summary>
+        <value>One of the <see cref="P:System.Windows.Media.Imaging.PngBitmapEncoder.Interlace" /> values. The default is <see cref="F:System.Windows.Media.Imaging.PngInterlaceOption.Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Interlacing refers to the process of displaying a [!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] frame in two fields. One field contains the even lines of the frame, and the other field contains the odd lines of the frame. When the [!INCLUDE[TLA2#tla_png](~/includes/tla2sharptla-png-md.md)] is viewed, the lines in one field are displayed first, and then the lines in the second field are displayed.  
+  
+<a name="XAMLTextUsage_Interlace"></a>   
+## XAML Text Usage  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Media.Imaging.PngBitmapEncoder.Interlace%2A> property.  
+  
+ [!code-cpp[pngbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/PngBitmapDecoderEncoder/CPP/PngEncoderDecoder.cpp#3)]
+ [!code-csharp[pngbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PngBitmapDecoderEncoder/CSharp/PngEncoderDecoder.cs#3)]
+ [!code-vb[pngbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PngBitmapDecoderEncoder/VB/PngEncoderDecoder.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,81 @@
+<Type Name="TableLayoutPanelGrowStyle" FullName="System.Windows.Forms.TableLayoutPanelGrowStyle">
+  <TypeSignature Language="C#" Value="public enum TableLayoutPanelGrowStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableLayoutPanelGrowStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutPanelGrowStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a <see cref="T:System.Windows.Forms.TableLayoutPanel" /> will gain additional rows or columns after its existing cells are full.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If all the cells in the <xref:System.Windows.Forms.TableLayoutPanel> are filled and the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property is set to FixedSize, an attempt to add another control will throw an exception.  
+  
+   
+  
+## Examples  
+ The following example shows how to use <xref:System.Windows.Forms.TableLayoutPanelGrowStyle> to set the <xref:System.Windows.Forms.TableLayoutPanel.GrowStyle%2A> property on a <xref:System.Windows.Forms.TableLayoutPanel> control. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#7)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddColumns">
+      <MemberSignature Language="C#" Value="AddColumns" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelGrowStyle AddColumns = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TableLayoutPanelGrowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> gains additional columns after it is full.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRows">
+      <MemberSignature Language="C#" Value="AddRows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelGrowStyle AddRows = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelGrowStyle.AddRows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TableLayoutPanelGrowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> gains additional rows after it is full.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedSize">
+      <MemberSignature Language="C#" Value="FixedSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TableLayoutPanelGrowStyle FixedSize = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TableLayoutPanelGrowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> does not allow additional rows or columns after it is full.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

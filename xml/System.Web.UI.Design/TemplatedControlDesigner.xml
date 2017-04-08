@@ -1,0 +1,726 @@
+<Type Name="TemplatedControlDesigner" FullName="System.Web.UI.Design.TemplatedControlDesigner">
+  <TypeSignature Language="C#" Value="public abstract class TemplatedControlDesigner : System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TemplatedControlDesigner extends System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplatedControlDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extends design-time behavior for template-based server controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a control designer class that uses templates and derives from the <xref:System.Web.UI.Design.ControlDesigner> class.  
+  
+ To run the example, compile the code, and then in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], view the page in Design view. Select the control, click the action list to select a template to modify, and then use the drag-and-drop feature to move controls into the template.  
+  
+> [!NOTE]
+>  Your project must have a reference to the `System.Design` assembly.  
+  
+ [!code-csharp[DesignerTemplateGroupSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.cs#1)]
+ [!code-vb[DesignerTemplateGroupSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.vb#1)]  
+<!-- TODO: review snippet reference [!code-vb[DesignerTemplateGroupSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.aspx#2)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Although this class is not obsolete, it is unnecessary because template-editing features have been built into <see cref="T:System.Web.UI.Design.ControlDesigner" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplatedControlDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplatedControlDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveTemplateEditingFrame">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.ITemplateEditingFrame ActiveTemplateEditingFrame { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.ITemplateEditingFrame ActiveTemplateEditingFrame" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.ActiveTemplateEditingFrame" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this property is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ITemplateEditingFrame</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the active template editing frame.</summary>
+        <value>An <see cref="T:System.Web.UI.Design.ITemplateEditingFrame" /> that is the currently active template editing frame.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplatedControlDesigner.ActiveTemplateEditingFrame%2A> property is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to expose or enumerate templates within a designer for template-based controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanEnterTemplateMode">
+      <MemberSignature Language="C#" Value="public bool CanEnterTemplateMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanEnterTemplateMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.CanEnterTemplateMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether or not this designer will allow the viewing or editing of templates.</summary>
+        <value>
+          <see langword="true" /> if the designer will allow the viewing or editing of templates; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTemplateEditingFrame">
+      <MemberSignature Language="C#" Value="protected abstract System.Web.UI.Design.ITemplateEditingFrame CreateTemplateEditingFrame (System.Web.UI.Design.TemplateEditingVerb verb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Design.ITemplateEditingFrame CreateTemplateEditingFrame(class System.Web.UI.Design.TemplateEditingVerb verb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.CreateTemplateEditingFrame(System.Web.UI.Design.TemplateEditingVerb)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ITemplateEditingFrame</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="verb" Type="System.Web.UI.Design.TemplateEditingVerb" />
+      </Parameters>
+      <Docs>
+        <param name="verb">The template editing verb to create a template editing frame for.</param>
+        <summary>When overridden in a derived class, creates a template editing frame for the specified verb.</summary>
+        <returns>The new template editing frame.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBindingsEnabled">
+      <MemberSignature Language="C#" Value="protected override bool DataBindingsEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DataBindingsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.DataBindingsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the designer allows data binding.</summary>
+        <value>
+          <see langword="true" />, if the designer allows data binding; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnterTemplateMode">
+      <MemberSignature Language="C#" Value="public void EnterTemplateMode (System.Web.UI.Design.ITemplateEditingFrame newTemplateEditingFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterTemplateMode(class System.Web.UI.Design.ITemplateEditingFrame newTemplateEditingFrame) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.EnterTemplateMode(System.Web.UI.Design.ITemplateEditingFrame)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newTemplateEditingFrame" Type="System.Web.UI.Design.ITemplateEditingFrame" />
+      </Parameters>
+      <Docs>
+        <param name="newTemplateEditingFrame">The template editing frame object to open in the designer.</param>
+        <summary>Opens a particular template frame object for editing in the designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplatedControlDesigner.EnterTemplateMode%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
+  
+ If already in template mode and editing a different template frame, this method calls <xref:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode%2A> to save all its templates and close that frame.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExitTemplateMode">
+      <MemberSignature Language="C#" Value="public void ExitTemplateMode (bool fSwitchingTemplates, bool fNested, bool fSave);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitTemplateMode(bool fSwitchingTemplates, bool fNested, bool fSave) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode(System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fSwitchingTemplates" Type="System.Boolean" />
+        <Parameter Name="fNested" Type="System.Boolean" />
+        <Parameter Name="fSave" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="fSwitchingTemplates">
+          <see langword="true" /> when switching from one template editing frame to another; otherwise <see langword="false" />.</param>
+        <param name="fNested">
+          <see langword="true" /> if this designer is nested (one or more levels) within another control whose designer is also in template editing mode; otherwise <see langword="false" />.</param>
+        <param name="fSave">
+          <see langword="true" /> if templates should be saved on exit; otherwise, <see langword="false" />.</param>
+        <summary>Closes the currently active template editing frame after saving any relevant changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplatedControlDesigner.ExitTemplateMode%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCachedTemplateEditingVerbs">
+      <MemberSignature Language="C#" Value="protected abstract System.Web.UI.Design.TemplateEditingVerb[] GetCachedTemplateEditingVerbs ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.Design.TemplateEditingVerb[] GetCachedTemplateEditingVerbs() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetCachedTemplateEditingVerbs" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.TemplateEditingVerb[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the cached template editing verbs.</summary>
+        <returns>An array of <see cref="T:System.Web.UI.Design.TemplateEditingVerb" /> objects, if any.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplatedControlDesigner.GetCachedTemplateEditingVerbs%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> property to manipulate templates within a designer for template-based controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateContainerDataItemProperty">
+      <MemberSignature Language="C#" Value="public virtual string GetTemplateContainerDataItemProperty (string templateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTemplateContainerDataItemProperty(string templateName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataItemProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="templateName">The name of the template.</param>
+        <summary>Gets the data item property of the template's container.</summary>
+        <returns>A string representing the data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataItemProperty%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.Templates%2A> property of the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> collection elements to examine template metadata within a designer for template-based controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateContainerDataSource">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerable GetTemplateContainerDataSource (string templateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerable GetTemplateContainerDataSource(string templateName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataSource(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="templateName">The name of the template.</param>
+        <summary>Gets the data source of the template's container.</summary>
+        <returns>The data source of the container of the specified template.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateContent">
+      <MemberSignature Language="C#" Value="public abstract string GetTemplateContent (System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, out bool allowEditing);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, bool allowEditing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editingFrame" Type="System.Web.UI.Design.ITemplateEditingFrame" />
+        <Parameter Name="templateName" Type="System.String" />
+        <Parameter Name="allowEditing" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="editingFrame">The template editing frame to retrieve the content of.</param>
+        <param name="templateName">The name of the template.</param>
+        <param name="allowEditing">
+          <see langword="true" /> if the template's content can be edited; <see langword="false" /> if the content is read-only.</param>
+        <summary>When overridden in a derived class, gets the template's content.</summary>
+        <returns>The content of the template.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateEditingVerbs">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.TemplateEditingVerb[] GetTemplateEditingVerbs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Design.TemplateEditingVerb[] GetTemplateEditingVerbs() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateEditingVerbs" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.TemplateEditingVerb[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the template editing verbs available to the designer.</summary>
+        <returns>The template editing verbs available to the designer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplateFromText">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.ITemplate GetTemplateFromText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.UI.ITemplate GetTemplateFromText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplateFromText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to retrieve a template from.</param>
+        <summary>Creates a template from the specified text.</summary>
+        <returns>An <see cref="T:System.Web.UI.ITemplate" /> from the specified text.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTemplatePropertyParentType">
+      <MemberSignature Language="C#" Value="public virtual Type GetTemplatePropertyParentType (string templateName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetTemplatePropertyParentType(string templateName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTemplatePropertyParentType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="templateName">The name of the template to return the type of the parent for.</param>
+        <summary>Gets the type of the parent of the template property.</summary>
+        <returns>The type of the object that has the template property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplatedControlDesigner.GetTemplatePropertyParentType%2A> method is obsolete. Use the <xref:System.Web.UI.Design.TemplateGroup.Templates%2A> property of the <xref:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups%2A> collection elements to examine template metadata within a designer for template-based controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTextFromTemplate">
+      <MemberSignature Language="C#" Value="protected string GetTextFromTemplate (System.Web.UI.ITemplate template);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetTextFromTemplate(class System.Web.UI.ITemplate template) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.GetTextFromTemplate(System.Web.UI.ITemplate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="template" Type="System.Web.UI.ITemplate" />
+      </Parameters>
+      <Docs>
+        <param name="template">The <see cref="T:System.Web.UI.ITemplate" /> to convert to text.</param>
+        <summary>Gets a string of text that represents the specified template.</summary>
+        <returns>A string that represents the specified template.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="template" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The control element being designed.</param>
+        <summary>Initializes the designer and loads the specified component.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InTemplateMode">
+      <MemberSignature Language="C#" Value="public bool InTemplateMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InTemplateMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.InTemplateMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The recommended alternative is System.Web.UI.Design.ControlDesigner.InTemplateMode. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the designer document is in template mode.</summary>
+        <value>
+          <see langword="true" /> if the designer document is in template mode; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplatedControlDesigner.InTemplateMode%2A?displayProperty=fullName> property is obsolete. Use the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A?displayProperty=fullName> property for equivalent control designer functionality.  
+  
+ A document is in template mode when a template is currently being viewed or edited in the forms designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBehaviorAttached">
+      <MemberSignature Language="C#" Value="protected override void OnBehaviorAttached ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBehaviorAttached() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnBehaviorAttached" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("The recommended alternative is ControlDesigner.Tag. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an opportunity to perform additional processing when a behavior is attached to the designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.Design.TemplatedControlDesigner.OnBehaviorAttached%2A> method is obsolete. Use the <xref:System.Web.UI.Design.IControlDesignerTag.SetAttribute%2A> and <xref:System.Web.UI.Design.IControlDesignerTag.GetAttribute%2A> methods on the <xref:System.Web.UI.Design.ControlDesigner.Tag%2A> property to map properties to styles.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnComponentChanged">
+      <MemberSignature Language="C#" Value="public override void OnComponentChanged (object sender, System.ComponentModel.Design.ComponentChangedEventArgs ce);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnComponentChanged(object sender, class System.ComponentModel.Design.ComponentChangedEventArgs ce) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="ce" Type="System.ComponentModel.Design.ComponentChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object sending the event.</param>
+        <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> that provides data for the event.</param>
+        <summary>Delegate to handle the component changed event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called after a property has been changed. It allows the implementer to perform any post-processing that may be needed after a property change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSetParent">
+      <MemberSignature Language="C#" Value="public override void OnSetParent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnSetParent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnSetParent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an opportunity to perform additional processing when the parent of this designer is changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTemplateModeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTemplateModeChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTemplateModeChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an opportunity to perform additional processing when the template mode is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event is raised by the designer host for certain actions on a control in the design surface. For example, an event is raised when the user enters or exits template editing mode for a control.  
+  
+ The <xref:System.Web.UI.Design.TemplatedControlDesigner> class supplies a default delegate to handle the <xref:System.Web.UI.Design.IControlDesignerView.ViewEvent> event. Classes deriving from the <xref:System.Web.UI.Design.TemplatedControlDesigner> override the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method to process events that are raised when the template mode changes for the associated control.  
+  
+ The <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ The default delegate performs the updates that are required for a template mode change event in the base <xref:System.Web.UI.Design.TemplatedControlDesigner> class, and then calls the <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method. The base <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method in the <xref:System.Web.UI.Design.TemplatedControlDesigner> class returns without performing any additional processing for the event. If a class derives from the <xref:System.Web.UI.Design.TemplatedControlDesigner> and overrides the base <xref:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged%2A> method, the default delegate calls the override method in the derived class.  
+  
+ Use the <xref:System.Web.UI.Design.ControlDesigner.InTemplateMode%2A> property to determine whether the control designer is in template editing mode currently.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The default delegate that is supplied by the <see cref="T:System.Web.UI.Design.TemplatedControlDesigner" /> class performs all updates necessary for the base class before calling the <see cref="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" /> method. Override the <see cref="M:System.Web.UI.Design.TemplatedControlDesigner.OnTemplateModeChanged" /> method in classes deriving from the <see cref="T:System.Web.UI.Design.TemplatedControlDesigner" /> to perform additional processing for template mode change events on controls in the design surface.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveActiveTemplateEditingFrame">
+      <MemberSignature Language="C#" Value="protected void SaveActiveTemplateEditingFrame ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SaveActiveTemplateEditingFrame() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.SaveActiveTemplateEditingFrame" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the active template editing frame.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTemplateContent">
+      <MemberSignature Language="C#" Value="public abstract void SetTemplateContent (System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, string templateContent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTemplateContent(class System.Web.UI.Design.ITemplateEditingFrame editingFrame, string templateName, string templateContent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.SetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use of this method is not recommended because template editing is handled in ControlDesigner. To support template editing expose template data in the TemplateGroups property and call SetViewFlags(ViewFlags.TemplateEditing, true). http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editingFrame" Type="System.Web.UI.Design.ITemplateEditingFrame" />
+        <Parameter Name="templateName" Type="System.String" />
+        <Parameter Name="templateContent" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="editingFrame">The template editing frame to provide content for.</param>
+        <param name="templateName">The name of the template.</param>
+        <param name="templateContent">The content to set for the template.</param>
+        <summary>When overridden in a derived class, sets the specified template's content to the specified content.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateGroups">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.TemplateGroupCollection TemplateGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroupCollection TemplateGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedControlDesigner.TemplateGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.TemplateGroupCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of template groups, each containing a template definition.</summary>
+        <value>A collection of <see cref="T:System.Web.UI.Design.TemplateGroup" /> elements.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override void UpdateDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedControlDesigner.UpdateDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Updates the design-time HTML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should call this method to refresh the design-time display if the template frames have been changed without calling methods that update the design-time HTML automatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,57 @@
+<Type Name="CoerceValueCallback" FullName="System.Windows.CoerceValueCallback">
+  <TypeSignature Language="C#" Value="public delegate object CoerceValueCallback(DependencyObject d, object baseValue);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CoerceValueCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.CoerceValueCallback" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="d" Type="System.Windows.DependencyObject" />
+    <Parameter Name="baseValue" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Object</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="d">The object that the property exists on. When the callback is invoked, the property system will pass this value.</param>
+    <param name="baseValue">The new value of the property, prior to any coercion attempt.</param>
+    <summary>Provides a template for a method that is called whenever a dependency property value is being re-evaluated, or coercion is specifically requested.</summary>
+    <returns>The coerced value (with appropriate type).</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Callbacks based on <xref:System.Windows.CoerceValueCallback> can be assigned to a dependency property through several different techniques. Each of these techniques requires that you first create a new property metadata object (<xref:System.Windows.PropertyMetadata>, or a derived class such as <xref:System.Windows.FrameworkPropertyMetadata>). Create the metadata object using a constructor signature that takes the `coerceValueCallback` parameter, and assign that parameter to your callback handler. Or construct the metadata by any signature and set the <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> property prior to putting the metadata in use.  
+  
+ When you have this metadata, you can:  
+  
+-   Define a new dependency property on a new class, using either signature of  <xref:System.Windows.DependencyProperty.Register%2A>, giving the metadata as the `typeMetadata` value.  
+  
+-   Override the metadata (call <xref:System.Windows.DependencyProperty.OverrideMetadata%28System.Type%2CSystem.Windows.PropertyMetadata%29>) for an existing dependency property, when you derive from the class that owns the dependency property.  
+  
+-   Add an existing dependency property to a new <xref:System.Windows.DependencyObject> class, using new metadata, by calling <xref:System.Windows.DependencyProperty.AddOwner%28System.Type%2CSystem.Windows.PropertyMetadata%29>.  
+  
+ Implementations of this callback should check the value in `baseValue` and determine based on either the value or the type whether this is a value that needs to be further coerced.  
+  
+ The <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> for a dependency property is invoked any time that the property system or any other caller calls <xref:System.Windows.DependencyObject.CoerceValue%2A> on a <xref:System.Windows.DependencyObject> instance, specifying that property's identifier as the `dp`.  
+  
+ Changes to the property value may have come from any possible participant in the property system. This includes styles, generic invalidation, triggers, property value inheritance, and local value setting.  
+  
+ Generally you should avoid specifying more than one <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A> for any given dependency property (overriding or adding with new metadata for a dependency property that already had a <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A>). Only one of the callbacks will be able to act. The acting callback will be the one that was applied to the most derived class in the inheritance as compared to the <xref:System.Windows.DependencyObject> caller. Other callbacks as assigned to metadata for the dependency property as it existed higher in the owner hierarchy are replaced when the metadata is overridden.  
+  
+   
+  
+## Examples  
+ The following example includes an implementation of this callback to coerce the stored value of a dependency property based on other inputs, such as another property's value. In this case, the callback checks to see whether the `ShirtType` property corresponds to a type of shirt that has buttons; if so it establishes a starting default color for the `ButtonColor`, if the shirt type has no buttons, it coerces the `ButtonColor` value back to a starting value, which causes the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] (not shown) to remove that dropdown from the effective choices.  
+  
+ [!code-csharp[DPCustom#CoerceValueCallback](~/samples/snippets/csharp/VS_Snippets_Wpf/DPCustom/CSharp/default.xaml.cs#coercevaluecallback)]
+ [!code-vb[DPCustom#CoerceValueCallback](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPCustom/visualbasic/default.xaml.vb#coercevaluecallback)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,99 @@
+<Type Name="SessionMode" FullName="System.ServiceModel.SessionMode">
+  <TypeSignature Language="C#" Value="public enum SessionMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.SessionMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the values available to indicate the support for reliable sessions that a contract requires or supports.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.SessionMode> enumeration with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property to require, allow, or prohibit bindings to use sessions between endpoints that connect to or support the service contract. A session is a way of correlating a set of messages exchanged between two or more endpoints. For more information about sessions, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
+  
+ If your service supports sessions, you can then use the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property to specify the relationship between instances of your service contract implementation and the channel session.  
+  
+ For example, if the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to Allowed and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property is set to <xref:System.ServiceModel.InstanceContextMode?displayProperty=fullName>, a client can use a binding that supports reliable sessions to make repeated calls to the same service object.  
+  
+ Because a session is a channel-level concept that the application model uses, there is an interaction between the <xref:System.ServiceModel.SessionMode> enumeration in a contract and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property, which controls the association between channels and specific service objects.  
+  
+ The following table shows the result of an incoming channel either supporting reliable sessions or not supporting reliable sessions given a service's combination of the values of the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property.  
+  
+|InstanceContextMode Value|Required|Allowed|NotAllowed|  
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|  
+|PerCall|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each call.<br />-   Behavior with sessionless channel: An exception is thrown.|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each call.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each call.|-   Behavior with sessionful channel: An exception is thrown.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each call.|  
+|PerSession|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each channel.<br />-   Behavior with sessionless channel: An exception is thrown.|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each channel.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each call.|-   Behavior with sessionful channel: An exception is thrown.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each call.|  
+|Single|-   Behavior with sessionful channel: One session and one <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for all calls.<br />-   Behavior with sessionless channel: An exception is thrown.|-   Behavior with sessionful channel: A session and <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each created singleton or for the user-specified singleton.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each created singleton or for the user-specified singleton.|-   Behavior with sessionful channel: An exception is thrown.<br />-   Behavior with sessionless channel: An <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> for each created singleton or for the user-specified singleton.|  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A>property of the <xref:System.ServiceModel.ServiceContractAttribute> to specify that the `IMyService` service contract requires bindings that support session state.  
+  
+ [!code-csharp[SCA.Session#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.session/cs/services.cs#1)]
+ [!code-vb[SCA.Session#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.session/vb/services.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Allowed">
+      <MemberSignature Language="C#" Value="Allowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.SessionMode Allowed = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.SessionMode.Allowed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.SessionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the contract supports sessions if the incoming binding supports them.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAllowed">
+      <MemberSignature Language="C#" Value="NotAllowed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.SessionMode NotAllowed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.SessionMode.NotAllowed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.SessionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the contract never supports bindings that initiate sessions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Required">
+      <MemberSignature Language="C#" Value="Required" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.SessionMode Required = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.SessionMode.Required" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.SessionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the contract requires a sessionful binding. An exception is thrown if the binding is not configured to support session.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

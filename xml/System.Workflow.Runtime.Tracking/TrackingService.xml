@@ -1,0 +1,291 @@
+<Type Name="TrackingService" FullName="System.Workflow.Runtime.Tracking.TrackingService">
+  <TypeSignature Language="C#" Value="public abstract class TrackingService : System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TrackingService extends System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Runtime.Hosting.WorkflowRuntimeService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the basic interface between a tracking service and the run-time tracking infrastructure.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A tracking service is responsible for supplying tracking channels and tracking profiles to the workflow run-time engine. The workflow run-time engine requests one <xref:System.Workflow.Runtime.Tracking.TrackingChannel> from a tracking service for each workflow instance for which it has a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The workflow run-time engine uses this <xref:System.Workflow.Runtime.Tracking.TrackingChannel> to send tracking records associated with that workflow instance. A <xref:System.Workflow.Runtime.Tracking.TrackingProfile> contains track points that specify a set of tracking events for which the run-time tracking infrastructure should send tracking records. A <xref:System.Workflow.Runtime.Tracking.TrackingProfile> may also specify data to be extracted from the workflow instance when one of these tracking events occurs.  
+  
+ The run-time tracking infrastructure uses a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to filter tracking events emitted by a workflow instance. When a tracking event is emitted that matches a track point in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile>, the run-time tracking infrastructure extracts any data specified in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> from the workflow instance and encapsulates this data and information about the tracking event in a tracking record. This tracking record is then sent over the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> associated with the workflow instance. A tracking record may be one of the following kinds:  
+  
+ <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord>  
+  
+ <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord>  
+  
+ <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord>  
+  
+ The host application can use the tracking record in any way that it chooses. For example, the host application may store the tracking information in a database and use it to implement a sophisticated user interface, or it may use the information to inform an administrator of a condition that requires some action. You can register a tracking service with the workflow run-time engine by calling <xref:System.Workflow.Runtime.WorkflowRuntime.AddService%2A?displayProperty=fullName> or by including the appropriate entry in the application configuration file.  
+  
+ All tracking services must inherit from the <xref:System.Workflow.Runtime.Tracking.TrackingService> abstract class. This class defines the basic interface between a tracking service and the run-time tracking infrastructure. The workflow run-time engine requests a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for a specific workflow instance or workflow <xref:System.Type> by calling one of the overloaded <xref:System.Workflow.Runtime.Tracking.TrackingService.GetProfile%2A> methods or the <xref:System.Workflow.Runtime.Tracking.TrackingService.TryGetProfile%2A> method. The workflow run-time engine calls <xref:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel%2A> to request a <xref:System.Workflow.Runtime.Tracking.TrackingChannel>.  
+  
+ The workflow tracking runtime calls the <xref:System.Workflow.Runtime.Tracking.TrackingService.GetProfile%2A> and <xref:System.Workflow.Runtime.Tracking.TrackingService.TryGetProfile%2A> methods whenever a workflow instance is created or loaded from the persistence store. The overhead associated with these calls can be costly to the tracking service (many database calls, for example). You can implement the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface in your tracking service to circumvent this call-based mechanism and use events to notify the workflow runtime engine of changes to a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. For tracking services that implement the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface, the workflow run-time engine subscribes to the <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> and <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> events. Your tracking service can raise the appropriate event when a change to one of its tracking profiles occurs. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> class implements this interface.  
+  
+ The workflow run-time engine calls the <xref:System.Workflow.Runtime.Tracking.TrackingService.TryReloadProfile%2A> method to test whether a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> has been updated or removed as a result of an explicit call by a host or a service to <xref:System.Workflow.Runtime.WorkflowInstance.ReloadTrackingProfiles%2A> on a workflow instance. This process enables a host or service to dynamically change the tracking profile that is being used for a specific workflow instance.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>-   When you inherit from <see cref="T:System.Workflow.Runtime.Tracking.TrackingService" />, you must override the following members: <see cref="M:System.Workflow.Runtime.Tracking.TrackingService.GetProfile(System.Guid)" />  
+  
+-   <see cref="M:System.Workflow.Runtime.Tracking.TrackingService.GetProfile(System.Type,System.Version)" />  
+  
+-   <see cref="M:System.Workflow.Runtime.Tracking.TrackingService.TryGetProfile(System.Type,System.Workflow.Runtime.Tracking.TrackingProfile@)" />  
+  
+-   <see cref="M:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel(System.Workflow.Runtime.Tracking.TrackingParameters)" />  
+  
+-   <see cref="M:System.Workflow.Runtime.Tracking.TrackingService.TryReloadProfile(System.Type,System.Guid,System.Workflow.Runtime.Tracking.TrackingProfile@)" /></para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TrackingService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a new instance of a `TerminationTrackingService` object, of a type that derives from `TrackingService`. This sample is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+  
+ [!code-csharp[WF_Samples#111](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#111)]
+ [!code-vb[WF_Samples#111](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#111)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfile">
+      <MemberSignature Language="C#" Value="protected abstract System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Guid workflowInstanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.Runtime.Tracking.TrackingProfile GetProfile(valuetype System.Guid workflowInstanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetProfile(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingProfile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowInstanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="workflowInstanceId">The <see cref="T:System.Guid" /> of the workflow instance.</param>
+        <summary>Must be overridden in the derived class, and when implemented, returns the tracking profile for the specified workflow instance.</summary>
+        <returns>The tracking profile for the specified workflow instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tracking service is responsible for managing the tracking profiles available for specific workflow types and specific workflow instances. You can implement this management in whatever manner you choose. For example, you can return the same <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for every workflow <xref:System.Type> and workflow instance; or you can manage a sophisticated store of tracking profiles referenced by workflow instance, workflow <xref:System.Type>, and <xref:System.Version>.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of the `GetProfile` method. In this example, several overloads of the `GetProfile` method call a single private `GetProfile` method, which returns a hard-coded, default tracking profile. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+  
+ [!code-csharp[WF_Samples#115](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#115)]
+ [!code-vb[WF_Samples#115](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#115)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfile">
+      <MemberSignature Language="C#" Value="protected abstract System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Type workflowType, Version profileVersionId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.Runtime.Tracking.TrackingProfile GetProfile(class System.Type workflowType, class System.Version profileVersionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetProfile(System.Type,System.Version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingProfile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="profileVersionId" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">The <see cref="T:System.Type" /> of the workflow.</param>
+        <param name="profileVersionId">The <see cref="T:System.Version" /> of the tracking profile.</param>
+        <summary>Must be overridden in the derived class, and when implemented, returns the tracking profile, qualified by version, for the specified workflow <see cref="T:System.Type" />.</summary>
+        <returns>The tracking profile for the specified workflow type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tracking service is responsible for managing the tracking profiles available for specific workflow types and specific workflow instances. You can implement this management in whatever manner you choose. For example, you can return the same <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for every workflow <xref:System.Type> and workflow instance; or you can manage a sophisticated store of tracking profiles referenced by workflow instance, workflow <xref:System.Type>, and <xref:System.Version>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTrackingChannel">
+      <MemberSignature Language="C#" Value="protected abstract System.Workflow.Runtime.Tracking.TrackingChannel GetTrackingChannel (System.Workflow.Runtime.Tracking.TrackingParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.Runtime.Tracking.TrackingChannel GetTrackingChannel(class System.Workflow.Runtime.Tracking.TrackingParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel(System.Workflow.Runtime.Tracking.TrackingParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Workflow.Runtime.Tracking.TrackingParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">The <see cref="T:System.Workflow.Runtime.Tracking.TrackingParameters" /> associated with the workflow instance.</param>
+        <summary>Must be overridden in the derived class, and when implemented, returns the channel that the run-time tracking infrastructure uses to send tracking records to the tracking service.</summary>
+        <returns>The <see cref="T:System.Workflow.Runtime.Tracking.TrackingChannel" /> that is used to send tracking records to the tracking service.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The run-time tracking infrastructure uses one <xref:System.Workflow.Runtime.Tracking.TrackingChannel> for each tracking service for each workflow instance. The workflow run-time engine calls <xref:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel%2A> on each tracking service to get the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> for that service. You can use the information passed in <xref:System.Workflow.Runtime.Tracking.TrackingParameters> to associate tracking data sent on the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> for your tracking service with a particular root workflow instance.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of the `GetTrackingChannel` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+  
+ [!code-csharp[WF_Samples#113](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#113)]
+ [!code-vb[WF_Samples#113](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#113)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProfile">
+      <MemberSignature Language="C#" Value="protected abstract bool TryGetProfile (Type workflowType, out System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryGetProfile(class System.Type workflowType, class System.Workflow.Runtime.Tracking.TrackingProfile profile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.TryGetProfile(System.Type,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">The <see cref="T:System.Type" /> of the workflow for which to get the tracking profile.</param>
+        <param name="profile">When this method returns, contains the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> to load. This parameter is passed uninitialized.</param>
+        <summary>Must be overridden in the derived class, and when implemented, retrieves the tracking profile for the specified workflow type if one is available.</summary>
+        <returns>
+          <see langword="true" /> if a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> for the specified workflow <see cref="T:System.Type" /> is available; otherwise, <see langword="false" />. If <see langword="true" />, the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> is returned in <paramref name="profile" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tracking service is responsible for managing the tracking profiles available for specific workflow types and specific workflow instances. You can implement this management in whatever manner you choose. For example, you can return the same <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for every workflow <xref:System.Type> and workflow instance; or you can manage a sophisticated store of tracking profiles referenced by workflow instance, workflow <xref:System.Type>, and <xref:System.Version>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an implementation of the `TryGetProfile` method, which calls a private `GetProfile` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+  
+ [!code-csharp[Wf_samples#209](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#209)]
+ [!code-vb[Wf_samples#209](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#209)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReloadProfile">
+      <MemberSignature Language="C#" Value="protected abstract bool TryReloadProfile (Type workflowType, Guid workflowInstanceId, out System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool TryReloadProfile(class System.Type workflowType, valuetype System.Guid workflowInstanceId, class System.Workflow.Runtime.Tracking.TrackingProfile profile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingService.TryReloadProfile(System.Type,System.Guid,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="workflowInstanceId" Type="System.Guid" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">The <see cref="T:System.Type" /> of the workflow instance.</param>
+        <param name="workflowInstanceId">The <see cref="T:System.Guid" /> of the workflow instance.</param>
+        <param name="profile">When this method returns, contains the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> to load. This parameter is passed uninitialized.</param>
+        <summary>Must be overridden in the derived class, and when implemented, retrieves a new tracking profile for the specified workflow instance if the tracking profile has changed since it was last loaded.</summary>
+        <returns>
+          <see langword="true" /> if a new <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> should be loaded; otherwise, <see langword="false" />. If <see langword="true" />, the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> is returned in <paramref name="profile" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.TrackingService.TryReloadProfile%2A> is called by the run-time tracking infrastructure to determine whether a new <xref:System.Workflow.Runtime.Tracking.TrackingProfile> should be loaded for the specified workflow instance. If a new <xref:System.Workflow.Runtime.Tracking.TrackingProfile> is required, it is returned in `profile`. If you want the run-time tracking infrastructure to stop tracking a workflow instance, your tracking service should return `true` and set `profile` equal to a null reference (`Nothing` in Visual Basic). Your tracking service can use `workflowType` or `workflowInstanceId` in whatever manner you choose to determine whether a tracking profile should be reloaded. For example, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> only uses `workflowInstanceId` to decide whether the tracking profile should be reloaded. <xref:System.Workflow.Runtime.Tracking.TrackingService.TryReloadProfile%2A> is called by the run-time tracking infrastructure according to its own tracking semantics, or in response to the host or a service calling <xref:System.Workflow.Runtime.WorkflowInstance.ReloadTrackingProfiles%2A?displayProperty=fullName> on a workflow instance.  
+  
+   
+  
+## Examples  
+ The following example shows a basic implementation of the `TryReloadProfile` method. This example is from the Termination Tracking Service SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+  
+ [!code-csharp[WF_Samples#116](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#116)]
+ [!code-vb[WF_Samples#116](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#116)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="GetProfile">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Must be overridden in the derived class, and when implemented, gets the tracking profile for a specified workflow instance or workflow type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tracking service is responsible for managing the tracking profiles available for specific workflow types and specific workflow instances. You can implement this management in whatever manner you choose. For example, you can return the same <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for every workflow <xref:System.Type> and workflow instance; or you can manage a sophisticated store of tracking profiles referenced by workflow instance, workflow <xref:System.Type>, and <xref:System.Version>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

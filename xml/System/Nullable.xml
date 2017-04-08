@@ -1,0 +1,280 @@
+<Type Name="Nullable" FullName="System.Nullable">
+  <TypeSignature Language="C#" Value="public static class Nullable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Nullable extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Nullable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supports a value type that can be assigned <see langword="null" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A type is said to be nullable if it can be assigned a value or can be assigned `null`, which means the type has no value whatsoever. By default, all reference types, such as <xref:System.String>, are nullable, but all value types, such as <xref:System.Int32>, are not.  
+  
+ In C# and Visual Basic, you mark a value type as nullable by using the `?` notation after the value type. For example, `int?` in C# or `Integer?` in Visual Basic declares an integer value type that can be assigned `null`.  
+  
+ The <xref:System.Nullable> class provides complementary support for the <xref:System.Nullable%601> structure. The <xref:System.Nullable> class supports obtaining the underlying type of a nullable type, and comparison and equality operations on pairs of nullable types whose underlying value type does not support generic comparison and equality operations.  
+  
+## Boxing and Unboxing  
+ When a nullable type is boxed, the common language runtime automatically boxes the underlying value of the <xref:System.Nullable%601> object, not the <xref:System.Nullable%601> object itself. That is, if the <xref:System.Nullable%601.HasValue%2A> property is `true`, the contents of the <xref:System.Nullable%601.Value%2A> property is boxed. If the `HasValue` property is `false`, `null` is boxed. When the underlying value of a nullable type is unboxed, the common language runtime creates a new <xref:System.Nullable%601> structure initialized to the underlying value.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compare&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Compare&lt;T&gt; (Nullable&lt;T&gt; n1, Nullable&lt;T&gt; n2) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Compare&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; n1, valuetype System.Nullable`1&lt;!!T&gt; n2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Nullable.Compare``1(System.Nullable{``0},System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="n1" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="n2" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The underlying value type of the <c>n1</c> and <c>n2</c> parameters.</typeparam>
+        <param name="n1">A <see cref="T:System.Nullable`1" /> object.</param>
+        <param name="n2">A <see cref="T:System.Nullable`1" /> object.</param>
+        <summary>Compares the relative values of two <see cref="T:System.Nullable`1" /> objects.</summary>
+        <returns>An integer that indicates the relative values of the <paramref name="n1" /> and <paramref name="n2" /> parameters.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> The <see cref="P:System.Nullable`1.HasValue" /> property for <paramref name="n1" /> is <see langword="false" />, and the <see cref="P:System.Nullable`1.HasValue" /> property for <paramref name="n2" /> is <see langword="true" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.Nullable`1.HasValue" /> properties for <paramref name="n1" /> and <paramref name="n2" /> are <see langword="true" />, and the value of the <see cref="P:System.Nullable`1.Value" /> property for <paramref name="n1" /> is less than the value of the <see cref="P:System.Nullable`1.Value" /> property for <paramref name="n2" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> The <see cref="P:System.Nullable`1.HasValue" /> properties for <paramref name="n1" /> and <paramref name="n2" /> are <see langword="false" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.Nullable`1.HasValue" /> properties for <paramref name="n1" /> and <paramref name="n2" /> are <see langword="true" />, and the value of the <see cref="P:System.Nullable`1.Value" /> property for <paramref name="n1" /> is equal to the value of the <see cref="P:System.Nullable`1.Value" /> property for <paramref name="n2" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> The <see cref="P:System.Nullable`1.HasValue" /> property for <paramref name="n1" /> is <see langword="true" />, and the <see cref="P:System.Nullable`1.HasValue" /> property for <paramref name="n2" /> is <see langword="false" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.Nullable`1.HasValue" /> properties for <paramref name="n1" /> and <paramref name="n2" /> are <see langword="true" />, and the value of the <see cref="P:System.Nullable`1.Value" /> property for <paramref name="n1" /> is greater than the value of the <see cref="P:System.Nullable`1.Value" /> property for <paramref name="n2" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Equals&lt;T&gt; (Nullable&lt;T&gt; n1, Nullable&lt;T&gt; n2) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; n1, valuetype System.Nullable`1&lt;!!T&gt; n2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Nullable.Equals``1(System.Nullable{``0},System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="n1" Type="System.Nullable&lt;T&gt;" />
+        <Parameter Name="n2" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The underlying value type of the <c>n1</c> and <c>n2</c> parameters.</typeparam>
+        <param name="n1">A <see cref="T:System.Nullable`1" /> object.</param>
+        <param name="n2">A <see cref="T:System.Nullable`1" /> object.</param>
+        <summary>Indicates whether two specified <see cref="T:System.Nullable`1" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="n1" /> parameter is equal to the <paramref name="n2" /> parameter; otherwise, <see langword="false" />.  
+  
+ The return value depends on the <see cref="P:System.Nullable`1.HasValue" /> and <see cref="P:System.Nullable`1.Value" /> properties of the two parameters that are compared.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> <see langword="true" />  
+  
+ </term>  
+<description> The <see cref="P:System.Nullable`1.HasValue" /> properties for <paramref name="n1" /> and <paramref name="n2" /> are <see langword="false" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.Nullable`1.HasValue" /> properties for <paramref name="n1" /> and <paramref name="n2" /> are <see langword="true" />, and the <see cref="P:System.Nullable`1.Value" /> properties of the parameters are equal.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <see langword="false" />  
+  
+ </term>  
+<description> The <see cref="P:System.Nullable`1.HasValue" /> property is <see langword="true" /> for one parameter and <see langword="false" /> for the other parameter.  
+  
+ -or-  
+  
+ The <see cref="P:System.Nullable`1.HasValue" /> properties for <paramref name="n1" /> and <paramref name="n2" /> are <see langword="true" />, and the <see cref="P:System.Nullable`1.Value" /> properties of the parameters are unequal.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnderlyingType">
+      <MemberSignature Language="C#" Value="public static Type GetUnderlyingType (Type nullableType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetUnderlyingType(class System.Type nullableType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Nullable.GetUnderlyingType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nullableType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="nullableType">A <see cref="T:System.Type" /> object that describes a closed generic nullable type.</param>
+        <summary>Returns the underlying type argument of the specified nullable type.</summary>
+        <returns>The type argument of the <paramref name="nullableType" /> parameter, if the <paramref name="nullableType" /> parameter is a closed generic nullable type; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A generic type definition is a type declaration, such as <xref:System.Nullable%601>, that contains a type parameter list, and the type parameter list declares one or more type parameters. A closed generic type is a type declaration where a particular type is specified for a type parameter.  
+  
+ For example, if the `nullableType` parameter is the type of `Nullable<Int32>` in C# (`Nullable(Of Int32)` in Visual Basic), the return value is the type of <xref:System.Int32> (that is, the type argument of the closed generic type).  
+  
+   
+  
+## Examples  
+ The following code example defines a method whose return value is of type <xref:System.Nullable%601> of <xref:System.Int32>. The code example uses the <xref:System.Nullable.GetUnderlyingType%2A> method to display the type argument of the return value.  
+  
+ [!code-csharp[system.nullable_GetUnderlyingType#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.nullable_GetUnderlyingType/cs/gut.cs#1)]
+ [!code-vb[system.nullable_GetUnderlyingType#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.nullable_GetUnderlyingType/vb/gut.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="nullableType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

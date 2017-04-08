@@ -1,0 +1,141 @@
+<Type Name="InertiaTranslationBehavior" FullName="System.Windows.Input.InertiaTranslationBehavior">
+  <TypeSignature Language="C#" Value="public class InertiaTranslationBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InertiaTranslationBehavior extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InertiaTranslationBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Controls deceleration on a translation manipulation during inertia.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.InertiaTranslationBehavior> class specifies how a translation manipulation behaves when it is inertia.  Use the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.TranslationBehavior%2A> property in the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event to do the following:  
+  
+-   Specify the initial velocity of the inertia when it begins by setting the <xref:System.Windows.Input.InertiaTranslationBehavior.InitialVelocity%2A> property.  
+  
+-   Specify the desired position of the manipulation when inertia ends by setting the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement%2A> property.  
+  
+-   Specify the desired deceleration of the inertia by setting the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration%2A> property.  
+  
+ Set either the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement%2A> or the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ [!code-csharp[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationinertiastarting)]
+ [!code-vb[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationinertiastarting)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InertiaTranslationBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InertiaTranslationBehavior.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InertiaTranslationBehavior" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredDeceleration">
+      <MemberSignature Language="C#" Value="public double DesiredDeceleration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredDeceleration" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the rate the linear movement slows in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] per squared millisecond.</summary>
+        <value>The rate the linear movement slows in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] per squared millisecond.  The default is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration%2A> property to specify the desired deceleration of the inertia. Set either the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement%2A> or the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is set to infinity.  
+  
+ -or-  
+  
+ The property is set to <see cref="F:System.Double.NaN" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredDisplacement">
+      <MemberSignature Language="C#" Value="public double DesiredDisplacement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredDisplacement" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the linear movement of the manipulation at the end of inertia.</summary>
+        <value>The linear movement of the manipulation at the end of inertia. The default is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement%2A> property to specify the desired position of the manipulation when inertia ends. Set either the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDisplacement%2A> or the <xref:System.Windows.Input.InertiaTranslationBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is set to infinity.  
+  
+ -or-  
+  
+ The property is set to <see cref="F:System.Double.NaN" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialVelocity">
+      <MemberSignature Language="C#" Value="public System.Windows.Vector InitialVelocity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector InitialVelocity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaTranslationBehavior.InitialVelocity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the initial rate of linear movement at the start of the inertia phase.</summary>
+        <value>The initial rate of linear movement at the start of the inertia phase.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

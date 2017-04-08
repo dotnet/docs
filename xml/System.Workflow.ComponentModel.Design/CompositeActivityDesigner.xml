@@ -1,0 +1,1338 @@
+<Type Name="CompositeActivityDesigner" FullName="System.Workflow.ComponentModel.Design.CompositeActivityDesigner">
+  <TypeSignature Language="C#" Value="public abstract class CompositeActivityDesigner : System.Workflow.ComponentModel.Design.ActivityDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CompositeActivityDesigner extends System.Workflow.ComponentModel.Design.ActivityDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.Design.ActivityDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Design.CompositeActivityDesignerLayoutSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Design.ActivityDesignerTheme(typeof(System.Workflow.ComponentModel.Design.CompositeDesignerTheme))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a designer that enables you to visually design composite activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Use the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> to visually design composite activities, to customize the layout, and to manage the drawing of the <xref:System.Workflow.ComponentModel.CompositeActivity>.  
+  
+ The <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> also enables you to manage events for the contained activity designers. It also enables you to customize and manage the position, size, and layout of contained activity designers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CompositeActivityDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes an instance of the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessibilityObject">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject AccessibilityObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject AccessibilityObject" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.AccessibilityObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Forms.AccessibleObject" /> that accessibility applications use to adjust the application look and feel for people with disabilities.</summary>
+        <value>The <see cref="T:System.Windows.Forms.AccessibleObject" /> associated with the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no <xref:System.Windows.Forms.AccessibleObject> is currently assigned to the control, a new instance of one is created.  
+  
+> [!NOTE]
+>  To get or set the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.AccessibilityObject%2A> property, you must add a reference to the Accessibility assembly installed with the .NET Framework.  
+  
+ For more information about accessible objects, see the Active Accessibility section of the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExpandCollapse">
+      <MemberSignature Language="C#" Value="public virtual bool CanExpandCollapse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanExpandCollapse" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanExpandCollapse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> can be collapsed.</summary>
+        <value>
+          <see langword="true" /> if the specified composite activity designer can be collapsed; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some composite designers will have multiple designers within. These designers can implement expanding or collapsing to save room on the screen.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanInsertActivities">
+      <MemberSignature Language="C#" Value="public virtual bool CanInsertActivities (System.Workflow.ComponentModel.Design.HitTestInfo insertLocation, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; activitiesToInsert);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanInsertActivities(class System.Workflow.ComponentModel.Design.HitTestInfo insertLocation, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; activitiesToInsert) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="insertLocation" Type="System.Workflow.ComponentModel.Design.HitTestInfo" />
+        <Parameter Name="activitiesToInsert" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="insertLocation">The location to insert the activities.</param>
+        <param name="activitiesToInsert">A read-only array of <see cref="T:System.Workflow.ComponentModel.Activity" /> to insert.</param>
+        <summary>Returns a value that indicates whether activities can be inserted into the composite activity associated with the designer.</summary>
+        <returns>
+          <see langword="true" /> if activities can be inserted into the composite activity associated with the designer; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> to determine if a list of activities can be inserted into a composite activity.  
+  
+   
+  
+## Examples  
+ The following example shows how to lock a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> by not allowing the insertion of child activities.  
+  
+ [!code-csharp[WF_Samples#25](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#25)]
+ [!code-vb[WF_Samples#25](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanMoveActivities">
+      <MemberSignature Language="C#" Value="public virtual bool CanMoveActivities (System.Workflow.ComponentModel.Design.HitTestInfo moveLocation, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; activitiesToMove);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanMoveActivities(class System.Workflow.ComponentModel.Design.HitTestInfo moveLocation, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; activitiesToMove) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanMoveActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="moveLocation" Type="System.Workflow.ComponentModel.Design.HitTestInfo" />
+        <Parameter Name="activitiesToMove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="moveLocation">The location from which to move the activities.</param>
+        <param name="activitiesToMove">The read-only array of activities to move.</param>
+        <summary>Returns a value that indicates whether activities contained within the composite activity can be moved out of the composite activity associated with the designer.</summary>
+        <returns>
+          <see langword="true" /> if the activities can be moved from the composite activity; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanMoveActivities%2A> to determine if a list of activities can be moved from within a composite activity.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanMoveActivities%2A> method to allow the moving of child activities within the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
+  
+ [!code-csharp[WF_Samples#26](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#26)]
+ [!code-vb[WF_Samples#26](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRemoveActivities">
+      <MemberSignature Language="C#" Value="public virtual bool CanRemoveActivities (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; activitiesToRemove);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanRemoveActivities(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; activitiesToRemove) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanRemoveActivities(System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activitiesToRemove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="activitiesToRemove">A read-only array of activities to remove from the composite activity associated with the designer.</param>
+        <summary>Returns a value that indicates if activities can be removed from the composite activity associated with the designer.</summary>
+        <returns>
+          <see langword="true" /> if the activities can be removed from the composite activity; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanRemoveActivities%2A> to determine if a list of contained activities can be removed from the composite activity.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanRemoveActivities%2A> method to allow the moving of child activities within the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
+  
+ [!code-csharp[WF_Samples#27](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#27)]
+ [!code-vb[WF_Samples#27](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#27)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainedDesigners">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.ActivityDesigner&gt; ContainedDesigners { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Design.ActivityDesigner&gt; ContainedDesigners" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.ActivityDesigner&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the array of <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> contained within the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
+        <value>The read-only collection of <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ContainedDesigners%2A> accessor to retrieve a read-only collection of the designers contained within the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeserializeActivitiesFromDataObject">
+      <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.Activity[] DeserializeActivitiesFromDataObject (IServiceProvider serviceProvider, System.Windows.Forms.IDataObject dataObj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.Activity[] DeserializeActivitiesFromDataObject(class System.IServiceProvider serviceProvider, class System.Windows.Forms.IDataObject dataObj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.DeserializeActivitiesFromDataObject(System.IServiceProvider,System.Windows.Forms.IDataObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="dataObj" Type="System.Windows.Forms.IDataObject" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">Component serialization service.</param>
+        <param name="dataObj">Object that contains activities to deserialize.</param>
+        <summary>Deserializes items from an <see cref="T:System.Windows.Forms.IDataObject" /> received during a drag-and-drop operation or from the clipboard.</summary>
+        <returns>An array of activities deserialized from an <see cref="T:System.Windows.Forms.IDataObject" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureVisibleContainedDesigner">
+      <MemberSignature Language="C#" Value="public virtual void EnsureVisibleContainedDesigner (System.Workflow.ComponentModel.Design.ActivityDesigner containedDesigner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureVisibleContainedDesigner(class System.Workflow.ComponentModel.Design.ActivityDesigner containedDesigner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.EnsureVisibleContainedDesigner(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+      </Parameters>
+      <Docs>
+        <param name="containedDesigner">The contained designer to make visible.</param>
+        <summary>Verifies that the contained designer is visible.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.EnsureVisibleContainedDesigner%2A> to make sure the contained designer is visible. In a custom designer you can use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.EnsureVisibleContainedDesigner%2A> to make visible a designer located within a collapsed composite designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandButtonRectangle">
+      <MemberSignature Language="C#" Value="protected virtual System.Drawing.Rectangle ExpandButtonRectangle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ExpandButtonRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ExpandButtonRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Rectangle" /> that contains the expand or collapse button.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that encloses the expand or collapse button.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ExpandButtonRectangle%2A> to return a <xref:System.Drawing.Rectangle> that describes the area of the screen that encloses the expand button on a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>. This is useful for detecting mouse events to react to your requests to expand or collapse a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expanded">
+      <MemberSignature Language="C#" Value="public virtual bool Expanded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Expanded" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Expanded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> is expanded.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> is expanded; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In combination with <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnMouseDown%2A> and <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ExpandButtonRectangle%2A>, use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Expanded%2A> to determine the proper action when a user clicks the expand or collapse button on the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can set the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Expanded%2A> property based on a `Boolean` value passed as an argument to a method.  
+  
+ This code example is part of the Workflow Monitor SDK sample from the ViewHost.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#135](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#135)]
+ [!code-vb[WF_Samples#135](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#135)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstSelectableObject">
+      <MemberSignature Language="C#" Value="public virtual object FirstSelectableObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object FirstSelectableObject" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.FirstSelectableObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first selectable object in the navigation order of the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
+        <value>The first selectable object contained within the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.FirstSelectableObject%2A> to return the first selectable object contained within the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIntersectingDesigners">
+      <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.Design.ActivityDesigner[] GetIntersectingDesigners (System.Workflow.ComponentModel.Design.ActivityDesigner topLevelDesigner, System.Drawing.Rectangle rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.Design.ActivityDesigner[] GetIntersectingDesigners(class System.Workflow.ComponentModel.Design.ActivityDesigner topLevelDesigner, valuetype System.Drawing.Rectangle rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.GetIntersectingDesigners(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesigner[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="topLevelDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="topLevelDesigner">The top-level designer to analyze.</param>
+        <param name="rectangle">Area within the top-level designer to analyze.</param>
+        <summary>Retrieves designers belonging to the specified root activity that intersect a specified area.</summary>
+        <returns>An array of <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" /> objects that intersect a portion of the Rectangle specified.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNextSelectableObject">
+      <MemberSignature Language="C#" Value="public virtual object GetNextSelectableObject (object current, System.Workflow.ComponentModel.Design.DesignerNavigationDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetNextSelectableObject(object current, valuetype System.Workflow.ComponentModel.Design.DesignerNavigationDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.GetNextSelectableObject(System.Object,System.Workflow.ComponentModel.Design.DesignerNavigationDirection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="System.Object" />
+        <Parameter Name="direction" Type="System.Workflow.ComponentModel.Design.DesignerNavigationDirection" />
+      </Parameters>
+      <Docs>
+        <param name="current">The current object in the navigation order.</param>
+        <param name="direction">The direction to navigate. 0 = next; 1 = previous; 2 = left; 3 = right.</param>
+        <summary>Gets the object which is next in the order of navigation.</summary>
+        <returns>The object that is next in the order of navigation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.GetNextSelectableObject%2A> causes the selection to move from the current selection to the next selectable object in the direction specified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Glyphs">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection Glyphs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection Glyphs" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Glyphs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of glyphs with which to adorn the composite activity designer.</summary>
+        <value>An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection" /> that contains the glyphs to display on the designer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public override System.Workflow.ComponentModel.Design.HitTestInfo HitTest (System.Drawing.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Design.HitTestInfo HitTest(valuetype System.Drawing.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.HitTest(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.HitTestInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">A <see cref="T:System.Drawing.Point" /> that represents a single x and y coordinate.</param>
+        <summary>Gets information about the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> at a specified point on the screen.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> that contains information about the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> at a specified point.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.HitTestInfo>, together with the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.HitTest%2A> method of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> control is used to determine which part of a <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> controls you have clicked. The <xref:System.Workflow.ComponentModel.Design.HitTestInfo> contains logical coordinates of the point on the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> where the mouse was clicked.  
+  
+ The <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.HitTest%2A> method receives a <xref:System.Drawing.Point> that contains an x and y coordinate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageRectangle">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Rectangle ImageRectangle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ImageRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ImageRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value for the enclosing bounds of the image associated with the designer in logical coordinates.</summary>
+        <value>A rectangle that encloses the <see cref="T:System.Drawing.Image" /> displayed for the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ImageRectangle%2A> to retrieve the coordinates for the rectangle that encloses the image associated with the designer. You can use these coordinates for drawing connectors or overlaying graphics.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ImageRectangle%2A> property. In this example, the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ImageRectangle%2A> is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner>.  
+  
+ [!code-csharp[WF_Samples#74](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#74)]
+ [!code-vb[WF_Samples#74](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#74)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected override void Initialize (System.Workflow.ComponentModel.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Initialize(class System.Workflow.ComponentModel.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Initialize(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> with which the designer should be initialized.</param>
+        <summary>Initializes the designer with the associated <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Initialize%2A> loads the designer with the specified <xref:System.Workflow.ComponentModel.Activity>. The designer loads the activity service, updates the verbs associated with the activity, and assigns the default text and image to the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertActivities">
+      <MemberSignature Language="C#" Value="public virtual void InsertActivities (System.Workflow.ComponentModel.Design.HitTestInfo insertLocation, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; activitiesToInsert);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertActivities(class System.Workflow.ComponentModel.Design.HitTestInfo insertLocation, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; activitiesToInsert) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="insertLocation" Type="System.Workflow.ComponentModel.Design.HitTestInfo" />
+        <Parameter Name="activitiesToInsert" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="insertLocation">The location in the designer to insert the activities.</param>
+        <param name="activitiesToInsert">The list of activities to insert.</param>
+        <summary>Inserts the specified activities in the designer at the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> to insert a list of activities into the location specified.  
+  
+ Prior to calling <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A>, use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> to make sure that the specified activities can be inserted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertActivities">
+      <MemberSignature Language="C#" Value="public static void InsertActivities (System.Workflow.ComponentModel.Design.CompositeActivityDesigner compositeActivityDesigner, System.Workflow.ComponentModel.Design.HitTestInfo insertLocation, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; activitiesToInsert, string undoTransactionDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InsertActivities(class System.Workflow.ComponentModel.Design.CompositeActivityDesigner compositeActivityDesigner, class System.Workflow.ComponentModel.Design.HitTestInfo insertLocation, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; activitiesToInsert, string undoTransactionDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities(System.Workflow.ComponentModel.Design.CompositeActivityDesigner,System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compositeActivityDesigner" Type="System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />
+        <Parameter Name="insertLocation" Type="System.Workflow.ComponentModel.Design.HitTestInfo" />
+        <Parameter Name="activitiesToInsert" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+        <Parameter Name="undoTransactionDescription" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compositeActivityDesigner">The designer into which the activities will be inserted.</param>
+        <param name="insertLocation">The location in the designer at which the activities will be inserted.</param>
+        <param name="activitiesToInsert">The list of activities to insert.</param>
+        <param name="undoTransactionDescription">Description for the designer transaction created by the insertion.</param>
+        <summary>Inserts activities into the designer at the specified location using a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> to insert a list of activities into the composite activity.  
+  
+ Prior to calling <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A>, use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> to make sure the specified list of activities can be inserted.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the addition of a new branch using a designer based off of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> class.  If <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.CanInsertActivities%2A> returns true, a new branch is created using the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.InsertActivities%2A> method.  
+  
+ [!code-csharp[WF_Samples#28](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#28)]
+ [!code-vb[WF_Samples#28](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsContainedDesignerVisible">
+      <MemberSignature Language="C#" Value="public virtual bool IsContainedDesignerVisible (System.Workflow.ComponentModel.Design.ActivityDesigner containedDesigner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsContainedDesignerVisible(class System.Workflow.ComponentModel.Design.ActivityDesigner containedDesigner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.IsContainedDesignerVisible(System.Workflow.ComponentModel.Design.ActivityDesigner)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containedDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+      </Parameters>
+      <Docs>
+        <param name="containedDesigner">The designer contained within the CompositeActivityDesigner to test for visibility.</param>
+        <summary>Gets a value that indicates if the contained designer is visible.</summary>
+        <returns>
+          <see langword="true" /> if the contained designer is visible; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.IsContainedDesignerVisible%2A> to determine if the specified designer is visible.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEditable">
+      <MemberSignature Language="C#" Value="public bool IsEditable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEditable" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.IsEditable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the designer can be edited.</summary>
+        <value>
+          <see langword="true" /> if the designer can be edited; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some custom activities might not allow you to modify properties or other settings in the design environment. The <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.IsEditable%2A> property should determine whether the designer allows edits at design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSelectableObject">
+      <MemberSignature Language="C#" Value="public virtual object LastSelectableObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LastSelectableObject" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.LastSelectableObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last selectable object contained within the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</summary>
+        <value>The last selectable object contained within the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When overridden in a derived class, use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.LastSelectableObject%2A> to return the last selectable object contained within the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (System.IO.BinaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(class System.IO.BinaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.LoadViewState(System.IO.BinaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.IO.BinaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.IO.BinaryReader" /> from which to load the view state.</param>
+        <summary>Restores the view state from a binary stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.LoadViewState%2A> to restore the designer to a state previously saved using <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.SaveViewState%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Point Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Location" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of the designer in logical coordinates.</summary>
+        <value>The location of the designer in logical coordinates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.Location%2A> to position the designer at design or run time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveActivities">
+      <MemberSignature Language="C#" Value="public virtual void MoveActivities (System.Workflow.ComponentModel.Design.HitTestInfo moveLocation, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; activitiesToMove);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveActivities(class System.Workflow.ComponentModel.Design.HitTestInfo moveLocation, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; activitiesToMove) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.MoveActivities(System.Workflow.ComponentModel.Design.HitTestInfo,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="moveLocation" Type="System.Workflow.ComponentModel.Design.HitTestInfo" />
+        <Parameter Name="activitiesToMove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="moveLocation">A <see cref="T:System.Workflow.ComponentModel.Design.HitTestInfo" /> describing the location to which to move the activities.</param>
+        <param name="activitiesToMove">The list of activities to move.</param>
+        <summary>Moves activities from one designer to another.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.MoveActivities%2A> to move a list of activities from one composite activity to another.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveDesigners">
+      <MemberSignature Language="C#" Value="public static void MoveDesigners (System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, bool moveBack);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MoveDesigners(class System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, bool moveBack) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.MoveDesigners(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityDesigner" Type="System.Workflow.ComponentModel.Design.ActivityDesigner" />
+        <Parameter Name="moveBack" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="activityDesigner">The activity designer to move.</param>
+        <param name="moveBack">
+          <see langword="true" /> to move the designer backwards; <see langword="false" /> to move the designer forward.</param>
+        <summary>Moves a designer forward or backwards in index within the composite activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.MoveDesigners%2A> to move an activity contained within the composite activity forward or backwards in the index of contained activities.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnContainedActivitiesChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnContainedActivitiesChanged (System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs listChangeArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContainedActivitiesChanged(class System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs listChangeArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnContainedActivitiesChanged(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listChangeArgs" Type="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="listChangeArgs">An <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> containing information about the change.</param>
+        <summary>Occurs when more than one activities contained within the designers have changed. This occurs, for example, when a new child activity is added or an existing child activity is removed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnContainedActivitiesChanged%2A> to respond to changes to activities inside the composite activity.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="listChangeArgs" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnContainedActivitiesChanging">
+      <MemberSignature Language="C#" Value="protected virtual void OnContainedActivitiesChanging (System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs listChangeArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContainedActivitiesChanging(class System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs listChangeArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnContainedActivitiesChanging(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listChangeArgs" Type="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="listChangeArgs">An <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> that contains information about the change.</param>
+        <summary>Occurs when an activity or a group of activities contained within the designer are changing. This occurs, for example, when a new child activity is added or an existing child activity is removed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnContainedActivitiesChanging%2A> to respond to changes that are occurring to the activities contained within the composite activity.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="listChangeArgs" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnContainedActivityChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnContainedActivityChanged (System.Workflow.ComponentModel.Design.ActivityChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContainedActivityChanged(class System.Workflow.ComponentModel.Design.ActivityChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnContainedActivityChanged(System.Workflow.ComponentModel.Design.ActivityChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityChangedEventArgs" /> that contains information about the change.</param>
+        <summary>Occurs when an activity contained within the designer has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnContainedActivityChanged%2A> to respond to changes in the activities contained within the composite activity.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyDown">
+      <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Forms.KeyEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
+        <summary>Called when a key is pressed with the designer in focus.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLayoutPosition">
+      <MemberSignature Language="C#" Value="protected override void OnLayoutPosition (System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayoutPosition(class System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnLayoutPosition(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
+        <summary>Performs layout and positioning tasks for the contained visual cues or designers on the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" /> to reposition its child activities.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnLayoutPosition%2A> performs layout tasks for all of the child activity designers that the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> contains.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLayoutSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size OnLayoutSize (System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Size OnLayoutSize(class System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnLayoutSize(System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerLayoutEventArgs" /> that contains the event data.</param>
+        <summary>Called to calculate the size needed for an activity based on its current state (collapsed or expanded) and its list of child activities.</summary>
+        <returns>The <see cref="T:System.Drawing.Size" /> that contains the new size settings for the <see cref="T:System.Workflow.ComponentModel.Design.CompositeActivityDesigner" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnLayoutSize%2A> performs resizing tasks for each activity designer that the composite activity designer contains.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseDown">
+      <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
+        <summary>Called when the mouse is clicked when the pointer is in designer bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following describes how and when events related to drag-and-drop operations are raised.  
+  
+ If the designer is a valid drop target, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnGiveFeedback%2A> event is raised with the drag-and-drop effect specified. For a list of drag-and-drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+  
+-   Changes in the pointer position, keyboard state, and mouse button state are tracked.  
+  
+-   If the user moves out of the designer bounds, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
+  
+-   If the mouse enters another designer, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragEnter%2A> for that designer is raised.  
+  
+-   If the mouse moves but stays within the same designer, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragOver%2A> event is raised.  
+  
+-   If there is a change in the keyboard or mouse state, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnQueryContinueDrag%2A> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the `Action` property of the event <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
+  
+ If the value is `DragAction.Continue`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragOver%2A> event is raised to continue the operation and the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnGiveFeedback%2A> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+  
+> [!NOTE]
+>  The <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragOver%2A> and <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnGiveFeedback%2A> events are paired so that as the mouse moves across the drop target, the user is supplied with the most up-to-date feedback about the mouse position.  
+  
+ If the value is `DragAction.Drop`, the drop effect value is returned to the source, so that the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
+  
+ If the value is `DragAction.Cancel`, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.OnDragLeave%2A> event is raised.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPaint">
+      <MemberSignature Language="C#" Value="protected override void OnPaint (System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaint(class System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" /> that contains the drawing data.</param>
+        <summary>Draws the visual representation of a composite activity at design time.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnThemeChange">
+      <MemberSignature Language="C#" Value="protected override void OnThemeChange (System.Workflow.ComponentModel.Design.ActivityDesignerTheme designerTheme);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnThemeChange(class System.Workflow.ComponentModel.Design.ActivityDesignerTheme designerTheme) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnThemeChange(System.Workflow.ComponentModel.Design.ActivityDesignerTheme)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="designerTheme" Type="System.Workflow.ComponentModel.Design.ActivityDesignerTheme" />
+      </Parameters>
+      <Docs>
+        <param name="designerTheme">A <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerTheme" /> that contains the event data.</param>
+        <summary>Notifies the designer that the associated theme has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnThemeChange%2A> occurs any time the theme associated with the designer changes. When the theme changes it is likely that the designer look and feel needs to change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintContainedDesigners">
+      <MemberSignature Language="C#" Value="protected void PaintContainedDesigners (System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PaintContainedDesigners(class System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.PaintContainedDesigners(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">
+          <see cref="T:System.EventArgs" /> to be used for painting.</param>
+        <summary>Adjusts the clip region on the graphics object and calls <see cref="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.OnPaint(System.Workflow.ComponentModel.Design.ActivityDesignerPaintEventArgs)" /> on all contained designers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveActivities">
+      <MemberSignature Language="C#" Value="public virtual void RemoveActivities (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; activitiesToRemove);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveActivities(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; activitiesToRemove) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.RemoveActivities(System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activitiesToRemove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="activitiesToRemove">A list of activities to remove from the designer.</param>
+        <summary>Removes a list of activities from the composite activity designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Removes the list of activities from the composite activity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveActivities">
+      <MemberSignature Language="C#" Value="public static void RemoveActivities (IServiceProvider serviceProvider, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; activitiesToRemove, string transactionDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveActivities(class System.IServiceProvider serviceProvider, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; activitiesToRemove, string transactionDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.RemoveActivities(System.IServiceProvider,System.Collections.ObjectModel.ReadOnlyCollection{System.Workflow.ComponentModel.Activity},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="activitiesToRemove" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+        <Parameter Name="transactionDescription" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The service provider associated with the designer.</param>
+        <param name="activitiesToRemove">The list of activities to remove.</param>
+        <param name="transactionDescription">The description of the transaction created.</param>
+        <summary>Removes the list of activities from the designer using a transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.RemoveActivities%2A> to remove the specified list of activities from the composite activity within the specified transaction.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override void SaveViewState (System.IO.BinaryWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SaveViewState(class System.IO.BinaryWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.SaveViewState(System.IO.BinaryWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.BinaryWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.IO.BinaryWriter" /> into which the view state is stored.</param>
+        <summary>Saves the view state to a binary stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.SaveViewState%2A> to save the state of a composite activity to a stream. To restore the view state use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.LoadViewState%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeActivitiesToDataObject">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.IDataObject SerializeActivitiesToDataObject (IServiceProvider serviceProvider, System.Workflow.ComponentModel.Activity[] activities);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.IDataObject SerializeActivitiesToDataObject(class System.IServiceProvider serviceProvider, class System.Workflow.ComponentModel.Activity[] activities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.SerializeActivitiesToDataObject(System.IServiceProvider,System.Workflow.ComponentModel.Activity[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.IDataObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="activities" Type="System.Workflow.ComponentModel.Activity[]" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">Component serialization service.</param>
+        <param name="activities">Array of activities to serialize.</param>
+        <summary>Serializes an array of activities to an <see cref="T:System.Windows.Forms.IDataObject" /> that can be placed into the clipboard or used when initializing a drag and drop operation.</summary>
+        <returns>
+          <see cref="T:System.Windows.Forms.IDataObject" /> that contains serialized activities.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextRectangle">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Rectangle TextRectangle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle TextRectangle" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.TextRectangle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the description rectangle in logical coordinates.</summary>
+        <value>The value of the description rectangle in logical coordinates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use to determine the location on the designer where the text description will be displayed.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.TextRectangle%2A> property. In this example, the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.TextRectangle%2A> is calculated using the Bounds of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner> as well as the location and size of the <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.ImageRectangle%2A>.  
+  
+ [!code-csharp[WF_Samples#75](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#75)]
+ [!code-vb[WF_Samples#75](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#75)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleHeight">
+      <MemberSignature Language="C#" Value="protected virtual int TitleHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TitleHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.TitleHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of the title area of the designer.</summary>
+        <value>The height in pixels of the title area of the designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.TitleHeight%2A> describes the height of the title area of the designer. Typically this can contain the heading, icon, and expand or collapse button.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="RemoveActivities">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes all activities from the composite activity designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Workflow.ComponentModel.Design.CompositeActivityDesigner.RemoveActivities%2A> to remove activities from the composite activity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

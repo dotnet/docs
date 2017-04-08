@@ -1,0 +1,8 @@
+<!--<snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<schema elementFormDefault="qualified" targetNamespace="http://www.w3.org/2001/05/XMLInfoset" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://www.example.com/IPO" />
+  <include schemaLocation="example.xsd" />
+</schema>
+<!--</snippet2>-->
+

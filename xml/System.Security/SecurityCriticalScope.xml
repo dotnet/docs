@@ -1,0 +1,77 @@
+<Type Name="SecurityCriticalScope" FullName="System.Security.SecurityCriticalScope">
+  <TypeSignature Language="C#" Value="public enum SecurityCriticalScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityCriticalScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.SecurityCriticalScope" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("SecurityCriticalScope is only used for .NET 2.0 transparency compatibility.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the scope of a <see cref="T:System.Security.SecurityCriticalAttribute" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Security-critical code is any code that protects sensitive resources and exposes brokered access to the resource to untrusted or partially trusted code by performing the necessary elevation of privilege operations.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Everything">
+      <MemberSignature Language="C#" Value="Everything" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityCriticalScope Everything = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.SecurityCriticalScope.Everything" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityCriticalScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The attribute applies to all code that follows it.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Explicit">
+      <MemberSignature Language="C#" Value="Explicit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityCriticalScope Explicit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.SecurityCriticalScope.Explicit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityCriticalScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The attribute applies only to the immediate target.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,54 @@
+<Type Name="CursorInteropHelper" FullName="System.Windows.Interop.CursorInteropHelper">
+  <TypeSignature Language="C#" Value="public static class CursorInteropHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CursorInteropHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.CursorInteropHelper" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a static helper class for [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]/[!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] interoperation with one method, which is used to obtain a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <see cref="T:System.Windows.Input.Cursor" /> object based on a provided [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] cursor handle.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor Create (System.Runtime.InteropServices.SafeHandle cursorHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Input.Cursor Create(class System.Runtime.InteropServices.SafeHandle cursorHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.CursorInteropHelper.Create(System.Runtime.InteropServices.SafeHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.Cursor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cursorHandle" Type="System.Runtime.InteropServices.SafeHandle" />
+      </Parameters>
+      <Docs>
+        <param name="cursorHandle">Cursor reference to use for interoperation.</param>
+        <summary>Returns a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <see cref="T:System.Windows.Input.Cursor" /> object based on a provided [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] cursor handle.</summary>
+        <returns>The [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] cursor object based on the provided [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] cursor handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting a custom cursor image requires security permissions even if done in pure [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] programming. See <xref:System.Windows.Input.Cursor>.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,47 @@
+<Type Name="IParseText" FullName="Microsoft.JScript.IParseText">
+  <TypeSignature Language="C#" Value="public interface IParseText" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IParseText" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IParseText" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("C1468187-3DA1-49df-ADF8-5F8600E59EA8")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods for parsing text when JScript code is being authored in an editor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public void Parse (string code, Microsoft.JScript.IErrorHandler error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Parse(string code, class Microsoft.JScript.IErrorHandler error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IParseText.Parse(System.String,Microsoft.JScript.IErrorHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="code" Type="System.String" />
+        <Parameter Name="error" Type="Microsoft.JScript.IErrorHandler" />
+      </Parameters>
+      <Docs>
+        <param name="code">The source code to parse.</param>
+        <param name="error">An object that contains information about errors that occur when <c>code</c> is being parsed.</param>
+        <summary>When implemented in a class, parses the specified source code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

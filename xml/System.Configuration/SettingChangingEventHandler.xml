@@ -1,0 +1,32 @@
+<Type Name="SettingChangingEventHandler" FullName="System.Configuration.SettingChangingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void SettingChangingEventHandler(object sender, SettingChangingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SettingChangingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.SettingChangingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Configuration.SettingChangingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, typically an application settings wrapper class derived from the <see cref="T:System.Configuration.ApplicationSettingsBase" /> class.</param>
+    <param name="e">A <see cref="T:System.Configuration.SettingChangingEventArgs" /> containing the data for the event.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Configuration.ApplicationSettingsBase.SettingChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event occurs before the value of an application settings property is changed, typically through a call to the <xref:System.Configuration.ApplicationSettingsBase.Item%2A> method. <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> can be canceled through the <xref:System.Configuration.SettingChangingEventArgs> event data class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

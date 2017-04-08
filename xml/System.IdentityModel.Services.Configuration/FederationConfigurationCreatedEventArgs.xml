@@ -1,0 +1,78 @@
+<Type Name="FederationConfigurationCreatedEventArgs" FullName="System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs">
+  <TypeSignature Language="C#" Value="public class FederationConfigurationCreatedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FederationConfigurationCreatedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event is raised when the first HTTP module in the web application references the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=fullName> property. The first access of the this property causes a <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object to be created and initialized from configuration. The <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfigurationCreated?displayProperty=fullName> event is then raised. You can access the newly created <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object through the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A?displayProperty=fullName> property in an event handler in order to examine or modify it.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FederationConfigurationCreatedEventArgs (System.IdentityModel.Services.Configuration.FederationConfiguration config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Services.Configuration.FederationConfiguration config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.#ctor(System.IdentityModel.Services.Configuration.FederationConfiguration)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="config" Type="System.IdentityModel.Services.Configuration.FederationConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="config">The federation configuration object. A <see cref="T:System.IdentityModel.Services.Configuration.FederationConfiguration" /> object contains the configurable properties for the WS-Federation Authentication Module (<see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />) and the Session Authentication Module (<see cref="T:System.IdentityModel.Services.SessionAuthenticationModule" />) in a web application.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs" /> class with the specified federation configuration object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Initializes the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration%2A> property to the federation configuration object specified by `config`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FederationConfiguration">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Services.Configuration.FederationConfiguration FederationConfiguration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Services.Configuration.FederationConfiguration FederationConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationCreatedEventArgs.FederationConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Services.Configuration.FederationConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the federation configuration object that was initialized from the configuration file.</summary>
+        <value>The federation configuration object that was initialized from configuration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object contains the configurable properties for the WS-Federation Authentication Module (<xref:System.IdentityModel.Services.WSFederationAuthenticationModule>) and the Session Authentication Module (<xref:System.IdentityModel.Services.SessionAuthenticationModule>) in a web application.  
+  
+ To modify the configuration settings, you can set properties on the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object that is referenced by this property, or you can provide an new <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

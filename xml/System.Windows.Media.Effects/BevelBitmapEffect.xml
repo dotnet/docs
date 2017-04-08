@@ -1,0 +1,480 @@
+<Type Name="BevelBitmapEffect" FullName="System.Windows.Media.Effects.BevelBitmapEffect">
+  <TypeSignature Language="C#" Value="public sealed class BevelBitmapEffect : System.Windows.Media.Effects.BitmapEffect" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BevelBitmapEffect extends System.Windows.Media.Effects.BitmapEffect" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BevelBitmapEffect" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Effects.BitmapEffect</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Creates a bevel which raises the surface of the image according to a specified curve.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] bitmap effects are software rendered. Any object that applies an effect will also be rendered in software. Bitmap effects should not be applied to large visuals or animations as this can degrade performance.  
+  
+ The type of bevel (bevel curve) is determined by the <xref:System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfile%2A> property.  
+  
+ <xref:System.Windows.Media.Effects.BevelBitmapEffect> is one of several effects that are shipped with the SDK. Other effects include:  
+  
+-   <xref:System.Windows.Media.Effects.OuterGlowBitmapEffect>  
+  
+-   <xref:System.Windows.Media.Effects.BlurBitmapEffect>  
+  
+-   <xref:System.Windows.Media.Effects.DropShadowBitmapEffect>  
+  
+-   <xref:System.Windows.Media.Effects.EmbossBitmapEffect>  
+  
+ The following illustration shows a <xref:System.Windows.Media.Effects.BevelBitmapEffect> applied to a visual object (in this case applied to a <xref:System.Windows.Controls.Button>).  
+  
+ ![Screenshot: Compare normal and bevelled buttons](~/add/media/effects-bevelsimple1.png "Screenshot: Compare normal and bevelled buttons")  
+  
+ The following illustrations show the effect of several basic properties of <xref:System.Windows.Media.Effects.BevelBitmapEffect>.  
+  
+ The <xref:System.Windows.Media.Effects.BevelBitmapEffect.BevelWidth%2A> property specifies how wide the bevel is:  
+  
+ ![Screenshot: Compare BevelWidth values](~/add/media/effects-bevelbevelwidth.png "Screenshot: Compare BevelWidth values")  
+  
+ The <xref:System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfile%2A> property specifies the curve of the bevel:  
+  
+ ![Screenshot: Compare values of EdgeProfile](~/add/media/effects-beveledgeprofile.png "Screenshot: Compare values of EdgeProfile")  
+  
+ The <xref:System.Windows.Media.Effects.BevelBitmapEffect.Relief%2A> property specifies the relief of the bevel:  
+  
+ ![Screenshot: Compare relief properties](~/add/media/effects-bevelrelief.png "Screenshot: Compare relief properties")  
+  
+ The <xref:System.Windows.Media.Effects.BevelBitmapEffect.Smoothness%2A> property specifies how smooth the shadows of the bevel are:  
+  
+ ![Screenshot: Compare Smoothness property values](~/add/media/effects-bevelsmoothness.png "Screenshot: Compare Smoothness property values")  
+  
+ The <xref:System.Windows.Media.Effects.BevelBitmapEffect.LightAngle%2A> property specifies from which direction the "virtual light" is coming from that creates the shadows of the bevel:  
+  
+ ![Screenshot: Compare light angles](~/add/media/effects-bevellightangle.png "Screenshot: Compare light angles")  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.UIPermission">for creating an instance of the <see cref="T:System.Windows.Media.Effects.BevelBitmapEffect" /> class. Associated enumerations: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BevelBitmapEffect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Initializes a new instance of the <see cref="T:System.Windows.Media.Effects.BevelBitmapEffect" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BevelWidth">
+      <MemberSignature Language="C#" Value="public double BevelWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 BevelWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.BevelWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Gets or sets the width of the bevel.</summary>
+        <value>The width of the bevel. The default value is <c>5</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration demonstrates the effect of this property:  
+  
+ ![Screenshot: Compare BevelWidth values](~/add/media/effects-bevelbevelwidth.png "Screenshot: Compare BevelWidth values")  
+  
+<a name="dependencyPropertyInfo_BevelWidth"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Effects.BevelBitmapEffect.BevelWidthProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BevelWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BevelWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BevelWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.BevelWidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Identifies the <see cref="P:System.Windows.Media.Effects.BevelBitmapEffect.BevelWidth" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BevelBitmapEffect Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.BevelBitmapEffect Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.BevelBitmapEffect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Creates a modifiable clone of this <see cref="T:System.Windows.Media.Effects.BevelBitmapEffect" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BevelBitmapEffect CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.BevelBitmapEffect CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.BevelBitmapEffect</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Creates a modifiable clone of this <see cref="T:System.Windows.Media.Effects.BevelBitmapEffect" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUnmanagedEffect">
+      <MemberSignature Language="C#" Value="protected override System.Runtime.InteropServices.SafeHandle CreateUnmanagedEffect ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Runtime.InteropServices.SafeHandle CreateUnmanagedEffect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.CreateUnmanagedEffect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.SafeHandle</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EdgeProfile">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.EdgeProfile EdgeProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Effects.EdgeProfile EdgeProfile" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.EdgeProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Gets or sets the curve of the bevel.</summary>
+        <value>The curve of the bevel. The default value is <see cref="F:System.Windows.Media.Effects.EdgeProfile.Linear" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration demonstrates the effect of this property:  
+  
+ ![Screenshot: Compare values of EdgeProfile](~/add/media/effects-beveledgeprofile.png "Screenshot: Compare values of EdgeProfile")  
+  
+<a name="dependencyPropertyInfo_EdgeProfile"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfileProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EdgeProfileProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EdgeProfileProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EdgeProfileProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfileProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Identifies the <see cref="P:System.Windows.Media.Effects.BevelBitmapEffect.EdgeProfile" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightAngle">
+      <MemberSignature Language="C#" Value="public double LightAngle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 LightAngle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.LightAngle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Gets or sets the direction the "virtual light" is coming from that creates the shadows of the bevel.</summary>
+        <value>The direction of the virtual light source. The valid range is from 0-360 (degrees) with 0 specifying the right-hand side of the object and successive values moving counter-clockwise around the object. The shadows of the bevel are on the opposite side of where the light is cast. The default value is <c>135</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following diagram shows what direction light comes from for a given value of this property. Shadows of the bevel are cast on the opposite side from the light angle.  
+  
+ ![Diagram: DropShadow direction](~/add/media/effects-dropshadowdirection2.png "Diagram: DropShadow direction")  
+  
+ The following illustration demonstrates the effect of this property:  
+  
+ ![Screenshot: Compare light angles](~/add/media/effects-bevellightangle.png "Screenshot: Compare light angles")  
+  
+<a name="dependencyPropertyInfo_LightAngle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Effects.BevelBitmapEffect.LightAngleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LightAngleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LightAngleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LightAngleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.LightAngleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Identifies the <see cref="P:System.Windows.Media.Effects.BevelBitmapEffect.LightAngle" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Relief">
+      <MemberSignature Language="C#" Value="public double Relief { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Relief" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.Relief" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Gets or sets the height of the relief of the bevel.</summary>
+        <value>The height of the relief of the bevel. The valid range is between <c>0</c> and <c>1</c> with <c>1</c> having the most relief (darkest shadows). The default value is <c>0.3</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration demonstrates the effect of this property:  
+  
+ ![Screenshot: Compare relief properties](~/add/media/effects-bevelrelief.png "Screenshot: Compare relief properties")  
+  
+<a name="dependencyPropertyInfo_Relief"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Effects.BevelBitmapEffect.ReliefProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReliefProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ReliefProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ReliefProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.ReliefProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Identifies the <see cref="P:System.Windows.Media.Effects.BevelBitmapEffect.Relief" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Smoothness">
+      <MemberSignature Language="C#" Value="public double Smoothness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Smoothness" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.BevelBitmapEffect.Smoothness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Gets or sets how smooth the shadows of the bevel are.</summary>
+        <value>Value indicating how smooth the bevel shadows are. The valid range is between <c>0</c> and <c>1</c> with <c>1</c> being the smoothest. The default value is <c>0.2</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration demonstrates the effect of this property:  
+  
+ ![Screenshot: Compare Smoothness property values](~/add/media/effects-bevelsmoothness.png "Screenshot: Compare Smoothness property values")  
+  
+<a name="dependencyPropertyInfo_Smoothness"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Effects.BevelBitmapEffect.SmoothnessProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmoothnessProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SmoothnessProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SmoothnessProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.BevelBitmapEffect.SmoothnessProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>**Note: This API is now obsolete.** The non-obsolete alternative is <see cref="T:System.Windows.Media.Effects.Effect" />. Identifies the <see cref="P:System.Windows.Media.Effects.BevelBitmapEffect.Smoothness" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateUnmanagedPropertyState">
+      <MemberSignature Language="C#" Value="protected override void UpdateUnmanagedPropertyState (System.Runtime.InteropServices.SafeHandle unmanagedEffect);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateUnmanagedPropertyState(class System.Runtime.InteropServices.SafeHandle unmanagedEffect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BevelBitmapEffect.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unmanagedEffect" Type="System.Runtime.InteropServices.SafeHandle" />
+      </Parameters>
+      <Docs>
+        <param name="unmanagedEffect">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

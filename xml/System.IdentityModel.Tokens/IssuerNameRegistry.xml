@@ -1,0 +1,220 @@
+<Type Name="IssuerNameRegistry" FullName="System.IdentityModel.Tokens.IssuerNameRegistry">
+  <TypeSignature Language="C#" Value="public abstract class IssuerNameRegistry : System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IssuerNameRegistry extends System.Object implements class System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.IssuerNameRegistry" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IdentityModel.Configuration.ICustomIdentityConfiguration</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>The abstract base class for an issuer name registry. An issuer name registry is used to associate a mnemonic name to the cryptographic material that is needed to verify the signatures of tokens produced by the corresponding issuer. The issuer name registry maintains a list of issuers that are trusted by a relying party (RP) application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The issuer name registry is used to associate a mnemonic name to the cryptographic material needed to verify signatures of tokens produced by the corresponding issuer. This name is then used to set the <xref:System.Security.Claims.Claim.Issuer%2A> or the <xref:System.Security.Claims.Claim.OriginalIssuer%2A> property of a claim. The methods exposed by the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class are called from the pipeline by the security token handler that is processing the token. Tokens signed by material that is not mapped by an issuer name registry are discarded as untrusted. The name returned by the issuer name registry should be unique within the context of an RP application.  
+  
+ In code, you can specify the issuer name registry to use by setting the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry%2A?displayProperty=fullName> property. In a configuration file, the issuer name registry can be specified by specifying the [\&lt;issuerNameRegistry\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element under the [\&lt;securityTokenHandlerConfiguration\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element.  
+  
+ Windows Identity Foundation (WIF) provides an implementation of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class out of the box: the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class. When you use this implementation you can specify the list of trusted issuers in the configuration file of the RP application under the [\&lt;trustedIssuers\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/trustedissuers.md) element, which is a child element of the `<issuerNameRegistry>` element when the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>.class is referenced in that element’s `type` attribute. Under the `<trustedIssuers>` element, each issuer name is mapped to the X.509 certificate that should be used to verify its signature.  
+  
+ To create a custom issuer name registry, you must override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=fullName> method. This method returns the issuer name for the specified security token. You can optionally override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%2CSystem.String%29?displayProperty=fullName> method to provide a hinting mechanism when retrieving issuer names and the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetWindowsIssuerName%2A> method if you want to provide an issuer name for Windows tokens that is different from <xref:System.Security.Claims.ClaimsIdentity.DefaultIssuer>. Override the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration%2A> method to enable your issuer name registry to be initialized from a configuration file.  
+  
+   
+  
+## Examples  
+ The following code shows an implementation of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class that only accepts issuers that use certificates with subject “CN=localhost”.  
+  
+> [!WARNING]
+>  The following code is for illustrative purposes only. Validating certificates based on subject name is not a good practice. This code should not be used as is in production.  
+  
+ [!code-csharp[WifIssuerNameRegistry#1](~/samples/snippets/csharp/VS_Snippets_Misc/wifissuernameregistry/cs/mvcwepapp/trustedissuernameregistry.cs#1)]  
+  
+ The following shows the XML necessary to configure an application with the trusted issuer name registry.  
+  
+```xml  
+<system.identityModel>  
+  <identityConfiguration>  
+    <issuerNameRegistry type="System.IdentityModel.Samples.TrustedIssuerNameRegistry, MyApp" />  
+  </identityConfiguration>  
+</system.identityModel>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected IssuerNameRegistry ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.IssuerNameRegistry" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIssuerName">
+      <MemberSignature Language="C#" Value="public abstract string GetIssuerName (System.IdentityModel.Tokens.SecurityToken securityToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetIssuerName(class System.IdentityModel.Tokens.SecurityToken securityToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="securityToken">The security token for which to return the issuer name.</param>
+        <summary>When overridden in a derived class, returns the name of the issuer of the specified security token.</summary>
+        <returns>The issuer name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementations should return a non-null and non-empty string to identify a recognized issuer, or a null string to identify an unrecognized issuer.  
+  
+ Called from the processing pipeline by the security token handler that is processing the token. The method should return a unique name for the issuer within the context of the RP application.  
+  
+   
+  
+## Examples  
+ The following code shows the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%2A> method for an issuer name registry. The full sample is in the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class overview topic.  
+  
+> [!WARNING]
+>  The following code is for illustrative purposes only. Validating certificates based on subject name is not a good practice. This code should not be used as is in production.  
+  
+ [!code-csharp[WifIssuerNameRegistry#2](~/samples/snippets/csharp/VS_Snippets_Misc/wifissuernameregistry/cs/mvcwepapp/trustedissuernameregistry.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIssuerName">
+      <MemberSignature Language="C#" Value="public virtual string GetIssuerName (System.IdentityModel.Tokens.SecurityToken securityToken, string requestedIssuerName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetIssuerName(class System.IdentityModel.Tokens.SecurityToken securityToken, string requestedIssuerName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName(System.IdentityModel.Tokens.SecurityToken,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityToken" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="requestedIssuerName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="securityToken">The security token for which to return the issuer name.</param>
+        <param name="requestedIssuerName">An issuer name to consider in the request.</param>
+        <summary>When overridden in a derived class, returns the name of the issuer of the specified security token. The specified issuer name may be considered in determining the issuer name to return.</summary>
+        <returns>The issuer name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation ignores the `requestedIssuerName` parameter and simply calls the <xref:System.IdentityModel.Tokens.IssuerNameRegistry.GetIssuerName%28System.IdentityModel.Tokens.SecurityToken%29?displayProperty=fullName> method.  
+  
+ Called from the processing pipeline by the security token handler that is processing the token. The method should return a unique name for the issuer within the context of the RP application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWindowsIssuerName">
+      <MemberSignature Language="C#" Value="public virtual string GetWindowsIssuerName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetWindowsIssuerName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.GetWindowsIssuerName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the default issuer name to be used for Windows claims.</summary>
+        <returns>The default issuer name for Windows claims.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation returns <xref:System.Security.Claims.ClaimsIdentity.DefaultIssuer>.  
+  
+ Called from the processing pipeline by the security token handler that is processing the token. The method should return a unique name for the issuer within the context of the RP application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadCustomConfiguration">
+      <MemberSignature Language="C#" Value="public virtual void LoadCustomConfiguration (System.Xml.XmlNodeList nodelist);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList nodelist) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nodelist" Type="System.Xml.XmlNodeList" />
+      </Parameters>
+      <Docs>
+        <param name="nodelist">The configuration XML elements. Each node in the list is of type <see cref="T:System.Xml.XmlElement" />.</param>
+        <summary>When overridden in a derived class, loads custom configuration from XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.IssuerNameRegistry.LoadCustomConfiguration%2A> method is called by the configuration infrastructure. When this method is called, the `nodelist` will contain the top-level child elements of the [\&lt;issuerNameRegistry\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/issuernameregistry.md) element from the configuration file. Each of these may, in turn, contain attributes or child elements depending on the configuration schema you define for your derived class.  
+  
+ The default implementation throws a <xref:System.NotImplementedException>. Override this method in your derived class to enable initialization of your issuer name registry from a configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="GetIssuerName">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns the issuer name for the specified security token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Called from the processing pipeline by the security token handler that is processing the token. The method should return a unique name for the issuer within the context of the RP application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

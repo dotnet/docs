@@ -1,0 +1,75 @@
+<Type Name="WebRequestMethods+File" FullName="System.Net.WebRequestMethods+File">
+  <TypeSignature Language="C#" Value="public static class WebRequestMethods.File" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit WebRequestMethods/File extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.WebRequestMethods.File" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the types of file protocol methods that can be used with a FILE request. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members of this class can be used to set the <xref:System.Net.FileWebRequest.Method%2A> property that determines the protocol method that is to be used to perform a requested action, such as copying and retrieving a file.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public const string DownloadFile;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DownloadFile" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.File.DownloadFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the FILE GET protocol method that is used to retrieve a file from a specified location.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public const string UploadFile;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string UploadFile" />
+      <MemberSignature Language="DocId" Value="F:System.Net.WebRequestMethods.File.UploadFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the FILE PUT protocol method that is used to copy a file to a specified location.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

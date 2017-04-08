@@ -1,0 +1,59 @@
+<Type Name="RefreshMode" FullName="System.Data.Objects.RefreshMode">
+  <TypeSignature Language="C#" Value="public enum RefreshMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RefreshMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.RefreshMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether property changes made to objects tracked by Object Services are kept or replaced with property values from the data source.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [Saving Changes and Managing Concurrency](http://msdn.microsoft.com/en-us/b8378601-4f26-4a05-a24a-f50aeb68610e)  
+  
+ [How to: Manage Data Concurrency in the Object Context](http://msdn.microsoft.com/en-us/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a)  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClientWins">
+      <MemberSignature Language="C#" Value="ClientWins" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Objects.RefreshMode ClientWins = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Objects.RefreshMode.ClientWins" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Objects.RefreshMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property changes made to objects in the object context are not replaced with values from the data source. On the next call to <see cref="M:System.Data.Objects.ObjectContext.SaveChanges" />, these changes are sent to the data source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StoreWins">
+      <MemberSignature Language="C#" Value="StoreWins" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Objects.RefreshMode StoreWins = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Objects.RefreshMode.StoreWins" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Objects.RefreshMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property changes made to objects in the object context are replaced with values from the data source.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

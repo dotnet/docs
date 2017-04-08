@@ -1,0 +1,191 @@
+<Type Name="SubsetMatchingMode" FullName="System.Speech.Recognition.SubsetMatchingMode">
+  <TypeSignature Language="C#" Value="public enum SubsetMatchingMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubsetMatchingMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SubsetMatchingMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates values of subset matching mode.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In System.Speech, you can construct a grammar that successfully recognizes a phrase even though only a subset of its contents is found in the audio input.  
+  
+ By default, a recognition engine requires an exact match against an entire phrase. The recognition engine can also match partial phrases according to parameters defined by a <xref:System.Speech.Recognition.SubsetMatchingMode> member used as an argument to the <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%2A> or <xref:System.Speech.Recognition.SrgsGrammar.SrgsSubset.%23ctor%2A> constructors, or the <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> method.  
+  
+ The following illustrates how each of the <xref:System.Speech.Recognition.SubsetMatchingMode> members affects recognition when used in a grammar that contains the phrase "a car the truck a boat that plane".  
+  
+ **OrderedSubset**  
+  
+ This mode indicates that a subset of the phrase will be used to successfully recognize the entire phrase if the following are true:  
+  
+-   One or more words in the phrase are recognized in the audio input.  
+  
+-   The relative order of those recognized words is the same as in the phrase.  
+  
+-   Matched words may consist of only prepositions and articles.  
+  
+ Adding the phrase "a car the truck a boat that plane" to a grammar using OrderedSubset mode produces the following result on recognition:  
+  
+|**Input Phrase**|**Result**|  
+|----------------------|----------------|  
+|"a car the truck a boat that plane"|The entire phrase "a car the truck a boat that plane" is recognized.|  
+|"a car the truck a boat"|The entire phrase "a car the truck a boat that plane" is recognized.|  
+|"a car the that plane"|The entire phrase "a car the truck a boat that plane" is recognized. A recognized subset is not required to be a sequence of the original string.|  
+|"a car the boat a truck that plane"|Recognition is not successful. The words are out of order.|  
+|"a the"|The entire phrase "a car the truck a boat that plane" is recognized. Prepositions and articles are used for recognition.|  
+  
+ **OrderedSubsetContentRequired**  
+  
+ This mode indicates that a subset of the phrase will be used to successfully recognize the entire phrase if the following are true:  
+  
+-   One or more words in the phrase are recognized in the audio input, and  
+  
+-   The relative order of those recognized words is the same as in the phrase.  
+  
+-   Matched words cannot consist of only prepositions and articles.  
+  
+ Adding the phrase "a car the truck a boat that plane" to a grammar using OrderedSubsetContentRequired mode produces the following result on recognition:  
+  
+|**Input Phrase**|**Result**|  
+|----------------------|----------------|  
+|"a car the truck a boat that plane"|The entire phrase "a car the truck a boat that plane" is recognized.|  
+|"a car the truck a boat"|The entire phrase "a car the truck a boat that plane" is recognized.|  
+|"a car the that plane"|The entire phrase "a car the truck a boat that plane" is recognized. A recognized subset is not required to be a sequence of the original string.|  
+|"a car the boat a truck that plane"|Recognition is not successful. The words are out of order.|  
+|"a the"|Recognition is not successful.  Speech input must contain words other than articles and prepositions.|  
+  
+ **Subsequence:**  
+  
+ This mode indicates that a subset of the phrase will be used to successfully recognize the entire phrase if the following are true:  
+  
+-   One or more words in the phrase are recognized in the audio input as a sequence of the phrase, and  
+  
+-   The relative order of those recognized words is the same as in the phrase.  
+  
+-   Matched words may consist of only prepositions and articles.  
+  
+ Adding the phrase "a car the truck a boat that plane" to a grammar using Subsequence mode produces the following result on recognition:  
+  
+|**Input Phrase**|**Result**|  
+|----------------------|----------------|  
+|"a car the truck a boat that plane"|The entire phrase "a car the truck a boat that plane" is recognized.|  
+|"a car the truck a boat"|The entire phrase "a car the truck a boat that plane" is recognized.|  
+|"a car the that plane"|Recognition is not successful. A recognized subset is required to be a sequence of the original string.|  
+|"a car the boat a truck that plane"|Recognition is not successful. The words are out of order.|  
+|"a the"|The entire phrase "a car the truck a boat that plane" is recognized. Prepositions and articles are used for recognition.|  
+  
+ **SubsequenceContentRequired**  
+  
+ This mode indicates that a subset of the phrase will be used to successfully recognize the entire phrase if the following are true:  
+  
+-   One or more words in the match string are recognized in the audio input as a sequence of the phrase.  
+  
+-   Matched words cannot consist of only prepositions and articles.  
+  
+ Adding the phrase "a car the truck a boat that plane" to a grammar using SubsequenceContentRequired mode produces the following result on recognition:  
+  
+|**Input Phrase**|**Result**|  
+|----------------------|----------------|  
+|"a car the truck a boat that plane"|The entire phrase "a car the truck a boat that plane" is recognized.|  
+|"a car the truck a boat"|The entire phrase "a car the truck a boat that plane" is recognized.|  
+|"a car the that plane"|Recognition is not successful. A recognized subset is required to be a sequence of the original string.|  
+|"a car the boat a truck that plane"|Recognition is not successful. The words are out of order.|  
+|"a the"|Recognition is not successful. Speech input must contain words other than articles and prepositions.|  
+  
+   
+  
+## Examples  
+ Below is a test routine which generates four <xref:System.Speech.Recognition.Grammar> objects, using the same phrase, for each of the `SubsetMatchingModes`. These <xref:System.Speech.Recognition.Grammar> objects can then be tested.  
+  
+```  
+private void CreateSubsetMatchTest()   
+{  
+  foreach ( System.Speech.Recognition.SubsetMatchingMode mode   
+              in Enum.GetValues(typeof(System.Speech.Recognition.SubsetMatchingMode)))  
+  {  
+    GrammarBuilder gb = new GrammarBuilder("a car the truck a boat that plane",mode);  
+    Grammar grammar = new Grammar(gb);  
+    grammar.Name = mode.ToString();  
+    grammar.Enabled=true;  
+    _recognizer.LoadGrammar(grammar);  
+  }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OrderedSubset">
+      <MemberSignature Language="C#" Value="OrderedSubset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SubsetMatchingMode OrderedSubset = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SubsetMatchingMode.OrderedSubset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.SubsetMatchingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that subset matching mode is **OrderedSubset**.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderedSubsetContentRequired">
+      <MemberSignature Language="C#" Value="OrderedSubsetContentRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SubsetMatchingMode OrderedSubsetContentRequired = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SubsetMatchingMode.OrderedSubsetContentRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.SubsetMatchingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that subset matching mode is **OrderedSubsetContentRequired**.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Subsequence">
+      <MemberSignature Language="C#" Value="Subsequence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SubsetMatchingMode Subsequence = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SubsetMatchingMode.Subsequence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.SubsetMatchingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that subset matching mode is **Subsequence**.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SubsequenceContentRequired">
+      <MemberSignature Language="C#" Value="SubsequenceContentRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.SubsetMatchingMode SubsequenceContentRequired = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.SubsetMatchingMode.SubsequenceContentRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.SubsetMatchingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that subset matching mode is **SubsequenceContentRequired**.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

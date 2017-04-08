@@ -1,0 +1,966 @@
+<Type Name="XmlSchemaCollection" FullName="System.Xml.Schema.XmlSchemaCollection">
+  <TypeSignature Language="C#" Value="public sealed class XmlSchemaCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSchemaCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use System.Xml.Schema.XmlSchemaSet for schema compilation and validation. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a cache of XML Schema definition language (XSD) and XML-Data Reduced (XDR) schemas. The <see cref="T:System.Xml.Schema.XmlSchemaCollection" /> class class is obsolete. Use <see cref="T:System.Xml.Schema.XmlSchemaSet" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Schemas are loaded using the <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A> method, at which time the schema is associated with a namespace Uniform Resource Identifier (URI). For XML Schemas, this will typically be the `targetNamespace` property of the schema.  
+  
+ Although this class stores both XML Schemas and XDR schemas, any method and property that takes or returns an <xref:System.Xml.Schema.XmlSchema> applies to XML Schemas only.  
+  
+ This version of the product supports the World Wide Web Consortium (W3C) XML Schema recommendation located at http://www.w3.org/TR/xmlschema-1 and http://www.w3.org/TR/xmlschema-2. An XML Schema must reference the W3C Schema namespace `http://www.w3.org/2001/XMLSchema` in its schema element. See the <xref:System.Xml.Schema.XmlSchemaCollection.Add%2A> method for an example.  
+  
+ `XmlSchemaCollection` can be used by <xref:System.Xml.XmlValidatingReader> for efficient data validation.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the Microsoft .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+   
+  
+## Examples  
+ The following example validates an XML document using the `XmlSchemaCollection`.  
+  
+ [!code-cpp[XmlSchemaCollection.Basic#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlSchemaCollection.Basic/CPP/aa.cpp#1)]
+ [!code-csharp[XmlSchemaCollection.Basic#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaCollection.Basic/CS/aa.cs#1)]
+ [!code-vb[XmlSchemaCollection.Basic#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaCollection.Basic/VB/aa.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="XmlSchemaCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaCollection (System.Xml.XmlNameTable nametable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNameTable nametable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.#ctor(System.Xml.XmlNameTable)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="nametable" Type="System.Xml.XmlNameTable" />
+      </Parameters>
+      <Docs>
+        <param name="nametable">The <see langword="XmlNameTable" /> to use.</param>
+        <summary>Initializes a new instance of the <see langword="XmlSchemaCollection" /> class with the specified <see cref="T:System.Xml.XmlNameTable" />. The <see langword="XmlNameTable" /> is used when loading schemas.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema Add (System.Xml.Schema.XmlSchema schema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchema Add(class System.Xml.Schema.XmlSchema schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.Xml.Schema.XmlSchema)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="System.Xml.Schema.XmlSchema" />
+      </Parameters>
+      <Docs>
+        <param name="schema">The <see langword="XmlSchema" /> to add to the collection.</param>
+        <summary>Adds the <see cref="T:System.Xml.Schema.XmlSchema" /> to the collection.</summary>
+        <returns>The <see langword="XmlSchema" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `targetNamespace` attribute is used to identify this schema.  
+  
+ If the schema being added contains references to other namespaces (through `include` and `import` elements), the trust level of the application determines how these other namespaces are resolved. (In the .NET Framework version 1.0, a default <xref:System.Xml.XmlUrlResolver> was always used).  
+  
+ `Fully trusted code:` A default `XmlUrlResolver` with no user credentials is used to resolve any external resources. The schemas for these other namespaces are loaded for validation purposes only. Unlike the original schema, these other schemas are not explicitly added to the schema collection. As a result, they are not accessible using any of the collection methods or properties. If these external resources are located on a network resource that requires authentication, use an overload that takes an <xref:System.Xml.XmlResolver> as one of its arguments and specify an `XmlResolver` with the necessary credentials.  
+  
+ `Semi-trusted code:` External references are not resolved.  
+  
+> [!NOTE]
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Xml.Schema.XmlSchemaCollection schema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Xml.Schema.XmlSchemaCollection schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.Xml.Schema.XmlSchemaCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="System.Xml.Schema.XmlSchemaCollection" />
+      </Parameters>
+      <Docs>
+        <param name="schema">The <see langword="XmlSchemaCollection" /> you want to add to this collection.</param>
+        <summary>Adds all the namespaces defined in the given collection (including their associated schemas) to this collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the schema being added contains references to other namespaces (through `include` and `import` elements or the `x-schema` attribute), the trust level of the application determines how these other namespaces are resolved. (In the .NET Framework version 1.0, a default <xref:System.Xml.XmlUrlResolver> was always used).  
+  
+ `Fully trusted code:` A default `XmlUrlResolver` with no user credentials is used to resolve any external resources. The schemas for these other namespaces are loaded for validation purposes only. Unlike the original schema, these other schemas are not explicitly added to the schema collection. As a result, they are not accessible using any of the collection methods or properties. If these external resources are located on a network resource that requires authentication, use an overload that takes an <xref:System.Xml.XmlResolver> as one of its arguments and specify an `XmlResolver` with the necessary credentials.  
+  
+ `Semi-trusted code:` External references are not resolved.  
+  
+> [!NOTE]
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema Add (string ns, string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchema Add(string ns, string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ns">The namespace URI associated with the schema. For XML Schemas, this will typically be the <see langword="targetNamespace" />.</param>
+        <param name="uri">The URL that specifies the schema to load.</param>
+        <summary>Adds the schema located by the given URL into the schema collection.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchema" /> added to the schema collection; <see langword="null" /> if the schema being added is an XDR schema or if there are compilation errors in the schema.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `ns` has already been associated with another schema in the collection, the schema being added replaces the original schema in the collection. For example, in the following C# code, authors.xsd is removed from the collection and names.xsd is added.  
+  
+```  
+schemaColl.Add("urn:author", "authors.xsd");  
+schemaColl.Add("urn:author", "names.xsd");  
+```  
+  
+ If `ns` is `null` and the schema being added is an XML Schema, the `Add` method uses the `targetNamespace` defined in the XML Schema to identify the schema in the collection. If the schema being added contains references to other namespaces (through `include` and `import` elements or the `x-schema` attribute), the trust level of the application determines how these other namespaces are resolved. (In the .NET Framework version 1.0, a default <xref:System.Xml.XmlUrlResolver> was always used).  
+  
+ `Fully trusted code:` A default `XmlUrlResolver` with no user credentials is used to resolve any external resources. The schemas for these other namespaces are loaded for validation purposes only. Unlike the original schema, these other schemas are not explicitly added to the schema collection. As a result, they are not accessible using any of the collection methods or properties. If these external resources are located on a network resource that requires authentication, use an overload that takes an <xref:System.Xml.XmlResolver> as one of its arguments and specify an `XmlResolver` with the necessary credentials.  
+  
+ `Semi-trusted code:` External references are not resolved.  
+  
+> [!NOTE]
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+   
+  
+## Examples  
+ The following example validates three XML files using schemas stored in the `XmlSchemaCollection`.  
+  
+ [!code-cpp[Classic WebData XmlValidatingReader.Schemas Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlValidatingReader.Schemas Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlValidatingReader.Schemas Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlValidatingReader.Schemas Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlValidatingReader.Schemas Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlValidatingReader.Schemas Example/VB/source.vb#1)]  
+  
+ The sample uses the following five input files:  
+  
+ `booksSchema.xml`  
+  
+ [!code-xml[Classic WebData XmlValidatingReader.Schemas Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlValidatingReader.Schemas Example/XML/source.xml#2)]  
+  
+ `booksSchemaFail.xml`  
+  
+ [!code-xml[Classic WebData XmlValidatingReader.Schemas Example#3](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlValidatingReader.Schemas Example/XML/source.xml#3)]  
+  
+ `newbooks.xml`  
+  
+ [!code-xml[Classic WebData XmlValidatingReader.Schemas Example#4](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlValidatingReader.Schemas Example/XML/source.xml#4)]  
+  
+ `books.xsd`  
+  
+ [!code-xml[Classic WebData XmlValidatingReader.Schemas Example#5](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlValidatingReader.Schemas Example/XML/source.xml#5)]  
+  
+ `schema1.xdr`  
+  
+ [!code-xml[Classic WebData XmlValidatingReader.Schemas Example#6](~/samples/snippets/xml/VS_Snippets_Data/Classic WebData XmlValidatingReader.Schemas Example/XML/source.xml#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">The schema is not a valid schema.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema Add (string ns, System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchema Add(string ns, class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.String,System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="ns">The namespace URI associated with the schema. For XML Schemas, this will typically be the <see langword="targetNamespace" />.</param>
+        <param name="reader">
+          <see cref="T:System.Xml.XmlReader" /> containing the schema to add.</param>
+        <summary>Adds the schema contained in the <see cref="T:System.Xml.XmlReader" /> to the schema collection.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchema" /> added to the schema collection; <see langword="null" /> if the schema being added is an XDR schema or if there are compilation errors in the schema.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `ns` has already been associated with another schema in the collection, the schema being added replaces the original schema in the collection.  
+  
+ If `ns` is `null` and the schema being added is an XML Schema, the `Add` method uses the `targetNamespace` defined in the XML Schema to identify the schema in the collection.  
+  
+ If the schema being added contains references to other namespaces (through `include` and `import` elements or the `x-schema` attribute), the trust level of the application determines how these other namespaces are resolved. (In the .NET Framework version 1.0, a default <xref:System.Xml.XmlUrlResolver> was always used).  
+  
+ `Fully trusted code:` A default `XmlUrlResolver` with no user credentials is used to resolve any external resources. The schemas for these other namespaces are loaded for validation purposes only. Unlike the original schema, these other schemas are not explicitly added to the schema collection. As a result, they are not accessible using any of the collection methods or properties. If these external resources are located on a network resource that requires authentication, use an overload that takes an <xref:System.Xml.XmlResolver> as one of its arguments and specify an `XmlResolver` with the necessary credentials.  
+  
+ `Semi-trusted code:` External references are not resolved.  
+  
+> [!NOTE]
+>  If the `XmlSchemaCollection` is being accessed using the <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=fullName> property, the `Add` method uses the `XmlResolver` specified by the <xref:System.Xml.XmlValidatingReader.XmlResolver%2A?displayProperty=fullName> property.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">The schema is not a valid schema.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema Add (System.Xml.Schema.XmlSchema schema, System.Xml.XmlResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchema Add(class System.Xml.Schema.XmlSchema schema, class System.Xml.XmlResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.Xml.Schema.XmlSchema,System.Xml.XmlResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="System.Xml.Schema.XmlSchema" />
+        <Parameter Name="resolver" Type="System.Xml.XmlResolver" />
+      </Parameters>
+      <Docs>
+        <param name="schema">The <see langword="XmlSchema" /> to add to the collection.</param>
+        <param name="resolver">The <see cref="T:System.Xml.XmlResolver" /> used to resolve namespaces referenced in <see langword="include" /> and <see langword="import" /> elements. If this is <see langword="null" />, external references are not resolved.</param>
+        <summary>Adds the <see cref="T:System.Xml.Schema.XmlSchema" /> to the collection. The specified <see cref="T:System.Xml.XmlResolver" /> is used to resolve any external references.</summary>
+        <returns>The <see langword="XmlSchema" /> added to the schema collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `targetNamespace` attribute is used to identify this schema.  
+  
+ If the schema contains `include` and `import` elements that reference other namespaces, the schemas for these other namespaces are loaded for validation purposes only. Unlike the original schema, these other schemas are not explicitly added to the schema collection. As a result, they are not accessible using any of the collection methods or properties.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+   
+  
+## Examples  
+ The following example adds a schema to the collection. An <xref:System.Xml.XmlUrlResolver> is passed to the `Add` method which sets the necessary credentials required to access any external resources referenced in the schema.  
+  
+ [!code-cpp[XmlSchemaCollection.Add#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlSchemaCollection.Add/CPP/schemacolladd.cpp#1)]
+ [!code-csharp[XmlSchemaCollection.Add#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchemaCollection.Add/CS/schemacolladd.cs#1)]
+ [!code-vb[XmlSchemaCollection.Add#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaCollection.Add/VB/schemacolladd.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">The schema is not a valid schema.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema Add (string ns, System.Xml.XmlReader reader, System.Xml.XmlResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchema Add(string ns, class System.Xml.XmlReader reader, class System.Xml.XmlResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Add(System.String,System.Xml.XmlReader,System.Xml.XmlResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ns" Type="System.String" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="resolver" Type="System.Xml.XmlResolver" />
+      </Parameters>
+      <Docs>
+        <param name="ns">The namespace URI associated with the schema. For XML Schemas, this will typically be the <see langword="targetNamespace" />.</param>
+        <param name="reader">
+          <see cref="T:System.Xml.XmlReader" /> containing the schema to add.</param>
+        <param name="resolver">The <see cref="T:System.Xml.XmlResolver" /> used to resolve namespaces referenced in <see langword="include" /> and <see langword="import" /> elements or <see langword="x-schema" /> attribute (XDR schemas). If this is <see langword="null" />, external references are not resolved.</param>
+        <summary>Adds the schema contained in the <see cref="T:System.Xml.XmlReader" /> to the schema collection. The specified <see cref="T:System.Xml.XmlResolver" /> is used to resolve any external resources.</summary>
+        <returns>The <see cref="T:System.Xml.Schema.XmlSchema" /> added to the schema collection; <see langword="null" /> if the schema being added is an XDR schema or if there are compilation errors in the schema.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `ns` has already been associated with another schema in the collection, the schema being added replaces the original schema in the collection.  
+  
+ If `ns` is `null` and the schema being added is an XML Schema, the `Add` method uses the `targetNamespace` attribute defined in the XML Schema to identify the schema in the collection.  
+  
+ If the schema being added contains references to other namespaces (through `include` and `import` elements or the `x-schema` attribute), the schemas for these other namespaces are loaded for validation purposes only. Unlike the original schema, these other schemas are not explicitly added to the schema collection. As a result, they are not accessible using any of the collection methods or properties.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Xml.XmlException">The schema is not a valid schema.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ns">The namespace URI associated with the schema. For XML Schemas, this will typically be the target namespace.</param>
+        <summary>Gets a value indicating whether a schema with the specified namespace is in the collection.</summary>
+        <returns>
+          <see langword="true" /> if a schema with the specified namespace is in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+   
+  
+## Examples  
+ The following example checks to see if a schema is in the collection. If it is, it displays the schema.  
+  
+ [!code-cpp[Classic WebData XmlSchemaCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.this Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.this Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaCollection.this Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Xml.Schema.XmlSchema schema);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Xml.Schema.XmlSchema schema) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.Contains(System.Xml.Schema.XmlSchema)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schema" Type="System.Xml.Schema.XmlSchema" />
+      </Parameters>
+      <Docs>
+        <param name="schema">The <see langword="XmlSchema" /> object.</param>
+        <summary>Gets a value indicating whether the <see langword="targetNamespace" /> of the specified <see cref="T:System.Xml.Schema.XmlSchema" /> is in the collection.</summary>
+        <returns>
+          <see langword="true" /> if there is a schema in the collection with the same <see langword="targetNamespace" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Xml.Schema.XmlSchema[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Xml.Schema.XmlSchema[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.CopyTo(System.Xml.Schema.XmlSchema[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Xml.Schema.XmlSchema[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to copy the objects to.</param>
+        <param name="index">The index in <c>array</c> where copying will begin.</param>
+        <summary>Copies all the <see langword="XmlSchema" /> objects from this collection into the given array starting at the given index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of namespaces defined in this collection.</summary>
+        <value>The number of namespaces defined in this collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaCollectionEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchemaCollectionEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchemaCollectionEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides support for the "for each" style iteration over the collection of schemas.</summary>
+        <returns>An enumerator for iterating over all schemas in the current collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+   
+  
+## Examples  
+ The following example displays each of the XML Schemas in the schema collection.  
+  
+ [!code-cpp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaCollection.GetEnumerator Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaCollection.GetEnumerator Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchema this[string ns] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchema Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ns">The namespace URI associated with the schema you want to return. This will typically be the <see langword="targetNamespace" /> of the schema.</param>
+        <summary>Gets the <see cref="T:System.Xml.Schema.XmlSchema" /> associated with the given namespace URI.</summary>
+        <value>The <see langword="XmlSchema" /> associated with the namespace URI; <see langword="null" /> if there is no loaded schema associated with the given namespace or if the namespace is associated with an XDR schema.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+   
+  
+## Examples  
+ The following example checks to see if a schema is in the collection. If it is, it displays the schema.  
+  
+ [!code-cpp[Classic WebData XmlSchemaCollection.this Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.this Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic WebData XmlSchemaCollection.this Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic WebData XmlSchemaCollection.this Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData XmlSchemaCollection.this Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic WebData XmlSchemaCollection.this Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameTable">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlNameTable NameTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNameTable NameTable" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.NameTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNameTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default <see langword="XmlNameTable" /> used by the <see langword="XmlSchemaCollection" /> when loading new schemas.</summary>
+        <value>An <see langword="XmlNameTable" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to copy the objects to.</param>
+        <param name="index">The index in <c>array</c> where copying will begin.</param>
+        <summary>For a description of this member, see <see cref="M:System.Xml.Schema.XmlSchemaCollection.CopyTo(System.Xml.Schema.XmlSchema[],System.Int32)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Xml.Schema.XmlSchemaCollection.Count" />.</summary>
+        <value>Returns the count of the items in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#IsSynchronized" />.</summary>
+        <value>Returns <see langword="true" /> if the collection is synchronized, otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Xml.Schema.XmlSchemaCollection.System#Collections#ICollection#SyncRoot" />.</summary>
+        <value>Returns a <see cref="P:System.Collections.ICollection.SyncRoot" /> object that can be used to synchronize access to the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Xml.Schema.XmlSchemaCollection.GetEnumerator" />.</summary>
+        <returns>Returns the <see cref="T:System.Collections.IEnumerator" /> for the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Xml.Schema.XmlSchemaCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationEventHandler">
+      <MemberSignature Language="C#" Value="public event System.Xml.Schema.ValidationEventHandler ValidationEventHandler;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Xml.Schema.ValidationEventHandler ValidationEventHandler" />
+      <MemberSignature Language="DocId" Value="E:System.Xml.Schema.XmlSchemaCollection.ValidationEventHandler" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.ValidationEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets an event handler for receiving information about the XDR and XML schema validation errors.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These events occur when the schemas are added to the collection. If an event handler is not provided, an <xref:System.Xml.Schema.XmlSchemaException> is thrown on any validation errors where the <xref:System.Xml.Schema.ValidationEventArgs.Severity%2A> is `XmlSeverityType.Error`. To specify an event handler, define a callback function and add it to the `ValidationEventHandler`.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to set an event handler to handle invalid XML Schemas.  
+  
+ [!code-cpp[XmlSchema.ValidationEventHandler#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlSchema.ValidationEventHandler/CPP/schemaevent.cpp#1)]
+ [!code-csharp[XmlSchema.ValidationEventHandler#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlSchema.ValidationEventHandler/CS/schemaevent.cs#1)]
+ [!code-vb[XmlSchema.ValidationEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlSchema.ValidationEventHandler/VB/schemaevent.vb#1)]  
+  
+ The preceding example uses the file `invalid.xsd` as input.  
+  
+ [!code-xml[XmlSchema.ValidationEventHandler#2](~/samples/snippets/xml/VS_Snippets_Data/XmlSchema.ValidationEventHandler/XML/invalid.xsd#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the given schema into the schema collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="XmlSchemaCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether a schema with the specified namespace is in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Xml.Schema.XmlSchemaCollection> class is obsolete in the .NET Framework version 2.0 and has been replaced by the <xref:System.Xml.Schema.XmlSchemaSet> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

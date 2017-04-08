@@ -1,0 +1,99 @@
+<Type Name="AuthenticationType" FullName="System.Security.RightsManagement.AuthenticationType">
+  <TypeSignature Language="C#" Value="public enum AuthenticationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.AuthenticationType" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the method of rights management authentication.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.RightsManagement.AuthenticationType> specifies how users who access rights managed content are to be authenticated.  
+  
+ `Internal` also provides authentication for the owner and author of a protected document or template.  
+  
+   
+  
+## Examples  
+ The following example also shows use of the <xref:System.Security.RightsManagement.AuthenticationType> enumeration.  
+  
+ [!code-csharp[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/csharp/VS_Snippets_Wpf/RightsManagedPackagePublish/CSharp/Window1.xaml.cs#rmpkgpubsecenv)]
+ [!code-vb[RightsManagedPackagePublish#RmPkgPubSecEnv](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RightsManagedPackagePublish/visualbasic/window1.xaml.vb#rmpkgpubsecenv)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Internal">
+      <MemberSignature Language="C#" Value="Internal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.AuthenticationType Internal = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.AuthenticationType.Internal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Implicit authentication to any requesting user.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Passport">
+      <MemberSignature Language="C#" Value="Passport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.AuthenticationType Passport = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.AuthenticationType.Passport" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!INCLUDE[TLA#tla_passport](~/includes/tlasharptla-passport-md.md)] authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows">
+      <MemberSignature Language="C#" Value="Windows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.AuthenticationType Windows = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.AuthenticationType.Windows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[!INCLUDE[TLA#tla_mswin](~/includes/tlasharptla-mswin-md.md)] authentication in a corporate domain environment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsPassport">
+      <MemberSignature Language="C#" Value="WindowsPassport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.AuthenticationType WindowsPassport = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.AuthenticationType.WindowsPassport" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.RightsManagement.AuthenticationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Either [!INCLUDE[TLA2#tla_win](~/includes/tla2sharptla-win-md.md)] authentication or [!INCLUDE[TLA2#tla_passport](~/includes/tla2sharptla-passport-md.md)] authentication.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

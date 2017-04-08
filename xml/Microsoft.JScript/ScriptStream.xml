@@ -1,0 +1,149 @@
+<Type Name="ScriptStream" FullName="Microsoft.JScript.ScriptStream">
+  <TypeSignature Language="C#" Value="public class ScriptStream" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptStream extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ScriptStream" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a stream of data. This class sends its data to either a <see cref="T:Microsoft.JScript.COMCharStream" /> or a <see cref="T:System.Console" /> stream.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ScriptStream" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public static System.IO.TextWriter Error;" />
+      <MemberSignature Language="ILAsm" Value=".field public static class System.IO.TextWriter Error" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ScriptStream.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.TextWriter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to either the standard console <see cref="P:System.Console.Error" /> stream or a custom <see cref="T:Microsoft.JScript.COMCharStream" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Out">
+      <MemberSignature Language="C#" Value="public static System.IO.TextWriter Out;" />
+      <MemberSignature Language="ILAsm" Value=".field public static class System.IO.TextWriter Out" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ScriptStream.Out" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.TextWriter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to either the standard console <see cref="P:System.Console.Out" /> stream or a custom <see cref="T:Microsoft.JScript.COMCharStream" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintStackTrace">
+      <MemberSignature Language="C#" Value="public static void PrintStackTrace ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PrintStackTrace() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.PrintStackTrace" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Writes a string that describes the current contents of the call stack. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintStackTrace">
+      <MemberSignature Language="C#" Value="public static void PrintStackTrace (Exception e);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PrintStackTrace(class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.PrintStackTrace(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="e">The exception that was thrown.</param>
+        <summary>Writes a string that describes the contents of the call stack at the time the specified exception was thrown. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public static void Write (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.Write(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string to write to the stream.</param>
+        <summary>Writes the specified string to the stream. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public static void WriteLine (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ScriptStream.WriteLine(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string to write to the stream.</param>
+        <summary>Writes the specified string to the stream, followed by the line terminator. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

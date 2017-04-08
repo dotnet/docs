@@ -1,0 +1,385 @@
+<Type Name="UndoEngine" FullName="System.ComponentModel.Design.UndoEngine">
+  <TypeSignature Language="C#" Value="public abstract class UndoEngine : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UndoEngine extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.UndoEngine" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Specifies generic undo/redo functionality at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.UndoEngine> abstract class provides a default implementation of undo functionality at design time. An undo unit represents a single unit of undoable work. This unit is added to a stack and the user can then walk the stack to undo each action. Undo units typically are designed to toggle, which means that calling undo twice returns the application to its starting state.  
+  
+ The <xref:System.ComponentModel.Design.UndoEngine> class takes advantage of the following characteristics of objects running within the designer:  
+  
+-   All interesting objects can be persisted to some format by the designer loader.  
+  
+-   All objects raise property-change notifications when a property is changed.  
+  
+-   <xref:System.ComponentModel.Design.IDesignerHost> offers the idea of transactions, which can be used to fabricate an undo action that spans multiple smaller actions.  
+  
+ With these features, <xref:System.ComponentModel.Design.UndoEngine> can fabricate any undo units it needs automatically.  
+  
+> [!NOTE]
+>  Do not change property values directly. The <xref:System.ComponentModel.Design.UndoEngine> class requires you to use the appropriate <xref:System.ComponentModel.TypeDescriptor> to change property values.  
+  
+ <xref:System.ComponentModel.Design.UndoEngine> monitors for change notifications to create undo units, and the units themselves consist of serialized object states. The following table shows the services that must be available when <xref:System.ComponentModel.Design.UndoEngine> is created.  
+  
+|Service|Description|  
+|-------------|-----------------|  
+|<xref:System.ComponentModel.Design.Serialization.ComponentSerializationService>|Saves property and object values for a component before and after a change is made.|  
+|<xref:System.ComponentModel.Design.IComponentChangeService>|Notifies the undo engine of changes made to components.|  
+|<xref:System.ComponentModel.Design.IDesignerHost>|Used to track transactions.|  
+  
+> [!NOTE]
+>  Because the <xref:System.ComponentModel.Design.UndoEngine> class requires <xref:System.ComponentModel.Design.Serialization.ComponentSerializationService> and <xref:System.ComponentModel.Design.IComponentChangeService>, it is available only at design time.  
+  
+ The undo engine tracks transactions and creates a single undo unit that encompasses a transaction. As a result, the undo engine has control over the duration of an undoable action. Also, because transactions can be named, undoable actions inherit their names from the current transaction. If no transaction is available and a change is reported, the undo engine creates an undo name based on the type of change (for example, "Change property 'Text'").  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected UndoEngine (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.#ctor(System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">A parenting service provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.UndoEngine" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.UndoEngine> requires several services from the `provider` parameter to be useful.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">A required service cannot be found. See <see cref="T:System.ComponentModel.Design.UndoEngine" /> for required services. If you have removed this service, ensure that you provide a replacement.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUndoUnit">
+      <MemberSignature Language="C#" Value="protected abstract void AddUndoUnit (System.ComponentModel.Design.UndoEngine.UndoUnit unit);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddUndoUnit(class System.ComponentModel.Design.UndoEngine/UndoUnit unit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.AddUndoUnit(System.ComponentModel.Design.UndoEngine.UndoUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unit" Type="System.ComponentModel.Design.UndoEngine+UndoUnit" />
+      </Parameters>
+      <Docs>
+        <param name="unit">The undo unit to add</param>
+        <summary>Adds an <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" /> to the undo stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Create the `unit` parameter by calling the <xref:System.ComponentModel.Design.UndoEngine.CreateUndoUnit%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUndoUnit">
+      <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.Design.UndoEngine.UndoUnit CreateUndoUnit (string name, bool primary);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ComponentModel.Design.UndoEngine/UndoUnit CreateUndoUnit(string name, bool primary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.CreateUndoUnit(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.UndoEngine+UndoUnit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="primary" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the unit to create.</param>
+        <param name="primary">
+          <see langword="true" /> to create the first of a series of nested units; <see langword="false" /> to create subsequent nested units.</param>
+        <summary>Creates a new <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />.</summary>
+        <returns>A new <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" /> with a specified name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation of the <xref:System.ComponentModel.Design.UndoEngine.CreateUndoUnit%2A> method simply returns a new <xref:System.ComponentModel.Design.UndoEngine.UndoUnit>.  
+  
+ By default, <xref:System.ComponentModel.Design.UndoEngine> does nothing with the `primary` parameter, but some implementations of undo, such as those involving the COM `Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit` design pattern, may need to identify the difference between a primary unit and its children.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscardUndoUnit">
+      <MemberSignature Language="C#" Value="protected virtual void DiscardUndoUnit (System.ComponentModel.Design.UndoEngine.UndoUnit unit);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DiscardUndoUnit(class System.ComponentModel.Design.UndoEngine/UndoUnit unit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.DiscardUndoUnit(System.ComponentModel.Design.UndoEngine.UndoUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unit" Type="System.ComponentModel.Design.UndoEngine+UndoUnit" />
+      </Parameters>
+      <Docs>
+        <param name="unit">The unit to discard.</param>
+        <summary>Discards an <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before the <xref:System.ComponentModel.Design.UndoEngine.DiscardUndoUnit%2A> method is called, the undo unit is closed and then undone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.UndoEngine" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Design.UndoEngine" /> and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.UndoEngine.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables or disables the <see cref="T:System.ComponentModel.Design.UndoEngine" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.ComponentModel.Design.UndoEngine" /> is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequiredService">
+      <MemberSignature Language="C#" Value="protected object GetRequiredService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetRequiredService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.GetRequiredService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The type of service to retrieve.</param>
+        <summary>Gets the requested service.</summary>
+        <returns>The requested service, if found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="serviceType" /> is required but cannot be found. If you have removed this service, ensure that you provide a replacement.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="protected object GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The type of service to retrieve.</param>
+        <summary>Gets the requested service.</summary>
+        <returns>The requested service, or <see langword="null" /> if the requested service is not found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUndoing">
+      <MemberSignature Language="C#" Value="protected virtual void OnUndoing (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUndoing(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.OnUndoing(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.Design.UndoEngine.Undoing" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUndone">
+      <MemberSignature Language="C#" Value="protected virtual void OnUndone (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUndone(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.UndoEngine.OnUndone(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.ComponentModel.Design.UndoEngine.Undone" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Undoing">
+      <MemberSignature Language="C#" Value="public event EventHandler Undoing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Undoing" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.UndoEngine.Undoing" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs immediately before an undo action is performed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UndoInProgress">
+      <MemberSignature Language="C#" Value="public bool UndoInProgress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UndoInProgress" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.UndoEngine.UndoInProgress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates if an undo action is in progress.</summary>
+        <value>
+          <see langword="true" /> if an undo action is in progress; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Undone">
+      <MemberSignature Language="C#" Value="public event EventHandler Undone;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Undone" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.UndoEngine.Undone" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs immediately after an undo action is performed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.UndoEngine.Undone> event is always raised, even if an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

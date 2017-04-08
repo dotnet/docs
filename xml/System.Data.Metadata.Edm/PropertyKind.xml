@@ -1,0 +1,154 @@
+<Type Name="PropertyKind" FullName="System.Data.Metadata.Edm.PropertyKind">
+  <TypeSignature Language="C#" Value="public enum PropertyKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PropertyKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the kinds of item attributes in the conceptual model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [Extended Property (CSDL)](http://msdn.microsoft.com/en-us/697e2fb1-8977-4aa6-a1ef-236950e91fd1).  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates how to get a metadata workspace from the connection and then use that metadata workspace to retrieve information about the extended properties in the specified data model. Note that the metadata workspace is a runtime service component that provides support for retrieving metadata.  
+  
+ The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace> represents the default name for the conceptual model. The code sample uses the AdventureWorks Model that is provided in the [AdventureWorks Model (EDM)](http://msdn.microsoft.com/en-us/da87d29e-8c89-4310-bbac-5cbd062930a7)topic. For an example of the application config file, see [AdventureWorks Object Model in Applications (EDM)](http://msdn.microsoft.com/en-us/84c01270-90ba-467b-ad24-df10c1ca8f45).  
+  
+```csharp  
+using System;  
+using System.Data;  
+using System.Data.EntityClient;  
+using System.Collections.ObjectModel;  
+using System.Data.Metadata.Edm;  
+  
+class UsePropertyKindExample  
+{  
+   static void Main(string[] args)  
+   {  
+     try  
+     {  
+       // Establish a connection to the underlying data provider by   
+       // using the connection string specified in the config file.  
+       using (EntityConnection connection =  
+           new EntityConnection("Name=AdventureworksContext"))  
+       {  
+          // Open the connection.  
+          connection.Open();  
+  
+          // Access the metadata workspace.  
+          MetadataWorkspace workspace =   
+             connection.GetMetadataWorkspace();  
+  
+          // Display the extended properties in the conceptual model.  
+          DisplayProperties(workspace, DataSpace.CSpace);  
+       }  
+     }  
+     catch (MetadataException exceptionMetadata)  
+     {  
+         Console.WriteLine("MetadataException: {0}",  
+                         exceptionMetadata.Message);  
+     }  
+     catch (System.Data.MappingException exceptionMapping)  
+     {  
+         Console.WriteLine("MappingException: {0}",  
+                          exceptionMapping.Message);  
+     }  
+   }  
+  
+   public static void DisplayProperties(  
+        MetadataWorkspace workspace, DataSpace model)  
+   {  
+      // Get a collection of the entity containers.  
+      ReadOnlyCollection<EntityContainer> containers =  
+          workspace.GetItems<EntityContainer>(model);  
+  
+      // Iterate through the collection to get each entity container.  
+      foreach (EntityContainer container in containers)  
+      {  
+          // Display the extended properties for the entity container.  
+          DisplayExtendedProperties(container);  
+  
+          // Iterate through the collection to get each entity set.  
+          foreach (EntitySetBase baseSet in container.BaseEntitySets)  
+          {  
+              // Check whether this instance is an EntitySet.  
+              if (baseSet is EntitySet)  
+              {  
+                 // Display the extended properties for the entity set.  
+                 DisplayExtendedProperties(baseSet);  
+              }  
+          }  
+      }  
+  
+      // Get a collection of the entity types.  
+      ReadOnlyCollection<EntityType> entities =   
+             workspace.GetItems<EntityType>(model);  
+  
+      // Iterate through the collection to get each entity type.  
+      foreach (EntityType entity in entities)  
+      {  
+         // Display the extended properties for the entity type.  
+         DisplayExtendedProperties(entity);  
+      }  
+   }  
+  
+   private static void DisplayExtendedProperties(MetadataItem item)  
+   {  
+     foreach (MetadataProperty property in item.MetadataProperties)  
+     {  
+         if (property.PropertyKind == PropertyKind.Extended)  
+           Console.WriteLine(string.Format("\t{0}\t{1}\t{2}",   
+             item.GetType().Name, property.Name, property.Value));  
+     }  
+   }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Extended">
+      <MemberSignature Language="C#" Value="Extended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PropertyKind Extended = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PropertyKind.Extended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member indicating that an item attribute is <c>Extended</c>.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="System" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.PropertyKind System = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PropertyKind.System" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member indicating that an item attribute is <c>System</c>.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

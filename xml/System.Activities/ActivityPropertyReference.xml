@@ -1,0 +1,70 @@
+<Type Name="ActivityPropertyReference" FullName="System.Activities.ActivityPropertyReference">
+  <TypeSignature Language="C#" Value="public class ActivityPropertyReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityPropertyReference extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ActivityPropertyReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a property reference that is used in <see cref="T:System.Activities.ActivityBuilder" /> and that maps to a <see cref="T:System.Activities.XamlIntegration.PropertyReferenceExtension`1" /> in an <see langword="x:Class" /> activity when the <see langword="x:Class" /> activity is deserialized into an <see cref="T:System.Activities.ActivityBuilder" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityPropertyReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityPropertyReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.ActivityPropertyReference" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceProperty">
+      <MemberSignature Language="C#" Value="public string SourceProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityPropertyReference.SourceProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the source property name that corresponds to the property name in the <see langword="x:Class" /> activity definition.</summary>
+        <value>The source property name that corresponds to the property name in the <see langword="x:Class" /> activity definition.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProperty">
+      <MemberSignature Language="C#" Value="public string TargetProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityPropertyReference.TargetProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the property being set on the target object.</summary>
+        <value>The name of the property being set on the target object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

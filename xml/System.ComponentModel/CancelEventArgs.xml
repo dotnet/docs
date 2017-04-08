@@ -1,0 +1,140 @@
+<Type Name="CancelEventArgs" FullName="System.ComponentModel.CancelEventArgs">
+  <TypeSignature Language="C#" Value="public class CancelEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CancelEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.CancelEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for a cancelable event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A cancelable event is raised by a component when it is about to perform an action that can be canceled, such as the <xref:System.Windows.Forms.Form.Closing> event of a <xref:System.Windows.Forms.Form>.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Form.Closing> event is deprecated and has been replaced by <xref:System.Windows.Forms.Form.FormClosing>. It is offered as an example here only to illustrate the usage of <xref:System.ComponentModel.CancelEventArgs>.  
+  
+ <xref:System.ComponentModel.CancelEventArgs> provides the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to indicate whether the event should be canceled.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.ComponentModel.CancelEventArgs> and a <xref:System.ComponentModel.CancelEventHandler> to handle the <xref:System.Windows.Forms.Form.Closing> event of a <xref:System.Windows.Forms.Form>. This code assumes that you have created a <xref:System.Windows.Forms.Form> with a class-level <xref:System.Boolean> variable named `isDataSaved`. It also assumes that you have added a statement to invoke the `OtherInitialize` method from the form's <xref:System.Windows.Forms.Form.Load> method or the constructor (after the call to `InitializeComponent`).  
+  
+ [!code-cpp[Classic CancelEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CancelEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CancelEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CancelEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic CancelEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CancelEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CancelEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CancelEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CancelEventArgs" /> class with the <see cref="P:System.ComponentModel.CancelEventArgs.Cancel" /> property set to <see langword="false" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CancelEventArgs (bool cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.CancelEventArgs.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cancel" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cancel">
+          <see langword="true" /> to cancel the event; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.CancelEventArgs" /> class with the <see cref="P:System.ComponentModel.CancelEventArgs.Cancel" /> property set to the given value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.CancelEventArgs.Cancel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the event should be canceled.</summary>
+        <value>
+          <see langword="true" /> if the event should be canceled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses <xref:System.ComponentModel.CancelEventArgs> and a <xref:System.ComponentModel.CancelEventHandler> to handle the <xref:System.Windows.Forms.Form.FormClosing> event of a <xref:System.Windows.Forms.Form>. This code assumes that you have created a <xref:System.Windows.Forms.Form> with a class-level <xref:System.Boolean> variable named `isDataSaved`. It also assumes that you have added a statement to invoke the `OtherInitialize` method from the form's <xref:System.Windows.Forms.Form.Load> method or the constructor (after the call to `InitializeComponent`).  
+  
+ [!code-cpp[Classic CancelEventArgs Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CancelEventArgs Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CancelEventArgs Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CancelEventArgs Example/CS/source.cs#1)]
+ [!code-vb[Classic CancelEventArgs Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CancelEventArgs Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,82 @@
+<Type Name="ComboBoxStyle" FullName="System.Windows.Forms.ComboBoxStyle">
+  <TypeSignature Language="C#" Value="public enum ComboBoxStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComboBoxStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBoxStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the <see cref="T:System.Windows.Forms.ComboBox" /> style.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property specifies whether the list is always displayed or whether the list is displayed in a drop-down. The <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property also specifies whether the text portion can be edited.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ComboBox> control by setting the <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A?displayProperty=fullName> property to a <xref:System.Windows.Forms.ComboBoxStyle> value.  
+  
+ [!code-cpp[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ComboBoxFindString#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ComboBoxFindString/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DropDown">
+      <MemberSignature Language="C#" Value="DropDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ComboBoxStyle DropDown = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.DropDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ComboBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the list is displayed by clicking the down arrow and that the text portion is editable. This means that the user can enter a new value and is not limited to selecting an existing value in the list. When using this setting, the <see cref="F:System.Windows.Forms.AutoCompleteMode.Append" /> value of <see cref="P:System.Windows.Forms.ComboBox.AutoCompleteMode" /> works the same as the <see cref="F:System.Windows.Forms.AutoCompleteMode.SuggestAppend" /> value. This is the default style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropDownList">
+      <MemberSignature Language="C#" Value="DropDownList" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ComboBoxStyle DropDownList = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.DropDownList" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ComboBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the list is displayed by clicking the down arrow and that the text portion is not editable. This means that the user cannot enter a new value. Only values already in the list can be selected. The list displays only if <see cref="P:System.Windows.Forms.ComboBox.AutoCompleteMode" /> is <see cref="F:System.Windows.Forms.AutoCompleteMode.Suggest" /> or <see cref="F:System.Windows.Forms.AutoCompleteMode.SuggestAppend" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Simple">
+      <MemberSignature Language="C#" Value="Simple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ComboBoxStyle Simple = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.Simple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ComboBoxStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the list is always visible and that the text portion is editable. This means that the user can enter a new value and is not limited to selecting an existing value in the list.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

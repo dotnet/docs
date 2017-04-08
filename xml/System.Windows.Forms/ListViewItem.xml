@@ -1,0 +1,2005 @@
+<Type Name="ListViewItem" FullName="System.Windows.Forms.ListViewItem">
+  <TypeSignature Language="C#" Value="public class ListViewItem : ICloneable, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ListViewItem extends System.Object implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Text")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignTimeVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ListViewItemConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an item in a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListView> control is similar to a <xref:System.Windows.Forms.ListBox> in that it displays a list of items. The main difference is that the <xref:System.Windows.Forms.ListView> control provides a number of different ways items can be viewed by the user. The <xref:System.Windows.Forms.ListViewItem> class defines the appearance, behavior, and data associated with an item that is displayed in the <xref:System.Windows.Forms.ListView> control. <xref:System.Windows.Forms.ListViewItem> objects can be displayed in the <xref:System.Windows.Forms.ListView> control in one of four different views. Items can be displayed as large or small icons or as small icons in a vertical list. Items can also have subitems that contain information that is related to the parent item. The fourth view style, details view, allows you to display the item and its subitems in a grid with column headers that can be used to identify the information being displayed in a subitem.  
+  
+ Most of the properties of the <xref:System.Windows.Forms.ListViewItem> class provide ways to change the display of the item in the <xref:System.Windows.Forms.ListView> control it is associated with. The <xref:System.Windows.Forms.ListViewItem.BackColor%2A>, <xref:System.Windows.Forms.ListViewItem.ForeColor%2A>, and <xref:System.Windows.Forms.ListViewItem.Font%2A> properties allow you to change how the text of the item is displayed in the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property allows you to specify the image to load from the <xref:System.Windows.Forms.ImageList> that is assigned to the <xref:System.Windows.Forms.ListView> control (by setting the <xref:System.Windows.Forms.ListView.LargeImageList%2A> or <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties of the <xref:System.Windows.Forms.ListView>). Items can display check boxes in order to obtain item choices from the user in a way similar to a <xref:System.Windows.Forms.CheckedListBox> control. You can use the <xref:System.Windows.Forms.ListViewItem.Checked%2A> property to determine if an item is checked, or to select or clear the check box at run time. Items can display any number of subitems when the <xref:System.Windows.Forms.ListView.View%2A> property of the associated <xref:System.Windows.Forms.ListView> control is set to <xref:System.Windows.Forms.View> and columns are defined in the <xref:System.Windows.Forms.ListView.ColumnHeaderCollection> of the <xref:System.Windows.Forms.ListView> control. You can add subitems to an item by calling the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection.Add%2A> method of the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection> class. The <xref:System.Windows.Forms.ListViewItem.SubItems%2A> property allows you to gain access to the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection> class and its members.  
+  
+ Some of the properties and methods of the <xref:System.Windows.Forms.ListViewItem> class are item-specific versions of properties and methods in the <xref:System.Windows.Forms.ListView> control. For example, the <xref:System.Windows.Forms.ListViewItem.EnsureVisible%2A> method is similar to the <xref:System.Windows.Forms.ListView> version of the method, but the <xref:System.Windows.Forms.ListViewItem> version affects only the current item.  
+  
+ The <xref:System.Windows.Forms.ListViewItem> class also provides methods that are not versions of <xref:System.Windows.Forms.ListView> methods. The <xref:System.Windows.Forms.ListViewItem.BeginEdit%2A> method places the item's text into edit mode so the user can change the item's text (when the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property of the <xref:System.Windows.Forms.ListView> control is set to `true`). The <xref:System.Windows.Forms.ListViewItem.Clone%2A> method allows you to create copies of existing <xref:System.Windows.Forms.ListViewItem> objects to reuse in other <xref:System.Windows.Forms.ListView> controls.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.ListView> control with three <xref:System.Windows.Forms.ListViewItem> objects specified and three <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects specified for each item. The example also creates <xref:System.Windows.Forms.ColumnHeader> objects to display the subitems in details view. Two <xref:System.Windows.Forms.ImageList> objects are also created in the code example to provide images for the <xref:System.Windows.Forms.ListViewItem> objects. These <xref:System.Windows.Forms.ImageList> objects are added to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties. The example uses the following properties in creating the <xref:System.Windows.Forms.ListView> control:  
+  
+-   <xref:System.Windows.Forms.ListView.View%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.LabelEdit%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.CheckBoxes%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.FullRowSelect%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.GridLines%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.Sorting%2A>  
+  
+ You need to add the code to a <xref:System.Windows.Forms.Form> and call the method created in the example from the constructor or another method on the form. The example requires that images named `MySmallImage1`, `MySmallImage2`, `MyLargeImage1`, and `MyLargeImage2` are located in the root directory of drive C.  
+  
+ [!code-cpp[ListViewExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListViewExample/CPP/form1.cpp#1)]
+ [!code-csharp[ListViewExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewExample/CS/form1.cs#1)]
+ [!code-vb[ListViewExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.ListView> control with three <xref:System.Windows.Forms.ListViewItem> objects specified and three <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects specified for each item. The example also creates <xref:System.Windows.Forms.ColumnHeader> objects to display the subitems in details view. Two <xref:System.Windows.Forms.ImageList> objects are also created in the code example to provide images for the <xref:System.Windows.Forms.ListViewItem> objects. These <xref:System.Windows.Forms.ImageList> objects are added to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties. The example uses the following properties in creating the <xref:System.Windows.Forms.ListView> control:  
+  
+-   <xref:System.Windows.Forms.ListView.View%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.LabelEdit%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.CheckBoxes%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.FullRowSelect%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.GridLines%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.Sorting%2A>  
+  
+ You need to add the code to a <xref:System.Windows.Forms.Form> and call the method created in the example from the constructor or another method on the form. The example requires that images named `MySmallImage1`, `MySmallImage2`, `MyLargeImage1`, and `MyLargeImage2` are located in the root directory of drive C.  
+  
+ [!code-cpp[ListViewExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListViewExample/CPP/form1.cpp#1)]
+ [!code-csharp[ListViewExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewExample/CS/form1.cs#1)]
+ [!code-vb[ListViewExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display for the item. This should not exceed 259 characters.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified item text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text of the <xref:System.Windows.Forms.ListViewItem> should not exceed 259 characters or unexpected behavior could occur.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represent the subitems of the new item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with an array of strings representing subitems.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class and assigns it to the specified group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ListViewItem (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> containing information about the <see cref="T:System.Windows.Forms.ListViewItem" /> to be initialized.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that indicates the source destination and context information of a serialized stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified serialization information and streaming context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string text, int imageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 imageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display for the item. This should not exceed 259 characters.</param>
+        <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified item text and the image index position of the item's icon.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text of the <xref:System.Windows.Forms.ListViewItem> should not exceed 259 characters or unexpected behavior could occur.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string text, string imageKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string imageKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display for the item. This should not exceed 259 characters.</param>
+        <param name="imageKey">The name of the image within the <see cref="P:System.Windows.Forms.ListViewItem.ImageList" /> of the owning <see cref="T:System.Windows.Forms.ListView" /> to display in the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified text and image.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `imageKey` parameter specifies an image in the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> associated with the owning <xref:System.Windows.Forms.ListView> control, which can be accessed with the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property.  
+  
+ The text of the <xref:System.Windows.Forms.ListViewItem> should not exceed 259 characters or unexpected behavior could occur.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string text, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display for the item. This should not exceed 259 characters.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified item text and assigns it to the specified group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ The text of the <xref:System.Windows.Forms.ListViewItem> should not exceed 259 characters or unexpected behavior could occur.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, int imageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, int32 imageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represent the subitems of the new item.</param>
+        <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the image index position of the item's icon and an array of strings representing subitems.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, string imageKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, string imageKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="imageKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array containing the text of the subitems of the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
+        <param name="imageKey">The name of the image within the <see cref="P:System.Windows.Forms.ListViewItem.ImageList" /> of the owning <see cref="T:System.Windows.Forms.ListView" /> to display in the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified item and subitem text and image.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `imageKey` parameter specifies an image in the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> associated with the owning <xref:System.Windows.Forms.ListView> control, which can be accessed with the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represent the subitems of the new item.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with an array of strings representing subitems, and assigns the item to the specified group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewItem.ListViewSubItem[] subItems, int imageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem/ListViewSubItem[] subItems, int32 imageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="subItems" Type="System.Windows.Forms.ListViewItem+ListViewSubItem[]" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="subItems">An array of type <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> that represents the subitems of the item.</param>
+        <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the image index position of the item's icon and an array of <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor is useful when you create <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects before adding them to a <xref:System.Windows.Forms.ListViewItem> (for example, to indicate special formatting or to use the subitems in multiple items).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewItem.ListViewSubItem[] subItems, string imageKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem/ListViewSubItem[] subItems, string imageKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="subItems" Type="System.Windows.Forms.ListViewItem+ListViewSubItem[]" />
+        <Parameter Name="imageKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="subItems">An array of <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> objects.</param>
+        <param name="imageKey">The name of the image within the <see cref="P:System.Windows.Forms.ListViewItem.ImageList" /> of the owning <see cref="T:System.Windows.Forms.ListView" /> to display in the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified subitems and image.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `imageKey` parameter specifies an image in the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> associated with the owning <xref:System.Windows.Forms.ListView> control, which can be accessed with the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string text, int imageIndex, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 imageIndex, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.Int32,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display for the item. This should not exceed 259 characters.</param>
+        <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified item text and the image index position of the item's icon, and assigns the item to the specified group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ The text of the <xref:System.Windows.Forms.ListViewItem> should not exceed 259 characters or unexpected behavior could occur.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string text, string imageKey, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string imageKey, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String,System.String,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageKey" Type="System.String" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to display for the item. This should not exceed 259 characters.</param>
+        <param name="imageKey">The name of the image within the <see cref="P:System.Windows.Forms.ListViewItem.ImageList" /> of the owning <see cref="T:System.Windows.Forms.ListView" /> to display in the item.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified text, image, and group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+ The `imageKey` parameter specifies an image in the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> associated with the owning <xref:System.Windows.Forms.ListView> control, which can be accessed with the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ The text of the <xref:System.Windows.Forms.ListViewItem> should not exceed 259 characters or unexpected behavior could occur.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, int imageIndex, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, int32 imageIndex, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Int32,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represent the subitems of the new item.</param>
+        <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the image index position of the item's icon and an array of strings representing subitems, and assigns the item to the specified group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, string imageKey, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, string imageKey, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.String,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="imageKey" Type="System.String" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represents the text for subitems of the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
+        <param name="imageKey">The name of the image within the <see cref="P:System.Windows.Forms.ListViewItem.ImageList" /> of the owning <see cref="T:System.Windows.Forms.ListView" /> to display in the item.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with subitems containing the specified text, image, and group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+ The `imageKey` parameter specifies an image in the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> associated with the owning <xref:System.Windows.Forms.ListView> control, which can be accessed with the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewItem.ListViewSubItem[] subItems, int imageIndex, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem/ListViewSubItem[] subItems, int32 imageIndex, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.Int32,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="subItems" Type="System.Windows.Forms.ListViewItem+ListViewSubItem[]" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="subItems">An array of type <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> that represents the subitems of the item.</param>
+        <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the image index position of the item's icon and an array of <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> objects, and assigns the item to the specified group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor is useful when you create <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects before adding them to a <xref:System.Windows.Forms.ListViewItem> object (for example, to indicate special formatting or to use the subitems in multiple items). It also allows you to specify the group to which an item belongs.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (System.Windows.Forms.ListViewItem.ListViewSubItem[] subItems, string imageKey, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem/ListViewSubItem[] subItems, string imageKey, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.String,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="subItems" Type="System.Windows.Forms.ListViewItem+ListViewSubItem[]" />
+        <Parameter Name="imageKey" Type="System.String" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="subItems">An array of <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> objects that represent the subitems of the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
+        <param name="imageKey">The name of the image within the <see cref="P:System.Windows.Forms.ListViewItem.ImageList" /> of the owning <see cref="T:System.Windows.Forms.ListView" /> to display in the item.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the specified subitems, image, and group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor is useful when you create <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects before adding them to a <xref:System.Windows.Forms.ListViewItem> (for example, to indicate special formatting or to use the subitems in multiple items). It also allows you to specify the group to which an item belongs.  
+  
+ The `imageKey` parameter specifies an image in the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> associated with the owning <xref:System.Windows.Forms.ListView> control, which can be accessed with the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, int imageIndex, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, int32 imageIndex, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Int32,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represent the subitems of the new item.</param>
+        <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
+        <param name="foreColor">A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the item.</param>
+        <param name="backColor">A <see cref="T:System.Drawing.Color" /> that represents the background color of the item.</param>
+        <param name="font">A <see cref="T:System.Drawing.Font" /> that represents the font to display the item's text in.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the image index position of the item's icon; the foreground color, background color, and font of the item; and an array of strings representing subitems.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a form that contains a <xref:System.Windows.Forms.ListView> control that manually sorts items when a column in the <xref:System.Windows.Forms.ListView> control is clicked. The example defines a class called `ListViewItemComparer` that implements the <xref:System.Collections.IComparer?displayProperty=fullName> interface that performs the <xref:System.Windows.Forms.ListViewItem> comparison. The example creates an instance of `ListViewItemComparer` and uses it to set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A> property of the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListView.Sort%2A> method call in the <xref:System.Windows.Forms.ListView.ColumnClick> event handler uses the methods defined in `ListViewItemComparer` to perform the sort of items, based on the column that is clicked.  
+  
+ [!code-cpp[ListView.ColumnClick#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListView.ColumnClick/CPP/listviewsort1.cpp#1)]
+ [!code-csharp[ListView.ColumnClick#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListView.ColumnClick/CS/listviewsort1.cs#1)]
+ [!code-vb[ListView.ColumnClick#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListView.ColumnClick/VB/listviewsort1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, string imageKey, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, string imageKey, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="imageKey" Type="System.String" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represent the text of the subitems for the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
+        <param name="imageKey">The name of the image within the <see cref="P:System.Windows.Forms.ListViewItem.ImageList" /> of the owning <see cref="T:System.Windows.Forms.ListView" /> to display in the item.</param>
+        <param name="foreColor">A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the item.</param>
+        <param name="backColor">A <see cref="T:System.Drawing.Color" /> that represents the background color of the item.</param>
+        <param name="font">A <see cref="T:System.Drawing.Font" /> to apply to the item text.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the subitems containing the specified text, image, colors, and font.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `imageKey` parameter specifies an image in the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> associated with the owning <xref:System.Windows.Forms.ListView> control, which can be accessed with the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, int imageIndex, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, int32 imageIndex, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.Int32,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represent the subitems of the new item.</param>
+        <param name="imageIndex">The zero-based index of the image within the <see cref="T:System.Windows.Forms.ImageList" /> associated with the <see cref="T:System.Windows.Forms.ListView" /> that contains the item.</param>
+        <param name="foreColor">A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the item.</param>
+        <param name="backColor">A <see cref="T:System.Drawing.Color" /> that represents the background color of the item.</param>
+        <param name="font">A <see cref="T:System.Drawing.Font" /> that represents the font to display the item's text in.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the image index position of the item's icon; the foreground color, background color, and font of the item; and an array of strings representing subitems. Assigns the item to the specified group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewItem (string[] items, string imageKey, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font, System.Windows.Forms.ListViewGroup group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] items, string imageKey, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font, class System.Windows.Forms.ListViewGroup group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.#ctor(System.String[],System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font,System.Windows.Forms.ListViewGroup)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.String[]" />
+        <Parameter Name="imageKey" Type="System.String" />
+        <Parameter Name="foreColor" Type="System.Drawing.Color" />
+        <Parameter Name="backColor" Type="System.Drawing.Color" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="group" Type="System.Windows.Forms.ListViewGroup" />
+      </Parameters>
+      <Docs>
+        <param name="items">An array of strings that represents the text of the subitems for the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
+        <param name="imageKey">The name of the image within the <see cref="P:System.Windows.Forms.ListViewItem.ImageList" /> of the owning <see cref="T:System.Windows.Forms.ListView" /> to display in the item.</param>
+        <param name="foreColor">A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the item.</param>
+        <param name="backColor">A <see cref="T:System.Drawing.Color" /> that represents the background color of the item.</param>
+        <param name="font">A <see cref="T:System.Drawing.Font" /> to apply to the item text.</param>
+        <param name="group">The <see cref="T:System.Windows.Forms.ListViewGroup" /> to assign the item to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem" /> class with the subitems containing the specified text, image, colors, font, and group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This version of the constructor allows you to specify the group to which an item belongs.  
+  
+ The `imageKey` parameter specifies an image in the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> associated with the owning <xref:System.Windows.Forms.ListView> control, which can be accessed with the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the item's text.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the item's text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.ListViewItem.BackColor%2A> property to change the color displayed behind the item text. This property can be used if you want to use different background and foreground color combinations (using the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A> property to set the foreground color) to differentiate one item from another. For example, you could set the <xref:System.Windows.Forms.ListViewItem.BackColor%2A> property to <xref:System.Drawing.Color.Red%2A> to identify items that have failed validation or are missing subitem information.  
+  
+ If you want to use the same background color for all subitems of an item, set the <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A> property to `true`. This will cause the colors and fonts specified for the item to be used for all subitem text.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginEdit">
+      <MemberSignature Language="C#" Value="public void BeginEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.BeginEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Places the item text into edit mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is effective only if the <xref:System.Windows.Forms.ListView.LabelEdit%2A> property of the <xref:System.Windows.Forms.ListView> control that contains the item is set to `true`. You can use this method at run time to force the item's text to display in edit mode. For example, if you are validating the item text edited by the user, and an item fails validation, you could select the item in the <xref:System.Windows.Forms.ListView> control and call the <xref:System.Windows.Forms.ListViewItem.BeginEdit%2A> method to force the user to change the text that failed validation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.ListView.LabelEdit" /> property of the associated <see cref="T:System.Windows.Forms.ListView" /> is not set to <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounding rectangle of the item, including subitems.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounding rectangle of the item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to obtain the bounding rectangle of an entire item. If you want to obtain the bounding rectangle for a portion of the entire item, use the <xref:System.Windows.Forms.ListViewItem.GetBounds%2A> method. The <xref:System.Windows.Forms.ListView> class provides a <xref:System.Windows.Forms.ListView.GetItemRect%2A> method that allows you to get the bounding rectangle of any item located within the control.  
+  
+ The returned bounding rectangle uses client control coordinates that are relative to the top-left corner of the currently visible area of the containing <xref:System.Windows.Forms.ListBox>. If the <xref:System.Windows.Forms.ListBox> is scrollable and positioned so that the <xref:System.Windows.Forms.ListViewItem> is not visible, the coordinates returned may be negative.  
+  
+ When the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=fullName> property has a value of <xref:System.Windows.Forms.View>, the width of the bounding rectangle is the width of the column containing the item, not the width of the text in the item. If the <xref:System.Windows.Forms.ListView.Columns%2A?displayProperty=fullName> collection does not contain any columns, the default column width of 60 pixels is used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checked">
+      <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Checked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the item is checked.</summary>
+        <value>
+          <see langword="true" /> if the item is checked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is useful only if the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property of the <xref:System.Windows.Forms.ListView> control the item is contained in is set to `true`. You can use this property to determine if the item has been checked by the user or through code at run time. To determine all the items that are checked in a <xref:System.Windows.Forms.ListView> control, you can use the <xref:System.Windows.Forms.ListView.CheckedItems%2A> property. To take action when an item has been checked, you can create an event handler for the <xref:System.Windows.Forms.ListView.ItemCheck> property of the <xref:System.Windows.Forms.ListView> control.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.ListView> control with three <xref:System.Windows.Forms.ListViewItem> objects specified and three <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects specified for each item. The example also creates <xref:System.Windows.Forms.ColumnHeader> objects to display the subitems in details view. Two <xref:System.Windows.Forms.ImageList> objects are also created in the code example to provide images for the <xref:System.Windows.Forms.ListViewItem> objects. These <xref:System.Windows.Forms.ImageList> objects are added to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties. The example uses the following properties in creating the <xref:System.Windows.Forms.ListView> control:  
+  
+-   <xref:System.Windows.Forms.ListView.View%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.LabelEdit%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.CheckBoxes%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.FullRowSelect%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.GridLines%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.Sorting%2A>  
+  
+ You need to add the code to a <xref:System.Windows.Forms.Form> and call the method created in the example from the constructor or another method on the form. The example requires that images named `MySmallImage1`, `MySmallImage2`, `MyLargeImage1`, and `MyLargeImage2` are located in the root directory of drive C.  
+  
+ [!code-cpp[ListViewExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListViewExample/CPP/form1.cpp#1)]
+ [!code-csharp[ListViewExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewExample/CS/form1.cs#1)]
+ [!code-vb[ListViewExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an identical copy of the item.</summary>
+        <returns>An object that represents an item that has the same text, image, and subitems associated with it as the cloned item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to create a new instance of the <xref:System.Windows.Forms.ListViewItem> class based on an existing item. Even the subitems of the item being cloned are specified for the new version. This feature is useful if you want to reuse a <xref:System.Windows.Forms.ListViewItem> in more than one <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="protected virtual void Deserialize (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Deserialize(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the data needed to deserialize the item.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that represents the source and destination of the stream being deserialized.</param>
+        <summary>Deserializes the item.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This method should be overridden if you are going to serialize and deserialize your derived version of this class and your derived class contains state information you want to be serialized and deserialized. You must call the base class implementation of this method in order to ensure that your items are serialized and deserialized properly.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureVisible">
+      <MemberSignature Language="C#" Value="public virtual void EnsureVisible ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureVisible() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.EnsureVisible" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ensures that the item is visible within the control, scrolling the contents of the control, if necessary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to ensure that the item is visible within the <xref:System.Windows.Forms.ListView> control. This method can be used when performing validation on the item. You can call the <xref:System.Windows.Forms.ListViewItem.EnsureVisible%2A> method to ensure that the item is displayed in the <xref:System.Windows.Forms.ListView> control if it failed validation, to allow the user to perform changes on the item.  
+  
+ This method is similar to the <xref:System.Windows.Forms.ListView.EnsureVisible%2A> method of the <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindNearestItem">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem FindNearestItem (System.Windows.Forms.SearchDirectionHint searchDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem FindNearestItem(valuetype System.Windows.Forms.SearchDirectionHint searchDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.FindNearestItem(System.Windows.Forms.SearchDirectionHint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchDirection" Type="System.Windows.Forms.SearchDirectionHint" />
+      </Parameters>
+      <Docs>
+        <param name="searchDirection">One of the <see cref="T:System.Windows.Forms.SearchDirectionHint" /> values.</param>
+        <summary>Finds the next item from the <see cref="T:System.Windows.Forms.ListViewItem" />, searching in the specified direction.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ListViewItem" /> that is closest to the given coordinates, searching in the specified direction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListViewItem.FindNearestItem%2A> method returns `null` if no item is found in the given direction.  
+  
+ Identifying the nearest item can vary depending on the operating system the application is running on and will affect the results of <xref:System.Windows.Forms.ListViewItem.FindNearestItem%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListViewItem.FindNearestItem%2A> method. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.ListView> named `findListView`. Ensure that the <xref:System.Windows.Forms.ListView.View%2A> property is set to an icon view and that the <xref:System.Windows.Forms.ListView> is populated with items. Associate the <xref:System.Windows.Forms.Control.MouseDown> event of `findListView` with the `findListView_MouseDown` method in this example.  
+  
+ [!code-csharp[System.Windows.Forms.ListViewItemWhidbeyMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewItemWhidbeyMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.ListView.View" /> property of the containing <see cref="T:System.Windows.Forms.ListView" /> is set to a value other than <see cref="F:System.Windows.Forms.View.SmallIcon" /> or <see cref="F:System.Windows.Forms.View.LargeIcon" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Focused">
+      <MemberSignature Language="C#" Value="public bool Focused { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Focused" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Focused" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the item has focus within the <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+        <value>
+          <see langword="true" /> if the item has focus; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because a <xref:System.Windows.Forms.ListView> control does not have directly editable areas—only items contained in the <xref:System.Windows.Forms.ListView> can be edited—the text of an item in the <xref:System.Windows.Forms.ListView> will display the focus reticle when the <xref:System.Windows.Forms.ListView> has focus. Typically, the last selected item in the <xref:System.Windows.Forms.ListView> control is the item with focus. Although an item may display the focus reticle, it might not actually be a selected item in the <xref:System.Windows.Forms.ListView>. You can use the <xref:System.Windows.Forms.ListViewItem.Focused%2A> property to determine if the item is currently the focused item in the <xref:System.Windows.Forms.ListView> control that contains it. If the <xref:System.Windows.Forms.ListViewItem> is not associated with a <xref:System.Windows.Forms.ListView> control, this property will return `false`.  
+  
+ The <xref:System.Windows.Forms.ListView> control provides the <xref:System.Windows.Forms.ListView.FocusedItem%2A> property to allow you to determine which <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView> has the focus.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Font">
+      <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Font" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font of the text displayed by the item.</summary>
+        <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultFont" /> property if the <see cref="T:System.Windows.Forms.ListViewItem" /> is not associated with a <see cref="T:System.Windows.Forms.ListView" /> control; otherwise, the font specified in the <see cref="P:System.Windows.Forms.Control.Font" /> property for the <see cref="T:System.Windows.Forms.ListView" /> control is used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this method to change the font styles applied to the text of the item. Because a <xref:System.Drawing.Font> is immutable (you cannot adjust any of its properties), you can only assign the <xref:System.Windows.Forms.Control.Font%2A> property a new <xref:System.Drawing.Font>. However, you can base the new font on the existing font.  
+  
+   
+  
+## Examples  
+ The following code example shows how to adjust the existing font to make it bold.  
+  
+```csharp  
+listViewItem1.Font = new Font(listViewItem1.Font,   
+    listViewItem1.Font.Style | FontStyle.Bold);  
+```  
+  
+```vb  
+ListViewItem1.Font = New Font(ListViewItem1.Font, _   
+    ListViewItem1.Font.Style Or FontStyle.Bold)  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground color of the item's text.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that represents the foreground color of the item's text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A> property to change the color of the item text. This property can be used if you want to use different background and foreground color combinations (using the <xref:System.Windows.Forms.ListViewItem.BackColor%2A> property to set the background color) to differentiate one item from another. For example, you could set the <xref:System.Windows.Forms.ListViewItem.ForeColor%2A> property to <xref:System.Drawing.Color.Red%2A> to identify items that have a negative number associated with them or have failed item validation.  
+  
+ If you want to use the same foreground color for all subitems of an item, set the <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A> property to `true`. This will cause the colors and fonts specified for the item to be used for all subitem text.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetBounds (System.Windows.Forms.ItemBoundsPortion portion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetBounds(valuetype System.Windows.Forms.ItemBoundsPortion portion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.GetBounds(System.Windows.Forms.ItemBoundsPortion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="portion" Type="System.Windows.Forms.ItemBoundsPortion" />
+      </Parameters>
+      <Docs>
+        <param name="portion">One of the <see cref="T:System.Windows.Forms.ItemBoundsPortion" /> values that represents a portion of the item for which to retrieve the bounding rectangle.</param>
+        <summary>Retrieves the specified portion of the bounding rectangle for the item.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounding rectangle for the specified portion of the item.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The bounding rectangle returned by the <xref:System.Windows.Forms.ListViewItem.GetBounds%2A> method represents only the section of the item specified in the `portion` parameter. You can also call the <xref:System.Windows.Forms.ListView.GetItemRect%2A> methods of the <xref:System.Windows.Forms.ListView> class to obtain the bounding rectangle of any item in a <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubItemAt">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem.ListViewSubItem GetSubItemAt (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem/ListViewSubItem GetSubItemAt(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.GetSubItemAt(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItem+ListViewSubItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">The x-coordinate.</param>
+        <param name="y">The y-coordinate.</param>
+        <summary>Returns the subitem of the <see cref="T:System.Windows.Forms.ListViewItem" /> at the specified coordinates.</summary>
+        <returns>The <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> at the specified x- and y-coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListViewItem.GetSubItemAt%2A> method will return `null` if the <xref:System.Windows.Forms.ListView> is not in <xref:System.Windows.Forms.View> view, or there is not a <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> located at the specified point.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListViewItem.GetSubItemAt%2A> method. To run this code, paste it into a Windows Form and call `InitializeListView1` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.ListViewItemWhidbeyMembers#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/CS/form1.cs#5)]
+ [!code-vb[System.Windows.Forms.ListViewItemWhidbeyMembers#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/VB/form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewGroup Group { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewGroup Group" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Group" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the group to which the item is assigned.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ListViewGroup" /> to which the item is assigned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to set the group to which an item belongs. You can also set the group in the <xref:System.Windows.Forms.ListViewItem.%23ctor%2A> constructor, or you can use this property to modify the group membership at run time. If you set this property to `null` and there are groups in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection, the item will appear in the default group, which has the header label "DefaultGroupSystem.Windows.Forms". The default group is not contained in the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> collection, and cannot be altered. It is primarily useful in debugging to ensure that all items have been properly added to groups.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.ListView> groups are only available on Windows XP and the Windows Server 2003 family ([!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)]). For more information, see the <xref:System.Windows.Forms.ListViewGroup> overview topic.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how the <xref:System.Windows.Forms.ListViewItem.Group%2A> property can be used in an application that organizes <xref:System.Windows.Forms.ListView> items by subitem value in the details view. This form of grouping is similar to the grouping used in Windows Explorer. In the example, the groups are created dynamically. For each subitem column, one group is created for each unique subitem value. For the parent item column, one group is created for each unique initial letter. The groups created for each column are stored in a hash table along with the subitem text or initial letter. When a column header is clicked, the hash table corresponding to that column is retrieved. Next, the subitem text values for that column are used as hash table keys to retrieve the correct group for each item. The item is then assigned to the group using the <xref:System.Windows.Forms.ListViewItem.Group%2A> property.  
+  
+ This code example is part of a larger example provided for the <xref:System.Windows.Forms.ListView.Groups%2A?displayProperty=fullName> property.  
+  
+ [!code-cpp[System.Windows.Forms.ListView.Groups#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView.Groups/CPP/listviewgroupsexample.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ListView.Groups#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView.Groups/CS/listviewgroupsexample.cs#2)]
+ [!code-vb[System.Windows.Forms.ListView.Groups#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView.Groups/VB/listviewgroupsexample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageIndex">
+      <MemberSignature Language="C#" Value="public int ImageIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ImageIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ImageIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.NoneExcludedImageIndexConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the image that is displayed for the item.</summary>
+        <value>The zero-based index of the image in the <see cref="T:System.Windows.Forms.ImageList" /> that is displayed for the item. The default is -1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property depends on the value of the <xref:System.Windows.Forms.ListViewItem.ImageList%2A> property. Depending on the current value of the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control associated with the item, the <xref:System.Windows.Forms.ImageList> used by the item could be one specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property or the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property of the <xref:System.Windows.Forms.ListView> control. If the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>, the <xref:System.Windows.Forms.ImageList> specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property is used; otherwise, the <xref:System.Windows.Forms.ImageList> specified in the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property is used. The images defined in the <xref:System.Windows.Forms.ImageList> specified in the <xref:System.Windows.Forms.ListView.SmallImageList%2A> should have the same index positions as the images in the <xref:System.Windows.Forms.ImageList> specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property. If the index positions are the same for both <xref:System.Windows.Forms.ImageList> controls, you can set a single index value for the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property and the appropriate image will be displayed regardless of the value of the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control. The <xref:System.Windows.Forms.ListViewItem.ImageKey%2A> and <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> properties are mutually exclusive, meaning if one is set, the other is ignored. Furthermore, if you set the <xref:System.Windows.Forms.ListViewItem.ImageKey%2A> property, the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property is automatically set to -1. Alternatively, if you set the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property, the <xref:System.Windows.Forms.ListViewItem.ImageKey%2A> is automatically set to an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value specified is less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageKey">
+      <MemberSignature Language="C#" Value="public string ImageKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImageKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ImageKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageKeyConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key for the image that is displayed for the item.</summary>
+        <value>The key for the image that is displayed for the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListViewItem.ImageKey%2A> property returns an empty string ("") when the <xref:System.Windows.Forms.ListViewItem.ImageKey%2A> is not set for the <xref:System.Windows.Forms.ListViewItem>. The <xref:System.Windows.Forms.ListViewItem.ImageKey%2A> and <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> properties are mutually exclusive, meaning if one is set, the other is ignored. If you set the <xref:System.Windows.Forms.ListViewItem.ImageKey%2A> property, the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property is automatically set to -1. Alternatively, if you set the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property, the <xref:System.Windows.Forms.ListViewItem.ImageKey%2A> is automatically set to an empty string ("").  
+  
+> [!NOTE]
+>  If you are using multiple image lists, for small and large icon view, with a <xref:System.Windows.Forms.ListView> control, you should place small and large versions of the image at the same index location in their respective image lists. When switching between views, the index location of the image in one list is used to locate the image in the other list, regardless of the key value specified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageList">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList ImageList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList ImageList" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ImageList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ImageList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ImageList" /> that contains the image displayed with the item.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ImageList" /> used by the <see cref="T:System.Windows.Forms.ListView" /> control that contains the image displayed with the item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Depending on the current value of the <xref:System.Windows.Forms.ListView.View%2A> property of the <xref:System.Windows.Forms.ListView> control associated with the item, the <xref:System.Windows.Forms.ImageList> used by the item could be one specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property or the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property of the <xref:System.Windows.Forms.ListView> control. If the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>, the <xref:System.Windows.Forms.ImageList> specified in the <xref:System.Windows.Forms.ListView.LargeImageList%2A> property is used; otherwise, the <xref:System.Windows.Forms.ImageList> specified in the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property is used. You can use this property to determine which <xref:System.Windows.Forms.ImageList> control is providing the image for the item. To determine the index position in the <xref:System.Windows.Forms.ImageList> that contains the image to display for the item, use the <xref:System.Windows.Forms.ListViewItem.ImageIndex%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndentCount">
+      <MemberSignature Language="C#" Value="public int IndentCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IndentCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.IndentCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of small image widths by which to indent the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+        <value>The number of small image widths by which to indent the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListViewItem.IndentCount%2A> property can be used only when the <xref:System.Windows.Forms.ListView.View%2A> property of the containing <xref:System.Windows.Forms.ListView> is set to <xref:System.Windows.Forms.View>, and the <xref:System.Windows.Forms.ListView.SmallImageList%2A> property of the <xref:System.Windows.Forms.ListView> is set.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Windows.Forms.ListViewItem.IndentCount%2A> property. To run this example, paste the following code into a Windows Form and call the `InitializeIndentedListViewItems` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.ListViewItemWhidbeyMembers#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ListViewItemWhidbeyMembers#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">When setting <see cref="P:System.Windows.Forms.ListViewItem.IndentCount" />, the number specified is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the zero-based index of the item within the <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+        <value>The zero-based index of the item within the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" /> of the <see cref="T:System.Windows.Forms.ListView" /> control, or -1 if the item is not associated with a <see cref="T:System.Windows.Forms.ListView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to determine if the item is associated with a <xref:System.Windows.Forms.ListView> control as well as to determine its position within the <xref:System.Windows.Forms.ListView.ListViewItemCollection> of the <xref:System.Windows.Forms.ListView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListView">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView ListView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView ListView" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ListView" /> control that contains the item.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ListView" /> that contains the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to access the <xref:System.Windows.Forms.ListView> control that owns the <xref:System.Windows.Forms.ListViewItem>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name associated with this <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+        <value>The name of the <see cref="T:System.Windows.Forms.ListViewItem" />. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Windows.Forms.ListViewItem.Name%2A> property is also the key for the <xref:System.Windows.Forms.ListViewItem> when the item is accessed in a collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Position" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the position of the upper-left corner of the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+        <value>The <see cref="T:System.Drawing.Point" /> at the upper-left corner of the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListViewItem.Position%2A> property should be set after the <xref:System.Windows.Forms.ListViewItem> and containing <xref:System.Windows.Forms.ListView> are constructed. Changing the <xref:System.Windows.Forms.ListViewItem.Position%2A> property when the containing <xref:System.Windows.Forms.ListView> is in <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View> view will have no effect on the position of the items. Also, the <xref:System.Windows.Forms.ListViewItem.Position%2A> property will automatically change when the <xref:System.Windows.Forms.ListView.View%2A> property of the containing <xref:System.Windows.Forms.ListView> is changed from <xref:System.Windows.Forms.View>, <xref:System.Windows.Forms.View>, or <xref:System.Windows.Forms.View> view to <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>. When the <xref:System.Windows.Forms.ListView> is in <xref:System.Windows.Forms.View>, <xref:System.Windows.Forms.View>, or <xref:System.Windows.Forms.View> view, setting the <xref:System.Windows.Forms.ListViewItem.Position%2A> property for an item will cause the other items contained in the <xref:System.Windows.Forms.ListView> to be rearranged.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListViewItem.Position%2A> property of a <xref:System.Windows.Forms.ListViewItem>. To run this example, paste the following code into a Windows Form and call the `InitializePositionedListViewItems` from the form's <xref:System.Windows.Forms.Form.Load> event-handling method. Click the button to see the items repositioned.  
+  
+ [!code-csharp[System.Windows.Forms.ListViewItemWhidbeyMembers#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/CS/form1.cs#3)]
+ [!code-vb[System.Windows.Forms.ListViewItemWhidbeyMembers#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/VB/form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.Forms.ListViewItem.Position" /> is set when the containing <see cref="T:System.Windows.Forms.ListView" /> is in virtual mode.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual void Remove ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.Remove" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the item from its associated <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is similar in function to the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Remove%2A> method of the <xref:System.Windows.Forms.ListView.ListViewItemCollection> in the <xref:System.Windows.Forms.ListView> control that contains the item. You can use the <xref:System.Windows.Forms.ListViewItem.Remove%2A> method to remove an item from its <xref:System.Windows.Forms.ListView> control. This feature can be useful if you want to move the item to a different <xref:System.Windows.Forms.ListView> control or need to remove the item based on a request from the user to remove the item from within your application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="public bool Selected { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Selected" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Selected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the item is selected.</summary>
+        <value>
+          <see langword="true" /> if the item is selected; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.ListView.MultiSelect%2A> property of the <xref:System.Windows.Forms.ListView> control the item is contained in is set to `true`, setting the value of this property adds or removes the item from the set of selected items. If the <xref:System.Windows.Forms.ListView.MultiSelect%2A> property is set to `false`, setting the value of this property to select an item automatically cancels the selection for any other items in the <xref:System.Windows.Forms.ListView> control. You can use this property to determine if an item is selected or to select an item at run time. You can access all items that are selected in a <xref:System.Windows.Forms.ListView> control by using the <xref:System.Windows.Forms.ListView.SelectedItems%2A?displayProperty=fullName> property.  
+  
+> [!NOTE]
+>  Items appear selected only when the <xref:System.Windows.Forms.ListView> control has focus. To select items in response to a user action such as a button click, be sure to call the <xref:System.Windows.Forms.Control.Focus%2A> method in addition to setting this property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListView.Clear%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ListViewItem.Selected%2A> members. To run the example, place the following code in a form containing a <xref:System.Windows.Forms.ListView> named `ListView1` and a <xref:System.Windows.Forms.Button>, located toward the bottom of the form, named `Button1`. Call the `InitializeListView` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-cpp[System.Windows.Forms.ListView4#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView4/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListView4#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView4/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListView4#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView4/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="protected virtual void Serialize (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Serialize(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the data needed to serialize the item.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that represents the source and destination of the stream being serialized.</param>
+        <summary>Serializes the item.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This method should be overridden if you are going to serialize and deserialize your derived version of this class and your derived class contains state information you want to be serialized and deserialized. You must call the base class implementation of this method in order to ensure that your items are serialized and deserialized properly.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="StateImageIndex">
+      <MemberSignature Language="C#" Value="public int StateImageIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StateImageIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.StateImageIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.NoneExcludedImageIndexConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Forms.RelatedImageList("ListView.StateImageList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the state image (an image such as a selected or cleared check box that indicates the state of the item) that is displayed for the item.</summary>
+        <value>The zero-based index of the state image in the <see cref="T:System.Windows.Forms.ImageList" /> that is displayed for the item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property allows you to specify the index into the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.ListView.StateImageList%2A> property of the associated <xref:System.Windows.Forms.ListView> control, where the state images to display to the left of the item are stored. Typically, the state image is a selected or cleared check box or an image that is intended to represent selected or cleared states for the item. If no value is specified for the <xref:System.Windows.Forms.ListView.StateImageList%2A> property, the <xref:System.Windows.Forms.ListView> control displays a default selected or cleared check box when the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property of the control is set to `true`.  
+  
+> [!NOTE]
+>  Although the <xref:System.Windows.Forms.ImageList> specified in the <xref:System.Windows.Forms.ListView.StateImageList%2A> property can contain any number of images, and the <xref:System.Windows.Forms.ListViewItem.StateImageIndex%2A> property can be set to any value equal to or lower than 14, only the images at index positions 0 and 1 are displayed as state images.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value specified for this property is less than -1.  
+  
+ -or-  
+  
+ The value specified for this property is greater than 14.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SubItems">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem.ListViewSubItemCollection SubItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem/ListViewSubItemCollection SubItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.SubItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListViewSubItemCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItem+ListViewSubItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection containing all subitems of the item.</summary>
+        <value>A <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItemCollection" /> that contains the subitems.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection>, you can add subitems, remove subitems, and obtain a count of subitems. For more information on the tasks that can be performed with the subitems in the collection, see the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection> class reference topics.  
+  
+> [!NOTE]
+>  The first subitem in the <xref:System.Windows.Forms.ListViewItem.ListViewSubItemCollection> is always the item that owns the subitems. When performing operations on subitems in the collection, be sure to reference index position 1 instead of 0 to make changes to the first subitem.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.ListView> control with three <xref:System.Windows.Forms.ListViewItem> objects specified and three <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects specified for each item. The example also creates <xref:System.Windows.Forms.ColumnHeader> objects to display the subitems in details view. Two <xref:System.Windows.Forms.ImageList> objects are also created in the code example to provide images for the <xref:System.Windows.Forms.ListViewItem> objects. These <xref:System.Windows.Forms.ImageList> objects are added to the <xref:System.Windows.Forms.ListView.LargeImageList%2A> and <xref:System.Windows.Forms.ListView.SmallImageList%2A> properties. The example uses the following properties in creating the <xref:System.Windows.Forms.ListView> control:  
+  
+-   <xref:System.Windows.Forms.ListView.View%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.LabelEdit%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.AllowColumnReorder%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.CheckBoxes%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.FullRowSelect%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.GridLines%2A>  
+  
+-   <xref:System.Windows.Forms.ListView.Sorting%2A>  
+  
+ You need to add the code to a <xref:System.Windows.Forms.Form> and call the method created in the example from the constructor or another method on the form. The example requires that images named `MySmallImage1`, `MySmallImage2`, `MyLargeImage1`, and `MyLargeImage2` are located in the root directory of drive C.  
+  
+ [!code-cpp[ListViewExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ListViewExample/CPP/form1.cpp#1)]
+ [!code-csharp[ListViewExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ListViewExample/CS/form1.cs#1)]
+ [!code-vb[ListViewExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ListViewExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the data needed to serialize the item.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that represents the source and destination of the stream being serialized.</param>
+        <summary>Serializes the item.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Tag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that contains data to associate with the item.</summary>
+        <value>An object that contains information that is associated with the item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListViewItem.Tag%2A> property can be used to store any object that you want to associate with an item. Although you can store any item, the <xref:System.Windows.Forms.ListViewItem.Tag%2A> property is typically used to store string information about the item, such as a unique identifier or the index position of the item's data in a database.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ListViewItem> and set the <xref:System.Windows.Forms.ListViewItem.Tag%2A> and <xref:System.Windows.Forms.ListViewItem.Text%2A> properties. To run this example, place the following code in a form that contains a <xref:System.Windows.Forms.ListView> named `ListView1`, and call `InitializeListViewItems` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewItemExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewItemExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewItemExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text of the item.</summary>
+        <value>The text to display for the item. This should not exceed 259 characters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListViewItem.Text%2A> property allows you to change the text displayed for the item. The text of the <xref:System.Windows.Forms.ListViewItem> should not exceed 259 characters or unexpected behavior could occur.  
+  
+ You can use the <xref:System.Windows.Forms.ListViewItem.BackColor%2A>, <xref:System.Windows.Forms.ListViewItem.ForeColor%2A>, and <xref:System.Windows.Forms.ListViewItem.Font%2A> properties to specify how the text is displayed. The <xref:System.Windows.Forms.ListView> class provides the <xref:System.Windows.Forms.ListView.LabelWrap%2A> property that determines whether text wraps to the next line or is displayed on a single line.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to initialize a <xref:System.Windows.Forms.ListViewItem> and set the <xref:System.Windows.Forms.ListViewItem.Tag%2A> and <xref:System.Windows.Forms.ListViewItem.Text%2A> properties. To run this example, place the following code in a form containing a <xref:System.Windows.Forms.ListView> named `ListView1`, and call `InitializeListViewItems` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewItemExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewItemExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewItemExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipText">
+      <MemberSignature Language="C#" Value="public string ToolTipText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ToolTipText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text shown when the mouse pointer rests on the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+        <value>The text shown when the mouse pointer rests on the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If both the <xref:System.Windows.Forms.ListViewItem> and its containing <xref:System.Windows.Forms.ListView> have ToolTips set, only the ToolTip for the <xref:System.Windows.Forms.ListViewItem> will be shown.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListView.ShowItemToolTips%2A?displayProperty=fullName> and <xref:System.Windows.Forms.ListViewItem.ToolTipText%2A> properties. To run this example, paste the code into a Windows Form and call `InitializeItemsWithToolTips` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.ListViewItemWhidbeyMembers#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.ListViewItemWhidbeyMembers#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemWhidbeyMembers/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseItemStyleForSubItems">
+      <MemberSignature Language="C#" Value="public bool UseItemStyleForSubItems { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseItemStyleForSubItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="P:System.Windows.Forms.ListViewItem.Font" />, <see cref="P:System.Windows.Forms.ListViewItem.ForeColor" />, and <see cref="P:System.Windows.Forms.ListViewItem.BackColor" /> properties for the item are used for all its subitems.</summary>
+        <value>
+          <see langword="true" /> if all subitems use the font, foreground color, and background color settings of the item; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not want to have a uniform background color, foreground color, and font used for all items and subitems in your <xref:System.Windows.Forms.ListView> control, you can set this property to `false`. When this property is set to `true`, any changes made to the subitem's <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Font%2A?displayProperty=fullName>, <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor%2A?displayProperty=fullName> properties are ignored, and the values of the item are used instead. You can use this property if you need to specify a different text color, background color, or font to be used for a subitem to highlight the item when subitems are displayed in the <xref:System.Windows.Forms.ListView> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to set the <xref:System.Windows.Forms.ListViewItem.UseItemStyleForSubItems%2A> property to `false` to define a custom style for <xref:System.Windows.Forms.ListViewItem.ListViewSubItem> objects. The example also demonstrates how to set the <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor%2A> and <xref:System.Windows.Forms.ListViewItem.ListViewSubItem.Font%2A> properties. To run the example, paste the following code into a form and call the `InitializeListView` method in form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-cpp[System.Windows.Forms.ListViewItemStyle#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemStyle/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListViewItemStyle#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemStyle/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListViewItemStyle#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListViewItemStyle/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

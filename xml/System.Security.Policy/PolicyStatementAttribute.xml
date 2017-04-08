@@ -1,0 +1,102 @@
+<Type Name="PolicyStatementAttribute" FullName="System.Security.Policy.PolicyStatementAttribute">
+  <TypeSignature Language="C#" Value="public enum PolicyStatementAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PolicyStatementAttribute extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyStatementAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines special attribute flags for security policy on code groups.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attribute flags set on policy statements control how code groups merge with other code groups and other policy levels.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute All = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All attribute flags are set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Exclusive">
+      <MemberSignature Language="C#" Value="Exclusive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute Exclusive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.Exclusive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The exclusive code group flag. When a code group has this flag set, only the permissions associated with that code group are granted to code belonging to the code group. At most, one code group matching a given piece of code can be set as exclusive.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LevelFinal">
+      <MemberSignature Language="C#" Value="LevelFinal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute LevelFinal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.LevelFinal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The flag representing a policy statement that causes lower policy levels to not be evaluated as part of the resolve operation, effectively allowing the policy level to override lower levels.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nothing">
+      <MemberSignature Language="C#" Value="Nothing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute Nothing = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.Nothing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No flags are set.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

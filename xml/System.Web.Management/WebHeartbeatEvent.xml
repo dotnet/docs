@@ -1,0 +1,90 @@
+<Type Name="WebHeartbeatEvent" FullName="System.Web.Management.WebHeartbeatEvent">
+  <TypeSignature Language="C#" Value="public class WebHeartbeatEvent : System.Web.Management.WebManagementEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebHeartbeatEvent extends System.Web.Management.WebManagementEvent" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebHeartbeatEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Management.WebManagementEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines those health-monitoring events raised at a periodic interval.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ The heartbeat health-monitoring events serve as a timer for the ASP.NET health-monitoring system. They are raised at an interval defined by the `heartBeatInterval` attribute of the `healthMonitoring` configuration section. The <xref:System.Web.Management.WebHeartbeatEvent> uses the <xref:System.Web.Management.WebProcessStatistics> class to obtain process information.  
+  
+> [!NOTE]
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers.  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows the configuration for the <xref:System.Web.Management.EventLogWebEventProvider> so it can handle heartbeat health events.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Management.EventLogWebEventProvider> and the heartbeat health event types to monitor are configured by default. The only thing you need to do is to define the rule to monitor the heartbeat health events. Remember that by default only the failure audits are logged.  
+  
+```  
+<healthMonitoring   
+  enabled="true" heartbeatInterval="100">  
+  <rules>  
+    <add name="Heart Beat Events"  
+      eventName="Heartbeats"  
+      provider="EventLogProvider"  
+      profile="Default"  
+      minInterval="00:01:00" />  
+  </rules>  
+</healthMonitoring>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebHeartbeatEvent (string message, int eventCode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, int32 eventCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebHeartbeatEvent.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The description of the event.</param>
+        <param name="eventCode">The code associated with the event. When you implement a custom event, the event code must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebHeartbeatEvent" /> class with the given message and event code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessStatistics">
+      <MemberSignature Language="C#" Value="public System.Web.Management.WebProcessStatistics ProcessStatistics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebProcessStatistics ProcessStatistics" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebHeartbeatEvent.ProcessStatistics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.WebProcessStatistics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides key information about the running process.</summary>
+        <value>The <see cref="T:System.Web.Management.WebProcessStatistics" /> for the running process.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

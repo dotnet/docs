@@ -1,0 +1,1166 @@
+<Type Name="Clipboard" FullName="System.Windows.Forms.Clipboard">
+  <TypeSignature Language="C#" Value="public sealed class Clipboard" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Clipboard extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Clipboard" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods to place data on and retrieve data from the system Clipboard. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a list of predefined formats to use with the <xref:System.Windows.Forms.Clipboard> class, see the <xref:System.Windows.Forms.DataFormats> class.  
+  
+ Call <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to put data on the Clipboard, replacing its current contents. To place a persistent copy of the data on the Clipboard, set the `copy` parameter to `true`.  
+  
+> [!NOTE]
+>  To place data on the Clipboard in multiple formats, use the <xref:System.Windows.Forms.DataObject> class or an <xref:System.Windows.Forms.IDataObject> implementation. Place data on the Clipboard in multiple formats to maximize the possibility that a target application, whose format requirements you might not know, can successfully retrieve the data.  
+  
+ Call <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the Clipboard. The data is returned as an object that implements the <xref:System.Windows.Forms.IDataObject> interface. Use the methods specified by <xref:System.Windows.Forms.IDataObject> and fields in <xref:System.Windows.Forms.DataFormats> to extract the data from the object. If you do not know the format of the data you retrieved, call the <xref:System.Windows.Forms.IDataObject.GetFormats%2A> method of the <xref:System.Windows.Forms.IDataObject> interface to get a list of all formats that data is stored in. Then call the <xref:System.Windows.Forms.IDataObject.GetData%2A> method of the <xref:System.Windows.Forms.IDataObject> interface, and specify a format that your application can use.  
+  
+ In [!INCLUDE[dnprdnext](~/includes/dnprdnext-md.md)], the <xref:System.Windows.Forms.Clipboard> class provides additional methods that make it easier to work with the system Clipboard. Call the <xref:System.Windows.Forms.Clipboard.Clear%2A> method to remove all data from the Clipboard. To add data of a particular format to the Clipboard, replacing the existing data, call the appropriate `Set`*Format* method, such as <xref:System.Windows.Forms.Clipboard.SetText%2A>, or call the <xref:System.Windows.Forms.Clipboard.SetData%2A> method to specify the format. To retrieve data of a particular format from the Clipboard, first call the appropriate `Contains`*Format* method (such as <xref:System.Windows.Forms.Clipboard.ContainsText%2A>) method to determine whether the Clipboard contains data in that format, and then call the appropriate `Get`*Format* method (such as <xref:System.Windows.Forms.Clipboard.GetText%2A>) to retrieve the data if the Clipboard contains it. To specify the format in these operations, call the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> and <xref:System.Windows.Forms.Clipboard.GetData%2A> methods instead.  
+  
+> [!NOTE]
+>  All Windows-based applications share the system Clipboard, so the contents are subject to change when you switch to another application.  
+>   
+>  An object must be serializable for it to be put on the Clipboard. If you pass a non-serializable object to a Clipboard method, the method will fail without throwing an exception. See <xref:System.Runtime.Serialization> for more information on serialization. If your target application requires a very specific data format, the headers added to the data in the serialization process may prevent the application from recognizing your data. To preserve your data format, add your data as a <xref:System.Byte> array to a <xref:System.IO.MemoryStream> and pass the <xref:System.IO.MemoryStream> to the <xref:System.Windows.Forms.DataObject.SetData%2A> method.  
+>   
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+>   
+>  Special considerations may be necessary when using the metafile format with the Clipboard. Due to a limitation in the current implementation of the <xref:System.Windows.Forms.DataObject> class, the metafile format used by the .NET Framework may not be recognized by applications that use an older metafile format. In this case, you must interoperate with the Win32 Clipboard application programming interfaces (APIs). For more information, see article 323530, "Metafiles on Clipboard Are Not Visible to All Applications," in the Microsoft Knowledge Base at http://support.microsoft.com.  
+  
+   
+  
+## Examples  
+ The following code example uses <xref:System.Windows.Forms.Clipboard> methods to place data on and retrieve it from the system Clipboard. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been created and placed on the form.  
+  
+ The `button1_Click` method calls <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to take selected text from the text box and place it on the system Clipboard.  
+  
+ The `button2_Click` method calls <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the system Clipboard. The code uses <xref:System.Windows.Forms.IDataObject> and <xref:System.Windows.Forms.DataFormats> to extract the data returned and displays the data in `textBox2`.  
+  
+ [!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
+ [!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public static void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all data from the Clipboard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the Clipboard is shared by multiple processes, calling this method may have an impact on those processes.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.Clipboard#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for clearing the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.OwnClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsAudio">
+      <MemberSignature Language="C#" Value="public static bool ContainsAudio ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsAudio() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsAudio" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether there is data on the Clipboard in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format.</summary>
+        <returns>
+          <see langword="true" /> if there is audio data on the Clipboard; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
+ [!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsData">
+      <MemberSignature Language="C#" Value="public static bool ContainsData (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsData(string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format of the data to look for. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
+        <summary>Indicates whether there is data on the Clipboard that is in the specified format or can be converted to that format.</summary>
+        <returns>
+          <see langword="true" /> if there is data on the Clipboard that is in the specified <paramref name="format" /> or can be converted to that format; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataFormats> class contains pre-defined format names that you can use with this method.  
+  
+ Use this method to determine whether the Clipboard contains data in the specified format or a compatible format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetData%2A> method.  
+  
+> [!NOTE]
+>  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
+>   
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsFileDropList">
+      <MemberSignature Language="C#" Value="public static bool ContainsFileDropList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsFileDropList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsFileDropList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether there is data on the Clipboard that is in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format or can be converted to that format.</summary>
+        <returns>
+          <see langword="true" /> if there is a file drop list on the Clipboard; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A file drop list is a collection of strings containing path information for files.  
+  
+ Use this method to determine whether the Clipboard contains a file drop list before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
+ [!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsImage">
+      <MemberSignature Language="C#" Value="public static bool ContainsImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsImage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsImage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether there is data on the Clipboard that is in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format or can be converted to that format.</summary>
+        <returns>
+          <see langword="true" /> if there is image data on the Clipboard; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to determine whether the Clipboard contains image data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetImage%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
+ [!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsText">
+      <MemberSignature Language="C#" Value="public static bool ContainsText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates whether there is data on the Clipboard in the <see cref="F:System.Windows.Forms.TextDataFormat.Text" /> or <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format, depending on the operating system.</summary>
+        <returns>
+          <see langword="true" /> if there is text data on the Clipboard; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method checks for the presence of data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+  
+ Use this method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method that is similar to this overload.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsText">
+      <MemberSignature Language="C#" Value="public static bool ContainsText (System.Windows.Forms.TextDataFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsText(valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.ContainsText(System.Windows.Forms.TextDataFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
+      </Parameters>
+      <Docs>
+        <param name="format">One of the <see cref="T:System.Windows.Forms.TextDataFormat" /> values.</param>
+        <summary>Indicates whether there is text data on the Clipboard in the format indicated by the specified <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</summary>
+        <returns>
+          <see langword="true" /> if there is text data on the Clipboard in the value specified for <paramref name="format" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="format" /> is not a valid <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAudioStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream GetAudioStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream GetAudioStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetAudioStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an audio stream from the Clipboard.</summary>
+        <returns>A <see cref="T:System.IO.Stream" /> containing audio data or <see langword="null" /> if the Clipboard does not contain any data in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with this method.  
+  
+ Use the <xref:System.Windows.Forms.Clipboard.SetAudio%2A> method to add audio data to the Clipboard.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
+ [!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public static object GetData (string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetData(string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetData(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format of the data to retrieve. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
+        <summary>Retrieves data from the Clipboard in the specified format.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the Clipboard data or <see langword="null" /> if the Clipboard does not contain any data that is in the specified <paramref name="format" /> or can be converted to that format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> method to determine whether the Clipboard contains data in the specified format or a compatible format before retrieving it with this method.  
+  
+ If this method cannot find data in the specified format, it attempts to convert the data to the format. If the data cannot be converted to the specified format, or if the data was stored with automatic conversion set to `false`, this method returns `null`.  
+  
+> [!NOTE]
+>  Data can be converted to another format if it was stored specifying that conversion is allowed, and if the requested format is compatible with the stored format. For example, data stored as Unicode can be converted to text.  
+>   
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+ Use the <xref:System.Windows.Forms.Clipboard.SetData%2A> method to add data to the Clipboard in a particular format.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataObject">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.IDataObject GetDataObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.IDataObject GetDataObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetDataObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.IDataObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the data that is currently on the system Clipboard.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.IDataObject" /> that represents the data currently on the Clipboard, or <see langword="null" /> if there is no data on the Clipboard.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the data type of the object returned from the Clipboard can vary, this method returns the data in an <xref:System.Windows.Forms.IDataObject>. Then you can use methods of the <xref:System.Windows.Forms.IDataObject> interface to extract the data in its proper data type.  
+  
+ This method attempts to get the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following code example uses <xref:System.Windows.Forms.Clipboard> methods to place data on and retrieve it from the system Clipboard. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been placed on the form.  
+  
+ The `button1_Click` method calls <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to take selected text from the text box and place it on the system Clipboard.  
+  
+ The `button2_Click` method calls <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> to retrieve data from the system Clipboard. The code uses <xref:System.Windows.Forms.IDataObject> and <xref:System.Windows.Forms.DataFormats> to extract the data returned. The data is displayed in `textBox2`.  
+  
+ [!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
+ [!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">Data could not be retrieved from the Clipboard. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode and the <see cref="P:System.Windows.Forms.Application.MessageLoop" /> property value is <see langword="true" />. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileDropList">
+      <MemberSignature Language="C#" Value="public static System.Collections.Specialized.StringCollection GetFileDropList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Specialized.StringCollection GetFileDropList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetFileDropList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of file names from the Clipboard.</summary>
+        <returns>A <see cref="T:System.Collections.Specialized.StringCollection" /> containing file names or <see langword="null" /> if the Clipboard does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format or can be converted to that format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A file drop list is a collection of strings containing path information for files.  
+  
+ A file drop list is stored on the Clipboard as a <xref:System.String> array. This method converts this array to a <xref:System.Collections.Specialized.StringCollection> and returns the collection.  
+  
+ Use the <xref:System.Windows.Forms.Clipboard.ContainsFileDropList%2A> method to determine whether the Clipboard contains a file drop list before retrieving it with this method.  
+  
+ Use the <xref:System.Windows.Forms.Clipboard.SetFileDropList%2A> method to add a file drop list to the Clipboard.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
+ [!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImage">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Image GetImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Image GetImage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetImage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an image from the Clipboard.</summary>
+        <returns>An <see cref="T:System.Drawing.Image" /> representing the Clipboard image data or <see langword="null" /> if the Clipboard does not contain any data that is in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format or can be converted to that format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.Clipboard.ContainsImage%2A> method to determine whether the Clipboard contains image data before retrieving it with this method.  
+  
+ Use the <xref:System.Windows.Forms.Clipboard.SetImage%2A> method to add image data to the Clipboard.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
+ [!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetText">
+      <MemberSignature Language="C#" Value="public static string GetText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves text data from the Clipboard in the <see cref="F:System.Windows.Forms.TextDataFormat.Text" /> or <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format, depending on the operating system.</summary>
+        <returns>The Clipboard text data or <see cref="F:System.String.Empty" /> if the Clipboard does not contain data in the <see cref="F:System.Windows.Forms.TextDataFormat.Text" /> or <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format, depending on the operating system.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns text data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method returns text data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+  
+ Use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with this method.  
+  
+ Use the <xref:System.Windows.Forms.Clipboard.SetText%2A> method to add text data to the Clipboard.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.GetText%2A> method that is similar to this overload.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetText">
+      <MemberSignature Language="C#" Value="public static string GetText (System.Windows.Forms.TextDataFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetText(valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.GetText(System.Windows.Forms.TextDataFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
+      </Parameters>
+      <Docs>
+        <param name="format">One of the <see cref="T:System.Windows.Forms.TextDataFormat" /> values.</param>
+        <summary>Retrieves text data from the Clipboard in the format indicated by the specified <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</summary>
+        <returns>The Clipboard text data or <see cref="F:System.String.Empty" /> if the Clipboard does not contain data in the specified format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with this method.  
+  
+ Use the <xref:System.Windows.Forms.Clipboard.SetText%2A> method to add text data to the Clipboard.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="format" /> is not a valid <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for access to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAudio">
+      <MemberSignature Language="C#" Value="public static void SetAudio (byte[] audioBytes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAudio(unsigned int8[] audioBytes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetAudio(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioBytes" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="audioBytes">A <see cref="T:System.Byte" /> array containing the audio data.</param>
+        <summary>Clears the Clipboard and then adds a <see cref="T:System.Byte" /> array in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format after converting it to a <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To retrieve audio data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.SetAudio%2A> method that is similar to this overload.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
+ [!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="audioBytes" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding audio data to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAudio">
+      <MemberSignature Language="C#" Value="public static void SetAudio (System.IO.Stream audioStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAudio(class System.IO.Stream audioStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetAudio(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="audioStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="audioStream">A <see cref="T:System.IO.Stream" /> containing the audio data.</param>
+        <summary>Clears the Clipboard and then adds a <see cref="T:System.IO.Stream" /> in the <see cref="F:System.Windows.Forms.DataFormats.WaveAudio" /> format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To retrieve audio data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsAudio%2A> method to determine whether the Clipboard contains audio data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#20)]
+ [!code-vb[System.Windows.Forms.Clipboard#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="audioStream" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding audio data to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public static void SetData (string format, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetData(string format, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetData(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format of the data to set. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
+        <param name="data">An <see cref="T:System.Object" /> representing the data to add.</param>
+        <summary>Clears the Clipboard and then adds data in the specified format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not know the format of the target application, you can store data in multiple formats using this method.  
+  
+ Data stored using this method can be converted to a compatible format when it is retrieved.  
+  
+ To retrieve data from the Clipboard in a particular format, first use the <xref:System.Windows.Forms.Clipboard.ContainsData%2A> method to determine whether the Clipboard contains data in that format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetData%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.Clipboard#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding data of any type or format to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDataObject">
+      <MemberSignature Language="C#" Value="public static void SetDataObject (object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDataObject(object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetDataObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="data">The data to place on the Clipboard.</param>
+        <summary>Clears the Clipboard and then places nonpersistent data on it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data will be deleted from system Clipboard when the application exits.  
+  
+ This method attempts to set the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
+  
+> [!NOTE]
+>  An object must be serializable for it to be put on the Clipboard. If you pass a non-serializable object to this method, it will fail without throwing an exception. See <xref:System.Runtime.Serialization> for more information on serialization.  
+>   
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following code example uses <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> to place nonpersistent text data onto the system Clipboard. In the `button1_Click` method, the selected text is copied from `textBox1` and pasted on the Clipboard. In the `button2_Click` method, the information is retrieved from the Clipboard and displayed in `textBox2`. This code assumes `button1`, `button2`, `textBox1`, and `textBox2` have been created and placed on a form.  
+  
+ [!code-cpp[Classic Clipboard Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Clipboard Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard Example/CS/source.cs#1)]
+ [!code-vb[Classic Clipboard Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">Data could not be placed on the Clipboard. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">The value of <paramref name="data" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding data of any type or format to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDataObject">
+      <MemberSignature Language="C#" Value="public static void SetDataObject (object data, bool copy);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDataObject(object data, bool copy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetDataObject(System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="copy" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="data">The data to place on the Clipboard.</param>
+        <param name="copy">
+          <see langword="true" /> if you want data to remain on the Clipboard after this application exits; otherwise, <see langword="false" />.</param>
+        <summary>Clears the Clipboard and then places data on it and specifies whether the data should remain after the application exits.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `copy` parameter is `false`, the data will be deleted from system Clipboard when the application exits.  
+  
+ This method attempts to set the data ten times in 100-millisecond intervals, and throws an <xref:System.Runtime.InteropServices.ExternalException> if all attempts are unsuccessful.  
+  
+> [!NOTE]
+>  An object must be serializable for it to be put on the Clipboard. If you pass a non-serializable object to this method, it will fail without throwing an exception. See <xref:System.Runtime.Serialization> for more information on serialization.  
+>   
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following method is run in an application. It places a persistent copy of the selected text data in the text box on the system Clipboard. This code assumes `button1`, `textBox1`, and `textBox2` have been created and placed on a form.  
+  
+ [!code-cpp[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CS/source.cs#1)]
+ [!code-vb[Classic Clipboard.SetDataObject1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/VB/source.vb#1)]  
+  
+ In a different application, the following method retrieves the text from the system Clipboard and pastes the text into `textBox2`. This code assumes `button2` and `textBox2` have been created and placed on a form.  
+  
+ [!code-cpp[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/CS/source.cs#2)]
+ [!code-vb[Classic Clipboard.SetDataObject1 Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Clipboard.SetDataObject1 Example/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">Data could not be placed on the Clipboard. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">The value of <paramref name="data" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding data of any type or format to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDataObject">
+      <MemberSignature Language="C#" Value="public static void SetDataObject (object data, bool copy, int retryTimes, int retryDelay);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetDataObject(object data, bool copy, int32 retryTimes, int32 retryDelay) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetDataObject(System.Object,System.Boolean,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="copy" Type="System.Boolean" />
+        <Parameter Name="retryTimes" Type="System.Int32" />
+        <Parameter Name="retryDelay" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="data">The data to place on the Clipboard.</param>
+        <param name="copy">
+          <see langword="true" /> if you want data to remain on the Clipboard after this application exits; otherwise, <see langword="false" />.</param>
+        <param name="retryTimes">The number of times to attempt placing the data on the Clipboard.</param>
+        <param name="retryDelay">The number of milliseconds to pause between attempts.</param>
+        <summary>Clears the Clipboard and then attempts to place data on it the specified number of times and with the specified delay between attempts, optionally leaving the data on the Clipboard after the application exits.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adding data to the Clipboard can occasionally fail if the Clipboard is busy with another thread or application. This method is useful to work around this issue in environments with heavy Clipboard use.  
+  
+ If the `copy` parameter is `false`, the data will be deleted from system Clipboard when the application exits.  
+  
+> [!NOTE]
+>  An object must be serializable for it to be put on the Clipboard. If you pass a non-serializable object to this method, it will fail without throwing an exception. See <xref:System.Runtime.Serialization> for more information on serialization.  
+>   
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="retryTimes" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="retryDelay" /> is less than zero.</exception>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">Data could not be placed on the Clipboard. This typically occurs when the Clipboard is being used by another process.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding data of any type or format to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFileDropList">
+      <MemberSignature Language="C#" Value="public static void SetFileDropList (System.Collections.Specialized.StringCollection filePaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFileDropList(class System.Collections.Specialized.StringCollection filePaths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filePaths" Type="System.Collections.Specialized.StringCollection" />
+      </Parameters>
+      <Docs>
+        <param name="filePaths">A <see cref="T:System.Collections.Specialized.StringCollection" /> containing the file names.</param>
+        <summary>Clears the Clipboard and then adds a collection of file names in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A file drop list is a collection of strings containing path information for files.  
+  
+ A file drop list is stored on the Clipboard as a <xref:System.String> array. This method converts `filePaths` to a <xref:System.String> array before adding it to the Clipboard.  
+  
+ To retrieve a file drop list from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsFileDropList%2A> method to determine whether the Clipboard contains data in that format before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#30)]
+ [!code-vb[System.Windows.Forms.Clipboard#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="filePaths" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="filePaths" /> does not contain any strings.  
+  
+ -or-  
+  
+ At least one of the strings in <paramref name="filePaths" /> is <see cref="F:System.String.Empty" />, contains only white space, contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />, is <see langword="null" />, contains a colon (:), or exceeds the system-defined maximum length.  
+  
+ See the <see cref="P:System.Exception.InnerException" /> property of the <see cref="T:System.ArgumentException" /> for more information.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding data in the <see cref="F:System.Windows.Forms.DataFormats.FileDrop" /> format to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for access to the file system. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImage">
+      <MemberSignature Language="C#" Value="public static void SetImage (System.Drawing.Image image);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetImage(class System.Drawing.Image image) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetImage(System.Drawing.Image)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="System.Drawing.Image" />
+      </Parameters>
+      <Docs>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to add to the Clipboard.</param>
+        <summary>Clears the Clipboard and then adds an <see cref="T:System.Drawing.Image" /> in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To retrieve image data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsImage%2A> method to determine whether the Clipboard contains image data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetImage%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#40)]
+ [!code-vb[System.Windows.Forms.Clipboard#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#40)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="image" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding data in the <see cref="F:System.Windows.Forms.DataFormats.Bitmap" /> format to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetText">
+      <MemberSignature Language="C#" Value="public static void SetText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to add to the Clipboard.</param>
+        <summary>Clears the Clipboard and then adds text data in the <see cref="F:System.Windows.Forms.TextDataFormat.Text" /> or <see cref="F:System.Windows.Forms.TextDataFormat.UnicodeText" /> format, depending on the operating system.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds text data in the <xref:System.Windows.Forms.TextDataFormat> format on [!INCLUDE[WinXpFamily](~/includes/winxpfamily-md.md)] and [!INCLUDE[Win2kFamily](~/includes/win2kfamily-md.md)]. Otherwise, this method adds text data in the <xref:System.Windows.Forms.TextDataFormat> format.  
+  
+ To retrieve text data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an overload of the <xref:System.Windows.Forms.Clipboard.SetText%2A> method that is similar to this overload.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="text" /> is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding text data to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.OwnClipboard" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SetText">
+      <MemberSignature Language="C#" Value="public static void SetText (string text, System.Windows.Forms.TextDataFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetText(string text, valuetype System.Windows.Forms.TextDataFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Clipboard.SetText(System.String,System.Windows.Forms.TextDataFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to add to the Clipboard.</param>
+        <param name="format">One of the <see cref="T:System.Windows.Forms.TextDataFormat" /> values.</param>
+        <summary>Clears the Clipboard and then adds text data in the format indicated by the specified <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To retrieve text data from the Clipboard, first use the <xref:System.Windows.Forms.Clipboard.ContainsText%2A> method to determine whether the Clipboard contains text data before retrieving it with the <xref:System.Windows.Forms.Clipboard.GetText%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.  
+  
+   
+  
+## Examples  
+ The following example demonstrates this member.  
+  
+ [!code-csharp[System.Windows.Forms.Clipboard#50](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#50)]
+ [!code-vb[System.Windows.Forms.Clipboard#50](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Runtime.InteropServices.ExternalException">The Clipboard could not be cleared. This typically occurs when the Clipboard is being used by another process.</exception>
+        <exception cref="T:System.Threading.ThreadStateException">The current thread is not in single-threaded apartment (STA) mode. Add the <see cref="T:System.STAThreadAttribute" /> to your application's <see langword="Main" /> method.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="text" /> is <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="format" /> is not a valid <see cref="T:System.Windows.Forms.TextDataFormat" /> value.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for adding text data to the system Clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionClipboard.OwnClipboard" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

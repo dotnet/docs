@@ -1,0 +1,548 @@
+<Type Name="XmlEntity" FullName="System.Xml.XmlEntity">
+  <TypeSignature Language="C#" Value="public class XmlEntity : System.Xml.XmlNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlEntity extends System.Xml.XmlNode" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlEntity" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.XmlNode</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an entity declaration, such as &lt;!ENTITY... &gt;.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BaseURI">
+      <MemberSignature Language="C#" Value="public override string BaseURI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BaseURI" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.BaseURI" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the base Uniform Resource Identifier (URI) of the current node.</summary>
+        <value>The location from which the node was loaded.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A networked XML document is comprised of chunks of data aggregated using various World Wide Web Consortium (W3C) standard inclusion mechanisms and therefore contains nodes that come from different places. The `BaseURI` tells you where these nodes came from.  
+  
+ The value of this property varies depending on the node type. Nodes which are children of external EntityReference nodes return the location of the entity itself. For example, consider the following XML document:  
+  
+```  
+<!DOCTYPE item [  
+<!ENTITY xyz SYSTEM "a/b.xml">  
+]>  
+<item num='123'>&xyz;</item>  
+```  
+  
+ where the external entity `a/b.xml` contains the XML text `<test>123</test>`.  
+  
+ If the document is loaded from http://server/mydata.xml, `BaseURI` returns the following:  
+  
+|NodeType|Name|BaseURI|  
+|--------------|----------|-------------|  
+|Attribute|num|http://server/mydata.xml|  
+|Document|#document|http://server/mydata.xml|  
+|DocumentType|item|http://server/mydata.xml|  
+|Entity|xyz|http://server/mydata.xml|  
+|Element|item|http://server/mydata.xml|  
+|EntityReference|xyz|http://server/mydata.xml|  
+|Element|test|http://server/a/b.xml|  
+|Text|#text|http://server/a/b.xml|  
+  
+ `BaseURI` looks for entity reference boundaries, so if entities are expanded, this information is not preserved and this property returns the location of the `XmlDocument` object in all cases.  
+  
+ As a second example, given the following XML document:  
+  
+```  
+<!DOCTYPE Mydata SYSTEM "http://localhost/doctype.dtd">  
+<baa>&xyz;</baa>  
+```  
+  
+ where the document type definition (DTD) file contains the following:  
+  
+```  
+<!ENTITY xyz "<E1>My Data</E1>">  
+<!ELEMENT baa #PCDATA>  
+<!ATTLIST baa attr1 "woof">  
+```  
+  
+ If the XML document is loaded from http://localhost/mydata.xml, `BaseURI` returns the following for each of the nodes:  
+  
+|NodeType|Name|BaseURI|  
+|--------------|----------|-------------|  
+|Document|#document|http://localhost/mydata.xml|  
+|DocumentType|Mydata|http://localhost/doctype.dtd|  
+|Element|baa|http://localhost/mydata.xml|  
+|Entity|xyz|http://localhost/doctype.dtd|  
+|EntityReference|xyz|http://localhost/mydata.xml|  
+|Attribute|woof|http://localhost/mydata.xml|  
+  
+> [!NOTE]
+>  The base URI of a default attribute is the same as the base URI of the element to which they belong.  
+  
+ This property is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneNode">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlNode CloneNode (bool deep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode CloneNode(bool deep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlEntity.CloneNode(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="deep" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="deep">
+          <see langword="true" /> to recursively clone the subtree under the specified node; <see langword="false" /> to clone only the node itself.</param>
+        <summary>Creates a duplicate of this node. Entity nodes cannot be cloned. Calling this method on an <see cref="T:System.Xml.XmlEntity" /> object throws an exception.</summary>
+        <returns>Returns a copy of the <see cref="T:System.Xml.XmlNode" /> from which the method is called.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Entity nodes cannot be cloned. Calling this method on an <see cref="T:System.Xml.XmlEntity" /> object throws an exception.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerText">
+      <MemberSignature Language="C#" Value="public override string InnerText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.InnerText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the concatenated values of the entity node and all its children.</summary>
+        <value>The concatenated values of the node and all its children.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `XmlEntity` nodes are read-only. Setting this property throws an exception.  
+  
+ This property is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Attempting to set the property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerXml">
+      <MemberSignature Language="C#" Value="public override string InnerXml { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InnerXml" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.InnerXml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the markup representing the children of this node.</summary>
+        <value>For <see langword="XmlEntity" /> nodes, String.Empty is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `XmlEntity` nodes are read-only. Setting this property throws an exception.  
+  
+ This property is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Attempting to set the property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the node is read-only.</summary>
+        <value>
+          <see langword="true" /> if the node is read-only; otherwise <see langword="false" />.  
+  
+ Because <see langword="XmlEntity" /> nodes are read-only, this property always returns <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A read-only node is one whose properties, attributes, or children cannot be changed. You can remove a read-only node from the tree and insert it somewhere else.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalName">
+      <MemberSignature Language="C#" Value="public override string LocalName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocalName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.LocalName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the node without the namespace prefix.</summary>
+        <value>For <see langword="XmlEntity" /> nodes, this property returns the name of the entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the node.</summary>
+        <value>The name of the entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays information on the entities declared in the XML document.  
+  
+ [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+ [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+ [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+  
+ The example uses the file `doment.xml` as input.  
+  
+ [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeType">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlNodeType NodeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.NodeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the node.</summary>
+        <value>The node type. For <see langword="XmlEntity" /> nodes, the value is XmlNodeType.Entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays information on the entities declared in the XML document.  
+  
+ [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+ [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+ [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+  
+ The example uses the file `doment.xml` as input.  
+  
+ [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotationName">
+      <MemberSignature Language="C#" Value="public string NotationName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NotationName" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.NotationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the optional NDATA attribute on the entity declaration.</summary>
+        <value>The name of the NDATA attribute. If there is no NDATA, <see langword="null" /> is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays information on the entities declared in the XML document.  
+  
+ [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+ [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+ [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+  
+ The example uses the file, `doment.xml`, as input.  
+  
+ [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OuterXml">
+      <MemberSignature Language="C#" Value="public override string OuterXml { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OuterXml" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.OuterXml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the markup representing this node and all its children.</summary>
+        <value>For <see langword="XmlEntity" /> nodes, String.Empty is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicId">
+      <MemberSignature Language="C#" Value="public string PublicId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PublicId" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.PublicId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the public identifier on the entity declaration.</summary>
+        <value>The public identifier on the entity. If there is no public identifier, <see langword="null" /> is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays information on the entities declared in the XML document.  
+  
+ [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+ [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+ [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+  
+ The example uses the file, `doment.xml`, as input.  
+  
+ [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemId">
+      <MemberSignature Language="C#" Value="public string SystemId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SystemId" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlEntity.SystemId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the system identifier on the entity declaration.</summary>
+        <value>The system identifier on the entity. If there is no system identifier, <see langword="null" /> is returned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays information on the entities declared in the XML document.  
+  
+ [!code-cpp[XmlEntity#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlEntity/CPP/entities.cpp#1)]
+ [!code-csharp[XmlEntity#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlEntity/CS/entities.cs#1)]
+ [!code-vb[XmlEntity#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlEntity/VB/entities.vb#1)]  
+  
+ The example uses the file `doment.xml` as input.  
+  
+ [!code-xml[XmlEntity#2](~/samples/snippets/xml/VS_Snippets_Data/XmlEntity/XML/doment.xml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteContentTo">
+      <MemberSignature Language="C#" Value="public override void WriteContentTo (System.Xml.XmlWriter w);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteContentTo(class System.Xml.XmlWriter w) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlEntity.WriteContentTo(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="w" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="w">The <see langword="XmlWriter" /> to which you want to save.</param>
+        <summary>Saves all the children of the node to the specified <see cref="T:System.Xml.XmlWriter" />. For <see langword="XmlEntity" /> nodes, this method has no effect.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTo">
+      <MemberSignature Language="C#" Value="public override void WriteTo (System.Xml.XmlWriter w);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteTo(class System.Xml.XmlWriter w) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlEntity.WriteTo(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="w" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="w">The <see langword="XmlWriter" /> to which you want to save.</param>
+        <summary>Saves the node to the specified <see cref="T:System.Xml.XmlWriter" />. For <see langword="XmlEntity" /> nodes, this method has no effect.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is a Microsoft extension to the Document Object Model (DOM).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

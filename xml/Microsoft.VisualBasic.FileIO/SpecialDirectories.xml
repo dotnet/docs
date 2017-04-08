@@ -1,0 +1,382 @@
+<Type Name="SpecialDirectories" FullName="Microsoft.VisualBasic.FileIO.SpecialDirectories">
+  <TypeSignature Language="C#" Value="public class SpecialDirectories" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi SpecialDirectories extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.SpecialDirectories" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties for accessing commonly referenced directories.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the path for the referenced directory is empty, usually due to the operating system not supporting the directory, a <xref:System.IO.DirectoryNotFoundException> exception is thrown.  
+  
+ No backslash (\\) appears at the end of the path.  
+  
+ The following table lists examples of tasks involving the `My.Computer.FileSystem.SpecialDirectories` object.  
+  
+|To|See|  
+|-|-|  
+|Read from the MyDocuments directory|[How to: Retrieve the Contents of the My Documents Directory](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-retrieve-the-contents-of-the-my-documents-directory.md)|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|**Yes**|  
+|Windows Service|**Yes**|  
+|Web Site|**Yes**|  
+  
+   
+  
+## Examples  
+ This example returns the `filePath` for the user's Desktop directory and displays it.  
+  
+ [!code-vb[VbVbcnMyFileSystem#80](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#80)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SpecialDirectories ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.FileIO.SpecialDirectories.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Returns an instance of the <see cref="P:Microsoft.VisualBasic.MyServices.FileSystemProxy.SpecialDirectories" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllUsersApplicationData">
+      <MemberSignature Language="C#" Value="public static string AllUsersApplicationData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string AllUsersApplicationData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.AllUsersApplicationData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path name pointing to the Application Data directory for the all users.</summary>
+        <value>The path to the Application Data directory for the all users.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SpecialDirectories` object contains paths to commonly referenced directories.  
+  
+   
+  
+## Examples  
+ This example displays the path to the Application Data directory for the all users in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#79](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#79)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentUserApplicationData">
+      <MemberSignature Language="C#" Value="public static string CurrentUserApplicationData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string CurrentUserApplicationData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.CurrentUserApplicationData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path name pointing to the Application Data directory for the current user.</summary>
+        <value>The path to the Application Data directory for the current user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SpecialDirectories object contains paths to commonly referenced directories.  
+  
+   
+  
+## Examples  
+ This example displays the path to the Application Data directory for the current user in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#48](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#48)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Desktop">
+      <MemberSignature Language="C#" Value="public static string Desktop { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Desktop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.Desktop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path name pointing to the Desktop directory.</summary>
+        <value>The path to the Desktop directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The SpecialDirectories object contains paths to commonly referenced directories.  
+  
+   
+  
+## Examples  
+ This example displays the path for the Desktop directory in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#60](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#60)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="MyDocuments">
+      <MemberSignature Language="C#" Value="public static string MyDocuments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string MyDocuments" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.MyDocuments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path name pointing to the My Documents directory.</summary>
+        <value>The path to the My Documents directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SpecialDirectories` object contains paths to commonly referenced directories.  
+  
+   
+  
+## Examples  
+ This example displays the path for the My Documents directory in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#53](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#53)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="MyMusic">
+      <MemberSignature Language="C#" Value="public static string MyMusic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string MyMusic" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.MyMusic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path name pointing to the My Music directory.</summary>
+        <value>The path to the My Music directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SpecialDirectories` object contains paths to commonly referenced directories.  
+  
+   
+  
+## Examples  
+ This example displays the path for the My Music directory in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="MyPictures">
+      <MemberSignature Language="C#" Value="public static string MyPictures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string MyPictures" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.MyPictures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path name pointing to the My Pictures directory.</summary>
+        <value>The path to the My Pictures directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SpecialDirectories` object contains paths to commonly referenced directories.  
+  
+   
+  
+## Examples  
+ This example displays the path for the MyPictures directory in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#77](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#77)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgramFiles">
+      <MemberSignature Language="C#" Value="public static string ProgramFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ProgramFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.ProgramFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path pointing to the **Program Files** directory.</summary>
+        <value>The path to the **Program Files** directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SpecialDirectories` object contains paths to commonly referenced directories. The **Program Files** directory contains the computer's program files.  
+  
+   
+  
+## Examples  
+ This example displays the path for the **Program Files** directory in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#90](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#90)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Programs">
+      <MemberSignature Language="C#" Value="public static string Programs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Programs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.Programs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path name pointing to the Programs directory.</summary>
+        <value>The path to the Programs directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SpecialDirectories` object contains paths to commonly referenced directories. The Programs directory contains the user's program groups.  
+  
+   
+  
+## Examples  
+ This example displays the path for the Programs directory in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#61)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Temp">
+      <MemberSignature Language="C#" Value="public static string Temp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Temp" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.FileIO.SpecialDirectories.Temp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path name pointing to the Temp directory.</summary>
+        <value>The path to the Temp directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SpecialDirectories` object contains paths to commonly referenced directories.  
+  
+   
+  
+## Examples  
+ This example displays the path for the Temp directory in a <xref:System.Windows.Forms.MessageBox>.  
+  
+ [!code-vb[VbVbcnMyFileSystem#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#31)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The path is empty, usually because the operating system does not support the directory.</exception>
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls access to system and user environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

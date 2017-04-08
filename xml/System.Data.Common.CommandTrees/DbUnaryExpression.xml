@@ -1,0 +1,53 @@
+<Type Name="DbUnaryExpression" FullName="System.Data.Common.CommandTrees.DbUnaryExpression">
+  <TypeSignature Language="C#" Value="public abstract class DbUnaryExpression : System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbUnaryExpression extends System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbUnaryExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements the basic functionality required by expressions that accept a single expression argument.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is a helper base class on which many of the subsequent classes are built.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Argument">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Argument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Argument" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbUnaryExpression.Argument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the argument.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the argument.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived expression types might perform stricter type checks when the <xref:System.Data.Common.CommandTrees.DbUnaryExpression.Argument%2A> property is set. For example, <xref:System.Data.Common.CommandTrees.DbDistinctExpression> requires that its argument expression has a collection result type. Typically, derived expression types will not allow <xref:System.Data.Common.CommandTrees.DbUnaryExpression.Argument%2A> to be set to an expression with a result type that is not equal or promotable to the result type of the current value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of a <see cref="T:System.Data.Common.CommandTrees.DbUnaryExpression" />, or its result type is not equal or promotable to the required type for the argument.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,70 @@
+<Type Name="Condition" FullName="System.Windows.Automation.Condition">
+  <TypeSignature Language="C#" Value="public abstract class Condition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Condition extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Condition" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Base type for conditions used in filtering when searching for elements in the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FalseCondition">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition FalseCondition;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition FalseCondition" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Condition.FalseCondition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Condition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a <see cref="T:System.Windows.Automation.Condition" /> that always evaluates to <see langword="false" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This condition exists only for symmetry with <xref:System.Windows.Automation.Condition>. It will never enable a match with [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements, and it cannot usefully be combined with any other condition.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrueCondition">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition TrueCondition;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition TrueCondition" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Condition.TrueCondition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Condition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a <see cref="T:System.Windows.Automation.Condition" /> that always evaluates to <see langword="true" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, <xref:System.Windows.Automation.Condition.TrueCondition> is used to retrieve all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements within the specified scope.  
+  
+ [!code-csharp[UIAClient_snip#178](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ConditionSnips.cs#178)]
+ [!code-vb[UIAClient_snip#178](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ConditionSnips.vb#178)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

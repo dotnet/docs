@@ -1,0 +1,199 @@
+<Type Name="LogicalTreeHelper" FullName="System.Windows.LogicalTreeHelper">
+  <TypeSignature Language="C#" Value="public static class LogicalTreeHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LogicalTreeHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.LogicalTreeHelper" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static helper methods for querying objects in the logical tree.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.LogicalTreeHelper> class provides methods that you can use to return child collections of objects, or specific objects from within subnodes of the logical tree. However, most of the object tree operations that you typically perform are also exposed by similar methods or properties on <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. For example, try the following:  
+  
+-   Instead of calling the static <xref:System.Windows.LogicalTreeHelper.GetChildren%2A> method, which returns an enumerator for the logical child objects, use the dedicated collection exposed in the content model for that object. Nearly all objects that support a content model expose some property that contains the collection of child objects, and provides collection interface support directly on that collection.  
+  
+-   Instead of calling the static <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> method to obtain a child object by specifying its name, call the <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.FindName%2A?displayProperty=fullName> method on specific objects.  
+  
+ <xref:System.Windows.LogicalTreeHelper> is most useful for analysis scenarios where you are traveling up or down the logical tree recursively through multiple levels, and want to use a consistent approach for examining the various parent or child objects. In this case, you might be accessing a mixture of content models, and using the more content-model specific APIs would be too complex.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BringIntoView">
+      <MemberSignature Language="C#" Value="public static void BringIntoView (System.Windows.DependencyObject current);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BringIntoView(class System.Windows.DependencyObject current) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.BringIntoView(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="current">The UI element to bring into view.</param>
+        <summary>Attempts to bring the requested UI element into view and raises the <see cref="E:System.Windows.FrameworkElement.RequestBringIntoView" /> event on the target in order to report the results.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is typically more convenient to call the instance methods <xref:System.Windows.FrameworkElement.BringIntoView%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.BringIntoView%2A?displayProperty=fullName> rather than this static utility method. The behavior of the instance methods is equivalent to the behavior of the static method.  
+  
+ Even if the `current` UI element provided was a <xref:System.Windows.FrameworkContentElement>, the resulting event is still the same <xref:System.Windows.FrameworkElement.RequestBringIntoView?displayProperty=fullName> event, with the originating <xref:System.Windows.FrameworkContentElement> identifiable by checking the event data of the event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindLogicalNode">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject FindLogicalNode (System.Windows.DependencyObject logicalTreeNode, string elementName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject FindLogicalNode(class System.Windows.DependencyObject logicalTreeNode, string elementName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.FindLogicalNode(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logicalTreeNode" Type="System.Windows.DependencyObject" />
+        <Parameter Name="elementName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="logicalTreeNode">The object to start searching from. This object must be either a <see cref="T:System.Windows.FrameworkElement" /> or a <see cref="T:System.Windows.FrameworkContentElement" />.</param>
+        <param name="elementName">The name of the object to find.</param>
+        <summary>Attempts to find and return an object that has the specified name. The search starts from the specified object and continues into subnodes of the logical tree.</summary>
+        <returns>The object with the matching name, if one is found; returns <see langword="null" /> if no matching name was found in the logical tree.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The methods <xref:System.Windows.FrameworkContentElement.FindName%2A?displayProperty=fullName> and <xref:System.Windows.FrameworkElement.FindName%2A?displayProperty=fullName> are superficially similar to <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A>, but operate by different logic:  
+  
+-   The search direction for <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> is toward child objects (down the tree); the search direction for the `FindName` methods is towards parent objects (up the tree).  
+  
+-   The `FindName` methods are governed by the concept of a XAML namescope. Using `FindName` you are guaranteed that only one object of that name exists, because XAML namescopes enforce uniqueness. In contrast, <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> ignores XAML namescope and might cross XAML namescope boundaries during the search. As such, there is no guarantee of uniqueness of the `elementName` name once boundaries are crossed. For more information about XAML namescopes, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildren">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetChildren (System.Windows.DependencyObject current);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetChildren(class System.Windows.DependencyObject current) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.GetChildren(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="current">The object from which to start processing the logical tree. This is expected to be either a <see cref="T:System.Windows.FrameworkElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</param>
+        <summary>Returns the collection of immediate child objects of the specified object, by processing the logical tree.</summary>
+        <returns>The enumerable collection of immediate child objects from the logical tree of the specified object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this signature and helper method primarily when you are unsure whether `current` is a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> and are also unsure whether that object's class supports its own content model collection. If you can determine the type of the object you are querying, check the specific content property that you know exists on that type. For example, if you know that the object you are querying is an <xref:System.Windows.Controls.ItemsControl>, check the <xref:System.Windows.Controls.ItemsControl.Items%2A> property to get a strongly typed collection, which has collection interface support and is probably more useful than an enumerator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildren">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetChildren (System.Windows.FrameworkContentElement current);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetChildren(class System.Windows.FrameworkContentElement current) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.GetChildren(System.Windows.FrameworkContentElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="System.Windows.FrameworkContentElement" />
+      </Parameters>
+      <Docs>
+        <param name="current">The object from which to start processing the logical tree.</param>
+        <summary>Returns the collection of immediate child objects of the specified <see cref="T:System.Windows.FrameworkContentElement" /> by processing the logical tree.</summary>
+        <returns>The enumerable collection of immediate child objects starting from <paramref name="current" /> in the logical tree.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildren">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetChildren (System.Windows.FrameworkElement current);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetChildren(class System.Windows.FrameworkElement current) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.GetChildren(System.Windows.FrameworkElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="current">The object from which to start processing the logical tree.</param>
+        <summary>Returns the collection of immediate child objects of the specified <see cref="T:System.Windows.FrameworkElement" /> by processing the logical tree.</summary>
+        <returns>The enumerable collection of immediate child objects starting from <paramref name="current" /> in the logical tree.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParent">
+      <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject GetParent (System.Windows.DependencyObject current);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject GetParent(class System.Windows.DependencyObject current) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.GetParent(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="current" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="current">The object to find the parent object for. This is expected to be either a <see cref="T:System.Windows.FrameworkElement" /> or a <see cref="T:System.Windows.FrameworkContentElement" />.</param>
+        <summary>Returns the parent object of the specified object by processing the logical tree.</summary>
+        <returns>The requested parent object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is merely a wrapper that gets the appropriate type version (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) of the <xref:System.Windows.FrameworkElement.Parent%2A?displayProperty=fullName> or <xref:System.Windows.FrameworkContentElement.Parent%2A?displayProperty=fullName> property; so unless you are unable to determine the `current` type, you might want to check the respective instance properties instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

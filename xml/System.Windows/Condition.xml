@@ -1,0 +1,434 @@
+<Type Name="Condition" FullName="System.Windows.Condition">
+  <TypeSignature Language="C#" Value="public sealed class Condition : System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Condition extends System.Object implements class System.ComponentModel.ISupportInitialize" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Condition" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.ISupportInitialize</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.XamlSetMarkupExtension("ReceiveMarkupExtension")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.XamlSetTypeConverter("ReceiveTypeConverter")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a condition for the <see cref="T:System.Windows.MultiTrigger" /> and the <see cref="T:System.Windows.MultiDataTrigger" />, which apply changes to property values based on a set of conditions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.MultiTrigger>s and <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the property value of the element or data item matches the specified <xref:System.Windows.Condition.Value%2A> (reference equality check). If all specified conditions are satisfied, then the trigger is applied.  
+  
+ The following is a list of cases that will cause an exception:  
+  
+-   For each <xref:System.Windows.Condition>, you can only set either the <xref:System.Windows.Condition.Property%2A> property or the <xref:System.Windows.Condition.Binding%2A> property. If both properties are set, an exception is thrown.  
+  
+-   If the <xref:System.Windows.Condition> is for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> property cannot be null.  
+  
+-   If the <xref:System.Windows.Condition> is for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> property cannot be null.  
+  
+-   An exception is thrown if the specified <xref:System.Windows.Condition.Value%2A> is not valid for the type of the specified <xref:System.Windows.Condition.Property%2A>.  
+  
+ Note that if the <xref:System.Windows.Condition> is for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. If it is for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set.  
+  
+   
+  
+## Examples  
+ The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
+  
+ [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+  
+ See the <xref:System.Windows.Condition.Binding%2A> property for examples of conditions used in a <xref:System.Windows.MultiDataTrigger>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Condition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Condition.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Condition (System.Windows.Data.BindingBase binding, object conditionValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Data.BindingBase binding, object conditionValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Condition.#ctor(System.Windows.Data.BindingBase,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.Windows.Data.BindingBase" />
+        <Parameter Name="conditionValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The binding that specifies the property of the condition.</param>
+        <param name="conditionValue">The value of the condition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Condition (System.Windows.DependencyProperty conditionProperty, object conditionValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyProperty conditionProperty, object conditionValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Condition.#ctor(System.Windows.DependencyProperty,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conditionProperty" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="conditionValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="conditionProperty">The property of the condition.</param>
+        <param name="conditionValue">The value of the condition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class with the specified property and value. This constructor performs parameter validation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Condition (System.Windows.DependencyProperty conditionProperty, object conditionValue, string sourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyProperty conditionProperty, object conditionValue, string sourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Condition.#ctor(System.Windows.DependencyProperty,System.Object,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conditionProperty" Type="System.Windows.DependencyProperty" />
+        <Parameter Name="conditionValue" Type="System.Object" />
+        <Parameter Name="sourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conditionProperty">The property of the condition.</param>
+        <param name="conditionValue">The value of the condition.</param>
+        <param name="sourceName">
+          <c>x:Name</c> of the object with the <c>conditionProperty</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Condition" /> class with the specified property, value, and the name of the source object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Binding">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.BindingBase Binding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase Binding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Condition.Binding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the binding that specifies the property of the condition. This is only applicable to <see cref="T:System.Windows.MultiDataTrigger" /> objects.</summary>
+        <value>The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on values of the data that is returned. For example, if you are displaying a list of task items, you may want to display a task with a red background if it is of high priority and has not been looked at for more than two weeks.  
+  
+ You create a binding and use the <xref:System.Windows.Data.Binding.Path%2A> property to bind to a property of a certain object (the binding source object). For example, you may bind to the *Priority* property of a *Task*. For more information, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ Note that if it is a condition for a <xref:System.Windows.MultiDataTrigger>, the <xref:System.Windows.Condition.Binding%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Property%2A> value would cause an exception in that case.  
+  
+<a name="xamlAttributeUsage_PriorityBinding"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="{Binding  declaration}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_Binding"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.Binding>  
+    <Binding …/>  
+  </object.Binding>  
+</object>  
+```  
+  
+<a name="xamlValues_PriorityBinding"></a>   
+## XAML Values  
+ *declaration*  
+ A binding declaration. See [Binding Declarations Overview](~/docs/framework/wpf/data/binding-declarations-overview.md) for more information.  
+  
+   
+  
+## Examples  
+ In the following example, the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> of the <xref:System.Windows.Controls.ListBox> is bound to *Places*, an <xref:System.Collections.ObjectModel.ObservableCollection%601> of *Place* objects. *Place* objects have properties *Name* and *State*.  
+  
+ Each <xref:System.Windows.Controls.ListBoxItem> of the <xref:System.Windows.Controls.ListBox> displays a *Place* object. The <xref:System.Windows.Style> in the example is applied to each <xref:System.Windows.Controls.ListBoxItem>. The <xref:System.Windows.Condition>s of the <xref:System.Windows.MultiDataTrigger> are specified such that if the *Name* and *State* of the *Place* data item is "Portland" and "OR" respectively, then the background of corresponding <xref:System.Windows.Controls.ListBoxItem> is set to Cyan.  
+  
+ [!code-xml[DataTrigger#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTrigger/CSharp/Window1.xaml#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty Property { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty Property" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Condition.Property" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.Ambient</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the property of the condition. This is only applicable to <see cref="T:System.Windows.MultiTrigger" /> objects.</summary>
+        <value>A <see cref="T:System.Windows.DependencyProperty" /> that specifies the property of the condition. The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.MultiTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the value of the property (specified by the <xref:System.Windows.Condition.Property%2A> property) of the element matches the specified <xref:System.Windows.Condition.Value%2A> (reference equality check). If all specified conditions are satisfied, then the trigger is applied.  
+  
+ If `TargetType` is not set on the style of the template that contains the triggers. Then you need to qualify the property name using the `ClassName.PropertyName` syntax.  
+  
+ Note that if it is a condition for a <xref:System.Windows.MultiTrigger>, the <xref:System.Windows.Condition.Property%2A> and <xref:System.Windows.Condition.Value%2A> properties must be set. Setting the <xref:System.Windows.Condition.Binding%2A> value would cause an exception in that case.  
+  
+ For <xref:System.Windows.Condition>s in <xref:System.Windows.MultiDataTrigger>s, the <xref:System.Windows.Condition.Binding%2A> property should be used instead of this property.  
+  
+   
+  
+## Examples  
+ The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
+  
+ [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMarkupExtension">
+      <MemberSignature Language="C#" Value="public static void ReceiveMarkupExtension (object targetObject, System.Windows.Markup.XamlSetMarkupExtensionEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReceiveMarkupExtension(object targetObject, class System.Windows.Markup.XamlSetMarkupExtensionEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Condition.ReceiveMarkupExtension(System.Object,System.Windows.Markup.XamlSetMarkupExtensionEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetObject" Type="System.Object" />
+        <Parameter Name="eventArgs" Type="System.Windows.Markup.XamlSetMarkupExtensionEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="targetObject">The object where the markup extension sets the value.</param>
+        <param name="eventArgs">Data that is relevant for markup extension processing.</param>
+        <summary>Handles cases where a markup extension provides a value for a property of a <see cref="T:System.Windows.Condition" /> object</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Condition> with a markup extension. You do not typically call this method directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveTypeConverter">
+      <MemberSignature Language="C#" Value="public static void ReceiveTypeConverter (object targetObject, System.Windows.Markup.XamlSetTypeConverterEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReceiveTypeConverter(object targetObject, class System.Windows.Markup.XamlSetTypeConverterEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Condition.ReceiveTypeConverter(System.Object,System.Windows.Markup.XamlSetTypeConverterEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetObject" Type="System.Object" />
+        <Parameter Name="eventArgs" Type="System.Windows.Markup.XamlSetTypeConverterEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="targetObject">The object where the type converter sets the value.</param>
+        <param name="eventArgs">Data that is relevant for type converter processing.</param>
+        <summary>Handles cases where a type converter provides a value for a property of on a<see cref="T:System.Windows.Condition" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the method referenced by an applied <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> attribute at the class level, which means that this method processes all attempts to set values of <xref:System.Windows.Condition> with a type converter. You do not typically call this method directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Condition.SourceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the object with the property that causes the associated setters to be applied. This is only applicable to <see cref="T:System.Windows.MultiTrigger" /> objects.</summary>
+        <value>The default property is <see langword="null" />. If this property is <see langword="null" />, then the property of the object being styled causes the associated setters to be applied.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this property to the name of any element within the scope of where the trigger collection (the collection that the trigger that contains this condition is part of) is applied. This is typically a named element that is within the template that contains the trigger.  
+  
+ You can name an object using the [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) syntax.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">After a <see cref="T:System.Windows.Condition" /> is in use, it cannot be modified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Condition.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the object that initialization is starting.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Condition> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.ISupportInitialize.EndInit">
+      <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Condition.System#ComponentModel#ISupportInitialize#EndInit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals the object that initialization is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Condition> instance is cast to an <xref:System.ComponentModel.ISupportInitialize> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Condition.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Markup.SetterTriggerConditionValueConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the condition.</summary>
+        <value>The <see cref="P:System.Windows.Condition.Value" /> property cannot be null for a given <see cref="T:System.Windows.Condition" />.  
+  
+ See also the Exceptions section. The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.MultiTrigger>s and <xref:System.Windows.MultiDataTrigger>s allow you to set property values based on a set of conditions. A condition is satisfied when the property value of the element or data item matches the specified <xref:System.Windows.Condition.Value%2A>. If all specified conditions are satisfied, then the trigger is applied. If all specified conditions are satisfied, then the trigger is applied.  
+  
+   
+  
+## Examples  
+ The following example contains two <xref:System.Windows.MultiTrigger>s. The first sets the **MinWidth** property value when the **HasItems** property is false and the **Width** property is **Auto**. The second one is similar but is for the **MinHeight** property.  
+  
+ [!code-xml[ControlTemplateExamples_snip#MultiTriggerExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples_snip/CS/Page1.xaml#multitriggerexample1)]  
+  
+ See the <xref:System.Windows.Condition.Binding%2A> property for examples of conditions used in a <xref:System.Windows.MultiDataTrigger>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Expressions are not supported.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

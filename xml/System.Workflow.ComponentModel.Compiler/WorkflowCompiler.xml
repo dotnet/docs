@@ -1,0 +1,107 @@
+<Type Name="WorkflowCompiler" FullName="System.Workflow.ComponentModel.Compiler.WorkflowCompiler">
+  <TypeSignature Language="C#" Value="public sealed class WorkflowCompiler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowCompiler extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowCompiler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the compiler for workflows that are developed using C# or Visual Basic code and/or XAML markup. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler> class and run the [Compile(WorkflowCompilerParameters, String\<xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile%2A> method. The code also creates a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters> class and sets some of its values. This code assumes that `results` is of type <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults>. This code example is part of the Outlook Workflow Wizard SDK sample from the WizardForm.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[WF_Samples#99](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#99)]
+ [!code-vb[WF_Samples#99](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#99)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowCompiler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompiler" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler> class.  The code also creates a new instance of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters> class and sets some of its values. This code assumes that `results` is of type <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults>. This code example is part of the Outlook Workflow Wizard SDK sample from the WizardForm.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+ [!code-csharp[WF_Samples#99](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#99)]
+ [!code-vb[WF_Samples#99](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#99)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compile">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults Compile (System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters, string[] files);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults Compile(class System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters parameters, string[] files) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile(System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" />
+        <Parameter Name="files" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="parameters">The <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" />.</param>
+        <param name="files">A string array that contains the paths to the files to compile. These files can be either code files (such as .vb or .cs) or workflow markup files. Workflow markup files must have an .xoml extension to be recognized by the compiler.</param>
+        <summary>Compiles a list of workflows contained in the files that are passed as parameters based on the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters" />.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults" /> representing the results of the operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler.Compile%2A> method. The code also creates new instances of the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompiler> and <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters> classes and sets some values. This code assumes that `results` is of type <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilerResults>. This code example is part of the Outlook Workflow Wizard SDK sample from the WizardForm.cs file. For more information, see [Outlook Workflow Wizard](http://msdn.microsoft.com/en-us/7b2ba92b-8456-43f3-87fc-184ffdec4408).  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="files" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

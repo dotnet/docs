@@ -1,39 +1,44 @@
 ---
-title: Finding the time zones defined on a local system
-description: Finding the time zones defined on a local system
-keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
-ms.date: 08/15/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: dotnet-standard
-ms.devlang: dotnet
-ms.assetid: 3a6ee323-f3cf-486d-aa0c-103931f1eba9
+title: "Finding the Time Zones Defined on a Local System | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-bcl"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "time zones [.NET Framework], local"
+  - "time zones [.NET Framework], finding local system time zones"
+  - "time zone identifiers [.NET Framework]"
+  - "local time zone access"
+  - "time zones [.NET Framework], retrieving"
+  - "UTC times, finding local system time zones"
+  - "time zones [.NET Framework], UTC"
+ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
+caps.latest.revision: 14
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
 ---
-
-# Finding the time zones defined on a local system
-
-The [System.TimeZoneInfo](xref:System.TimeZoneInfo) class does not expose a public constructor. As a result, the `new` keyword cannot be used to create a new [TimeZoneInfo](xref:System.TimeZoneInfo) object. Instead, [TimeZoneInfo](xref:System.TimeZoneInfo) objects are instantiated by retrieving information on predefined time zones from the operating system. This topic discusses instantiating a time zone from data stored by the operating system. In addition, `static` (`Shared` in Visual Basic) properties of the [TimeZoneInfo](xref:System.TimeZoneInfo) class provide access to Coordinated Universal Time (UTC) and the local time zone.
-
-## Accessing Individual Time Zones
-
-The [TimeZoneInfo](xref:System.TimeZoneInfo) class provides two predefined time zone objects that represent the UTC time and the local time zone. They are available from the [TimeZoneInfo.Utc](xref:System.TimeZoneInfo.Utc) and [TimeZoneInfo.Local](xref:System.TimeZoneInfo.Local) properties, respectively. For instructions on accessing the UTC or local time zones, see [How to: access the predefined UTC and local time zone objects](access-utc-and-local.md). 
-
-You can also instantiate a [TimeZoneInfo](xref:System.TimeZoneInfo) object that represents any time zone defined by the operating system. For instructions on instantiating a specific time zone object, see [How to: instantiate a TimeZoneInfo object](instantiate-time-zone-info.md).
-
-## Time Zone Identifiers
-
-The time zone identifier is a key field that uniquely identifies the time zone. While most keys are relatively short, the time zone identifier is comparatively long. In most cases, its value corresponds to the [TimeZoneInfo.StandardName](xref:System.TimeZoneInfo.StandardName) property, which is used to provide the name of the time zone's standard time. However, there are exceptions. The best way to make sure that you supply a valid identifier is to enumerate the time zones available on your system and note their associated identifiers. For instructions on enumerating time zones, see [How to: enumerate time zones present on a computer](enumerate-time-zones.md).
-
-## See Also
-
-[Dates, times, and time zones](index.md)
-
-[How to: access the predefined UTC and local time zone objects](access-utc-and-local.md)
-
-[How to: instantiate a TimeZoneInfo object](instantiate-time-zone-info.md)
-
-[How to: enumerate time zones present on a computer](enumerate-time-zones.md)
-
-[Converting times between time zones](converting-between-time-zones.md)
+# Finding the Time Zones Defined on a Local System
+The <xref:System.TimeZoneInfo> class does not expose a public constructor. As a result, the `new` keyword cannot be used to create a new <xref:System.TimeZoneInfo> object. Instead, <xref:System.TimeZoneInfo> objects are instantiated either by retrieving information on predefined time zones from the registry or by creating a custom time zone. This topic discusses instantiating a time zone from data stored in the registry. In addition, `static` (`shared` in Visual Basic) properties of the <xref:System.TimeZoneInfo> class provide access to Coordinated Universal Time (UTC) and the local time zone.  
+  
+> [!NOTE]
+>  For time zones that are not defined in the registry, you can create custom time zones by calling the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. Creating a custom time zone is discussed in the [How to: Create Time Zones Without Adjustment Rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md) and [How to: Create Time Zones with Adjustment Rules](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md) topics. In addition, you can instantiate a <xref:System.TimeZoneInfo> object by restoring it from a serialized string with the <xref:System.TimeZoneInfo.FromSerializedString%2A> method. Serializing and deserializing a <xref:System.TimeZoneInfo> object is discussed in the [How to: Save Time Zones to an Embedded Resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md) and [How to: Restore Time Zones from an Embedded Resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md) topics.  
+  
+## Accessing Individual Time Zones  
+ The <xref:System.TimeZoneInfo> class provides two predefined time zone objects that represent the UTC time and the local time zone. They are available from the <xref:System.TimeZoneInfo.Utc%2A> and <xref:System.TimeZoneInfo.Local%2A> properties, respectively. For instructions on accessing the UTC or local time zones, see [How to: Access the Predefined UTC and Local Time Zone Objects](../../../docs/standard/datetime/access-utc-and-local.md).  
+  
+ You can also instantiate a <xref:System.TimeZoneInfo> object that represents any time zone defined in the registry. For instructions on instantiating a specific time zone object, see [How to: Instantiate a TimeZoneInfo Object](../../../docs/standard/datetime/instantiate-time-zone-info.md).  
+  
+## Time Zone Identifiers  
+ The time zone identifier is a key field that uniquely identifies the time zone. While most keys are relatively short, the time zone identifier is comparatively long. In most cases, its value corresponds to the <xref:System.TimeZoneInfo.StandardName%2A?displayProperty=fullName> property, which is used to provide the name of the time zone's standard time. However, there are exceptions. The best way to make sure that you supply a valid identifier is to enumerate the time zones available on your system and note their associated identifiers.  
+  
+## See Also  
+ [Dates, Times, and Time Zones](../../../docs/standard/datetime/index.md)   
+ [How to: Access the Predefined UTC and Local Time Zone Objects](../../../docs/standard/datetime/access-utc-and-local.md)   
+ [How to: Instantiate a TimeZoneInfo Object](../../../docs/standard/datetime/instantiate-time-zone-info.md)   
+ [Converting Times Between Time Zones](../../../docs/standard/datetime/converting-between-time-zones.md)

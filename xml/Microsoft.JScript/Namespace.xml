@@ -1,0 +1,43 @@
+<Type Name="Namespace" FullName="Microsoft.JScript.Namespace">
+  <TypeSignature Language="C#" Value="public sealed class Namespace" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Namespace extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Namespace" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a namespace.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetNamespace">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.Namespace GetNamespace (string name, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.Namespace GetNamespace(string name, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Namespace.GetNamespace(System.String,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Namespace</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the namespace.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Creates and returns a new instance of the <see cref="T:Microsoft.JScript.Namespace" /> class.</summary>
+        <returns>A new instance of the <see cref="T:Microsoft.JScript.Namespace" /> class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

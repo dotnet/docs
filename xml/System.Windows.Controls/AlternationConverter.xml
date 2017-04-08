@@ -1,0 +1,149 @@
+<Type Name="AlternationConverter" FullName="System.Windows.Controls.AlternationConverter">
+  <TypeSignature Language="C#" Value="public class AlternationConverter : System.Windows.Data.IValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AlternationConverter extends System.Object implements class System.Windows.Data.IValueConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.AlternationConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Data.IValueConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Values")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Converts an integer to and from an object by applying the integer as an index to a list of objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Controls.AlternationConverter> to bind a property to alternating values. For example, if you want items in a <xref:System.Windows.Controls.ListBox> to have alternating blue and light blue backgrounds, you do the following:  
+  
+-   Create an <xref:System.Windows.Controls.AlternationConverter> and add a blue <xref:System.Windows.Media.SolidColorBrush> and a light blue <xref:System.Windows.Media.SolidColorBrush> to its <xref:System.Windows.Controls.AlternationConverter.Values%2A> property.  
+  
+-   In a <xref:System.Windows.Style> for <xref:System.Windows.Controls.ListBoxItem>, bind the <xref:System.Windows.Controls.Control.Background%2A> property to <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> and assign the converter you created to the <xref:System.Windows.Data.Binding.Converter%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ListBox> and uses two <xref:System.Windows.Controls.AlternationConverter> objects to alternate the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.FontStyle%2A> of the items.  
+  
+ [!code-xml[AlternationIndexSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AlternationConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AlternationConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.AlternationConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object o, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object o, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AlternationConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="o">The integer to use to find an object in the <see cref="P:System.Windows.Controls.AlternationConverter.Values" /> property.</param>
+        <param name="targetType">The type of the binding target property.</param>
+        <param name="parameter">The converter parameter to use.</param>
+        <param name="culture">The culture to use in the converter.</param>
+        <summary>Converts an integer to an object in the <see cref="P:System.Windows.Controls.AlternationConverter.Values" /> list.</summary>
+        <returns>The object that is in the position of <paramref name="o" /> modulo the number of items in <see cref="P:System.Windows.Controls.AlternationConverter.Values" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object ConvertBack (object o, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertBack(object o, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AlternationConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to find in the <see cref="P:System.Windows.Controls.AlternationConverter.Values" /> property.</param>
+        <param name="targetType">The type of the binding target property.</param>
+        <param name="parameter">The converter parameter to use.</param>
+        <param name="culture">The culture to use in the converter.</param>
+        <summary>Converts an object in the <see cref="P:System.Windows.Controls.AlternationConverter.Values" /> list to an integer.</summary>
+        <returns>The index of <paramref name="o" /> if it is in <see cref="P:System.Windows.Controls.AlternationConverter.Values" />, or –1 if o does not exist in <see cref="P:System.Windows.Controls.AlternationConverter.Values" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.IList Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Values" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AlternationConverter.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of objects that the <see cref="T:System.Windows.Controls.AlternationConverter" /> returns when an integer is passed to the <see cref="M:System.Windows.Controls.AlternationConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" /> method.</summary>
+        <value>A list of objects that the <see cref="T:System.Windows.Controls.AlternationConverter" /> returns when an integer is passed to the <see cref="M:System.Windows.Controls.AlternationConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" /> method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use the <xref:System.Windows.Controls.AlternationConverter> to bind a property to alternating values, the <xref:System.Windows.Controls.AlternationConverter.Values%2A> property contains the objects that are assigned to the property.  For example, if you want items in a <xref:System.Windows.Controls.ListBox> to have alternating blue and light blue backgrounds, you add a blue <xref:System.Windows.Media.SolidColorBrush> and a light blue <xref:System.Windows.Media.SolidColorBrush> to <xref:System.Windows.Controls.AlternationConverter.Values%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.ListBox> and uses two <xref:System.Windows.Controls.AlternationConverter> objects to alternate the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.FontStyle%2A> of the items.  
+  
+ [!code-xml[AlternationIndexSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

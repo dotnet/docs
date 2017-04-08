@@ -1,0 +1,197 @@
+<Type Name="InkCanvasSelectionHitResult" FullName="System.Windows.Controls.InkCanvasSelectionHitResult">
+  <TypeSignature Language="C#" Value="public enum InkCanvasSelectionHitResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InkCanvasSelectionHitResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasSelectionHitResult" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies the various parts of a selection adorner on an <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> method returns an <xref:System.Windows.Controls.InkCanvasSelectionHitResult> to indicate which part of the selection adorner intersects or surrounds a <xref:System.Windows.Point>. This is useful when performing drag-and-drop operations.  
+  
+<a name="xamlTextUsage_InkCanvasSelectionHitResult"></a>   
+## XAML Text Usage  
+ This class is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how use <xref:System.Windows.Controls.InkCanvas.HitTestSelection%2A> to determine whether to create a <xref:System.Windows.DataObject> to initiate drag and drop.  To implement drag and drop between two <xref:System.Windows.Controls.InkCanvas> objects, see [How to: Drag and Drop Ink](~/docs/framework/wpf/advanced/how-to-drag-and-drop-ink.md).  
+  
+ [!code-csharp[InkDragDrop#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[InkDragDrop#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkDragDrop/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult Bottom = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lower middle handle of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomLeft">
+      <MemberSignature Language="C#" Value="BottomLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult BottomLeft = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.BottomLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lower left handle of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomRight">
+      <MemberSignature Language="C#" Value="BottomRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult BottomRight = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.BottomRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lower right handle of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult Left = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The middle handle on the left edge of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No part of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult Right = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The middle handle on the right edge of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selection">
+      <MemberSignature Language="C#" Value="Selection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult Selection = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.Selection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The area within the bounds of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult Top = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The upper middle handle of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLeft">
+      <MemberSignature Language="C#" Value="TopLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult TopLeft = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.TopLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The upper left handle of the selection adorner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRight">
+      <MemberSignature Language="C#" Value="TopRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.InkCanvasSelectionHitResult TopRight = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvasSelectionHitResult.TopRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.InkCanvasSelectionHitResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The upper right handle of the selection adorner.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

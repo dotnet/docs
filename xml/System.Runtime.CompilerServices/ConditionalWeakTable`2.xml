@@ -1,0 +1,408 @@
+<Type Name="ConditionalWeakTable&lt;TKey,TValue&gt;" FullName="System.Runtime.CompilerServices.ConditionalWeakTable&lt;TKey,TValue&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ConditionalWeakTable&lt;TKey,TValue&gt; where TKey : class where TValue : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConditionalWeakTable`2&lt;class TKey, class TValue&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TKey">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TValue">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TKey">The reference type to which the field is attached.</typeparam>
+    <typeparam name="TValue">The field's type. This must be a reference type.</typeparam>
+    <summary>Enables compilers to dynamically attach object fields to managed objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> class enables language compilers to attach arbitrary properties to managed objects at run time. A <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> object is a dictionary that binds a managed object, which is represented by a key, to its attached property, which is represented by a value. The object's keys are the individual instances of the `TKey` class to which the property is attached, and its values are the property values that are assigned to the corresponding objects.  
+  
+ Keys must be unique; in other words, the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> class supports one attached value per managed object. Two keys are equal if passing them to the <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> method returns `true`.  
+  
+> [!NOTE]
+>  You cannot control equality comparisons by overriding <xref:System.Object.GetHashCode%2A?displayProperty=fullName> to explicitly set the hash code for a key. The <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> class does not use the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method to compute hash codes, and therefore does not invoke <xref:System.Object.GetHashCode%2A?displayProperty=fullName> overrides.  
+  
+ Although the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> class holds a collection of key/value pairs, it is best thought of as a table rather than a dictionary object. The <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> class differs from a dictionary in several ways:  
+  
+-   It does not persist keys. That is, a key is not kept alive only because it is a member of the collection.  
+  
+-   It does not include all the methods (such as `GetEnumerator` or `Contains`) that a dictionary typically has.  
+  
+-   It does not implement the <xref:System.Collections.Generic.IDictionary%602> interface.  
+  
+ The <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> class differs from other collection objects in its management of the object lifetime of keys stored in the collection. Ordinarily, when an object is stored in a collection, its lifetime lasts until it is removed (and there are no additional references to the object) or until the collection object itself is destroyed. However, in the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> class, adding a key/value pair to the table does not ensure that the key will persist, even if it can be reached directly from a value stored in the table (for example, if the table contains one key, A, with a value V1, and a second key, B, with a value P2 that contains a reference to A). Instead, <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> automatically removes the key/value entry as soon as no other references to a key exist outside the table. The example provides an illustration.  
+  
+   
+  
+## Examples  
+ The following example illustrates that a key stored in the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table does not persist after references to it outside the table are destroyed. The example defines two classes: `ManagedClass`, which represents the key in the table, and `ClassData`, which represents the key's value. The example instantiates three objects of each type. It also instantiates a <xref:System.WeakReference> object that represents the second `ManagedClass`, and then destroys the second `ManagedClass` instance. The attempt to retrieve the second `ManagedClass` object from the <xref:System.WeakReference.Target%2A> property indicates that no references to the object remain.  
+  
+ [!code-csharp[System.Runtime.CompilerServices.ConditionalWeakTable.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.class/cs/example1.cs#1)]
+ [!code-vb[System.Runtime.CompilerServices.ConditionalWeakTable.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.class/vb/example1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>Instances of the <see cref="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" /> class are thread safe. They do not require callers to do any additional locking.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConditionalWeakTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.%23ctor%2A> constructor instantiates an empty <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table; that is, the table contains no key/value pairs. You can add key/value pairs by calling the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.Add%2A>, <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A>, or <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetOrCreateValue%2A> method.  
+  
+ Every key in a <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> object must be unique. Keys are not unique if they refer to the same object (that is, if passing them as arguments to the <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> method returns `true`).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (TKey key, TValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Add(`0,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to add. <c>key</c> represents the object to which the property is attached.</param>
+        <param name="value">The key's property value.</param>
+        <summary>Adds a key to the table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every key in a <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> object must be unique. Keys are not unique if they refer to the same object (that is, if passing them as arguments to the <xref:System.Object.ReferenceEquals%2A?displayProperty=fullName> method returns `true`).  
+  
+ If the key is garbage-collected during the addition operation, the existing key/value pair is removed and the new key/value pair is added without an exception being thrown.  
+  
+   
+  
+## Examples  
+ The following example defines a `MainClass` class and a `MainInfo` class, which provides information about the `MainClass` instance. The example then calls the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.Add%2A> method to add a `MainClass` object and its attached `MainInfo` object to a <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table. The example also illustrates calls to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetOrCreateValue%2A> and <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> methods to add key/value pairs to the table, and to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method to retrieve the value of an existing key.  
+  
+ [!code-csharp[System.Runtime.CompilerServices.ConditionalWeakTable.GetValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.getvalue/cs/getvalue1.cs#1)]
+ [!code-vb[System.Runtime.CompilerServices.ConditionalWeakTable.GetValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.getvalue/vb/getvalue1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="key" /> already exists.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~ConditionalWeakTable`2 ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ensures that resources are freed and other cleanup operations are performed when the garbage collector reclaims the <see cref="T:System.Runtime.CompilerServices.ConditionalWeakTable`2" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The garbage collector calls <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.Finalize%2A> when the current object is ready to be finalized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrCreateValue">
+      <MemberSignature Language="C#" Value="public TValue GetOrCreateValue (TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TValue GetOrCreateValue(!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetOrCreateValue(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to search for. <c>key</c> represents the object to which the property is attached.</param>
+        <summary>Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes the default constructor of the class that represents the table's value to create a value that is bound to the specified key.</summary>
+        <returns>The value that corresponds to <paramref name="key" />, if <paramref name="key" /> already exists in the table; otherwise, a new value created by the default constructor of the class defined by the <paramref name="TValue" /> generic type parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `key` does not exist in the table, the method adds it, along with the object that is instantiated by calling the default constructor of the class defined by the `TValue` generic type parameter. If the `TValue` class has no default constructor, a <xref:System.MissingMethodException> is thrown.  
+  
+ This is the recommended method of retrieving an existing value or adding a new value to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table if the class of the table's value defines a default constructor. If it does not define a default constructor, you can instead call the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> method, which relies on a callback-provided method to instantiate the object representing the table's value  
+  
+ To retrieve the value of an existing key without adding the key/value pair if the key is not found in the table, call the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method.  
+  
+   
+  
+## Examples  
+ The following example defines a `MainClass` class and a `MainInfo` class, which provides information about the `MainClass` instance. The example calls the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetOrCreateValue%2A> method to add a `MainClass` object and its attached `MainInfo` object to a <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table. The example also illustrates calls to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.Add%2A> and <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> methods to add key/value pairs to the table, and to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method to retrieve the value of an existing key.  
+  
+ [!code-csharp[System.Runtime.CompilerServices.ConditionalWeakTable.GetValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.getvalue/cs/getvalue1.cs#1)]
+ [!code-vb[System.Runtime.CompilerServices.ConditionalWeakTable.GetValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.getvalue/vb/getvalue1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.MissingMethodException">
+          <block subset="none" type="note">  
+<para>  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MissingMemberException" />, instead.  
+  
+</para>  
+</block>  
+  
+ The class that represents the table's value does not define a default constructor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public TValue GetValue (TKey key, System.Runtime.CompilerServices.ConditionalWeakTable&lt;TKey,TValue&gt;.CreateValueCallback createValueCallback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TValue GetValue(!TKey key, class System.Runtime.CompilerServices.ConditionalWeakTable`2/CreateValueCallback&lt;!TKey, !TValue&gt; createValueCallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.GetValue(`0,System.Runtime.CompilerServices.ConditionalWeakTable`2.CreateValueCallback{`0,`1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="createValueCallback" Type="System.Runtime.CompilerServices.ConditionalWeakTable&lt;TKey,TValue&gt;+CreateValueCallback" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to search for. <c>key</c> represents the object to which the property is attached.</param>
+        <param name="createValueCallback">A delegate to a method that can create a value for the given <c>key</c>. It has a single parameter of type <c>TKey</c>, and returns a value of type <c>TValue</c>.</param>
+        <summary>Atomically searches for a specified key in the table and returns the corresponding value. If the key does not exist in the table, the method invokes a callback method to create a value that is bound to the specified key.</summary>
+        <returns>The value attached to <paramref name="key" />, if <paramref name="key" /> already exists in the table; otherwise, the new value returned by the <paramref name="createValueCallback" /> delegate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `key` does not exist in the table, <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> invokes the method that is defined by the `createValueCallback` parameter and passes it the key. A new value is bound to the key in the table and returned as a result.  
+  
+ Use this method only when the class that represents the table's value does not define a default constructor. If it does define a default constructor, use the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetOrCreateValue%2A> method instead. To retrieve the value of an existing key without adding the key/value pair if the key is not found in the table, call the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method.  
+  
+ If multiple threads try to create the same key, `createValueCallback` may be invoked multiple times with the same key. Only one of these calls will succeed, and its returned value will be added to the table. Which thread succeeds in creating the value is indeterminate. This rule permits the table to invoke `createValueCallback` outside the internal table lock to prevent deadlocks.  
+  
+   
+  
+## Examples  
+ The following example defines a `MainClass` class and a `MainInfo` class, which provides information about the `MainClass` instance. It also defines a static (`Shared` in Visual Basic) `CreateAttachedValue` method that can be assigned to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.CreateValueCallback> delegate and passed to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> method. The example calls the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> method to add a `MainClass` object and its attached `MainInfo` object to a <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table. The example also illustrates calls to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.Add%2A> and <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetOrCreateValue%2A> methods to add key/value pairs to the table, and to the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method to retrieve the value of an existing key.  
+  
+ [!code-csharp[System.Runtime.CompilerServices.ConditionalWeakTable.GetValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.getvalue/cs/getvalue1.cs#1)]
+ [!code-vb[System.Runtime.CompilerServices.ConditionalWeakTable.GetValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.getvalue/vb/getvalue1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> or <paramref name="createValueCallback" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.Remove(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to remove.</param>
+        <summary>Removes a key and its value from the table.</summary>
+        <returns>
+          <see langword="true" /> if the key is found and removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the key is garbage-collected during this operation, the method does not raise an exception and the return value is undefined.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (TKey key, out TValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConditionalWeakTable`2.TryGetValue(`0,`1@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key that represents an object with an attached property.</param>
+        <param name="value">When this method returns, contains the attached property value. If <c>key</c> is not found, <c>value</c> contains the default value.</param>
+        <summary>Gets the value of the specified key.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="key" /> is found; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the key is garbage-collected during this operation, the method may return `false` and set `value` to the default value (as if the key were not present).  
+  
+   
+  
+## Examples  
+ The following example defines a `MainClass` class and a `MainInfo` class, which provides information about the `MainClass` instance. The example calls the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.Add%2A>, <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetOrCreateValue%2A>, and <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.GetValue%2A> methods to add key/value pairs to a <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602> table. In each case, the example calls the <xref:System.Runtime.CompilerServices.ConditionalWeakTable%602.TryGetValue%2A> method to confirm that the key/value pair has been added to the table.  
+  
+ [!code-csharp[System.Runtime.CompilerServices.ConditionalWeakTable.GetValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.getvalue/cs/getvalue1.cs#1)]
+ [!code-vb[System.Runtime.CompilerServices.ConditionalWeakTable.GetValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.compilerservices.conditionalweaktable.getvalue/vb/getvalue1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

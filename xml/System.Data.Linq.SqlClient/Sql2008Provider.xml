@@ -1,0 +1,34 @@
+<Type Name="Sql2008Provider" FullName="System.Data.Linq.SqlClient.Sql2008Provider">
+  <TypeSignature Language="C#" Value="public class Sql2008Provider : System.Data.Linq.SqlClient.SqlProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Sql2008Provider extends System.Data.Linq.SqlClient.SqlProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.SqlClient.Sql2008Provider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Linq.SqlClient.SqlProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains functionality to connect to and communicate with a [!INCLUDE[ssKatmai](~/includes/sskatmai-md.md)].</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Sql2008Provider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.Sql2008Provider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.SqlClient.Sql2008Provider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

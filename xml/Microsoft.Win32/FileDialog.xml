@@ -1,0 +1,797 @@
+<Type Name="FileDialog" FullName="Microsoft.Win32.FileDialog">
+  <TypeSignature Language="C#" Value="public abstract class FileDialog : Microsoft.Win32.CommonDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FileDialog extends Microsoft.Win32.CommonDialog" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.FileDialog" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Win32.CommonDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An abstract base class that encapsulates functionality that is common to file dialogs, including <see cref="T:Microsoft.Win32.OpenFileDialog" /> and <see cref="T:Microsoft.Win32.SaveFileDialog" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FileDialog ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.FileDialog" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddExtension">
+      <MemberSignature Language="C#" Value="public bool AddExtension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AddExtension" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.AddExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a file dialog automatically adds an extension to a file name if the user omits an extension.</summary>
+        <value>
+          <see langword="true" /> if extensions are added; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set the extension behavior. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckFileExists">
+      <MemberSignature Language="C#" Value="public virtual bool CheckFileExists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckFileExists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.CheckFileExists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a file dialog displays a warning if the user specifies a file name that does not exist.</summary>
+        <value>
+          <see langword="true" /> if warnings are displayed; otherwise, <see langword="false" />. The default in this base class is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:Microsoft.Win32.OpenFileDialog> class sets this property to `true` in its constructor.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to reset the dialog user interface. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckPathExists">
+      <MemberSignature Language="C#" Value="public bool CheckPathExists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckPathExists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.CheckPathExists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether warnings are displayed if the user types invalid paths and file names.</summary>
+        <value>
+          <see langword="true" /> if warnings are displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomPlaces">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Win32.FileDialogCustomPlace&gt; CustomPlaces { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Win32.FileDialogCustomPlace&gt; CustomPlaces" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.CustomPlaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Win32.FileDialogCustomPlace&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of custom places for file dialog boxes.</summary>
+        <value>The list of custom places.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting in [!INCLUDE[TLA2#tla_winvista](~/includes/tla2sharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. This property allows you to modify the list that appears when your application uses a file dialog box.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultExt">
+      <MemberSignature Language="C#" Value="public string DefaultExt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultExt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.DefaultExt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the default extension string to use to filter the list of files that are displayed.</summary>
+        <value>The default extension string. The default is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The extension string must contain the leading period. For example, set the <xref:Microsoft.Win32.FileDialog.DefaultExt%2A> property to ".txt" to select all text files.  
+  
+ By default, the <xref:Microsoft.Win32.FileDialog.AddExtension%2A> property attempts to determine the extension to filter the displayed file list from the <xref:Microsoft.Win32.FileDialog.Filter%2A> property. If the extension cannot be determined from the <xref:Microsoft.Win32.FileDialog.Filter%2A> property, <xref:Microsoft.Win32.FileDialog.DefaultExt%2A> will be used instead.  
+  
+   
+  
+## Examples  
+ The following example shows how to create an <xref:Microsoft.Win32.OpenFileDialog> that contains a default file name and extension type.  
+  
+ [!code-csharp[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
+ [!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#openfiledialogboxcodebehind)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DereferenceLinks">
+      <MemberSignature Language="C#" Value="public bool DereferenceLinks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DereferenceLinks" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.DereferenceLinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a file dialog returns either the location of the file referenced by a shortcut or the location of the shortcut file (.lnk).</summary>
+        <value>
+          <see langword="true" /> to return the location referenced; <see langword="false" /> to return the shortcut location. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set dereferencing behavior. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.FileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string containing the full path of the file selected in a file dialog.</summary>
+        <value>A <see cref="T:System.String" /> that is the full path of the file selected in the file dialog. The default is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If more than one file name is selected (length of <xref:Microsoft.Win32.FileDialog.FileNames%2A> is greater than one) then <xref:Microsoft.Win32.FileDialog.FileName%2A> contains the first selected file name. If no file name is selected, this property contains <xref:System.String.Empty> rather than `null`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to either get or set the path in the dialog. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="FileNames">
+      <MemberSignature Language="C#" Value="public string[] FileNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] FileNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.FileNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array that contains one file name for each selected file.</summary>
+        <value>An array of <see cref="T:System.String" /> that contains one file name for each selected file. The default is an array with a single item whose value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to get the path collection from the dialog. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="FileOk">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler FileOk;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler FileOk" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Win32.FileDialog.FileOk" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user selects a file name by either clicking the **Open** button of the <see cref="T:Microsoft.Win32.OpenFileDialog" /> or the **Save** button of the <see cref="T:Microsoft.Win32.SaveFileDialog" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Win32.FileDialog.FileOk> is raised after the user selects a file name, but before the dialog closes, which allows you to process the selection. If required, the user's selection can be cancelled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> argument to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public string Filter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the filter string that determines what types of files are displayed from either the <see cref="T:Microsoft.Win32.OpenFileDialog" /> or <see cref="T:Microsoft.Win32.SaveFileDialog" />.</summary>
+        <value>A <see cref="T:System.String" /> that contains the filter. The default is <see cref="F:System.String.Empty" />, which means that no filter is applied and all file types are displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:Microsoft.Win32.FileDialog.Filter%2A> is either `null` or <xref:System.String>, all files are displayed, and folders are always displayed.  
+  
+ You can specify a subset of file types to be displayed by setting the <xref:Microsoft.Win32.FileDialog.Filter%2A> property. Each file type can represent a specific type of file, such as the following:  
+  
+-   Word Documents (*.doc)  
+  
+-   Excel Worksheets (*.xls)  
+  
+-   PowerPoint Presentations (*.ppt)  
+  
+ Alternatively, a file type can represent a group of related file types, such as the following:  
+  
+-   Office Files (*.doc, *.xls, *.ppt)  
+  
+-   All Files (*.\*)  
+  
+ To specify a subset of the types of files that are displayed, you set the <xref:Microsoft.Win32.FileDialog.Filter%2A> property with a string value (the *filter string*) that specifies one or more types of files to filter by. The following shows the expected format of the filter string:  
+  
+ `FileType1[[|FileType2]...[|FileTypeN]]`  
+  
+ You use the following format to describe each file type:  
+  
+ `Label|Extension1[[;Extension2]...[;ExtensionN]]`  
+  
+ The *Label* part is a human-readable string value that describes the file type, such as the following:  
+  
+-   "Word Documents"  
+  
+-   "Excel Worksheets"  
+  
+-   "PowerPoint Presentations"  
+  
+-   "Office Files"  
+  
+-   "All Files"  
+  
+ Each file type must be described by at least one *Extension*. If more than one *Extension* is used, each *Extension* must be separated by a semicolon (";"). For example:  
+  
+-   "*.doc"  
+  
+-   "*.xls;"  
+  
+-   "*.ppt"  
+  
+-   "*.doc;\*.xls;\*.ppt"  
+  
+-   "*.\*"  
+  
+ The following are complete examples of valid <xref:Microsoft.Win32.FileDialog.Filter%2A> string values:  
+  
+-   `Word Documents|*.doc`  
+  
+-   `Excel Worksheets|*.xls`  
+  
+-   `PowerPoint Presentations|*.ppt`  
+  
+-   `Office Files|*.doc;*.xls;*.ppt`  
+  
+-   `All Files|*.*`  
+  
+-   `Word Documents|*.doc|Excel Worksheets|*.xls|PowerPoint Presentations|*.ppt|Office Files|*.doc;*.xls;*.ppt|All Files|*.*`  
+  
+ Each file type that is included in the filter is added as a separate item to the **Files of type:** drop-down list in the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog>, as shown in the following figure.  
+  
+ ![Using the FileDialog.Filter in the Open Dialog Box](~/add/media/filedialogfilterfigure1.png "Using the FileDialog.Filter in the Open Dialog Box")  
+  
+ The user can choose a file type from this list to filter by. By default, the first item in the list (for example, the first file type) is selected when the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog> is displayed. To specify that another file type to be selected, you set the <xref:Microsoft.Win32.FileDialog.FilterIndex%2A> property before showing the <xref:Microsoft.Win32.OpenFileDialog> or <xref:Microsoft.Win32.SaveFileDialog> (by calling <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A>).  
+  
+   
+  
+## Examples  
+ The following examples demonstrate several types of filter strings that can be set by using the <xref:Microsoft.Win32.FileDialog.Filter%2A> property.  
+  
+ [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+ [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+[!code-csharp[FileDialogFilterSnippets#FilterString1](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring1)]
+[!code-vb[FileDialogFilterSnippets#FilterString1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring1)]  
+  
+ [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+ [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+[!code-csharp[FileDialogFilterSnippets#FilterString2](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring2)]
+[!code-vb[FileDialogFilterSnippets#FilterString2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring2)]  
+  
+ [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+ [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+[!code-csharp[FileDialogFilterSnippets#FilterString3](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring3)]
+[!code-vb[FileDialogFilterSnippets#FilterString3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring3)]  
+  
+ [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+ [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+[!code-csharp[FileDialogFilterSnippets#FilterString4](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring4)]
+[!code-vb[FileDialogFilterSnippets#FilterString4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring4)]  
+  
+ [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+ [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+[!code-csharp[FileDialogFilterSnippets#FilterString5](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring5)]
+[!code-vb[FileDialogFilterSnippets#FilterString5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring5)]  
+  
+ [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+ [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+[!code-csharp[FileDialogFilterSnippets#FilterString6](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring6)]
+[!code-vb[FileDialogFilterSnippets#FilterString6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring6)]  
+  
+ [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+ [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+[!code-csharp[FileDialogFilterSnippets#FilterString7](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring7)]
+[!code-vb[FileDialogFilterSnippets#FilterString7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring7)]  
+  
+ [!code-csharp[FileDialogFilterSnippets#NSCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#nscode)]
+ [!code-vb[FileDialogFilterSnippets#NSCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#nscode)]  
+[!code-csharp[FileDialogFilterSnippets#FilterString8](~/samples/snippets/csharp/VS_Snippets_Wpf/FileDialogFilterSnippets/CSharp/Window1.xaml.cs#filterstring8)]
+[!code-vb[FileDialogFilterSnippets#FilterString8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FileDialogFilterSnippets/visualbasic/window1.xaml.vb#filterstring8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The filter string is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterIndex">
+      <MemberSignature Language="C#" Value="public int FilterIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FilterIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.FilterIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the filter currently selected in a file dialog.</summary>
+        <value>The <see cref="T:System.Int32" /> that is the index of the selected filter. The default is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This index is 1-based, not 0-based, due to compatibility requirements with the underlying [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] [!INCLUDE[TLA#tla_api](~/includes/tlasharptla-api-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HookProc">
+      <MemberSignature Language="C#" Value="protected override IntPtr HookProc (IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int HookProc(native int hwnd, int32 msg, native int wParam, native int lParam) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+        <Parameter Name="msg" Type="System.Int32" />
+        <Parameter Name="wParam" Type="System.IntPtr" />
+        <Parameter Name="lParam" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">Window handle for the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] dialog.</param>
+        <param name="msg">Message to be processed by the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] dialog.</param>
+        <param name="wParam">Parameters for dialog actions.</param>
+        <param name="lParam">Parameters for dialog actions.</param>
+        <summary>Defines the common file dialog hook procedure that is overridden to add common functionality to a file dialog.</summary>
+        <returns>Returns <see cref="F:System.IntPtr.Zero" /> to indicate success; otherwise, a non-zero value is returned to indicate failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialDirectory">
+      <MemberSignature Language="C#" Value="public string InitialDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InitialDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.InitialDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the initial directory that is displayed by a file dialog.</summary>
+        <value>A <see cref="T:System.String" /> that contains the initial directory. The default is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no initial directory set, this property will contain <xref:System.String> rather than a null string.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set the initial directory value. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFileOk">
+      <MemberSignature Language="C#" Value="protected void OnFileOk (System.ComponentModel.CancelEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnFileOk(class System.ComponentModel.CancelEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.OnFileOk(System.ComponentModel.CancelEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:Microsoft.Win32.FileDialog.FileOk" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Win32.FileDialog.OnFileOk%2A> raises the <xref:Microsoft.Win32.FileDialog.FileOk> event.  
+  
+ A type that derives from <xref:Microsoft.Win32.FileDialog> may override <xref:Microsoft.Win32.FileDialog.OnFileOk%2A>. The overridden method must call <xref:Microsoft.Win32.FileDialog.OnFileOk%2A> on the base class if <xref:Microsoft.Win32.FileDialog.FileOk> needs to be raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="protected int Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Options" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] common file dialog flags that are used by file dialogs for initialization.</summary>
+        <value>A <see cref="T:System.Int32" /> that contains the [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] common file dialog flags that are used by file dialogs for initialization.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is used to display a file dialog with the current set of property values. The actual options are exposed as properties on the specific dialogs, but not documented as public flag values at this level, so the uses of this property are mainly internal, for use when implementing the derived classes <xref:Microsoft.Win32.OpenFileDialog> and <xref:Microsoft.Win32.SaveFileDialog>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public override void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets all properties of a file dialog back to their initial values.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to reset the dialog user interface. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <block subset="none" type="overrides">
+          <para>Classes that derive from <see cref="T:Microsoft.Win32.FileDialog" /> are expected to call <see cref="M:Microsoft.Win32.FileDialog.Reset" /> to give <see cref="T:Microsoft.Win32.FileDialog" /> the opportunity to reset itself.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RestoreDirectory">
+      <MemberSignature Language="C#" Value="public bool RestoreDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RestoreDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.RestoreDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not implemented.</summary>
+        <value>Not implemented.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunDialog">
+      <MemberSignature Language="C#" Value="protected override bool RunDialog (IntPtr hwndOwner);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool RunDialog(native int hwndOwner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.RunDialog(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwndOwner" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hwndOwner">Handle to the window that owns the dialog.</param>
+        <summary>
+          <see cref="M:Microsoft.Win32.CommonDialog.RunDialog(System.IntPtr)" /> is called to display a file dialog in a derived class, such as <see cref="T:Microsoft.Win32.OpenFileDialog" /> and <see cref="T:Microsoft.Win32.SaveFileDialog" />.</summary>
+        <returns>
+          <see langword="true" /> if the user clicks the **OK** button of the dialog that is displayed (for example, <see cref="T:Microsoft.Win32.OpenFileDialog" />, <see cref="T:Microsoft.Win32.SaveFileDialog" />); otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The dialog that is eventually shown is assigned an owner window, which is specified by the `hwndOwner` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeFileName">
+      <MemberSignature Language="C#" Value="public string SafeFileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SafeFileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.SafeFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that only contains the file name for the selected file.</summary>
+        <value>A <see cref="T:System.String" /> that only contains the file name for the selected file. The default is <see cref="F:System.String.Empty" />, which is also the value when either no file is selected or a directory is selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is the <xref:Microsoft.Win32.FileDialog.FileName%2A> with all path information removed. Removing the paths makes the value appropriate for use in partial trust applications, since it prevents applications from discovering information about the local file system.  
+  
+ If more than one file name is selected (length of <xref:Microsoft.Win32.FileDialog.SafeFileNames%2A> is greater than one) then this property contains only the first selected file name.  
+  
+ See [Safe File Upload from an XBAP Sample](http://msdn.microsoft.com/en-us/01206dd3-acc7-45ff-aeb9-502c20aaad2c).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SafeFileNames">
+      <MemberSignature Language="C#" Value="public string[] SafeFileNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] SafeFileNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.SafeFileNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array that contains one safe file name for each selected file.</summary>
+        <value>An array of <see cref="T:System.String" /> that contains one safe file name for each selected file. The default is an array with a single item whose value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:Microsoft.Win32.FileDialog.SafeFileName%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that appears in the title bar of a file dialog.</summary>
+        <value>A <see cref="T:System.String" /> that is the text that appears in the title bar of a file dialog. The default is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:Microsoft.Win32.FileDialog.Title%2A> is null or <xref:System.String>, a default, localized value is used, such as "Save As" or "Open".  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set the dialog title. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialog.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents a file dialog.</summary>
+        <returns>A <see cref="T:System.String" /> representation of <see cref="T:Microsoft.Win32.FileDialog" /> that contains the full pathname for any files selected from either <see cref="T:Microsoft.Win32.OpenFileDialog" />, <see cref="T:Microsoft.Win32.SaveFileDialog" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateNames">
+      <MemberSignature Language="C#" Value="public bool ValidateNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialog.ValidateNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the dialog accepts only valid [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] file names.</summary>
+        <value>
+          <see langword="true" /> if warnings will be shown when an invalid file name is provided; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set the validation behavior. Associated enumeration:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,102 @@
+<Type Name="AuthenticationMode" FullName="System.Web.Configuration.AuthenticationMode">
+  <TypeSignature Language="C#" Value="public enum AuthenticationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AuthenticationMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the authentication mode to use in a Web application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> property to programmatically configure the type of authentication used by a Web application,  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.AuthenticationSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.AuthenticationSection/CS/authenticationsection.cs#4)]
+ [!code-vb[System.Web.Configuration.AuthenticationSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.AuthenticationSection/VB/authenticationsection.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Forms">
+      <MemberSignature Language="C#" Value="Forms" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AuthenticationMode Forms = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthenticationMode.Forms" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies ASP.NET Forms-based authentication as the authentication mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AuthenticationMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthenticationMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Passport">
+      <MemberSignature Language="C#" Value="Passport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AuthenticationMode Passport = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthenticationMode.Passport" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This field is obsolete. The Passport authentication product is no longer supported and has been superseded by Live ID.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies Microsoft Passport as the authentication mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows">
+      <MemberSignature Language="C#" Value="Windows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.AuthenticationMode Windows = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.AuthenticationMode.Windows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies Windows as the authentication mode. This mode applies when using the Internet Information Services (IIS) authentication methods Basic, Digest, Integrated Windows (NTLM/Kerberos), or certificates.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,92 @@
+<Type Name="PageOrder" FullName="System.Printing.PageOrder">
+  <TypeSignature Language="C#" Value="public enum PageOrder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageOrder extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PageOrder" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a print device prints multi-page documents from front-to-back or back-to-front.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the values of this type primarily for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.PageOrderCapability%2A> collection, a property of <xref:System.Printing.PrintCapabilities>, these values indicate the type of page order that a printer supports. (Many printers support both types.)  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.PageOrder%2A> property of a <xref:System.Printing.PrintTicket>, the value directs a printer to print output in a specified order.  
+  
+ The **Unknown** value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the page order feature to an unrecognized option (that is, an option that is not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.PageOrder%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+   
+  
+## Examples  
+ The following example shows how to test a printer's capabilities and configure the print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Reverse">
+      <MemberSignature Language="C#" Value="Reverse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrder Reverse = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Reverse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Output prints in back-to-front order.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Standard">
+      <MemberSignature Language="C#" Value="Standard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrder Standard = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Standard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Output prints in front-to-back order.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageOrder Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PageOrder.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PageOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

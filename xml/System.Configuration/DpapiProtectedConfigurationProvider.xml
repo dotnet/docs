@@ -1,0 +1,202 @@
+<Type Name="DpapiProtectedConfigurationProvider" FullName="System.Configuration.DpapiProtectedConfigurationProvider">
+  <TypeSignature Language="C#" Value="public sealed class DpapiProtectedConfigurationProvider : System.Configuration.ProtectedConfigurationProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DpapiProtectedConfigurationProvider extends System.Configuration.ProtectedConfigurationProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.DpapiProtectedConfigurationProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ProtectedConfigurationProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> object that uses the Windows data protection API (DPAPI) to encrypt and decrypt configuration data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.DpapiProtectedConfigurationProvider> allows you to protect sensitive information stored in a configuration file from unauthorized access.  
+  
+ You use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> by declaring the provider and appropriate settings in the configuration file rather than creating an instance of this class. Refer to the next example.  
+  
+ For more information about Protected Configuration, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+  
+ The <xref:System.Configuration.DpapiProtectedConfigurationProvider> uses the Windows built-in cryptographic services and can be configured for either machine-specific or user-account-specific protection. Machine-specific protection is useful for anonymous services but provides less security. User-account-specific protection can be used with services that run with a specific user identity.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> to protect or unprotect a configuration section.  
+  
+<!-- TODO: review snippet reference  [!CODE [System.Configuration.DpapiProtectedConfigurationProvider#1](System.Configuration.DpapiProtectedConfigurationProvider#1)]  -->  
+  
+ The following configuration excerpts show the configuration section before and after the protection has been applied.  
+  
+```  
+<?xml version="1.0" encoding="utf-8" ?>  
+<configuration>  
+  <connectionStrings>  
+    <add name="NorthwindConnectionString"   
+      connectionString="Data Source=webnetue2;Initial Catalog=Northwind;User ID=aspnet_test;Password=test"  
+      providerName="System.Data.SqlClient" />  
+  </connectionStrings>  
+</configuration>  
+```  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+  <connectionStrings>  
+    <EncryptedData>  
+      <CipherData>                <CipherValue>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAcAMh0jIC1kigyFfd9AUZfQQAAAACAAAAAAADZgAAqAAAABAAAADQwbQ2DgIgIlqskE1RI9UpAAAAAASAAACgAAAAEAAAAAXlYBxi3jhM6wv4sxLhugsQAgAAgoReHZS2406dc/AyRDd6WuNr4ihHn6fbipd4tzHEmeuyS4o4fS4CmT3jMt/WjsP/kR7TF4ygwr2GG47podK79ECpVCZHAgctCauCYjE2Ls3iphKXy/pHic2o6aaClt/xPm+fb4OfODv6XjrJhJzGK2lqUPXkyJN1w2zwh6OVpDQF9N8vTyxL4eitp35/M5zYbW7e6VVAgYUOxlNxgCV5+jXpUKh/rPovopTD392u8KavqQFW1iu+gBPSPq/xeZNz+qYMKbUl+r4VTzBQg3fPlRxp1lNZmM2yRgUbkYPNaFb9ihS7GAg5/wZn8lLmThvq39eA0Vlp6hDE92iop885umELt0/NBKf5umQCqqz9EXXLbmmGc7qoLqTaYVuOmqx0LsvrJL0wSL1dSySCjmB/dNAtVUYgg02eWQNKyaLqnpMdCbTLLQ/oCKuNkL5OQ7t1yl5wQGjQhieIRzLtrMgpTSyaHbqDsRurp9Bc5mM078IAg1hXquQNKlJC/wiJ9kbHerFCbtuLGy/7nXVrFH91ud4U4ExCJEuhoTdmuql5kbqYd6Ye/bu2CftPni19nDkSJ8w4NoqMNKbK3Mi/Cd0o113HsVYlETMv1vlJWZWYP91PK9trixiY4E0G81c6IKITjHDrOJ9evdw2T1/TrvY6pzre3UXSJbFMDQVX6JoAxFk02SRZDKOZdRojeoX19lgrFAAAABzjlz3Qg2as3vn7MRQVxDfZucgE</CipherValue>  
+      </CipherData>  
+    </EncryptedData>  
+  </connectionStrings>  
+  <configProtectedData defaultProvider="RsaProtectedConfigurationProvider">  
+    <providers>  
+      <clear />  
+      <add keyContainerName="NetFrameworkConfigurationKey" cspProviderName=""  
+        useMachineContainer="true" useOAEP="false" description="Uses RsaCryptoServiceProvider to encrypt and decrypt"  
+        name="RsaProtectedConfigurationProvider" type="System.Configuration.RsaProtectedConfigurationProvider,System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
+      <add useMachineProtection="true" description="Uses CryptProtectData and CryptUnProtectData Windows APIs to encrypt and decrypt"  
+        keyEntropy="" name="DataProtectionConfigurationProvider" type="System.Configuration.DpapiProtectedConfigurationProvider,System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />  
+    </providers>  
+  </configProtectedData>  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />[FullTrust](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3)</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DpapiProtectedConfigurationProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.DpapiProtectedConfigurationProvider" /> class using default settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.DpapiProtectedConfigurationProvider.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Decrypt">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlNode Decrypt (System.Xml.XmlNode encrypted_node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode Decrypt(class System.Xml.XmlNode encrypted_node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Decrypt(System.Xml.XmlNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encryptedNode" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="encrypted_node">To be added.</param>
+        <summary>Decrypts the passed <see cref="T:System.Xml.XmlNode" /> object.</summary>
+        <returns>A decrypted <see cref="T:System.Xml.XmlNode" /> object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">
+          <paramref name="encryptedNode" /> does not have <see cref="P:System.Xml.XmlNode.Name" /> set to "EncryptedData" and <see cref="T:System.Xml.XmlNodeType" /> set to <see cref="F:System.Xml.XmlNodeType.Element" />.  
+  
+ \- or -  
+  
+ <paramref name="encryptedNode" /> does not have a child node named "CipherData" with a child node named "CipherValue".  
+  
+ \- or -  
+  
+ The child node named "CipherData" is an empty node.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Encrypt">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlNode Encrypt (System.Xml.XmlNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode Encrypt(class System.Xml.XmlNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Encrypt(System.Xml.XmlNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="node" Type="System.Xml.XmlNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The <see cref="T:System.Xml.XmlNode" /> object to encrypt.</param>
+        <summary>Encrypts the passed <see cref="T:System.Xml.XmlNode" /> object.</summary>
+        <returns>An encrypted <see cref="T:System.Xml.XmlNode" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection configurationValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection configurationValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.DpapiProtectedConfigurationProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="configurationValues" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="name">The provider name to use for the object.</param>
+        <param name="configurationValues">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> collection of values to use when initializing the object.</param>
+        <summary>Initializes the provider with default settings.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">
+          <paramref name="configurationValues" /> contains an unrecognized configuration setting.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseMachineProtection">
+      <MemberSignature Language="C#" Value="public bool UseMachineProtection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseMachineProtection" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.DpapiProtectedConfigurationProvider.UseMachineProtection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Configuration.DpapiProtectedConfigurationProvider" /> object is using machine-specific or user-account-specific protection.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Configuration.DpapiProtectedConfigurationProvider" /> is using machine-specific protection; <see langword="false" /> if it is using user-account-specific protection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Machine-specific protection is useful for anonymous services but provides less security. User-account-specific protection can be used with services that run with a specific user identity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

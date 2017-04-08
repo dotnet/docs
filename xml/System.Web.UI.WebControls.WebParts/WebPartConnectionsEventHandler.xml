@@ -1,0 +1,32 @@
+<Type Name="WebPartConnectionsEventHandler" FullName="System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void WebPartConnectionsEventHandler(object sender, WebPartConnectionsEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartConnectionsEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected" /> and <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected" /> events of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventHandler> class defines a handler delegate for two events that occur on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control: the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event and the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event. The method that handles the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event is the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnected%2A> method. The method that handles the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event is the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnected%2A> method. In both cases, the event data are contained in a <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsEventArgs> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

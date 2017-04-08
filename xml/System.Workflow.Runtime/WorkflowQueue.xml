@@ -1,0 +1,441 @@
+<Type Name="WorkflowQueue" FullName="System.Workflow.Runtime.WorkflowQueue">
+  <TypeSignature Language="C#" Value="public class WorkflowQueue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowQueue extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueue" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a workflow queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Workflow queues are used to pass messages between a host or host services and activities in a workflow. Any activity can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A?displayProperty=fullName>, and a host, a service, or another activity can call <xref:System.Workflow.Runtime.WorkflowQueue.Enqueue%2A> to add an item to that <xref:System.Workflow.Runtime.WorkflowQueue>. You can subscribe to the <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event to be notified when an item arrives on the <xref:System.Workflow.Runtime.WorkflowQueue>. You can use <xref:System.Workflow.Runtime.WorkflowQueue.Peek%2A> to examine an item at the beginning of the <xref:System.Workflow.Runtime.WorkflowQueue> and <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> to remove an item from the <xref:System.Workflow.Runtime.WorkflowQueue>. Each <xref:System.Workflow.Runtime.WorkflowQueue> is associated with a <xref:System.Workflow.Runtime.WorkflowQueuingService> that you can use to perform other management operations on the <xref:System.Workflow.Runtime.WorkflowQueue>, such as deleting the queue. <xref:System.Workflow.Runtime.WorkflowQueue.QueuingService%2A> exposes the <xref:System.Workflow.Runtime.WorkflowQueuingService> associated with this <xref:System.Workflow.Runtime.WorkflowQueue>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=fullName> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
+ [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of items contained in the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <value>The number of items in the workflow queue.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=fullName> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
+ [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dequeue">
+      <MemberSignature Language="C#" Value="public object Dequeue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Dequeue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Dequeue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes and returns the object at the beginning of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <returns>The object that is removed from the beginning of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can check <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> to determine whether the <xref:System.Workflow.Runtime.WorkflowQueue> is empty before you call <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A>, or you can catch the <xref:System.InvalidOperationException>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=fullName> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
+ [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> is enabled.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> is enabled; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enqueue">
+      <MemberSignature Language="C#" Value="public void Enqueue (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enqueue(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Enqueue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to add to the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</param>
+        <summary>Adds an object to the end of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> is not enabled.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Peek">
+      <MemberSignature Language="C#" Value="public object Peek ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Peek() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Peek" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the object at the beginning of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> without removing it.</summary>
+        <returns>The object at the beginning of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is similar to the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method, but <xref:System.Workflow.Runtime.WorkflowQueue.Peek%2A> does not modify the <xref:System.Workflow.Runtime.WorkflowQueue>. You can check <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> to determine whether the <xref:System.Workflow.Runtime.WorkflowQueue> is empty before you call <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A>, or you can catch the <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueItemArrived">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; QueueItemArrived;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; QueueItemArrived" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowQueue.QueueItemArrived" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an item is delivered on this <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is only used for processing that must occur synchronously with event delivery to the workflow instance. The event handler may execute on a non-workflow thread so access to any shared workflow object, for example, any <xref:System.Workflow.ComponentModel.DependencyObject>, must be protected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueItemAvailable">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; QueueItemAvailable;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; QueueItemAvailable" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an item is available on this <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event is raised in an asynchronous manner. The sender for the <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event will be the <xref:System.Workflow.ComponentModel.ActivityExecutionContext> of the subscribing <xref:System.Workflow.ComponentModel.Activity>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueueName">
+      <MemberSignature Language="C#" Value="public IComparable QueueName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IComparable QueueName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.QueueName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IComparable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the workflow queue.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of the workflow queue is set by the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueuingService">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowQueuingService QueuingService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.WorkflowQueuingService QueuingService" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.QueuingService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowQueuingService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the queuing service associated with this <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.WorkflowQueuingService" /> that represents the queuing service associated with this <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForQueueItemArrived">
+      <MemberSignature Language="C#" Value="public void RegisterForQueueItemArrived (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForQueueItemArrived(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemArrived(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="eventListener">A subscriber for <see cref="T:System.Workflow.ComponentModel.QueueEventArgs" /> that implements the <see cref="T:System.Workflow.ComponentModel.IActivityEventListener`1" /> interface.</param>
+        <summary>Registers a subscriber to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemArrived" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForQueueItemAvailable">
+      <MemberSignature Language="C#" Value="public void RegisterForQueueItemAvailable (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForQueueItemAvailable(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="eventListener">A subscriber for <see cref="T:System.Workflow.ComponentModel.QueueEventArgs" /> that implements the <see cref="T:System.Workflow.ComponentModel.IActivityEventListener`1" /> interface.</param>
+        <summary>Registers a subscriber to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=fullName> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable%2A> to register the specified listener.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#225](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#225)]
+ [!code-vb[WF_Samples#225](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#225)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventListener" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterForQueueItemAvailable">
+      <MemberSignature Language="C#" Value="public void RegisterForQueueItemAvailable (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener, string subscriberQualifiedName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForQueueItemAvailable(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener, string subscriberQualifiedName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs},System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
+        <Parameter Name="subscriberQualifiedName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventListener">A subscriber for <see cref="T:System.Workflow.ComponentModel.QueueEventArgs" /> that implements the <see cref="T:System.Workflow.ComponentModel.IActivityEventListener`1" /> interface.</param>
+        <param name="subscriberQualifiedName">The <see cref="P:System.Workflow.ComponentModel.Activity.QualifiedName" /> of the activity that is subscribing to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" /> event or a null reference (<see langword="Nothing" /> in Visual Basic).</param>
+        <summary>Registers a subscriber to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the qualified name of the subscribing activity is supplied by `subscriberQualifiedName`, it is returned in <xref:System.Workflow.Runtime.WorkflowQueueInfo.SubscribedActivityNames%2A?displayProperty=fullName> of <xref:System.Workflow.Runtime.WorkflowQueueInfo> associated with this queue when <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A?displayProperty=fullName> is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventListener" /> is a null reference (<see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterForQueueItemArrived">
+      <MemberSignature Language="C#" Value="public void UnregisterForQueueItemArrived (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterForQueueItemArrived(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemArrived(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="eventListener">A subscriber for <see cref="T:System.Workflow.ComponentModel.QueueEventArgs" /> that implements the <see cref="T:System.Workflow.ComponentModel.IActivityEventListener`1" /> interface.</param>
+        <summary>Unregisters a subscriber to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemArrived" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is reserved for internal use only.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventListener" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterForQueueItemAvailable">
+      <MemberSignature Language="C#" Value="public void UnregisterForQueueItemAvailable (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterForQueueItemAvailable(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventListener" Type="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="eventListener">A subscriber for <see cref="T:System.Workflow.ComponentModel.QueueEventArgs" /> that implements the <see cref="T:System.Workflow.ComponentModel.IActivityEventListener`1" /> interface.</param>
+        <summary>Unregisters a subscriber to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=fullName> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemAvailable%2A> to unregister the specified listener.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#226](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#226)]
+ [!code-vb[WF_Samples#226](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#226)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventListener" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="RegisterForQueueItemAvailable">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a subscriber to the <see cref="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the overloaded <xref:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable%2A> methods to register a subscriber for the <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event. The <xref:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable> event is used to notify subscribers that an item has been delivered (in an asynchronous manner) to this <xref:System.Workflow.Runtime.WorkflowQueue>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

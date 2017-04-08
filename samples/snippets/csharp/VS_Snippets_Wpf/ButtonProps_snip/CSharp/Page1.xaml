@@ -1,0 +1,17 @@
+<StackPanel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ButtonProps.Page1"
+>
+
+<ListBox>
+<!--<Snippet1>-->
+<Button Name="btnDefault" IsDefault="true" Click="OnClickDefault">OK</Button>
+<!--</Snippet1>-->
+
+<!--<Snippet2>-->
+<Button Name="btnCancel" IsCancel="true" Click="OnClickCancel">Cancel</Button>
+<!--</Snippet2>-->
+</ListBox>
+</StackPanel>
+

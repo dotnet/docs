@@ -1,0 +1,106 @@
+<Type Name="WindowInteractionState" FullName="System.Windows.Automation.WindowInteractionState">
+  <TypeSignature Language="C#" Value="public enum WindowInteractionState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowInteractionState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowInteractionState" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("65101cc7-7904-408e-87a7-8c6dbd83a18b")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify the current state of the window for purposes of user or programmatic interaction.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlockedByModalWindow">
+      <MemberSignature Language="C#" Value="BlockedByModalWindow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowInteractionState BlockedByModalWindow = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.BlockedByModalWindow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowInteractionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the window is blocked by a modal window.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Closing">
+      <MemberSignature Language="C#" Value="Closing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowInteractionState Closing = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.Closing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowInteractionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the window is closing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotResponding">
+      <MemberSignature Language="C#" Value="NotResponding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowInteractionState NotResponding = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.NotResponding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowInteractionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the window is not responding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadyForUserInteraction">
+      <MemberSignature Language="C#" Value="ReadyForUserInteraction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowInteractionState ReadyForUserInteraction = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.ReadyForUserInteraction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowInteractionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the window is ready for user interaction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Running">
+      <MemberSignature Language="C#" Value="Running" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowInteractionState Running = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowInteractionState.Running" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowInteractionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the window is running. This does not guarantee that the window is responding or ready for user interaction.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

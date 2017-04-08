@@ -42,10 +42,7 @@ A selection statement causes the program control to be transferred to a specific
 -   [case](../../../csharp/language-reference/keywords/switch.md)  
   
 -   [default](../../../csharp/language-reference/keywords/switch.md)  
-  
-## Featured Book Chapter  
- [Flow Control](http://go.microsoft.com/fwlink/?LinkId=221229) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
+
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

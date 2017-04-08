@@ -1,0 +1,30 @@
+<Type Name="IRequiresSessionState" FullName="System.Web.SessionState.IRequiresSessionState">
+  <TypeSignature Language="C#" Value="public interface IRequiresSessionState" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRequiresSessionState" />
+  <TypeSignature Language="DocId" Value="T:System.Web.SessionState.IRequiresSessionState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies that the target HTTP handler requires read and write access to session-state values. This is a marker interface and has no methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.Web.SessionState.IRequiresSessionState> interface in your custom HTTP handler to identify that your handler requires read and write access to session-state values.  
+  
+   
+  
+## Examples  
+ The following code example examines the current HTTP <xref:System.Web.HttpContext.Handler%2A> property to determine whether it requires read and write access to session-state values.  
+  
+ [!code-csharp[HttpSessionState#32](~/samples/snippets/csharp/VS_Snippets_WebNet/HttpSessionState/CS/snippetscs.aspx#32)]
+ [!code-vb[HttpSessionState#32](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HttpSessionState/VB/snippetsvb.aspx#32)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,35 @@
+<Type Name="VisualStyleElement+Spin" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Spin">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.Spin" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/Spin extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.Spin" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the arrows of a spin button control (also known as an up-down control). This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Spin> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Spin.Down>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Spin.DownHorizontal>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Spin.Up>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Spin.UpHorizontal>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the spin button arrow specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

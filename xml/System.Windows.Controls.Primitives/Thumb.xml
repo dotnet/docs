@@ -1,0 +1,482 @@
+<Type Name="Thumb" FullName="System.Windows.Controls.Primitives.Thumb">
+  <TypeSignature Language="C#" Value="public class Thumb : System.Windows.Controls.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Thumb extends System.Windows.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.Thumb" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("DragDelta")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a control that can be dragged by the user.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.Thumb> control can be included in another control, such as a <xref:System.Windows.Controls.Primitives.ScrollBar> or <xref:System.Windows.Controls.Slider> control, to let the user change the control's value. The <xref:System.Windows.Controls.Primitives.Thumb> can also be used to resize controls. For example, a <xref:System.Windows.Controls.Primitives.Thumb> control in the corner of a window can provide a location for the user to click with the mouse to start a resize operation.  
+  
+ <xref:System.Windows.Controls.Primitives.Thumb> provides <xref:System.Windows.Controls.Primitives.Thumb.DragStarted>, <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted> and <xref:System.Windows.Controls.Primitives.Thumb.DragDelta> events to manage drag operations associated with the mouse pointer. When the user presses the left mouse button, the <xref:System.Windows.Controls.Primitives.Thumb> control receives logical focus and mouse capture, and the <xref:System.Windows.Controls.Primitives.Thumb.DragStarted> event is raised. While the <xref:System.Windows.Controls.Primitives.Thumb> control has focus and mouse capture, the <xref:System.Windows.Controls.Primitives.Thumb.DragDelta> event can be raised multiple times without limit. When the user releases the left mouse button, the <xref:System.Windows.Controls.Primitives.Thumb> control loses mouse capture and the <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted> event is raised.  
+  
+ The event information provides a change in position, but does not reposition the <xref:System.Windows.Controls.Primitives.Thumb>. You must manually change or reposition the <xref:System.Windows.Controls.Primitives.Thumb> or any other elements that you want to resize or change as a result of the drag operation. The <xref:System.Windows.Controls.Primitives.Thumb> control does not provide drag-and-drop functionality.  
+  
+ A <xref:System.Windows.Controls.Primitives.Thumb> control can receive mouse capture, but cannot receive keyboard focus. Therefore, the <xref:System.Windows.UIElement.IsKeyboardFocused%2A> property that corresponds to keyboard focus is set to `false`. This value overrides the parent class <xref:System.Windows.Controls.Control> that sets this property to `true`.  
+  
+ To provide drag capability, class handling is provided for the <xref:System.Windows.ContentElement.MouseLeftButtonDown>, <xref:System.Windows.ContentElement.MouseLeftButtonUp> and <xref:System.Windows.ContentElement.MouseMove> events. For more information, see the <xref:System.Windows.Controls.Primitives.Thumb.OnMouseLeftButtonDown%2A>, <xref:System.Windows.Controls.Primitives.Thumb.OnMouseLeftButtonUp%2A> and <xref:System.Windows.Controls.Primitives.Thumb.OnMouseMove%2A> methods.  
+  
+ When a <xref:System.Windows.Controls.Primitives.Thumb> is part of a <xref:System.Windows.Controls.Primitives.Track> control that scrolls content in a viewable area, or viewport, the size of the <xref:System.Windows.Controls.Primitives.Thumb> reflects the size of the viewport. For more information, see the <xref:System.Windows.Controls.Primitives.Track> class. The following illustration shows a <xref:System.Windows.Controls.Primitives.Track.Thumb%2A> control that is part of a <xref:System.Windows.Controls.Primitives.ScrollBar> control.  
+  
+ ![Scrollbar illustration](~/add/media/scrollbar-illustration.JPG "Scrollbar illustration")  
+  
+## Customizing the Thumb Control  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.Primitives.Thumb> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Primitives.Thumb>, see [Thumb Syles and Templates](~/docs/framework/wpf/controls/thumb-syles-and-templates.md).  
+  
+ Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
+  
+> [!NOTE]
+>  Setting a visual property will only have an effect if that property is both present in Button control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Thumb ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Thumb.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelDrag">
+      <MemberSignature Language="C#" Value="public void CancelDrag ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelDrag() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Thumb.CancelDrag" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels a drag operation for the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Windows.Controls.Primitives.Thumb> has mouse capture and logical focus, this method removes mouse capture and raises a <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragCompleted">
+      <MemberSignature Language="C#" Value="public event System.Windows.Controls.Primitives.DragCompletedEventHandler DragCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.Primitives.DragCompletedEventHandler DragCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.DragCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control loses mouse capture.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted> event occurs when the left mouse button is released or when the <xref:System.Windows.Controls.Primitives.Thumb.CancelDrag%2A> method is called.  
+  
+ The <xref:System.Windows.Controls.Primitives.Thumb> control receives mouse capture when the user presses the left mouse button while pausing the mouse pointer over the <xref:System.Windows.Controls.Primitives.Thumb> control.  
+  
+ The position of the mouse when the <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted> event occurs is provided by the <xref:System.Windows.Controls.Primitives.DragDeltaEventArgs> of the last <xref:System.Windows.Controls.Primitives.Thumb.DragDelta> event.  
+  
+<a name="routedEventInfo_DragCompleted"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.Thumb.DragCompletedEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Controls.Primitives.DragCompletedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows how to assign an event handler for the <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted> event to a <xref:System.Windows.Controls.Primitives.Thumb> control, and how to define the event handler. For the complete sample, see [Thumb Drag Functionality Sample](http://go.microsoft.com/fwlink/?LinkID=160042).  
+  
+ [!code-xml[Thumb#Thumb](~/samples/snippets/csharp/VS_Snippets_Wpf/Thumb/CSharp/Pane1.xaml#thumb)]  
+  
+ [!code-csharp[Thumb#DragCompletedHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/Thumb/CSharp/Pane1.xaml.cs#dragcompletedhandler)]
+ [!code-vb[Thumb#DragCompletedHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Thumb/VisualBasic/Pane1.xaml.vb#dragcompletedhandler)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragCompletedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent DragCompletedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent DragCompletedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Thumb.DragCompletedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragCompleted" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragDelta">
+      <MemberSignature Language="C#" Value="public event System.Windows.Controls.Primitives.DragDeltaEventHandler DragDelta;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.Primitives.DragDeltaEventHandler DragDelta" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.Thumb.DragDelta" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.DragDeltaEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs one or more times as the mouse changes position when a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control has logical focus and mouse capture.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.Thumb> control receives focus and mouse capture when the user presses the left mouse button while pausing the mouse pointer over the <xref:System.Windows.Controls.Primitives.Thumb> control. The <xref:System.Windows.Controls.Primitives.Thumb> control loses mouse capture when the user releases the left mouse button, or when the <xref:System.Windows.Controls.Primitives.Thumb.CancelDrag%2A> method is called.  
+  
+ A new <xref:System.Windows.Controls.Primitives.Thumb.DragDelta> event occurs each time the mouse position moves on the screen. Therefore, this event can be raised multiple times without a limit when a <xref:System.Windows.Controls.Primitives.Thumb> control has mouse capture.  
+  
+<a name="routedEventInfo_DragDelta"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.Thumb.DragDeltaEvent>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Controls.Primitives.DragDeltaEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows how to assign an event handler for the <xref:System.Windows.Controls.Primitives.Thumb.DragDelta> event to a <xref:System.Windows.Controls.Primitives.Thumb> control, and how to define the event handler. For the complete sample, see [Thumb Drag Functionality Sample](http://go.microsoft.com/fwlink/?LinkID=160042).  
+  
+ [!code-xml[Thumb#Thumb](~/samples/snippets/csharp/VS_Snippets_Wpf/Thumb/CSharp/Pane1.xaml#thumb)]  
+  
+ [!code-csharp[Thumb#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Thumb/CSharp/Pane1.xaml.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragDeltaEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent DragDeltaEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent DragDeltaEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Thumb.DragDeltaEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStarted">
+      <MemberSignature Language="C#" Value="public event System.Windows.Controls.Primitives.DragStartedEventHandler DragStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.Primitives.DragStartedEventHandler DragStarted" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.Thumb.DragStarted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.DragStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control receives logical focus and mouse capture.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.Primitives.Thumb> control receives focus and mouse capture when the user presses the left mouse button while pausing the mouse pointer over the <xref:System.Windows.Controls.Primitives.Thumb>.  
+  
+<a name="routedEventInfo_DragStarted"></a>   
+## Routed Event Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.Thumb>|  
+|Routing strategy|Bubbling|  
+|Delegate|<xref:System.Windows.Controls.Primitives.DragStartedEventHandler>|  
+  
+   
+  
+## Examples  
+ The following example shows how to assign an event handler for the <xref:System.Windows.Controls.Primitives.Thumb.DragStarted> event to a <xref:System.Windows.Controls.Primitives.Thumb> control, and how to define the event handler. For the complete sample, see [Thumb Drag Functionality Sample](http://go.microsoft.com/fwlink/?LinkID=160042).  
+  
+ [!code-xml[Thumb#Thumb](~/samples/snippets/csharp/VS_Snippets_Wpf/Thumb/CSharp/Pane1.xaml#thumb)]  
+  
+ [!code-csharp[Thumb#DragStartedHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/Thumb/CSharp/Pane1.xaml.cs#dragstartedhandler)]
+ [!code-vb[Thumb#DragStartedHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Thumb/VisualBasic/Pane1.xaml.vb#dragstartedhandler)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DragStartedEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent DragStartedEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent DragStartedEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Thumb.DragStartedEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragStarted" /> routed event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDragging">
+      <MemberSignature Language="C#" Value="public bool IsDragging { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDragging" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.Thumb.IsDragging" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control has logical focus and mouse capture and the left mouse button is pressed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control has focus and mouse capture; otherwise <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.Primitives.Thumb.IsDragging%2A> property changes its value, the <xref:System.Windows.Controls.Primitives.Thumb.OnDraggingChanged%2A> method is called.  
+  
+ Starting with the .NET Framework version 3.0 Service Pack 1, <xref:System.Windows.Controls.Primitives.Thumb.IsDragging%2A> has a protected setter. To use this functionality, your application should target the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+<a name="dependencyPropertyInfo_IsDragging"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.Thumb.IsDraggingProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDraggingProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsDraggingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsDraggingProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.Thumb.IsDraggingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.Thumb.IsDragging" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Thumb.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> for the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.ThumbAutomationPeer" /> for the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDraggingChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDraggingChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDraggingChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Thumb.OnDraggingChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Responds to a change in the value of the <see cref="P:System.Windows.Controls.Primitives.Thumb.IsDragging" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeftButtonDown">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Thumb.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.ContentElement.MouseLeftButtonDown" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation handles the <xref:System.Windows.ContentElement.MouseLeftButtonDown> event by setting <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`. Also, this method gives the <xref:System.Windows.Controls.Primitives.Thumb> logical focus and mouse capture, and sets the <xref:System.Windows.Controls.Primitives.Thumb.IsDragging%2A> property to `true`. This implementation also raises the <xref:System.Windows.Controls.Primitives.Thumb.DragStarted> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeftButtonUp">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonUp (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonUp(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Thumb.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.ContentElement.MouseLeftButtonUp" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation handles the <xref:System.Windows.ContentElement.MouseLeftButtonDown> event by setting <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`. Also, this method removes mouse capture from the <xref:System.Windows.Controls.Primitives.Thumb>, and sets the <xref:System.Windows.Controls.Primitives.Thumb.IsDragging%2A> property to `false`. This implementation also raises the <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseMove">
+      <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Input.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Input.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.Thumb.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseMove" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Controls.Primitives.Thumb> has logical focus and mouse capture, this implementation raises the <xref:System.Windows.Controls.Primitives.Thumb.DragDelta> event when the mouse moves. In this scenario, the <xref:System.Windows.UIElement.MouseMove> event is handled by setting <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

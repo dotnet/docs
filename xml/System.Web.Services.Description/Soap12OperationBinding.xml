@@ -1,0 +1,76 @@
+<Type Name="Soap12OperationBinding" FullName="System.Web.Services.Description.Soap12OperationBinding">
+  <TypeSignature Language="C#" Value="public sealed class Soap12OperationBinding : System.Web.Services.Description.SoapOperationBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Soap12OperationBinding extends System.Web.Services.Description.SoapOperationBinding" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Soap12OperationBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.SoapOperationBinding</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtension("operation", "http://schemas.xmlsoap.org/wsdl/soap12/", typeof(System.Web.Services.Description.OperationBinding))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a service description format extension applied to an <see cref="T:System.Web.Services.Description.OperationBinding" /> when an XML Web service supports the SOAP protocol version 1.2. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class specifies that the message transmission will use the SOAP protocol version 1.2 and provides details about how the SOAP message will be formatted.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Soap12OperationBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Soap12OperationBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Soap12OperationBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapActionRequired">
+      <MemberSignature Language="C#" Value="public bool SoapActionRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SoapActionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Soap12OperationBinding.SoapActionRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("soapActionRequired")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether an XML Web service anticipates requiring the <see langword="SOAPAction" /> HTTP header.</summary>
+        <value>
+          <see langword="true" /> if an XML Web service anticipates requiring the <see langword="SOAPAction" /> HTTP header; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,512 @@
+<Type Name="ReflectionModelServices" FullName="System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices">
+  <TypeSignature Language="C#" Value="public static class ReflectionModelServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ReflectionModelServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides extension methods to create and retrieve reflection-based parts.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateExportDefinition">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Primitives.ExportDefinition CreateExportDefinition (System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo exportingMember, string contractName, Lazy&lt;System.Collections.Generic.IDictionary&lt;string,object&gt;&gt; metadata, System.ComponentModel.Composition.Primitives.ICompositionElement origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ExportDefinition CreateExportDefinition(valuetype System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo exportingMember, string contractName, class System.Lazy`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, object&gt;&gt; metadata, class System.ComponentModel.Composition.Primitives.ICompositionElement origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.CreateExportDefinition(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo,System.String,System.Lazy{System.Collections.Generic.IDictionary{System.String,System.Object}},System.ComponentModel.Composition.Primitives.ICompositionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ExportDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportingMember" Type="System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="metadata" Type="System.Lazy&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;" />
+        <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
+      </Parameters>
+      <Docs>
+        <param name="exportingMember">The member to export.</param>
+        <param name="contractName">The contract name to use for the export.</param>
+        <param name="metadata">The metadata for the export.</param>
+        <param name="origin">The object that the export originates from.</param>
+        <summary>Creates an export definition from the specified member, with the specified contract name, metadata, and origin.</summary>
+        <returns>An export definition created from the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateImportDefinition">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition (Lazy&lt;System.Reflection.ParameterInfo&gt; parameter, string contractName, string requiredTypeIdentity, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,Type&gt;&gt; requiredMetadata, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, System.ComponentModel.Composition.Primitives.ICompositionElement origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition(class System.Lazy`1&lt;class System.Reflection.ParameterInfo&gt; parameter, string contractName, string requiredTypeIdentity, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Type&gt;&gt; requiredMetadata, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, valuetype System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, class System.ComponentModel.Composition.Primitives.ICompositionElement origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.CreateImportDefinition(System.Lazy{System.Reflection.ParameterInfo},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Type}},System.ComponentModel.Composition.Primitives.ImportCardinality,System.ComponentModel.Composition.CreationPolicy,System.ComponentModel.Composition.Primitives.ICompositionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Lazy&lt;System.Reflection.ParameterInfo&gt;" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="requiredTypeIdentity" Type="System.String" />
+        <Parameter Name="requiredMetadata" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Type&gt;&gt;" />
+        <Parameter Name="cardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
+        <Parameter Name="requiredCreationPolicy" Type="System.ComponentModel.Composition.CreationPolicy" />
+        <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The parameter to import.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified parameter by using the specified contract name, type identity, import metadata, cardinality, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateImportDefinition">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition (System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo importingMember, string contractName, string requiredTypeIdentity, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,Type&gt;&gt; requiredMetadata, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, System.ComponentModel.Composition.Primitives.ICompositionElement origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition(valuetype System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo importingMember, string contractName, string requiredTypeIdentity, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Type&gt;&gt; requiredMetadata, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, valuetype System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, class System.ComponentModel.Composition.Primitives.ICompositionElement origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.CreateImportDefinition(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Type}},System.ComponentModel.Composition.Primitives.ImportCardinality,System.Boolean,System.ComponentModel.Composition.CreationPolicy,System.ComponentModel.Composition.Primitives.ICompositionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importingMember" Type="System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="requiredTypeIdentity" Type="System.String" />
+        <Parameter Name="requiredMetadata" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Type&gt;&gt;" />
+        <Parameter Name="cardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
+        <Parameter Name="isRecomposable" Type="System.Boolean" />
+        <Parameter Name="requiredCreationPolicy" Type="System.ComponentModel.Composition.CreationPolicy" />
+        <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
+      </Parameters>
+      <Docs>
+        <param name="importingMember">The member to import into.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="isRecomposable">
+          <see langword="true" /> to indicate that the import is recomposable; otherwise, <see langword="false" />.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified member by using the specified contract name, type identity, import metadata, cardinality, recomposition policy, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateImportDefinition">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition (Lazy&lt;System.Reflection.ParameterInfo&gt; parameter, string contractName, string requiredTypeIdentity, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,Type&gt;&gt; requiredMetadata, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, System.Collections.Generic.IDictionary&lt;string,object&gt; metadata, bool isExportFactory, System.ComponentModel.Composition.Primitives.ICompositionElement origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition(class System.Lazy`1&lt;class System.Reflection.ParameterInfo&gt; parameter, string contractName, string requiredTypeIdentity, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Type&gt;&gt; requiredMetadata, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, valuetype System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; metadata, bool isExportFactory, class System.ComponentModel.Composition.Primitives.ICompositionElement origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.CreateImportDefinition(System.Lazy{System.Reflection.ParameterInfo},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Type}},System.ComponentModel.Composition.Primitives.ImportCardinality,System.ComponentModel.Composition.CreationPolicy,System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean,System.ComponentModel.Composition.Primitives.ICompositionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Lazy&lt;System.Reflection.ParameterInfo&gt;" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="requiredTypeIdentity" Type="System.String" />
+        <Parameter Name="requiredMetadata" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Type&gt;&gt;" />
+        <Parameter Name="cardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
+        <Parameter Name="requiredCreationPolicy" Type="System.ComponentModel.Composition.CreationPolicy" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="isExportFactory" Type="System.Boolean" />
+        <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The parameter to import.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="metadata">The contract metadata</param>
+        <param name="isExportFactory">
+          <see langword="true" /> to indicate that the import represents an <see cref="T:System.ComponentModel.Composition.ExportFactory`1" />; otherwise, <see langword="false" />.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified parameter by using the specified contract name, type identity, import and contract metadata, cardinality, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateImportDefinition">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition (System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo importingMember, string contractName, string requiredTypeIdentity, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,Type&gt;&gt; requiredMetadata, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, System.Collections.Generic.IDictionary&lt;string,object&gt; metadata, bool isExportFactory, System.ComponentModel.Composition.Primitives.ICompositionElement origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition(valuetype System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo importingMember, string contractName, string requiredTypeIdentity, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Type&gt;&gt; requiredMetadata, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, valuetype System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; metadata, bool isExportFactory, class System.ComponentModel.Composition.Primitives.ICompositionElement origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.CreateImportDefinition(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Type}},System.ComponentModel.Composition.Primitives.ImportCardinality,System.Boolean,System.ComponentModel.Composition.CreationPolicy,System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean,System.ComponentModel.Composition.Primitives.ICompositionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importingMember" Type="System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="requiredTypeIdentity" Type="System.String" />
+        <Parameter Name="requiredMetadata" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Type&gt;&gt;" />
+        <Parameter Name="cardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
+        <Parameter Name="isRecomposable" Type="System.Boolean" />
+        <Parameter Name="requiredCreationPolicy" Type="System.ComponentModel.Composition.CreationPolicy" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="isExportFactory" Type="System.Boolean" />
+        <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
+      </Parameters>
+      <Docs>
+        <param name="importingMember">The member to import into.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="isRecomposable">
+          <see langword="true" /> to indicate that the import is recomposable; otherwise, <see langword="false" />.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="metadata">The contract metadata.</param>
+        <param name="isExportFactory">
+          <see langword="true" /> to indicate that the import represents an <see cref="T:System.ComponentModel.Composition.ExportFactory`1" />; otherwise, <see langword="false" />.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified member by using the specified contract name, type identity, import and contract metadata, cardinality, recomposition policy, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateImportDefinition">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition (System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo importingMember, string contractName, string requiredTypeIdentity, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,Type&gt;&gt; requiredMetadata, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPreRequisite, System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, System.Collections.Generic.IDictionary&lt;string,object&gt; metadata, bool isExportFactory, System.ComponentModel.Composition.Primitives.ICompositionElement origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition CreateImportDefinition(valuetype System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo importingMember, string contractName, string requiredTypeIdentity, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Type&gt;&gt; requiredMetadata, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPreRequisite, valuetype System.ComponentModel.Composition.CreationPolicy requiredCreationPolicy, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; metadata, bool isExportFactory, class System.ComponentModel.Composition.Primitives.ICompositionElement origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.CreateImportDefinition(System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Type}},System.ComponentModel.Composition.Primitives.ImportCardinality,System.Boolean,System.Boolean,System.ComponentModel.Composition.CreationPolicy,System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean,System.ComponentModel.Composition.Primitives.ICompositionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importingMember" Type="System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="requiredTypeIdentity" Type="System.String" />
+        <Parameter Name="requiredMetadata" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Type&gt;&gt;" />
+        <Parameter Name="cardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
+        <Parameter Name="isRecomposable" Type="System.Boolean" />
+        <Parameter Name="isPreRequisite" Type="System.Boolean" />
+        <Parameter Name="requiredCreationPolicy" Type="System.ComponentModel.Composition.CreationPolicy" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="isExportFactory" Type="System.Boolean" />
+        <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
+      </Parameters>
+      <Docs>
+        <param name="importingMember">The member to import into.</param>
+        <param name="contractName">The contract name to use for the import.</param>
+        <param name="requiredTypeIdentity">The required type identity for the import.</param>
+        <param name="requiredMetadata">The required metadata for the import.</param>
+        <param name="cardinality">The cardinality of the import.</param>
+        <param name="isRecomposable">
+          <see langword="true" /> to indicate that the import is recomposable; otherwise, <see langword="false" />.</param>
+        <param name="isPreRequisite">
+          <see langword="true" /> to indicate that the import is a prerequisite; otherwise, <see langword="false" />.</param>
+        <param name="requiredCreationPolicy">One of the enumeration values that specifies the import's creation policy.</param>
+        <param name="metadata">The contract metadata.</param>
+        <param name="isExportFactory">
+          <see langword="true" /> to indicate that the import represents an <see cref="T:System.ComponentModel.Composition.ExportFactory`1" />; otherwise, <see langword="false" />.</param>
+        <param name="origin">The object to import into.</param>
+        <summary>Creates an import definition for the specified member by using the specified contract name, type identity, import and contract metadata, cardinality, recomposition policy, and creation policy.</summary>
+        <returns>An import definition created from the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePartDefinition">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Primitives.ComposablePartDefinition CreatePartDefinition (Lazy&lt;Type&gt; partType, bool isDisposalRequired, Lazy&lt;System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ImportDefinition&gt;&gt; imports, Lazy&lt;System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt; exports, Lazy&lt;System.Collections.Generic.IDictionary&lt;string,object&gt;&gt; metadata, System.ComponentModel.Composition.Primitives.ICompositionElement origin);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ComposablePartDefinition CreatePartDefinition(class System.Lazy`1&lt;class System.Type&gt; partType, bool isDisposalRequired, class System.Lazy`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ImportDefinition&gt;&gt; imports, class System.Lazy`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt; exports, class System.Lazy`1&lt;class System.Collections.Generic.IDictionary`2&lt;string, object&gt;&gt; metadata, class System.ComponentModel.Composition.Primitives.ICompositionElement origin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.CreatePartDefinition(System.Lazy{System.Type},System.Boolean,System.Lazy{System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ImportDefinition}},System.Lazy{System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ExportDefinition}},System.Lazy{System.Collections.Generic.IDictionary{System.String,System.Object}},System.ComponentModel.Composition.Primitives.ICompositionElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ComposablePartDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partType" Type="System.Lazy&lt;System.Type&gt;" />
+        <Parameter Name="isDisposalRequired" Type="System.Boolean" />
+        <Parameter Name="imports" Type="System.Lazy&lt;System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ImportDefinition&gt;&gt;" />
+        <Parameter Name="exports" Type="System.Lazy&lt;System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ExportDefinition&gt;&gt;" />
+        <Parameter Name="metadata" Type="System.Lazy&lt;System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;&gt;" />
+        <Parameter Name="origin" Type="System.ComponentModel.Composition.Primitives.ICompositionElement" />
+      </Parameters>
+      <Docs>
+        <param name="partType">The type of the part.</param>
+        <param name="isDisposalRequired">
+          <see langword="true" /> if the part requires disposal; otherwise, <see langword="false" />.</param>
+        <param name="imports">A collection of the part's imports.</param>
+        <param name="exports">A collection of the part's exports.</param>
+        <param name="metadata">The part's metadata.</param>
+        <param name="origin">The part's origin.</param>
+        <summary>Creates a part definition with the specified part type, imports, exports, metadata, and origin.</summary>
+        <returns>A part definition created from the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExportFactoryProductImportDefinition">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition GetExportFactoryProductImportDefinition (System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition GetExportFactoryProductImportDefinition(class System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.GetExportFactoryProductImportDefinition(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="importDefinition">The import definition to represent.</param>
+        <summary>Returns a representation of an import definition as an export factory product.</summary>
+        <returns>The representation of the import definition.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExportingMember">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo GetExportingMember (System.ComponentModel.Composition.Primitives.ExportDefinition exportDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo GetExportingMember(class System.ComponentModel.Composition.Primitives.ExportDefinition exportDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.GetExportingMember(System.ComponentModel.Composition.Primitives.ExportDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportDefinition" Type="System.ComponentModel.Composition.Primitives.ExportDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="exportDefinition">The export definition to examine.</param>
+        <summary>Gets the exporting member from a specified export definition.</summary>
+        <returns>The member specified in the export definition.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="exportDefinition" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImportingMember">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo GetImportingMember (System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo GetImportingMember(class System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.GetImportingMember(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.ReflectionModel.LazyMemberInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="importDefinition">The import definition to examine.</param>
+        <summary>Gets the importing member from a specified import definition.</summary>
+        <returns>The member specified in the import definition.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="importDefinition" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImportingParameter">
+      <MemberSignature Language="C#" Value="public static Lazy&lt;System.Reflection.ParameterInfo&gt; GetImportingParameter (System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Lazy`1&lt;class System.Reflection.ParameterInfo&gt; GetImportingParameter(class System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.GetImportingParameter(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Lazy&lt;System.Reflection.ParameterInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="importDefinition">The import definition to examine.</param>
+        <summary>Gets the importing parameter from a specified import definition.</summary>
+        <returns>The parameter specified in the import definition.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="importDefinition" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPartType">
+      <MemberSignature Language="C#" Value="public static Lazy&lt;Type&gt; GetPartType (System.ComponentModel.Composition.Primitives.ComposablePartDefinition partDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Lazy`1&lt;class System.Type&gt; GetPartType(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition partDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.GetPartType(System.ComponentModel.Composition.Primitives.ComposablePartDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Lazy&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partDefinition" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="partDefinition">The part definition to examine.</param>
+        <summary>Gets the type of a part from a specified part definition.</summary>
+        <returns>The type of the defined part.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partDefinition" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDisposalRequired">
+      <MemberSignature Language="C#" Value="public static bool IsDisposalRequired (System.ComponentModel.Composition.Primitives.ComposablePartDefinition partDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDisposalRequired(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition partDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.IsDisposalRequired(System.ComponentModel.Composition.Primitives.ComposablePartDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partDefinition" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="partDefinition">The part to examine.</param>
+        <summary>Determines whether the specified part requires disposal.</summary>
+        <returns>
+          <see langword="true" /> if the part requires disposal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partDefinition" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExportFactoryImportDefinition">
+      <MemberSignature Language="C#" Value="public static bool IsExportFactoryImportDefinition (System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsExportFactoryImportDefinition(class System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.IsExportFactoryImportDefinition(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="importDefinition">The import definition to check.</param>
+        <summary>Indicates whether a specified import definition represents an export factory (<see cref="T:System.ComponentModel.Composition.ExportFactory`1" /> or <see cref="T:System.ComponentModel.Composition.ExportFactory`2" /> object).</summary>
+        <returns>
+          <see langword="true" /> if the specified import definition represents an export factory; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsImportingParameter">
+      <MemberSignature Language="C#" Value="public static bool IsImportingParameter (System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsImportingParameter(class System.ComponentModel.Composition.Primitives.ImportDefinition importDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.IsImportingParameter(System.ComponentModel.Composition.Primitives.ImportDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="importDefinition" Type="System.ComponentModel.Composition.Primitives.ImportDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="importDefinition">The import definition to examine.</param>
+        <summary>Determines whether an import definition represents a member or a parameter.</summary>
+        <returns>
+          <see langword="true" /> if the import definition represents a parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="importDefinition" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryMakeGenericPartDefinition">
+      <MemberSignature Language="C#" Value="public static bool TryMakeGenericPartDefinition (System.ComponentModel.Composition.Primitives.ComposablePartDefinition partDefinition, System.Collections.Generic.IEnumerable&lt;Type&gt; genericParameters, out System.ComponentModel.Composition.Primitives.ComposablePartDefinition specialization);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryMakeGenericPartDefinition(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition partDefinition, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; genericParameters, class System.ComponentModel.Composition.Primitives.ComposablePartDefinition specialization) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ReflectionModel.ReflectionModelServices.TryMakeGenericPartDefinition(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Collections.Generic.IEnumerable{System.Type},System.ComponentModel.Composition.Primitives.ComposablePartDefinition@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partDefinition" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" />
+        <Parameter Name="genericParameters" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="specialization" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="partDefinition">The part definition.</param>
+        <param name="genericParameters">A collection of types to specify the generic parameters.</param>
+        <param name="specialization">When this method returns, contains the specialized part definition. This parameter is treated as uninitialized.</param>
+        <summary>Indicates whether a generic part definition can be specialized with the provided parameters.</summary>
+        <returns>
+          <see langword="true" /> if the specialization succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

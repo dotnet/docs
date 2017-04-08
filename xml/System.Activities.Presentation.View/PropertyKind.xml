@@ -1,0 +1,82 @@
+<Type Name="PropertyKind" FullName="System.Activities.Presentation.View.PropertyKind">
+  <TypeSignature Language="C#" Value="public enum PropertyKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.PropertyKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>An enumeration that describes the type of argument being passed.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InArgument">
+      <MemberSignature Language="C#" Value="InArgument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.PropertyKind InArgument = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.PropertyKind.InArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.PropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The argument is an input-only parameter, meaning that it can be used only to pass a value to a method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InOutArgument">
+      <MemberSignature Language="C#" Value="InOutArgument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.PropertyKind InOutArgument = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.PropertyKind.InOutArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.PropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The argument is an input/output parameter, meaning that it can be used for passing a value to a method and for getting back a value from a method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OutArgument">
+      <MemberSignature Language="C#" Value="OutArgument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.PropertyKind OutArgument = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.PropertyKind.OutArgument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.PropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The argument is an output-only parameter, meaning that it can be used only to pass a value back from a method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Property">
+      <MemberSignature Language="C#" Value="Property" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.PropertyKind Property = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.PropertyKind.Property" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.PropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The argument is a property.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

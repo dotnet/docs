@@ -1,0 +1,106 @@
+<Type Name="Comparison&lt;T&gt;" FullName="System.Comparison&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate int Comparison&lt;in T&gt;(T x, T y);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Comparison`1&lt;- T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Comparison`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="x" Type="T" />
+    <Parameter Name="y" Type="T" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Int32</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">The type of the objects to compare.</typeparam>
+    <param name="x">The first object to compare.</param>
+    <param name="y">The second object to compare.</param>
+    <summary>Represents the method that compares two objects of the same type.</summary>
+    <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than 0  
+  
+ </term>  
+<description> <paramref name="x" /> is less than <paramref name="y" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> <paramref name="x" /> equals <paramref name="y" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than 0  
+  
+ </term>  
+<description> <paramref name="x" /> is greater than <paramref name="y" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used by the [Sort\<T>(T\<xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Comparison%7B%60%600%7D%29> method overload of the <xref:System.Array> class and the <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29> method overload of the <xref:System.Collections.Generic.List%601> class to sort the elements of an array or list.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Comparison%601> delegate with the <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29> method overload.  
+  
+ The code example defines an alternative comparison method for strings, named `CompareDinosByLength`. This method works as follows: First, the comparands are tested for `null`, and a null reference is treated as less than a non-null. Second, the string lengths are compared, and the longer string is deemed to be greater. Third, if the lengths are equal, ordinary string comparison is used.  
+  
+ A <xref:System.Collections.Generic.List%601> of strings is created and populated with four strings, in no particular order. The list also includes an empty string and a null reference. The list is displayed, sorted using a <xref:System.Comparison%601> generic delegate representing the `CompareDinosByLength` method, and displayed again.  
+  
+ [!code-cpp[List\`1_SortComparison#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_SortComparison/cpp/source.cpp#1)]
+ [!code-csharp[List\`1_SortComparison#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_SortComparison/cs/source.cs#1)]
+ [!code-vb[List\`1_SortComparison#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/List`1_SortComparison/vb/source.vb#1)]  
+  
+ The following example uses the <xref:System.Comparison%601> delegate to sort the elements of a collection of `CityInfo` objects. `CityInfo` is an application-defined class that contains information about a city and its population. The example defines three methods, `CompareByName`, `CompareByPopulation`, and `CompareByNames`, that offer three different ways of ordering the `CityInfo` objects. Each method is assigned to the `comparison` argument of the [Array.Sort\<T>(T\<xref:System.Array.Sort%60%601%28%60%600%5B%5D%2CSystem.Comparison%7B%60%600%7D%29?displayProperty=fullName> method.  
+  
+ [!code-csharp[System.Comparison\`1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.comparison`1/cs/comparisont1.cs#1)]
+ [!code-vb[System.Comparison\`1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.comparison`1/vb/comparisont1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

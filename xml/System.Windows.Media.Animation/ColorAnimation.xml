@@ -1,0 +1,593 @@
+<Type Name="ColorAnimation" FullName="System.Windows.Media.Animation.ColorAnimation">
+  <TypeSignature Language="C#" Value="public class ColorAnimation : System.Windows.Media.Animation.ColorAnimationBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi ColorAnimation extends System.Windows.Media.Animation.ColorAnimationBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ColorAnimation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.ColorAnimationBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Animates the value of a  <see cref="T:System.Windows.Media.Color" /> property between two target values using      linear interpolation over a specified <see cref="P:System.Windows.Media.Animation.Timeline.Duration" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An animation updates the value of a property over a period of time.  An animation effect can be subtle, such as moving a <xref:System.Windows.Shapes.Shape> a few pixels left and right, or dramatic, such as enlarging an object to 200 times its original size while spinning it and changing its color. To create an animation in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], you associate an animation with an object's property value.  
+  
+## Target Values  
+ The <xref:System.Windows.Media.Animation.ColorAnimation> class creates a transition between two target values. To set its target values, use its <xref:System.Windows.Media.Animation.ColorAnimation.From%2A>, <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>, and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties.  The following table summarizes how the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A>, <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>, and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties may be used together or separately to determine an animation's target values.  
+  
+|Properties specified|Resulting behavior|  
+|--------------------------|------------------------|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the base value of the property being animated or to a previous animation's output value, depending on how the previous animation is configured.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the value specified by the sum of the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.To%2A>|The animation progresses from the animated property's base value or a previous animation's output value to the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.By%2A>|The animation progresses from the base value of the property being animated or a previous animation's output value to the sum of that value and the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property.|  
+  
+> [!NOTE]
+>  If you set both the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties, the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property takes precedence and the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property is ignored.  
+  
+ To use other interpolation methods or animate between more than two target values, use a <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames> object.  
+  
+ For information about applying multiple animations to a single property, see [Key-Frame Animations Overview](~/docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md).  
+  
+## Freezable Features  
+ Because the <xref:System.Windows.Media.Animation.ColorAnimation> class inherits from <xref:System.Windows.Freezable>, <xref:System.Windows.Media.Animation.ColorAnimation> objects gain several special features, which include the following: they can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorAnimation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ColorAnimation.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ColorAnimation" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorAnimation (System.Windows.Media.Color toValue, System.Windows.Duration duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color toValue, valuetype System.Windows.Duration duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Duration)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toValue" Type="System.Windows.Media.Color" />
+        <Parameter Name="duration" Type="System.Windows.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="toValue">The destination value of the animation.</param>
+        <param name="duration">The length of time the animation takes to play from start to finish, once. See the <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> property for more information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ColorAnimation" /> class that animates to the specified value over the specified duration. The starting value for the animation is the base value of the property being animated or the output from another animation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorAnimation (System.Windows.Media.Color toValue, System.Windows.Duration duration, System.Windows.Media.Animation.FillBehavior fillBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toValue" Type="System.Windows.Media.Color" />
+        <Parameter Name="duration" Type="System.Windows.Duration" />
+        <Parameter Name="fillBehavior" Type="System.Windows.Media.Animation.FillBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="toValue">The destination value of the animation.</param>
+        <param name="duration">The length of time the animation takes to play from start to finish, once. See the <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> property for more information.</param>
+        <param name="fillBehavior">Specifies how the animation behaves when it is not active.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ColorAnimation" /> class that animates to the specified value over the specified duration and has the specified fill behavior. The starting value for the animation is the base value of the property being animated or the output from an another animation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorAnimation (System.Windows.Media.Color fromValue, System.Windows.Media.Color toValue, System.Windows.Duration duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color fromValue, valuetype System.Windows.Media.Color toValue, valuetype System.Windows.Duration duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Duration)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fromValue" Type="System.Windows.Media.Color" />
+        <Parameter Name="toValue" Type="System.Windows.Media.Color" />
+        <Parameter Name="duration" Type="System.Windows.Duration" />
+      </Parameters>
+      <Docs>
+        <param name="fromValue">The starting value of the animation.</param>
+        <param name="toValue">The destination value of the animation.</param>
+        <param name="duration">The length of time the animation takes to play from start to finish, once. See the <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> property for more information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ColorAnimation" /> class that animates from the specified starting value to the specified destination value over the specified duration.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorAnimation (System.Windows.Media.Color fromValue, System.Windows.Media.Color toValue, System.Windows.Duration duration, System.Windows.Media.Animation.FillBehavior fillBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Color fromValue, valuetype System.Windows.Media.Color toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fromValue" Type="System.Windows.Media.Color" />
+        <Parameter Name="toValue" Type="System.Windows.Media.Color" />
+        <Parameter Name="duration" Type="System.Windows.Duration" />
+        <Parameter Name="fillBehavior" Type="System.Windows.Media.Animation.FillBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="fromValue">The starting value of the animation.</param>
+        <param name="toValue">The destination value of the animation.</param>
+        <param name="duration">The length of time the animation takes to play from start to finish, once. See the <see cref="P:System.Windows.Media.Animation.Timeline.Duration" /> property for more information.</param>
+        <param name="fillBehavior">Specifies how the animation behaves when it is not active.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ColorAnimation" /> class that animates from the specified starting value to the specified destination value over the specified duration and has the specified fill behavior.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="By">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Windows.Media.Color&gt; By { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Windows.Media.Color&gt; By" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ColorAnimation.By" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Windows.Media.Color&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the total amount by which the animation changes its starting value.</summary>
+        <value>The total amount by which the animation changes its starting value.     The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property when you want to animate a value "by" a certain amount, rather than specifying a starting or ending value. You may also use the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property with the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property. The following table summarizes how the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A>, <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>, and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties may be used together or separately to determine an animation's target values.  
+  
+|Properties Specified|Resulting Behavior|  
+|--------------------------|------------------------|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the base value of the property being animated or to a previous animation's output value, depending on how the previous animation is configured.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the value specified by the sum of the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.To%2A>|The animation progresses from the animated property's base value or a previous animation's output value to the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.By%2A>|The animation progresses from the base value of the property being animated or a previous animation's output value to the sum of that value and the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property.|  
+  
+ **Note** If you set both the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties, the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property takes precedence and the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property is ignored.  
+  
+ To use other interpolation methods or animate between more than two target values, use a <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames> object.  
+  
+<a name="xamlAttributeUsage_By"></a>   
+## XAML Attribute Usage  
+ <*object* `By`="<xref:System.Windows.Media.Color>"/>  
+  
+ \- or -  
+  
+ <*object* `By`="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
+  
+<a name="xamlPropertyElementUsage_By"></a>   
+## XAML Property Element Usage  
+ \<*object*>  
+  
+ <*object*.`By`>  
+  
+ \<<xref:System.Windows.Media.Color> />  
+  
+ </*object*.`By`>  
+  
+ \</*object*>  
+  
+<a name="dependencyPropertyInfo_By"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.ColorAnimation.ByProperty>|  
+|Metadata Properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ByProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ByProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ByProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ColorAnimation.ByProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.ColorAnimation.By" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.ColorAnimation Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.ColorAnimation Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ColorAnimation.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ColorAnimation</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.ColorAnimation" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ColorAnimation.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Media.Animation.ColorAnimation" />.</summary>
+        <returns>The new instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EasingFunction">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.IEasingFunction EasingFunction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.IEasingFunction EasingFunction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ColorAnimation.EasingFunction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.IEasingFunction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the easing function applied to this animation.</summary>
+        <value>The easing function applied to this animation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Easing functions allow you to create a variety of specialized animation effects including bouncing, spring oscillations, and various magnitude acceleration and deceleration animations. These functions were designed primarily for 'movement animations' versus color animation, however, you might find a scenario for applying an easing function to your <xref:System.Windows.Media.Animation.ColorAnimation>. For example, you could use a <xref:System.Windows.Media.Animation.PowerEase> easing function to create a color animation that animates through colors rapidly at first but slows down.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EasingFunctionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EasingFunctionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EasingFunctionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ColorAnimation.EasingFunctionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.ColorAnimation.EasingFunction" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Windows.Media.Color&gt; From { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Windows.Media.Color&gt; From" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ColorAnimation.From" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Windows.Media.Color&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the animation's starting value.</summary>
+        <value>The starting value of the animation. The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table summarizes how the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A>, <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>, and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties may be used together or separately to determine an animation's target values.  
+  
+|Properties Specified|Resulting Behavior|  
+|--------------------------|------------------------|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the base value of the property being animated or to a previous animation's output value, depending on how the previous animation is configured.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the value specified by the sum of the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.To%2A>|The animation progresses from the animated property's base value or a previous animation's output value to the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.By%2A>|The animation progresses from the base value of the property being animated or a previous animation's output value to the sum of that value and the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property.|  
+  
+ **Note** If you set both the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties, the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property takes precedence and the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property is ignored.  
+  
+ To use other interpolation methods or animate between more than two target values, use a <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames> object.  
+  
+<a name="xamlAttributeUsage_From"></a>   
+## XAML Attribute Usage  
+ <*object* `From`="<xref:System.Windows.Media.Color>"/>  
+  
+ \- or -  
+  
+ <*object* `From`="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
+  
+<a name="xamlPropertyElementUsage_From"></a>   
+## XAML Property Element Usage  
+ \<*object*>  
+  
+ <*object*.`From`>  
+  
+ \<<xref:System.Windows.Media.Color> />  
+  
+ </*object*.`From`>  
+  
+ \</*object*>  
+  
+<a name="dependencyPropertyInfo_From"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.ColorAnimation.FromProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FromProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FromProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ColorAnimation.FromProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.ColorAnimation.From" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValueCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Color GetCurrentValueCore (System.Windows.Media.Color defaultOriginValue, System.Windows.Media.Color defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Color GetCurrentValueCore(valuetype System.Windows.Media.Color defaultOriginValue, valuetype System.Windows.Media.Color defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ColorAnimation.GetCurrentValueCore(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultOriginValue" Type="System.Windows.Media.Color" />
+        <Parameter Name="defaultDestinationValue" Type="System.Windows.Media.Color" />
+        <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
+      </Parameters>
+      <Docs>
+        <param name="defaultOriginValue">The suggested origin value, used if the animation does not have its own explicitly set start value.</param>
+        <param name="defaultDestinationValue">The suggested destination value, used if the animation does not have its own explicitly set end value.</param>
+        <param name="animationClock">An <see cref="T:System.Windows.Media.Animation.AnimationClock" /> that generates the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> used by the animation.</param>
+        <summary>Calculates a value that represents the current value of the property being animated, as determined by the <see cref="T:System.Windows.Media.Animation.ColorAnimation" />.</summary>
+        <returns>The calculated value of the property, as determined by the current animation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `defaultOriginValue` is the first in the composition chain, this value will be the snapshot value (if one is available) or the base property value; otherwise this value will be the value returned by the previous animation in the chain with an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The `defaultDestinationValue` is the base value if the animation is in the first composition layer of animations on a property; otherwise the value is the output value from the previous composition layer of animations for the property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAdditive">
+      <MemberSignature Language="C#" Value="public bool IsAdditive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAdditive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ColorAnimation.IsAdditive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the target property's current value should be added to this animation's starting value.</summary>
+        <value>
+          <see langword="true" /> if the target property's current value should be added to this animation's starting value; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the animation has only one of its <xref:System.Windows.Media.Animation.ColorAnimation.From%2A>, <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>, or <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties set, setting this property has no effect.  
+  
+<a name="dependencyPropertyInfo_Additive"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.AnimationTimeline.IsAdditiveProperty>|  
+|Metadata properties set to `true`|None|  
+  
+> [!NOTE]
+>  This dependency property is unusual in that the identifier field for it comes from <xref:System.Windows.Media.Animation.AnimationTimeline>, and is shared by various derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCumulative">
+      <MemberSignature Language="C#" Value="public bool IsCumulative { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCumulative" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ColorAnimation.IsCumulative" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the animation's value accumulates when it repeats.</summary>
+        <value>**true** if the animation accumulates its values when its <see cref="P:System.Windows.Media.Animation.Timeline.RepeatBehavior" /> property causes it to repeat its simple duration. otherwise, **false**. The default value is **false**.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this property is set to **true**, the animation's output values only accumulate when the animation's <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property causes it to repeat its simple duration. It does not accumulate its values when it restarts because its parent repeated or because its clock was restarted from a <xref:System.Windows.Media.Animation.ClockController.Begin%2A> call.  
+  
+<a name="dependencyPropertyInfo_Cumulative"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.AnimationTimeline.IsCumulativeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+> [!NOTE]
+>  This dependency property is unusual in that the identifier field for it comes from <xref:System.Windows.Media.Animation.AnimationTimeline>, and is shared by various derived classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="To">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Windows.Media.Color&gt; To { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Windows.Media.Color&gt; To" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ColorAnimation.To" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Windows.Media.Color&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the animation's ending value.</summary>
+        <value>The ending value of the animation. The default value is null.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table summarizes how the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A>, <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>, and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties may be used together or separately to determine an animation's target values.  
+  
+|Properties Specified|Resulting Behavior|  
+|--------------------------|------------------------|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the base value of the property being animated or to a previous animation's output value, depending on how the previous animation is configured.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.To%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A>|The animation progresses from the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> property to the value specified by the sum of the <xref:System.Windows.Media.Animation.ColorAnimation.From%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.To%2A>|The animation progresses from the animated property's base value or a previous animation's output value to the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property.|  
+|<xref:System.Windows.Media.Animation.ColorAnimation.By%2A>|The animation progresses from the base value of the property being animated or a previous animation's output value to the sum of that value and the value specified by the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property.|  
+  
+ **Note** If you set both the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> and <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> properties, the <xref:System.Windows.Media.Animation.ColorAnimation.To%2A> property takes precedence and the <xref:System.Windows.Media.Animation.ColorAnimation.By%2A> property is ignored.  
+  
+ To use other interpolation methods or animate between more than two target values, use a <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames> object.  
+  
+<a name="xamlAttributeUsage_To"></a>   
+## XAML Attribute Usage  
+ <*object* `To`="<xref:System.Windows.Media.Color>"/>  
+  
+ \- or -  
+  
+ <*object* `To`="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
+  
+<a name="xamlPropertyElementUsage_To"></a>   
+## XAML Property Element Usage  
+ \<*object*>  
+  
+ <*object*.`To`>  
+  
+ \<<xref:System.Windows.Media.Color> />  
+  
+ </*object*.`To`>  
+  
+ \</*object*>  
+  
+<a name="dependencyPropertyInfo_To"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.ColorAnimation.ToProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ColorAnimation.ToProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.ColorAnimation.To" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

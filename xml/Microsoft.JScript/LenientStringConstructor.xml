@@ -1,0 +1,36 @@
+<Type Name="LenientStringConstructor" FullName="Microsoft.JScript.LenientStringConstructor">
+  <TypeSignature Language="C#" Value="public class LenientStringConstructor : Microsoft.JScript.StringConstructor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LenientStringConstructor extends Microsoft.JScript.StringConstructor" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientStringConstructor" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.StringConstructor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.StringConstructor" /> class. The <see cref="T:Microsoft.JScript.LenientStringConstructor" /> class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="fromCharCode">
+      <MemberSignature Language="C#" Value="public object fromCharCode;" />
+      <MemberSignature Language="ILAsm" Value=".field public object fromCharCode" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringConstructor.fromCharCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringConstructor.fromCharCode(System.Object[])" /> method of the <see cref="T:Microsoft.JScript.StringConstructor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

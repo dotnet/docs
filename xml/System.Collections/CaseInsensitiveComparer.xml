@@ -1,0 +1,305 @@
+<Type Name="CaseInsensitiveComparer" FullName="System.Collections.CaseInsensitiveComparer">
+  <TypeSignature Language="C#" Value="public class CaseInsensitiveComparer : System.Collections.IComparer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CaseInsensitiveComparer extends System.Object implements class System.Collections.IComparer" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.CaseInsensitiveComparer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IComparer</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Compares two objects for equivalence, ignoring the case of strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.CaseInsensitiveComparer> implements the <xref:System.Collections.IComparer> interface supporting case-insensitive comparisons on strings, just as <xref:System.Collections.CaseInsensitiveHashCodeProvider> implements the <xref:System.Collections.IHashCodeProvider> interface supporting case-insensitive comparisons on strings.  
+  
+ The <xref:System.Collections.Comparer> class is the default implementation of the <xref:System.Collections.IComparer> interface and performs case-sensitive string comparisons.  
+  
+ The objects used as keys by a <xref:System.Collections.Hashtable> are required to override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> method (or the <xref:System.Collections.IHashCodeProvider> interface) and the <xref:System.Object.Equals%2A?displayProperty=fullName> method (or the <xref:System.Collections.IComparer> interface). The implementation of both methods or interfaces must handle case sensitivity the same way; otherwise, the <xref:System.Collections.Hashtable> might behave incorrectly. For example, when creating a <xref:System.Collections.Hashtable>, you must use this class with the <xref:System.Collections.CaseInsensitiveHashCodeProvider> class or any case-insensitive <xref:System.Collections.IHashCodeProvider> implementation.  
+  
+ String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+  
+   
+  
+## Examples  
+ The following code example creates a case-sensitive hash table and a case-insensitive hash table and demonstrates the difference in their behavior, even if both contain the same elements.  
+  
+ [!code-cpp[System.Collections.CaseInsensitive#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/CPP/caseinsensitive.cpp#1)]
+ [!code-csharp[System.Collections.CaseInsensitive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/CS/caseinsensitive.cs#1)]
+ [!code-vb[System.Collections.CaseInsensitive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/VB/caseinsensitive.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CaseInsensitiveComparer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveComparer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.CaseInsensitiveComparer" /> class using the <see cref="P:System.Threading.Thread.CurrentCulture" /> of the current thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Collections.CaseInsensitiveComparer> instance is created using this constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> of the current thread is saved. Comparison procedures use the saved culture to determine the sort order and casing rules; therefore, string comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+  
+   
+  
+## Examples  
+ The following code example creates a case-sensitive hash table and a case-insensitive hash table and demonstrates the difference in their behavior, even if both contain the same elements.  
+  
+ [!code-cpp[System.Collections.CaseInsensitive#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/CPP/caseinsensitive.cpp#1)]
+ [!code-csharp[System.Collections.CaseInsensitive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/CS/caseinsensitive.cs#1)]
+ [!code-vb[System.Collections.CaseInsensitive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/VB/caseinsensitive.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CaseInsensitiveComparer (System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveComparer.#ctor(System.Globalization.CultureInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> to use for the new <see cref="T:System.Collections.CaseInsensitiveComparer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.CaseInsensitiveComparer" /> class using the specified <see cref="T:System.Globalization.CultureInfo" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=fullName> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+  
+   
+  
+## Examples  
+ The following code example creates a case-sensitive hash table and a case-insensitive hash table and demonstrates the difference in their behavior, even if both contain the same elements.  
+  
+ [!code-cpp[System.Collections.CaseInsensitive#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/CPP/caseinsensitive.cpp#1)]
+ [!code-csharp[System.Collections.CaseInsensitive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/CS/caseinsensitive.cs#1)]
+ [!code-vb[System.Collections.CaseInsensitive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/VB/caseinsensitive.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="culture" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public int Compare (object a, object b);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(object a, object b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveComparer.Compare(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Object" />
+        <Parameter Name="b" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="a">The first object to compare.</param>
+        <param name="b">The second object to compare.</param>
+        <summary>Performs a case-insensitive comparison of two objects of the same type and returns a value indicating whether one is less than, equal to, or greater than the other.</summary>
+        <returns>A signed integer that indicates the relative values of <paramref name="a" /> and <paramref name="b" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> <paramref name="a" /> is less than <paramref name="b" />, with casing ignored.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> <paramref name="a" /> equals <paramref name="b" />, with casing ignored.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> <paramref name="a" /> is greater than <paramref name="b" />, with casing ignored.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `a` and `b` are both strings, this method uses <xref:System.Globalization.CompareInfo.Compare%2A?displayProperty=fullName> to compare the strings with the casing ignored; otherwise, it uses the <xref:System.IComparable> implementation of either object. That is, if `a` implements <xref:System.IComparable>, then this method returns the result of `a`. `CompareTo` (`b`); otherwise, if `b` implements <xref:System.IComparable>, then it returns the negated result of `b`. `CompareTo` (`a`).  
+  
+ Comparing `null` with any type is allowed and does not generate an exception when using <xref:System.IComparable>. When sorting, `null` is considered to be less than any other object.  
+  
+ String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Neither <paramref name="a" /> nor <paramref name="b" /> implements the <see cref="T:System.IComparable" /> interface.  
+  
+ -or-  
+  
+ <paramref name="a" /> and <paramref name="b" /> are of different types.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.Collections.CaseInsensitiveComparer Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.CaseInsensitiveComparer Default" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveComparer.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.CaseInsensitiveComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of <see cref="T:System.Collections.CaseInsensitiveComparer" /> that is associated with the <see cref="P:System.Threading.Thread.CurrentCulture" /> of the current thread and that is always available.</summary>
+        <value>An instance of <see cref="T:System.Collections.CaseInsensitiveComparer" /> that is associated with the <see cref="P:System.Threading.Thread.CurrentCulture" /> of the current thread.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Collections.CaseInsensitiveComparer> instance is created using the parameterless constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> of the current thread is saved. Comparison procedures use the saved culture to determine the sort order and casing rules; therefore, string comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultInvariant">
+      <MemberSignature Language="C#" Value="public static System.Collections.CaseInsensitiveComparer DefaultInvariant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.CaseInsensitiveComparer DefaultInvariant" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveComparer.DefaultInvariant" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.CaseInsensitiveComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of <see cref="T:System.Collections.CaseInsensitiveComparer" /> that is associated with <see cref="P:System.Globalization.CultureInfo.InvariantCulture" /> and that is always available.</summary>
+        <value>An instance of <see cref="T:System.Collections.CaseInsensitiveComparer" /> that is associated with <see cref="P:System.Globalization.CultureInfo.InvariantCulture" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> to determine the sort order and casing rules. String comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+  
+   
+  
+## Examples  
+ The following code example creates a case-sensitive hash table and a case-insensitive hash table and demonstrates the difference in their behavior, even if both contain the same elements.  
+  
+ [!code-cpp[System.Collections.CaseInsensitive#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/CPP/caseinsensitive.cpp#1)]
+ [!code-csharp[System.Collections.CaseInsensitive#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/CS/caseinsensitive.cs#1)]
+ [!code-vb[System.Collections.CaseInsensitive#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.CaseInsensitive/VB/caseinsensitive.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

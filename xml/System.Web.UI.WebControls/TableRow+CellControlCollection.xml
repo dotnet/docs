@@ -1,0 +1,108 @@
+<Type Name="TableRow+CellControlCollection" FullName="System.Web.UI.WebControls.TableRow+CellControlCollection">
+  <TypeSignature Language="C#" Value="protected class TableRow.CellControlCollection : System.Web.UI.ControlCollection" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit TableRow/CellControlCollection extends System.Web.UI.ControlCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableRow.CellControlCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.TableCell" /> objects that are the cells of a <see cref="T:System.Web.UI.WebControls.TableRow" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> class represents the collection of <xref:System.Web.UI.WebControls.TableCell> objects of a <xref:System.Web.UI.WebControls.TableRow> control. <xref:System.Web.UI.WebControls.TableCell> objects can be added at the end of the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection with the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method or at a specified index location in the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> with the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.AddAt%2A> method.  
+  
+ Only <xref:System.Web.UI.WebControls.TableCell> objects can be added to the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a table, add elements to the table programmatically, and then display the table on the Web page. Note how the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> control represents a <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection and how the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method is used to add cells to the row.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.TableRow> class.  
+  
+ [!code-csharp[TableCell#5](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#5)]
+ [!code-vb[TableCell#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#5)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override void Add (System.Web.UI.Control child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Web.UI.Control child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableRow.CellControlCollection.Add(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the <see cref="T:System.Web.UI.WebControls.TableRow.CellControlCollection" />.</param>
+        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the <see cref="T:System.Web.UI.WebControls.TableRow.CellControlCollection" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The added control can be only a <xref:System.Web.UI.WebControls.TableCell> object; otherwise, an <xref:System.ArgumentException> is thrown.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a table, add elements to the table programmatically, and then display the table on the Web page. Note how the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property of the <xref:System.Web.UI.WebControls.TableRow> control represents a <xref:System.Web.UI.WebControls.TableRow.CellControlCollection> collection and how the <xref:System.Web.UI.WebControls.TableRow.CellControlCollection.Add%2A> method is used to add cells to the row.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.TableRow> class.  
+  
+ [!code-csharp[TableCell#5](~/samples/snippets/csharp/VS_Snippets_WebNet/TableCell/CS/tablecellcs.aspx#5)]
+ [!code-vb[TableCell#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TableCell/VB/tablecellvb.aspx#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The added <see cref="T:System.Web.UI.Control" /> must be of the type <see cref="T:System.Web.UI.WebControls.TableCell" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public override void AddAt (int index, System.Web.UI.Control child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAt(int32 index, class System.Web.UI.Control child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableRow.CellControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="child" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="index">The location in the array to add the child control.</param>
+        <param name="child">The <see cref="T:System.Web.UI.Control" /> to add to the <see cref="T:System.Web.UI.WebControls.TableRow.CellControlCollection" />.</param>
+        <summary>Adds the specified <see cref="T:System.Web.UI.Control" /> object to the <see cref="T:System.Web.UI.WebControls.TableRow.CellControlCollection" /> collection. The new control is added to the array at the specified index location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The added control can be only a <xref:System.Web.UI.WebControls.TableCell> object; otherwise, an <xref:System.ArgumentException> is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The added <see cref="T:System.Web.UI.Control" /> must be of the type <see cref="T:System.Web.UI.WebControls.TableCell" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

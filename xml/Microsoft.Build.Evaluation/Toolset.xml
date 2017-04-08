@@ -1,0 +1,317 @@
+<Type Name="Toolset" FullName="Microsoft.Build.Evaluation.Toolset">
+  <TypeSignature Language="C#" Value="public class Toolset" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Toolset extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.Toolset" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("ToolsVersion={ToolsVersion} ToolsPath={ToolsPath} #Properties={properties.Count}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represent an aggregation of a tools version (eg. "2.0"), tools path, and optional set of associated properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ UNDONE: (danmose) Review immutability. If this is not immutable, add a mechanism to notify the project collection/s owning it to increment their toolsetVersion.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Toolset (string toolsVersion, string toolsPath, Microsoft.Build.Evaluation.ProjectCollection projectCollection, string msbuildOverrideTasksPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolsVersion, string toolsPath, class Microsoft.Build.Evaluation.ProjectCollection projectCollection, string msbuildOverrideTasksPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.#ctor(System.String,System.String,Microsoft.Build.Evaluation.ProjectCollection,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolsVersion" Type="System.String" />
+        <Parameter Name="toolsPath" Type="System.String" />
+        <Parameter Name="projectCollection" Type="Microsoft.Build.Evaluation.ProjectCollection" />
+        <Parameter Name="msbuildOverrideTasksPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolsVersion">Name of the toolset</param>
+        <param name="toolsPath">Path to this toolset's tasks and targets</param>
+        <param name="projectCollection">The project collection from which to obtain the properties.</param>
+        <param name="msbuildOverrideTasksPath">The path to search for msbuild overridetasks files.</param>
+        <summary>Creates a toolset with the given tools version and tools path. Global, reserved, and environment properties are taken from the given project collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Toolset (string toolsVersion, string toolsPath, System.Collections.Generic.IDictionary&lt;string,string&gt; buildProperties, Microsoft.Build.Evaluation.ProjectCollection projectCollection, string msbuildOverrideTasksPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolsVersion, string toolsPath, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; buildProperties, class Microsoft.Build.Evaluation.ProjectCollection projectCollection, string msbuildOverrideTasksPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.#ctor(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Build.Evaluation.ProjectCollection,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolsVersion" Type="System.String" />
+        <Parameter Name="toolsPath" Type="System.String" />
+        <Parameter Name="buildProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="projectCollection" Type="Microsoft.Build.Evaluation.ProjectCollection" />
+        <Parameter Name="msbuildOverrideTasksPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolsVersion">Name of the toolset</param>
+        <param name="toolsPath">Path to this toolset's tasks and targets</param>
+        <param name="buildProperties">Properties that should be associated with the Toolset.  
+  
+ May be null, in which case an empty property group will be used.</param>
+        <param name="projectCollection">The project collection from which to obtain the properties.</param>
+        <param name="msbuildOverrideTasksPath">The path to search for msbuild overridetasks files.</param>
+        <summary>Creates a toolset with the given tools version, tools path, and build properties. Global, reserved, and environment properties are taken from the given project collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Toolset (string toolsVersion, string toolsPath, System.Collections.Generic.IDictionary&lt;string,string&gt; buildProperties, Microsoft.Build.Evaluation.ProjectCollection projectCollection, System.Collections.Generic.IDictionary&lt;string,Microsoft.Build.Evaluation.SubToolset&gt; subToolsets, string msbuildOverrideTasksPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string toolsVersion, string toolsPath, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; buildProperties, class Microsoft.Build.Evaluation.ProjectCollection projectCollection, class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Build.Evaluation.SubToolset&gt; subToolsets, string msbuildOverrideTasksPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.#ctor(System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Build.Evaluation.ProjectCollection,System.Collections.Generic.IDictionary{System.String,Microsoft.Build.Evaluation.SubToolset},System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toolsVersion" Type="System.String" />
+        <Parameter Name="toolsPath" Type="System.String" />
+        <Parameter Name="buildProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="projectCollection" Type="Microsoft.Build.Evaluation.ProjectCollection" />
+        <Parameter Name="subToolsets" Type="System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Build.Evaluation.SubToolset&gt;" />
+        <Parameter Name="msbuildOverrideTasksPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolsVersion">Name of the toolset.</param>
+        <param name="toolsPath">Path to this toolset's tasks and targets.</param>
+        <param name="buildProperties">Properties that should be associated with the Toolset.  
+  
+ May be null, in which case an empty property group will be used.</param>
+        <param name="projectCollection">The project collection from which to obtain the properties.</param>
+        <param name="subToolsets">The set of sub toolsets to add to this toolset.</param>
+        <param name="msbuildOverrideTasksPath">The path to search for msbuild overridetasks files. The set of sub-toolsets to add to this toolset</param>
+        <summary>Creates a toolset with the given tools version and tools path. Global, reserved, and environment properties are taken from the given project collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSubToolsetVersion">
+      <MemberSignature Language="C#" Value="public string DefaultSubToolsetVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultSubToolsetVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.DefaultSubToolsetVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default sub toolset version for this toolset.</summary>
+        <value>Returns the default sub toolset version.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] is installed, use the base toolset and return a sub toolset version of “10.0”.  
+  
+ Otherwise, use the highest-versioned sub toolset found. Sub toolsets with numbered versions are ordered numerically; any additional sub toolsets are prepended to the beginning of the list in the order found. Returns null if there is no sub toolset available and [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] is not installed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSubToolsetVersion">
+      <MemberSignature Language="C#" Value="public string GenerateSubToolsetVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateSubToolsetVersion() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.GenerateSubToolsetVersion" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates the sub toolset version to be used with this toolset.</summary>
+        <returns>Returns the sub toolset version to be used with this toolset.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If “VisualStudioVersion” is set as a property on the toolset itself, then sub toolset version is set to “VisualStudioVersion”.  
+  
+ Otherwise, sub toolset version is set to the DefaultSubToolsetVersion of the toolset.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSubToolsetVersion">
+      <MemberSignature Language="C#" Value="public string GenerateSubToolsetVersion (System.Collections.Generic.IDictionary&lt;string,string&gt; overrideGlobalProperties, int solutionVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateSubToolsetVersion(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; overrideGlobalProperties, int32 solutionVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.GenerateSubToolsetVersion(System.Collections.Generic.IDictionary{System.String,System.String},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="overrideGlobalProperties" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+        <Parameter Name="solutionVersion" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="overrideGlobalProperties">Set of global properties to use to create the sub toolset version. May be null.</param>
+        <param name="solutionVersion">The solution version to use to create the sub toolset version.</param>
+        <summary>Creates the sub toolset version to be used with this toolset.</summary>
+        <returns>Returns the sub toolset version.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the “VisualStudioVersion” global property exists in the set of global properties passed in, then sub toolset version is set to “VisualStudioVersion”.  
+  
+ Otherwise, if “VisualStudioVersion” is set as a property on the toolset itself, then sub toolset version is set to “VisualStudioVersion”.  
+  
+ Otherwise, if the Visual Studio version corresponding to the solution version (Visual Studio version = solution version – 1) passed in maps to an existing sub toolset, then sub toolset version is set to the Visual Studio version.  
+  
+ Otherwise, sub toolset version is set to the DefaultSubToolsetVersion of the toolset.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperty">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.ProjectPropertyInstance GetProperty (string propertyName, string subToolsetVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Execution.ProjectPropertyInstance GetProperty(string propertyName, string subToolsetVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.Toolset.GetProperty(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.ProjectPropertyInstance</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="subToolsetVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property.</param>
+        <param name="subToolsetVersion">The sub toolset version of the sub toolset. May be null</param>
+        <summary>Gets property specified by the given property name and sub toolset version.</summary>
+        <returns>Returns the property specified, if it is found, otherwise returns null.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the property is not found in the sub toolset, searches for the property in the base toolset.  
+  
+ If the property is not found in the sub toolset or the base toolset, returns null.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.Build.Execution.ProjectPropertyInstance&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Build.Execution.ProjectPropertyInstance&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Build.Execution.ProjectPropertyInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the optional properties associated with the toolset.</summary>
+        <value>Returns the optional properties associated with the toolset.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubToolsets">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.Build.Evaluation.SubToolset&gt; SubToolsets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Build.Evaluation.SubToolset&gt; SubToolsets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.SubToolsets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,Microsoft.Build.Evaluation.SubToolset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the set of sub toolsets associated with this toolset.</summary>
+        <value>Returns the set of sub toolsets.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolsPath">
+      <MemberSignature Language="C#" Value="public string ToolsPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolsPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.ToolsPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a path to the tasks and targets of this toolset.</summary>
+        <value>Returns a path to the tasks and targets of this toolset.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to $(MSBuildToolsPath) in a project or targets file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolsVersion">
+      <MemberSignature Language="C#" Value="public string ToolsVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolsVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.Toolset.ToolsVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of this toolset.</summary>
+        <value>Returns the name of this toolset.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

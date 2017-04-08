@@ -1,0 +1,3131 @@
+<Type Name="Strings" FullName="Microsoft.VisualBasic.Strings">
+  <TypeSignature Language="C#" Value="public sealed class Strings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Strings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Strings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see langword="Strings" /> module contains procedures used to perform string operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This module supports the Visual Basic language keywords and run-time library members that manipulate strings.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to split a string at its spaces.  
+  
+ [!code-vb[VbVbalrStrings#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#13)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Asc">
+      <MemberSignature Language="C#" Value="public static int Asc (char String);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Asc(char String) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Asc(System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <c>String</c> is a <see langword="String" /> expression, only the first character of the string is used for input. If <c>String</c> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
+        <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
+  
+ `AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
+  
+> [!NOTE]
+>  The `AscB` function of earlier versions of Visual Basic returns a code for a byte, rather than a character. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `AscB` is no longer supported.  
+  
+   
+  
+## Examples  
+ The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
+  
+ [!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Asc">
+      <MemberSignature Language="C#" Value="public static int Asc (string String);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Asc(string String) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Asc(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <c>String</c> is a <see langword="String" /> expression, only the first character of the string is used for input. If <c>String</c> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
+        <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
+  
+ `AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
+  
+> [!NOTE]
+>  The `AscB` function of earlier versions of Visual Basic returns a code for a byte, rather than a character. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `AscB` is no longer supported.  
+  
+   
+  
+## Examples  
+ The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
+  
+ [!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AscW">
+      <MemberSignature Language="C#" Value="public static int AscW (char String);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 AscW(char String) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.AscW(System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <c>String</c> is a <see langword="String" /> expression, only the first character of the string is used for input. If <c>String</c> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
+        <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
+  
+ `AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
+  
+> [!NOTE]
+>  The `AscB` function of earlier versions of Visual Basic returns a code for a byte, rather than a character. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `AscB` is no longer supported.  
+  
+   
+  
+## Examples  
+ The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
+  
+ [!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AscW">
+      <MemberSignature Language="C#" Value="public static int AscW (string String);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 AscW(string String) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.AscW(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="String">Required. Any valid <see langword="Char" /> or <see langword="String" /> expression. If <c>String</c> is a <see langword="String" /> expression, only the first character of the string is used for input. If <c>String</c> is <see langword="Nothing" /> or contains no characters, an <see cref="T:System.ArgumentException" /> error occurs.</param>
+        <summary>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</summary>
+        <returns>Returns an <see langword="Integer" /> value representing the character code corresponding to a character.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Asc` returns the *code point*, or character code, for the input character. This can be 0 through 255 for single-byte character set (SBCS) values and -32768 through 32767 for double-byte character set (DBCS) values.  
+  
+ `AscW` returns the Unicode code point for the input character. This can be 0 through 65535. The returned value is independent of the culture and code page settings for the current thread.  
+  
+> [!NOTE]
+>  The `AscB` function of earlier versions of Visual Basic returns a code for a byte, rather than a character. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `AscB` is no longer supported.  
+  
+   
+  
+## Examples  
+ The following example uses the `Asc` function to return `Integer` character codes corresponding to the first letter in each string.  
+  
+ [!code-vb[VbVbalrFunctions#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Chr">
+      <MemberSignature Language="C#" Value="public static char Chr (int CharCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char Chr(int32 CharCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Chr(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CharCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="CharCode">Required. An <see langword="Integer" /> expression representing the <c>code point</c>, or character code, for the character.</param>
+        <summary>Returns the character associated with the specified character code.</summary>
+        <returns>Returns the character associated with the specified character code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
+  
+ `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
+  
+ The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
+  
+ `ChrW` takes `CharCode` as a Unicode code point. The range is independent of the culture and code page settings for the current thread. Values from -32768 through -1 are treated the same as values in the range +32768 through +65535.  
+  
+ Numbers from 0 through 31 are the same as standard nonprintable ASCII codes. For example, `Chr(10)` returns a line feed character.  
+  
+> [!NOTE]
+>  The `ChrB` function in earlier versions of Visual Basic returns a single byte. It is used primarily for converting strings in double-byte character set (DBCS) applications. All strings in Visual Basic and the .NET Framework are in Unicode, and `ChrB` is no longer supported.  
+  
+   
+  
+## Examples  
+ The following example uses the `Chr` function to return the character associated with the specified character code.  
+  
+ [!code-vb[VbVbalrStrings#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="CharCode" /> &lt; 0 or &gt; 255 for <see langword="Chr" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChrW">
+      <MemberSignature Language="C#" Value="public static char ChrW (int CharCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char ChrW(int32 CharCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CharCode" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="CharCode">Required. An <see langword="Integer" /> expression representing the <c>code point</c>, or character code, for the character.</param>
+        <summary>Returns the character associated with the specified character code.</summary>
+        <returns>Returns the character associated with the specified character code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The asymmetric range accepted for `CharCode` compensates for the storage differences between the `Short` and the `Integer`. For example, -29183 is a `Short` but +36353 is an `Integer`. This also facilitates compatibility with Visual Basic 6.0.  
+  
+ `Chr` uses the <xref:System.Text.Encoding> class in the <xref:System.Text?displayProperty=fullName> namespace to determine if the current thread is using a single-byte character set (SBCS) or a double-byte character set (DBCS). It then takes `CharCode` as a code point in the appropriate set. The range can be 0 through 255 for SBCS characters and -32768 through 65535 for DBCS characters.  
+  
+ The returned value depends on the code page for the current thread, which is contained in the <xref:System.Globalization.TextInfo.ANSICodePage%2A> property of the <xref:System.Globalization.TextInfo> class in the <xref:System.Globalization> namespace. You can obtain <xref:System.Globalization.TextInfo.ANSICodePage%2A> by specifying `System.Globalization.CultureInfo.CurrentCulture.TextInfo.ANSICodePage`.  
+  
+ `ChrW` takes `CharCode` as a Unicode code point. The range is independent of the culture and code page settings for the current thread. Values from -32768 through -1 are treated the same as values in the range +32768 through +65535.  
+  
+ Numbers from 0 through 31 are the same as standard nonprintable ASCII codes. For example, `Chr(10)` returns a line feed character.  
+  
+> [!NOTE]
+>  The `ChrB` function in earlier versions of Visual Basic returns a single byte. It is used primarily for converting strings in double-byte character set (DBCS) applications. All strings in Visual Basic and the .NET Framework are in Unicode, and `ChrB` is no longer supported.  
+  
+   
+  
+## Examples  
+ The following example uses the `Chr` function to return the character associated with the specified character code.  
+  
+ [!code-vb[VbVbalrStrings#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="CharCode" /> &lt; -32768 or &gt; 65535 for <see langword="ChrW" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public static string[] Filter (object[] Source, string Match, bool Include = true, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string[] Filter(object[] Source, string Match, bool Include, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Filter(System.Object[],System.String,System.Boolean,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.Object[]" />
+        <Parameter Name="Match" Type="System.String" />
+        <Parameter Name="Include" Type="System.Boolean" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Source">Required. One-dimensional array of strings to be searched.</param>
+        <param name="Match">Required. String to search for.</param>
+        <param name="Include">Optional. <see langword="Boolean" /> value indicating whether to return substrings that include or exclude <c>Match</c>. If <c>Include</c> is <see langword="True" />, the <see langword="Filter" /> function returns the subset of the array that contains <c>Match</c> as a substring. If <c>Include</c> is <see langword="False" />, the <see langword="Filter" /> function returns the subset of the array that does not contain <c>Match</c> as a substring.</param>
+        <param name="Compare">Optional. Numeric value indicating the kind of string comparison to use. See "Settings" for values.</param>
+        <summary>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</summary>
+        <returns>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no matches of `Match` are found within `Source`, the `Filter` function returns an empty array. An error occurs if `Source` is set to `Nothing` or is not a one-dimensional array.  
+  
+ The array returned by the `Filter` function contains only enough elements to contain the number of matched items.  
+  
+ The `Compare` argument can have the following values.  
+  
+|Constant|Description|  
+|-|-|  
+|Constant|Description|  
+|`CompareMethod.Binary`|Performs a binary comparison|  
+|`CompareMethod.Text`|Performs a textual comparison|  
+  
+   
+  
+## Examples  
+ This example demonstrates the use of the `Filter` function.  
+  
+ [!code-vb[VbVbalrStrings#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#24)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Source" /> is <see langword="Nothing" /> or is not a one-dimensional array.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public static string[] Filter (string[] Source, string Match, bool Include = true, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string[] Filter(string[] Source, string Match, bool Include, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Filter(System.String[],System.String,System.Boolean,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String[]" />
+        <Parameter Name="Match" Type="System.String" />
+        <Parameter Name="Include" Type="System.Boolean" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Source">Required. One-dimensional array of strings to be searched.</param>
+        <param name="Match">Required. String to search for.</param>
+        <param name="Include">Optional. <see langword="Boolean" /> value indicating whether to return substrings that include or exclude <c>Match</c>. If <c>Include</c> is <see langword="True" />, the <see langword="Filter" /> function returns the subset of the array that contains <c>Match</c> as a substring. If <c>Include</c> is <see langword="False" />, the <see langword="Filter" /> function returns the subset of the array that does not contain <c>Match</c> as a substring.</param>
+        <param name="Compare">Optional. Numeric value indicating the kind of string comparison to use. See "Settings" for values.</param>
+        <summary>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</summary>
+        <returns>Returns a zero-based array containing a subset of a <see langword="String" /> array based on specified filter criteria.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no matches of `Match` are found within `Source`, the `Filter` function returns an empty array. An error occurs if `Source` is set to `Nothing` or is not a one-dimensional array.  
+  
+ The array returned by the `Filter` function contains only enough elements to contain the number of matched items.  
+  
+ The `Compare` argument can have the following values.  
+  
+|Constant|Description|  
+|-|-|  
+|`CompareMethod.Binary`|Performs a binary comparison|  
+|`CompareMethod.Text`|Performs a textual comparison|  
+  
+   
+  
+## Examples  
+ This example demonstrates the use of the `Filter` function.  
+  
+ [!code-vb[VbVbalrStrings#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#24)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Source" /> is <see langword="Nothing" /> or is not a one-dimensional array.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public static string Format (object Expression, string Style = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Format(object Expression, string Style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="Style" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. Any valid expression.</param>
+        <param name="Style">Optional. A valid named or user-defined format <see langword="String" /> expression.</param>
+        <summary>Returns a string formatted according to instructions contained in a format <see langword="String" /> expression.</summary>
+        <returns>Returns a string formatted according to instructions contained in a format <see langword="String" /> expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.String.Format%2A?displayProperty=fullName> method also provides similar functionality.  
+  
+ If you are formatting a nonlocalized numeric string, you should use a user-defined numeric format to ensure that you get the look you want.  
+  
+ If you try to format a number without specifying `Style`, the `Format` function provides functionality similar to the `Str` function, although it is internationally aware. However, positive numbers formatted as strings using the `Format` function don't include a leading space reserved for the sign of the value; those converted using the `Str` function retain the leading space.  
+  
+## Different Formats for Different Numeric Values  
+ A user-defined format expression for numbers can have from one to three sections separated by semicolons. If the `Style` argument of the `Format` function contains one of the predefined numeric formats, only one section is allowed.  
+  
+|If you use|This is the result|  
+|-|-|  
+|One section only|The format expression applies to all values.|  
+|Two sections|The first section applies to positive values and zeros; the second applies to negative values.|  
+|Three sections|The first section applies to positive values, the second applies to negative values, and the third applies to zeros.|  
+  
+ The following example has two sections: the first defines the format for positive values and zeros; the second section defines the format for negative values. Since the `Style` argument of the `Format` function takes a string, it is enclosed by quotation marks.  
+  
+ [!code-vb[VbVbalrStrings#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#18)]  
+  
+ If you include semicolons with nothing between them, the missing section is printed using the format of the positive value. For example, the following format displays positive and negative values using the format in the first section and displays `Zero` if the value is zero.  
+  
+ [!code-vb[VbVbalrStrings#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#19)]  
+  
+## Predefined Numeric Formats  
+ The following table identifies the predefined numeric format names. These may be used by name as the `Style` argument for the `Format` function:  
+  
+|Format name|Description|  
+|-|-|  
+|`General Number`, `G`, or `g`|Displays number with no thousand separator.<br /><br /> For example, `Format(&H3FA, "g")` returns `1018`.|  
+|`Currency`, `C`, or `c`|Displays number with thousand separator, if appropriate; displays two digits to the right of the decimal separator. Output is based on system locale settings.<br /><br /> For example, `Format(1234567, "c")` returns `$1,234,567.00`.|  
+|`Fixed`, `F`, or `f`|Displays at least one digit to the left and two digits to the right of the decimal separator.<br /><br /> For example, `Format(1234567, "f")` returns `1234567.00`.|  
+|`Standard`, `N`, or `n`|Displays number with thousand separator, at least one digit to the left and two digits to the right of the decimal separator.<br /><br /> For example, `Format(1234567, "n")` returns `1,234,567.00`.|  
+|`Percent`|Displays number multiplied by 100 with a percent sign (%) appended immediately to the right; always displays two digits to the right of the decimal separator.<br /><br /> For example, `Format(0.4744, "Percent")` returns `47.44%`.|  
+|`P`, or `p`|Displays number with thousandths separator multiplied by 100 with a percent sign (%) appended to the right and separated by a single space; always displays two digits to the right of the decimal separator.<br /><br /> For example, `Format(0.80345, "p")` returns `80.35 %`.|  
+|`Scientific`|Uses standard scientific notation, providing two significant digits.<br /><br /> For example, `Format(1234567, "Scientific")` returns `1.23E+06`.|  
+|`E`, or `e`|Uses standard scientific notation, providing six significant digits.<br /><br /> For example, `Format(1234567, "e")` returns `1.234567e+006`.|  
+|`D`, or `d`|Displays number as a string that contains the value of the number in Decimal (base 10) format. This option is supported for integral types (`Byte`, `Short`, `Integer`, `Long`) only.<br /><br /> For example, `Format(&H7F, "d")` returns `127`.|  
+|`X`, or `x`|Displays number as a string that contains the value of the number in Hexadecimal (base 16) format. This option is supported for integral types (`Byte`, `Short`, `Integer`, `Long`) only.<br /><br /> For example, `Format(127, "x")` returns `7f`.|  
+|`Yes/No`|Displays `No` if number is 0; otherwise, displays `Yes`.<br /><br /> For example, `Format(0, "Yes/No")` returns `No`.|  
+|`True/False`|Displays `False` if number is 0; otherwise, displays `True`.<br /><br /> For example, `Format(1, "True/False")` returns `True`.|  
+|`On/Off`|Displays `Off` if number is 0; otherwise, displays `On`.<br /><br /> For example, `Format(1, "On/Off")` returns `On`.|  
+  
+### Smart Device Developer Notes  
+ The `Yes/No`, `True/False`, and `On/Off` formats are not supported.  
+  
+## User-Defined Numeric Formats  
+ The following table identifies characters you can use to create user-defined number formats. These may be used to build the `Style` argument for the `Format` function:  
+  
+|Character|Description|  
+|-|-|  
+|None|Displays the number with no formatting.|  
+|(`0`)|Digit placeholder. Displays a digit or a zero. If the expression has a digit in the position where the zero appears in the format string, display it; otherwise, displays a zero in that position.<br /><br /> If the number has fewer digits than there are zeros (on either side of the decimal) in the format expression, displays leading or trailing zeros. If the number has more digits to the right of the decimal separator than there are zeros to the right of the decimal separator in the format expression, rounds the number to as many decimal places as there are zeros. If the number has more digits to the left of the decimal separator than there are zeros to the left of the decimal separator in the format expression, displays the extra digits without modification.|  
+|(`#`)|Digit placeholder. Displays a digit or nothing. If the expression has a digit in the position where the `#` character appears in the format string, displays it; otherwise, displays nothing in that position.<br /><br /> This symbol works like the `0` digit placeholder, except that leading and trailing zeros aren't displayed if the number has fewer digits than there are `#` characters on either side of the decimal separator in the format expression.|  
+|(`.`)|Decimal placeholder. The decimal placeholder determines how many digits are displayed to the left and right of the decimal separator. If the format expression contains only `#` characters to the left of this symbol; numbers smaller than 1 begin with a decimal separator. To display a leading zero displayed with fractional numbers, use zero as the first digit placeholder to the left of the decimal separator. In some locales, a comma is used as the decimal separator. The actual character used as a decimal placeholder in the formatted output depends on the number format recognized by your system. Thus, you should use the period as the decimal placeholder in your formats even if you are in a locale that uses a comma as a decimal placeholder. The formatted string will appear in the format correct for the locale.|  
+|(`%`)|Percent placeholder. Multiplies the expression by 100. The percent character (`%`) is inserted in the position where it appears in the format string.|  
+|(`,`)|Thousand separator. The thousand separator separates thousands from hundreds within a number that has four or more places to the left of the decimal separator. Standard use of the thousand separator is specified if the format contains a thousand separator surrounded by digit placeholders (`0` or `#`).<br /><br /> A thousand separator immediately to the left of the decimal separator (whether or not a decimal is specified) or as the rightmost character in the string means "scale the number by dividing it by 1,000, rounding as needed." Numbers smaller than 1,000 but greater or equal to 500 are displayed as `1`, and numbers smaller than 500 are displayed as `0`. Two adjacent thousand separators in this position scale by a factor of 1 million, and an additional factor of 1,000 for each additional separator.<br /><br /> Multiple separators in any position other than immediately to the left of the decimal separator or the rightmost position in the string are treated simply as specifying the use of a thousand separator. In some locales, a period is used as a thousand separator. The actual character used as the thousand separator in the formatted output depends on the Number Format recognized by your system. Thus, you should use the comma as the thousand separator in your formats even if you are in a locale that uses a period as a thousand separator. The formatted string will appear in the format correct for the locale.<br /><br /> For example, consider the three following format strings:<br /><br /> -   `"#,0."`, which uses the thousands separator to format the number 100 million as the string "100,000,000".<br />-   `"#0,."`, which uses scaling by a factor of one thousand to format the number 100 million as the string "100000".<br />-   `"#,0,."`, which uses the thousands separator and scaling by one thousand to format the number 100 million as the string "100,000".|  
+|(`:`)|Time separator. In some locales, other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character used as the time separator in formatted output is determined by your system settings.|  
+|(`/`)|Date separator. In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character used as the date separator in formatted output is determined by your system settings.|  
+|(`E-``E+``e-``e+`)|Scientific format. If the format expression contains at least one digit placeholder (`0` or `#`) to the left of `E-`, `E+`, `e-`, or `e+`, the number is displayed in scientific format and `E` or `e` is inserted between the number and its exponent. The number of digit placeholders to the left determines the number of digits in the exponent. Use `E-` or `e-` to place a minus sign next to negative exponents. Use `E+` or `e+` to place a minus sign next to negative exponents and a plus sign next to positive exponents. You must also include digit placeholders to the right of this symbol to get correct formatting.|  
+|`-` `+` `$` ( )|Literal characters. These characters are displayed exactly as typed in the format string. To display a character other than one of those listed, precede it with a backslash (`\`) or enclose it in double quotation marks (" ").|  
+|(`\`)|Displays the next character in the format string. To display a character that has special meaning as a literal character, precede it with a backslash (`\`). The backslash itself isn't displayed. Using a backslash is the same as enclosing the next character in double quotation marks. To display a backslash, use two backslashes (`\\`).<br /><br /> Examples of characters that can't be displayed as literal characters are the date-formatting and time-formatting characters (`a`, `c`, `d`, `h`, `m`, `n`, `p`, `q`, `s`, `t`, `w`, `y`, `/`, and `:`), the numeric-formatting characters (`#`, `0`, `%`, `E`, `e`, comma, and period), and the string-formatting characters (`@`, `&`, `<`, `>`, and `!`).|  
+|(`"``ABC``"`)|Displays the string inside the double quotation marks (" "). To include a string in the style argument from within code, you must use `Chr(34)` to enclose the text (`34` is the character code for a quotation mark (")).|  
+  
+### Legacy Code Example  
+ The following table contains some sample format expressions for numbers. (These examples all assume that your system's locale setting is English-U.S.) The first column contains the format strings for the `Style` argument of the `Format` function; the other columns contain the resulting output if the formatted data has the value given in the column headings.  
+  
+|Format (`Style`)|"5" formatted as|"-5" formatted as|"0.5" formatted as|  
+|-|-|-|-|  
+|`Zero-length string ("")`|`5`|`-5`|`0.5`|  
+|`0`|`5`|`-5`|`1`|  
+|`0.00`|`5.00`|`-5.00`|`0.50`|  
+|`#,##0`|`5`|`-5`|`1`|  
+|`$#,##0;($#,##0)`|`$5`|`($5)`|`$1`|  
+|`$#,##0.00;($#,##0.00)`|`$5.00`|`($5.00)`|`$0.50`|  
+|`0%`|`500%`|`-500%`|`50%`|  
+|`0.00%`|`500.00%`|`-500.00%`|`50.00%`|  
+|`0.00E+00`|`5.00E+00`|`-5.00E+00`|`5.00E-01`|  
+|`0.00E-00`|`5.00E00`|`-5.00E00`|`5.00E-01`|  
+  
+## Predefined Date/Time Formats  
+ The following table identifies the predefined date and time format names. These may be used by name as the style argument for the `Format` function:  
+  
+|Format Name|Description|  
+|-|-|  
+|`General Date`, or `G`|Displays a date and/or time. For example, `3/12/2008 11:07:31 AM`. Date display is determined by your application's current culture value.|  
+|`Long Date`, `Medium Date`, or `D`|Displays a date according to your current culture's long date format. For example, `Wednesday, March 12, 2008`.|  
+|`Short Date`, or `d`|Displays a date using your current culture's short date format. For example, `3/12/2008`.<br /><br /> The `d` character displays the day in a user-defined date format.|  
+|`Long Time`, `Medium Time`, or `T`|Displays a time using your current culture's long time format; typically includes hours, minutes, seconds. For example, `11:07:31 AM`.|  
+|`Short Time` or `t`|Displays a time using your current culture's short time format. For example, `11:07 AM`.<br /><br /> The `t` character displays `AM` or `PM` values for locales that use a 12-hour clock in a user-defined time format.|  
+|`f`|Displays the long date and short time according to your current culture's format. For example, `Wednesday, March 12, 2008 11:07 AM`.|  
+|`F`|Displays the long date and long time according to your current culture's format. For example, `Wednesday, March 12, 2008 11:07:31 AM`.|  
+|`g`|Displays the short date and short time according to your current culture's format. For example, `3/12/2008 11:07 AM`.|  
+|`M`, `m`|Displays the month and the day of a date. For example, `March 12`.<br /><br /> The `M` character displays the month in a user-defined date format. The `m` character displays the minutes in a user-defined time format.|  
+|`R`, `r`|Formats the date according to the <xref:System.Globalization.DateTimeFormatInfo.RFC1123Pattern%2A> property. For example, `Wed, 12 Mar 2008 11:07:31 GMT`. The formatted date does not adjust the value of the date and time. You must adjust the Date/Time value to GMT before calling the `Format` function.|  
+|`s`|Formats the date and time as a sortable index. For example, `2008-03-12T11:07:31`.<br /><br /> The `s` character displays the seconds in a user-defined time format.|  
+|`u`|Formats the date and time as a GMT sortable index. For example, `2008-03-12 11:07:31Z`.|  
+|`U`|Formats the date and time with the long date and long time as GMT. For example, `Wednesday, March 12, 2008 6:07:31 PM`.|  
+|`Y`, `y`|Formats the date as the year and month. For example, `March, 2008`.<br /><br /> The `Y` and `y` characters display the year in a user-defined date format.|  
+  
+ For more information about the application's current culture information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+  
+## User-Defined Date/Time Formats  
+ The following table shows characters you can use to create user-defined date/time formats. Unlike in earlier versions of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], these format characters are case-sensitive.  
+  
+|Character|Description|  
+|-|-|  
+|(`:`)|Time separator. In some locales, other characters may be used to represent the time separator. The time separator separates hours, minutes, and seconds when time values are formatted. The actual character that is used as the time separator in formatted output is determined by your application's current culture value.|  
+|(`/`)|Date separator. In some locales, other characters may be used to represent the date separator. The date separator separates the day, month, and year when date values are formatted. The actual character that is used as the date separator in formatted output is determined by your application's current culture.|  
+|(`%`)|Used to indicate that the following character should be read as a single-letter format without regard to any trailing letters. Also used to indicate that a single-letter format is read as a user-defined format. See what follows for additional details.|  
+|`d`|Displays the day as a number without a leading zero (for example, `1`). Use `%d` if this is the only character in your user-defined numeric format.|  
+|`dd`|Displays the day as a number with a leading zero (for example, `01`).|  
+|`ddd`|Displays the day as an abbreviation (for example, `Sun`).|  
+|`dddd`|Displays the day as a full name (for example, `Sunday`).|  
+|`M`|Displays the month as a number without a leading zero (for example, January is represented as `1`). Use `%M` if this is the only character in your user-defined numeric format.|  
+|`MM`|Displays the month as a number with a leading zero (for example, `01/12/01`).|  
+|`MMM`|Displays the month as an abbreviation (for example, `Jan`).|  
+|`MMMM`|Displays the month as a full month name (for example, `January`).|  
+|`gg`|Displays the period/era string (for example, `A.D.`).|  
+|`h`|Displays the hour as a number without leading zeros using the 12-hour clock (for example, `1:15:15 PM`). Use `%h` if this is the only character in your user-defined numeric format.|  
+|`hh`|Displays the hour as a number with leading zeros using the 12-hour clock (for example, `01:15:15 PM`).|  
+|`H`|Displays the hour as a number without leading zeros using the 24-hour clock (for example, `1:15:15`). Use `%H` if this is the only character in your user-defined numeric format.|  
+|`HH`|Displays the hour as a number with leading zeros using the 24-hour clock (for example, `01:15:15`).|  
+|`m`|Displays the minute as a number without leading zeros (for example, `12:1:15`). Use `%m` if this is the only character in your user-defined numeric format.|  
+|`mm`|Displays the minute as a number with leading zeros (for example, `12:01:15`).|  
+|`s`|Displays the second as a number without leading zeros (for example, `12:15:5`). Use `%s` if this is the only character in your user-defined numeric format.|  
+|`ss`|Displays the second as a number with leading zeros (for example, `12:15:05`).|  
+|`f`|Displays fractions of seconds. For example `ff` displays hundredths of seconds, whereas `ffff` displays ten-thousandths of seconds. You may use up to seven `f` symbols in your user-defined format. Use `%f` if this is the only character in your user-defined numeric format.|  
+|`t`|Uses the 12-hour clock and displays an uppercase `A` for any hour before noon; displays an uppercase `P` for any hour between noon and 11:59 P.M. Use `%t` if this is the only character in your user-defined numeric format.|  
+|`tt`|For locales that use a 12-hour clock, displays an uppercase `AM` with any hour before noon; displays an uppercase `PM` with any hour between noon and 11:59 P.M.<br /><br /> For locales that use a 24-hour clock, displays nothing.|  
+|`y`|Displays the year number (0-9) without leading zeros. Use `%y` if this is the only character in your user-defined numeric format.|  
+|`yy`|Displays the year in two-digit numeric format with a leading zero, if applicable.|  
+|`yyy`|Displays the year in four-digit numeric format.|  
+|`yyyy`|Displays the year in four-digit numeric format.|  
+|`z`|Displays the timezone offset without a leading zero (for example, `-8`). Use `%z` if this is the only character in your user-defined numeric format.|  
+|`zz`|Displays the timezone offset with a leading zero (for example, `-08`)|  
+|`zzz`|Displays the full timezone offset (for example, `-08:00`)|  
+  
+### Legacy Code Example  
+ The following are examples of user-defined date and time formats for `December 7, 1958, 8:50 PM, 35 seconds`:  
+  
+|Format|Displays|  
+|-|-|  
+|`M/d/yy`|`12/7/58`|  
+|`d-MMM`|`7-Dec`|  
+|`d-MMMM-yy`|`7-December-58`|  
+|`d MMMM`|`7 December`|  
+|`MMMM yy`|`December 58`|  
+|`hh:mm tt`|`08:50 PM`|  
+|`h:mm:ss t`|`8:50:35 P`|  
+|`H:mm`|`20:50`|  
+|`H:mm:ss`|`20:50:35`|  
+|`M/d/yyyy H:mm`|`12/7/1958 20:50`|  
+  
+### Smart Device Developer Notes  
+ The minimum time resolution for a device is determined by the manufacturer of the device. If the time resolution for the device is coarse enough, the `f` format character returns 0 when run on that device.  
+  
+   
+  
+## Examples  
+ This example shows various uses of the `Format` function to format values using both `String` formats and user-defined formats. For the date separator (`/`), time separator (`:`), and the AM/PM indicators (`t` and `tt`), the actual formatted output displayed by your system depends on the locale settings the code is using. When times and dates are displayed in the development environment, the short time format and short date format of the code locale are used.  
+  
+> [!NOTE]
+>  For locales that use a 24-hour clock, the AM/PM indicators (`t` and `tt`) display nothing.  
+  
+ [!code-vb[VbVbalrStrings#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#27)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatCurrency">
+      <MemberSignature Language="C#" Value="public static string FormatCurrency (object Expression, int NumDigitsAfterDecimal = -1, Microsoft.VisualBasic.TriState IncludeLeadingDigit = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState UseParensForNegativeNumbers = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState GroupDigits = Microsoft.VisualBasic.TriState.UseDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FormatCurrency(object Expression, int32 NumDigitsAfterDecimal, valuetype Microsoft.VisualBasic.TriState IncludeLeadingDigit, valuetype Microsoft.VisualBasic.TriState UseParensForNegativeNumbers, valuetype Microsoft.VisualBasic.TriState GroupDigits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.FormatCurrency(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. Expression to be formatted.</param>
+        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places are displayed to the right of the decimal. Default value is –1, which indicates that the computer's regional settings are used.</param>
+        <param name="IncludeLeadingDigit">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeration that indicates whether or not a leading zero is displayed for fractional values. See "Remarks" for values.</param>
+        <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeration that indicates whether or not to place negative values within parentheses. See "Remarks" for values.</param>
+        <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeration that indicates whether or not numbers are grouped using the group delimiter specified in the computer's regional settings. See "Remarks" for values.</param>
+        <summary>Returns an expression formatted as a currency value using the currency symbol defined in the system control panel.</summary>
+        <returns>Returns an expression formatted as a currency value using the currency symbol defined in the system control panel.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When one or more optional arguments are omitted, the computer's matching regional-settings values are used instead.  
+  
+ The position of the currency symbol relative to the currency value is determined by the system's regional settings.  
+  
+> [!NOTE]
+>  All settings information comes from the locale of the application. By default, that will be the locale set in the control panel. However, it may be changed programmatically by using the .NET Framework, except leading zero, which comes from the `Number` tab.  
+  
+ The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments take the following TriState enumeration values.  
+  
+|Value|Description|  
+|-|-|  
+|`TriState.True`|True|  
+|`TriState.False`|False|  
+|`TriState.UseDefault`|The computer's regional settings|  
+  
+   
+  
+## Examples  
+ The following example illustrates the use of the `FormatCurrency` function.  
+  
+ [!code-vb[VbVbalrStrings#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#32)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Number of digits after decimal point is greater than 99.</exception>
+        <exception cref="T:System.InvalidCastException">Type is not numeric.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDateTime">
+      <MemberSignature Language="C#" Value="public static string FormatDateTime (DateTime Expression, Microsoft.VisualBasic.DateFormat NamedFormat = Microsoft.VisualBasic.DateFormat.GeneralDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FormatDateTime(valuetype System.DateTime Expression, valuetype Microsoft.VisualBasic.DateFormat NamedFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.DateTime" />
+        <Parameter Name="NamedFormat" Type="Microsoft.VisualBasic.DateFormat" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. <see langword="Date" /> expression to be formatted.</param>
+        <param name="NamedFormat">Optional. Numeric value that indicates the date/time format used. If omitted, <see langword="DateFormat.GeneralDate" /> is used.</param>
+        <summary>Returns a string expression representing a date/time value.</summary>
+        <returns>Returns a string expression representing a date/time value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Date` data type always contains both date and time information. For purposes of type conversion, Visual Basic considers 1/1/1 (January 1 of the year 1) to be a neutral value for the date, and 00:00:00 (midnight) to be a neutral value for the time. If you format a `Date` value as a date/time string, `FormatDateTime` does not include neutral values in the resulting string. For example, if you convert #1/1/0001 9:30:00# to a string, the result is "9:30:00 AM"; the date information is suppressed. However, the date information is still present in the original `Date` value and can be recovered with functions such as `DatePart`.  
+  
+> [!NOTE]
+>  If you pass the `Expression` argument as a `String` literal, `FormatDateTime` interprets it according to the <xref:System.Globalization.CultureInfo.CurrentCulture%2A> setting of your application. However, if you pass it as a `Date` literal, use the format #mm/dd/yyyy#, because `FormatDateTime` always interprets a `Date` literal according to the English (US) culture. This is necessary because, if an application is developed and coded using `Date` literals from one culture, but is then executed on a platform with a different culture, the `Date` literals could be parsed incorrectly.  
+  
+ The `NamedFormat` argument has the following settings.  
+  
+|Constant|Description|  
+|-|-|  
+|`DateFormat.GeneralDate`|Display a date and/or time. Display a date part as a short date. If there is a time part, display it as a long time. If present, both parts display.|  
+|`DateFormat.LongDate`|Display a date using the long date format specified in your computer's regional settings.|  
+|`DateFormat.ShortDate`|Display a date using the short date format specified in your computer's regional settings.|  
+|`DateFormat.LongTime`|Display a time using the time format specified in your computer's regional settings.|  
+|`DateFormat.ShortTime`|Display a time using the 24-hour format (hh:mm).|  
+  
+   
+  
+## Examples  
+ This example demonstrates the use of the `FormatDateTime` function.  
+  
+ [!code-vb[VbVbalrStrings#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="NamedFormat" /> setting is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatNumber">
+      <MemberSignature Language="C#" Value="public static string FormatNumber (object Expression, int NumDigitsAfterDecimal = -1, Microsoft.VisualBasic.TriState IncludeLeadingDigit = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState UseParensForNegativeNumbers = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState GroupDigits = Microsoft.VisualBasic.TriState.UseDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FormatNumber(object Expression, int32 NumDigitsAfterDecimal, valuetype Microsoft.VisualBasic.TriState IncludeLeadingDigit, valuetype Microsoft.VisualBasic.TriState UseParensForNegativeNumbers, valuetype Microsoft.VisualBasic.TriState GroupDigits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. Expression to be formatted.</param>
+        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places are displayed to the right of the decimal. The default value is –1, which indicates that the computer's regional settings are used.</param>
+        <param name="IncludeLeadingDigit">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether a leading 0 is displayed for fractional values. See "Settings" for values.</param>
+        <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether to place negative values within parentheses. See "Settings" for values.</param>
+        <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not numbers are grouped using the group delimiter specified in the locale settings. See "Settings" for values.</param>
+        <summary>Returns an expression formatted as a number.</summary>
+        <returns>Returns an expression formatted as a number.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When one or more optional arguments are omitted the values for omitted arguments are provided by the locale settings.  
+  
+> [!NOTE]
+>  All settings information comes from the locale of the application. By default, that will be the locale set in the control panel. However, it may be changed programmatically by using the .NET Framework.  
+  
+ The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments have the following settings.  
+  
+|Constant|Description|  
+|-|-|  
+|`TriState.True`|True|  
+|`TriState.False`|False|  
+|`TriState.UseDefault`|The computer's regional settings|  
+  
+   
+  
+## Examples  
+ This example demonstrates the `FormatNumber` function.  
+  
+ [!code-vb[VbVbalrStrings#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">Type is not numeric.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatPercent">
+      <MemberSignature Language="C#" Value="public static string FormatPercent (object Expression, int NumDigitsAfterDecimal = -1, Microsoft.VisualBasic.TriState IncludeLeadingDigit = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState UseParensForNegativeNumbers = Microsoft.VisualBasic.TriState.UseDefault, Microsoft.VisualBasic.TriState GroupDigits = Microsoft.VisualBasic.TriState.UseDefault);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string FormatPercent(object Expression, int32 NumDigitsAfterDecimal, valuetype Microsoft.VisualBasic.TriState IncludeLeadingDigit, valuetype Microsoft.VisualBasic.TriState UseParensForNegativeNumbers, valuetype Microsoft.VisualBasic.TriState GroupDigits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. Expression to be formatted.</param>
+        <param name="NumDigitsAfterDecimal">Optional. Numeric value indicating how many places to the right of the decimal are displayed. Default value is –1, which indicates that the locale settings are used.</param>
+        <param name="IncludeLeadingDigit">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not a leading zero displays for fractional values. See "Settings" for values.</param>
+        <param name="UseParensForNegativeNumbers">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not to place negative values within parentheses. See "Settings" for values.</param>
+        <param name="GroupDigits">Optional. <see cref="T:Microsoft.VisualBasic.TriState" /> constant that indicates whether or not numbers are grouped using the group delimiter specified in the locale settings. See "Settings" for values.</param>
+        <summary>Returns an expression formatted as a percentage (that is, multiplied by 100) with a trailing % character.</summary>
+        <returns>Returns an expression formatted as a percentage (that is, multiplied by 100) with a trailing % character.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When one or more optional arguments are omitted, the values for omitted arguments are provided by the locale settings.  
+  
+> [!NOTE]
+>  All settings information comes from the locale of the application. By default, that will be the locale set in the control panel. However, it may be changed programmatically by using the .NET Framework.  
+  
+ The `IncludeLeadingDigit`, `UseParensForNegativeNumbers`, and `GroupDigits` arguments have the following settings.  
+  
+|Constant|Description|  
+|-|-|  
+|`TriState.True`|True|  
+|`TriState.False`|False|  
+|`TriState.Default`|The computer's regional settings|  
+  
+   
+  
+## Examples  
+ This example illustrates the use of the `FormatPercent` function.  
+  
+ [!code-vb[VbVbalrStrings#28](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidCastException">Type is not numeric.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChar">
+      <MemberSignature Language="C#" Value="public static char GetChar (string str, int Index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char GetChar(string str, int32 Index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.GetChar(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. Any valid <see langword="String" /> expression.</param>
+        <param name="Index">Required. <see langword="Integer" /> expression. The (1-based) index of the character in <c>str</c> to be returned.</param>
+        <summary>Returns a <see langword="Char" /> value representing the character from the specified index in the supplied string.</summary>
+        <returns>
+          <see langword="Char" /> value representing the character from the specified index in the supplied string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `Index` is less than 1 or greater than the index of the last character in `str`, an `ArgumentException` is thrown.  
+  
+   
+  
+## Examples  
+ This example shows how to use the `GetChar` function to return a character from a specified index in a `String`.  
+  
+ [!code-vb[VbVbalrStrings#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#23)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="str" /> is <see langword="Nothing" />, <paramref name="Index" /> &lt; 1, or <paramref name="Index" /> is greater than index of last character of <paramref name="str" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InStr">
+      <MemberSignature Language="C#" Value="public static int InStr (string String1, string String2, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 InStr(string String1, string String2, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.InStr(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String1" Type="System.String" />
+        <Parameter Name="String2" Type="System.String" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="String1">Required. <see langword="String" /> expression being searched.</param>
+        <param name="String2">Required. <see langword="String" /> expression sought.</param>
+        <param name="Compare">Optional. Specifies the type of string comparison. If <c>Compare</c> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
+        <summary>Returns an integer specifying the start position of the first occurrence of one string within another.</summary>
+        <returns>
+          <list type="table">  
+<item>  
+<term> If  
+  
+ </term>  
+<description> InStr returns  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String1" /> is zero length or <see langword="Nothing" />  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String2" /> is zero length or <see langword="Nothing" />  
+  
+ </term>  
+<description> The starting position for the search, which defaults to the first character position.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String2" /> is not found  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String2" /> is found within <paramref name="String1" />  
+  
+ </term>  
+<description> Position where match begins  
+  
+ </description>  
+</item>  
+<item>  
+<term> </term>  
+<description> </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the `InStr` function is used when parsing strings.  
+  
+> [!NOTE]
+>  The `InStrB` function in previous versions of Visual Basic returns a number of bytes rather than a character position. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `InStrB` is no longer supported.  
+  
+ The `Compare` argument settings are:  
+  
+|Constant|Value|Description|  
+|-|-|-|  
+|`Binary`|0|Performs a binary comparison|  
+|`Text`|1|Performs a text comparison|  
+  
+   
+  
+## Examples  
+ This example uses the `InStr` function to return the position of the first occurrence of one string within another.  
+  
+ [!code-vb[VbVbalrStrings#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InStr">
+      <MemberSignature Language="C#" Value="public static int InStr (int Start, string String1, string String2, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 InStr(int32 Start, string String1, string String2, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.InStr(System.Int32,System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="String1" Type="System.String" />
+        <Parameter Name="String2" Type="System.String" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Start">Optional. Numeric expression that sets the starting position for each search. If omitted, search begins at the first character position. The start index is 1-based.</param>
+        <param name="String1">Required. <see langword="String" /> expression being searched.</param>
+        <param name="String2">Required. <see langword="String" /> expression sought.</param>
+        <param name="Compare">Optional. Specifies the type of string comparison. If <c>Compare</c> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
+        <summary>Returns an integer specifying the start position of the first occurrence of one string within another.</summary>
+        <returns>
+          <list type="table">  
+<item>  
+<term> If  
+  
+ </term>  
+<description> InStr returns  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String1" /> is zero length or <see langword="Nothing" />  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String2" /> is zero length or <see langword="Nothing" />  
+  
+ </term>  
+<description> <paramref name="start" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String2" /> is not found  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String2" /> is found within <paramref name="String1" />  
+  
+ </term>  
+<description> Position where match begins  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="Start" /> &gt; length of <paramref name="String1" />  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the `InStr` function is used when parsing strings.  
+  
+> [!NOTE]
+>  The `InStrB` function in previous versions of Visual Basic returns a number of bytes rather than a character position. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic 2005 strings are in Unicode, and `InStrB` is no longer supported.  
+  
+ The `Compare` argument settings are:  
+  
+|Constant|Value|Description|  
+|-|-|-|  
+|`Binary`|0|Performs a binary comparison|  
+|`Text`|1|Performs a text comparison|  
+  
+   
+  
+## Examples  
+ This example uses the `InStr` function to return the position of the first occurrence of one string within another.  
+  
+ [!code-vb[VbVbalrStrings#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Start" /> &lt; 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InStrRev">
+      <MemberSignature Language="C#" Value="public static int InStrRev (string StringCheck, string StringMatch, int Start = -1, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 InStrRev(string StringCheck, string StringMatch, int32 Start, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="StringCheck" Type="System.String" />
+        <Parameter Name="StringMatch" Type="System.String" />
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="StringCheck">Required. String expression being searched.</param>
+        <param name="StringMatch">Required. String expression being searched for.</param>
+        <param name="Start">Optional. Numeric expression setting the one-based starting position for each search, starting from the left side of the string. If <c>Start</c> is omitted then –1 is used, meaning the search begins at the last character position. Search then proceeds from right to left.</param>
+        <param name="Compare">Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. If omitted, a binary comparison is performed. See Settings for values.</param>
+        <summary>Returns the position of the first occurrence of one string within another, starting from the right side of the string.</summary>
+        <returns>
+          <list type="table">  
+<item>  
+<term> If  
+  
+ </term>  
+<description> InStrRev returns  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="StringCheck" /> is zero-length  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="StringMatch" /> is zero-length  
+  
+ </term>  
+<description> <paramref name="Start" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="StringMatch" /> is not found  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="StringMatch" /> is found within <paramref name="StringCheck" />  
+  
+ </term>  
+<description> Position at which the first match is found, starting with the right side of the string.  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="Start" /> is greater than length of <paramref name="StringMatch" />  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+</list>
+        </returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the syntax for the `InStrRev` function is not the same as the syntax for the `InStr` function.  
+  
+ The `Compare` argument can have the following values.  
+  
+|Constant|Description|  
+|-|-|  
+|`Binary`|Performs a binary comparison.|  
+|`Text`|Performs a textual comparison.|  
+  
+   
+  
+## Examples  
+ This example demonstrates the use of the `InStrRev` function.  
+  
+ [!code-vb[VbVbalrStrings#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Start" /> = 0 or <paramref name="Start" /> &lt; -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (object[] SourceArray, string Delimiter = &quot; &quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Join(object[] SourceArray, string Delimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Join(System.Object[],System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SourceArray" Type="System.Object[]" />
+        <Parameter Name="Delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SourceArray">Required. One-dimensional array containing substrings to be joined.</param>
+        <param name="Delimiter">Optional. Any string, used to separate the substrings in the returned string. If omitted, the space character (" ") is used. If <c>Delimiter</c> is a zero-length string ("") or <see langword="Nothing" />, all items in the list are concatenated with no delimiters.</param>
+        <summary>Returns a string created by joining a number of substrings contained in an array.</summary>
+        <returns>Returns a string created by joining a number of substrings contained in an array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is a parity between the `Join` and `Split` functions. The `Join` function takes an array of strings and joins them using a delimiter string, to return a single string. The `Split` function takes a string and separates it at the delimiter, to return an array of strings. However, a key difference is that `Join` can concatenate strings with any delimiter string, `Split` can only separate strings using a single character delimiter.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the `Join` function to create a list from several strings.  
+  
+ [!code-vb[VbVbalrStrings#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="SourceArray" /> is not one dimensional.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Join">
+      <MemberSignature Language="C#" Value="public static string Join (string[] SourceArray, string Delimiter = &quot; &quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Join(string[] SourceArray, string Delimiter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Join(System.String[],System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SourceArray" Type="System.String[]" />
+        <Parameter Name="Delimiter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SourceArray">Required. One-dimensional array containing substrings to be joined.</param>
+        <param name="Delimiter">Optional. Any string, used to separate the substrings in the returned string. If omitted, the space character (" ") is used. If <c>Delimiter</c> is a zero-length string ("") or <see langword="Nothing" />, all items in the list are concatenated with no delimiters.</param>
+        <summary>Returns a string created by joining a number of substrings contained in an array.</summary>
+        <returns>Returns a string created by joining a number of substrings contained in an array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is a parity between the `Join` and `Split` functions. The `Join` function takes an array of strings and joins them using a delimiter string, to return a single string. The `Split` function takes a string and separates it at the delimiter, to return an array of strings. However, a key difference is that `Join` can concatenate strings with any delimiter string, `Split` can only separate strings using a single character delimiter.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the `Join` function to create a list from several strings.  
+  
+ [!code-vb[VbVbalrStrings#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="SourceArray" /> is not one dimensional.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LCase">
+      <MemberSignature Language="C#" Value="public static char LCase (char Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char LCase(char Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.LCase(System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
+        <summary>Returns a string or character converted to lowercase.</summary>
+        <returns>Returns a string or character converted to lowercase.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only uppercase letters are converted to lowercase; all lowercase letters and nonletter characters remain unchanged.  
+  
+ This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+  
+> [!IMPORTANT]
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+  
+   
+  
+## Examples  
+ This example uses the `LCase` function to return a lowercase version of a string.  
+  
+ [!code-vb[VbVbalrStrings#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LCase">
+      <MemberSignature Language="C#" Value="public static string LCase (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string LCase(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.LCase(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
+        <summary>Returns a string or character converted to lowercase.</summary>
+        <returns>Returns a string or character converted to lowercase.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only uppercase letters are converted to lowercase; all lowercase letters and nonletter characters remain unchanged.  
+  
+ This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+  
+> [!IMPORTANT]
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+  
+   
+  
+## Examples  
+ This example uses the `LCase` function to return a lowercase version of a string.  
+  
+ [!code-vb[VbVbalrStrings#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public static string Left (string str, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Left(string str, int32 Length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. <see langword="String" /> expression from which the leftmost characters are returned.</param>
+        <param name="Length">Required. <see langword="Integer" /> expression. Numeric expression indicating how many characters to return. If 0, a zero-length string ("") is returned. If greater than or equal to the number of characters in <c>str</c>, the entire string is returned.</param>
+        <summary>Returns a string containing a specified number of characters from the left side of a string.</summary>
+        <returns>Returns a string containing a specified number of characters from the left side of a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine the number of characters in `str`, use the `Len` function. If used in a Windows Forms application, or any other class that has a `Left` property, you must fully qualify the function with `Microsoft.VisualBasic.Left`.  
+  
+> [!NOTE]
+>  The `LeftB` function in previous versions of Visual Basic returns a string in bytes rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LeftB` is no longer supported.  
+  
+   
+  
+## Examples  
+ This example demonstrates the use of the `Left` function to return a substring of a given `String`. In a class that has a `Left` property, it may be necessary to fully qualify the `Left` function.  
+  
+ [!code-vb[VbVbalrStrings#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Length" /> &lt; 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (bool Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(bool Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (byte Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(unsigned int8 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (char Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(char Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (DateTime Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(valuetype System.DateTime Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (decimal Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(valuetype System.Decimal Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (double Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(float64 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (short Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(int16 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (int Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(int32 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (long Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(int64 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (object Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(object Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (sbyte Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(int8 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.SByte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Byte)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (float Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(float32 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (string Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(string Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (ushort Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(unsigned int16 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int16)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (uint Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(unsigned int32 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int32)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Len">
+      <MemberSignature Language="C#" Value="public static int Len (ulong Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Len(unsigned int64 Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Len(System.UInt64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Any valid <see langword="String" /> expression or variable name. If <c>Expression</c> is of type <see langword="Object" />, the <see langword="Len" /> function returns the size as it will be written to the file by the <see langword="FilePut" /> function.</param>
+        <summary>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</summary>
+        <returns>Returns an integer containing either the number of characters in a string or the nominal number of bytes required to store a variable.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With user-defined types and `Object` variables, the `Len` function returns the size as it will be written to the file by the `FilePut` function. If an `Object` contains a `String`, it will return the length of the string. If an `Object` contains any other type, it will return the size of the object as it will be written to the file by the `FilePut` function.  
+  
+ The `VBFixedString` attribute can be applied to string fields in objects to indicate the size of the string, in bytes, when written to disk. The `Len` function uses the `VBFixedString` attribute, if available, when determining the size of `Object` variables.  
+  
+> [!NOTE]
+>  The `Len` function may not be able to determine the actual number of storage bytes required when used with variable-length strings in user-defined data types.  
+  
+> [!NOTE]
+>  The `LenB` function in earlier versions of Visual Basic returns the number of bytes in a string rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `LenB` is no longer supported.  
+  
+## Smart Device Developer Notes  
+ The `Len` function accepts only `String` and `Object` variables as parameters. If an `Object` contains a `String`, it will return the length of the `String`. If a parameter is a NULL `Object` reference, the function returns zero. If an `Object` contains any other type, an exception is thrown.  
+  
+   
+  
+## Examples  
+ This example uses `Len` to return the number of characters in a string.  
+  
+ [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="M:Microsoft.VisualBasic.Strings.Len(System.Int64)" />
+      </Docs>
+    </Member>
+    <Member MemberName="LSet">
+      <MemberSignature Language="C#" Value="public static string LSet (string Source, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string LSet(string Source, int32 Length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.LSet(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Source">Required. <see langword="String" /> expression. Name of string variable.</param>
+        <param name="Length">Required. <see langword="Integer" /> expression. Length of returned string.</param>
+        <summary>Returns a left-aligned string containing the specified string adjusted to the specified length.</summary>
+        <returns>Returns a left-aligned string containing the specified string adjusted to the specified length.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified string is longer than the specified length, the returned string is shortened to the specified length. If the specified string is shorter than the specified length, spaces are added to the right end of the returned string to produce the appropriate length.  
+  
+   
+  
+## Examples  
+ This example demonstrates the use of the `LSet` function.  
+  
+ [!code-vb[VbVbalrStrings#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LTrim">
+      <MemberSignature Language="C#" Value="public static string LTrim (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string LTrim(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.LTrim(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. Any valid <see langword="String" /> expression.</param>
+        <summary>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</summary>
+        <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+  
+   
+  
+## Examples  
+ This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
+  
+ [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mid">
+      <MemberSignature Language="C#" Value="public static string Mid (string str, int Start);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Mid(string str, int32 Start) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Mid(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Start" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. <see langword="String" /> expression from which characters are returned.</param>
+        <param name="Start">Required. <see langword="Integer" /> expression. Starting position of the characters to return. If <c>Start</c> is greater than the number of characters in <c>str</c>, the <see langword="Mid" /> function returns a zero-length string (""). <c>Start</c> is one-based.</param>
+        <summary>Returns a string that contains all the characters starting from a specified position in a string.</summary>
+        <returns>A string that consists of all the characters starting from the specified position in the string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine the number of characters in `str`, use the `Len` function.  
+  
+ Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](~/docs/visual-basic/language-reference/statements/mid-statement.md).  
+  
+> [!NOTE]
+>  The `MidB` function in previous versions of Visual Basic returns a string in bytes rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
+  
+   
+  
+## Examples  
+ The last line in this example uses this overload of the `Mid` function to return the fifth and subsequent characters from a string.  
+  
+ [!code-vb[VbVbalrStrings#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Start" /> &lt;= 0 or <paramref name="Length" /> &lt; 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Mid">
+      <MemberSignature Language="C#" Value="public static string Mid (string str, int Start, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Mid(string str, int32 Start, int32 Length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Mid(System.String,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. <see langword="String" /> expression from which characters are returned.</param>
+        <param name="Start">Required. <see langword="Integer" /> expression. Starting position of the characters to return. If <c>Start</c> is greater than the number of characters in <c>str</c>, the <see langword="Mid" /> function returns a zero-length string (""). <c>Start</c> is one based.</param>
+        <param name="Length">Optional. <see langword="Integer" /> expression. Number of characters to return. If omitted or if there are fewer than <c>Length</c> characters in the text (including the character at position <c>Start</c>), all characters from the start position to the end of the string are returned.</param>
+        <summary>Returns a string that contains a specified number of characters starting from a specified position in a string.</summary>
+        <returns>A string that consists of the specified number of characters starting from the specified position in the string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine the number of characters in `str`, use the `Len` function.  
+  
+ Visual Basic has a `Mid` function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see [Mid Statement](~/docs/visual-basic/language-reference/statements/mid-statement.md).  
+  
+> [!NOTE]
+>  The `MidB` function in previous versions of Visual Basic returns a string in bytes rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
+  
+   
+  
+## Examples  
+ The first two `Mid` functions in this example return the specified number of characters from a string, starting from the given positions. (The last function illustrates the <xref:Microsoft.VisualBasic.Strings.Mid%28System.String%2CSystem.Int32%29> overload and only specifies the starting point for the string extraction.)  
+  
+ [!code-vb[VbVbalrStrings#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Start" /> &lt;= 0 or <paramref name="Length" /> &lt; 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="public static string Replace (string Expression, string Find, string Replacement, int Start = 1, int Count = -1, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Replace(string Expression, string Find, string Replacement, int32 Start, int32 Count, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+        <Parameter Name="Find" Type="System.String" />
+        <Parameter Name="Replacement" Type="System.String" />
+        <Parameter Name="Start" Type="System.Int32" />
+        <Parameter Name="Count" Type="System.Int32" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. String expression containing substring to replace.</param>
+        <param name="Find">Required. Substring being searched for.</param>
+        <param name="Replacement">Required. Replacement substring.</param>
+        <param name="Start">Optional. Position within <c>Expression</c> that starts a substring used for replacement. The return value of <see langword="Replace" /> is a string that begins at <c>Start</c>, with appropriate substitutions. If omitted, 1 is assumed.</param>
+        <param name="Count">Optional. Number of substring substitutions to perform. If omitted, the default value is –1, which means "make all possible substitutions."</param>
+        <param name="Compare">Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. See Settings for values.</param>
+        <summary>Returns a string in which a specified substring has been replaced with another substring a specified number of times.</summary>
+        <returns>
+          <see langword="Replace" /> returns the following values.  
+  
+ <list type="table">  
+<item>  
+<term> If  
+  
+ </term>  
+<description> Replace returns  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="Find" /> is zero-length or <see langword="Nothing" />  
+  
+ </term>  
+<description> Copy of <paramref name="Expression" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="Replace" /> is zero-length  
+  
+ </term>  
+<description> Copy of <paramref name="Expression" /> with no occurrences of <paramref name="Find" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="Expression" /> is zero-length or <see langword="Nothing" />, or <paramref name="Start" /> is greater than length of <paramref name="Expression" />  
+  
+ </term>  
+<description> <see langword="Nothing" />  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="Count" /> is 0  
+  
+ </term>  
+<description> Copy of <paramref name="Expression" />  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value of the `Replace` function is a string that begins at the position specified by `Start` and concludes at the end of the `Expression` string, with the substitutions made as specified by the `Find` and `Replace` values.  
+  
+ The `Compare` argument can have the following values.  
+  
+|Constant|Description|  
+|-|-|  
+|`Binary`|Performs a binary comparison|  
+|`Text`|Performs a textual comparison|  
+  
+   
+  
+## Examples  
+ This example demonstrates the `Replace` function.  
+  
+```vb  
+Dim TestString As String = "Shopping List"  
+' Returns "Shipping List".  
+Dim aString As String = Replace(TestString, "o", "i")  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Count" /> &lt; -1 or <paramref name="Start" /> &lt;= 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public static string Right (string str, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Right(string str, int32 Length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. <see langword="String" /> expression from which the rightmost characters are returned.</param>
+        <param name="Length">Required. <see langword="Integer" />. Numeric expression indicating how many characters to return. If 0, a zero-length string ("") is returned. If greater than or equal to the number of characters in <c>str</c>, the entire string is returned.</param>
+        <summary>Returns a string containing a specified number of characters from the right side of a string.</summary>
+        <returns>Returns a string containing a specified number of characters from the right side of a string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine the number of characters in `str`, use the `Len` function. If used in a Windows Form, or any other class that has a `Right` property, you must fully qualify the function with `Microsoft.VisualBasic.Strings.Right`.  
+  
+> [!NOTE]
+>  The `RightB` function in earlier versions of Visual Basic returns a string in bytes, rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All current Visual Basic strings are in Unicode, and `RightB` is no longer supported.  
+  
+   
+  
+## Examples  
+ This example demonstrates the use of the `Right` function to return a substring of a given `String`. In a class that has a `Right` property, it may be necessary to fully qualify the `Right` function.  
+  
+ [!code-vb[VbVbalrStrings#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Length" /> &lt; 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RSet">
+      <MemberSignature Language="C#" Value="public static string RSet (string Source, int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string RSet(string Source, int32 Length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.RSet(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Source" Type="System.String" />
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Source">Required. <see langword="String" /> expression. Name of string variable.</param>
+        <param name="Length">Required. <see langword="Integer" /> expression. Length of returned string.</param>
+        <summary>Returns a right-aligned string containing the specified string adjusted to the specified length.</summary>
+        <returns>Returns a right-aligned string containing the specified string adjusted to the specified length.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `Source` is longer than `Length`, `RSet` places only the leftmost characters, up to the length of `Source`, in the returned string. If the specified string is shorter than the specified length, spaces are added to the left end of the string to produce the appropriate length. If the specified string is longer than the specified length, it is shortened to the specified length.  
+  
+   
+  
+## Examples  
+ This example demonstrates the use of the `RSet` function.  
+  
+ [!code-vb[VbVbalrStrings#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RTrim">
+      <MemberSignature Language="C#" Value="public static string RTrim (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string RTrim(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. Any valid <see langword="String" /> expression.</param>
+        <summary>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</summary>
+        <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+  
+   
+  
+## Examples  
+ This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
+  
+ [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Space">
+      <MemberSignature Language="C#" Value="public static string Space (int Number);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Space(int32 Number) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Number">Required. <see langword="Integer" /> expression. The number of spaces you want in the string.</param>
+        <summary>Returns a string consisting of the specified number of spaces.</summary>
+        <returns>Returns a string consisting of the specified number of spaces.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Space` function is useful for formatting output and clearing data in fixed-length strings.  
+  
+   
+  
+## Examples  
+ This example uses the `Space` function to return a string consisting of a specified number of spaces.  
+  
+ [!code-vb[VbVbalrStrings#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Number" /> &lt; 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Split">
+      <MemberSignature Language="C#" Value="public static string[] Split (string Expression, string Delimiter = &quot; &quot;, int Limit = -1, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string[] Split(string Expression, string Delimiter, int32 Limit, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+        <Parameter Name="Delimiter" Type="System.String" />
+        <Parameter Name="Limit" Type="System.Int32" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. <see langword="String" /> expression containing substrings and delimiters.</param>
+        <param name="Delimiter">Optional. Any single character used to identify substring limits. If <c>Delimiter</c> is omitted, the space character (" ") is assumed to be the delimiter.</param>
+        <param name="Limit">Optional. Maximum number of substrings into which the input string should be split. The default, –1, indicates that the input string should be split at every occurrence of the <c>Delimiter</c> string.</param>
+        <param name="Compare">Optional. Numeric value indicating the comparison to use when evaluating substrings. See "Settings" for values.</param>
+        <summary>Returns a zero-based, one-dimensional array containing a specified number of substrings.</summary>
+        <returns>
+          <see langword="String" /> array. If <paramref name="Expression" /> is a zero-length string (""), <see langword="Split" /> returns a single-element array containing a zero-length string. If <paramref name="Delimiter" /> is a zero-length string, or if it does not appear anywhere in <paramref name="Expression" />, <see langword="Split" /> returns a single-element array containing the entire <paramref name="Expression" /> string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, or when `Limit` equals -1, the `Split` function splits the input string at every occurrence of the delimiter string, and returns the substrings in an array. When the `Limit` parameter is greater than zero, the `Split` function splits the string at the first `Limit`-1 occurrences of the delimiter, and returns an array with the resulting substrings. For example, `Split("a:b:c", ":")` returns the array `{"a", "b", "c"}`, while `Split("a:b:c", ":", 2)` returns the array `{"a", "b:c"}`.  
+  
+ When the `Split` function encounters two delimiters in a row, or a delimiter at the beginning or end of the string, it interprets them as surrounding an empty string (""). For example, `Split("xx", "x")` returns the array containing three empty strings: one from between the beginning of the string and the first "x", one from between the two "x" strings, and one from between the last "x" and the end of the string.  
+  
+ This table demonstrates how the optional `Delimiter`, `Limit`, and `Compare` parameters can change the behavior of the `Split` function.  
+  
+|Split Call|Return Value|  
+|-|-|  
+|`Split("42, 12, 19")`|{"42," , "12," , "19"}|  
+|`Split("42, 12, 19", ", ")`|{"42", "12", "19"}|  
+|`Split("42, 12, 19", ", ", 2)`|{"42", "12, 19"}|  
+|`Split("192.168.0.1", ".")`|{"192", "168", "0", "1"}|  
+|`Split("Alice and Bob", " AND ")`|{"Alice and Bob"}|  
+|`Split("Alice and Bob", " AND ", ,CompareMethod.Text)`|{"Alice", "Bob"}|  
+|`Split("someone@example.com", "@",1)`|{"someone@example.com"}|  
+|`Split("someone@example.com", "@",2)`|{"someone", "example.com"}|  
+  
+ The `Compare` argument can have the following values.  
+  
+|Constant|Description|Value|  
+|-|-|-|  
+|`CompareMethod.Binary`|Performs a binary comparison|0|  
+|`CompareMethod.Text`|Performs a textual comparison|1|  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to split a string at its spaces.  
+  
+ [!code-vb[VbVbalrStrings#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#13)]  
+  
+ The following example demonstrates how to split strings with multiple delimiters in a row and filter out the empty strings.  
+  
+ [!code-vb[VbVbalrStrings#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrComp">
+      <MemberSignature Language="C#" Value="public static int StrComp (string String1, string String2, Microsoft.VisualBasic.CompareMethod Compare = Microsoft.VisualBasic.CompareMethod.Binary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 StrComp(string String1, string String2, valuetype Microsoft.VisualBasic.CompareMethod Compare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrComp(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="String1" Type="System.String" />
+        <Parameter Name="String2" Type="System.String" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="String1">Required. Any valid <see langword="String" /> expression.</param>
+        <param name="String2">Required. Any valid <see langword="String" /> expression.</param>
+        <param name="Compare">Optional. Specifies the type of string comparison. If <c>Compare</c> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
+        <summary>Returns -1, 0, or 1, based on the result of a string comparison.</summary>
+        <returns>The <see langword="StrComp" /> function has the following return values.  
+  
+ <list type="table">  
+<item>  
+<term> If  
+  
+ </term>  
+<description> StrComp returns  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String1" /> sorts ahead of <paramref name="String2" />  
+  
+ </term>  
+<description> -1  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String1" /> is equal to <paramref name="String2" />  
+  
+ </term>  
+<description> 0  
+  
+ </description>  
+</item>  
+<item>  
+<term> <paramref name="String1" /> sorts after <paramref name="String2" />  
+  
+ </term>  
+<description> 1  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The strings are compared by alphanumeric sort values beginning with the first character. For further information on binary comparisons, textual comparisons, and sort order, see [Option Compare Statement](~/docs/visual-basic/language-reference/statements/option-compare-statement.md).  
+  
+ The `Compare` argument settings are:  
+  
+|Constant|Description|  
+|-|-|  
+|`Binary`|Performs a binary comparison, based on a sort order derived from the internal binary representations of the characters.|  
+|`Text`|Performs a text comparison, based on a case-insensitive text sort order determined by your system's `LocaleID` value.|  
+  
+   
+  
+## Examples  
+ This example uses the `StrComp` function to return the results of a string comparison.  
+  
+ [!code-vb[VbVbalrStrings#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Compare" /> value is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StrConv">
+      <MemberSignature Language="C#" Value="public static string StrConv (string str, Microsoft.VisualBasic.VbStrConv Conversion, int LocaleID = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string StrConv(string str, valuetype Microsoft.VisualBasic.VbStrConv Conversion, int32 LocaleID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrConv(System.String,Microsoft.VisualBasic.VbStrConv,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+        <Parameter Name="Conversion" Type="Microsoft.VisualBasic.VbStrConv" />
+        <Parameter Name="LocaleID" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. <see langword="String" /> expression to be converted.</param>
+        <param name="Conversion">Required. <see cref="T:Microsoft.VisualBasic.VbStrConv" /> member. The enumeration value specifying the type of conversion to perform.</param>
+        <param name="LocaleID">Optional. The <see langword="LocaleID" /> value, if different from the system <see langword="LocaleID" /> value. (The system <see langword="LocaleID" /> value is the default.)</param>
+        <summary>Returns a string converted as specified.</summary>
+        <returns>Returns a string converted as specified.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constants `VbStrConv.Wide`, `VbStrConv.Narrow`, `VbStrConv.SimplifiedChinese`, `VbStrConv.TraditionalChinese`, `VbStrConv.Katakana`, and `VbStrConv.Hiragana` can cause run-time errors when used in locales where they do not apply, but not always: the constants `VbStrConv.Katakana` and `VbStrConv.Hiragana` can be used in a non-Japanese system with the Japanese Language Pack installed. In addition, use of the constants `VbStrConv.Wide` and `VbStrConv.Narrow` is supported on any system with an East Asian language installed.  
+  
+ This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+  
+> [!IMPORTANT]
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+  
+ The `Conversion` argument settings are:  
+  
+|Enumeration member|Description|  
+|-|-|  
+|`VbStrConv.None`|Performs no conversion|  
+|`VbStrConv.LinguisticCasing`|Uses linguistic rules for casing, rather than File System (default). Valid with `VbStrConv.UpperCase` and `VbStrConv.LowerCase` only.|  
+|`VbStrConv.UpperCase`|Converts the string to uppercase characters.|  
+|`VbStrConv.LowerCase`|Converts the string to lowercase characters.|  
+|`VbStrConv.ProperCase`|Converts the first letter of every word in string to uppercase.|  
+|`VbStrConv.Wide` <sup>*</sup>|Converts narrow (half-width) characters in the string to wide (full-width) characters.|  
+|`VbStrConv.Narrow` <sup>*</sup>|Converts wide (full-width) characters in the string to narrow (half-width) characters.|  
+|`VbStrConv.Katakana` <sup>**</sup>|Converts Hiragana characters in the string to Katakana characters.|  
+|`VbStrConv.Hiragana` <sup>**</sup>|Converts Katakana characters in the string to Hiragana characters.|  
+|`VbStrConv.SimplifiedChinese` <sup>*</sup>|Converts Traditional Chinese characters to Simplified Chinese.|  
+|`VbStrConv.TraditionalChinese` <sup>*</sup>|Converts Simplified Chinese characters to Traditional Chinese.|  
+  
+ <sup>*</sup> Applies to Asian locales.  
+  
+ <sup>**</sup> Applies to Japan only.  
+  
+> [!NOTE]
+>  These constants are specified in the .NET Framework common language runtime. As a result, they can be used anywhere in your code in place of the actual values. Most can be combined (for example, `UpperCase + Wide`), except when they are mutually exclusive (for example, `VbStrConv.Wide + VbStrConv.Narrow`).  
+  
+ The following are valid word separators for proper casing: Null (`Chr$(0)`), horizontal tab (`Chr$(9)`), line feed (`Chr$(10)`), vertical tab (`Chr$(11)`), form feed (`Chr$(12)`), carriage return (`Chr$(13)`), space (single-byte character set) (`Chr$(32)`). The actual value for a space, which can be full or half width, varies by country/region for East Asian cultures.  
+  
+   
+  
+## Examples  
+ This example converts text into all lowercase letters.  
+  
+ [!code-vb[VbVbalrStrings#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Unsupported <paramref name="LocaleID" />, <paramref name="Conversion" /> &lt; 0 or &gt; 2048, or unsupported conversion for specified locale.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StrDup">
+      <MemberSignature Language="C#" Value="public static string StrDup (int Number, char Character);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string StrDup(int32 Number, char Character) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrDup(System.Int32,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int32" />
+        <Parameter Name="Character" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
+        <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+  
+   
+  
+## Examples  
+ This example uses the `StrDup` function to return a string of duplicated characters.  
+  
+ [!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Number" /> is less than 0 or <paramref name="Character" /> type is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="Character" /> is <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StrDup">
+      <MemberSignature Language="C#" Value="public static object StrDup (int Number, object Character);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object StrDup(int32 Number, object Character) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrDup(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int32" />
+        <Parameter Name="Character" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
+        <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+  
+   
+  
+## Examples  
+ This example uses the `StrDup` function to return a string of duplicated characters.  
+  
+ [!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Number" /> is less than 0 or <paramref name="Character" /> type is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="Character" /> is <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StrDup">
+      <MemberSignature Language="C#" Value="public static string StrDup (int Number, string Character);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string StrDup(int32 Number, string Character) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrDup(System.Int32,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Number" Type="System.Int32" />
+        <Parameter Name="Character" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
+        <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function returns a `String` made up of repeated characters. The character that makes up the string is the first character in the `Character` argument, and it is duplicated `Number` number of times.  
+  
+   
+  
+## Examples  
+ This example uses the `StrDup` function to return a string of duplicated characters.  
+  
+ [!code-vb[VbVbalrStrings#34](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#34)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Number" /> is less than 0 or <paramref name="Character" /> type is not valid.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="Character" /> is <see langword="Nothing" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StrReverse">
+      <MemberSignature Language="C#" Value="public static string StrReverse (string Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string StrReverse(string Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.StrReverse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. String expression whose characters are to be reversed. If <c>Expression</c> is a zero-length string (""), a zero-length string is returned.</param>
+        <summary>Returns a string in which the character order of a specified string is reversed.</summary>
+        <returns>Returns a string in which the character order of a specified string is reversed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `StrReverse` function returns a string that contains the same characters as `Expression`, but in the opposite order.  
+  
+   
+  
+## Examples  
+ [!code-vb[VbVbalrStrings#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#29)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim">
+      <MemberSignature Language="C#" Value="public static string Trim (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string Trim(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.Trim(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">Required. Any valid <see langword="String" /> expression.</param>
+        <summary>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</summary>
+        <returns>Returns a string containing a copy of a specified string with no leading spaces (<see langword="LTrim" />), no trailing spaces (<see langword="RTrim" />), or no leading or trailing spaces (<see langword="Trim" />).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `LTrim`, `RTrim`, and `Trim` functions remove spaces from the ends of strings.  
+  
+   
+  
+## Examples  
+ This example uses the `LTrim` function to strip leading spaces and the `RTrim` function to strip trailing spaces from a string variable. It uses the `Trim` function to strip both types of spaces.  
+  
+ [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UCase">
+      <MemberSignature Language="C#" Value="public static char UCase (char Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static char UCase(char Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.UCase(System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
+        <summary>Returns a string or character containing the specified string converted to uppercase.</summary>
+        <returns>Returns a string or character containing the specified string converted to uppercase.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only lowercase letters are converted to uppercase; all uppercase letters and nonletter characters remain unchanged.  
+  
+ This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+  
+> [!IMPORTANT]
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+  
+   
+  
+## Examples  
+ This example uses the `UCase` function to return an uppercase version of a string.  
+  
+ [!code-vb[VbVbalrStrings#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#31)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UCase">
+      <MemberSignature Language="C#" Value="public static string UCase (string Value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string UCase(string Value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Strings.UCase(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Value">Required. Any valid <see langword="String" /> or <see langword="Char" /> expression.</param>
+        <summary>Returns a string or character containing the specified string converted to uppercase.</summary>
+        <returns>Returns a string or character containing the specified string converted to uppercase.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only lowercase letters are converted to uppercase; all uppercase letters and nonletter characters remain unchanged.  
+  
+ This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
+  
+> [!IMPORTANT]
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+  
+   
+  
+## Examples  
+ This example uses the `UCase` function to return an uppercase version of a string.  
+  
+ [!code-vb[VbVbalrStrings#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#31)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

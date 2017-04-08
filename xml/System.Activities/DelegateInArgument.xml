@@ -1,0 +1,18 @@
+<Type Name="DelegateInArgument" FullName="System.Activities.DelegateInArgument">
+  <TypeSignature Language="C#" Value="public abstract class DelegateInArgument : System.Activities.DelegateArgument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DelegateInArgument extends System.Activities.DelegateArgument" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DelegateInArgument" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.DelegateArgument</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The abstract base class that represents a binding terminal that supports the flow of data into an <see cref="T:System.Activities.ActivityDelegate" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

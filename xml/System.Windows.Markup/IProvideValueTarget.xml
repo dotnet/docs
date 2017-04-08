@@ -1,0 +1,119 @@
+<Type Name="IProvideValueTarget" FullName="System.Windows.Markup.IProvideValueTarget">
+  <TypeSignature Language="C#" Value="public interface IProvideValueTarget" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideValueTarget" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IProvideValueTarget" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("PresentationFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a service that reports situational object-property relationships for markup extension evaluation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.IProvideValueTarget> represents a service that reports information regarding the object-property structure surrounding where a value converter is invoked.  
+  
+ Type converters and markup extensions can query for <xref:System.Windows.Markup.IProvideValueTarget> as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md) and [Service Contexts Available to Type Converters and Markup Extensions](~/docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
+  
+ For markup extensions specifically, a scenario where <xref:System.Windows.Markup.IProvideValueTarget> is useful is to determine the validity of your markup extension's situational usage. For example, your markup extension might implement a value deferral mechanism, but using that mechanism might only be appropriate if the target object is capable of using other components of your deferral mechanism at run time. You could check the type system characteristics of the object returned as <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> and make sure that object supports your deferral technique. If so, your markup extension returns a value, and if not, your markup extension throws an exception that will be picked up as an inner exception by a XAML object writer. A similar scenario is assuring that a particular property supports a capability, by checking type system characteristics of the <xref:System.Windows.Markup.IProvideValueTarget.TargetProperty%2A>.  
+  
+ Although the API name <xref:System.Windows.Markup.IProvideValueTarget> might imply an association with <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A?displayProperty=fullName>, the information reported by <xref:System.Windows.Markup.IProvideValueTarget> can also be useful to a <xref:System.ComponentModel.TypeConverter> or <xref:System.Windows.Markup.ValueSerializer>. A <xref:System.ComponentModel.TypeConverter> or <xref:System.Windows.Markup.ValueSerializer> typically have more context than a markup extension because they are dedicated to a particular target type or target property, and thus the situational validity is usually predictable in the type system. However, other scenarios exist. The following is a list of some scenarios that might be implemented by either a type converter or a markup extension:  
+  
+-   Get <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> to read instance values of other properties on that object. Note that your handling here might need to be robust for unset values, because the processing order of XAML members on the target object can be nondeterministic.  
+  
+-   Get <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> to read type-level metadata, or to verify that required interfaces are implemented by the type.  
+  
+-   Get <xref:System.Windows.Markup.IProvideValueTarget.TargetProperty%2A> to read property metadata.  
+  
+ One scenario is to use <xref:System.Windows.Markup.IProvideValueTarget> information to limit which objects or properties are permitted to be set by your markup extension.  
+  
+ Before attempting to use the service, make sure that the service itself is not `null` when returned by the relevant service provider parameter you are using for context.  
+  
+> [!IMPORTANT]
+>  When using the service, it is particularly important not to modify the object referenced by the <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> property, or other objects referenced by that object. For WPF specifically, these changes could cause unexpected changes that would invalidate the WPF property system.  
+  
+> [!NOTE]
+>  Do not use the type of <xref:System.Windows.Markup.IProvideValueTarget.TargetProperty%2A> to determine which precise type a markup extension or type converter should return. That is not a best practice. Your return type should be consistent with attributing (<xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute> for markup extensions) or patterns (class name of the type converter).  
+  
+ In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.IProvideValueTarget> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+## WPF Usage Notes  
+ This service supports framework features such as binding on a dependency property.  
+  
+ In WPF, the service represented by <xref:System.Windows.Markup.IProvideValueTarget> can return objects and properties for situations where the value to return from a markup extension or type converter depends on context.  
+  
+ <xref:System.Windows.Markup.IProvideValueTarget> is leveraged heavily in the internal implementation of <xref:System.Windows.Data.BindingBase>, the class that implements the binding mechanism for dependency properties in WPF.  
+  
+ A default internal service provider for WPF implements <xref:System.Windows.Markup.IProvideValueTarget> for usage by a custom markup extension or type converter. The object and property reported by <xref:System.Windows.Markup.IProvideValueTarget> can only be set by the internal WPF service. Going beyond this definition of how <xref:System.Windows.Markup.IProvideValueTarget> operates would require defining your own service provider for markup extension and type converter usages that implements at the very least the <xref:System.Windows.Markup.IProvideValueTarget> and <xref:System.Windows.Markup.IXamlTypeResolver> services, and that is an advanced scenario that is not described here.  
+  
+ A null value for <xref:System.Windows.Markup.IProvideValueTarget.TargetProperty%2A> or <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> does not necessarily mean that a markup extension or type converter cannot act, although that depends on your implementation. An example case where the values from <xref:System.Windows.Markup.IProvideValueTarget> are null even if the service is available is if your markup extension is nested within another markup extension, such as a <xref:System.Windows.Data.Binding>. An implementation that relies on <xref:System.Windows.Markup.IProvideValueTarget> should always check for null values if only for the purpose of throwing a specific exception, if that is your intended design.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TargetObject">
+      <MemberSignature Language="C#" Value="public object TargetObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TargetObject" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.IProvideValueTarget.TargetObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the target object being reported.</summary>
+        <value>The target object being reported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value returned by <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> is the actual reference, not a type system identifier or other identifier. The value can also be `null`; see Remarks in <xref:System.Windows.Markup.IProvideValueTarget>.  
+  
+> [!IMPORTANT]
+>  When using the service, it is particularly important not to modify the object referenced by the <xref:System.Windows.Markup.IProvideValueTarget.TargetObject%2A> property, or other objects referenced by that object as properties that are not specifically the value-conversion case you are handling. For WPF specifically, changing the target object could cause unexpected changes that would invalidate the WPF  property system.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProperty">
+      <MemberSignature Language="C#" Value="public object TargetProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TargetProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.IProvideValueTarget.TargetProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an identifier for the target property being reported.</summary>
+        <value>An identifier for the target property being reported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value can also be `null`; see Remarks in <xref:System.Windows.Markup.IProvideValueTarget>.  
+  
+## WPF Usage Notes  
+ For a dependency property, the default WPF service may return a <xref:System.Windows.DependencyProperty>, such that the markup extension or type converter can use metadata. Otherwise, the returned object can be a <xref:System.Reflection.PropertyInfo> for a CLR property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

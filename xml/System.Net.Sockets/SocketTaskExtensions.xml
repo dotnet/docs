@@ -1,0 +1,467 @@
+<Type Name="SocketTaskExtensions" FullName="System.Net.Sockets.SocketTaskExtensions">
+  <TypeSignature Language="C#" Value="public static class SocketTaskExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SocketTaskExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketTaskExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Sockets</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcceptAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.Sockets.Socket&gt; AcceptAsync (this System.Net.Sockets.Socket socket);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Net.Sockets.Socket&gt; AcceptAsync(class System.Net.Sockets.Socket socket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.AcceptAsync(System.Net.Sockets.Socket)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Sockets.Socket&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.Sockets.Socket&gt; AcceptAsync (this System.Net.Sockets.Socket socket, System.Net.Sockets.Socket acceptSocket);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Net.Sockets.Socket&gt; AcceptAsync(class System.Net.Sockets.Socket socket, class System.Net.Sockets.Socket acceptSocket) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.AcceptAsync(System.Net.Sockets.Socket,System.Net.Sockets.Socket)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Sockets.Socket&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="acceptSocket" Type="System.Net.Sockets.Socket" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="acceptSocket">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConnectAsync (this System.Net.Sockets.Socket socket, System.Net.EndPoint remoteEP);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ConnectAsync(class System.Net.Sockets.Socket socket, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.ConnectAsync(System.Net.Sockets.Socket,System.Net.EndPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="remoteEP" Type="System.Net.EndPoint" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="remoteEP">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConnectAsync (this System.Net.Sockets.Socket socket, System.Net.IPAddress address, int port);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ConnectAsync(class System.Net.Sockets.Socket socket, class System.Net.IPAddress address, int32 port) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.ConnectAsync(System.Net.Sockets.Socket,System.Net.IPAddress,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="address" Type="System.Net.IPAddress" />
+        <Parameter Name="port" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="address">To be added.</param>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConnectAsync (this System.Net.Sockets.Socket socket, System.Net.IPAddress[] addresses, int port);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ConnectAsync(class System.Net.Sockets.Socket socket, class System.Net.IPAddress[] addresses, int32 port) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.ConnectAsync(System.Net.Sockets.Socket,System.Net.IPAddress[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="addresses" Type="System.Net.IPAddress[]" />
+        <Parameter Name="port" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="addresses">To be added.</param>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ConnectAsync (this System.Net.Sockets.Socket socket, string host, int port);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ConnectAsync(class System.Net.Sockets.Socket socket, string host, int32 port) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.ConnectAsync(System.Net.Sockets.Socket,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="host" Type="System.String" />
+        <Parameter Name="port" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="host">To be added.</param>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; ReceiveAsync (this System.Net.Sockets.Socket socket, ArraySegment&lt;byte&gt; buffer, System.Net.Sockets.SocketFlags socketFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; ReceiveAsync(class System.Net.Sockets.Socket socket, valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.ReceiveAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="buffer" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="socketFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; ReceiveAsync (this System.Net.Sockets.Socket socket, System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; ReceiveAsync(class System.Net.Sockets.Socket socket, class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.ReceiveAsync(System.Net.Sockets.Socket,System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="buffers" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="buffers">To be added.</param>
+        <param name="socketFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveFromAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.Sockets.SocketReceiveFromResult&gt; ReceiveFromAsync (this System.Net.Sockets.Socket socket, ArraySegment&lt;byte&gt; buffer, System.Net.Sockets.SocketFlags socketFlags, System.Net.EndPoint remoteEndPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;valuetype System.Net.Sockets.SocketReceiveFromResult&gt; ReceiveFromAsync(class System.Net.Sockets.Socket socket, valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEndPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.ReceiveFromAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Sockets.SocketReceiveFromResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="buffer" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
+        <Parameter Name="remoteEndPoint" Type="System.Net.EndPoint" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="socketFlags">To be added.</param>
+        <param name="remoteEndPoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReceiveMessageFromAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Net.Sockets.SocketReceiveMessageFromResult&gt; ReceiveMessageFromAsync (this System.Net.Sockets.Socket socket, ArraySegment&lt;byte&gt; buffer, System.Net.Sockets.SocketFlags socketFlags, System.Net.EndPoint remoteEndPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;valuetype System.Net.Sockets.SocketReceiveMessageFromResult&gt; ReceiveMessageFromAsync(class System.Net.Sockets.Socket socket, valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEndPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.ReceiveMessageFromAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Net.Sockets.SocketReceiveMessageFromResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="buffer" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
+        <Parameter Name="remoteEndPoint" Type="System.Net.EndPoint" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="socketFlags">To be added.</param>
+        <param name="remoteEndPoint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; SendAsync (this System.Net.Sockets.Socket socket, ArraySegment&lt;byte&gt; buffer, System.Net.Sockets.SocketFlags socketFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; SendAsync(class System.Net.Sockets.Socket socket, valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.SendAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="buffer" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="socketFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; SendAsync (this System.Net.Sockets.Socket socket, System.Collections.Generic.IList&lt;ArraySegment&lt;byte&gt;&gt; buffers, System.Net.Sockets.SocketFlags socketFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; SendAsync(class System.Net.Sockets.Socket socket, class System.Collections.Generic.IList`1&lt;valuetype System.ArraySegment`1&lt;unsigned int8&gt;&gt; buffers, valuetype System.Net.Sockets.SocketFlags socketFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.SendAsync(System.Net.Sockets.Socket,System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.Net.Sockets.SocketFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="buffers" Type="System.Collections.Generic.IList&lt;System.ArraySegment&lt;System.Byte&gt;&gt;" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="buffers">To be added.</param>
+        <param name="socketFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;int&gt; SendToAsync (this System.Net.Sockets.Socket socket, ArraySegment&lt;byte&gt; buffer, System.Net.Sockets.SocketFlags socketFlags, System.Net.EndPoint remoteEP);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;int32&gt; SendToAsync(class System.Net.Sockets.Socket socket, valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, valuetype System.Net.Sockets.SocketFlags socketFlags, class System.Net.EndPoint remoteEP) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketTaskExtensions.SendToAsync(System.Net.Sockets.Socket,System.ArraySegment{System.Byte},System.Net.Sockets.SocketFlags,System.Net.EndPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="socket" Type="System.Net.Sockets.Socket" RefType="this" />
+        <Parameter Name="buffer" Type="System.ArraySegment&lt;System.Byte&gt;" />
+        <Parameter Name="socketFlags" Type="System.Net.Sockets.SocketFlags" />
+        <Parameter Name="remoteEP" Type="System.Net.EndPoint" />
+      </Parameters>
+      <Docs>
+        <param name="socket">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="socketFlags">To be added.</param>
+        <param name="remoteEP">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

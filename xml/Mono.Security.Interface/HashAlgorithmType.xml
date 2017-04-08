@@ -1,0 +1,162 @@
+<Type Name="HashAlgorithmType" FullName="Mono.Security.Interface.HashAlgorithmType">
+  <TypeSignature Language="C#" Value="public enum HashAlgorithmType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HashAlgorithmType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.HashAlgorithmType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Md5">
+      <MemberSignature Language="C#" Value="Md5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType Md5 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Md5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Md5Sha1">
+      <MemberSignature Language="C#" Value="Md5Sha1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType Md5Sha1 = int32(254)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Md5Sha1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha1">
+      <MemberSignature Language="C#" Value="Sha1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType Sha1 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha224">
+      <MemberSignature Language="C#" Value="Sha224" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType Sha224 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha224" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha256">
+      <MemberSignature Language="C#" Value="Sha256" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType Sha256 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha256" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha384">
+      <MemberSignature Language="C#" Value="Sha384" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType Sha384 = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha384" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sha512">
+      <MemberSignature Language="C#" Value="Sha512" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType Sha512 = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Sha512" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.HashAlgorithmType Unknown = int32(255)" />
+      <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.HashAlgorithmType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.HashAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

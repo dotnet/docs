@@ -113,7 +113,7 @@ WCF includes a number of code changes that eliminate race conditions, thereby im
 
 - Better support for mixing asynchronous and synchronous code in calls to **SocketConnection.BeginRead** and **SocketConnection.Read**.
 - Improved reliability when aborting a connection with **SharedConnectionListener** and **DuplexChannelBinder**.
-- Improved reliability of serialization operations when calling the <System.Runtime.Serialization.FormatterServices.GetSerializableMembers(System.Type)?displayProperty=fullName) method.
+- Improved reliability of serialization operations when calling the <xref:System.Runtime.Serialization.FormatterServices.GetSerializableMembers%28System.Type%29?displayProperty=fullName> method.
 - Improved reliability when removing a waiter by calling the **ChannelSynchronizer.RemoveWaiter** method.  
 
 <a name="wf47" />
@@ -164,7 +164,7 @@ WPF's printing APIs in the <xref:System.Printing.PrintQueue?displayProperty=full
   
 -   [Debugging improvements](#Debug462)  
   
- For a list of new APIs added to the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], see [.NET Framework 4.6.2 API Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net462/dotnet462-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], see [.NET Framework 4.6.2 API Changes](http://go.microsoft.com/fwlink/?LinkId=708778) on GitHub.  For additional information, see [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/) in the .NET Blog.  
+For a list of new APIs added to the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], see [.NET Framework 4.6.2 API Changes](https://github.com/Microsoft/dotnet/blob/master/releases/net462/dotnet462-api-changes.md) on GitHub. For a list of feature improvements and bug fixes in the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], see [.NET Framework 4.6.2 API Changes](http://go.microsoft.com/fwlink/?LinkId=708778) on GitHub. For additional information, see [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/) in the .NET Blog.  
   
 <a name="ASPNET462"></a>   
 ### ASP.NET  

@@ -1,6 +1,19 @@
 {
     "redirections": [
         {
+            "source_path": "docs/standard/exceptions.md",
+            "redirect_url": "/dotnet/articles/standard/exceptions/",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "docs/standard/exceptions/exception-handling-fundamentals.md",
+            "redirect_url": "/dotnet/articles/standard/exceptions/"
+        },
+        {
+            "source_path": "docs/standard/exceptions/exception-hierarchy.md",
+            "redirect_url": "/dotnet/articles/standard/exceptions/"
+        },
+        {
             "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
             "redirect_url": "/dotnet/articles/core/preview3/tools/dotnet-nuget-delete"
         },

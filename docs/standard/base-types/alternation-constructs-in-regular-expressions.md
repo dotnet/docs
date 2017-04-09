@@ -24,7 +24,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # Alternation Constructs in Regular Expressions
-<a name="top"></a> Alternation constructs modify a regular expression to enable either/or or conditional matching. The .NET Framework supports three alternation constructs:  
+<a name="top"></a> Alternation constructs modify a regular expression to enable either/or or conditional matching. .NET supports three alternation constructs:  
   
 -   [Pattern matching with &#124;](#Either_Or)  
   

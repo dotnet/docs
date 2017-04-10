@@ -1,0 +1,129 @@
+<Type Name="PerformanceCounterPermissionAccess" FullName="System.Diagnostics.PerformanceCounterPermissionAccess">
+  <TypeSignature Language="C#" Value="public enum PerformanceCounterPermissionAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PerformanceCounterPermissionAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermissionAccess" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines access levels used by <see cref="T:System.Diagnostics.PerformanceCounter" /> permission classes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Administer">
+      <MemberSignature Language="C#" Value="Administer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Administer = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read, write, and create categories.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Browse">
+      <MemberSignature Language="C#" Value="Browse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Browse = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Browse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read categories.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Instrument">
+      <MemberSignature Language="C#" Value="Instrument" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Instrument = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Instrument" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read and write categories.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> has no permissions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="Read" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Read = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read categories.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="Write" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Write = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Write" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can write categories.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

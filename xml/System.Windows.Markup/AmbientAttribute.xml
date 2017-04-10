@@ -1,0 +1,77 @@
+<Type Name="AmbientAttribute" FullName="System.Windows.Markup.AmbientAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AmbientAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AmbientAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.AmbientAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Property, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that a property or type should be treated as ambient. The ambient concept relates to how XAML processors determine type owners of members.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An ambient property is a property where the value is expected to be available in the parser context when creating an object graph, but where typical type-member lookup is suspended for purposes of the immediate XAML node set being created. There are two main scenarios for the ambient concept:  
+  
+-   Some other property of the same object influences and qualifies how that object-property lookup should work.  
+  
+-   The property represents a larger deferral mechanism and the ambient capabilities for looking up a member value extend to all objects contained within the current object.  
+  
+ This attribute can be applied to specific properties that have expected containers that enable an ambient property lookup behavior, or can be applied to a class to enable the ambient property behavior in all cases of that value type for a property.  
+  
+ <xref:System.Windows.Markup.AmbientAttribute> can also be applied to a CLR method, to support attributing a XAML attachable property as ambient. This is potentially necessary because in a CLR implementation a XAML attached property is implemented/represented to reflection as an accessor pattern with `get` and `set` methods. No actual CLR property to attribute exists, so restricting usage for <xref:System.AttributeTargets> to `Property` would not have enabled specifying an attachable member as ambient. For an attachable member that you want to report as ambient, attribute the `get` accessor. You should not attempt to attribute methods that are not specifically support methods of attachable members.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.AmbientAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+ Ambient types (types where <xref:System.Windows.Markup.AmbientAttribute> is applied at type level) can be used for certain XAML processing situations where the type of a property needs to be resolved out of order.  
+  
+## Object Writer Scenarios  
+ If you are defining a XAML object writer, and you encounter a property, method or type where <xref:System.Windows.Markup.AmbientAttribute> is applied, you typically must access a service to determine the intended ambient property lookup behavior that is needed for writing out objects. For more information, see <xref:System.Xaml.IAmbientProvider>.  
+  
+## Value Converters  
+ Type converters or markup extensions might need to know the ambient information in order to process properties that represent indirect type mappings, such as properties that specify members or types by string names with or without qualification. In this scenario, <xref:System.Windows.Markup.AmbientAttribute> is not intended to be used directly for value converter code logic. Rather, the value converter should rely on the XAML writer processing behavior, which will pass <xref:System.Xaml.IAmbientProvider> in its service contexts to your value converter methods when called.  
+  
+## WPF Scenarios for AmbientAttribute  
+  
+-   A property of a <xref:System.Windows.Style> (<xref:System.Windows.Style.TargetType%2A>) can qualify the necessary property name lookups that are needed to find the backing references for property names in <xref:System.Windows.Setter.Property%2A?displayProperty=fullName> values.  
+  
+-   All content within a `Resources` property (items of a <xref:System.Windows.ResourceDictionary>) as well as template content, should be able to access other peers as values. Declaring the entire `Resources` property as ambient invokes logic that enables this in the WPF XAML parser.  
+  
+ See <xref:System.Windows.ResourceDictionary> for an example of a scenario for setting <xref:System.Windows.Markup.AmbientAttribute> at type level.  
+  
+<a name="xamlTextUsage_AmbientAttribute"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AmbientAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.AmbientAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.AmbientAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

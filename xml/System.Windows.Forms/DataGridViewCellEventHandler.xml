@@ -1,0 +1,75 @@
+<Type Name="DataGridViewCellEventHandler" FullName="System.Windows.Forms.DataGridViewCellEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewCellEventHandler(object sender, DataGridViewCellEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle <see cref="T:System.Windows.Forms.DataGridView" /> events related to cell and row operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.DataGridViewCellEventHandler> handles the following <xref:System.Windows.Forms.DataGridView> events:  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellContentClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellContextMenuStripChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellEndEdit>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellEnter>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellErrorTextChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellLeave>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseEnter>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseLeave>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellStyleChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellToolTipTextChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellValidated>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellValueChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowEnter>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowLeave>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowValidated>  
+  
+ When you create a <xref:System.Windows.Forms.DataGridViewCellEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using <xref:System.Windows.Forms.DataGridView.CellMouseEnter> and <xref:System.Windows.Forms.DataGridView.CellMouseLeave> event handlers to determine whether a cell can be clicked. The example updates each <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> to advertise the current image layout. This code is part of a larger example shown in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#15](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CPP/tictactoe.cpp#15)]
+ [!code-csharp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CS/tictactoe.cs#15)]
+ [!code-vb[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#15](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/VB/tictactoe.vb#15)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

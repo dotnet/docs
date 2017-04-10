@@ -1,0 +1,195 @@
+<Type Name="TcpTransportSecurity" FullName="System.ServiceModel.TcpTransportSecurity">
+  <TypeSignature Language="C#" Value="public sealed class TcpTransportSecurity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TcpTransportSecurity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.TcpTransportSecurity" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties that control authentication parameters and protection level for the TCP transport.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by <xref:System.ServiceModel.NetTcpSecurity.Transport%2A> to set the transport-level security settings for a binding.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TcpTransportSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.TcpTransportSecurity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.TcpTransportSecurity" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientCredentialType">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.TcpClientCredentialType ClientCredentialType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.TcpClientCredentialType ClientCredentialType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.TcpTransportSecurity.ClientCredentialType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.TcpClientCredentialType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of client credential used for authentication.</summary>
+        <value>Returns the <see cref="T:System.ServiceModel.TcpClientCredentialType" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value can be one of the following enumeration members:  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+-   <xref:System.ServiceModel.HttpClientCredentialType>  
+  
+   
+  
+## Examples  
+ The following code shows how to access and set this property.  
+  
+ [!code-csharp[c_ProgrammingSecurity#13](~/samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#13)]
+ [!code-vb[c_ProgrammingSecurity#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedProtectionPolicy">
+      <MemberSignature Language="C#" Value="public System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy ExtendedProtectionPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.TcpTransportSecurity.ExtendedProtectionPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the extended protection policy for the TCP transport.</summary>
+        <value>The extended protection policy for the TCP transport.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevel">
+      <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ProtectionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.TcpTransportSecurity.ProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Net.Security.ProtectionLevel" /> for the TCP stream.</summary>
+        <value>Returns the <see cref="T:System.Net.Security.ProtectionLevel" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeExtendedProtectionPolicy">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeExtendedProtectionPolicy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeExtendedProtectionPolicy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.TcpTransportSecurity.ShouldSerializeExtendedProtectionPolicy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.TcpTransportSecurity.ExtendedProtectionPolicy" /> property has changed from its default value and should be serialized. It is used by WCF for XAML integration.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.TcpTransportSecurity.ExtendedProtectionPolicy" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SslProtocols">
+      <MemberSignature Language="C#" Value="public System.Security.Authentication.SslProtocols SslProtocols { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Authentication.SslProtocols SslProtocols" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.TcpTransportSecurity.SslProtocols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.SslProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the list of SSL/TLS protocols to negotiate when using a client credential type of TcpClientCredentialType.Certificate. The value can be a combination of one of more of the following enumeration members: Ssl3, Tls, Tls11, Tls12.</summary>
+        <value>Returns <see cref="T:System.Security.Authentication.SslProtocols" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is Ssl3 &#124; Tls &#124; Tls11 &#124; Tls12. Versions of the framework prior to 4.6 only support Ssl3 and Tls. If these are not included, communication with earlier versions of the framework will not be possible. Specifying Tls11 and/or Tls12 will disable the usage of Ssl3, even if it has been included.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+NetTcpBinding b = new NetTcpBinding();  
+b.Security.Mode = SecurityMode.Transport;  
+b.Security.Transport.ClientCredentialType = TcpClientCredentialType.Certificate;  
+b.Security.Transport.SslProtocols = SslProtocols.Tls11 | SslProtocols.Tls12;  
+EndpointAddress a = new EndpointAddress("net.tcp://contoso.com/TcpAddress");  
+ChannelFactory<ICalculator> cf = new ChannelFactory<ICalculator>(b, a);  
+cf.Credentials.ClientCertificate.SetCertificate(  
+    StoreLocation.LocalMachine,  
+    StoreName.My,  
+    X509FindType.FindByThumbprint,  
+    "0000000000000000000000000000000000000000");  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

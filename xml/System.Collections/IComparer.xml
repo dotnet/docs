@@ -1,0 +1,145 @@
+<Type Name="IComparer" FullName="System.Collections.IComparer">
+  <TypeSignature Language="C#" Value="public interface IComparer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComparer" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.IComparer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes a method that compares two objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is used in conjunction with the <xref:System.Array.Sort%2A?displayProperty=fullName> and <xref:System.Array.BinarySearch%2A?displayProperty=fullName> methods. It provides a way to customize the sort order of a collection. See the <xref:System.Collections.IComparer.Compare%2A> method for notes on parameters and return value.  
+  
+ The default implementation of this interface is the <xref:System.Collections.Comparer> class. For the generic version of this interface, see <xref:System.Collections.Generic.IComparer%601?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Collections.IComparer> interface to sort an <xref:System.Collections.ArrayList> object. In this example, the <xref:System.Collections.IComparer> interface is implemented using the <xref:System.Collections.CaseInsensitiveComparer> class to reverse the order of the contents of the <xref:System.Collections.ArrayList>.  
+  
+ [!code-cpp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CPP/arraylist_sort2.cpp#1)]
+ [!code-csharp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CS/arraylist_sort2.cs#1)]
+ [!code-vb[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/VB/arraylist_sort2.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compare">
+      <MemberSignature Language="C#" Value="public int Compare (object x, object y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(object x, object y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.IComparer.Compare(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Object" />
+        <Parameter Name="y" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="x">The first object to compare.</param>
+        <param name="y">The second object to compare.</param>
+        <summary>Compares two objects and returns a value indicating whether one is less than, equal to, or greater than the other.</summary>
+        <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Meaning  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> <paramref name="x" /> is less than <paramref name="y" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> <paramref name="x" /> equals <paramref name="y" />.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> <paramref name="x" /> is greater than <paramref name="y" />.  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The preferred implementation is to use the <xref:System.IComparable.CompareTo%2A> method of one of the parameters.  
+  
+ Comparing `null` with any type is allowed and does not generate an exception when using <xref:System.IComparable>. When sorting, `null` is considered to be less than any other object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Collections.IComparer> interface to sort an <xref:System.Collections.ArrayList> object. In this example, the <xref:System.Collections.IComparer> interface is implemented using the <xref:System.Collections.CaseInsensitiveComparer>class to reverse the order of the contents of the <xref:System.Collections.ArrayList>.  
+  
+ [!code-cpp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CPP/arraylist_sort2.cpp#1)]
+ [!code-csharp[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/CS/arraylist_sort2.cs#1)]
+ [!code-vb[System.Collections.ArrayList.Sort_2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.ArrayList.Sort_2/VB/arraylist_sort2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Neither <paramref name="x" /> nor <paramref name="y" /> implements the <see cref="T:System.IComparable" /> interface.  
+  
+ -or-  
+  
+ <paramref name="x" /> and <paramref name="y" /> are of different types and neither one can handle comparisons with the other.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

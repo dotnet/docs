@@ -42,7 +42,7 @@ This documentation will show you how to build an app from scratch. Key sections:
 
 ## Open source
 
-Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org). Many parts of .NET are built with the help of open source contributions from a community of developers around the world. In the [.NET Foundation repositories](https://github.com/dotnet), find the source code and on-going work for [.NET Core](https://github.com/dotnet/core), [.NET Core foundational libraries (CoreFX)](https://github.com/dotnet/corefx), and the [.NET Core runtime (CoreCLR)](https://github.com/dotnet/coreclr). You're welcome to contribute to the [.NET documentation](https://github.com/dotnet/docs). The [ASP.NET repositories](https://github.com/aspnet) are the home for ASP.NET Core source code repositories and documentation. 
+Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/dotnet/core) and [Xamarin](http://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
 
 ## Community
 

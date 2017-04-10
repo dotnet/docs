@@ -1,0 +1,40 @@
+<Type Name="SendOrPostCallback" FullName="System.Threading.SendOrPostCallback">
+  <TypeSignature Language="C#" Value="public delegate void SendOrPostCallback(object state);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SendOrPostCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.SendOrPostCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="state" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="state">The object passed to the delegate.</param>
+    <summary>Represents a method to be called when a message is to be dispatched to a synchronization context.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Threading.SendOrPostCallback> represents a callback method that you want to execute when a message is to be dispatched to a synchronization context.  Create the delegate by passing your callback method to the <xref:System.Threading.SendOrPostCallback> constructor. Your method must have the signature shown here.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

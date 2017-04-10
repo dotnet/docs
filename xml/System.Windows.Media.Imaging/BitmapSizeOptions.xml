@@ -1,0 +1,273 @@
+<Type Name="BitmapSizeOptions" FullName="System.Windows.Media.Imaging.BitmapSizeOptions">
+  <TypeSignature Language="C#" Value="public class BitmapSizeOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BitmapSizeOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapSizeOptions" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines size-related attributes of a cached bitmap image. A bitmap is scaled based on values that are defined by this class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FromEmptyOptions">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromEmptyOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromEmptyOptions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromEmptyOptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapSizeOptions</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" /> with empty sizing properties.</summary>
+        <returns>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Windows.Media.Imaging.BitmapSizeOptions> will have its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.Rotation%2A> property set to <xref:System.Windows.Media.Imaging.Rotation>, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PreservesAspectRatio%2A> set to `true`, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight%2A> set to zero, and its <xref:System.Windows.Media.Imaging.BitmapSource.PixelWidth%2A> set to zero.  
+  
+ When passed to a <xref:System.Windows.Media.Imaging.TransformedBitmap>, the input is the same as the output.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromHeight">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromHeight (int pixelHeight);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromHeight(int32 pixelHeight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromHeight(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapSizeOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pixelHeight" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pixelHeight">The height, in pixels, of the resulting bitmap.</param>
+        <summary>Initializes an instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" /> that preserves the aspect ratio of the source bitmap and specifies an initial <see cref="P:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight" />.</summary>
+        <returns>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Windows.Media.Imaging.BitmapSizeOptions> will have its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.Rotation%2A> property set to <xref:System.Windows.Media.Imaging.Rotation>, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PreservesAspectRatio%2A> set to `true`, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight%2A> set to the value of `pixelHeight`, and its <xref:System.Windows.Media.Imaging.BitmapSource.PixelWidth%2A> set to zero.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Occurs when <paramref name="pixelHeight" /> is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromRotation">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromRotation (System.Windows.Media.Imaging.Rotation rotation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromRotation(valuetype System.Windows.Media.Imaging.Rotation rotation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromRotation(System.Windows.Media.Imaging.Rotation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapSizeOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rotation" Type="System.Windows.Media.Imaging.Rotation" />
+      </Parameters>
+      <Docs>
+        <param name="rotation">The initial rotation value to apply. Only 90 degree increments are supported.</param>
+        <summary>Initializes an instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" /> that preserves the aspect ratio of the source bitmap and specifies an initial <see cref="T:System.Windows.Media.Imaging.Rotation" /> to apply.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resulting bitmap maintains its original aspect ratio and sizing.  
+  
+ The returned <xref:System.Windows.Media.Imaging.BitmapSizeOptions> will have its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.Rotation%2A> property set to the value of `rotation`, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PreservesAspectRatio%2A> set to `true`, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight%2A> set to 0, and its <xref:System.Windows.Media.Imaging.BitmapSource.PixelWidth%2A> set to 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromWidth">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromWidth (int pixelWidth);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromWidth(int32 pixelWidth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromWidth(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapSizeOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pixelWidth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pixelWidth">The width, in pixels, of the resulting bitmap.</param>
+        <summary>Initializes an instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" /> that preserves the aspect ratio of the source bitmap and specifies an initial <see cref="P:System.Windows.Media.Imaging.BitmapSizeOptions.PixelWidth" />.</summary>
+        <returns>An instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Windows.Media.Imaging.BitmapSizeOptions> will have its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.Rotation%2A> property set to <xref:System.Windows.Media.Imaging.Rotation>, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PreservesAspectRatio%2A> set to `true`, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight%2A> set to zero, and its <xref:System.Windows.Media.Imaging.BitmapSource.PixelWidth%2A> set to the value of `pixelWidth`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Occurs when <paramref name="pixelWidth" /> is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FromWidthAndHeight">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.Imaging.BitmapSizeOptions FromWidthAndHeight (int pixelWidth, int pixelHeight);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Imaging.BitmapSizeOptions FromWidthAndHeight(int32 pixelWidth, int32 pixelHeight) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapSizeOptions.FromWidthAndHeight(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.BitmapSizeOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pixelWidth" Type="System.Int32" />
+        <Parameter Name="pixelHeight" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pixelWidth">The width, in pixels, of the resulting bitmap.</param>
+        <param name="pixelHeight">The height, in pixels, of the resulting bitmap.</param>
+        <summary>Initializes an instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" /> that does not preserve the original bitmap aspect ratio.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.Imaging.BitmapSizeOptions" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resulting bitmap has an effective size of `pixelHeight` × `pixelWidth`.  
+  
+ The returned <xref:System.Windows.Media.Imaging.BitmapSizeOptions> will have its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.Rotation%2A> property set to <xref:System.Windows.Media.Imaging.Rotation>, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PreservesAspectRatio%2A> set to `false`, its <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight%2A> set to the value of `pixelHeight`, and its <xref:System.Windows.Media.Imaging.BitmapSource.PixelWidth%2A> set to the value of `pixelWidth`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Occurs when <paramref name="pixelHeight" /> is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelHeight">
+      <MemberSignature Language="C#" Value="public int PixelHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The height, in pixels, of the bitmap image.</summary>
+        <value>The height of the bitmap.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight%2A> must be greater than zero to be valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelWidth">
+      <MemberSignature Language="C#" Value="public int PixelWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PixelWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSizeOptions.PixelWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The width, in pixels, of the bitmap image.</summary>
+        <value>The width of the bitmap.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelWidth%2A> must be greater than zero to be valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreservesAspectRatio">
+      <MemberSignature Language="C#" Value="public bool PreservesAspectRatio { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreservesAspectRatio" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSizeOptions.PreservesAspectRatio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that determines whether the aspect ratio of the original bitmap image is preserved.</summary>
+        <value>
+          <see langword="true" /> if the original aspect ratio is maintained; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the original aspect ratio is preserved, <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelWidth%2A> and <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight%2A> represent the maximum size values for the bitmap. The resulting bitmap is only guaranteed to have either its width or its height match the specified values. If the aspect ratio is not preserved, the specified <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelWidth%2A> and <xref:System.Windows.Media.Imaging.BitmapSizeOptions.PixelHeight%2A> are both used, and the bitmap is stretched to use those values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotation">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.Rotation Rotation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Imaging.Rotation Rotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapSizeOptions.Rotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.Rotation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents the rotation angle that is applied to a bitmap.</summary>
+        <value>The rotation angle that is applied to the image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only increments of 90 degrees are supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -31,11 +31,11 @@ See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/rel
 
 ## .NET Core dependencies
 
-.NET Core requires the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed for you if you use the .NET Core installer. However, you need to manually install the [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145) if you are installing .NET Core via the [installer script](https://docs.microsoft.com/en-us/dotnet/articles/core/tools/dotnet-install-script) or deploying a self-contained .NET Core application.
+.NET Core requires the Visual C++ Redistributable when running on Windows versions earlier than Windows 10 and Windows Server 2016. This dependency is automatically installed for you if you use the .NET Core installer. However, you need to manually install the [Microsoft Visual C++ 2015 Redistributable Update 3](https://www.microsoft.com/download/details.aspx?id=53840) if you are installing .NET Core via the [installer script](./tools/dotnet-install-script.md) or deploying a self-contained .NET Core application.
 
 > [!NOTE]
 > <em>For Windows 7 and Windows Server 2008 machines only:</em><br>
-> Make sure that your Windows installation is up-to-date and includes hotfix [KB2533623](https://support.microsoft.com/en-us/kb/2533623) installed through Windows Update.
+> Make sure that your Windows installation is up-to-date and includes hotfix [KB2533623](https://support.microsoft.com/help/2533623) installed through Windows Update.
 
 ## Prerequisites with Visual Studio 2017
 

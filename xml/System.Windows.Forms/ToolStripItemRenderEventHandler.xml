@@ -1,0 +1,48 @@
+<Type Name="ToolStripItemRenderEventHandler" FullName="System.Windows.Forms.ToolStripItemRenderEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ToolStripItemRenderEventHandler(object sender, ToolStripItemRenderEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripItemRenderEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemRenderEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.ToolStripItemRenderEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the events that render the background of objects derived from <see cref="T:System.Windows.Forms.ToolStripItem" /> in the <see cref="T:System.Windows.Forms.ToolStripRenderer" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolStripItemRenderEventHandler> represents the method that handles the following events:  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderDropDownButtonBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderItemBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderLabelBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderMenuItemBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderOverflowButtonBackground>  
+  
+-   <xref:System.Windows.Forms.ToolStripRenderer.RenderSplitButtonBackground>  
+  
+ When you create a <xref:System.Windows.Forms.ToolStripItemRenderEventHandler> delegate, you identify the method that handles the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

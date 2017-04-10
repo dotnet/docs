@@ -1,0 +1,332 @@
+<Type Name="RuntimeArgument" FullName="System.Activities.RuntimeArgument">
+  <TypeSignature Language="C#" Value="public sealed class RuntimeArgument : System.Activities.LocationReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuntimeArgument extends System.Activities.LocationReference" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.RuntimeArgument" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.LocationReference</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes the characteristics of an argument of an activity to the runtime.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuntimeArgument (string name, Type argumentType, System.Activities.ArgumentDirection direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type argumentType, valuetype System.Activities.ArgumentDirection direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="argumentType" Type="System.Type" />
+        <Parameter Name="direction" Type="System.Activities.ArgumentDirection" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <param name="argumentType">The type of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <param name="direction">The direction of data flow through an argument.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class using a name, data type, and argument direction.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuntimeArgument (string name, Type argumentType, System.Activities.ArgumentDirection direction, bool isRequired);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type argumentType, valuetype System.Activities.ArgumentDirection direction, bool isRequired) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="argumentType" Type="System.Type" />
+        <Parameter Name="direction" Type="System.Activities.ArgumentDirection" />
+        <Parameter Name="isRequired" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <param name="argumentType">The data type of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <param name="direction">The direction of data flow through an argument.</param>
+        <param name="isRequired">
+          <see langword="true" /> to indicate that the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value; otherwise <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class using a name, data type, argument direction, and a value that indicates whether the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuntimeArgument (string name, Type argumentType, System.Activities.ArgumentDirection direction, System.Collections.Generic.List&lt;string&gt; overloadGroupNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type argumentType, valuetype System.Activities.ArgumentDirection direction, class System.Collections.Generic.List`1&lt;string&gt; overloadGroupNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection,System.Collections.Generic.List{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="argumentType" Type="System.Type" />
+        <Parameter Name="direction" Type="System.Activities.ArgumentDirection" />
+        <Parameter Name="overloadGroupNames" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <param name="argumentType">The data type of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <param name="direction">The direction of data flow through an argument.</param>
+        <param name="overloadGroupNames">The overload groups that apply to this <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class using a name, data type, argument direction, and a list of overload group names.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuntimeArgument (string name, Type argumentType, System.Activities.ArgumentDirection direction, bool isRequired, System.Collections.Generic.List&lt;string&gt; overloadGroupNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type argumentType, valuetype System.Activities.ArgumentDirection direction, bool isRequired, class System.Collections.Generic.List`1&lt;string&gt; overloadGroupNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeArgument.#ctor(System.String,System.Type,System.Activities.ArgumentDirection,System.Boolean,System.Collections.Generic.List{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="argumentType" Type="System.Type" />
+        <Parameter Name="direction" Type="System.Activities.ArgumentDirection" />
+        <Parameter Name="isRequired" Type="System.Boolean" />
+        <Parameter Name="overloadGroupNames" Type="System.Collections.Generic.List&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <param name="argumentType">The data type of the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <param name="direction">The direction of data flow through an argument.</param>
+        <param name="isRequired">
+          <see langword="true" /> to indicate that the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value; otherwise <see langword="false" />.</param>
+        <param name="overloadGroupNames">The names of the overload groups that apply to this <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.RuntimeArgument" /> class with a name, data type, argument direction, whether the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value, and a list of overload group names.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Required arguments that are unbound result in validation errors that are displayed at design time.  
+  
+ The <xref:System.Activities.RuntimeArgument.IsRequired%2A?displayProperty=fullName> is set to `true` if the <xref:System.Activities.RequiredArgumentAttribute?displayProperty=fullName> is applied to an argument.  
+  
+ Overload groups can be set on arguments through the <xref:System.Activities.OverloadGroupAttribute>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public System.Activities.ArgumentDirection Direction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.ArgumentDirection Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeArgument.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.ArgumentDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the direction of the data flow through this <see cref="T:System.Activities.RuntimeArgument" />.</summary>
+        <value>The direction of data flow through an argument.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public object Get (System.Activities.ActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Get(class System.Activities.ActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeArgument.Get(System.Activities.ActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current activity context.</param>
+        <summary>Gets the value of the <see cref="T:System.Activities.RuntimeArgument" /> using the specified activity context.</summary>
+        <returns>The value of the <see cref="T:System.Activities.RuntimeArgument" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Get&lt;T&gt; (System.Activities.ActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Get&lt;T&gt;(class System.Activities.ActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeArgument.Get``1(System.Activities.ActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The return value type.</typeparam>
+        <param name="context">The current activity context.</param>
+        <summary>Gets the strongly-typed value of the <see cref="T:System.Activities.RuntimeArgument" /> using the specified activity context.</summary>
+        <returns>The value of the <see cref="T:System.Activities.RuntimeArgument" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocation">
+      <MemberSignature Language="C#" Value="public override System.Activities.Location GetLocation (System.Activities.ActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Activities.Location GetLocation(class System.Activities.ActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeArgument.GetLocation(System.Activities.ActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Location</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The argument location.</param>
+        <summary>Returns the <see cref="T:System.Activities.Location" /> for this <see cref="T:System.Activities.RuntimeArgument" />.</summary>
+        <returns>The location of the <see cref="T:System.Activities.RuntimeArgument" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequired">
+      <MemberSignature Language="C#" Value="public bool IsRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeArgument.IsRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.RuntimeArgument" /> is required to be bound to a value; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an argument is required and not bound to a value a <xref:System.Activities.ValidationException> is thrown when the containing activity is prepared for execution, unless overload groups are used and the required arguments of an overload group are bound. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]<xref:System.Activities.RuntimeArgument.OverloadGroupNames%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameCore">
+      <MemberSignature Language="C#" Value="protected override string NameCore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameCore" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeArgument.NameCore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverloadGroupNames">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; OverloadGroupNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; OverloadGroupNames" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeArgument.OverloadGroupNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of the overload groups that this <see cref="T:System.Activities.RuntimeArgument" /> belongs to.</summary>
+        <value>A list of overload group names.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Arguments can be grouped together to form valid overload groups. <xref:System.Activities.RuntimeArgument.OverloadGroupNames%2A> identifies the overload groups to which this argument belongs. An overload group cannot be a subset or an equivalent set of another overload group. The only exception to this rule is a subset that contains only arguments where <xref:System.Activities.RuntimeArgument.IsRequired%2A> is `false`. Overload groups can overlap but it is an error if the intersection of the groups contains all the required arguments of one or both the overload groups.  
+  
+ An overload group is considered bound if all the <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments in the group are bound. If a group has zero <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments and at least one argument bound, then the group is considered bound. It is an error if none of the groups are bound unless one overload group has no <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments in it. Binding <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments from more than one overload group is not permitted. It is an error to have more than one overload group bound, that is, all required arguments in one overload group are bound and any argument in another overload group is also bound.  
+  
+ Any violation of the preceding rules results in a <xref:System.Activities.ValidationException> being thrown when the containing activity is prepared for execution.  
+  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] <xref:System.Activities.OverloadGroupAttribute>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public void Set (System.Activities.ActivityContext context, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Activities.ActivityContext context, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.RuntimeArgument.Set(System.Activities.ActivityContext,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.ActivityContext" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current activity context.</param>
+        <param name="value">The new value for the <see cref="T:System.Activities.RuntimeArgument" />.</param>
+        <summary>Sets the value of the <see cref="T:System.Activities.RuntimeArgument" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeCore">
+      <MemberSignature Language="C#" Value="protected override Type TypeCore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TypeCore" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.RuntimeArgument.TypeCore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

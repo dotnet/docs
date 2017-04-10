@@ -1,0 +1,192 @@
+<Type Name="CodeMethodReferenceExpression" FullName="System.CodeDom.CodeMethodReferenceExpression">
+  <TypeSignature Language="C#" Value="public class CodeMethodReferenceExpression : System.CodeDom.CodeExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeMethodReferenceExpression extends System.CodeDom.CodeExpression" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMethodReferenceExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a reference to a method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.CodeDom.CodeMethodReferenceExpression> can be used to represent an expression of the form Object.Method.  
+  
+ The <xref:System.CodeDom.CodeMethodReferenceExpression.TargetObject%2A> property indicates the object that contains the method. The <xref:System.CodeDom.CodeMethodReferenceExpression.MethodName%2A> property indicates the name of the method.  
+  
+ A <xref:System.CodeDom.CodeMethodReferenceExpression> is used with a <xref:System.CodeDom.CodeMethodInvokeExpression> to indicate the method to invoke, and with a <xref:System.CodeDom.CodeDelegateCreateExpression> to indicate the method to handle the event.  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.CodeDom.CodeMethodReferenceExpression> to refer to a method:  
+  
+ [!code-cpp[CodeMethodReferenceExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeMethodReferenceExample/CPP/codemethodreferenceexample.cpp#3)]
+ [!code-csharp[CodeMethodReferenceExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeMethodReferenceExample/CS/codemethodreferenceexample.cs#3)]
+ [!code-vb[CodeMethodReferenceExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeMethodReferenceExample/VB/codemethodreferenceexample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeMethodReferenceExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReferenceExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReferenceExpression" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeMethodReferenceExpression (System.CodeDom.CodeExpression targetObject, string methodName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetObject" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object to target.</param>
+        <param name="methodName">The name of the method to call.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReferenceExpression" /> class using the specified target object and method name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeMethodReferenceExpression (System.CodeDom.CodeExpression targetObject, string methodName, System.CodeDom.CodeTypeReference[] typeParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, string methodName, class System.CodeDom.CodeTypeReference[] typeParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String,System.CodeDom.CodeTypeReference[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="targetObject" Type="System.CodeDom.CodeExpression" />
+        <Parameter Name="methodName" Type="System.String" />
+        <Parameter Name="typeParameters" Type="System.CodeDom.CodeTypeReference[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="targetObject">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the object to target.</param>
+        <param name="methodName">The name of the method to call.</param>
+        <param name="typeParameters">An array of <see cref="T:System.CodeDom.CodeTypeReference" /> values that specify the <see cref="P:System.CodeDom.CodeMethodReferenceExpression.TypeArguments" /> for this <see cref="T:System.CodeDom.CodeMethodReferenceExpression" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReferenceExpression" /> class using the specified target object, method name, and generic type arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `typeParameters` parameter represents a collection of type references to be substituted for the type parameter references of the current generic method.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of this constructor.  
+  
+ [!code-cpp[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/cpp/source.cpp#1)]
+ [!code-csharp[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/cs/source.cs#1)]
+ [!code-vb[System.CodeDom.CodeMethodReferenceExpression#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.codedom.codemethodreferenceexpression/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodName">
+      <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodReferenceExpression.MethodName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the method to reference.</summary>
+        <value>The name of the method to reference.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetObject">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression TargetObject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression TargetObject" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodReferenceExpression.TargetObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression that indicates the method to reference.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> that represents the method to reference.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeArguments">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReferenceCollection TypeArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReferenceCollection TypeArguments" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodReferenceExpression.TypeArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReferenceCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type arguments for the current generic method reference expression.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeReferenceCollection" /> containing the type arguments for the current code <see cref="T:System.CodeDom.CodeMethodReferenceExpression" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.CodeMethodReferenceExpression.TypeArguments%2A> property represents a collection of type references to be substituted for the type parameter references of the current generic method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

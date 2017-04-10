@@ -1,0 +1,24 @@
+<Namespace Name="System.Drawing.Drawing2D">
+  <Docs>
+    <summary>The <see cref="N:System.Drawing.Drawing2D" /> namespace provides advanced two-dimensional and vector graphics functionality.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists some of the important classes and enumerations in the<xref:System.Drawing.Drawing2D> namespace, grouped into categories.  
+  
+|Class category|Details|  
+|--------------------|-------------|  
+|-   Graphics and Graphics paths|The <xref:System.Drawing.Drawing2D.GraphicsState> and <xref:System.Drawing.Drawing2D.GraphicsContainer> classes report information about the current `Graphics` object. <xref:System.Drawing.Drawing2D.GraphicsPath> classes represent a series of lines and curves. The <xref:System.Drawing.Drawing2D.GraphicsPathIterator> and <xref:System.Drawing.Drawing2D.PathData> classes provide detailed information about the contents of a <xref:System.Drawing.Drawing2D.GraphicsPath> object.|  
+|-   Matrix and transformation related types|The <xref:System.Drawing.Drawing2D.Matrix> class represents a matrix for geometric transforms. The <xref:System.Drawing.Drawing2D.MatrixOrder> enumeration specifies the order for matrix transformations.|  
+|-   Brush classes|The <xref:System.Drawing.Drawing2D.PathGradientBrush> and <xref:System.Drawing.Drawing2D.HatchBrush> classes enable you to fill shapes with either a gradient, or hatch pattern, respectively.|  
+|-   Enumeration related to lines|The <xref:System.Drawing.Drawing2D.LineCap> and <xref:System.Drawing.Drawing2D.CustomLineCap> enumerations enable you to specify cap styles for a line. The, <xref:System.Drawing.Drawing2D.LineJoin> enumeration enables you to specify how two lines are joined in a path. The <xref:System.Drawing.Drawing2D.PenAlignment> enumeration enables you specify the alignment of the drawing tip, when you draw a line. The <xref:System.Drawing.Drawing2D.PenType> enumeration specifies the pattern a line should be filled with.|  
+|-   Enumerations related to filling shapes and paths|The <xref:System.Drawing.Drawing2D.HatchStyle> enumeration specifies fill styles for a <xref:System.Drawing.Drawing2D.HatchBrush>. The <xref:System.Drawing.Drawing2D.Blend> class specifies a blend pattern for a <xref:System.Drawing.Drawing2D.LinearGradientBrush>. The <xref:System.Drawing.Drawing2D.FillMode> enumeration specifies the fill style for a <xref:System.Drawing.Drawing2D.GraphicsPath>.|  
+  
+> [!CAUTION]
+>  Classes in the <xref:System.Drawing.Drawing2D> namespace are not supported for use in a Windows or [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] service. Attempting to use these classes in one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,332 @@
+<Type Name="FUNCDESC" FullName="System.Runtime.InteropServices.FUNCDESC">
+  <TypeSignature Language="C#" Value="public struct FUNCDESC" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FUNCDESC extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.FUNCDESC" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.FUNCDESC" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="callconv">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.CALLCONV callconv;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.CALLCONV callconv" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.callconv" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the calling convention of a function.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="cParams">
+      <MemberSignature Language="C#" Value="public short cParams;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 cParams" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.cParams" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Counts the total number of parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="cParamsOpt">
+      <MemberSignature Language="C#" Value="public short cParamsOpt;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 cParamsOpt" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.cParamsOpt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Counts the optional parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="cScodes">
+      <MemberSignature Language="C#" Value="public short cScodes;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 cScodes" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.cScodes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Counts the permitted return values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="elemdescFunc">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ELEMDESC elemdescFunc;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ELEMDESC elemdescFunc" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.elemdescFunc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.ELEMDESC</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the return type of the function.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="funckind">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.FUNCKIND funckind;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.FUNCKIND funckind" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.funckind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.FUNCKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether the function is virtual, static, or dispatch-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="invkind">
+      <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.INVOKEKIND invkind;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.INVOKEKIND invkind" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.invkind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.INVOKEKIND</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the type of a property function.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lprgelemdescParam">
+      <MemberSignature Language="C#" Value="public IntPtr lprgelemdescParam;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int lprgelemdescParam" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.lprgelemdescParam" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the size of <see cref="F:System.Runtime.InteropServices.FUNCDESC.cParams" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lprgscode">
+      <MemberSignature Language="C#" Value="public IntPtr lprgscode;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int lprgscode" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.lprgscode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the count of errors a function can return on a 16-bit system.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="memid">
+      <MemberSignature Language="C#" Value="public int memid;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 memid" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.memid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the function member ID.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="oVft">
+      <MemberSignature Language="C#" Value="public short oVft;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 oVft" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.oVft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the offset in the VTBL for <see cref="F:System.Runtime.InteropServices.FUNCKIND.FUNC_VIRTUAL" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="wFuncFlags">
+      <MemberSignature Language="C#" Value="public short wFuncFlags;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 wFuncFlags" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.FUNCDESC.wFuncFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the <see cref="T:System.Runtime.InteropServices.FUNCFLAGS" /> of a function.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For additional information about `FUNCDESC`, see the MSDN Library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

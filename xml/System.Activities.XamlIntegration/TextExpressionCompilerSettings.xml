@@ -1,0 +1,198 @@
+<Type Name="TextExpressionCompilerSettings" FullName="System.Activities.XamlIntegration.TextExpressionCompilerSettings">
+  <TypeSignature Language="C#" Value="public class TextExpressionCompilerSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextExpressionCompilerSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies text expression compiler settings.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextExpressionCompilerSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.TextExpressionCompilerSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Activity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Activity" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the activity of the compiler settings.</summary>
+        <value>The activity of the compiler settings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityName">
+      <MemberSignature Language="C#" Value="public string ActivityName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActivityName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.ActivityName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the activity for the compiler settings.</summary>
+        <value>The name of the activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityNamespace">
+      <MemberSignature Language="C#" Value="public string ActivityNamespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActivityNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.ActivityNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the namespace of the activity.</summary>
+        <value>The namespace of the activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysGenerateSource">
+      <MemberSignature Language="C#" Value="public bool AlwaysGenerateSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysGenerateSource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.AlwaysGenerateSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the text expression compiler settings always generate source.</summary>
+        <value>
+          <see langword="true" /> if the text expression compiler settings always generate source; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForImplementation">
+      <MemberSignature Language="C#" Value="public bool ForImplementation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ForImplementation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.ForImplementation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" /> is for implementation.</summary>
+        <value>True of the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" /> is for implementation; otherwise, false.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateAsPartialClass">
+      <MemberSignature Language="C#" Value="public bool GenerateAsPartialClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateAsPartialClass" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.GenerateAsPartialClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" /> generates as partial class.</summary>
+        <value>
+          <see langword="True" /> if the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" /> generates as partial class; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public string Language { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Language" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the language used by the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" />.</summary>
+        <value>The language used by the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogSourceGenerationMessage">
+      <MemberSignature Language="C#" Value="public Action&lt;string&gt; LogSourceGenerationMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Action`1&lt;string&gt; LogSourceGenerationMessage" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.LogSourceGenerationMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the log source generation message for the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" />.</summary>
+        <value>The log source generation message for the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespace">
+      <MemberSignature Language="C#" Value="public string RootNamespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.TextExpressionCompilerSettings.RootNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root namespace for the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" />.</summary>
+        <value>The root namespace for the <see cref="T:System.Activities.XamlIntegration.TextExpressionCompilerSettings" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

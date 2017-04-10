@@ -1,0 +1,37 @@
+<Type Name="AsqResponseControl" FullName="System.DirectoryServices.Protocols.AsqResponseControl">
+  <TypeSignature Language="C#" Value="public class AsqResponseControl : System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AsqResponseControl extends System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.AsqResponseControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.AsqResponseControl" /> class is returned in a <see cref="T:System.DirectoryServices.Protocols.SearchResponse" /> object as a response to a <see cref="T:System.DirectoryServices.Protocols.AsqRequestControl" /> query.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.ResultCode Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.ResultCode Result" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.AsqResponseControl.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.AsqResponseControl.Result" /> property gets a <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> object with result data.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> object with result data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

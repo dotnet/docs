@@ -1,0 +1,278 @@
+<Type Name="ArrayExtension" FullName="System.Windows.Markup.ArrayExtension">
+  <TypeSignature Language="C#" Value="public class ArrayExtension : System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayExtension extends System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ArrayExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("PresentationFramework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Items")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.Array))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements <see langword="x:Array" /> support for .NET Framework XAML Services</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.ArrayExtension> is the class that implements the `x:Array` markup extension behavior, and the `x:ArrayExtension` information item from [MS-XAML]. `x:Array` supports a XAML language feature that allows adding arbitrary child elements within an array, through a particular markup extension enabled syntax. The markup extension syntax requires an explicit <xref:System.Windows.Markup.ArrayExtension.Type%2A> attribute on the markup extension usage, and a content syntax for specifying the <xref:System.Windows.Markup.ArrayExtension.Items%2A>. For more information and details on the syntax, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
+  
+ This class is a markup extension implementation. Markup extension classes exist mainly to provide infrastructure support for some aspect of a XAML processor implementation, and the members exposed by a markup extension class are not typically called from user code. This extension supports the [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md) usage from XAML for .NET Framework XAML Services implementation of XAML and its XAML readers and XAML writers.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly PresentationFramework. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ArrayExtension> is in the System.Xaml assembly. This makes the `x:Array` usage available to frameworks or technologies such as [!INCLUDE[TLA#tla_workflow](~/includes/tlasharptla-workflow-md.md)] that are built on .NET Framework XAML Services. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+ The System.Xaml assembly uses <xref:System.Windows.Markup.XmlnsDefinitionAttribute> to map types from the<xref:System.Windows.Markup> CLR namespace in the assembly to the XAML namespace for the XAML language ([!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)]). In typical XAML markup, you declare a prefix for [!INCLUDE[TLA#tla_xamlxmlnsv1](~/includes/tlasharptla-xamlxmlnsv1-md.md)] in a root element mapping and use the prefix `x`.  
+  
+<a name="xamlTextUsage_ArrayExtension"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ArrayExtension" /> class. This creates an empty array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayExtension (Array elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Array elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor(System.Array)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Array" />
+      </Parameters>
+      <Docs>
+        <param name="elements">The array content that populates the created array.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ArrayExtension" /> class based on the provided raw array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports markup extension behavior and is not typically called by user code, unless that user code implements XAML processing behavior.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="elements" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayExtension (Type arrayType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type arrayType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="arrayType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="arrayType">The object type of the new array.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ArrayExtension" /> class and initializes the type of the array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports markup extension behavior and is not typically called by user code, unless that user code implements XAML processing behavior.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="arrayType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChild">
+      <MemberSignature Language="C#" Value="public void AddChild (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.AddChild(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to add to the end of the array.</param>
+        <summary>Appends the supplied object to the end of the array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be called directly, and does not participate in any existing .NET interpretation of the `x:Array` markup extension behavior. Any code access to the backing array instance should be done with array APIs or language features. Any alternative XAML reader or XAML writer implementations should instead use the .NET System.Xaml service extensions such as <xref:System.Xaml.Schema.XamlTypeInvoker.GetAddMethod%2A> to determine what method to call, or <xref:System.Xaml.XamlType.LookupCollectionKind%2A> together with appropriate interface casting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddText">
+      <MemberSignature Language="C#" Value="public void AddText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.AddText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to add to the end of the array.</param>
+        <summary>Adds a text node as a new array item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be called directly, and does not participate in interpretation of the `x:Array` markup extension behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Collections.IList Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Items" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ArrayExtension.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the contents of the array. Settable in XAML through XAML collection syntax.</summary>
+        <value>The array contents.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.ArrayExtension.Items%2A> is the attributed XAML content property of <xref:System.Windows.Markup.ArrayExtension>. XAML content property designation supports the typical XAML usage of specifying the item elements of an array as child object elements in XAML. <xref:System.Windows.Markup.ArrayExtension.Items%2A> is the object model and markup extension implementation exposure for the intrinsic `ArrayExtension.Items` property, as defined for `x:ArrayExtension` in [MS-XAML].  
+  
+ Type mismatches between <xref:System.Windows.Markup.ArrayExtension.Type%2A> and the items in <xref:System.Windows.Markup.ArrayExtension.Items%2A>, or any other validation issues, are not reported as exceptions until <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> is invoked. This behavior is consistent with the general design principles of XAML markup extensions.  
+  
+ For XAML usage information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
+  
+<a name="xamlTextUsage_Items"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">An object that can provide services for the markup extension.</param>
+        <summary>Returns an array that is sized to the number of objects supplied in the <see cref="P:System.Windows.Markup.ArrayExtension.Items" /> values.</summary>
+        <returns>The created array, or null.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method supports markup extension behavior and is not typically called by user code, unless that user code implements XAML processing behavior.  
+  
+ A XAML processor implementation uses this method for proper handling of `x:Array` elements during object creation. This relies on general behavior for XAML processors when they process any <xref:System.Windows.Markup.MarkupExtension> and call its `ProvideValue` implementation.  
+  
+ This implementation does not rely on any services based on the passed `serviceProvider`. However, it does rely on CLR concepts as transmitted by the extension's use while processing with the default XAML schema context for .NET Framework XAML Services.  
+  
+ For more information on markup extensions, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Processed an array that did not provide a valid <see cref="P:System.Windows.Markup.ArrayExtension.Type" />.  
+  
+ -or-  
+  
+ There is a type mismatch between the declared <see cref="P:System.Windows.Markup.ArrayExtension.Type" /> of the array and one or more of its <see cref="P:System.Windows.Markup.ArrayExtension.Items" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ArrayExtension.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.ConstructorArgument("type")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of array to be created when calling <see cref="M:System.Windows.Markup.ArrayExtension.ProvideValue(System.IServiceProvider)" />.</summary>
+        <value>The type of the array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For XAML usage information, see [x:Array Markup Extension](~/docs/framework/xaml-services/x-array-markup-extension.md).  
+  
+<a name="xamlTextUsage_Type"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

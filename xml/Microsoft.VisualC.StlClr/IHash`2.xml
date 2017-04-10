@@ -1,0 +1,878 @@
+<Type Name="IHash&lt;TKey,TValue&gt;" FullName="Microsoft.VisualC.StlClr.IHash&lt;TKey,TValue&gt;">
+  <TypeSignature Language="C#" Value="public interface IHash&lt;TKey,TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;TValue&gt;, System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IHash`2&lt;TKey, TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IHash`2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TKey" />
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;TValue&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1005")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TKey">The type of the key component of an element in the controlled sequence.</typeparam>
+    <typeparam name="TValue">The type of the value component of an element in the controlled sequence.</typeparam>
+    <summary>Defines the interface of the STL/CLR <c>hash_map</c>, <c>hash_multimap</c>, <c>hash_set</c>, and <c>hash_multiset</c> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[unnamed_parm](~/includes/unnamed-parm-md.md)]  
+  
+ For more information, see [hash_map (STL/CLR)](http://msdn.microsoft.com/library/c3cfc69b-04c6-42ae-a30e-0eda953fe883), [hash_multimap (STL/CLR)](http://msdn.microsoft.com/library/cd78687b-8a05-48e0-9d22-8b8194ae3b0b), [hash_set (STL/CLR)](http://msdn.microsoft.com/library/d110e356-ba3e-4e52-9e2d-d997bf975c96), and [hash_multiset (STL/CLR)](http://msdn.microsoft.com/library/8462bd21-6829-4dd3-ac81-c42d6fdf92f0).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="begin">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.begin(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the beginning of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::begin (STL/CLR)](http://msdn.microsoft.com/library/b2ff4605-ac37-4456-8299-b3bcccdbe45a), [hash_multimap::begin (STL/CLR)](http://msdn.microsoft.com/library/7f8d51c1-8183-4dc1-9dfc-f58dbf594c42), [hash_set::begin (STL/CLR)](http://msdn.microsoft.com/library/1bd02b6b-0e24-4f42-ad13-fd7776f7f811), and [hash_multiset::begin (STL/CLR)](http://msdn.microsoft.com/library/f03fc205-cbc9-4054-ac6d-41ad526edfea).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="bucket_count">
+      <MemberSignature Language="C#" Value="public int bucket_count ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 bucket_count() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.bucket_count" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Counts the number of buckets in the hash table.</summary>
+        <returns>The current number of buckets in the hash table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::bucket_count (STL/CLR)](http://msdn.microsoft.com/library/67cbcb76-1edd-44a0-8779-fa61410c3aff), [hash_multimap::bucket_count (STL/CLR)](http://msdn.microsoft.com/library/63b7e08e-16fb-42e5-b592-d1fd29c47637), [hash_set::bucket_count (STL/CLR)](http://msdn.microsoft.com/library/3ff49f99-b70d-4455-93e8-2bdc983a0e67), and [hash_multiset::bucket_count (STL/CLR)](http://msdn.microsoft.com/library/18abcdab-ee50-4bb8-88f8-d3cbea9d0fd9).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="clear">
+      <MemberSignature Language="C#" Value="public void clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::clear (STL/CLR)](http://msdn.microsoft.com/library/a2782336-f130-4e27-923e-7dd43c542d30), [hash_multimap::clear (STL/CLR)](http://msdn.microsoft.com/library/8ad99f08-93b3-42b7-be07-f9a8ec556554), [hash_set::clear (STL/CLR)](http://msdn.microsoft.com/library/9f38b72a-5db8-485a-b41a-7d47ac57f4a9), and [hash_multiset::clear (STL/CLR)](http://msdn.microsoft.com/library/2253d5e3-38e6-4ad4-aff4-b546fe95830f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="count">
+      <MemberSignature Language="C#" Value="public int count (TKey _Keyval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 count(!TKey _Keyval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.count(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Keyval" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="_Keyval">The key value for which to search.</param>
+        <summary>Finds the number of elements that match a specified key.</summary>
+        <returns>The number of elements in the controlled sequence that have the same key as <paramref name="_Keyval" />. You use it to determine the number of elements currently in the controlled sequence that match a specified key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::count (STL/CLR)](http://msdn.microsoft.com/library/1d02f764-d24f-4c8c-8a62-63074fe49aa8), [hash_multimap::count (STL/CLR)](http://msdn.microsoft.com/library/a4bc5b19-e025-4063-9797-304ab4ba08aa), [hash_set::count (STL/CLR)](http://msdn.microsoft.com/library/99dbaef5-64fd-4bef-bac4-a6072dd231f1), and [hash_multiset::count (STL/CLR)](http://msdn.microsoft.com/library/2b31e6b6-3f2c-4042-a06d-90d3074aad43).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="empty">
+      <MemberSignature Language="C#" Value="public bool empty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool empty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.empty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Tests whether no elements are present in the container.</summary>
+        <returns>
+          <see langword="true" /> if the container has no elements; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::empty (STL/CLR)](http://msdn.microsoft.com/library/2a145e16-a48a-4304-8fa6-5b2361693083), [hash_multimap::empty (STL/CLR)](http://msdn.microsoft.com/library/5fd29e90-e33a-460f-9d42-491b82dbaa40), [hash_set::empty (STL/CLR)](http://msdn.microsoft.com/library/7843eb9a-067b-4339-8637-5401b637c6d0), and [hash_multiset::empty (STL/CLR)](http://msdn.microsoft.com/library/e1c738eb-9ac9-426b-88b0-2997c9476001).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="end">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.end(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the end of the controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::end (STL/CLR)](http://msdn.microsoft.com/library/bda12a48-cc2b-426f-a4e8-992c88f61736), [hash_multimap::end (STL/CLR)](http://msdn.microsoft.com/library/e9354c40-6d48-4882-aaed-ccd9987f24a9), [hash_set::end (STL/CLR)](http://msdn.microsoft.com/library/957de04e-fdc1-4295-ba25-8b0ad1ea97de), and [hash_multiset::end (STL/CLR)](http://msdn.microsoft.com/library/6f4b222c-2f82-445e-80e5-6e2afd233d4b).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="equal_range">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) equal_range (ref Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&gt; , TKey _Keyval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) equal_range(class Microsoft.VisualC.StlClr.GenericPair`2&lt;class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&gt; , !TKey _Keyval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.equal_range(Microsoft.VisualC.StlClr.GenericPair{Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1},Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}}@,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Keyval" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Keyval">The key value for which to search.</param>
+        <summary>Finds the range that matches a specified key.</summary>
+        <returns>A pair of iterators.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::equal_range (STL/CLR)](http://msdn.microsoft.com/library/9b9a18b8-42fd-4d17-91bd-df85e583cf61), [hash_multimap::equal_range (STL/CLR)](http://msdn.microsoft.com/library/3ea11e31-d4af-4d2e-a80b-eafe12c97d0c), [hash_set::equal_range (STL/CLR)](http://msdn.microsoft.com/library/502af4c5-f71e-44cf-a180-21e9da4b50ff), and [hash_multiset::equal_range (STL/CLR)](http://msdn.microsoft.com/library/a4141d7e-4964-4c78-8989-ae1d1258b50a).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="erase">
+      <MemberSignature Language="C#" Value="public int erase (TKey _Keyval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 erase(!TKey _Keyval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.erase(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Keyval" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="_Keyval">The key value to erase.</param>
+        <summary>Removes elements from the container that match the specified key.</summary>
+        <returns>The number of elements removed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](http://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](http://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](http://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](http://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="erase">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Where">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="erase">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Last_iter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last_iter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_First_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Last_iter" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_First_iter">To be added.</param>
+        <param name="_Last_iter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="find">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) find (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , TKey _Keyval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) find(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , !TKey _Keyval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.find(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Keyval" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Keyval">The key value for which to search.</param>
+        <summary>Finds an element that matches a specified key.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::find (STL/CLR)](http://msdn.microsoft.com/library/53ff8d57-2ea4-485e-9419-aed5e3f5affb), [hash_multimap::find (STL/CLR)](http://msdn.microsoft.com/library/ce839c5e-b8c5-434e-9cc0-e4c6ee6a6bb3), [hash_set::find (STL/CLR)](http://msdn.microsoft.com/library/758b7438-ef15-4af0-8001-a1126d5e9a9e), and [hash_multiset::find (STL/CLR)](http://msdn.microsoft.com/library/fbedeb37-242e-4c2a-b1f8-234bcfd9cd25).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="hash_delegate">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.UnaryDelegate&lt;TKey,int&gt; hash_delegate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.VisualC.StlClr.UnaryDelegate`2&lt;!TKey, int32&gt; hash_delegate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.hash_delegate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualC.StlClr.UnaryDelegate&lt;TKey,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the delegate that is used to convert a key value to an integer.</summary>
+        <returns>The delegate that is used to convert a key value to an integer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::hash_delegate (STL/CLR)](http://msdn.microsoft.com/library/ae451fbe-a10c-457f-9b54-94dd9d93e8c4), [hash_multimap::hash_delegate (STL/CLR)](http://msdn.microsoft.com/library/2a459f6d-9bb1-4b03-a013-0998ba842c25), [hash_set::hash_delegate (STL/CLR)](http://msdn.microsoft.com/library/34e39d2d-f2ef-4755-9201-3cdb4e41ea56), and [hash_multiset::hash_delegate (STL/CLR)](http://msdn.microsoft.com/library/61ccfdfb-6a3c-40aa-902f-49e004a31a75).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (System.Collections.IEnumerable _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class System.Collections.IEnumerable _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.insert(System.Collections.IEnumerable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="System.Collections.IEnumerable" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">The enumeration to insert into the container.</param>
+        <summary>Adds the given enumeration to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](http://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](http://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](http://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](http://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.insert(Microsoft.VisualC.StlClr.Generic.IInputIterator{`1},Microsoft.VisualC.StlClr.Generic.IInputIterator{`1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_First" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+        <Parameter Name="_Last" Type="Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_First">An iterator that points to the beginning of the range of elements to insert.</param>
+        <param name="_Last">An iterator that points to the element that immediately follows the range of elements to insert.</param>
+        <summary>Adds to the container the elements specified by the given iterators.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](http://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](http://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](http://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](http://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert (ref Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,bool&gt; , TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.GenericPair`2&lt;class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;, bool&gt; , !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.insert(Microsoft.VisualC.StlClr.GenericPair{Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1},System.Boolean}@,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.GenericPair&lt;Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;,System.Boolean&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Val">The key value to insert into the container.</param>
+        <summary>Adds the given value to the container.</summary>
+        <returns>A pair of iterators.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](http://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](http://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](http://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](http://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="insert">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, TValue _Val);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, !TValue _Val) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}|System.Runtime.CompilerServices.IsByValue,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Where" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator" />
+        <Parameter Name="_Val" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Where">To be added.</param>
+        <param name="_Val">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="key_comp">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.BinaryDelegate&lt;TKey,TKey,bool&gt; key_comp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.VisualC.StlClr.BinaryDelegate`3&lt;!TKey, !TKey, bool&gt; key_comp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.key_comp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualC.StlClr.BinaryDelegate&lt;TKey,TKey,System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the ordering delegate that is used to order the controlled sequence. You use it to compare two keys.</summary>
+        <returns>The ordering delegate that is used to order the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::key_comp (STL/CLR)](http://msdn.microsoft.com/library/08bd31cc-3a7c-49a3-ac48-089262b3bd44), [hash_multimap::key_comp (STL/CLR)](http://msdn.microsoft.com/library/221d0bfe-19ad-4c34-9b10-77921be32459), [hash_set::key_comp (STL/CLR)](http://msdn.microsoft.com/library/d5dc46c3-c2ee-4591-8f03-d8c9d3df0519), and [hash_multiset::key_comp (STL/CLR)](http://msdn.microsoft.com/library/b9653dd2-20f3-4ef3-875f-265749839ba6).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="load_factor">
+      <MemberSignature Language="C#" Value="public float load_factor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 load_factor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.load_factor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Counts the average number of elements per bucket in the hash table.</summary>
+        <returns>The average number of elements per bucket in the hash table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::load_factor (STL/CLR)](http://msdn.microsoft.com/library/e3a29b1f-ea20-4153-87b0-3935044d4d7a), [hash_multimap::load_factor (STL/CLR)](http://msdn.microsoft.com/library/c4b34387-fe76-405d-bead-a092b4571631), [hash_set::load_factor (STL/CLR)](http://msdn.microsoft.com/library/84fbcdd8-0457-4a20-9f54-0a7c9612f4dd), and [hash_multiset::load_factor (STL/CLR)](http://msdn.microsoft.com/library/67125c97-1018-4d0f-858f-b4c09e7f0b09).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lower_bound">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) lower_bound (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , TKey _Keyval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) lower_bound(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , !TKey _Keyval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.lower_bound(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Keyval" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Keyval">The key value for which to search.</param>
+        <summary>Finds the beginning of the range of elements that match a specified key.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::lower_bound (STL/CLR)](http://msdn.microsoft.com/library/7c88987a-9c77-4874-8052-192a148abbf1), [hash_multimap::lower_bound (STL/CLR)](http://msdn.microsoft.com/library/c61091ef-8364-4447-bdd2-a402cbc05f05), [hash_set::lower_bound (STL/CLR)](http://msdn.microsoft.com/library/54fe8ee5-1977-4192-9cc6-b51e84b03a16), and [hash_multiset::lower_bound (STL/CLR)](http://msdn.microsoft.com/library/891898fa-c9e8-4132-a71d-36e5141793f1).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="max_load_factor">
+      <MemberSignature Language="C#" Value="public float max_load_factor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 max_load_factor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.max_load_factor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the maximum number of elements per bucket in the hash table.</summary>
+        <returns>The maximum number of elements per bucket in the hash table.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/7c0773c9-a918-4e61-ae95-e45148f1ff24), [hash_multimap::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/acea6293-9c6f-4c5e-a9a3-998e755ba1fd), [hash_set::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/9aef46b1-e7c2-488c-a219-77c1c0de6dc4), and [hash_multiset::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/ca0a6e8e-b889-47e4-9edd-c5a321fdeb8f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="max_load_factor">
+      <MemberSignature Language="C#" Value="public void max_load_factor (float _Newmax);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void max_load_factor(float32 _Newmax) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.max_load_factor(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Newmax" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="_Newmax">The maximum number of elements per bucket in the hash table.</param>
+        <summary>Sets the maximum number of elements per bucket in the hash table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/7c0773c9-a918-4e61-ae95-e45148f1ff24), [hash_multimap::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/acea6293-9c6f-4c5e-a9a3-998e755ba1fd), [hash_set::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/9aef46b1-e7c2-488c-a219-77c1c0de6dc4), and [hash_multiset::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/ca0a6e8e-b889-47e4-9edd-c5a321fdeb8f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rbegin">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.rbegin(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`1}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the beginning of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::rbegin (STL/CLR)](http://msdn.microsoft.com/library/e3b6c4d5-9482-471e-b5fc-70331b082a9b), [hash_multimap::rbegin (STL/CLR)](http://msdn.microsoft.com/library/f5ce0614-3c73-4cec-9fa2-efadf0fd36c7), [hash_set::rbegin (STL/CLR)](http://msdn.microsoft.com/library/1f2ff4ed-8557-40cf-8e61-816563acc43e), and [hash_multiset::rbegin (STL/CLR)](http://msdn.microsoft.com/library/69a06d99-3262-495b-9956-5f155162da33).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rehash">
+      <MemberSignature Language="C#" Value="public void rehash (int _Buckets);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void rehash(int32 _Buckets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.rehash(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Buckets" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="_Buckets">The number of buckets for the hash table.</param>
+        <summary>Rebuilds the hash table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::rehash (STL/CLR)](http://msdn.microsoft.com/library/e894157c-4e31-4fbf-8020-b90f236da3e7), [hash_multimap::rehash (STL/CLR)](http://msdn.microsoft.com/library/512830af-46c4-4a31-923d-b282f7898172), [hash_set::rehash (STL/CLR)](http://msdn.microsoft.com/library/f62bae81-4321-44e1-97d0-77174a13e0de), and [hash_multiset::rehash (STL/CLR)](http://msdn.microsoft.com/library/1208cffc-acee-4c75-87b5-ce9ec641c3b6).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="rend">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt; ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.rend(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`1}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>Designates the end of the reversed controlled sequence.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::rend (STL/CLR)](http://msdn.microsoft.com/library/87fb2a06-c92b-4d86-855d-22f5c04aabdb), [hash_multimap::rend (STL/CLR)](http://msdn.microsoft.com/library/7cbed963-7615-40bf-80f2-37b878a64453), [hash_set::rend (STL/CLR)](http://msdn.microsoft.com/library/12764bf1-ff3e-48db-a6ef-fe120187bc4e), and [hash_multiset::rend (STL/CLR)](http://msdn.microsoft.com/library/6d007ac9-18cc-4b51-8384-a4ff65d23e97).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="size">
+      <MemberSignature Language="C#" Value="public int size ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 size() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Counts the number of elements in the container.</summary>
+        <returns>The length of the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::size (STL/CLR)](http://msdn.microsoft.com/library/5eb91502-1b11-4703-b473-eb609c181b74), [hash_multimap::size (STL/CLR)](http://msdn.microsoft.com/library/6937c980-5952-48bf-b411-81ab03b2f940), [hash_set::size (STL/CLR)](http://msdn.microsoft.com/library/e006590e-8710-4294-b3a3-dcded0668a24), and [hash_multiset::size (STL/CLR)](http://msdn.microsoft.com/library/45f1f35e-35c4-4e39-8485-0786c1de22e3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="swap">
+      <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.IHash&lt;TKey,TValue&gt; _Right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void swap(class Microsoft.VisualC.StlClr.IHash`2&lt;!TKey, !TValue&gt; _Right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.swap(Microsoft.VisualC.StlClr.IHash{`0,`1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.IHash&lt;TKey,TValue&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="_Right">The container with which to swap contents.</param>
+        <summary>Swaps the contents of two containers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::swap (STL/CLR)](http://msdn.microsoft.com/library/bc1349e0-9be2-4767-a87b-4834615cb52a), [hash_multimap::swap (STL/CLR)](http://msdn.microsoft.com/library/4baa60c2-865a-4e17-acd5-01b7c3c5cd44), [hash_set::swap (STL/CLR)](http://msdn.microsoft.com/library/6476e48f-4744-486d-b028-cf0a048acd4d), and [hash_multiset::swap (STL/CLR)](http://msdn.microsoft.com/library/b79372ab-ca51-494a-89cf-4e2da3ee3ff7).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="upper_bound">
+      <MemberSignature Language="C#" Value="public Void modreq(System.Runtime.CompilerServices.IsUdtReturn) upper_bound (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , TKey _Keyval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) upper_bound(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt; , !TKey _Keyval) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.upper_bound(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`1}@,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn)</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt;&amp;" RefType="ref" />
+        <Parameter Name="_Keyval" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <param name="_Keyval">The key value to search for.</param>
+        <summary>Finds the end of the range of elements that match a specified key.</summary>
+        <returns>An iterator.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::upper_bound (STL/CLR)](http://msdn.microsoft.com/library/f83e88b4-e15e-49d5-90e4-cf7360c27c30), [hash_multimap::upper_bound (STL/CLR)](http://msdn.microsoft.com/library/4fa58df6-63ec-411d-bcf9-301d3c88569a), [hash_set::upper_bound (STL/CLR)](http://msdn.microsoft.com/library/dc8815f1-8b45-4f3d-a51f-54050d434d8f), and [hash_multiset::upper_bound (STL/CLR)](http://msdn.microsoft.com/library/d5be0d79-ae60-42bb-8a53-051bc374407d).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="value_comp">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,bool&gt; value_comp ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.VisualC.StlClr.BinaryDelegate`3&lt;!TValue, !TValue, bool&gt; value_comp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IHash`2.value_comp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the ordering delegate that is used to order the controlled sequence.</summary>
+        <returns>The ordering delegate that is used to order the controlled sequence.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::value_comp (STL/CLR)](http://msdn.microsoft.com/library/b11a2dee-07e8-450c-8f85-979c0a15ae64), [hash_multimap::value_comp (STL/CLR)](http://msdn.microsoft.com/library/ec6108b8-a529-499b-bc7f-dce41f5b6175), [hash_set::value_comp (STL/CLR)](http://msdn.microsoft.com/library/7ef381ea-438b-48ce-b0cb-96d844ea5df7), and [hash_multiset::value_comp (STL/CLR)](http://msdn.microsoft.com/library/c5b25ded-9b27-43d5-9821-3f6e17338919).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="erase">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes elements from the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::erase (STL/CLR)](http://msdn.microsoft.com/library/1d2a79aa-62f7-461c-8f7c-7b660eb189be), [hash_multimap::erase (STL/CLR)](http://msdn.microsoft.com/library/663c67f6-8070-47db-abdc-58f7ace69736), [hash_set::erase (STL/CLR)](http://msdn.microsoft.com/library/620998a0-00c9-4be6-899b-2d71661375b6), and [hash_multiset::erase (STL/CLR)](http://msdn.microsoft.com/library/bddd329d-aece-4b93-8355-005351c3aa45).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="insert">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds elements to the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::insert (STL/CLR)](http://msdn.microsoft.com/library/52926ec7-ad4e-4791-a043-46136ee40a69), [hash_multimap::insert (STL/CLR)](http://msdn.microsoft.com/library/51cd98b0-c959-4a44-b914-582c00681bd7), [hash_set::insert (STL/CLR)](http://msdn.microsoft.com/library/0a9bc9aa-012e-4101-9e8c-f1f4b6b76af7), and [hash_multiset::insert (STL/CLR)](http://msdn.microsoft.com/library/e7254f30-a514-4ddc-bf53-38aafbe9e8eb).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+    <MemberGroup MemberName="max_load_factor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the maximum number of elements per bucket in the hash table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see [hash_map::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/7c0773c9-a918-4e61-ae95-e45148f1ff24), [hash_multimap::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/acea6293-9c6f-4c5e-a9a3-998e755ba1fd), [hash_set::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/9aef46b1-e7c2-488c-a219-77c1c0de6dc4), and [hash_multiset::max_load_factor (STL/CLR)](http://msdn.microsoft.com/library/ca0a6e8e-b889-47e4-9edd-c5a321fdeb8f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

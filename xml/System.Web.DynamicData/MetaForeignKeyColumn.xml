@@ -1,0 +1,351 @@
+<Type Name="MetaForeignKeyColumn" FullName="System.Web.DynamicData.MetaForeignKeyColumn">
+  <TypeSignature Language="C#" Value="public class MetaForeignKeyColumn : System.Web.DynamicData.MetaColumn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetaForeignKeyColumn extends System.Web.DynamicData.MetaColumn" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.MetaForeignKeyColumn" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.DynamicData.MetaColumn</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a database foreign-key field that is used by ASP.NET Dynamic Data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In ASP.NET Dynamic Data applications, the <xref:System.Web.DynamicData.MetaForeignKeyColumn> class represents a database column that denotes a one-to-one relationship.  
+  
+ The <xref:System.Web.DynamicData.MetaForeignKeyColumn> class represents the column in the table that contains the foreign-key field. However, you can access the parent table object by using the <xref:System.Web.DynamicData.MetaForeignKeyColumn.ParentTable%2A> property. You can determine if the foreign-key field is a primary key in the table that contains it by using the <xref:System.Web.DynamicData.MetaForeignKeyColumn.IsPrimaryKeyInThisTable%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetaForeignKeyColumn (System.Web.DynamicData.MetaTable table, System.Web.DynamicData.ModelProviders.ColumnProvider entityMember);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.DynamicData.MetaTable table, class System.Web.DynamicData.ModelProviders.ColumnProvider entityMember) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.#ctor(System.Web.DynamicData.MetaTable,System.Web.DynamicData.ModelProviders.ColumnProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" />
+        <Parameter Name="entityMember" Type="System.Web.DynamicData.ModelProviders.ColumnProvider" />
+      </Parameters>
+      <Docs>
+        <param name="table">The entity meta table.</param>
+        <param name="entityMember">The entity column provider.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.MetaForeignKeyColumn" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractForeignKey">
+      <MemberSignature Language="C#" Value="public void ExtractForeignKey (System.Collections.IDictionary dictionary, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExtractForeignKey(class System.Collections.IDictionary dictionary, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.ExtractForeignKey(System.Collections.IDictionary,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dictionary" Type="System.Collections.IDictionary" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dictionary">A dictionary object that contains the new values for a data field.</param>
+        <param name="value">The value of the foreign key.</param>
+        <summary>Saves the value of a foreign key in the specified dictionary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaForeignKeyColumn.ExtractForeignKey%2A> method is used to save the value of a foreign key in the dictionary that contains all the new values for a data field. Typically, the <xref:System.Web.DynamicData.MetaForeignKeyColumn.ExtractForeignKey%2A> method is used when a new value is selected from a <xref:System.Web.UI.WebControls.DropDownList> control for the foreign key field.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeignKeyNames">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; ForeignKeyNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; ForeignKeyNames" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaForeignKeyColumn.ForeignKeyNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that contains the names of the foreign keys in the association that represents a database relationship.</summary>
+        <value>A collection that contains the names of the foreign keys.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilterExpression">
+      <MemberSignature Language="C#" Value="public string GetFilterExpression (string foreignKeyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetFilterExpression(string foreignKeyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetFilterExpression(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="foreignKeyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="foreignKeyName">The name of the foreign key.</param>
+        <summary>Returns the alternate name that is mapped to a foreign key.</summary>
+        <returns>The alternate name that is mapped to the foreign key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the alternate name that is used in a filtering expression instead of the actual foreign-key name. If an alternate name does not exist, the method returns the actual name of the foreign key.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetForeignKeyDetailsPath">
+      <MemberSignature Language="C#" Value="public string GetForeignKeyDetailsPath (object row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetForeignKeyDetailsPath(object row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyDetailsPath(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="row">The row that contains the foreign-key field.</param>
+        <summary>Gets the path for the details action page of the parent table of the specified foreign-key field.</summary>
+        <returns>The path for the details action page of the parent table of the specified foreign-key field.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyDetailsPath%2A> method returns the path for the details action page based on the routes defined for the ASP.NET Dynamic Data application. This method returns an empty string, if `row` is `null`.  
+  
+ Using the <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyDetailsPath%2A> method is the same as invoking the <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath%28System.String%2CSystem.Object%29> method passing the <xref:System.Web.DynamicData.PageAction.Details%2A> action as the first parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetForeignKeyPath">
+      <MemberSignature Language="C#" Value="public string GetForeignKeyPath (string action, object row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetForeignKeyPath(string action, object row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="row" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="action">The target action.</param>
+        <param name="row">The row that contains the foreign-key field.</param>
+        <summary>Gets the path for the specified action page of the parent table of the specified foreign-key field.</summary>
+        <returns>The path for the specified action page of the parent table of the specified foreign-key field.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath%28System.String%2CSystem.Object%29> method returns the path for the specified action page based on the routes defined for the ASP.NET Dynamic Data application. This method returns an empty string, if `row` is `null`.  
+  
+ You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetForeignKeyPath">
+      <MemberSignature Language="C#" Value="public string GetForeignKeyPath (string action, object row, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetForeignKeyPath(string action, object row, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath(System.String,System.Object,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="row" Type="System.Object" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="action">The target action.</param>
+        <param name="row">The row that contains the foreign-key field.</param>
+        <param name="path">The target page.</param>
+        <summary>Gets the path for the specified action page of the parent table of the specified foreign-key field.</summary>
+        <returns>The path for the specified action page of the parent table of the specified foreign-key field.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyPath%28System.String%2CSystem.Object%29> method returns the path for the specified action page based on the specified `path`. This method returns an empty string, if `row` is `null`.  
+  
+ You can use the values defined in the <xref:System.Web.DynamicData.PageAction> class for the `action` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetForeignKeyString">
+      <MemberSignature Language="C#" Value="public string GetForeignKeyString (object row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetForeignKeyString(object row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyString(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="row">The row to retrieve the foreign-key values for.</param>
+        <summary>Retrieves a comma-separated list of values that represent the foreign-key for the specified row.</summary>
+        <returns>A comma-separated list of values that represent the foreign key for the specified row.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyString%2A> method returns the same values that are returned by the <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyValues%2A> method, but in a different format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetForeignKeyValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;object&gt; GetForeignKeyValues (object row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;object&gt; GetForeignKeyValues(object row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyValues(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="row">The row to retrieve the foreign-key values for.</param>
+        <summary>Retrieves a collection of values that represent the foreign keys for the specified row.</summary>
+        <returns>A collection of values that represent the foreign keys for the specified row.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyValues%2A> method returns the same values that are returned by the <xref:System.Web.DynamicData.MetaForeignKeyColumn.GetForeignKeyString%2A> method, but in a different format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected override void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.MetaForeignKeyColumn.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes data that may not be available when the constructor is called.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method cannot be called directly. To customize initialization, you can derive from this class and override the <xref:System.Web.DynamicData.MetaForeignKeyColumn.Initialize%2A> method. If you override this method, call the base control's `Initialize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPrimaryKeyInThisTable">
+      <MemberSignature Language="C#" Value="public bool IsPrimaryKeyInThisTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPrimaryKeyInThisTable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaForeignKeyColumn.IsPrimaryKeyInThisTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the foreign-key field is part of the primary key of the table.</summary>
+        <value>
+          <see langword="true" /> if the foreign-key field is part of the primary key of the table; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.DynamicData.MetaForeignKeyColumn.IsPrimaryKeyInThisTable%2A> property to determine whether the foreign-key field is part of the primary key of the table. This is the table that contains the foreign-key field not the parent table.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentTable">
+      <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaTable ParentTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable ParentTable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.MetaForeignKeyColumn.ParentTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent table of the foreign-key field.</summary>
+        <value>The parent table of the foreign-key field.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

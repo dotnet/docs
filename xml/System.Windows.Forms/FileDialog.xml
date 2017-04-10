@@ -1,0 +1,946 @@
+<Type Name="FileDialog" FullName="System.Windows.Forms.FileDialog">
+  <TypeSignature Language="C#" Value="public abstract class FileDialog : System.Windows.Forms.CommonDialog" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FileDialog extends System.Windows.Forms.CommonDialog" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialog" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.CommonDialog</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("FileOk")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("FileName")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays a dialog box from which the user can select a file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.FileDialog> is an abstract class that contains common behavior for the <xref:System.Windows.Forms.OpenFileDialog> and <xref:System.Windows.Forms.SaveFileDialog> classes. It is not intended to be used directly but contains common behavior for those two classes. You cannot create an instance of <xref:System.Windows.Forms.FileDialog>. Although the class is declared public, you cannot inherit from it, as it contains internal abstract methods. To create a dialog box to select or save a file, use <xref:System.Windows.Forms.OpenFileDialog> or <xref:System.Windows.Forms.SaveFileDialog>.  
+  
+ <xref:System.Windows.Forms.FileDialog> is a modal dialog box; therefore, when shown, it blocks the rest of the application until the user has chosen a file. When a dialog box is displayed modally, no input (keyboard or mouse click) can occur except to objects on the dialog box. The program must hide or close the dialog box (usually in response to some user action) before input to the calling program can occur.  
+  
+> [!CAUTION]
+>  When you use classes derived from <xref:System.Windows.Forms.FileDialog>, such as <xref:System.Windows.Forms.OpenFileDialog> and <xref:System.Windows.Forms.SaveFileDialog>, avoid using string literals containing absolute paths. Instead, dynamically obtain the path using one or more of the techniques described in the following table.  
+  
+ If you want to enable users to select a folder instead of a file, use the <xref:System.Windows.Forms.FolderBrowserDialog>.  
+  
+ Depending upon the type of application, how data associated with the application is stored, and the reason for accessing the file system, there are many possible ways in which you can create a directory path. The following table shows the techniques for creating paths dynamically.  
+  
+|Path or program category|Class and members to use|  
+|------------------------------|------------------------------|  
+|Standard Windows paths, such as Program Files, MyDocuments, the Desktop and so on|The <xref:System.Environment?displayProperty=fullName> class is the most complete source for these, either through its static methods, such as <xref:System.Environment.SystemDirectory%2A>, or through the <xref:System.Environment.GetFolderPath%2A> method, using one of the <xref:System.Environment.SpecialFolder> enumerated values.|  
+|Paths related to the current application|The <xref:System.Windows.Forms.Application> class has static members to obtain certain paths, such as <xref:System.Windows.Forms.Application.StartupPath%2A>, <xref:System.Windows.Forms.Application.ExecutablePath%2A>, <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>, and <xref:System.Windows.Forms.Application.CommonAppDataPath%2A>.<br /><br /> The <xref:System.IO.Path.GetTempPath%2A> method of the <xref:System.IO.Path?displayProperty=fullName> returns the path of the temporary folder.<br /><br /> The <xref:System.IO.Directory.GetCurrentDirectory%2A> method of the <xref:System.IO.Directory?displayProperty=fullName> class returns the application's current executing directory.<br /><br /> The <xref:System.IO.DriveInfo.RootDirectory%2A> property of the <xref:System.IO.DriveInfo> class represents the specified drive's root directory.|  
+|Paths stored as application settings|Access the corresponding applications settings property of the wrapper class derived from <xref:System.Configuration.ApplicationSettingsBase>. For more information, see [Application Settings for Windows Forms](~/docs/framework/winforms/advanced/application-settings-for-windows-forms.md).|  
+|Registry storage|Some applications store directory information in the registry. The <xref:System.Windows.Forms.Application> class has the <xref:System.Windows.Forms.Application.CommonAppDataPath%2A> and <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A> properties that resolve to a <xref:Microsoft.Win32.RegistryKey> value.|  
+|ClickOnce applications|For ClickOnce applications, use <xref:System.Windows.Forms.Application> class members such as <xref:System.Windows.Forms.Application.UserAppDataPath%2A>, which will return a pointer to the ClickOnce data directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).|  
+|International applications|For international applications, retrieve the relative path portion from a string resource in your application by using the <xref:System.Resources.ResourceReader?displayProperty=fullName> class. For more information about globalization and localization, see the topic [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).|  
+  
+ Notice that a full path may be built up using one or more of the described techniques. For example, the <xref:System.Environment.GetFolderPath%2A> method might be used to obtain the path to the MyDocuments folder, then an application setting may be used to add a relative subdirectory portion.  
+  
+ The <xref:System.IO.Path?displayProperty=fullName> class contains static members to assist in manipulating absolute and relative path strings, whereas the <xref:System.IO.File?displayProperty=fullName> and <xref:System.IO.Directory?displayProperty=fullName> classes have static members that actually manipulate files and directories, respectively.  
+  
+> [!IMPORTANT]
+>  If the user of your application changes the folder in the <xref:System.Windows.Forms.FileDialog>, then the current working directory for your application is set to the location specified in the <xref:System.Windows.Forms.FileDialog>. To prevent this, set the <xref:System.Windows.Forms.FileDialog.RestoreDirectory%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.OpenFileDialog> implementation of <xref:System.Windows.Forms.FileDialog> and illustrates creating, setting of properties, and showing the dialog box. The example uses the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box and return the <xref:System.Windows.Forms.DialogResult>. The example requires a form with a <xref:System.Windows.Forms.Button> placed on it and the <xref:System.IO> namespace added to it.  
+  
+ [!code-cpp[Classic OpenFileDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OpenFileDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CS/source.cs#1)]
+ [!code-vb[Classic OpenFileDialog Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OpenFileDialog Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddExtension">
+      <MemberSignature Language="C#" Value="public bool AddExtension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AddExtension" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.AddExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the dialog box automatically adds an extension to a file name if the user omits the extension.</summary>
+        <value>
+          <see langword="true" /> if the dialog box adds an extension to a file name if the user omits the extension; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The extension added to a file name depends on the currently selected file filter and the value of the <xref:System.Windows.Forms.FileDialog.CheckFileExists%2A> property.  
+  
+ If the <xref:System.Windows.Forms.FileDialog.CheckFileExists%2A> property is `true`, the dialog box adds the first extension from the current file filter that matches an existing file. If no files match the current file filter, the dialog box adds the extension specified in the <xref:System.Windows.Forms.FileDialog.DefaultExt%2A> property.  
+  
+ If the <xref:System.Windows.Forms.FileDialog.CheckFileExists%2A> property is `false`, the dialog box adds the first valid file name extension from the current file filter. If the current file filter contains no valid file name extensions, the dialog box adds the extension specified in the <xref:System.Windows.Forms.FileDialog.DefaultExt%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for adding an extension if the user omits it. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoUpgradeEnabled">
+      <MemberSignature Language="C#" Value="public bool AutoUpgradeEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoUpgradeEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.AutoUpgradeEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this <see cref="T:System.Windows.Forms.FileDialog" /> instance should automatically upgrade appearance and behavior when running on [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)].</summary>
+        <value>
+          <see langword="true" /> if this <see cref="T:System.Windows.Forms.FileDialog" /> instance should automatically upgrade appearance and behavior when running on [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)]; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is `false`, the <xref:System.Windows.Forms.FileDialog> class will have a [!INCLUDE[winxp](~/includes/winxp-md.md)]-style appearance and behavior on [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)].  
+  
+ On [!INCLUDE[winxp](~/includes/winxp-md.md)], this property does not have any effect.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckFileExists">
+      <MemberSignature Language="C#" Value="public virtual bool CheckFileExists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckFileExists" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.CheckFileExists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a file name that does not exist.</summary>
+        <value>
+          <see langword="true" /> if the dialog box displays a warning if the user specifies a file name that does not exist; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `true` for an inheriting <xref:System.Windows.Forms.OpenFileDialog> and `false` for an inheriting <xref:System.Windows.Forms.SaveFileDialog>.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to display a warning if the file already exists. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckPathExists">
+      <MemberSignature Language="C#" Value="public bool CheckPathExists { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckPathExists" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.CheckPathExists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a path that does not exist.</summary>
+        <value>
+          <see langword="true" /> if the dialog box displays a warning when the user specifies a path that does not exist; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to display a warning if the user specifies a path that already exists. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomPlaces">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.FileDialogCustomPlacesCollection CustomPlaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.FileDialogCustomPlacesCollection CustomPlaces" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.CustomPlaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FileDialogCustomPlacesCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the custom places collection for this <see cref="T:System.Windows.Forms.FileDialog" /> instance.</summary>
+        <value>The custom places collection for this <see cref="T:System.Windows.Forms.FileDialog" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On [!INCLUDE[winxp](~/includes/winxp-md.md)], this property does not have any effect.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection. To run this example, paste the following code into a Windows Form and call `InitializeDialogAndButton` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.FileDialogCommonPlaces#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FileDialogCommonPlaces/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultExt">
+      <MemberSignature Language="C#" Value="public string DefaultExt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultExt" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.DefaultExt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default file name extension.</summary>
+        <value>The default file name extension. The returned string does not include the period. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the user of your application specifies a file name without an extension, the <xref:System.Windows.Forms.FileDialog> appends an extension to the file name. The extension that is used is determined by the <xref:System.Windows.Forms.FileDialog.Filter%2A> and <xref:System.Windows.Forms.FileDialog.DefaultExt%2A> properties. If a filter is selected in the <xref:System.Windows.Forms.FileDialog> and the filter specifies an extension, then that extension is used. If the filter selected uses a wildcard in place of the extension, then the extension specified in the <xref:System.Windows.Forms.FileDialog.DefaultExt%2A> property is used.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=fullName> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A?displayProperty=fullName> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=fullName> members.  
+  
+ This is a complete example that is ready to run when you copy it to your project.  
+  
+ [!code-cpp[System.Windows.Forms.RichTextBoxSaveFile#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.RichTextBoxSaveFile/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.RichTextBoxSaveFile#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.RichTextBoxSaveFile/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.RichTextBoxSaveFile#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.RichTextBoxSaveFile/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DereferenceLinks">
+      <MemberSignature Language="C#" Value="public bool DereferenceLinks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool DereferenceLinks" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.DereferenceLinks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the dialog box returns the location of the file referenced by the shortcut or whether it returns the location of the shortcut (.lnk).</summary>
+        <value>
+          <see langword="true" /> if the dialog box returns the location of the file referenced by the shortcut; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set the property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="EventFileOk">
+      <MemberSignature Language="C#" Value="protected static readonly object EventFileOk;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly object EventFileOk" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FileDialog.EventFileOk" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Owns the <see cref="E:System.Windows.Forms.FileDialog.FileOk" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.FileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string containing the file name selected in the file dialog box.</summary>
+        <value>The file name selected in the file dialog box. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The file name includes both the file path and the extension. If no files are selected, this method returns an empty string ("").  
+  
+ When used from the <xref:System.Windows.Forms.SaveFileDialog> class, this property represents the file being saved; when used from the <xref:System.Windows.Forms.OpenFileDialog> class, it represents the file being opened.  
+  
+ This property can only be the name of one selected file. If you want to return an array containing the names of all selected files in a multiple-selection dialog box, use <xref:System.Windows.Forms.FileDialog.FileNames%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A?displayProperty=fullName> and <xref:System.Windows.Forms.RichTextBox.LoadFile%2A?displayProperty=fullName> methods with streams. It also demonstrates using the <xref:System.Windows.Forms.FileDialog.FileName%2A>, <xref:System.Windows.Forms.FileDialog.DefaultExt%2A>, <xref:System.Windows.Forms.SaveFileDialog.CreatePrompt%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.SaveFileDialog.OverwritePrompt%2A?displayProperty=fullName> members.  
+  
+ This is a complete example that is ready to run when you copy it to your project.  
+  
+ [!code-cpp[System.Windows.Forms.RichTextBoxSaveFile#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.RichTextBoxSaveFile/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.RichTextBoxSaveFile#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.RichTextBoxSaveFile/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.RichTextBoxSaveFile#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.RichTextBoxSaveFile/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to get or set the file name. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="FileNames">
+      <MemberSignature Language="C#" Value="public string[] FileNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] FileNames" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.FileNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the file names of all selected files in the dialog box.</summary>
+        <value>An array of type <see cref="T:System.String" />, containing the file names of all selected files in the dialog box.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each file name includes both the file path and the extension. If no files are selected, this method returns an empty array.  
+  
+   
+  
+## Examples  
+ The following code example allows the user to select a number of images and display them in <xref:System.Windows.Forms.PictureBox> controls on a Form. It demonstrates initializing an <xref:System.Windows.Forms.OpenFileDialog>, setting the <xref:System.Windows.Forms.FileDialog.Title%2A> and <xref:System.Windows.Forms.FileDialog.Filter%2A> properties, and allowing the user to select multiple files by setting the <xref:System.Windows.Forms.OpenFileDialog.Multiselect%2A> property to true. This code example assumes that your form already has an <xref:System.Windows.Forms.OpenFileDialog> control named `openFileDialog1`, a <xref:System.Windows.Forms.Button> named `SelectFileButton`, and a <xref:System.Windows.Forms.FlowLayoutPanel> named `flowLayoutPanel1`.  
+  
+ [!code-csharp[System.Windows.Forms.OpenFileDialog.MultiSelect#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.OpenFileDialog.MultiSelect/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.OpenFileDialog.MultiSelect#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.OpenFileDialog.MultiSelect/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to get the file names. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.AllAccess" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="FileOk">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler FileOk;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler FileOk" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.FileDialog.FileOk" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user clicks on the **Open** or **Save** button on a file dialog box.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Windows.Forms.FileDialog.FileNames%2A> property, handling the <xref:System.Windows.Forms.FileDialog.FileOk> event and using the <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=fullName> method. When the example runs, a user can select graphics files from an <xref:System.Windows.Forms.OpenFileDialog> object. The selected files are displayed in the form. The <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=fullName> method forces a repaint of the form for each graphics file opened. To run this example paste the following code in a form containing a <xref:System.Windows.Forms.PictureBox> named `PictureBox1`, an <xref:System.Windows.Forms.OpenFileDialog> named `OpenFileDialog1`, and a <xref:System.Windows.Forms.Button> named `fileButton`. Call the `InitializePictureBox` and `InitializeOpenFileDialog` methods from the form's constructor or `Load` method. When the example is running, display the dialog box by clicking the button.  
+  
+ [!code-cpp[System.Windows.Forms.FileDialog#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CPP/filedialogform.cpp#1)]
+ [!code-csharp[System.Windows.Forms.FileDialog#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CS/filedialogform.cs#1)]
+ [!code-vb[System.Windows.Forms.FileDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/VB/filedialogform.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public string Filter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the current file name filter string, which determines the choices that appear in the "Save as file type" or "Files of type" box in the dialog box.</summary>
+        <value>The file filtering options available in the dialog box.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For each filtering option, the filter string contains a description of the filter, followed by the vertical bar (&#124;) and the filter pattern. The strings for different filtering options are separated by the vertical bar.  
+  
+ The following is an example of a filter string:  
+  
+ `Text files (*.txt)|*.txt|All files (*.*)|*.*`  
+  
+ You can add several filter patterns to a filter by separating the file types with semicolons, for example:  
+  
+ `Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*`  
+  
+ Use the <xref:System.Windows.Forms.FileDialog.FilterIndex%2A> property to set which filtering option is shown first to the user.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.OpenFileDialog> implementation of <xref:System.Windows.Forms.FileDialog> and illustrates creating, setting of properties, and showing the dialog box. The example uses the <xref:System.Windows.Forms.FileDialog.Filter%2A> and <xref:System.Windows.Forms.FileDialog.FilterIndex%2A> properties to provide a list of filters for the user. The example requires a form with a <xref:System.Windows.Forms.Button> placed on it and the <xref:System.IO> namespace added to it.  
+  
+ [!code-cpp[Classic OpenFileDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OpenFileDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CS/source.cs#1)]
+ [!code-vb[Classic OpenFileDialog Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OpenFileDialog Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Filter" /> format is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterIndex">
+      <MemberSignature Language="C#" Value="public int FilterIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FilterIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.FilterIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the filter currently selected in the file dialog box.</summary>
+        <value>A value containing the index of the filter currently selected in the file dialog box. The default value is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.FileDialog.FilterIndex%2A> property to set which filtering option is shown first to the user. You can also use the value of <xref:System.Windows.Forms.FileDialog.FilterIndex%2A> after showing the file dialog to perform special file operations depending upon the filter chosen.  
+  
+> [!NOTE]
+>  The index value of the first filter entry is 1.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.OpenFileDialog> implementation of <xref:System.Windows.Forms.FileDialog> and illustrates creating, setting of properties, and showing the dialog box. The example uses the <xref:System.Windows.Forms.FileDialog.Filter%2A> and <xref:System.Windows.Forms.FileDialog.FilterIndex%2A> properties to provide a list of filters for the user. The example requires a form with a <xref:System.Windows.Forms.Button> placed on it and the <xref:System.IO> namespace added to it.  
+  
+ [!code-cpp[Classic OpenFileDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OpenFileDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CS/source.cs#1)]
+ [!code-vb[Classic OpenFileDialog Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OpenFileDialog Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HookProc">
+      <MemberSignature Language="C#" Value="protected override IntPtr HookProc (IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int HookProc(native int hWnd, int32 msg, native int wparam, native int lparam) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hWnd" Type="System.IntPtr" />
+        <Parameter Name="msg" Type="System.Int32" />
+        <Parameter Name="wparam" Type="System.IntPtr" />
+        <Parameter Name="lparam" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hWnd">The handle to the dialog box window.</param>
+        <param name="msg">The message received by the dialog box.</param>
+        <param name="wparam">Additional information about the message.</param>
+        <param name="lparam">Additional information about the message.</param>
+        <summary>Defines the common dialog box hook procedure that is overridden to add specific functionality to the file dialog box.</summary>
+        <returns>Returns zero if the default dialog box procedure processes the message; returns a nonzero value if the default dialog box procedure ignores the message.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A hook procedure allows the user to connect or insert other routines into a routine or application for the purpose of debugging or enhancing functionality.  
+  
+ By default, the hook procedure centers the dialog box on the screen in response to a WM_INITDIALOG message.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.FileDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CommonDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialDirectory">
+      <MemberSignature Language="C#" Value="public string InitialDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InitialDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.InitialDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the initial directory displayed by the file dialog box.</summary>
+        <value>The initial directory displayed by the file dialog box. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.FileDialog.InitialDirectory%2A> property is typically set using one of the following sources:  
+  
+-   A path that was previously used in the program, perhaps retained from the last directory or file operation.  
+  
+-   A path read from a persistent source, such as an application setting, a <xref:Microsoft.Win32.Registry> or a string resource in the application.  
+  
+-   Standard Windows system and user paths, such as Program Files, MyDocuments, MyMusic, and so on (which you can obtain using the <xref:System.Environment.GetFolderPath%2A> method)  
+  
+-   A path related to the current application, such as its startup directory (which you can obtain using properties on the <xref:System.Windows.Forms.Application> object).  
+  
+ For more information about creating dynamic paths, see the <xref:System.Windows.Forms.FileDialog> class overview.  
+  
+ On [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)], if <xref:System.Windows.Forms.FileDialog.InitialDirectory%2A> is set to a full file name instead of just a directory path, the initial directory will default either to the application path, or to the directory from which the user last selected a file.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.OpenFileDialog> implementation of <xref:System.Windows.Forms.FileDialog> and illustrates creating, setting of properties, and showing the dialog box. The example uses the <xref:System.Windows.Forms.FileDialog.InitialDirectory%2A> property to set what the initial directory is when the dialog box is displayed to the user. The example requires a form with a <xref:System.Windows.Forms.Button> placed on it and the <xref:System.IO> namespace added to it.  
+  
+ [!code-cpp[Classic OpenFileDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OpenFileDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CS/source.cs#1)]
+ [!code-vb[Classic OpenFileDialog Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OpenFileDialog Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Required to set the initial directory. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="protected virtual IntPtr Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Instance" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Win32 instance handle for the application.</summary>
+        <value>A Win32 instance handle for the application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFileOk">
+      <MemberSignature Language="C#" Value="protected void OnFileOk (System.ComponentModel.CancelEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnFileOk(class System.ComponentModel.CancelEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.OnFileOk(System.ComponentModel.CancelEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.FileDialog.FileOk" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="protected int Options { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Options" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets values to initialize the <see cref="T:System.Windows.Forms.FileDialog" />.</summary>
+        <value>A bitwise combination of internal values that initializes the <see cref="T:System.Windows.Forms.FileDialog" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.FileDialog.Options%2A> property corresponds to the flags used to initialize a file dialog box using Win32. Use the properties of the <xref:System.Windows.Forms.FileDialog> class to get and set the options.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public override void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets all properties to their default values.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.FileDialog.Reset" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CommonDialog.Reset" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RestoreDirectory">
+      <MemberSignature Language="C#" Value="public bool RestoreDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RestoreDirectory" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.RestoreDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the dialog box restores the directory to the previously selected directory before closing.</summary>
+        <value>
+          <see langword="true" /> if the dialog box restores the current directory to the previously selected directory if the user changed the directory while searching for files; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.OpenFileDialog> implementation of <xref:System.Windows.Forms.FileDialog> and illustrates creating, setting of properties, and showing the dialog box. The example uses the <xref:System.Windows.Forms.FileDialog.RestoreDirectory%2A> property to ensure that the previously selected directory is restored when the dialog box is closed. The example requires a form with a <xref:System.Windows.Forms.Button> placed on it and the <xref:System.IO> namespace added to it.  
+  
+ [!code-cpp[Classic OpenFileDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OpenFileDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OpenFileDialog Example/CS/source.cs#1)]
+ [!code-vb[Classic OpenFileDialog Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OpenFileDialog Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set the property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="RunDialog">
+      <MemberSignature Language="C#" Value="protected override bool RunDialog (IntPtr hWndOwner);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool RunDialog(native int hWndOwner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.RunDialog(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hWndOwner" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hWndOwner">A value that represents the window handle of the owner window for the common dialog box.</param>
+        <summary>Specifies a common dialog box.</summary>
+        <returns>
+          <see langword="true" /> if the file could be opened; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method provides an implementation of <xref:System.Windows.Forms.CommonDialog.RunDialog%2A>, and is invoked when the user of a file dialog invokes <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A>.  
+  
+ In the derived classes <xref:System.Windows.Forms.OpenFileDialog> and <xref:System.Windows.Forms.SaveFileDialog> an invalid file name <xref:System.Exception> can be raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public bool ShowHelp { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowHelp" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.ShowHelp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the **Help** button is displayed in the file dialog box.</summary>
+        <value>
+          <see langword="true" /> if the dialog box includes a help button; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.Control.HelpRequested> event is raised when the user clicks the **Help** button.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportMultiDottedExtensions">
+      <MemberSignature Language="C#" Value="public bool SupportMultiDottedExtensions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportMultiDottedExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.SupportMultiDottedExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the dialog box supports displaying and saving files that have multiple file name extensions.</summary>
+        <value>
+          <see langword="true" /> if the dialog box supports multiple file name extensions; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sometimes users must open and save files that use multiple file name extensions. For example, the application manifest files used by the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] deployment technology end in the complex file name extension ".exe.manifest". Setting this property to `true` enables you to set the <xref:System.Windows.Forms.FileDialog.Filter%2A> property to a multi-dotted extension.  
+  
+ If <xref:System.Windows.Forms.FileDialog.SupportMultiDottedExtensions%2A> is `false`, and you assign a multi-dotted extension to <xref:System.Windows.Forms.FileDialog.Filter%2A>, derived controls such as <xref:System.Windows.Forms.SaveFileDialog> will only use the last extension in the string. For example, ".manifest" will be used instead of ".exe.manifest".  
+  
+   
+  
+## Examples  
+ The following code example saves files with the extension ".data.txt". This code example requires that your application host a <xref:System.Windows.Forms.SaveFileDialog> named `saveFileDialog1` and a <xref:System.Windows.Forms.Button> named `button1`.  
+  
+ [!code-csharp[SupportMultiDottedExtensions#1](~/samples/snippets/csharp/VS_Snippets_Winforms/SupportMultiDottedExtensions/CS/Form1.cs#1)]
+ [!code-vb[SupportMultiDottedExtensions#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/SupportMultiDottedExtensions/VB/Form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file dialog box title.</summary>
+        <value>The file dialog box title. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string is placed in the title bar of the dialog box. If the title is an empty string, the system uses a default title, which is either "Save As" or "Open".  
+  
+   
+  
+## Examples  
+ The following code example demonstrates initializing an <xref:System.Windows.Forms.OpenFileDialog>, setting the <xref:System.Windows.Forms.FileDialog.Title%2A> and <xref:System.Windows.Forms.FileDialog.Filter%2A> properties, and allowing the user to select multiple files by setting the <xref:System.Windows.Forms.OpenFileDialog.Multiselect%2A?displayProperty=fullName> property to true. To run this example, paste the following code in a form containing an <xref:System.Windows.Forms.OpenFileDialog> named `OpenFileDialog1` and a <xref:System.Windows.Forms.Button> named `fileButton`. Call the `InitializeOpenFileDialog` method in the form's constructor or `Load` method. The example also requires that the `Click` event of the `Button` control is connected to the event handler defined in the example.  
+  
+ [!code-cpp[System.Windows.Forms.FileDialog#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CPP/filedialogform.cpp#6)]
+ [!code-csharp[System.Windows.Forms.FileDialog#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/CS/filedialogform.cs#6)]
+ [!code-vb[System.Windows.Forms.FileDialog#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FileDialog/VB/filedialogform.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set the file dialog box title. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialog.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a string version of this object.</summary>
+        <returns>A string version of this object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateNames">
+      <MemberSignature Language="C#" Value="public bool ValidateNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateNames" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialog.ValidateNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the dialog box accepts only valid Win32 file names.</summary>
+        <value>
+          <see langword="true" /> if the dialog box accepts only valid Win32 file names; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the edit control contains anything but spaces when the user clicks **OK**, the dialog box returns the file name, whether it is valid or not. No default extension is added to the text.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">to set the property. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,185 @@
+<Type Name="Executor" FullName="System.CodeDom.Compiler.Executor">
+  <TypeSignature Language="C#" Value="public static class Executor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Executor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.Executor" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides command execution functions for invoking compilers. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides a collection of methods that can be used to invoke a compiler, typically from an <xref:System.CodeDom.Compiler.ICodeCompiler> implementation.  
+  
+> [!NOTE]
+>  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For more information, see [Link Demands](~/docs/framework/misc/link-demands.md).  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName="ExecWait">
+      <MemberSignature Language="C#" Value="public static void ExecWait (string cmd, System.CodeDom.Compiler.TempFileCollection tempFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExecWait(string cmd, class System.CodeDom.Compiler.TempFileCollection tempFiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWait(System.String,System.CodeDom.Compiler.TempFileCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cmd" Type="System.String" />
+        <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
+      </Parameters>
+      <Docs>
+        <param name="cmd">The command to execute.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <summary>Executes the command using the specified temporary files and waits for the call to return.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecWaitWithCapture">
+      <MemberSignature Language="C#" Value="public static int ExecWaitWithCapture (string cmd, System.CodeDom.Compiler.TempFileCollection tempFiles, ref string outputName, ref string errorName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ExecWaitWithCapture(string cmd, class System.CodeDom.Compiler.TempFileCollection tempFiles, string outputName, string errorName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWaitWithCapture(System.String,System.CodeDom.Compiler.TempFileCollection,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cmd" Type="System.String" />
+        <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
+        <Parameter Name="outputName" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="cmd">The command to execute.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <param name="outputName">A reference to a string that will store the compiler's message output.</param>
+        <param name="errorName">A reference to a string that will store the name of the error or errors encountered.</param>
+        <summary>Executes the specified command using the specified temporary files and waits for the call to return, storing output and error information from the compiler in the specified strings.</summary>
+        <returns>The return value from the compiler.</returns>
+        <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecWaitWithCapture">
+      <MemberSignature Language="C#" Value="public static int ExecWaitWithCapture (IntPtr userToken, string cmd, System.CodeDom.Compiler.TempFileCollection tempFiles, ref string outputName, ref string errorName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ExecWaitWithCapture(native int userToken, string cmd, class System.CodeDom.Compiler.TempFileCollection tempFiles, string outputName, string errorName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWaitWithCapture(System.IntPtr,System.String,System.CodeDom.Compiler.TempFileCollection,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userToken" Type="System.IntPtr" />
+        <Parameter Name="cmd" Type="System.String" />
+        <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
+        <Parameter Name="outputName" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="userToken">The token to start the compiler process with.</param>
+        <param name="cmd">The command to execute.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <param name="outputName">A reference to a string that will store the compiler's message output.</param>
+        <param name="errorName">A reference to a string that will store the name of the error or errors encountered.</param>
+        <summary>Executes the specified command using the specified user token and temporary files, and waits for the call to return, storing output and error information from the compiler in the specified strings.</summary>
+        <returns>The return value from the compiler.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `userToken` parameter accepts a Win32 security access token that indicates the security context for the process to be started in. For more information, consult the Windows `CreateProcessAsUser` method documentation in the Platform SDK documentation in MSDN.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecWaitWithCapture">
+      <MemberSignature Language="C#" Value="public static int ExecWaitWithCapture (string cmd, string currentDir, System.CodeDom.Compiler.TempFileCollection tempFiles, ref string outputName, ref string errorName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ExecWaitWithCapture(string cmd, string currentDir, class System.CodeDom.Compiler.TempFileCollection tempFiles, string outputName, string errorName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWaitWithCapture(System.String,System.String,System.CodeDom.Compiler.TempFileCollection,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cmd" Type="System.String" />
+        <Parameter Name="currentDir" Type="System.String" />
+        <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
+        <Parameter Name="outputName" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="cmd">The command to execute.</param>
+        <param name="currentDir">The current directory.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <param name="outputName">A reference to a string that will store the compiler's message output.</param>
+        <param name="errorName">A reference to a string that will store the name of the error or errors encountered.</param>
+        <summary>Executes the specified command using the specified current directory and temporary files, and waits for the call to return, storing output and error information from the compiler in the specified strings.</summary>
+        <returns>The return value from the compiler.</returns>
+        <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecWaitWithCapture">
+      <MemberSignature Language="C#" Value="public static int ExecWaitWithCapture (IntPtr userToken, string cmd, string currentDir, System.CodeDom.Compiler.TempFileCollection tempFiles, ref string outputName, ref string errorName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ExecWaitWithCapture(native int userToken, string cmd, string currentDir, class System.CodeDom.Compiler.TempFileCollection tempFiles, string outputName, string errorName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.Executor.ExecWaitWithCapture(System.IntPtr,System.String,System.String,System.CodeDom.Compiler.TempFileCollection,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userToken" Type="System.IntPtr" />
+        <Parameter Name="cmd" Type="System.String" />
+        <Parameter Name="currentDir" Type="System.String" />
+        <Parameter Name="tempFiles" Type="System.CodeDom.Compiler.TempFileCollection" />
+        <Parameter Name="outputName" Type="System.String&amp;" RefType="ref" />
+        <Parameter Name="errorName" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="userToken">The token to start the compiler process with.</param>
+        <param name="cmd">The command to execute.</param>
+        <param name="currentDir">The directory to start the process in.</param>
+        <param name="tempFiles">A <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> with which to manage and store references to intermediate files generated during compilation.</param>
+        <param name="outputName">A reference to a string that will store the compiler's message output.</param>
+        <param name="errorName">A reference to a string that will store the name of the error or errors encountered.</param>
+        <summary>Executes the specified command using the specified user token, current directory, and temporary files; then waits for the call to return, storing output and error information from the compiler in the specified strings.</summary>
+        <returns>The return value from the compiler.</returns>
+        <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

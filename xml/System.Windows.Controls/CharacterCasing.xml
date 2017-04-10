@@ -1,0 +1,83 @@
+<Type Name="CharacterCasing" FullName="System.Windows.Controls.CharacterCasing">
+  <TypeSignature Language="C#" Value="public enum CharacterCasing" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CharacterCasing extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CharacterCasing" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the case of characters typed manually into a <see cref="T:System.Windows.Controls.TextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this enumeration does not affect characters that are added to a <xref:System.Windows.Controls.TextBox> programmatically.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Controls.TextBox.CharacterCasing%2A> property to convert all characters to uppercase that are manually entered into a <xref:System.Windows.Controls.TextBox>.  
+  
+ [!code-xml[TextBoxMiscSnippets_snip#CharacterCasingExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/charactercasingexample.xaml#charactercasingexamplewholepage)]  
+  
+ [!code-csharp[TextBoxMiscSnippets_procedural_snip#CharacterCasingCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/CSharp/CharacterCasingExample.cs#charactercasingcodeexamplewholepage)]
+ [!code-vb[TextBoxMiscSnippets_procedural_snip#CharacterCasingCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_procedural_snip/visualbasic/charactercasingexample.vb#charactercasingcodeexamplewholepage)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Lower">
+      <MemberSignature Language="C#" Value="Lower" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CharacterCasing Lower = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CharacterCasing.Lower" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CharacterCasing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Characters typed into a <see cref="T:System.Windows.Controls.TextBox" /> are converted to lowercase.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CharacterCasing Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CharacterCasing.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CharacterCasing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Characters typed into a <see cref="T:System.Windows.Controls.TextBox" /> are not converted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Upper">
+      <MemberSignature Language="C#" Value="Upper" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CharacterCasing Upper = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CharacterCasing.Upper" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CharacterCasing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Characters typed into a <see cref="T:System.Windows.Controls.TextBox" /> are converted to uppercase.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

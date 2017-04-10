@@ -1,0 +1,158 @@
+<Type Name="ContentLocatorPart" FullName="System.Windows.Annotations.ContentLocatorPart">
+  <TypeSignature Language="C#" Value="public sealed class ContentLocatorPart : System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContentLocatorPart extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.ContentLocatorPart" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a set of name/value pairs that identify an item of content.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContentLocatorPart (System.Xml.XmlQualifiedName partType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName partType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorPart.#ctor(System.Xml.XmlQualifiedName)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="partType" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="partType">The type name and namespace for the <see cref="T:System.Windows.Annotations.ContentLocatorPart" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.ContentLocatorPart" /> class with a specified type name and namespace.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="partType" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The strings <paramref name="partType" />.<see cref="P:System.Xml.XmlQualifiedName.Name" /> or <paramref name="partType" />.<see cref="P:System.Xml.XmlQualifiedName.Namespace" /> (or both) are <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorPart.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable deep copy clone of this <see cref="T:System.Windows.Annotations.ContentLocatorPart" />.</summary>
+        <returns>A modifiable deep copy clone of this <see cref="T:System.Windows.Annotations.ContentLocatorPart" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> method creates modifiable copies of frozen <xref:System.Windows.Freezable> objects.  For convenience, this <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> method shadows the inherited version with a strongly typed implementation.  For more details, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ The cloned <xref:System.Windows.Annotations.ContentLocatorPart>'s <xref:System.Windows.Freezable.IsFrozen%2A> property will be `false` even if this source <xref:System.Windows.Annotations.ContentLocatorPart>'s <xref:System.Windows.Freezable.IsFrozen%2A> property is `true.`  
+  
+ When copying dependency properties, <xref:System.Windows.Annotations.ContentLocatorPart.Clone%2A> copies resource references and data bindings (although they might no longer resolve) but does not copy not animations or current animation values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorPart.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The part to compare for equality.</param>
+        <summary>Returns a value that indicates whether a given <see cref="T:System.Windows.Annotations.ContentLocatorPart" /> is identical to this <see cref="T:System.Windows.Annotations.ContentLocatorPart" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.Windows.Annotations.ContentLocatorPart.NameValuePairs" /> within both parts are identical; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.ContentLocatorPart.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this part.</summary>
+        <returns>The hash code for this part.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameValuePairs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; NameValuePairs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; NameValuePairs" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.ContentLocatorPart.NameValuePairs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the name/value pairs that define this part.</summary>
+        <value>The collection of the name/value pairs that define this <see cref="T:System.Windows.Annotations.ContentLocatorPart" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartType">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName PartType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName PartType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.ContentLocatorPart.PartType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type name and namespace of the part.</summary>
+        <value>The type name and namespace of the part.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned type name and namespace is originally defined in the parameter to the <xref:System.Windows.Annotations.ContentLocatorPart.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

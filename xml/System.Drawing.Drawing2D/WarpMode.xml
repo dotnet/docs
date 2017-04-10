@@ -1,0 +1,57 @@
+<Type Name="WarpMode" FullName="System.Drawing.Drawing2D.WarpMode">
+  <TypeSignature Language="C#" Value="public enum WarpMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WarpMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.WarpMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of warp transformation applied in a <see cref="Overload:System.Drawing.Drawing2D.GraphicsPath.Warp" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A warp style is used by the <xref:System.Drawing.Drawing2D.GraphicsPath.Warp%2A> method to warp or distort the figures in a graphics path. This can be used to create unusual shapes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bilinear">
+      <MemberSignature Language="C#" Value="Bilinear" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.WarpMode Bilinear = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WarpMode.Bilinear" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.WarpMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a bilinear warp.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Perspective">
+      <MemberSignature Language="C#" Value="Perspective" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.WarpMode Perspective = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.WarpMode.Perspective" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.WarpMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a perspective warp.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

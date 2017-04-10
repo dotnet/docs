@@ -1,0 +1,134 @@
+<Type Name="TextModifier" FullName="System.Windows.Media.TextFormatting.TextModifier">
+  <TypeSignature Language="C#" Value="public abstract class TextModifier : System.Windows.Media.TextFormatting.TextRun" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextModifier extends System.Windows.Media.TextFormatting.TextRun" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextModifier" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.TextFormatting.TextRun</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a specialized text run that can be used to modify properties of text runs within its scope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The scope of the <xref:System.Windows.Media.TextFormatting.TextModifier> extends to the next matching <xref:System.Windows.Media.TextFormatting.TextEndOfSegment> text run, or to the next <xref:System.Windows.Media.TextFormatting.TextEndOfParagraph>. Note that <xref:System.Windows.Media.TextFormatting.TextModifier> objects can be nested.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TextModifier ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextModifier.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextModifier" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharacterBufferReference">
+      <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.TextFormatting.CharacterBufferReference CharacterBufferReference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextFormatting.CharacterBufferReference CharacterBufferReference" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextModifier.CharacterBufferReference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.CharacterBufferReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> for the <see cref="T:System.Windows.Media.TextFormatting.TextModifier" />.</summary>
+        <value>A value of type <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowDirection">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.FlowDirection FlowDirection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FlowDirection FlowDirection" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextModifier.FlowDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.FlowDirection" /> for the <see cref="T:System.Windows.Media.TextFormatting.TextModifier" />.</summary>
+        <value>A value of type <see cref="T:System.Windows.FlowDirection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.FlowDirection> specifies the direction of content flow for text and user interface (UI) elements, and can be either <xref:System.Windows.FlowDirection> or <xref:System.Windows.FlowDirection>.  
+  
+ This value is ignored unless the <xref:System.Windows.Media.TextFormatting.TextModifier.HasDirectionalEmbedding%2A> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDirectionalEmbedding">
+      <MemberSignature Language="C#" Value="public abstract bool HasDirectionalEmbedding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasDirectionalEmbedding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextModifier.HasDirectionalEmbedding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Media.TextFormatting.TextModifier" /> supports <see cref="T:System.Windows.FlowDirection" /> for the current scope of text.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Windows.Media.TextFormatting.TextModifier" /> supports <see cref="T:System.Windows.FlowDirection" /> for the current scope of text; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the return value is `true`, <xref:System.Windows.Media.TextFormatting.TextFormatter> uses the <xref:System.Windows.Media.TextFormatting.TextModifier.FlowDirection%2A> property to determine the direction of content flow for the current scope of text.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyProperties">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextRunProperties ModifyProperties (System.Windows.Media.TextFormatting.TextRunProperties properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.TextFormatting.TextRunProperties ModifyProperties(class System.Windows.Media.TextFormatting.TextRunProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextModifier.ModifyProperties(System.Windows.Media.TextFormatting.TextRunProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextRunProperties</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Windows.Media.TextFormatting.TextRunProperties" />
+      </Parameters>
+      <Docs>
+        <param name="properties">The <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> for a text run, or the return value of <see cref="M:System.Windows.Media.TextFormatting.TextModifier.ModifyProperties(System.Windows.Media.TextFormatting.TextRunProperties)" /> for a nested text modifier.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> for a text run.</summary>
+        <returns>The actual <see cref="T:System.Windows.Media.TextFormatting.TextRunProperties" /> to be used by the <see cref="T:System.Windows.Media.TextFormatting.TextFormatter" />, subject to further modification by <see cref="T:System.Windows.Media.TextFormatting.TextModifier" /> objects at outer scopes.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

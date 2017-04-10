@@ -1,0 +1,155 @@
+<Type Name="Versioned" FullName="Microsoft.VisualBasic.CompilerServices.Versioned">
+  <TypeSignature Language="C#" Value="public sealed class Versioned" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Versioned extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Versioned" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see cref="T:Microsoft.VisualBasic.CompilerServices.Versioned" /> module contains procedures used to interact with objects, applications, and systems.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This module supports the Visual Basic language keywords and run-time library members that run other programs, call a method or property, sound a beep from the computer, provide a command-line string, manipulate COM objects, and control dialog boxes.  
+  
+ This class is the Visual Basic 2005 updated version of the <xref:Microsoft.VisualBasic.Interaction> class (which was used in Visual Basic 2003).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CallByName">
+      <MemberSignature Language="C#" Value="public static object CallByName (object Instance, string MethodName, Microsoft.VisualBasic.CallType UseCallType, object[] Arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object CallByName(object Instance, string MethodName, valuetype Microsoft.VisualBasic.CallType UseCallType, object[] Arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Instance" Type="System.Object" />
+        <Parameter Name="MethodName" Type="System.String" />
+        <Parameter Name="UseCallType" Type="Microsoft.VisualBasic.CallType" />
+        <Parameter Name="Arguments" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="Instance">Required. <see langword="Object" />. A pointer to the object exposing the property or method.</param>
+        <param name="MethodName">Required. <see langword="String" />. A string expression containing the name of the property or method on the object.</param>
+        <param name="UseCallType">Required. An enumeration member of type <see cref="T:Microsoft.VisualBasic.CallType" /> representing the type of procedure being called. The value of <see langword="CallType" /> can be <see langword="Method" />, <see langword="Get" />, or <see langword="Set" />.</param>
+        <param name="Arguments">Optional. <see langword="ParamArray" />. A parameter array containing the arguments to be passed to the property or method being called.</param>
+        <summary>Executes a method on an object, or sets or returns a property on an object.</summary>
+        <returns>Executes a method on an object, or sets or returns a property on an object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNumeric">
+      <MemberSignature Language="C#" Value="public static bool IsNumeric (object Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsNumeric(object Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.IsNumeric(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. <see langword="Object" /> expression.</param>
+        <summary>Returns a Boolean value indicating whether an expression can be evaluated as a number.</summary>
+        <returns>Returns a Boolean value indicating whether an expression can be evaluated as a number.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemTypeName">
+      <MemberSignature Language="C#" Value="public static string SystemTypeName (string VbName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string SystemTypeName(string VbName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.SystemTypeName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="VbName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="VbName">Required. A string variable containing a Visual Basic type name.</param>
+        <summary>Returns a string value containing the system data type name of a variable.</summary>
+        <returns>Returns a string value containing the system data type name of a variable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeName">
+      <MemberSignature Language="C#" Value="public static string TypeName (object Expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string TypeName(object Expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.TypeName(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Expression" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="Expression">Required. <see langword="Object" /> variable. If <see langword="Option Strict" /> is <see langword="Off" />, you can pass a variable of any data type except a structure.</param>
+        <summary>Returns a string value containing data type information about a variable.</summary>
+        <returns>Returns a string value containing data type information about a variable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VbTypeName">
+      <MemberSignature Language="C#" Value="public static string VbTypeName (string SystemName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string VbTypeName(string SystemName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.VbTypeName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SystemName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="SystemName">Required. String variable containing a type name used by the common language runtime.</param>
+        <summary>Returns a string value containing the Visual Basic data type name of a variable.</summary>
+        <returns>Returns a string value containing the Visual Basic data type name of a variable.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

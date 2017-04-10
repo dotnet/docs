@@ -1,0 +1,105 @@
+<Type Name="SerializationSectionGroup" FullName="System.Xml.Serialization.Configuration.SerializationSectionGroup">
+  <TypeSignature Language="C#" Value="public sealed class SerializationSectionGroup : System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SerializationSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.SerializationSectionGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSectionGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Handles the XML elements used to configure XML serialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used to handle the [\&lt;system.xml.serialization\&gt; Element](~/docs/framework/serialization/system-xml-serialization-element.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SerializationSectionGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.SerializationSectionGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.Configuration.SerializationSectionGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeSerialization">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.Configuration.DateTimeSerializationSection DateTimeSerialization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.Configuration.DateTimeSerializationSection DateTimeSerialization" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SerializationSectionGroup.DateTimeSerialization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("dateTimeSerialization")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.Configuration.DateTimeSerializationSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that represents the <see cref="T:System.DateTime" /> serialization configuration element.</summary>
+        <value>The <see cref="T:System.Xml.Serialization.Configuration.DateTimeSerializationSection" /> object that represents the configuration element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaImporterExtensions">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection SchemaImporterExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection SchemaImporterExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SerializationSectionGroup.SchemaImporterExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("schemaImporterExtensions")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that represents the section that contains configuration elements for the <see cref="T:System.Xml.Serialization.XmlSchemaImporter" />.</summary>
+        <value>The <see cref="T:System.Xml.Serialization.Configuration.SchemaImporterExtensionsSection" /> that represents the <see langword="schemaImporterExtenstion" /> element in the configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlSerializer">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.Configuration.XmlSerializerSection XmlSerializer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.Configuration.XmlSerializerSection XmlSerializer" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.SerializationSectionGroup.XmlSerializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.Configuration.XmlSerializerSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that represents the configuration group for the <see cref="T:System.Xml.Serialization.XmlSerializer" />.</summary>
+        <value>The <see cref="T:System.Xml.Serialization.Configuration.XmlSerializerSection" /> that represents the <see cref="T:System.Xml.Serialization.XmlSerializer" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

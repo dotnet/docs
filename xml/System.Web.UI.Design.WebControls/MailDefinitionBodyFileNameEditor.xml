@@ -1,0 +1,124 @@
+<Type Name="MailDefinitionBodyFileNameEditor" FullName="System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor">
+  <TypeSignature Language="C#" Value="public class MailDefinitionBodyFileNameEditor : System.Web.UI.Design.UrlEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MailDefinitionBodyFileNameEditor extends System.Web.UI.Design.UrlEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.UrlEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an editor for selecting message body files in a <see cref="T:System.Web.UI.WebControls.MailDefinition" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor> class provides a user interface for selecting a file for the <xref:System.Web.UI.WebControls.MailDefinition.BodyFileName%2A> property of a <xref:System.Web.UI.WebControls.MailDefinition> object. The <xref:System.Web.UI.WebControls.MailDefinition.BodyFileName%2A> specifies the file that contains the e-mail message body.  
+  
+ The <xref:System.Web.UI.WebControls.MailDefinition> objects define the content and format of the e-mail notification messages that are sent by controls. For example, the <xref:System.Web.UI.WebControls.CreateUserWizard>, <xref:System.Web.UI.WebControls.ChangePassword> and <xref:System.Web.UI.WebControls.PasswordRecovery> controls use the <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor>.  
+  
+ The <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor> is invoked, for example, by selecting the ellipsis (**…**) button on the **BodyFileName** property, under **MailDefinition**, in the **Properties** grid of the visual designer.  
+  
+ The <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Caption%2A> property specifies the caption that is to appear on the <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor> form. The <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Filter%2A> property returns the list of file types that is to be accepted by the <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MailDefinitionBodyFileNameEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor> class when you invoke the editor in a control that encapsulates a <xref:System.Web.UI.WebControls.MailDefinition> object. For example, you select the ellipsis (**…**) button on the **BodyFileName** property, under **MailDefinition**, in the **Properties** grid of the visual designer, when designing a <xref:System.Web.UI.WebControls.CreateUserWizard>, <xref:System.Web.UI.WebControls.ChangePassword> or <xref:System.Web.UI.WebControls.PasswordRecovery> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="protected override string Caption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Caption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the caption to appear on the <see cref="T:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor" /> form.</summary>
+        <value>A string that is the caption to appear on the editor form.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for the  <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Caption%2A> property is a message instructing the user to select an e-mail file.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="P:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Caption" /> property to return a value that is different than the default. The default value is localized.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="protected override string Filter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of file types for the <see cref="T:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor" /> object to accept.</summary>
+        <value>A string specifying a user-friendly name for each accepted file type and file specifications for each type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The format for the <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Filter%2A> property for each type is as follows:  
+  
+1.  A user-friendly description.  
+  
+2.  A vertical bar (`|`).  
+  
+3.  File specifications, separated by a semicolon (`;`).  
+  
+4.  Another vertical bar (`|`).  
+  
+ For example, a filter that specifies text files, HTML files, and all files would look like the following example, in EN-US locale:  
+  
+ `Text Files(*.txt)|*.txt|HTML Files(*.htm;*.html)|*.htm;*.html|All Files(*.*)|*.*|`  
+  
+ A localized version of this string is the default value for the <xref:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Filter%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="P:System.Web.UI.Design.WebControls.MailDefinitionBodyFileNameEditor.Filter" /> property to return a value that is different from the default.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,113 @@
+<Type Name="SelectedCellsChangedEventArgs" FullName="System.Windows.Controls.SelectedCellsChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class SelectedCellsChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectedCellsChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectedCellsChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.SelectedCellsChanged" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectedCellsChangedEventArgs (System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt; addedCells, System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt; removedCells);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; addedCells, class System.Collections.Generic.List`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; removedCells) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedCellsChangedEventArgs.#ctor(System.Collections.Generic.List{System.Windows.Controls.DataGridCellInfo},System.Collections.Generic.List{System.Windows.Controls.DataGridCellInfo})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="addedCells" Type="System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt;" />
+        <Parameter Name="removedCells" Type="System.Collections.Generic.List&lt;System.Windows.Controls.DataGridCellInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="addedCells">The cells added to the selection.</param>
+        <param name="removedCells">The cells removed from the selection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.SelectedCellsChangedEventArgs" /> class with the specified cells added to and removed from the selection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The input parameters cannot be `null`, but can be empty.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="addedCells" /> or <paramref name="removedCells" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SelectedCellsChangedEventArgs (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt; addedCells, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt; removedCells);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; addedCells, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; removedCells) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.SelectedCellsChangedEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.Windows.Controls.DataGridCellInfo},System.Collections.ObjectModel.ReadOnlyCollection{System.Windows.Controls.DataGridCellInfo})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="addedCells" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt;" />
+        <Parameter Name="removedCells" Type="System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.DataGridCellInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="addedCells">The cells added to the selection.</param>
+        <param name="removedCells">The cells removed from the selection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.SelectedCellsChangedEventArgs" /> class with the specified cells added to and removed from the selection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The input parameters cannot be `null`, but can be empty.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="addedCells" /> or <paramref name="removedCells" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddedCells">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt; AddedCells { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; AddedCells" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SelectedCellsChangedEventArgs.AddedCells" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cells that were added to the selection.</summary>
+        <value>The added cells.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovedCells">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt; RemovedCells { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Controls.DataGridCellInfo&gt; RemovedCells" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.SelectedCellsChangedEventArgs.RemovedCells" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Controls.DataGridCellInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of cells removed from the selection.</summary>
+        <value>The list of cells removed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

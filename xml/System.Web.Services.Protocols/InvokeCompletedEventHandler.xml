@@ -1,0 +1,26 @@
+<Type Name="InvokeCompletedEventHandler" FullName="System.Web.Services.Protocols.InvokeCompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void InvokeCompletedEventHandler(object sender, InvokeCompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InvokeCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.InvokeCompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.Services.Protocols.InvokeCompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">A reference to the Web service proxy.</param>
+    <param name="e">An <see cref="T:System.Web.Services.Protocols.InvokeCompletedEventArgs" /> containing the results of the method invocation.</param>
+    <summary>Represents an event handler that accepts the results of asynchronously invoked Web methods. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,121 @@
+<Type Name="ScrollButton" FullName="System.Windows.Forms.ScrollButton">
+  <TypeSignature Language="C#" Value="public enum ScrollButton" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollButton extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollButton" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of scroll arrow to draw on a scroll bar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by <xref:System.Windows.Forms.ControlPaint.DrawScrollButton%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Down">
+      <MemberSignature Language="C#" Value="Down" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Down = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Down" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A down-scroll arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Left = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A left-scroll arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="Max" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Max = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Max" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A maximum-scroll arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Min">
+      <MemberSignature Language="C#" Value="Min" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Min = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Min" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A minimum-scroll arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Right = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A right-scroll arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Up">
+      <MemberSignature Language="C#" Value="Up" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollButton Up = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollButton.Up" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollButton</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An up-scroll arrow.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

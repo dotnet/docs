@@ -1,0 +1,146 @@
+<Type Name="ITypedList" FullName="System.ComponentModel.ITypedList">
+  <TypeSignature Language="C#" Value="public interface ITypedList" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypedList" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.ITypedList" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides functionality to discover the schema for a bindable list, where the properties available for binding differ from the public properties of the object to bind to.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this interface if, for instance, you are using a <xref:System.Data.DataView> object that represents a `customer` table, you want to bind to the properties on the `customer` object that the <xref:System.Data.DataView> represents, not the properties of the <xref:System.Data.DataView>.  
+  
+ This interface is not required for design-time support of a bindable list.  
+  
+ Binding to data can occur either at run time or in a designer, but there are rules for both. At run time, you can bind to data in any of the following:  
+  
+-   <xref:System.Array>  
+  
+-   Implementer of <xref:System.Collections.IList>, provided the implementer has a strongly typed <xref:System.Collections.IList.Item%2A> property (that is, the <xref:System.Type> is anything but <xref:System.Object>). You can accomplish this by making the default implementation of <xref:System.Collections.IList.Item%2A> private. If you want to create an <xref:System.Collections.IList> that follows the rules of a strongly typed collection, you should derive from <xref:System.Collections.CollectionBase>.  
+  
+-   Implementer of <xref:System.ComponentModel.ITypedList>.  
+  
+ In a designer, you can initialize binding to <xref:System.ComponentModel.Component> objects by following the same rules.  
+  
+ For more information on binding to a data source, see the <xref:System.Windows.Forms.Binding?displayProperty=fullName> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList> interface. A generic type named `SortableBindingList` derives from the <xref:System.ComponentModel.BindingList%601> class and implements the <xref:System.ComponentModel.ITypedList> interface. For a full code listing, see [How to: Implement the ITypedList Interface](~/docs/framework/winforms/how-to-implement-the-itypedlist-interface.md).  
+  
+ [!code-csharp[System.ComponentModel.ITypedList#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ITypedList/CS/SortableBindingList.cs#1)]
+ [!code-vb[System.ComponentModel.ITypedList#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ITypedList/VB/SortableBindingList.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetItemProperties">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptorCollection GetItemProperties (System.ComponentModel.PropertyDescriptor[] listAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetItemProperties(class System.ComponentModel.PropertyDescriptor[] listAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ITypedList.GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listAccessors" Type="System.ComponentModel.PropertyDescriptor[]" />
+      </Parameters>
+      <Docs>
+        <param name="listAccessors">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects to find in the collection as bindable. This can be <see langword="null" />.</param>
+        <summary>Returns the <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the properties on each item used to bind data.</summary>
+        <returns>The <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the properties on each item used to bind data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `listAccessors` parameter is not `null`, it typically contains a property descriptor that identifies a list of containers to retrieve for the object that implements <xref:System.ComponentModel.ITypedList>. For example, a <xref:System.Data.DataSet> containing two tables, `myCustomers` and `myOrders`, with a relationship between them called `myCustOrders`. If you create a <xref:System.Data.DataView> object to view `myCustomers`, then calling the <xref:System.ComponentModel.ITypedList.GetItemProperties%2A> method with `null` returns the property descriptors for the columns in `myCustomers`. As a result, one of the returned property descriptors is a property descriptor for `myCustOrders`, just as calling the <xref:System.ComponentModel.ITypedList.GetItemProperties%2A> method with a list accessor array containing the property descriptors for `myCustOrders` will return the property descriptors for `myOrders`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList.GetItemProperties%2A> method. For a full code listing, see [How to: Implement the ITypedList Interface](~/docs/framework/winforms/how-to-implement-the-itypedlist-interface.md).  
+  
+ [!code-csharp[System.ComponentModel.ITypedList#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ITypedList/CS/SortableBindingList.cs#3)]
+ [!code-vb[System.ComponentModel.ITypedList#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ITypedList/VB/SortableBindingList.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetListName">
+      <MemberSignature Language="C#" Value="public string GetListName (System.ComponentModel.PropertyDescriptor[] listAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetListName(class System.ComponentModel.PropertyDescriptor[] listAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.ITypedList.GetListName(System.ComponentModel.PropertyDescriptor[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listAccessors" Type="System.ComponentModel.PropertyDescriptor[]" />
+      </Parameters>
+      <Docs>
+        <param name="listAccessors">An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects, for which the list name is returned. This can be <see langword="null" />.</param>
+        <summary>Returns the name of the list.</summary>
+        <returns>The name of the list.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used only in the design-time framework and by the obsolete <xref:System.Windows.Forms.DataGrid> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList.GetListName%2A> method. For a full code listing, see [How to: Implement the ITypedList Interface](~/docs/framework/winforms/how-to-implement-the-itypedlist-interface.md).  
+  
+ [!code-csharp[System.ComponentModel.ITypedList#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ITypedList/CS/SortableBindingList.cs#4)]
+ [!code-vb[System.ComponentModel.ITypedList#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ITypedList/VB/SortableBindingList.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

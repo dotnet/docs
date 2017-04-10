@@ -1,0 +1,99 @@
+<Type Name="IToolboxUser" FullName="System.Drawing.Design.IToolboxUser">
+  <TypeSignature Language="C#" Value="public interface IToolboxUser" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IToolboxUser" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Design.IToolboxUser" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an interface for setting the currently selected toolbox item and indicating whether a designer supports a particular toolbox item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface provides toolbox support functions to designers. The <xref:System.Drawing.Design.IToolboxUser.GetToolSupported%2A> method indicates whether the specified <xref:System.Drawing.Design.ToolboxItem> can be used when the current designer is active. The <xref:System.Drawing.Design.IToolboxUser.ToolPicked%2A> method selects the specified <xref:System.Drawing.Design.ToolboxItem>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an implementation of the <xref:System.Drawing.Design.IToolboxUser> interface that can restrict support for specific types of <xref:System.Drawing.Design.ToolboxItem> objects.  
+  
+ [!code-cpp[IToolboxUserExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#1)]
+ [!code-csharp[IToolboxUserExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#1)]
+ [!code-vb[IToolboxUserExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetToolSupported">
+      <MemberSignature Language="C#" Value="public bool GetToolSupported (System.Drawing.Design.ToolboxItem tool);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetToolSupported(class System.Drawing.Design.ToolboxItem tool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxUser.GetToolSupported(System.Drawing.Design.ToolboxItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tool" Type="System.Drawing.Design.ToolboxItem" />
+      </Parameters>
+      <Docs>
+        <param name="tool">The <see cref="T:System.Drawing.Design.ToolboxItem" /> to be tested for toolbox support.</param>
+        <summary>Gets a value indicating whether the specified tool is supported by the current designer.</summary>
+        <returns>
+          <see langword="true" /> if the tool is supported by the toolbox and can be enabled; <see langword="false" /> if the document designer does not know how to use the tool.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified tool is supported by the designer implementing the <xref:System.Drawing.Design.IToolboxUser> interface, then the tool will be enabled in the toolbox when this designer has focus. Otherwise, it will be disabled. Once a tool is marked as enabled or disabled, it may not be tested for support with the same designer again.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an implementation of the <xref:System.Drawing.Design.IToolboxUser.GetToolSupported%2A> method.  
+  
+ [!code-cpp[IToolboxUserExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IToolboxUserExample/CPP/samplecontrol.cpp#2)]
+ [!code-csharp[IToolboxUserExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IToolboxUserExample/CS/samplecontrol.cs#2)]
+ [!code-vb[IToolboxUserExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IToolboxUserExample/VB/samplecontrol.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolPicked">
+      <MemberSignature Language="C#" Value="public void ToolPicked (System.Drawing.Design.ToolboxItem tool);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ToolPicked(class System.Drawing.Design.ToolboxItem tool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.IToolboxUser.ToolPicked(System.Drawing.Design.ToolboxItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tool" Type="System.Drawing.Design.ToolboxItem" />
+      </Parameters>
+      <Docs>
+        <param name="tool">The <see cref="T:System.Drawing.Design.ToolboxItem" /> to select.</param>
+        <summary>Selects the specified tool.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Design.IToolboxUser.ToolPicked%2A> is called when the user double-clicks on a toolbox item. The document designer should create a component for the specified tool. The Visual Studio integrated development environment will only call <xref:System.Drawing.Design.IToolboxUser.ToolPicked%2A> on tools that are enabled in the toolbox.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

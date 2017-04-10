@@ -1,0 +1,50 @@
+<Type Name="SessionEndReasons" FullName="Microsoft.Win32.SessionEndReasons">
+  <TypeSignature Language="C#" Value="public enum SessionEndReasons" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionEndReasons extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionEndReasons" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines identifiers that represent how the current logon session is ending.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Logoff">
+      <MemberSignature Language="C#" Value="Logoff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.SessionEndReasons Logoff = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.SessionEndReasons.Logoff" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SessionEndReasons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user is logging off and ending the current user session. The operating system continues to run.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemShutdown">
+      <MemberSignature Language="C#" Value="SystemShutdown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.SessionEndReasons SystemShutdown = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.SessionEndReasons.SystemShutdown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SessionEndReasons</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The operating system is shutting down.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

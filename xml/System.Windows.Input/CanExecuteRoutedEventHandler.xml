@@ -1,0 +1,42 @@
+<Type Name="CanExecuteRoutedEventHandler" FullName="System.Windows.Input.CanExecuteRoutedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void CanExecuteRoutedEventHandler(object sender, CanExecuteRoutedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CanExecuteRoutedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.CanExecuteRoutedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.CanExecuteRoutedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The command target that is invoking the handler.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Input.CommandBinding.CanExecute" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.CanExecuteRoutedEventHandler> determines if the command associated with the event source is able to execute on the command target. If the command has a command source that specifies a target, then the target information can be obtained through `sender`. If the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is not set, the element with keyboard focus is the target, and can also be obtained through `sender`.  If it is determined that the command can execute on the target, then the <xref:System.Windows.Input.CanExecuteRoutedEventArgs.CanExecute%2A?displayProperty=fullName> property should be set to `true`; otherwise, set it to `false`.  
+  
+ You do not need to rely on event data to determine the command, source, and target. You can limit the usage of the handler to known possible command invocations, although this is more difficult to accomplish if your command structure relies extensively on the command routing to execute the same command on successive potential targets in an event route.  
+  
+   
+  
+## Examples  
+ The following example shows a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> that sets <xref:System.Windows.Input.CanExecuteRoutedEventArgs.CanExecute%2A> to `true`.  
+  
+ [!code-csharp[commandwithhandler#CommandHandlerCanExecuteHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/commandWithHandler/CSharp/Window1.xaml.cs#commandhandlercanexecutehandler)]
+ [!code-vb[commandwithhandler#CommandHandlerCanExecuteHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/commandWithHandler/VisualBasic/Window1.xaml.vb#commandhandlercanexecutehandler)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

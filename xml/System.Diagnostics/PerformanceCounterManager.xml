@@ -1,0 +1,113 @@
+<Type Name="PerformanceCounterManager" FullName="System.Diagnostics.PerformanceCounterManager">
+  <TypeSignature Language="C#" Value="public sealed class PerformanceCounterManager : System.Diagnostics.ICollectData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PerformanceCounterManager extends System.Object implements class System.Diagnostics.ICollectData" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterManager" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Diagnostics.ICollectData</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.MonoTODO("not implemented")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("use PerformanceCounter")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("82840be1-d273-11d2-b94a-00600893b17a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Prepares performance data for the performance.dll the system loads when working with performance counters.</summary>
+    <remarks>To be added.</remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PerformanceCounterManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("use PerformanceCounter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounterManager" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The performance counter performance.dll calls this constructor as part of its performance data collection routine.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Diagnostics.ICollectData.CloseData">
+      <MemberSignature Language="C#" Value="void ICollectData.CloseData ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Diagnostics.ICollectData.CloseData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterManager.System#Diagnostics#ICollectData#CloseData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called by the perf dll's close performance data</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Diagnostics.ICollectData.CollectData">
+      <MemberSignature Language="C#" Value="void ICollectData.CollectData (int callIdx, IntPtr valueNamePtr, IntPtr dataPtr, int totalBytes, out IntPtr res);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Diagnostics.ICollectData.CollectData(int32 callIdx, native int valueNamePtr, native int dataPtr, int32 totalBytes, native int res) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterManager.System#Diagnostics#ICollectData#CollectData(System.Int32,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callIdx" Type="System.Int32" />
+        <Parameter Name="valueNamePtr" Type="System.IntPtr" />
+        <Parameter Name="dataPtr" Type="System.IntPtr" />
+        <Parameter Name="totalBytes" Type="System.Int32" />
+        <Parameter Name="res" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="callIdx">The call index.</param>
+        <param name="valueNamePtr">A pointer to a Unicode string list with the requested Object identifiers.</param>
+        <param name="dataPtr">A pointer to the data buffer.</param>
+        <param name="totalBytes">A pointer to a number of bytes.</param>
+        <param name="res">When this method returns, contains a <see cref="T:System.IntPtr" /> with a value of -1.</param>
+        <summary>Performance data collection routine. Called by the PerfCount perf dll.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

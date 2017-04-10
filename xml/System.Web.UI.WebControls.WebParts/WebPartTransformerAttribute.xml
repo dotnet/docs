@@ -1,0 +1,200 @@
+<Type Name="WebPartTransformerAttribute" FullName="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute">
+  <TypeSignature Language="C#" Value="public sealed class WebPartTransformerAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartTransformerAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies the types of connection points that a transformer supports.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Transformers are used to translate data between two Web Parts controls with incompatible connection points. Connection points are incompatible when they provide or consume data through different interfaces. For example, a provider implementing a provider connection point of type <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> could not directly connect to a consumer expecting a provider connection point of type <xref:System.Web.UI.WebControls.WebParts.IWebPartTable>. Instead, a transformer must be used to connect the two connection points. A customized transformer can be created by deriving a class from the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute> attribute is applied to a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class. It defines the type of provider connection point and the type of consumer connection point that a transformer supports. The type of consumer and provider connection points supported by the transformer must match the connection points of the consumer and provider Web Parts controls for a connection to be made between the controls. At run time, the type of connection points that a particular transformer supports can be retrieved through the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetConsumerType%2A> and <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetProviderType%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute> attribute with a customized <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class. The attribute indicates that the `RowToStringTransformer` class can transform a provider connection point of type `IWebPartRow` to a consumer connection point of type `IString`.  
+  
+ This code example is part of a larger example found in the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class overview.  
+  
+ [!code-csharp[WebParts_WebPartTransformer_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/CS/TransformerSource.cs#4)]
+ [!code-vb[WebParts_WebPartTransformer_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/VB/TransformerSource.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartTransformerAttribute (Type consumerType, Type providerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type consumerType, class System.Type providerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.#ctor(System.Type,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="consumerType" Type="System.Type" />
+        <Parameter Name="providerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="consumerType">The <see cref="T:System.Type" /> of the interface supported by the consumer connection point.</param>
+        <param name="providerType">The <see cref="T:System.Type" /> of the interface supported by the provider connection point.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.%23ctor%2A> constructor sets the consumer connection point type and the provider connection point type for the transformer. These values can be retrieved through the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ConsumerType%2A> property and the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ProviderType%2A> property, respectively.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute> attribute with a customized <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class. The attribute indicates that the `RowToStringTransformer` class can transform a provider connection point of type `IWebPartRow` to a consumer connection point of type `IString`.  
+  
+ This code example is part of a larger example found in the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class overview.  
+  
+ [!code-csharp[WebParts_WebPartTransformer_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/CS/TransformerSource.cs#4)]
+ [!code-vb[WebParts_WebPartTransformer_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/VB/TransformerSource.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="consumerType" /> or <paramref name="providerType" /> is not specified.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="consumerType" /> equals <paramref name="providerType" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsumerType">
+      <MemberSignature Language="C#" Value="public Type ConsumerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ConsumerType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ConsumerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> of the interface supported by the consumer connection point.</summary>
+        <value>The <see cref="T:System.Type" /> of the interface supported by the consumer connection point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ConsumerType%2A> property is set through the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConsumerType">
+      <MemberSignature Language="C#" Value="public static Type GetConsumerType (Type transformerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetConsumerType(class System.Type transformerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetConsumerType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transformerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="transformerType">The type of transformer.</param>
+        <summary>Returns the consumer type a transformer can accept on a connection point.</summary>
+        <returns>The <see cref="T:System.Type" /> of the consumer connection point.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> object and <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object use the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetConsumerType%2A> method to determine whether the consumer type of the transformer matches the consumer connection point of the Web Parts control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="transformerType" /> is not specified.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="transformerType" /> is not an object derived from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderType">
+      <MemberSignature Language="C#" Value="public static Type GetProviderType (Type transformerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetProviderType(class System.Type transformerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetProviderType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transformerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="transformerType">The type of transformer.</param>
+        <summary>Returns the provider type a transformer can accept on a connection point.</summary>
+        <returns>The <see cref="T:System.Type" /> of the provider connection point.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager> object and <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object use the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetProviderType%2A> method to determine whether the provider type of the transformer matches the provider connection point of the Web Parts control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="transformerType" /> is not specified.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="transformerType" /> is not an object derived from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderType">
+      <MemberSignature Language="C#" Value="public Type ProviderType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ProviderType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ProviderType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> of the interface supported by the provider connection point.</summary>
+        <value>The <see cref="T:System.Type" /> of the interface supported by the provider connection point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ProviderType%2A> property is set through the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

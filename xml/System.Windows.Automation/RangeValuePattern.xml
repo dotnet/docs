@@ -1,0 +1,349 @@
+<Type Name="RangeValuePattern" FullName="System.Windows.Automation.RangeValuePattern">
+  <TypeSignature Language="C#" Value="public class RangeValuePattern : System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RangeValuePattern extends System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.RangeValuePattern" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.BasePattern</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a control that can be set to a value within a range.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls may allow recalibration of their supported properties based upon locale or user preference. An example of this would be a thermometer control that can be set to display the temperature in Fahrenheit or Celsius.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cached">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation Cached { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.RangeValuePattern/RangeValuePatternInformation Cached" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.Cached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.RangeValuePattern+RangeValuePatternInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cached property values for this <see cref="T:System.Windows.Automation.RangeValuePattern" />.</summary>
+        <value>The cached property values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Cached property values must have been previously requested using a <xref:System.Windows.Automation.CacheRequest>. To get the value of a property at the current point in time, get the property by using <xref:System.Windows.Automation.RangeValuePattern.Current%2A>.  
+  
+ For information on the properties available and their use, see <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The requested property is not in the cache.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.RangeValuePattern/RangeValuePatternInformation Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.RangeValuePattern.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.RangeValuePattern+RangeValuePatternInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current property values for this <see cref="T:System.Windows.Automation.RangeValuePattern" />.</summary>
+        <value>The current property values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.RangeValuePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
+  
+ For information on the properties available and their use, see <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnlyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsReadOnlyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsReadOnlyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.IsReadOnlyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.IsReadOnly" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.RangeValuePatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a root element is passed to a function that returns a collection of <xref:System.Windows.Automation.AutomationElement>s that are descendants of the root and satisfy a set of property conditions.  
+  
+ [!code-csharp[UIARangeValuePattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#100)]
+ [!code-vb[UIARangeValuePattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#100)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeChangeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty LargeChangeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty LargeChangeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.LargeChangeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.LargeChange" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.RangeValuePatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.RangeValuePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.RangeValuePattern> property values.  
+  
+ [!code-csharp[UIARangeValuePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#102)]
+ [!code-vb[UIARangeValuePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty MaximumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty MaximumProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.MaximumProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Maximum" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.RangeValuePatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.RangeValuePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.RangeValuePattern> property values.  
+  
+ [!code-csharp[UIARangeValuePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#102)]
+ [!code-vb[UIARangeValuePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty MinimumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty MinimumProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.MinimumProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Minimum" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.RangeValuePatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.RangeValuePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.RangeValuePattern> property values.  
+  
+ [!code-csharp[UIARangeValuePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#102)]
+ [!code-vb[UIARangeValuePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.Pattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="T:System.Windows.Automation.RangeValuePattern" /> control pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.RangeValuePatternIdentifiers>.  
+  
+ The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.RangeValuePattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIARangeValuePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#101)]
+ [!code-vb[UIARangeValuePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.RangeValuePattern.SetValue(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">The new value of the element.</param>
+        <summary>Sets the value associated with the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The actual value set depends on the control implementation. The control might round the requested `value` up or down. A UI Automation client can examine the <xref:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Value%2A> property to determine the actual updated value. The client can also register for a property-changed event on the property and examine the old and new values returned in the <xref:System.Windows.Automation.AutomationPropertyChangedEventArgs>.  
+  
+   
+  
+## Examples  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement> that supports the <xref:System.Windows.Automation.RangeValuePattern>control pattern has its value set to the control-specific minimum value.  
+  
+ [!code-csharp[UIARangeValuePattern_snip#104Minimum](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#104minimum)]
+ [!code-vb[UIARangeValuePattern_snip#104Minimum](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#104minimum)]  
+[!code-csharp[UIARangeValuePattern_snip#104](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#104)]
+[!code-vb[UIARangeValuePattern_snip#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#104)]  
+[!code-csharp[UIARangeValuePattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#101)]
+[!code-vb[UIARangeValuePattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="value" /> is less than the minimum or greater than the maximum value of the element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallChangeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty SmallChangeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty SmallChangeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.SmallChangeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.SmallChange" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.RangeValuePatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.RangeValuePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.RangeValuePattern> property values.  
+  
+ [!code-csharp[UIARangeValuePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#102)]
+ [!code-vb[UIARangeValuePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ValueProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RangeValuePattern.ValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.RangeValuePattern.RangeValuePatternInformation.Value" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.RangeValuePatternIdentifiers>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.RangeValuePattern> object obtained from a target control is passed into a function that retrieves the current <xref:System.Windows.Automation.RangeValuePattern> property values.  
+  
+ [!code-csharp[UIARangeValuePattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIARangeValuePattern_snip/CSharp/UIARangeValuePattern_snippets.cs#102)]
+ [!code-vb[UIARangeValuePattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIARangeValuePattern_snip/VisualBasic/UIARangeValuePattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,176 @@
+<Type Name="ViewCollection" FullName="System.Web.UI.WebControls.ViewCollection">
+  <TypeSignature Language="C#" Value="public class ViewCollection : System.Web.UI.ControlCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ViewCollection extends System.Web.UI.ControlCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ViewCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection container that enables a <see cref="T:System.Web.UI.WebControls.MultiView" /> control to maintain a list of its child controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ViewCollection> class represents a collection container that enables a <xref:System.Web.UI.WebControls.MultiView> control to maintain a list of its child controls. A <xref:System.Web.UI.WebControls.MultiView> control can contain only <xref:System.Web.UI.WebControls.View> controls as child controls.  
+  
+ Use the <xref:System.Web.UI.WebControls.ViewCollection.Add%2A> method to add a new <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection at the end of an ordinal index array. Use the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method to add a new control at a specific index location. Use the <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer to get a <xref:System.Web.UI.WebControls.View> control from the <xref:System.Web.UI.WebControls.ViewCollection> collection at a specified index, using simple array notation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control at the specified index. The <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer is used to access the <xref:System.Web.UI.Control.ID%2A> properties of the <xref:System.Web.UI.WebControls.View> controls stored in the <xref:System.Web.UI.WebControls.ViewCollection> collection and display them to the user.  
+  
+ <!-- TODO: review snippet reference [!code-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ViewCollection (System.Web.UI.Control owner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Control owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.#ctor(System.Web.UI.Control)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Web.UI.WebControls.MultiView" /> control that owns this collection of child controls.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ViewCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control at the specified index. The <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer is used to access the <xref:System.Web.UI.Control.ID%2A> properties of the <xref:System.Web.UI.WebControls.View> controls stored in the <xref:System.Web.UI.WebControls.ViewCollection> collection and display them to the user.  
+  
+ <!-- TODO: review snippet reference [!code-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override void Add (System.Web.UI.Control v);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Web.UI.Control v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.Add(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="v">The <see cref="T:System.Web.UI.WebControls.View" /> control to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.UI.WebControls.View" /> control to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ViewCollection.Add%2A> method adds the new control to the end of an ordinal index array. The control can only be an instance of a <xref:System.Web.UI.WebControls.View> control.  
+  
+ To add a control to the collection at a specific index location, use the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the `MultiView.Views.Add()` syntax is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control.  
+  
+ <!-- TODO: review snippet reference [!code-vb[MultiView.Views Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MultiView.Views Example/VB/multiviewviewsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="v" /> parameter does not specify a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public override void AddAt (int index, System.Web.UI.Control v);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAt(int32 index, class System.Web.UI.Control v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="v" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="index">The array index at which to add the <see cref="T:System.Web.UI.WebControls.View" /> control.</param>
+        <param name="v">The <see cref="T:System.Web.UI.WebControls.View" /> control to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.UI.WebControls.View" /> control to the collection at the specified index location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method adds the new control to the collection at the specified index location. The control can only be an instance of a <xref:System.Web.UI.WebControls.View> control.  
+  
+ To add a control at the end of an ordinal index array, use the <xref:System.Web.UI.WebControls.ViewCollection.Add%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control at the specified index. The <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer is used to access the <xref:System.Web.UI.Control.ID%2A> properties of the <xref:System.Web.UI.WebControls.View> controls stored in the <xref:System.Web.UI.WebControls.ViewCollection> collection and display them to the user.  
+  
+ <!-- TODO: review snippet reference [!code-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="v" /> parameter does not specify a <see cref="T:System.Web.UI.WebControls.View" /> control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.View this[int i] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.View Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ViewCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.View</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The ordinal index value that specifies the location of the <see cref="T:System.Web.UI.WebControls.View" /> control in the <see cref="T:System.Web.UI.WebControls.ViewCollection" />.</param>
+        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.View" /> control at the specified index location in the <see cref="T:System.Web.UI.WebControls.ViewCollection" /> collection.</summary>
+        <value>A reference to a <see cref="T:System.Web.UI.WebControls.View" /> control in the <see cref="T:System.Web.UI.WebControls.ViewCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this indexer to get a <xref:System.Web.UI.WebControls.View> control from the <xref:System.Web.UI.WebControls.ViewCollection> collection at the specified index, using simple array notation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add <xref:System.Web.UI.WebControls.View> controls to a <xref:System.Web.UI.WebControls.MultiView> control. After each <xref:System.Web.UI.WebControls.View> control is created, the <xref:System.Web.UI.WebControls.ViewCollection.AddAt%2A> method is used to add the <xref:System.Web.UI.WebControls.View> control to the <xref:System.Web.UI.WebControls.ViewCollection> collection of the <xref:System.Web.UI.WebControls.MultiView> control at the specified index. The <xref:System.Web.UI.WebControls.ViewCollection.Item%2A> indexer is used to access the <xref:System.Web.UI.Control.ID%2A> properties of the <xref:System.Web.UI.WebControls.View> controls stored in the <xref:System.Web.UI.WebControls.ViewCollection> collection and display them to the user.  
+  
+ <!-- TODO: review snippet reference [!code-vb[ViewCollection.AddAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ViewCollection.AddAt Example/VB/viewcollectionaddatvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+  <siteMapNode title="Home" description="Home" url="OnSelectedIndexChanged_vb.aspx" roles="*">
+    <siteMapNode title="Products" description="Our products"
+		url="OnSelectedIndexChanged_cs.aspx" >
+	  <siteMapNode title="Hardware" 
+          description="Hardware we offer" 
+          />
+	  <siteMapNode title="Software" 
+          description="Software for sale" 
+          />
+	  <siteMapNode title="Discounts" 
+          description="Discounts" 
+          />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
+

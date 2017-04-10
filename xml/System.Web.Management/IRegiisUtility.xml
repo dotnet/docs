@@ -1,0 +1,140 @@
+<Type Name="IRegiisUtility" FullName="System.Web.Management.IRegiisUtility">
+  <TypeSignature Language="C#" Value="public interface IRegiisUtility" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRegiisUtility" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.IRegiisUtility" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("c84f668a-cc3f-11d7-b79e-505054503030")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides authorization utilities to support specific Web-application configuration, assembly registration, and assembly-key container manipulation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The utility functions provided by the <xref:System.Web.Management.IRegiisUtility> interface support the `system.web` assembly registration.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ProtectedConfigAction">
+      <MemberSignature Language="C#" Value="public void ProtectedConfigAction (long actionToPerform, string firstArgument, string secondArgument, string providerName, string appPath, string site, string cspOrLocation, int keySize, out IntPtr exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProtectedConfigAction(int64 actionToPerform, string firstArgument, string secondArgument, string providerName, string appPath, string site, string cspOrLocation, int32 keySize, native int exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.IRegiisUtility.ProtectedConfigAction(System.Int64,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actionToPerform" Type="System.Int64" />
+        <Parameter Name="firstArgument" Type="System.String" />
+        <Parameter Name="secondArgument" Type="System.String" />
+        <Parameter Name="providerName" Type="System.String" />
+        <Parameter Name="appPath" Type="System.String" />
+        <Parameter Name="site" Type="System.String" />
+        <Parameter Name="cspOrLocation" Type="System.String" />
+        <Parameter Name="keySize" Type="System.Int32" />
+        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="actionToPerform">The type of action to perform.</param>
+        <param name="firstArgument">A configuration section or assembly-key container name.</param>
+        <param name="secondArgument">The configuration file name or account name.</param>
+        <param name="providerName">The provider name.</param>
+        <param name="appPath">The application path.</param>
+        <param name="site">The site reference.</param>
+        <param name="cspOrLocation">The configuration location.</param>
+        <param name="keySize">The size of the key.</param>
+        <param name="exception">The exception to display.</param>
+        <summary>Allows specific manipulation of configuration sections and assembly-key containers based on the supplied parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAsnetMmcAssembly">
+      <MemberSignature Language="C#" Value="public void RegisterAsnetMmcAssembly (int doReg, string assemblyName, string binaryDirectory, out IntPtr exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterAsnetMmcAssembly(int32 doReg, string assemblyName, string binaryDirectory, native int exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.IRegiisUtility.RegisterAsnetMmcAssembly(System.Int32,System.String,System.String,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doReg" Type="System.Int32" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="binaryDirectory" Type="System.String" />
+        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="doReg">A value of 0 indicates that the assembly should be unregistered. A value other than 0 indicates that the assembly should be registered.</param>
+        <param name="assemblyName">The type of the assembly.</param>
+        <param name="binaryDirectory">The path of the binary directory.</param>
+        <param name="exception">The exception to display.</param>
+        <summary>Allows the executing Microsoft Management Console (MMC) assembly to be registered or unregistered.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterSystemWebAssembly">
+      <MemberSignature Language="C#" Value="public void RegisterSystemWebAssembly (int doReg, out IntPtr exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterSystemWebAssembly(int32 doReg, native int exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.IRegiisUtility.RegisterSystemWebAssembly(System.Int32,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doReg" Type="System.Int32" />
+        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="doReg">A value of 0 indicates that the assembly should be unregistered. A value other than 0 indicates that the assembly should be registered.</param>
+        <param name="exception">An <see cref="T:System.IntPtr" /> that points to the exception thrown by the method.  If no exception is thrown, the value is <see cref="F:System.IntPtr.Zero" />.</param>
+        <summary>Allows the executing Web assembly to be registered or unregistered.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveBrowserCaps">
+      <MemberSignature Language="C#" Value="public void RemoveBrowserCaps (out IntPtr exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveBrowserCaps(native int exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.IRegiisUtility.RemoveBrowserCaps(System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exception" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="exception">An <see cref="T:System.IntPtr" /> that points to the exception thrown by the method.  If no exception is thrown, the value is <see cref="F:System.IntPtr.Zero" />.</param>
+        <summary>Allows the browser-capabilities code generator to be uninstalled.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Exception">The attempt to uninstall the browser-capabilities code generator fails.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

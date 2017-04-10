@@ -1,0 +1,380 @@
+<Type Name="ActiveDirectoryRole" FullName="System.Workflow.Activities.ActiveDirectoryRole">
+  <TypeSignature Language="C#" Value="public sealed class ActiveDirectoryRole : System.Workflow.Activities.WorkflowRole, IDisposable, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ActiveDirectoryRole extends System.Workflow.Activities.WorkflowRole implements class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ActiveDirectoryRole" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.WorkflowRole</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an Active Directory role in a Windows Workflow Foundation hosting environment. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Typically, the Active Directory store is used for storing organizational information for personnel. The main purpose for the <xref:System.Workflow.Activities.ActiveDirectoryRole> is for making queries against such organizational information for business reasons.  
+  
+ Active Directory roles typically correspond to a job function, title, or job skill within the context of the organization.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAllReports">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.ActiveDirectoryRole GetAllReports ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Activities.ActiveDirectoryRole GetAllReports() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetAllReports" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains all the roles that report to the current role either directly or indirectly.</summary>
+        <returns>A <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains all the roles that either directly or indirectly report to the current role.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.ActiveDirectoryRole.GetAllReports%2A> returns all nodes below the current node. Use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetDirectReports%2A> to return only the nodes that are directly below the current node.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDirectReports">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.ActiveDirectoryRole GetDirectReports ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Activities.ActiveDirectoryRole GetDirectReports() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetDirectReports" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains all the roles that report directly to the current role.</summary>
+        <returns>An <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains all the roles that directly report to the current role.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.ActiveDirectoryRole.GetDirectReports%2A> returns only the nodes that are directly below the current node. To return all nodes below the current node use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetAllReports%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEntries">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.DirectoryServices.DirectoryEntry&gt; GetEntries ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.ICollection`1&lt;class System.DirectoryServices.DirectoryEntry&gt; GetEntries() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetEntries" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.DirectoryServices.DirectoryEntry&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the generic collection that contains all <see cref="T:System.DirectoryServices.DirectoryEntry" /> objects associated with the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</summary>
+        <returns>The generic <see cref="T:System.DirectoryServices.DirectoryEntry" /> collection that is associated with the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A role can be a general collection of security objects. As such, a role can contain multiple identities, for example use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetEntries%2A> to return all directory objects associated with the role.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIdentities">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IList&lt;string&gt; GetIdentities ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetIdentities() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetIdentities" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a generic list of the Windows NT accounts associated with the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</summary>
+        <returns>A generic list of values that represent the Windows NT accounts associated with the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.ActiveDirectoryRole.GetIdentities%2A> obtains all <xref:System.Security.Principal.SecurityIdentifier> objects associated with the <xref:System.Workflow.Activities.ActiveDirectoryRole> and converts each of them into a string value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManager">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.ActiveDirectoryRole GetManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Activities.ActiveDirectoryRole GetManager() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetManager" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an Active Directory role that contains information about the manager of the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</summary>
+        <returns>The <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains information about the manager of the current role.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManager%2A> returns the direct manager for the current role. To return all roles above the current node, use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManagerialChain%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManagerialChain">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.ActiveDirectoryRole GetManagerialChain ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Activities.ActiveDirectoryRole GetManagerialChain() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetManagerialChain" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the Active Directory role that contains information about the managerial chain associated with the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</summary>
+        <returns>The <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains information about the managerial chain associated with the current role.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManagerialChain%2A> returns all nodes above the current role. To return just the direct manager of the current role, use <xref:System.Workflow.Activities.ActiveDirectoryRole.GetManager%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPeers">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.ActiveDirectoryRole GetPeers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Activities.ActiveDirectoryRole GetPeers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetPeers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an Active Directory role that contains information about all the directory operations that are supervised by the manager of the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> that contains information about all directory operations that are supervised by the manager of the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.ActiveDirectoryRole> returned contains information from all objects managed by the manager of this role but does not contain this information from the current role.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSecurityIdentifiers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Security.Principal.SecurityIdentifier&gt; GetSecurityIdentifiers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Security.Principal.SecurityIdentifier&gt; GetSecurityIdentifiers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.GetSecurityIdentifiers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Security.Principal.SecurityIdentifier&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a generic list of <see cref="T:System.Security.Principal.SecurityIdentifier" /> objects associated with the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</summary>
+        <returns>A generic list of <see cref="T:System.Security.Principal.SecurityIdentifier" /> objects associated with the current <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Activities.ActiveDirectoryRole.GetSecurityIdentifiers%2A> checks each <xref:System.DirectoryServices.DirectoryEntry> returned by the <xref:System.Workflow.Activities.ActiveDirectoryRole.GetEntries%2A> method to see if the entry has a security identifier in its <xref:System.DirectoryServices.DirectoryEntry.Properties%2A> collection. If the <xref:System.DirectoryServices.DirectoryEntry> has such a property, <xref:System.Workflow.Activities.ActiveDirectoryRole.GetSecurityIdentifiers%2A> adds a <xref:System.Security.Principal.SecurityIdentifier> to the list it returns.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludesIdentity">
+      <MemberSignature Language="C#" Value="public override bool IncludesIdentity (string identity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IncludesIdentity(string identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.IncludesIdentity(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="identity" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The identity for which to search.</param>
+        <summary>Returns a value that indicates whether the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" /> contains the specified identity.</summary>
+        <returns>
+          <see langword="true" /> to indicate that <paramref name="identity" /> is included in the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because a role is a generalization of one or more objects, many identities may be described by a single role. Use <xref:System.Workflow.Activities.ActiveDirectoryRole.IncludesIdentity%2A> to test that a specified identity is included within this role.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ActiveDirectoryRole.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Active Directory role name.</summary>
+        <value>The Active Directory role name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the name to describe the role.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootEntry">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry RootEntry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.DirectoryEntry RootEntry" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.ActiveDirectoryRole.RootEntry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root Active Directory node associated with the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</summary>
+        <value>A <see cref="T:System.DirectoryServices.DirectoryEntry" /> that represents the root Active Directory node associated with the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The root entry is the role up the chain of roles that has no manager.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.System#IDisposable#Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Workflow.Activities.ActiveDirectoryRole" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ActiveDirectoryRole.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> destination for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data required to serialize the target object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The implementation of <xref:System.Workflow.Activities.ActiveDirectoryRole.System.Runtime.Serialization.ISerializable.GetObjectData%2A> allows this object to be serialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

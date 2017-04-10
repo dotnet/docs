@@ -1,0 +1,253 @@
+<Type Name="HtmlInputControl" FullName="System.Web.UI.HtmlControls.HtmlInputControl">
+  <TypeSignature Language="C#" Value="public abstract class HtmlInputControl : System.Web.UI.HtmlControls.HtmlControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HtmlInputControl extends System.Web.UI.HtmlControls.HtmlControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.ControlBuilder(typeof(System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Serves as the abstract base class that defines the methods, properties, and events common to all HTML input controls, such as the <see langword="&lt;input type=text&gt;" />, <see langword="&lt;input type=submit&gt;" />, and <see langword="&lt;input type= file&gt;" /> elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot create an instance of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class directly. Instead, this class is inherited by other classes, such as the <xref:System.Web.UI.HtmlControls.HtmlInputText>, <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlInputRadioButton>, <xref:System.Web.UI.HtmlControls.HtmlInputCheckBox>, <xref:System.Web.UI.HtmlControls.HtmlInputImage>, <xref:System.Web.UI.HtmlControls.HtmlInputHidden>, and <xref:System.Web.UI.HtmlControls.HtmlInputFile> classes, to provide common basic functionality.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputControl>, see the <xref:System.Web.UI.HtmlControls.HtmlInputControl.%23ctor%2A> constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HtmlInputControl (string type);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputControl.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of input control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class using the specified input control.  
+  
+> [!NOTE]
+>  A new instance of this class is not created directly. This constructor is called from the constructor of other HTML control classes to initialize properties defined in this class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputControl>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A>|The value of the `type` parameter.|  
+  
+ The following table shows the different possible values for `type`.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|text|A text box for data entry.|  
+|password|A text box that masks user input.|  
+|checkbox|A check box that indicates a true or false condition.|  
+|radio|A radio button that indicates a selection from a mutually exclusive group of radio buttons.|  
+|button|A command button.|  
+|submit|A button that submits the form to the server.|  
+|reset|A button that clears the form.|  
+|file|A button that uploads a file.|  
+|hidden|A non-visible field on a Web page used to persist information between posts to the server.|  
+|image|An image button.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputControl.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unique identifier name for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" /> control.</summary>
+        <value>A string that represents the value of the <see cref="P:System.Web.UI.Control.UniqueID" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the unique identifier name for an <xref:System.Web.UI.HtmlControls.HtmlInputControl>. In this implementation, the `get` accessor returns the value of the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property. However, the `set` accessor does not assign a value to this property.  
+  
+> [!NOTE]
+>  The `set` accessor does not assign a value to this property because the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property must have the same value as the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property for most controls to work properly.  
+  
+ Classes that inherit from the <xref:System.Web.UI.HtmlControls.HtmlInputControl> class can override this implementation, if necessary.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property to determine the name of the <xref:System.Web.UI.HtmlControls.HtmlInputControl> that was clicked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputControlName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlName/CS/htmlinputcontrolnamecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputControlName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlName/VB/htmlinputcontrolnamevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAttributes">
+      <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render to the client.</param>
+        <summary>Renders the attributes of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" /> control to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputControl.RenderAttributes%2A> method renders a `name` attribute and `type` attribute before calling the base class's <xref:System.Web.UI.HtmlControls.HtmlControl.RenderAttributes%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputControl.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of an <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />.</summary>
+        <value>A string that contains the type of an <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property get the type of an <xref:System.Web.UI.HtmlControls.HtmlInputControl>.  
+  
+ The following table shows the different possible values for the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A> property.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|text|A text box for data entry.|  
+|password|A text box that masks user input.|  
+|checkbox|A check box that indicates a true or false condition.|  
+|radio|A radio button that indicates a selection from a mutually exclusive group of radio buttons.|  
+|button|A command button.|  
+|submit|A button that submits the form to the server.|  
+|reset|A button that clears the form.|  
+|file|A button that uploads a file.|  
+|hidden|A non-visible field on a Web page used to persist information between posts to the server.|  
+|image|An image button.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A> property to determine the type of <xref:System.Web.UI.HtmlControls.HtmlInputControl> that was clicked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputControlType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputControlType/CS/htmlinputcontroltypecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputControlType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputControlType/VB/htmlinputcontroltypevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public virtual string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputControl.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value associated with the <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" /> control.</summary>
+        <value>The value associated with the <see cref="T:System.Web.UI.HtmlControls.HtmlInputControl" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify or determine the value associated with the <xref:System.Web.UI.HtmlControls.HtmlInputControl> control. The <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property is equivalent to the `value` attribute of HTML elements.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Value%2A> property to determine the text that the user entered into some text boxes.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputText/CS/htmlinputtextcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputText/VB/htmlinputtextvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

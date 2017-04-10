@@ -1,0 +1,36 @@
+<Type Name="Missing" FullName="Microsoft.JScript.Missing">
+  <TypeSignature Language="C#" Value="public sealed class Missing" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Missing extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Missing" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the value of a variable that has been instantiated but that has not yet had its value set.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.JScript.Missing Value;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.JScript.Missing Value" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Missing.Value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Missing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the value of a variable that has been instantiated but that has not yet had its value set.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

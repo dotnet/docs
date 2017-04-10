@@ -1,0 +1,75 @@
+<Type Name="IDataGridEditingService" FullName="System.Windows.Forms.IDataGridEditingService">
+  <TypeSignature Language="C#" Value="public interface IDataGridEditingService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataGridEditingService" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataGridEditingService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents methods that process editing requests.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginEdit">
+      <MemberSignature Language="C#" Value="public bool BeginEdit (System.Windows.Forms.DataGridColumnStyle gridColumn, int rowNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BeginEdit(class System.Windows.Forms.DataGridColumnStyle gridColumn, int32 rowNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridEditingService.BeginEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gridColumn" Type="System.Windows.Forms.DataGridColumnStyle" />
+        <Parameter Name="rowNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="gridColumn">The <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> to edit.</param>
+        <param name="rowNumber">The index of the row to edit</param>
+        <summary>Begins an edit operation.</summary>
+        <returns>
+          <see langword="true" /> if the operation can be performed; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndEdit">
+      <MemberSignature Language="C#" Value="public bool EndEdit (System.Windows.Forms.DataGridColumnStyle gridColumn, int rowNumber, bool shouldAbort);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndEdit(class System.Windows.Forms.DataGridColumnStyle gridColumn, int32 rowNumber, bool shouldAbort) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridEditingService.EndEdit(System.Windows.Forms.DataGridColumnStyle,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gridColumn" Type="System.Windows.Forms.DataGridColumnStyle" />
+        <Parameter Name="rowNumber" Type="System.Int32" />
+        <Parameter Name="shouldAbort" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="gridColumn">The <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> to edit.</param>
+        <param name="rowNumber">The number of the row to edit</param>
+        <param name="shouldAbort">True if an abort operation is requested</param>
+        <summary>Ends the edit operation.</summary>
+        <returns>
+          <see langword="true" /> if value is commited; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value cannot be committed, the <xref:System.Windows.Forms.DataGridColumnStyle> remains editable.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

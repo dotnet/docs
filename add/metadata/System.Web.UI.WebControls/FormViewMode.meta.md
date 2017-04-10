@@ -1,0 +1,5 @@
+---
+uid: System.Web.UI.WebControls.FormViewMode
+ms.author: "riande"
+manager: "wpickett"
+---

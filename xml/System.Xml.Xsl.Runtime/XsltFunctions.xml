@@ -1,0 +1,618 @@
+<Type Name="XsltFunctions" FullName="System.Xml.Xsl.Runtime.XsltFunctions">
+  <TypeSignature Language="C#" Value="public static class XsltFunctions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit XsltFunctions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XsltFunctions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>XSLT and XPath functions.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BaseUri">
+      <MemberSignature Language="C#" Value="public static string BaseUri (System.Xml.XPath.XPathNavigator navigator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BaseUri(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.BaseUri(System.Xml.XPath.XPathNavigator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="navigator">The <see cref="T:System.Xml.XPath.XPathNavigator" /> instance that contains the node to be identified by URI.</param>
+        <summary>Returns the value of the base URI of the node of the node passed in by the <paramref name="navigator" /> parameter. Implements <see langword="baseUri" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>The base URI as <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public static bool Contains (string s1, string s2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Contains(string s1, string s2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.Contains(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s1" Type="System.String" />
+        <Parameter Name="s2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s1">The string in which to locate <c>s2</c>.</param>
+        <param name="s2">The string to locate in s1.</param>
+        <summary>Implements <see langword="contains" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>
+          <see langword="true" /> if the first argument string contains the second argument string; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EXslObjectType">
+      <MemberSignature Language="C#" Value="public static string EXslObjectType (System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EXslObjectType(class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.EXslObjectType(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Xml.XPath.XPathItem" /> of which to determine type.</param>
+        <summary>Implements [exsl:object-type](http://go.microsoft.com/fwlink/?LinkId=143941).</summary>
+        <returns>Object type as <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lang">
+      <MemberSignature Language="C#" Value="public static bool Lang (string value, System.Xml.XPath.XPathNavigator context);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Lang(string value, class System.Xml.XPath.XPathNavigator context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.Lang(System.String,System.Xml.XPath.XPathNavigator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="context" Type="System.Xml.XPath.XPathNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="value">The specified string.</param>
+        <param name="context">
+          <see cref="T:System.Xml.XPath.XPathNavigator" /> object that contains context.</param>
+        <summary>Implements the <see langword="lang" /> function according to the [W3C XPath specification](http://go.microsoft.com/fwlink/?LinkId=143942).</summary>
+        <returns>
+          <see cref="T:System.Boolean" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSFormatDateTime">
+      <MemberSignature Language="C#" Value="public static string MSFormatDateTime (string dateTime, string format, string lang, bool isDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MSFormatDateTime(string dateTime, string format, string lang, bool isDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.MSFormatDateTime(System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="lang" Type="System.String" />
+        <Parameter Name="isDate" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">String that contains date/time data.</param>
+        <param name="format">String that contains format.</param>
+        <param name="lang">String that contains language.</param>
+        <param name="isDate">Boolean value that indicates whether date/time contains a date.</param>
+        <summary>Implements the <see langword="ms:format-date" /> and <see langword="ms-format-time" />[Microsoft XPath extension functions](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
+        <returns>String that contains formatted date and time.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSLocalName">
+      <MemberSignature Language="C#" Value="public static string MSLocalName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MSLocalName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.MSLocalName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name.</param>
+        <summary>Implements the <see langword="ms:local-name" />[Microsoft XPath extension function](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
+        <returns>Name as <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSNamespaceUri">
+      <MemberSignature Language="C#" Value="public static string MSNamespaceUri (string name, System.Xml.XPath.XPathNavigator currentNode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MSNamespaceUri(string name, class System.Xml.XPath.XPathNavigator currentNode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.MSNamespaceUri(System.String,System.Xml.XPath.XPathNavigator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="currentNode" Type="System.Xml.XPath.XPathNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name.</param>
+        <param name="currentNode">The <see cref="T:System.Xml.XPath.XPathNavigator" /> instance.</param>
+        <summary>Implements the <see langword="ms:namespace-uri" />[Microsoft XPath extension function](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
+        <returns>Namespace URI as <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSNumber">
+      <MemberSignature Language="C#" Value="public static double MSNumber (System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 MSNumber(class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.MSNumber(System.Collections.Generic.IList{System.Xml.XPath.XPathItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">
+          <see cref="T:System.Collections.Generic.List`1" /> of <see cref="T:System.Xml.XPath.XPathItem" />.</param>
+        <summary>Implements <see langword="ms:number" />[Microsoft XPath extension function](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
+        <returns>
+          <see cref="T:System.Double" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSStringCompare">
+      <MemberSignature Language="C#" Value="public static double MSStringCompare (string s1, string s2, string lang, string options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 MSStringCompare(string s1, string s2, string lang, string options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.MSStringCompare(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s1" Type="System.String" />
+        <Parameter Name="s2" Type="System.String" />
+        <Parameter Name="lang" Type="System.String" />
+        <Parameter Name="options" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s1">The first string to compare.</param>
+        <param name="s2">The second string to compare.</param>
+        <param name="lang">The language. Optional</param>
+        <param name="options">Specifies whether the comparison is case-sensitive.</param>
+        <summary>Implements <see langword="ms:string-compare" />[Microsoft XPath extension function](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
+        <returns>If <paramref name="s1" /> &lt; <paramref name="s2" /> the method returns -1. If <paramref name="s1" /> == <paramref name="s2" /> the method returns 0. If <paramref name="s1" /> &gt; <paramref name="s2" /> the method returns 1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSUtc">
+      <MemberSignature Language="C#" Value="public static string MSUtc (string dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MSUtc(string dateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.MSUtc(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">String that contains date/time data.</param>
+        <summary>Implements the <see langword="ms:utc" />[Microsoft XPath extension function](http://go.microsoft.com/fwlink/?LinkId=143943).</summary>
+        <returns>A string that contains date/time information. If a string cannot be interpreted as a valid XSD date/time-related format, it returns an empty string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Converts date/time-related values into Coordinated Universal Time and into a fixed (normalized) representation that can be sorted and compared lexicographically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizeSpace">
+      <MemberSignature Language="C#" Value="public static string NormalizeSpace (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string NormalizeSpace(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.NormalizeSpace(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The specified string.</param>
+        <summary>Removes leading and trailing spaces from the specified string and returns the result. Implements <see langword="normalize-space" /> function from the [W3C XPath standard](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>A normalized string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OuterXml">
+      <MemberSignature Language="C#" Value="public static string OuterXml (System.Xml.XPath.XPathNavigator navigator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string OuterXml(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.OuterXml(System.Xml.XPath.XPathNavigator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="navigator" Type="System.Xml.XPath.XPathNavigator" />
+      </Parameters>
+      <Docs>
+        <param name="navigator">
+          <see cref="T:System.Xml.XPath.XPathNavigator" /> that identifies the node.</param>
+        <summary>Gets the markup representing the opening and closing tags of the node and all child nodes of the node identified by the <see cref="T:System.Xml.XPath.XPathNavigator" /> argument.</summary>
+        <returns>A string that contains the opening and closing tags of the node and all child nodes of the node that is identified by the <paramref name="navigator" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static double Round (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Round(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.Round(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">
+          <see cref="T:System.Double" /> number to round.</param>
+        <summary>Rounds value by using XPath rounding rules. Rounds towards positive infinity. Values between -0.5 and -0.0 are rounded to -0.0 (negative zero).</summary>
+        <returns>The rounded number as <see cref="T:System.Double" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartsWith">
+      <MemberSignature Language="C#" Value="public static bool StartsWith (string s1, string s2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool StartsWith(string s1, string s2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.StartsWith(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s1" Type="System.String" />
+        <Parameter Name="s2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s1">A string, the beginning of which is compared to <c>s2</c>.</param>
+        <param name="s2">The string to compare to the beginning of <c>s1</c>.</param>
+        <summary>Implements <see langword="starts-with" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>
+          <see langword="true" /> if the first argument string starts with the second argument string; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Substring">
+      <MemberSignature Language="C#" Value="public static string Substring (string value, double startIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Substring(string value, float64 startIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.Substring(System.String,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="startIndex" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string from which to retrieve the substring.</param>
+        <param name="startIndex">The starting character position of a substring in <c>s</c>.</param>
+        <summary>Implements <see langword="substring" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>The substring of the first argument starting at the position specified in the second argument</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Substring">
+      <MemberSignature Language="C#" Value="public static string Substring (string value, double startIndex, double length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Substring(string value, float64 startIndex, float64 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.Substring(System.String,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="startIndex" Type="System.Double" />
+        <Parameter Name="length" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string from which to retrieve the substring.</param>
+        <param name="startIndex">The starting character position of a substring in <c>s</c>.</param>
+        <param name="length">The number of characters in the substring.</param>
+        <summary>Implements <see langword="substring" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>The substring of the first argument, starting at the position specified in the second argument, with the length specified in the third argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubstringAfter">
+      <MemberSignature Language="C#" Value="public static string SubstringAfter (string s1, string s2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SubstringAfter(string s1, string s2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.SubstringAfter(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s1" Type="System.String" />
+        <Parameter Name="s2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s1">The string in which to locate s2.</param>
+        <param name="s2">The string to locate in <c>s1</c>.</param>
+        <summary>Implements <see langword="substring-after" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>The characters in s1 that occur after s2, or the empty string if s1 does not contain s2.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Locates a substring (s2) within a string (s1), and returns the characters in s1 that occur after s2.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubstringBefore">
+      <MemberSignature Language="C#" Value="public static string SubstringBefore (string s1, string s2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SubstringBefore(string s1, string s2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.SubstringBefore(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s1" Type="System.String" />
+        <Parameter Name="s2" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s1">The string in which to locate s2.</param>
+        <param name="s2">The string to locate in <c>s1</c>.</param>
+        <summary>Implements <see langword="substring-before" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>The characters in s1 that occur before s2, or the empty string if s1 does not contain s2.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Locates a substring (s2) within a string (s1), and returns the characters in s1 that occur before s2.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemProperty">
+      <MemberSignature Language="C#" Value="public static System.Xml.XPath.XPathItem SystemProperty (System.Xml.XmlQualifiedName name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XPath.XPathItem SystemProperty(class System.Xml.XmlQualifiedName name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.SystemProperty(System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the system property.</param>
+        <summary>Implements <see langword="system-property" /> XSLT function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=49919).</summary>
+        <returns>The value of the system property specified by the <paramref name="name" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translate">
+      <MemberSignature Language="C#" Value="public static string Translate (string arg, string mapString, string transString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Translate(string arg, string mapString, string transString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XsltFunctions.Translate(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arg" Type="System.String" />
+        <Parameter Name="mapString" Type="System.String" />
+        <Parameter Name="transString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="arg">The original string.</param>
+        <param name="mapString">The substring in <c>arg</c> that should be replaced with <c>transString</c>.</param>
+        <param name="transString">The string to replace <c>mapString</c> with.</param>
+        <summary>Implements <see langword="translate" /> XPath function according to the [W3C specification](http://go.microsoft.com/fwlink/?LinkID=4873).</summary>
+        <returns>The translated value as <see cref="T:System.String" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Converts a string (`arg`) by replacing the characters in a substring (`mapString`) with the characters in another string (`tranString`).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

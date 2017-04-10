@@ -1,0 +1,206 @@
+<Type Name="XmlReadMode" FullName="System.Data.XmlReadMode">
+  <TypeSignature Language="C#" Value="public enum XmlReadMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlReadMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.XmlReadMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how to read XML data and a relational schema into a <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when setting the `ReadMode` parameter of the <xref:System.Data.DataSet.ReadXml%2A> method.  
+  
+> [!NOTE]
+>  `Auto` mode may be slower than setting <xref:System.Data.XmlReadMode> to an explicit option.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlReadMode Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlReadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Performs the most appropriate of these actions:  
+  
+ If the data is a DiffGram, sets `XmlReadMode` to `DiffGram`.  
+  
+ -or-  
+  
+ If the dataset already has a schema, or the document contains an in-line schema, sets `XmlReadMode` to `ReadSchema`.  
+  
+ -or-  
+  
+ If the dataset does not already have a schema and the document does not contain an in-line schema, sets `XmlReadMode` to `InferSchema`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffGram">
+      <MemberSignature Language="C#" Value="DiffGram" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlReadMode DiffGram = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.DiffGram" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlReadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reads a DiffGram, applying changes from the DiffGram to the <see cref="T:System.Data.DataSet" />. The semantics are identical to those of a <see cref="M:System.Data.DataSet.Merge(System.Data.DataSet)" /> operation. As with the <see cref="M:System.Data.DataSet.Merge(System.Data.DataSet)" /> operation, <see cref="P:System.Data.DataRow.RowState" /> values are preserved. Input to <see cref="M:System.Data.DataSet.ReadXml(System.Xml.XmlReader)" /> with DiffGrams should only be obtained using the output from <see cref="M:System.Data.DataSet.WriteXml(System.IO.Stream)" /> as a DiffGram.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The target <xref:System.Data.DataSet> must have the same schema as the <xref:System.Data.DataSet> on which <xref:System.Data.DataSet.WriteXml%2A> as DiffGram is called. Otherwise the DiffGram merge operation fails, and an exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fragment">
+      <MemberSignature Language="C#" Value="Fragment" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlReadMode Fragment = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.Fragment" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlReadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reads XML fragments, such as those generated by executing FOR XML queries, against an instance of SQL Server. When <see cref="T:System.Data.XmlReadMode" /> is set to <see langword="Fragment" />, the default namespace is read as the inline schema.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreSchema">
+      <MemberSignature Language="C#" Value="IgnoreSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlReadMode IgnoreSchema = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.IgnoreSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlReadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ignores any inline schema and reads data into the existing <see cref="T:System.Data.DataSet" /> schema. If any data does not match the existing schema, it is discarded (including data from differing namespaces defined for the <see cref="T:System.Data.DataSet" />). If the data is a DiffGram, <see langword="IgnoreSchema" /> has the same functionality as <see langword="DiffGram" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InferSchema">
+      <MemberSignature Language="C#" Value="InferSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlReadMode InferSchema = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.InferSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlReadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ignores any inline schema, infers schema from the data and loads the data. If the <see cref="T:System.Data.DataSet" /> already contains a schema, the current schema is extended by adding new tables or adding columns to existing tables. An exception is thrown if the inferred table already exists but with a different namespace, or if any of the inferred columns conflict with existing columns.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InferTypedSchema">
+      <MemberSignature Language="C#" Value="InferTypedSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlReadMode InferTypedSchema = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.InferTypedSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlReadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ignores any inline schema, infers a strongly typed schema from the data, and loads the data. If the type cannot be inferred from the data, it is interpreted as string data. If the <see cref="T:System.Data.DataSet" /> already contains a schema, the current schema is extended, either by adding new tables or by adding columns to existing tables. An exception is thrown if the inferred table already exists but with a different namespace, or if any of the inferred columns conflict with existing columns.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSchema">
+      <MemberSignature Language="C#" Value="ReadSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlReadMode ReadSchema = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlReadMode.ReadSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlReadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reads any inline schema and loads the data. If the <see cref="T:System.Data.DataSet" /> already contains schema, new tables may be added to the schema, but an exception is thrown if any tables in the inline schema already exist in the <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

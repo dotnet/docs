@@ -1,0 +1,99 @@
+<Type Name="WorkflowServiceHostFactory" FullName="System.ServiceModel.Activation.WorkflowServiceHostFactory">
+  <TypeSignature Language="C#" Value="public class WorkflowServiceHostFactory : System.ServiceModel.Activation.ServiceHostFactoryBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowServiceHostFactory extends System.ServiceModel.Activation.ServiceHostFactoryBase" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.WorkflowServiceHostFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Activation.ServiceHostFactoryBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Factory that provides instances of <see cref="T:System.ServiceModel.WorkflowServiceHost" /> in managed hosting environments where the host instance is created dynamically in response to incoming messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The managed hosting environments that support dynamic activation are Internet Information Services (IIS) and Windows Process Activation Service (WAS).  
+  
+ If you have implemented a custom derivative of <xref:System.ServiceModel.WorkflowServiceHost>, consider also implementing a factory that derives from the <xref:System.ServiceModel.Activation.WorkflowServiceHostFactory> class.  
+  
+ If you have implemented a custom derivative of <xref:System.ServiceModel.ServiceHostBase> instead, then consider also implementing a factory that derives your factory from <xref:System.ServiceModel.Activation.ServiceHostFactoryBase> directly.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowServiceHostFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.WorkflowServiceHostFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.WorkflowServiceHostFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceHost">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.ServiceHostBase CreateServiceHost (string constructorString, Uri[] baseAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.ServiceHostBase CreateServiceHost(string constructorString, class System.Uri[] baseAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.WorkflowServiceHostFactory.CreateServiceHost(System.String,System.Uri[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.ServiceHostBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorString" Type="System.String" />
+        <Parameter Name="baseAddresses" Type="System.Uri[]" />
+      </Parameters>
+      <Docs>
+        <param name="constructorString">The file name of the workflow markup file that defines the workflow service or the type name of the workflow service type.</param>
+        <param name="baseAddresses">An array of type <see cref="T:System.Uri" /> that contains the base addresses for the hosted service.</param>
+        <summary>Creates a <see cref="T:System.ServiceModel.WorkflowServiceHost" /> from a string that contains either the file name of the workflow markup file or the type name of the workflow service type and the base address of the service specified.</summary>
+        <returns>A <see cref="T:System.ServiceModel.ServiceHostBase" /> object associated with the workflow service. The default implementation returns a <see cref="T:System.ServiceModel.WorkflowServiceHost" /> object with the specified base addresses.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `constructorString` argument could be either a fully qualified workflow type name or it could be the relative file path of the workflow definition file declared in the .svc file in which <xref:System.ServiceModel.Activation.ServiceHostFactory> directives are placed.  
+  
+> [!NOTE]
+>  To associate a rule definition with a workflow definition, name the rule definition file the same name as the workflow definition file with a .rules extension and place it in same directory as the workflow definition file. For example, the rules definition file CalculatorServiceWorkflow.rules must be in the same directory as CalculatorServiceWorkflow.xoml.  
+  
+   
+  
+## Examples  
+ The following is an example of a type-based reference to the workflow service CalculatorServiceWorkflow.  
+  
+```  
+<%@ServiceHost language=c# Debug="true" Factory="System.ServiceModel.Activation.WorkflowServiceHostFactory" Service="CalculatorServiceWorkflow" %>  
+```  
+  
+ The following is an example of a workflow definition file reference to the workflow service CalculatorServiceWorkflow.  
+  
+```  
+<%@ServiceHost language=c# Debug="true" Factory="System.ServiceModel.Activation.WorkflowServiceHostFactory" Service="CalculatorServiceWorkflow.xoml" %>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

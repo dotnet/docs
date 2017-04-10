@@ -752,7 +752,7 @@ The "K" custom format specifier represents the time zone information of a date a
 
 * For a UTC time (a [DateTime.Kind](xref:System.DateTime.Kind) property value of [DateTimeKind.Utc](xref:System.DateTimeKind.Utc)), the result string includes a "Z" character to represent a UTC date. 
 
-* For a time from an unspecified time zone (a time whose [DateTime.Kind](xref:System.DateTime.Kind) property equals [DateTimeKind.Unspecified](xref:System.DateTimeKind.Unspecified)), the result is equivalent to [String.Empty](xref:System.String#System_String_Empty). 
+* For a time from an unspecified time zone (a time whose [DateTime.Kind](xref:System.DateTime.Kind) property equals [DateTimeKind.Unspecified](xref:System.DateTimeKind.Unspecified)), the result is equivalent to `String.Empty`. 
 
 For [DateTimeOffset](xref:System.DateTimeOffset) values, the "K" format specifier is equivalent to the "zz" format specifier, and produces a result string containing the [DateTimeOffset](xref:System.DateTimeOffset) value's offset from UTC. 
 

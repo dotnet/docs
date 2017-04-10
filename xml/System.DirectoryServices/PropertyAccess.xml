@@ -1,0 +1,50 @@
+<Type Name="PropertyAccess" FullName="System.DirectoryServices.PropertyAccess">
+  <TypeSignature Language="C#" Value="public enum PropertyAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.PropertyAccess" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.PropertyAccess" /> enumeration is used with the <see cref="T:System.DirectoryServices.PropertyAccessRule" /> and <see cref="T:System.DirectoryServices.PropertySetAccessRule" /> classes to indicate the type of access that is applied to an Active Directory property or property set.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="Read" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.PropertyAccess Read = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.PropertyAccess.Read" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.PropertyAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates permission to read properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="Write" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.PropertyAccess Write = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.PropertyAccess.Write" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.PropertyAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates permission to write properties.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

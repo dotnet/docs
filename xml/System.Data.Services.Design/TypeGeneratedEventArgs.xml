@@ -1,0 +1,151 @@
+<Type Name="TypeGeneratedEventArgs" FullName="System.Data.Services.Design.TypeGeneratedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class TypeGeneratedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeGeneratedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Design.TypeGeneratedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used by the code generation command line tools and tools in Visual Studio to generate strongly typed client-side objects for communicating with data services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is not intended for public use and is used by the code generation command line tools and tools in Visual Studio to generate strongly typed client-side objects for communicating with data services.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypeGeneratedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Design.TypeGeneratedEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Design.TypeGeneratedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypeGeneratedEventArgs (System.Data.Metadata.Edm.GlobalItem typeSource, System.CodeDom.CodeTypeReference baseType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.GlobalItem typeSource, class System.CodeDom.CodeTypeReference baseType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Design.TypeGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.GlobalItem,System.CodeDom.CodeTypeReference)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="typeSource" Type="System.Data.Metadata.Edm.GlobalItem" />
+        <Parameter Name="baseType" Type="System.CodeDom.CodeTypeReference" />
+      </Parameters>
+      <Docs>
+        <param name="typeSource">The type source.</param>
+        <param name="baseType">The base type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Design.TypeGeneratedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalAttributes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.CodeDom.CodeAttributeDeclaration&gt; AdditionalAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.CodeDom.CodeAttributeDeclaration&gt; AdditionalAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Design.TypeGeneratedEventArgs.AdditionalAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.CodeDom.CodeAttributeDeclaration&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This class is not intended for public use and is used to generate strongly typed client-side objects for communicating with data services.</summary>
+        <value>Additional attributes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalInterfaces">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Type&gt; AdditionalInterfaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.Type&gt; AdditionalInterfaces" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Design.TypeGeneratedEventArgs.AdditionalInterfaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This class is not intended for public use and is used to generate strongly typed client-side objects for communicating with data services.</summary>
+        <value>Additional interfaces.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalMembers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.CodeDom.CodeTypeMember&gt; AdditionalMembers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.CodeDom.CodeTypeMember&gt; AdditionalMembers" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Design.TypeGeneratedEventArgs.AdditionalMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.CodeDom.CodeTypeMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This class is not intended for public use and is used to generate strongly typed client-side objects for communicating with data services.</summary>
+        <value>Additional members.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseType">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference BaseType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference BaseType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Design.TypeGeneratedEventArgs.BaseType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This class is not intended for public use and is used to generate strongly typed client-side objects for communicating with data services.</summary>
+        <value>Base type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeSource">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.GlobalItem TypeSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.GlobalItem TypeSource" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Design.TypeGeneratedEventArgs.TypeSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.GlobalItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This class is not intended for public use and is used to generate strongly typed client-side objects for communicating with data services.</summary>
+        <value>Type source.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

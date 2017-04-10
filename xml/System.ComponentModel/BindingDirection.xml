@@ -1,0 +1,65 @@
+<Type Name="BindingDirection" FullName="System.ComponentModel.BindingDirection">
+  <TypeSignature Language="C#" Value="public enum BindingDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindingDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindingDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the template can be bound one way or two ways.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OneWay">
+      <MemberSignature Language="C#" Value="OneWay" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindingDirection OneWay = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindingDirection.OneWay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.BindingDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The template can only accept property values. Used with a generic <see cref="T:System.Web.UI.ITemplate" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoWay">
+      <MemberSignature Language="C#" Value="TwoWay" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindingDirection TwoWay = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindingDirection.TwoWay" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.BindingDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The template can accept and expose property values. Used with an <see cref="T:System.Web.UI.IBindableTemplate" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

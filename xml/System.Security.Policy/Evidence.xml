@@ -1,0 +1,897 @@
+<Type Name="Evidence" FullName="System.Security.Policy.Evidence">
+  <TypeSignature Language="C#" Value="public sealed class Evidence : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Evidence extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Policy.Evidence" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the set of information that constitutes input to security policy decisions. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Common forms of evidence include signatures and location of origin of code, but can potentially be anything. Objects of any type that are recognized by security policy represent evidence.  
+  
+ Security policy is composed of code groups; a particular assembly (the basic unit of code for granting security permissions) is a member of a code group if it satisfies the code group's membership condition. Evidence is the set of inputs to policy that membership conditions use to determine to which code groups an assembly belongs.  
+  
+ The <xref:System.Security.Policy.Evidence> class is a collection (see <xref:System.Collections.ICollection>) that holds a set of objects that represent evidence. This class holds two sets that correspond to the source of the evidence: host evidence and assembly evidence.  
+  
+ Policy can get evidence from two different sources when evaluating permissions for code.  
+  
+-   `Host evidence` is provided by the host, and can only be provided by hosts that have been granted the <xref:System.Security.Permissions.SecurityPermissionFlag> permission. Typically, this is evidence of the origin of the code and digital signatures on the assembly. Evidence about origin typically includes <xref:System.Security.Policy.Url>, <xref:System.Security.Policy.Site>, and <xref:System.Security.Policy.Zone> evidence. Signatures refer to software publisher (AuthentiCode X.509v3 signature) and strong name identities. Both kinds of digital signature-based identity are built into the assembly, but must be validated and passed to policy by the host; when loaded, the security system verifies the signature. The system then creates the appropriate evidence and passes it to policy only if the corresponding signature is valid.  
+  
+-   `Assembly evidence` is part of the assembly itself. Developers or administrators can attach custom evidence to the assembly to extend the set of evidence for policy. Assembly evidence can only be added at the time of assembly generation, which occurs before the assembly is signed. The default policy of the security system ignores assembly-provided evidence, but policy can be extended to accept it.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create new <xref:System.Security.Policy.Evidence> classes with both host evidence and assembly evidence.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#1)]
+ [!code-csharp[System.Security.Policy.Evidence#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#1)]
+ [!code-vb[System.Security.Policy.Evidence#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Evidence ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new empty instance of the <see cref="T:System.Security.Policy.Evidence" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.%23ctor> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#15)]
+ [!code-csharp[System.Security.Policy.Evidence#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#15)]
+ [!code-vb[System.Security.Policy.Evidence#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Evidence (System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.#ctor(System.Security.Policy.Evidence)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="evidence">The <see cref="T:System.Security.Policy.Evidence" /> instance from which to create the new instance. This instance is not deep-copied.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Evidence" /> class from a shallow copy of an existing one.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.%23ctor%28System.Security.Policy.Evidence%29> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#12)]
+ [!code-csharp[System.Security.Policy.Evidence#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#12)]
+ [!code-vb[System.Security.Policy.Evidence#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="evidence" /> parameter is not a valid instance of <see cref="T:System.Security.Policy.Evidence" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Evidence (object[] hostEvidence, object[] assemblyEvidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object[] hostEvidence, object[] assemblyEvidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.#ctor(System.Object[],System.Object[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="hostEvidence" Type="System.Object[]" />
+        <Parameter Name="assemblyEvidence" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="hostEvidence">The host evidence from which to create the new instance.</param>
+        <param name="assemblyEvidence">The assembly evidence from which to create the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Evidence" /> class from multiple sets of host and assembly evidence.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the [Evidence Constructor (Object\<xref:System.Security.Policy.Evidence.%23ctor%28System.Object%5B%5D%2CSystem.Object%5B%5D%29> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#3)]
+ [!code-csharp[System.Security.Policy.Evidence#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#3)]
+ [!code-vb[System.Security.Policy.Evidence#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Evidence (System.Security.Policy.EvidenceBase[] hostEvidence, System.Security.Policy.EvidenceBase[] assemblyEvidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Policy.EvidenceBase[] hostEvidence, class System.Security.Policy.EvidenceBase[] assemblyEvidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.#ctor(System.Security.Policy.EvidenceBase[],System.Security.Policy.EvidenceBase[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="hostEvidence" Type="System.Security.Policy.EvidenceBase[]" />
+        <Parameter Name="assemblyEvidence" Type="System.Security.Policy.EvidenceBase[]" />
+      </Parameters>
+      <Docs>
+        <param name="hostEvidence">The host evidence from which to create the new instance.</param>
+        <param name="assemblyEvidence">The assembly evidence from which to create the new instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Evidence" /> class from multiple sets of host and assembly evidence.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a new instance of the class by using evidence objects that inherit from the <xref:System.Security.Policy.EvidenceBase> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAssembly">
+      <MemberSignature Language="C#" Value="public void AddAssembly (object id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAssembly(object id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.AddAssembly(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="id">Any evidence object.</param>
+        <summary>Adds the specified assembly evidence to the evidence set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method for evidence derived from the assembly.  
+  
+> [!NOTE]
+>  This method does not perform a check to prevent adding duplicate types of evidence. Many assembly evidence objects can exist at the same time.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.AddAssembly%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#4)]
+ [!code-csharp[System.Security.Policy.Evidence#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#4)]
+ [!code-vb[System.Security.Policy.Evidence#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="id" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="id" /> is not serializable.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAssemblyEvidence&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void AddAssemblyEvidence&lt;T&gt; (T evidence) where T : System.Security.Policy.EvidenceBase;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAssemblyEvidence&lt;(class System.Security.Policy.EvidenceBase) T&gt;(!!T evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.AddAssemblyEvidence``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.Security.Policy.EvidenceBase</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="evidence" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the object in <c>evidence</c>.</typeparam>
+        <param name="evidence">The assembly evidence to add.</param>
+        <summary>Adds an evidence object of the specified type to the assembly-supplied evidence list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Legacy evidence, that is, evidence that is not derived from <xref:System.Security.Policy.EvidenceBase>, cannot be added. Only evidence that is derived from <xref:System.Security.Policy.EvidenceBase> can be added. This method does not allow you to add evidence if evidence of that type already exists in the assembly list.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="evidence" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Evidence of type <paramref name="T" /> is already in the list.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="evidence" /> is not serializable.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHost">
+      <MemberSignature Language="C#" Value="public void AddHost (object id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddHost(object id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.AddHost(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="id">Any evidence object.</param>
+        <summary>Adds the specified evidence supplied by the host to the evidence set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method for evidence supplied by the host.  
+  
+> [!NOTE]
+>  This method does not perform a check to prevent adding duplicate types of evidence. Many host evidence objects can exist at the same time.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.AddHost%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#2)]
+ [!code-csharp[System.Security.Policy.Evidence#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#2)]
+ [!code-vb[System.Security.Policy.Evidence#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="id" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="id" /> is not serializable.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to manipulate evidence when <see cref="P:System.Security.Policy.Evidence.Locked" /> is <see langword="true" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHostEvidence&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void AddHostEvidence&lt;T&gt; (T evidence) where T : System.Security.Policy.EvidenceBase;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddHostEvidence&lt;(class System.Security.Policy.EvidenceBase) T&gt;(!!T evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.AddHostEvidence``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.Security.Policy.EvidenceBase</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="evidence" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the object in <c>evidence</c>.</typeparam>
+        <param name="evidence">The host evidence to add.</param>
+        <summary>Adds host evidence of the specified type to the host evidence collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Legacy evidence, that is, evidence that is not derived from <xref:System.Security.Policy.EvidenceBase>, cannot be added. Only evidence that is derived from <xref:System.Security.Policy.EvidenceBase> can be added. This method does not allow you to add evidence if evidence of that type already exists in the assembly list.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="evidence" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Evidence of type <paramref name="T" /> is already in the list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the host and assembly evidence from the evidence set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Policy.Evidence.Clear%2A> removes the evidence in the host and assembly enumerations, setting both to `null`.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.Clear%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#13)]
+ [!code-csharp[System.Security.Policy.Evidence#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#13)]
+ [!code-vb[System.Security.Policy.Evidence#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to control evidence. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Security.Policy.Evidence Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.Evidence Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Evidence</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a duplicate copy of this evidence object.</summary>
+        <returns>A duplicate copy of this evidence object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The duplicate copy is a complete copy that includes all the evidence objects in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The target array to which to copy evidence objects.</param>
+        <param name="index">The zero-based position in the array to which to begin copying evidence objects.</param>
+        <summary>Copies evidence objects to an <see cref="T:System.Array" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.CopyTo%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#6)]
+ [!code-csharp[System.Security.Policy.Evidence#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#6)]
+ [!code-vb[System.Security.Policy.Evidence#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is null.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index " />is outside the range of the target array<paramref name="." /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of evidence objects in the evidence set.</summary>
+        <value>The number of evidence objects in the evidence set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.Count%2A> property. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#12)]
+ [!code-csharp[System.Security.Policy.Evidence#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#12)]
+ [!code-vb[System.Security.Policy.Evidence#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAssemblyEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetAssemblyEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerator GetAssemblyEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetAssemblyEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enumerates evidence provided by the assembly.</summary>
+        <returns>An enumerator for evidence added by the <see cref="M:System.Security.Policy.Evidence.AddAssembly(System.Object)" /> method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the <xref:System.Security.Policy.Evidence.GetAssemblyEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#3)]
+ [!code-csharp[System.Security.Policy.Evidence#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#3)]
+ [!code-vb[System.Security.Policy.Evidence#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAssemblyEvidence&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetAssemblyEvidence&lt;T&gt; () where T : System.Security.Policy.EvidenceBase;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetAssemblyEvidence&lt;(class System.Security.Policy.EvidenceBase) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetAssemblyEvidence``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.Security.Policy.EvidenceBase</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of the evidence to get.</typeparam>
+        <summary>Gets assembly evidence of the specified type from the collection.</summary>
+        <returns>Evidence of type <paramref name="T" /> in the assembly evidence collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns only evidence that is derived from the <xref:System.Security.Policy.EvidenceBase> class. It does not return legacy evidence objects that are derived from other classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enumerates all evidence in the set, both that provided by the host and that provided by the assembly.</summary>
+        <returns>An enumerator for evidence added by both the <see cref="M:System.Security.Policy.Evidence.AddHost(System.Object)" /> method and the <see cref="M:System.Security.Policy.Evidence.AddAssembly(System.Object)" /> method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.GetEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#14](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#14)]
+ [!code-csharp[System.Security.Policy.Evidence#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#14)]
+ [!code-vb[System.Security.Policy.Evidence#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetHostEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerator GetHostEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetHostEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enumerates evidence supplied by the host.</summary>
+        <returns>An enumerator for evidence added by the <see cref="M:System.Security.Policy.Evidence.AddHost(System.Object)" /> method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows the use of the <xref:System.Security.Policy.Evidence.GetHostEnumerator%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#2)]
+ [!code-csharp[System.Security.Policy.Evidence#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#2)]
+ [!code-vb[System.Security.Policy.Evidence#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHostEvidence&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetHostEvidence&lt;T&gt; () where T : System.Security.Policy.EvidenceBase;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetHostEvidence&lt;(class System.Security.Policy.EvidenceBase) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.GetHostEvidence``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>System.Security.Policy.EvidenceBase</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of the evidence to get.</typeparam>
+        <summary>Gets host evidence of the specified type from the collection.</summary>
+        <returns>Evidence of type <paramref name="T" /> in the host evidence collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns only evidence that is derived from the <xref:System.Security.Policy.EvidenceBase> class. It does not return legacy evidence objects that are derived from other classes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the evidence set is read-only.</summary>
+        <value>Always <see langword="false" />, because read-only evidence sets are not supported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application code does not normally use this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the evidence set is thread-safe.</summary>
+        <value>Always <see langword="false" /> because thread-safe evidence sets are not supported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application code does not normally use this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locked">
+      <MemberSignature Language="C#" Value="public bool Locked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Locked" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.Locked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the evidence is locked.</summary>
+        <value>
+          <see langword="true" /> if the evidence is locked; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.Locked%2A> property. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#7](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#7)]
+ [!code-csharp[System.Security.Policy.Evidence#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#7)]
+ [!code-vb[System.Security.Policy.Evidence#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="public void Merge (System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Merge(class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.Merge(System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="evidence">The evidence set to be merged into the current evidence set.</param>
+        <summary>Merges the specified evidence set into the current evidence set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each evidence object in the specified evidence set is added to the assembly and host sets of the current evidence set, according to the sets from which it came.  
+  
+> [!NOTE]
+>  This method does not perform a check to prevent adding duplicate types of evidence. Many assembly and host evidence objects can exist at the same time.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.Merge%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#10](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#10)]
+ [!code-csharp[System.Security.Policy.Evidence#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#10)]
+ [!code-vb[System.Security.Policy.Evidence#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="evidence" /> parameter is not a valid instance of <see cref="T:System.Security.Policy.Evidence" />.</exception>
+        <exception cref="T:System.Security.SecurityException">
+          <see cref="P:System.Security.Policy.Evidence.Locked" /> is <see langword="true" />, the code that calls this method does not have <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />, and the <paramref name="evidence" /> parameter has a host list that is not empty.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to manipulate evidence when <see cref="P:System.Security.Policy.Evidence.Locked" /> is <see langword="true" /> and the <paramref name="evidence" /> parameter has a host list that is not empty. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveType">
+      <MemberSignature Language="C#" Value="public void RemoveType (Type t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveType(class System.Type t) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Evidence.RemoveType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="t">The type of the evidence to be removed.</param>
+        <summary>Removes the evidence for a given type from the host and assembly enumerations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The results of executing the <xref:System.Security.Policy.Evidence.RemoveType%2A> method can be confirmed using the <xref:System.Security.Policy.Evidence.GetAssemblyEnumerator%2A> method and the <xref:System.Security.Policy.Evidence.GetHostEnumerator%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.Evidence.RemoveType%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.Evidence> class.  
+  
+ [!code-cpp[System.Security.Policy.Evidence#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CPP/evidence_evidence.cpp#11)]
+ [!code-csharp[System.Security.Policy.Evidence#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Evidence/CS/evidence_evidence.cs#11)]
+ [!code-vb[System.Security.Policy.Evidence#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Evidence/VB/evidence_evidence.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="t" /> is null.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for the ability to control evidence. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.Evidence.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the synchronization root.</summary>
+        <value>Always <see langword="this" /> (<see langword="Me" /> in Visual Basic), because synchronization of evidence sets is not supported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not normally used by application code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

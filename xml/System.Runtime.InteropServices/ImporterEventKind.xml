@@ -1,0 +1,82 @@
+<Type Name="ImporterEventKind" FullName="System.Runtime.InteropServices.ImporterEventKind">
+  <TypeSignature Language="C#" Value="public enum ImporterEventKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ImporterEventKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ImporterEventKind" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the callbacks that the type library importer makes when importing a type library.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type library importer passes the values of this enumeration to the <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink.ReportEvent%2A> method of an object which implements the <xref:System.Runtime.InteropServices.ITypeLibExporterNotifySink> interface. The value passed identifies the specific kind of event being reported.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ERROR_REFTOINVALIDTYPELIB">
+      <MemberSignature Language="C#" Value="ERROR_REFTOINVALIDTYPELIB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ImporterEventKind ERROR_REFTOINVALIDTYPELIB = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ImporterEventKind.ERROR_REFTOINVALIDTYPELIB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.ImporterEventKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not supported in this version of the .NET Framework.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NOTIF_CONVERTWARNING">
+      <MemberSignature Language="C#" Value="NOTIF_CONVERTWARNING" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ImporterEventKind NOTIF_CONVERTWARNING = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ImporterEventKind.NOTIF_CONVERTWARNING" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.ImporterEventKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the event is invoked when a warning occurs during conversion.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NOTIF_TYPECONVERTED">
+      <MemberSignature Language="C#" Value="NOTIF_TYPECONVERTED" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ImporterEventKind NOTIF_TYPECONVERTED = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ImporterEventKind.NOTIF_TYPECONVERTED" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.ImporterEventKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the event is invoked when a type has been imported.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

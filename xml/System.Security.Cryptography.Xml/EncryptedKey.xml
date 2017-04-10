@@ -1,0 +1,286 @@
+<Type Name="EncryptedKey" FullName="System.Security.Cryptography.Xml.EncryptedKey">
+  <TypeSignature Language="C#" Value="public sealed class EncryptedKey : System.Security.Cryptography.Xml.EncryptedType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncryptedKey extends System.Security.Cryptography.Xml.EncryptedType" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptedKey" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Cryptography.Xml.EncryptedType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="&lt;EncryptedKey&gt;" /> element in XML encryption. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class represents the `<EncryptedKey>` element in XML encryption. The `<EncryptedKey>` element is used to send encryption keys. It can be created in a stand-alone XML document, be placed within an application document, or be inside an `<EncryptedData>` element as a child of a `<KeyInfo>` element. The key value is always encrypted to the recipient. When `<EncryptedKey>` is decrypted, the resulting key is made available to the `<EncryptionMethod>` algorithm without any additional processing.  
+  
+ The `<EncryptedKey>` element is similar to the `<EncryptedData>` element of the <xref:System.Security.Cryptography.Xml.EncryptedData> class except that the data encrypted is always a key value.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedKey> class. This example then displays the values of various properties of the <xref:System.Security.Cryptography.Xml.EncryptedKey> class to the console.  
+  
+ [!code-csharp[Cryptography.XML.EncryptedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/cs/example.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/vb/example.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EncryptedKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.EncryptedKey" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a new instance of the <xref:System.Security.Cryptography.Xml.EncryptedKey> class. For more information on XML encryption standards, see the XML Encryption Syntax and Processing document at http://www.w3.org/TR/xmlenc-core/.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedKey> class. This example then displays the values of various properties of the <xref:System.Security.Cryptography.Xml.EncryptedKey> class to the console.  
+  
+ [!code-csharp[Cryptography.XML.EncryptedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/cs/example.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddReference">
+      <MemberSignature Language="C#" Value="public void AddReference (System.Security.Cryptography.Xml.DataReference dataReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReference(class System.Security.Cryptography.Xml.DataReference dataReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.AddReference(System.Security.Cryptography.Xml.DataReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataReference" Type="System.Security.Cryptography.Xml.DataReference" />
+      </Parameters>
+      <Docs>
+        <param name="dataReference">A <see cref="T:System.Security.Cryptography.Xml.DataReference" /> object to add to the <see cref="P:System.Security.Cryptography.Xml.EncryptedKey.ReferenceList" /> property.</param>
+        <summary>Adds a <see langword="&lt;DataReference&gt; " />element to the <see langword="&lt;ReferenceList&gt;" /> element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds a <xref:System.Security.Cryptography.Xml.DataReference> object to the <xref:System.Security.Cryptography.Xml.EncryptedKey.ReferenceList%2A> property of the <xref:System.Security.Cryptography.Xml.EncryptedKey> object. The `<DataReference>` element points to encrypted data that was encrypted using the key specified in the `<EncryptedKey>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddReference">
+      <MemberSignature Language="C#" Value="public void AddReference (System.Security.Cryptography.Xml.KeyReference keyReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReference(class System.Security.Cryptography.Xml.KeyReference keyReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.AddReference(System.Security.Cryptography.Xml.KeyReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyReference" Type="System.Security.Cryptography.Xml.KeyReference" />
+      </Parameters>
+      <Docs>
+        <param name="keyReference">A <see cref="T:System.Security.Cryptography.Xml.KeyReference" /> object to add to the <see cref="P:System.Security.Cryptography.Xml.EncryptedKey.ReferenceList" /> property.</param>
+        <summary>Adds a <see langword="&lt;KeyReference&gt; " />element to the <see langword="&lt;ReferenceList&gt;" /> element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds A <xref:System.Security.Cryptography.Xml.KeyReference> object to the <xref:System.Security.Cryptography.Xml.EncryptedKey.ReferenceList%2A> property of the <xref:System.Security.Cryptography.Xml.EncryptedKey> object. The `<KeyReference>` element points to an encrypted key that was encrypted using the key specified in the `<EncryptedKey>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CarriedKeyName">
+      <MemberSignature Language="C#" Value="public string CarriedKeyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CarriedKeyName" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedKey.CarriedKeyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the optional <see langword="&lt;CarriedKeyName&gt;" /> element in XML encryption.</summary>
+        <value>A string that represents a name for the key value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<CarriedKeyName>` element is an optional element that associates a user-readable name with a key value. This name can then be used to reference the key using the `<KeyName>` element within the `<KeyInfo>` element. The same `<CarriedKeyName>` element value, unlike an ID value, can occur multiple times within a single document. The value of the key must be the same in all `<EncryptedKey>` elements identified with the same `<CarriedKeyName>` name within an XML document. Note that because white space is significant in the value of the `<KeyName>` element, white space is also significant in the value of the `<CarriedKeyName>` element.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedKey> class. This example then displays the values of various properties of the <xref:System.Security.Cryptography.Xml.EncryptedKey> class to the console.  
+  
+ [!code-csharp[Cryptography.XML.EncryptedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/cs/example.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXml">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlElement GetXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.GetXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the XML representation of the <see cref="T:System.Security.Cryptography.Xml.EncryptedKey" /> object.</summary>
+        <returns>An <see cref="T:System.Xml.XmlElement" /> that represents the <see langword="&lt;EncryptedKey&gt;" /> element in XML encryption.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to output the `<EncryptedKey>` element in XML.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <see cref="T:System.Security.Cryptography.Xml.EncryptedKey" /> value is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadXml">
+      <MemberSignature Language="C#" Value="public override void LoadXml (System.Xml.XmlElement value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.LoadXml(System.Xml.XmlElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Xml.XmlElement" />
+      </Parameters>
+      <Docs>
+        <param name="value">An <see cref="T:System.Xml.XmlElement" /> representing an XML element to use for the <see langword="&lt;EncryptedKey&gt;" /> element.</param>
+        <summary>Loads the specified XML information into the <see langword="&lt;EncryptedKey&gt;" /> element in XML encryption.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to load an existing XML element into the `<EncryptedKey>` element represented by the <xref:System.Security.Cryptography.Xml.EncryptedData> object.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedKey> class. This example then displays the values of various properties of the <xref:System.Security.Cryptography.Xml.EncryptedKey> class to the console.  
+  
+ [!code-csharp[Cryptography.XML.EncryptedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/cs/example.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The <paramref name="value" /> parameter does not contain a <see cref="T:System.Security.Cryptography.Xml.CipherData" /> element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Recipient">
+      <MemberSignature Language="C#" Value="public string Recipient { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Recipient" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedKey.Recipient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the optional <see langword="Recipient" /> attribute in XML encryption.</summary>
+        <value>A string representing the value of the <see langword="Recipient" /> attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<Recipient>` attribute is an optional attribute that contains information about which recipient this encrypted key value is intended for. Its contents are application dependent.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedKey> class. This example then displays the values of various properties of the <xref:System.Security.Cryptography.Xml.EncryptedKey> class to the console.  
+  
+ [!code-csharp[Cryptography.XML.EncryptedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/cs/example.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceList">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.ReferenceList ReferenceList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.ReferenceList ReferenceList" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedKey.ReferenceList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.Xml.ReferenceList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="&lt;ReferenceList&gt;" /> element in XML encryption.</summary>
+        <value>A <see cref="T:System.Security.Cryptography.Xml.ReferenceList" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<ReferenceList>` element is an optional element that contains pointers to data and keys encrypted using this key. The reference list can contain multiple references to the `<EncryptedKey>`and `<EncryptedData>` elements using the `<KeyReference>` and `<DataReference>` elements respectively.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to encrypt and decrypt an XML element by using the <xref:System.Security.Cryptography.Xml.EncryptedKey> class. This example then displays the values of various properties of the <xref:System.Security.Cryptography.Xml.EncryptedKey> class to the console.  
+  
+ [!code-csharp[Cryptography.XML.EncryptedKey#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/cs/example.cs#1)]
+ [!code-vb[Cryptography.XML.EncryptedKey#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.XML.EncryptedKey/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

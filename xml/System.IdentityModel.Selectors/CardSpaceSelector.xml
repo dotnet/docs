@@ -1,0 +1,150 @@
+<Type Name="CardSpaceSelector" FullName="System.IdentityModel.Selectors.CardSpaceSelector">
+  <TypeSignature Language="C#" Value="public static class CardSpaceSelector" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed CardSpaceSelector extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.CardSpaceSelector" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to all [!INCLUDE[infocard](~/includes/infocard-md.md)] public operations that are supported in managed code.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Tokens.GenericXmlSecurityToken GetToken (System.IdentityModel.Selectors.CardSpacePolicyElement[] policyChain, System.IdentityModel.Selectors.SecurityTokenSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Tokens.GenericXmlSecurityToken GetToken(class System.IdentityModel.Selectors.CardSpacePolicyElement[] policyChain, class System.IdentityModel.Selectors.SecurityTokenSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceSelector.GetToken(System.IdentityModel.Selectors.CardSpacePolicyElement[],System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.GenericXmlSecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="policyChain" Type="System.IdentityModel.Selectors.CardSpacePolicyElement[]" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="policyChain">An array of <see cref="T:System.IdentityModel.Selectors.CardSpacePolicyElement" /> that describes the federated security chain that the client requires a final token to unwind.</param>
+        <param name="serializer">To be added.</param>
+        <summary>Generates a security token using the [!INCLUDE[infocard](~/includes/infocard-md.md)] system and the specified policy chain and token serializer.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" /> that represents the generated security token.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="policyChain" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="policyChain" /> is zero length.  
+  
+ -or-  
+  
+ <paramref name="tokenSerializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToken">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Tokens.GenericXmlSecurityToken GetToken (System.Xml.XmlElement endpoint, System.Collections.Generic.IEnumerable&lt;System.Xml.XmlElement&gt; policy, System.Xml.XmlElement requiredRemoteTokenIssuer, System.IdentityModel.Selectors.SecurityTokenSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Tokens.GenericXmlSecurityToken GetToken(class System.Xml.XmlElement endpoint, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlElement&gt; policy, class System.Xml.XmlElement requiredRemoteTokenIssuer, class System.IdentityModel.Selectors.SecurityTokenSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceSelector.GetToken(System.Xml.XmlElement,System.Collections.Generic.IEnumerable{System.Xml.XmlElement},System.Xml.XmlElement,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.GenericXmlSecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.Xml.XmlElement" />
+        <Parameter Name="policy" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlElement&gt;" />
+        <Parameter Name="requiredRemoteTokenIssuer" Type="System.Xml.XmlElement" />
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">An <see cref="T:System.Xml.XmlElement" /> that represents the endpoint address of the recipient where the token is presented.</param>
+        <param name="policy">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.Xml.XmlElement" /> that contains a policy fragment that specifies the token types and claims that are requested by the recipient.</param>
+        <param name="requiredRemoteTokenIssuer">An <see cref="T:System.Xml.XmlElement" /> that represents the issuer of the token.</param>
+        <param name="serializer">To be added.</param>
+        <summary>Generates a security token using the [!INCLUDE[infocard](~/includes/infocard-md.md)] system and the specified endpoint, policy, token issuer, and token serializer.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityToken" /> that represents the generated security token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A security token can be issued by the user or by a third party that is specified by the policy issuer.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpoint" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="policy" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tokenSerializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Import">
+      <MemberSignature Language="C#" Value="public static void Import (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Import(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceSelector.Import(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">The name of the file to import.</param>
+        <summary>Displays the <paramref name="Import Card" /> user interface.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="fileName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="fileName" /> is <see cref="F:System.String.Empty" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Manage">
+      <MemberSignature Language="C#" Value="public static void Manage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Manage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.CardSpaceSelector.Manage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Selectors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the [!INCLUDE[infocard](~/includes/infocard-md.md)] management user interface that allows the user to create, delete, rename, and modify the card.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[infocard](~/includes/infocard-md.md)] does not provide programmatic access to the cards for life-cycle management for privacy and security reasons. For example, you cannot programmatically create, delete, or enumerate cards.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

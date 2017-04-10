@@ -1,0 +1,504 @@
+<Type Name="SemanticResultValue" FullName="System.Speech.Recognition.SemanticResultValue">
+  <TypeSignature Language="C#" Value="public class SemanticResultValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SemanticResultValue extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SemanticResultValue" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{_tag.DebugSummary}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a semantic value and optionally associates the value with a component of a speech recognition grammar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use of <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> objects, in conjunction with <xref:System.Speech.Recognition.GrammarBuilder> and <xref:System.Speech.Recognition.Choices>, is the easiest way to design a semantic structure for a <xref:System.Speech.Recognition.Grammar>. Semantic information for a phrase is accessed by obtaining an instance of <xref:System.Speech.Recognition.SemanticValue>, through the <xref:System.Speech.Recognition.RecognizedPhrase.Semantics%2A> property on <xref:System.Speech.Recognition.RecognizedPhrase>.  
+  
+> [!NOTE]
+>  Values managed by <xref:System.Speech.Recognition.SemanticResultValue> objects are defined by <xref:System.Object> instances passed to their constructors. The underlying type of this <xref:System.Object> must be `bool`, `int`, `float`, or `string`. Any other type will prevent construction of a <xref:System.Speech.Recognition.Grammar> instance with the <xref:System.Speech.Recognition.SemanticResultValue>.  
+  
+ The typical use of a <xref:System.Speech.Recognition.SemanticResultValue> instance associates the instance with a recognizable component of a <xref:System.Speech.Recognition.Grammar>, such as a phrase, a rule, or a <xref:System.Speech.Recognition.Choices> object. If the associated component is used as part of a recognition operation, the <xref:System.Speech.Recognition.SemanticResultValue> is used to define a value in the semantics of the returned phrase.  
+  
+ There are two basic methods for associating a <xref:System.Speech.Recognition.SemanticResultValue> instance with a grammar element, depending on the constructor used to create the <xref:System.Speech.Recognition.SemanticResultValue>.  
+  
+-   If only the value (specified by an instance of <xref:System.Object>) is used to construct a <xref:System.Speech.Recognition.SemanticResultValue> object, the <xref:System.Speech.Recognition.SemanticResultValue> is associated with the grammar component that preceded it, in addition to a <xref:System.Speech.Recognition.GrammarBuilder> object.  
+  
+     For instance, in the code fragment below, if a <xref:System.Speech.Recognition.Grammar> constructed using this <xref:System.Speech.Recognition.GrammarBuilder> instance recognizes the word "background", a value of `true` is set in the recognized phrase semantics.  
+  
+    ```csharp  
+    GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+    backgroundGB.Append(new SemanticResultValue(true));  
+    ```  
+  
+     For more information, see the description of <xref:System.Speech.Recognition.SemanticResultValue.%23ctor%28System.Object%29>.  
+  
+-   If a string value phrase or specific <xref:System.Speech.Recognition.GrammarBuilder> instance is used, together with a <xref:System.Object> that specifies a <xref:System.Speech.Recognition.SemanticResultValue> value, that value is automatically associated with the string value phrase or the <xref:System.Speech.Recognition.GrammarBuilder> instance.  If the phrase or <xref:System.Speech.Recognition.GrammarBuilder> object is used in the process of recognition, the value will be assigned to the semantics of the recognized phrase.  
+  
+     The following example illustrates this, and is functionally equivalent to the preceding example, which used explicit calls to <xref:System.Speech.Recognition.GrammarBuilder.Append%2A> and <xref:System.Speech.Recognition.SemanticResultValue.%23ctor%28System.Object%29>. If the recognition logic uses the word "background", the value `true` will be added to the recognized semantics.  
+  
+    ```csharp  
+    fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("background", true));  
+    ```  
+  
+     For more information, see the description of <xref:System.Speech.Recognition.SemanticResultValue.%23ctor%28System.Speech.Recognition.GrammarBuilder%2CSystem.Object%29> and <xref:System.Speech.Recognition.SemanticResultValue.%23ctor%28System.String%2CSystem.Object%29>.  
+  
+ To be used by a <xref:System.Speech.Recognition.Grammar> in recognition, all <xref:System.Speech.Recognition.SemanticResultValue> instances must be associated with one of the <xref:System.Speech.Recognition.SemanticValue> objects used by that <xref:System.Speech.Recognition.Grammar>. This is done by associating a semantic key with the <xref:System.Speech.Recognition.SemanticResultValue>.  
+  
+ Semantic keys can be explicitly attached to a <xref:System.Speech.Recognition.SemanticResultValue>, using a <xref:System.Speech.Recognition.SemanticResultKey> object.  <xref:System.Speech.Recognition.SemanticResultValue> instances not explicitly attached to a key are attached to the root key of the default <xref:System.Speech.Recognition.SemanticValue>.  
+  
+ After a <xref:System.Speech.Recognition.SemanticResultValue> has been used to set the <xref:System.Speech.Recognition.SemanticValue.Value%2A>, whether it is tagged with the default root key or by any particular <xref:System.Speech.Recognition.SemanticResultKey>, that value must not be modified or an exception will occur during recognition operations.  
+  
+ The following example will cause an exception because it sets and then modifies the root <xref:System.Speech.Recognition.SemanticValue.Value%2A> of a <xref:System.Speech.Recognition.Grammar>.  
+  
+```csharp  
+GrammarBuilder gb=new GrammarBuilder();  
+gb.Append(new SemanticResultValue("One"));  
+gb.Append(new SemanticResultValue("Two"));  
+```  
+  
+ On the other hand, the code in the following example is permitted. Although it defines multiple instances of <xref:System.Speech.Recognition.SemanticResultValue>, they are included in a <xref:System.Speech.Recognition.Choices> object, and only one will ever be used to set the value of the key `bgOrfgText`.  
+  
+```csharp  
+Choices fgOrbgChoice = new Choices();  
+fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("background"));  
+fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground"));  
+SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgText", fgOrbgChoice);  
+```  
+  
+ For more information about using <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> objects, see [Understanding SemanticResultValue and SemanticResultKey Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c) and [Using a SemanticResultKey to Extract a SemanticResultValue](http://msdn.microsoft.com/en-us/198e29b8-845f-4cec-a25e-f55c0eaf46aa) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043).  
+  
+   
+  
+## Examples  
+ The following example returns a <xref:System.Speech.Recognition.Grammar> that recognizes the command "Set/Change/Alter Foreground/Background … [color list]".  <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances (in conjunction with <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects) are used to define semantics that can be parsed on recognition.  The parsed semantics will determine which color was requested and whether the foreground or background is to be modified.  
+  
+```  
+  
+private Grammar FgBgColorGrammar()   
+{  
+  Grammar grammar = null;  
+  
+  // Allow the command to begin with set, alter, change.  
+  Choices introChoices = new Choices();  
+  foreach (string introString in new string[] { "Change", "Set", "Alter" })   
+  {  
+    GrammarBuilder introGB = new GrammarBuilder(introString);  
+    introChoices.Add(new SemanticResultValue(introGB, String.Format("Command: {0}", introString)));  
+  }    
+  
+  GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
+  
+  // Define the arguments for the command to select foreground or background   
+  // and to change their color as semantic values.  
+  Choices fgOrbgChoice = new Choices();  
+  GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+  backgroundGB.Append(new SemanticResultValue(true));  
+  fgOrbgChoice.Add(backgroundGB);  
+  fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
+  SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    colorChoice.Add(  
+        (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
+  }  
+  
+  // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
+  // semantic keys.  
+  GrammarBuilder cmdArgs = new GrammarBuilder();  
+  cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
+  cmdArgs.AppendWildcard();  
+  cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
+  
+  GrammarBuilder cmds =   
+      GrammarBuilder.Add(  
+                       cmdIntro,  
+                       new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
+  grammar = new Grammar(cmds);  
+  grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
+  return grammar;  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SemanticResultValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultValue.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value managed by <see cref="T:System.Speech.Recognition.SemanticResultValue" />. Must be of type <see langword="bool" />, <see langword="int" />, <see langword="float" />, or <see langword="string" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticResultValue" /> class and specifies a semantic value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A `SemanticResultValue` returned by this constructor is not associated with any particular grammar element. The association must be made explicit by using the instance of `SemanticResultValue` in conjunction with <xref:System.Speech.Recognition.GrammarBuilder>.  
+  
+ For instance, in the code fragment below, if a <xref:System.Speech.Recognition.Grammar> constructed using this <xref:System.Speech.Recognition.GrammarBuilder> instance recognizes the word "background", a value of `true` is set in the recognized phrase semantics.  
+  
+```csharp  
+GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+backgroundGB.Append(new SemanticResultValue(true));  
+```  
+  
+   
+  
+## Examples  
+ The following example returns a <xref:System.Speech.Recognition.Grammar> that recognizes the command "Set/Change/Alter Foreground/Background … [color list]". <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances (in conjunction with <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects) are used to define semantics that can be parsed on recognition.  The parsed semantics will determine which color was requested and whether the foreground or background is to be modified.  
+  
+```csharp  
+  
+private Grammar FgBgColorGrammar()   
+{  
+  Grammar grammar = null;  
+  
+  // Allow the command to begin with set, alter, change.  
+  Choices introChoices = new Choices();  
+  foreach (string introString in new string[] { "Change", "Set", "Alter" })   
+  {  
+    GrammarBuilder introGB = new GrammarBuilder(introString);  
+    introChoices.Add(  
+                  new SemanticResultValue(introGB,  
+                  String.Format("Command: {0}", introString)));  
+  }           
+  
+  GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
+  
+  // Define the arguments for the command to select foreground or background   
+  // and to change their color as semantic values.  
+  Choices fgOrbgChoice = new Choices();  
+  GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+  backgroundGB.Append(new SemanticResultValue(true));  
+  fgOrbgChoice.Add(backgroundGB);  
+  fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
+  SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    colorChoice.Add(  
+                 (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
+  }  
+  
+  // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
+  // semantic keys.  
+  GrammarBuilder cmdArgs = new GrammarBuilder();  
+  cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
+  cmdArgs.AppendWildcard();  
+  cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
+  
+  GrammarBuilder cmds =   
+      GrammarBuilder.Add(  
+        cmdIntro,   
+        new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
+  grammar = new Grammar(cmds);  
+  grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
+  return grammar;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SemanticResultValue (System.Speech.Recognition.GrammarBuilder builder, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.GrammarBuilder builder, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultValue.#ctor(System.Speech.Recognition.GrammarBuilder,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Speech.Recognition.GrammarBuilder" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="builder">A grammar component to be used in recognition.</param>
+        <param name="value">The value managed by <see cref="T:System.Speech.Recognition.SemanticResultValue" />. Must be of type <see langword="bool" />, <see langword="int" />, <see langword="float" />, or <see langword="string" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticResultValue" /> class and associates a semantic value with a <see cref="T:System.Speech.Recognition.GrammarBuilder" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the grammar element specified by <xref:System.Speech.Recognition.GrammarBuilder> is used in the recognition logic, `value` will be set in the semantics of the recognized output.  
+  
+ In the code fragment below, if the recognition logic constructed with the <xref:System.Speech.Recognition.GrammarBuilder> instance (`myGb`) uses the <xref:System.Speech.Recognition.Choices> object (`myChoice`) to identify input, the value `true` is added to the recognized semantics.  
+  
+```csharp  
+myGb.Append(new SemanticResultValue(myChoice, true);  
+```  
+  
+ As <xref:System.Speech.Recognition.GrammarBuilder> supports implicit conversion for <xref:System.Speech.Recognition.Choices>,  `SemanticResultValue`, and <xref:System.Speech.Recognition.SemanticResultKey>, this constructor can use those objects as well.  
+  
+   
+  
+## Examples  
+ The following example returns a <xref:System.Speech.Recognition.Grammar> that recognizes the command "Set/Change/Alter Foreground/Background … [color list]". <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances (in conjunction with <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects) are used to define semantics that can be parsed on recognition.  The parsed semantics will determine which color was requested and whether the foreground or background is to be modified.  
+  
+```csharp  
+  
+private Grammar FgBgColorGrammar()   
+{  
+  Grammar grammar = null;  
+  
+  // Allow the command to begin with set, alter, change.  
+  Choices introChoices = new Choices();  
+  foreach (string introString in new string[] { "Change", "Set", "Alter" })   
+  {  
+    GrammarBuilder introGB = new GrammarBuilder(introString);  
+    introChoices.Add(  
+                  new SemanticResultValue(introGB,  
+                  String.Format("Command: {0}", introString)));  
+  }           
+  GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
+  
+  // Define the arguments for the command to select foreground or background   
+  // and to change their color as semantic values.  
+  Choices fgOrbgChoice = new Choices();  
+  GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+  backgroundGB.Append(new SemanticResultValue(true));  
+  fgOrbgChoice.Add(backgroundGB);  
+  fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
+  SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    colorChoice.Add(  
+              (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
+    }  
+  
+  // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
+  // semantic keys.  
+  GrammarBuilder cmdArgs = new GrammarBuilder();  
+  cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
+  cmdArgs.AppendWildcard();  
+  cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
+  
+  GrammarBuilder cmds =   
+      GrammarBuilder.Add(  
+                      cmdIntro,  
+                      new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
+  grammar = new Grammar(cmds);  
+  grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
+  return grammar;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SemanticResultValue (string phrase, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string phrase, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultValue.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="phrase" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="phrase">A phrase to be used in recognition.</param>
+        <param name="value">The value managed by <see cref="T:System.Speech.Recognition.SemanticResultValue" />. Must be of type <see langword="bool" />, <see langword="int" />, <see langword="float" />, or <see langword="string" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticResultValue" /> class and associates a semantic value with a <see cref="T:System.String" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the string specified by `phrase` is used in the recognition logic, `value` will be set in the semantics of the recognized output.  
+  
+ In the following code fragment, if the recognition logic constructed with the <xref:System.Speech.Recognition.GrammarBuilder> instance (`myGb`) uses the string "my mortgage" to identify input, the value `true` will be added to the recognized semantics.  
+  
+```csharp  
+myGb.Append(new SemanticResultValue("my mortgage", true);  
+```  
+  
+   
+  
+## Examples  
+ The following example returns a <xref:System.Speech.Recognition.Grammar> that recognizes the command "Set/Change/Alter Foreground/Background … [color list]". <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey> instances (in conjunction with <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects) are used to define semantics that can be parsed on recognition.  The parsed semantics will determine which color was requested and whether the foreground or background is to be modified.  
+  
+```  
+private Grammar FgBgColorGrammar()   
+{  
+  Grammar grammar = null;  
+  
+  // Allow command to begin with set, alter, change.  
+  Choices introChoices = new Choices();  
+  foreach (string introString in new string[] { "Change", "Set", "Alter" })   
+  {  
+    GrammarBuilder introGB = new GrammarBuilder(introString);  
+    introChoices.Add(  
+                  new SemanticResultValue(introGB,  
+                  String.Format("Command: {0}", introString)));  
+  }  
+  
+  GrammarBuilder cmdIntro = new GrammarBuilder(introChoices);  
+  
+  // Define the arguments for the command to select foreground or background   
+  // and to change their color as semantic values.  
+  Choices fgOrbgChoice = new Choices();  
+  GrammarBuilder backgroundGB=new GrammarBuilder("background");  
+  backgroundGB.Append(new SemanticResultValue(true));  
+  fgOrbgChoice.Add(backgroundGB);  
+  fgOrbgChoice.Add((GrammarBuilder)new SemanticResultValue("foreground", false));  
+  SemanticResultKey fgOrbgChoiceKey = new SemanticResultKey("BgOrFgBool", fgOrbgChoice);  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    colorChoice.Add(  
+          (GrammarBuilder) (new SemanticResultValue(colorName, (Color.FromName(colorName)).Name)));  
+  }  
+  
+  // Create a GrammarBuilder for CmdArgs to be appended to CmdIntro using  
+  // semantic keys.  
+  GrammarBuilder cmdArgs = new GrammarBuilder();  
+  cmdArgs.Append(new SemanticResultKey("BgOrFgBool", fgOrbgChoice));  
+  cmdArgs.AppendWildcard();  
+  cmdArgs.Append(new SemanticResultKey("colorStringList", colorChoice));  
+  
+  GrammarBuilder cmds =   
+      GrammarBuilder.Add(cmdIntro,  
+                         new GrammarBuilder(new SemanticResultKey("Cmd Args", cmdArgs)));  
+  grammar = new Grammar(cmds);  
+  grammar.Name = "Tree [Set,change,alter] [foreground,background] * color";  
+  return grammar;  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToGrammarBuilder">
+      <MemberSignature Language="C#" Value="public System.Speech.Recognition.GrammarBuilder ToGrammarBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Recognition.GrammarBuilder ToGrammarBuilder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultValue.ToGrammarBuilder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.GrammarBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an instance of <see cref="T:System.Speech.Recognition.GrammarBuilder" /> constructed from the current <see cref="T:System.Speech.Recognition.SemanticResultValue" /> instance.</summary>
+        <returns>Returns an instance of <see cref="T:System.Speech.Recognition.GrammarBuilder" /> constructed from the current <see cref="T:System.Speech.Recognition.SemanticResultValue" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The use of <xref:System.Speech.Recognition.SemanticResultValue.ToGrammarBuilder%2A> is equivalent to using the <xref:System.Speech.Recognition.GrammarBuilder> constructor that takes a <xref:System.Speech.Recognition.SemanticResultValue> as an argument (<xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.SemanticResultValue%29>).  
+  
+   
+  
+## Examples  
+ The following example creates <xref:System.Speech.Recognition.Grammar> objects that support commands to change the background color.  
+  
+ A <xref:System.Speech.Recognition.Choices> object (`colorChoice`) containing the list of options for background colors is filled using the [Add(GrammarBuilder\<xref:System.Speech.Recognition.Choices.Add%28System.Speech.Recognition.GrammarBuilder%5B%5D%29> method with <xref:System.Speech.Recognition.GrammarBuilder> instances that are obtained from the <xref:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder> method on the `SemanticResultValue` objects created from color strings.  
+  
+ A <xref:System.Speech.Recognition.GrammarBuilder> is then obtained by calling <xref:System.Speech.Recognition.SemanticResultKey.ToGrammarBuilder> on a <xref:System.Speech.Recognition.SemanticResultKey> instance, which will be used to key the semantic choices in the `colorChoice` instance.  
+  
+```csharp  
+  
+private Grammar CreateGrammarBuilderRGBSemantics()   
+{  
+  
+  // Create a set of choices, each a lookup from a color name to RBG.  
+  // Choices constructors do not take a SemanticResultValue parameter, so  
+  // cast SemanticResultValue to GrammarBuilder.  
+  Choices colorChoice = new Choices();  
+  foreach (string colorName in System.Enum.GetNames(typeof(KnownColor)))   
+  {  
+  
+    // Use implicit conversion of SemanticResultValue to GrammarBuilder.      
+    SemanticResultValue colorValue =   
+        new SemanticResultValue(colorName, Color.FromName(colorName).ToArgb());  
+    colorChoice.Add(colorValue.ToGrammarBuilder());  
+  }  
+  
+  SemanticResultKey choiceKey = new SemanticResultKey("rgb", colorChoice);  
+  GrammarBuilder choiceBuilder = choiceKey.ToGrammarBuilder();  
+  
+  // Create two intermediate grammars with an introductory phrase and the  
+  // color choice.  
+  GrammarBuilder makeBackgroundBuilder = "Make background";  
+  makeBackgroundBuilder.Append(choiceBuilder);  
+  
+  GrammarBuilder configureBackgroundBuilder = new GrammarBuilder("Configure background as");  
+  configureBackgroundBuilder.Append((new SemanticResultKey("rgb", colorChoice)).ToGrammarBuilder());  
+  
+  // Create the final grammar, which recognizes either intermediate grammar.  
+  Grammar grammar = new Grammar(new Choices(new GrammarBuilder[] { makeBackgroundBuilder, configureBackgroundBuilder }));  
+  grammar.Name = "Set Background Color";  
+  
+  return grammar;  
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticResultValue" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SemanticResultValue` constructors support specifying an <xref:System.Object> instance with an underlying data type of `bool`, `int`, `float`, or `string`.  
+  
+ A constructor can create a `SemanticResultValue` instance in either of two circumstances:  
+  
+-   The `SemanticResultValue` instance must be explicitly associated with a grammar element when using a <xref:System.Speech.Recognition.GrammarBuilder> to construct a <xref:System.Speech.Recognition.Grammar>.  
+  
+-   The `SemanticResultValue` is already associated with a string value phrase or a <xref:System.Speech.Recognition.GrammarBuilder> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

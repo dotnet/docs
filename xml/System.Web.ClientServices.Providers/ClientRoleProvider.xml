@@ -1,0 +1,500 @@
+<Type Name="ClientRoleProvider" FullName="System.Web.ClientServices.Providers.ClientRoleProvider">
+  <TypeSignature Language="C#" Value="public class ClientRoleProvider : System.Web.Security.RoleProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientRoleProvider extends System.Web.Security.RoleProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.Providers.ClientRoleProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Security.RoleProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Gets role information for Windows-based applications from an [!INCLUDE[ajax_current_short](~/includes/ajax-current-short-md.md)] roles service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use client application services to retrieve role information from an existing roles service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class. After configuration, you can determine whether an authenticated user is in a particular role by calling the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly. The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A?displayProperty=fullName> method internally calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A?displayProperty=fullName> method.  
+  
+ The <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class is a read-only role membership provider that retrieves role information for authenticated users from the roles service indicated by the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property. The value of the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property is typically retrieved from the application configuration file along with other configuration values. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+  
+ You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientRoleProvider> instance through the `static` <xref:System.Web.Security.Roles.Provider%2A?displayProperty=fullName> property.  
+  
+ The <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class supports only the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> and <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> methods of the <xref:System.Web.Security.RoleProvider> abstract class. When you call one of these methods for a particular user, the service provider first checks the local data cache for role information. If the cache does not contain any role information or the cache has expired, the service provider retrieves the role information from the roles service and adds it to the cache.  
+  
+ You can specify the time-out period for the roles cache when you configure client application services. To force the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method to retrieve role data from the service instead of the local cache, call the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> method first.  
+  
+ You cannot use the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class to create or delete roles, or to modify the role membership of users. To create or modify role information, you must change the configuration of the role service on the server.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this property to programmatically set the roles service location.  
+  
+ [!code-csharp[ClientApplicationServices#302](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#302)]
+ [!code-vb[ClientApplicationServices#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#302)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientRoleProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddUsersToRoles">
+      <MemberSignature Language="C#" Value="public override void AddUsersToRoles (string[] usernames, string[] roleNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddUsersToRoles(string[] usernames, string[] roleNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.AddUsersToRoles(System.String[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usernames" Type="System.String[]" />
+        <Parameter Name="roleNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="usernames">Not used.</param>
+        <param name="roleNames">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationName">
+      <MemberSignature Language="C#" Value="public override string ApplicationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientRoleProvider.ApplicationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not used by this class.</summary>
+        <value>The name of the application for the provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property has no effect.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateRole">
+      <MemberSignature Language="C#" Value="public override void CreateRole (string roleName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateRole(string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.CreateRole(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roleName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="roleName">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteRole">
+      <MemberSignature Language="C#" Value="public override bool DeleteRole (string roleName, bool throwOnPopulatedRole);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool DeleteRole(string roleName, bool throwOnPopulatedRole) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.DeleteRole(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roleName" Type="System.String" />
+        <Parameter Name="throwOnPopulatedRole" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="roleName">Not used.</param>
+        <param name="throwOnPopulatedRole">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindUsersInRole">
+      <MemberSignature Language="C#" Value="public override string[] FindUsersInRole (string roleName, string usernameToMatch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] FindUsersInRole(string roleName, string usernameToMatch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.FindUsersInRole(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roleName" Type="System.String" />
+        <Parameter Name="usernameToMatch" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="roleName">Not used.</param>
+        <param name="usernameToMatch">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllRoles">
+      <MemberSignature Language="C#" Value="public override string[] GetAllRoles ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetAllRoles() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetAllRoles" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRolesForUser">
+      <MemberSignature Language="C#" Value="public override string[] GetRolesForUser (string username);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetRolesForUser(string username) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">The name of the user to retrieve roles for.</param>
+        <summary>Gets the names of the roles that the specified user belongs to.</summary>
+        <returns>The role names that <paramref name="username" /> belongs to or an empty array if the user is not authenticated.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method retrieves role information for the current, authenticated user, which you must specify in the `username` parameter. You can get the user name through the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property as follows: `Thread.CurrentPrincipal.Identity.Name`.  
+  
+ The service provider caches role information about the local file system to avoid unnecessary service calls. For more information, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class overview.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to determine whether the user login has expired before testing role membership. This code assumes that all valid users are associated with one or more roles. In this case, the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method will not return any roles for a previously-authenticated user whose login has expired. If the user login has expired, this code displays the login dialog box. Otherwise, it calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method to determine whether the user is in the "manager" role. The restricted code is in a `PerformManagerTask` method, which is not provided.  
+  
+ [!code-csharp[ClientApplicationServices#321](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#321)]
+ [!code-vb[ClientApplicationServices#321](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#321)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="username" /> is <see cref="F:System.String.Empty" /> or <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="username" /> is not the user name of the current, authenticated user.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUsersInRole">
+      <MemberSignature Language="C#" Value="public override string[] GetUsersInRole (string roleName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetUsersInRole(string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetUsersInRole(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roleName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="roleName">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="config" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="name">The friendly name of the provider.</param>
+        <param name="config">A collection of name/value pairs representing the provider-specific attributes specified in the configuration for this provider.</param>
+        <summary>Initializes the provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] extensibility model calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.Initialize%2A> method to initialize the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> using information in your application configuration file. This method recognizes the following role service configuration attributes:  
+  
+-   `name`  
+  
+-   `description`  
+  
+-   `cacheTimeout`  
+  
+-   `connectionStringName`  
+  
+-   `serviceUri`  
+  
+-   `honorCookieExpiry`  
+  
+ For more information about these attributes, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="config" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is empty.  
+  
+ -or-  
+  
+ <paramref name="config" /> contains an unrecognized value. For more information, see the Remarks section.</exception>
+        <exception cref="T:System.InvalidOperationException">This <see cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" /> has already been initialized.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="config" /> contains a <c>cacheTimeout</c> value that is not in the correct format for conversion to an <see cref="T:System.Int32" /> value.</exception>
+        <exception cref="T:System.OverflowException">
+          <paramref name="config" /> contains a <c>cacheTimeout</c> value that represents a number less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUserInRole">
+      <MemberSignature Language="C#" Value="public override bool IsUserInRole (string username, string roleName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsUserInRole(string username, string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="roleName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">The name of the user.</param>
+        <param name="roleName">The name of the role.</param>
+        <summary>Gets a value indicating whether the specified user is in the specified role.</summary>
+        <returns>
+          <see langword="true" /> if the specified user is in the specified role; <see langword="false" /> if the specified user is not authenticated or is not in the specified role.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can determine whether an authenticated user is in a particular role by calling the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly. The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A?displayProperty=fullName> method internally calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method. The <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method uses the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method to determine whether the user indicated by `username` is in the role indicated by `roleName`.  
+  
+ The service provider caches role information about the local file system to avoid unnecessary service calls. For more information, see the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class overview.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to access this method directly to determine whether the user is in a particular role. This code first tests whether the user login has expired. An explicit <xref:System.Web.ClientServices.Providers.ClientRoleProvider> reference is required to call the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> method, so the same reference is used to call the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method. If the user is in the "manager" role, this code calls a `PerformManagerTask` method, which is not provided.  
+  
+ [!code-csharp[ClientApplicationServices#321](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#321)]
+ [!code-vb[ClientApplicationServices#321](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#321)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="username" /> is <see cref="F:System.String.Empty" /> or <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="username" /> is not the user name of the current, authenticated user.</exception>
+        <exception cref="T:System.Net.WebException">The user is no longer authenticated.  
+  
+ -or-  
+  
+ The roles service is not available.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveUsersFromRoles">
+      <MemberSignature Language="C#" Value="public override void RemoveUsersFromRoles (string[] usernames, string[] roleNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveUsersFromRoles(string[] usernames, string[] roleNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="usernames" Type="System.String[]" />
+        <Parameter Name="roleNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="usernames">Not used.</param>
+        <param name="roleNames">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetCache">
+      <MemberSignature Language="C#" Value="public void ResetCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetCache() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the cached role information and resets the cache time-out period.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> method removes all role information from the local cache and causes the cache to expire. After you call this method, your next call to the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> or <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method will retrieve role information from the configured role service instead of the local cache.  
+  
+ You can use this method to enable users to refresh the roles cache when their role has changed but the cache has not yet expired. For information about how to set the roles cache time-out interval, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this method to reset the local roles cache.  
+  
+ [!code-csharp[ClientApplicationServices#314](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#314)]
+ [!code-vb[ClientApplicationServices#314](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#314)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoleExists">
+      <MemberSignature Language="C#" Value="public override bool RoleExists (string roleName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool RoleExists(string roleName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.RoleExists(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="roleName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="roleName">Not used.</param>
+        <summary>This method is not used by this class.</summary>
+        <returns>Not applicable. This method always throws an exception.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceUri">
+      <MemberSignature Language="C#" Value="public string ServiceUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceUri" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI of the role service.</summary>
+        <value>The role service URI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property in your application code, but you will typically set the value in your application configuration file. This enables you to change the service location without recompiling your code. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
+  
+ When you set the service location programmatically, you must specify the complete service URI, which will always end with "Role_JSON_AppService.axd".  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this property to programmatically set the roles service location.  
+  
+ [!code-csharp[ClientApplicationServices#302](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#302)]
+ [!code-vb[ClientApplicationServices#302](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#302)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">When getting this property, no service URI was found in the application configuration file, and this property has not been previously set.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

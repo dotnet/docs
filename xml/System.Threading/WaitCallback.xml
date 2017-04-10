@@ -1,0 +1,76 @@
+<Type Name="WaitCallback" FullName="System.Threading.WaitCallback">
+  <TypeSignature Language="C#" Value="public delegate void WaitCallback(object state);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WaitCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.WaitCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="state" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="state">An object containing information to be used by the callback method.</param>
+    <summary>Represents a callback method to be executed by a thread pool thread.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Threading.WaitCallback> represents a callback method that you want to execute on a <xref:System.Threading.ThreadPool> thread. Create the delegate by passing your callback method to the <xref:System.Threading.WaitCallback> constructor. Your method must have the signature shown here.  
+  
+ Queue your task for execution by passing the <xref:System.Threading.WaitCallback> delegate to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A?displayProperty=fullName>. Your callback method executes when a thread pool thread becomes available.  
+  
+> [!NOTE]
+>  Visual Basic users can omit the <xref:System.Threading.WaitCallback> constructor, and simply use the `AddressOf` operator when passing the callback method to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>. Visual Basic automatically calls the correct delegate constructor.  
+  
+ If you want to pass information to your callback method, create an object that contains the necessary information and pass it to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> when you queue your task for execution. Each time your callback method executes, the `state` parameter contains this object.  
+  
+ For more information about using callbacks to synchronize thread pool threads, see [The Managed Thread Pool](~/docs/standard/threading/the-managed-thread-pool.md).  
+  
+   
+  
+## Examples  
+ This section contains two examples. The first example demonstrates how you can queue a simple task for execution by the thread pool.  
+  
+ The second example demonstrates how you can queue a task and pass information to it.  
+  
+ **Example 1**  
+  
+ This example shows how to use the <xref:System.Threading.WaitCallback> delegate to queue a task for execution by the thread pool. The code example uses the <xref:System.Threading.ThreadPool.QueueUserWorkItem%28System.Threading.WaitCallback%29?displayProperty=fullName> method overload to queue a task, which is represented by a <xref:System.Threading.WaitCallback> that wraps the `ThreadProc` method, to execute when a thread becomes available. No task information is supplied with this overload. Therefore, the information that is available to the `ThreadProc` method is limited to the object the method belongs to.  
+  
+ [!code-cpp[System.Threading.ThreadPool QueueUserWorkItem0#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem0/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.ThreadPool QueueUserWorkItem0#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem0/CS/source.cs#1)]
+ [!code-vb[System.Threading.ThreadPool QueueUserWorkItem0#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem0/VB/source.vb#1)]  
+  
+ **Example 2**  
+  
+ This example shows how to create an object that contains task information. It also demonstrates how to pass that object to a task that is queued for execution by the thread pool.  
+  
+ [!code-cpp[System.Threading.ThreadPool QueueUserWorkItem1#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem1/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.ThreadPool QueueUserWorkItem1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem1/CS/source.cs#1)]
+ [!code-vb[System.Threading.ThreadPool QueueUserWorkItem1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ThreadPool QueueUserWorkItem1/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

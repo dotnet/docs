@@ -1,0 +1,273 @@
+<Type Name="StackFrame" FullName="Microsoft.JScript.StackFrame">
+  <TypeSignature Language="C#" Value="public sealed class StackFrame : Microsoft.JScript.ScriptObject, Microsoft.JScript.IActivationObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StackFrame extends Microsoft.JScript.ScriptObject implements class Microsoft.JScript.IActivationObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.StackFrame" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ScriptObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.JScript.IActivationObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a stack frame for executing code. This class contains methods for resolving scope. It belongs to the compilation and run-time state category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="closureInstance">
+      <MemberSignature Language="C#" Value="public object closureInstance;" />
+      <MemberSignature Language="ILAsm" Value=".field public object closureInstance" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.StackFrame.closureInstance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to the caller of the current stack frame.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types possible for this object include <xref:Microsoft.JScript.StackFrame>, <xref:Microsoft.JScript.JSObject>, <xref:Microsoft.JScript.ScriptFunction>, and <xref:System.RuntimeTypeHandle>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultThisObject">
+      <MemberSignature Language="C#" Value="public object GetDefaultThisObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetDefaultThisObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetDefaultThisObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the current default scope, which will be either the contained object of a <see langword="with" /> statement scope, or the global scope.</summary>
+        <returns>The current default scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetField">
+      <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo GetField (string name, int lexLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetField(string name, int32 lexLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetField(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.FieldInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="lexLevel" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the field to search for.</param>
+        <param name="lexLevel">The lexical level to search.</param>
+        <summary>Gets a field that has the specified name by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
+        <returns>null in all cases.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalScope">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.GlobalScope GetGlobalScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.GlobalScope GetGlobalScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetGlobalScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.GlobalScope</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the global scope by searching the scope hierarchy until it finds a scope that includes static variables, for example, a module scope.</summary>
+        <returns>The global scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMember">
+      <MemberSignature Language="C#" Value="public override System.Reflection.MemberInfo[] GetMember (string name, System.Reflection.BindingFlags bindingAttr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MemberInfo[] GetMember(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetMember(System.String,System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MemberInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="name">The member name to search for.</param>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Retrieves an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members that match a specified name.</summary>
+        <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMembers">
+      <MemberSignature Language="C#" Value="public override System.Reflection.MemberInfo[] GetMembers (System.Reflection.BindingFlags bindingAttr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MemberInfo[] GetMembers(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetMembers(System.Reflection.BindingFlags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MemberInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bindingAttr" Type="System.Reflection.BindingFlags" />
+      </Parameters>
+      <Docs>
+        <param name="bindingAttr">A bitwise combination of the enumeration values that specifies how the search for members is conducted by reflection.</param>
+        <summary>Retrieves an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the current object.</summary>
+        <returns>An array of objects that contains all members of the current object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemberValue">
+      <MemberSignature Language="C#" Value="public object GetMemberValue (string name, int lexlevel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetMemberValue(string name, int32 lexlevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.GetMemberValue(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="lexlevel" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the member to search for.</param>
+        <param name="lexlevel">The lexical level to search.</param>
+        <summary>Gets the value of the specified member by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
+        <returns>The value of the member <paramref name="name" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="localVars">
+      <MemberSignature Language="C#" Value="public object[] localVars;" />
+      <MemberSignature Language="ILAsm" Value=".field public object[] localVars" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.StackFrame.localVars" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores the local variables for this stack frame.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Microsoft.JScript.IActivationObject.GetLocalField">
+      <MemberSignature Language="C#" Value="System.Reflection.FieldInfo IActivationObject.GetLocalField (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Reflection.FieldInfo Microsoft.JScript.IActivationObject.GetLocalField(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.Microsoft#JScript#IActivationObject#GetLocalField(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.FieldInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the field.</param>
+        <summary>Gets the local declaration of a field that has the specified name. This method is used at compile time for error checking.</summary>
+        <returns>The local declaration of the field.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushStackFrameForMethod">
+      <MemberSignature Language="C#" Value="public static void PushStackFrameForMethod (object thisob, Microsoft.JScript.JSLocalField[] fields, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PushStackFrameForMethod(object thisob, class Microsoft.JScript.JSLocalField[] fields, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.PushStackFrameForMethod(System.Object,Microsoft.JScript.JSLocalField[],Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisob" Type="System.Object" />
+        <Parameter Name="fields" Type="Microsoft.JScript.JSLocalField[]" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="thisob">The object that contains the method.</param>
+        <param name="fields">The local variables for the stack frame.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Creates a new <see cref="T:Microsoft.JScript.StackFrame" /> object for a method and pushes it onto the global scope stack.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushStackFrameForStaticMethod">
+      <MemberSignature Language="C#" Value="public static void PushStackFrameForStaticMethod (RuntimeTypeHandle thisclass, Microsoft.JScript.JSLocalField[] fields, Microsoft.JScript.Vsa.VsaEngine engine);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PushStackFrameForStaticMethod(valuetype System.RuntimeTypeHandle thisclass, class Microsoft.JScript.JSLocalField[] fields, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StackFrame.PushStackFrameForStaticMethod(System.RuntimeTypeHandle,Microsoft.JScript.JSLocalField[],Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisclass" Type="System.RuntimeTypeHandle" />
+        <Parameter Name="fields" Type="Microsoft.JScript.JSLocalField[]" />
+        <Parameter Name="engine" Type="Microsoft.JScript.Vsa.VsaEngine" />
+      </Parameters>
+      <Docs>
+        <param name="thisclass">The class that contains the static method.</param>
+        <param name="fields">The local variables for the stack frame.</param>
+        <param name="engine">A reference to the scripting engine.</param>
+        <summary>Creates a new <see cref="T:Microsoft.JScript.StackFrame" /> object for a static method and pushes it onto the global scope stack.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

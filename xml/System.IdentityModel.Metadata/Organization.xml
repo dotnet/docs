@@ -1,0 +1,124 @@
+<Type Name="Organization" FullName="System.IdentityModel.Metadata.Organization">
+  <TypeSignature Language="C#" Value="public class Organization" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Organization extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.Organization" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an organization.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Organization ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.Organization.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.Organization" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.Organization.DisplayNames%2A>, <xref:System.IdentityModel.Metadata.Organization.Names%2A>, and <xref:System.IdentityModel.Metadata.Organization.Urls%2A> properties in the new instance are each initialized to an empty collection of the appropriate type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Organization (System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; names, System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; displayNames, System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt; urls);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedName&gt; names, class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedName&gt; displayNames, class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedUri&gt; urls) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.Organization.#ctor(System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedName},System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedName},System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedUri})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="names" Type="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;" />
+        <Parameter Name="displayNames" Type="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;" />
+        <Parameter Name="urls" Type="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="names">A collection of <see cref="T:System.IdentityModel.Metadata.LocalizedName" /> that contains the names for this instance.</param>
+        <param name="displayNames">A collection of <see cref="T:System.IdentityModel.Metadata.LocalizedName" /> that contains the display names for this instance.</param>
+        <param name="urls">A collection of <see cref="T:System.IdentityModel.Metadata.LocalizedUri" /> that contains the URLs for this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.Organization" /> class that has the specified collection of names, display names, and URIs.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">If any of the input parameters is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayNames">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; DisplayNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedName&gt; DisplayNames" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.Organization.DisplayNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of display names associated with the organization.  
+  
+ This is a required element.</summary>
+        <value>The collection of display names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Names">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt; Names { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedName&gt; Names" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.Organization.Names" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedName&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of names associated with the organization.  
+  
+ This is a required element.</summary>
+        <value>The collection of names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Urls">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt; Urls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.LocalizedEntryCollection`1&lt;class System.IdentityModel.Metadata.LocalizedUri&gt; Urls" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.Organization.Urls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedEntryCollection&lt;System.IdentityModel.Metadata.LocalizedUri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of URLs associated with the organization.  
+  
+ This is required element.</summary>
+        <value>The collection of URL entries.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

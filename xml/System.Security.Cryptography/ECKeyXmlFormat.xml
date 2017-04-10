@@ -1,0 +1,41 @@
+<Type Name="ECKeyXmlFormat" FullName="System.Security.Cryptography.ECKeyXmlFormat">
+  <TypeSignature Language="C#" Value="public enum ECKeyXmlFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ECKeyXmlFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECKeyXmlFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines XML serialization formats for elliptic curve keys.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration contains only one member, Rfc4050. This format describes how Elliptic Curve Digital Signature Algorithm (ECDSA) keys are serialized to XML.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Rfc4050">
+      <MemberSignature Language="C#" Value="Rfc4050" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECKeyXmlFormat Rfc4050 = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECKeyXmlFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An XML serialization format described in RFC 4050, "Using the Elliptic Curve Signature Algorithm (ECDSA) for XML Digital Signatures."</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

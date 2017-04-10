@@ -1,0 +1,744 @@
+<Type Name="TypeProvider" FullName="System.Workflow.ComponentModel.Compiler.TypeProvider">
+  <TypeSignature Language="C#" Value="public sealed class TypeProvider : IDisposable, IServiceProvider, System.Workflow.ComponentModel.Compiler.ITypeProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeProvider extends System.Object implements class System.IDisposable, class System.IServiceProvider, class System.Workflow.ComponentModel.Compiler.ITypeProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.TypeProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Workflow.ComponentModel.Compiler.ITypeProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An implementation of <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> that acts as a container of types within the indicated assemblies and code compile units.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider> implementation, in addition to handling compiled assemblies (<xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly%2A> and <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference%2A> methods), can handle types that have not been compiled yet (<xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddCodeCompileUnit%2A>). The limited implementation of <xref:System.Type?displayProperty=fullName> is returned for types referenced using <xref:System.CodeDom.CodeCompileUnit>.  
+  
+> [!NOTE]
+>  <xref:System.Workflow.ComponentModel.Compiler.TypeProvider> only returns public types from referenced assemblies, and both public and non-public types from local assemblies.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypeProvider (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.#ctor(System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The encapsulated <see cref="T:System.IServiceProvider" /> for this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.TypeProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider> class.  This code example is part of the BasicDesignerHosting SDK Sample from the WorkflowLoader.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[WF_Samples#256](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#256)]
+ [!code-vb[WF_Samples#256](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#256)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAssembly">
+      <MemberSignature Language="C#" Value="public void AddAssembly (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAssembly(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The <see cref="P:System.Type.Assembly" /> to add a reference for.</param>
+        <summary>Adds an already-loaded assembly. It is the caller's responsibility to load the assembly, and <see cref="T:System.Workflow.ComponentModel.Compiler.TypeProvider" /> includes the types from this assembly for dispensing when <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType" /> is called.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assembly" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAssemblyReference">
+      <MemberSignature Language="C#" Value="public void AddAssemblyReference (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAssemblyReference(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path of the <see cref="P:System.Type.Assembly" /> to add.</param>
+        <summary>Adds a reference to the <see cref="P:System.Type.Assembly" /> to the internal list. This assembly is used for the <see cref="T:System.Type" /> lookup in the <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType(System.String)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider> class and run the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference%2A> method. This code example is part of the BasicDesignerHosting SDK Sample from the WorkflowLoader.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Basic Designer Hosting](http://msdn.microsoft.com/en-us/55925adf-2daa-4dc2-b1bf-61aa0190d734).  
+  
+ [!code-csharp[Wf_samples#256](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#256)]
+ [!code-vb[Wf_samples#256](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#256)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCodeCompileUnit">
+      <MemberSignature Language="C#" Value="public void AddCodeCompileUnit (System.CodeDom.CodeCompileUnit codeCompileUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCodeCompileUnit(class System.CodeDom.CodeCompileUnit codeCompileUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddCodeCompileUnit(System.CodeDom.CodeCompileUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
+      </Parameters>
+      <Docs>
+        <param name="codeCompileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to add.</param>
+        <summary>Adds a reference to the <see cref="T:System.CodeDom.CodeCompileUnit" /> to the internal list. This <see cref="T:System.CodeDom.CodeCompileUnit" /> is used for the <see cref="T:System.Type" /> lookup in the <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType(System.String)" /> method.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="codeCompileUnit" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="codeCompileUnit" /> is already referenced in this instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyNameResolver">
+      <MemberSignature Language="C#" Value="public Func&lt;Type,string&gt; AssemblyNameResolver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Type, string&gt; AssemblyNameResolver" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.AssemblyNameResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Type,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the delegate that references a method with one parameter and one return value that returns the assembly display name in which a specified type belongs to.</summary>
+        <value>The delegate that references a method with one parameter and one return value that returns the assembly display name that a specified type belongs to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Workflow.ComponentModel.Compiler.TypeProvider" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAssemblyName">
+      <MemberSignature Language="C#" Value="public string GetAssemblyName (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAssemblyName(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetAssemblyName(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type whose assembly name to get.</param>
+        <summary>Returns the assembly display name of the assembly in which the specified type is declared.</summary>
+        <returns>The assembly display name of the assembly in which the specified type is declared.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumNames">
+      <MemberSignature Language="C#" Value="public static string[] GetEnumNames (Type enumType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetEnumNames(class System.Type enumType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetEnumNames(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enumType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="enumType">The type to obtain the names from.</param>
+        <summary>Provides a string array that contains the names for the specified <see cref="T:System.Enum" /> in indexed order.</summary>
+        <returns>The names for the specified <see cref="T:System.Enum" /> in indexed order.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="enumType" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="enumType" /> Is not an <see cref="T:System.Enum" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventHandlerType">
+      <MemberSignature Language="C#" Value="public static Type GetEventHandlerType (System.Reflection.EventInfo eventInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetEventHandlerType(class System.Reflection.EventInfo eventInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetEventHandlerType(System.Reflection.EventInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventInfo" Type="System.Reflection.EventInfo" />
+      </Parameters>
+      <Docs>
+        <param name="eventInfo">The <see cref="T:System.Reflection.EventInfo" /> to obtain the <see cref="T:System.EventHandler" /> type of.</param>
+        <summary>Gets the <see cref="T:System.Type" /> of an <see cref="T:System.EventHandler" />, given a reference to an <see cref="T:System.Reflection.EventInfo" />.</summary>
+        <returns>The <see cref="T:System.Type" /> of an <see cref="T:System.EventHandler" />, given a reference to an <see cref="T:System.Reflection.EventInfo" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="eventInfo" /> is a null reference (Visual Basic <see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The service <see cref="T:System.Type" /> that the <see cref="T:System.Object" /> is to provide.</param>
+        <summary>Gets the <see cref="T:System.Object" /> that provides the designated service <see cref="T:System.Type" />.</summary>
+        <returns>The <see cref="T:System.Object" /> that provides the designated service <see cref="T:System.Type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the encapsulated <xref:System.IServiceProvider> associated with this instance is a null reference (`Nothing` in Visual Basic) then a null reference (`Nothing`) is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public Type GetType (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The type name.</param>
+        <summary>Gets the type from the set of assemblies added to the <see langword="TypeProvider" /> using <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly(System.Reflection.Assembly)" />, <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference(System.String)" />, or <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddCodeCompileUnit(System.CodeDom.CodeCompileUnit)" />.</summary>
+        <returns>The requested <see cref="T:System.Type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the name is not resolvable within the cache of assemblies and compiled units of this instance, a null reference (Visual Basic `Nothing`) is returned. Invoking this overload is the same as invoking the two parameter overloads with the value of the parameter `throwOnError` set to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public Type GetType (string name, bool throwOnError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType(string name, bool throwOnError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetType(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="throwOnError" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The type name.</param>
+        <param name="throwOnError">A value that indicates whether to throw an exception if <c>name</c> is not resolvable.</param>
+        <summary>Gets the type from the set of assemblies added to the <see langword="TypeProvider" /> using <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly(System.Reflection.Assembly)" />, <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssemblyReference(System.String)" />, or <see cref="M:System.Workflow.ComponentModel.Compiler.TypeProvider.AddCodeCompileUnit(System.CodeDom.CodeCompileUnit)" />.</summary>
+        <returns>The requested <see cref="T:System.Type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the name is not resolvable within the cache of assemblies and compiled units of this instance, a null reference (`Nothing`) is returned; in the case that `throwOnError` is `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
+        <exception cref="T:System.Exception">
+          <paramref name="name" /> is not resolvable and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypes">
+      <MemberSignature Language="C#" Value="public Type[] GetTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.GetTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an array that contains each <see cref="T:System.Type" /> known to this instance.</summary>
+        <returns>An array that contains each <see cref="T:System.Type" /> known to this instance.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Reflection.ReflectionTypeLoadException">Any <see cref="T:System.Type" /> fails to load.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAssignable">
+      <MemberSignature Language="C#" Value="public static bool IsAssignable (Type toType, Type fromType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAssignable(class System.Type toType, class System.Type fromType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.IsAssignable(System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toType" Type="System.Type" />
+        <Parameter Name="fromType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="toType">The target <see cref="T:System.Type" /> of the assignment.</param>
+        <param name="fromType">The source <see cref="T:System.Type" /> of the assignment.</param>
+        <summary>Indicates whether one type can be safely assigned to another type.</summary>
+        <returns>
+          <see langword="true" /> if the assignment can be safely made; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnum">
+      <MemberSignature Language="C#" Value="public static bool IsEnum (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEnum(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.IsEnum(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> to be tested.</param>
+        <summary>Indicates whether a <see cref="T:System.Type" /> is of type <see cref="T:System.Enum" /> .</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Type" /> is an <see cref="T:System.Enum" /> ; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="type" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubclassOf">
+      <MemberSignature Language="C#" Value="public static bool IsSubclassOf (Type subclass, Type superClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSubclassOf(class System.Type subclass, class System.Type superClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.IsSubclassOf(System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subclass" Type="System.Type" />
+        <Parameter Name="superClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="subclass">The <see cref="T:System.Type" /> being tested as a derived class.</param>
+        <param name="superClass">The <see cref="T:System.Type" /> being tested as the class.</param>
+        <summary>Indicates whether a <see cref="T:System.Type" /> is a derived class of another <see cref="T:System.Type" /> .</summary>
+        <returns>
+          <see langword="true" /> if the tested relationship is true; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupportedProperty">
+      <MemberSignature Language="C#" Value="public bool IsSupportedProperty (System.Reflection.PropertyInfo property, object declaringInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsSupportedProperty(class System.Reflection.PropertyInfo property, object declaringInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.IsSupportedProperty(System.Reflection.PropertyInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Reflection.PropertyInfo" />
+        <Parameter Name="declaringInstance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="property">The property to resolve.</param>
+        <param name="declaringInstance">The instance in which the specified property is declared.</param>
+        <summary>Returns a value that determines whether the specified property is supported in the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].</summary>
+        <returns>
+          <see langword="true" /> if the specified property is supported in the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupportedPropertyResolver">
+      <MemberSignature Language="C#" Value="public Func&lt;System.Reflection.PropertyInfo,object,bool&gt; IsSupportedPropertyResolver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`3&lt;class System.Reflection.PropertyInfo, object, bool&gt; IsSupportedPropertyResolver" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.IsSupportedPropertyResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Reflection.PropertyInfo,System.Object,System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the delegate that references a method with two parameters and one return value that determines whether a specified property is supported in the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].</summary>
+        <value>The delegate that references a method with two parameters and one return value that determines whether a specified property is supported in the target [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalAssembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly LocalAssembly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly LocalAssembly" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.LocalAssembly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that represents the locally defined <see cref="T:System.Reflection.Assembly" /> for this instance.</summary>
+        <value>The locally defined <see cref="T:System.Reflection.Assembly" /> for this instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencedAssemblies">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Reflection.Assembly&gt; ReferencedAssemblies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Reflection.Assembly&gt; ReferencedAssemblies" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.ReferencedAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Reflection.Assembly&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all assemblies referenced by the <see cref="T:System.Type" />.</summary>
+        <value>A collection of all assemblies referenced by the <see cref="T:System.Type" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshCodeCompileUnit">
+      <MemberSignature Language="C#" Value="public void RefreshCodeCompileUnit (System.CodeDom.CodeCompileUnit codeCompileUnit, EventHandler refresher);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RefreshCodeCompileUnit(class System.CodeDom.CodeCompileUnit codeCompileUnit, class System.EventHandler refresher) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.RefreshCodeCompileUnit(System.CodeDom.CodeCompileUnit,System.EventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
+        <Parameter Name="refresher" Type="System.EventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="codeCompileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to refresh with.</param>
+        <param name="refresher">The <see cref="T:System.EventHandler" /> to delegate this event to.</param>
+        <summary>Updates the <see cref="T:System.CodeDom.CodeCompileUnit" /> reference associated with this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="codeCompileUnit" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">This instance already references the subject <see cref="T:System.CodeDom.CodeCompileUnit" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAssembly">
+      <MemberSignature Language="C#" Value="public void RemoveAssembly (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAssembly(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.RemoveAssembly(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The <see cref="T:System.Reflection.Assembly" /> to remove from this instance.</param>
+        <summary>Removes all references to the subject <see cref="T:System.Reflection.Assembly" /> from this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assembly" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAssemblyReference">
+      <MemberSignature Language="C#" Value="public void RemoveAssemblyReference (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAssemblyReference(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.RemoveAssemblyReference(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path of the <see cref="T:System.Reflection.Assembly" /> to be removed.</param>
+        <summary>Removes a path-based <see cref="T:System.Reflection.Assembly" /> reference from this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="path" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCodeCompileUnit">
+      <MemberSignature Language="C#" Value="public void RemoveCodeCompileUnit (System.CodeDom.CodeCompileUnit codeCompileUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCodeCompileUnit(class System.CodeDom.CodeCompileUnit codeCompileUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.RemoveCodeCompileUnit(System.CodeDom.CodeCompileUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="codeCompileUnit" Type="System.CodeDom.CodeCompileUnit" />
+      </Parameters>
+      <Docs>
+        <param name="codeCompileUnit">The <see cref="T:System.CodeDom.CodeCompileUnit" /> to be removed.</param>
+        <summary>Removes all references to the subject <see cref="T:System.CodeDom.CodeCompileUnit" /> from this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="codeCompileUnit" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLocalAssembly">
+      <MemberSignature Language="C#" Value="public void SetLocalAssembly (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetLocalAssembly(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.TypeProvider.SetLocalAssembly(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The <see cref="T:System.Reflection.Assembly" /> used to set this value</param>
+        <summary>Sets the value of the local <see cref="T:System.Reflection.Assembly" /> to the referenced <see cref="T:System.Reflection.Assembly" /> .</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged> is raised when this method is invoked. Call <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.SetLocalAssembly%28System.Reflection.Assembly%29> before you call <xref:System.Workflow.ComponentModel.Compiler.TypeProvider.AddAssembly%28System.Reflection.Assembly%29> otherwise it has no affect on the <xref:System.Workflow.ComponentModel.Compiler.TypeProvider>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeLoadErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;object,Exception&gt; TypeLoadErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;object, class System.Exception&gt; TypeLoadErrors" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.TypeProvider.TypeLoadErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Object,System.Exception&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.IDictionary" /> of load error exceptions keyed by the <see cref="T:System.Object" /> that causes the <see cref="T:System.Exception" />.</summary>
+        <value>An <see cref="T:System.Collections.IDictionary" /> of load error exceptions keyed by the <see cref="T:System.Object" /> that causes the <see cref="T:System.Exception" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An updated, detached <xref:System.Collections.IDictionary> is created at each reference to this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeLoadErrorsChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TypeLoadErrorsChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TypeLoadErrorsChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Compiler.TypeProvider.TypeLoadErrorsChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the collection <see cref="P:System.Workflow.ComponentModel.Compiler.TypeProvider.TypeLoadErrors" /> is modified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypesChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TypesChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TypesChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.ComponentModel.Compiler.TypeProvider.TypesChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the collection of defined types is modified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

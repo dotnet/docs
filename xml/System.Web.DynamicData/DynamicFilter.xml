@@ -1,0 +1,399 @@
+<Type Name="DynamicFilter" FullName="System.Web.DynamicData.DynamicFilter">
+  <TypeSignature Language="C#" Value="public class DynamicFilter : System.Web.UI.Control, System.Web.DynamicData.IFilterExpressionProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicFilter extends System.Web.UI.Control implements class System.Web.DynamicData.IFilterExpressionProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicFilter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Control</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.DynamicData.IFilterExpressionProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Displays the UI for filtering table rows using a specified column.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [ClassContext](#ClassContext)  
+  
+-   [Declarative Syntax](#DeclarativeSyntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.DynamicData.DynamicFilter> control is used in a page markup to generate the UI for filtering table rows. Dynamic Data creates the UI by using the default filter templates that are in the ~\DynamicData\Filters folder. These templates support foreign-key, Boolean, and enumeration column types.  
+  
+ The following table shows some of the tasks you can perform.  
+  
+|Scenario|Description|  
+|--------------|-----------------|  
+|Specify the column to use for table row filtering.|Use the property <xref:System.Web.DynamicData.DynamicFilter.DataField%2A> to specify the column to use for table row filtering.|  
+|Specify the name of the filter template to use to create the UI.|Use the property <xref:System.Web.DynamicData.DynamicFilter.FilterUIHint%2A> to specify the name of the filter template to use to create the UI.|  
+|Perform custom operations before the UI is rendered.|Use the <xref:System.Web.DynamicData.DynamicFilter.FilterChanged> to perform custom operations before the UI is rendered.|  
+  
+ You can specify the filter template to use in the following ways:  
+  
+-   By using the <xref:System.Web.DynamicData.DynamicFilter.FilterUIHint%2A> property in page markup. This approach is a presentation-layer customization, which is independent of the schema (database), and which applies to a single page.  
+  
+-   By using the <xref:System.ComponentModel.DataAnnotations.FilterUIHintAttribute> attribute in the model. This approach is a data-layer customization, which depends on the specific schema (database), and which applies to the entire application.  
+  
+ If you use both approaches, the filter template that is specified in the markup takes precedence over the template that is specified in the data model.  
+  
+<a name="ClassContext"></a>   
+## Class Context  
+ The <xref:System.Web.DynamicData.DynamicFilter> control is designed to work with the <xref:System.Web.UI.WebControls.QueryExtender> control. The <xref:System.Web.DynamicData.DynamicFilter> control is referenced by a <xref:System.Web.DynamicData.DynamicFilterExpression> instance inside a <xref:System.Web.UI.WebControls.QueryExtender> object in the page markup.  
+  
+ The following figure shows the steps that Dynamic Data follows in order to implement table row filtering by a foreign-key column.  
+  
+ ![Dynamic Data Query Elements](~/add/media/dynamic-dataquery.png "Dynamic Data Query Elements")  
+  
+1.  The <xref:System.Web.DynamicData.DynamicFilter> control passes the selected value to the <xref:System.Web.UI.WebControls.QueryExtender> control.  
+  
+2.  The <xref:System.Web.UI.WebControls.QueryExtender> control uses the value to create the query filtering information. It then passes this information to the data source control.  
+  
+3.  The data source control passes the filtering query information to the data source provider.  
+  
+4.  The data source provider passes the query to the database.  
+  
+5.  The database returns the filtered table rows.  
+  
+6.  The data source provider sends this data back to the data source control.  
+  
+7.  The data source control passes the filtered table rows to the data-bound control for display.  
+  
+<a name="DeclarativeSyntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:DynamicFilter  
+    ID="Control ID"  
+    DataField="Name of the data field to use for filtering"  
+    EnableViewState="True|False"   
+    FilterUIHint="Name of the filter template to generate the UI"  
+    OnFilterChanged="Filter changed event handler"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"   
+    Visible="True|False"  
+    runat="server"/>  
+```  
+  
+   
+  
+## Examples  
+ A Visual Studio project with source code is available at this location: [Download](http://go.microsoft.com/fwlink/?LinkId=168914).  
+  
+ The following examples use the default ForeignKey.ascx filter template to create the UI for filtering the Products table rows by the ProductCategory foreign-key column. When the user selects a ProductCategory value, only the rows that contain that value are displayed.  
+  
+ The example requires the following:  
+  
+-   A Dynamic Data Web site or a Dynamic Data Web application. This enables you to create the `AdventureWorksLTDataContext` data context for the database and to create the classes for the tables to access. For more information, see `Walkthrough: Creating a New Dynamic Data Web Site using Scaffolding`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicFilter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/cs/dynamicfilter.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicFilter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/vb/dynamicfilter.aspx#1)]  -->  
+  
+ [!code-csharp[System.Web.DynamicData.DynamicFilter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/cs/dynamicfilter.aspx.cs#2)]
+ [!code-vb[System.Web.DynamicData.DynamicFilter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/vb/dynamicfilter.aspx.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicFilter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically you do not call the <xref:System.Web.DynamicData.DynamicFilter.%23ctor%2A> constructor directly. Instead, you use the <xref:System.Web.DynamicData.DynamicFilter> class in page markup and the class is initialized when the page is loaded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="protected System.Web.DynamicData.MetaColumn Column { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.MetaColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the table column to use for filtering.</summary>
+        <value>The table column to use for filtering.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is for internal use only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataField">
+      <MemberSignature Language="C#" Value="public string DataField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.DataField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Data")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the column to use for table row filtering.</summary>
+        <value>The name of the column used for table row filtering.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to specify the column for table row filtering in markup.  
+  
+```  
+<asp:DynamicFilter ID="CategoryFilter" runat="server"   
+    DataField="ProductCategory" />  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler FilterChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FilterChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.DynamicData.DynamicFilter.FilterChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user select a value for the foreign key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicFilter.FilterChanged> event is raised when the user selects a foreign-key value and before the new value is rendered. This enables you to provide an event-handling method that can perform custom operations, such as custom paging.  
+  
+   
+  
+## Examples  
+ The following example shows how to handle a filter-changed event. The handler resets the page index before the filtered rows are displayed.  
+  
+ [!code-csharp[System.Web.DynamicData.DynamicFilter#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/cs/dynamicfilter.aspx.cs#3)]
+ [!code-vb[System.Web.DynamicData.DynamicFilter#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicfilter/vb/dynamicfilter.aspx.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterTemplate">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Control FilterTemplate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control FilterTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.FilterTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the filter template that is associated with the current instance of this control.</summary>
+        <value>The filter template that is associated with the current instance of this control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Dynamic Data generates the UI for filtering table rows for supported column types. It uses the default filter templates that are in the ~\DynamicData\Filters folder.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterUIHint">
+      <MemberSignature Language="C#" Value="public string FilterUIHint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FilterUIHint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.FilterUIHint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the filter template that is used to create the UI.</summary>
+        <value>The name of the filter template.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicFilter.FilterUIHint%2A> property lets you specify the filter template to create the UI for table row filtering. You can specify the filter template to use in the following ways:  
+  
+-   By using the <xref:System.Web.DynamicData.DynamicFilter.FilterUIHint%2A> property in page markup. This approach is a presentation-layer customization, which is independent of the schema (database) and which applies to a single page.  
+  
+-   By using the <xref:System.ComponentModel.DataAnnotations.FilterUIHintAttribute> attribute in the model. This approach is a data-layer customization, which depends on the specific schema (database) and which applies to the entire application.  
+  
+ If you use both approaches, the filter template specified in the markup takes precedence over the template specified in the data model.  
+  
+   
+  
+## Examples  
+ The following example shows how to specify the filter template in markup to use for filtering.  
+  
+```  
+<asp:DynamicFilter ID="CategoryFilter" runat="server"   
+    FilterUIHint="ForeignKey" />  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The object that receives the server control content.</param>
+        <summary>Sends server control content to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The writer renders the content to the page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.DynamicData.IFilterExpressionProvider.GetQueryable">
+      <MemberSignature Language="C#" Value="System.Linq.IQueryable IFilterExpressionProvider.GetQueryable (System.Linq.IQueryable source);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Linq.IQueryable System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(class System.Linq.IQueryable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.System#Web#DynamicData#IFilterExpressionProvider#GetQueryable(System.Linq.IQueryable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable" />
+      </Parameters>
+      <Docs>
+        <param name="source">The data source query.</param>
+        <summary>Gets the modified query using the current filter value.</summary>
+        <returns>The filter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.DynamicData.DynamicFilter> instance is cast to an <xref:System.Web.DynamicData.IFilterExpressionProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.DynamicData.IFilterExpressionProvider.Initialize">
+      <MemberSignature Language="C#" Value="void IFilterExpressionProvider.Initialize (System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.DynamicData.IFilterExpressionProvider.Initialize(class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.System#Web#DynamicData#IFilterExpressionProvider#Initialize(System.Web.UI.WebControls.IQueryableDataSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
+      </Parameters>
+      <Docs>
+        <param name="dataSource">The data source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicFilter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.DynamicData.DynamicFilter> instance is cast to an <xref:System.Web.DynamicData.IFilterExpressionProvider> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

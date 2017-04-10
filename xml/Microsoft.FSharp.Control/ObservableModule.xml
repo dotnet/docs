@@ -1,0 +1,418 @@
+<Type Name="ObservableModule" FullName="Microsoft.FSharp.Control.ObservableModule">
+  <TypeSignature Language="C#" Value="public static class ObservableModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ObservableModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.ObservableModule" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.RequireQualifiedAccess</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Add&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; callback, IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Add&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; callback, class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Add``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("add")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="callback" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="callback">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Choose&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static IObservable&lt;TResult&gt; Choose&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt; chooser, IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.IObservable`1&lt;!!TResult&gt; Choose&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt; chooser, class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Choose``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}},System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("choose")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IObservable&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="chooser" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;" />
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="chooser">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IObservable&lt;T&gt; Filter&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.IObservable`1&lt;!!T&gt; Filter&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Filter``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("filter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IObservable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static IObservable&lt;TResult&gt; Map&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.IObservable`1&lt;!!TResult&gt; Map&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IObservable&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IObservable&lt;T&gt; Merge&lt;T&gt; (IObservable&lt;T&gt; source1, IObservable&lt;T&gt; source2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.IObservable`1&lt;!!T&gt; Merge&lt;T&gt;(class System.IObservable`1&lt;!!T&gt; source1, class System.IObservable`1&lt;!!T&gt; source2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Merge``1(System.IObservable{``0},System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("merge")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IObservable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source1" Type="System.IObservable&lt;T&gt;" />
+        <Parameter Name="source2" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source1">To be added.</param>
+        <param name="source2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pairwise&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IObservable&lt;Tuple&lt;T,T&gt;&gt; Pairwise&lt;T&gt; (IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.IObservable`1&lt;class System.Tuple`2&lt;!!T, !!T&gt;&gt; Pairwise&lt;T&gt;(class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Pairwise``1(System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("pairwise")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IObservable&lt;System.Tuple&lt;T,T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Partition&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;IObservable&lt;T&gt;,IObservable&lt;T&gt;&gt; Partition&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class System.IObservable`1&lt;!!T&gt;, class System.IObservable`1&lt;!!T&gt;&gt; Partition&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Partition``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("partition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;System.IObservable&lt;T&gt;,System.IObservable&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scan&lt;TResult,T&gt;">
+      <MemberSignature Language="C#" Value="public static IObservable&lt;TResult&gt; Scan&lt;TResult,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt; collector, TResult state, IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.IObservable`1&lt;!!TResult&gt; Scan&lt;TResult, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TResult, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt;&gt; collector, !!TResult state, class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Scan``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``0}},``0,System.IObservable{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("scan")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IObservable&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collector" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt;" />
+        <Parameter Name="state" Type="TResult" />
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="collector">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Split&lt;T,TResult1,TResult2&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;IObservable&lt;TResult1&gt;,IObservable&lt;TResult2&gt;&gt; Split&lt;T,TResult1,TResult2&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpChoice&lt;TResult1,TResult2&gt;&gt; splitter, IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class System.IObservable`1&lt;!!TResult1&gt;, class System.IObservable`1&lt;!!TResult2&gt;&gt; Split&lt;T, TResult1, TResult2&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpChoice`2&lt;!!TResult1, !!TResult2&gt;&gt; splitter, class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Split``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpChoice{``1,``2}},System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("split")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;System.IObservable&lt;TResult1&gt;,System.IObservable&lt;TResult2&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult1" />
+        <TypeParameter Name="TResult2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="splitter" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpChoice&lt;TResult1,TResult2&gt;&gt;" />
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult1">To be added.</typeparam>
+        <typeparam name="TResult2">To be added.</typeparam>
+        <param name="splitter">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IDisposable Subscribe&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; callback, IObservable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.IDisposable Subscribe&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; callback, class System.IObservable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.ObservableModule.Subscribe``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},System.IObservable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("subscribe")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="callback" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="source" Type="System.IObservable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="callback">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

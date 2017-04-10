@@ -1,0 +1,145 @@
+<Type Name="FontStyles" FullName="System.Windows.FontStyles">
+  <TypeSignature Language="C#" Value="public static class FontStyles" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FontStyles extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontStyles" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of static predefined <see cref="T:System.Windows.FontStyle" /> values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A font style refers to the slant of a font: normal, italic, and oblique.  
+  
+|Font style|Description|  
+|----------------|-----------------|  
+|Normal|The characters in a normal, or roman, font are upright.|  
+|Italic|The characters in an italic font are truly slanted and appear as they were designed.|  
+|Oblique|The characters in an oblique font are artificially slanted|  
+  
+ For <xref:System.Windows.FontStyles.Oblique%2A>, the slant is achieved by performing a shear transformation on the characters from a normal font. When a true italic font is not available on a computer or printer, an oblique style can be generated from the normal font and used to simulate an italic font.  
+  
+ The following illustration shows the normal, italic, and oblique font styles for the Palatino Linotype font. Notice how the italic font style has a more flowing and visually appealing appearance than the oblique font style, which is simply created by skewing the normal font style version of the text.  
+  
+ ![normal, italic, and oblique font styles](~/add/media/fontstyle01.PNG "normal, italic, and oblique font styles")  
+Example of font styles  
+  
+   
+  
+## Examples  
+ In the following code example, <xref:System.Windows.FontStyles.Normal%2A>, <xref:System.Windows.FontStyles.Italic%2A>, and <xref:System.Windows.FontStyles.Oblique%2A> are used to define the font styles for the <xref:System.Windows.Controls.TextBlock> objects.  
+  
+ [!code-xml[FontSnippets#FontStyleSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontStyleSnippets.xaml#fontstylesnippet1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Italic">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStyle Italic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle Italic" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Italic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an italic <see cref="T:System.Windows.FontStyle" />.</summary>
+        <value>A value that represents an italic <see cref="T:System.Windows.FontStyle" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The characters in an italic font are truly slanted and appear as they were designed.  
+  
+   
+  
+## Examples  
+ In the following code example, the <xref:System.Windows.FontStyles.Italic%2A> property is used to return a <xref:System.Windows.FontStyle>.  
+  
+ [!code-csharp[FontSnippets#FontStyleSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontStyleSnippets.xaml.cs#fontstylesnippet3)]
+ [!code-vb[FontSnippets#FontStyleSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontstylesnippets.xaml.vb#fontstylesnippet3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStyle Normal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle Normal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Normal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a normal <see cref="T:System.Windows.FontStyle" />.</summary>
+        <value>A value that represents a normal <see cref="T:System.Windows.FontStyle" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The characters in a normal, or roman, font are upright.  
+  
+   
+  
+## Examples  
+ In the following code example, the <xref:System.Windows.FontStyles.Normal%2A> property is used to return a <xref:System.Windows.FontStyle>.  
+  
+ [!code-csharp[FontSnippets#FontStyleSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontStyleSnippets.xaml.cs#fontstylesnippet2)]
+ [!code-vb[FontSnippets#FontStyleSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontstylesnippets.xaml.vb#fontstylesnippet2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Oblique">
+      <MemberSignature Language="C#" Value="public static System.Windows.FontStyle Oblique { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle Oblique" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.FontStyles.Oblique" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an oblique <see cref="T:System.Windows.FontStyle" />.</summary>
+        <value>A value that represents an oblique <see cref="T:System.Windows.FontStyle" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The characters in an oblique font are artificially slanted. The slant is achieved by performing a shear transformation on the characters from a normal font. When a true italic font is not available on a computer or printer, an oblique style can be generated from the normal font and used to simulate an italic font.  
+  
+   
+  
+## Examples  
+ In the following code example, the <xref:System.Windows.FontStyles.Oblique%2A> property is used to return a <xref:System.Windows.FontStyle>.  
+  
+ [!code-csharp[FontSnippets#FontStyleSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontStyleSnippets.xaml.cs#fontstylesnippet4)]
+ [!code-vb[FontSnippets#FontStyleSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontstylesnippets.xaml.vb#fontstylesnippet4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

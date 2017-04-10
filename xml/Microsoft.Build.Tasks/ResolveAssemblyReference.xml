@@ -1,0 +1,1100 @@
+<Type Name="ResolveAssemblyReference" FullName="Microsoft.Build.Tasks.ResolveAssemblyReference">
+  <TypeSignature Language="C#" Value="public class ResolveAssemblyReference : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveAssemblyReference extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveAssemblyReference" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements the <c>ResolveAssemblyReference</c> task. Use the <c>ResolveAssemblyReference</c> element in your project file to create and execute this task. For usage and parameter information, see [ResolveAssemblyReference Task](http://msdn.microsoft.com/library/4d56d848-b29b-4dff-86a2-0a96c9e4a170).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResolveAssemblyReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveAssemblyReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveAssemblyReference" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedAssemblyExtensions">
+      <MemberSignature Language="C#" Value="public string[] AllowedAssemblyExtensions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AllowedAssemblyExtensions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AllowedAssemblyExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the assembly extensions that will be considered during references resolution.</summary>
+        <value>The assembly extensions that will be considered during references resolution.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default extensions are .dll and .exe.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedRelatedFileExtensions">
+      <MemberSignature Language="C#" Value="public string[] AllowedRelatedFileExtensions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AllowedRelatedFileExtensions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AllowedRelatedFileExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the extensions that will be considered when searching for related files.</summary>
+        <value>The extensions that will be considered when searching for related files.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default extensions are .pdb and .xml.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppConfigFile">
+      <MemberSignature Language="C#" Value="public string AppConfigFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppConfigFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the App.Config file path.</summary>
+        <value>The App.Config file path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is specified, the <xref:Microsoft.Build.Tasks.ResolveAssemblyReference.AutoUnify%2A> property must be false.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Assemblies">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Assemblies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Assemblies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.Assemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the assembly names to resolve into full paths and to find dependencies for.</summary>
+        <value>The assembly names to resolve into full paths and to find dependencies for.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The assembly names can either be simple or strong names.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] AssemblyFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] AssemblyFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AssemblyFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of fully qualified assembly paths to find dependencies for.</summary>
+        <value>The list of fully qualified assembly paths to find dependencies for.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoUnify">
+      <MemberSignature Language="C#" Value="public bool AutoUnify { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoUnify" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AutoUnify" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the resulting dependency graph is automatically treated as if there were an App.Config file passed in to the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" /> property.</summary>
+        <value>
+          <see langword="true" /> if the resulting dependency graph is automatically treated as if there were an App.Config file passed in to the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AppConfigFile" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ For more information about this property, see [ResolveAssemblyReference Task](http://msdn.microsoft.com/library/4d56d848-b29b-4dff-86a2-0a96c9e4a170)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CandidateAssemblyFiles">
+      <MemberSignature Language="C#" Value="public string[] CandidateAssemblyFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] CandidateAssemblyFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.CandidateAssemblyFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of assemblies, which must be absolute file names or project-relative file names, to use for the search and resolution process.</summary>
+        <value>The list of assemblies to use for the search and resolution process.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Assemblies in this list will be considered when the <xref:Microsoft.Build.Tasks.ResolveAssemblyReference.SearchPaths%2A> property contains {CandidateAssemblyFiles} as one of the paths to consider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyLocalDependenciesWhenParentReferenceInGac">
+      <MemberSignature Language="C#" Value="public bool CopyLocalDependenciesWhenParentReferenceInGac { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CopyLocalDependenciesWhenParentReferenceInGac" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.CopyLocalDependenciesWhenParentReferenceInGac" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a switch that determines how dependencies are determined, and whether or not a dependency is copied locally.</summary>
+        <value>Returns true if when determining if a dependency should be copied locally one of the checks done is to see if the parent reference in the project file has the Private metadata set or not. If that metadata is set then we will use that for the dependency as well.  
+  
+ If the metadata is not set then the dependency will go through the same checks as the parent reference. One of these checks is to see if the reference is in the GAC. If a reference is in the GAC then we will not copy it locally as it is assumed it will be in the gac on the target machine as well. However this only applies to that specific reference and not its dependencies.  
+  
+ This means a reference in the project file may be copy local false due to it being in the GAC but the dependencies may still be copied locally because they are not in the GAC. This is the default behavior for RAR and causes the default value for this property to be true.  
+  
+ Returns false if we will still check project file references to see if they are in the GAC and set their copy local state as appropriate.  
+  
+ However for dependencies we will not only check to see if they are in the GAC but we will also check to see if the parent reference from the project file is in the GAC.  
+  
+ If the parent reference from the project file is in the GAC then we will not copy the dependency locally.  
+  
+ <block subset="none" type="note">  
+<para>  
+ If there are multiple parent reference and ANY of them does not come from the GAC then we will set copy local to true.  
+  
+</para>  
+</block></value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyLocalFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] CopyLocalFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] CopyLocalFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.CopyLocalFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns all files in the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedDependencyFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.RelatedFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SatelliteFiles" />, and <see cref="T:Microsoft.Build.Tasks.ResolveAssemblyReference" /> properties that have the <c>CopyLocal</c> item metadata with a value of <see langword="true" />.</summary>
+        <value>All files in the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedDependencyFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.RelatedFiles" />, <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SatelliteFiles" />, and <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ScatterFiles" /> properties that have the <c>CopyLocal</c> item metadata with a value of <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveAssemblyReference.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the <c>ResolveAssemblyReference</c> task.</summary>
+        <returns>
+          <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilesWritten">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] FilesWritten { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] FilesWritten" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FilesWritten" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the items written to disk.</summary>
+        <value>The items written to disk.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDependencies">
+      <MemberSignature Language="C#" Value="public bool FindDependencies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FindDependencies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FindDependencies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether dependencies will be found (<see langword="true" />) or only primary references will be found (<see langword="false" />).</summary>
+        <value>
+          <see langword="true" /> if dependencies will be found; <see langword="false" /> if only primary references will be found.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindRelatedFiles">
+      <MemberSignature Language="C#" Value="public bool FindRelatedFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FindRelatedFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FindRelatedFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether related files such as .pdb files and .xml files will be found.</summary>
+        <value>
+          <see langword="true" /> if related files such as .pdb files and .xml files will be found; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSatellites">
+      <MemberSignature Language="C#" Value="public bool FindSatellites { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FindSatellites" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FindSatellites" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether satellite assemblies will be found.</summary>
+        <value>
+          <see langword="true" /> if satellite assemblies will be found; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `true.`  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindSerializationAssemblies">
+      <MemberSignature Language="C#" Value="public bool FindSerializationAssemblies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FindSerializationAssemblies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FindSerializationAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the serialization assemblies will be found.</summary>
+        <value>
+          <see langword="true" /> if the serialization assemblies will be found; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullFrameworkAssemblyTables">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] FullFrameworkAssemblyTables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] FullFrameworkAssemblyTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FullFrameworkAssemblyTables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of items representing XML files that contain the full framework for the profile.</summary>
+        <value>Returns a list of items representing XML files that contain the full framework for the profile.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally nothing is passed in here, this is for the cases where the location of the xml file for the full framework is not under a RedistList folder.  
+  
+ Format of the file is like:  etc.  
+  
+```  
+<FileList Redist="MatchingRedistListName" >  
+  <File AssemblyName="System" Version="2.0.0.0"  
+    PublicKeyToken="b77a5c561934e089" Culture="neutral"  
+    ProcessorArchitecture="MSIL" FileVersion="2.0.40824.0" InGAC="true"  
+  />  
+// etc.  
+</FileList>  
+```  
+  
+ Items in this list must specify the "FrameworkDirectory" metadata to associate an redist list with a particular framework directory. If the association is not made an error will be logged. The reason is, The logic in RAR assumes if a FrameworkDirectory is not set it will use the target framework directory.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullFrameworkFolders">
+      <MemberSignature Language="C#" Value="public string[] FullFrameworkFolders { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] FullFrameworkFolders" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FullFrameworkFolders" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of folders which contain a RedistList directory which represent the full framework for a given client profile, for example:%programfiles%\reference assemblies\microsoft\framework\v4.0</summary>
+        <value>Returns a list of folders which contain a RedistList directory which represent the full framework for a given client profile</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullTargetFrameworkSubsetNames">
+      <MemberSignature Language="C#" Value="public string[] FullTargetFrameworkSubsetNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] FullTargetFrameworkSubsetNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.FullTargetFrameworkSubsetNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string that contains the names of the subsets of the specified target framework.</summary>
+        <value>A string value that contains subset names.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Provides a set of names that, if seen in the TargetFrameworkSubset list, causes TargetFrameworkSubsets to be ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDefaultInstalledAssemblySubsetTables">
+      <MemberSignature Language="C#" Value="public bool IgnoreDefaultInstalledAssemblySubsetTables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreDefaultInstalledAssemblySubsetTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreDefaultInstalledAssemblySubsetTables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the task should look for and use additional installed assembly subset tables (also known as Subset Lists), which are found in the SubsetList directory under the provided TargetFrameworkDirectories.</summary>
+        <value>
+          <see langword="true" /> if additional assembly subset tables are used; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreDefaultInstalledAssemblyTables">
+      <MemberSignature Language="C#" Value="public bool IgnoreDefaultInstalledAssemblyTables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreDefaultInstalledAssemblyTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreDefaultInstalledAssemblyTables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether the <c>ResolveAssemblyReference</c> task should ignore additional installed assembly tables found in the RedistList directory underneath the provided <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkDirectories" /> (<see langword="true" />) or should search for and use these installed assembly tables (<see langword="false" />).</summary>
+        <value>
+          <see langword="true" /> if the task should ignore the additional installed assembly tables; <see langword="false" /> if the task should search for and use the additional installed assembly tables.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreTargetFrameworkAttributeVersionMismatch">
+      <MemberSignature Language="C#" Value="public bool IgnoreTargetFrameworkAttributeVersionMismatch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreTargetFrameworkAttributeVersionMismatch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreTargetFrameworkAttributeVersionMismatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag indicating whether to ignore the framework attribute when checking if an assembly is compatible with the targeted framework.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreVersionForFrameworkReferences">
+      <MemberSignature Language="C#" Value="public bool IgnoreVersionForFrameworkReferences { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreVersionForFrameworkReferences" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.IgnoreVersionForFrameworkReferences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag indicating whether to ignore the version information on the framework assembly and actually resolve the framework assembly from the currently targeted framework. Flag applies if the primary reference is a framework assembly.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstalledAssemblySubsetTables">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] InstalledAssemblySubsetTables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] InstalledAssemblySubsetTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.InstalledAssemblySubsetTables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An <see cref="T:Microsoft.Build.Framework.ITaskItem" /> that represents a list of XML files that contain assemblies that are expected to be in the target subset.</summary>
+        <value>An <see cref="T:Microsoft.Build.Framework.ITaskItem" /> list of XML files.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the format of the file:  
+  
+```  
+<FileList Redist="ClientSubset" >  
+    <File AssemblyName="System" Version="2.0.0.0"   
+      PublicKeyToken="b77a5c561934e089" Culture="neutral"   
+      ProcessorArchitecture="MSIL" FileVersion="2.0.40824.0"   
+      InGAC="true" />  
+    etc.  
+</FileList>  
+```  
+  
+ Items in this list may optionally specify the "FrameworkDirectory" metadata to associate an InstalledAssemblySubsetTable with a particular framework directory. If there is only a single TargetFrameworkDirectories element, then any items in this list that do not have the "FrameworkDirectory" metadata will be treated as though the metadata is set to the lone (unique) value passed to TargetFrameworkDirectories.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstalledAssemblyTables">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] InstalledAssemblyTables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] InstalledAssemblyTables" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.InstalledAssemblyTables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of XML files that contain assemblies that are expected to be installed on the target machine.</summary>
+        <value>A list of XML files that contain assemblies that are expected to be installed on the target machine.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatestTargetFrameworkDirectories">
+      <MemberSignature Language="C#" Value="public string[] LatestTargetFrameworkDirectories { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] LatestTargetFrameworkDirectories" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.LatestTargetFrameworkDirectories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of directories which contain the redist lists for the most current framework which can be targeted on the machine.</summary>
+        <value>Returns the list of directories which contain the redist lists for the most current framework which can be targeted on the machine.  If this is not set Then we will looks for the highest framework installed on the machine for a given target framework identifier and use that.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileName">
+      <MemberSignature Language="C#" Value="public string ProfileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProfileName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ProfileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the target framework profile we are targeting, for example  Client, Web, or Network</summary>
+        <value>Returns the name of the target framework profile we are targeting, for example  Client, Web, or Network</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] RelatedFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] RelatedFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.RelatedFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets related files, such as .xml and .pdb files with the same base name as a reference.</summary>
+        <value>The related files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedDependencyFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ResolvedDependencyFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ResolvedDependencyFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedDependencyFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the *n*th order paths to dependencies.</summary>
+        <value>The *n*th order paths to dependencies.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ResolvedFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ResolvedFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of all primary references resolved to full paths.</summary>
+        <value>The list of all primary references resolved to full paths.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedSDKReferences">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ResolvedSDKReferences { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ResolvedSDKReferences" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ResolvedSDKReferences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A list of resolved SDK references which contain the sdk name, sdk location and the targeted configuration.  
+  
+ These locations will only be searched if the reference has the SDKName metadata attached to it.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SatelliteFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SatelliteFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SatelliteFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SatelliteFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets any satellite files found.</summary>
+        <value>Any satellite files found.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The satellite files will have the `CopyLocal` item metadata with a value of `true` if the reference or dependency that caused this item to exist also has a `CopyLocal` item metadata set to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScatterFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ScatterFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ScatterFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.ScatterFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the scatter files associated with one of the given assemblies.</summary>
+        <value>The scatter files associated with one of the given assemblies.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchPaths">
+      <MemberSignature Language="C#" Value="public string[] SearchPaths { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] SearchPaths" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SearchPaths" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the directories or special locations that are searched to find the files on disk that represent the assemblies.</summary>
+        <value>The directories or special locations that are searched to find the files on disk that represent the assemblies.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializationAssemblyFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SerializationAssemblyFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SerializationAssemblyFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SerializationAssemblyFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the serialization assemblies.</summary>
+        <value>The serialization assemblies.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Silent">
+      <MemberSignature Language="C#" Value="public bool Silent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Silent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.Silent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that specifies whether no messages are logged.</summary>
+        <value>
+          <see langword="true" /> if no messages are logged; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateFile">
+      <MemberSignature Language="C#" Value="public string StateFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StateFile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.StateFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a file name that indicates where to save the intermediate build state for this task.</summary>
+        <value>The file name that indicates where to save the intermediate build state for this task.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedRedirects">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SuggestedRedirects { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SuggestedRedirects" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.SuggestedRedirects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets one item for every distinct conflicting assembly identity, regardless of the value of the <see cref="P:Microsoft.Build.Tasks.ResolveAssemblyReference.AutoUnify" /> property.</summary>
+        <value>The items that correspond to distinct conflicting assembly identities.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The items include culture and PKT that were found and that did not have a suitable bindingRedirect entry in the application configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetedRuntimeVersion">
+      <MemberSignature Language="C#" Value="public string TargetedRuntimeVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetedRuntimeVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetedRuntimeVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the runtime we are targeting, for example, 2.0.57027.</summary>
+        <value>Returns the name of the runtime we are targeting, for example, 2.0.57027. A "v" may be prefixed to the name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFrameworkDirectories">
+      <MemberSignature Language="C#" Value="public string[] TargetFrameworkDirectories { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] TargetFrameworkDirectories" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkDirectories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to the target framework directory.</summary>
+        <value>The path to the target framework directory.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is required to determine the `CopyLocal` status for resulting items.  
+  
+ If this property is not specified, no resulting items will be have a `CopyLocal` value of `true` unless they explicitly have a `Private` metadata value of `true` on their source item.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFrameworkMoniker">
+      <MemberSignature Language="C#" Value="public string TargetFrameworkMoniker { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkMoniker" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkMoniker" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target framework moniker being targeted, if any.</summary>
+        <value>Returns the target framework moniker being targeted, if any. Returns an empty string by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is used for logging purposes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFrameworkMonikerDisplayName">
+      <MemberSignature Language="C#" Value="public string TargetFrameworkMonikerDisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkMonikerDisplayName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkMonikerDisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display name of the target framework moniker being targeted, if any.</summary>
+        <value>Returns the display name of the target framework moniker being targeted, if any.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is used only for logging.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFrameworkSubsets">
+      <MemberSignature Language="C#" Value="public string[] TargetFrameworkSubsets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] TargetFrameworkSubsets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkSubsets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A list of target framework subset names that will be searched for in the target framework directories.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetFrameworkVersion">
+      <MemberSignature Language="C#" Value="public string TargetFrameworkVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetFrameworkVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the project target framework version used for reference filtering.</summary>
+        <value>The project target framework version used for reference filtering.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProcessorArchitecture">
+      <MemberSignature Language="C#" Value="public string TargetProcessorArchitecture { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetProcessorArchitecture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.TargetProcessorArchitecture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the preferred target processor architecture used for resolving Global Assembly Cache (GAC) references, which can have a value of <c>x86</c>, <c>IA64</c>, or <c>AMD64</c>.</summary>
+        <value>The preferred target processor architecture used for resolving Global Assembly Cache (GAC) references.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WarnOrErrorOnTargetArchitectureMismatch">
+      <MemberSignature Language="C#" Value="public string WarnOrErrorOnTargetArchitectureMismatch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WarnOrErrorOnTargetArchitectureMismatch" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveAssemblyReference.WarnOrErrorOnTargetArchitectureMismatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string value specifying the behavior when a mismatch between the target processor architecture and the architecture of a primary reference. When this is “Error”, an error will be logged for a mismatch. When this is “Warning”, a warning will be logged for a mismatch. When this is “None”, no error or warning will be logged for a mismatch.</summary>
+        <value>Returns a string value of “Error”, “Warning” or “None”.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

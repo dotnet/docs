@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceStore1", "InstanceStore1.csproj", "{1424D561-A514-4FD0-A903-8065866D000B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1424D561-A514-4FD0-A903-8065866D000B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1424D561-A514-4FD0-A903-8065866D000B}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

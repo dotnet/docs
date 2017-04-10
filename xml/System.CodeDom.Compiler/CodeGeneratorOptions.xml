@@ -1,0 +1,206 @@
+<Type Name="CodeGeneratorOptions" FullName="System.CodeDom.Compiler.CodeGeneratorOptions">
+  <TypeSignature Language="C#" Value="public class CodeGeneratorOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeGeneratorOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CodeGeneratorOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a set of options used by a code generator.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.Compiler.CodeGeneratorOptions> is passed to the code generation methods of an <xref:System.CodeDom.Compiler.ICodeGenerator> implementation to specify options used during code generation.  
+  
+ The <xref:System.CodeDom.Compiler.CodeGeneratorOptions.IndentString%2A> property specifies the string to use for each spacing indentation. The <xref:System.CodeDom.Compiler.CodeGeneratorOptions.BracingStyle%2A> property specifies the placement style for braces indicating the boundaries of code blocks. The <xref:System.CodeDom.Compiler.CodeGeneratorOptions.ElseOnClosing%2A> property specifies whether to append an `else`, `catch`, or `finally` block, including brackets, at the closing line of each `if` or `try` block. The <xref:System.CodeDom.Compiler.CodeGeneratorOptions.BlankLinesBetweenMembers%2A> property specifies whether to insert blank lines between members.  
+  
+ An <xref:System.CodeDom.Compiler.ICodeGenerator> implementation can provide custom code generation options which you can set or pass data to using the <xref:System.CodeDom.Compiler.CodeGeneratorOptions.Item%2A> dictionary indexer, which a code generator can search through to locate additional code generation options.  
+  
+> [!NOTE]
+>  This class contains a link demand and an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ [!code-cpp[CodeGeneratorOptionsExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeGeneratorOptionsExample/CPP/class1.cpp#1)]
+ [!code-csharp[CodeGeneratorOptionsExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeGeneratorOptionsExample/CS/class1.cs#1)]
+ [!code-vb[CodeGeneratorOptionsExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeGeneratorOptionsExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeGeneratorOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CodeGeneratorOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CodeGeneratorOptions" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="BlankLinesBetweenMembers">
+      <MemberSignature Language="C#" Value="public bool BlankLinesBetweenMembers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BlankLinesBetweenMembers" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.BlankLinesBetweenMembers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to insert blank lines between members.</summary>
+        <value>
+          <see langword="true" /> if blank lines should be inserted; otherwise, <see langword="false" />. By default, the value of this property is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BracingStyle">
+      <MemberSignature Language="C#" Value="public string BracingStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BracingStyle" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.BracingStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style to use for bracing.</summary>
+        <value>A string containing the bracing style to use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is `Block`, which indicates that code should be generated so that braces start on the same line as the statement or declaration that they are associated with. A property value of `C` indicates that braces start on the line following the statement or declaration that they are associated with.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElseOnClosing">
+      <MemberSignature Language="C#" Value="public bool ElseOnClosing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ElseOnClosing" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.ElseOnClosing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to append an <see langword="else" />, <see langword="catch" />, or <see langword="finally" /> block, including brackets, at the closing line of each previous <see langword="if" /> or <see langword="try" /> block.</summary>
+        <value>
+          <see langword="true" /> if an else should be appended; otherwise, <see langword="false" />. The default value of this property is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndentString">
+      <MemberSignature Language="C#" Value="public string IndentString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string IndentString" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.IndentString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string to use for indentations.</summary>
+        <value>A string containing the characters to use for indentations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is "/----/" (four spaces).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[string index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="index">The name associated with the object to retrieve.</param>
+        <summary>Gets or sets the object at the specified index.</summary>
+        <value>The object associated with the specified name. If no object associated with the specified name exists in the collection, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This dictionary provides an extensibility mechanism for developers to provide data for custom features of a code generator. A code generator must implement such features and support checking the dictionary for this to be useful.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerbatimOrder">
+      <MemberSignature Language="C#" Value="public bool VerbatimOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VerbatimOrder" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CodeGeneratorOptions.VerbatimOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to generate members in the order in which they occur in member collections.</summary>
+        <value>
+          <see langword="true" /> to generate the members in the order in which they occur in the member collection; otherwise, <see langword="false" />. The default value of this property is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default generates members by their type, for example; field, member, constructor, or property.  A code generator can use the <xref:System.CodeDom.Compiler.CodeGeneratorOptions.VerbatimOrder%2A> property to inject #region blocks into code, thus changing the order.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,348 @@
+<Type Name="IMemberCreationService" FullName="System.Workflow.ComponentModel.Design.IMemberCreationService">
+  <TypeSignature Language="C#" Value="public interface IMemberCreationService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMemberCreationService" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IMemberCreationService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines methods to dynamically create, update and remove code elements for a type at design time. Methods are also provided that allow you to display code at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateEvent">
+      <MemberSignature Language="C#" Value="public void CreateEvent (string className, string eventName, Type eventType, System.Workflow.ComponentModel.Compiler.AttributeInfo[] attributes, bool emitDependencyProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateEvent(string className, string eventName, class System.Type eventType, class System.Workflow.ComponentModel.Compiler.AttributeInfo[] attributes, bool emitDependencyProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.CreateEvent(System.String,System.String,System.Type,System.Workflow.ComponentModel.Compiler.AttributeInfo[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="eventType" Type="System.Type" />
+        <Parameter Name="attributes" Type="System.Workflow.ComponentModel.Compiler.AttributeInfo[]" />
+        <Parameter Name="emitDependencyProperty" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string that contains the class name to add the event to.</param>
+        <param name="eventName">A string that defines the name of the event.</param>
+        <param name="eventType">The <see cref="T:System.Type" /> assigned to the event.</param>
+        <param name="attributes">An <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> array that contains information on all attributes to assign to the event.</param>
+        <param name="emitDependencyProperty">
+          <see langword="true" /> to emit any dependency properties associated with the event; otherwise, <see langword="false" />.</param>
+        <summary>Creates an event on the specified class by using the specified event name, event type and attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="public void CreateField (string className, string fieldName, Type fieldType, Type[] genericParameterTypes, System.CodeDom.MemberAttributes attributes, System.CodeDom.CodeSnippetExpression initializationExpression, bool overwriteExisting);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateField(string className, string fieldName, class System.Type fieldType, class System.Type[] genericParameterTypes, valuetype System.CodeDom.MemberAttributes attributes, class System.CodeDom.CodeSnippetExpression initializationExpression, bool overwriteExisting) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.CreateField(System.String,System.String,System.Type,System.Type[],System.CodeDom.MemberAttributes,System.CodeDom.CodeSnippetExpression,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="fieldName" Type="System.String" />
+        <Parameter Name="fieldType" Type="System.Type" />
+        <Parameter Name="genericParameterTypes" Type="System.Type[]" />
+        <Parameter Name="attributes" Type="System.CodeDom.MemberAttributes" />
+        <Parameter Name="initializationExpression" Type="System.CodeDom.CodeSnippetExpression" />
+        <Parameter Name="overwriteExisting" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string that defines the name of the class to add the field.</param>
+        <param name="fieldName">A string that defines the name of the field.</param>
+        <param name="fieldType">The <see cref="T:System.Type" /> of the new field.</param>
+        <param name="genericParameterTypes">A <see cref="T:System.Type" /> array of any parameters associated with the field.</param>
+        <param name="attributes">A <see cref="T:System.CodeDom.MemberAttributes" /> that defines the member attribute identifier for the field.</param>
+        <param name="initializationExpression">A <see cref="T:System.CodeDom.CodeSnippetExpression" /> that contains the literal expression of the field.</param>
+        <param name="overwriteExisting">
+          <see langword="true" /> to delete any existing fields on <c>className</c> when creating the new field; otherwise, <see langword="false" />.</param>
+        <summary>Creates a field on the specified class by using the specified field name, field type, parameter types, attributes and literal initialization expression.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProperty">
+      <MemberSignature Language="C#" Value="public void CreateProperty (string className, string propertyName, Type propertyType, System.Workflow.ComponentModel.Compiler.AttributeInfo[] attributes, bool emitDependencyProperty, bool isMetaProperty, bool isAttached, Type ownerType, bool isReadOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateProperty(string className, string propertyName, class System.Type propertyType, class System.Workflow.ComponentModel.Compiler.AttributeInfo[] attributes, bool emitDependencyProperty, bool isMetaProperty, bool isAttached, class System.Type ownerType, bool isReadOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.CreateProperty(System.String,System.String,System.Type,System.Workflow.ComponentModel.Compiler.AttributeInfo[],System.Boolean,System.Boolean,System.Boolean,System.Type,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="attributes" Type="System.Workflow.ComponentModel.Compiler.AttributeInfo[]" />
+        <Parameter Name="emitDependencyProperty" Type="System.Boolean" />
+        <Parameter Name="isMetaProperty" Type="System.Boolean" />
+        <Parameter Name="isAttached" Type="System.Boolean" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="isReadOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string that defines the name of the class to add the field.</param>
+        <param name="propertyName">A string that defines the name of the field.</param>
+        <param name="propertyType">The <see cref="T:System.Type" /> of the new property.</param>
+        <param name="attributes">An <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> array that contains information on all attributes to assign to the property.</param>
+        <param name="emitDependencyProperty">
+          <see langword="true" /> to emit any dependency properties associated with the property; otherwise, <see langword="false" />.</param>
+        <param name="isMetaProperty">
+          <see langword="true" /> to create the property as a meta property; otherwise, <see langword="false" />.</param>
+        <param name="isAttached">
+          <see langword="true" /> to indicate that the emitted dependency property has its <see cref="P:System.Workflow.ComponentModel.DependencyProperty.IsAttached" /> property set to <see langword="true" />; otherwise, <see langword="false" />.</param>
+        <param name="ownerType">The <see cref="T:System.Type" /> that is declaring the dependency property.</param>
+        <param name="isReadOnly">
+          <see langword="true" /> to create the property as a read-only property; <see langword="false" /> to create the property as a read-write property.</param>
+        <summary>Creates a property on the specified class by using the specified property name, property type and attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveEvent">
+      <MemberSignature Language="C#" Value="public void RemoveEvent (string className, string eventName, Type eventType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveEvent(string className, string eventName, class System.Type eventType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.RemoveEvent(System.String,System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="eventName" Type="System.String" />
+        <Parameter Name="eventType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string that contains the name of the class from which to remove the event.</param>
+        <param name="eventName">A string that contains the name of the event to remove.</param>
+        <param name="eventType">The <see cref="T:System.Type" /> associated with the event to remove.</param>
+        <summary>Removes the specified event from the specified class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveProperty">
+      <MemberSignature Language="C#" Value="public void RemoveProperty (string className, string propertyName, Type propertyType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveProperty(string className, string propertyName, class System.Type propertyType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.RemoveProperty(System.String,System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string that contains the name of the class from which to remove the property.</param>
+        <param name="propertyName">A string that contains the name of the property to remove.</param>
+        <param name="propertyType">The <see cref="T:System.Type" /> of the property to remove.</param>
+        <summary>Removes the specified property from the specified class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCode">
+      <MemberSignature Language="C#" Value="public void ShowCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.ShowCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays code for the new member on a workflow design surface.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCode">
+      <MemberSignature Language="C#" Value="public void ShowCode (System.Workflow.ComponentModel.Activity activity, string methodName, Type delegateType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowCode(class System.Workflow.ComponentModel.Activity activity, string methodName, class System.Type delegateType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.ShowCode(System.Workflow.ComponentModel.Activity,System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="methodName" Type="System.String" />
+        <Parameter Name="delegateType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with the code to display.</param>
+        <param name="methodName">The name of the method to display.</param>
+        <param name="delegateType">The <see cref="T:System.Type" /> of the delegate associated with the method to display.</param>
+        <summary>Displays code for the new member on a workflow design surface by using the specified <see cref="T:System.Workflow.ComponentModel.Activity" />, the specified method and the specified delegate type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBaseType">
+      <MemberSignature Language="C#" Value="public void UpdateBaseType (string className, Type baseType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateBaseType(string className, class System.Type baseType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.UpdateBaseType(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="baseType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string that contains the name of the class to update with a new base type.</param>
+        <param name="baseType">The <see cref="T:System.Type" /> to be the new base type for the class.</param>
+        <summary>Updates the base type to associate with the specified class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateEvent">
+      <MemberSignature Language="C#" Value="public void UpdateEvent (string className, string oldEventName, Type oldEventType, string newEventName, Type newEventType, System.Workflow.ComponentModel.Compiler.AttributeInfo[] attributes, bool emitDependencyProperty, bool isMetaProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateEvent(string className, string oldEventName, class System.Type oldEventType, string newEventName, class System.Type newEventType, class System.Workflow.ComponentModel.Compiler.AttributeInfo[] attributes, bool emitDependencyProperty, bool isMetaProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.UpdateEvent(System.String,System.String,System.Type,System.String,System.Type,System.Workflow.ComponentModel.Compiler.AttributeInfo[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="oldEventName" Type="System.String" />
+        <Parameter Name="oldEventType" Type="System.Type" />
+        <Parameter Name="newEventName" Type="System.String" />
+        <Parameter Name="newEventType" Type="System.Type" />
+        <Parameter Name="attributes" Type="System.Workflow.ComponentModel.Compiler.AttributeInfo[]" />
+        <Parameter Name="emitDependencyProperty" Type="System.Boolean" />
+        <Parameter Name="isMetaProperty" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string that contains the name of the class that contains the event to update.</param>
+        <param name="oldEventName">A string that contains the name of the existing event.</param>
+        <param name="oldEventType">The <see cref="T:System.Type" /> associated with the existing event.</param>
+        <param name="newEventName">A string that contains the new name of the updated event.</param>
+        <param name="newEventType">The <see cref="T:System.Type" /> to associate with the updated event.</param>
+        <param name="attributes">An <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> array that contains information on all attributes to assign to the updated event.</param>
+        <param name="emitDependencyProperty">
+          <see langword="true" /> to update the event to emit a dependency property; otherwise, <see langword="false" />.</param>
+        <param name="isMetaProperty">
+          <see langword="true" /> to set the event as a meta property; otherwise, <see langword="false" />.</param>
+        <summary>Sets a new name and type to an existing event on the specified class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateProperty">
+      <MemberSignature Language="C#" Value="public void UpdateProperty (string className, string oldPropertyName, Type oldPropertyType, string newPropertyName, Type newPropertyType, System.Workflow.ComponentModel.Compiler.AttributeInfo[] attributes, bool emitDependencyProperty, bool isMetaProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateProperty(string className, string oldPropertyName, class System.Type oldPropertyType, string newPropertyName, class System.Type newPropertyType, class System.Workflow.ComponentModel.Compiler.AttributeInfo[] attributes, bool emitDependencyProperty, bool isMetaProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.UpdateProperty(System.String,System.String,System.Type,System.String,System.Type,System.Workflow.ComponentModel.Compiler.AttributeInfo[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="className" Type="System.String" />
+        <Parameter Name="oldPropertyName" Type="System.String" />
+        <Parameter Name="oldPropertyType" Type="System.Type" />
+        <Parameter Name="newPropertyName" Type="System.String" />
+        <Parameter Name="newPropertyType" Type="System.Type" />
+        <Parameter Name="attributes" Type="System.Workflow.ComponentModel.Compiler.AttributeInfo[]" />
+        <Parameter Name="emitDependencyProperty" Type="System.Boolean" />
+        <Parameter Name="isMetaProperty" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="className">A string that contains the name of the class on which the property to update resides.</param>
+        <param name="oldPropertyName">A string that contains the existing name of the property.</param>
+        <param name="oldPropertyType">The <see cref="T:System.Type" /> associated with the existing property.</param>
+        <param name="newPropertyName">A string that contains the new name of the property.</param>
+        <param name="newPropertyType">The <see cref="T:System.Type" /> to associate with the updated version of the property.</param>
+        <param name="attributes">An <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> array that contains information on all attributes to assign to the updated property.</param>
+        <param name="emitDependencyProperty">
+          <see langword="true" /> to update the property emit a dependency property; otherwise, <see langword="false" />.</param>
+        <param name="isMetaProperty">
+          <see langword="true" /> to set the property as a meta property; otherwise, <see langword="false" />.</param>
+        <summary>Sets a new name and type to a property on the specified class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTypeName">
+      <MemberSignature Language="C#" Value="public void UpdateTypeName (string oldClassName, string newClassName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateTypeName(string oldClassName, string newClassName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IMemberCreationService.UpdateTypeName(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldClassName" Type="System.String" />
+        <Parameter Name="newClassName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldClassName">A string that contains the existing name of the class.</param>
+        <param name="newClassName">A string that contains the new name to assign to the class.</param>
+        <summary>Updates the name of the specified class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

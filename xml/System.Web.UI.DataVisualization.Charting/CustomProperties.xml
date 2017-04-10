@@ -1,0 +1,26 @@
+<Type Name="CustomProperties" FullName="System.Web.UI.DataVisualization.Charting.CustomProperties">
+  <TypeSignature Language="C#" Value="public class CustomProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.CustomProperties" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.CustomPropertiesTypeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the custom properties for the data visualization charting.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

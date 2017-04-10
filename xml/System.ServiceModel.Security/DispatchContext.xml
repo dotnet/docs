@@ -1,0 +1,167 @@
+<Type Name="DispatchContext" FullName="System.ServiceModel.Security.DispatchContext">
+  <TypeSignature Language="C#" Value="public class DispatchContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DispatchContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.DispatchContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the inputs and outputs to the <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" /> method.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DispatchContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.DispatchContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.DispatchContext" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Principal">
+      <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsPrincipal Principal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsPrincipal Principal" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.Principal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Claims.ClaimsPrincipal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the identity of the requestor.</summary>
+        <value>The identity of the requestor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAction">
+      <MemberSignature Language="C#" Value="public string RequestAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestAction" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.RequestAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the WS-Addressing action of the request message.</summary>
+        <value>The URI of the WS-Addressing action.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestMessage">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustMessage RequestMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustMessage RequestMessage" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.RequestMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.WSTrustMessage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the request message.</summary>
+        <value>The request message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseAction">
+      <MemberSignature Language="C#" Value="public string ResponseAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResponseAction" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.ResponseAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the desired WS-Addressing action of the response message.</summary>
+        <value>The URI of the WS-Addressing action.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseMessage">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse ResponseMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse ResponseMessage" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.ResponseMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the response message.</summary>
+        <value>The response message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenService">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.SecurityTokenService SecurityTokenService { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.SecurityTokenService SecurityTokenService" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.SecurityTokenService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.SecurityTokenService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.SecurityTokenService" /> object which should process the request message.</summary>
+        <value>The STS which should process the request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The request message is accessed through the <xref:System.ServiceModel.Security.DispatchContext.RequestMessage%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrustNamespace">
+      <MemberSignature Language="C#" Value="public string TrustNamespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TrustNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.DispatchContext.TrustNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The WS-Trust namespace URI that defines the schema for the request and response messages.</summary>
+        <value>The namespace URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

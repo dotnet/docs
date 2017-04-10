@@ -1,0 +1,422 @@
+<Type Name="TypeUsage" FullName="System.Data.Metadata.Edm.TypeUsage">
+  <TypeSignature Language="C#" Value="public sealed class TypeUsage : System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeUsage extends System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.TypeUsage" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.MetadataItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("EdmType={EdmType}, Facets.Count={Facets.Count}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes a type and a set of facets for that type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuiltInTypeKind">
+      <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.TypeUsage.BuiltInTypeKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.BuiltInTypeKind" /> object that represents the built-in type kind for this <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBinaryTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateBinaryTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isFixedLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateBinaryTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isFixedLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+        <Parameter Name="isFixedLength" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">A <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> for which the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object is created.</param>
+        <param name="isFixedLength">
+          <see langword="true" /> to set the length of the binary type to fixed; otherwise, <see langword="false" />.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a binary type by using the specified facet values.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a binary type by using the specified facet values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the binary types, see [Binary (EDM)](http://msdn.microsoft.com/en-us/ca858ce4-62d3-4516-bfb1-8a943dc66c61).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBinaryTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateBinaryTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isFixedLength, int maxLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateBinaryTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isFixedLength, int32 maxLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateBinaryTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+        <Parameter Name="isFixedLength" Type="System.Boolean" />
+        <Parameter Name="maxLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">A <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> for which the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object is created.</param>
+        <param name="isFixedLength">
+          <see langword="true" /> to set the length of the binary type to fixed; otherwise, <see langword="false" />.</param>
+        <param name="maxLength">The maximum length of the binary type.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a binary type by using the specified facet values.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a binary type by using the specified facet values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the binary types, see [Binary (EDM)](http://msdn.microsoft.com/en-us/ca858ce4-62d3-4516-bfb1-8a943dc66c61).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDateTimeOffsetTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateDateTimeOffsetTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType, Nullable&lt;byte&gt; precision);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDateTimeOffsetTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, valuetype System.Nullable`1&lt;unsigned int8&gt; precision) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDateTimeOffsetTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+        <Parameter Name="precision" Type="System.Nullable&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">The simple type that defines the units of measurement of the offset.</param>
+        <param name="precision">The degree of granularity of the <see cref="T:System." />DateTimeOffset in fractions of a second, based on the number of decimal places supported. For example a precision of 3 means the granularity supported is milliseconds.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.DateTimeOffsetTypeUsage" /> object of the type that the parameters describe.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.DateTimeOffsetTypeUsage" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDateTimeTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateDateTimeTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType, Nullable&lt;byte&gt; precision);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDateTimeTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, valuetype System.Nullable`1&lt;unsigned int8&gt; precision) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDateTimeTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+        <Parameter Name="precision" Type="System.Nullable&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">The simple type that defines the units of measurement of the <see cref="T:System." />DateTime object.</param>
+        <param name="precision">The degree of granularity of the <see cref="T:System." />DateTimeOffset in fractions of a second, based on the number of decimal places supported. For example a precision of 3 means the granularity supported is milliseconds.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.DateTimeTypeUsage" /> object of the type that the parameters describe.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.DateTimeTypeUsage" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDecimalTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateDecimalTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDecimalTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage(System.Data.Metadata.Edm.PrimitiveType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">A <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> for which the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object is created.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a decimal type with unbounded precision and scale facet values.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a decimal type with unbounded precision and scale facet values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the decimal types, see [Decimal(EDM)](http://msdn.microsoft.com/en-us/99239537-0336-4705-b581-a79d89430bc7).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDecimalTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateDecimalTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType, byte precision, byte scale);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDecimalTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, unsigned int8 precision, unsigned int8 scale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDecimalTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Byte,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+        <Parameter Name="precision" Type="System.Byte" />
+        <Parameter Name="scale" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">A <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> for which the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object is created.</param>
+        <param name="precision">The precision of the decimal type as type <see cref="T:System.Byte" />.</param>
+        <param name="scale">The scale of the decimal type as type <see cref="T:System.Byte" />.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a decimal type by using the specified facet values.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a decimal type by using the specified facet values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the decimal types, see [Decimal(EDM)](http://msdn.microsoft.com/en-us/99239537-0336-4705-b581-a79d89430bc7).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDefaultTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateDefaultTypeUsage (System.Data.Metadata.Edm.EdmType edmType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateDefaultTypeUsage(class System.Data.Metadata.Edm.EdmType edmType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateDefaultTypeUsage(System.Data.Metadata.Edm.EdmType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edmType" Type="System.Data.Metadata.Edm.EdmType" />
+      </Parameters>
+      <Docs>
+        <param name="edmType">A <see cref="T:System.Data.Metadata.Edm.EdmType" /> for which the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object is created.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object with the specified conceptual model type.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object with the default facet values for the specified <see cref="T:System.Data.Metadata.Edm.EdmType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the [edmType](assetId:///edmType?qualifyHint=False&amp;autoUpgrade=True) is a primitive type, such as `String`, `Decimal`, `Binary` or `DateTime`, this method invokes one of the corresponding methods declared in the <xref:System.Data.Metadata.Edm.TypeUsage> class. Otherwise, it creates a <xref:System.Data.Metadata.Edm.TypeUsage> object with the specified <xref:System.Data.Metadata.Edm.EdmType> directly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStringTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateStringTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isUnicode, bool isFixedLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateStringTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isUnicode, bool isFixedLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+        <Parameter Name="isUnicode" Type="System.Boolean" />
+        <Parameter Name="isFixedLength" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">A <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> for which the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object is created.</param>
+        <param name="isUnicode">
+          <see langword="true" /> to set the character-encoding standard of the string type to Unicode; otherwise, <see langword="false" />.</param>
+        <param name="isFixedLength">
+          <see langword="true" /> to set the length of the string type to fixed; otherwise, <see langword="false" /></param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a string type by using the specified facet values and unbounded <see langword="MaxLength" />.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a string type by using the specified facet values and unbounded <see langword="MaxLength" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the string types, see [String (EDM)](http://msdn.microsoft.com/en-us/66035587-41f3-4c36-8be0-71b035700c82).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStringTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateStringTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isUnicode, bool isFixedLength, int maxLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateStringTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, bool isUnicode, bool isFixedLength, int32 maxLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateStringTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Boolean,System.Boolean,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+        <Parameter Name="isUnicode" Type="System.Boolean" />
+        <Parameter Name="isFixedLength" Type="System.Boolean" />
+        <Parameter Name="maxLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">A <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> for which the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object is created.</param>
+        <param name="isUnicode">
+          <see langword="true" /> to set the character-encoding standard of the string type to Unicode; otherwise, <see langword="false" />.</param>
+        <param name="isFixedLength">
+          <see langword="true" /> to set the character-encoding standard of the string type to Unicode; otherwise, <see langword="false" />.</param>
+        <param name="maxLength">
+          <see langword="true" /> to set the length of the string type to fixed; otherwise, <see langword="false" />.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to describe a string type by using the specified facet values.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object describing a string type by using the specified facet values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the string types, see [String (EDM)](http://msdn.microsoft.com/en-us/66035587-41f3-4c36-8be0-71b035700c82).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTimeTypeUsage">
+      <MemberSignature Language="C#" Value="public static System.Data.Metadata.Edm.TypeUsage CreateTimeTypeUsage (System.Data.Metadata.Edm.PrimitiveType primitiveType, Nullable&lt;byte&gt; precision);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Metadata.Edm.TypeUsage CreateTimeTypeUsage(class System.Data.Metadata.Edm.PrimitiveType primitiveType, valuetype System.Nullable`1&lt;unsigned int8&gt; precision) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.CreateTimeTypeUsage(System.Data.Metadata.Edm.PrimitiveType,System.Nullable{System.Byte})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="primitiveType" Type="System.Data.Metadata.Edm.PrimitiveType" />
+        <Parameter Name="precision" Type="System.Nullable&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="primitiveType">The simple type that defines the units of measurement of the <see cref="T:System." />DateTime object.</param>
+        <param name="precision">The degree of granularity of the <see cref="T:System." />DateTimeOffset in fractions of a second, based on the number of decimal places supported. For example a precision of 3 means the granularity supported is milliseconds.</param>
+        <summary>Creates a <see cref="T:System.Data.Metadata.Edm.TimeTypeUsage" /> object of the type that the parameters describe.</summary>
+        <returns>A <see cref="T:System.Data.Metadata.Edm.TimeTypeUsage" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmType EdmType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmType EdmType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.TypeUsage.EdmType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.EdmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type information described by this <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</summary>
+        <value>An <see cref="T:System.Data.Metadata.Edm.EdmType" /> object that represents the type information described by this <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Facets">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.Facet&gt; Facets { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.Facet&gt; Facets" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.TypeUsage.Facets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.Facet&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of facets for the type that is described by this <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</summary>
+        <value>A collection of type <see cref="T:System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1" /> that contains the list of facets for the type that is described by this <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubtypeOf">
+      <MemberSignature Language="C#" Value="public bool IsSubtypeOf (System.Data.Metadata.Edm.TypeUsage typeUsage);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsSubtypeOf(class System.Data.Metadata.Edm.TypeUsage typeUsage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.IsSubtypeOf(System.Data.Metadata.Edm.TypeUsage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeUsage" Type="System.Data.Metadata.Edm.TypeUsage" />
+      </Parameters>
+      <Docs>
+        <param name="typeUsage">The <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object to be checked.</param>
+        <summary>Checks whether this <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> is a subtype of the specified <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</summary>
+        <returns>
+          <see langword="true" /> if this <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> is a subtype of the specified <see cref="T:System.Data.Metadata.Edm.TypeUsage" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.TypeUsage.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the full name of the type described by this <see cref="T:System.Data.Metadata.Edm.TypeUsage" />.</summary>
+        <returns>The full name of the type described by this <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> as string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

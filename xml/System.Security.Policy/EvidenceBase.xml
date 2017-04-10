@@ -1,0 +1,84 @@
+<Type Name="EvidenceBase" FullName="System.Security.Policy.EvidenceBase">
+  <TypeSignature Language="C#" Value="public abstract class EvidenceBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit EvidenceBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Policy.EvidenceBase" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class from which all objects to be used as evidence must derive.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Before the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], almost any object could be used as an evidence object if the hosting code wanted to apply it as evidence. For example, some .NET Framework code recognized <xref:System.Uri?displayProperty=fullName> objects as evidence. The common language runtime (CLR) considered evidence objects as <xref:System.Object?displayProperty=fullName> references, and did not apply any type safety to them.  
+  
+ This presented a problem because there were implicit restrictions on which types could be used as evidence objects. Specifically, any object used as evidence had to be serializable and could not be `null`. If these requirements were not met, the CLR threw an exception whenever an operation that required one of these assumptions was performed.  
+  
+ The <xref:System.Security.Policy.EvidenceBase> class, which all evidence objects must derive from, was introduced in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] to enable constraints on the types of objects that can be used as evidence and to provide the ability to add new features and requirements to all evidence objects. The <xref:System.Security.Policy.EvidenceBase> class ensures, upon instantiation, that the evidence object is serializable. In addition, it enables new evidence requirements to be created by adding new default implementations to the base class.  
+  
+ All the types used by the CLR as evidence objects have been updated in the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] to derive from <xref:System.Security.Policy.EvidenceBase>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EvidenceBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.EvidenceBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.EvidenceBase" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All objects to be used as evidence must be serializable. You must mark any derived types as serializable, because the serializable attribute does not propagate to derived classes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An object to be used as evidence is not serializable.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual System.Security.Policy.EvidenceBase Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.EvidenceBase.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.EvidenceBase</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a complete copy of the current instance.</summary>
+        <returns>A duplicate copy of this evidence object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The duplicate copy is a complete copy that includes all the evidence objects in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

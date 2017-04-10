@@ -1,0 +1,93 @@
+<Type Name="IDockProvider" FullName="System.Windows.Automation.Provider.IDockProvider">
+  <TypeSignature Language="C#" Value="public interface IDockProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDockProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IDockProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("159bc72c-4ad3-485e-9637-d7052edf0146")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to controls that expose their dock properties within a docking container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.DockPattern> control pattern.  
+  
+ A docking container is a control that allows the arrangement of child elements, both horizontally and vertically, relative to the boundaries of the docking container and other elements within the container.  
+  
+ <xref:System.Windows.Automation.Provider.IDockProvider> does not expose any properties of the docking container or any properties of controls that may be docked adjacent to the current control within the docking container.  
+  
+ Controls are docked relative to each other based on their current z-order; the higher their z-order placement the further they are placed from the specified edge of the docking container.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DockPosition">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.DockPosition DockPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.DockPosition DockPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IDockProvider.DockPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.DockPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="T:System.Windows.Automation.DockPosition" /> of the control within a docking container.</summary>
+        <value>The <see cref="T:System.Windows.Automation.DockPosition" /> of the control, relative to the boundaries of the docking container and other elements within the container.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A docking container is a control that allows the arrangement of child elements, both horizontally and vertically, relative to the boundaries of the docking container and other elements within the container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDockPosition">
+      <MemberSignature Language="C#" Value="public void SetDockPosition (System.Windows.Automation.DockPosition dockPosition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDockPosition(valuetype System.Windows.Automation.DockPosition dockPosition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IDockProvider.SetDockPosition(System.Windows.Automation.DockPosition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dockPosition" Type="System.Windows.Automation.DockPosition" />
+      </Parameters>
+      <Docs>
+        <param name="dockPosition">The dock position, relative to the boundaries of the docking container and other elements within the container.</param>
+        <summary>Docks the control within a docking container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A docking container is a control that allows the arrangement of child elements, both horizontally and vertically, relative to the boundaries of the docking container and other elements within the container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1528 @@
+<Type Name="CheckedListBox" FullName="System.Windows.Forms.CheckedListBox">
+  <TypeSignature Language="C#" Value="public class CheckedListBox : System.Windows.Forms.ListBox" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi CheckedListBox extends System.Windows.Forms.ListBox" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckedListBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ListBox</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.LookupBindingProperties</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Displays a <see cref="T:System.Windows.Forms.ListBox" /> in which a check box is displayed to the left of each item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This control presents a list of items that the user can navigate by using the keyboard or the scrollbar on the right side of the control. The user can place a check mark by one or more items and the checked items can be navigated with the <xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection> and <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>.  
+  
+ To add objects to the list at run time, assign an array of object references with the <xref:System.Windows.Forms.ListBox.ObjectCollection.AddRange%2A> method. The list then displays the default string value for each object. You can add individual items to the list with the <xref:System.Windows.Forms.CheckedListBox.ObjectCollection.Add%2A> method.  
+  
+ The <xref:System.Windows.Forms.CheckedListBox> object supports three states through the <xref:System.Windows.Forms.CheckState> enumeration: <xref:System.Windows.Forms.CheckState>, <xref:System.Windows.Forms.CheckState>, and <xref:System.Windows.Forms.CheckState>. You must set the state of <xref:System.Windows.Forms.CheckState> in the code because the user interface for a <xref:System.Windows.Forms.CheckedListBox> does not provide a mechanism to do so.  
+  
+ If <xref:System.Windows.Forms.ListBox.UseTabStops%2A> is `true`, the <xref:System.Windows.Forms.CheckedListBox> will recognize and expand tab characters in an item's text, creating columns. These tab stops are preset and cannot be changed. To use custom tab stops, set <xref:System.Windows.Forms.ListBox.UseTabStops%2A> to `false`, set <xref:System.Windows.Forms.ListBox.UseCustomTabOffsets%2A> to `true`, and add the custom values to the <xref:System.Windows.Forms.ListBox.CustomTabOffsets%2A> collection.  
+  
+> [!NOTE]
+>  If the <xref:System.Windows.Forms.CheckedListBox.UseCompatibleTextRendering%2A> property is `false`, the <xref:System.Windows.Forms.ListBox.CustomTabOffsets%2A> property will be ignored and replaced with standard tab offsets.  
+  
+ The <xref:System.Windows.Forms.CheckedListBox> class supports the following three indexed collections:  
+  
+|Collection|Encapsulating Class|  
+|----------------|-------------------------|  
+|All items contained in the <xref:System.Windows.Forms.CheckedListBox> control.|<xref:System.Windows.Forms.CheckedListBox.ObjectCollection>|  
+|Checked items (including items in an indeterminate state), which is a subset of the items contained in the <xref:System.Windows.Forms.CheckedListBox> control.|<xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection>|  
+|Checked indexes, which is a subset of the indexes into the items collection. These indexes specify items in a checked or indeterminate state.|<xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>|  
+  
+ The following three tables are examples of the three indexed collections that the <xref:System.Windows.Forms.CheckedListBox> class supports.  
+  
+ The first table provides an example of the indexed collection of items in the control (all items contained in the control).  
+  
+|Index|Item|Check State|  
+|-----------|----------|-----------------|  
+|0|Object 1|<xref:System.Windows.Forms.CheckState>|  
+|1|Object 2|<xref:System.Windows.Forms.CheckState>|  
+|2|Object 3|<xref:System.Windows.Forms.CheckState>|  
+|3|Object 4|<xref:System.Windows.Forms.CheckState>|  
+|4|Object 5|<xref:System.Windows.Forms.CheckState>|  
+  
+ The second table provides an example of the indexed collection of the checked items.  
+  
+|Index|Item|  
+|-----------|----------|  
+|0|Object 2|  
+|1|Object 4|  
+|2|Object 5|  
+  
+ The third table provides an example of the indexed collection of indexes of checked items.  
+  
+|Index|Index of Item|  
+|-----------|-------------------|  
+|0|1|  
+|1|3|  
+|2|4|  
+  
+   
+  
+## Examples  
+ The following example illustrates how you can use the methods, properties, and collections of a <xref:System.Windows.Forms.CheckedListBox>. This is a complete sample ready to run once you have copied it to your project. You can check and uncheck items, use the text box to add items and once you have clicked the save button, clear the checked items.  
+  
+ [!code-cpp[Classic CheckedListBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic CheckedListBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic CheckedListBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic CheckedListBox Example/CS/source.cs#1)]
+ [!code-vb[Classic CheckedListBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic CheckedListBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CheckedListBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.CheckedListBox" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, <xref:System.Windows.Forms.CheckedListBox> uses <xref:System.Windows.Forms.Control.SetStyle%2A> and the `ResizeRedraw` value of <xref:System.Windows.Forms.ControlStyles> to specify that the control is redrawn when resized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedIndices">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.CheckedListBox.CheckedIndexCollection CheckedIndices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CheckedListBox/CheckedIndexCollection CheckedIndices" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.CheckedIndices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CheckedListBox+CheckedIndexCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Collection of checked indexes in this <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.CheckedListBox.CheckedIndexCollection" /> collection for the <see cref="T:System.Windows.Forms.CheckedListBox" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection of checked indexes is a subset of the indexes into the collection of all items in the <xref:System.Windows.Forms.CheckedListBox> control. These indexes specify items in a checked or indeterminate state.  
+  
+   
+  
+## Examples  
+ The following example enumerates the checked items in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> to see what check state an item is in. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, and the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection>.  
+  
+ The first loop uses the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to get the <xref:System.Windows.Forms.CheckState> of each checked item, given the index of the item. The second loop also uses <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A>, but uses the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=fullName> method to retrieve the index for the item.  
+  
+ [!code-cpp[CheckedListBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#2)]
+ [!code-csharp[CheckedListBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#2)]
+ [!code-vb[CheckedListBox#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckedListBox/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedItems">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.CheckedListBox.CheckedItemCollection CheckedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CheckedListBox/CheckedItemCollection CheckedItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.CheckedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CheckedListBox+CheckedItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Collection of checked items in this <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.CheckedListBox.CheckedItemCollection" /> collection for the <see cref="T:System.Windows.Forms.CheckedListBox" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection is a subset of the objects in the <xref:System.Windows.Forms.CheckedListBox.Items%2A> collection, representing only those items whose <xref:System.Windows.Forms.CheckState?displayProperty=fullName> is `Checked` or `Indeterminate`. The indexes in this collection are in ascending order.  
+  
+   
+  
+## Examples  
+ The following example enumerates the checked items in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> to see what check state an item is in. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, and the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection>.  
+  
+ The first loop uses the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to get the <xref:System.Windows.Forms.CheckState> of each checked item, given the index of the item. The second loop also uses <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A>, but uses the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=fullName> method to retrieve the index for the item.  
+  
+ To run this example, perform the following steps:  
+  
+1.  Create a new Windows Forms application.  
+  
+2.  Add a <xref:System.Windows.Forms.CheckedListBox> and a <xref:System.Windows.Forms.Button> to the form.  
+  
+3.  Name the button `WhatIsChecked`, add a handler for its <xref:System.Windows.Forms.Control.Click> event, and copy in the code from the body of the following handler.  
+  
+4.  Add some items to the <xref:System.Windows.Forms.CheckedListBox>.  
+  
+5.  Run the example and check some of the check boxes in the list box.  
+  
+6.  Click the button.  
+  
+     You will see a series of message boxes that indicate which items were checked.  
+  
+ [!code-cpp[CheckedListBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#2)]
+ [!code-csharp[CheckedListBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#2)]
+ [!code-vb[CheckedListBox#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckedListBox/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckOnClick">
+      <MemberSignature Language="C#" Value="public bool CheckOnClick { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckOnClick" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.CheckOnClick" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the check box should be toggled when an item is selected.</summary>
+        <value>
+          <see langword="true" /> if the check mark is applied immediately; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.CheckedListBox.CheckOnClick%2A> indicates whether the check box should be toggled whenever an item is selected. The default behavior is to change the selection on the first click, and then have the user click again to apply the check mark. In some instances, however, you might prefer have the item checked as soon as it is clicked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.CheckedListBox> control by setting the <xref:System.Windows.Forms.CheckedListBox.CheckOnClick%2A>, <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A>, and <xref:System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes%2A> properties. The example populates the <xref:System.Windows.Forms.CheckedListBox> with controls and sets the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> to the <xref:System.Windows.Forms.Control.Name%2A?displayProperty=fullName> property of the control.  
+  
+ To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.CheckedListBox> named `CheckedListBox1` and call the `InitializeCheckListBox` method from the form's constructor or Load method.  
+  
+ [!code-cpp[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Click">
+      <MemberSignature Language="C#" Value="public event EventHandler Click;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.Click" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user clicks the <see cref="T:System.Windows.Forms.CheckedListBox" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckedListBox.Click> event passes an <xref:System.EventArgs> to its event handler, so it only indicates that a click has occurred. If you need more specific mouse information (such as the button, number of clicks, wheel rotation, or location), use the <xref:System.Windows.Forms.Control.MouseDown> and <xref:System.Windows.Forms.Control.MouseUp> events, which pass a <xref:System.Windows.Forms.MouseEventArgs> to the event handler.  
+  
+ A double-click is determined by the mouse settings of the user's operating system. The user can adjust the amount of time that can pass between clicks during a double-click of a mouse button. The <xref:System.Windows.Forms.CheckedListBox.Click> event is raised every time the user double-clicks a control. For example, if you have event-handling methods for the <xref:System.Windows.Forms.CheckedListBox.Click> and <xref:System.Windows.Forms.Control.DoubleClick> events of a form, the events are raised when the form is double-clicked and both event-handling methods are called. If the user double-clicks a control that does not support the <xref:System.Windows.Forms.Control.DoubleClick> event, the <xref:System.Windows.Forms.CheckedListBox.Click> event might be raised twice.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckedListBox.Click> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckedListBox> named `CheckedListBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckedListBox.Click> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#157](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#157)]
+ [!code-vb[System.Windows.Forms.EventExamples#157](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#157)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAccessibilityInstance">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.CreateAccessibilityInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.CheckedListBox" /> control.</summary>
+        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not explicitly call the <xref:System.Windows.Forms.CheckedListBox.CreateAccessibilityInstance%2A> method, it will be called when the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property is referenced.  
+  
+> [!NOTE]
+>  To get or set the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property, you must add a reference to the `Accessibility` assembly installed with the .NET Framework.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.CreateAccessibilityInstance" /> in a derived class, you should not call the base class's <see cref="M:System.Windows.Forms.CheckedListBox.CreateAccessibilityInstance" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItemCollection">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ListBox.ObjectCollection CreateItemCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.ListBox/ObjectCollection CreateItemCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.CreateItemCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListBox+ObjectCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the item collection.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.ListBox.ObjectCollection" /> that represents the new item collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required parameters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Control.CreateParams%2A> property should not be overridden and used to adjust the properties of your derived control. Properties such as the <xref:System.Windows.Forms.CreateParams.Caption%2A?displayProperty=fullName>, <xref:System.Windows.Forms.CreateParams.Width%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.CreateParams.Height%2A?displayProperty=fullName> should be set by the corresponding properties in your control such as <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Control.Width%2A?displayProperty=fullName> and <xref:System.Windows.Forms.Control.Height%2A?displayProperty=fullName>. The <xref:System.Windows.Forms.CreateParams> should only be extended when you are wrapping a standard Windows control class or to set styles not provided by the Windows Forms namespace. For more information about creating control parameters, see the `CreateWindow` and `CreateWindowEx` functions and the `CREATESTRUCT` structure documentation in the Windows Platform SDK reference located in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+   
+  
+## Examples  
+ The following code example extends the <xref:System.Windows.Forms.Control.CreateParams%2A> property of a <xref:System.Windows.Forms.Button> derived class. The <xref:System.Windows.Forms.CreateParams.Style%2A?displayProperty=fullName> property is changed, which causes the button to display an <xref:System.Drawing.Icon> rather than an <xref:System.Drawing.Image>. This example requires that you have a class that inherits from the <xref:System.Windows.Forms.Button> class.  
+  
+ [!code-cpp[CreateParams#3](~/samples/snippets/cpp/VS_Snippets_Winforms/CreateParams/CPP/createparams.cpp#3)]
+ [!code-csharp[CreateParams#3](~/samples/snippets/csharp/VS_Snippets_Winforms/CreateParams/CS/createparams.cs#3)]
+ [!code-vb[CreateParams#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CreateParams/VB/createparams.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.CreateParams" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.CreateParams" /> property to extend the base implementation. Otherwise, you must provide all the implementation.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.DataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data source for the control.</summary>
+        <value>An object representing the source of the data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.DataSourceChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.CheckedListBox.DataSource" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMember">
+      <MemberSignature Language="C#" Value="public string DisplayMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayMember" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.DisplayMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that specifies a property of the objects contained in the list box whose contents you want to display.</summary>
+        <value>A string that specifies the name of a property of the objects contained in the list box. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default the <xref:System.Windows.Forms.CheckedListBox> displays the default string for the items it contains. However, the <xref:System.Windows.Forms.CheckedListBox> can display diverse types of objects and you may want to change the displayed string by specifying the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> property. If the specified property does not exist, or the value of the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> property is an empty string (""), the results of the object's <xref:System.Windows.Forms.ListBox.ToString%2A> method are displayed instead.  
+  
+ If the new value of the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> cannot be set, the previous value is maintained.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.CheckedListBox> control by setting the <xref:System.Windows.Forms.CheckedListBox.CheckOnClick%2A>, <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A>, and <xref:System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes%2A> properties. The example populates the <xref:System.Windows.Forms.CheckedListBox> with controls and sets the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> to the <xref:System.Windows.Forms.Control.Name%2A?displayProperty=fullName> property of the control.  
+  
+ To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.CheckedListBox> named `CheckedListBox1` and call the `InitializeCheckListBox` method from the form's constructor or Load method.  
+  
+ [!code-cpp[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMemberChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DisplayMemberChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DisplayMemberChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.DisplayMemberChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.CheckedListBox.DisplayMember" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawItem">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawItemEventHandler DrawItem;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawItemEventHandler DrawItem" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.DrawItem" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a visual aspect of an owner-drawn <see cref="T:System.Windows.Forms.CheckedListBox" /> changes. This event is not relevant to this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is used by an owner-drawn <xref:System.Windows.Forms.CheckedListBox>. The event is raised only when the <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode?displayProperty=fullName> or <xref:System.Windows.Forms.DrawMode?displayProperty=fullName>. You can use this event to perform the tasks needed to draw items in the <xref:System.Windows.Forms.CheckedListBox>. If you have a variable-sized item (that is, <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> is set to <xref:System.Windows.Forms.DrawMode?displayProperty=fullName>), the <xref:System.Windows.Forms.CheckedListBox.MeasureItem> event is raised before the item is drawn. You can create an event handler for the <xref:System.Windows.Forms.CheckedListBox.MeasureItem> event to specify the size for the item that you are going to draw in your event handler for the <xref:System.Windows.Forms.CheckedListBox.DrawItem> event.  
+  
+ This event is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawMode">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.DrawMode DrawMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DrawMode DrawMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.DrawMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating the mode for drawing elements of the <see cref="T:System.Windows.Forms.CheckedListBox" />. This property is not relevant to this class.</summary>
+        <value>Always a <see cref="T:System.Windows.Forms.DrawMode" /> of <see langword="Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemChecked">
+      <MemberSignature Language="C#" Value="public bool GetItemChecked (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetItemChecked(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.GetItemChecked(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the item.</param>
+        <summary>Returns a value indicating whether the specified item is checked.</summary>
+        <returns>
+          <see langword="true" /> if the item is checked; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.CheckedListBox.GetItemChecked%2A> returns `true` if the value of <xref:System.Windows.Forms.CheckState> is `Checked` or `Indeterminate` for the item. To determine the specific state the item is in, use the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="index" /> specified is less than zero.  
+  
+ -or-  
+  
+ The <paramref name="index" /> specified is greater than or equal to the count of items in the list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemCheckState">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.CheckState GetItemCheckState (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Forms.CheckState GetItemCheckState(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.GetItemCheckState(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CheckState</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the item to get the checked value of.</param>
+        <summary>Returns a value indicating the check state of the current item.</summary>
+        <returns>One of the <see cref="T:System.Windows.Forms.CheckState" /> values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method provides the ability to get the <xref:System.Windows.Forms.CheckState> value of an item, given the index. If you never set the check state of an item to `Indeterminate`, then use the <xref:System.Windows.Forms.CheckedListBox.GetItemChecked%2A> method.  
+  
+   
+  
+## Examples  
+ The following example enumerates the checked items in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> to see what check state an item is in. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to set the check state of an item. The example also demonstrates using the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> and the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection>.  
+  
+ The first loop uses the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to get the <xref:System.Windows.Forms.CheckState> of each checked item, given the index of the item. The second loop also uses <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A>, but uses the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=fullName> method to retrieve the index for the item.  
+  
+ [!code-cpp[CheckedListBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#2)]
+ [!code-csharp[CheckedListBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#2)]
+ [!code-vb[CheckedListBox#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckedListBox/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is less than zero.  
+  
+ -or-  
+  
+ The <paramref name="index" /> specified is greater than or equal to the count of items in the list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemCheck">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.ItemCheckEventHandler ItemCheck;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ItemCheckEventHandler ItemCheck" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.ItemCheck" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ItemCheckEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the checked state of an item changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The check state is not updated until after the <xref:System.Windows.Forms.CheckedListBox.ItemCheck> event occurs.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckedListBox.ItemCheck> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckedListBox> named `CheckedListBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckedListBox.ItemCheck> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#156](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#156)]
+ [!code-vb[System.Windows.Forms.EventExamples#156](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#156)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemHeight">
+      <MemberSignature Language="C#" Value="public override int ItemHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ItemHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.ItemHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the height of the item area.</summary>
+        <value>The height, in pixels, of the item area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This measurement is based on the font height plus a small margin to provide white space around the item.  
+  
+ The extenders of characters such as "g" and "y" do not display properly when the font is changed to 9.75-point Arial. To correct this, derive a class from <xref:System.Windows.Forms.CheckedListBox> and override <xref:System.Windows.Forms.CheckedListBox.ItemHeight%2A> to return `base.ItemHeight+2`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.CheckedListBox.ObjectCollection Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CheckedListBox/ObjectCollection Items" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CheckedListBox+ObjectCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of items in this <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
+        <value>The <see cref="T:System.Windows.Forms.CheckedListBox.ObjectCollection" /> collection representing the items in the <see cref="T:System.Windows.Forms.CheckedListBox" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckedListBox.Items%2A> property enables you to obtain a reference to the list of items that are currently stored in a <xref:System.Windows.Forms.CheckedListBox> control. With this reference, you can add items, remove items, and obtain a count of the items in the collection. For more information on the tasks that can be performed with the item collection, see the <xref:System.Windows.Forms.CheckedListBox.ObjectCollection> class reference topics.  
+  
+   
+  
+## Examples  
+ The following example enumerates the checked items in the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection> to see what check state an item is in. The example uses the <xref:System.Windows.Forms.CheckedListBox.Items%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.ObjectCollection> to retrieve the index of an item using the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=fullName> method. The example also demonstrates using the <xref:System.Windows.Forms.CheckedListBox.CheckedIndices%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedIndexCollection>, and the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.CheckedItemCollection>.  
+  
+ The first loop uses the <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A> method to get the <xref:System.Windows.Forms.CheckState> of each checked item, given the index of the item. The second loop also uses <xref:System.Windows.Forms.CheckedListBox.GetItemCheckState%2A>, but uses the <xref:System.Windows.Forms.ListBox.ObjectCollection.IndexOf%2A?displayProperty=fullName> method to retrieve the index for the item.  
+  
+ [!code-cpp[CheckedListBox#2](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#2)]
+ [!code-csharp[CheckedListBox#2](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#2)]
+ [!code-vb[CheckedListBox#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckedListBox/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureItem">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.MeasureItemEventHandler MeasureItem;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MeasureItemEventHandler MeasureItem" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.MeasureItem" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MeasureItemEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an owner-drawn <see cref="T:System.Windows.Forms.ListBox" /> is created and the sizes of the list items are determined. This event is not relevant to this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create an event handler for this event to specify the size of an item before it is drawn in the <xref:System.Windows.Forms.CheckedListBox.DrawItem> event. The event is raised only when the <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode>.  
+  
+ The maximum height of a <xref:System.Windows.Forms.ListBox> item is 255 pixels.  
+  
+ This event is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MouseClick">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.MouseClick" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the user clicks the <see cref="T:System.Windows.Forms.CheckedListBox" /> control with the mouse.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckedListBox.MouseClick> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckedListBox> named `CheckedListBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckedListBox.MouseClick> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#158](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#158)]
+ [!code-vb[System.Windows.Forms.EventExamples#158](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#158)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBackColorChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBackColorChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackColorChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnBackColorChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClick">
+      <MemberSignature Language="C#" Value="protected override void OnClick (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClick(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnClick(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.CheckedListBox.Click" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckedListBox.OnClick%2A> method selects or clears the check box of the item that is clicked. If the <xref:System.Windows.Forms.CheckedListBox.CheckOnClick%2A> property is set to `true`, the check box is switched from a selected or cleared state the first time the item is clicked. Otherwise, the check box is switched only if the item is already selected.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.CheckedListBox.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.OnClick(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CheckedListBox.OnClick(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDrawItem">
+      <MemberSignature Language="C#" Value="protected override void OnDrawItem (System.Windows.Forms.DrawItemEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDrawItem(class System.Windows.Forms.DrawItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.DrawItemEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> object with the details</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.CheckedListBox.DrawItem" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.CheckedListBox.OnDrawItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CheckedListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFontChanged">
+      <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnFontChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.CheckedListBox.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.OnFontChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CheckedListBox.OnFontChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleCreated">
+      <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnHandleCreated(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.CheckedListBox.OnHandleCreated%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.OnHandleCreated(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CheckedListBox.OnHandleCreated(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemCheck">
+      <MemberSignature Language="C#" Value="protected virtual void OnItemCheck (System.Windows.Forms.ItemCheckEventArgs ice);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemCheck(class System.Windows.Forms.ItemCheckEventArgs ice) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ice" Type="System.Windows.Forms.ItemCheckEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="ice">An <see cref="T:System.Windows.Forms.ItemCheckEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.CheckedListBox.ItemCheck" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.CheckedListBox.OnItemCheck%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CheckedListBox.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnKeyPress">
+      <MemberSignature Language="C#" Value="protected override void OnKeyPress (System.Windows.Forms.KeyPressEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyPress(class System.Windows.Forms.KeyPressEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.KeyPressEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that was raised.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the spacebar is pressed and the <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A> property is not set to <xref:System.Windows.Forms.SelectionMode?displayProperty=fullName>, the <xref:System.Windows.Forms.CheckedListBox.OnKeyPress%2A> method switches the check state of the item currently selected.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.CheckedListBox.OnKeyPress%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.CheckedListBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMeasureItem">
+      <MemberSignature Language="C#" Value="protected override void OnMeasureItem (System.Windows.Forms.MeasureItemEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMeasureItem(class System.Windows.Forms.MeasureItemEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Forms.MeasureItemEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.CheckedListBox.MeasureItem" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.CheckedListBox.OnMeasureItem%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CheckedListBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedIndexChanged">
+      <MemberSignature Language="C#" Value="protected override void OnSelectedIndexChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.ListBox.SelectedIndexChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.CheckedListBox.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.CheckedListBox.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CheckedListBox.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.Padding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Padding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets padding within the <see cref="T:System.Windows.Forms.CheckedListBox" />. This property is not relevant to this class.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Padding" /> representing the control's internal spacing characteristics.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls receive default values for <xref:System.Windows.Forms.Control.Padding%2A> that are reasonably close to Windows user interface guidelines. Some adjustments might still be necessary for particular applications.  
+  
+ This property is not relevant to this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshItems">
+      <MemberSignature Language="C#" Value="protected override void RefreshItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RefreshItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.RefreshItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Parses all <see cref="T:System.Windows.Forms.CheckedListBox" /> items again and gets new text strings for the items.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionMode">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.SelectionMode SelectionMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SelectionMode SelectionMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.SelectionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value specifying the selection mode.</summary>
+        <value>Either the <see langword="One" /> or <see langword="None" /> value of <see cref="T:System.Windows.Forms.SelectionMode" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A> property determines whether one item in the list box can be selected or no items can be selected. For <xref:System.Windows.Forms.CheckedListBox> objects, multiple selection is not supported. You can set the mode to one item or no items.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.CheckedListBox> control by setting the <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A> to allow one item in the list to be selected.  
+  
+ To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.CheckedListBox> named `CheckedListBox1` and call the `InitializeCheckListBox` method from the form's constructor or Load method.  
+  
+ [!code-cpp[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">An attempt was made to assign a value that is not a <see cref="T:System.Windows.Forms.SelectionMode" /> value of <see langword="One" /> or <see langword="None" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">An attempt was made to assign the <see langword="MultiExtended" /> value of <see cref="T:System.Windows.Forms.SelectionMode" /> to the control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemChecked">
+      <MemberSignature Language="C#" Value="public void SetItemChecked (int index, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetItemChecked(int32 index, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.SetItemChecked(System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the item to set the check state for.</param>
+        <param name="value">
+          <see langword="true" /> to set the item as checked; otherwise, <see langword="false" />.</param>
+        <summary>Sets <see cref="T:System.Windows.Forms.CheckState" /> for the item at the specified index to <see langword="Checked" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a value of `true` is passed, this method sets the <xref:System.Windows.Forms.CheckState> value to `Checked`. A value of `false` sets <xref:System.Windows.Forms.CheckState> to `Unchecked`.  
+  
+   
+  
+## Examples  
+ The following example enumerates the items in the <xref:System.Windows.Forms.CheckedListBox> and checks every other item in the list. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> and <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> methods to set the check state of an item. For every other item that is to be checked, <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> is called to set the <xref:System.Windows.Forms.CheckState> to `Indeterminate`, while <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> is called on the other item to set the checked state to `Checked`.  
+  
+ The example also demonstrates using the <xref:System.Windows.Forms.CheckedListBox.Items%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.ObjectCollection> to get the <xref:System.Windows.Forms.ListBox.ObjectCollection.Count%2A> of items.  
+  
+ [!code-cpp[CheckedListBox#3](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#3)]
+ [!code-csharp[CheckedListBox#3](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#3)]
+ [!code-vb[CheckedListBox#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckedListBox/VB/source.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The index specified is less than zero.  
+  
+ -or-  
+  
+ The index is greater than the count of items in the list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemCheckState">
+      <MemberSignature Language="C#" Value="public void SetItemCheckState (int index, System.Windows.Forms.CheckState value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetItemCheckState(int32 index, valuetype System.Windows.Forms.CheckState value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.SetItemCheckState(System.Int32,System.Windows.Forms.CheckState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Windows.Forms.CheckState" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the item to set the state for.</param>
+        <param name="value">One of the <see cref="T:System.Windows.Forms.CheckState" /> values.</param>
+        <summary>Sets the check state of the item at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> method raises the <xref:System.Windows.Forms.CheckedListBox.ItemCheck> event.  
+  
+ Items whose <xref:System.Windows.Forms.CheckState> is set to `Indeterminate` appear with a check mark in the check box, but the box is grayed to indicate the indeterminate status of the checked item.  
+  
+   
+  
+## Examples  
+ The following example enumerates the items in the <xref:System.Windows.Forms.CheckedListBox> and checks every other item in the list. The example demonstrates using the <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> and <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> methods to set the check state of an item. For every other item that is to be checked, <xref:System.Windows.Forms.CheckedListBox.SetItemCheckState%2A> is called to set the <xref:System.Windows.Forms.CheckState> to `Indeterminate`, while <xref:System.Windows.Forms.CheckedListBox.SetItemChecked%2A> is called on the other item to set the checked state to `Checked`.  
+  
+ The example also demonstrates using the <xref:System.Windows.Forms.CheckedListBox.Items%2A> property to get the <xref:System.Windows.Forms.CheckedListBox.ObjectCollection> to get the <xref:System.Windows.Forms.ListBox.ObjectCollection.Count%2A> of items.  
+  
+ [!code-cpp[CheckedListBox#3](~/samples/snippets/cpp/VS_Snippets_Winforms/CheckedListBox/CPP/source.cpp#3)]
+ [!code-csharp[CheckedListBox#3](~/samples/snippets/csharp/VS_Snippets_Winforms/CheckedListBox/CS/source.cs#3)]
+ [!code-vb[CheckedListBox#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CheckedListBox/VB/source.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> specified is less than zero.  
+  
+ -or-  
+  
+ The <paramref name="index" /> is greater than or equal to the count of items in the list.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The <paramref name="value" /> is not one of the <see cref="T:System.Windows.Forms.CheckState" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ThreeDCheckBoxes">
+      <MemberSignature Language="C#" Value="public bool ThreeDCheckBoxes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ThreeDCheckBoxes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the check boxes have a <see cref="T:System.Windows.Forms.ButtonState" /> of <see langword="Flat" /> or <see langword="Normal" />.</summary>
+        <value>
+          <see langword="true" /> if the check box has a flat appearance; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates initializing a <xref:System.Windows.Forms.CheckedListBox> control by setting the <xref:System.Windows.Forms.CheckedListBox.CheckOnClick%2A>, <xref:System.Windows.Forms.CheckedListBox.SelectionMode%2A>, and <xref:System.Windows.Forms.CheckedListBox.ThreeDCheckBoxes%2A> properties. The example populates the <xref:System.Windows.Forms.CheckedListBox> with controls and sets the <xref:System.Windows.Forms.CheckedListBox.DisplayMember%2A> to the <xref:System.Windows.Forms.Control.Name%2A?displayProperty=fullName> property of the control.  
+  
+ To run the example, paste the following code in a form containing a <xref:System.Windows.Forms.CheckedListBox> named `CheckedListBox1` and call the `InitializeCheckListBox` method from the form's constructor or Load method.  
+  
+ [!code-cpp[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.PropertyGridExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.PropertyGridExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCompatibleTextRendering">
+      <MemberSignature Language="C#" Value="public bool UseCompatibleTextRendering { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseCompatibleTextRendering" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.UseCompatibleTextRendering" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether to use the <see cref="T:System.Drawing.Graphics" /> class ([!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]) or the <see cref="T:System.Windows.Forms.TextRenderer" /> class ([!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)]) to render text.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Drawing.Graphics" /> class should be used to perform text rendering for compatibility with versions 1.0 and 1.1. of the .NET Framework; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `UseCompatibleTextRendering` property is intended to provide visual compatibility between Windows Forms controls that render text using the <xref:System.Windows.Forms.TextRenderer> class and [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] and [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)] applications that perform custom text rendering using the <xref:System.Drawing.Graphics> class. In most cases, if your application is not being upgraded from [!INCLUDE[net_v10_short](~/includes/net-v10-short-md.md)] or [!INCLUDE[net_v11_short](~/includes/net-v11-short-md.md)], it is recommended that you leave `UseCompatibleTextRendering` set to the default value of `false`.  
+  
+ The [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <xref:System.Windows.Forms.TextRenderer> class was introduced in the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] to improve performance, make text look better, and improve support for international fonts. In earlier versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <xref:System.Drawing.Graphics> class was used to perform all text rendering. [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] calculates character spacing and word wrapping differently from [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]. In a Windows Forms application that uses the <xref:System.Drawing.Graphics> class to render text, this could cause the text for controls that use <xref:System.Windows.Forms.TextRenderer> to appear different from the other text in the application. To resolve this incompatibility, you can set the `UseCompatibleTextRendering` property to `true` for a specific control. To set `UseCompatibleTextRendering` to `true` for all supported controls in the application, call the <xref:System.Windows.Forms.Application.SetCompatibleTextRenderingDefault%2A?displayProperty=fullName> method with a parameter of `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueMember">
+      <MemberSignature Language="C#" Value="public string ValueMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValueMember" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CheckedListBox.ValueMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string that specifies the property of the data source from which to draw the value.</summary>
+        <value>A string that specifies the property of the data source from which to draw the value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify the contents of the <xref:System.Windows.Forms.CheckedListBox.ValueMember%2A> property in cases where you bind data.  
+  
+ You can clear the <xref:System.Windows.Forms.CheckedListBox.ValueMember%2A> property by setting the property to an empty string ("") or `null`.  
+  
+ Setting a new <xref:System.Windows.Forms.CheckedListBox.ValueMember%2A> property raises the <xref:System.Windows.Forms.CheckedListBox.ValueMemberChanged> and <xref:System.Windows.Forms.ListControl.SelectedValueChanged> events.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified property cannot be found on the object specified by the <see cref="P:System.Windows.Forms.CheckedListBox.DataSource" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueMemberChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ValueMemberChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ValueMemberChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CheckedListBox.ValueMemberChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Windows.Forms.CheckedListBox.ValueMember" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WmReflectCommand">
+      <MemberSignature Language="C#" Value="protected override void WmReflectCommand (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WmReflectCommand(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.WmReflectCommand(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The <see cref="T:System.Windows.Forms.Message" /> the top-level window sent to the <see cref="T:System.Windows.Forms.CheckedListBox" /> control.</param>
+        <summary>Processes the command message the <see cref="T:System.Windows.Forms.CheckedListBox" /> control receives from the top-level window.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CheckedListBox.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates overriding the <xref:System.Windows.Forms.Control.WndProc%2A> method to handle operating system messages identified in the <xref:System.Windows.Forms.Message> structure. The WM_ACTIVATEAPP operating system message is handled in this example to know when another application is becoming active. Refer to the Platform SDK documentation reference located in the MSDN Library at http://msdn.microsoft.com/library to understand the available <xref:System.Windows.Forms.Message.Msg%2A?displayProperty=fullName>, <xref:System.Windows.Forms.Message.LParam%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=fullName> values. Actual constant values can be found in the Windows.h header file included in the Platform SDK (Core SDK section) download, which is also available in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-cpp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.Control.WndProc#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Control.WndProc/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

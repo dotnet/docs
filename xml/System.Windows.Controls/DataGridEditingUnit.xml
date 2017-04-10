@@ -1,0 +1,57 @@
+<Type Name="DataGridEditingUnit" FullName="System.Windows.Controls.DataGridEditingUnit">
+  <TypeSignature Language="C#" Value="public enum DataGridEditingUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridEditingUnit extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridEditingUnit" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify whether editing is enabled on a cell level or on a row level.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGrid.CancelEdit%28System.Windows.Controls.DataGridEditingUnit%29?displayProperty=fullName> and <xref:System.Windows.Controls.DataGrid.CommitEdit%28System.Windows.Controls.DataGridEditingUnit%2CSystem.Boolean%29?displayProperty=fullName> methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cell">
+      <MemberSignature Language="C#" Value="Cell" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridEditingUnit Cell = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridEditingUnit.Cell" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridEditingUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Cell editing is enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Row">
+      <MemberSignature Language="C#" Value="Row" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridEditingUnit Row = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridEditingUnit.Row" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridEditingUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Row editing is enabled.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

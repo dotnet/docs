@@ -1,0 +1,181 @@
+<Type Name="DiscoveryService" FullName="System.ServiceModel.Discovery.DiscoveryService">
+  <TypeSignature Language="C#" Value="public abstract class DiscoveryService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DiscoveryService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryService" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An abstract base class used to implement a discovery service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> is added to a service, a default <xref:System.ServiceModel.Discovery.DiscoveryService> implementation is used to handle Find and Resolve requests. Extend this class to implement a custom discovery service that has behavior different from the default implementation, such as to reply to Find requests using a custom matching algorithm  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DiscoveryService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DiscoveryService (System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator discoveryMessageSequenceGenerator);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator discoveryMessageSequenceGenerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.#ctor(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="discoveryMessageSequenceGenerator" Type="System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />
+      </Parameters>
+      <Docs>
+        <param name="discoveryMessageSequenceGenerator">The discovery message sequence generator.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryService" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DiscoveryService (System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator discoveryMessageSequenceGenerator, int duplicateMessageHistoryLength);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator discoveryMessageSequenceGenerator, int32 duplicateMessageHistoryLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.#ctor(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="discoveryMessageSequenceGenerator" Type="System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />
+        <Parameter Name="duplicateMessageHistoryLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="discoveryMessageSequenceGenerator">The discovery message sequence generator.</param>
+        <param name="duplicateMessageHistoryLength">The maximum number of message hashes used by the transport for identifying duplicate messages. The default value is 0.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryService" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" /> and duplicate message history length.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginFind">
+      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginFind (System.ServiceModel.Discovery.FindRequestContext findRequestContext, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginFind(class System.ServiceModel.Discovery.FindRequestContext findRequestContext, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.OnBeginFind(System.ServiceModel.Discovery.FindRequestContext,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="findRequestContext" Type="System.ServiceModel.Discovery.FindRequestContext" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="findRequestContext">The find request context that describes the service to discover.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle a find operation.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Find results are returned by calling the <xref:System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint%2A> method one or more times.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginResolve">
+      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginResolve (System.ServiceModel.Discovery.ResolveCriteria resolveCriteria, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginResolve(class System.ServiceModel.Discovery.ResolveCriteria resolveCriteria, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.OnBeginResolve(System.ServiceModel.Discovery.ResolveCriteria,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolveCriteria" Type="System.ServiceModel.Discovery.ResolveCriteria" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="resolveCriteria">The find request context that describes the service to discover.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle a resolve operation.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndFind">
+      <MemberSignature Language="C#" Value="protected abstract void OnEndFind (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndFind(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.OnEndFind(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of a find operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndResolve">
+      <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Discovery.EndpointDiscoveryMetadata OnEndResolve (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Discovery.EndpointDiscoveryMetadata OnEndResolve(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryService.OnEndResolve(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of a resolve operation.</summary>
+        <returns>The endpoint discovery metadata that describes the resolved service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

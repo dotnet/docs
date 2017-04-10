@@ -1,0 +1,82 @@
+<Type Name="LinkState" FullName="System.Windows.Forms.LinkState">
+  <TypeSignature Language="C#" Value="public enum LinkState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LinkState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies constants that define the state of the link.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.LinkState Active = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkState.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.LinkState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state of a link that has been clicked.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hover">
+      <MemberSignature Language="C#" Value="Hover" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.LinkState Hover = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkState.Hover" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.LinkState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state of a link over which a mouse pointer is resting.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.LinkState Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkState.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.LinkState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state of a link in its normal state (none of the other states apply).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Visited">
+      <MemberSignature Language="C#" Value="Visited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.LinkState Visited = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkState.Visited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.LinkState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state of a link that has been visited.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,146 @@
+<Type Name="ControlFlowBuilder" FullName="System.Reflection.Metadata.Ecma335.ControlFlowBuilder">
+  <TypeSignature Language="C#" Value="public sealed class ControlFlowBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ControlFlowBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ControlFlowBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlFlowBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCatchRegion">
+      <MemberSignature Language="C#" Value="public void AddCatchRegion (System.Reflection.Metadata.Ecma335.LabelHandle tryStart, System.Reflection.Metadata.Ecma335.LabelHandle tryEnd, System.Reflection.Metadata.Ecma335.LabelHandle handlerStart, System.Reflection.Metadata.Ecma335.LabelHandle handlerEnd, System.Reflection.Metadata.EntityHandle catchType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCatchRegion(valuetype System.Reflection.Metadata.Ecma335.LabelHandle tryStart, valuetype System.Reflection.Metadata.Ecma335.LabelHandle tryEnd, valuetype System.Reflection.Metadata.Ecma335.LabelHandle handlerStart, valuetype System.Reflection.Metadata.Ecma335.LabelHandle handlerEnd, valuetype System.Reflection.Metadata.EntityHandle catchType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.AddCatchRegion(System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tryStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="tryEnd" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="handlerStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="handlerEnd" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="catchType" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="tryStart">To be added.</param>
+        <param name="tryEnd">To be added.</param>
+        <param name="handlerStart">To be added.</param>
+        <param name="handlerEnd">To be added.</param>
+        <param name="catchType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFaultRegion">
+      <MemberSignature Language="C#" Value="public void AddFaultRegion (System.Reflection.Metadata.Ecma335.LabelHandle tryStart, System.Reflection.Metadata.Ecma335.LabelHandle tryEnd, System.Reflection.Metadata.Ecma335.LabelHandle handlerStart, System.Reflection.Metadata.Ecma335.LabelHandle handlerEnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFaultRegion(valuetype System.Reflection.Metadata.Ecma335.LabelHandle tryStart, valuetype System.Reflection.Metadata.Ecma335.LabelHandle tryEnd, valuetype System.Reflection.Metadata.Ecma335.LabelHandle handlerStart, valuetype System.Reflection.Metadata.Ecma335.LabelHandle handlerEnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.AddFaultRegion(System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tryStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="tryEnd" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="handlerStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="handlerEnd" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+      </Parameters>
+      <Docs>
+        <param name="tryStart">To be added.</param>
+        <param name="tryEnd">To be added.</param>
+        <param name="handlerStart">To be added.</param>
+        <param name="handlerEnd">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFilterRegion">
+      <MemberSignature Language="C#" Value="public void AddFilterRegion (System.Reflection.Metadata.Ecma335.LabelHandle tryStart, System.Reflection.Metadata.Ecma335.LabelHandle tryEnd, System.Reflection.Metadata.Ecma335.LabelHandle handlerStart, System.Reflection.Metadata.Ecma335.LabelHandle handlerEnd, System.Reflection.Metadata.Ecma335.LabelHandle filterStart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFilterRegion(valuetype System.Reflection.Metadata.Ecma335.LabelHandle tryStart, valuetype System.Reflection.Metadata.Ecma335.LabelHandle tryEnd, valuetype System.Reflection.Metadata.Ecma335.LabelHandle handlerStart, valuetype System.Reflection.Metadata.Ecma335.LabelHandle handlerEnd, valuetype System.Reflection.Metadata.Ecma335.LabelHandle filterStart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.AddFilterRegion(System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tryStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="tryEnd" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="handlerStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="handlerEnd" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="filterStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+      </Parameters>
+      <Docs>
+        <param name="tryStart">To be added.</param>
+        <param name="tryEnd">To be added.</param>
+        <param name="handlerStart">To be added.</param>
+        <param name="handlerEnd">To be added.</param>
+        <param name="filterStart">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFinallyRegion">
+      <MemberSignature Language="C#" Value="public void AddFinallyRegion (System.Reflection.Metadata.Ecma335.LabelHandle tryStart, System.Reflection.Metadata.Ecma335.LabelHandle tryEnd, System.Reflection.Metadata.Ecma335.LabelHandle handlerStart, System.Reflection.Metadata.Ecma335.LabelHandle handlerEnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFinallyRegion(valuetype System.Reflection.Metadata.Ecma335.LabelHandle tryStart, valuetype System.Reflection.Metadata.Ecma335.LabelHandle tryEnd, valuetype System.Reflection.Metadata.Ecma335.LabelHandle handlerStart, valuetype System.Reflection.Metadata.Ecma335.LabelHandle handlerEnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ControlFlowBuilder.AddFinallyRegion(System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle,System.Reflection.Metadata.Ecma335.LabelHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tryStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="tryEnd" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="handlerStart" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+        <Parameter Name="handlerEnd" Type="System.Reflection.Metadata.Ecma335.LabelHandle" />
+      </Parameters>
+      <Docs>
+        <param name="tryStart">To be added.</param>
+        <param name="tryEnd">To be added.</param>
+        <param name="handlerStart">To be added.</param>
+        <param name="handlerEnd">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,122 @@
+<Type Name="ColorBlend" FullName="System.Drawing.Drawing2D.ColorBlend">
+  <TypeSignature Language="C#" Value="public sealed class ColorBlend" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ColorBlend extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.ColorBlend" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines arrays of colors and positions used for interpolating color blending in a multicolor gradient. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorBlend ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.ColorBlend.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.ColorBlend" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is intended to be used in a Windows Forms environment. It demonstrates how to use the <xref:System.Drawing.Drawing2D.ColorBlend> class in conjunction with the <xref:System.Drawing.Drawing2D.LinearGradientBrush> class to draw an ellipse to screen that has its colors blended. The ellipse is green on the left, blends to yellow, then to blue, and finally to red on the right. This is accomplished through the settings in the `myColors` and `myPositions` arrays used in the <xref:System.Drawing.Drawing2D.ColorBlend.Colors%2A> and <xref:System.Drawing.Drawing2D.ColorBlend.Positions%2A> properties. Note that the <xref:System.Drawing.Drawing2D.LinearGradientBrush.InterpolationColors%2A> property of the <xref:System.Drawing.Drawing2D.LinearGradientBrush> object named `lgBrush2` must be made equal to the <xref:System.Drawing.Drawing2D.ColorBlend> object `myBlend`.  
+  
+ [!code-cpp[System.Drawing.Drawing2D.ClassicMisc#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CPP/form1.cpp#4)]
+ [!code-csharp[System.Drawing.Drawing2D.ClassicMisc#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/CS/form1.cs#4)]
+ [!code-vb[System.Drawing.Drawing2D.ClassicMisc#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicMisc/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorBlend (int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.ColorBlend.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="count">The number of colors and positions in this <see cref="T:System.Drawing.Drawing2D.ColorBlend" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.ColorBlend" /> class with the specified number of colors and positions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For an example see <xref:System.Drawing.Drawing2D.ColorBlend.%23ctor%2A>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Colors">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color[] Colors { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color[] Colors" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.ColorBlend.Colors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of colors that represents the colors to use at corresponding positions along a gradient.</summary>
+        <value>An array of <see cref="T:System.Drawing.Color" /> structures that represents the colors to use at corresponding positions along a gradient.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an array of <xref:System.Drawing.Color> structures that represents the colors to use at corresponding positions along a gradient. Along with the <xref:System.Drawing.Drawing2D.ColorBlend.Positions%2A> property, this property defines a multicolor gradient.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Positions">
+      <MemberSignature Language="C#" Value="public float[] Positions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32[] Positions" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.ColorBlend.Positions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the positions along a gradient line.</summary>
+        <value>An array of values that specify percentages of distance along the gradient line.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements of this array specify percentages of distance along the gradient line. For example, an element value of 0.2f specifies that this point is 20 percent of the total distance from the starting point. The elements in this array are represented by float values between 0.0f and 1.0f, and the first element of the array must be 0.0f and the last element must be 1.0f.  
+  
+ Along with the <xref:System.Drawing.Drawing2D.ColorBlend.Colors%2A> property, this property defines a multicolor gradient.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

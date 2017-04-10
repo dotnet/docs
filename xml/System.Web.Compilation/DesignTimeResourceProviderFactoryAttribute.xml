@@ -1,0 +1,127 @@
+<Type Name="DesignTimeResourceProviderFactoryAttribute" FullName="System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute">
+  <TypeSignature Language="C#" Value="public sealed class DesignTimeResourceProviderFactoryAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignTimeResourceProviderFactoryAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the type of resource provider factory for design time. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute> class allows a <xref:System.Web.Compilation.ResourceProviderFactory> object to specify the type of the associated <xref:System.Web.UI.Design.DesignTimeResourceProviderFactory> object. The <xref:System.Web.UI.Design.DesignTimeResourceProviderFactory> class is used to create design-time providers for reading and writing resources. Within [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)], a developer can use the **Generate Local Resource** command on the **Tools** menu to create resources during design time.  
+  
+   
+  
+## Examples  
+ The following code example shows a customized resource provider factory that specifies a customized design-time resource provider factory through the <xref:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute> attribute. This example does not include the code necessary to implement a customized design-time resource provider factory.  
+  
+ [!code-csharp[System.Web.Compilation.ResourceProviderFactory#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/CS/source.cs#1)]
+ [!code-vb[System.Web.Compilation.ResourceProviderFactory#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceProviderFactory/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignTimeResourceProviderFactoryAttribute (string factoryTypeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string factoryTypeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="factoryTypeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="factoryTypeName">The name of the resource provider factory type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute" /> class with the attribute set to the specified factory type name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute> attribute is set to `factoryTypeName`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignTimeResourceProviderFactoryAttribute (Type factoryType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type factoryType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="factoryType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="factoryType">The type of the resource provider factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute" /> class with the attribute set to the qualified name of the specified factory type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute.FactoryTypeName%2A> property is set to the <xref:System.Type.AssemblyQualifiedName%2A> property value of the `factoryType` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FactoryTypeName">
+      <MemberSignature Language="C#" Value="public string FactoryTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FactoryTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute.FactoryTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the factory type name.</summary>
+        <value>A <see cref="T:System.String" /> containing the name of the factory type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultAttribute">
+      <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute.IsDefaultAttribute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the default provider is used.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="P:System.Web.Compilation.DesignTimeResourceProviderFactoryAttribute.FactoryTypeName" /> equals <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

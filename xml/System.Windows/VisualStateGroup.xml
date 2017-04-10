@@ -1,0 +1,221 @@
+<Type Name="VisualStateGroup" FullName="System.Windows.VisualStateGroup">
+  <TypeSignature Language="C#" Value="public class VisualStateGroup : System.Windows.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualStateGroup extends System.Windows.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.VisualStateGroup" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("States")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.RuntimeNameProperty("Name")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains mutually exclusive <see cref="T:System.Windows.VisualState" /> objects and <see cref="T:System.Windows.VisualTransition" /> objects that are used to move from one state to another.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Windows.VisualStateGroup> contains a collection of <xref:System.Windows.VisualState> objects. A <xref:System.Windows.VisualState> contains a collection of <xref:System.Windows.Media.Animation.Storyboard> objects that specify how the control's appearance changes when the control is in a certain state. For example, a <xref:System.Windows.Controls.Button> might have a slightly different appearance when it is pressed than when it is not pressed. Two states that the <xref:System.Windows.Controls.Button> defines correspond to when it is pressed (`"Pressed"`) and when it is not (`"Normal"`).  
+  
+ You add <xref:System.Windows.VisualState> to a control by setting the `VisualStateManager.VisualStateGroups` attached property on the control. You put states that are mutually exclusive to each other in the same <xref:System.Windows.VisualStateGroup>. For example, the <xref:System.Windows.Controls.CheckBox> has two <xref:System.Windows.VisualStateGroup> objects. One contains the states, `Normal`, `MouseOver`, `Pressed`, and `Disabled`. The other contains the states, `Checked`, `UnChecked`, and `Indeterminate`. The <xref:System.Windows.Controls.CheckBox> can be in states `MouseOver` and `UnChecked` at the same time, but it cannot be in the `MouseOver` and `Pressed` states at the same time.  
+  
+ Although you can add <xref:System.Windows.VisualState> objects to any element, they are a particularly useful way to enable others to redefine the visual behavior of a <xref:System.Windows.Controls.Control>. If you create a custom control that uses a <xref:System.Windows.Controls.ControlTemplate>, you can specify which states that control can be in by adding a <xref:System.Windows.TemplateVisualStateAttribute> on its class definition. Then anyone who creates a new <xref:System.Windows.Controls.ControlTemplate> for your control can add <xref:System.Windows.VisualState> objects to the template. The <xref:System.Windows.TemplateVisualStateAttribute> enables designer tools, such as Expression Blend, to expose the control's states. States with the same <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A?displayProperty=fullName> belong in the same <xref:System.Windows.VisualStateGroup>.  
+  
+ For more information about how to use <xref:System.Windows.VisualStateGroup> objects in a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md). For more information about how to create controls that use the <xref:System.Windows.VisualStateManager>, see [Creating a Control That Has a Customizable Appearance](~/docs/framework/wpf/controls/creating-a-control-that-has-a-customizable-appearance.md).  
+  
+ The <xref:System.Windows.VisualStateGroup.Transitions%2A> property contains <xref:System.Windows.VisualTransition> objects that are applied when the control transition between states that are defined in the <xref:System.Windows.VisualStateGroup>.  
+  
+   
+  
+## Examples  
+ The following example creates a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button> that contains one <xref:System.Windows.Controls.Grid>. It also contains a <xref:System.Windows.VisualStateGroup> named `CommonStates`, which defines the `MouseOver` and `Normal` states. The <xref:System.Windows.VisualStateGroup> also has a <xref:System.Windows.VisualTransition> that specifies that it takes one half second for the <xref:System.Windows.Controls.Grid> to change from green to red when the user moves the mouse pointer over the <xref:System.Windows.Controls.Button>.  
+  
+ [!code-xml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualStateGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.VisualStateGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.VisualStateGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentState">
+      <MemberSignature Language="C#" Value="public System.Windows.VisualState CurrentState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.VisualState CurrentState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateGroup.CurrentState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.VisualState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.VisualState" /> that is currently applied to the control.</summary>
+        <value>The <see cref="T:System.Windows.VisualState" /> that is currently applied to the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentStateChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt; CurrentStateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.VisualStateChangedEventArgs&gt; CurrentStateChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.VisualStateGroup.CurrentStateChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after a control transitions to a different state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event occurs after the control transitions to a new state and the <xref:System.Windows.VisualStateGroup.CurrentStateChanging> event occurs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentStateChanging">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt; CurrentStateChanging;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.VisualStateChangedEventArgs&gt; CurrentStateChanging" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.VisualStateGroup.CurrentStateChanging" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a control starts transitioning to a different state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event occurs when the control begins to transition states. If a <xref:System.Windows.VisualTransition> is applied to the state change, this event occurs when the transition begins. If a <xref:System.Windows.VisualTransition> is not applied, this event occurs after the control transitions to the new state, but before the <xref:System.Windows.VisualStateGroup.CurrentStateChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateGroup.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Windows.VisualStateGroup" />.</summary>
+        <value>The name of the <see cref="T:System.Windows.VisualStateGroup" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control authors specify which states the control can be in by adding a <xref:System.Windows.TemplateVisualStateAttribute> on its class definition. States with the same <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A?displayProperty=fullName> belong in the same <xref:System.Windows.VisualStateGroup>. Set the <xref:System.Windows.VisualStateGroup.Name%2A> of the <xref:System.Windows.VisualStateGroup> to the value of the <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following example creates two <xref:System.Windows.VisualStateGroup> objects that are named `CommonStates` and `FocusStates`. The control will be in exactly one state from each <xref:System.Windows.VisualStateGroup> at all times. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
+  
+ [!code-xml[VSMButtonTemplate#5](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="States">
+      <MemberSignature Language="C#" Value="public System.Collections.IList States { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList States" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateGroup.States" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of mutually exclusive <see cref="T:System.Windows.VisualState" /> objects.</summary>
+        <value>The collection of mutually exclusive <see cref="T:System.Windows.VisualState" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button> that contains one <xref:System.Windows.Controls.Grid>. It also contains a <xref:System.Windows.VisualStateGroup> named `CommonStates`, which defines the `MouseOver` and `Normal` states. The <xref:System.Windows.VisualStateGroup> also has a <xref:System.Windows.VisualTransition> that specifies that it takes one half second for the <xref:System.Windows.Controls.Grid> to change from green to red when the user moves the mouse pointer over the <xref:System.Windows.Controls.Button>.  
+  
+ [!code-xml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transitions">
+      <MemberSignature Language="C#" Value="public System.Collections.IList Transitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Transitions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateGroup.Transitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Windows.VisualTransition" /> objects.</summary>
+        <value>The collection of <see cref="T:System.Windows.VisualTransition" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.VisualTransition> objects in <xref:System.Windows.VisualStateGroup.Transitions%2A> are applied when the control transition between states that are defined in the <xref:System.Windows.VisualStateGroup>.  
+  
+   
+  
+## Examples  
+ The following example creates a simple <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button> that contains one <xref:System.Windows.Controls.Grid>. It also contains a <xref:System.Windows.VisualStateGroup> named `CommonStates`, which defines the `MouseOver` and `Normal` states. The <xref:System.Windows.VisualStateGroup> also has a <xref:System.Windows.VisualTransition> that specifies that it takes one half second for the <xref:System.Windows.Controls.Grid> to change from green to red when the user moves the mouse pointer over the <xref:System.Windows.Controls.Button>.  
+  
+ [!code-xml[VSMButtonTemplate#11](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/window1.xaml#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,244 @@
+<Type Name="PrintControllerWithStatusDialog" FullName="System.Windows.Forms.PrintControllerWithStatusDialog">
+  <TypeSignature Language="C#" Value="public class PrintControllerWithStatusDialog : System.Drawing.Printing.PrintController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintControllerWithStatusDialog extends System.Drawing.Printing.PrintController" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintControllerWithStatusDialog" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Printing.PrintController</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Controls how a document is printed from a Windows Forms application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements a <xref:System.Drawing.Printing.PrintController> and adds a status dialog box. A print controller specifies how a <xref:System.Drawing.Printing.PrintDocument> is printed.  
+  
+ For a list of initial property values for an instance of the <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class, see the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.%23ctor%2A> constructor.  
+  
+ For more information about printing with Windows Forms, see the <xref:System.Drawing.Printing> namespace overview. If you want to print from a Windows Presentation Foundation application, see the <xref:System.Printing> namespace.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a new <xref:System.Drawing.Printing.PrintController> and assign it to the <xref:System.Drawing.Printing.PrintController> property. The example assumes that you have added the <xref:System.Drawing.Printing> namespace to the class and that you have created a new instance of a <xref:System.Drawing.Printing.PrintDocument> as `myDocumentPrinter`.  
+  
+ [!code-cpp[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/CS/source.cs#1)]
+ [!code-vb[Classic PrintControllerWithStatusDialog Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic PrintControllerWithStatusDialog Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintControllerWithStatusDialog (System.Drawing.Printing.PrintController underlyingController);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PrintController underlyingController) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.#ctor(System.Drawing.Printing.PrintController)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="underlyingController" Type="System.Drawing.Printing.PrintController" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingController">A <see cref="T:System.Drawing.Printing.PrintController" /> to encapsulate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> class, wrapping the supplied <see cref="T:System.Drawing.Printing.PrintController" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintControllerWithStatusDialog (System.Drawing.Printing.PrintController underlyingController, string dialogTitle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PrintController underlyingController, string dialogTitle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.#ctor(System.Drawing.Printing.PrintController,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="underlyingController" Type="System.Drawing.Printing.PrintController" />
+        <Parameter Name="dialogTitle" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="underlyingController">A <see cref="T:System.Drawing.Printing.PrintController" /> to encapsulate.</param>
+        <param name="dialogTitle">A <see cref="T:System.String" /> containing a title for the status dialog box.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> class, wrapping the supplied <see cref="T:System.Drawing.Printing.PrintController" /> and specifying a title for the dialog box.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPreview">
+      <MemberSignature Language="C#" Value="public override bool IsPreview { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPreview" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintControllerWithStatusDialog.IsPreview" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating this <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> is used for print preview.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> is used for print preview, otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.IsPreview%2A> checks the <xref:System.Drawing.Printing.PrintController.IsPreview%2A> property of the underlying controller.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndPage">
+      <MemberSignature Language="C#" Value="public override void OnEndPage (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintPageEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnEndPage(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Drawing.Printing.PrintDocument" />
+        <Parameter Name="e" Type="System.Drawing.Printing.PrintPageEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document currently being printed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains the event data.</param>
+        <summary>Completes the control sequence that determines when and how to print a page of a document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPage%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. If an exception is thrown inside a <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of a <xref:System.Drawing.Printing.PrintDocument>, <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> is not called.  
+  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. (Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> to set how to print a page in a document. For example, you can adjust page settings separately for each page.) <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndPrint">
+      <MemberSignature Language="C#" Value="public override void OnEndPrint (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnEndPrint(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Drawing.Printing.PrintDocument" />
+        <Parameter Name="e" Type="System.Drawing.Printing.PrintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document currently being printed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains the event data.</param>
+        <summary>Completes the control sequence that determines when and how to print a document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnEndPrint%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.  
+  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. (Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> to determine when and how to print a document. For example, you can delay printing for 30 minutes or adjust the printer settings for the document.) The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> deallocates the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStartPage">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Graphics OnStartPage (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintPageEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Drawing.Graphics OnStartPage(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Drawing.Printing.PrintDocument" />
+        <Parameter Name="e" Type="System.Drawing.Printing.PrintPageEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document currently being printed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains the event data.</param>
+        <summary>Begins the control sequence that determines when and how to print a page of a document.</summary>
+        <returns>A <see cref="T:System.Drawing.Graphics" /> object that represents a page from a <see cref="T:System.Drawing.Printing.PrintDocument" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPage%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method is called immediately before the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
+  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
+  
+ Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> to set how to print a page in a document. For example, you can adjust page settings separately for each page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStartPrint">
+      <MemberSignature Language="C#" Value="public override void OnStartPrint (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnStartPrint(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Drawing.Printing.PrintDocument" />
+        <Parameter Name="e" Type="System.Drawing.Printing.PrintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document currently being printed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintEventArgs" /> that contains the event data.</param>
+        <summary>Begins the control sequence that determines when and how to print a document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog> class calls the <xref:System.Drawing.Printing.PrintController.OnStartPrint%2A?displayProperty=fullName> method on the encapsulated <xref:System.Drawing.Printing.PrintController>.  
+  
+ The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> method is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event.  
+  
+ Use <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> to determine when and how to print a document. For example, you can delay printing for 30 minutes or adjust the printer settings for the document. <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> object that is sent to the printer. After <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is called, the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> object to a graphic of a single page. The <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics> object, while the <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint%2A> method deallocates the object.  
+  
+ <xref:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint%2A> is a good place to verify that <xref:System.Drawing.Printing.PrinterSettings> are valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

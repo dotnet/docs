@@ -1,0 +1,18 @@
+<Type Name="URIErrorObject" FullName="Microsoft.JScript.URIErrorObject">
+  <TypeSignature Language="C#" Value="public sealed class URIErrorObject : Microsoft.JScript.ErrorObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit URIErrorObject extends Microsoft.JScript.ErrorObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.URIErrorObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ErrorObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a Uniform Resource Identifier (URI) error. For example, a URI error can occur when you try to encode or decode a URI.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,261 @@
+<Type Name="PreviewPrintController" FullName="System.Drawing.Printing.PreviewPrintController">
+  <TypeSignature Language="C#" Value="public class PreviewPrintController : System.Drawing.Printing.PrintController" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PreviewPrintController extends System.Drawing.Printing.PrintController" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PreviewPrintController" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Printing.PrintController</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a print controller that displays a document on a screen as a series of images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, to use the print preview feature, you create an instance of a <xref:System.Windows.Forms.PrintPreviewControl> or <xref:System.Windows.Forms.PrintPreviewDialog> class and set its <xref:System.Windows.Forms.PrintPreviewControl.Document%2A> property. The <xref:System.Drawing.Printing.PreviewPrintController> is used by the <xref:System.Windows.Forms.PrintPreviewControl> and <xref:System.Windows.Forms.PrintPreviewDialog> classes, though you can use the <xref:System.Drawing.Printing.PreviewPrintController> when managing the display of your own print preview window.  
+  
+ When used with a <xref:System.Windows.Forms.PrintPreviewControl> or <xref:System.Windows.Forms.PrintPreviewDialog>, <xref:System.Drawing.Printing.PreviewPrintController> sets the <xref:System.Drawing.Printing.PrintController> of the associated <xref:System.Windows.Forms.PrintPreviewControl.Document%2A> to a <xref:System.Windows.Forms.PrintControllerWithStatusDialog>, performs the print preview, and sets the <xref:System.Drawing.Printing.PrintController> back to the original value.  
+  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> that is displayed during the print preview. After <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.PreviewPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> to a graphic of a single page. The <xref:System.Drawing.Printing.PreviewPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics>, while the <xref:System.Drawing.Printing.PreviewPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+ For more information about printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PreviewPrintController ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PreviewPrintController" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreviewPageInfo">
+      <MemberSignature Language="C#" Value="public System.Drawing.Printing.PreviewPageInfo[] GetPreviewPageInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Printing.PreviewPageInfo[] GetPreviewPageInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.GetPreviewPageInfo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PreviewPageInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Captures the pages of a document as a series of images.</summary>
+        <returns>An array of type <see cref="T:System.Drawing.Printing.PreviewPageInfo" /> that contains the pages of a <see cref="T:System.Drawing.Printing.PrintDocument" /> as a series of images.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Drawing.Printing.PrintDocument> image representation contained in a <xref:System.Drawing.Printing.PreviewPageInfo> to implement your own print preview form.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPreview">
+      <MemberSignature Language="C#" Value="public override bool IsPreview { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPreview" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PreviewPrintController.IsPreview" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this controller is used for print preview.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndPage">
+      <MemberSignature Language="C#" Value="public override void OnEndPage (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintPageEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnEndPage(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Drawing.Printing.PrintDocument" />
+        <Parameter Name="e" Type="System.Drawing.Printing.PrintPageEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document being previewed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains data about how to preview a page in the print document.</param>
+        <summary>Completes the control sequence that determines when and how to preview a page in a print document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnEndPage%2A> is called immediately after the <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. If an exception is thrown inside a <xref:System.Drawing.Printing.PrintDocument.PrintPage> event of a <xref:System.Drawing.Printing.PrintDocument>, this method is not called.  
+  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> that is displayed during the print preview. After <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.PreviewPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> to a graphic of a single page. The <xref:System.Drawing.Printing.PreviewPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics>, while the <xref:System.Drawing.Printing.PreviewPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndPrint">
+      <MemberSignature Language="C#" Value="public override void OnEndPrint (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnEndPrint(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Drawing.Printing.PrintDocument" />
+        <Parameter Name="e" Type="System.Drawing.Printing.PrintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document being previewed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintEventArgs" /> that contains data about how to preview the print document.</param>
+        <summary>Completes the control sequence that determines when and how to preview a print document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called immediately after <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event. Even if an uncaught exception was thrown during the print preview process, <xref:System.Drawing.Printing.PreviewPrintController.OnEndPrint%2A> is called.  
+  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> that is displayed during the print preview. After <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.PreviewPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> to a graphic of a single page. The <xref:System.Drawing.Printing.PreviewPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics>, while the <xref:System.Drawing.Printing.PreviewPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStartPage">
+      <MemberSignature Language="C#" Value="public override System.Drawing.Graphics OnStartPage (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintPageEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Drawing.Graphics OnStartPage(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Drawing.Printing.PrintDocument" />
+        <Parameter Name="e" Type="System.Drawing.Printing.PrintPageEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document being previewed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains data about how to preview a page in the print document. Initially, the <see cref="P:System.Drawing.Printing.PrintPageEventArgs.Graphics" /> property of this parameter will be <see langword="null" />. The value returned from this method will be used to set this property.</param>
+        <summary>Begins the control sequence that determines when and how to preview a page in a print document.</summary>
+        <returns>A <see cref="T:System.Drawing.Graphics" /> that represents a page from a <see cref="T:System.Drawing.Printing.PrintDocument" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnStartPage%2A> is called immediately before <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.  
+  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> that is displayed during the print preview. After <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.PreviewPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> to a graphic of a single page. The <xref:System.Drawing.Printing.PreviewPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics>, while the <xref:System.Drawing.Printing.PreviewPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+> [!NOTE]
+>  Anti-aliasing, also known as gray scaling, makes the print preview look better. However, the use of anti-aliasing can slow down the rendering speed. For more information about anti-aliasing, see the <xref:System.Drawing.Printing.PreviewPrintController.UseAntiAlias%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStartPrint">
+      <MemberSignature Language="C#" Value="public override void OnStartPrint (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnStartPrint(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPrintController.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Drawing.Printing.PrintDocument" />
+        <Parameter Name="e" Type="System.Drawing.Printing.PrintEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document being previewed.</param>
+        <param name="e">A <see cref="T:System.Drawing.Printing.PrintEventArgs" /> that contains data about how to print the document.</param>
+        <summary>Begins the control sequence that determines when and how to preview a print document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> is called immediately after <xref:System.Drawing.Printing.PrintDocument> raises the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> event.  
+  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> creates the <xref:System.Drawing.Graphics> that is displayed during the print preview. After <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> is called, the <xref:System.Drawing.Printing.PreviewPrintController.OnStartPage%2A> method sets the <xref:System.Drawing.Graphics> to a graphic of a single page. The <xref:System.Drawing.Printing.PreviewPrintController.OnEndPage%2A> method clears the <xref:System.Drawing.Graphics>, while the <xref:System.Drawing.Printing.PreviewPrintController.OnEndPrint%2A> method deallocates the object.  
+  
+ <xref:System.Drawing.Printing.PreviewPrintController.OnStartPrint%2A> verifies that the printer settings are valid.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Drawing.Printing.InvalidPrinterException">The printer named in the <see cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" /> property does not exist.</exception>
+        <permission cref="T:System.Drawing.Printing.PrintingPermission">for safe printing from a restricted dialog box. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAntiAlias">
+      <MemberSignature Language="C#" Value="public virtual bool UseAntiAlias { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseAntiAlias" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PreviewPrintController.UseAntiAlias" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to use anti-aliasing when displaying the print preview.</summary>
+        <value>
+          <see langword="true" /> if the print preview uses anti-aliasing; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Anti-aliasing, also known as gray scaling, uses several shades of gray around areas of curves and diagonals in text to give the text a smoother appearance.  
+  
+> [!NOTE]
+>  While using anti-aliasing makes the print preview look better, it can slow down the rendering speed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

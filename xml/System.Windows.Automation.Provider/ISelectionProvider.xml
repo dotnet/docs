@@ -1,0 +1,136 @@
+<Type Name="ISelectionProvider" FullName="System.Windows.Automation.Provider.ISelectionProvider">
+  <TypeSignature Language="C#" Value="public interface ISelectionProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISelectionProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ISelectionProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("fb8b03af-3bdf-48d4-bd36-1a65793be168")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to controls that act as containers for a collection of individual, selectable child items. The children of this control must implement <see cref="T:System.Windows.Automation.Provider.ISelectionItemProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.SelectionPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanSelectMultiple">
+      <MemberSignature Language="C#" Value="public bool CanSelectMultiple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanSelectMultiple" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the UI Automation provider allows more than one child element to be selected concurrently.</summary>
+        <value>
+          <see langword="true" /> if multiple selection is allowed; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property may be dynamic. For example, in rare cases a control might allow multiple items to be selected on initialization but subsequently allow only single selections to be made.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of this method for a list that does not allow selection of more than one item at a time.  
+  
+ [!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#CanSelectMultiple](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListFragment.cs#canselectmultiple)]
+ [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#CanSelectMultiple](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listfragment.vb#canselectmultiple)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelection">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple[] GetSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] GetSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ISelectionProvider.GetSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a UI Automation provider for each child element that is selected.</summary>
+        <returns>A collection of UI Automation providers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A default empty array is returned by UIAutoCore.dll when the provider doesn't supply a value.  
+  
+   
+  
+## Examples  
+ The following example shows one possible implementation of this method for a list box that supports only single selection.  
+  
+ [!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#GetSelection](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListFragment.cs#getselection)]
+ [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#GetSelection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listfragment.vb#getselection)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelectionRequired">
+      <MemberSignature Language="C#" Value="public bool IsSelectionRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSelectionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the UI Automation provider requires at least one child element to be selected.</summary>
+        <value>
+          <see langword="true" /> if selection is required; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be dynamic. For example, the initial state of a control might not have any items selected by default, meaning that <xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired%2A> is `false`. However, after an item is selected, the control must always have at least one item selected.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of this method for a list that requires an item to be selected at all times.  
+  
+ [!code-csharp[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelectionRequired](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/CSharp/ListFragment.cs#isselectionrequired)]
+ [!code-vb[UIAISelectionProvider_ISelectionItemProvider_snip#IsSelectionRequired](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAISelectionProvider_ISelectionItemProvider_snip/visualbasic/listfragment.vb#isselectionrequired)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

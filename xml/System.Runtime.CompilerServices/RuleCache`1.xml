@@ -1,0 +1,39 @@
+<Type Name="RuleCache&lt;T&gt;" FullName="System.Runtime.CompilerServices.RuleCache&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class RuleCache&lt;T&gt; where T : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleCache`1&lt;class T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuleCache`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The delegate type.</typeparam>
+    <summary>Represents a cache of runtime binding rules.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

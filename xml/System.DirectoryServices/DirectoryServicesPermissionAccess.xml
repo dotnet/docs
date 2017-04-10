@@ -1,0 +1,71 @@
+<Type Name="DirectoryServicesPermissionAccess" FullName="System.DirectoryServices.DirectoryServicesPermissionAccess">
+  <TypeSignature Language="C#" Value="public enum DirectoryServicesPermissionAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DirectoryServicesPermissionAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesPermissionAccess" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.DirectoryServicesPermissionAccess" /> enumeration defines access levels that are used by <see cref="N:System.DirectoryServices" /> permission classes. This enumeration has a <see cref="T:System.FlagsAttribute" /> attribute that allows a bitwise combination of its member values.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Browse">
+      <MemberSignature Language="C#" Value="Browse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectoryServicesPermissionAccess Browse = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectoryServicesPermissionAccess.Browse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryServicesPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reading the Active Directory Domain Services tree is allowed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectoryServicesPermissionAccess None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectoryServicesPermissionAccess.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryServicesPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No permissions are allowed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="Write" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectoryServicesPermissionAccess Write = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectoryServicesPermissionAccess.Write" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryServicesPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reading, writing, deleting, changing, and adding to the Active Directory Domain Srevices tree are allowed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

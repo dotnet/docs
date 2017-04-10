@@ -1,0 +1,136 @@
+<Type Name="SqlRowsCopiedEventArgs" FullName="System.Data.SqlClient.SqlRowsCopiedEventArgs">
+  <TypeSignature Language="C#" Value="public class SqlRowsCopiedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlRowsCopiedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlRowsCopiedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the set of arguments passed to the <see cref="T:System.Data.SqlClient.SqlRowsCopiedEventHandler" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlRowsCopiedEventArgs (long rowsCopied);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 rowsCopied) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlRowsCopiedEventArgs.#ctor(System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rowsCopied" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="rowsCopied">An <see cref="T:System.Int64" /> that indicates the number of rows copied during the current bulk copy operation.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlRowsCopiedEventArgs" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value in the `rowsCopied` parameter is reset on each call to any one of the `SqlBulkCopy.WriteToServer` methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public bool Abort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Abort" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlRowsCopiedEventArgs.Abort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the bulk copy operation should be aborted.</summary>
+        <value>
+          <see langword="true" /> if the bulk copy operation should be aborted; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.SqlClient.SqlRowsCopiedEventArgs.Abort%2A> property to cancel a bulk copy operation. Set <xref:System.Data.SqlClient.SqlRowsCopiedEventArgs.Abort%2A> to `true` to abort the bulk copy operation.  
+  
+ If you call the **Close** method from <xref:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied>, an exception is generated, and the <xref:System.Data.SqlClient.SqlBulkCopy> object state does not change.  
+  
+ If an application specifically creates a <xref:System.Data.SqlClient.SqlTransaction> object in the <xref:System.Data.SqlClient.SqlCommand> constructor, the transaction is not rolled back. The application is responsible for determining whether it is required to rollback the operation, and if so, it must call the <xref:System.Data.SqlClient.SqlTransaction.Rollback%2A?displayProperty=fullName> method. If the application does not create a transaction, the internal transaction corresponding to the current batch is automatically rolled back. However, changes related to previous batches within the bulk copy operation are retained, because the transactions for them already have been committed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowsCopied">
+      <MemberSignature Language="C#" Value="public long RowsCopied { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 RowsCopied" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlRowsCopiedEventArgs.RowsCopied" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that returns the number of rows copied during the current bulk copy operation.</summary>
+        <value>
+          <see langword="int" /> that returns the number of rows copied.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value in the <xref:System.Data.SqlClient.SqlRowsCopiedEventArgs.RowsCopied%2A> property is reset on each call to any of the `SqlBulkCopy.WriteToServer` methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

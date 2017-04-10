@@ -1,0 +1,512 @@
+<Type Name="Screen" FullName="System.Windows.Forms.Screen">
+  <TypeSignature Language="C#" Value="public class Screen" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Screen extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Screen" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a display device or multiple display devices on a single system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor for this object is not public, so you cannot explicitly create a <xref:System.Windows.Forms.Screen> object. The object is created when you call its public methods.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use various methods and properties of the <xref:System.Windows.Forms.Screen> class. The example calls the <xref:System.Windows.Forms.Screen.AllScreens%2A> property to retrieve an array of all the screens connected to the system. For each returned <xref:System.Windows.Forms.Screen>, the example adds the device name, bounds, type, working area, and primary screen to a <xref:System.Windows.Forms.ListBox>. To use the example, add a <xref:System.Windows.Forms.ListBox> and a <xref:System.Windows.Forms.Button> to a form, and then add a <xref:System.Windows.Forms.Control.Click> event handler for the button.  
+  
+ [!code-cpp[Screen Object Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Screen Object Example/CPP/form1.cpp#1)]
+ [!code-csharp[Screen Object Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Screen Object Example/CS/form1.cs#1)]
+ [!code-vb[Screen Object Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Screen Object Example/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllScreens">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Screen[] AllScreens { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Screen[] AllScreens" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.AllScreens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Screen[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array of all displays on the system.</summary>
+        <value>An array of type <see cref="T:System.Windows.Forms.Screen" />, containing all displays on the system.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitsPerPixel">
+      <MemberSignature Language="C#" Value="public int BitsPerPixel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BitsPerPixel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.BitsPerPixel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of bits of memory, associated with one pixel of data.</summary>
+        <value>The number of bits of memory, associated with one pixel of data</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, the number of bits per pixel for a screen is useful when working with bitmaps. For more information about bitmaps, see [Types of Bitmaps](~/docs/framework/winforms/advanced/types-of-bitmaps.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounds of the display.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" />, representing the bounds of the display.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceName">
+      <MemberSignature Language="C#" Value="public string DeviceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.DeviceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the device name associated with a display.</summary>
+        <value>The device name associated with a display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This string may contain non-printable characters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare to this <see cref="T:System.Windows.Forms.Screen" />.</param>
+        <summary>Gets or sets a value indicating whether the specified object is equal to this <see langword="Screen" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to this <see cref="T:System.Windows.Forms.Screen" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromControl">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Screen FromControl (System.Windows.Forms.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.Screen FromControl(class System.Windows.Forms.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.FromControl(System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Screen</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">A <see cref="T:System.Windows.Forms.Control" /> for which to retrieve a <see cref="T:System.Windows.Forms.Screen" />.</param>
+        <summary>Retrieves a <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the largest portion of the specified control.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the largest region of the specified control. In multiple display environments where no display contains the control, the display closest to the specified control is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromHandle">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Screen FromHandle (IntPtr hwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.Screen FromHandle(native int hwnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.FromHandle(System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Screen</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">The window handle for which to retrieve the <see cref="T:System.Windows.Forms.Screen" />.</param>
+        <summary>Retrieves a <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the largest portion of the object referred to by the specified handle.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the largest region of the object. In multiple display environments where no display contains any portion of the specified window, the display closest to the object is returned.</returns>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">to get an object from a Win32 handle. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="FromPoint">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Screen FromPoint (System.Drawing.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.Screen FromPoint(valuetype System.Drawing.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.FromPoint(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Screen</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">A <see cref="T:System.Drawing.Point" /> that specifies the location for which to retrieve a <see cref="T:System.Windows.Forms.Screen" />.</param>
+        <summary>Retrieves a <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the specified point.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the point. In multiple display environments where no display contains the point, the display closest to the specified point is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Windows.Forms.Screen.FromPoint%2A> method. This example creates a <xref:System.Drawing.Point> referencing the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> coordinates passed by a <xref:System.Windows.Forms.MouseEventArgs>, and then uses the <xref:System.Windows.Forms.Screen.FromPoint%2A> method to determine if the point clicked is on the primary screen.  
+  
+ [!code-cpp[Screen.FromPoint#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Screen.FromPoint/CPP/form1.cpp#1)]
+ [!code-csharp[Screen.FromPoint#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Screen.FromPoint/CS/form1.cs#1)]
+ [!code-vb[Screen.FromPoint#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Screen.FromPoint/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromRectangle">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Screen FromRectangle (System.Drawing.Rectangle rect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.Screen FromRectangle(valuetype System.Drawing.Rectangle rect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.FromRectangle(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Screen</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="rect">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area for which to retrieve the display.</param>
+        <summary>Retrieves a <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the largest portion of the rectangle.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.Screen" /> for the display that contains the largest region of the specified rectangle. In multiple display environments where no display contains the rectangle, the display closest to the rectangle is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBounds">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle GetBounds (System.Drawing.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle GetBounds(valuetype System.Drawing.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetBounds(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">A <see cref="T:System.Drawing.Point" /> that specifies the coordinates for which to retrieve the display bounds.</param>
+        <summary>Retrieves the bounds of the display that contains the specified point.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the display that contains the specified point. In multiple display environments where no display contains the specified point, the display closest to the point is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBounds">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle GetBounds (System.Drawing.Rectangle rect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle GetBounds(valuetype System.Drawing.Rectangle rect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetBounds(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="rect">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area for which to retrieve the display bounds.</param>
+        <summary>Retrieves the bounds of the display that contains the largest portion of the specified rectangle.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the display that contains the specified rectangle. In multiple display environments where no monitor contains the specified rectangle, the monitor closest to the rectangle is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBounds">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle GetBounds (System.Windows.Forms.Control ctl);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle GetBounds(class System.Windows.Forms.Control ctl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetBounds(System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ctl" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="ctl">The <see cref="T:System.Windows.Forms.Control" /> for which to retrieve the display bounds.</param>
+        <summary>Retrieves the bounds of the display that contains the largest portion of the specified control.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the display that contains the specified control. In multiple display environments where no display contains the specified control, the display closest to the control is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Computes and retrieves a hash code for an object.</summary>
+        <returns>A hash code for an object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method implements the <xref:System.Object> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkingArea">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle GetWorkingArea (System.Drawing.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle GetWorkingArea(valuetype System.Drawing.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetWorkingArea(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">A <see cref="T:System.Drawing.Point" /> that specifies the coordinates for which to retrieve the working area.</param>
+        <summary>Retrieves the working area closest to the specified point. The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that specifies the working area. In multiple display environments where no display contains the specified point, the display closest to the point is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.Screen.PrimaryScreen%2A> property and the <xref:System.Windows.Forms.Screen.GetWorkingArea%2A> method. This method requires a form containing a button named `Button1`  
+  
+ [!code-cpp[System.Windows.Forms.ScreenExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScreenExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ScreenExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScreenExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ScreenExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScreenExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkingArea">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle GetWorkingArea (System.Drawing.Rectangle rect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle GetWorkingArea(valuetype System.Drawing.Rectangle rect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetWorkingArea(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> that specifies the area for which to retrieve the working area.</param>
+        <summary>Retrieves the working area for the display that contains the largest portion of the specified rectangle. The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that specifies the working area. In multiple display environments where no display contains the specified rectangle, the display closest to the rectangle is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkingArea">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle GetWorkingArea (System.Windows.Forms.Control ctl);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle GetWorkingArea(class System.Windows.Forms.Control ctl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.GetWorkingArea(System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ctl" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="ctl">The <see cref="T:System.Windows.Forms.Control" /> for which to retrieve the working area.</param>
+        <summary>Retrieves the working area for the display that contains the largest region of the specified control. The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that specifies the working area. In multiple display environments where no display contains the specified control, the display closest to the control is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Primary">
+      <MemberSignature Language="C#" Value="public bool Primary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Primary" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.Primary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a particular display is the primary device.</summary>
+        <value>
+          <see langword="true" /> if this display is primary; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryScreen">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Screen PrimaryScreen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Screen PrimaryScreen" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.PrimaryScreen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Screen</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the primary display.</summary>
+        <value>The primary display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a single display system, the primary display is the only display.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of <xref:System.Windows.Forms.Screen.PrimaryScreen%2A> property and the <xref:System.Windows.Forms.Screen.GetWorkingArea%2A> method. This method requires a form containing a button named `Button1`.  
+  
+ [!code-cpp[System.Windows.Forms.ScreenExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ScreenExample/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ScreenExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ScreenExample/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ScreenExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ScreenExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Screen.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a string representing this object.</summary>
+        <returns>A string representation of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkingArea">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle WorkingArea { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle WorkingArea" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Screen.WorkingArea" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the working area of the display. The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" />, representing the working area of the display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The working area is the desktop area of the display, excluding taskbars, docked windows, and docked tool bars.  
+  
+ <xref:System.Windows.Forms.Screen.WorkingArea%2A> will return the entire area of the screen if the Windows Taskbar is set to Auto-Hide, no matter whether the Taskbar is currently displayed or not.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

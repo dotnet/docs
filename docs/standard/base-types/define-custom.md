@@ -40,7 +40,7 @@ In some cases (such as when an application must display a formatted account numb
 
     a. Optionally, make sure that the method is legitimately intended to provide formatting services by examining the *provider* parameter. For formatting objects that implement both [IFormatProvider](xref:System.IFormatProvider) and [ICustomFormatter](xref:System.ICustomFormatter), this involves testing the *provider* parameter for equality with the current formatting object.
     
-    b. Determine whether the formatting object should support custom format specifiers. (For example, an "N" format specifier might indicate that a U.S. telephone number should be output in NANP format, and an "I" might indicate output in ITU-T Recommendation E.123 format.) If format specifiers are used, the method should handle the specific format specifier. It is passed to the method in the format parameter. If no specifier is present, the value of the *format* parameter is [String.Empty](xref:System.String#System_String_Empty).
+    b. Determine whether the formatting object should support custom format specifiers. (For example, an "N" format specifier might indicate that a U.S. telephone number should be output in NANP format, and an "I" might indicate output in ITU-T Recommendation E.123 format.) If format specifiers are used, the method should handle the specific format specifier. It is passed to the method in the format parameter. If no specifier is present, the value of the *format* parameter is `String.Empty`.
     
     c. Retrieve the numeric value passed to the method as the *arg* parameter. Perform whatever manipulations are required to convert it to its string representation.
     

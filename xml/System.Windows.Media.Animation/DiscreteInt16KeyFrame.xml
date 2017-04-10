@@ -1,0 +1,145 @@
+<Type Name="DiscreteInt16KeyFrame" FullName="System.Windows.Media.Animation.DiscreteInt16KeyFrame">
+  <TypeSignature Language="C#" Value="public class DiscreteInt16KeyFrame : System.Windows.Media.Animation.Int16KeyFrame" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscreteInt16KeyFrame extends System.Windows.Media.Animation.Int16KeyFrame" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DiscreteInt16KeyFrame" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.Int16KeyFrame</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Animates from the <see cref="T:System.Int16" /> value of the previous key frame to its own <see cref="P:System.Windows.Media.Animation.Int16KeyFrame.Value" /> using discrete interpolation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used as part of a <xref:System.Windows.Media.Animation.Int16KeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.Int16AnimationUsingKeyFrames> to animate a <xref:System.Int16> property value along a set of key frames.  
+  
+ A key frame defines a segment of the <xref:System.Windows.Media.Animation.Int16AnimationUsingKeyFrames> to which it belongs. Each key frame has a target <xref:System.Windows.Media.Animation.Int16KeyFrame.Value%2A> and a <xref:System.Windows.Media.Animation.Int16KeyFrame.KeyTime%2A>. The <xref:System.Windows.Media.Animation.Int16KeyFrame.KeyTime%2A> specifies the time at which the key frame's <xref:System.Windows.Media.Animation.Int16KeyFrame.Value%2A> should be reached. A key frame animates from the target value of the previous key frame to its own target value. It starts when the previous key frame ends and ends when its own key time is reached.  
+  
+ Discrete key frames like <xref:System.Windows.Media.Animation.DiscreteInt16KeyFrame> create sudden "jumps" between values (no interpolation). In other words, the animated property does not change until the key frame's key time is reached, at which point the animated property goes suddenly to the target value.  
+  
+   
+  
+## Examples  
+ An animation's interpolation describes how an animation transitions between values over its duration. By selecting which key frame type you use with your animation, you can define the interpolation method for that key frame segment. There are three different types of interpolation methods: linear, discrete, and splined. This example uses a <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> to demonstrate these interpolation types.  
+  
+ The following example uses each of the different interpolation methods available to the <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> class to animate the position of a <xref:System.Windows.Shapes.Rectangle>.  
+  
+1.  During the first three seconds, uses an instance of the <xref:System.Windows.Media.Animation.LinearDoubleKeyFrame> class to move the rectangle along a path at a steady rate from its starting position to the 500 position. Linear key frames like <xref:System.Windows.Media.Animation.LinearDoubleKeyFrame> create a smooth linear transition between values.  
+  
+2.  At the end of the fourth second, uses an instance of the <xref:System.Windows.Media.Animation.DiscreteDoubleKeyFrame> class to suddenly move the rectangle to the next position. Discrete key frames like <xref:System.Windows.Media.Animation.DiscreteDoubleKeyFrame> create sudden jumps between values. In this example, the rectangle is at the starting position and then suddenly appears at the 500 position.  
+  
+3.  In the final two seconds, uses an instance of the <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame> class to move the rectangle back to its starting position. Spline key frames like <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame> create a variable transition between values according to the value of the <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame.KeySpline%2A> property. In this example, the rectangle begins by moving slowly and then speeds up exponentially toward the end of the time segment  
+  
+ [!code-csharp[keyframes_snip#AltDoubleAnimationUsingKeyFramesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_snip/CSharp/AltDoubleAnimationUsingKeyFramesExample.cs#altdoubleanimationusingkeyframeswholepage)]
+ [!code-vb[keyframes_snip#AltDoubleAnimationUsingKeyFramesWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/keyframes_snip/visualbasic/altdoubleanimationusingkeyframesexample.vb#altdoubleanimationusingkeyframeswholepage)]
+ [!code-xml[keyframes_snip#AltDoubleAnimationUsingKeyFramesWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/keyframes_snip/XAML/AltDoubleAnimationUsingKeyFramesExample.xaml#altdoubleanimationusingkeyframeswholepage)]  
+  
+ Not every \<Type>AnimationUsingKeyFrames class supports all interpolation methods. For more information, see the [Key-Frame Animations Overview](~/docs/framework/wpf/graphics-multimedia/key-frame-animations-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscreteInt16KeyFrame ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteInt16KeyFrame.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteInt16KeyFrame" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscreteInt16KeyFrame (short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteInt16KeyFrame.#ctor(System.Int16)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="value">The ending value (also known as "target value") for the key frame.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteInt16KeyFrame" /> class with the specified ending value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscreteInt16KeyFrame (short value, System.Windows.Media.Animation.KeyTime keyTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int16 value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteInt16KeyFrame.#ctor(System.Int16,System.Windows.Media.Animation.KeyTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+        <Parameter Name="keyTime" Type="System.Windows.Media.Animation.KeyTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">The ending value (also known as "target value") for the key frame.</param>
+        <param name="keyTime">The key time for the key frame. The key time determines when the target value is reached, which is also when the key frame ends.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteInt16KeyFrame" /> class with the specified ending value and key time.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteInt16KeyFrame.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.DiscreteInt16KeyFrame" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.Animation.DiscreteInt16KeyFrame" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterpolateValueCore">
+      <MemberSignature Language="C#" Value="protected override short InterpolateValueCore (short baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int16 InterpolateValueCore(int16 baseValue, float64 keyFrameProgress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteInt16KeyFrame.InterpolateValueCore(System.Int16,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseValue" Type="System.Int16" />
+        <Parameter Name="keyFrameProgress" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="baseValue">The value to animate from.</param>
+        <param name="keyFrameProgress">A value from 0.0 through 1.0 that specifies the percentage of time that has elapsed for this key frame.</param>
+        <summary>Uses discrete interpolation to transition between the previous key frame value and the value of the current key frame.</summary>
+        <returns>The output value of this key frame given the specified base value and progress.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

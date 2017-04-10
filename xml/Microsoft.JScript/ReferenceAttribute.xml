@@ -1,0 +1,66 @@
+<Type Name="ReferenceAttribute" FullName="Microsoft.JScript.ReferenceAttribute">
+  <TypeSignature Language="C#" Value="public class ReferenceAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReferenceAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ReferenceAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a reference to an assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class cannot be inherited.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReferenceAttribute (string reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ReferenceAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reference" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The reference to the assembly.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ReferenceAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="reference">
+      <MemberSignature Language="C#" Value="public string reference;" />
+      <MemberSignature Language="ILAsm" Value=".field public string reference" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ReferenceAttribute.reference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the reference to the assembly.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

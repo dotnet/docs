@@ -1,0 +1,1981 @@
+<Type Name="OracleNumber" FullName="System.Data.OracleClient.OracleNumber">
+  <TypeSignature Language="C#" Value="public struct OracleNumber : IComparable, System.Data.SqlTypes.INullable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit OracleNumber extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleNumber" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.OracleClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Data.SqlTypes.INullable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IComparable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a fixed precision and scale numeric value between -10 <sup>27</sup> -1 and 10 <sup>27</sup> -1 to be stored in or retrieved from a database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To obtain an <xref:System.Data.OracleClient.OracleNumber> object, call the <xref:System.Data.OracleClient.OracleDataReader.GetOracleNumber%2A> method.  
+  
+ Oracle numeric data types can store up to 27 decimal digits of precision. When converting Oracle numeric values to common language runtime data types, the Oracle value might be too large. Conversely, when converting a numeric value of a common language runtime data types to an <xref:System.Data.OracleClient.OracleNumber>, the numeric value may be either too large or too high precision for the <xref:System.Data.OracleClient.OracleNumber>. Either of these cases will cause an Oracle ORA-22053 overflow error. If your Oracle database might contain large values, you should use the <xref:System.Data.OracleClient.OracleNumber> data type. You can then convert to the common language runtime data type explicitly, and catch or handle any errors.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleNumber (System.Data.OracleClient.OracleNumber from);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.OracleClient.OracleNumber from) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.#ctor(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="from" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="from">The supplied <see cref="T:System.Data.OracleClient.OracleNumber" /> that will be used as the value of the new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure using the supplied <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleNumber (decimal decValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Decimal decValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.#ctor(System.Decimal)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="decValue" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="decValue">The <see cref="T:System.Decimal" /> value to be stored as an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure using the supplied <see cref="T:System.Decimal" /> value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleNumber (double dblValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 dblValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.#ctor(System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dblValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="dblValue">The supplied double precision value that will the used as the value of the new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> using the supplied double precision value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleNumber (int intValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 intValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="intValue" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="intValue">The supplied integer value that will be used as the value of the new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure using the supplied integer value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleNumber (long longValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 longValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.#ctor(System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="longValue" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="longValue">The supplied long integer value that will be used as the value of the new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure using the supplied long integer value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abs">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Abs (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Abs(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Abs(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see langword="OracleNumber" /> structure.</param>
+        <summary>Gets the absolute value of the <see cref="T:System.Data.OracleClient.OracleNumber" /> parameter.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the unsigned number representing the absolute value of the <see cref="T:System.Data.OracleClient.OracleNumber" /> parameter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Acos">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Acos (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Acos(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Acos(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the inverse hyperbolic cosine of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Add (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Add(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Add(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the sum of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the sum.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Asin">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Asin (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Asin(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Asin(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the inverse hyperbolic sine of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Atan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Atan (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Atan(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Atan(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the inverse hyperbolic tangent of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Atan2">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Atan2 (System.Data.OracleClient.OracleNumber y, System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Atan2(valuetype System.Data.OracleClient.OracleNumber y, valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Atan2(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the inverse hyperbolic tangent of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures.</summary>
+        <returns>An angle, measured in radians.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ceiling">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Ceiling (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Ceiling(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Ceiling(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure for which the ceiling value is to be calculated.</param>
+        <summary>Returns the smallest whole number greater than or equal to the specified <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleNumber" /> representing the smallest whole number greater than or equal to the specified <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.CompareTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to be compared.</param>
+        <summary>Compares this instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to the supplied object and returns an indication of their relative values.</summary>
+        <returns>A signed number indicating the relative values of the instance and the object.  
+  
+ <list type="table">  
+<listheader>  
+<term> Return Value  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> Less than zero  
+  
+ </term>  
+<description> This instance is less than the object.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Zero  
+  
+ </term>  
+<description> This instance is the same as the object.  
+  
+ </description>  
+</item>  
+<item>  
+<term> Greater than zero  
+  
+ </term>  
+<description> This instance is greater than the object, or the object is a null reference (<see langword="Nothing" /> in Visual Basic)  
+  
+ </description>  
+</item>  
+</list></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cos">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Cos (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Cos(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Cos(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the cosine of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>The cosine of <paramref name="n" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cosh">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Cosh (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Cosh(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Cosh(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the hyperbolic cosine of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>The hyperbolic cosine of <paramref name="n" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Divide (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Divide(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Divide(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the results of dividing the first <see cref="T:System.Data.OracleClient.OracleNumber" /> structure by the second.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the results of the division.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="E">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleNumber E;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleNumber E" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.E" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the value e-2.718.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OracleClient.OracleNumber.E> is useful for performing scientific calculations or as a parameter value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to be compared.</param>
+        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleNumber" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the object is an instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> and the two are equal, otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean Equals (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean Equals(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Equals(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine if they are equal.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exp">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Exp (System.Data.OracleClient.OracleNumber p);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Exp(valuetype System.Data.OracleClient.OracleNumber p) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Exp(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="p">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates e raised to the power of an <see cref="T:System.Data.OracleClient.OracleNumber" />. The constant e equals 2.71828182845904, the base of the natural logarithm.</summary>
+        <returns>A number raised to the power of <paramref name="p" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Floor">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Floor (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Floor(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Floor(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure for which the floor value is to be calculated.</param>
+        <summary>Rounds a specified <see cref="T:System.Data.OracleClient.OracleNumber" /> number to the next lower whole number.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure containing the whole number portion of this <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean GreaterThan (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean GreaterThan(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.GreaterThan(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine whether the first is greater than the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean GreaterThanOrEqual (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.GreaterThanOrEqual(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether the first is greater than or equal to the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNull">
+      <MemberSignature Language="C#" Value="public bool IsNull { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleNumber.IsNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether or not the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> of this <see cref="T:System.Data.OracleClient.OracleNumber" /> structure is null.</summary>
+        <value>
+          <see langword="true" /> if <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> is null, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean LessThan (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean LessThan(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.LessThan(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine whether the first is less than the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean LessThanOrEqual (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean LessThanOrEqual(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.LessThanOrEqual(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether the first is less than or equal to the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Log (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Log(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Log(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates natural logarithm of an <see cref="T:System.Data.OracleClient.OracleNumber" />. Natural logarithms are based on the constant e (2.71828182845904).</summary>
+        <returns>The natural logarithm of <paramref name="n" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Log (System.Data.OracleClient.OracleNumber n, System.Data.OracleClient.OracleNumber newBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Log(valuetype System.Data.OracleClient.OracleNumber n, valuetype System.Data.OracleClient.OracleNumber newBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Log(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="newBase" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="newBase">A user-specified <see cref="T:System.Data.OracleClient.OracleNumber" />.</param>
+        <summary>Calculates an <see cref="T:System.Data.OracleClient.OracleNumber" /> to the base you specify.</summary>
+        <returns>The logarithm of a specified number in a specified base.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Log (System.Data.OracleClient.OracleNumber n, int newBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Log(valuetype System.Data.OracleClient.OracleNumber n, int32 newBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Log(System.Data.OracleClient.OracleNumber,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="newBase" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="newBase">User-specified integer.</param>
+        <summary>Calculates an <see cref="T:System.Data.OracleClient.OracleNumber" /> to the base you specify.</summary>
+        <returns>The logarithm of a specified number in a specified base.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log10">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Log10 (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Log10(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Log10(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the base 10 logarithm of a number.</summary>
+        <returns>The base 10 logarithm of the specified number.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Max (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Max(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Max(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Returns the larger of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameter values.</summary>
+        <returns>The larger of <paramref name="x" /> or <paramref name="y" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPrecision">
+      <MemberSignature Language="C#" Value="public static readonly int MaxPrecision;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 MaxPrecision" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.MaxPrecision" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant representing the largest possible value for precision comparison.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is 38.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxScale">
+      <MemberSignature Language="C#" Value="public static readonly int MaxScale;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 MaxScale" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.MaxScale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant representing the maximum value for scale comparison.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is 127.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxValue">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleNumber MaxValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleNumber MaxValue" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.MaxValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant representing the maximum value of an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is 9.9999999999999999999999999999999999999E+125. This number has a greater precision than what a common language run-time `Double` data type can contain. If you attempt to store this value in a `Double`, the value is rounded up to 1E+126. The maximum `Double` value that can be used in the <xref:System.Data.OracleClient.OracleNumber> (Double) constructor is: 9.99999999999999E+125.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Min">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Min (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Min(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Min(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Returns the smaller of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameter values.</summary>
+        <returns>The smaller of <paramref name="x" /> or <paramref name="y" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinScale">
+      <MemberSignature Language="C#" Value="public static readonly int MinScale;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 MinScale" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.MinScale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant representing the minimum value for scale comparison.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is -84.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinusOne">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleNumber MinusOne;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleNumber MinusOne" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.MinusOne" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the value -1.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OracleClient.OracleNumber.MinusOne> is useful for performing calculations or as a parameter value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinValue">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleNumber MinValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleNumber MinValue" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.MinValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant representing the minimum value for an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this constant is -9.9999999999999999999999999999999999999E+125.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modulo">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Modulo (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Modulo(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Modulo(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the modulus from dividing the first <see cref="T:System.Data.OracleClient.OracleNumber" /> structure by the second.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the modulus from the results of the division operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Multiply (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Multiply(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Multiply(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the product of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the product of the multiplication.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Negate">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Negate (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Negate(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Negate(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Negates the value of the <see cref="T:System.Data.OracleClient.OracleNumber" /> parameter.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleNumber" /> with the negative value of x , or zero, if <paramref name="x" /> is zero.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEquals">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean NotEquals (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean NotEquals(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.NotEquals(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether they are not equal.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleNumber Null;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleNumber Null" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a null value that can be assigned to the <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property of an instance of the <see cref="T:System.Data.OracleClient.OracleNumber" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="One">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleNumber One;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleNumber One" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.One" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the value 1.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OracleClient.OracleNumber.One> is useful for performing calculations or as a parameter value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Addition">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Addition (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Addition(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Addition(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the sum of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the sum.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Add%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Division">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Division (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Division(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Division(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the results of dividing the first <see cref="T:System.Data.OracleClient.OracleNumber" /> structure by the second.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the results of the division.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Divide%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Equality (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Equality(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine whether they are equal.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are not equal. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Equals%28System.Object%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static decimal op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Decimal op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Decimal" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static double op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname float64 op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Double" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static int op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Int32" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static long op_Explicit (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Data.OracleClient.OracleNumber)~System.Int64" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (decimal x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(valuetype System.Decimal x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Decimal)~System.Data.OracleClient.OracleNumber" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (double x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(float64 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Double)~System.Data.OracleClient.OracleNumber" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (int x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(int32 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Int32)~System.Data.OracleClient.OracleNumber" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (long x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(int64 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.Int64)~System.Data.OracleClient.OracleNumber" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Explicit (string x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Explicit(string x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Explicit(System.String)~System.Data.OracleClient.OracleNumber" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThan (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_GreaterThan(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine whether the first is greater than the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.GreaterThan%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_GreaterThanOrEqual(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether the first is greater than or equal to the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is greater than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.GreaterThanOrEqual%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_Inequality (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Inequality(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether they are equal.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the two instances are not equal or <see cref="F:System.Data.OracleClient.OracleBoolean.False" /> if the two instances are equal. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.NotEquals%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThan (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_LessThan(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures to determine whether the first is less than the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.LessThan%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThanOrEqual">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean op_LessThanOrEqual (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_LessThanOrEqual(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleBoolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Performs a logical comparison of the two <see cref="T:System.Data.OracleClient.OracleNumber" /> parameters to determine whether the first is less than or equal to the second.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleBoolean" /> that is <see cref="F:System.Data.OracleClient.OracleBoolean.True" /> if the first instance is less than or equal to the second instance, otherwise <see cref="F:System.Data.OracleClient.OracleBoolean.False" />. If either instance of <see cref="T:System.Data.OracleClient.OracleNumber" /> is null, the <see cref="P:System.Data.OracleClient.OracleBoolean.Value" /> of the <see cref="T:System.Data.OracleClient.OracleBoolean" /> is <see cref="F:System.Data.OracleClient.OracleBoolean.Null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.LessThanOrEqual%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Modulus">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Modulus (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Modulus(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Modulus(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the remainder left over from dividing an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure by a second <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the modulus of the division.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Modulo%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Multiply">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Multiply (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Multiply(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Multiply(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the product of two <see cref="T:System.Data.OracleClient.OracleNumber" /> structures.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the product of the multiplication.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Multiply%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Subtraction">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_Subtraction (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_Subtraction(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_Subtraction(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the result of subtracting the second <see cref="T:System.Data.OracleClient.OracleNumber" /> structure from the first.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property contains the results of the subtraction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Subtract%28System.Data.OracleClient.OracleNumber%2CSystem.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_UnaryNegation">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber op_UnaryNegation (System.Data.OracleClient.OracleNumber x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleNumber op_UnaryNegation(valuetype System.Data.OracleClient.OracleNumber x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.op_UnaryNegation(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be negated.</param>
+        <summary>Negates the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose value contains the results of the negation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.OracleClient.OracleNumber.Negate%28System.Data.OracleClient.OracleNumber%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Parse (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Parse(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Parse(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">The <see langword="String" /> to be parsed.</param>
+        <summary>Converts the <see cref="T:System.String" /> representation of a number to its <see cref="T:System.Data.OracleClient.OracleNumber" /> equivalent.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleNumber" /> equivalent to the value contained in the specified <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PI">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleNumber PI;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleNumber PI" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.PI" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the value of pi-3.1415926535897932384626433832795028842.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OracleClient.OracleNumber.PI> is useful for performing calculations or as a parameter value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pow">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Pow (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Pow(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Pow(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> to be raised to a power.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> that specifies a power.</param>
+        <summary>Calculates the result of raising a specified <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to the power specified by a second <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</summary>
+        <returns>The number <paramref name="x" /> raised to the power <paramref name="y" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pow">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Pow (System.Data.OracleClient.OracleNumber x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Pow(valuetype System.Data.OracleClient.OracleNumber x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Pow(System.Data.OracleClient.OracleNumber,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">The <see cref="T:System.Data.OracleClient.OracleNumber" /> to be raised to a power.</param>
+        <param name="y">An <see langword="Int32" /> structure that specifies a power.</param>
+        <summary>Calculates the result of raising a specified <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to the power specified by an <see langword="Int32" /> structure.</summary>
+        <returns>The number <paramref name="x" /> raised to the power <paramref name="y" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Round (System.Data.OracleClient.OracleNumber n, int position);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Round(valuetype System.Data.OracleClient.OracleNumber n, int32 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Round(System.Data.OracleClient.OracleNumber,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="n">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be rounded.</param>
+        <param name="position">The number of significant fractional digits (precision) in the return value.</param>
+        <summary>Gets the number nearest the specified <see cref="T:System.Data.OracleClient.OracleNumber" /> structure's value with the specified precision.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure containing the results of the rounding operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shift">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Shift (System.Data.OracleClient.OracleNumber n, int digits);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Shift(valuetype System.Data.OracleClient.OracleNumber n, int32 digits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Shift(System.Data.OracleClient.OracleNumber,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="digits" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="n">Number to operate on.</param>
+        <param name="digits">The number of decimal places to shift.</param>
+        <summary>Shifts the specified number of digits to the left or right.</summary>
+        <returns>The result of the operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sign">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Sign (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Sign(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Sign(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose sign is to be evaluated.</param>
+        <summary>Gets a value indicating the sign of an <see cref="T:System.Data.OracleClient.OracleNumber" /> structure's <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property.</summary>
+        <returns>A number indicating the sign of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sin">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Sin (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Sin(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Sin(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the sine of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>The sine of <paramref name="n" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sinh">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Sinh (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Sinh(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Sinh(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the hyperbolic sine of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>The hyperbolic sine of <paramref name="n" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sqrt">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Sqrt (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Sqrt(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Sqrt(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the square root of the <see cref="T:System.Data.OracleClient.OracleNumber" /> parameter.</summary>
+        <returns>The square root of <paramref name="n" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Subtract (System.Data.OracleClient.OracleNumber x, System.Data.OracleClient.OracleNumber y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Subtract(valuetype System.Data.OracleClient.OracleNumber x, valuetype System.Data.OracleClient.OracleNumber y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Subtract(System.Data.OracleClient.OracleNumber,System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="y" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="x">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <param name="y">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the result of subtracting the second <see cref="T:System.Data.OracleClient.OracleNumber" /> structure from the first.</summary>
+        <returns>A new <see cref="T:System.Data.OracleClient.OracleNumber" /> structure whose Value property contains the results of the subtraction.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tan">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Tan (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Tan(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Tan(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the tangent of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>The tangent of <paramref name="n" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tanh">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Tanh (System.Data.OracleClient.OracleNumber n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Tanh(valuetype System.Data.OracleClient.OracleNumber n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Tanh(System.Data.OracleClient.OracleNumber)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+      </Parameters>
+      <Docs>
+        <param name="n">An <see cref="T:System.Data.OracleClient.OracleNumber" /> structure.</param>
+        <summary>Calculates the hyperbolic tangent of an <see cref="T:System.Data.OracleClient.OracleNumber" />.</summary>
+        <returns>The hyperbolic tangent of <paramref name="n" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts this <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to <see cref="T:System.String" />.</summary>
+        <returns>A new <see cref="T:System.String" /> object containing the string representation of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure's <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Truncate">
+      <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleNumber Truncate (System.Data.OracleClient.OracleNumber n, int position);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleNumber Truncate(valuetype System.Data.OracleClient.OracleNumber n, int32 position) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleNumber.Truncate(System.Data.OracleClient.OracleNumber,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="n" Type="System.Data.OracleClient.OracleNumber" />
+        <Parameter Name="position" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="n">The <see cref="T:System.Data.OracleClient.OracleNumber" /> structure to be truncated.</param>
+        <param name="position">The decimal position to which the number will be truncated.</param>
+        <summary>Truncates the specified <see cref="T:System.Data.OracleClient.OracleNumber" /> structure's value to the desired position.</summary>
+        <returns>A <see cref="T:System.Data.OracleClient.OracleNumber" /> structure with its <see cref="P:System.Data.OracleClient.OracleNumber.Value" /> truncated to the specified <paramref name="position" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Supply a negative value for the `position` parameter in order to truncate the value to the corresponding position to the left of the decimal point.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public decimal Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal Value" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleNumber.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="T:System.Data.OracleClient.OracleNumber" /> structure. This property is read-only.</summary>
+        <value>A number in the range -79,228,162,514,264,337,593,543,950,335 through 79,228,162,514, 264,337,593,543,950,335.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you attempt to retrieve a value outside the allowable range, Oracle returns the "OCI-22053: overflow error" message. Use the <xref:System.Data.OracleClient.OracleNumber.ToString%2A> method to retrieve such values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleNumber Zero;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleNumber Zero" />
+      <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleNumber.Zero" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleNumber</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the value 0.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OracleClient.OracleNumber.Zero> is useful for performing calculations or as a parameter value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,278 @@
+<Type Name="EntityReference&lt;TEntity&gt;" FullName="System.Data.Objects.DataClasses.EntityReference&lt;TEntity&gt;">
+  <TypeSignature Language="C#" Value="public sealed class EntityReference&lt;TEntity&gt; : System.Data.Objects.DataClasses.EntityReference where TEntity : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EntityReference`1&lt;class TEntity&gt; extends System.Data.Objects.DataClasses.EntityReference" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EntityReference`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TEntity">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Data.Objects.DataClasses.EntityReference</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TEntity">The entity type of the reference.</typeparam>
+    <summary>Represents a related end of an association with a multiplicity of zero or one.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Data.Objects.DataClasses.EntityReference%601> object is returned by a navigation property when the related end has a multiplicity of zero or one. For more information, see [NavigationProperty Element (CSDL)](http://msdn.microsoft.com/en-us/5829a238-a50e-4c81-901d-7b54fc00f27e).  
+  
+ An <xref:System.Data.Objects.DataClasses.EntityReference%601> object might have a corresponding <xref:System.Data.Objects.DataClasses.EntityCollection%601> (one-to-many relationship) or <xref:System.Data.Objects.DataClasses.EntityReference%601> (one-to-one relationship) at the other end of the relationship. When an <xref:System.Data.Objects.DataClasses.EntityReference%601> and an <xref:System.Data.Objects.DataClasses.EntityCollection%601> model opposing ends of the same relationship, the integrity of the relationship is maintained at the object level.  
+  
+ This class cannot be inherited.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.Data.Objects.DataClasses.EntityReference%601> object to change a relationship between a `SalesOrderHeader` object and a related `Address` object that represents the shipping address for the order.  
+  
+ [!code-csharp[DP ObjectServices Concepts#ChangeObjectRelationship](~/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS/Source.cs#changeobjectrelationship)]
+ [!code-vb[DP ObjectServices Concepts#ChangeObjectRelationship](~/samples/snippets/visualbasic/VS_Snippets_Data/DP ObjectServices Concepts/VB/Source.vb#changeobjectrelationship)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attach">
+      <MemberSignature Language="C#" Value="public void Attach (TEntity entity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Attach(!TEntity entity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.Attach(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entity" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="entity">The object being attached.</param>
+        <summary>Creates a many-to-one or one-to-one relationship between two objects in the object context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.DataClasses.EntityReference%601.Attach%2A> method is used to define a relationship between an object and a related object when both objects are already attached to an object context. Set the related object to the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property if the related object is not already attached to the object context. When both objects are detached, you can also define the relationship by setting the related object to the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property and then attaching the root object in the object graph. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/en-us/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
+  
+ The object associated with this <xref:System.Data.Objects.DataClasses.EntityReference%601> and all objects being attached to it must be in an <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state.  
+  
+ An object in the <xref:System.Data.EntityState> state can only be attached when the <xref:System.Data.Objects.ObjectStateManager> is already tracking the relationship instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">When the <paramref name="entity" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">When the <paramref name="entity" /> cannot be related to the current related end. This can occur when the association in the conceptual schema does not support a relationship between the two types.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSourceQuery">
+      <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectQuery&lt;TEntity&gt; CreateSourceQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectQuery`1&lt;!TEntity&gt; CreateSourceQuery() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.CreateSourceQuery" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Objects.ObjectQuery&lt;TEntity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an equivalent object query that returns the related object.</summary>
+        <returns>An <see cref="T:System.Data.Objects.ObjectQuery`1" /> that returns the related object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to obtain a new instance of <xref:System.Data.Objects.ObjectQuery%601> that, when it is executed, returns the related object. This is useful as the starting point for a more complex join, union, or filtered query, or to return the referenced object in a detached state using the <xref:System.Data.Objects.MergeOption> option.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">When the object is in an <see cref="F:System.Data.EntityState.Added" /> state.  
+  
+ -or-  
+  
+ When the object is in a <see cref="F:System.Data.EntityState.Detached" /> state with a <see cref="P:System.Data.Objects.ObjectQuery.MergeOption" /> other than <see cref="F:System.Data.Objects.MergeOption.NoTracking" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override void Load (System.Data.Objects.MergeOption mergeOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(valuetype System.Data.Objects.MergeOption mergeOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.Load(System.Data.Objects.MergeOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mergeOption" Type="System.Data.Objects.MergeOption" />
+      </Parameters>
+      <Docs>
+        <param name="mergeOption">Specifies how the object should be returned if it already exists in the <see cref="T:System.Data.Objects.ObjectContext" />.</param>
+        <summary>Loads the related object for this <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" /> with the specified merge option.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to load the related object.  
+  
+ When loaded, the related object is accessed from the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property.  
+  
+ To explicitly load related objects, you must call the `Load` method on the related end retuned by the navigation property. For a one-to-many relationship, call the <xref:System.Data.Objects.DataClasses.EntityCollection%601.Load%2A> method on <xref:System.Data.Objects.DataClasses.EntityCollection%601>, and for a one-to-one relationship, call the <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A> on <xref:System.Data.Objects.DataClasses.EntityReference%601>. This loads the related object data into the object context. When a query returns results, you can enumerate through the collection of objects using a `foreach` loop (`For Each...Next` in Visual Basic) and conditionally call the `Load` method on <xref:System.Data.Objects.DataClasses.EntityReference%601> and <xref:System.Data.Objects.DataClasses.EntityCollection%601> properties for each entity in the results.  
+  
+ The <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A> method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
+  
+> [!NOTE]
+>  When you call the <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A> method during a `foreach` (C#) or `For Each` (Visual Basic) enumeration, Object Services tries to open a new data reader. This operation will fail unless you have enabled multiple active results sets by specifying `multipleactiveresultsets=true` in the connection string. You can also load the result of the query into a <xref:System.Collections.Generic.List%601> collection. This closes the data reader and enables you to enumerate over the collection to load referenced objects.  
+  
+ This method calls the <xref:System.Data.Objects.DataClasses.RelatedEnd.ValidateLoad%2A> method before loading the related object. See this method for a list of additional exceptions.  
+  
+ When the related object is already loaded in the <xref:System.Data.Objects.ObjectContext>, the <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A> method enforces the <xref:System.Data.Objects.MergeOption> specified by the `mergeOption` parameter. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The source of the <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ A query returned more than one related end.  
+  
+ -or-  
+  
+ A query returned zero related ends, and one related end was expected.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRefDeserialized">
+      <MemberSignature Language="C#" Value="public void OnRefDeserialized (System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnRefDeserialized(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.OnRefDeserialized(System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.OnDeserialized</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The serialized stream.</param>
+        <summary>This method is used internally to serialize related entity objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSerializing">
+      <MemberSignature Language="C#" Value="public void OnSerializing (System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnSerializing(valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EntityReference`1.OnSerializing(System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Serialization.OnSerializing</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The serialized stream.</param>
+        <summary>This method is used internally to serialize related entity objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public TEntity Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TEntity Value" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EntityReference`1.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.SoapIgnore</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TEntity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the related object returned by this <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" />.</summary>
+        <value>The object returned by this <see cref="T:System.Data.Objects.DataClasses.EntityReference`1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No value will be assigned if the value being set is the same as the current value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,166 @@
+<Type Name="LanguagePrimitives+ErrorStrings" FullName="Microsoft.FSharp.Core.LanguagePrimitives+ErrorStrings">
+  <TypeSignature Language="C#" Value="public static class LanguagePrimitives.ErrorStrings" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed LanguagePrimitives/ErrorStrings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.LanguagePrimitives.ErrorStrings" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddressOpNotFirstClassString">
+      <MemberSignature Language="C#" Value="public static string AddressOpNotFirstClassString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string AddressOpNotFirstClassString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.LanguagePrimitives.ErrorStrings.AddressOpNotFirstClassString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Value)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This value is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputArrayEmptyString">
+      <MemberSignature Language="C#" Value="public static string InputArrayEmptyString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string InputArrayEmptyString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.LanguagePrimitives.ErrorStrings.InputArrayEmptyString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Value)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This value is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputMustBeNonNegativeString">
+      <MemberSignature Language="C#" Value="public static string InputMustBeNonNegativeString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string InputMustBeNonNegativeString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.LanguagePrimitives.ErrorStrings.InputMustBeNonNegativeString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Value)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This value is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputSequenceEmptyString">
+      <MemberSignature Language="C#" Value="public static string InputSequenceEmptyString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string InputSequenceEmptyString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.LanguagePrimitives.ErrorStrings.InputSequenceEmptyString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Value)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This value is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoNegateMinValueString">
+      <MemberSignature Language="C#" Value="public static string NoNegateMinValueString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string NoNegateMinValueString" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.LanguagePrimitives.ErrorStrings.NoNegateMinValueString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Value)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This value is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

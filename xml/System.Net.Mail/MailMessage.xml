@@ -1,0 +1,1090 @@
+<Type Name="MailMessage" FullName="System.Net.Mail.MailMessage">
+  <TypeSignature Language="C#" Value="public class MailMessage : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MailMessage extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Mail.MailMessage" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an e-mail message that can be sent using the <see cref="T:System.Net.Mail.SmtpClient" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of the <xref:System.Net.Mail.MailMessage> class are used to construct e-mail messages that are transmitted to an SMTP server for delivery using the <xref:System.Net.Mail.SmtpClient> class.  
+  
+ The sender, recipient, subject, and body of an e-mail message may be specified as parameters when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> is used to initialize a <xref:System.Net.Mail.MailMessage> object. These parameters may also be set or accessed using properties on the <xref:System.Net.Mail.MailMessage> object.  
+  
+ The primary mail message headers and elements for the message may be set using the following properties of the <xref:System.Net.Mail.MailMessage> class.  
+  
+|Mail header or part|Property|  
+|-------------------------|--------------|  
+|Attachments|<xref:System.Net.Mail.MailMessage.Attachments%2A>|  
+|Blind carbon copies (BCC)|<xref:System.Net.Mail.MailMessage.Bcc%2A>|  
+|Carbon copies (CC)|<xref:System.Net.Mail.MailMessage.CC%2A>|  
+|Content-Type|<xref:System.Net.Mail.MailMessage.BodyEncoding%2A>|  
+|Encoding for custom headers|<xref:System.Net.Mail.MailMessage.HeadersEncoding%2A>|  
+|Message body|<xref:System.Net.Mail.MailMessage.Body%2A>|  
+|Priority|<xref:System.Net.Mail.MailMessage.Priority%2A>|  
+|Recipient|<xref:System.Net.Mail.MailMessage.To%2A>|  
+|Reply-To|<xref:System.Net.Mail.MailMessage.ReplyToList%2A>|  
+|Sender|<xref:System.Net.Mail.MailMessage.From%2A>|  
+|Subject|<xref:System.Net.Mail.MailMessage.Subject%2A>|  
+  
+ The <xref:System.Net.Mail.MailMessage> class also allows an application to access the headers collection for the message using the <xref:System.Net.Mail.MailMessage.Headers%2A> property. While this collection is read-only (a new collection can not be set), custom headers can be added to or deleted from this collection. Any custom headers added will be included when the <xref:System.Net.Mail.MailMessage> instance is sent. Before a message is sent, only headers specifically added to this collection in the <xref:System.Net.Mail.MailMessage.Headers%2A> property are included in the collection. After a the <xref:System.Net.Mail.MailMessage> instance is sent, the <xref:System.Net.Mail.MailMessage.Headers%2A> property will also include headers that are set using the associated properties of the <xref:System.Net.Mail.MailMessage> class or parameters passed when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> is used to initialize a <xref:System.Net.Mail.MailMessage> object.  
+  
+ If some mail headers are malformed, they could cause the email message to become corrupted. So any mail header in the headers collection that can be set using a property on the <xref:System.Net.Mail.MailMessage> class should only be set using the <xref:System.Net.Mail.MailMessage> class property or as a parameter passed when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> initializes a <xref:System.Net.Mail.MailMessage> object. The following list of mail headers should not be added using the <xref:System.Net.Mail.MailMessage.Headers%2A> property and any values set for these headers using the <xref:System.Net.Mail.MailMessage.Headers%2A> property will be discarded or overwritten when the message is sent:  
+  
+-   Bcc  
+  
+-   Cc  
+  
+-   Content-ID  
+  
+-   Content-Location  
+  
+-   Content-Transfer-Encoding  
+  
+-   Content-Type  
+  
+-   Date  
+  
+-   From  
+  
+-   Importance  
+  
+-   MIME-Version  
+  
+-   Priority  
+  
+-   Reply-To  
+  
+-   Sender  
+  
+-   To  
+  
+-   X-Priority  
+  
+ If the application does not specify an X-Sender header using the <xref:System.Net.Mail.MailMessage.Headers%2A> property, the <xref:System.Net.Mail.MailMessage> class will create one when the message is sent.  
+  
+ Use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want to provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content. For an example that demonstrates creating a message with alternate views, see <xref:System.Net.Mail.MailMessage.AlternateViews%2A>.  
+  
+ Use the <xref:System.Net.Mail.MailMessage.Attachments%2A> property to add attachments to an e-mail message. For an example that demonstrates creating a message with an attachment, see <xref:System.Net.Mail.MailMessage.Attachments%2A>.  
+  
+ After assembling your e-mail message, you can send it by using the <xref:System.Net.Mail.SmtpClient.Send%2A> or <xref:System.Net.Mail.SmtpClient.SendAsync%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating and sending an e-mail message that includes an attachment.  
+  
+ [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
+ [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MailMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an empty instance of the <see cref="T:System.Net.Mail.MailMessage" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ From is set to the value in the network element for mailSettings[\&lt;smtp\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/smtp-element-network-settings.md), if it exists.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MailMessage (System.Net.Mail.MailAddress from, System.Net.Mail.MailAddress to);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Mail.MailAddress from, class System.Net.Mail.MailAddress to) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.#ctor(System.Net.Mail.MailAddress,System.Net.Mail.MailAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="from" Type="System.Net.Mail.MailAddress" />
+        <Parameter Name="to" Type="System.Net.Mail.MailAddress" />
+      </Parameters>
+      <Docs>
+        <param name="from">A <see cref="T:System.Net.Mail.MailAddress" /> that contains the address of the sender of the e-mail message.</param>
+        <param name="to">A <see cref="T:System.Net.Mail.MailAddress" /> that contains the address of the recipient of the e-mail message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class by using the specified <see cref="T:System.Net.Mail.MailAddress" /> class objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mail.MailMessage.From%2A> property is initialized using `from` and the <xref:System.Net.Mail.MailMessage.To%2A> property is initialized using `to`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this constructor.  
+  
+ [!code-cpp[NclMailSync#4](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#4)]
+ [!code-csharp[NclMailSync#4](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="to" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="from" /> or <paramref name="to" /> is malformed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MailMessage (string from, string to);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string from, string to) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="from" Type="System.String" />
+        <Parameter Name="to" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="from">A <see cref="T:System.String" /> that contains the address of the sender of the e-mail message.</param>
+        <param name="to">A <see cref="T:System.String" /> that contains the addresses of the recipients of the e-mail message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class by using the specified <see cref="T:System.String" /> class objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mail.MailMessage.From%2A> property is initialized using `from` and the <xref:System.Net.Mail.MailMessage.To%2A> property is initialized using `to`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this constructor.  
+  
+ [!code-cpp[NclMailSync#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#2)]
+ [!code-csharp[NclMailSync#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="to" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="from" /> is <see cref="F:System.String.Empty" /> ("").  
+  
+ -or-  
+  
+ <paramref name="to" /> is <see cref="F:System.String.Empty" /> ("").</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="from" /> or <paramref name="to" /> is malformed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MailMessage (string from, string to, string subject, string body);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string from, string to, string subject, string body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="from" Type="System.String" />
+        <Parameter Name="to" Type="System.String" />
+        <Parameter Name="subject" Type="System.String" />
+        <Parameter Name="body" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="from">A <see cref="T:System.String" /> that contains the address of the sender of the e-mail message.</param>
+        <param name="to">A <see cref="T:System.String" /> that contains the address of the recipient of the e-mail message.</param>
+        <param name="subject">A <see cref="T:System.String" /> that contains the subject text.</param>
+        <param name="body">A <see cref="T:System.String" /> that contains the message body.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.MailMessage" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties for the new <xref:System.Net.Mail.MailMessage> object are initialized as follows:  
+  
+|Parameter|Property|  
+|---------------|--------------|  
+|`from`|<xref:System.Net.Mail.MailMessage.From%2A>|  
+|-   `to`|-   <xref:System.Net.Mail.MailMessage.To%2A>|  
+|-   `subject`|-   <xref:System.Net.Mail.MailMessage.Subject%2A>|  
+|-   `body`|-   <xref:System.Net.Mail.MailMessage.Body%2A>|  
+  
+ By default, the subject and content are assumed to use the default encoding based on local computer settings. Use the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> and <xref:System.Net.Mail.MailMessage.SubjectEncoding%2A> properties to specify different encodings.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling this constructor.  
+  
+ [!code-cpp[NclMailSync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#3)]
+ [!code-csharp[NclMailSync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="from" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="to" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="from" /> is <see cref="F:System.String.Empty" /> ("").  
+  
+ -or-  
+  
+ <paramref name="to" /> is <see cref="F:System.String.Empty" /> ("").</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="from" /> or <paramref name="to" /> is malformed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternateViews">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.AlternateViewCollection AlternateViews { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.AlternateViewCollection AlternateViews" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.AlternateViews" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.AlternateViewCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the attachment collection used to store alternate forms of the message body.</summary>
+        <value>A writable <see cref="T:System.Net.Mail.AlternateViewCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property to specify copies of an e-mail message in different formats. For example, if you send a message in HTML, you might also want to provide a plain text version in case some of the recipients use e-mail readers that cannot display HTML content.  
+  
+ To add an alternate view to a <xref:System.Net.Mail.MailMessage> object, create an <xref:System.Net.Mail.Attachment> for the view, and then add it to the collection returned by <xref:System.Net.Mail.MailMessage.AlternateViews%2A>. Use the <xref:System.Net.Mail.MailMessage.Body%2A> property to specify the text version and use the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> collection to specify views with other MIME types. Use the <xref:System.Net.Mime.MediaTypeNames> class members to specify the MIME type for the alternate view.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating and sending an e-mail message with a plain text and an HTML alternate view.  
+  
+ [!code-cpp[NclMailSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#5)]
+ [!code-csharp[NclMailSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="none" />
+      </Docs>
+    </Member>
+    <Member MemberName="Attachments">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.AttachmentCollection Attachments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.AttachmentCollection Attachments" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Attachments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.AttachmentCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the attachment collection used to store data attached to this e-mail message.</summary>
+        <value>A writable <see cref="T:System.Net.Mail.AttachmentCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the collection returned by the <xref:System.Net.Mail.MailMessage.Attachments%2A> property to add an attachment, such as a file or the contents of a <xref:System.IO.Stream>, to this <xref:System.Net.Mail.MailMessage>.  
+  
+ Create an <xref:System.Net.Mail.Attachment> that contains or references the data to be attached, and then add the <xref:System.Net.Mail.Attachment> to the collection returned by <xref:System.Net.Mail.MailMessage.Attachments%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating and sending an e-mail message with an attachment.  
+  
+ [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
+ [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="None" />
+      </Docs>
+    </Member>
+    <Member MemberName="Bcc">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailAddressCollection Bcc { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailAddressCollection Bcc" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Bcc" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the address collection that contains the blind carbon copy (BCC) recipients for this e-mail message.</summary>
+        <value>A writable <see cref="T:System.Net.Mail.MailAddressCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add a BCC recipient to an e-mail message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address, and then add that object to the collection returned by the <xref:System.Net.Mail.MailMessage.Bcc%2A> property.  
+  
+ When recipients view an e-mail message, the <xref:System.Net.Mail.MailMessage.Bcc%2A> addresses are usually not displayed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates adding an address to the <xref:System.Net.Mail.MailMessage.Bcc%2A> address collection.  
+  
+ [!code-cpp[NclMailSync#9](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#9)]
+ [!code-csharp[NclMailSync#9](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#9)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="None" />
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public string Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Body" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message body.</summary>
+        <value>A <see cref="T:System.String" /> value that contains the body text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mime.ContentType> of the <xref:System.Net.Mail.MailMessage.Body%2A> content is "text/plain". Specify the encoding used for the body with the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> property.  
+  
+ If the body content is available in alternative formats that provide richer presentation options for the recipients, you can specify alternate views for the body content by using the <xref:System.Net.Mail.MailMessage.AlternateViews%2A> property. For example, an application might choose to send both the plain text body and an HTML version of the message body. E-mail readers that can display HTML can present the HTML version of the body to the recipient, while readers that cannot display HTML will display the plain text version of the message instead.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting the <xref:System.Net.Mail.MailMessage.Body%2A> property.  
+  
+ [!code-cpp[NclMailSync#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#2)]
+ [!code-csharp[NclMailSync#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyEncoding">
+      <MemberSignature Language="C#" Value="public System.Text.Encoding BodyEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding BodyEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.BodyEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the encoding used to encode the message body.</summary>
+        <value>An <see cref="T:System.Text.Encoding" /> applied to the contents of the <see cref="P:System.Net.Mail.MailMessage.Body" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value specified for the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> property sets the character set field in the Content-Type header. The default character set is `"us-ascii"`.  
+  
+ If you set the <xref:System.Net.Mail.MailMessage.BodyEncoding%2A> property to <xref:System.Text.Encoding.UTF8%2A>, <xref:System.Text.Encoding.Unicode%2A>, or <xref:System.Text.Encoding.UTF32%2A>, the Framework selects a <xref:System.Net.Mime.TransferEncoding> of <xref:System.Net.Mime.TransferEncoding> for this <xref:System.Net.Mail.MailMessage>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates creating a mail message that uses UTF8 encoding.  
+  
+ [!code-cpp[NclMailAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailASync/cpp/mailasync.cpp#3)]
+ [!code-csharp[NclMailAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailASync/CS/mailasync.cs#3)]
+ [!code-vb[NclMailAsync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclMailASync/vb/mailasync.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyTransferEncoding">
+      <MemberSignature Language="C#" Value="public System.Net.Mime.TransferEncoding BodyTransferEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Mime.TransferEncoding BodyTransferEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.BodyTransferEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the transfer encoding used to encode the message body.</summary>
+        <value>Returns <see cref="T:System.Net.Mime.TransferEncoding" />.  
+  
+ A <see cref="T:System.Net.Mime.TransferEncoding" /> applied to the contents of the <see cref="P:System.Net.Mail.MailMessage.Body" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CC">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailAddressCollection CC { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailAddressCollection CC" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.CC" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the address collection that contains the carbon copy (CC) recipients for this e-mail message.</summary>
+        <value>A writable <see cref="T:System.Net.Mail.MailAddressCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To add a CC recipient to an e-mail message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address and then add that object to the collection returned by the <xref:System.Net.Mail.MailMessage.CC%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates adding an address to the <xref:System.Net.Mail.MailMessage.CC%2A> address collection.  
+  
+ [!code-cpp[NclMailSync#10](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#10)]
+ [!code-csharp[NclMailSync#10](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="None" />
+      </Docs>
+    </Member>
+    <Member MemberName="DeliveryNotificationOptions">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.DeliveryNotificationOptions DeliveryNotificationOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Mail.DeliveryNotificationOptions DeliveryNotificationOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.DeliveryNotificationOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.DeliveryNotificationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the delivery notifications for this e-mail message.</summary>
+        <value>A <see cref="T:System.Net.Mail.DeliveryNotificationOptions" /> value that contains the delivery notifications for this message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Net.Mail.MailMessage" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Net.Mail.MailMessage.Dispose%2A> method when you are finished using the <xref:System.Net.Mail.MailMessage>. The <xref:System.Net.Mail.MailMessage.Dispose%2A> method leaves the <xref:System.Net.Mail.MailMessage> in an unusable state. After calling <xref:System.Net.Mail.MailMessage.Dispose%2A>, you must release all references to the <xref:System.Net.Mail.MailMessage> so the garbage collector can reclaim the memory that the <xref:System.Net.Mail.MailMessage> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Net.Mail.MailMessage.Dispose%2A> before you release your last reference to the <xref:System.Net.Mail.MailMessage>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates disposing a <xref:System.Net.Mail.MailMessage>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mail.MailMessage.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Mail.MailMessage" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Mail.MailMessage> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailAddress From { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailAddress From" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.From" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the from address for this e-mail message.</summary>
+        <value>A <see cref="T:System.Net.Mail.MailAddress" /> that contains the from address information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The from address is not validated or tied to the currently logged on user.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting a value for the <xref:System.Net.Mail.MailMessage.From%2A> property.  
+  
+ [!code-cpp[NclMailSync#10](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#10)]
+ [!code-csharp[NclMailSync#10](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.NameValueCollection Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameValueCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the e-mail headers that are transmitted with this e-mail message.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains the e-mail headers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mail.MailMessage.Headers%2A> property allows an application to access the headers collection for the message. While this collection is read-only (a new collection can not be set), custom headers can be added to or deleted from this collection. Any custom headers added will be included when the <xref:System.Net.Mail.MailMessage> instance is sent. Before a message is sent, only headers specifically added to this collection in the <xref:System.Net.Mail.MailMessage.Headers%2A> property are included in the collection. After the <xref:System.Net.Mail.MailMessage> instance is sent, the <xref:System.Net.Mail.MailMessage.Headers%2A> property will also include headers that are set using the associated properties of the <xref:System.Net.Mail.MailMessage> class or parameters passed when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> is used to initialize a <xref:System.Net.Mail.MailMessage> object.  
+  
+ If some mail headers are malformed, they could cause the email message to become corrupted. So any mail header in the headers collection that can be set using a property on the <xref:System.Net.Mail.MailMessage> class should only be set using the <xref:System.Net.Mail.MailMessage> class property or as a parameter passed when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> initializes a <xref:System.Net.Mail.MailMessage> object. The following list of mail headers should not be added using the <xref:System.Net.Mail.MailMessage.Headers%2A> property and any values set for these headers using the <xref:System.Net.Mail.MailMessage.Headers%2A> property will be discarded or overwritten when the message is sent:  
+  
+-   Bcc  
+  
+-   Cc  
+  
+-   Content-ID  
+  
+-   Content-Location  
+  
+-   Content-Transfer-Encoding  
+  
+-   Content-Type  
+  
+-   Date  
+  
+-   From  
+  
+-   Importance  
+  
+-   MIME-Version  
+  
+-   Priority  
+  
+-   Reply-To  
+  
+-   Sender  
+  
+-   To  
+  
+-   X-Priority  
+  
+ If the application does not specify an X-Sender header using the <xref:System.Net.Mail.MailMessage.Headers%2A> property, the <xref:System.Net.Mail.MailMessage> class will create one when the message is sent.  
+  
+ The sender, recipient, subject, and body of an e-mail message may be specified as parameters when a <xref:System.Net.Mail.MailMessage.%23ctor%2A> is used to initialize a <xref:System.Net.Mail.MailMessage> object. These parameters may also be set or accessed using properties on the <xref:System.Net.Mail.MailMessage> object.  
+  
+ The primary mail message headers and elements for the message may be set using the following properties of the <xref:System.Net.Mail.MailMessage> class.  
+  
+|Mail header or part|Property|  
+|-------------------------|--------------|  
+|Attachments|<xref:System.Net.Mail.MailMessage.Attachments%2A>|  
+|Blind carbon copies (BCC)|<xref:System.Net.Mail.MailMessage.Bcc%2A>|  
+|Carbon copies (CC)|<xref:System.Net.Mail.MailMessage.CC%2A>|  
+|Content-Type|<xref:System.Net.Mail.MailMessage.BodyEncoding%2A>|  
+|Encoding for custom headers|<xref:System.Net.Mail.MailMessage.HeadersEncoding%2A>|  
+|Message body|<xref:System.Net.Mail.MailMessage.Body%2A>|  
+|Priority|<xref:System.Net.Mail.MailMessage.Priority%2A>|  
+|Recipient|<xref:System.Net.Mail.MailMessage.To%2A>|  
+|Reply-To|<xref:System.Net.Mail.MailMessage.ReplyToList%2A>|  
+|Sender|<xref:System.Net.Mail.MailMessage.From%2A>|  
+|Subject|<xref:System.Net.Mail.MailMessage.Subject%2A>|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates displaying the headers for a mail message.  
+  
+ [!code-cpp[NclMailSync#24](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#24)]
+ [!code-csharp[NclMailSync#24](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#24)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeadersEncoding">
+      <MemberSignature Language="C#" Value="public System.Text.Encoding HeadersEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding HeadersEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.HeadersEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the encoding used for the user-defined custom headers for this e-mail message.</summary>
+        <value>The encoding used for user-defined custom headers for this e-mail message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Net.Mail.MailMessage.HeadersEncoding%2A> property defaults to <xref:System.Text.Encoding.UTF8%2A?displayProperty=fullName>.  
+  
+ SMTP messages consist of headers and body parts. The IETF RFCs for SMTP restrict the header and body part names to be ASCII. However, the IETF RFCs allow header and body part values to contain Unicode characters. In any particular value, if non-ASCII characters exist, then the value is encoded using a combination of character encoding (UTF8 or Shift-JIS, for example) followed by byte encoding (<xref:System.Net.Mime.TransferEncoding> or <xref:System.Net.Mime.TransferEncoding> for example). The result is usually that only ASCII characters are in the network transmission stream.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBodyHtml">
+      <MemberSignature Language="C#" Value="public bool IsBodyHtml { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBodyHtml" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.IsBodyHtml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the mail message body is in Html.</summary>
+        <value>
+          <see langword="true" /> if the message body is in Html; else <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailPriority Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Mail.MailPriority Priority" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the priority of this e-mail message.</summary>
+        <value>A <see cref="T:System.Net.Mail.MailPriority" /> that contains the priority of this message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyTo">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailAddress ReplyTo { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailAddress ReplyTo" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.ReplyTo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Use ReplyToList instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ReplyTo address for the mail message.</summary>
+        <value>A MailAddress that indicates the value of the <see cref="P:System.Net.Mail.MailMessage.ReplyTo" /> field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Net.Mail.MailMessage.ReplyTo%2A> property to indicate an address other than the <xref:System.Net.Mail.MailMessage.From%2A> address to use to reply to this message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyToList">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailAddressCollection ReplyToList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailAddressCollection ReplyToList" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.ReplyToList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the list of addresses to reply to for the mail message.</summary>
+        <value>The list of the addresses to reply to for the mail message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Net.Mail.MailMessage.ReplyToList%2A> property to indicate the list of addresses other than the <xref:System.Net.Mail.MailMessage.From%2A> address to use to reply to this message.  
+  
+ The <xref:System.Net.Mail.MailMessage.ReplyToList%2A> property replaces the <xref:System.Net.Mail.MailMessage.ReplyTo%2A> property that only allows a single address to reply to.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sender">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailAddress Sender { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailAddress Sender" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Sender" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the sender's address for this e-mail message.</summary>
+        <value>A <see cref="T:System.Net.Mail.MailAddress" /> that contains the sender's address information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The sender's address is not validated or tied to the currently logged on user.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subject">
+      <MemberSignature Language="C#" Value="public string Subject { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.Subject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the subject line for this e-mail message.</summary>
+        <value>A <see cref="T:System.String" /> that contains the subject content.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify the encoding used for the subject by using the <xref:System.Net.Mail.MailMessage.SubjectEncoding%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting the <xref:System.Net.Mail.MailMessage.Subject%2A> property.  
+  
+ [!code-cpp[NclMailSync#2](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#2)]
+ [!code-csharp[NclMailSync#2](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubjectEncoding">
+      <MemberSignature Language="C#" Value="public System.Text.Encoding SubjectEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding SubjectEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.SubjectEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the encoding used for the subject content for this e-mail message.</summary>
+        <value>An <see cref="T:System.Text.Encoding" /> that was used to encode the <see cref="P:System.Net.Mail.MailMessage.Subject" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a mail agent has difficulty with a <xref:System.Net.Mail.MailMessage.SubjectEncoding%2A> of <xref:System.Text.Encoding.Unicode%2A>, use <xref:System.Text.Encoding.UTF8%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting the <xref:System.Net.Mail.MailMessage.SubjectEncoding%2A> property.  
+  
+ [!code-cpp[NclMailASync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailASync/cpp/mailasync.cpp#3)]
+ [!code-csharp[NclMailASync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailASync/CS/mailasync.cs#3)]
+ [!code-vb[NclMailASync#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclMailASync/vb/mailasync.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="To">
+      <MemberSignature Language="C#" Value="public System.Net.Mail.MailAddressCollection To { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.MailAddressCollection To" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mail.MailMessage.To" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mail.MailAddressCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the address collection that contains the recipients of this e-mail message.</summary>
+        <value>A writable <see cref="T:System.Net.Mail.MailAddressCollection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mail.MailMessage.To%2A> property is used to designate the addresses on the To line of an e-mail message. To add a recipient to an e-mail message, create a <xref:System.Net.Mail.MailAddress> for the recipient's address, and then add that object to the collection returned by this property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates setting the <xref:System.Net.Mail.MailMessage.To%2A> property.  
+  
+ [!code-cpp[NclMailSync#7](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#7)]
+ [!code-csharp[NclMailSync#7](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#7)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="None" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

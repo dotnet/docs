@@ -1,0 +1,177 @@
+<Type Name="IInternalConfigRecord" FullName="System.Configuration.Internal.IInternalConfigRecord">
+  <TypeSignature Language="C#" Value="public interface IInternalConfigRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInternalConfigRecord" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines interfaces used by internal .NET structures to support creation of new configuration records.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConfigPath">
+      <MemberSignature Language="C#" Value="public string ConfigPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigPath" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigRecord.ConfigPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string representing a configuration file path.</summary>
+        <value>A string representing a configuration file path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLkgSection">
+      <MemberSignature Language="C#" Value="public object GetLkgSection (string configKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetLkgSection(string configKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRecord.GetLkgSection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configKey">A string representing a key to a configuration section.</param>
+        <summary>Returns an object representing a section of a configuration from the last-known-good (LKG) configuration.</summary>
+        <returns>An <see cref="T:System.Object" /> instance representing the section of the last-known-good configuration specified by <paramref name="configKey" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSection">
+      <MemberSignature Language="C#" Value="public object GetSection (string configKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetSection(string configKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRecord.GetSection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configKey">A string representing a key to a configuration section.</param>
+        <summary>Returns an <see cref="T:System.Object" /> instance representing a section of a configuration file.</summary>
+        <returns>An <see cref="T:System.Object" /> instance representing a section of a configuration file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasInitErrors">
+      <MemberSignature Language="C#" Value="public bool HasInitErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasInitErrors" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigRecord.HasInitErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a value indicating whether an error occurred during initialization of a configuration object.</summary>
+        <value>
+          <see langword="true" /> if an error occurred during initialization of a configuration object; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshSection">
+      <MemberSignature Language="C#" Value="public void RefreshSection (string configKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshSection(string configKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRecord.RefreshSection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configKey">A string representing a key to a configuration section that is to be refreshed.</param>
+        <summary>Causes a specified section of the configuration object to be reinitialized.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRecord.Remove" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes a configuration record.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StreamName">
+      <MemberSignature Language="C#" Value="public string StreamName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StreamName" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigRecord.StreamName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the name of a <see cref="T:System.IO.Stream" /> object performing I/O tasks on the configuration file.</summary>
+        <value>A string representing the name of a <see cref="T:System.IO.Stream" /> object performing I/O tasks on the configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfInitErrors">
+      <MemberSignature Language="C#" Value="public void ThrowIfInitErrors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ThrowIfInitErrors() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRecord.ThrowIfInitErrors" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Grants the configuration object the permission to throw an exception if an error occurs during initialization.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

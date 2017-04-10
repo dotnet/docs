@@ -1,0 +1,120 @@
+<Type Name="MetadataRootBuilder" FullName="System.Reflection.Metadata.Ecma335.MetadataRootBuilder">
+  <TypeSignature Language="C#" Value="public sealed class MetadataRootBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetadataRootBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MetadataRootBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetadataRootBuilder (System.Reflection.Metadata.Ecma335.MetadataBuilder tablesAndHeaps, string metadataVersion = null, bool suppressValidation = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.Ecma335.MetadataBuilder tablesAndHeaps, string metadataVersion, bool suppressValidation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.#ctor(System.Reflection.Metadata.Ecma335.MetadataBuilder,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tablesAndHeaps" Type="System.Reflection.Metadata.Ecma335.MetadataBuilder" />
+        <Parameter Name="metadataVersion" Type="System.String" />
+        <Parameter Name="suppressValidation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="tablesAndHeaps">To be added.</param>
+        <param name="metadataVersion">To be added.</param>
+        <param name="suppressValidation">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataVersion">
+      <MemberSignature Language="C#" Value="public string MetadataVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MetadataVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.MetadataVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public void Serialize (System.Reflection.Metadata.BlobBuilder builder, int methodBodyStreamRva, int mappedFieldDataStreamRva);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Reflection.Metadata.BlobBuilder builder, int32 methodBodyStreamRva, int32 mappedFieldDataStreamRva) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.Serialize(System.Reflection.Metadata.BlobBuilder,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="System.Reflection.Metadata.BlobBuilder" />
+        <Parameter Name="methodBodyStreamRva" Type="System.Int32" />
+        <Parameter Name="mappedFieldDataStreamRva" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="methodBodyStreamRva">To be added.</param>
+        <param name="mappedFieldDataStreamRva">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sizes">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.MetadataSizes Sizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.Ecma335.MetadataSizes Sizes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.Sizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.MetadataSizes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressValidation">
+      <MemberSignature Language="C#" Value="public bool SuppressValidation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataRootBuilder.SuppressValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,293 @@
+<Type Name="SqlTrackingQueryOptions" FullName="System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions">
+  <TypeSignature Language="C#" Value="public class SqlTrackingQueryOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlTrackingQueryOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains properties that are used to constrain the set of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects returned by a call to <see cref="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows(System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions)" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> contains properties that are used to constrain the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> method against the tracking data in a database used by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. Each <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> in the collection of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> must correspond to a workflow instance which has tracking data associated with it in the database that meets the conditions specified by the properties of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlTrackingQueryOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A>|<xref:System.DateTime.MaxValue>.|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A>|<xref:System.DateTime.MinValue>.|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A>|An empty <xref:System.Collections.Generic.List%601>.|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A>|A null reference (`Nothing` in Visual Basic).|  
+  
+ These values specify that a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> should return a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> object for every workflow instance that has tracking data in the database.  
+  
+   
+  
+## Examples  
+ The following example demonstrates creating an instance of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> class.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the properties of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions" /> to their default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A>|<xref:System.DateTime.MaxValue>.|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A>|<xref:System.DateTime.MinValue>.|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A>|An empty <xref:System.Collections.Generic.List%601>.|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A>|A null reference (`Nothing` in Visual Basic).|  
+  
+ These values specify that a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> should return a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> object for every workflow instance that has tracking data in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusMaxDateTime">
+      <MemberSignature Language="C#" Value="public DateTime StatusMaxDateTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StatusMaxDateTime" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.DateTime" /> that specifies the upper limit of the time period that, together with <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus" />, is used to constrain the set of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects returned by a call to <see cref="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows(System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions)" />.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the upper limit of the time period used for matching workflow instances with a status specified by <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus" />. The default is <see cref="F:System.DateTime.MinValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> constrains the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> to those workflow instances that have the <xref:System.Type> specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A>, that have the status specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> during the period specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A>, and that have extracted data that matches at least one of the <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A>.  
+  
+ The <xref:System.DateTime> value specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A> is inclusive. For more information about how the status of a workflow instance is matched, see the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> property.  
+  
+> [!NOTE]
+>  If `WorkflowStatus` is set to null, then `StatusMaxDateTime` and `StatusMinDateTime` are ignored. All workflow instances will be returned when `GetWorkflows` is called.  
+  
+   
+  
+## Examples  
+ The following example demonstrates setting the StatusMaxDateTime property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusMinDateTime">
+      <MemberSignature Language="C#" Value="public DateTime StatusMinDateTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StatusMinDateTime" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.DateTime" /> that, together with <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus" />, is used to constrain the set of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects returned by a call to <see cref="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows(System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions)" />.</summary>
+        <value>A <see cref="T:System.DateTime" /> that specifies the lower limit of the time period used for matching workflow instances with a status specified by <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus" />. The default is <see cref="F:System.DateTime.MinValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> constrains the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> to those workflow instances that have the <xref:System.Type> specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A>, that have the status specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> during the period specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A>, and that have extracted data that matches at least one of the <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A>.  
+  
+ The <xref:System.DateTime> value specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A> is inclusive. For more information about how the status of a workflow instance is matched, see the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> property.  
+  
+> [!NOTE]
+>  If `WorkflowStatus` is set to null, then `StatusMaxDateTime` and `StatusMinDateTime` are ignored. All workflow instances will be returned when `GetWorkflows` is called.  
+  
+   
+  
+## Examples  
+ The following example demonstrates setting the StatusMinDateTime property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackingDataItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingDataItemValue&gt; TrackingDataItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Workflow.Runtime.Tracking.TrackingDataItemValue&gt; TrackingDataItems" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingDataItemValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of data extract values which are used to constrain the set of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects returned by a call to <see cref="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows(System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions)" />.</summary>
+        <value>A <see cref="T:System.Collections.Generic.List`1" /> of <see cref="T:System.Workflow.Runtime.Tracking.TrackingDataItemValue" /> objects that contains specified values to be matched for data extracted from the workflow instance or a null reference (<see langword="Nothing" /> in Visual Basic).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> constrains the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> to those workflow instances that have the <xref:System.Type> specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A>, that have the status specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> during the period specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A>, and that have extracted data that matches at least one of the <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A>.  
+  
+ <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.Body%2A?displayProperty=fullName> or <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord.Body%2A?displayProperty=fullName> can contain <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> records that contain data that is extracted from the workflow. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A> property contains <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects that specify certain values for this extracted data. If the workflow instance meets the other criteria specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A> is not a null reference (`Nothing`), the extracted data stored in the database for a workflow instance must match one or more of the extracted data values specified by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A> property for a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> object to be returned for the workflow instance.  
+  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A> is a null reference (`Nothing`), the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned will not be constrained by the values of the extracted data for any of the workflow instances in the database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowStatus">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Workflow.Runtime.WorkflowStatus&gt; WorkflowStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Workflow.Runtime.WorkflowStatus&gt; WorkflowStatus" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Workflow.Runtime.WorkflowStatus&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Workflow.Runtime.WorkflowStatus" /> value that is used to constrain the set of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects returned by a call to <see cref="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows(System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions)" />.</summary>
+        <value>One of the <see cref="T:System.Workflow.Runtime.WorkflowStatus" /> values or null (<see langword="Nothing" /> in Visual Basic). The default is null (<see langword="Nothing" />).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> constrains the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> to those workflow instances that have the <xref:System.Type> specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A>, that have the status specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> during the period specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A>, and that have extracted data that matches at least one of the <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A>.  
+  
+ A workflow instance is considered to have a status that matches <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> if the last <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> received for that workflow instance before or during the specified time period has its <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.TrackingWorkflowEvent%2A?displayProperty=fullName> property set to a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> value that maps to the <xref:System.Workflow.Runtime.WorkflowStatus?displayProperty=fullName> value specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A>. Therefore, the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the workflow instance must have a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> that is configured for the appropriate <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent?displayProperty=fullName> value. Only <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values that have been sent in workflow tracking records can be matched. If no workflow tracking records have been sent for the workflow instance, the workflow instance is considered to have a status of <xref:System.Workflow.Runtime.WorkflowStatus?displayProperty=fullName>.  
+  
+ The following table shows the mapping between <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> values and <xref:System.Workflow.Runtime.WorkflowStatus> values.  
+  
+|TrackingWorkflowEvent value|WorkflowStatus value|  
+|---------------------------------|--------------------------|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.WorkflowStatus>|  
+  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> is null (`Nothing`), the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned will not be constrained by status; in other words, a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> object will be returned for any workflow instance that matches the parameters specified by the other properties of <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates setting the WorkflowStatus property.  This example is from the Workflow Monitor SDK sample.  For more information, see [Workflow Monitor Sample](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#128](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#128)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowType">
+      <MemberSignature Language="C#" Value="public Type WorkflowType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type WorkflowType" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the workflow instance <see cref="T:System.Type" /> that is used to constrain the set of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects returned by a call to <see cref="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows(System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions)" />.</summary>
+        <value>A <see cref="T:System.Type" />. The default is a null reference (<see langword="Nothing" /> in Visual Basic).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> constrains the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned by a call to <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A?displayProperty=fullName> to those workflow instances that have the <xref:System.Type> specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A>, that have the status specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowStatus%2A> during the period specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMinDateTime%2A> and <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.StatusMaxDateTime%2A>, and that have extracted data that matches at least one of the <xref:System.Workflow.Runtime.Tracking.TrackingDataItemValue> objects specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.TrackingDataItems%2A>.  
+  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions.WorkflowType%2A> is a null reference (`Nothing`), the set of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects returned will not be constrained by workflow <xref:System.Type>; in other words, a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> object will be returned for any workflow instance that matches the parameters specified by the other properties of <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

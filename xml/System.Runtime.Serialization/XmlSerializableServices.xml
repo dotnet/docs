@@ -1,0 +1,134 @@
+<Type Name="XmlSerializableServices" FullName="System.Runtime.Serialization.XmlSerializableServices">
+  <TypeSignature Language="C#" Value="public static class XmlSerializableServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit XmlSerializableServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XmlSerializableServices" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains methods for reading and writing XML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using [!INCLUDE[indigo1](~/includes/indigo1-md.md)], you can generate CLR types representing data contracts from XML schemas. In certain cases when doing so, the schemas may not all be represented as data contracts. In this case, you can use the <xref:System.Runtime.Serialization.ImportOptions.ImportXmlType%2A> property of the <xref:System.Runtime.Serialization.ImportOptions> class.  Setting the property to `true` specifies that these types are imported as XML types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface. In the process, the generated types can store anything, but they are read and written as XML by the serializer.  
+  
+ The <xref:System.Runtime.Serialization.XmlSerializableServices> is an abstract helper class that contains code that is used by the generated <xref:System.Xml.Serialization.IXmlSerializable> types to read and write XML. It also contains code for generating schema for the generated types. Note that details about the schemas are not stored. Only the name is stored in the generated type. This class generates a default schema that represents the XML schema type `anyType` with the appropriate schema type name as the contract name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddDefaultSchema">
+      <MemberSignature Language="C#" Value="public static void AddDefaultSchema (System.Xml.Schema.XmlSchemaSet schemas, System.Xml.XmlQualifiedName typeQName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddDefaultSchema(class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.XmlQualifiedName typeQName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlSerializableServices.AddDefaultSchema(System.Xml.Schema.XmlSchemaSet,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemas" Type="System.Xml.Schema.XmlSchemaSet" />
+        <Parameter Name="typeQName" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="schemas">An <see cref="T:System.Xml.Schema.XmlSchemaSet" /> to add the generated schema type to.</param>
+        <param name="typeQName">An <see cref="T:System.Xml.XmlQualifiedName" /> that specifies the type name to assign the schema to.</param>
+        <summary>Generates a default schema type given the specified type name and adds it to the specified schema set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method contains code for generating a schema type for a data contract type with the specified type name.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="schemas" /> or <paramref name="typeQName" /> argument is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadNodes">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlNode[] ReadNodes (System.Xml.XmlReader xmlReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlNode[] ReadNodes(class System.Xml.XmlReader xmlReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlSerializableServices.ReadNodes(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlNode[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">An <see cref="T:System.Xml.XmlReader" /> used for reading.</param>
+        <summary>Reads a set of XML nodes from the specified reader and returns the result.</summary>
+        <returns>An array of type <see cref="T:System.Xml.XmlNode" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method reads all XML contained within the node the reader is positioned on when this call is made. This enables it to read and store all XML as an array of <xref:System.Xml.XmlNode> objects. It is a helper method used by the types that implement <xref:System.Xml.Serialization.IXmlSerializable> and that use the <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="xmlReader" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.Runtime.Serialization.SerializationException">While reading, a <see langword="null" /> node was encountered.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNodes">
+      <MemberSignature Language="C#" Value="public static void WriteNodes (System.Xml.XmlWriter xmlWriter, System.Xml.XmlNode[] nodes);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteNodes(class System.Xml.XmlWriter xmlWriter, class System.Xml.XmlNode[] nodes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlSerializableServices.WriteNodes(System.Xml.XmlWriter,System.Xml.XmlNode[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="nodes" Type="System.Xml.XmlNode[]" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">An <see cref="T:System.Xml.XmlWriter" /> used for writing.</param>
+        <param name="nodes">An array of type <see cref="T:System.Xml.XmlNode" /> to write.</param>
+        <summary>Writes the supplied nodes using the specified writer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="xmlWriter" /> argument is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

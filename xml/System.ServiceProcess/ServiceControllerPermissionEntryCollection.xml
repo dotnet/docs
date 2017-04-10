@@ -1,0 +1,310 @@
+<Type Name="ServiceControllerPermissionEntryCollection" FullName="System.ServiceProcess.ServiceControllerPermissionEntryCollection">
+  <TypeSignature Language="C#" Value="public class ServiceControllerPermissionEntryCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ServiceControllerPermissionEntryCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a strongly-typed collection of <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.ServiceProcess.ServiceControllerPermissionEntry value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.ServiceProcess.ServiceControllerPermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Add(System.ServiceProcess.ServiceControllerPermissionEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object to add.</param>
+        <summary>Adds a specified <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> to this collection.</summary>
+        <returns>The zero-based index of the added <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.ServiceProcess.ServiceControllerPermissionEntry[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.ServiceProcess.ServiceControllerPermissionEntry[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.AddRange(System.ServiceProcess.ServiceControllerPermissionEntry[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of type <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> objects that contains the permission entries to add.</param>
+        <summary>Appends a set of specified permission entries to this collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.ServiceProcess.ServiceControllerPermissionEntryCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.ServiceProcess.ServiceControllerPermissionEntryCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.AddRange(System.ServiceProcess.ServiceControllerPermissionEntryCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntryCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" /> that contains the permission entries to add.</param>
+        <summary>Appends a set of specified permission entries to this collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.ServiceProcess.ServiceControllerPermissionEntry value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.ServiceProcess.ServiceControllerPermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Contains(System.ServiceProcess.ServiceControllerPermissionEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object to find.</param>
+        <summary>Determines whether this collection contains a specified <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object belongs to this collection; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.ServiceProcess.ServiceControllerPermissionEntry[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.ServiceProcess.ServiceControllerPermissionEntry[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.CopyTo(System.ServiceProcess.ServiceControllerPermissionEntry[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.ServiceProcess.ServiceControllerPermissionEntry[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of type <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> that receives the copied permission entries.</param>
+        <param name="index">The zero-based index at which to begin copying the permission entries.</param>
+        <summary>Copies the permission entries from this collection to an array, starting at a particular index of the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.ServiceProcess.ServiceControllerPermissionEntry value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.ServiceProcess.ServiceControllerPermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.IndexOf(System.ServiceProcess.ServiceControllerPermissionEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
+      </Parameters>
+      <Docs>
+        <param name="value">The permission entry to search for.</param>
+        <summary>Determines the index of a specified permission entry in this collection.</summary>
+        <returns>The zero-based index of the specified permission entry, or -1 if the permission entry was not found in the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.ServiceProcess.ServiceControllerPermissionEntry value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.ServiceProcess.ServiceControllerPermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Insert(System.Int32,System.ServiceProcess.ServiceControllerPermissionEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the collection at which to insert the permission entry.</param>
+        <param name="value">The permission entry to insert into this collection.</param>
+        <summary>Inserts a permission entry into this collection at a specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceControllerPermissionEntry this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceProcess.ServiceControllerPermissionEntry Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerPermissionEntry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index into the collection.</param>
+        <summary>Gets or sets the object at a specified index.</summary>
+        <value>The <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> object that exists at the specified index.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClear">
+      <MemberSignature Language="C#" Value="protected override void OnClear ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.OnClear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs additional custom processes after clearing the contents of the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsert">
+      <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.OnInsert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert <c>value</c>.</param>
+        <param name="value">The new value of the permission entry at <c>index</c>.</param>
+        <summary>Performs additional custom processes before a new permission entry is inserted into the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemove">
+      <MemberSignature Language="C#" Value="protected override void OnRemove (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemove(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.OnRemove(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>value</c> can be found.</param>
+        <param name="value">The permission entry to remove from <c>index</c>.</param>
+        <summary>Performs additional custom processes when removing a new permission entry from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSet">
+      <MemberSignature Language="C#" Value="protected override void OnSet (int index, object oldValue, object newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.OnSet(System.Int32,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="oldValue" Type="System.Object" />
+        <Parameter Name="newValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>oldValue</c> can be found.</param>
+        <param name="oldValue">The value to replace with <c>newValue</c>.</param>
+        <param name="newValue">The new value of the permission entry at <c>index</c>.</param>
+        <summary>Performs additional custom processes before setting a value in the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.ServiceProcess.ServiceControllerPermissionEntry value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.ServiceProcess.ServiceControllerPermissionEntry value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntryCollection.Remove(System.ServiceProcess.ServiceControllerPermissionEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.ServiceProcess.ServiceControllerPermissionEntry" />
+      </Parameters>
+      <Docs>
+        <param name="value">The permission entry to remove.</param>
+        <summary>Removes a specified permission entry from this collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

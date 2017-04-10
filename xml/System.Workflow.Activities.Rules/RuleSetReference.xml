@@ -1,0 +1,151 @@
+<Type Name="RuleSetReference" FullName="System.Workflow.Activities.Rules.RuleSetReference">
+  <TypeSignature Language="C#" Value="public sealed class RuleSetReference : System.Workflow.ComponentModel.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuleSetReference extends System.Workflow.ComponentModel.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleSetReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.Serialization.DependencyObjectCodeDomSerializer), typeof(System.ComponentModel.Design.Serialization.CodeDomSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.Activities.Rules.Design.RuleSetNameEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.Activities.Rules.Design.RuleSetReferenceTypeConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.Rules.RuleSetReferenceValidator))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Holds the name of a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> in the <see cref="T:System.Workflow.Activities.Rules.RuleSetCollection" /> on the workflow. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.Rules.RuleSetReference> class and set it to the value of the <xref:System.Workflow.Activities.PolicyActivity.RuleSetReference%2A?displayProperty=fullName> property. This code example is part of the RuleActionTrackingEventSample SDK Sample from the SimplePolicyWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
+  
+ [!code-csharp[wf_samples#294](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#294)]
+ [!code-vb[wf_samples#294](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#294)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleSetReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetReference" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.Rules.RuleSetReference> class and set it to the value of the <xref:System.Workflow.Activities.PolicyActivity.RuleSetReference%2A?displayProperty=fullName> property. This code example is part of the RuleActionTrackingEventSample SDK Sample from the SimplePolicyWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
+  
+ [!code-csharp[wf_samples#294](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#294)]
+ [!code-vb[wf_samples#294](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#294)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleSetReference (string ruleSetName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ruleSetName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetReference.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ruleSetName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ruleSetName">The name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> that the activity evaluates.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetReference" /> class using the name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.Rules.RuleSetReference> class using the name of a RuleSet. This code example is part of the Policy SDK Sample from the DiscountPolicyWorkflow.Designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Advanced Policy](http://msdn.microsoft.com/en-us/1ad079ee-b50b-4af4-9575-597eafc97742).  
+  
+ [!code-csharp[wf_samples#164](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#164)]
+ [!code-vb[wf_samples#164](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#164)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeProperties">
+      <MemberSignature Language="C#" Value="protected override void InitializeProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetReference.InitializeProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuleSetName">
+      <MemberSignature Language="C#" Value="public string RuleSetName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RuleSetName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleSetReference.RuleSetName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> that the activity evaluates.</summary>
+        <value>The name of the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> that the activity evaluates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.Rules.RuleSetReference> class and set it to the value of the <xref:System.Workflow.Activities.PolicyActivity.RuleSetReference%2A?displayProperty=fullName> property. This code example is part of the RuleActionTrackingEventSample SDK Sample from the SimplePolicyWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][RuleActionTrackingEvent Sample](http://msdn.microsoft.com/en-us/cea1192f-82e2-4c8a-acc0-5f8ed462de73).  
+  
+ [!code-csharp[wf_samples#294](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#294)]
+ [!code-vb[wf_samples#294](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#294)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

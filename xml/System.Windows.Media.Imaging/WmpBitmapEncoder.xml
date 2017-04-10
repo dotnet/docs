@@ -1,0 +1,732 @@
+<Type Name="WmpBitmapEncoder" FullName="System.Windows.Media.Imaging.WmpBitmapEncoder">
+  <TypeSignature Language="C#" Value="public sealed class WmpBitmapEncoder : System.Windows.Media.Imaging.BitmapEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WmpBitmapEncoder extends System.Windows.Media.Imaging.BitmapEncoder" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.WmpBitmapEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Imaging.BitmapEncoder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an encoder that is used to encode [!INCLUDE[TLA#tla_wdp](~/includes/tlasharptla-wdp-md.md)] images.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[TLA2#tla_wdp](~/includes/tla2sharptla-wdp-md.md)] is a new codec that provides better image fidelity than [!INCLUDE[TLA2#tla_jpegorg](~/includes/tla2sharptla-jpegorg-md.md)] with smaller file sizes and more features. [!INCLUDE[TLA2#tla_wdp](~/includes/tla2sharptla-wdp-md.md)] images achieve lossy and lossless compression by using a single algorithm. [!INCLUDE[TLA2#tla_wdp](~/includes/tla2sharptla-wdp-md.md)] images support existing metadata standards. For additional information about this format, see [Windows Media Photo Specification](http://www.microsoft.com/whdc/xps/wmphoto.mspx).  
+  
+ [!INCLUDE[TLA2#tla_wdp](~/includes/tla2sharptla-wdp-md.md)] files do not support preview, global thumbnails, frame level thumbnails, or multiple frames.  
+  
+ Encoding does not work in partial trust. See [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md) for information on partial trust.  
+  
+<a name="xamlTextUsage_No"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WmpBitmapEncoder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.WmpBitmapEncoder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Imaging.WmpBitmapEncoder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to initialize a <xref:System.Windows.Media.Imaging.WmpBitmapEncoder> to encode a new bitmap image.  
+  
+ [!code-cpp[wdpbitmapdecoderencoder#3](~/samples/snippets/cpp/VS_Snippets_Wpf/WdpBitmapDecoderEncoder/CPP/WDPEncoderDecoder.cpp#3)]
+ [!code-csharp[wdpbitmapdecoderencoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/WdpBitmapDecoderEncoder/CSharp/WDPEncoderDecoder.cs#3)]
+ [!code-vb[wdpbitmapdecoderencoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WdpBitmapDecoderEncoder/VB/WDPEncoderDecoder.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlphaDataDiscardLevel">
+      <MemberSignature Language="C#" Value="public byte AlphaDataDiscardLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 AlphaDataDiscardLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.AlphaDataDiscardLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the level of alpha frequency data to discard during a compressed domain transcode.</summary>
+        <value>The level of alpha data to discard when encoding the image. The value range is 0 (no data discarded) to 4 (alpha channel completely discarded). The default is 1.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> No image frequency data is discarded.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> FlexBits are discarded. The image quality of the image is reduced without changing the effective resolution of the image.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 2  
+  
+ </term>  
+<description> HighPass frequency data band is discarded. The image's effective resolution is reduced by a factor of 4 in both dimensions.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 3  
+  
+ </term>  
+<description> HighPass and LowPass frequency data bands are discarded. The image's effective resolution is reduced by a factor of 16 in both dimensions.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 4  
+  
+ </term>  
+<description> The alpha channel is completely discarded. The pixel format is changed to reflect the removal of the alpha channel.  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property has an effect only if <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode%2A> is set to `true` and the image contains either a planar or interleaved alpha channel; otherwise, it is ignored.  
+  
+<a name="XAMLTextUsage_1"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value given is not between 0 and 4.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AlphaQualityLevel">
+      <MemberSignature Language="C#" Value="public byte AlphaQualityLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 AlphaQualityLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.AlphaQualityLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the compression quality for a planar alpha channel.</summary>
+        <value>The compression quality for a planar alpha channel image. A value of 1 is considered lossless, and increasing values result in higher compression ratios and lower image quality. The value range is 1 to 255. The default is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property has an effect only if <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.InterleavedAlpha%2A> is `false`.  
+  
+<a name="XAMLTextUsage_2"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompressedDomainTranscode">
+      <MemberSignature Language="C#" Value="public bool CompressedDomainTranscode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CompressedDomainTranscode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether compressed domain operations can be used. Compressed domain operations are transformation operations that are done without decoding the image data.</summary>
+        <value>
+          <see langword="true" /> if compressed domain operations can be used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_3"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlipHorizontal">
+      <MemberSignature Language="C#" Value="public bool FlipHorizontal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FlipHorizontal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.FlipHorizontal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to flip the image horizontally.</summary>
+        <value>
+          <see langword="true" /> if the image is to be flipped horizontally; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_4"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlipVertical">
+      <MemberSignature Language="C#" Value="public bool FlipVertical { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FlipVertical" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.FlipVertical" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to flip the image vertically.</summary>
+        <value>
+          <see langword="true" /> if the image is to be flipped vertically; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_5"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FrequencyOrder">
+      <MemberSignature Language="C#" Value="public bool FrequencyOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FrequencyOrder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.FrequencyOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to encoding in frequency order.</summary>
+        <value>
+          <see langword="true" /> to encode the image in frequency order; <see langword="false" /> to encode the image by its spatial orientation. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_6"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalTileSlices">
+      <MemberSignature Language="C#" Value="public short HorizontalTileSlices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 HorizontalTileSlices" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.HorizontalTileSlices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of horizontal divisions to use during compression encoding. A single division creates two horizontal regions.</summary>
+        <value>The number of horizontal divisions to use during compression encoding. The value range is 0 to 4095. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode%2A> is `true`, <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.HorizontalTileSlices%2A> must be set to 0.  
+  
+ A tile created by the division can never be smaller than 16 pixels. The value is adjusted to maintain the minimum tile size.  
+  
+ When used in combination with <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.VerticalTileSlices%2A>, a grid of tiles is formed. For example, if both properties are set to 1, the image is divided into 4 tiles.  
+  
+<a name="XAMLTextUsage_7"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreOverlap">
+      <MemberSignature Language="C#" Value="public bool IgnoreOverlap { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreOverlap" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.IgnoreOverlap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to ignore region overlap pixels in subregion compressed domain encoding. This feature is not currently implemented.</summary>
+        <value>
+          <see langword="true" /> if overlap is ignored; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is valid only when <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode%2A> is `true` and a subregion encode is requested.  
+  
+<a name="XAMLTextUsage_8"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageDataDiscardLevel">
+      <MemberSignature Language="C#" Value="public byte ImageDataDiscardLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 ImageDataDiscardLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.ImageDataDiscardLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the level of image data to discard during a compressed domain transcode.</summary>
+        <value>The level of image data to discard during a compressed domain encoding of the image. The value range is 0 (no data discarded) to 3 (HighPass and LowPass discarded). The default is 1.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> No image frequency data is discarded.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> FlexBits are discarded. The image quality of the image is reduced without changing the effective resolution of the image.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 2  
+  
+ </term>  
+<description> HighPass frequency data band is discarded. The image's effective resolution is reduced by a factor of 4 in both dimensions.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 3  
+  
+ </term>  
+<description> HighPass and LowPass frequency data bands are discarded. The image's effective resolution is reduced by a factor of 16 in both dimensions.  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property has an effect only if <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode%2A> is set to `true`; otherwise, it is ignored.  
+  
+<a name="XAMLTextUsage_9"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value given is not between 0 and 3.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageQualityLevel">
+      <MemberSignature Language="C#" Value="public float ImageQualityLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 ImageQualityLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.ImageQualityLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image quality level.</summary>
+        <value>The image quality level. The range is 0 to 1.0 (lossless image quality). The default is 0.9.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_10"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterleavedAlpha">
+      <MemberSignature Language="C#" Value="public bool InterleavedAlpha { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InterleavedAlpha" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.InterleavedAlpha" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to encode the alpha channel data as an additional interleaved channel.</summary>
+        <value>
+          <see langword="true" /> if the image is encoded with an additional interleaved alpha channel; <see langword="false" /> if planar alpha channel is used. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Interleaved alpha channels are only supported by certain pixel formats.  
+  
+<a name="XAMLTextUsage_11"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lossless">
+      <MemberSignature Language="C#" Value="public bool Lossless { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Lossless" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.Lossless" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to encode using lossless compression.</summary>
+        <value>
+          <see langword="true" /> to use lossless compression; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_12"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverlapLevel">
+      <MemberSignature Language="C#" Value="public byte OverlapLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 OverlapLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.OverlapLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the overlap processing level.</summary>
+        <value>The overlap processing level. The default is 1.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> No overlap processing is enabled.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> One level of overlap processing is enabled. Encoded values of 4x4 blocks are modified based on the values of neighboring blocks.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 2  
+  
+ </term>  
+<description> Two levels of overlap processing are enabled. In addition to the first level of processing, encoded values of 16x16 macro blocks are modified based on the values of neighboring macro blocks.  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_13"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QualityLevel">
+      <MemberSignature Language="C#" Value="public byte QualityLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 QualityLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.QualityLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the compression quality for the main image.</summary>
+        <value>The compression quality for the main image. A value of 1 is considered lossless, and higher values indicate a high compression ratio and lower image quality. The range is 1 to 255. The default is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_14"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotation">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.Rotation Rotation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Imaging.Rotation Rotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.Rotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Imaging.Rotation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Imaging.Rotation" /> of the image.</summary>
+        <value>The rotation of the image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_15"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubsamplingLevel">
+      <MemberSignature Language="C#" Value="public byte SubsamplingLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 SubsamplingLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.SubsamplingLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the sub-sampling level for RGB image encoding.</summary>
+        <value>The sub-sampling level for RGB image encoding. The range is 0 to 3. The default is 3.  
+  
+ <list type="table">  
+<listheader>  
+<term> Value  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> 0  
+  
+ </term>  
+<description> 4:0:0 encoding. Chroma content is discarded; luminance is preserved.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 1  
+  
+ </term>  
+<description> 4:2:0 encoding. Chroma resolution is reduced by 1/4 of luminance resolution.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 2  
+  
+ </term>  
+<description> 4:2:2 encoding. Chroma resolution is reduced to 1/2 of luminance resolution.  
+  
+ </description>  
+</item>  
+<item>  
+<term> 3  
+  
+ </term>  
+<description> 4:4:4 encoding. Chroma resolution is preserved.  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="XAMLTextUsage_16"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value given is not between 0 and 3.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseCodecOptions">
+      <MemberSignature Language="C#" Value="public bool UseCodecOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseCodecOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.UseCodecOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates codec options are to be used.</summary>
+        <value>
+          <see langword="true" /> if codec options are to be used; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.UseCodecOptions%2A> is `true`, <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.QualityLevel%2A>, <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.OverlapLevel%2A>, and <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.SubsamplingLevel%2A> are used in place of the <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.ImageQualityLevel%2A>.  
+  
+ When <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.UseCodecOptions%2A> is `false`, <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.QualityLevel%2A>, <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.OverlapLevel%2A>, and <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.SubsamplingLevel%2A> are set based on <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.ImageQualityLevel%2A>.  
+  
+<a name="XAMLTextUsage_17"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalTileSlices">
+      <MemberSignature Language="C#" Value="public short VerticalTileSlices { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 VerticalTileSlices" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.WmpBitmapEncoder.VerticalTileSlices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of vertical divisions to use during compression encoding. A single division creates two vertical regions.</summary>
+        <value>The number of vertical divisions to use during compression encoding. The value range is 0 to 4095. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.CompressedDomainTranscode%2A> is `true`, <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.VerticalTileSlices%2A> must be set to 0.  
+  
+ A tile created by the division can never be smaller than 16 pixels. The value is adjusted to maintain the minimum tile size.  
+  
+ When used in combination with <xref:System.Windows.Media.Imaging.WmpBitmapEncoder.HorizontalTileSlices%2A>, a grid of tiles is formed. For example, if both properties are set to 1, the image is divided into 4 tiles.  
+  
+<a name="XAMLTextUsage_18"></a>   
+## XAML Text Usage  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

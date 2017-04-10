@@ -1,0 +1,17 @@
+<Namespace Name="System.AddIn.Contract.Automation">
+  <Docs>
+    <summary>The <see cref="N:System.AddIn.Contract.Automation" /> namespace contains interfaces that components use to access type information and invoke type members.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the interfaces in the <xref:System.AddIn.Contract.Automation?displayProperty=fullName> namespace to enable components to access type information for a remote object without having direct access to the <xref:System.Type> of the remote object. The <xref:System.AddIn.Contract.Automation?displayProperty=fullName> namespace defines reflection functionality for components that use the interfaces and structures in the <xref:System.AddIn.Contract?displayProperty=fullName>, <xref:System.AddIn.Contract.Automation?displayProperty=fullName>, and <xref:System.AddIn.Contract.Collections?displayProperty=fullName> namespaces to communicate. The interfaces in these namespaces are also called contracts. All contracts derive from the <xref:System.AddIn.Contract.IContract> interface.  
+  
+ When using contracts to manage the communication between components, you must implement the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract> interface in a type to expose the type information to other components. Components can then access the members of the type by calling the <xref:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType%2A> method of the interface to get an <xref:System.AddIn.Contract.Automation.IRemoteTypeContract>. The other interfaces and structures in the <xref:System.AddIn.Contract.Automation?displayProperty=fullName> namespace provide access to type information for delegates, properties, methods, events, and fields.  
+  
+ Components can use the contracts in the <xref:System.AddIn.Contract.Automation?displayProperty=fullName> namespace to access type information for an object that is in a different process or application domain, or in the same process or application domain.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

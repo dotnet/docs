@@ -1,0 +1,71 @@
+<Type Name="MailPriority" FullName="System.Web.Mail.MailPriority">
+  <TypeSignature Language="C#" Value="public enum MailPriority" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MailPriority extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailPriority" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The recommended alternative is System.Net.Mail.MailPriority. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the priority level for the e-mail message. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Mail.MailPriority High = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailPriority.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Mail.MailPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the e-mail message has high priority.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Low">
+      <MemberSignature Language="C#" Value="Low" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Mail.MailPriority Low = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailPriority.Low" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Mail.MailPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the e-mail message has low priority.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Mail.MailPriority Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailPriority.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Mail.MailPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the e-mail message has normal priority.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

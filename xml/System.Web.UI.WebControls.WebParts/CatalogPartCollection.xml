@@ -1,0 +1,377 @@
+<Type Name="CatalogPartCollection" FullName="System.Web.UI.WebControls.WebParts.CatalogPartCollection">
+  <TypeSignature Language="C#" Value="public sealed class CatalogPartCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CatalogPartCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls used to provide catalogs of Web server controls that end users can add to a Web page. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class is a read-only collection of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, typically used by a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone to track the set of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls contained by the zone.  
+  
+ When a Web Parts page enters catalog mode, the zone creates a new <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object consisting of the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. Each <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control in the collection can contain references to zero or more Web server controls, which are displayed in the form of a catalog of available server controls.  
+  
+ You can create a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> collection of controls for your own programmatic use if, for example, you need to perform some mass operation on a set of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. Even though the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object is read-only, you can make programmatic changes to the underlying controls referenced in the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several uses of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class. There are four parts to this code example:  
+  
+-   A user control that enables you to change display modes on a Web Parts page.  
+  
+-   A class for a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`, which is referenced in the Web page and is contained in one of the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls.  
+  
+-   A Web page that references the `TextDisplayWebPart` control, contains a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control with two of the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls from the Web Parts control set declared in the zone, and contains event-driven code to create and manipulate a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object.  
+  
+-   An explanation of how the code example works when you load it in a browser.  
+  
+ The first part of the code example is the user control. The source code for the user control comes from another topic. For this code example to work, you need to obtain the .ascx file for the user control from the [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0) topic, and place the file in the same folder as the .aspx page in this code example.  
+  
+ The second part of the code example is the `TextDisplayWebPart` control. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a walkthrough that demonstrates both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08). Note that the control has a property named `ContentText`; this property holds the value that the user enters in the text box.  
+  
+ [!code-csharp[WebParts_CatalogPartCollection_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/textdisplaywebpart.cs#3)]
+ [!code-vb[WebParts_CatalogPartCollection_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/textdisplaywebpart.vb#3)]  
+  
+ The third part of the code example is the Web page. Notice that the `<asp:catalogzone>` element for the page contains declarations for two <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. These controls become part of a custom <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object that is created when the `Button1_Click` method executes. The <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control contains Web server controls that have been previously closed by a user at run time. Controls in the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control can be added back to a page. The <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control contains a declaration of the custom `TextDisplayWebPart` control. When the page is in catalog mode, a user can add the `TextDisplayWebPart` control to the page so that it can be used in normal browse mode.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogPartCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogPartCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#1)]  -->  
+  
+ When you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. You can add the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control to the page by selecting the check box next to it and clicking **Add**. Click **Close** to return the page to browse mode. On the control you just added, if you click the verbs menu (the down arrow that appears in the title bar) and then click **Close**, the control is removed from the page and added to the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Return the page to catalog mode, and click the **Page Catalog** link to view the contents of the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Notice that the control you closed now appears there. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CatalogPartCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new, empty instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.%23ctor%2A> constructor initializes an empty instance of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class. This overload of the constructor is used internally by the <xref:System.Web.UI.WebControls.WebParts.CatalogZone> class in its <xref:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts%2A> method to create an empty collection object. The zone then creates instances of all the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls declared in the child zone template, and uses an internal method of the collection to add them.  
+  
+ You cannot use this overload of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.%23ctor%2A> constructor to create a new instance of a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> and add <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls to it. You must use one of the other overloads for the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.%23ctor%2A> constructor instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CatalogPartCollection (System.Collections.ICollection catalogParts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection catalogParts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor(System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="catalogParts" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="catalogParts">An <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class by passing in an <see cref="T:System.Collections.ICollection" /> collection of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.%23ctor%2A> constructor initializes an instance of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class and passes in a collection of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. This is one overload of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.%23ctor%2A> constructor that you can use to create a new <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and add <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls to it.  
+  
+ Although the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> instance created by the constructor is read-only, you can still access the individual <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the collection programmatically and call their properties and methods.  
+  
+ One common scenario for using this constructor would be if you want to perform some batch operation on an entire set of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, such as changing the content, appearance, or position of a related group of items.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can create a custom <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection>, and perform a batch operation to change the individual <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the collection even though it is read-only. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class overview topic.  
+  
+ The code in the `Button1_Click` method creates an <xref:System.Collections.ArrayList> object, adds the two <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the page to the object, and then creates a new <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object using the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.%23ctor%2A> constructor. It also demonstrates how you can make batch changes to the underlying <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, even though the collection itself is read-only. The code loops through the collection, updating the <xref:System.Web.UI.WebControls.WebParts.Part.Description%2A> property of each control.  
+  
+ [!code-csharp[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#2)]
+ [!code-vb[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#2)]  
+  
+ When you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. Also, if you position your mouse pointer over the title text within the border of the <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control, you can see the new description text that was added to the control when you clicked the button (the description appears in a ToolTip). If you click the **Page Catalog** link to display the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control, you will find that it also has an updated description.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CatalogPartCollection (System.Web.UI.WebControls.WebParts.CatalogPartCollection existingCatalogParts, System.Collections.ICollection catalogParts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.CatalogPartCollection existingCatalogParts, class System.Collections.ICollection catalogParts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor(System.Web.UI.WebControls.WebParts.CatalogPartCollection,System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="existingCatalogParts" Type="System.Web.UI.WebControls.WebParts.CatalogPartCollection" />
+        <Parameter Name="catalogParts" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="existingCatalogParts">An <see cref="T:System.Collections.ICollection" /> of existing <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in a zone.</param>
+        <param name="catalogParts">An <see cref="T:System.Collections.ICollection" /> of additional <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class by passing in an <see cref="T:System.Collections.ICollection" /> collection of the existing <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in a zone, and an additional collection of controls.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.WebParts.CatalogPart catalogPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.CatalogPart catalogPart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Contains(System.Web.UI.WebControls.WebParts.CatalogPart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="catalogPart" Type="System.Web.UI.WebControls.WebParts.CatalogPart" />
+      </Parameters>
+      <Docs>
+        <param name="catalogPart">A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> that is checked to determine whether it is in the collection.</param>
+        <summary>Returns a value indicating whether a particular control exists in the collection.</summary>
+        <returns>A Boolean value that indicates whether a particular control is in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Contains%2A> method enables you to determine whether a particular <xref:System.Web.UI.WebControls.WebParts.CatalogPart> object is part of a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can determine whether a particular <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control is a member of a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class overview topic.  
+  
+ The code in the `Button1_Click` method creates a new <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object named `myParts`. The method uses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Contains%2A> method to determine whether the `PageCatalogPart1` control exists, and if so, retrieves the control and changes a property value.  
+  
+ [!code-csharp[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#2)]
+ [!code-vb[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#2)]  
+  
+ When you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. Add the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control to the page by selecting the check box next to it and clicking **Add**. Click **Close** to return the page to browse mode. On the control you just added, if you click the verbs menu (the down arrow that appears in the title bar) and then click **Close**, the control is removed from the page and added to the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Return the page to catalog mode, and click the **Page Catalog** link to view the contents of the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Notice that the control you closed has been added to it. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. Select the check box next to the server control contained in the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control, click **Add** to add it back to the page, and then click **Close** to return the page to browse mode. Click the verbs menu again on the control, and note that now the close verb is gone. It was removed by the code in the `Button1_Click` method, when it used the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Contains%2A> method to check for `PageCatalogPart1`, and then set its <xref:System.Web.UI.WebControls.WebParts.WebPart.AllowClose%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WebParts.CatalogPart[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WebParts.CatalogPart[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.CopyTo(System.Web.UI.WebControls.WebParts.CatalogPart[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.UI.WebControls.WebParts.CatalogPart[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> objects to contain the copied collection.</param>
+        <param name="index">The starting point in the array at which to place the collection contents.</param>
+        <summary>Copies the collection to an array of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.CopyTo%2A> method is useful when you want to assemble a custom array that can contain the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object, or a subset of those controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.WebControls.WebParts.CatalogPartCollection Empty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.WebControls.WebParts.CatalogPartCollection Empty" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Empty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.CatalogPartCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>References a static, read-only, empty instance of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A static, read-only, empty instance of <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> reduces memory usage in cases where you want an empty collection instance to return the proper object type from a method or to compare the instance with another object, but you do not need to add members to the instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.WebParts.CatalogPart catalogPart);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.CatalogPart catalogPart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf(System.Web.UI.WebControls.WebParts.CatalogPart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="catalogPart" Type="System.Web.UI.WebControls.WebParts.CatalogPart" />
+      </Parameters>
+      <Docs>
+        <param name="catalogPart">A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> that is a member of the collection.</param>
+        <summary>Returns the position of a particular member of the collection.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> that is a member of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf%2A> method is useful if you have multiple <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls on a Web Parts page, and you need to locate a particular control in the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can determine the position of a member of a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> collection by using its <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf%2A> property. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class overview topic.  
+  
+ The code in the `Button1_Click` method creates a new <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object named `myParts`. The method uses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf%2A> property to retrieve the position of the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control, and then changes a property value on the control.  
+  
+ [!code-csharp[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#2)]
+ [!code-vb[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#2)]  
+  
+ After you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. Click the **Page Catalog** link to display the contents of the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control. Note that it has only a title and no border, because its <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeType%2A> property value was changed to <xref:System.Web.UI.WebControls.WebParts.PartChromeType> in the code that used the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf%2A> property to retrieve the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.CatalogPart this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.CatalogPart Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.CatalogPart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of a particular <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> in the collection.</param>
+        <summary>Gets or sets a member of the collection, based on its position in the collection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> at the specified index in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item%2A> indexer allows you to access the underlying <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object by index, and change their property values or call methods.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can access a member of a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object using its index. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class overview topic.  
+  
+ The code in the `Button1_Click` method creates a new <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object named `myParts`. Note that the method uses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item%2A> indexer to retrieve information from the first member of the collection.  
+  
+ [!code-csharp[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#2)]
+ [!code-vb[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#2)]  
+  
+ When you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. The count of available server controls within the <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control is obtained by using the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item%2A> indexer in the `Button1_Click` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.CatalogPart this[string id] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.CatalogPart Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.CatalogPart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The unique identifier for a particular <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> in a collection.</param>
+        <summary>Returns a member of the collection based on a unique string identifier.</summary>
+        <value>The first <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> in the collection whose ID equals the value of <paramref name="id" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item%2A> indexer allows you to access the underlying <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object by use of a string identifier. Although the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object is read-only, you can change the property values or call methods on the underlying controls accessed by the indexer.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can access a member of a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object using its string ID value. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> class overview topic.  
+  
+ The code in the `Button1_Click` method creates a new <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object named `myParts`. The method uses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item%2A> indexer to retrieve information about the <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control, which is the second member of the collection.  
+  
+ [!code-csharp[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/CS/catalogpartcollectioncs.aspx#2)]
+ [!code-vb[WebParts_CatalogPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogPartCollection_Overview/VB/catalogpartcollectionvb.aspx#2)]  
+  
+ When you load the page in a browser, you can switch the page into catalog mode by selecting **Catalog** in the **Display Mode** drop-down list control. Clicking the **Display CatalogPart Properties** button accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object and displays certain properties of the contained <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. The count of available server controls within the <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control is obtained by using the <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item%2A> indexer in the `Button1_Click` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone that contains <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls is typically the control that creates a <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object, through the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method. However, you can also create your own <xref:System.Web.UI.WebControls.WebParts.CatalogPartCollection> object for other programmatic purposes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

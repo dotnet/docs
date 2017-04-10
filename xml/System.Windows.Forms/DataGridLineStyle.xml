@@ -1,0 +1,66 @@
+<Type Name="DataGridLineStyle" FullName="System.Windows.Forms.DataGridLineStyle">
+  <TypeSignature Language="C#" Value="public enum DataGridLineStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridLineStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridLineStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the style of gridlines in a <see cref="T:System.Windows.Forms.DataGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.DataGrid.GridLineStyle%2A> property of the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> class. The default is `Solid`.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Windows.Forms.DataGrid.GridLineStyle%2A> property to `DataGridLineStyle.None`.  
+  
+ [!code-cpp[Classic DataGridLineStyle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic DataGridLineStyle Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic DataGridLineStyle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic DataGridLineStyle Example/CS/source.cs#1)]
+ [!code-vb[Classic DataGridLineStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridLineStyle Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridLineStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridLineStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No gridlines between cells.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Solid">
+      <MemberSignature Language="C#" Value="Solid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridLineStyle Solid = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridLineStyle.Solid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridLineStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Solid gridlines between cells.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

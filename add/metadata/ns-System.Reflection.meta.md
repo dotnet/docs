@@ -1,0 +1,6 @@
+---
+uid: System.Reflection
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---

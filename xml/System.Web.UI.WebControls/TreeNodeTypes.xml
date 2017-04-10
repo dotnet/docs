@@ -1,0 +1,129 @@
+<Type Name="TreeNodeTypes" FullName="System.Web.UI.WebControls.TreeNodeTypes">
+  <TypeSignature Language="C#" Value="public enum TreeNodeTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeNodeTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the different node types (leaf, parent, and root) in the <see cref="T:System.Web.UI.WebControls.TreeView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration is used to represent the different node types that are available in the <xref:System.Web.UI.WebControls.TreeView> control. The following table describes the three different node types.  
+  
+|Node type|Description|  
+|---------------|-----------------|  
+|Leaf|A node with no child nodes.|  
+|Parent|A node with a parent node and one or more child nodes.|  
+|Root|A node with no parent node and one or more child nodes.|  
+  
+ The <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration is a flag enumeration, which allows you to combine values through bitwise operations. For example, to represent the parent and leaf nodes, you can perform a bitwise `OR` operation on the Parent and Leaf values.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.TreeView.ShowCheckBoxes%2A> property uses the <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration to represent the node types that display check boxes in the <xref:System.Web.UI.WebControls.TreeView> control. When it is set to a value other than the None value, check boxes are displayed next to the specified node type, which allows users to select multiple items from the <xref:System.Web.UI.WebControls.TreeView> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TreeNodeTypes> enumeration to indicate that the <xref:System.Web.UI.WebControls.TreeView> control should show a check box for each of the parent and leaf nodes only.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TreeViewShowCheckBoxes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TreeViewShowCheckBoxes/CS/treeviewshowcheckboxescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TreeViewShowCheckBoxes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TreeViewShowCheckBoxes/VB/treeviewshowcheckboxesvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeNodeTypes All = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeNodeTypes.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All nodes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Leaf">
+      <MemberSignature Language="C#" Value="Leaf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeNodeTypes Leaf = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeNodeTypes.Leaf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A node with no child nodes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeNodeTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeNodeTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No nodes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="Parent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeNodeTypes Parent = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeNodeTypes.Parent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A node with a parent node and one or more child nodes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="Root" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TreeNodeTypes Root = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TreeNodeTypes.Root" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TreeNodeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A node with no parent node and one or more child nodes.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,225 @@
+<Type Name="LanguagePrimitives+IntrinsicOperators" FullName="Microsoft.FSharp.Core.LanguagePrimitives+IntrinsicOperators">
+  <TypeSignature Language="C#" Value="public static class LanguagePrimitives.IntrinsicOperators" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed LanguagePrimitives/IntrinsicOperators extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="op_AddressOf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T op_AddressOf&lt;T&gt; (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_AddressOf&lt;T&gt;(!!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_AddressOf``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T@</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Amp">
+      <MemberSignature Language="C#" Value="public static bool op_Amp (bool e1, bool e2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Amp(bool e1, bool e2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_Amp(System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("In F# code, use 'e1 &amp;&amp; e2' instead of 'e1 &amp; e2'", 1203, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e1" Type="System.Boolean" />
+        <Parameter Name="e2" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_BooleanAnd">
+      <MemberSignature Language="C#" Value="public static bool op_BooleanAnd (bool e1, bool e2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_BooleanAnd(bool e1, bool e2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_BooleanAnd(System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e1" Type="System.Boolean" />
+        <Parameter Name="e2" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_BooleanOr">
+      <MemberSignature Language="C#" Value="public static bool op_BooleanOr (bool e1, bool e2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_BooleanOr(bool e1, bool e2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_BooleanOr(System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e1" Type="System.Boolean" />
+        <Parameter Name="e2" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_IntegerAddressOf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IntPtr op_IntegerAddressOf&lt;T&gt; (T obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname native int op_IntegerAddressOf&lt;T&gt;(!!T obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_IntegerAddressOf``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="obj" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Or">
+      <MemberSignature Language="C#" Value="public static bool Or (bool e1, bool e2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool Or(bool e1, bool e2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.Or(System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("or")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("In F# code, use 'e1 || e2' instead of 'e1 or e2'", 1203, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e1" Type="System.Boolean" />
+        <Parameter Name="e2" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="e1">To be added.</param>
+        <param name="e2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

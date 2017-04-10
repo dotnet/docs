@@ -1,0 +1,98 @@
+<Type Name="CodeLanguage" FullName="System.Management.CodeLanguage">
+  <TypeSignature Language="C#" Value="public enum CodeLanguage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CodeLanguage extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Management.CodeLanguage" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the languages supported by the code generator.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CSharp">
+      <MemberSignature Language="C#" Value="CSharp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage CSharp = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.CSharp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value for generating C# code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JScript">
+      <MemberSignature Language="C#" Value="JScript" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage JScript = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.JScript" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value for generating JScript code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mcpp">
+      <MemberSignature Language="C#" Value="Mcpp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage Mcpp = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.Mcpp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value for generating managed C++ code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VB">
+      <MemberSignature Language="C#" Value="VB" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage VB = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.VB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value for generating Visual Basic code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VJSharp">
+      <MemberSignature Language="C#" Value="VJSharp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.CodeLanguage VJSharp = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.CodeLanguage.VJSharp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CodeLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value for generating Visual J# code.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

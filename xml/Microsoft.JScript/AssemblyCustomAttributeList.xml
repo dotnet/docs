@@ -1,0 +1,18 @@
+<Type Name="AssemblyCustomAttributeList" FullName="Microsoft.JScript.AssemblyCustomAttributeList">
+  <TypeSignature Language="C#" Value="public sealed class AssemblyCustomAttributeList : Microsoft.JScript.AST" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyCustomAttributeList extends Microsoft.JScript.AST" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.AssemblyCustomAttributeList" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.AST</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class is used by the JScript parser to store the attributes that are assigned to an assembly.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

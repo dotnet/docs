@@ -1,0 +1,213 @@
+<Type Name="WebPartTransformer" FullName="System.Web.UI.WebControls.WebParts.WebPartTransformer">
+  <TypeSignature Language="C#" Value="public abstract class WebPartTransformer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebPartTransformer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides basic implementation for transformer classes to convert data between two incompatible connection points.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Transformers are used to translate data between two Web Parts controls with incompatible connection points. Connection points are incompatible when they provide or consume data through different interfaces. For example, a provider implementing a provider connection point of type <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> could not directly connect to a consumer expecting a provider connection point of type <xref:System.Web.UI.WebControls.WebParts.IWebPartTable>. Instead, a transformer must be used to connect the two Web Parts controls.  
+  
+ The transformer accepts data of the type supported by the provider connection point. It does the necessary internal processing to convert that data into the type supported by the consumer connection point.  
+  
+ A transformer can provide a user interface (UI) that allows the user to configure the transformer when in the connect mode. The configuration control is retrieved through the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl%2A> method and is displayed in a Web Parts connections zone.  
+  
+ <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> is an abstract class and must be extended to provide customized translations between different types of connection points.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a customized transformer that derives from the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class. The transformer, named `RowToStringTransformer`, allows for a Web Parts provider and Web Parts consumer with incompatible connection points to be connected. The provider presents data of type <xref:System.Web.UI.WebControls.WebParts.IWebPartRow>, but the consumer accepts only data of type <xref:System.String>. The `RowToStringTransformer` class performs the necessary conversion.  
+  
+ The code example does not include an implementation of the provider or consumer. You must create a provider that implements the <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> interface and a consumer that expects data through a customized interface named `IString` for the example to work.  
+  
+ [!code-csharp[WebParts_WebPartTransformer_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/CS/TransformerSource.cs#5)]
+ [!code-vb[WebParts_WebPartTransformer_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/VB/TransformerSource.vb#5)]  
+  
+ The first section of the code example contains code for the provider and consumer Web Parts controls, and the code for the transformer.  
+  
+ [!code-csharp[WebParts_WebPartTransformer_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/CS/TransformerSource.cs#4)]
+ [!code-vb[WebParts_WebPartTransformer_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/VB/TransformerSource.vb#4)]  
+  
+ The second section of the code example shows how to include the transformer within the declarative syntax for a <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartTransformer_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/CS/Transformer.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartTransformer_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/VB/Transformer.aspx#1)]  -->  
+  
+ A customized transformer must be specified in the `<transformers>` section of the Web.config file to be available for use in a Web page. The third section of the code example shows how to add the customized transformer to the Web.config file.  
+  
+ [Visual Basic]  
+  
+```  
+<webParts enableExport="true">  
+    <transformers>  
+       <add name="RowToStringTransformer"  
+          type="Samples.AspNet.VB.Controls.RowToStringTransformer" />  
+    </transformers>  
+</webParts>  
+```  
+  
+ [C#]  
+  
+```  
+<webParts enableExport="true">  
+    <transformers>  
+       <add name="RowToStringTransformer"  
+          type="Samples.AspNet.CS.Controls.RowToStringTransformer" />  
+    </transformers>  
+</webParts>  
+```  
+  
+ The code example includes a user control that enables you to change display modes on a Web Parts page. The source code for the user control comes from another topic. You can obtain the .ascx file for the user control from [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0), and it must be placed in the same folder as the .aspx page.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>You must override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.Transform(System.Object)" /> method.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebPartTransformer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConfigurationControl">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control CreateConfigurationControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Control CreateConfigurationControl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays an ASP.NET control that configures a transformer in the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> zone.</summary>
+        <returns>An ASP.NET control that configures a transformer.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A configuration control can be displayed when a transformer requires a user to configure it. The configuration control provides a user interface (UI) that allows the user to select which values will be transformed. It is rendered in a connections zone. The configuration control must implement the <xref:System.Web.UI.WebControls.WebParts.ITransformerConfigurationControl> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadConfigurationState">
+      <MemberSignature Language="C#" Value="protected virtual void LoadConfigurationState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void LoadConfigurationState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.LoadConfigurationState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An object containing configuration state saved by using <see cref="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.SaveConfigurationState" />.</param>
+        <summary>Loads the configuration state saved with the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.SaveConfigurationState" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to load the saved configuration state into the ASP.NET control used to configure a transformer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveConfigurationState">
+      <MemberSignature Language="C#" Value="protected virtual object SaveConfigurationState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object SaveConfigurationState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.SaveConfigurationState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the configuration state set by the user in the ASP.NET configuration control.</summary>
+        <returns>An object representing the configuration state.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to save the configuration data set in the ASP.NET control used to configure a transformer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public abstract object Transform (object providerData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Transform(object providerData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.Transform(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="providerData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="providerData">The provider data to be transformed.</param>
+        <summary>When implemented, provides an object for transforming the data.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the data to be transformed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must override this method when implementing the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer.Transform%2A> method in a customized <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class. It is part of a larger example found in the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class overview.  
+  
+ [!code-csharp[WebParts_WebPartTransformer_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/CS/TransformerSource.cs#3)]
+ [!code-vb[WebParts_WebPartTransformer_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartTransformer_Overview/VB/TransformerSource.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

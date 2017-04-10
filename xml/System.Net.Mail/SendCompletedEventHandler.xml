@@ -1,0 +1,46 @@
+<Type Name="SendCompletedEventHandler" FullName="System.Net.Mail.SendCompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void SendCompletedEventHandler(object sender, AsyncCompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SendCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Mail.SendCompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.ComponentModel.AsyncCompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.ComponentModel.AsyncCompletedEventArgs" /> containing event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Net.Mail.SmtpClient.SendCompleted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Mail.SendCompletedEventHandler> delegate is used to handle events that occur when the <xref:System.Net.Mail.SmtpClient> class finishes asynchronously sending an e-mail message using the <xref:System.Net.Mail.SmtpClient.SendAsync%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates sending an e-mail message asynchronously. It uses a <xref:System.Net.Mail.SendCompletedEventHandler> to invoke the `SendCompletedCallback` method to handle <xref:System.Net.Mail.SmtpClient.SendCompleted> events.  
+  
+ [!code-cpp[NclMailASync#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NclMailASync/cpp/mailasync.cpp#1)]
+ [!code-csharp[NclMailASync#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NclMailASync/CS/mailasync.cs#1)]
+ [!code-vb[NclMailASync#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NclMailASync/vb/mailasync.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

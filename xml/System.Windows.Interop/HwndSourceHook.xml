@@ -1,0 +1,39 @@
+<Type Name="HwndSourceHook" FullName="System.Windows.Interop.HwndSourceHook">
+  <TypeSignature Language="C#" Value="public delegate IntPtr HwndSourceHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HwndSourceHook extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.HwndSourceHook" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="hwnd" Type="System.IntPtr" />
+    <Parameter Name="msg" Type="System.Int32" />
+    <Parameter Name="wParam" Type="System.IntPtr" />
+    <Parameter Name="lParam" Type="System.IntPtr" />
+    <Parameter Name="handled" Type="System.Boolean&amp;" RefType="ref" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.IntPtr</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="hwnd">The window handle.</param>
+    <param name="msg">The message ID.</param>
+    <param name="wParam">The message's wParam value.</param>
+    <param name="lParam">The message's lParam value.</param>
+    <param name="handled">A value that indicates whether the message was handled. Set the value to <see langword="true" /> if the message was handled; otherwise, <see langword="false" />.</param>
+    <summary>Represents the method that handles [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] window messages.</summary>
+    <returns>The appropriate return value depends on the particular message. See the message documentation details for the [!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] message being handled.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Interop.HwndSource.AddHook%2A> method to register this handler to receive messages.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

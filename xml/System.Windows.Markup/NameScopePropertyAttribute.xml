@@ -1,0 +1,131 @@
+<Type Name="NameScopePropertyAttribute" FullName="System.Windows.Markup.NameScopePropertyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class NameScopePropertyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NameScopePropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.NameScopePropertyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies a property of the associated class that provides the XAML namescope value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a typical object model / application model combination where XAML is used, the classes that are used as a XAML namescope are the classes that are generally used as root elements, or that support a page metaphor. These classes generally implement <xref:System.Windows.Markup.INameScope> and the XAML namescope is created corresponding to the root by typical XAML processing behavior in context of a framework's programming model and application model.  
+  
+ If <xref:System.Windows.Markup.NameScopePropertyAttribute> is used, the XAML namescope property value is expected to be an object that implements <xref:System.Windows.Markup.INameScope> and holds the actual XAML namescope and its behavior.  
+  
+ There are two forms for this attribute: property name only, or type and property. The latter form should be used only for cases where the property that holds the XAML name scope is an attachable member. The attached member technique has the advantage that service classes can implement a XAML namescope concept that can support several different object types. Those object types then do not need to be explicitly related in class inheritance.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.NameScopePropertyAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+## WPF Usage Notes  
+ In WPF, this attribute is applied to only a single type, <xref:System.Windows.DependencyObject>. In this case the attributed property is the service class <xref:System.Windows.NameScope> and its <xref:System.Windows.NameScope.NameScope%2A?displayProperty=fullName>attached property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameScopePropertyAttribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.NameScopePropertyAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property on the attributed type that provides the XAML namescope.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.NameScopePropertyAttribute" /> class with the specified name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameScopePropertyAttribute (string name, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.NameScopePropertyAttribute.#ctor(System.String,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attachable member that provides the XAML name scope.</param>
+        <param name="type">The owner type of the attachable member that provides the XAML name scope.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.NameScopePropertyAttribute" /> class with the specified name and type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.NameScopePropertyAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the property that provides the XAML namescope.</summary>
+        <value>A string value that is the name of the property that provides the XAML namescope.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The meaning of <xref:System.Windows.Markup.NameScopePropertyAttribute.Name%2A> depends on whether <xref:System.Windows.Markup.NameScopePropertyAttribute.Type%2A> is set. If <xref:System.Windows.Markup.NameScopePropertyAttribute.Type%2A> is null, then <xref:System.Windows.Markup.NameScopePropertyAttribute.Name%2A> references a property on the type being attributed. If <xref:System.Windows.Markup.NameScopePropertyAttribute.Type%2A> contains a value, then <xref:System.Windows.Markup.NameScopePropertyAttribute.Name%2A> references a property on the indicated <xref:System.Windows.Markup.NameScopePropertyAttribute.Type%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.NameScopePropertyAttribute.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the owner type of the attached property that provides the XAML namescope support.</summary>
+        <value>A <see cref="T:System.Type" /> value that is the owner type of the attached property that provides the XAML namescope support, or <see langword="null" />. See Remarks.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property only is relevant if the XAML namescope implementing property is an attachable member, in which case this is the attachable member's owner type. Otherwise, this value may be null. If you need general reflection-based logic that reports a namescope property's defining type in all cases, then you can substitute the type where the attribute is applied whenever you encounter `null` for this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

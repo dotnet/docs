@@ -1,0 +1,81 @@
+<Type Name="DataContractSerializerExtensions" FullName="System.Runtime.Serialization.DataContractSerializerExtensions">
+  <TypeSignature Language="C#" Value="public static class DataContractSerializerExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataContractSerializerExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataContractSerializerExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSerializationSurrogateProvider">
+      <MemberSignature Language="C#" Value="public static System.Runtime.Serialization.ISerializationSurrogateProvider GetSerializationSurrogateProvider (this System.Runtime.Serialization.DataContractSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Serialization.ISerializationSurrogateProvider GetSerializationSurrogateProvider(class System.Runtime.Serialization.DataContractSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializerExtensions.GetSerializationSurrogateProvider(System.Runtime.Serialization.DataContractSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.ISerializationSurrogateProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.DataContractSerializer" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="serializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSerializationSurrogateProvider">
+      <MemberSignature Language="C#" Value="public static void SetSerializationSurrogateProvider (this System.Runtime.Serialization.DataContractSerializer serializer, System.Runtime.Serialization.ISerializationSurrogateProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSerializationSurrogateProvider(class System.Runtime.Serialization.DataContractSerializer serializer, class System.Runtime.Serialization.ISerializationSurrogateProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.DataContractSerializerExtensions.SetSerializationSurrogateProvider(System.Runtime.Serialization.DataContractSerializer,System.Runtime.Serialization.ISerializationSurrogateProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializer" Type="System.Runtime.Serialization.DataContractSerializer" RefType="this" />
+        <Parameter Name="provider" Type="System.Runtime.Serialization.ISerializationSurrogateProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serializer">To be added.</param>
+        <param name="provider">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

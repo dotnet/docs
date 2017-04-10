@@ -1,0 +1,113 @@
+<Type Name="ICivicAddressResolver" FullName="System.Device.Location.ICivicAddressResolver">
+  <TypeSignature Language="C#" Value="public interface ICivicAddressResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICivicAddressResolver" />
+  <TypeSignature Language="DocId" Value="T:System.Device.Location.ICivicAddressResolver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Device</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a method that when implemented, resolves a latitude/longitude location to a civic address.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To resolve a <xref:System.Device.Location.GeoCoordinate> to a <xref:System.Device.Location.CivicAddress> asynchronously, implement <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync%2A>, and provide the civic address data to the <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ResolveAddress">
+      <MemberSignature Language="C#" Value="public System.Device.Location.CivicAddress ResolveAddress (System.Device.Location.GeoCoordinate coordinate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Device.Location.CivicAddress ResolveAddress(class System.Device.Location.GeoCoordinate coordinate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.ICivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Device.Location.CivicAddress</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="coordinate" Type="System.Device.Location.GeoCoordinate" />
+      </Parameters>
+      <Docs>
+        <param name="coordinate">The latitude/longitude location to resolve to an address.</param>
+        <summary>Resolves a <see cref="T:System.Device.Location.GeoCoordinate" /> to a civic address synchronously.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call <xref:System.Device.Location.ICivicAddressResolver.ResolveAddress%2A>.  
+  
+ [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
+ [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveAddressAsync">
+      <MemberSignature Language="C#" Value="public void ResolveAddressAsync (System.Device.Location.GeoCoordinate coordinate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResolveAddressAsync(class System.Device.Location.GeoCoordinate coordinate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="coordinate" Type="System.Device.Location.GeoCoordinate" />
+      </Parameters>
+      <Docs>
+        <param name="coordinate">The latitude/longitude location to resolve to an address.</param>
+        <summary>Initiates a request to resolve a latitude/longitude location to an address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to call <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync%2A>.  
+  
+ [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#2)]
+ [!code-vb[System.Device.Location.ResolveCivicAddressAsync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveAddressCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an asynchronous request using <see cref="M:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)" /> to resolve a latitude/longitude to a civic address is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to call <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync%2A> and handle the <xref:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted> event.  
+  
+ [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#2)]
+ [!code-vb[System.Device.Location.ResolveCivicAddressAsync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

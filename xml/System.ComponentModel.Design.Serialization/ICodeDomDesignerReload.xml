@@ -1,0 +1,48 @@
+<Type Name="ICodeDomDesignerReload" FullName="System.ComponentModel.Design.Serialization.ICodeDomDesignerReload">
+  <TypeSignature Language="C#" Value="public interface ICodeDomDesignerReload" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICodeDomDesignerReload" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface that can be used to optimize the reloading of a designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.CodeDom.Compiler.CodeDomProvider> can implement this interface to support optimized reloading by the designer. When a designer reparses a file for display, it can use this interface to improve performance.  
+  
+ To support this performance optimization method, the designer can pass a <xref:System.CodeDom.CodeCompileUnit> that represents the document code to the <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner%2A> method. <xref:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner%2A> returns a value that indicates whether the code has changed and typically, whether your code should reload the designer. Otherwise, it is unnecessary to spend time reloading the designer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ShouldReloadDesigner">
+      <MemberSignature Language="C#" Value="public bool ShouldReloadDesigner (System.CodeDom.CodeCompileUnit newTree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldReloadDesigner(class System.CodeDom.CodeCompileUnit newTree) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ICodeDomDesignerReload.ShouldReloadDesigner(System.CodeDom.CodeCompileUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newTree" Type="System.CodeDom.CodeCompileUnit" />
+      </Parameters>
+      <Docs>
+        <param name="newTree">A <see cref="T:System.CodeDom.CodeCompileUnit" /> containing the designer document code.</param>
+        <summary>Indicates whether the designer should reload in order to import the specified compile unit correctly.</summary>
+        <returns>
+          <see langword="true" /> if the designer should reload; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

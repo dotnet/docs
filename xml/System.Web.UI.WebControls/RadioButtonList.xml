@@ -1,0 +1,1089 @@
+<Type Name="RadioButtonList" FullName="System.Web.UI.WebControls.RadioButtonList">
+  <TypeSignature Language="C#" Value="public class RadioButtonList : System.Web.UI.WebControls.ListControl, System.Web.UI.INamingContainer, System.Web.UI.IPostBackDataHandler, System.Web.UI.WebControls.IRepeatInfoUser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadioButtonList extends System.Web.UI.WebControls.ListControl implements class System.Web.UI.INamingContainer, class System.Web.UI.IPostBackDataHandler, class System.Web.UI.WebControls.IRepeatInfoUser" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RadioButtonList" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.ListControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.WebControls.IRepeatInfoUser</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ValidationProperty("SelectedItem")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a list control that encapsulates a group of radio button controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Specifying List Layout](#specifying_list_layout)  
+  
+-   [Accessibility](#accessibility)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ The <xref:System.Web.UI.WebControls.RadioButtonList> control provides page developers with a single-selection radio button group that can be dynamically generated through data binding. It contains an <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection with members that correspond to individual items on the list. To determine which item is selected, test the <xref:System.Web.UI.WebControls.ListControl.SelectedItem%2A> property of the list.  
+  
+<a name="specifying_list_layout"></a>   
+## Specifying List Layout  
+ You can specify how the list is rendered by setting the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> and <xref:System.Web.UI.WebControls.RadioButtonList.RepeatDirection%2A> properties. For information about layout options, see the <xref:System.Web.UI.WebControls.RepeatLayout> enumeration.  
+  
+ By default, <xref:System.Web.UI.WebControls.RadioButtonList.RepeatDirection%2A> is set to `RepeatDirection.Vertical`. Setting this property to `RepeatDirection.Horizontal` causes the control to render the list horizontally. Some <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> settings do not allow horizontal layout. For more information, see the <xref:System.Web.UI.WebControls.RepeatLayout> enumeration.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a <xref:System.Web.UI.WebControls.RadioButtonList> control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+<a name="accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:RadioButtonList  
+    AccessKey="string"  
+    AppendDataBoundItems="True|False"  
+    AutoPostBack="True|False"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CausesValidation="True|False"  
+    CellPadding="integer"  
+    CellSpacing="integer"  
+    CssClass="string"  
+    DataMember="string"  
+    DataSource="string"  
+    DataSourceID="string"  
+    DataTextField="string"  
+    DataTextFormatString="string"  
+    DataValueField="string"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    Font-Bold="True|False"  
+    Font-Italic="True|False"  
+    Font-Names="string"  
+    Font-Overline="True|False"  
+    Font-Size="string|Smaller|Larger|XX-Small|X-Small|Small|Medium|  
+        Large|X-Large|XX-Large"  
+    Font-Strikeout="True|False"  
+    Font-Underline="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    ID="string"  
+    OnDataBinding="DataBinding event handler"  
+    OnDataBound="DataBound event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnSelectedIndexChanged="SelectedIndexChanged event handler"  
+    OnTextChanged="TextChanged event handler"  
+    OnUnload="Unload event handler"  
+    RepeatColumns="integer"  
+    RepeatDirection="Horizontal|Vertical"  
+    RepeatLayout="Table|Flow|OrderedList|UnorderedList"  
+    runat="server"  
+    SelectedIndex="integer"  
+    SelectedValue="string"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    TextAlign="Left|Right"  
+    ToolTip="string"  
+    ValidationGroup="string"  
+    Visible="True|False"  
+    Width="size"  
+>  
+            <asp:ListItem  
+                Enabled="True|False"  
+                Selected="True|False"  
+                Text="string"  
+                Value="string"  
+            />  
+</asp:RadioButtonList>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically modify the display of a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+  
+> [!NOTE]
+>  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RadioButtonList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellPadding">
+      <MemberSignature Language="C#" Value="public virtual int CellPadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CellPadding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.CellPadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the distance (in pixels) between the border and the contents of the table cell.</summary>
+        <value>The distance (in pixels) between the border and the contents of the table cell. The default is -1, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property applies only when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to `RepeatLayout.Table`.  
+  
+ Use this property to control the spacing between the contents of a cell and the cell's border.  
+  
+ The padding amount specified is added to all four sides of a cell. It uses the height of the tallest cell in the table and the width of the widest cell in the table. The resulting cell size is applied uniformly to all cells in the table. Individual cell sizes cannot be specified.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.CellPadding%2A> property to pad the cells of a <xref:System.Web.UI.WebControls.RadioButtonList> control with 10 pixels.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.CellPadding Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.CellPadding Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.CellPadding Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.CellPadding Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellSpacing">
+      <MemberSignature Language="C#" Value="public virtual int CellSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CellSpacing" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.CellSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the distance (in pixels) between adjacent table cells.</summary>
+        <value>The distance (in pixels) between adjacent table cells. The default is -1, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property applies only when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to `RepeatLayout.Table`.  
+  
+ Use this property to control the spacing between individual cells in the table. This property is applied both vertically and horizontally.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.CellSpacing%2A> property to space the cells of a <xref:System.Web.UI.WebControls.RadioButtonList> control apart by 10 pixels.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.CellSpacing Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.CellSpacing Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.CellSpacing Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.CellSpacing Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlStyle">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Style CreateControlStyle ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.CreateControlStyle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a style object that is used internally by the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control to implement all style-related properties.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains the style properties of the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.CreateControlStyle%2A> method is used primarily by control developers in custom control that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.RadioButtonList.CreateControlStyle%2A> method in a custom server control so that it always returns an empty <xref:System.Web.UI.WebControls.TableStyle> object for the <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomRadioButtonListCreateControlStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/CS/custom_radiobuttonlist_createcontrolstylecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomRadioButtonListCreateControlStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/VB/custom_radiobuttonlist_createcontrolstylevb.aspx#1)]  -->  
+[!code-csharp[CustomRadioButtonListCreateControlStyle#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/CS/custom_radiobuttonlist_createcontrolstyle.cs#2)]
+[!code-vb[CustomRadioButtonListCreateControlStyle#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListCreateControlStyle/VB/custom_radiobuttonlist_createcontrolstyle.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindControl">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.Control FindControl (string id, int pathOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.Control FindControl(string id, int32 pathOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.FindControl(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="pathOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="id">The identifier for the control to find.</param>
+        <param name="pathOffset">The number of controls up the page control hierarchy needed to reach a naming container.</param>
+        <summary>Searches the current naming container for a server control with the specified ID and path offset. The <see cref="M:System.Web.UI.WebControls.RadioButtonList.FindControl(System.String,System.Int32)" /> method always returns the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> object.</summary>
+        <returns>The current <see cref="T:System.Web.UI.WebControls.RadioButtonList" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.FindControl%2A> method is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.FindControl%2A> method overrides the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=fullName> method of the base <xref:System.Web.UI.Control> class. You should not override this version of the <xref:System.Web.UI.Control.FindControl%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemStyle">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.Style GetItemStyle (System.Web.UI.WebControls.ListItemType itemType, int repeatIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.Style GetItemStyle(valuetype System.Web.UI.WebControls.ListItemType itemType, int32 repeatIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
+        <Parameter Name="repeatIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> enumeration values.</param>
+        <param name="repeatIndex">An ordinal index that specifies the location of the item in the list control.</param>
+        <summary>Retrieves the style of the specified item type at the specified index in the list control.</summary>
+        <returns>
+          <see langword="null" />, indicating that style attributes are not set on individual list items in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.GetItemStyle%2A> method is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+ The style attribute for the <xref:System.Web.UI.WebControls.RadioButtonList> control applies to all list items that are contained by the control. Use the <xref:System.Web.UI.WebControls.Style> property of the <xref:System.Web.UI.WebControls.RadioButtonList> control to examine or set the style attribute for the control and its list items.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasFooter">
+      <MemberSignature Language="C#" Value="protected virtual bool HasFooter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasFooter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.HasFooter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control contains a footer section.</summary>
+        <value>
+          <see langword="false" />, indicating that the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> does not contain a footer section.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.HasFooter%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Footers are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout> or <xref:System.Web.UI.WebControls.RepeatLayout>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasHeader">
+      <MemberSignature Language="C#" Value="protected virtual bool HasHeader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.HasHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control contains a heading section.</summary>
+        <value>
+          <see langword="false" />, indicating that a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control does not contain a heading section.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.HasHeader%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Headers are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout> or <xref:System.Web.UI.WebControls.RepeatLayout>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSeparators">
+      <MemberSignature Language="C#" Value="protected virtual bool HasSeparators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasSeparators" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.HasSeparators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control contains separators between items in the list.</summary>
+        <value>
+          <see langword="false" />, indicating that a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control does not contain separators.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.HasSeparators%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class. Separators are not supported when the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout> or <xref:System.Web.UI.WebControls.RepeatLayout>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control, used to index the <c>postCollection</c>.</param>
+        <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains value information indexed by control identifiers.</param>
+        <summary>Processes the posted data for the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the state of the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> is different from the last posting; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A> method is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A> method indicates whether the state of the <xref:System.Web.UI.WebControls.RadioButtonList> control has changed. In other words, it determines whether the selected list item in the control is the same as the last posted value. A user changing the selected item in the control changes the <xref:System.Web.UI.WebControls.ListControl.SelectedIndex%2A> value for the <xref:System.Web.UI.WebControls.RadioButtonList> control. If the same list item is selected in the control, or if the <xref:System.Web.UI.WebControls.RadioButtonList> control is disabled, <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A> returns `false`.  
+  
+ When the <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A> method returns `true` for a control, the ASP.NET page framework invokes the <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A> method for the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies the ASP.NET application that the state of the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A> method is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+ The ASP.NET page framework calls the <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A> method on a <xref:System.Web.UI.WebControls.RadioButtonList> control when the <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A> method indicates that the state of the list items have changed in the <xref:System.Web.UI.WebControls.RadioButtonList> control. The <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A> method calls the <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method to raise the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event. Control developers can override the <xref:System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged%2A> method to perform custom processing when the user changes the selected item in the control.  
+  
+ The `RaisePostBackEvent` method can optionally perform validation before raising the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event for the control. To validate a group of controls on the page when a list item within the <xref:System.Web.UI.WebControls.RadioButtonList> control is selected, set the <xref:System.Web.UI.WebControls.ListControl.AutoPostBack%2A> and <xref:System.Web.UI.WebControls.ListControl.CausesValidation%2A> properties to `true`, and then specify the group of controls to be validated in the <xref:System.Web.UI.WebControls.ListControl.ValidationGroup%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream for rendering on the client.</param>
+        <summary>Displays the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control on the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.Render%2A> method implementation for a <xref:System.Web.UI.WebControls.RadioButtonList> control initializes a <xref:System.Web.UI.WebControls.RepeatInfo> object for the list, and calls the <xref:System.Web.UI.WebControls.RepeatInfo.RenderRepeater%2A> method, which in turn uses the <xref:System.Web.UI.WebControls.RadioButtonList.RenderItem%2A> method to render individual radio button list items.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.RadioButtonList.Render%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.RadioButtonList> control is always displayed with descriptive text.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomRadioButtonListRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListRender/CS/custom_radiobuttonlist_rendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomRadioButtonListRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListRender/VB/custom_radiobuttonlist_rendervb.aspx#1)]  -->  
+[!code-csharp[CustomRadioButtonListRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomRadioButtonListRender/CS/custom_radiobuttonlist_render.cs#2)]
+[!code-vb[CustomRadioButtonListRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomRadioButtonListRender/VB/custom_radiobuttonlist_render.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderItem">
+      <MemberSignature Language="C#" Value="protected virtual void RenderItem (System.Web.UI.WebControls.ListItemType itemType, int repeatIndex, System.Web.UI.WebControls.RepeatInfo repeatInfo, System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderItem(valuetype System.Web.UI.WebControls.ListItemType itemType, int32 repeatIndex, class System.Web.UI.WebControls.RepeatInfo repeatInfo, class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
+        <Parameter Name="repeatIndex" Type="System.Int32" />
+        <Parameter Name="repeatInfo" Type="System.Web.UI.WebControls.RepeatInfo" />
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> enumeration values.</param>
+        <param name="repeatIndex">An ordinal index that specifies the location of the item in the list control.</param>
+        <param name="repeatInfo">A <see cref="T:System.Web.UI.WebControls.RepeatInfo" /> that represents the information used to render the item in the list.</param>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Renders a list item in the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.Render%2A> method implementation for a <xref:System.Web.UI.WebControls.RadioButtonList> control initializes a <xref:System.Web.UI.WebControls.RepeatInfo> object for the list, and calls the <xref:System.Web.UI.WebControls.RepeatInfo.RenderRepeater%2A> method, which in turn uses the <xref:System.Web.UI.WebControls.RadioButtonList.RenderItem%2A> method to render individual radio-button list items.  
+  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.RenderItem%2A> method for a <xref:System.Web.UI.WebControls.RadioButtonList> control ignores the `itemType` and `repeatInfo` parameters. The `repeatIndex` parameter value is used to select the radio button list item in the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection, and the selected list item is rendered to the output stream.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderWhenDataEmpty">
+      <MemberSignature Language="C#" Value="public virtual bool RenderWhenDataEmpty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RenderWhenDataEmpty" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.RenderWhenDataEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the control is rendered if the data source has no data or if the control is not data-bound.</summary>
+        <value>
+          <see langword="true" /> if the control is rendered if the data source has no data or if the control is not data-bound; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RepeatColumns">
+      <MemberSignature Language="C#" Value="public virtual int RepeatColumns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RepeatColumns" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.RepeatColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of columns to display in the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control.</summary>
+        <value>The number of columns to display in the <see cref="T:System.Web.UI.WebControls.RadioButtonList" />. The default is 0, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, you can use this property to specify the number of columns that display items in the <xref:System.Web.UI.WebControls.RadioButtonList> control. If this property is not set, the <xref:System.Web.UI.WebControls.RadioButtonList> control displays all items in the list in a single column.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> property to display the items of a <xref:System.Web.UI.WebControls.RadioButtonList> control in two columns.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.RepeatColumns Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatColumns Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.RepeatColumns Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatColumns Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The number of columns is set to a negative value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RepeatDirection">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.RepeatDirection RepeatDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.RepeatDirection RepeatDirection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.RepeatDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.RepeatDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the direction in which the radio buttons within the group are displayed.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> values. The default is <see langword="Vertical" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the display direction of the <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+  
+> [!NOTE]
+>  The number of columns that are displayed is always determined by the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> property.  
+  
+ If this property is set to `RepeatDirection.Vertical` and if the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the first column is filled from top to bottom, then the next column, and so on until all items are rendered. For example, if <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> is set to 3, the items of the <xref:System.Web.UI.WebControls.RadioButtonList> control are displayed in three columns. A nine-item list would appear as follows.  
+  
+||||  
+|-|-|-|  
+|1|4|7|  
+|2|5|8|  
+|3|6|9|  
+  
+ If this property is set to `RepeatDirection.Horizontal` and if the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property is set to <xref:System.Web.UI.WebControls.RepeatLayout>, the items in the list are displayed in rows loaded left to right, then top to bottom, until all items are rendered. For example, if <xref:System.Web.UI.WebControls.RadioButtonList.RepeatColumns%2A> is set to 3, the items of the <xref:System.Web.UI.WebControls.RadioButtonList> control are displayed in rows of three items. A nine-item list would appear as follows.  
+  
+||||  
+|-|-|-|  
+|1|2|3|  
+|4|5|6|  
+|7|8|9|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatDirection%2A> property to display the items of a <xref:System.Web.UI.WebControls.RadioButtonList> control in columns filled top to bottom, and then left to right.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.RepeatDirection Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatDirection Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.RepeatDirection Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatDirection Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The display direction of the list is not one of the <see cref="T:System.Web.UI.WebControls.RepeatDirection" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RepeatedItemCount">
+      <MemberSignature Language="C#" Value="protected virtual int RepeatedItemCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RepeatedItemCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of list items in the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control.</summary>
+        <value>The number of items in the list control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is used primarily by control developers in custom controls that derive from the <xref:System.Web.UI.WebControls.RadioButtonList> class.  
+  
+ If there are no items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is zero. If there are items set in the <xref:System.Web.UI.WebControls.RadioButtonList> control, the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount%2A> property is the same as the <xref:System.Web.UI.WebControls.ListItemCollection.Count%2A?displayProperty=fullName> property on the <xref:System.Web.UI.WebControls.ListControl.Items%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RepeatLayout">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.RepeatLayout RepeatLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.RepeatLayout RepeatLayout" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.RepeatLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.RepeatLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the list will be rendered by using a <see langword="table" /> element, a <see langword="ul" /> element, an <see langword="ol" /> element, or a <see langword="span" /> element.</summary>
+        <value>A value that specifies whether the list will be rendered by using a <see langword="table" /> element, a <see langword="ul" /> element, an <see langword="ol" /> element, or a <see langword="span" /> element. The default is <see cref="F:System.Web.UI.WebControls.RepeatLayout.Table" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about the available options, see the <xref:System.Web.UI.WebControls.RepeatLayout> enumeration.  
+  
+> [!NOTE]
+>  Two options are new as  of ASP.NET 4: <xref:System.Web.UI.WebControls.RepeatLayout> and <xref:System.Web.UI.WebControls.RepeatLayout>.  
+  
+ Some <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> settings do not allow horizontal layout. For more information, see the <xref:System.Web.UI.WebControls.RepeatLayout> enumeration.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.RepeatLayout%2A> property to display the items of a <xref:System.Web.UI.WebControls.RadioButtonList> control in a table.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.RepeatLayout Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.RepeatLayout Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic RadioButtonList.RepeatLayout Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic RadioButtonList.RepeatLayout Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The radio button layout is not one of the <see cref="T:System.Web.UI.WebControls.RepeatLayout" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control, used to index the <c>postCollection</c>.</param>
+        <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains value information indexed by control identifiers.</param>
+        <summary>Processes posted data for the <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the server control's state changed as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.LoadPostData%2A?displayProperty=fullName> method to process posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+  
+ The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for processing posted data for a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="M:System.Web.UI.WebControls.RadioButtonList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.RadioButtonList.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method to process the posted data for the control.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Raised when posted data for a control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent%2A?displayProperty=fullName> method to raise an event when the posted data for a <xref:System.Web.UI.WebControls.RadioButtonList> control changes.  
+  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23IPostBackDataHandler%23RaisePostDataChangedEvent%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for raising the event for a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="M:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent" /> method. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.RadioButtonList.RaisePostDataChangedEvent" /> method to raise the event when posted data has changed for the control.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle">
+      <MemberSignature Language="C#" Value="System.Web.UI.WebControls.Style IRepeatInfoUser.GetItemStyle (System.Web.UI.WebControls.ListItemType itemType, int repeatIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.UI.WebControls.Style System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle(valuetype System.Web.UI.WebControls.ListItemType itemType, int32 repeatIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
+        <Parameter Name="repeatIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> enumeration values.</param>
+        <param name="repeatIndex">An ordinal index that specifies the location of the item in the list.</param>
+        <summary>Retrieves the style of the specified item type at the specified index in the list control.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.Style" /> that represents the style of the specified item type at the specified index in the list control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.GetItemStyle%2A?displayProperty=fullName> method to retrieve the style of an item in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23GetItemStyle%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for retrieving the style of an item in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="M:System.Web.UI.WebControls.RadioButtonList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> method. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.RadioButtonList.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" /> method to retrieve the style of an item.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasFooter">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.WebControls.IRepeatInfoUser.HasFooter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasFooter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasFooter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the list control contains a footer section.</summary>
+        <value>
+          <see langword="true" /> if the list control contains a footer section; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to the <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasFooter" /> property in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="P:System.Web.UI.WebControls.RadioButtonList.HasFooter" /> property. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.RadioButtonList.HasFooter" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasHeader">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.WebControls.IRepeatInfoUser.HasHeader { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the list control contains a heading section.</summary>
+        <value>
+          <see langword="true" /> if the list control contains a header section; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to the <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasHeader" /> property in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="P:System.Web.UI.WebControls.RadioButtonList.HasHeader" /> property. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.RadioButtonList.HasHeader" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasSeparators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the list control contains a separator between items in the list.</summary>
+        <value>
+          <see langword="true" /> if the list control contains has separators; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to the <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#HasSeparators" /> property in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="P:System.Web.UI.WebControls.RadioButtonList.HasSeparators" /> property. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.RadioButtonList.HasSeparators" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RenderItem">
+      <MemberSignature Language="C#" Value="void IRepeatInfoUser.RenderItem (System.Web.UI.WebControls.ListItemType itemType, int repeatIndex, System.Web.UI.WebControls.RepeatInfo repeatInfo, System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.IRepeatInfoUser.RenderItem(valuetype System.Web.UI.WebControls.ListItemType itemType, int32 repeatIndex, class System.Web.UI.WebControls.RepeatInfo repeatInfo, class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
+        <Parameter Name="repeatIndex" Type="System.Int32" />
+        <Parameter Name="repeatInfo" Type="System.Web.UI.WebControls.RepeatInfo" />
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> enumeration values.</param>
+        <param name="repeatIndex">An ordinal index that specifies the location of the item in the list.</param>
+        <param name="repeatInfo">A <see cref="T:System.Web.UI.WebControls.RepeatInfo" /> that represents the information used to render the item in the list.</param>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that represents the output stream to render HTML content on the client.</param>
+        <summary>Renders an item in the list with the specified information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you should use the <xref:System.Web.UI.WebControls.RadioButtonList.RenderItem%2A?displayProperty=fullName> method to render items in a <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+  
+ The <xref:System.Web.UI.WebControls.RadioButtonList.System%23Web%23UI%23WebControls%23IRepeatInfoUser%23RenderItem%2A> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to an <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for rendering items in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="M:System.Web.UI.WebControls.RadioButtonList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> method. The explicit interface implementation calls the <see cref="M:System.Web.UI.WebControls.RadioButtonList.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" /> method to render an item in the control.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount">
+      <MemberSignature Language="C#" Value="int System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#RepeatedItemCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of items in the list control.</summary>
+        <value>The number of items in the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.RadioButtonList> instance is cast to the <xref:System.Web.UI.WebControls.IRepeatInfoUser> interface.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>To define a custom implementation for the <see cref="P:System.Web.UI.WebControls.RadioButtonList.System#Web#UI#WebControls#IRepeatInfoUser#RepeatedItemCount" /> property in a <see cref="T:System.Web.UI.WebControls.RadioButtonList" /> control, override the <see cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount" /> property. The explicit interface implementation uses the <see cref="P:System.Web.UI.WebControls.RadioButtonList.RepeatedItemCount" /> property.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlign">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TextAlign TextAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TextAlign TextAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RadioButtonList.TextAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TextAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text alignment for the radio buttons within the group.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values. The default is <see langword="Right" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify whether the text associated with the radio buttons appears on the left or right. If this property is set to `TextAlign.Right`, the text is displayed to the right of the radio button. If this property is set to `TextAlign.Left`, the text is displayed to the left of the radio button.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.RadioButtonList.TextAlign%2A> property to display the text associated with the radio buttons on the left side of the <xref:System.Web.UI.WebControls.RadioButtonList> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic RadioButtonList.TextAlign Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic RadioButtonList.TextAlign Example/CS/sourcecs.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The label text alignment associated with the radio buttons is not one of the <see cref="T:System.Web.UI.WebControls.TextAlign" /> values.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

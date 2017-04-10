@@ -1,0 +1,57 @@
+<Type Name="ImplementationVisibility" FullName="System.Activities.Tracking.ImplementationVisibility">
+  <TypeSignature Language="C#" Value="public enum ImplementationVisibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImplementationVisibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.ImplementationVisibility" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the visibility modes within a tracking profile.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tracking records from activities that are contained within another activity can be filtered using the visibility modes described by **ImplementationVisibility**. The filter is applied to subscribe for tracking records for all activities or only the root activity and its implementation for a workflow. For more information, see <xref:System.Activities.Tracking.TrackingProfile.ImplementationVisibility%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Tracking.ImplementationVisibility All = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.ImplementationVisibility.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.ImplementationVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All tracking records are emitted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootScope">
+      <MemberSignature Language="C#" Value="RootScope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Tracking.ImplementationVisibility RootScope = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Tracking.ImplementationVisibility.RootScope" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.ImplementationVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only the root activity and its implementation for the workflow is emitted.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

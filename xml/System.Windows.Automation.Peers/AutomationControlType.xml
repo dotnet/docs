@@ -1,0 +1,642 @@
+<Type Name="AutomationControlType" FullName="System.Windows.Automation.Peers.AutomationControlType">
+  <TypeSignature Language="C#" Value="public enum AutomationControlType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationControlType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.AutomationControlType" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the <see cref="T:System.Windows.Automation.ControlType" /> that is exposed to the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] client.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Button">
+      <MemberSignature Language="C#" Value="Button" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Button = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Button" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Button" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Calendar">
+      <MemberSignature Language="C#" Value="Calendar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Calendar = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Calendar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Calendar" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckBox">
+      <MemberSignature Language="C#" Value="CheckBox" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType CheckBox = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.CheckBox" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.CheckBox" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ComboBox">
+      <MemberSignature Language="C#" Value="ComboBox" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType ComboBox = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.ComboBox" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ComboBox" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Custom = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Custom" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataGrid">
+      <MemberSignature Language="C#" Value="DataGrid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType DataGrid = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.DataGrid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.DataGrid" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataItem">
+      <MemberSignature Language="C#" Value="DataItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType DataItem = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.DataItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.DataItem" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Document">
+      <MemberSignature Language="C#" Value="Document" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Document = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Document" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Document" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Edit">
+      <MemberSignature Language="C#" Value="Edit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Edit = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Edit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An <see cref="F:System.Windows.Automation.ControlType.Edit" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="Group" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Group = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Group" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Group" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="Header" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Header = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Header" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Header" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderItem">
+      <MemberSignature Language="C#" Value="HeaderItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType HeaderItem = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.HeaderItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.HeaderItem" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hyperlink">
+      <MemberSignature Language="C#" Value="Hyperlink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Hyperlink = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Hyperlink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Hyperlink" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="Image" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Image = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Image" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An <see cref="F:System.Windows.Automation.ControlType.Image" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="List">
+      <MemberSignature Language="C#" Value="List" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType List = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.List" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.List" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ListItem">
+      <MemberSignature Language="C#" Value="ListItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType ListItem = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.ListItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ListItem" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Menu">
+      <MemberSignature Language="C#" Value="Menu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Menu = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Menu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Menu" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuBar">
+      <MemberSignature Language="C#" Value="MenuBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType MenuBar = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.MenuBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.MenuBar" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItem">
+      <MemberSignature Language="C#" Value="MenuItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType MenuItem = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.MenuItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.MenuItem" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pane">
+      <MemberSignature Language="C#" Value="Pane" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Pane = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Pane" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Pane" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProgressBar">
+      <MemberSignature Language="C#" Value="ProgressBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType ProgressBar = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.ProgressBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ProgressBar" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RadioButton">
+      <MemberSignature Language="C#" Value="RadioButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType RadioButton = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.RadioButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.RadioButton" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollBar">
+      <MemberSignature Language="C#" Value="ScrollBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType ScrollBar = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.ScrollBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ScrollBar" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="Separator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Separator = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Separator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Separator" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Slider">
+      <MemberSignature Language="C#" Value="Slider" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Slider = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Slider" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Slider" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Spinner">
+      <MemberSignature Language="C#" Value="Spinner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Spinner = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Spinner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Spinner" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SplitButton">
+      <MemberSignature Language="C#" Value="SplitButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType SplitButton = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.SplitButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.SplitButton" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusBar">
+      <MemberSignature Language="C#" Value="StatusBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType StatusBar = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.StatusBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.StatusBar" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tab">
+      <MemberSignature Language="C#" Value="Tab" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Tab = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Tab" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Tab" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TabItem">
+      <MemberSignature Language="C#" Value="TabItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType TabItem = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.TabItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.TabItem" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="Table" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Table = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Table" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Table" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Text = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Text" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Thumb">
+      <MemberSignature Language="C#" Value="Thumb" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Thumb = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Thumb" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Thumb" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleBar">
+      <MemberSignature Language="C#" Value="TitleBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType TitleBar = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.TitleBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.TitleBar" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolBar">
+      <MemberSignature Language="C#" Value="ToolBar" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType ToolBar = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.ToolBar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ToolBar" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTip">
+      <MemberSignature Language="C#" Value="ToolTip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType ToolTip = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.ToolTip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.ToolTip" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tree">
+      <MemberSignature Language="C#" Value="Tree" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Tree = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Tree" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Tree" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TreeItem">
+      <MemberSignature Language="C#" Value="TreeItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType TreeItem = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.TreeItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.TreeItem" /> control type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="Window" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationControlType Window = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationControlType.Window" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationControlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="F:System.Windows.Automation.ControlType.Window" /> control type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

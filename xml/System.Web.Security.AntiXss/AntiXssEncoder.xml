@@ -1,0 +1,1069 @@
+<Type Name="AntiXssEncoder" FullName="System.Web.Security.AntiXss.AntiXssEncoder">
+  <TypeSignature Language="C#" Value="public class AntiXssEncoder : System.Web.Util.HttpEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AntiXssEncoder extends System.Web.Util.HttpEncoder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.AntiXss.AntiXssEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Util.HttpEncoder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encodes a string for use in HTML, XML, CSS, and URL strings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class to override the <xref:System.Web.Util.HttpEncoder> class that is used by default to encode and decode strings in methods of classes such as <xref:System.Web.HttpUtility>, <xref:System.Web.HttpServerUtility>, and <xref:System.Net.HttpResponseHeader>.  
+  
+ In the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class, all characters that are not found in the safe list are encoded by the <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlAttributeEncode%2A> and <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode%2A> methods.  
+  
+ To replace the <xref:System.Web.Util.HttpEncoder> class with the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class, register it using the `encoderType` attribute of the httpRuntime element in the Web.config file, as shown in following example:  
+  
+```  
+<httpRuntime encoderType="System.Web.Security.AntiXss.AntiXssEncoder" />  
+```  
+  
+ A list of default safe characters for different encoding methods can be found in the remarks for the <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlAttributeEncode%2A>, <xref:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode%2A>, <xref:System.Web.Security.AntiXss.AntiXssEncoder.XmlAttributeEncode%2A>, and <xref:System.Web.Security.AntiXss.AntiXssEncoder.XmlEncode%2A> methods. The default safe list can be modified by using the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AntiXssEncoder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Security.AntiXss.AntiXssEncoder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CssEncode">
+      <MemberSignature Language="C#" Value="public static string CssEncode (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CssEncode(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.CssEncode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <summary>Encodes the specified string for use in cascading style sheets (CSS).</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list.  
+  
+> [!NOTE]
+>  Put quotation marks (" ") around the resulting string before you add it to a cascading style sheet.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert\000028\000027XSS\000020Attack\000021\000027\000029\00003B`|  
+|`user@contoso.com`|`user\000040contoso\00002Ecom`|  
+|`Anti-Cross Site Scripting Namespace`|`Anti\00002DCross\000020Site\000020Scripting\000020Namespace`|  
+  
+ The CSS character escape sequence consists of a backslash character (\\) followed by up to six hexadecimal digits that represent a character code from the ISO 10646 standard. (The ISO 10646 standard is effectively equivalent to Unicode.) Any character other than a hexadecimal digit terminates the escape sequence. If a character that follows the escape sequence is also a valid hexadecimal digit, it must either include six digits in the escape sequence or use a whitespace character to terminate the escape sequence. For example, `\000020` denotes a space.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
+          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
+        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
+          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
+  
+ -or-  
+  
+ <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlAttributeEncode">
+      <MemberSignature Language="C#" Value="protected override void HtmlAttributeEncode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void HtmlAttributeEncode(string value, class System.IO.TextWriter output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="output" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to encode.</param>
+        <param name="output">The text writer to use to output the string.</param>
+        <summary>Encodes and outputs the specified string for use in an HTML attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+  
+> [!NOTE]
+>  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|!|Exclamation mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|#|Number sign, hash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|$|Dollar sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|%|Percent sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|( )|Parentheses|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|*|Asterisk|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|+|Plus sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|,|Comma|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|/|Slash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|:|Colon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|;|Semicolon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|=|Equals sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|?|Question mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|@|Commercial at-sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|[ ]|Square brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|\|Backslash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|^|Caret|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|`|Grave accent|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|{ }|Braces, curly brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|&#124;|Vertical line|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00A1 - 0x00AC|Special characters between 0x00A1 (161 decimal) and 0x00AC (172 decimal).|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00AE - 0x00FF|Special characters between 0x00AE (174 decimal) and 0x00FF (255 decimal).|  
+|[Latin-Extended-A](http://www.unicode.org/charts/PDF/U0100.pdf)|0x0100 - 0x017F|Latin extended characters between 0x0100 (256 decimal) and 0x017F (383 decimal).|  
+|[Latin-Extended-B](http://www.unicode.org/charts/PDF/U0180.pdf)|0x0180 - 0x024F|Latin extended characters between 0x0180 (384 decimal) and 0x024F (591 decimal).|  
+|[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
+|[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
+Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
+|`<script>alert('XSS Attack!');</script>`|`&lt;script&gt;alert(&#39;XSS Attack!&#39;);&lt;/script&gt;`|  
+|`alert('XSSあAttack!');`|`alert(&#39;XSS&#12354;Attack!&#39;);`|  
+|`user@contoso.com`|`user@contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
+  
+ To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
+          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
+        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
+          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
+  
+ -or-  
+  
+ <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlEncode">
+      <MemberSignature Language="C#" Value="public static string HtmlEncode (string input, bool useNamedEntities);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HtmlEncode(string input, bool useNamedEntities) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="useNamedEntities" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <param name="useNamedEntities">
+          <see langword="true" /> to use HTML 4.0 named entities for certain character encodings; <see langword="false" /> to encode by using only <c>&amp;#DECIMAL;</c> notation.</param>
+        <summary>Encodes the specified string for use as text in HTML markup and optionally specifies whether to use HTML 4.0 named entities.</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+  
+> [!NOTE]
+>  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|(Space)|Space|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|!|Exclamation mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|#|Number sign, hash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|$|Dollar sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|%|Percent sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|( )|Parentheses|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|*|Asterisk|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|+|Plus sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|,|Comma|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|/|Slash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|:|Colon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|;|Semicolon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|=|Equals sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|?|Question mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|@|Commercial at|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|[ ]|Square brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|\|Backslash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|^|Caret|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|`|Grave accent|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|{ }|Braces, curly brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|&#124;|Vertical line|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00A1 - 0x00AC|Special characters between 0x00A1 (161 decimal) and 0x00AC (172 decimal). Characters in this range are encoded when `useNamedEntities` is `true`.|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00AE - 0x00FF|Special characters between 0x00AE (174 decimal) and 0x00FF (255 decimal). Characters in this range are encoded when `useNamedEntities` is `true`.|  
+|[Latin Extended-A](http://www.unicode.org/charts/PDF/U0100.pdf)|0x0100 - 0x017F|Latin extended characters between 0x0100 (256 decimal) and 0x017F (383 decimal).|  
+|[Latin Extended-B](http://www.unicode.org/charts/PDF/U0180.pdf)|0x0180 - 0x024F|Latin extended characters between 0x0180 (384 decimal) and 0x024F (591 decimal).|  
+|[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
+|[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
+Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
+|`<script>alert('XSS Attack!');</script>`|`&lt;script&gt;alert(&#39;XSS Attack!&#39;);&lt;/script&gt;`|  
+|`alert('XSSあAttack!');`|`alert(&#39;XSS&#12354;Attack!&#39;);`|  
+|`user@contoso.com`|`user@contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
+  
+ To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
+          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
+        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
+          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
+  
+ -or-  
+  
+ <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlEncode">
+      <MemberSignature Language="C#" Value="protected override void HtmlEncode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void HtmlEncode(string value, class System.IO.TextWriter output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode(System.String,System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="output" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to encode.</param>
+        <param name="output">The text writer to use to output the string.</param>
+        <summary>Encodes the specified string for use as text in HTML markup and outputs the string by using the specified text writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+  
+> [!NOTE]
+>  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|(Space)|Space|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|!|Exclamation mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|#|Number sign, hash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|$|Dollar sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|%|Percent sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|( )|Parentheses|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|*|Asterisk|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|+|Plus sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|,|Comma|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|/|Slash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|:|Colon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|;|Semicolon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|=|Equals sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|?|Question mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|@|Commercial at|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|[ ]|Square brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|\|Backslash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|^|Caret|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|`|Grave accent|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|{ }|Braces, curly brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|&#124;|Vertical line|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00A1 - 0x00AC|Special characters between 0x00A1 (161 decimal) and 0x00AC (172 decimal). Characters in this range are encoded when `useNamedEntities` is `true`.|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00AE - 0x00FF|Special characters between 0x00AE (174 decimal) and 0x00FF (255 decimal). Characters in this range are encoded when `useNamedEntities` is `true`.|  
+|[Latin Extended-A](http://www.unicode.org/charts/PDF/U0100.pdf)|0x0100 - 0x017F|Latin extended characters between 0x0100 (256 decimal) and 0x017F (383 decimal).|  
+|[Latin Extended-B](http://www.unicode.org/charts/PDF/U0180.pdf)|0x0180 - 0x024F|Latin extended characters between 0x0180 (384 decimal) and 0x024F (591 decimal).|  
+|[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
+|[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
+Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
+|`<script>alert('XSS Attack!');</script>`|`&lt;script&gt;alert(&#39;XSS Attack!&#39;);&lt;/script&gt;`|  
+|`alert('XSSあAttack!');`|`alert(&#39;XSS&#12354;Attack!&#39;);`|  
+|`user@contoso.com`|`user@contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
+  
+ To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
+          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
+        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
+          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
+  
+ -or-  
+  
+ <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlFormUrlEncode">
+      <MemberSignature Language="C#" Value="public static string HtmlFormUrlEncode (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HtmlFormUrlEncode(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <summary>Encodes the specified string for use in form submissions whose MIME type is "application/x-www-form-urlencoded".</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+  
+> [!NOTE]
+>  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert%28%27XSS+Attack%21%27%29%3b`|  
+|`<script>alert('XSS Attack!');</script>`|`%3cscript%3ealert%28%27XSS+Attack%21%27%29%3b%3c%2fscript%3e`|  
+|`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
+|`user@contoso.com`|`user@contoso.com`|  
+|`Anti-Cross Site Scripting Namespace`|`Anti-Cross+Site+Scripting+Namespace`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlFormUrlEncode">
+      <MemberSignature Language="C#" Value="public static string HtmlFormUrlEncode (string input, int codePage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HtmlFormUrlEncode(string input, int32 codePage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="codePage" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <param name="codePage">The code page to use to encode the <c>input</c> string.</param>
+        <summary>Encodes the specified string for use in form submissions whose MIME type is "application/x-www-form-urlencoded" by using the specified code page.</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+  
+> [!NOTE]
+>  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert%28%27XSS+Attack%21%27%29%3b`|  
+|`<script>alert('XSS Attack!');</script>`|`%3cscript%3ealert%28%27XSS+Attack%21%27%29%3b%3c%2fscript%3e`|  
+|`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
+|`user@contoso.com`|`user%40contoso.com`|  
+|`Anti-Cross Site Scripting Namespace`|`Anti-Cross+Site+Scripting+Namespace`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlFormUrlEncode">
+      <MemberSignature Language="C#" Value="public static string HtmlFormUrlEncode (string input, System.Text.Encoding inputEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HtmlFormUrlEncode(string input, class System.Text.Encoding inputEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode(System.String,System.Text.Encoding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="inputEncoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <param name="inputEncoding">The input encoding type.</param>
+        <summary>Encodes the specified string for form submissions whose MIME type is "application/x-www-form-urlencoded" by using the specified character encoding type.</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+  
+> [!NOTE]
+>  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert%28%27XSS+Attack%21%27%29%3b`|  
+|`<script>alert('XSS Attack!');</script>`|`%3cscript%3ealert%28%27XSS+Attack%21%27%29%3b%3c%2fscript%3e`|  
+|`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
+|`user@contoso.com`|`user%40contoso.com`|  
+|`Anti-Cross Site Scripting Namespace`|`Anti-Cross+Site+Scripting+Namespace`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MarkAsSafe">
+      <MemberSignature Language="C#" Value="public static void MarkAsSafe (System.Web.Security.AntiXss.LowerCodeCharts lowerCodeCharts, System.Web.Security.AntiXss.LowerMidCodeCharts lowerMidCodeCharts, System.Web.Security.AntiXss.MidCodeCharts midCodeCharts, System.Web.Security.AntiXss.UpperMidCodeCharts upperMidCodeCharts, System.Web.Security.AntiXss.UpperCodeCharts upperCodeCharts);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MarkAsSafe(valuetype System.Web.Security.AntiXss.LowerCodeCharts lowerCodeCharts, valuetype System.Web.Security.AntiXss.LowerMidCodeCharts lowerMidCodeCharts, valuetype System.Web.Security.AntiXss.MidCodeCharts midCodeCharts, valuetype System.Web.Security.AntiXss.UpperMidCodeCharts upperMidCodeCharts, valuetype System.Web.Security.AntiXss.UpperCodeCharts upperCodeCharts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe(System.Web.Security.AntiXss.LowerCodeCharts,System.Web.Security.AntiXss.LowerMidCodeCharts,System.Web.Security.AntiXss.MidCodeCharts,System.Web.Security.AntiXss.UpperMidCodeCharts,System.Web.Security.AntiXss.UpperCodeCharts)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lowerCodeCharts" Type="System.Web.Security.AntiXss.LowerCodeCharts" />
+        <Parameter Name="lowerMidCodeCharts" Type="System.Web.Security.AntiXss.LowerMidCodeCharts" />
+        <Parameter Name="midCodeCharts" Type="System.Web.Security.AntiXss.MidCodeCharts" />
+        <Parameter Name="upperMidCodeCharts" Type="System.Web.Security.AntiXss.UpperMidCodeCharts" />
+        <Parameter Name="upperCodeCharts" Type="System.Web.Security.AntiXss.UpperCodeCharts" />
+      </Parameters>
+      <Docs>
+        <param name="lowerCodeCharts">The combination of lower code charts to mark as safe.</param>
+        <param name="lowerMidCodeCharts">The combination of lower-middle code charts to mark as safe.</param>
+        <param name="midCodeCharts">The combination of middle code charts to mark as safe.</param>
+        <param name="upperMidCodeCharts">The combination of upper-middle code charts to mark as safe.</param>
+        <param name="upperCodeCharts">The combination of upper code charts to mark as safe.</param>
+        <summary>Marks characters from the specified Unicode code charts as safe.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The safe list affects all HTML XML, CSS, and URL encoding methods.  
+  
+ With some exceptions, Unicode code charts do not directly correspond to written languages. To add support for a specific language or set of languages often requires marking multiple code charts as safe.  
+  
+ To add support for the Japanese language while continuing to allow English, use the following syntax:  
+  
+```  
+  
+MarkAsSafe(  
+            LowerCodeCharts.Default,  
+            LowerMidCodeCharts.HangulJamo,  
+            MidCodeCharts.None,  
+            UpperMidCodeCharts.CjkRadicalsSupplement |   
+            UpperMidCodeCharts.CjkSymbolsAndPunctuation |   
+            UpperMidCodeCharts.Hiragana |   
+            UpperMidCodeCharts.Katakana |   
+            UpperMidCodeCharts.KatakanaPhoneticExtensions |   
+            UpperMidCodeCharts.LatinExtendedD |  
+            UpperMidCodeCharts.CjkUnifiedIdeographs,  
+            UpperCodeCharts.None);  
+```  
+  
+> [!NOTE]
+>  The <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method must be called in the `Application_Start` method in the Global.asax file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe(System.Web.Security.AntiXss.LowerCodeCharts,System.Web.Security.AntiXss.LowerMidCodeCharts,System.Web.Security.AntiXss.MidCodeCharts,System.Web.Security.AntiXss.UpperMidCodeCharts,System.Web.Security.AntiXss.UpperCodeCharts)" /> method was called outside the <see langword="Application_Start" /> method in the Global.asax file.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlEncode">
+      <MemberSignature Language="C#" Value="public static string UrlEncode (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <summary>Encodes the specified string for use in a URL.</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert%28%27XSS%20Attack%21%27%29%3b`|  
+|`<script>alert('XSS Attack!');</script>`|`%3cscript%3ealert%28%27XSS%20Attack%21%27%29%3b%3c%2fscript%3e`|  
+|`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
+|`user@contoso.com`|`user%40contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlEncode">
+      <MemberSignature Language="C#" Value="public static string UrlEncode (string input, int codePage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string input, int32 codePage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="codePage" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <param name="codePage">The code page to use to encode the <c>input</c> string.</param>
+        <summary>Encodes the specified string for use in a URL by using the specified code page.</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert%28%27XSS%20Attack%21%27%29%3b`|  
+|`<script>alert('XSS Attack!');</script>`|`%3cscript%3ealert%28%27XSS%20Attack%21%27%29%3b%3c%2fscript%3e`|  
+|`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
+|`user@contoso.com`|`user%40contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlEncode">
+      <MemberSignature Language="C#" Value="public static string UrlEncode (string input, System.Text.Encoding inputEncoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string input, class System.Text.Encoding inputEncoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(System.String,System.Text.Encoding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="inputEncoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <param name="inputEncoding">The input encoding type.</param>
+        <summary>Encodes the specified string for use in a URL by using the specified character encoding type.</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert%28%27XSS%20Attack%21%27%29%3b`|  
+|`<script>alert('XSS Attack!');</script>`|`%3cscript%3ealert%28%27XSS%20Attack%21%27%29%3b%3c%2fscript%3e`|  
+|`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
+|`user@contoso.com`|`user%40contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlEncode">
+      <MemberSignature Language="C#" Value="protected override byte[] UrlEncode (byte[] bytes, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance unsigned int8[] UrlEncode(unsigned int8[] bytes, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">The byte array to encode.</param>
+        <param name="offset">The index of the first byte to encode.</param>
+        <param name="count">The number of bytes to encode.</param>
+        <summary>Encodes the specified byte array for use in a URL, starting at the specified offset in the byte array and encoding the specified number of bytes.</summary>
+        <returns>The encoded byte array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert%28%27XSS%20Attack%21%27%29%3b`|  
+|`<script>alert('XSS Attack!');</script>`|`%3cscript%3ealert%28%27XSS%20Attack%21%27%29%3b%3c%2fscript%3e`|  
+|`alert('XSSあAttack!');`|`alert%28%27XSS%e3%81%82Attack%21%27%29%3b`|  
+|`user@contoso.com`|`user%40contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlPathEncode">
+      <MemberSignature Language="C#" Value="protected override string UrlPathEncode (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string UrlPathEncode(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlPathEncode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to encode.</param>
+        <summary>Encodes path strings for use in a URL.</summary>
+        <returns>The URL that contains the encoded path.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `%SINGLE_BYTE_HEX` notation.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|#|Number sign, hash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|%|Percent sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|( )|Parentheses|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|/|Slash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|\|Backslash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|{ }|Braces, curly brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|&#124;|Vertical line|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`http://www.contoso.com:8080/<en-us>/[page].htm?v={value1}#x=[amount]`|`http://www.contoso.com:8080/%3cen-us%3e/%5bpage%5d.htm?v={value1}#x=[amount]`|  
+|`alert('XSS Attack!');`|`alert(%27XSS%20Attack%21%27)%3b`|  
+|`<script>alert('XSS Attack!');</script>`|`%3cscript%3ealert(%27XSS%20Attack%21%27)%3b%3c/script%3e`|  
+|`alert('XSSあAttack!');`|`alert(%27XSS%e3%81%82Attack%21%27)%3b`|  
+|`user@contoso.com`|`user%40contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`%22Anti-Cross%20Site%20Scripting%20Namespace%22`|  
+  
+ This method encodes only the path of a URL. This method will not encode the scheme (for example, `http:`, `ftp:`, or `file:`), the authority (for example, `www.northwind.com` or `www.contoso.com:8080`), or the query or fragment (for example, `?v=s978dfs9#x=103`). If there is no scheme or authority in the string, the string is assumed to be a relative path, and the path is encoded. In the following URL, only the substring `/default.htm` is encoded:  
+  
+ `http://www.contoso.com:8080/default.htm?v=s978dfs9#x=103`  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlAttributeEncode">
+      <MemberSignature Language="C#" Value="public static string XmlAttributeEncode (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string XmlAttributeEncode(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.XmlAttributeEncode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <summary>Encodes the specified string for use in XML attributes.</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+  
+> [!NOTE]
+>  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|!|Exclamation mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|#|Number sign, hash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|$|Dollar sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|%|Percent sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|( )|Parentheses|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|*|Asterisk|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|+|Plus sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|,|Comma|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period, dot, full stop|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|/|Slash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|:|Colon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|;|Semicolon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|=|Equals sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|?|Question mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|@|Commercial at-sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|[ ]|Square brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|\|Backslash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|^|Caret|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|`|Grave accent|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|{ }|Braces, curly brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|&#124;|Vertical line|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00A1 - 0x00AC|Special characters between 0x00A1 (161 decimal) and 0x00AC (172 decimal).|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00AE - 0x00FF|Special characters between 0x00AE (174 decimal) and 0x00FF (255 decimal).|  
+|[Latin Extended-A](http://www.unicode.org/charts/PDF/U0100.pdf)|0x0100 - 0x017F|Latin extended characters between 0x0100 (256 decimal) and 0x017F (383 decimal).|  
+|[Latin Extended-B](http://www.unicode.org/charts/PDF/U0180.pdf)|0x0180 - 0x024F|Latin extended characters between 0x0180 (384 decimal) and 0x024F (591 decimal).|  
+|[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
+|[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
+Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert(&apos;XSS&#32;Attack!&apos;);`|  
+|`<script>alert('XSS Attack!');</script>`|`&lt;script&gt;alert(&apos;XSS&#32;Attack!&apos;);&lt;/script&gt;`|  
+|`alert('XSSあAttack!');`|`alert(&apos;XSS&#12354;Attack!&apos;);`|  
+|`user@contoso.com`|`user@contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
+  
+ To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
+          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
+        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
+          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
+  
+ -or-  
+  
+ <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlEncode">
+      <MemberSignature Language="C#" Value="public static string XmlEncode (string input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string XmlEncode(string input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.XmlEncode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="input">The string to encode.</param>
+        <summary>Encodes the specified string for use in XML attributes.</summary>
+        <returns>The encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method encodes all characters except those that are in the safe list. Characters are encoded by using `&#DECIMAL;` notation.  
+  
+> [!NOTE]
+>  Put double quotation marks (" ") or single quotation marks (' ') around the resulting string before you add it to a page.  
+  
+ The following table lists the default safe characters.  
+  
+|Unicode code chart|Character(s)|Description|  
+|------------------------|--------------------|-----------------|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|A-Z|Uppercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|a-z|Lowercase Latin alphabetic characters|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|0-9|Numbers|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|(Space)|Space|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|!|Exclamation mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|#|Number sign, hash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|$|Dollar sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|%|Percent sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|( )|Parentheses|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|*|Asterisk|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|+|Plus sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|,|Comma|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|-|Hyphen, minus|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|.|Period|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|/|Slash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|:|Colon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|;|Semicolon|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|=|Equals sign|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|?|Question mark|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|@|Commercial at|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|[ ]|Square brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|\|Backslash|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|^|Caret|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|_|Underscore|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|`|Grave accent|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|{ }|Braces, curly brackets|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|&#124;|Vertical line|  
+|[C0 Controls and Basic Latin](http://www.unicode.org/charts/PDF/U0000.pdf)|~|Tilde|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00A1 - 0x00AC|Special characters between 0x00A1 (161 decimal) and 0x00AC (172 decimal). Characters in this range are encoded when `useNamedEntities` is `true`.|  
+|[C1 Controls and Latin-1 Supplement](http://www.unicode.org/charts/PDF/U0080.pdf)|0x00AE - 0x00FF|Special characters between 0x00AE (174 decimal) and 0x00FF (255 decimal). Characters in this range are encoded when `useNamedEntities` is `true`.|  
+|[Latin Extended-A](http://www.unicode.org/charts/PDF/U0100.pdf)|0x0100 - 0x017F|Latin extended characters between 0x0100 (256 decimal) and 0x017F (383 decimal).|  
+|[Latin Extended-B](http://www.unicode.org/charts/PDF/U0180.pdf)|0x0180 - 0x024F|Latin extended characters between 0x0180 (384 decimal) and 0x024F (591 decimal).|  
+|[IPA Extensions](http://www.unicode.org/charts/PDF/U0250.pdf)|0x0250 - 0x02AF|IPA Extension characters between 0x0250 (592 decimal) and 0x02AF (687 decimal).|  
+|[Spacing Modifier Letters](http://www.unicode.org/charts/PDF/U02B0.pdf)|0x02B0 - 0x02FF|Spacing modifier letter characters between 0x02B0 (688 decimal) and 0x02FF (767 decimal).|  
+Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300 - 0x036F|Combining diacritical mark characters between 0x0300 (768 decimal) and 0x036F (879 decimal).|  
+  
+ The following table lists examples of inputs and the corresponding encoded outputs.  
+  
+|||  
+|-|-|  
+|`alert('XSS Attack!');`|`alert(&#39;XSS&#32;Attack!&#39;);`|  
+|`<script>alert('XSS Attack!');</script>`|`&lt;script&gt;alert(&apos;XSS Attack!&apos;);&lt;/script&gt;`|  
+|`alert('XSSあAttack!');`|`alert(&apos;XSS&#12354;Attack!&apos;);`|  
+|`user@contoso.com`|`user@contoso.com`|  
+|`"Anti-Cross Site Scripting Namespace"`|`&quot;Anti-Cross&#32;Site&#32;Scripting&#32;Namespace&quot;`|  
+  
+ To customize the safe list, call the <xref:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:Microsoft.Security.Application.InvalidUnicodeValueException">
+          <paramref name="input" /> contains a character that has an invalid Unicode value.</exception>
+        <exception cref="T:Microsoft.Security.Application.InvalidSurrogatePairException">
+          <paramref name="input" /> contained a high surrogate code point that was not followed by a low surrogate code point.  
+  
+ -or-  
+  
+ <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

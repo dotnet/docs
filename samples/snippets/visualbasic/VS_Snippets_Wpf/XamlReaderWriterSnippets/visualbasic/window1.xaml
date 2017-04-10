@@ -1,0 +1,19 @@
+<Window x:Class="XamlReaderWriterSnippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="XamlReaderWriterSnippets" Height="300" Width="300"
+    >
+    <StackPanel>
+      <StackPanel RadioButton.Checked="OnSerializeChecked" >
+        <RadioButton Name="RB1" Height="25" Width="150" Content="Sync/String" />
+        <RadioButton Name="RB2" Height="25" Width="150" Content="Sync/Stream"/>
+        <RadioButton Name="RB3" Height="25" Width="150" />
+        <RadioButton Name="RB4" Height="25" Width="150" Content="ASync/Stream"/>
+        <RadioButton Name="RB6" Height="25" Width="150" />
+      </StackPanel>
+      <StackPanel Name="StackArea">
+        
+      </StackPanel>
+        
+    </StackPanel>
+</Window>

@@ -1,0 +1,271 @@
+<Type Name="LinqDataSourceInsertEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceInsertEventArgs">
+  <TypeSignature Language="C#" Value="public class LinqDataSourceInsertEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceInsertEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.LinqDataSource.Inserting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs> object is passed to any event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event. The <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject%2A> property contains the data that will be inserted.  
+  
+ You can use the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs> object to examine the data before the insert operation is executed in the data source. You can then validate the data, examine validation errors from the data class, or change a value before the update. You can also cancel the insert operation.  
+  
+ If the object that represents the data source throws a validation exception before it inserts the data, the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.Exception%2A> property contains an instance of the <xref:System.Web.UI.WebControls.LinqDataSourceValidationException> class. You can retrieve all the validation exceptions through the <xref:System.Web.UI.WebControls.LinqDataSourceValidationException.InnerExceptions%2A> property. If no validation exception is thrown, the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.Exception%2A> property contains `null`. If you handle the validation exceptions and do not want the exception to be re-thrown, set the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.ExceptionHandled%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following example shows a handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event. The object from the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject%2A> property is cast to a type named `Product`. The `DateModified` property of the `Product` object is set to the current date and time.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Inserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Inserting/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Inserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Inserting/vb/Default.aspx.vb#1)]  
+  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event. It displays any validation exception messages by using a <xref:System.Web.UI.WebControls.Label> control.  
+  
+```vb  
+Protected Sub LinqDataSource_Inserting(ByVal sender As Object, _  
+        ByVal e As LinqDataSourceInsertEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message + "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
+End Sub  
+```  
+  
+ [C#]  
+  
+```  
+protected void LinqDataSource_Inserting(object sender,   
+        LinqDataSourceInsertEventArgs e)  
+{  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceInsertEventArgs (object newObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object newObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="newObject">An object that contains the data to insert.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceInsertEventArgs (System.Web.UI.WebControls.LinqDataSourceValidationException exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.LinqDataSourceValidationException exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.#ctor(System.Web.UI.WebControls.LinqDataSourceValidationException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Web.UI.WebControls.LinqDataSourceValidationException" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The exception that occurred when the data to insert was being validated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs" /> class and specifies the provided exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.LinqDataSourceValidationException Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.LinqDataSourceValidationException Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.LinqDataSourceValidationException</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that was thrown while the data was being validated before the insert operation.</summary>
+        <value>The exception, if an error occurred; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a validation exception is thrown before the insert operation is performed, the exception is stored in the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.Exception%2A> property. In a handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event, you can retrieve the exception through the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.Exception%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows a handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event. It displays any validation exception messages by using a <xref:System.Web.UI.WebControls.Label> control.  
+  
+```vb  
+Protected Sub LinqDataSource_Inserting(ByVal sender As Object, _  
+        ByVal e As LinqDataSourceInsertEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message + "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
+End Sub  
+```  
+  
+ [C#]  
+  
+```  
+protected void LinqDataSource_Inserting(object sender,   
+        LinqDataSourceInsertEventArgs e)  
+{  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionHandled">
+      <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.ExceptionHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the exception was handled and that it should not be thrown again.</summary>
+        <value>
+          <see langword="true" /> if the exception was handled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create event handlers for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event to examine validation exceptions that occurred before the insert operation. If you handle the exception and do not want it to be thrown again, set the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.ExceptionHandled%2A> property to `true`. If you do not set the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.ExceptionHandled%2A> property to `true`, the exception will be propagated to the next event handler in the call stack.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event. It displays any validation exception messages by using a <xref:System.Web.UI.WebControls.Label> control.  
+  
+```vb  
+Protected Sub LinqDataSource_Inserting(ByVal sender As Object, _  
+        ByVal e As LinqDataSourceInsertEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message + "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
+End Sub  
+```  
+  
+ [C#]  
+  
+```  
+protected void LinqDataSource_Inserting(object sender,   
+        LinqDataSourceInsertEventArgs e)  
+{  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewObject">
+      <MemberSignature Language="C#" Value="public object NewObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NewObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that contains the data to insert.</summary>
+        <value>An object that contains the data to insert.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject%2A> property contains the data that will be inserted into the data source. Create a handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event and retrieve the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject%2A> property in order to validate the data, change the data, or cancel the insert operation before the data operation is executed.  
+  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject%2A> property returns an object of type <xref:System.Object>. You can cast this object to the type of the class that represents the data.  
+  
+   
+  
+## Examples  
+ The following example shows a handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserting> event. The object from the <xref:System.Web.UI.WebControls.LinqDataSourceInsertEventArgs.NewObject%2A> property is cast to a type named `Product`. The `DateModified` property of the `Product` object is set to the current date and time.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Inserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Inserting/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Inserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Inserting/vb/Default.aspx.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,53 @@
+<Type Name="FormViewModeEventHandler" FullName="System.Web.UI.WebControls.FormViewModeEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void FormViewModeEventHandler(object sender, FormViewModeEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewModeEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.FormViewModeEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.FormViewModeEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.FormView.ModeChanging" /> event of a <see cref="T:System.Web.UI.WebControls.FormView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormView.ModeChanging> event is raised when a <xref:System.Web.UI.WebControls.FormView> control attempts to switch between edit, insert, and read-only mode, but before the mode actually changes. This allows you to provide an event-handling method that performs a custom routine, such as configuring the <xref:System.Web.UI.WebControls.FormView> control for a specific mode or canceling the mode change, whenever this event occurs.  
+  
+ When you create a <xref:System.Web.UI.WebControls.FormViewModeEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.FormViewModeEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+> [!IMPORTANT]
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewModeEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventHandler/CS/formviewmodeeventhandlercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewModeEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventHandler/VB/formviewmodeeventhandlervb.aspx#1)]  -->  
+  
+ The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.FormViewModeEventHandler> delegate to the <xref:System.Web.UI.WebControls.FormView.ModeChanging> event of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+> [!IMPORTANT]
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewModeEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewModeEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewModeEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewModeEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,41 @@
+<Type Name="ReceiveCompletedEventHandler" FullName="System.Messaging.ReceiveCompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ReceiveCompletedEventHandler(object sender, ReceiveCompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ReceiveCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.ReceiveCompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Messaging.ReceiveCompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event, the <see cref="T:System.Messaging.MessageQueue" />.</param>
+    <param name="e">A <see cref="T:System.Messaging.ReceiveCompletedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Messaging.MessageQueue.ReceiveCompleted" /> event of a <see cref="T:System.Messaging.MessageQueue" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Messaging.ReceiveCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example illustrates how to create an event delegate (<xref:System.Messaging.ReceiveCompletedEventHandler>) for the event handler (`MyReceiveCompleted`) and associate it with the <xref:System.Messaging.MessageQueue.ReceiveCompleted?displayProperty=fullName> event. The event handler receives a message from a queue, and writes its label to the screen.  
+  
+ [!code-cpp[MessageQueue.ReceiveCompleted#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.ReceiveCompleted/CPP/mqreceivecompletedeventhandler.cpp#1)]
+ [!code-csharp[MessageQueue.ReceiveCompleted#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.ReceiveCompleted/CS/mqreceivecompletedeventhandler.cs#1)]
+ [!code-vb[MessageQueue.ReceiveCompleted#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.ReceiveCompleted/VB/mqreceivecompletedeventhandler.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

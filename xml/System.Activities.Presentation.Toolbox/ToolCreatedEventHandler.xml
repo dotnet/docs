@@ -1,0 +1,37 @@
+<Type Name="ToolCreatedEventHandler" FullName="System.Activities.Presentation.Toolbox.ToolCreatedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ToolCreatedEventHandler(object sender, ToolCreatedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolCreatedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ToolCreatedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Activities.Presentation.Toolbox.ToolCreatedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the tool created event.</param>
+    <param name="e">The <see cref="T:System.Activities.Presentation.Toolbox.ToolCreatedEventArgs" /> that contains data for the tool created event.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Activities.Presentation.Toolbox.ToolboxControl.ToolCreated" /> event for the rehosted toolbox.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Represents a delegate's method signature for the tool created event.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxCreatedEventHandler#0](WFD_ToolboxCreatedEventHandler#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

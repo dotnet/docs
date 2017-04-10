@@ -1,0 +1,262 @@
+<Type Name="TagMapCollection" FullName="System.Web.Configuration.TagMapCollection">
+  <TypeSignature Language="C#" Value="public sealed class TagMapCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TagMapCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TagMapCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Web.Configuration.TagMapInfo))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Web.Configuration.TagMapInfo" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.TagMapInfo> class allows you to remap the types of tags at compile time. This remapping causes the mapped type to be used in place of the original tag type for all pages and controls in the ASP.NET application in the scope of the configuration file.  
+  
+ The <xref:System.Web.Configuration.TagMapCollection> class allows you to programmatically access and modify the `tagMapping` subsection of the `pages` section of a configuration file. Within the `tagMapping` subsection, you can add and remove mappings between tag types by specifying the fully qualified strong names of the types.  
+  
+> [!NOTE]
+>  Unlike other attributes and collections in the `pages` section, tag remapping has no matching ASP.NET page directive.  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.TagMapCollection> type.  
+  
+```  
+<system.web>  
+  <pages>  
+    <tagMapping>  
+      <clear />  
+      <add  
+        tagType=  
+          "System.Web.UI.WebControls.WebParts.WebPartManager"  
+        mappedTagType=  
+          "Microsoft.Sharepoint.WebPartPartManager,   
+           MSPS.Web.dll, Version='2.0.0.0'"   
+      />  
+      <remove tagType="SomeOtherNS.Class, Assemblyname" />  
+    </tagMapping>  
+   </pages>  
+</system.web>  
+```  
+  
+ The following code example shows how to use the <xref:System.Web.Configuration.TagMapCollection> class to programmatically modify tag-mapping settings. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#17)]
+ [!code-vb[System.Web.Configuration.PagesSection#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#17)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TagMapCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.TagMapCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.PagesSection.TagMapping%2A> property of the <xref:System.Web.Configuration.PagesSection> class always contains an instance of the <xref:System.Web.Configuration.TagMapCollection> type. Use this instance, rather than creating your own.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.TagMapInfo tagMapInformation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.TagMapInfo tagMapInformation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.Add(System.Web.Configuration.TagMapInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tagMapInformation" Type="System.Web.Configuration.TagMapInfo" />
+      </Parameters>
+      <Docs>
+        <param name="tagMapInformation">A <see cref="T:System.Web.Configuration.TagMapInfo" /> object to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Web.Configuration.TagMapInfo" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection must not already contain a <xref:System.Web.Configuration.TagMapInfo> object with the same <xref:System.Web.Configuration.TagMapInfo.TagType%2A> property value. If it does, a <xref:System.Configuration.ConfigurationException> will be thrown.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.TagMapCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#42](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#42)]
+ [!code-vb[System.Web.Configuration.PagesSection#42](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#42)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationException">The <see cref="T:System.Web.Configuration.TagMapInfo" /> object to add already exists in the collection.  
+  
+ \- or -  
+  
+ The collection is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears all object from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.TagMapInfo this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TagMapInfo Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagMapCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.TagMapInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of a <see cref="T:System.Web.Configuration.TagMapInfo" /> object in the collection.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.TagMapInfo" /> object at the specified index location.</summary>
+        <value>The <see cref="T:System.Web.Configuration.TagMapInfo" /> object at the specified index, or <see langword="null" /> if there is no object at that index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Web.Configuration.TagMapInfo> object already exists at the specified index, this property overwrites it; otherwise, it creates a new object and adds it to the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.TagMapCollection.Item%2A> property. This example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#40](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#40)]
+ [!code-vb[System.Web.Configuration.PagesSection#40](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#40)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagMapCollection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Configuration.TagMapInfo tagMapInformation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Configuration.TagMapInfo tagMapInformation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapCollection.Remove(System.Web.Configuration.TagMapInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tagMapInformation" Type="System.Web.Configuration.TagMapInfo" />
+      </Parameters>
+      <Docs>
+        <param name="tagMapInformation">A <see cref="T:System.Web.Configuration.TagMapInfo" /> object in the collection.</param>
+        <summary>Removes the specified object from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

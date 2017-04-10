@@ -1,0 +1,59 @@
+<Type Name="AuthenticationMode" FullName="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode">
+  <TypeSignature Language="C#" Value="public enum AuthenticationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates how a Visual Basic application authenticates the user for the <see langword="My.User" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the authentication mode for an application by passing one of this enumeration's values to the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.%23ctor%2A> constructor. For more information, see [Extending the Visual Basic Application Model](~/docs/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model.md).  
+  
+ A Visual Basic application that uses the Visual Basic Application Model can specify whether it uses Windows authentication or custom authentication. You can also configure the authentication mode in the Visual Studio Integrated Development Environment. For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationDefined">
+      <MemberSignature Language="C#" Value="ApplicationDefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.AuthenticationMode ApplicationDefined = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.ApplicationDefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.AuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor(Microsoft.VisualBasic.ApplicationServices.AuthenticationMode)" /> constructor does not initialize the principal for the application's main thread. The application needs to initialize the principal for the application's main thread.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows">
+      <MemberSignature Language="C#" Value="Windows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.AuthenticationMode Windows = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.AuthenticationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor(Microsoft.VisualBasic.ApplicationServices.AuthenticationMode)" /> constructor initializes the principal for the application's main thread with the current user's Windows user information.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

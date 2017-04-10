@@ -1,0 +1,113 @@
+<Type Name="IKeyboardInputSite" FullName="System.Windows.Interop.IKeyboardInputSite">
+  <TypeSignature Language="C#" Value="public interface IKeyboardInputSite" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IKeyboardInputSite" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Interop.IKeyboardInputSite" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Manages keyboard focus within the container.  This interface implements keyboard message management in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]-[!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] interoperation scenarios.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A container should provide a unique instance of this interface for each of its contained components.  
+  
+ The <xref:System.Windows.Interop.IKeyboardInputSite> interface and the <xref:System.Windows.Interop.IKeyboardInputSink> are used together to provide support for keyboard actions across interoperation boundaries. A site (<xref:System.Windows.Interop.IKeyboardInputSite> implementation) represents a parent of a sink (<xref:System.Windows.Interop.IKeyboardInputSink>). The sink (<xref:System.Windows.Interop.IKeyboardInputSink>) implements the majority of keyboard behavior. Each site must also provide a sink, because the site-specific sink is returned by a property of the <xref:System.Windows.Interop.IKeyboardInputSite> interface.  
+  
+ For a discussion of the input architecture specifically implemented for [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] interoperation, see [Windows Forms and WPF Interoperability Input Architecture](~/docs/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture.md).  
+  
+ For more information about [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]-[!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] interoperation scenarios, see [WPF and Win32 Interoperation](~/docs/framework/wpf/advanced/wpf-and-win32-interoperation.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnNoMoreTabStops">
+      <MemberSignature Language="C#" Value="public bool OnNoMoreTabStops (System.Windows.Input.TraversalRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnNoMoreTabStops(class System.Windows.Input.TraversalRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops(System.Windows.Input.TraversalRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Windows.Input.TraversalRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">Specifies whether focus should be set to the first or the last tab stop.</param>
+        <summary>Called by a contained component when it has reached its last tab stop and has no further items to tab to.</summary>
+        <returns>If this method returns <see langword="true" />, the site has shifted focus to another component. If this method returns <see langword="false" />, focus is still within the calling component. The component should "wrap around" and set focus to its first contained tab stop.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Components call <xref:System.Windows.Interop.IKeyboardInputSite.OnNoMoreTabStops%2A> when the component attempts a requested focus move but there are no further tab stops in that direction within that own component.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sink">
+      <MemberSignature Language="C#" Value="public System.Windows.Interop.IKeyboardInputSink Sink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Interop.IKeyboardInputSink Sink" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IKeyboardInputSite.Sink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Interop.IKeyboardInputSink</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the keyboard sink associated with this site.</summary>
+        <value>The current site's <see cref="T:System.Windows.Interop.IKeyboardInputSink" /> interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not return the parent <xref:System.Windows.Interop.IKeyboardInputSink> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public void Unregister ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unregister() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSite.Unregister" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unregisters a child keyboard input sink from this site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property does not affect the site on the container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

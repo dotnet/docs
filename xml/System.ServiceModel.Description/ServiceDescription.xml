@@ -1,0 +1,369 @@
+<Type Name="ServiceDescription" FullName="System.ServiceModel.Description.ServiceDescription">
+  <TypeSignature Language="C#" Value="public class ServiceDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceDescription extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceDescription" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("ServiceType={serviceType}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a complete, in-memory description of the service, including all the endpoints for the service and specifications for their respective addresses, bindings, contracts and behaviors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The information contained in the <xref:System.ServiceModel.Description.ServiceDescription> is used by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] system to building the run-time components for the service.  
+  
+ Use this method when adding custom behaviors to extend <xref:System.ServiceModel.ServiceHost>. Programmatically, you must <xref:System.Collections.ObjectModel.Collection%601.Add%28%600%29> the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> prior to when you call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.ServiceHost> object.  
+  
+ The <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> and <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> methods are available to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+  
+ Export metadata about a service endpoint by passing <xref:System.ServiceModel.Description.ServiceEndpoint> as a parameter to <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%28System.ServiceModel.Description.ServiceEndpoint%29>. After calling this method, or one of the other export methods provided by <xref:System.ServiceModel.Description.WsdlExporter>, use the <xref:System.ServiceModel.Description.WsdlExporter.GeneratedWsdlDocuments%2A> property to return the collection of <xref:System.Web.Services.Description.ServiceDescription> objects.  
+  
+   
+  
+## Examples  
+ The following example illustrates various ways to instantiate a <xref:System.ServiceModel.Description.ServiceDescription> object.  
+  
+ [!code-csharp[S_UE_ServiceDescription#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#0)]
+ [!code-vb[S_UE_ServiceDescription#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceDescription ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceDescription.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceDescription" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceDescription#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#1)]
+ [!code-vb[S_UE_ServiceDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceDescription (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceDescription.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ServiceEndpoint})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="endpoints">The <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> used to initialize the service description.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceDescription" /> class from a specified enumeration of service endpoints.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#2)]
+ [!code-vb[S_UE_ServiceDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="endpoints" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Behaviors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IServiceBehavior&gt; Behaviors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.KeyedByTypeCollection`1&lt;class System.ServiceModel.Description.IServiceBehavior&gt; Behaviors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDescription.Behaviors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IServiceBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the behaviors associated with the service.</summary>
+        <value>The <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> of type <see cref="T:System.ServiceModel.Description.IServiceBehavior" /> that contains the behaviors associated with the service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when adding custom behaviors to extend <xref:System.ServiceModel.ServiceHost>. Programmatically, you must <xref:System.Collections.ObjectModel.Collection%601.Add%28%600%29> the custom service behavior to the <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A> prior to when you call the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method on the <xref:System.ServiceModel.ServiceHost> object.  
+  
+ The type of behavior that is accessible from the description hierarchy is scoped to the specific level. From the <xref:System.ServiceModel.Description.ServiceDescription> the <xref:System.ServiceModel.Description.IServiceBehavior> is accessible.  
+  
+ If you want access to the <xref:System.ServiceModel.Description.IEndpointBehavior> associated with an endpoint instead, you can obtain the endpoints for the service using the <xref:System.ServiceModel.Description.ServiceDescription.Endpoints%2A> property. Then retrieve the <xref:System.ServiceModel.Description.ServiceEndpoint> from the collection with the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> method that employs the relevant search criteria, and call the <xref:System.ServiceModel.Description.ServiceEndpoint.Behaviors%2A> property to obtain the collection of the <xref:System.ServiceModel.Description.IEndpointBehavior> objects.  
+  
+   
+  
+## Examples  
+ <!-- TODO: review snippet reference [!code-csharp[S_UE_ServiceDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#3)]  -->
+ [!code-csharp[S_UE_ServiceDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#3)]
+ <!-- TODO: review snippet reference [!code-vb[S_UE_ServiceDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#3)]  -->
+ [!code-vb[S_UE_ServiceDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationName">
+      <MemberSignature Language="C#" Value="public string ConfigurationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDescription.ConfigurationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the &lt;<see langword="service" />&gt; configuration element.</summary>
+        <value>The name of the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element used to configure the service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This name is not coupled to our configuration model. This is used by service host base to wire up the service. The configuration name is a required string attribute for the [\&lt;service\&gt;](~/docs/framework/configure-apps/file-schema/wcf/service.md) configuration element.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceDescription#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#4)]
+ [!code-vb[S_UE_ServiceDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoints">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpointCollection Endpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ServiceEndpointCollection Endpoints" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDescription.Endpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpointCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of endpoints from the service description.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.ServiceEndpointCollection" /> that contains the endpoints defined for the service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The endpoints in the <xref:System.ServiceModel.Description.ServiceEndpointCollection> returned by this method each contain the address, binding, contract, and behavior information required to communicate with the service. To access this information, you must retrieve the <xref:System.ServiceModel.Description.ServiceEndpoint> from the collection with the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> method that employs the relevant search criteria. Then the <xref:System.ServiceModel.Description.ServiceEndpoint> properties can be used to access the information. For example, the <xref:System.ServiceModel.Description.ContractDescription> is accessed by the <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A> property.  
+  
+ Export metadata about a service endpoint by passing <xref:System.ServiceModel.Description.ServiceEndpoint> as a parameter to <xref:System.ServiceModel.Description.WsdlExporter.ExportEndpoint%28System.ServiceModel.Description.ServiceEndpoint%29>.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceDescription#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#5)]
+ [!code-vb[S_UE_ServiceDescription#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ServiceDescription GetService (object serviceImplementation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ServiceDescription GetService(object serviceImplementation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceDescription.GetService(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceImplementation" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="serviceImplementation">The <see cref="T:System.Object" /> that implements the service.</param>
+        <summary>Returns a service description initialized with a specified service object.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the service object provided.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+  
+ <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Object%29> initializes the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A>, <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>, and <xref:System.ServiceModel.Description.ServiceDescription.ConfigurationName%2A> properties, and ensures that the <xref:System.ServiceModel.ServiceBehaviorAttribute> is attached to the service and adds any relevant service behaviors to <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>.  
+  
+   
+  
+## Examples  
+ The following sample shows how to iterate through the service behaviors contained in the service description.  
+  
+ [!code-csharp[S_UE_ServiceDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#9)]
+ [!code-csharp[S_UE_ServiceDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#9)]
+ [!code-vb[S_UE_ServiceDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#9)]
+ [!code-vb[S_UE_ServiceDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceImplementation" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ServiceDescription GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ServiceDescription GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceDescription.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The <see cref="T:System.Type" /> of the service.</param>
+        <summary>Returns a service description initialized with a specified service type.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the service type provided.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to reflect on behaviors using the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model when replacing <xref:System.ServiceModel.ServiceHostBase> with you own hosting mechanism.  
+  
+ <xref:System.ServiceModel.Description.ServiceDescription.GetService%28System.Type%29> initializes the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A>, <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>, and <xref:System.ServiceModel.Description.ServiceDescription.ConfigurationName%2A> properties, reflects on the type for any the <xref:System.ServiceModel.ServiceBehaviorAttribute> objects and adds them to <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>, and ensures that the <xref:System.ServiceModel.ServiceBehaviorAttribute> is attached to the service.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceDescription#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/snippets.cs#10)]
+ [!code-vb[S_UE_ServiceDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/snippets.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDescription.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the service.</summary>
+        <value>The name of the service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the name is `null`, this property returns the name of the service type. If service type is also `null`, it returns the default service name.  
+  
+ When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A> maps to the Web Service Development Language (WSDL) <`service`> element local name part of the (qualified) `name` attribute.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceDescription#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#6)]
+ [!code-vb[S_UE_ServiceDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDescription.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the namespace for the service.</summary>
+        <value>The namespace for the service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When exporting WSDL metadata, the <xref:System.ServiceModel.Description.ServiceDescription.Namespace%2A>maps to the Web Service Development Language (WSDL) <`service`> element namespace name part of the (qualified) `name` attribute.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceDescription#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#7)]
+ [!code-vb[S_UE_ServiceDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceType">
+      <MemberSignature Language="C#" Value="public Type ServiceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ServiceType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceDescription.ServiceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the service.</summary>
+        <value>An instance of the <see cref="T:System.Type" /> that implements the service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceDescription#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_servicedescription/cs/program.cs#8)]
+ [!code-vb[S_UE_ServiceDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_servicedescription/vb/program.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

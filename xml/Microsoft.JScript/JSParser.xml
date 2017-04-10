@@ -1,0 +1,89 @@
+<Type Name="JSParser" FullName="Microsoft.JScript.JSParser">
+  <TypeSignature Language="C#" Value="public class JSParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JSParser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSParser" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Parses JScript code. This class belongs to the scanning and parsing category. For more information about scanning and parsing, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JSParser (Microsoft.JScript.Context context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.Context context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSParser.#ctor(Microsoft.JScript.Context)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.JScript.Context" />
+      </Parameters>
+      <Docs>
+        <param name="context">The source code to parse.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSParser" /> class, specifying the source code to parse.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ScriptBlock Parse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ScriptBlock Parse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSParser.Parse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ScriptBlock</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Parses the source code.</summary>
+        <returns>The root of the abstract syntax tree that is created by parsing the code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The source code is specified to the <xref:Microsoft.JScript.JSParser.%23ctor%28Microsoft.JScript.Context%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseEvalBody">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.Block ParseEvalBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.Block ParseEvalBody() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSParser.ParseEvalBody" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Block</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Parses the source code. Use this method instead of <see cref="M:Microsoft.JScript.JSParser.Parse" /> when the source code is inside an <see langword="eval" /> method call.</summary>
+        <returns>The root of the abstract syntax tree that is created by parsing the code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The source code is specified to the <xref:Microsoft.JScript.JSParser.%23ctor%28Microsoft.JScript.Context%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

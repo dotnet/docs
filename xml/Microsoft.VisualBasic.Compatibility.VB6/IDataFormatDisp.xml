@@ -1,0 +1,35 @@
+<Type Name="IDataFormatDisp" FullName="Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp">
+  <TypeSignature Language="C#" Value="public interface IDataFormatDisp" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataFormatDisp" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("E675F3F0-91B5-11D0-9484-00A0C91110ED")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides support for the <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataFormat" /> property of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBinding" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is used internally by the tools for upgrading Visual Basic 6.0 applications to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

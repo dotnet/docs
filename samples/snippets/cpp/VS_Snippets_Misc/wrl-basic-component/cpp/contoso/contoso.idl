@@ -1,0 +1,37 @@
+import "inspectable.idl";
+import "Windows.Foundation.idl";
+
+#define COMPONENT_VERSION 1.0
+
+namespace Contoso
+{
+    interface ICalculator;
+    runtimeclass Calculator;
+
+    // <snippet5>
+    [uuid(3FBED04F-EFA7-4D92-B04D-59BD8B1B055E), version(COMPONENT_VERSION)]
+    delegate HRESULT PrimeNumberEvent(int primeNumber);
+    // </snippet5>
+
+    [uuid(5688bac4-cf99-4aae-9f57-7738985ebb96), version(COMPONENT_VERSION), exclusiveto(Calculator)]
+    interface ICalculator : IInspectable
+    {
+        HRESULT Add([in] int a, [in] int b, [out, retval] int* value);
+
+        // <snippet6>
+        [eventadd]
+        HRESULT PrimeNumberFound(
+            [in] PrimeNumberEvent* eventHandler, 
+            [out, retval] EventRegistrationToken* eventCookie);
+        [eventremove] 
+        HRESULT PrimeNumberFound(
+            [in] EventRegistrationToken eventCookie);
+        // </snippet6>
+    }
+
+    [version(COMPONENT_VERSION), activatable(COMPONENT_VERSION)]
+    runtimeclass Calculator
+    {
+        [default] interface ICalculator;
+    }
+}

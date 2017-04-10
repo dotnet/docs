@@ -1,0 +1,405 @@
+<Type Name="LocalPrintServer" FullName="System.Printing.LocalPrintServer">
+  <TypeSignature Language="C#" Value="public sealed class LocalPrintServer : System.Printing.PrintServer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LocalPrintServer extends System.Printing.PrintServer" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.LocalPrintServer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Printing.PrintServer</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the local print server (the computer on which your application is running) and enables management of its print queues.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When your application writes a value to a property of the <xref:System.Printing.LocalPrintServer> object, that change has no effect until the value is passed to the computer that is represented by the <xref:System.Printing.LocalPrintServer> object. To ensure that the change in value takes effect, use the <xref:System.Printing.LocalPrintServer.Commit%2A> method.  
+  
+ In addition, other applications may also change the print service properties of the computer. To ensure that the <xref:System.Printing.LocalPrintServer> object used by your application has the latest actual values, use the <xref:System.Printing.LocalPrintServer.Refresh%2A> method.  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+   
+  
+## Examples  
+ The following example shows how to create an instance of the <xref:System.Printing.LocalPrintServer> class.  
+  
+ [!code-csharp[XpsPrint#PrintQueueSnip](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsPrint/CSharp/XpsPrintHelper.cs#printqueuesnip)]
+ [!code-vb[XpsPrint#PrintQueueSnip](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsPrint/visualbasic/xpsprinthelper.vb#printqueuesnip)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalPrintServer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor in code that tests a printer's capabilities and configures a print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalPrintServer (System.Printing.LocalPrintServerIndexedProperty[] propertiesFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Printing.LocalPrintServerIndexedProperty[] propertiesFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.Printing.LocalPrintServerIndexedProperty[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertiesFilter" Type="System.Printing.LocalPrintServerIndexedProperty[]" />
+      </Parameters>
+      <Docs>
+        <param name="propertiesFilter">An array of properties that the constructor initializes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class that has the specified <see cref="T:System.Printing.LocalPrintServerIndexedProperty" /> array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalPrintServer (System.Printing.PrintSystemDesiredAccess desiredAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Printing.PrintSystemDesiredAccess desiredAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.Printing.PrintSystemDesiredAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="desiredAccess" Type="System.Printing.PrintSystemDesiredAccess" />
+      </Parameters>
+      <Docs>
+        <param name="desiredAccess">A value specifying the type of access to the print server that your application needs.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class that has the specified <see cref="T:System.Printing.PrintSystemDesiredAccess" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+  
+ [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+ [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Printing.PrintServerException">
+          <paramref name="desiredAccess" /> is a value that can be applied only to a <see cref="T:System.Printing.PrintQueue" /> object, not a <see cref="T:System.Printing.LocalPrintServer" /> object. For example, <see cref="F:System.Printing.PrintSystemDesiredAccess.UsePrinter" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalPrintServer (string[] propertiesFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] propertiesFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertiesFilter" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="propertiesFilter">An array of the property names that the constructor initializes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class that has the specified properties.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalPrintServer (System.Printing.LocalPrintServerIndexedProperty[] propertiesFilter, System.Printing.PrintSystemDesiredAccess desiredAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Printing.LocalPrintServerIndexedProperty[] propertiesFilter, valuetype System.Printing.PrintSystemDesiredAccess desiredAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.Printing.LocalPrintServerIndexedProperty[],System.Printing.PrintSystemDesiredAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertiesFilter" Type="System.Printing.LocalPrintServerIndexedProperty[]" />
+        <Parameter Name="desiredAccess" Type="System.Printing.PrintSystemDesiredAccess" />
+      </Parameters>
+      <Docs>
+        <param name="propertiesFilter">An array of properties that the constructor initializes.</param>
+        <param name="desiredAccess">A value specifying the type of access to the print server that your program needs.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class that has the specified <see cref="T:System.Printing.LocalPrintServerIndexedProperty" /> array and the specified <see cref="T:System.Printing.PrintSystemDesiredAccess" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Printing.PrintServerException">
+          <paramref name="desiredAccess" /> is a value that can be applied only to a <see cref="T:System.Printing.PrintQueue" /> object, not a <see cref="T:System.Printing.LocalPrintServer" /> object. For example, <see cref="F:System.Printing.PrintSystemDesiredAccess.UsePrinter" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalPrintServer (string[] propertiesFilter, System.Printing.PrintSystemDesiredAccess desiredAccess);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] propertiesFilter, valuetype System.Printing.PrintSystemDesiredAccess desiredAccess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.#ctor(System.String[],System.Printing.PrintSystemDesiredAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertiesFilter" Type="System.String[]" />
+        <Parameter Name="desiredAccess" Type="System.Printing.PrintSystemDesiredAccess" />
+      </Parameters>
+      <Docs>
+        <param name="propertiesFilter">An array of the property names that the constructor initializes.</param>
+        <param name="desiredAccess">A value specifying the type of access to the print server that your application needs.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.LocalPrintServer" /> class that has the specified properties and <see cref="T:System.Printing.PrintSystemDesiredAccess" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Printing.PrintServerException">
+          <paramref name="desiredAccess" /> is a value that can be applied only to a <see cref="T:System.Printing.PrintQueue" /> object, not a <see cref="T:System.Printing.LocalPrintServer" /> object. For example, <see cref="F:System.Printing.PrintSystemDesiredAccess.UsePrinter" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public override sealed void Commit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.Commit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Writes any changes that your application made to the properties of the <see cref="T:System.Printing.LocalPrintServer" /> to the actual print server that the object represents.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method requires that the <xref:System.Printing.LocalPrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess> rights.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+  
+ [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+ [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Printing.PrintServerException">Some properties are not committed.</exception>
+        <exception cref="T:System.Printing.PrintCommitAttributesException">Some of the properties could not be committed.  
+  
+ \- or -  
+  
+ The <see cref="T:System.Printing.LocalPrintServer" /> object was not created with sufficient rights. See Remarks.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectToPrintQueue">
+      <MemberSignature Language="C#" Value="public bool ConnectToPrintQueue (System.Printing.PrintQueue printer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ConnectToPrintQueue(class System.Printing.PrintQueue printer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.ConnectToPrintQueue(System.Printing.PrintQueue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printer" Type="System.Printing.PrintQueue" />
+      </Parameters>
+      <Docs>
+        <param name="printer">The print queue to connect.</param>
+        <summary>Connects the local print server to the specified <see cref="T:System.Printing.PrintQueue" />.</summary>
+        <returns>
+          <see langword="true" /> if the connection is made; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Printing.PrintServerException">A print queue that matches the <see cref="P:System.Printing.PrintQueue.FullName" /> property of the <paramref name="printer" /> is not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectToPrintQueue">
+      <MemberSignature Language="C#" Value="public bool ConnectToPrintQueue (string printQueuePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ConnectToPrintQueue(string printQueuePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.ConnectToPrintQueue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printQueuePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="printQueuePath">The full path of the print queue that is being connected.</param>
+        <summary>Connects to the print queue that is specified by using the <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if the connection is made; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Printing.PrintServerException">A print queue with the specified path is not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrintQueue">
+      <MemberSignature Language="C#" Value="public System.Printing.PrintQueue DefaultPrintQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintQueue DefaultPrintQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.LocalPrintServer.DefaultPrintQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default print queue.</summary>
+        <value>The <see cref="T:System.Printing.PrintQueue" /> that is designated as the default queue for the local computer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Your application will have only <xref:System.Printing.PrintSystemDesiredAccess> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this property in code that will install a second printer that differs in its properties from an existing printer only in location, port, and shared status.  
+  
+ [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+ [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectFromPrintQueue">
+      <MemberSignature Language="C#" Value="public bool DisconnectFromPrintQueue (System.Printing.PrintQueue printer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool DisconnectFromPrintQueue(class System.Printing.PrintQueue printer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.DisconnectFromPrintQueue(System.Printing.PrintQueue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printer" Type="System.Printing.PrintQueue" />
+      </Parameters>
+      <Docs>
+        <param name="printer">The print queue that is being disconnected.</param>
+        <summary>Disconnects the local print server from the specified <see cref="T:System.Printing.PrintQueue" />.</summary>
+        <returns>
+          <see langword="true" /> if the disconnection is successful; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Printing.PrintServerException">A print queue matching the <see cref="P:System.Printing.PrintQueue.FullName" /> property of the <paramref name="printer" /> is not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectFromPrintQueue">
+      <MemberSignature Language="C#" Value="public bool DisconnectFromPrintQueue (string printQueuePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool DisconnectFromPrintQueue(string printQueuePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.DisconnectFromPrintQueue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printQueuePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="printQueuePath">The full path to the print queue that is disconnected.</param>
+        <summary>Disconnects from the print queue that is specified in the <see cref="T:System.String" />.</summary>
+        <returns>
+          <see langword="true" /> if the disconnection is successful; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Printing.PrintServerException">A print queue with the specified path is not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultPrintQueue">
+      <MemberSignature Language="C#" Value="public static System.Printing.PrintQueue GetDefaultPrintQueue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Printing.PrintQueue GetDefaultPrintQueue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.GetDefaultPrintQueue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueue</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a reference to the default print queue of the <see cref="T:System.Printing.LocalPrintServer" />.</summary>
+        <returns>The default <see cref="T:System.Printing.PrintQueue" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Your application will have only <xref:System.Printing.PrintSystemDesiredAccess> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this method to discover at run time the properties, and the types of those properties, of a print queue, without using reflection.  
+  
+ [!code-csharp[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/csharp/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/CSharp/Program.cs#showpropertytypeswithoutreflection)]
+ [!code-vb[GetPrintObjectPropertyTypesWithoutReflection#ShowPropertyTypesWithoutReflection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GetPrintObjectPropertyTypesWithoutReflection/visualbasic/program.vb#showpropertytypeswithoutreflection)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public override sealed void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.LocalPrintServer.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Updates the properties of the <see cref="T:System.Printing.LocalPrintServer" /> object so that their values match the values of the print server that the object represents.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any changes that you make to <xref:System.Printing.LocalPrintServer> properties that are not written to the print server by using the <xref:System.Printing.LocalPrintServer.Commit%2A> method are lost when <xref:System.Printing.LocalPrintServer.Refresh%2A> runs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Printing.PrintServerException">Some properties did not update.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

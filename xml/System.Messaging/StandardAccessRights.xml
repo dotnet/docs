@@ -1,0 +1,218 @@
+<Type Name="StandardAccessRights" FullName="System.Messaging.StandardAccessRights">
+  <TypeSignature Language="C#" Value="public enum StandardAccessRights" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed StandardAccessRights extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.StandardAccessRights" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies a set of standard access rights that correspond to operations common to most types of securable objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.StandardAccessRights> class provides access rights for common operations, such as deleting, reading, and writing. The precise meaning of each member is specific to the object type to which it is applied.  
+  
+ <xref:System.Messaging.StandardAccessRights> is one of two enumerations to which the <xref:System.Messaging.GenericAccessRights> enumeration maps extensive read, write, or execute abilities. <xref:System.Messaging.StandardAccessRights> enables you to specify rights common to most objects, for example, deleting the object or reading a security descriptor.  
+  
+ Both <xref:System.Messaging.StandardAccessRights> and <xref:System.Messaging.MessageQueueAccessRights> provide a member for deleting a queue. The needs of the application define which set of flags you use.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights All = int32(2031616)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Combines <see langword="Delete" />, <see langword="ReadSecurity" />, <see langword="WriteSecurity" />, <see langword="ModifyOwner" />, and <see langword="Synchronize" /> access.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Delete = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to delete the object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="Execute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Execute = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Execute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to read the information in the object's security descriptor. On Windows 2000 and Windows NT, the security descriptor contains the security information for a securable object. It identifies the object's owner and primary group. <see langword="Execute" /> is currently defined to equal <see langword="ReadSecurity" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyOwner">
+      <MemberSignature Language="C#" Value="ModifyOwner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights ModifyOwner = int32(524288)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.ModifyOwner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to change the owner in the object's security descriptor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No access.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="Read" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Read = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Read" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to read the information in the object's security descriptor. <see langword="Read" /> is currently defined to equal <see langword="ReadSecurity" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSecurity">
+      <MemberSignature Language="C#" Value="ReadSecurity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights ReadSecurity = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.ReadSecurity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to read the information in the object's security descriptor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Required">
+      <MemberSignature Language="C#" Value="Required" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Required = int32(851968)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Required" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Combines <see langword="Delete" />, <see langword="ReadSecurity" />, <see langword="WriteSecurity" />, and <see langword="ModifyOwner" /> access.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronize">
+      <MemberSignature Language="C#" Value="Synchronize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Synchronize = int32(1048576)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Synchronize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to use the object for synchronization. This enables a thread to wait until the object is in a specific state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="Write" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights Write = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.Write" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to read the information in the object's security descriptor. <see langword="Write" /> is currently defined to equal <see langword="ReadSecurity" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSecurity">
+      <MemberSignature Language="C#" Value="WriteSecurity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.StandardAccessRights WriteSecurity = int32(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.StandardAccessRights.WriteSecurity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.StandardAccessRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right to modify the discretionary access control list (DACL) in the security descriptor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The DACL controls access to the object. Being able to write to the DACL gives the user the ability to set security for the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

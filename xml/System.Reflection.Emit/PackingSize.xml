@@ -1,0 +1,280 @@
+<Type Name="PackingSize" FullName="System.Reflection.Emit.PackingSize">
+  <TypeSignature Language="C#" Value="public enum PackingSize" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PackingSize extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.PackingSize" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies one of two factors that determine the memory alignment of fields when a type is marshaled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Packing size affects the alignment of fields in structures and classes whose organization is <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>. The packing size is one of two factors that determine the offset of a field when the structure or class is marshaled; the other factor is the effective size of the field. To determine the offset of a field:  
+  
+1.  Compute the minimum value for the offset by adding the size of the preceding field to the offset of the preceding field.  
+  
+2.  Compute the natural packing size for the field: If the field is a simple data type, use the size. If the field is an array, use the size of an array element. If the field is itself a structure, compare the packing size of that structure to the size of the largest field in that structure, and use the smaller of the two values.  
+  
+3.  Compute the effective packing size by comparing the packing size to the natural packing size of the field, computed in step 2. Use the smaller of the two numbers.  
+  
+4.  Compute the offset. The offset is the first memory location that is equal to or larger than the minimum, and a multiple of the effective packing size computed in step 3.  
+  
+> [!NOTE]
+>  Once offsets have been computed for all the fields in the class or structure, padding is added so that the overall size is a multiple of the packing size.  
+  
+ For example, in a class containing a `byte` and a `long`, using packing size `Size1`, the offset of the `byte` field is zero (0) and the offset of the `long` field is one (1). If the packing size is `Size4`, the `long` field has offset four (4). In a class containing two `short` fields, using any packing size, the offset of the second `short` field is two (2).  
+  
+> [!NOTE]
+>  Changing the packing size can affect performance if it causes fields to be aligned on offsets that are not multiples of their size.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Size1">
+      <MemberSignature Language="C#" Value="Size1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size1 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is 1 byte.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size128">
+      <MemberSignature Language="C#" Value="Size128" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size128 = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size128" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is 128 bytes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size16">
+      <MemberSignature Language="C#" Value="Size16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size16 = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size16" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is 16 bytes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size2">
+      <MemberSignature Language="C#" Value="Size2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size2 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is 2 bytes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size32">
+      <MemberSignature Language="C#" Value="Size32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size32 = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is 32 bytes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size4">
+      <MemberSignature Language="C#" Value="Size4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size4 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is 4 bytes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size64">
+      <MemberSignature Language="C#" Value="Size64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size64 = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is 64 bytes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size8">
+      <MemberSignature Language="C#" Value="Size8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size8 = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is 8 bytes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Unspecified = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The packing size is not specified.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

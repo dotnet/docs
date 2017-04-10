@@ -1,0 +1,145 @@
+<Type Name="ImeSentenceModeValues" FullName="System.Windows.Input.ImeSentenceModeValues">
+  <TypeSignature Language="C#" Value="public enum ImeSentenceModeValues" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImeSentenceModeValues extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.ImeSentenceModeValues" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the mode of sentence conversion performed by an input method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Input.InputMethod.ImeSentenceMode%2A> property.  
+  
+ [!code-csharp[languageManager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languageManager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Automatic">
+      <MemberSignature Language="C#" Value="Automatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeSentenceModeValues Automatic = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeSentenceModeValues.Automatic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses the sentence conversion method automatically.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Conversation">
+      <MemberSignature Language="C#" Value="Conversation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeSentenceModeValues Conversation = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeSentenceModeValues.Conversation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses conversation-style sentence conversion.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoNotCare">
+      <MemberSignature Language="C#" Value="DoNotCare" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeSentenceModeValues DoNotCare = int32(-2147483648)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeSentenceModeValues.DoNotCare" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method does not care what sentence conversion method is used; the actual sentence conversion mode is indeterminate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeSentenceModeValues None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeSentenceModeValues.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method does not perform any sentence conversion.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PhrasePrediction">
+      <MemberSignature Language="C#" Value="PhrasePrediction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeSentenceModeValues PhrasePrediction = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeSentenceModeValues.PhrasePrediction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses phrase prediction sentence conversion.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PluralClause">
+      <MemberSignature Language="C#" Value="PluralClause" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeSentenceModeValues PluralClause = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeSentenceModeValues.PluralClause" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses plural clause sentence conversion.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleConversion">
+      <MemberSignature Language="C#" Value="SingleConversion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeSentenceModeValues SingleConversion = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeSentenceModeValues.SingleConversion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ImeSentenceModeValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method uses single Kanji/Hanja sentence conversion.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

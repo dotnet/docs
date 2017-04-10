@@ -1,0 +1,37 @@
+<Type Name="XmlSerializationReadCallback" FullName="System.Xml.Serialization.XmlSerializationReadCallback">
+  <TypeSignature Language="C#" Value="public delegate object XmlSerializationReadCallback();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSerializationReadCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializationReadCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Object</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Delegate used by the <see cref="T:System.Xml.Serialization.XmlSerializer" /> class for deserialization of types from SOAP-encoded, non-root XML data.</summary>
+    <returns>The object returned by the callback.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During initialization, the .NET Framework XML serialization infrastructure dynamically generates and compiles a temporary class for deserialization derived from the <xref:System.Xml.Serialization.XmlSerializationReader> class. During this process, the .NET Framework generates read methods that implement the <xref:System.Xml.Serialization.XmlSerializationReadCallback> delegate. It does so for certain mappings between .NET Framework types and XML data types that are serialized through SOAP-encoded XML and are not root elements. Then, as necessary, a read method is called during deserialization.  
+  
+ Do not directly create instances of the <xref:System.Xml.Serialization.XmlSerializationReadCallback> class.  
+  
+ SOAP encoding is described in Section 5 of the SOAP 1.1 specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

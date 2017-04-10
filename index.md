@@ -25,7 +25,7 @@ title: .NET Documentation
                 </a>
             </li>
             <li>
-                <a href="/dotnet/core/api/">
+                <a href="/dotnet/api/?view=netcore-1.1.0">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -43,7 +43,7 @@ title: .NET Documentation
                 </a>
             </li>
             <li>
-                <a href="https://msdn.microsoft.com/library/mt472912(v=vs.110).aspx">
+                <a href="/dotnet/api/?view=netframework-4.7">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -120,11 +120,11 @@ title: .NET Documentation
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="https://msdn.microsoft.com/library/w0x726c2(v=vs.110).aspx">.NET Framework Guide</a></h3>
-                                                <p><a href="https://msdn.microsoft.com/library/hh425099(v=vs.110).aspx">Get Started</a></p>
-                                                <p><a href="https://msdn.microsoft.com/library/hh156542(v=vs.110).aspx">Tutorials</a></p>
-                                                <p><a href="https://msdn.microsoft.com/library/54xbah2z(v=vs.110).aspx">Client Development</a></p>
-                                                <p><a href="https://msdn.microsoft.com/library/bb400852(v=vs.110).aspx">ASP.NET</a></p>
+                                                <h3><a href="/dotnet/articles/framework/">.NET Framework Guide</a></h3>
+                                                <p><a href="/dotnet/articles/framework/get-started/">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/framework/development-guide">Tutorials</a></p>
+                                                <p><a href="/dotnet/articles/framework/develop-client-apps">Client Development</a></p>
+                                                <p><a href="/aspnet/#pivot=aspnet">ASP.NET</a></p>
                                             </div>
                                         </div>
                                     </div>

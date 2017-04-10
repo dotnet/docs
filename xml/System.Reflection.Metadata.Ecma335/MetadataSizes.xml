@@ -1,0 +1,95 @@
+<Type Name="MetadataSizes" FullName="System.Reflection.Metadata.Ecma335.MetadataSizes">
+  <TypeSignature Language="C#" Value="public sealed class MetadataSizes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetadataSizes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MetadataSizes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExternalRowCounts">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;int&gt; ExternalRowCounts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; ExternalRowCounts" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataSizes.ExternalRowCounts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAlignedHeapSize">
+      <MemberSignature Language="C#" Value="public int GetAlignedHeapSize (System.Reflection.Metadata.Ecma335.HeapIndex index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetAlignedHeapSize(valuetype System.Reflection.Metadata.Ecma335.HeapIndex index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MetadataSizes.GetAlignedHeapSize(System.Reflection.Metadata.Ecma335.HeapIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Reflection.Metadata.Ecma335.HeapIndex" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeapSizes">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;int&gt; HeapSizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; HeapSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataSizes.HeapSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowCounts">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;int&gt; RowCounts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;int32&gt; RowCounts" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MetadataSizes.RowCounts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,137 @@
+<Type Name="ProtectedMemory" FullName="System.Security.Cryptography.ProtectedMemory">
+  <TypeSignature Language="C#" Value="public sealed class ProtectedMemory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProtectedMemory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ProtectedMemory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods for protecting and unprotecting memory. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides access to the Data Protection API (DPAPI) available in the Windows XP and later operating systems. This is a service that is provided by the operating system and does not require additional libraries. It provides encryption for sensitive data in memory.  
+  
+ The class consists of two wrappers for the unmanaged DPAPI, [Protect(Byte\<xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and [Unprotect(Byte\<xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A>. These two methods can be used to encrypt and decrypt data in memory.  
+  
+   
+  
+## Examples  
+ The following example shows how to use data protection.  
+  
+ [!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
+ [!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
+ [!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Protect">
+      <MemberSignature Language="C#" Value="public static void Protect (byte[] userData, System.Security.Cryptography.MemoryProtectionScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Protect(unsigned int8[] userData, valuetype System.Security.Cryptography.MemoryProtectionScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userData" Type="System.Byte[]" />
+        <Parameter Name="scope" Type="System.Security.Cryptography.MemoryProtectionScope" />
+      </Parameters>
+      <Docs>
+        <param name="userData">The byte array containing data in memory to protect. The array must be a multiple of 16 bytes.</param>
+        <param name="scope">One of the enumeration values that specifies the scope of memory protection.</param>
+        <summary>Protects the specified data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to protect data in memory. Note that the method does not make a copy of the data, but encrypts the byte array in place. The `userData` parameter must be 16 bytes in length or a multiple of 16 bytes.  
+  
+ Support for this method is available in the Windows XP and later operating systems.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use data protection.  
+  
+ [!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
+ [!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
+ [!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="userData" /> must be 16 bytes in length or in multiples of 16 bytes.</exception>
+        <exception cref="T:System.NotSupportedException">The operating system does not support this method. This method can be used only with the Windows 2000 or later operating systems.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="userData " />is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Unprotect">
+      <MemberSignature Language="C#" Value="public static void Unprotect (byte[] encryptedData, System.Security.Cryptography.MemoryProtectionScope scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unprotect(unsigned int8[] encryptedData, valuetype System.Security.Cryptography.MemoryProtectionScope scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedMemory.Unprotect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="encryptedData" Type="System.Byte[]" />
+        <Parameter Name="scope" Type="System.Security.Cryptography.MemoryProtectionScope" />
+      </Parameters>
+      <Docs>
+        <param name="encryptedData">The byte array in memory to unencrypt.</param>
+        <param name="scope">One of the enumeration values that specifies the scope of memory protection.</param>
+        <summary>Unprotects data in memory that was protected using the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to unencrypt data in memory that was encrypted using the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> method.  
+  
+ Support for this method is available in the Windows XP and later operating systems.  
+  
+   
+  
+## Examples  
+ The following example shows how to use data protection.  
+  
+ [!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
+ [!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
+ [!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The operating system does not support this method. This method can be used only with the Windows 2000 or later operating systems.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="encryptedData " />is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">
+          <paramref name="encryptedData " />is empty.  
+  
+ -or-  
+  
+ This call was not implemented.  
+  
+ -or-  
+  
+ NTSTATUS contains an error.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

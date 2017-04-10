@@ -1,0 +1,131 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      x:Class="ExpenseIt.HomePage"
+      xmlns:localValidation="clr-namespace:ExpenseIt.Validation"
+      Initialized="Init"
+      DataContext="{StaticResource ExpenseData}"
+      Name="root"
+      WindowTitle="ExpenseIt - Create Report"
+      Width="750"
+      Height="560"
+      JournalEntry.KeepAlive="True"
+      >
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition MinWidth="290" />
+      <ColumnDefinition Width="50*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="10" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition Height="50" />
+      <RowDefinition />
+      <RowDefinition Height="80" />
+      <RowDefinition Height="100" />
+    </Grid.RowDefinitions>
+    <Image Style="{StaticResource WatermarkImage}" />
+    <Label Style="{StaticResource Label}"
+               Grid.Column="0"
+               Grid.Row="1" Target="{Binding ElementName=email}">_Email:</Label>
+    <TextBox Style="{StaticResource InputText}"
+             Grid.Column="1"
+             Grid.Row="1"
+             Name="email" >
+      <TextBox.Text>
+        <Binding Path="Alias" UpdateSourceTrigger="PropertyChanged">
+          <!-- SECURITY: Email alias must be valid email address eg xxx@xxx.com -->
+          <Binding.ValidationRules>
+            <localValidation:EmailValidationRule />
+          </Binding.ValidationRules>
+        </Binding>
+      </TextBox.Text>
+      <TextBox.ToolTip>Enter email.</TextBox.ToolTip>
+    </TextBox>
+
+    <Label Style="{StaticResource Label}"
+               Grid.Column="0" Grid.Row="2"
+               Target="{Binding ElementName=EmployeeNumberTextBox}">Employee _Number:</Label>
+    <TextBox Style="{StaticResource InputText}"
+             Grid.Column="1"
+             Grid.Row="2" Name="EmployeeNumberTextBox">
+      <TextBox.Text>
+        <Binding Path="EmployeeNumber" UpdateSourceTrigger="PropertyChanged">
+          <!-- SECURITY: EmployeeNumber must be an int and 5 digits long -->
+          <Binding.ValidationRules>
+            <localValidation:NumberValidationRule IsFixedLength="True"  Length="5" />
+          </Binding.ValidationRules>
+        </Binding>
+      </TextBox.Text>
+      <TextBox.ToolTip>Enter employee number.</TextBox.ToolTip>
+    </TextBox>
+    <Label Style="{StaticResource Label}"
+               Grid.Column="0"
+               Grid.Row="3" Target="{Binding ElementName=costCenter}">_Cost Center:</Label>
+    <ComboBox Name="costCenter"
+              Height="25"
+              Grid.Column="1"
+              Grid.Row="3"
+              Margin="10,10,20,10"
+              ItemTemplate="{StaticResource CostCenterTemplate}"
+              ItemsSource="{Binding Source={StaticResource CostCenters}}"
+              SelectedValue="{Binding Path=CostCenter}"
+              SelectedValuePath="@Number" >
+      <ComboBox.ToolTip>
+        <TextBlock>Choose cost center.</TextBlock>
+      </ComboBox.ToolTip>
+    </ComboBox>
+    <Label Style="{StaticResource Label}"
+               Grid.Column="0"
+               Grid.Row="4"
+               Target="{Binding ElementName=employeeTypeOptions}">
+      E_mployees:
+    </Label>
+
+    <ListBox Name="employeeTypeOptions"
+             SelectionChanged="OnEmployeeTypeChanged" 
+             Style="{StaticResource HorizontalRadioList}">
+      <ListBoxItem Style="{StaticResource HorizontalRadio}">
+        FTE
+        <ListBoxItem.ToolTip>
+          <TextBlock>FTE employee type</TextBlock>
+        </ListBoxItem.ToolTip>
+      </ListBoxItem>
+      <ListBoxItem Style="{StaticResource HorizontalRadio}">
+        CSG
+        <ListBoxItem.ToolTip>
+          <TextBlock>CSG employee type</TextBlock>
+        </ListBoxItem.ToolTip>
+      </ListBoxItem>
+      <ListBoxItem Style="{StaticResource HorizontalRadio}">
+        Vendor
+        <ListBoxItem.ToolTip>
+          <TextBlock>Vendor employee type</TextBlock>
+        </ListBoxItem.ToolTip>
+      </ListBoxItem>
+    </ListBox>
+    <ListBox Margin="20,0,20,0"
+             Grid.Column="1"
+             Grid.ColumnSpan="1"
+             Grid.RowSpan="1"
+             Grid.Row="5"
+             Style="{StaticResource EmployeeList}"
+             ItemTemplate="{StaticResource EmployeeItemTemplate}"
+             ItemsSource="{Binding Source={StaticResource Employees}}">
+      <ListBox.ToolTip>
+        <TextBlock>Choose employee name.</TextBlock>
+      </ListBox.ToolTip>
+    </ListBox>
+    <Button Grid.Column="1"
+            Grid.Row="6"
+            Margin="40,20,40,10"
+            Click="CreateReport">
+      Create _Report
+      <Button.ToolTip>
+        <TextBlock>Create report.</TextBlock>
+      </Button.ToolTip>
+    </Button>
+  </Grid>
+</Page>
+

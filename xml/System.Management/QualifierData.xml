@@ -1,0 +1,257 @@
+<Type Name="QualifierData" FullName="System.Management.QualifierData">
+  <TypeSignature Language="C#" Value="public class QualifierData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QualifierData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Management.QualifierData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about a WMI qualifier.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example lists qualifier information about the **Win32_Service** class using the <xref:System.Management.QualifierData> class. For more information about **Win32_Service**, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-csharp[wminet_QualifierData#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_QualifierData/cs/QualifierData.cs#1)]
+ [!code-vb[wminet_QualifierData#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_QualifierData/vb/QualifierData.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsAmended">
+      <MemberSignature Language="C#" Value="public bool IsAmended { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAmended" />
+      <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.IsAmended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the qualifier is amended.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the qualifier is amended.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Amended qualifiers are qualifiers whose value can be localized through WMI. Localized qualifiers reside in separate namespaces in WMI and can be merged into the basic class definition when retrieved.  
+  
+## Property Value  
+ `true` if this qualifier is amended; otherwise, `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLocal">
+      <MemberSignature Language="C#" Value="public bool IsLocal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLocal" />
+      <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.IsLocal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the qualifier has been defined locally on this class or has been propagated from a base class.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the qualifier has been defined locally on this class or has been propagated from a base class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ `true` if the qualifier has been defined locally on this class; otherwise, `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOverridable">
+      <MemberSignature Language="C#" Value="public bool IsOverridable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOverridable" />
+      <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.IsOverridable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the value of the qualifier can be overridden when propagated.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the value of the qualifier can be overridden when propagated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ `true` if the value of the qualifier can be overridden when propagated; otherwise, `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the name of the qualifier.</summary>
+        <value>Returns a <see cref="T:System.String" /> value containing the name of the qualifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ The name of the qualifier.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example lists qualifier information about the **Win32_Service** class using the <xref:System.Management.QualifierData> class. For more information about **Win32_Service**, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-csharp[wminet_QualifierData_Name#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_QualifierData_Name/cs/QualifierData_Name.cs#1)]
+ [!code-vb[wminet_QualifierData_Name#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_QualifierData_Name/vb/QualifierData_Name.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropagatesToInstance">
+      <MemberSignature Language="C#" Value="public bool PropagatesToInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PropagatesToInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.PropagatesToInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the qualifier should be propagated to instances of the class.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the qualifier should be propagated to instances of the class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ `true` if this qualifier should be propagated to instances of the class; otherwise, `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropagatesToSubclass">
+      <MemberSignature Language="C#" Value="public bool PropagatesToSubclass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PropagatesToSubclass" />
+      <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.PropagatesToSubclass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the qualifier should be propagated to                    subclasses of the class.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the qualifier should be propagated to subclasses of the class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ `true` if the qualifier should be propagated to subclasses of this class; otherwise, `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Management.QualifierData.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the qualifier.</summary>
+        <value>Returns an <see cref="T:System.Object" /> value containing the value of the qualifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Qualifiers can only be of the following subset of CIM types: string, uint16, uint32, sint32, uint64, sint64, real32, real64, or bool.  
+  
+## Property Value  
+ The value of the qualifier.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example lists qualifier information about the **Win32_Service** class using the <xref:System.Management.QualifierData> class. For more information about **Win32_Service**, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-csharp[wminet_QualifierData_Value#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_QualifierData_Value/cs/QualifierData_Value.cs#1)]
+ [!code-vb[wminet_QualifierData_Value#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_QualifierData_Value/vb/QualifierData_Value.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

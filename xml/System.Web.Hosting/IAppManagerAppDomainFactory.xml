@@ -1,0 +1,66 @@
+<Type Name="IAppManagerAppDomainFactory" FullName="System.Web.Hosting.IAppManagerAppDomainFactory">
+  <TypeSignature Language="C#" Value="public interface IAppManagerAppDomainFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAppManagerAppDomainFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAppManagerAppDomainFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("02998279-7175-4d59-aa5a-fb8e44d4ca9d")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a method used to create an <see cref="T:System.AppDomain" /> instance for a Web-application manager and a method used to stop all <see cref="T:System.AppDomain" /> instances for a Web-application manager.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public object Create (string appId, string appPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(string appId, string appPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppManagerAppDomainFactory.Create(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appId" Type="System.String" />
+        <Parameter Name="appPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appId">The unique identifier for the new application.</param>
+        <param name="appPath">The path to the new application's files.</param>
+        <summary>Creates a new application domain for the specified Web application.</summary>
+        <returns>A new application domain for the specified Web application.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppManagerAppDomainFactory.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stops all application domains associated with this application manager.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

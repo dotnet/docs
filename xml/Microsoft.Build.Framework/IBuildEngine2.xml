@@ -1,0 +1,135 @@
+<Type Name="IBuildEngine2" FullName="Microsoft.Build.Framework.IBuildEngine2">
+  <TypeSignature Language="C#" Value="public interface IBuildEngine2 : Microsoft.Build.Framework.IBuildEngine" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildEngine2 implements class Microsoft.Build.Framework.IBuildEngine" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine2" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.IBuildEngine</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a way for task authors to use a subset of the functionality of the [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Build.Framework.IBuildEngine2> extends <xref:Microsoft.Build.Framework.IBuildEngine>, allowing you to build multiple project files in parallel on systems containing multiple processors, or processors with multiple cores.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildProjectFile">
+      <MemberSignature Language="C#" Value="public bool BuildProjectFile (string projectFileName, string[] targetNames, System.Collections.IDictionary globalProperties, System.Collections.IDictionary targetOutputs, string toolsVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BuildProjectFile(string projectFileName, string[] targetNames, class System.Collections.IDictionary globalProperties, class System.Collections.IDictionary targetOutputs, string toolsVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine2.BuildProjectFile(System.String,System.String[],System.Collections.IDictionary,System.Collections.IDictionary,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileName" Type="System.String" />
+        <Parameter Name="targetNames" Type="System.String[]" />
+        <Parameter Name="globalProperties" Type="System.Collections.IDictionary" />
+        <Parameter Name="targetOutputs" Type="System.Collections.IDictionary" />
+        <Parameter Name="toolsVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileName">The name of the project file to build.</param>
+        <param name="targetNames">The names of the target in the project to build. Separate multiple targets with a semicolon (;). <see langword="Null" /> values are acceptable.</param>
+        <param name="globalProperties">An <see cref="T:System.Collections.IDictionary" /> of additional global properties to apply to the project. The key and value must be <see langword="String" /> data types.</param>
+        <param name="targetOutputs">The outputs of each specified target. <see langword="Null" /> values are acceptable.</param>
+        <param name="toolsVersion">Default value = "3.5." Specifies the Toolset version for the build to use. <see langword="Null" /> values are acceptable.</param>
+        <summary>Initiates a build of a project file. If the build is successful, the outputs of the specified targets are returned, if any exist.</summary>
+        <returns>
+          <see langword="true" /> if the build was successful; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no targets are specified, [!INCLUDE[vstecmsbuild](~/includes/vstecmsbuild-md.md)] builds the default targets of the project.  
+  
+ Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildProjectFilesInParallel">
+      <MemberSignature Language="C#" Value="public bool BuildProjectFilesInParallel (string[] projectFileNames, string[] targetNames, System.Collections.IDictionary[] globalProperties, System.Collections.IDictionary[] targetOutputsPerProject, string[] toolsVersion, bool useResultsCache, bool unloadProjectsOnCompletion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BuildProjectFilesInParallel(string[] projectFileNames, string[] targetNames, class System.Collections.IDictionary[] globalProperties, class System.Collections.IDictionary[] targetOutputsPerProject, string[] toolsVersion, bool useResultsCache, bool unloadProjectsOnCompletion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine2.BuildProjectFilesInParallel(System.String[],System.String[],System.Collections.IDictionary[],System.Collections.IDictionary[],System.String[],System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileNames" Type="System.String[]" />
+        <Parameter Name="targetNames" Type="System.String[]" />
+        <Parameter Name="globalProperties" Type="System.Collections.IDictionary[]" />
+        <Parameter Name="targetOutputsPerProject" Type="System.Collections.IDictionary[]" />
+        <Parameter Name="toolsVersion" Type="System.String[]" />
+        <Parameter Name="useResultsCache" Type="System.Boolean" />
+        <Parameter Name="unloadProjectsOnCompletion" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileNames">The names of the project files to build.</param>
+        <param name="targetNames">The names of the targets in the project to build. Separate multiple targets with a semicolon (;). <see langword="Null" /> values are acceptable.</param>
+        <param name="globalProperties">An <see cref="T:System.Collections.IDictionary" /> of additional global properties to apply to the project. The key and value must be <see langword="String" /> data types. Array entries can be <see langword="null" />.</param>
+        <param name="targetOutputsPerProject">The outputs of each specified target. <see langword="Null" /> values are acceptable.</param>
+        <param name="toolsVersion">Default value = "3.5." Specifies the Toolset version for the build to use. <see langword="Null" /> values are acceptable.</param>
+        <param name="useResultsCache">If <see langword="true" />, the operation runs only if the cache does not already contain the result. After the operation the result is stored in the cache.</param>
+        <param name="unloadProjectsOnCompletion">If <see langword="true" /> the project is unloaded once the operation completes.</param>
+        <summary>Allows tasks to initiate parallel builds of the specified project files on systems with multiple processors or multiple core processors. If the builds are successful, the outputs of the specified targets are returned, if any exist.</summary>
+        <returns>
+          <see langword="True" /> if the build succeeded, <see langword="false" /> if otherwise.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both `targetNames` and `targetOutputs` accept `null` values. If no targets are specified, then the default targets are built. Target outputs are returned as <xref:Microsoft.Build.Framework.ITaskItem> arrays indexed by target name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRunningMultipleNodes">
+      <MemberSignature Language="C#" Value="public bool IsRunningMultipleNodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRunningMultipleNodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine2.IsRunningMultipleNodes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns whether the system is running in single- or multi-processor mode.</summary>
+        <value>
+          <see langword="true" /> if the system is running in multi-processor mode, <see langword="false" /> otherwise.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The build engine is in single-processor mode (`IsRunningMultipleNodes` = `false`) when it is initialized with the number of CPUs equal to 1 and the build engine is not a child engine. The build engine is in multi-processor mode (`IsRunningMultipleNodes` = `true`) when it is initialized with a number of CPUs greater than 1, or when the build engine is a child engine.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

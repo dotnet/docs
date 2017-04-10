@@ -1,0 +1,53 @@
+---
+title: "ICorDebugBreakpointEnum Interface1 | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework-4.6"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+apiname: 
+  - "ICorDebugBreakpointEnum"
+apilocation: 
+  - "mscordbi.dll"
+apitype: "COM"
+f1_keywords: 
+  - "ICorDebugBreakpointEnum"
+dev_langs: 
+  - "C++"
+helpviewer_keywords: 
+  - "ICorDebugBreakpointEnum interface [.NET Framework debugging]"
+ms.assetid: 4c6f4f6e-52cc-402e-881b-7b8526544c90
+caps.latest.revision: 12
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+# ICorDebugBreakpointEnum Interface1
+Implements ICorDebugEnum methods, and enumerates ICorDebugBreakpoint arrays.  
+  
+## Methods  
+  
+|Method|Description|  
+|------------|-----------------|  
+|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugbreakpointenum-next-method.md)|Gets the specified number of `ICorDebugBreakpoint` instances from the enumeration, starting at the current position.|  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This interface does not support being called remotely, either cross-machine or cross-process.  
+  
+## Requirements  
+ **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+  
+ **Header:** CorDebug.idl, CorDebug.h  
+  
+ **Library:** CorGuids.lib  
+  
+ **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
+  
+## See Also  
+ [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)

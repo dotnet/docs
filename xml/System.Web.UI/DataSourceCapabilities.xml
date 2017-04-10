@@ -1,0 +1,96 @@
+<Type Name="DataSourceCapabilities" FullName="System.Web.UI.DataSourceCapabilities">
+  <TypeSignature Language="C#" Value="public enum DataSourceCapabilities" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataSourceCapabilities extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceCapabilities" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a way to request processing beyond record retrieval for a data retrieval operation of a data source control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data source controls use the <xref:System.Web.UI.DataSourceCapabilities> enumeration in conjunction with the <xref:System.Web.UI.DataSourceSelectArguments> class to request paging, sorting, or other select-specific capabilities when performing a data retrieval operation. The requested capabilities are checked against the actual capabilities of the data source control during the data retrieval operation, and if they do not match an exception is raised.  
+  
+ This enumeration supports the <xref:System.FlagsAttribute> attribute, which enables you to use more than one member at a time.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceCapabilities None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceCapabilities.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents no paging, sorting, or total row count retrieval capabilities.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Page">
+      <MemberSignature Language="C#" Value="Page" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceCapabilities Page = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceCapabilities.Page" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the capability to page through the rows returned by an <see cref="M:System.Web.UI.DataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RetrieveTotalRowCount">
+      <MemberSignature Language="C#" Value="RetrieveTotalRowCount" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceCapabilities RetrieveTotalRowCount = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceCapabilities.RetrieveTotalRowCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the capability to retrieve a total row count of data, which corresponds to using the <see cref="F:System.Web.UI.DataSourceOperation.SelectCount" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sort">
+      <MemberSignature Language="C#" Value="Sort" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataSourceCapabilities Sort = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceCapabilities.Sort" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceCapabilities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the capability to sort through the rows returned by an <see cref="M:System.Web.UI.DataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> operation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

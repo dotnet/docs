@@ -1,0 +1,86 @@
+<Type Name="PatternMatcher" FullName="System.Web.Services.Protocols.PatternMatcher">
+  <TypeSignature Language="C#" Value="public sealed class PatternMatcher" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PatternMatcher extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.PatternMatcher" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Searches HTTP response text for return values for Web service clients.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.PatternMatcher> class performs pattern matching using regular expressions to find Web method return values in text encoded in the body of an HTTP response. The <xref:System.Web.Services.Protocols.PatternMatcher> class is called by the client-side <xref:System.Web.Services.Protocols.TextReturnReader> class, which deserializes Web service return values.  
+  
+ Text pattern matching provides a way for Web services to retrieve HTML content without converting it to XML documents that must be bound to XML Schema definitions. Regular expression search targets are specified in a Web Services Description Language (WSDL) document via `match` XML elements within `text` elements. Both elements belong to the namespace http://microsoft.com/wsdl/mime/textMatching/.  
+  
+ When `match` elements are specified in a WSDL document, the Wsdl.exe tool applies <xref:System.Web.Services.Protocols.MatchAttribute> attributes to the corresponding Web methods in the client proxy class that is generated. A <xref:System.Web.Services.Protocols.MatchAttribute> attribute's properties establish the search criteria for a <xref:System.Web.Services.Protocols.PatternMatcher> instance.  
+  
+ A developer typically does not need to directly use <xref:System.Web.Services.Protocols.PatternMatcher>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PatternMatcher (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.PatternMatcher.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">A <see cref="T:System.Type" /> that specifies the return type for a Web method.</param>
+        <summary>Creates a <see cref="T:System.Web.Services.Protocols.PatternMatcher" /> instance based on the input type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.PatternMatcher> instance's properties, such as the regular expression to make the search target, are populated based on <xref:System.Web.Services.Protocols.MatchAttribute> attributes applied to fields of the return type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Match">
+      <MemberSignature Language="C#" Value="public object Match (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Match(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.PatternMatcher.Match(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to search, which is the body of the HTTP response.</param>
+        <summary>Searches a text input to deserialize an object representing a Web method return value.</summary>
+        <returns>An object representing a Web method return value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.PatternMatcher.Match%2A> method's return value is the Web method return value deserialized from the input text.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

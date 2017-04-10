@@ -1,0 +1,283 @@
+<Type Name="ValidationErrorCollection" FullName="System.Workflow.ComponentModel.Compiler.ValidationErrorCollection">
+  <TypeSignature Language="C#" Value="public sealed class ValidationErrorCollection : System.Collections.ObjectModel.Collection&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ValidationErrorCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Workflow.ComponentModel.Compiler.ValidationError&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Workflow.ComponentModel.Compiler.ValidationError</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Holds a collection of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following example shows how to create and manipulate validation errors and a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendEMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#235](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#235)]
+ [!code-vb[WF_Samples#235](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#235)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValidationErrorCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+ [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValidationErrorCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.ComponentModel.Compiler.ValidationError&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Compiler.ValidationError})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Collections.IEnumerable" /> collection of type <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /></param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class from an <see cref="T:System.Collections.IEnumerable" /> collection of type <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /></summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValidationErrorCollection (System.Workflow.ComponentModel.Compiler.ValidationErrorCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.#ctor(System.Workflow.ComponentModel.Compiler.ValidationErrorCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains validation errors.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class by using a <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+ [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt; value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.ComponentModel.Compiler.ValidationError&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.AddRange(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Compiler.ValidationError})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Compiler.ValidationError&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="value">A collection of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> elements to add to the end of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> collection.</param>
+        <summary>Copies the collection of enumerable elements to the end of the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HasErrors">
+      <MemberSignature Language="C#" Value="public bool HasErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasErrors" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.HasErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the collection contains <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects that indicate compilation errors.</summary>
+        <value>
+          <see langword="true" /> if the activity has generated validation errors; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an <xref:System.Workflow.ComponentModel.Activity> has generated a warning, the warning is considered an error in the context of this property.  
+  
+   
+  
+## Examples  
+ The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+ [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasWarnings">
+      <MemberSignature Language="C#" Value="public bool HasWarnings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasWarnings" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.HasWarnings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property indicates whether the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> contains at least one <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> object, which indicates a compilation warning.</summary>
+        <value>
+          <see langword="true" /> if the activity has generated validation warnings; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Workflow.ComponentModel.Compiler.ValidationError item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Workflow.ComponentModel.Compiler.ValidationError item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.InsertItem(System.Int32,System.Workflow.ComponentModel.Compiler.ValidationError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Workflow.ComponentModel.Compiler.ValidationError" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Workflow.ComponentModel.Compiler.ValidationError item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Workflow.ComponentModel.Compiler.ValidationError item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.SetItem(System.Int32,System.Workflow.ComponentModel.Compiler.ValidationError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Workflow.ComponentModel.Compiler.ValidationError" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.ValidationError[] ToArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Compiler.ValidationError[] ToArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.ToArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationError[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new instance of an array that contains all <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects that are contained in this collection.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> array of <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> classes.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows how to create and manipulate a validation error collection as part of a custom validation routine.  
+  
+ This code example is part of the Send E-mail SDK sample and is from the SendMailActivity.cs file. For more information, see [Send Mail Activity](http://msdn.microsoft.com/en-us/bfb5939e-60a9-4037-af4e-2cea9e654669).  
+  
+ [!code-csharp[WF_Samples#234](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#234)]
+ [!code-vb[WF_Samples#234](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#234)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

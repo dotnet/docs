@@ -1,0 +1,27 @@
+﻿<!--<snippet2>-->
+<!DOCTYPE doc [
+
+  <!ELEMENT doc ANY>
+ 
+  <!NOTATION w SYSTEM "wine.exe">
+  <!NOTATION v PUBLIC "vine.exe">
+
+  <!NOTATION jpg PUBLIC "Jpeg picture format">
+  <!NOTATION gif SYSTEM "Gif picture format">
+
+  <!ENTITY wn PUBLIC "http://www.cohowinery.com" "coho.exe" NDATA w>
+  <!ENTITY vn SYSTEM "http://www.cohovineyard.com" NDATA v>
+  <!ENTITY mytxt "Text Sample">
+
+  <!ATTLIST doc 
+        src     ENTITY         #IMPLIED
+        srcs    ENTITIES       #IMPLIED
+        jpgPic  NOTATION (jpg) #IMPLIED
+        gifPic  NOTATION (gif) #REQUIRED>
+]>
+
+<doc jpgPic="jpg" gifPic="gif" srcs="vn wn">
+    something
+</doc>
+<!--</snippet2>-->
+

@@ -1,0 +1,207 @@
+<Type Name="EndpointReference" FullName="System.IdentityModel.Protocols.WSTrust.EndpointReference">
+  <TypeSignature Language="C#" Value="public class EndpointReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EndpointReference extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.EndpointReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a wsa:EndpointReference element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The wsa:EndpointReference element can be used in wst:OnBehalfOf and wp:AppliesTo elements inside of a wsp:RequestSecurityToken element to specify an endpoint reference.  
+  
+ Supports either the WS-Addressing standard schema namespace (http://schemas.xmlsoap.org/ws/2004/08/addressing) or the WS-Addressing 1.0 schema namespace (http://www.w3.org/2005/08/addressing) when reading. On write only the WS-Addressing 1.0 namespace (http://www.w3.org/2005/08/addressing) is supported.  
+  
+ For more information about the wsa:EndpointReference element, see the Web Services Addressing – Core specification. For more information about its use in WS-Trust protocols, see the version of the WS-Trust specification that applies to your scenario.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndpointReference (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.EndpointReference.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">An absolute URI that specifies the address of the endpoint reference. Initializes the <see cref="P:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.EndpointReference" /> class with the specified URI.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="uri" /> is not an absolute URI.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="uri" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Details">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; Details { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt; Details" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the XML elements that are contained in the endpoint reference. The wsa:Address element is not included in the collection.</summary>
+        <value>A collection of the XML elements that are contained in the endpoint reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection contains all of the child elements of the wsa:EndpointReference element except the wsa:Address element. The collection is populated by the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> method.  
+  
+ The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property contains the value of the wsa:Address element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFrom">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Protocols.WSTrust.EndpointReference ReadFrom (System.Xml.XmlDictionaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Protocols.WSTrust.EndpointReference ReadFrom(class System.Xml.XmlDictionaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom(System.Xml.XmlDictionaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.EndpointReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML dictionary reader from which to read the endpoint reference.</param>
+        <summary>Reads a wsa:EndpointReference element from the specified XML dictionary reader.</summary>
+        <returns>The endpoint reference read from the XML dictionary reader or <see langword="null" /> if the wsa:EndpointReference element cannot be read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> overload topic for details.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFrom">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Protocols.WSTrust.EndpointReference ReadFrom (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Protocols.WSTrust.EndpointReference ReadFrom(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.EndpointReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader from which to read the endpoint reference.</param>
+        <summary>Reads a wsa:EndpointReference element from the specified XML reader.</summary>
+        <returns>The endpoint reference read from the XML dictionary reader or <see langword="null" /> if the wsa:EndpointReference element cannot be read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.ReadFrom%2A> overload topic for details.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uri">
+      <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI that specifies the address of the endpoint reference.</summary>
+        <value>The address of the endpoint reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Represents the contents of the wsa:Address child element of the wsa:EndpointReference element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTo">
+      <MemberSignature Language="C#" Value="public void WriteTo (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.EndpointReference.WriteTo(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer to which to write the endpoint reference.</param>
+        <summary>Writes the <see cref="T:System.IdentityModel.Protocols.WSTrust.EndpointReference" /> as a &lt;wsa:EndpointReference&gt; element to the specified XML writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only supports writing the WS-Addressing 1.0 standard schema namespace (http://www.w3.org/2005/08/addressing). The wsa:Address element is written first with the value of the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property, then the other elements specified in the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection are written.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="ReadFrom">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads an wsa:EndpointReference element from the specified reader.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Reads the contents of the wsa:EndpointReference element and returns an <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> object. The WS-Addressing namespace can be either the WS-Addressing standard schema (http://schemas.xmlsoap.org/ws/2004/08/addressing) or the WS-Addressing 1.0 standard schema (http://www.w3.org/2005/08/addressing). The wsa:Address element must be the first child element of the wsa:EndpointReference element. The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property in the returned <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> is set to the URI specified by the wsa:Address element. All other child elements are added to the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

@@ -1,0 +1,103 @@
+<Type Name="DesignerActionUIStateChangeEventArgs" FullName="System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs">
+  <TypeSignature Language="C#" Value="public class DesignerActionUIStateChangeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionUIStateChangeEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event occurs when a smart tag panel is displayed or hidden. This event is not generated directly by the panel but rather by the <xref:System.ComponentModel.Design.DesignerActionUIService> class when its <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> and <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> methods are executed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionUIStateChangeEventArgs (object relatedObject, System.ComponentModel.Design.DesignerActionUIStateChangeType changeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object relatedObject, valuetype System.ComponentModel.Design.DesignerActionUIStateChangeType changeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.#ctor(System.Object,System.ComponentModel.Design.DesignerActionUIStateChangeType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relatedObject" Type="System.Object" />
+        <Parameter Name="changeType" Type="System.ComponentModel.Design.DesignerActionUIStateChangeType" />
+      </Parameters>
+      <Docs>
+        <param name="relatedObject">The object that is associated with the panel.</param>
+        <param name="changeType">A value that specifies whether the panel is being displayed or hidden.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the <xref:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged> event, the `relatedObject` parameter always references the <xref:System.ComponentModel.Component?displayProperty=fullName> that the panel is associated with.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeType">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerActionUIStateChangeType ChangeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.Design.DesignerActionUIStateChangeType ChangeType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.ChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a flag indicating whether the smart tag panel is being displayed or hidden.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" /> that indicates the state of the panel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the panel is being hidden through a call to the <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> method, this property has a value of <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType>. If the panel is being shown through a call to <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A>, this property has a value of <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedObject">
+      <MemberSignature Language="C#" Value="public object RelatedObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RelatedObject" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.RelatedObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that is associated with the smart tag panel.</summary>
+        <value>The <see cref="T:System.Object" /> associated with the smart tag panel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs.RelatedObject%2A> property enables the programmer to associate an object to an instance of the <xref:System.ComponentModel.Design.DesignerActionUIStateChangeEventArgs> class. This object then is available to methods that handle the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

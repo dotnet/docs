@@ -1,0 +1,3022 @@
+<Type Name="UnicodeRanges" FullName="System.Text.Unicode.UnicodeRanges">
+  <TypeSignature Language="C#" Value="public static class UnicodeRanges" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UnicodeRanges extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Text.Unicode.UnicodeRanges" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange All { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange All" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.All" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlphabeticPresentationForms">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange AlphabeticPresentationForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange AlphabeticPresentationForms" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.AlphabeticPresentationForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arabic">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Arabic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Arabic" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Arabic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArabicExtendedA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange ArabicExtendedA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange ArabicExtendedA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ArabicExtendedA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArabicPresentationFormsA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange ArabicPresentationFormsA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange ArabicPresentationFormsA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ArabicPresentationFormsA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArabicPresentationFormsB">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange ArabicPresentationFormsB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange ArabicPresentationFormsB" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ArabicPresentationFormsB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArabicSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange ArabicSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange ArabicSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ArabicSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Armenian">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Armenian { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Armenian" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Armenian" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Arrows">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Arrows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Arrows" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Arrows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Balinese">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Balinese { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Balinese" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Balinese" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bamum">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Bamum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Bamum" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Bamum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BasicLatin">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange BasicLatin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange BasicLatin" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BasicLatin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Batak">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Batak { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Batak" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Batak" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bengali">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Bengali { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Bengali" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Bengali" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockElements">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange BlockElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange BlockElements" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BlockElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bopomofo">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Bopomofo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Bopomofo" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Bopomofo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BopomofoExtended">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange BopomofoExtended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange BopomofoExtended" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BopomofoExtended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoxDrawing">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange BoxDrawing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange BoxDrawing" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BoxDrawing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BraillePatterns">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange BraillePatterns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange BraillePatterns" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.BraillePatterns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buginese">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Buginese { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Buginese" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Buginese" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buhid">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Buhid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Buhid" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Buhid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cham">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Cham { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Cham" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Cham" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cherokee">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Cherokee { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Cherokee" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Cherokee" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CherokeeSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CherokeeSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CherokeeSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CherokeeSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkCompatibility">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CjkCompatibility { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CjkCompatibility" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkCompatibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkCompatibilityForms">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CjkCompatibilityForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CjkCompatibilityForms" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkCompatibilityForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkCompatibilityIdeographs">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CjkCompatibilityIdeographs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CjkCompatibilityIdeographs" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkCompatibilityIdeographs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkRadicalsSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CjkRadicalsSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CjkRadicalsSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkRadicalsSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkStrokes">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CjkStrokes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CjkStrokes" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkStrokes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkSymbolsandPunctuation">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CjkSymbolsandPunctuation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CjkSymbolsandPunctuation" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkSymbolsandPunctuation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkUnifiedIdeographs">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CjkUnifiedIdeographs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CjkUnifiedIdeographs" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkUnifiedIdeographs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CjkUnifiedIdeographsExtensionA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CjkUnifiedIdeographsExtensionA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CjkUnifiedIdeographsExtensionA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CjkUnifiedIdeographsExtensionA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CombiningDiacriticalMarks">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CombiningDiacriticalMarks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CombiningDiacriticalMarks" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CombiningDiacriticalMarksExtended">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CombiningDiacriticalMarksExtended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CombiningDiacriticalMarksExtended" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksExtended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CombiningDiacriticalMarksforSymbols">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CombiningDiacriticalMarksforSymbols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CombiningDiacriticalMarksforSymbols" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksforSymbols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CombiningDiacriticalMarksSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CombiningDiacriticalMarksSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CombiningDiacriticalMarksSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningDiacriticalMarksSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CombiningHalfMarks">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CombiningHalfMarks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CombiningHalfMarks" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CombiningHalfMarks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommonIndicNumberForms">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CommonIndicNumberForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CommonIndicNumberForms" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CommonIndicNumberForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlPictures">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange ControlPictures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange ControlPictures" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ControlPictures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coptic">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Coptic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Coptic" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Coptic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencySymbols">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CurrencySymbols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CurrencySymbols" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CurrencySymbols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cyrillic">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Cyrillic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Cyrillic" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Cyrillic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CyrillicExtendedA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CyrillicExtendedA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CyrillicExtendedA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CyrillicExtendedA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CyrillicExtendedB">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CyrillicExtendedB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CyrillicExtendedB" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CyrillicExtendedB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CyrillicSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange CyrillicSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange CyrillicSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.CyrillicSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Devanagari">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Devanagari { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Devanagari" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Devanagari" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DevanagariExtended">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange DevanagariExtended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange DevanagariExtended" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.DevanagariExtended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dingbats">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Dingbats { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Dingbats" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Dingbats" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnclosedAlphanumerics">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange EnclosedAlphanumerics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange EnclosedAlphanumerics" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EnclosedAlphanumerics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnclosedCjkLettersandMonths">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange EnclosedCjkLettersandMonths { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange EnclosedCjkLettersandMonths" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EnclosedCjkLettersandMonths" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ethiopic">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Ethiopic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Ethiopic" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Ethiopic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EthiopicExtended">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange EthiopicExtended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange EthiopicExtended" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EthiopicExtended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EthiopicExtendedA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange EthiopicExtendedA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange EthiopicExtendedA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EthiopicExtendedA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EthiopicSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange EthiopicSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange EthiopicSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.EthiopicSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeneralPunctuation">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange GeneralPunctuation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange GeneralPunctuation" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GeneralPunctuation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeometricShapes">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange GeometricShapes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange GeometricShapes" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GeometricShapes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Georgian">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Georgian { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Georgian" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Georgian" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeorgianSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange GeorgianSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange GeorgianSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GeorgianSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Glagolitic">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Glagolitic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Glagolitic" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Glagolitic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreekandCoptic">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange GreekandCoptic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange GreekandCoptic" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GreekandCoptic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GreekExtended">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange GreekExtended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange GreekExtended" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.GreekExtended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gujarati">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Gujarati { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Gujarati" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Gujarati" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gurmukhi">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Gurmukhi { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Gurmukhi" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Gurmukhi" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HalfwidthandFullwidthForms">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange HalfwidthandFullwidthForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange HalfwidthandFullwidthForms" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HalfwidthandFullwidthForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HangulCompatibilityJamo">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange HangulCompatibilityJamo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange HangulCompatibilityJamo" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulCompatibilityJamo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HangulJamo">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange HangulJamo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange HangulJamo" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulJamo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HangulJamoExtendedA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange HangulJamoExtendedA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange HangulJamoExtendedA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulJamoExtendedA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HangulJamoExtendedB">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange HangulJamoExtendedB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange HangulJamoExtendedB" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulJamoExtendedB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HangulSyllables">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange HangulSyllables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange HangulSyllables" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.HangulSyllables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hanunoo">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Hanunoo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Hanunoo" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Hanunoo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hebrew">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Hebrew { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Hebrew" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Hebrew" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hiragana">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Hiragana { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Hiragana" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Hiragana" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdeographicDescriptionCharacters">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange IdeographicDescriptionCharacters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange IdeographicDescriptionCharacters" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.IdeographicDescriptionCharacters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IpaExtensions">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange IpaExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange IpaExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.IpaExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Javanese">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Javanese { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Javanese" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Javanese" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kanbun">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Kanbun { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Kanbun" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Kanbun" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KangxiRadicals">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange KangxiRadicals { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange KangxiRadicals" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.KangxiRadicals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kannada">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Kannada { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Kannada" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Kannada" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Katakana">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Katakana { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Katakana" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Katakana" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KatakanaPhoneticExtensions">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange KatakanaPhoneticExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange KatakanaPhoneticExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.KatakanaPhoneticExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KayahLi">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange KayahLi { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange KayahLi" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.KayahLi" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Khmer">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Khmer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Khmer" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Khmer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KhmerSymbols">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange KhmerSymbols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange KhmerSymbols" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.KhmerSymbols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lao">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Lao { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Lao" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Lao" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Latin1Supplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Latin1Supplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Latin1Supplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Latin1Supplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatinExtendedA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange LatinExtendedA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange LatinExtendedA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatinExtendedAdditional">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange LatinExtendedAdditional { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange LatinExtendedAdditional" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedAdditional" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatinExtendedB">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange LatinExtendedB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange LatinExtendedB" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatinExtendedC">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange LatinExtendedC { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange LatinExtendedC" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedC" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatinExtendedD">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange LatinExtendedD { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange LatinExtendedD" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedD" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LatinExtendedE">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange LatinExtendedE { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange LatinExtendedE" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LatinExtendedE" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lepcha">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Lepcha { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Lepcha" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Lepcha" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LetterlikeSymbols">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange LetterlikeSymbols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange LetterlikeSymbols" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.LetterlikeSymbols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Limbu">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Limbu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Limbu" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Limbu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lisu">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Lisu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Lisu" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Lisu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Malayalam">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Malayalam { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Malayalam" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Malayalam" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mandaic">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Mandaic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Mandaic" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Mandaic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MathematicalOperators">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MathematicalOperators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MathematicalOperators" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MathematicalOperators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeeteiMayek">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MeeteiMayek { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MeeteiMayek" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MeeteiMayek" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeeteiMayekExtensions">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MeeteiMayekExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MeeteiMayekExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MeeteiMayekExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousMathematicalSymbolsA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MiscellaneousMathematicalSymbolsA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MiscellaneousMathematicalSymbolsA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousMathematicalSymbolsA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousMathematicalSymbolsB">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MiscellaneousMathematicalSymbolsB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MiscellaneousMathematicalSymbolsB" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousMathematicalSymbolsB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousSymbols">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MiscellaneousSymbols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MiscellaneousSymbols" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousSymbols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousSymbolsandArrows">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MiscellaneousSymbolsandArrows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MiscellaneousSymbolsandArrows" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousSymbolsandArrows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MiscellaneousTechnical">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MiscellaneousTechnical { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MiscellaneousTechnical" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MiscellaneousTechnical" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifierToneLetters">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange ModifierToneLetters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange ModifierToneLetters" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.ModifierToneLetters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mongolian">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Mongolian { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Mongolian" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Mongolian" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Myanmar">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Myanmar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Myanmar" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Myanmar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MyanmarExtendedA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MyanmarExtendedA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MyanmarExtendedA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MyanmarExtendedA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MyanmarExtendedB">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange MyanmarExtendedB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange MyanmarExtendedB" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.MyanmarExtendedB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewTaiLue">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange NewTaiLue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange NewTaiLue" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.NewTaiLue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NKo">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange NKo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange NKo" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.NKo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange None { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange None" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.None" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberForms">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange NumberForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange NumberForms" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.NumberForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ogham">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Ogham { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Ogham" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Ogham" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OlChiki">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange OlChiki { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange OlChiki" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.OlChiki" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpticalCharacterRecognition">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange OpticalCharacterRecognition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange OpticalCharacterRecognition" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.OpticalCharacterRecognition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Oriya">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Oriya { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Oriya" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Oriya" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Phagspa">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Phagspa { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Phagspa" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Phagspa" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhoneticExtensions">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange PhoneticExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange PhoneticExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.PhoneticExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhoneticExtensionsSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange PhoneticExtensionsSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange PhoneticExtensionsSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.PhoneticExtensionsSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rejang">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Rejang { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Rejang" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Rejang" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Runic">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Runic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Runic" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Runic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Samaritan">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Samaritan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Samaritan" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Samaritan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Saurashtra">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Saurashtra { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Saurashtra" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Saurashtra" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sinhala">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Sinhala { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Sinhala" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Sinhala" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallFormVariants">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SmallFormVariants { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SmallFormVariants" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SmallFormVariants" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpacingModifierLetters">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SpacingModifierLetters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SpacingModifierLetters" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SpacingModifierLetters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Specials">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Specials { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Specials" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Specials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Sundanese">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Sundanese { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Sundanese" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Sundanese" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SundaneseSupplement">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SundaneseSupplement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SundaneseSupplement" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SundaneseSupplement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuperscriptsandSubscripts">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SuperscriptsandSubscripts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SuperscriptsandSubscripts" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SuperscriptsandSubscripts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupplementalArrowsA">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SupplementalArrowsA { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SupplementalArrowsA" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SupplementalArrowsA" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupplementalArrowsB">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SupplementalArrowsB { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SupplementalArrowsB" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SupplementalArrowsB" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupplementalMathematicalOperators">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SupplementalMathematicalOperators { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SupplementalMathematicalOperators" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SupplementalMathematicalOperators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupplementalPunctuation">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SupplementalPunctuation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SupplementalPunctuation" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SupplementalPunctuation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SylotiNagri">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange SylotiNagri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange SylotiNagri" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.SylotiNagri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Syriac">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Syriac { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Syriac" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Syriac" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tagalog">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Tagalog { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Tagalog" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tagalog" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tagbanwa">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Tagbanwa { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Tagbanwa" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tagbanwa" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaiLe">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange TaiLe { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange TaiLe" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.TaiLe" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaiTham">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange TaiTham { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange TaiTham" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.TaiTham" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaiViet">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange TaiViet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange TaiViet" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.TaiViet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tamil">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Tamil { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Tamil" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tamil" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Telugu">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Telugu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Telugu" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Telugu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thaana">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Thaana { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Thaana" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Thaana" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thai">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Thai { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Thai" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Thai" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tibetan">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Tibetan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Tibetan" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tibetan" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tifinagh">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Tifinagh { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Tifinagh" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Tifinagh" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnifiedCanadianAboriginalSyllabics">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange UnifiedCanadianAboriginalSyllabics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange UnifiedCanadianAboriginalSyllabics" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.UnifiedCanadianAboriginalSyllabics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnifiedCanadianAboriginalSyllabicsExtended">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange UnifiedCanadianAboriginalSyllabicsExtended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange UnifiedCanadianAboriginalSyllabicsExtended" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.UnifiedCanadianAboriginalSyllabicsExtended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vai">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange Vai { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange Vai" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.Vai" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VariationSelectors">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange VariationSelectors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange VariationSelectors" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.VariationSelectors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VedicExtensions">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange VedicExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange VedicExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.VedicExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalForms">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange VerticalForms { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange VerticalForms" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.VerticalForms" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YijingHexagramSymbols">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange YijingHexagramSymbols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange YijingHexagramSymbols" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.YijingHexagramSymbols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YiRadicals">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange YiRadicals { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange YiRadicals" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.YiRadicals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YiSyllables">
+      <MemberSignature Language="C#" Value="public static System.Text.Unicode.UnicodeRange YiSyllables { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Text.Unicode.UnicodeRange YiSyllables" />
+      <MemberSignature Language="DocId" Value="P:System.Text.Unicode.UnicodeRanges.YiSyllables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encodings.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Unicode.UnicodeRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

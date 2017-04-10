@@ -1,0 +1,189 @@
+<Type Name="ICompositeView" FullName="System.Activities.Presentation.ICompositeView">
+  <TypeSignature Language="C#" Value="public interface ICompositeView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompositeView" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ICompositeView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods to copy, cut, move, delete, and paste objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanPasteItems">
+      <MemberSignature Language="C#" Value="public bool CanPasteItems (System.Collections.Generic.List&lt;object&gt; itemsToPaste);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanPasteItems(class System.Collections.Generic.List`1&lt;object&gt; itemsToPaste) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeView.CanPasteItems(System.Collections.Generic.List{System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToPaste" Type="System.Collections.Generic.List&lt;System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToPaste">A list of items to be pasted.</param>
+        <summary>Returns a value that indicates whether the specified objects can be pasted.</summary>
+        <returns>
+          <see langword="true" /> if the specified objects can be pasted; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DroppingTypeResolvingOptions">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.View.TypeResolvingOptions DroppingTypeResolvingOptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.View.TypeResolvingOptions DroppingTypeResolvingOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ICompositeView.DroppingTypeResolvingOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.TypeResolvingOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object for resolving types used by the <see cref="T:System.Activities.Presentation.View.TypePresenter" />.</summary>
+        <value>The object for resolving types used by the <see cref="T:System.Activities.Presentation.View.TypePresenter" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultContainer">
+      <MemberSignature Language="C#" Value="public bool IsDefaultContainer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDefaultContainer" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ICompositeView.IsDefaultContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the current designer is the default container.</summary>
+        <value>
+          <see langword="true" /> if the current designer is the default container; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemMoved">
+      <MemberSignature Language="C#" Value="public void OnItemMoved (System.Activities.Presentation.Model.ModelItem modelItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemMoved(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeView.OnItemMoved(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The item to move.</param>
+        <summary>Invoked after the start of a move operation to complete the moving of the specified item.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsCopied">
+      <MemberSignature Language="C#" Value="public object OnItemsCopied (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; itemsToCopy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object OnItemsCopied(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; itemsToCopy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeView.OnItemsCopied(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToCopy" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToCopy">The items to copy.</param>
+        <summary>Invoked after the start of a copy operation to complete the copying of the specified items.</summary>
+        <returns>The items cloned from the specified items.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsCut">
+      <MemberSignature Language="C#" Value="public object OnItemsCut (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; itemsToCut);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object OnItemsCut(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; itemsToCut) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeView.OnItemsCut(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToCut" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToCut">The items to cut.</param>
+        <summary>Invoked after the start of a cut operation to complete the cutting of the specified items.</summary>
+        <returns>The items cloned from the specified items.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsDelete">
+      <MemberSignature Language="C#" Value="public void OnItemsDelete (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; itemsToDelete);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemsDelete(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; itemsToDelete) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeView.OnItemsDelete(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToDelete" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToDelete">The items to delete.</param>
+        <summary>Invoked after the start of a delete operation to complete the deletion of the specified items.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsPasted">
+      <MemberSignature Language="C#" Value="public void OnItemsPasted (System.Collections.Generic.List&lt;object&gt; itemsToPaste, System.Collections.Generic.List&lt;object&gt; metadata, System.Windows.Point pastePoint, System.Activities.Presentation.WorkflowViewElement pastePointReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemsPasted(class System.Collections.Generic.List`1&lt;object&gt; itemsToPaste, class System.Collections.Generic.List`1&lt;object&gt; metadata, valuetype System.Windows.Point pastePoint, class System.Activities.Presentation.WorkflowViewElement pastePointReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ICompositeView.OnItemsPasted(System.Collections.Generic.List{System.Object},System.Collections.Generic.List{System.Object},System.Windows.Point,System.Activities.Presentation.WorkflowViewElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToPaste" Type="System.Collections.Generic.List&lt;System.Object&gt;" />
+        <Parameter Name="metadata" Type="System.Collections.Generic.List&lt;System.Object&gt;" />
+        <Parameter Name="pastePoint" Type="System.Windows.Point" />
+        <Parameter Name="pastePointReference" Type="System.Activities.Presentation.WorkflowViewElement" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToPaste">The items to paste.</param>
+        <param name="metadata">The metadata associated with the items to paste.</param>
+        <param name="pastePoint">The location where to paste the items.</param>
+        <param name="pastePointReference">A reference to the paste location.</param>
+        <summary>Invoked after the start of a paste operation to complete the pasting of the specified items.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

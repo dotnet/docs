@@ -1,0 +1,36 @@
+<Type Name="ClientBase&lt;TChannel&gt;+BeginOperationDelegate" FullName="System.ServiceModel.ClientBase&lt;TChannel&gt;+BeginOperationDelegate">
+  <TypeSignature Language="C#" Value="protected delegate IAsyncResult ClientBase&lt;TChannel&gt;.BeginOperationDelegate(object[] inValues, AsyncCallback asyncCallback, object state) where TChannel : class;" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed ClientBase`1/BeginOperationDelegate&lt;class TChannel&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.ClientBase`1.BeginOperationDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TChannel">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="inValues" Type="System.Object[]" />
+    <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
+    <Parameter Name="state" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.IAsyncResult</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="inValues">The input values to the asynchronous call.</param>
+    <param name="asyncCallback">Reference to the method to be called when the corresponding asynchronous operation completes.</param>
+    <param name="state">An <see cref="T:System.Object" /> that lets the client distinguish between different asynchronous calls. It is made available to the client in the arguments parameter of the event completion callback.</param>
+    <summary>A delegate that is used by <see cref="M:System.ServiceModel.ClientBase`1.InvokeAsync(System.ServiceModel.ClientBase{`0}.BeginOperationDelegate,System.Object[],System.ServiceModel.ClientBase{`0}.EndOperationDelegate,System.Threading.SendOrPostCallback,System.Object)" /> for calling asynchronous operations on the client.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

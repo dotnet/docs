@@ -1,0 +1,585 @@
+<Type Name="LenientStringPrototype" FullName="Microsoft.JScript.LenientStringPrototype">
+  <TypeSignature Language="C#" Value="public sealed class LenientStringPrototype : Microsoft.JScript.StringPrototype" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientStringPrototype extends Microsoft.JScript.StringPrototype" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientStringPrototype" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.StringPrototype</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.StringPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientStringPrototype" /> class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="anchor">
+      <MemberSignature Language="C#" Value="public object anchor;" />
+      <MemberSignature Language="ILAsm" Value=".field public object anchor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.anchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.anchor(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="big">
+      <MemberSignature Language="C#" Value="public object big;" />
+      <MemberSignature Language="ILAsm" Value=".field public object big" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.big" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.big(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="blink">
+      <MemberSignature Language="C#" Value="public object blink;" />
+      <MemberSignature Language="ILAsm" Value=".field public object blink" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.blink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.blink(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="bold">
+      <MemberSignature Language="C#" Value="public object bold;" />
+      <MemberSignature Language="ILAsm" Value=".field public object bold" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.bold" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.bold(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="charAt">
+      <MemberSignature Language="C#" Value="public object charAt;" />
+      <MemberSignature Language="ILAsm" Value=".field public object charAt" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.charAt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.charAt(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="charCodeAt">
+      <MemberSignature Language="C#" Value="public object charCodeAt;" />
+      <MemberSignature Language="ILAsm" Value=".field public object charCodeAt" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.charCodeAt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.charCodeAt(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="concat">
+      <MemberSignature Language="C#" Value="public object concat;" />
+      <MemberSignature Language="ILAsm" Value=".field public object concat" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.concat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.concat(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="constructor">
+      <MemberSignature Language="C#" Value="public object constructor;" />
+      <MemberSignature Language="ILAsm" Value=".field public object constructor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.constructor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to a <see cref="T:Microsoft.JScript.StringConstructor" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="fixed">
+      <MemberSignature Language="C#" Value="public object fixed;" />
+      <MemberSignature Language="ILAsm" Value=".field public object fixed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.fixed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.fixed(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="fontcolor">
+      <MemberSignature Language="C#" Value="public object fontcolor;" />
+      <MemberSignature Language="ILAsm" Value=".field public object fontcolor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.fontcolor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.fontcolor(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="fontsize">
+      <MemberSignature Language="C#" Value="public object fontsize;" />
+      <MemberSignature Language="ILAsm" Value=".field public object fontsize" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.fontsize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.fontsize(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="indexOf">
+      <MemberSignature Language="C#" Value="public object indexOf;" />
+      <MemberSignature Language="ILAsm" Value=".field public object indexOf" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.indexOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.indexOf(System.Object,System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="italics">
+      <MemberSignature Language="C#" Value="public object italics;" />
+      <MemberSignature Language="ILAsm" Value=".field public object italics" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.italics" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.italics(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="lastIndexOf">
+      <MemberSignature Language="C#" Value="public object lastIndexOf;" />
+      <MemberSignature Language="ILAsm" Value=".field public object lastIndexOf" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.lastIndexOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.lastIndexOf(System.Object,System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="link">
+      <MemberSignature Language="C#" Value="public object link;" />
+      <MemberSignature Language="ILAsm" Value=".field public object link" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.link" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.link(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="localeCompare">
+      <MemberSignature Language="C#" Value="public object localeCompare;" />
+      <MemberSignature Language="ILAsm" Value=".field public object localeCompare" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.localeCompare" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.localeCompare(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="match">
+      <MemberSignature Language="C#" Value="public object match;" />
+      <MemberSignature Language="ILAsm" Value=".field public object match" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.match" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.match(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="replace">
+      <MemberSignature Language="C#" Value="public object replace;" />
+      <MemberSignature Language="ILAsm" Value=".field public object replace" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.replace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.replace(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="search">
+      <MemberSignature Language="C#" Value="public object search;" />
+      <MemberSignature Language="ILAsm" Value=".field public object search" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.search" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.search(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="slice">
+      <MemberSignature Language="C#" Value="public object slice;" />
+      <MemberSignature Language="ILAsm" Value=".field public object slice" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.slice" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.slice(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="small">
+      <MemberSignature Language="C#" Value="public object small;" />
+      <MemberSignature Language="ILAsm" Value=".field public object small" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.small" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.small(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="split">
+      <MemberSignature Language="C#" Value="public object split;" />
+      <MemberSignature Language="ILAsm" Value=".field public object split" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.split" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.split(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="strike">
+      <MemberSignature Language="C#" Value="public object strike;" />
+      <MemberSignature Language="ILAsm" Value=".field public object strike" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.strike" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.strike(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="sub">
+      <MemberSignature Language="C#" Value="public object sub;" />
+      <MemberSignature Language="ILAsm" Value=".field public object sub" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.sub" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.sub(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="substr">
+      <MemberSignature Language="C#" Value="public object substr;" />
+      <MemberSignature Language="ILAsm" Value=".field public object substr" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.substr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.JScript.NotRecommended("substr")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.substr(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="substring">
+      <MemberSignature Language="C#" Value="public object substring;" />
+      <MemberSignature Language="ILAsm" Value=".field public object substring" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.substring" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.substring(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="sup">
+      <MemberSignature Language="C#" Value="public object sup;" />
+      <MemberSignature Language="ILAsm" Value=".field public object sup" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.sup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.sup(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toLocaleLowerCase">
+      <MemberSignature Language="C#" Value="public object toLocaleLowerCase;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toLocaleLowerCase" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toLocaleLowerCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.toLocaleLowerCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toLocaleUpperCase">
+      <MemberSignature Language="C#" Value="public object toLocaleUpperCase;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toLocaleUpperCase" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toLocaleUpperCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.toLocaleUpperCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toLowerCase">
+      <MemberSignature Language="C#" Value="public object toLowerCase;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toLowerCase" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toLowerCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.toLowerCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toString">
+      <MemberSignature Language="C#" Value="public object toString;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toUpperCase">
+      <MemberSignature Language="C#" Value="public object toUpperCase;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toUpperCase" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.toUpperCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.toUpperCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="valueOf">
+      <MemberSignature Language="C#" Value="public object valueOf;" />
+      <MemberSignature Language="ILAsm" Value=".field public object valueOf" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientStringPrototype.valueOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.StringPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1001 @@
+<Type Name="TextBox" FullName="System.Windows.Forms.TextBox">
+  <TypeSignature Language="C#" Value="public class TextBox : System.Windows.Forms.TextBoxBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextBox extends System.Windows.Forms.TextBoxBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextBox" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.TextBoxBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.TextBoxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a Windows text box control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With the <xref:System.Windows.Forms.TextBox> control, the user can enter text in an application. This control has additional functionality that is not found in the standard Windows text box control, including multiline editing and password character masking.  
+  
+ Typically, a <xref:System.Windows.Forms.TextBox> control is used to display, or accept as input, a single line of text. You can use the <xref:System.Windows.Forms.TextBoxBase.Multiline%2A> and <xref:System.Windows.Forms.TextBox.ScrollBars%2A> properties to enable multiple lines of text to be displayed or entered. Set the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A> and <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A> properties to `true` to enable greater text manipulation in a multiline <xref:System.Windows.Forms.TextBox> control.  
+  
+> [!NOTE]
+>  You must set the <xref:System.Windows.Forms.TextBoxBase.Multiline%2A> property to `true` to adjust the height of the <xref:System.Windows.Forms.TextBox> control. You can adjust the height by setting the <xref:System.Windows.Forms.Control.Size%2A> property.  
+  
+ You can limit the amount of text entered into a <xref:System.Windows.Forms.TextBox> control by setting the <xref:System.Windows.Forms.TextBoxBase.MaxLength%2A> property to a specific number of characters. <xref:System.Windows.Forms.TextBox> controls can also be used to accept passwords and other sensitive information. You can use the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property to mask characters entered in a single-line version of the control. Use the <xref:System.Windows.Forms.TextBox.CharacterCasing%2A> property to enable the user to type only uppercase, only lowercase, or a combination of uppercase and lowercase characters into the <xref:System.Windows.Forms.TextBox> control.  
+  
+ To scroll the contents of the <xref:System.Windows.Forms.TextBox> until the cursor (caret) is within the visible region of the control, you can use the <xref:System.Windows.Forms.TextBoxBase.ScrollToCaret%2A> method. To select a range of text in the text box, you can use the <xref:System.Windows.Forms.TextBoxBase.Select%2A> method.  
+  
+ To restrict text from being entered in a <xref:System.Windows.Forms.TextBox> control, you can create an event handler for the <xref:System.Windows.Forms.Control.KeyDown> event in order to validate each character entered in the control. You can also restrict all entry of data in a <xref:System.Windows.Forms.TextBox> control by setting the <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> property to `true`.  
+  
+> [!NOTE]
+>  Most of the functionality of the <xref:System.Windows.Forms.TextBox> control is inherited from the <xref:System.Windows.Forms.TextBoxBase> class.  
+>   
+>  Using the <xref:System.Windows.Forms.TextBox> control with visual styles enabled will cause the incorrect handling of surrogate fonts.  
+  
+   
+  
+## Examples  
+ The following code example creates a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example uses the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A>, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and <xref:System.Windows.Forms.Control.Dock%2A> properties to make the multiline text box control useful for creating text documents.  
+  
+ [!code-csharp[Classic TextBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBox Example/CS/source.cs#1)]
+ [!code-vb[Classic TextBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TextBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TextBox" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parent container control defines the color and font settings for the <xref:System.Windows.Forms.TextBox>.  
+  
+   
+  
+## Examples  
+ The following code example creates a new instance of the <xref:System.Windows.Forms.TextBox> control and assigns a string to the control's <xref:System.Windows.Forms.TextBoxBase.Text%2A> property.  
+  
+ [!code-cpp[Classic TextBox.TextBox Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBox.TextBox Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TextBox.TextBox Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBox.TextBox Example/CS/source.cs#1)]
+ [!code-vb[Classic TextBox.TextBox Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TextBox.TextBox Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptsReturn">
+      <MemberSignature Language="C#" Value="public bool AcceptsReturn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptsReturn" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.AcceptsReturn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether pressing ENTER in a multiline <see cref="T:System.Windows.Forms.TextBox" /> control creates a new line of text in the control or activates the default button for the form.</summary>
+        <value>
+          <see langword="true" /> if the ENTER key creates a new line of text in a multiline version of the control; <see langword="false" /> if the ENTER key activates the default button for the form. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is `false`, the user must press CTRL+ENTER to create a new line in a multiline <xref:System.Windows.Forms.TextBox> control. If there is no default button for the form, the ENTER key will always create a new line of text in the control, regardless of the value of this property.  
+  
+   
+  
+## Examples  
+ The following code example creates a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example uses the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A>, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> properties to make the multiline text box control useful for creating text documents.  
+  
+ [!code-cpp[Classic TextBox.AcceptsReturn Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBox.AcceptsReturn Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TextBox.AcceptsReturn Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBox.AcceptsReturn Example/CS/source.cs#1)]
+ [!code-vb[Classic TextBox.AcceptsReturn Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TextBox.AcceptsReturn Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoCompleteCustomSource">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteStringCollection AutoCompleteCustomSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AutoCompleteStringCollection AutoCompleteCustomSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.AutoCompleteCustomSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteStringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a custom <see cref="T:System.Collections.Specialized.StringCollection" /> to use when the <see cref="P:System.Windows.Forms.TextBox.AutoCompleteSource" /> property is set to <see langword="CustomSource" />.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.StringCollection" /> to use with <see cref="P:System.Windows.Forms.TextBox.AutoCompleteSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.TextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.TextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+  
+ The use of the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A>.  
+  
+ You must use the <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> properties together.  
+  
+> [!NOTE]
+>  The operating system might limit the number of custom strings that it can display at once.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a collection as the auto-complete custom source for a <xref:System.Windows.Forms.TextBox> control. This example does the following:  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> property to enable the <xref:System.Windows.Forms.TextBox> control to accept a custom source for its auto-complete behavior.  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A> property to set the custom list of values.  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A> property to set how the auto-complete candidates are displayed.  
+  
+ [!code-csharp[System.Windows.Forms.TextBox.AutoCompleteCustomSource#10](~/samples/snippets/csharp/VS_Snippets_Winforms/system.windows.forms.textbox.autocompletecustomsource/cs/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.TextBox.AutoCompleteCustomSource#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/system.windows.forms.textbox.autocompletecustomsource/vb/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoCompleteMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteMode AutoCompleteMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoCompleteMode AutoCompleteMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.AutoCompleteMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an option that controls how automatic completion works for the <see cref="T:System.Windows.Forms.TextBox" />.</summary>
+        <value>One of the values of <see cref="T:System.Windows.Forms.AutoCompleteMode" />. The following are the values.  
+  
+ <see cref="F:System.Windows.Forms.AutoCompleteMode.Append" />  
+ Appends the remainder of the most likely candidate string to the existing characters, highlighting the appended characters.  
+  
+ <see cref="F:System.Windows.Forms.AutoCompleteMode.Suggest" />  
+ Displays the auxiliary drop-down list associated with the edit control. This drop-down is populated with one or more suggested completion strings.  
+  
+ <see cref="F:System.Windows.Forms.AutoCompleteMode.SuggestAppend" />  
+ Appends both <see langword="Suggest" /> and <see langword="Append" /> options.  
+  
+ <see cref="F:System.Windows.Forms.AutoCompleteMode.None" />  
+ Disables automatic completion. This is the default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.TextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.TextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+  
+ The use of the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A>.  
+  
+ You must use the <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> properties together.  
+  
+> [!NOTE]
+>  The operating system might limit the number of custom strings that it can display at once.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a collection as the auto-complete custom source for a <xref:System.Windows.Forms.TextBox> control. This example does the following:  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> property to enable the <xref:System.Windows.Forms.TextBox> control to accept a custom source for its auto-complete behavior.  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A> property to set the custom list of values.  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A> property to set how the auto-complete candidates are displayed.  
+  
+ [!code-csharp[System.Windows.Forms.TextBox.AutoCompleteCustomSource#10](~/samples/snippets/csharp/VS_Snippets_Winforms/system.windows.forms.textbox.autocompletecustomsource/cs/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.TextBox.AutoCompleteCustomSource#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/system.windows.forms.textbox.autocompletecustomsource/vb/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.AutoCompleteMode" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoCompleteSource">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteSource AutoCompleteSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoCompleteSource AutoCompleteSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.AutoCompleteSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TextBoxAutoCompleteSourceConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoCompleteSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value specifying the source of complete strings used for automatic completion.</summary>
+        <value>One of the values of <see cref="T:System.Windows.Forms.AutoCompleteSource" />. The options are <see langword="AllSystemSources" />, <see langword="AllUrl" />, <see langword="FileSystem" />, <see langword="HistoryList" />, <see langword="RecentlyUsedList" />, <see langword="CustomSource" />, and <see langword="None" />. The default is <see langword="None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.TextBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.TextBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
+  
+ The use of the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> property to `CustomSource` in order to use <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A>.  
+  
+ You must use the <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> properties together.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> does not work on multiline <xref:System.Windows.Forms.TextBox> controls.  
+  
+> [!NOTE]
+>  The operating system might limit the number of custom strings that can be displayed at once.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a collection as the auto-complete custom source for a <xref:System.Windows.Forms.TextBox> control. This example does the following:  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> property to enable the <xref:System.Windows.Forms.TextBox> control to accept a custom source for its auto-complete behavior.  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteCustomSource%2A> property to set the custom list of values.  
+  
+-   Uses the <xref:System.Windows.Forms.TextBox.AutoCompleteMode%2A> property to set how the auto-complete candidates are displayed.  
+  
+ [!code-csharp[System.Windows.Forms.TextBox.AutoCompleteCustomSource#10](~/samples/snippets/csharp/VS_Snippets_Winforms/system.windows.forms.textbox.autocompletecustomsource/cs/form1.cs#10)]
+ [!code-vb[System.Windows.Forms.TextBox.AutoCompleteCustomSource#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/system.windows.forms.textbox.autocompletecustomsource/vb/form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The specified value is not one of the values of <see cref="T:System.Windows.Forms.AutoCompleteSource" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CharacterCasing">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.CharacterCasing CharacterCasing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.CharacterCasing CharacterCasing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.CharacterCasing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CharacterCasing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the <see cref="T:System.Windows.Forms.TextBox" /> control modifies the case of characters as they are typed.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.CharacterCasing" /> enumeration values that specifies whether the <see cref="T:System.Windows.Forms.TextBox" /> control modifies the case of characters. The default is <see langword="CharacterCasing.Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.TextBox.CharacterCasing%2A> property to change the case of characters as required by your application. For example, you could change the case of all characters entered in a <xref:System.Windows.Forms.TextBox> control used for password entry to uppercase or lowercase to enforce a policy for passwords.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TextBox> control that is used to accept a password. This example uses the <xref:System.Windows.Forms.TextBox.CharacterCasing%2A> property to change all characters typed to lowercase, and the <xref:System.Windows.Forms.TextBoxBase.MaxLength%2A> property to restrict the password length to eight characters. This example also uses the <xref:System.Windows.Forms.TextBox.TextAlign%2A> property to center the password in the <xref:System.Windows.Forms.TextBox> control.  
+  
+ [!code-cpp[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/CS/source.cs#1)]
+ [!code-vb[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value that is not within the range of valid values for the enumeration was assigned to the property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.TextBox" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.TextBox> references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInputKey">
+      <MemberSignature Language="C#" Value="protected override bool IsInputKey (System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.IsInputKey(System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="keyData">One of the key's values.</param>
+        <summary>Determines whether the specified key is an input key or a special key that requires preprocessing.</summary>
+        <returns>
+          <see langword="true" /> if the specified key is an input key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TextBox.IsInputKey%2A> method returns `true` when `keyData` includes the <xref:System.Windows.Forms.Keys> value and the <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiline">
+      <MemberSignature Language="C#" Value="public override bool Multiline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Multiline" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.Multiline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether this is a multiline <see cref="T:System.Windows.Forms.TextBox" /> control.</summary>
+        <value>
+          <see langword="true" /> if the control is a multiline <see cref="T:System.Windows.Forms.TextBox" /> control; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.TextBox.AutoCompleteSource%2A> does not work on multiline <xref:System.Windows.Forms.TextBox> controls.  
+  
+ When the font is changed, any indentation that you have defined does not appear. To get indentation, set <xref:System.Windows.Forms.TextBox.Multiline%2A> to `true` and override WM_SETFONT without calling the base class so that SETMARGINS is not called.  
+  
+   
+  
+## Examples  
+ The following code example creates a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example uses the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A>, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> properties to make the multiline text box control useful for creating text documents.  
+  
+ [!code-cpp[Classic TextBox.AcceptsReturn Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBox.AcceptsReturn Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TextBox.AcceptsReturn Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBox.AcceptsReturn Example/CS/source.cs#1)]
+ [!code-vb[Classic TextBox.AcceptsReturn Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TextBox.AcceptsReturn Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBackColorChanged">
+      <MemberSignature Language="C#" Value="protected override void OnBackColorChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackColorChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.OnBackColorChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.TextBox.OnBackColorChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TextBox.OnBackColorChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.TextBox.OnBackColorChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFontChanged">
+      <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.OnFontChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.TextBox.OnFontChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TextBox.OnFontChanged(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.TextBox.OnFontChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnGotFocus">
+      <MemberSignature Language="C#" Value="protected override void OnGotFocus (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotFocus(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.OnGotFocus(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the user selects text in a <xref:System.Windows.Forms.TextBox> control, the control saves the selection. When a <xref:System.Windows.Forms.TextBox> control gets focus, the selection is the same as when the <xref:System.Windows.Forms.TextBox> loses focus. When the <xref:System.Windows.Forms.TextBox> gets focus for the first time, the entire text is selected.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.TextBox.OnGotFocus%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TextBox.OnGotFocus(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.TextBox.OnGotFocus(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleCreated">
+      <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.OnHandleCreated(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHandleDestroyed">
+      <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.OnHandleDestroyed(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.TextBox.OnHandleDestroyed%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TextBox.OnHandleDestroyed(System.EventArgs)" /> in a derived class, be sure to call the base class’s <see cref="M:System.Windows.Forms.TextBox.OnHandleDestroyed(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTextAlignChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTextAlignChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTextAlignChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.OnTextAlignChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.TextBox.TextAlignChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Windows.Forms.TextBox.OnTextAlignChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.TextBox.OnTextAlignChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.TextBox.OnTextAlignChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordChar">
+      <MemberSignature Language="C#" Value="public char PasswordChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char PasswordChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.PasswordChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue('\0')</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character used to mask characters of a password in a single-line <see cref="T:System.Windows.Forms.TextBox" /> control.</summary>
+        <value>The character used to mask characters entered in a single-line <see cref="T:System.Windows.Forms.TextBox" /> control. Set the value of this property to 0 (character value) if you do not want the control to mask characters as they are typed. Equals 0 (character value) by default.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TextBox.UseSystemPasswordChar%2A> property has precedence over the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property. Whenever the <xref:System.Windows.Forms.TextBox.UseSystemPasswordChar%2A> is set to `true`, the default system password character is used and any character set by <xref:System.Windows.Forms.TextBox.PasswordChar%2A> is ignored.  
+  
+ When the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property is set, cut and copy actions in the control using the keyboard cannot be performed.  
+  
+> [!IMPORTANT]
+>  When the <xref:System.Windows.Forms.TextBox> is in password mode because <xref:System.Windows.Forms.TextBox.PasswordChar%2A>, <xref:System.Windows.Forms.TextBox.UseSystemPasswordChar%2A>, or <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> is `true`, the <xref:System.Windows.Forms.TextBox> is in restricted mode. In this mode, the <xref:System.Windows.Forms.ImeMode> is disabled, but the current <xref:System.Windows.Forms.ImeMode> is cached so that it can be restored if the <xref:System.Windows.Forms.TextBox> ever becomes unrestricted. Toggling the <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> is a common scenario. The <xref:System.Windows.Forms.ImeMode> is shadowed while the control is in restricted mode. From the designer perspective, the <xref:System.Windows.Forms.ImeMode> value shown is the actual value.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TextBox> control that is used to accept a password. This example uses the <xref:System.Windows.Forms.TextBox.CharacterCasing%2A> property to change all characters typed to lowercase and the <xref:System.Windows.Forms.TextBoxBase.MaxLength%2A> property to restrict the password length to eight characters. This example also uses the <xref:System.Windows.Forms.TextBox.TextAlign%2A> property to center the password in the <xref:System.Windows.Forms.TextBox> control.  
+  
+ [!code-cpp[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/CS/source.cs#1)]
+ [!code-vb[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public void Paste (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Paste(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.Paste(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to replace.</param>
+        <summary>Sets the selected text to the specified text without clearing the undo buffer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike setting <xref:System.Windows.Forms.TextBoxBase.SelectedText%2A>, <xref:System.Windows.Forms.TextBox.Paste%2A> does not affect the Clipboard.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCmdKey">
+      <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message m, System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message m, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference that represents the window message to process.</param>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the shortcut key to process.</param>
+        <summary>Processes a command key.</summary>
+        <returns>
+          <see langword="true" /> if the command key was processed by the control; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ New in 4.6.1. In previous versions, the  Ctrl-A shortcut key in a <xref:System.Windows.Forms.TextBox> failed to select all text when the <xref:System.Windows.Forms.TextBoxBase.ShortcutsEnabled%2A> and <xref:System.Windows.Forms.TextBox.Multiline%2A> properties were both set to `true.`. This method enables the Ctrl-A shortcut key to select all text when the <xref:System.Windows.Forms.TextBoxBase.ShortcutsEnabled%2A> and <xref:System.Windows.Forms.TextBox.Multiline%2A> properties are both set to `true.`  
+  
+ Applications targeting .NET Framework versions 4.0 through 4.6 can take advantage of this method by adding the following to the `<runtime>` section of the app.config file:  
+  
+```xml  
+<AppContextSwitchOverrides value = "Switch.System.Windows.Forms.DoNotSupportSelectAllShortcutInMultilineTextBox=false" />  
+```  
+  
+ Applications targeting .NET Framework versions 4.6.1 or newer can opt out of this behavior by adding the following to the `<runtime>` section of the app.config file:  
+  
+```xml  
+<AppContextSwitchOverrides value = "Switch.System.Windows.Forms.DoNotSupportSelectAllShortcutInMultilineTextBox=true" />  
+```  
+  
+> [!NOTE]
+>  If the app.config file already contains an `AppContextSwitchOverrides` key, merge the new key value into the existing key. For example, `<AppContextSwitchOverrides value = "oldKey=oldValue;Switch.System.Windows.Forms.DoNotSupportSelectAllShortcutInMultilineTextBox=false" />`.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollBars">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ScrollBars ScrollBars { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ScrollBars ScrollBars" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.ScrollBars" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets which scroll bars should appear in a multiline <see cref="T:System.Windows.Forms.TextBox" /> control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.ScrollBars" /> enumeration values that indicates whether a multiline <see cref="T:System.Windows.Forms.TextBox" /> control appears with no scroll bars, a horizontal scroll bar, a vertical scroll bar, or both. The default is <see langword="ScrollBars.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Horizontal scroll bars will not be shown if the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property is set to `true`, regardless of the value of the <xref:System.Windows.Forms.TextBox.ScrollBars%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example creates a multiline <xref:System.Windows.Forms.TextBox> control with vertical scroll bars. This example also uses the <xref:System.Windows.Forms.TextBoxBase.AcceptsTab%2A>, <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A>, and <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> properties to make the multiline <xref:System.Windows.Forms.TextBox> control useful for creating text documents.  
+  
+ [!code-cpp[Classic TextBox.ScrollBars Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBox.ScrollBars Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TextBox.ScrollBars Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBox.ScrollBars Example/CS/source.cs#1)]
+ [!code-vb[Classic TextBox.ScrollBars Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TextBox.ScrollBars Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value that is not within the range of valid values for the enumeration was assigned to the property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text associated with this control.</summary>
+        <value>The text associated with this control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlign">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.HorizontalAlignment TextAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.HorizontalAlignment TextAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.TextAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.HorizontalAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how text is aligned in a <see cref="T:System.Windows.Forms.TextBox" /> control.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> enumeration values that specifies how text is aligned in the control. The default is <see langword="HorizontalAlignment.Left" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to align the text within a <xref:System.Windows.Forms.TextBox> to match the layout of text on your form. For example, if your controls are all located on the right side of the form, you can set the <xref:System.Windows.Forms.Label.TextAlign%2A> property to `HorizontalAlignment.Right`, and the text will be aligned with the right side of the control instead of the default left alignment.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.TextBox> control that is used to accept a password. This example uses the <xref:System.Windows.Forms.TextBox.CharacterCasing%2A> property to change all characters typed to lowercase, and the <xref:System.Windows.Forms.TextBoxBase.MaxLength%2A> property to restrict the password length to eight characters. This example also uses the <xref:System.Windows.Forms.TextBox.TextAlign%2A> property to center the password in the <xref:System.Windows.Forms.TextBox> control.  
+  
+ [!code-cpp[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/CS/source.cs#1)]
+ [!code-vb[Classic TextBox.CharacterCasing Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic TextBox.CharacterCasing Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">A value that is not within the range of valid values for the enumeration was assigned to the property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlignChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextAlignChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextAlignChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TextBox.TextAlignChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.TextBox.TextAlign" /> property has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.TextBox.TextAlignChanged> event. This report helps you find out when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.TextBox> named `TextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.TextBox.TextAlignChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#249](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#249)]
+ [!code-vb[System.Windows.Forms.EventExamples#249](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#249)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSystemPasswordChar">
+      <MemberSignature Language="C#" Value="public bool UseSystemPasswordChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseSystemPasswordChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TextBox.UseSystemPasswordChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the text in the <see cref="T:System.Windows.Forms.TextBox" /> control should appear as the default password character.</summary>
+        <value>
+          <see langword="true" /> if the text in the <see cref="T:System.Windows.Forms.TextBox" /> control should appear as the default password character; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TextBox.UseSystemPasswordChar%2A> property has precedence over the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property. Whenever the <xref:System.Windows.Forms.TextBox.UseSystemPasswordChar%2A> is set to `true`, the default system password character is used and any character set by <xref:System.Windows.Forms.TextBox.PasswordChar%2A> is ignored.  
+  
+> [!IMPORTANT]
+>  When the <xref:System.Windows.Forms.TextBox> is in password mode because <xref:System.Windows.Forms.TextBox.PasswordChar%2A>, <xref:System.Windows.Forms.TextBox.UseSystemPasswordChar%2A>, or <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> is `true`, the <xref:System.Windows.Forms.TextBox> is in restricted mode. In this mode, the <xref:System.Windows.Forms.ImeMode> is disabled, but the current <xref:System.Windows.Forms.ImeMode> is cached so that it can be restored if the <xref:System.Windows.Forms.TextBox> ever becomes unrestricted. Toggling the <xref:System.Windows.Forms.TextBoxBase.ReadOnly%2A> is a common scenario. The <xref:System.Windows.Forms.ImeMode> is shadowed while the control is in restricted mode. From the designer perspective, the <xref:System.Windows.Forms.ImeMode> value shown is the actual value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TextBox.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">A Windows Message object.</param>
+        <summary>Processes Windows messages.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

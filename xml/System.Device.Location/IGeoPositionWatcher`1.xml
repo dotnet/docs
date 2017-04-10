@@ -1,0 +1,183 @@
+<Type Name="IGeoPositionWatcher&lt;T&gt;" FullName="System.Device.Location.IGeoPositionWatcher&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IGeoPositionWatcher&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IGeoPositionWatcher`1&lt;T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Device.Location.IGeoPositionWatcher`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Device</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the object that contains the location data.</typeparam>
+    <summary>Interface that can be implemented for providing accessing location data and receiving location updates.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Device.Location.GeoCoordinateWatcher> class implements <xref:System.Device.Location.IGeoPositionWatcher%601>, using <xref:System.Device.Location.GeoCoordinate> as the type parameter.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public System.Device.Location.GeoPosition&lt;T&gt; Position { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Device.Location.GeoPosition`1&lt;!T&gt; Position" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.IGeoPositionWatcher`1.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Device.Location.GeoPosition&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location data.</summary>
+        <value>The <see cref="T:System.Device.Location.GeoPosition`1" /> containing the location data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PositionChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Device.Location.GeoPositionChangedEventArgs&lt;T&gt;&gt; PositionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Device.Location.GeoPositionChangedEventArgs`1&lt;!T&gt;&gt; PositionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Device.Location.IGeoPositionWatcher`1.PositionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Device.Location.GeoPositionChangedEventArgs&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Device.Location.IGeoPositionWatcher`1.Position" /> property has changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initiate the acquisition of location data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start (bool suppressPermissionPrompt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Start(bool suppressPermissionPrompt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Start(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="suppressPermissionPrompt" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="suppressPermissionPrompt">If <see langword="true" />, do not prompt the user to enable location providers and only start if location data is already enabled.  
+  
+ If <see langword="false" />, a dialog box may be displayed to prompt the user to enable location sensors that are disabled.</param>
+        <summary>Start acquiring location data, specifying whether or not to suppress prompting for permissions. This method returns synchronously.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.Device.Location.GeoPositionStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Device.Location.GeoPositionStatus Status" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.IGeoPositionWatcher`1.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the status of location data.</summary>
+        <value>The status of location data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Device.Location.GeoPositionStatusChangedEventArgs&gt; StatusChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Device.Location.GeoPositionStatusChangedEventArgs&gt; StatusChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Device.Location.IGeoPositionWatcher`1.StatusChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Device.Location.GeoPositionStatusChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="P:System.Device.Location.IGeoPositionWatcher`1.Status" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stop acquiring location data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryStart">
+      <MemberSignature Language="C#" Value="public bool TryStart (bool suppressPermissionPrompt, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryStart(bool suppressPermissionPrompt, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.IGeoPositionWatcher`1.TryStart(System.Boolean,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="suppressPermissionPrompt" Type="System.Boolean" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="suppressPermissionPrompt">If <see langword="true" />, do not prompt the user to enable location providers and only start if location data is already enabled.  
+  
+ If <see langword="false" />, a dialog box may be displayed to prompt the user to enable location sensors that are disabled.</param>
+        <param name="timeout">Time in milliseconds to wait for initialization to complete.</param>
+        <summary>Start acquiring location data, specifying an initialization timeout. This method returns synchronously.</summary>
+        <returns>
+          <see langword="true" /> if succeeded, <see langword="false" /> if timed out.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="ItemActivation" FullName="System.Windows.Forms.ItemActivation">
+  <TypeSignature Language="C#" Value="public enum ItemActivation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemActivation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemActivation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the user action that is required to activate items in a list view control and the feedback that is given as the user moves the mouse pointer over an item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.ListView.Activation%2A> property of the <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OneClick">
+      <MemberSignature Language="C#" Value="OneClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ItemActivation OneClick = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemActivation.OneClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ItemActivation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user must single-click to activate items. The cursor changes to a hand pointer cursor, and the item text changes color as the user moves the mouse pointer over the item.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Standard">
+      <MemberSignature Language="C#" Value="Standard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ItemActivation Standard = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemActivation.Standard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ItemActivation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user must double-click to activate items. No feedback is given as the user moves the mouse pointer over an item.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoClick">
+      <MemberSignature Language="C#" Value="TwoClick" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ItemActivation TwoClick = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemActivation.TwoClick" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ItemActivation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user must click an item twice to activate it. This is different from the standard double-click because the two clicks can have any duration between them. The item text changes color as the user moves the mouse pointer over the item.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

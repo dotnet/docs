@@ -1,0 +1,96 @@
+<Type Name="AutomationFocusChangedEventArgs" FullName="System.Windows.Automation.AutomationFocusChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class AutomationFocusChangedEventArgs : System.Windows.Automation.AutomationEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutomationFocusChangedEventArgs extends System.Windows.Automation.AutomationEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationFocusChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.AutomationEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for a focus-changed event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AutomationFocusChangedEventArgs (int idObject, int idChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 idObject, int32 idChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationFocusChangedEventArgs.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="idObject" Type="System.Int32" />
+        <Parameter Name="idChild" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="idObject">The [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the object that received focus.</param>
+        <param name="idChild">The child [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the object that received focus.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.AutomationFocusChangedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `idObject` and `idChild` parameters contain the [!INCLUDE[TLA#tla_aa](~/includes/tlasharptla-aa-md.md)] object identifiers that UI Automation clients can use to link an <xref:System.Windows.Automation.AutomationElement> to an `IAccessible` object in an older accessible technology application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildId">
+      <MemberSignature Language="C#" Value="public int ChildId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChildId" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationFocusChangedEventArgs.ChildId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the child [!INCLUDE[TLA#tla_aa](~/includes/tlasharptla-aa-md.md)] identifier of the object receiving focus.</summary>
+        <value>The identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Object [!INCLUDE[TLA2#tla_id#plural](~/includes/tla2sharptla-idsharpplural-md.md)] are 32-bit values that identify categories of accessible objects within an application. The `idObject` and `idChild` parameters contain the object [!INCLUDE[TLA2#tla_id#plural](~/includes/tla2sharptla-idsharpplural-md.md)] that clients can use to link an <xref:System.Windows.Automation.AutomationElement> to an `IAccessible` object in an older accessible technology application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectId">
+      <MemberSignature Language="C#" Value="public int ObjectId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ObjectId" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.AutomationFocusChangedEventArgs.ObjectId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the [!INCLUDE[TLA#tla_id](~/includes/tlasharptla-id-md.md)] of the [!INCLUDE[TLA#tla_aa](~/includes/tlasharptla-aa-md.md)] object that generated the event.</summary>
+        <value>The [!INCLUDE[TLA2#tla_id](~/includes/tla2sharptla-id-md.md)] of the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] element that is receiving focus. For possible values, see [Object Identifiers](http://msdn.microsoft.com/library/default.asp?url=/library/msaa/msaaccrf_5q05.asp) in the Microsoft Active Accessibility documentation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Object [!INCLUDE[TLA2#tla_id#plural](~/includes/tla2sharptla-idsharpplural-md.md)] are 32-bit values that identify categories of accessible objects within an application. The `idObject` and `idChild` parameters contain the object [!INCLUDE[TLA2#tla_id#plural](~/includes/tla2sharptla-idsharpplural-md.md)] that clients can use to link an <xref:System.Windows.Automation.AutomationElement> to an `IAccessible` object in an older accessible technology application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,18 @@
+cc = csc
+vb = vbc
+IISRoot = C:\InetPub\wwwroot
+
+
+makefile: MimeXmlBinding_Part_3_Output_cs.wsdl
+MimeXmlBinding_Part_3_Output_cs.wsdl:MimeXmlBinding_Part_3.exe
+MimeXmlBinding_Part_3.exe: MimeXmlBinding_Part_3.cs
+   $(cc) MimeXmlBinding_Part_3.cs
+   MimeXmlBinding_Part_3.exe     
+   wsdl MimeXmlBinding_Part_3_Output_cs.wsdl
+   $(cc) /t:library MimeXmlBinding_Part_3_Service.cs
+   if not exist $(IISRoot)\MimeXmlClass md $(IISRoot)\MimeXmlClass
+   if not exist $(IISRoot)\bin mkdir $(IISRoot)\bin
+   copy MimeXmlBinding_Part_3_Service.cs.asmx $(IISRoot)\MimeXmlClass
+   copy MimeXmlBinding_Part_3_Client.cs.aspx $(IISRoot)\MimeXmlClass
+   move MimeXmlBinding_Part_3_Service.dll $(IISRoot)\bin
+   echo Invoke aspx file at http://localhost/MimeXmlClass/MimeXmlBinding_Part_3_Client.cs.aspx

@@ -1,0 +1,320 @@
+<Type Name="HierarchicalDataTemplate" FullName="System.Windows.HierarchicalDataTemplate">
+  <TypeSignature Language="C#" Value="public class HierarchicalDataTemplate : System.Windows.DataTemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HierarchicalDataTemplate extends System.Windows.DataTemplate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.HierarchicalDataTemplate" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DataTemplate</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a <see cref="T:System.Windows.DataTemplate" /> that supports <see cref="T:System.Windows.Controls.HeaderedItemsControl" />, such as <see cref="T:System.Windows.Controls.TreeViewItem" /> or <see cref="T:System.Windows.Controls.MenuItem" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, `ListLeagueList` is a list of `League` objects. Each `League` object has a `Name` and a collection of `Division` objects. Each `Division` has a `Name` and a collection of `Team` objects, and each `Team` object has a `Name`.  
+  
+ <!-- TODO: review snippet reference [!code-xml[HierarchicalDataTemplate#HDT](~/samples/snippets/xaml/VS_Snippets_Wpf/HierarchicalDataTemplate/xaml/window1.xaml#hdt)]  -->
+ <!-- TODO: review snippet reference [!code-xml[HierarchicalDataTemplate#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplate/CS/window1.xaml#hdt)]  -->  
+  
+ The example shows that with the use of <xref:System.Windows.HierarchicalDataTemplate>, you can easily display list data that contains other lists. The following is a screenshot of the example.  
+  
+ ![HierarchicalDataTemplate sample screen shot](~/add/media/databinding-hierarchicaldatatemplate.png "HierarchicalDataTemplate sample screen shot")  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HierarchicalDataTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.HierarchicalDataTemplate.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.HierarchicalDataTemplate" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HierarchicalDataTemplate (object dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.HierarchicalDataTemplate.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataType" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dataType">The type for which this template is intended.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.HierarchicalDataTemplate" /> class with the specified type for which the template is intended.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `dataType` parameter is either a [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] object or a string representing an [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] element. For more information, see [Binding Sources Overview](~/docs/framework/wpf/data/binding-sources-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternationCount">
+      <MemberSignature Language="C#" Value="public int AlternationCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AlternationCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.AlternationCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of alternating item containers for the child items.</summary>
+        <value>The number of alternating item containers for the next level of items.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> and <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> properties enable you to specify the appearance for two or more alternating item containers. For example, you can specify alternating background colors for every third item in an <xref:System.Windows.Controls.ItemsControl>.  The <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> is assigned to each item container in the <xref:System.Windows.Controls.ItemsControl>.  <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> begins at 0, increments until it is <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> minus 1, and then restarts at 0. For example, if <xref:System.Windows.Controls.ItemsControl.AlternationCount%2A> is 3 and there are seven items in the <xref:System.Windows.Controls.ItemsControl>, the following table lists the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> for each item.  
+  
+|Position of Item in the <xref:System.Windows.Controls.ItemsControl>|<xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>|  
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+|1|0|  
+|2|1|  
+|3|2|  
+|4|0|  
+|5|1|  
+|6|2|  
+|7|0|  
+  
+ When you set the <xref:System.Windows.HierarchicalDataTemplate.AlternationCount%2A> property, you are indicating that the child items should get an <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> in that range, not the item that has this <xref:System.Windows.HierarchicalDataTemplate> applied to it. For example, if a <xref:System.Windows.Controls.HeaderedItemsControl> called `aHeaderedItemsControl` uses a <xref:System.Windows.HierarchicalDataTemplate> with the <xref:System.Windows.HierarchicalDataTemplate.AlternationCount%2A> set, the item containers of the child items of `aHeaderedItemsControl` will have an <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>, not the item container for `aHeaderedItemsControl`.  
+  
+ There are several methods you can use to specify different appearances for the alternating item containers. One method is to bind properties of the items container to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>. You can then use an <xref:System.Windows.Controls.AlternationConverter> to specify which value should be applied to the item container that has a certain <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> value. You can also use triggers to change the value of an item container's property depending on the value of its <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.TreeView> that is bound to data that is three levels deep, and each item is displayed in a <xref:System.Windows.Controls.TextBlock>.  The <xref:System.Windows.Controls.TextBlock> objects in the first level have the same property values, the <xref:System.Windows.Controls.TextBlock> objects in the second level use alternating values for the <xref:System.Windows.Controls.TextBlock.FontStyle%2A> property, and the <xref:System.Windows.Controls.TextBlock> objects in the third level use alternating values for the <xref:System.Windows.Controls.TextBlock.Background%2A> property.  
+  
+ Because the <xref:System.Windows.HierarchicalDataTemplate> for the first level, `Level1Data`, has the <xref:System.Windows.HierarchicalDataTemplate.AlternationCount%2A> property set to 2, the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> for the <xref:System.Windows.Controls.TreeViewItem> objects in the second level alternates between 0 and 1. In the <xref:System.Windows.HierarchicalDataTemplate> for the second level, `Level2Data`, the <xref:System.Windows.Controls.TextBlock.FontStyle%2A> of the <xref:System.Windows.Controls.TextBlock> is bound to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> and an <xref:System.Windows.Controls.AlternationConverter> is provided to convert the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName> to an alternating <xref:System.Windows.Controls.TextBlock.FontStyle%2A>.  A similar relationship exists between `Level2Data` and `Level3Data`:  The <xref:System.Windows.HierarchicalDataTemplate.AlternationCount%2A> is set to 3 on `Level2Data`, and the <xref:System.Windows.Controls.TextBlock> in `Level3Ddata` has its <xref:System.Windows.Controls.TextBlock.Background%2A> property bound to the <xref:System.Windows.Controls.ItemsControl.AlternationIndex%2A?displayProperty=fullName>.  
+  
+ [!code-xml[AlternationIndexSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/AlternationIndexSnippets/CS/Window1.xaml#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemBindingGroup">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.BindingGroup ItemBindingGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingGroup ItemBindingGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemBindingGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Data.BindingGroup" /> that is copied to each child item.</summary>
+        <value>The <see cref="T:System.Windows.Data.BindingGroup" /> that is copied to each child item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A> property, each item container gets a <xref:System.Windows.Data.BindingGroup> that has the same <xref:System.Windows.Controls.ValidationRule> objects as the <xref:System.Windows.Controls.ItemsControl.ItemBindingGroup%2A>, but the properties that describe the data in the bindings, such as <xref:System.Windows.Data.BindingGroup.Items%2A> and <xref:System.Windows.Data.BindingGroup.BindingExpressions%2A>, are specific to the data for each item in the <xref:System.Windows.Controls.ItemsControl>.  You must access the item container's <xref:System.Windows.FrameworkContentElement.BindingGroup%2A> to perform operations such as validate the data and check for errors on an item.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemContainerStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style ItemContainerStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style ItemContainerStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemContainerStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Style" /> that is applied to the item container for each child item.</summary>
+        <value>The <see cref="T:System.Windows.Style" /> that is applied to the item container for each child item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this property or the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyleSelector%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.TreeView>, the generated containers are <xref:System.Windows.Controls.TreeViewItem> controls; for <xref:System.Windows.Controls.Menu>, they are <xref:System.Windows.Controls.MenuItem> controls.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.TreeView> that uses one style for items in its first level and another style for items in its second level.  The style for the first level is set in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property of the <xref:System.Windows.Controls.TreeView>.  The style for the second level is set in the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyle%2A> property of the <xref:System.Windows.HierarchicalDataTemplate>.  
+  
+ [!code-xml[RecycleItemContainerShippets#VirtualizingTreeView](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#virtualizingtreeview)]  
+  
+ The following example creates the data that is used in the previous example.  
+  
+ [!code-csharp[RecycleItemContainerShippets#TreeViewData](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml.cs#treeviewdata)]
+ [!code-vb[RecycleItemContainerShippets#TreeViewData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RecycleItemContainerShippets/visualbasic/window1.xaml.vb#treeviewdata)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemContainerStyleSelector">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.StyleSelector ItemContainerStyleSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.StyleSelector ItemContainerStyleSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemContainerStyleSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.StyleSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets custom style-selection logic for a style that can be applied to each item container.</summary>
+        <value>A <see cref="T:System.Windows.Controls.StyleSelector" /> that chooses which style to use as the <see cref="P:System.Windows.HierarchicalDataTemplate.ItemContainerStyle" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyle%2A> property to set a style to affect the appearance of the elements that contain the data items. For example, for <xref:System.Windows.Controls.TreeView>, the generated containers are <xref:System.Windows.Controls.TreeViewItem> controls; for <xref:System.Windows.Controls.Menu>, they are <xref:System.Windows.Controls.MenuItem> controls. If you have more than one style defined and need to supply logic to choose which one to apply, then you use the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyleSelector%2A> property instead of the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyle%2A> property. Note that this property is ignored if the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyle%2A> property is set.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.TreeView> that uses the <xref:System.Windows.HierarchicalDataTemplate.ItemContainerStyle%2A> of a <xref:System.Windows.HierarchicalDataTemplate> to choose between two styles for items in the second level of the <xref:System.Windows.Controls.TreeView>.  
+  
+ [!code-xml[RecycleItemContainerShippets#ItemContainerStyleSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml#itemcontainerstyleselector)]  
+  
+ The following example shows the <xref:System.Windows.Controls.StyleSelector> that is used in the previous example.  
+  
+ [!code-csharp[RecycleItemContainerShippets#TreeViewItemStyleSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml.cs#treeviewitemstyleselector)]
+ [!code-vb[RecycleItemContainerShippets#TreeViewItemStyleSelector](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RecycleItemContainerShippets/visualbasic/window1.xaml.vb#treeviewitemstyleselector)]  
+  
+ The following example creates the data that is used in the previous example.  
+  
+ [!code-csharp[RecycleItemContainerShippets#TreeViewData](~/samples/snippets/csharp/VS_Snippets_Wpf/RecycleItemContainerShippets/CSharp/Window1.xaml.cs#treeviewdata)]
+ [!code-vb[RecycleItemContainerShippets#TreeViewData](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RecycleItemContainerShippets/visualbasic/window1.xaml.vb#treeviewdata)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSource">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.BindingBase ItemsSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase ItemsSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the binding for this data template, which indicates where to find the collection that represents the next level in the data hierarchy.</summary>
+        <value>The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is applied to the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property on a generated <xref:System.Windows.Controls.HeaderedItemsControl> (such as a <xref:System.Windows.Controls.MenuItem> or a <xref:System.Windows.Controls.TreeViewItem>) to indicate where to find the collection that represents the next level in the data hierarchy.  
+  
+<a name="xamlTextUsage_ItemsSource"></a>   
+## XAML Text Usage  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see the <xref:System.Windows.Data.Binding> type.  
+  
+   
+  
+## Examples  
+ In the following example, `ListLeagueList` is a list of `League` objects. Each `League` object has a `Name` and a collection of `Division` objects. Each `Division` has a `Name` and a collection of `Team` objects, and each `Team` object has a `Name`.  
+  
+ <!-- TODO: review snippet reference [!code-xml[HierarchicalDataTemplate#HDT](~/samples/snippets/xaml/VS_Snippets_Wpf/HierarchicalDataTemplate/xaml/window1.xaml#hdt)]  -->
+ <!-- TODO: review snippet reference [!code-xml[HierarchicalDataTemplate#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplate/CS/window1.xaml#hdt)]  -->  
+  
+ The example shows that with the use of <xref:System.Windows.HierarchicalDataTemplate>, you can easily display list data that contains other lists. The following is a screenshot of the example.  
+  
+ ![HierarchicalDataTemplate sample screen shot](~/add/media/databinding-hierarchicaldatatemplate.png "HierarchicalDataTemplate sample screen shot")  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemStringFormat">
+      <MemberSignature Language="C#" Value="public string ItemStringFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ItemStringFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemStringFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a composite string that specifies how to format the items in the next level in the data hierarchy if they are displayed as strings.</summary>
+        <value>A composite string that specifies how to format the items in the next level of the data hierarchy if they are displayed as strings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate ItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate ItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> to apply to the <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" /> property on a generated <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> (such as a <see cref="T:System.Windows.Controls.MenuItem" /> or a <see cref="T:System.Windows.Controls.TreeViewItem" />), to indicate how to display items from the next level in the data hierarchy.</summary>
+        <value>The <see cref="T:System.Windows.DataTemplate" /> to apply to the <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" /> property on a generated <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> (such as a <see cref="T:System.Windows.Controls.MenuItem" /> or a <see cref="T:System.Windows.Controls.TreeViewItem" />), to indicate how to display items from the next level in the data hierarchy.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateSelector">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector ItemTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector ItemTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.HierarchicalDataTemplate.ItemTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Controls.DataTemplateSelector" /> to apply to the <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplateSelector" /> property on a generated <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> (such as a <see cref="T:System.Windows.Controls.MenuItem" /> or a <see cref="T:System.Windows.Controls.TreeViewItem" />), to indicate how to select a template to display items from the next level in the data hierarchy.</summary>
+        <value>The <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object to apply to the <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplateSelector" /> property on a generated <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> (such as a <see cref="T:System.Windows.Controls.MenuItem" /> or a <see cref="T:System.Windows.Controls.TreeViewItem" />), to indicate how to select a template to display items from the next level in the data hierarchy.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

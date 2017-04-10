@@ -1,0 +1,83 @@
+<Type Name="SizeType" FullName="System.Windows.Forms.SizeType">
+  <TypeSignature Language="C#" Value="public enum SizeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SizeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SizeType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how rows or columns of user interface (UI) elements should be sized relative to their container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.SizeType> enumeration specifies how rows or columns of UI elements, typically controls, should be sized relative to the size of their container. This enumeration is used by the <xref:System.Windows.Forms.RowStyle> and <xref:System.Windows.Forms.ColumnStyle> classes to indicate their preferred sizing attributes. The <xref:System.Windows.Forms.TableLayoutPanel> class, in turn, uses these style classes.  
+  
+ When laying out a container with rows or columns that have different preferred sizing attributes, any space remaining after the initial allocation will be distributed between the rows or columns whose styles have <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A?displayProperty=fullName> property values of AutoSize or Percent.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Forms.TableLayoutStyle.SizeType%2A?displayProperty=fullName> property on a <xref:System.Windows.Forms.ColumnStyle> object. This code example is part of a larger example provided for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+  
+ [!code-csharp[System.Windows.Forms.TableLayoutPanel#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/CS/form1.cs#8)]
+ [!code-vb[System.Windows.Forms.TableLayoutPanel#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel/VB/form1.vb#8)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Absolute">
+      <MemberSignature Language="C#" Value="Absolute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SizeType Absolute = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeType.Absolute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SizeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row or column should be sized to an exact number of pixels.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSize">
+      <MemberSignature Language="C#" Value="AutoSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SizeType AutoSize = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeType.AutoSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SizeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row or column should be automatically sized to share space with its peers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Percent">
+      <MemberSignature Language="C#" Value="Percent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SizeType Percent = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeType.Percent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.SizeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row or column should be sized as a percentage of the parent container.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

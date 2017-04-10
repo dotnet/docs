@@ -1,0 +1,46 @@
+<Type Name="WindowsAuthenticationEventHandler" FullName="System.Web.Security.WindowsAuthenticationEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void WindowsAuthenticationEventHandler(object sender, WindowsAuthenticationEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowsAuthenticationEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.WindowsAuthenticationEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.Security.WindowsAuthenticationEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.Security.WindowsAuthenticationEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the **WindowsAuthentication_OnAuthenticate** event of a <see cref="T:System.Web.Security.WindowsAuthenticationModule" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.WindowsAuthenticationEventHandler> delegate is defined for the <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event of the <xref:System.Web.Security.WindowsAuthenticationModule> class. You can access the <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event of the <xref:System.Web.Security.WindowsAuthenticationModule> class by specifying a subroutine named **WindowsAuthentication_OnAuthenticate** in the Global.asax file for your ASP.NET application. The <xref:System.Web.Security.WindowsAuthenticationModule.Authenticate> event is raised during the <xref:System.Web.HttpApplication.AuthenticateRequest> event.  
+  
+ The <xref:System.Web.Security.WindowsAuthenticationModule> constructs a <xref:System.Web.Security.WindowsAuthenticationEventArgs> object using the Windows identity supplied by IIS and the current <xref:System.Web.HttpContext> and passes it to the **WindowsAuthentication_OnAuthenticate** event.  
+  
+ You can use the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property of the <xref:System.Web.Security.WindowsAuthenticationEventArgs> object supplied to the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.Security.WindowsAuthenticationEventArgs.User%2A> property during the **WindowsAuthentication_OnAuthenticate** event, the Windows identity supplied by IIS is used as the identity for the current request. If IIS uses anonymous authentication, then the <xref:System.Web.Security.WindowsAuthenticationEventArgs.Identity%2A> property of the <xref:System.Web.Security.WindowsAuthenticationEventArgs> object is set to the identity returned by the <xref:System.Security.Principal.WindowsIdentity.GetAnonymous%2A> method.  
+  
+ The **WindowsAuthentication_OnAuthenticate** event is only raised when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode> and the <xref:System.Web.Security.WindowsAuthenticationModule> is an active HTTP module for the application.  
+  
+   
+  
+## Examples  
+ The following code example uses the **WindowsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object.  
+  
+ [!code-csharp[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/CS/global.asax#1)]
+ [!code-vb[System.Web.Security.WindowsAuthenticationModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.WindowsAuthenticationModule/VB/global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

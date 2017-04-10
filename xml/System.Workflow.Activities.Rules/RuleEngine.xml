@@ -1,0 +1,113 @@
+<Type Name="RuleEngine" FullName="System.Workflow.Activities.Rules.RuleEngine">
+  <TypeSignature Language="C#" Value="public class RuleEngine" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleEngine extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleEngine" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used to perform <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> evaluation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleEngine (System.Workflow.Activities.Rules.RuleSet ruleSet, Type objectType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleSet ruleSet, class System.Type objectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleEngine.#ctor(System.Workflow.Activities.Rules.RuleSet,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ruleSet" Type="System.Workflow.Activities.Rules.RuleSet" />
+        <Parameter Name="objectType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="ruleSet">Specifies the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to evaluate.</param>
+        <param name="objectType">Specifies the <see cref="T:System.Type" /> of the <see cref="T:System.Workflow.Activities.Rules.Rule" /> used to create a new instance of <see cref="M:System.Workflow.Activities.Rules.RuleValidation.#ctor(System.Type,System.Workflow.ComponentModel.Compiler.ITypeProvider)" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleEngine" /> class with a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to evaluate and a rule type to create a new instance of <see cref="M:System.Workflow.Activities.Rules.RuleValidation.#ctor(System.Type,System.Workflow.ComponentModel.Compiler.ITypeProvider)" /> to use for rule expression validation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleEngine (System.Workflow.Activities.Rules.RuleSet ruleSet, System.Workflow.Activities.Rules.RuleValidation validation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleSet ruleSet, class System.Workflow.Activities.Rules.RuleValidation validation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleEngine.#ctor(System.Workflow.Activities.Rules.RuleSet,System.Workflow.Activities.Rules.RuleValidation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ruleSet" Type="System.Workflow.Activities.Rules.RuleSet" />
+        <Parameter Name="validation" Type="System.Workflow.Activities.Rules.RuleValidation" />
+      </Parameters>
+      <Docs>
+        <param name="ruleSet">Specifies the <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to evaluate.</param>
+        <param name="validation">Specifies the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> used to validate rule expressions.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleEngine" /> class with a <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> to evaluate using <see cref="T:System.Workflow.Activities.Rules.RuleValidation" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute (object thisObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Execute(object thisObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleEngine.Execute(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:AvoidTypeNamesInParameters", MessageId="0#")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="thisObject">The current object to be executed.</param>
+        <summary>Executes the current object using <see cref="M:System.Workflow.Activities.Rules.RuleExecution.#ctor(System.Workflow.Activities.Rules.RuleValidation,System.Object)" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute (object thisObject, System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Execute(object thisObject, class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleEngine.Execute(System.Object,System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1720:AvoidTypeNamesInParameters", MessageId="0#")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thisObject" Type="System.Object" />
+        <Parameter Name="executionContext" Type="System.Workflow.ComponentModel.ActivityExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="thisObject">The current object to be executed.</param>
+        <param name="executionContext">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> for the current activity.</param>
+        <summary>Executes the current <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> against the object instance (which, in this case, is likely an <see cref="T:System.Workflow.ComponentModel.Activity" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

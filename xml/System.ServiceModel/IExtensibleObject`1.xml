@@ -1,0 +1,65 @@
+<Type Name="IExtensibleObject&lt;T&gt;" FullName="System.ServiceModel.IExtensibleObject&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IExtensibleObject&lt;T&gt; where T : IExtensibleObject&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtensibleObject`1&lt;(class System.ServiceModel.IExtensibleObject`1&lt;!T&gt;) T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.IExtensibleObject`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <InterfaceName>System.ServiceModel.IExtensibleObject&lt;T&gt;</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the extension class.</typeparam>
+    <summary>Enable an object to participate in custom behavior, such as registering for events, or watching state transitions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement <xref:System.ServiceModel.IExtensibleObject%601> to enable aggregation of extensions.  
+  
+ For example, if you are implementing a `TreeNode` class and want to allow external code to add annotations and methods to some instances of `TreeNode`, you can have `TreeNode` implement `IExtensibleObject<TreeNode>`. This enables code that uses `TreeNode` to add objects that implement `IExtensibleObject<TreeNode>` to the <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A> collection.  
+  
+ There are four extensible objects in [!INCLUDE[indigo1](~/includes/indigo1-md.md)]:  
+  
+-   <xref:System.ServiceModel.ServiceHostBase?displayProperty=fullName>  
+  
+-   <xref:System.ServiceModel.InstanceContext?displayProperty=fullName>  
+  
+-   <xref:System.ServiceModel.IContextChannel?displayProperty=fullName>  
+  
+-   <xref:System.ServiceModel.OperationContext?displayProperty=fullName>  
+  
+ For a discussion about how to create extension to work with these objects, see [Extensible Objects](~/docs/framework/wcf/extending/extensible-objects.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Extensions">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.IExtensionCollection&lt;T&gt; Extensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.IExtensionCollection`1&lt;!T&gt; Extensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.IExtensibleObject`1.Extensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.IExtensionCollection&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of extension objects for this extensible object.</summary>
+        <value>A <see cref="T:System.ServiceModel.IExtensionCollection`1" /> of extension objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

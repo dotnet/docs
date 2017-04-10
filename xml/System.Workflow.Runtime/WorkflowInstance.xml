@@ -1,0 +1,756 @@
+<Type Name="WorkflowInstance" FullName="System.Workflow.Runtime.WorkflowInstance">
+  <TypeSignature Language="C#" Value="public sealed class WorkflowInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowInstance extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowInstance" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a workflow instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Runtime.WorkflowInstance> class exposes methods and properties that can be used to control the execution of a workflow instance; it is essentially a proxy to the actual workflow instance used by the workflow runtime engine. A host or a service can instruct the workflow runtime engine to perform actions on a workflow instance by calling the appropriate methods that are contained in the <xref:System.Workflow.Runtime.WorkflowInstance> class.  If the requested action is not valid, for example, if the host calls <xref:System.Workflow.Runtime.WorkflowInstance.Load%2A> on a workflow instance that has already completed, the workflow runtime engine will raise an appropriate exception.  
+  
+> [!NOTE]
+>  If a workflow instance becomes unresponsive because a call on the host application does not return, the only way to recover the instance is to restart the runtime. However, if the instance has been forcibly unloaded, aborted, or suspended, it can be continued by calling the <xref:System.Workflow.Runtime.WorkflowInstance.Resume%2A?displayProperty=fullName> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can create and start a <xref:System.Workflow.Runtime.WorkflowInstance> in a workflow host. The code creates an instance of the <xref:System.Workflow.Runtime.WorkflowRuntime>, adds services to the runtime, and then demonstrates the recommended way to create a <xref:System.Workflow.Runtime.WorkflowInstance> object. The code initializes <xref:System.Workflow.Runtime.WorkflowInstance> by calling the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> method and passing the previously created type to it. The <xref:System.Workflow.Runtime.WorkflowInstance> is started with the <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A> method call.  
+  
+ This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+  
+ [!code-csharp[WF_Samples#260](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#260)]
+ [!code-vb[WF_Samples#260](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#260)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public void Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aborts the workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow instance is aborted in a synchronous manner; that is, the method returns after the workflow instance has been aborted. The workflow runtime engine invalidates the workflow instance in memory and clears the <xref:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch%2A>. If a persistence service was used by your workflow instance, all work performed since the last persistence point is thrown away. After it aborts the workflow instance, the workflow runtime engine raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowAborted> event. You can call <xref:System.Workflow.Runtime.WorkflowRuntime.GetWorkflow%2A> to reload the workflow instance and start from its last persistence point.  
+  
+ `Abort` is different from <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A> in that while `Abort` simply clears the in-memory workflow instance and can be restarted from the last persistence point, Terminate clears the in-memory workflow instance and informs the persistence service that the instance has been cleared from memory. For the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, this means that all state information for that workflow instance is deleted from the database upon termination. You will not be able to reload the workflow instance from a previously stored persistence point.  
+  
+   
+  
+## Examples  
+ The following example demonstrates calling Abort on a workflow instance of type Workflow1.  
+  
+ [!code-csharp[WF_Samples#13](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#13)]
+ [!code-vb[WF_Samples#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyWorkflowChanges">
+      <MemberSignature Language="C#" Value="public void ApplyWorkflowChanges (System.Workflow.ComponentModel.WorkflowChanges workflowChanges);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplyWorkflowChanges(class System.Workflow.ComponentModel.WorkflowChanges workflowChanges) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.ApplyWorkflowChanges(System.Workflow.ComponentModel.WorkflowChanges)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowChanges" Type="System.Workflow.ComponentModel.WorkflowChanges" />
+      </Parameters>
+      <Docs>
+        <param name="workflowChanges">A <see cref="T:System.Workflow.ComponentModel.WorkflowChanges" /> specifying dynamic updates for the workflow instance.</param>
+        <summary>Applies changes to the workflow instance specified by the <see cref="T:System.Workflow.ComponentModel.WorkflowChanges" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the workflow instance is not already suspended, the workflow runtime engine temporarily suspends the instance before applying the changes.  
+  
+   
+  
+## Examples  
+ The following example demonstrates calling ApplyWorkflowChanges to a <xref:System.Workflow.Runtime.WorkflowInstance> object.  This example is from the Ordering State Machine SDK sample, from the Mainform.cs file.  For more information, see the [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+  
+ [!code-csharp[WF_Samples#89](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#89)]
+ [!code-vb[WF_Samples#89](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#89)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnqueueItem">
+      <MemberSignature Language="C#" Value="public void EnqueueItem (IComparable queueName, object item, System.Workflow.Runtime.IPendingWork pendingWork, object workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnqueueItem(class System.IComparable queueName, object item, class System.Workflow.Runtime.IPendingWork pendingWork, object workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.EnqueueItem(System.IComparable,System.Object,System.Workflow.Runtime.IPendingWork,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueName" Type="System.IComparable" />
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="pendingWork" Type="System.Workflow.Runtime.IPendingWork" />
+        <Parameter Name="workItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="queueName">The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</param>
+        <param name="item">The object to enqueue.</param>
+        <param name="pendingWork">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> that allows the sender to be notified when <c>item</c> is delivered.</param>
+        <param name="workItem">An object to be passed to the <see cref="T:System.Workflow.Runtime.IPendingWork" /> methods.</param>
+        <summary>Posts a message to the specified workflow queue synchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sends the `item` to the specified <xref:System.Workflow.Runtime.WorkflowQueue>. If you want to be notified when the message is delivered, you can implement <xref:System.Workflow.Runtime.IPendingWork> in your service and pass a `workItem` and an <xref:System.Workflow.Runtime.IPendingWork> object to <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A>. If you do not want such notification, you can pass a null reference (`Nothing` in Visual Basic) for `pendingWork` and `workItem`.  
+  
+ When using this method with a state machine workflow, you might get an exception with the message "Queue '{0}' is not enabled." This happens when the current state of the state machine does not know how to handle a specific event. For example, when some state other than the current state contains the <xref:System.Workflow.Activities.EventDrivenActivity> that contains the <xref:System.Workflow.Activities.HandleExternalEventActivity> that is represented by the queue '{0}'.  
+  
+> [!NOTE]
+>  Messages are not guaranteed to be received by the workflow instance in the order that they were sent. For example, if receiving a message in an existing queue (Queue A) causes a workflow to create another queue (Queue B), which then listens for another message sent after the first message, it is possible that the second message will arrive first, and will not be received due to its queue not being created yet. To prevent this issue, the second message should not be sent until the presence of the second queue is verified (using <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A>.)  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A>. When the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event occurs, the `OnWorkflowIdled` method defined in this example is called. It determines which workflow is idled using the <xref:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance%2A> property and then gets a collection of queued items for the workflow instance by calling the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> method. The code iterates over the collection to determine which activity is waiting for the event that idled the workflow. It then sends an exception to the workflow queue using the <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A> method along with the name of the event queue item.  
+  
+ This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+  
+ [!code-csharp[WF_Samples#261](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#261)]
+ [!code-vb[WF_Samples#261](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#261)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.  
+  
+ -or-  
+  
+ The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> specified by <paramref name="queueName" /> does not exist.  
+  
+ -or-  
+  
+ The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> specified by <paramref name="queueName" /> is not enabled.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnqueueItemOnIdle">
+      <MemberSignature Language="C#" Value="public void EnqueueItemOnIdle (IComparable queueName, object item, System.Workflow.Runtime.IPendingWork pendingWork, object workItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnqueueItemOnIdle(class System.IComparable queueName, object item, class System.Workflow.Runtime.IPendingWork pendingWork, object workItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.EnqueueItemOnIdle(System.IComparable,System.Object,System.Workflow.Runtime.IPendingWork,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueName" Type="System.IComparable" />
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="pendingWork" Type="System.Workflow.Runtime.IPendingWork" />
+        <Parameter Name="workItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="queueName">The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</param>
+        <param name="item">The object to enqueue.</param>
+        <param name="pendingWork">An <see cref="T:System.Workflow.Runtime.IPendingWork" /> that allows the sender to be notified when <c>item</c> is delivered.</param>
+        <param name="workItem">An object to be passed to the <see cref="T:System.Workflow.Runtime.IPendingWork" /> methods.</param>
+        <summary>Posts a message to the specified workflow queue when the workflow is idle. <see cref="M:System.Workflow.Runtime.WorkflowInstance.EnqueueItemOnIdle(System.IComparable,System.Object,System.Workflow.Runtime.IPendingWork,System.Object)" /> waits until the workflow reaches an idle point and enqueues after verifying that the workflow scheduler is idle (that is, no active operation is being executed).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Waits for the workflow instance to become idle and then sends the `item` to the specified <xref:System.Workflow.Runtime.WorkflowQueue>. If you call <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItemOnIdle%2A> while the workflow instance is suspended, the workflow runtime engine will throw an <xref:System.InvalidOperationException>. If you want to be notified when the message is delivered, you can implement <xref:System.Workflow.Runtime.IPendingWork> in your service and pass a `workItem` and an <xref:System.Workflow.Runtime.IPendingWork> object to <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A>. If you do not want such notification, you can pass a null reference (`Nothing` in Visual Basic) for `pendingWork` and `workItem`.  
+  
+ When you are using this method with a state machine workflow, you might get an exception that contains the message "Queue '{0}' is not enabled." This occurs when the current state of the state machine does not know how to handle a specific event. For example, when some state other than the current state contains the <xref:System.Workflow.Activities.EventDrivenActivity> that contains the <xref:System.Workflow.Activities.HandleExternalEventActivity> that is represented by the queue '{0}'.  
+  
+   
+  
+## Examples  
+ The following example demonstrates sending information to a workflow instance using the `EnqueueItemOnIdle` method. First, a WorkflowInstance object is created and started; next, an object that implements the <xref:System.Workflow.Runtime.IPendingWork> interface is created. `EnqueueItemOnIdle` is then called, passing in string values for the queue name, the enqueued item, and the work item to be passed to the methods of the pendingWork object.  
+  
+ [!code-csharp[WF_Samples#12](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#12)]
+ [!code-vb[WF_Samples#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.  
+  
+ -or-  
+  
+ The workflow instance is suspended.  
+  
+ -or-  
+  
+ The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> specified by <paramref name="queueName" /> does not exist.  
+  
+ -or-  
+  
+ The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> specified by <paramref name="queueName" /> is not enabled.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare.</param>
+        <summary>Returns a value that indicates whether the specified object is equal to the <see cref="T:System.Workflow.Runtime.WorkflowInstance" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to this <see cref="T:System.Workflow.Runtime.WorkflowInstance" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object must be an instance of the <xref:System.Workflow.Runtime.WorkflowInstance> class and have the same <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A> as this <xref:System.Workflow.Runtime.WorkflowInstance>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this workflow instance.</summary>
+        <returns>The hash code for this <see cref="T:System.Workflow.Runtime.WorkflowInstance" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.WorkflowInstance.GetHashCode%2A> returns a hash code based on the value of <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkflowDefinition">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity GetWorkflowDefinition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Activity GetWorkflowDefinition() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.GetWorkflowDefinition" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the root activity for this workflow instance.</summary>
+        <returns>An <see cref="T:System.Workflow.ComponentModel.Activity" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the root activity to navigate the activity hierarchy of the workflow.  
+  
+ This method is not thread safe, so the host should synchronize its calls to this method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates retrieving the workflow definition from a workflow instance.  This example is from the Ordering State Machine SDK sample, from the Mainform.cs file.  For more information, see the [Ordering State Machine Sample](http://msdn.microsoft.com/en-us/59272cf4-bc98-439c-bcfa-b66999ebce5c).  
+  
+ [!code-csharp[WF_Samples#86](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#86)]
+ [!code-vb[WF_Samples#86](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#86)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkflowNextTimerExpiration">
+      <MemberSignature Language="C#" Value="public DateTime GetWorkflowNextTimerExpiration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.DateTime GetWorkflowNextTimerExpiration() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.GetWorkflowNextTimerExpiration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the next point in time that this <see cref="T:System.Workflow.Runtime.WorkflowInstance" /> is scheduled to be delivered a timer message.</summary>
+        <returns>A DateTime value that represents the next <see cref="P:System.Workflow.Runtime.TimerEventSubscription.ExpiresAt" /> time this <see cref="T:System.Workflow.Runtime.WorkflowInstance" /> will be delivered a timer message.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates using the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowNextTimerExpiration%2A> method to determine if more workflow timer messages are enqueued. This example is from the WorkflowThreading SDK sample, from the Program.cs file. For more information, see [Workflow Threading Sample](http://msdn.microsoft.com/en-us/5b650be7-09fa-47db-a2f6-523dc8ea5ee9).  
+  
+ [!code-csharp[WF_Samples#284](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#284)]
+ [!code-vb[WF_Samples#284](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#284)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkflowQueueData">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.Runtime.WorkflowQueueInfo&gt; GetWorkflowQueueData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.Runtime.WorkflowQueueInfo&gt; GetWorkflowQueueData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.Runtime.WorkflowQueueInfo&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Workflow.Runtime.WorkflowQueueInfo" /> objects that contains the pending items and subscribed activities for the workflow queues associated with this workflow instance.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see cref="T:System.Workflow.Runtime.WorkflowQueueInfo" /> objects.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> returns a collection of <xref:System.Workflow.Runtime.WorkflowQueueInfo> objects, each of which contains information about the state of one of the workflow queues associated with this workflow instance. <xref:System.Workflow.Runtime.WorkflowQueueInfo.Items%2A?displayProperty=fullName> contains the pending items for a <xref:System.Workflow.Runtime.WorkflowQueue> and <xref:System.Workflow.Runtime.WorkflowQueueInfo.SubscribedActivityNames%2A?displayProperty=fullName> contains a list of the activities that are subscribed for item delivery on a <xref:System.Workflow.Runtime.WorkflowQueue>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> method to obtain information about the state of all workflow queues associated with a <xref:System.Workflow.Runtime.WorkflowInstance> object. When the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event occurs, the `OnWorkflowIdled` method defined in this example is called. It determines which workflow is idled using the <xref:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance%2A> property and then gets a collection of queued items for the workflow instance by calling the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> method. The code iterates over the collection to determine which activity is waiting for the event that idled the workflow. It then sends an exception to the workflow queue using the <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A> method along with the name of the event queue item.  
+  
+ This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+  
+ [!code-csharp[WF_Samples#261](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#261)]
+ [!code-vb[WF_Samples#261](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#261)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceId">
+      <MemberSignature Language="C#" Value="public Guid InstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowInstance.InstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique identifier for the workflow instance.</summary>
+        <value>The <see cref="T:System.Guid" /> of the workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A> to reference the workflow instance.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A> property to obtain information about a <xref:System.Workflow.Runtime.WorkflowInstance> object. The first code snippet creates a <xref:System.Workflow.Runtime.WorkflowInstance> variable named `instanceId`.  
+  
+ [!code-csharp[WF_Samples#210](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#210)]
+ [!code-vb[WF_Samples#210](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#210)]  
+  
+ The second snippet uses the <xref:System.Workflow.Runtime.WorkflowInstance.InstanceId%2A> property as the first object in an `OrderEventArgs` constructor call when the `CallBackForApproval` method is called.  
+  
+ This code example is part of the Listen SDK Sample from the OrderServiceImple.cs file. For more information, see [Listen Sample](http://msdn.microsoft.com/en-us/1cec0e82-7544-429f-b717-0fc25eb42b7f).  
+  
+ [!code-csharp[WF_Samples#211](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#211)]
+ [!code-vb[WF_Samples#211](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#211)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Load" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Loads a previously unloaded workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.WorkflowInstance.Load%2A> is synchronous; if the workflow instance can be loaded, <xref:System.Workflow.Runtime.WorkflowInstance.Load%2A> will return after the workflow instance has been loaded into memory and scheduled by the workflow runtime engine. The runtime raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowLoaded> event after the persistence service has restored the workflow instance in memory, but before the workflow runtime engine schedules the instance.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to load a previously unloaded <xref:System.Workflow.Runtime.WorkflowInstance> object.  
+  
+ [!code-csharp[WF_Samples#10](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#10)]
+ [!code-vb[WF_Samples#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReloadTrackingProfiles">
+      <MemberSignature Language="C#" Value="public void ReloadTrackingProfiles ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReloadTrackingProfiles() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.ReloadTrackingProfiles" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reload the tracking profiles for this workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The runtime tracking infrastructure will reload each <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for this workflow instance associated with its tracking channels. If it is not already in a suspended state, the workflow is temporarily suspended by the runtime tracking infrastructure while the tracking profiles are reloaded.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Resume">
+      <MemberSignature Language="C#" Value="public void Resume ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resume() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Resume" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resumes execution of a previously suspended workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The host can call <xref:System.Workflow.Runtime.WorkflowInstance.Resume%2A> to resume execution of a workflow instance that has been previously suspended. If the workflow instance is not in the suspended state, no action is taken. The runtime raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowResumed> event just before execution of the workflow instance is resumed.  
+  
+   
+  
+## Examples  
+ The following example demonstrates calling Resume on a previously suspended workflow instance.  This example is from the Suspend and Terminate SDK sample.  For more information, see [Suspend and Terminate Sample](http://msdn.microsoft.com/en-us/f4dffa58-d01e-44fb-b5a1-3b283d2c4517).  
+  
+ [!code-csharp[WF_Samples#172](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#172)]
+ [!code-vb[WF_Samples#172](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#172)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts the execution of the workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A> calls <xref:System.Workflow.ComponentModel.ActivityExecutionContext.ExecuteActivity%2A> on the root activity of this workflow instance. If <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A> encounters an exception, it terminates the workflow instance by calling <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A> with the <xref:System.Exception.Message%2A> property of the exception passed as the reason for the termination.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can use the <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A> method to start a <xref:System.Workflow.Runtime.WorkflowInstance> in a workflow host. The code creates an instance of the <xref:System.Workflow.Runtime.WorkflowRuntime>, adds services to the runtime, and then demonstrates the recommended way to create a <xref:System.Workflow.Runtime.WorkflowInstance> object. It creates a <xref:System.Type> object and casts it to one of the workflow objects with which the host is associated. The code next initializes <xref:System.Workflow.Runtime.WorkflowInstance> by calling the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> method and passing the previously created type to it. The <xref:System.Workflow.Runtime.WorkflowInstance> is started with the <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A> method call.  
+  
+ This code example is part of the Canceling a Workflow SDK sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+  
+ [!code-csharp[WF_Samples#260](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#260)]
+ [!code-vb[WF_Samples#260](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#260)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.  
+  
+ -or-  
+  
+ The workflow instance has already been started.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="public void Suspend (string error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Suspend(string error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Suspend(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="error">A description of the reason for suspending the workflow instance.</param>
+        <summary>Suspends the workflow instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow instance is suspended in a synchronous manner. If the workflow instance is already suspended, no action is taken; otherwise, the workflow runtime engine suspends the workflow instance, raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowSuspended> event and passes `reason` in a <xref:System.Workflow.Runtime.WorkflowSuspendedEventArgs>.  
+  
+> [!NOTE]
+>  <xref:System.Workflow.Runtime.WorkflowInstance.Suspend%2A> does not unload the workflow instance.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling Suspend on a <xref:System.Workflow.Runtime.WorkflowInstance> object.  
+  
+ [!code-csharp[WF_Samples#9](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#9)]
+ [!code-vb[WF_Samples#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminate">
+      <MemberSignature Language="C#" Value="public void Terminate (string error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(string error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Terminate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="error">A description of the reason for terminating the workflow instance.</param>
+        <summary>Terminates the workflow instance in a synchronous manner.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow instance is terminated in a synchronous manner. The host calls <xref:System.Workflow.Runtime.WorkflowInstance.Terminate%2A> to terminate the workflow instance. The workflow runtime engine clears the in-memory workflow instance and informs the persistence service that the instance has been cleared from memory. For the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>, this means that all state information for that workflow instance is deleted from the database upon termination. You will not be able to reload the workflow instance from a previously stored persistence point.  
+  
+ After the in-memory workflow instance is cleared and the persistence service is informed of the termination, the `Terminate` method raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated> event and passes `reason` in the <xref:System.Exception.Message%2A> property of a <xref:System.Workflow.ComponentModel.WorkflowTerminatedException> contained in the <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs>.  
+  
+ `Terminate` is different from <xref:System.Workflow.Runtime.WorkflowInstance.Abort%2A> in that while Terminate clears the in-memory workflow instance and informs the persistence service of the termination, `Abort` simply clears the in-memory workflow instance, which can then be restarted from the last persistence point.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates calling Terminate on a <xref:System.Workflow.Runtime.WorkflowInstance> object.  
+  
+ [!code-csharp[WF_Samples#8](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#8)]
+ [!code-vb[WF_Samples#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The workflow runtime engine is not running.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryUnload">
+      <MemberSignature Language="C#" Value="public bool TryUnload ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryUnload() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.TryUnload" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unloads the workflow instance from memory to the persistence store when the instance is suspended or idle.</summary>
+        <returns>
+          <see langword="true" /> if the workflow instance was unloaded; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the workflow instance is idle or suspended, <xref:System.Workflow.Runtime.WorkflowInstance.TryUnload%2A> uses the persistence service to remove the workflow instance from memory and persist it to a data store. If there is no persistence service registered with the <xref:System.Workflow.Runtime.WorkflowRuntime>, <xref:System.Workflow.Runtime.WorkflowInstance.TryUnload%2A> throws an <xref:System.InvalidOperationException>. If the workflow instance is successfully persisted, the runtime raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded> event, and returns `true`. <xref:System.Workflow.Runtime.WorkflowInstance.Unload%2A> returns `false` if the workflow instance has already been unloaded, has been terminated, has been aborted, or has already completed.  
+  
+ The host can use <xref:System.Workflow.Runtime.WorkflowInstance.TryUnload%2A> to reclaim system resources from an idle workflow.  
+  
+   
+  
+## Examples  
+ The following example demonstrates using the TryUnload method to unload a workflow when the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event fires. This example is from the Using Persistence Services SDK sample, from the Program.cs file. For more information, see [Using Persistence Services Sample](http://msdn.microsoft.com/en-us/3176b7e7-ae49-4d5c-802b-85032d6ebde6).  
+  
+ [!code-csharp[WF_Samples#280](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#280)]
+ [!code-vb[WF_Samples#280](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#280)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">There is no persistence service registered with the workflow runtime engine.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Unload">
+      <MemberSignature Language="C#" Value="public void Unload ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unload() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowInstance.Unload" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unloads the workflow instance from memory to the persistence store. This call blocks until after the currently scheduled work is finished, or the end of a transaction scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.WorkflowInstance.Unload%2A> is synchronous; that is, it returns after completing any action that it performs. If the workflow instance is not idle, the runtime waits until the instance can be interrupted. An instance can only be interrupted after the currently scheduled work item completes; this is typically when the currently running Activity returns from its <xref:System.Workflow.ComponentModel.Activity.Execute%2A> method. However, if the instance is executing a <xref:System.Workflow.ComponentModel.TransactionScopeActivity>, the transaction scope must complete execution before the instance can be interrupted. Unload then uses the persistence service to remove the workflow instance from memory and persists it to a data store. If there is no persistence service registered with the <xref:System.Workflow.Runtime.WorkflowRuntime>, <xref:System.Workflow.Runtime.WorkflowInstance.Unload%2A> throws an <xref:System.InvalidOperationException>. If the workflow instance is successfully persisted, the runtime raises the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded> event.  
+  
+ The host can use <xref:System.Workflow.Runtime.WorkflowInstance.Unload%2A> to reclaim system resources from an idle workflow.  
+  
+   
+  
+## Examples  
+ The following example demonstrates calling <xref:System.Workflow.Runtime.WorkflowInstance.Unload%2A> on a <xref:System.Workflow.Runtime.WorkflowInstance> object.  
+  
+ [!code-csharp[WF_Samples#11](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#11)]
+ [!code-vb[WF_Samples#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">There is no persistence service registered with the workflow runtime engine.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowRuntime">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowRuntime WorkflowRuntime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.WorkflowRuntime WorkflowRuntime" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowInstance.WorkflowRuntime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowRuntime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> for this workflow instance.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> that represents the execution environment in which this workflow instance is running.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates accessing the executing <xref:System.Workflow.Runtime.WorkflowRuntime> of a <xref:System.Workflow.Runtime.WorkflowInstance> object.  
+  
+ [!code-csharp[WF_Samples#7](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#7)]
+ [!code-vb[WF_Samples#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

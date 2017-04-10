@@ -1,0 +1,67 @@
+<Type Name="FormShowConstants" FullName="Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants">
+  <TypeSignature Language="C#" Value="public enum FormShowConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormShowConstants extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides constants for compatibility with the Visual Basic 6.0 <see langword="Show" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In Visual Basic 6.0, the `Modal` parameter of the `Show` method was used to determine whether a form would be shown as a modal dialog box. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the `Modal` parameter is replaced by two different Show methods: <xref:System.Windows.Forms.Control.Show%2A> and <xref:System.Windows.Forms.Form.ShowDialog%2A>.  
+  
+ These constants enable code that has been upgraded from Visual Basic 6.0 to continue to run without additional modification.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Modal">
+      <MemberSignature Language="C#" Value="Modal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants Modal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants.Modal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Equivalent to the Visual Basic 6.0 constant <see langword="vbModal" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Modeless">
+      <MemberSignature Language="C#" Value="Modeless" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants Modeless = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants.Modeless" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.FormShowConstants</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Equivalent to the Visual Basic 6.0 constant <see langword="vbModeless" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

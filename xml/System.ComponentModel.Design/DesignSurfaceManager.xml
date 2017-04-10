@@ -1,0 +1,403 @@
+<Type Name="DesignSurfaceManager" FullName="System.ComponentModel.Design.DesignSurfaceManager">
+  <TypeSignature Language="C#" Value="public class DesignSurfaceManager : IDisposable, IServiceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignSurfaceManager extends System.Object implements class System.IDisposable, class System.IServiceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurfaceManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Manages a collection of <see cref="T:System.ComponentModel.Design.DesignSurface" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignSurfaceManager> class is designed to be a container of <xref:System.ComponentModel.Design.DesignSurface> objects. It provides common services that handle event routing between designers, property windows, and other global objects. Using <xref:System.ComponentModel.Design.DesignSurfaceManager> is optional, but it is recommended if you intend to have several designer windows.  
+  
+ The <xref:System.ComponentModel.Design.DesignSurfaceManager> class provides several design-time services automatically. You can override each of these services by replacing them in the protected <xref:System.ComponentModel.Design.DesignSurfaceManager.ServiceContainer%2A> property. To replace a service, override the constructor, call base, and make any changes through the protected <xref:System.ComponentModel.Design.DesignSurfaceManager.ServiceContainer%2A> property. All services added to the service container that implement the <xref:System.IDisposable> interface are disposed when the design surface manager is disposed. The <xref:System.ComponentModel.Design.DesignSurfaceManager> class provides the <xref:System.ComponentModel.Design.IDesignerEventService> interface as the default service. <xref:System.ComponentModel.Design.IDesignerEventService> provides a global eventing mechanism for designer events. With this mechanism, an application is informed when a designer becomes active. The service provides a collection of designers and a single place where global objects, such as the Properties window, can monitor selection change events.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignSurfaceManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignSurfaceManager (IServiceProvider parentProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider parentProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.#ctor(System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parentProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="parentProvider">A parent service provider. Service requests are forwarded to this provider if they cannot be resolved by the design surface manager.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveDesignSurface">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.Design.DesignSurface ActiveDesignSurface { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignSurface ActiveDesignSurface" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurface" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the active designer.</summary>
+        <value>The active designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurface%2A> property should be set by the designer's user interface whenever a designer becomes the active window. The default implementation of this property works with the default implementation of the <xref:System.ComponentModel.Design.IDesignerEventService> interface to notify interested parties that a new designer is now active. If you provide your own implementation of <xref:System.ComponentModel.Design.IDesignerEventService>, you should override this property to notify your service appropriately. This property can be set to `null`, indicating that no designer is active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveDesignSurfaceChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler ActiveDesignSurfaceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler ActiveDesignSurfaceChanged" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurfaceChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the currently active designer changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDesignSurface">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignSurface CreateDesignSurface ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Design.DesignSurface CreateDesignSurface() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurface</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of a design surface.</summary>
+        <returns>A new design surface instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDesignSurface">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignSurface CreateDesignSurface (IServiceProvider parentProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Design.DesignSurface CreateDesignSurface(class System.IServiceProvider parentProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurface</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="parentProvider">A parent service provider. A new merged service provider will be created that will first ask this provider for a service, and then delegate any failures to the design surface manager object. This merged provider will be passed into the <see cref="M:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurfaceCore(System.IServiceProvider)" /> method.</param>
+        <summary>Creates an instance of a design surface.</summary>
+        <returns>A new design surface instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want to conveniently add additional per-designer services, use the `parentProvider` parameter to provide a service provider for this design surface. The <xref:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface%2A> method creates a merged service provider that can satisfy service requests from both the given service provider as well as the <xref:System.ComponentModel.Design.DesignSurfaceManager> itself. The <xref:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface%2A> method then passes this service provider into the <xref:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurfaceCore%2A> method.  
+  
+ After <xref:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurfaceCore%2A> returns the design surface, the <xref:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface%2A> method tries to obtain the <xref:System.ComponentModel.Design.IDesignerEventService>. If it is present, and if it is the instance of the service that <xref:System.ComponentModel.Design.DesignSurfaceManager> provided by default, the <xref:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface%2A> method raises the <xref:System.ComponentModel.Design.IDesignerEventService.DesignerCreated> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parentProvider" /> is <see langword="null" />.</exception>
+        <block subset="none" type="overrides">
+          <para>If an external implementation of the service was provided, it is the responsibility of the class that derives from the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class to raise the <see cref="E:System.ComponentModel.Design.IDesignerEventService.DesignerCreated" /> event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDesignSurfaceCore">
+      <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.Design.DesignSurface CreateDesignSurfaceCore (IServiceProvider parentProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ComponentModel.Design.DesignSurface CreateDesignSurfaceCore(class System.IServiceProvider parentProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurfaceCore(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurface</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="parentProvider">A service provider to pass to the design surface. This is either an instance of <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> or an object that implements <see cref="T:System.IServiceProvider" />, and represents a merge between the service provider of the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class and an externally passed provider.</param>
+        <summary>Implementation that creates the design surface.</summary>
+        <returns>A new design surface instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurfaceCore%2A> method is called by both <xref:System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface%2A> methods. It is the implementation that actually creates the design surface. The default implementation just returns a new <xref:System.ComponentModel.Design.DesignSurface>. You may override this method to provide a custom object that derives from the <xref:System.ComponentModel.Design.DesignSurface> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignSurfaceCreated">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.DesignSurfaceEventHandler DesignSurfaceCreated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.DesignSurfaceEventHandler DesignSurfaceCreated" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaceCreated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurfaceEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a designer is created.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignSurfaceDisposed">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.Design.DesignSurfaceEventHandler DesignSurfaceDisposed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.DesignSurfaceEventHandler DesignSurfaceDisposed" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaceDisposed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurfaceEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a designer is disposed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignSurfaces">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignSurfaceCollection DesignSurfaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignSurfaceCollection DesignSurfaces" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurfaceCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of design surfaces.</summary>
+        <value>A collection of design surfaces that are currently hosted by the design surface manager.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaces%2A> property is implemented directly on top of <xref:System.ComponentModel.Design.IDesignerEventService>, so if you provide your own implementation of that service, this property uses your implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The public <xref:System.ComponentModel.Design.DesignSurfaceManager.Dispose%2A> method follows the standard <xref:System.IDisposable> pattern. Calling this method destroys the design surface manager. It also disposes the service container, which causes all services that implement <xref:System.IDisposable> to also be disposed. The protected version of this method is `virtual` and follows the normal <xref:System.IDisposable> pattern.  
+  
+> [!NOTE]
+>  Because <xref:System.ComponentModel.Design.DesignSurfaceManager> does not have any native code to clean up, it does not have a finalizer that calls <xref:System.ComponentModel.Design.DesignSurfaceManager.Dispose%2A>. If you need to call <xref:System.ComponentModel.Design.DesignSurfaceManager.Dispose%2A>, you must add a finalizer yourself.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The public <xref:System.ComponentModel.Design.DesignSurfaceManager.Dispose%2A> method follows the standard <xref:System.IDisposable> pattern. Calling this method destroys the design surface manager. It also disposes the service container, which causes all services that implement <xref:System.IDisposable> to also be disposed. The protected version of this method is `virtual` and follows the normal <xref:System.IDisposable> pattern.  
+  
+> [!NOTE]
+>  Because <xref:System.ComponentModel.Design.DesignSurfaceManager> does not have any native code to clean up, it does not have a finalizer that calls <xref:System.ComponentModel.Design.DesignSurfaceManager.Dispose%2A>. If you need to call <xref:System.ComponentModel.Design.DesignSurfaceManager.Dispose%2A>, you must add a finalizer yourself.  
+  
+ This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.Design.DesignSurfaceManager> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignSurfaceManager.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The service type to retrieve.</param>
+        <summary>Gets a service in the design surface manager’s service container.</summary>
+        <returns>An object that implements, or is a derived class of, the given service type; otherwise, <see langword="null" /> if the service does not exist in the service container.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignSurfaceManager.GetService%2A> method forwards to any service provider that was given to the design surface manager at construction time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SelectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.DesignSurfaceManager.SelectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the global selection changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised when the active designer's selection of component set changes. This is mapped through the <xref:System.ComponentModel.Design.IDesignerEventService> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceContainer">
+      <MemberSignature Language="C#" Value="protected System.ComponentModel.Design.ServiceContainer ServiceContainer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.ServiceContainer ServiceContainer" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignSurfaceManager.ServiceContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.ServiceContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the design surface manager's <see cref="P:System.ComponentModel.Design.DesignSurfaceManager.ServiceContainer" />.</summary>
+        <value>The design surface manager's <see cref="P:System.ComponentModel.Design.DesignSurfaceManager.ServiceContainer" />.</value>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>Classes inheriting from the <see cref="T:System.ComponentModel.Design.DesignSurfaceManager" /> class can use this property to add and remove services.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

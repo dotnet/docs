@@ -1,0 +1,219 @@
+<Type Name="Point3D" FullName="System.Web.UI.DataVisualization.Charting.Point3D">
+  <TypeSignature Language="C#" Value="public class Point3D" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Point3D extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Point3D" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the coordinates of a three-dimensional (3D) data point. This class is used when performing custom drawing with 3D charts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.Point3D> class represents the coordinates of a 3D data point.  
+  
+ Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from relative X, Y and Z (3D) coordinates into relative X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. By calling <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A>, the X and Y-values of the <xref:System.Web.UI.DataVisualization.Charting.Point3D> objects are changed so that they reflect the 3-dimensional space. The new X and Y points can then be used for GDI+ method calls—the Z value is then disregarded—after being changed to absolute pixel coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method.  
+  
+ Note that the Z coordinate may be less than zero (located behind a chart area) or greater than 100 (located in front of a chart area).  
+  
+ To both enable 3D charts and work with their styles, use the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.Area3DStyle%2A> property. The <xref:System.Web.UI.DataVisualization.Charting.Point3D> class is not used for 3D styles.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Point3D ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Point3D.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.Point3D" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Point3D (float x, float y, float z);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 x, float32 y, float32 z) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.Point3D.#ctor(System.Single,System.Single,System.Single)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="z" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="x">The X coordinate of 3D point.</param>
+        <param name="y">The Y coordinate of 3D point.</param>
+        <param name="z">The Z coordinate, which represents the depth of 3D point.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.AnnotationPathPoint" /> class with the specified X, Y and Z coordinates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointF">
+      <MemberSignature Language="C#" Value="public System.Drawing.PointF PointF { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.PointF PointF" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.PointF" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.PointF</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Drawing.PointF" /> structure, which stores the X and Y coordinates of a 3D point.</summary>
+        <value>A <see cref="T:System.Drawing.PointF" /> structure that represents the X and Y coordinates of a 3D point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of <xref:System.Web.UI.DataVisualization.Charting.Point3D> objects as its only parameter. By calling <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A>, the X and Y property values are changed to reflect the 3-dimensional space.  
+  
+ These new X and Y coordinates are then converted to absolute coordinates, by using a method such as the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method. After converting the coordinates, the <xref:System.Web.UI.DataVisualization.Charting.Point3D.PointF%2A> property of each Point3D object can be used for any GDI+ method that take a <xref:System.Drawing.PointF> object as a parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public float X { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 X" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the X coordinate of a 3D point.</summary>
+        <value>A <see langword="float" /> that represents the X coordinate of a 3D point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
+  
+ These new X and Y coordinates are then converted to absolute coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method. They are then used for GDI+ method calls.  
+  
+ A relative X coordinate can be obtained from an axis value by calling the <xref:System.Web.UI.DataVisualization.Charting.Axis.ValueToPosition%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public float Y { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Y" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Y coordinate of a 3D point.</summary>
+        <value>A <see langword="float" /> value that represents the Y coordinate of a 3D point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
+  
+ These new X and Y coordinates are then converted to absolute coordinates by using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method. They are then used for GDI+ method calls.  
+  
+ A relative Y coordinate can be obtained from an axis value using the <xref:System.Web.UI.DataVisualization.Charting.Axis.ValueToPosition%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Z">
+      <MemberSignature Language="C#" Value="public float Z { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Z" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.Point3D.Z" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Z coordinate of a 3D point.</summary>
+        <value>The Z coordinate of a 3D point, which is measured as a percentage of the relevant chart area's depth.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This Z property is always expressed as a percentage of the relevant chart area's depth. With 3D charts, Z coordinates are relative, and have a value of 0 for the back wall of the chart area and a value of 100 for the front wall of the chart area.  
+  
+ **Note** This Z property may be less than zero (located behind a chart area) or greater than 100 (located in front of a chart area).  
+  
+ Any point used in custom 3D drawing—which is accomplished using GDI+—must be transformed from X, Y and Z (3D) coordinates into X and Y (2D) coordinates using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method. This method takes an array of Point3D objects as its only parameter. By calling the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.TransformPoints%2A> method, the X and Y property values are changed to reflect the 3-dimensional space.  
+  
+ These new X and Y coordinates are then converted to absolute coordinates by using the <xref:System.Web.UI.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint%2A> method. They are then used for GDI+ method calls.  
+  
+ Relative Z coordinates can be obtained for series by using the <xref:System.Web.UI.DataVisualization.Charting.ChartArea.GetSeriesDepth%2A> and <xref:System.Web.UI.DataVisualization.Charting.ChartArea.GetSeriesZPosition%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

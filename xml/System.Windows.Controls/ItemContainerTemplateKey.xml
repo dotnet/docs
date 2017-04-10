@@ -1,0 +1,59 @@
+<Type Name="ItemContainerTemplateKey" FullName="System.Windows.Controls.ItemContainerTemplateKey">
+  <TypeSignature Language="C#" Value="public class ItemContainerTemplateKey : System.Windows.TemplateKey" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemContainerTemplateKey extends System.Windows.TemplateKey" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerTemplateKey" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.TemplateKey</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a resource key for an <see cref="T:System.Windows.Controls.ItemContainerTemplate" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemContainerTemplateKey ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerTemplateKey.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemContainerTemplateKey" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Controls.ItemContainerTemplateKey> is initialized without a `dataType` parameter (for example, when set in XAML), you must set the value of the <xref:System.Windows.TemplateKey.DataType%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemContainerTemplateKey (object dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerTemplateKey.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataType" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dataType">The type for which this template is designed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ItemContainerTemplateKey" /> class with the specified data type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,232 @@
+<Type Name="IWindowProvider" FullName="System.Windows.Automation.Provider.IWindowProvider">
+  <TypeSignature Language="C#" Value="public interface IWindowProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWindowProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IWindowProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("987df77b-db06-4d77-8f8a-86a9c3bb90b9")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to controls that provide fundamental window-based functionality within a traditional [!INCLUDE[TLA#tla_gui](~/includes/tlasharptla-gui-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.WindowPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IWindowProvider.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Attempts to close the window.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.Provider.IWindowProvider.Close%2A> must return immediately without blocking.  
+  
+ <xref:System.Windows.Automation.Provider.IWindowProvider.Close%2A> raises the <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowClosedEvent> event. If possible, the event should be raised after the control has completed its associated action.  
+  
+ When called on a split pane control, this method will close the pane and remove the associated split. This method might also close all other panes, depending on implementation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">When the control is unable to perform the requested action.</exception>
+        <exception cref="T:System.Windows.Automation.ElementNotAvailableException">When the target element is no longer available (for example, the window has closed).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InteractionState">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.WindowInteractionState InteractionState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.WindowInteractionState InteractionState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.InteractionState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowInteractionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the interaction state of the window.</summary>
+        <value>The <see cref="T:System.Windows.Automation.WindowInteractionState" /> of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsModal">
+      <MemberSignature Language="C#" Value="public bool IsModal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsModal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.IsModal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the window is modal.</summary>
+        <value>
+          <see langword="true" /> if the window is modal; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTopmost">
+      <MemberSignature Language="C#" Value="public bool IsTopmost { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTopmost" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.IsTopmost" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the window is the topmost element in the z-order.</summary>
+        <value>
+          <see langword="true" /> if the window is topmost; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximizable">
+      <MemberSignature Language="C#" Value="public bool Maximizable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Maximizable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.Maximizable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the window can be maximized.</summary>
+        <value>
+          <see langword="true" /> if the window can be maximized; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimizable">
+      <MemberSignature Language="C#" Value="public bool Minimizable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Minimizable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.Minimizable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the window can be minimized.</summary>
+        <value>
+          <see langword="true" /> if the window can be minimized; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVisualState">
+      <MemberSignature Language="C#" Value="public void SetVisualState (System.Windows.Automation.WindowVisualState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetVisualState(valuetype System.Windows.Automation.WindowVisualState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IWindowProvider.SetVisualState(System.Windows.Automation.WindowVisualState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="state" Type="System.Windows.Automation.WindowVisualState" />
+      </Parameters>
+      <Docs>
+        <param name="state">The requested visual state of the window.</param>
+        <summary>Changes the visual state of the window. For example, minimizes or maximizes it.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">When the control does not support the requested behavior.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualState">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.WindowVisualState VisualState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.WindowVisualState VisualState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.VisualState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the visual state of the window.</summary>
+        <value>The visual state of the window.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WaitForInputIdle">
+      <MemberSignature Language="C#" Value="public bool WaitForInputIdle (int milliseconds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool WaitForInputIdle(int32 milliseconds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="milliseconds" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="milliseconds">The amount of time, in milliseconds, to wait for the associated process to become idle. The maximum is <see cref="F:System.Int32.MaxValue" />.</param>
+        <summary>Causes the calling code to block for the specified time or until the associated process enters an idle state, whichever completes first.</summary>
+        <returns>
+          <see langword="true" /> if the window has entered the idle state; <see langword="false" /> if the timeout occurred.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is typically used in conjunction with the handling of a <xref:System.Windows.Automation.WindowPatternIdentifiers.WindowOpenedEvent>.  
+  
+ The implementation is dependent on the underlying application framework; therefore this method might return some time after the window is ready for user input. The calling code should not rely on this method to ascertain exactly when the window has become idle.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">When the parameter passed in is not a valid number.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

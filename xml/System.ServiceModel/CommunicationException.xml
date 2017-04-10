@@ -1,0 +1,124 @@
+<Type Name="CommunicationException" FullName="System.ServiceModel.CommunicationException">
+  <TypeSignature Language="C#" Value="public class CommunicationException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CommunicationException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.CommunicationException" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a communication error in either the service or client application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Robust client and service [!INCLUDE[indigo1](~/includes/indigo1-md.md)] applications handle <xref:System.ServiceModel.CommunicationException> objects that may be thrown during communication. There are also two <xref:System.ServiceModel.CommunicationException>-derived exception types (<xref:System.ServiceModel.FaultException%601> and <xref:System.ServiceModel.FaultException>) that clients also often expect. Therefore, in order to prevent the generic <xref:System.ServiceModel.CommunicationException> handler from catching these more specific exception types, catch these exceptions prior to handling <xref:System.ServiceModel.CommunicationException>.  
+  
+-   <xref:System.ServiceModel.FaultException%601> objects are thrown on the client when a SOAP fault that is specified in the operation contract is received in response to a two-way operation (that is, a method with an <xref:System.ServiceModel.OperationContractAttribute> attribute with <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> set to `false`).  
+  
+ <xref:System.ServiceModel.FaultException> objects are thrown when a listener receives a SOAP fault that is not expected or specified in the operation contract. This usually occurs when the application is being debugged and the service has the <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> property set to `true`.  
+  
+> [!NOTE]
+>  When implementing custom channels and binding elements, it is strongly recommended that your components throw only <xref:System.TimeoutException?displayProperty=fullName> or <xref:System.ServiceModel.CommunicationException>-derived objects. In the case where your components throw a recoverable exception that is specific to the component, wrap that exception inside a <xref:System.ServiceModel.CommunicationException>object.  
+  
+ For more details about designing and using the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] fault system, see [Specifying and Handling Faults in Contracts and Services](~/docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md).  
+  
+> [!IMPORTANT]
+>  The WCF Runtime will not throw a <xref:System.ServiceModel.CommunicationException> that is unsafe to handle at the point where it leaves the WCF Runtime and enters user code.  
+  
+   
+  
+## Examples  
+ The following code example shows a client that handles <xref:System.ServiceModel.CommunicationException> types. This client also handles <xref:System.ServiceModel.FaultException> objects because the service has <xref:System.ServiceModel.ServiceBehaviorAttribute.IncludeExceptionDetailInFaults%2A> set to `true`.  
+  
+ [!code-csharp[IErrorHandler#3](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/client.cs#3)]
+ [!code-vb[IErrorHandler#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/client.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommunicationException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.CommunicationException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CommunicationException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommunicationException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.CommunicationException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The description of the error condition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CommunicationException" /> class, using the specified message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CommunicationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.CommunicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">Information relevant to the deserialization process.</param>
+        <param name="context">The context of the deserialization process.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CommunicationException" /> class, using the specified serialization information and context objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CommunicationException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.CommunicationException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The description of the error condition.</param>
+        <param name="innerException">The inner exception to be used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.CommunicationException" /> class, using the specified message and the inner exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

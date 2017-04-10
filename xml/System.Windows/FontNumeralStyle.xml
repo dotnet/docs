@@ -1,0 +1,92 @@
+<Type Name="FontNumeralStyle" FullName="System.Windows.FontNumeralStyle">
+  <TypeSignature Language="C#" Value="public enum FontNumeralStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontNumeralStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.FontNumeralStyle" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the numeral style for a <see cref="T:System.Windows.Documents.Typography" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ OpenType fonts support an old style numeral format. This format is useful for displaying numerals in styles that are no longer standard. The following text displays an 18th century date in standard and old style numeral formats for the Palatino Linotype font.  
+  
+ ![Text using OpenType old style numerals](~/add/media/opentypefont24.gif "Text using OpenType old style numerals")  
+Example of standard and old style numerals  
+  
+ The following text displays standard numerals for the Palatino Linotype font, followed by old style numerals.  
+  
+ ![Text using OpenType old style numeral sets](~/add/media/opentypefont13.gif "Text using OpenType old style numeral sets")  
+Example of standard and old style numeral sets  
+  
+> [!NOTE]
+>  Most OpenType fonts expose only a subset of the total OpenType features available. If a specified font does not support a particular feature, the default glyphs are used instead.  
+  
+   
+  
+## Examples  
+ The following code example shows how to define old style numerals for the Palatino Linotype font, using properties of the <xref:System.Windows.Documents.Typography> object.  
+  
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#11](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSnippets/CS/PageOne.xaml#11)]  -->
+ <!-- TODO: review snippet reference [!code-xml[OpenTypeFontSnippets#11](~/samples/snippets/xaml/VS_Snippets_Wpf/OpenTypeFontSnippets/XAML/PageOne.xaml#11)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Lining">
+      <MemberSignature Language="C#" Value="Lining" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralStyle Lining = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralStyle.Lining" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Lining numeral style is used. Replaces default glyphs with numeric forms of even height.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralStyle Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralStyle.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default numeral style is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OldStyle">
+      <MemberSignature Language="C#" Value="OldStyle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralStyle OldStyle = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralStyle.OldStyle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Old style numeral style is used. Replaces default glyphs with a figure style that matches lowercase letters in height and color.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

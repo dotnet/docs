@@ -1,0 +1,82 @@
+<Type Name="TrustStatus" FullName="System.Security.Cryptography.X509Certificates.TrustStatus">
+  <TypeSignature Language="C#" Value="public enum TrustStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrustStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.TrustStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies the level of trustworthiness that is assigned to the signature for a manifest.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="KnownIdentity">
+      <MemberSignature Language="C#" Value="KnownIdentity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.TrustStatus KnownIdentity = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.TrustStatus.KnownIdentity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity is known and the signature is valid. A valid Authenticode signature provides an identity.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Trusted">
+      <MemberSignature Language="C#" Value="Trusted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.TrustStatus Trusted = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.TrustStatus.Trusted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The signature is valid and was created by an explicitly trusted publisher.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnknownIdentity">
+      <MemberSignature Language="C#" Value="UnknownIdentity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.TrustStatus UnknownIdentity = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.TrustStatus.UnknownIdentity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity is not known and the signature is invalid. Because there is no verified signature, an identity cannot be determined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Untrusted">
+      <MemberSignature Language="C#" Value="Untrusted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.TrustStatus Untrusted = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.TrustStatus.Untrusted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.TrustStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The signature was created by an explicitly distrusted publisher.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

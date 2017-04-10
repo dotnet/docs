@@ -1,0 +1,75 @@
+<Type Name="ThemeColor" FullName="Microsoft.Windows.Themes.ThemeColor">
+  <TypeSignature Language="C#" Value="public enum ThemeColor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThemeColor extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ThemeColor" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Luna</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents possible color variants for the [!INCLUDE[TLA#tla_ms](~/includes/tlasharptla-ms-md.md)] themes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each theme potentially has multiple color variants, which, presumably, are visually similar but in different colors. Luna, for example, has all three color variants: Homestead, Metallic, and NormalColor. Aero and Royale have NormalColor.  
+  
+ Classic doesn't have a color variant, but instead uses color schemes, including Pumpkin, Rose, and Spruce. A color scheme, unlike a color variant, defines values for each of the colors which make up the system palette as well as certain values for certain metrics like font names and sizes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Homestead">
+      <MemberSignature Language="C#" Value="Homestead" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ThemeColor Homestead = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.Homestead" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Luna</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the Luna theme; the localized color name is Olive.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Metallic">
+      <MemberSignature Language="C#" Value="Metallic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ThemeColor Metallic = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.Metallic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Luna</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the Luna theme; the localized color name is Sliver.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalColor">
+      <MemberSignature Language="C#" Value="NormalColor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ThemeColor NormalColor = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ThemeColor.NormalColor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Luna</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Windows.Themes.ThemeColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the Luna, Aero, and Classic themes; the localized color name is Blue.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

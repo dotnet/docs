@@ -1,0 +1,204 @@
+<Type Name="EntitySetRights" FullName="System.Data.Services.EntitySetRights">
+  <TypeSignature Language="C#" Value="public enum EntitySetRights" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EntitySetRights extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.EntitySetRights" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An enumeration used to define access rights to data that is deployed by [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets read-only access to all data deployed by the `AccountingService`.  
+  
+```  
+namespace AccountingServiceWebApp  
+{  
+    public class AccountingService :  
+                DataService<DataModel>  
+    {  
+        config.SetResourceContainerAccessRule("*",   
+                                ResourceContainerRights.AllRead);  
+  
+    }  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights All = int32(63)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to create, read, update, and delete data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllRead">
+      <MemberSignature Language="C#" Value="AllRead" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights AllRead = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.AllRead" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to read data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllWrite">
+      <MemberSignature Language="C#" Value="AllWrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights AllWrite = int32(60)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.AllWrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to write data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Denies all rights to access data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMultiple">
+      <MemberSignature Language="C#" Value="ReadMultiple" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights ReadMultiple = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.ReadMultiple" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to read sets of data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSingle">
+      <MemberSignature Language="C#" Value="ReadSingle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights ReadSingle = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.ReadSingle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to read single data items.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAppend">
+      <MemberSignature Language="C#" Value="WriteAppend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights WriteAppend = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteAppend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to create new data items in data sets.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteDelete">
+      <MemberSignature Language="C#" Value="WriteDelete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights WriteDelete = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteDelete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to delete data items from data sets.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMerge">
+      <MemberSignature Language="C#" Value="WriteMerge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights WriteMerge = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteMerge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to merge data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteReplace">
+      <MemberSignature Language="C#" Value="WriteReplace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights WriteReplace = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteReplace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authorization to replace data.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

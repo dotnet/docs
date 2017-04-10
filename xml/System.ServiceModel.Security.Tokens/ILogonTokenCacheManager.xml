@@ -1,0 +1,78 @@
+<Type Name="ILogonTokenCacheManager" FullName="System.ServiceModel.Security.Tokens.ILogonTokenCacheManager">
+  <TypeSignature Language="C#" Value="public interface ILogonTokenCacheManager" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILogonTokenCacheManager" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.ILogonTokenCacheManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>This interface enables an application to clear the Windows token cache on demand.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Without this interface, there is no way to remove Windows tokens obtained by logging on with the user name and password supplied with the message from the Windows logon tokens cache. When an application needs to log off a user by providing a logoff operation on its contract, there is no way to remove all traces of the user from the system: the cached Windows token that represents the user is held in the memory until its time-to-live expires and the token is removed from the cache.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FlushLogonTokenCache">
+      <MemberSignature Language="C#" Value="public void FlushLogonTokenCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FlushLogonTokenCache() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ILogonTokenCacheManager.FlushLogonTokenCache" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all tokens from the logon cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When implemented, this method will empty the cache.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCachedLogonToken">
+      <MemberSignature Language="C#" Value="public bool RemoveCachedLogonToken (string username);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveCachedLogonToken(string username) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ILogonTokenCacheManager.RemoveCachedLogonToken(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="username">The user name on the token to remove.</param>
+        <summary>Removes the specified token from the logon cache.</summary>
+        <returns>
+          <see langword="true" /> if the user's token was successfully removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method, when implemented, removes the token identified by `username` from the cache.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,80 @@
+<Type Name="Touch" FullName="System.Windows.Input.Touch">
+  <TypeSignature Language="C#" Value="public static class Touch" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Touch extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.Touch" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an application-level service that processes multitouch input from the operating system and raises the <see cref="E:System.Windows.Input.Touch.FrameReported" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.Touch.FrameReported> event is included in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] to support compatibility with Silverlight. If you do not have to ensure compatibility with Silverlight, use the touch events, such as <xref:System.Windows.UIElement.TouchDown> and <xref:System.Windows.UIElement.TouchMove>, on <xref:System.Windows.UIElement>, <xref:System.Windows.UIElement3D>, or <xref:System.Windows.ContentElement>.  
+  
+ The <xref:System.Windows.Input.Touch.FrameReported> event does not use the same event model as other WPF input events, such as <xref:System.Windows.UIElement.TouchDown> and <xref:System.Windows.UIElement.TouchMove>. Instead of being exposed as an element-specific event that potentially routes through the object tree of a UI, the <xref:System.Windows.Input.Touch.FrameReported> event is a single event that is handled at the application level. Therefore, you cannot use the `sender` parameter of the event handler to determine what element is touched.  
+  
+ Use the <xref:System.Windows.Input.TouchFrameEventArgs> to get the <xref:System.Windows.Input.TouchPoint> values that are relevant to the touch event. From the <xref:System.Windows.Input.TouchPoint>, you can get the <xref:System.Windows.Input.TouchPoint.Position%2A> of the touch and determine whether the <xref:System.Windows.Input.TouchAction> was a <xref:System.Windows.Input.TouchAction>, <xref:System.Windows.Input.TouchAction>, or <xref:System.Windows.Input.TouchAction> action. You can also use the <xref:System.Windows.Input.TouchPoint> to get the <xref:System.Windows.Input.TouchDevice>. From the <xref:System.Windows.Input.TouchDevice>, you can determine the device <xref:System.Windows.Input.TouchDevice.Id%2A> and get information about the element that is touched.  
+  
+   
+  
+## Examples  
+ The following example enables you to create simple patterns on a <xref:System.Windows.Controls.Canvas> by dragging two fingers across a touchscreen. Each touch is represented by a <xref:System.Windows.Input.TouchDevice>.The pattern is created by drawing a line between the touch points provided by the touches. This example requires a Windows Touch–compatible screen.  
+  
+ The following markup creates the user interface, which consists of a <xref:System.Windows.Controls.Canvas> that is centered in a <xref:System.Windows.Controls.Grid>.  
+  
+ [!code-xml[TouchFrameSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/touchframesample/cs/mainwindow.xaml#000)]  
+  
+ The following code handles the <xref:System.Windows.Input.Touch.FrameReported> event. When a touch presses on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>. When the touch is lifted, the <xref:System.Windows.Input.TouchDevice> is released. When a touch moves across the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
+  
+ [!code-csharp[TouchFrameSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/touchframesample/cs/mainwindow.xaml.cs#100)]
+ [!code-vb[TouchFrameSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/touchframesample/vb/mainwindow.xaml.vb#100)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FrameReported">
+      <MemberSignature Language="C#" Value="public static event System.Windows.Input.TouchFrameEventHandler FrameReported;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.TouchFrameEventHandler FrameReported" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.Touch.FrameReported" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TouchFrameEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a touch message is sent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A frame is one in a series of multitouch messages or touch points. You can respond to touches by handling the <xref:System.Windows.Input.Touch.FrameReported> event and accessing the details of the <xref:System.Windows.Input.TouchPoint> from the <xref:System.Windows.Input.TouchFrameEventArgs> event data.  
+  
+ The <xref:System.Windows.Input.Touch.FrameReported> event does not use the same event model as other [!INCLUDE[TLA#tla_titlewinclient](~/includes/tlasharptla-titlewinclient-md.md)] input events, such as <xref:System.Windows.UIElement.TouchDown> and <xref:System.Windows.UIElement.TouchMove>. Instead of being exposed as an element-specific event that potentially routes through the object tree of a UI, the <xref:System.Windows.Input.Touch.FrameReported> event is a single event that is handled at the application level. Therefore, you cannot use the `sender` parameter of the event handler to determine what element is touched.  
+  
+   
+  
+## Examples  
+ The following example handles the <xref:System.Windows.Input.Touch.FrameReported> event. When a touch presses on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>. When the touch is lifted, the <xref:System.Windows.Input.TouchDevice> is released. When a touch moves across the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
+  
+ This example is part of a larger example that is available in the <xref:System.Windows.Input.Touch> class overview.  
+  
+ [!code-csharp[TouchFrameSample#110](~/samples/snippets/csharp/VS_Snippets_Wpf/touchframesample/cs/mainwindow.xaml.cs#110)]
+ [!code-vb[TouchFrameSample#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/touchframesample/vb/mainwindow.xaml.vb#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

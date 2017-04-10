@@ -1,0 +1,144 @@
+<Type Name="ContextOptions" FullName="System.DirectoryServices.AccountManagement.ContextOptions">
+  <TypeSignature Language="C#" Value="public enum ContextOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.ContextOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the options that are used for binding to the server. The application can set multiple options that are linked with a bitwise OR operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the context options are not specified by the application, the Account Management API uses the following combination of options:  
+  
+-   ContextOptions.Negotiate &#124; ContextOptions.Signing &#124; ContextOptions.Sealing  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Negotiate">
+      <MemberSignature Language="C#" Value="Negotiate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextOptions Negotiate = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.Negotiate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The client is authenticated by using either Kerberos or NTLM. When the user name and password are not provided, the Account Management API binds to the object by using the security context of the calling thread, which is either the security context of the user account under which the application is running or of the client user account that the calling thread represents.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sealing">
+      <MemberSignature Language="C#" Value="Sealing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextOptions Sealing = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.Sealing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The data is encrypted by using Kerberos.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This flag can only be used with the Negotiate context option and is not available with the simple bind option.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureSocketLayer">
+      <MemberSignature Language="C#" Value="SecureSocketLayer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextOptions SecureSocketLayer = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.SecureSocketLayer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The channel is encrypted by using the Secure Sockets Layer (SSL). Active Directory requires that the Certificate Services be installed to support SSL.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerBind">
+      <MemberSignature Language="C#" Value="ServerBind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextOptions ServerBind = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.ServerBind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specify this flag when you use the domain context type if the application is binding to a specific server name.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Signing">
+      <MemberSignature Language="C#" Value="Signing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextOptions Signing = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.Signing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The integrity of the data is verified. This flag can only be used with the Negotiate context option and is not available with the simple bind option.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SimpleBind">
+      <MemberSignature Language="C#" Value="SimpleBind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.ContextOptions SimpleBind = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.ContextOptions.SimpleBind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The client is authenticated by using the Basic authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **Caution** Communications may be sent over the Internet in clear text if the SecureSocketsLayer option is not specified with simple bind.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

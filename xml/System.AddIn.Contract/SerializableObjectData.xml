@@ -1,0 +1,228 @@
+<Type Name="SerializableObjectData" FullName="System.AddIn.Contract.SerializableObjectData">
+  <TypeSignature Language="C#" Value="public struct SerializableObjectData" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SerializableObjectData extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.SerializableObjectData" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about a serializable object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.SerializableObjectData> structure contains data that can be used to deserialize a serializable object.  
+  
+ To get a <xref:System.AddIn.Contract.SerializableObjectData>, call the <xref:System.AddIn.Contract.ISerializableObjectContract.GetSerializableObjectData%2A> method of an <xref:System.AddIn.Contract.ISerializableObjectContract>.  
+  
+ The only <xref:System.AddIn.Contract.SerializableObjectData> field that contains a value for every serializable object is the <xref:System.AddIn.Contract.SerializableObjectData.ObjectId> field.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DimensionLengths">
+      <MemberSignature Language="C#" Value="public int[] DimensionLengths;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32[] DimensionLengths" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.DimensionLengths" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents an array that contains the length of each of the dimensions of the serializable array that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.DimensionLengths> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DimensionLowerBounds">
+      <MemberSignature Language="C#" Value="public int[] DimensionLowerBounds;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32[] DimensionLowerBounds" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.DimensionLowerBounds" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents an array that contains the lower bound of each of the dimensions of the serializable array that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.DimensionLowerBounds> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementIndexes">
+      <MemberSignature Language="C#" Value="public int[] ElementIndexes;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32[] ElementIndexes" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.ElementIndexes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents an array that contains the indexes of the parent array that contains the serializable object that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.ElementIndexes> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArray">
+      <MemberSignature Language="C#" Value="public bool IsArray;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool IsArray" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.IsArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes a serializable array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.IsArray> is `true` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an array; otherwise, <xref:System.AddIn.Contract.SerializableObjectData.IsArray> is `false`.  
+  
+ If <xref:System.AddIn.Contract.SerializableObjectData.IsArray> and <xref:System.AddIn.Contract.SerializableObjectData> are both `true`, the <xref:System.AddIn.Contract.SerializableObjectData> describes a jagged array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsArrayElement">
+      <MemberSignature Language="C#" Value="public bool IsArrayElement;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool IsArrayElement" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.IsArrayElement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes an element in a serializable array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `true` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an element in an array; otherwise, <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `false`.  
+  
+ If <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `true`, then <xref:System.AddIn.Contract.SerializableObjectData> identifies the array, and <xref:System.AddIn.Contract.SerializableObjectData.MemberName> is `null`.  
+  
+ If <xref:System.AddIn.Contract.SerializableObjectData.IsArray> and <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> are both `true`, the <xref:System.AddIn.Contract.SerializableObjectData> describes a jagged array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberName">
+      <MemberSignature Language="C#" Value="public string MemberName;" />
+      <MemberSignature Language="ILAsm" Value=".field public string MemberName" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.MemberName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the member name of the serializable object that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.MemberName> is `null` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an object that is not a member of another object (that is, <xref:System.AddIn.Contract.SerializableObjectData> is `null`).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectId">
+      <MemberSignature Language="C#" Value="public long ObjectId;" />
+      <MemberSignature Language="ILAsm" Value=".field public int64 ObjectId" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.ObjectId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the ID of the serializable object that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an object ID, implementations of <xref:System.AddIn.Contract.ISerializableObjectContract> can use the <xref:System.Runtime.Serialization.ObjectIDGenerator?displayProperty=fullName> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentId">
+      <MemberSignature Language="C#" Value="public long ParentId;" />
+      <MemberSignature Language="ILAsm" Value=".field public int64 ParentId" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.SerializableObjectData.ParentId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the ID of the parent of the serializable object that this <see cref="T:System.AddIn.Contract.SerializableObjectData" /> describes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.AddIn.Contract.SerializableObjectData.ParentId> is `null` if the <xref:System.AddIn.Contract.SerializableObjectData> describes a serializable object that is not a member of another object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

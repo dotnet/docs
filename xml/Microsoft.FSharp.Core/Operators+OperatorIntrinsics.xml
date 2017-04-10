@@ -1,0 +1,2309 @@
+<Type Name="Operators+OperatorIntrinsics" FullName="Microsoft.FSharp.Core.Operators+OperatorIntrinsics">
+  <TypeSignature Language="C#" Value="public static class Operators.OperatorIntrinsics" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed Operators/OperatorIntrinsics extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.Operators.OperatorIntrinsics" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbsDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T AbsDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T AbsDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.AbsDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcosDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T AcosDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T AcosDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.AcosDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsinDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T AsinDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T AsinDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.AsinDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Atan2Dynamic&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static T2 Atan2Dynamic&lt;T1,T2&gt; (T1 y, T1 x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T2 Atan2Dynamic&lt;T1, T2&gt;(!!T1 y, !!T1 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.Atan2Dynamic``2(``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T2</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="y" Type="T1" />
+        <Parameter Name="x" Type="T1" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <param name="y">To be added.</param>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AtanDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T AtanDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T AtanDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.AtanDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CeilingDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T CeilingDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T CeilingDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.CeilingDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CosDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T CosDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T CosDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.CosDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoshDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T CoshDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T CoshDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.CoshDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ExpDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T ExpDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.ExpDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FloorDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T FloorDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T FloorDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.FloorDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArraySlice&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] GetArraySlice&lt;T&gt; (T[] source, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[] GetArraySlice&lt;T&gt;(!!T[] source, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.GetArraySlice``1(``0[],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T[]" />
+        <Parameter Name="start" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="finish">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArraySlice2D&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] GetArraySlice2D&lt;T&gt; (T[,] source, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] GetArraySlice2D&lt;T&gt;(!!T[,] source, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.GetArraySlice2D``1(``0[0:,0:],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T[,]" />
+        <Parameter Name="start1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="start1">To be added.</param>
+        <param name="finish1">To be added.</param>
+        <param name="start2">To be added.</param>
+        <param name="finish2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArraySlice2DFixed1&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] GetArraySlice2DFixed1&lt;T&gt; (T[,] source, int index1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[] GetArraySlice2DFixed1&lt;T&gt;(!!T[,] source, int32 index1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.GetArraySlice2DFixed1``1(``0[0:,0:],System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T[,]" />
+        <Parameter Name="index1" Type="System.Int32" />
+        <Parameter Name="start2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="index1">To be added.</param>
+        <param name="start2">To be added.</param>
+        <param name="finish2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArraySlice2DFixed2&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] GetArraySlice2DFixed2&lt;T&gt; (T[,] source, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish1, int index2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[] GetArraySlice2DFixed2&lt;T&gt;(!!T[,] source, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish1, int32 index2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.GetArraySlice2DFixed2``1(``0[0:,0:],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T[,]" />
+        <Parameter Name="start1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="index2" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="start1">To be added.</param>
+        <param name="finish1">To be added.</param>
+        <param name="index2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArraySlice3D&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,,] GetArraySlice3D&lt;T&gt; (T[,,] source, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start3, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,,] GetArraySlice3D&lt;T&gt;(!!T[,,] source, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start3, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.GetArraySlice3D``1(``0[0:,0:,0:],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T[,,]" />
+        <Parameter Name="start1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start3" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish3" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="start1">To be added.</param>
+        <param name="finish1">To be added.</param>
+        <param name="start2">To be added.</param>
+        <param name="finish2">To be added.</param>
+        <param name="start3">To be added.</param>
+        <param name="finish3">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetArraySlice4D&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,,,] GetArraySlice4D&lt;T&gt; (T[,,,] source, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start3, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish3, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start4, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,,,] GetArraySlice4D&lt;T&gt;(!!T[,,,] source, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start3, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish3, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start4, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.GetArraySlice4D``1(``0[0:,0:,0:,0:],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,,,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T[,,,]" />
+        <Parameter Name="start1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start3" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish3" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start4" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish4" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="start1">To be added.</param>
+        <param name="finish1">To be added.</param>
+        <param name="start2">To be added.</param>
+        <param name="finish2">To be added.</param>
+        <param name="start3">To be added.</param>
+        <param name="finish3">To be added.</param>
+        <param name="start4">To be added.</param>
+        <param name="finish4">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStringSlice">
+      <MemberSignature Language="C#" Value="public static string GetStringSlice (string source, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish);" />
+      <MemberSignature Language="ILAsm" Value=".method public static string GetStringSlice(string source, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.GetStringSlice(System.String,Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="start" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="finish">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Log10Dynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Log10Dynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T Log10Dynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.Log10Dynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T LogDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T LogDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.LogDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowByte">
+      <MemberSignature Language="C#" Value="public static byte PowByte (byte x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int8 PowByte(unsigned int8 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowByte(System.Byte,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Byte" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowDecimal">
+      <MemberSignature Language="C#" Value="public static decimal PowDecimal (decimal x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal PowDecimal(valuetype System.Decimal x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowDecimal(System.Decimal,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Decimal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Decimal" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowDouble">
+      <MemberSignature Language="C#" Value="public static double PowDouble (double x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 PowDouble(float64 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowDouble(System.Double,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Double" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowDynamic&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static T PowDynamic&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PowDynamic&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowDynamic``2(``0,``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="TResult" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="y">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowGeneric&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T PowGeneric&lt;T&gt; (T one, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,T&gt;&gt; mul, T value, int exponent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T PowGeneric&lt;T&gt;(!!T one, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!T&gt;&gt; mul, !!T value, int32 exponent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowGeneric``1(``0,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,``0}},``0,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="one" Type="T" />
+        <Parameter Name="mul" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,T&gt;&gt;" />
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="exponent" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="one">To be added.</param>
+        <param name="mul">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="exponent">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowInt16">
+      <MemberSignature Language="C#" Value="public static short PowInt16 (short x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int16 PowInt16(int16 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowInt16(System.Int16,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int16" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowInt32">
+      <MemberSignature Language="C#" Value="public static int PowInt32 (int x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 PowInt32(int32 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowInt32(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowInt64">
+      <MemberSignature Language="C#" Value="public static long PowInt64 (long x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int64 PowInt64(int64 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowInt64(System.Int64,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int64" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowIntPtr">
+      <MemberSignature Language="C#" Value="public static IntPtr PowIntPtr (IntPtr x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static native int PowIntPtr(native int x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowIntPtr(System.IntPtr,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.IntPtr" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowSByte">
+      <MemberSignature Language="C#" Value="public static sbyte PowSByte (sbyte x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int8 PowSByte(int8 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowSByte(System.SByte,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.SByte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.SByte" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowSingle">
+      <MemberSignature Language="C#" Value="public static float PowSingle (float x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float32 PowSingle(float32 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowSingle(System.Single,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowUInt16">
+      <MemberSignature Language="C#" Value="public static ushort PowUInt16 (ushort x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int16 PowUInt16(unsigned int16 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowUInt16(System.UInt16,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.UInt16" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowUInt32">
+      <MemberSignature Language="C#" Value="public static uint PowUInt32 (uint x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int32 PowUInt32(unsigned int32 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowUInt32(System.UInt32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.UInt32" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowUInt64">
+      <MemberSignature Language="C#" Value="public static ulong PowUInt64 (ulong x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static unsigned int64 PowUInt64(unsigned int64 x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowUInt64(System.UInt64,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.UInt64" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PowUIntPtr">
+      <MemberSignature Language="C#" Value="public static UIntPtr PowUIntPtr (UIntPtr x, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static native unsigned int PowUIntPtr(native unsigned int x, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.PowUIntPtr(System.UIntPtr,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.UIntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="x" Type="System.UIntPtr" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">To be added.</param>
+        <param name="n">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeByte">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;byte&gt; RangeByte (byte start, byte step, byte stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;unsigned int8&gt; RangeByte(unsigned int8 start, unsigned int8 step, unsigned int8 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeByte(System.Byte,System.Byte,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Byte" />
+        <Parameter Name="step" Type="System.Byte" />
+        <Parameter Name="stop" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeChar">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;char&gt; RangeChar (char start, char stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;char&gt; RangeChar(char start, char stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeChar(System.Char,System.Char)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Char" />
+        <Parameter Name="stop" Type="System.Char" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeDouble">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;double&gt; RangeDouble (double start, double step, double stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;float64&gt; RangeDouble(float64 start, float64 step, float64 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeDouble(System.Double,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Double" />
+        <Parameter Name="step" Type="System.Double" />
+        <Parameter Name="stop" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeGeneric&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; RangeGeneric&lt;T&gt; (T one, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,T&gt;&gt; add, T start, T stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; RangeGeneric&lt;T&gt;(!!T one, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!T&gt;&gt; add, !!T start, !!T stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeGeneric``1(``0,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,``0}},``0,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="one" Type="T" />
+        <Parameter Name="add" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,T&gt;&gt;" />
+        <Parameter Name="start" Type="T" />
+        <Parameter Name="stop" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="one">To be added.</param>
+        <param name="add">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeInt16">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;short&gt; RangeInt16 (short start, short step, short stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;int16&gt; RangeInt16(int16 start, int16 step, int16 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeInt16(System.Int16,System.Int16,System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int16" />
+        <Parameter Name="step" Type="System.Int16" />
+        <Parameter Name="stop" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeInt32">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;int&gt; RangeInt32 (int start, int step, int stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;int32&gt; RangeInt32(int32 start, int32 step, int32 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeInt32(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="step" Type="System.Int32" />
+        <Parameter Name="stop" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeInt64">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;long&gt; RangeInt64 (long start, long step, long stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;int64&gt; RangeInt64(int64 start, int64 step, int64 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeInt64(System.Int64,System.Int64,System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int64" />
+        <Parameter Name="step" Type="System.Int64" />
+        <Parameter Name="stop" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeIntPtr">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;IntPtr&gt; RangeIntPtr (IntPtr start, IntPtr step, IntPtr stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;native int&gt; RangeIntPtr(native int start, native int step, native int stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeIntPtr(System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IntPtr&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.IntPtr" />
+        <Parameter Name="step" Type="System.IntPtr" />
+        <Parameter Name="stop" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeSByte">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;sbyte&gt; RangeSByte (sbyte start, sbyte step, sbyte stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;int8&gt; RangeSByte(int8 start, int8 step, int8 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeSByte(System.SByte,System.SByte,System.SByte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.SByte" />
+        <Parameter Name="step" Type="System.SByte" />
+        <Parameter Name="stop" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeSingle">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;float&gt; RangeSingle (float start, float step, float stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;float32&gt; RangeSingle(float32 start, float32 step, float32 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeSingle(System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Single" />
+        <Parameter Name="step" Type="System.Single" />
+        <Parameter Name="stop" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeStepGeneric&lt;TStep,T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; RangeStepGeneric&lt;TStep,T&gt; (TStep zero, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TStep,T&gt;&gt; add, T start, TStep step, T stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; RangeStepGeneric&lt;TStep, T&gt;(!!TStep zero, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TStep, !!T&gt;&gt; add, !!T start, !!TStep step, !!T stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeStepGeneric``2(``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``1,``0,``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TStep" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="zero" Type="TStep" />
+        <Parameter Name="add" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TStep,T&gt;&gt;" />
+        <Parameter Name="start" Type="T" />
+        <Parameter Name="step" Type="TStep" />
+        <Parameter Name="stop" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TStep">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="zero">To be added.</param>
+        <param name="add">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeUInt16">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;ushort&gt; RangeUInt16 (ushort start, ushort step, ushort stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;unsigned int16&gt; RangeUInt16(unsigned int16 start, unsigned int16 step, unsigned int16 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeUInt16(System.UInt16,System.UInt16,System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.UInt16" />
+        <Parameter Name="step" Type="System.UInt16" />
+        <Parameter Name="stop" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeUInt32">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;uint&gt; RangeUInt32 (uint start, uint step, uint stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;unsigned int32&gt; RangeUInt32(unsigned int32 start, unsigned int32 step, unsigned int32 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeUInt32(System.UInt32,System.UInt32,System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.UInt32" />
+        <Parameter Name="step" Type="System.UInt32" />
+        <Parameter Name="stop" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeUInt64">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;ulong&gt; RangeUInt64 (ulong start, ulong step, ulong stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;unsigned int64&gt; RangeUInt64(unsigned int64 start, unsigned int64 step, unsigned int64 stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeUInt64(System.UInt64,System.UInt64,System.UInt64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.UInt64" />
+        <Parameter Name="step" Type="System.UInt64" />
+        <Parameter Name="stop" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeUIntPtr">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;UIntPtr&gt; RangeUIntPtr (UIntPtr start, UIntPtr step, UIntPtr stop);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;native unsigned int&gt; RangeUIntPtr(native unsigned int start, native unsigned int step, native unsigned int stop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RangeUIntPtr(System.UIntPtr,System.UIntPtr,System.UIntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.UIntPtr&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.UIntPtr" />
+        <Parameter Name="step" Type="System.UIntPtr" />
+        <Parameter Name="stop" Type="System.UIntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="step">To be added.</param>
+        <param name="stop">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T RoundDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T RoundDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.RoundDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArraySlice&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetArraySlice&lt;T&gt; (T[] target, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish, T[] source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SetArraySlice&lt;T&gt;(!!T[] target, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish, !!T[] source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SetArraySlice``1(``0[],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T[]" />
+        <Parameter Name="start" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="source" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="finish">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArraySlice2D&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetArraySlice2D&lt;T&gt; (T[,] target, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish2, T[,] source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SetArraySlice2D&lt;T&gt;(!!T[,] target, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish2, !!T[,] source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SetArraySlice2D``1(``0[0:,0:],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},``0[0:,0:])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T[,]" />
+        <Parameter Name="start1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="source" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="start1">To be added.</param>
+        <param name="finish1">To be added.</param>
+        <param name="start2">To be added.</param>
+        <param name="finish2">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArraySlice2DFixed1&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetArraySlice2DFixed1&lt;T&gt; (T[,] target, int index1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish2, T[] source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SetArraySlice2DFixed1&lt;T&gt;(!!T[,] target, int32 index1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish2, !!T[] source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SetArraySlice2DFixed1``1(``0[0:,0:],System.Int32,Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T[,]" />
+        <Parameter Name="index1" Type="System.Int32" />
+        <Parameter Name="start2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="source" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="index1">To be added.</param>
+        <param name="start2">To be added.</param>
+        <param name="finish2">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArraySlice2DFixed2&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetArraySlice2DFixed2&lt;T&gt; (T[,] target, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish1, int index2, T[] source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SetArraySlice2DFixed2&lt;T&gt;(!!T[,] target, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish1, int32 index2, !!T[] source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SetArraySlice2DFixed2``1(``0[0:,0:],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},System.Int32,``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T[,]" />
+        <Parameter Name="start1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="index2" Type="System.Int32" />
+        <Parameter Name="source" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="start1">To be added.</param>
+        <param name="finish1">To be added.</param>
+        <param name="index2">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArraySlice3D&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetArraySlice3D&lt;T&gt; (T[,,] target, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start3, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish3, T[,,] source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SetArraySlice3D&lt;T&gt;(!!T[,,] target, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start3, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish3, !!T[,,] source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SetArraySlice3D``1(``0[0:,0:,0:],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},``0[0:,0:,0:])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T[,,]" />
+        <Parameter Name="start1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start3" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish3" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="source" Type="T[,,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="start1">To be added.</param>
+        <param name="finish1">To be added.</param>
+        <param name="start2">To be added.</param>
+        <param name="finish2">To be added.</param>
+        <param name="start3">To be added.</param>
+        <param name="finish3">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetArraySlice4D&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetArraySlice4D&lt;T&gt; (T[,,,] target, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish1, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish2, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start3, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish3, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; start4, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; finish4, T[,,,] source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SetArraySlice4D&lt;T&gt;(!!T[,,,] target, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish1, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish2, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start3, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish3, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; start4, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; finish4, !!T[,,,] source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SetArraySlice4D``1(``0[0:,0:,0:,0:],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32},``0[0:,0:,0:,0:])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T[,,,]" />
+        <Parameter Name="start1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish1" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish2" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start3" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish3" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="start4" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="finish4" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;" />
+        <Parameter Name="source" Type="T[,,,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="target">To be added.</param>
+        <param name="start1">To be added.</param>
+        <param name="finish1">To be added.</param>
+        <param name="start2">To be added.</param>
+        <param name="finish2">To be added.</param>
+        <param name="start3">To be added.</param>
+        <param name="finish3">To be added.</param>
+        <param name="start4">To be added.</param>
+        <param name="finish4">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int SignDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 SignDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SignDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SinDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T SinDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T SinDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SinDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SinhDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T SinhDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T SinhDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SinhDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SqrtDynamic&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static T2 SqrtDynamic&lt;T1,T2&gt; (T1 x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T2 SqrtDynamic&lt;T1, T2&gt;(!!T1 x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.SqrtDynamic``2(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T2</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T1" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TanDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T TanDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T TanDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.TanDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TanhDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T TanhDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T TanhDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.TanhDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TruncateDynamic&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T TruncateDynamic&lt;T&gt; (T x);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T TruncateDynamic&lt;T&gt;(!!T x) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.OperatorIntrinsics.TruncateDynamic``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This function is for use by compiled F# code and should not be used directly", 1204, IsHidden=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

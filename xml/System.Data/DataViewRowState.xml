@@ -1,0 +1,220 @@
+<Type Name="DataViewRowState" FullName="System.Data.DataViewRowState">
+  <TypeSignature Language="C#" Value="public enum DataViewRowState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataViewRowState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.DataViewRowState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DataViewRowStateEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the version of data in a <see cref="T:System.Data.DataRow" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataViewRowState> values are used either to retrieve a particular version of data from a <xref:System.Data.DataRow>, or to determine what versions exist.  
+  
+ Set the <xref:System.Data.DataView.RowStateFilter%2A> property of the <xref:System.Data.DataView> to specify which version or versions of data you want to view.  
+  
+ You can use the Boolean operator Or with the values to get more than one version.  
+  
+ The <xref:System.Data.DataTable> uses <xref:System.Data.DataViewRowState> in the <xref:System.Data.DataTable.Select%2A> method.  
+  
+   
+  
+## Examples  
+ In the following example <xref:System.Data.DataTable> is created with a single column. The data is changed, and the <xref:System.Data.DataView.RowStateFilter%2A> of the <xref:System.Data.DataView> is set to display different row sets, depending on the <xref:System.Data.DataViewRowState>.  
+  
+ [!code-csharp[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataView.RowStateFilter Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataView.RowStateFilter Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Added">
+      <MemberSignature Language="C#" Value="Added" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState Added = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Added" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataViewRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A new row.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentRows">
+      <MemberSignature Language="C#" Value="CurrentRows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState CurrentRows = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.CurrentRows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataViewRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Current rows including unchanged, new, and modified rows. By default, <see cref="T:System.Data.DataViewRowState" /> is set to CurrentRows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleted">
+      <MemberSignature Language="C#" Value="Deleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState Deleted = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Deleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataViewRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A deleted row.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedCurrent">
+      <MemberSignature Language="C#" Value="ModifiedCurrent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState ModifiedCurrent = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.ModifiedCurrent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataViewRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A current version of original data that has been modified (see <see langword="ModifiedOriginal" />).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedOriginal">
+      <MemberSignature Language="C#" Value="ModifiedOriginal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState ModifiedOriginal = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.ModifiedOriginal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataViewRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The original version of the data that was modified. (Although the data has since been modified, it is available as <see langword="ModifiedCurrent" />).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataViewRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>None.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalRows">
+      <MemberSignature Language="C#" Value="OriginalRows" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState OriginalRows = int32(42)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.OriginalRows" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataViewRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Original rows including unchanged and deleted rows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unchanged">
+      <MemberSignature Language="C#" Value="Unchanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState Unchanged = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Unchanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataViewRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An unchanged row.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

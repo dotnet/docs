@@ -1,0 +1,1110 @@
+<Type Name="Visual" FullName="System.Windows.Media.Visual">
+  <TypeSignature Language="C#" Value="public abstract class Visual : System.Windows.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Visual extends System.Windows.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Visual" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides rendering support in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], which includes hit testing, coordinate transformation, and bounding box calculations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Visual> class is the basic abstraction from which every <xref:System.Windows.FrameworkElement> object derives. It also serves as the entry point for writing new controls in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], and in many ways can be thought of as an equivalent of a window handle (HWND) in the [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] application model.  
+  
+ The <xref:System.Windows.Media.Visual> object is a core [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] object, whose primary role is to provide rendering support. User interface controls, such as <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.TextBox>, derive from the <xref:System.Windows.Media.Visual> class, and use the <xref:System.Windows.Media.Visual> defined properties for persisting their rendering data. The <xref:System.Windows.Media.Visual> object provides support for the following:  
+  
+-   Output display: Rendering the persisted, serialized drawing content of a visual.  
+  
+-   Transformations: Performing transformations on a visual.  
+  
+-   Clipping: Providing clipping region support for a visual.  
+  
+-   Hit testing: Determining whether a specified coordinate (point) or geometry is contained within the bounds of a visual.  
+  
+-   Bounding box calculations: Determining the bounding rectangle of a visual.  
+  
+ Architecturally, the <xref:System.Windows.Media.Visual> object does not include support for other application development requirements / [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] features that are not immediately related to its rendering, such as the following:  
+  
+-   Event handling  
+  
+-   Layout  
+  
+-   Styles  
+  
+-   Data binding  
+  
+-   Globalization  
+  
+ <xref:System.Windows.Media.Visual> is provided as a public abstract class from which further classes can be derived. The following illustration shows the hierarchy of the existing visual objects that are defined in the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] architecture.  
+  
+ ![Diagram of classes derived from the Visual object](~/add/media/visualclass01.png "Diagram of classes derived from the Visual object")  
+Visual class hierarchy  
+  
+ In some cases, members that are defined as protected in <xref:System.Windows.Media.Visual> are exposed as more readily accessible members with similar names in the derived <xref:System.Windows.UIElement> class.  
+  
+ For more information, see [WPF Graphics Rendering Overview](~/docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md).  
+  
+ A <xref:System.Windows.Media.Visual> has a limited number of levels. In previous versions of the .NET Framework, this maximum depth was 255. This limit is inadequate for some layouts that have many levels in the visual tree.  
+  
+ In [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], the maximum depth of a <xref:System.Windows.Media.Visual> is 2047, which enables much deeper visual trees. In most applications, there is not enough stack space to traverse so many levels, and the result is a <xref:System.StackOverflowException> during layout. For the default stack size, this exception is usually thrown when the tree depth is approximately 800, which corresponds to about 190 nested <xref:System.Windows.Controls.TreeViewItem> objects.  
+  
+ If this exception is thrown by your application and you need to have a deeper visual tree, you can increase the application's stack size. You can increase the size of the stack by using the /STACK option at compile time or by using the EDITBIN utility. Increasing the stack size may affect your application's performance. For more information, see [Stack Allocations](http://go.microsoft.com/fwlink/?LinkId=165510) and [EDITBIN Options](http://go.microsoft.com/fwlink/?LinkId=165511).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Visual ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Provides the base initialization for objects derived from the <see cref="T:System.Windows.Media.Visual" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddVisualChild">
+      <MemberSignature Language="C#" Value="protected void AddVisualChild (System.Windows.Media.Visual child);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddVisualChild(class System.Windows.Media.Visual child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.AddVisualChild(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="child">The child visual object to add to parent visual.</param>
+        <summary>Defines the parent-child relationship between two visuals.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Visual.AddVisualChild%2A> method sets up the parent-child relationship between two visual objects. This method must be used when you need greater low-level control over the underlying storage implementation of visual child objects. <xref:System.Windows.Media.VisualCollection> can be used as a default implementation for storing child objects.  
+  
+   
+  
+## Examples  
+ The following example shows how to define custom storage requirements for a visual child. The example uses the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods to sets up the parent-child relationship between the parent visual and `child`. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.Visual.GetVisualChild%2A> method and <xref:System.Windows.Media.Visual.VisualChildrenCount%2A> property.  
+  
+> [!NOTE]
+>  Although it is possible to use <xref:System.Windows.Media.VisualCollection> to create parent-child relationships between visual objects, it is more efficient to provide your own custom storage implementation when only one child is linked to a parent.  
+  
+ [!code-csharp[AddVisualChild#AddVisualChild01](~/samples/snippets/csharp/VS_Snippets_Wpf/AddVisualChild/CSharp/Window1.xaml.cs#addvisualchild01)]
+ [!code-vb[AddVisualChild#AddVisualChild01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/AddVisualChild/visualbasic/window1.xaml.vb#addvisualchild01)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindCommonVisualAncestor">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject FindCommonVisualAncestor (System.Windows.DependencyObject otherVisual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.DependencyObject FindCommonVisualAncestor(class System.Windows.DependencyObject otherVisual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.FindCommonVisualAncestor(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherVisual" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="otherVisual">A visual object of type <see cref="T:System.Windows.DependencyObject" />.</param>
+        <summary>Returns the common ancestor of two visual objects.</summary>
+        <returns>The common ancestor of the visual object and <paramref name="otherVisual" /> if one exists; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ 2D and 3D objects can have common visual ancestors, so it is possible to pass a <xref:System.Windows.Media.Media3D.Visual3D> for `otherVisual`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualChild">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.Media.Visual GetVisualChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.GetVisualChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the visual object in the <see cref="T:System.Windows.Media.VisualCollection" />.</param>
+        <summary>Returns the specified <see cref="T:System.Windows.Media.Visual" /> in the parent <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <returns>The child in the <see cref="T:System.Windows.Media.VisualCollection" /> at the specified <paramref name="index" /> value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, a <xref:System.Windows.Media.Visual> has no children. Therefore, the default implementation always throws an <xref:System.ArgumentOutOfRangeException>.  
+  
+   
+  
+## Examples  
+ The following example defines an overridden implementation of <xref:System.Windows.Media.Visual.GetVisualChild%2A>.  
+  
+ [!code-csharp[DrawingVisualSample#102b](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#102b)]
+ [!code-vb[DrawingVisualSample#102b](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#102b)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>A class that derives from <see cref="T:System.Windows.Media.Visual" /> must override this method, and also the <see cref="P:System.Windows.Media.Visual.VisualChildrenCount" /> property, for the visual tree to be enumerated correctly.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTestCore">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.Media.GeometryHitTestResult HitTestCore (System.Windows.Media.GeometryHitTestParameters hitTestParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Media.GeometryHitTestResult HitTestCore(class System.Windows.Media.GeometryHitTestParameters hitTestParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.HitTestCore(System.Windows.Media.GeometryHitTestParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeometryHitTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hitTestParameters" Type="System.Windows.Media.GeometryHitTestParameters" />
+      </Parameters>
+      <Docs>
+        <param name="hitTestParameters">A <see cref="T:System.Windows.Media.GeometryHitTestParameters" /> object that specifies the <see cref="T:System.Windows.Media.Geometry" /> to hit test against.</param>
+        <summary>Determines whether a geometry value is within the bounds of the visual object.</summary>
+        <returns>A <see cref="T:System.Windows.Media.GeometryHitTestResult" /> that represents the result of the hit test.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override default hit testing support for a visual object by overriding the <xref:System.Windows.Media.Visual.HitTestCore%2A> method. This means that when you invoke the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method, your overridden implementation of <xref:System.Windows.Media.Visual.HitTestCore%2A> is called. Your overridden method is called when a hit test falls within the bounding rectangle of the visual object, even if the coordinate falls outside the geometry of the visual object.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Windows.Media.Visual.HitTestCore%28System.Windows.Media.GeometryHitTestParameters%29> method. One reason you might want to override this method is to provide additional functionality during the hit testing process.  
+  
+ [!code-csharp[HitTestingOverview#HitTestingOverviewSnippet13](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/GeometryHitTest.cs#hittestingoverviewsnippet13)]
+ [!code-vb[HitTestingOverview#HitTestingOverviewSnippet13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/geometryhittest.vb#hittestingoverviewsnippet13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTestCore">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.Media.HitTestResult HitTestCore (System.Windows.Media.PointHitTestParameters hitTestParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Media.HitTestResult HitTestCore(class System.Windows.Media.PointHitTestParameters hitTestParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.HitTestCore(System.Windows.Media.PointHitTestParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hitTestParameters" Type="System.Windows.Media.PointHitTestParameters" />
+      </Parameters>
+      <Docs>
+        <param name="hitTestParameters">A <see cref="T:System.Windows.Media.PointHitTestParameters" /> object that specifies the <see cref="T:System.Windows.Point" /> to hit test against.</param>
+        <summary>Determines whether a point coordinate value is within the bounds of the visual object.</summary>
+        <returns>A <see cref="T:System.Windows.Media.HitTestResult" /> that represents the <see cref="T:System.Windows.Media.Visual" /> that is returned from a hit test.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the default hit testing support on visual objects by overriding the <xref:System.Windows.Media.Visual.HitTestCore%2A> method. This means that when you invoke the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method, your overridden implementation of <xref:System.Windows.Media.Visual.HitTestCore%2A> is called. Your overridden method is called when a hit test falls within the bounding rectangle of the visual object, even if the coordinate falls outside the geometry of the visual object.  
+  
+   
+  
+## Examples  
+ The following example shows how to override the <xref:System.Windows.Media.Visual.HitTestCore%28System.Windows.Media.PointHitTestParameters%29> method. One reason you might want to override this method is to provide additional functionality during the hit testing process.  
+  
+ [!code-csharp[HitTestingOverview#107](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#107)]
+ [!code-vb[HitTestingOverview#107](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#107)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAncestorOf">
+      <MemberSignature Language="C#" Value="public bool IsAncestorOf (System.Windows.DependencyObject descendant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAncestorOf(class System.Windows.DependencyObject descendant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.IsAncestorOf(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="descendant" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="descendant">A value of type <see cref="T:System.Windows.DependencyObject" />.</param>
+        <summary>Determines whether the visual object is an ancestor of the descendant visual object.</summary>
+        <returns>
+          <see langword="true" /> if the visual object is an ancestor of <paramref name="descendant" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDescendantOf">
+      <MemberSignature Language="C#" Value="public bool IsDescendantOf (System.Windows.DependencyObject ancestor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDescendantOf(class System.Windows.DependencyObject ancestor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.IsDescendantOf(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ancestor" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="ancestor">A value of type <see cref="T:System.Windows.DependencyObject" />.</param>
+        <summary>Determines whether the visual object is a descendant of the ancestor visual object.</summary>
+        <returns>
+          <see langword="true" /> if the visual object is a descendant of <paramref name="ancestor" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDpiChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDpiChanged (System.Windows.DpiScale oldDpi, System.Windows.DpiScale newDpi);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDpiChanged(valuetype System.Windows.DpiScale oldDpi, valuetype System.Windows.DpiScale newDpi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldDpi" Type="System.Windows.DpiScale" />
+        <Parameter Name="newDpi" Type="System.Windows.DpiScale" />
+      </Parameters>
+      <Docs>
+        <param name="oldDpi">The previous DPI scale setting.</param>
+        <param name="newDpi">The new DPI scale setting.</param>
+        <summary>Called when the DPI at which this View is rendered changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnVisualChildrenChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnVisualChildrenChanged (System.Windows.DependencyObject visualAdded, System.Windows.DependencyObject visualRemoved);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnVisualChildrenChanged(class System.Windows.DependencyObject visualAdded, class System.Windows.DependencyObject visualRemoved) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.OnVisualChildrenChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visualAdded" Type="System.Windows.DependencyObject" />
+        <Parameter Name="visualRemoved" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="visualAdded">The <see cref="T:System.Windows.Media.Visual" /> that was added to the collection</param>
+        <param name="visualRemoved">The <see cref="T:System.Windows.Media.Visual" /> that was removed from the collection</param>
+        <summary>Called when the <see cref="T:System.Windows.Media.VisualCollection" /> of the visual object is modified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnVisualParentChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnVisualParentChanged (System.Windows.DependencyObject oldParent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnVisualParentChanged(class System.Windows.DependencyObject oldParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.OnVisualParentChanged(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldParent" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="oldParent">A value of type <see cref="T:System.Windows.DependencyObject" /> that represents the previous parent of the <see cref="T:System.Windows.Media.Visual" /> object. If the <see cref="T:System.Windows.Media.Visual" /> object did not have a previous parent, the value of the parameter is <see langword="null" />.</param>
+        <summary>Called when the parent of the visual object is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class that derives from <xref:System.Windows.Media.Visual> can choose to override this method.  
+  
+ There is no "VisualParentChanged" event provided that reports this change to instances. Therefore, you must override this method to handle notification scenarios and provide an instance version of the notification if that is part of your scenario.  
+  
+   
+  
+## Examples  
+ The following example defines an overridden implementation of <xref:System.Windows.Media.Visual.OnVisualParentChanged%2A>.  
+  
+ [!code-csharp[VisualSnippets#VisualSnippet10](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml.cs#visualsnippet10)]
+ [!code-vb[VisualSnippets#VisualSnippet10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/window1.xaml.vb#visualsnippet10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointFromScreen">
+      <MemberSignature Language="C#" Value="public System.Windows.Point PointFromScreen (System.Windows.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point PointFromScreen(valuetype System.Windows.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.PointFromScreen(System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">The <see cref="T:System.Windows.Point" /> value in screen coordinates.</param>
+        <summary>Converts a <see cref="T:System.Windows.Point" /> in screen coordinates into a <see cref="T:System.Windows.Point" /> that represents the current coordinate system of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The converted <see cref="T:System.Windows.Point" /> value that represents the current coordinate system of the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.Visual.PointToScreen%2A> method to convert a <xref:System.Windows.Point> that represents the current coordinate system of the <xref:System.Windows.Media.Visual> into a <xref:System.Windows.Point> in screen coordinates.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointToScreen">
+      <MemberSignature Language="C#" Value="public System.Windows.Point PointToScreen (System.Windows.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point PointToScreen(valuetype System.Windows.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.PointToScreen(System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">The <see cref="T:System.Windows.Point" /> value that represents the current coordinate system of the <see cref="T:System.Windows.Media.Visual" />.</param>
+        <summary>Converts a <see cref="T:System.Windows.Point" /> that represents the current coordinate system of the <see cref="T:System.Windows.Media.Visual" /> into a <see cref="T:System.Windows.Point" /> in screen coordinates.</summary>
+        <returns>The converted <see cref="T:System.Windows.Point" /> value in screen coordinates.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.Visual.PointFromScreen%2A> method to convert a <xref:System.Windows.Point> in screen coordinates into a <xref:System.Windows.Point> that represents the current coordinate system of the <xref:System.Windows.Media.Visual>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveVisualChild">
+      <MemberSignature Language="C#" Value="protected void RemoveVisualChild (System.Windows.Media.Visual child);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveVisualChild(class System.Windows.Media.Visual child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.RemoveVisualChild(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="child">The child visual object to remove from the parent visual.</param>
+        <summary>Removes the parent-child relationship between two visuals.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> method removes the parent-child relationship between two visuals. This method, along with the <xref:System.Windows.Media.Visual.AddVisualChild%2A> method, must be used when you need greater low-level control over the underlying storage implementation of visual child objects. <xref:System.Windows.Media.VisualCollection> can be used as a default implementation for storing child objects.  
+  
+   
+  
+## Examples  
+ The following example shows how to define custom storage requirements for a visual child. The example uses the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods to sets up the parent-child relationship between the parent visual and `child`. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.Visual.GetVisualChild%2A> method and <xref:System.Windows.Media.Visual.VisualChildrenCount%2A> property.  
+  
+> [!NOTE]
+>  Although it is possible to use <xref:System.Windows.Media.VisualCollection> to create parent-child relationships between visual objects, it is more efficient to provide your own custom storage implementation when only one child is linked to a parent.  
+  
+ [!code-csharp[AddVisualChild#AddVisualChild01](~/samples/snippets/csharp/VS_Snippets_Wpf/AddVisualChild/CSharp/Window1.xaml.cs#addvisualchild01)]
+ [!code-vb[AddVisualChild#AddVisualChild01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/AddVisualChild/visualbasic/window1.xaml.vb#addvisualchild01)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformToAncestor">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.GeneralTransform2DTo3D TransformToAncestor (System.Windows.Media.Media3D.Visual3D ancestor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.GeneralTransform2DTo3D TransformToAncestor(class System.Windows.Media.Media3D.Visual3D ancestor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.TransformToAncestor(System.Windows.Media.Media3D.Visual3D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.GeneralTransform2DTo3D</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ancestor" Type="System.Windows.Media.Media3D.Visual3D" />
+      </Parameters>
+      <Docs>
+        <param name="ancestor">The <see cref="T:System.Windows.Media.Media3D.Visual3D" /> to which the coordinates are transformed.</param>
+        <summary>Returns a transform that can be used to transform coordinates from the <see cref="T:System.Windows.Media.Visual" /> to the specified <see cref="T:System.Windows.Media.Media3D.Visual3D" /> ancestor of the visual object.</summary>
+        <returns>A transform that can be used to transform coordinates from the <see cref="T:System.Windows.Media.Visual" /> to the specified <see cref="T:System.Windows.Media.Media3D.Visual3D" /> ancestor of the visual object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformToAncestor">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransform TransformToAncestor (System.Windows.Media.Visual ancestor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransform TransformToAncestor(class System.Windows.Media.Visual ancestor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.TransformToAncestor(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeneralTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ancestor" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="ancestor">The <see cref="T:System.Windows.Media.Visual" /> to which the coordinates are transformed.</param>
+        <summary>Returns a transform that can be used to transform coordinates from the <see cref="T:System.Windows.Media.Visual" /> to the specified <see cref="T:System.Windows.Media.Visual" /> ancestor of the visual object.</summary>
+        <returns>A value of type <see cref="T:System.Windows.Media.GeneralTransform" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Alternatively, you can use the <xref:System.Windows.Media.VisualTreeHelper.GetOffset%2A?displayProperty=fullName> method to retrieve the offset of a visual object relative to its parent. The offset values are contained within the returned <xref:System.Windows.Vector> value.  
+  
+ [!code-csharp[VisualSnippets#VisualSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml.cs#visualsnippet2)]
+ [!code-vb[VisualSnippets#VisualSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/window1.xaml.vb#visualsnippet2)]  
+  
+   
+  
+## Examples  
+ The following markup example shows a <xref:System.Windows.Controls.TextBlock> that is nested within two <xref:System.Windows.Controls.StackPanel> objects.  
+  
+ [!code-xml[VisualSnippets#VisualSnippet7](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window2.xaml#visualsnippet7)]  
+  
+ The following code example shows how to use the <xref:System.Windows.Media.Visual.TransformToAncestor%2A> method to retrieve the offset of the <xref:System.Windows.Controls.TextBlock> relative to the containing <xref:System.Windows.Window>. The offset values are contained in the returned <xref:System.Windows.Media.GeneralTransform>.  
+  
+ [!code-csharp[VisualSnippets#VisualSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml.cs#visualsnippet5)]
+ [!code-vb[VisualSnippets#VisualSnippet5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/window1.xaml.vb#visualsnippet5)]  
+  
+ The offset takes into account the <xref:System.Windows.FrameworkElement.Margin%2A> values for all objects within the containing <xref:System.Windows.Window>. In this case, <xref:System.Windows.Vector.X%2A> is 28, and <xref:System.Windows.Vector.Y%2A> is 28.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ancestor" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ancestor" /> is not an ancestor of the visual.</exception>
+        <exception cref="T:System.InvalidOperationException">The visual objects are not related.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformToDescendant">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransform TransformToDescendant (System.Windows.Media.Visual descendant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransform TransformToDescendant(class System.Windows.Media.Visual descendant) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.TransformToDescendant(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeneralTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="descendant" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="descendant">The <see cref="T:System.Windows.Media.Visual" /> to which the coordinates are transformed.</param>
+        <summary>Returns a transform that can be used to transform coordinates from the <see cref="T:System.Windows.Media.Visual" /> to the specified visual object descendant.</summary>
+        <returns>A value of type <see cref="T:System.Windows.Media.GeneralTransform" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following markup example shows a <xref:System.Windows.Controls.TextBlock> that is contained within a <xref:System.Windows.Controls.StackPanel> object.  
+  
+ [!code-xml[VisualSnippets#VisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml#visualsnippet4)]  
+  
+ The following code example shows how to use the <xref:System.Windows.Media.Visual.TransformToDescendant%2A> method to retrieve the offset of the <xref:System.Windows.Controls.StackPanel> relative to its child <xref:System.Windows.Controls.TextBlock>. The offset values are contained within the returned <xref:System.Windows.Media.GeneralTransform> value.  
+  
+ [!code-csharp[VisualSnippets#VisualSnippet9](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml.cs#visualsnippet9)]
+ [!code-vb[VisualSnippets#VisualSnippet9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/window1.xaml.vb#visualsnippet9)]  
+  
+ The offset takes into account the <xref:System.Windows.FrameworkElement.Margin%2A> values for all objects. In this case, <xref:System.Windows.Vector.X%2A> is -4, and <xref:System.Windows.Vector.Y%2A> is -4. The offset values are negative values because the parent object is negatively offset relative to its child object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="descendant" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The visual is not an ancestor of the <paramref name="descendant" /> visual.</exception>
+        <exception cref="T:System.InvalidOperationException">The visual objects are not related.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformToVisual">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.GeneralTransform TransformToVisual (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeneralTransform TransformToVisual(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Visual.TransformToVisual(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.GeneralTransform</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> to which the coordinates are transformed.</param>
+        <summary>Returns a transform that can be used to transform coordinates from the <see cref="T:System.Windows.Media.Visual" /> to the specified visual object.</summary>
+        <returns>A value of type <see cref="T:System.Windows.Media.GeneralTransform" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.Visual.TransformToAncestor%2A> and <xref:System.Windows.Media.Visual.TransformToDescendant%2A> methods can also be used to return a transform for a visual object.  
+  
+   
+  
+## Examples  
+ The following markup example shows a <xref:System.Windows.Controls.TextBlock> that is contained within a <xref:System.Windows.Controls.StackPanel> object.  
+  
+ [!code-xml[VisualSnippets#VisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml#visualsnippet4)]  
+  
+ The following code example shows how to use the <xref:System.Windows.Media.Visual.TransformToVisual%2A> method to retrieve the offset of the <xref:System.Windows.Controls.StackPanel> relative to its child <xref:System.Windows.Controls.TextBlock>. The offset values are contained within the returned <xref:System.Windows.Media.GeneralTransform> value.  
+  
+ [!code-csharp[VisualSnippets#VisualSnippet8](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml.cs#visualsnippet8)]
+ [!code-vb[VisualSnippets#VisualSnippet8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/window1.xaml.vb#visualsnippet8)]  
+  
+ The offset takes into account the <xref:System.Windows.FrameworkElement.Margin%2A> values for all objects. In this case, <xref:System.Windows.Vector.X%2A> is -4, and <xref:System.Windows.Vector.Y%2A> is -4. The offset values are negative values because the parent object is negatively offset relative to its child object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visual" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The visual objects are not related.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualBitmapEffect">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.Effects.BitmapEffect VisualBitmapEffect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.BitmapEffect VisualBitmapEffect" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualBitmapEffect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.BitmapEffect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> value for the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>The bitmap effect for this visual object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualBitmapEffectInput">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.Effects.BitmapEffectInput VisualBitmapEffectInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.BitmapEffectInput VisualBitmapEffectInput" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualBitmapEffectInput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.BitmapEffectInput</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Effects.BitmapEffectInput" /> value for the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>The bitmap effect input value for this visual object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualBitmapScalingMode">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.BitmapScalingMode VisualBitmapScalingMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.BitmapScalingMode VisualBitmapScalingMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualBitmapScalingMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.BitmapScalingMode" /> for the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.BitmapScalingMode" /> value for the <see cref="T:System.Windows.Media.Visual" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualCacheMode">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.CacheMode VisualCacheMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.CacheMode VisualCacheMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualCacheMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.CacheMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a cached representation of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.CacheMode" /> that holds a cached representation of the <see cref="T:System.Windows.Media.Visual" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Media.Visual.VisualCacheMode%2A> property when you need to increase performance for content that is time-consuming to render. For more information, see <xref:System.Windows.Media.BitmapCache>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualChildrenCount">
+      <MemberSignature Language="C#" Value="protected virtual int VisualChildrenCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualChildrenCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of child elements for the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>The number of child elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, a <xref:System.Windows.Media.Visual> has no children. Therefore, the default implementation always returns 0.  
+  
+   
+  
+## Examples  
+ The following example defines an overridden implementation of <xref:System.Windows.Media.Visual.VisualChildrenCount%2A>.  
+  
+ [!code-csharp[DrawingVisualSample#102a](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#102a)]
+ [!code-vb[DrawingVisualSample#102a](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#102a)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>A class that derives from <see cref="T:System.Windows.Media.Visual" /> must override this property, and also the <see cref="M:System.Windows.Media.Visual.GetVisualChild(System.Int32)" /> method, for the visual tree to be enumerated correctly.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualClearTypeHint">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.ClearTypeHint VisualClearTypeHint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.ClearTypeHint VisualClearTypeHint" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualClearTypeHint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.ClearTypeHint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.ClearTypeHint" /> that determines how ClearType is rendered in the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.ClearTypeHint" /> of the <see cref="T:System.Windows.Media.Visual" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualClip">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.Geometry VisualClip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry VisualClip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualClip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the clip region of the <see cref="T:System.Windows.Media.Visual" /> as a <see cref="T:System.Windows.Media.Geometry" /> value.</summary>
+        <value>The clip region value of the visual as a <see cref="T:System.Windows.Media.Geometry" /> type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualEdgeMode">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.EdgeMode VisualEdgeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.EdgeMode VisualEdgeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualEdgeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.EdgeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the edge mode of the <see cref="T:System.Windows.Media.Visual" /> as an <see cref="T:System.Windows.Media.EdgeMode" /> value.</summary>
+        <value>The <see cref="T:System.Windows.Media.EdgeMode" /> value of the visual.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualEffect">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.Effects.Effect VisualEffect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.Effect VisualEffect" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualEffect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.Effect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the bitmap effect to apply to the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>An <see cref="T:System.Windows.Media.Effects.Effect" /> that represents the bitmap effect.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualOffset">
+      <MemberSignature Language="C#" Value="protected System.Windows.Vector VisualOffset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector VisualOffset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the offset value of the visual object.</summary>
+        <value>A <see cref="T:System.Windows.Vector" /> that specifies the offset value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualOpacity">
+      <MemberSignature Language="C#" Value="protected double VisualOpacity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VisualOpacity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualOpacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the opacity of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>The opacity value of the visual.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the opacity of the <xref:System.Windows.Media.Visual> is expressed as a value between 0 and 1. A value of 0 indicates that the element is completely transparent, whereas a value of 1 indicates that the element is completely opaque. A value of 0.5 indicates that the element is 50 percent opaque. Values that are less than 0 are treated as 0; values that are greater than 1 are treated as 1.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualOpacityMask">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.Brush VisualOpacityMask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush VisualOpacityMask" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualOpacityMask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Brush" /> value that represents the opacity mask of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.Brush" /> that represents the opacity mask value of the visual.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The opacity mask is a <xref:System.Windows.Media.Brush> that is applied to any alpha-channel masking for the rendered content of this visual.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualParent">
+      <MemberSignature Language="C#" Value="protected System.Windows.DependencyObject VisualParent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject VisualParent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualParent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the visual tree parent of the visual object.</summary>
+        <value>The <see cref="T:System.Windows.Media.Visual" /> parent.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualScrollableAreaClip">
+      <MemberSignature Language="C#" Value="protected Nullable&lt;System.Windows.Rect&gt; VisualScrollableAreaClip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Windows.Rect&gt; VisualScrollableAreaClip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualScrollableAreaClip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Windows.Rect&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a clipped scrollable area for the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>A <see cref="T:System.Windows.Rect" /> that represents the scrollable clipping area, or <see langword="null" /> if no clipping area is assigned.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Media.Visual.VisualScrollableAreaClip%2A> property to enable accelerated scrolling when rendering in software. This is useful in remote rendering scenarios, such as running over Remote Desktop or running in a virtual machine. Set this property on the parent element whose children will be scrolled. Setting the <xref:System.Windows.Media.Visual.VisualScrollableAreaClip%2A> property has no effect when rendering is hardware accelerated.  
+  
+ The <xref:System.Windows.Media.Visual.VisualScrollableAreaClip%2A> property enables specific, advanced scenarios. The following list shows the caveats that apply when you use the <xref:System.Windows.Media.Visual.VisualScrollableAreaClip%2A> property.  
+  
+-   The background of the scrolled area must be opaque, or scrolling artifacts will occur.  
+  
+-   The <xref:System.Windows.Media.Visual.VisualScrollableAreaClip%2A> property accelerates scrolling only when WPF is rendering in software. For example, this situation occurs when the application is running over Remote Desktop or running locally in a virtual machine.  
+  
+-   The scrolling behavior is unchanged when rendering in hardware. To prevent differences in scrolling behavior, you should keep the <xref:System.Windows.Media.Visual.VisualScrollableAreaClip%2A> property enabled for both hardware and software.  
+  
+-   Rotate and skew transforms disable accelerated scrolling. Scale transforms and horizontal or vertical translations above the scrolled region work correctly and do not disable scrolling acceleration.  
+  
+-   Changing the subtree or triggering parts of the scrollable area to redraw via animation behave as expected, but lose the benefit of accelerated scrolling for the redrawn area. Any animation that invalidates the scrolled area during the same frame in which scrolling occurs eliminates the benefit of this optimization.  
+  
+-   The <xref:System.Windows.Media.Visual.VisualScrollableAreaClip%2A> rectangle snaps inward to pixels. Therefore, the snapped size of the scrolling rectangle is always less than or equal to the size you have set.  
+  
+-   Offsets snap downward. This means that the difference of the previous snapped offset and current snapped offset is always an integer number of pixels.  
+  
+-   Hit tests can be off by up to a pixel.  
+  
+-   Layout rounding should be turned on, because it ensures that the edges of scrollable areas and the boundary window client area are snapped to pixel boundaries, resulting in correct alignment.  
+  
+-   Scrolling acceleration does not work on layered windows. This means windows in which AllowTransparency == true, window.windowstyle == none, and so on.  
+  
+-   Scrolling acceleration does not occur during full-window rendering.  
+  
+-   Scrolling acceleration does not work when the window straddles two monitors.  
+  
+-   Scrolling acceleration does not work in the presence of intermediate render targets in the parent chain of the scrolled element. The following list shows some of these intermediate render targets.  
+  
+    -   Clips  
+  
+    -   Effects  
+  
+    -   DrawingBrushes  
+  
+    -   VisualBrushes  
+  
+    -   OpacityMasks  
+  
+    -   Opacity  
+  
+-   Only one accelerated scroll can happen per frame. There can be multiple accelerated scroll areas, but only one of them can perform an accelerated scroll during a frame. Which area is scrolled is indeterminate.  
+  
+-   Scrolling acceleration supports content above the scrolling region (in z-order) that is not scrolled with the rest of the content. The system calculates all necessary dirty regions and completes the accelerated scroll, but it sends several additional bitmaps over the wire to move the unintentionally scrolled portion back to its correct position on screen.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualTextHintingMode">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.TextHintingMode VisualTextHintingMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextHintingMode VisualTextHintingMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualTextHintingMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextHintingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.TextHintingMode" /> of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.TextHintingMode" /> applied to the <see cref="T:System.Windows.Media.Visual" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualTextRenderingMode">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.TextRenderingMode VisualTextRenderingMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TextRenderingMode VisualTextRenderingMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualTextRenderingMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextRenderingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.TextRenderingMode" /> of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.TextRenderingMode" /> applied to the <see cref="T:System.Windows.Media.Visual" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualTransform">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.Transform VisualTransform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Transform VisualTransform" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualTransform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Transform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Transform" /> value for the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <value>The transform value of the visual.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualXSnappingGuidelines">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.DoubleCollection VisualXSnappingGuidelines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.DoubleCollection VisualXSnappingGuidelines" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualXSnappingGuidelines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the x-coordinate (vertical) guideline collection.</summary>
+        <value>The x-coordinate guideline collection of the visual.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
+  
+ However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels, eliminating the soft edges produced by anti-aliasing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualYSnappingGuidelines">
+      <MemberSignature Language="C#" Value="protected System.Windows.Media.DoubleCollection VisualYSnappingGuidelines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.DoubleCollection VisualYSnappingGuidelines" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Visual.VisualYSnappingGuidelines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the y-coordinate (horizontal) guideline collection.</summary>
+        <value>The y-coordinate guideline collection of the visual.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
+  
+ However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels, eliminating the soft edges produced by anti-aliasing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

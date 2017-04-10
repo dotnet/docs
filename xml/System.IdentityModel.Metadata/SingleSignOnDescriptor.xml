@@ -1,0 +1,109 @@
+<Type Name="SingleSignOnDescriptor" FullName="System.IdentityModel.Metadata.SingleSignOnDescriptor">
+  <TypeSignature Language="C#" Value="public class SingleSignOnDescriptor : System.IdentityModel.Metadata.RoleDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SingleSignOnDescriptor extends System.IdentityModel.Metadata.RoleDescriptor" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.SingleSignOnDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Metadata.RoleDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an SSO descriptor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SingleSignOnDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.SingleSignOnDescriptor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.SingleSignOnDescriptor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArtifactResolutionServices">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary ArtifactResolutionServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary ArtifactResolutionServices" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SingleSignOnDescriptor.ArtifactResolutionServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> object that contains the indexed endpoints for the artifact resolution services.</summary>
+        <value>The <see cref="T:System.IdentityModel.Metadata.IndexedProtocolEndpointDictionary" /> that contains the indexed endpoints for the artifact resolution services.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The dictionary contains zero or more entries that describe indexed endpoints that support the Artifact Resolution profile defined in [SAMLProf].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameIdentifierFormats">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Uri&gt; NameIdentifierFormats { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Uri&gt; NameIdentifierFormats" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SingleSignOnDescriptor.NameIdentifierFormats" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of URIs that represent the supported name identifier formats.</summary>
+        <value>The collection of URIs that represent the supported name identifier formats.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection contains zero or more elements that enumerate the name identifier formats supported by the service provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleLogoutServices">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.ProtocolEndpoint&gt; SingleLogoutServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Metadata.ProtocolEndpoint&gt; SingleLogoutServices" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.SingleSignOnDescriptor.SingleLogoutServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Metadata.ProtocolEndpoint&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of single logout service endpoints.</summary>
+        <value>The collection of single logout service endpoints.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection contains zero or more elements that describe endpoints that support the Single Logout profiles defined in [SAMLProf].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

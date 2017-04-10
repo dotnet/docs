@@ -1,0 +1,125 @@
+<Type Name="UriFormat" FullName="System.UriFormat">
+  <TypeSignature Language="C#" Value="public enum UriFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UriFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.UriFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Controls how URI information is escaped.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Uri.GetComponents%2A> method to specify the level of character escaping in the returned URI.  
+  
+ RFC 2396 defines the standard escaping for URIs, and is available at [http://rfc-editor.org](http://rfc-editor.org).  
+  
+ SafeUnescaped leaves the following characters escaped if the character has a reserved meaning in the requested <xref:System.UriComponents>: "%", "#", "?", "/", "\\", and "@".  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SafeUnescaped">
+      <MemberSignature Language="C#" Value="SafeUnescaped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.UriFormat SafeUnescaped = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.UriFormat.SafeUnescaped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Characters that have a reserved meaning in the requested URI components remain escaped. All others are not escaped. See Remarks.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unescaped">
+      <MemberSignature Language="C#" Value="Unescaped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.UriFormat Unescaped = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.UriFormat.Unescaped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No escaping is performed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UriEscaped">
+      <MemberSignature Language="C#" Value="UriEscaped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.UriFormat UriEscaped = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.UriFormat.UriEscaped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Escaping is performed according to the rules in RFC 2396.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

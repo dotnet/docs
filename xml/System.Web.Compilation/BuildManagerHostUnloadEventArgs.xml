@@ -1,0 +1,76 @@
+<Type Name="BuildManagerHostUnloadEventArgs" FullName="System.Web.Compilation.BuildManagerHostUnloadEventArgs">
+  <TypeSignature Language="C#" Value="public class BuildManagerHostUnloadEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildManagerHostUnloadEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildManagerHostUnloadEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains event data for the <see cref="E:System.Web.Compilation.ClientBuildManager.AppDomainShutdown" /> event and the <see cref="E:System.Web.Compilation.ClientBuildManager.AppDomainUnloaded" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an <xref:System.AppDomain> instance is shut down or unloaded, an <xref:System.Web.Compilation.ClientBuildManager.AppDomainShutdown> event or an <xref:System.Web.Compilation.ClientBuildManager.AppDomainUnloaded> event is raised, respectively. The <xref:System.Web.Compilation.BuildManagerHostUnloadEventArgs> object stores the reason for the shutdown or unload and is passed to the event handler as one of its parameters.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildManagerHostUnloadEventArgs (System.Web.ApplicationShutdownReason reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.ApplicationShutdownReason reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.BuildManagerHostUnloadEventArgs.#ctor(System.Web.ApplicationShutdownReason)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reason" Type="System.Web.ApplicationShutdownReason" />
+      </Parameters>
+      <Docs>
+        <param name="reason">The reason for the hosted application domain shutdown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.BuildManagerHostUnloadEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a new instance of <xref:System.Web.Compilation.BuildManagerHostUnloadEventArgs> with the <xref:System.Web.Compilation.BuildManagerHostUnloadEventArgs.Reason%2A> property set to `reason`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public System.Web.ApplicationShutdownReason Reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.ApplicationShutdownReason Reason" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.BuildManagerHostUnloadEventArgs.Reason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the reason the hosted application domain was shut down.</summary>
+        <value>One of the <see cref="T:System.Web.ApplicationShutdownReason" /> enumerated values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.BuildManagerHostUnloadEventArgs.Reason%2A> property stores an <xref:System.Web.ApplicationShutdownReason> object as its value that describes why the <xref:System.AppDomain> instance was shut down.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

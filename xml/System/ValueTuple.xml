@@ -1,0 +1,756 @@
+<Type Name="ValueTuple" FullName="System.ValueTuple">
+  <TypeSignature Language="C#" Value="public struct ValueTuple : IComparable, IComparable&lt;ValueTuple&gt;, IEquatable&lt;ValueTuple&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTuple extends System.ValueType implements class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable, class System.IComparable`1&lt;valuetype System.ValueTuple&gt;, class System.IEquatable`1&lt;valuetype System.ValueTuple&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ValueTuple" />
+  <AssemblyInfo>
+    <AssemblyName>System.ValueTuple</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IStructuralComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IStructuralEquatable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IComparable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IComparable&lt;System.ValueTuple&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.ValueTuple&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides static methods for creating value tuples.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tuple is a data structure that has a specific number and sequence of elements. An example of a tuple is a data structure with three elements (known as a 3-tuple or triple) that is used to store an identifier such as a person's name in the first element, a year in the second element, and the person's income for that year in the third element.  
+  
+ Value tuples are tuple types introduced in the [!INCLUDE[net_v463](~/includes/net-v463-md.md)] to provide the runtime implementation of tuples in C# and struct tuples in F#. They differ from the tuple classes, such as  <xref:System.Tuple%601>, <xref:System.Tuple%601>, etc., as follows:  
+  
+-   They are structures (value types) rather than classes (reference types).  
+  
+-   They are mutable rather than read-only. That is, the value of tuple components can change.  
+  
+-   Their data members, such as `Item1`, `Item2`, etc., are fields rather than properties.  
+  
+ The <xref:System.ValueTuple> structure itself does not represent a value tuple. Instead, it provides static methods for creating instances of value tuple types. It provides helper methods that you can call to instantiate value tuples without having to explicitly specify the type of each value tuple component. By calling its static `Create` methods, you can create value tuples that have from zero to eight components. For value tuples with more than eight components, you must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public int CompareTo (ValueTuple other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(valuetype System.ValueTuple other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.CompareTo(System.ValueTuple)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.ValueTuple" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare with the current instance.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple" /> instance with a specified object.</summary>
+        <returns>Returns 0 if <paramref name=" other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static ValueTuple Create ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple Create() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new value tuple with zero components.</summary>
+        <returns>A new value tuple with no components.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T1&gt;">
+      <MemberSignature Language="C#" Value="public static ValueTuple&lt;T1&gt; Create&lt;T1&gt; (T1 item1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`1&lt;!!T1&gt; Create&lt;T1&gt;(!!T1 item1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;T1&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">The type of the value tuple's only component.</typeparam>
+        <param name="item1">The value of the value tuple's only component.</param>
+        <summary>Creates a new value tuple with 1 component (a singleton).</summary>
+        <returns>A value tuple with 1 component.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 1-component value tuple without having to explicitly specify the type of its component.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T1,T2&gt;">
+      <MemberSignature Language="C#" Value="public static ValueTuple&lt;T1,T2&gt; Create&lt;T1,T2&gt; (T1 item1, T2 item2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`2&lt;!!T1, !!T2&gt; Create&lt;T1, T2&gt;(!!T1 item1, !!T2 item2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``2(``0,``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;T1,T2&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+        <Parameter Name="item2" Type="T2" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <summary>Creates a new value tuple with 2 components (a pair).</summary>
+        <returns>A value tuple with 2 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 2-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T1,T2,T3&gt;">
+      <MemberSignature Language="C#" Value="public static ValueTuple&lt;T1,T2,T3&gt; Create&lt;T1,T2,T3&gt; (T1 item1, T2 item2, T3 item3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`3&lt;!!T1, !!T2, !!T3&gt; Create&lt;T1, T2, T3&gt;(!!T1 item1, !!T2 item2, !!T3 item3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``3(``0,``1,``2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;T1,T2,T3&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+        <Parameter Name="item2" Type="T2" />
+        <Parameter Name="item3" Type="T3" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <summary>Creates a new value tuple with 8 components (a triple).</summary>
+        <returns>A value tuple with 3 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 3-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T1,T2,T3,T4&gt;">
+      <MemberSignature Language="C#" Value="public static ValueTuple&lt;T1,T2,T3,T4&gt; Create&lt;T1,T2,T3,T4&gt; (T1 item1, T2 item2, T3 item3, T4 item4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`4&lt;!!T1, !!T2, !!T3, !!T4&gt; Create&lt;T1, T2, T3, T4&gt;(!!T1 item1, !!T2 item2, !!T3 item3, !!T4 item4) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``4(``0,``1,``2,``3)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+        <Parameter Name="item2" Type="T2" />
+        <Parameter Name="item3" Type="T3" />
+        <Parameter Name="item4" Type="T4" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <summary>Creates a new value tuple with 4 components (a quadruple).</summary>
+        <returns>A value tuple with 4 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 4-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T1,T2,T3,T4,T5&gt;">
+      <MemberSignature Language="C#" Value="public static ValueTuple&lt;T1,T2,T3,T4,T5&gt; Create&lt;T1,T2,T3,T4,T5&gt; (T1 item1, T2 item2, T3 item3, T4 item4, T5 item5);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt; Create&lt;T1, T2, T3, T4, T5&gt;(!!T1 item1, !!T2 item2, !!T3 item3, !!T4 item4, !!T5 item5) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``5(``0,``1,``2,``3,``4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="T5" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+        <Parameter Name="item2" Type="T2" />
+        <Parameter Name="item3" Type="T3" />
+        <Parameter Name="item4" Type="T4" />
+        <Parameter Name="item5" Type="T5" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <typeparam name="T5">The type of the value tuple's fifth component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <param name="item5">The value of the value tuple's fifth component.</param>
+        <summary>Creates a new value tuple with 5 components (a quintuple).</summary>
+        <returns>A value tuple with 5 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 5-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6&gt;">
+      <MemberSignature Language="C#" Value="public static ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt; Create&lt;T1,T2,T3,T4,T5,T6&gt; (T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`6&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6&gt; Create&lt;T1, T2, T3, T4, T5, T6&gt;(!!T1 item1, !!T2 item2, !!T3 item3, !!T4 item4, !!T5 item5, !!T6 item6) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``6(``0,``1,``2,``3,``4,``5)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="T5" />
+        <TypeParameter Name="T6" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+        <Parameter Name="item2" Type="T2" />
+        <Parameter Name="item3" Type="T3" />
+        <Parameter Name="item4" Type="T4" />
+        <Parameter Name="item5" Type="T5" />
+        <Parameter Name="item6" Type="T6" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <typeparam name="T5">The type of the value tuple's fifth component.</typeparam>
+        <typeparam name="T6">The type of the value tuple's sixth component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <param name="item5">The value of the value tuple's fifth component.</param>
+        <param name="item6">The value of the value tuple's sixth component.</param>
+        <summary>Creates a new value tuple with 6 components (a sexuple).</summary>
+        <returns>A value tuple with 6 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate a 6-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6,T7&gt;">
+      <MemberSignature Language="C#" Value="public static ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7&gt; Create&lt;T1,T2,T3,T4,T5,T6,T7&gt; (T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`7&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7&gt; Create&lt;T1, T2, T3, T4, T5, T6, T7&gt;(!!T1 item1, !!T2 item2, !!T3 item3, !!T4 item4, !!T5 item5, !!T6 item6, !!T7 item7) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``7(``0,``1,``2,``3,``4,``5,``6)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="T5" />
+        <TypeParameter Name="T6" />
+        <TypeParameter Name="T7" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+        <Parameter Name="item2" Type="T2" />
+        <Parameter Name="item3" Type="T3" />
+        <Parameter Name="item4" Type="T4" />
+        <Parameter Name="item5" Type="T5" />
+        <Parameter Name="item6" Type="T6" />
+        <Parameter Name="item7" Type="T7" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <typeparam name="T5">The type of the value tuple's fifth component.</typeparam>
+        <typeparam name="T6">The type of the value tuple's sixth component.</typeparam>
+        <typeparam name="T7">The type of the value tuple's seventh component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <param name="item5">The value of the value tuple's fifth component.</param>
+        <param name="item6">The value of the value tuple's sixth component.</param>
+        <param name="item7">The value of the value tuple's seventh component.</param>
+        <summary>Creates a new value tuple with 7 components (a septuple).</summary>
+        <returns>A value tuple with 7 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 7-component value tuple without having to explicitly specify the types of its components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;">
+      <MemberSignature Language="C#" Value="public static ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,ValueTuple&lt;T8&gt;&gt; Create&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt; (T1 item1, T2 item2, T3 item3, T4 item4, T5 item5, T6 item6, T7 item7, T8 item8);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ValueTuple`8&lt;!!T1, !!T2, !!T3, !!T4, !!T5, !!T6, !!T7, valuetype System.ValueTuple`1&lt;!!T8&gt;&gt; Create&lt;T1, T2, T3, T4, T5, T6, T7, T8&gt;(!!T1 item1, !!T2 item2, !!T3 item3, !!T4 item4, !!T5 item5, !!T6 item6, !!T7 item7, !!T8 item8) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Create``8(``0,``1,``2,``3,``4,``5,``6,``7)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;T1,T2,T3,T4,T5,T6,T7,System.ValueTuple&lt;T8&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="T5" />
+        <TypeParameter Name="T6" />
+        <TypeParameter Name="T7" />
+        <TypeParameter Name="T8" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="item1" Type="T1" />
+        <Parameter Name="item2" Type="T2" />
+        <Parameter Name="item3" Type="T3" />
+        <Parameter Name="item4" Type="T4" />
+        <Parameter Name="item5" Type="T5" />
+        <Parameter Name="item6" Type="T6" />
+        <Parameter Name="item7" Type="T7" />
+        <Parameter Name="item8" Type="T8" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">The type of the value tuple's first component.</typeparam>
+        <typeparam name="T2">The type of the value tuple's second component.</typeparam>
+        <typeparam name="T3">The type of the value tuple's third component.</typeparam>
+        <typeparam name="T4">The type of the value tuple's fourth component.</typeparam>
+        <typeparam name="T5">The type of the value tuple's fifth component.</typeparam>
+        <typeparam name="T6">The type of the value tuple's sixth component.</typeparam>
+        <typeparam name="T7">The type of the value tuple's seventh component.</typeparam>
+        <typeparam name="T8">The type of the value tuple's eighth component.</typeparam>
+        <param name="item1">The value of the value tuple's first component.</param>
+        <param name="item2">The value of the value tuple's second component.</param>
+        <param name="item3">The value of the value tuple's third component.</param>
+        <param name="item4">The value of the value tuple's fourth component.</param>
+        <param name="item5">The value of the value tuple's fifth component.</param>
+        <param name="item6">The value of the value tuple's sixth component.</param>
+        <param name="item7">The value of the value tuple's seventh component.</param>
+        <param name="item8">The value of the value tuple's eighth component.</param>
+        <summary>Creates a new value tuple with 8 components (an octuple).</summary>
+        <returns>A value tuple with 8 components.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ValueTuple.Create%2A> is a helper method that you can call to instantiate an 8-component value tuple without having to explicitly specify the types of its components.  
+  
+> [!NOTE]
+>  You must call the <xref:System.ValueTuple%608.%23ctor%2A> constructor to create a tuple with nine or more components unless your language provides a special syntax for this purpose. The static methods of the <xref:System.ValueTuple> structure cannot be used to create a tuple with nine or more components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare to the current instance.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple" /> instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.ValueTuple" /> instance; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (ValueTuple other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.ValueTuple other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.Equals(System.ValueTuple)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.ValueTuple" />
+      </Parameters>
+      <Docs>
+        <param name="other">The value tuple to compare with the current instance.</param>
+        <summary>Determines whether two <see cref="T:System.ValueTuple" /> instances are equal. This method always returns <see langword="true" />.</summary>
+        <returns>This method always returns <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for the current <see cref="T:System.ValueTuple" /> instance.</summary>
+        <returns>The hash code for the current <see cref="T:System.ValueTuple" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralComparable.CompareTo">
+      <MemberSignature Language="C#" Value="int IStructuralComparable.CompareTo (object other, System.Collections.IComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralComparable.CompareTo(object other, class System.Collections.IComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare with the current instance.</param>
+        <param name="comparer">An object that provides custom rules for comparison. This parameter is ignored.</param>
+        <summary>Compares the current <see cref="T:System.ValueTuple" /> instance to a specified object.</summary>
+        <returns>Returns 0 if <paramref name=" other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralEquatable.Equals">
+      <MemberSignature Language="C#" Value="bool IStructuralEquatable.Equals (object other, System.Collections.IEqualityComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IStructuralEquatable.Equals(object other, class System.Collections.IEqualityComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare with this instance.</param>
+        <param name="comparer">An object that defines the method to use to evaluate whether the two objects are equal.</param>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple" /> instance is equal to a specified object based on a specified comparison method.</summary>
+        <returns>
+          <see langword="true" /> if the current instance is equal to the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface implementation. It can only be used when the <xref:System.ValueTuple>t> instance is cast to an <xref:System.Collections.IStructuralEquatable> interface. The <xref:System.Collections.IEqualityComparer.Equals%2A?displayProperty=fullName> implementation is called only if `other` is not `null`, and if it can be successfully cast to a <xref:System.ValueTuple> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IStructuralEquatable.GetHashCode">
+      <MemberSignature Language="C#" Value="int IStructuralEquatable.GetHashCode (System.Collections.IEqualityComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralEquatable.GetHashCode(class System.Collections.IEqualityComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IEqualityComparer" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">An object whose <see cref="M:System.Collections.IEqualityComparer.GetHashCode(System.Object)" /> method computes the hash code. This parameter is ignored.</param>
+        <summary>Returns the hash code for this <see cref="T:System.ValueTuple" /> instance.</summary>
+        <returns>The hash code for this <see cref="T:System.ValueTuple" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IComparable.CompareTo">
+      <MemberSignature Language="C#" Value="int IComparable.CompareTo (object other);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.System#IComparable#CompareTo(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare with the current instance</param>
+        <summary>Compares this <see cref="T:System.ValueTuple" /> instance with a specified object and returns an indication of their relative values.</summary>
+        <returns>0 if <paramref name="other" /> is a <see cref="T:System.ValueTuple" /> instance; otherwise, 1 if <paramref name="other" /> is <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ValueTuple.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the string representation of this <see cref="T:System.ValueTuple" /> instance.</summary>
+        <returns>This method always returns "()".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,620 @@
+<Type Name="ContractDescription" FullName="System.ServiceModel.Description.ContractDescription">
+  <TypeSignature Language="C#" Value="public class ContractDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContractDescription extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ContractDescription" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Name={name}, Namespace={ns}, ContractType={contractType}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] contract that specifies what an endpoint communicates to the outside world.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A [!INCLUDE[indigo2](~/includes/indigo2-md.md)] contract is a collection of operations that specifies what the endpoint communicates to the outside world. Each operation is a message exchange. For example, a request message and an associated reply message form a request/reply message exchange.  
+  
+ A <xref:System.ServiceModel.Description.ContractDescription> object is used to describe [!INCLUDE[indigo2](~/includes/indigo2-md.md)] contracts and their operations. Within a <xref:System.ServiceModel.Description.ContractDescription>, each contract operation has a corresponding <xref:System.ServiceModel.Description.OperationDescription> that describes aspects of the each operation that is part of the contract, such as whether the operation is one-way or request/reply. Each <xref:System.ServiceModel.Description.OperationDescription> also describes the messages that make up the operation using a <xref:System.ServiceModel.Description.MessageDescriptionCollection>. <xref:System.ServiceModel.Description.ContractDescription> contains a reference to an interface that defines the contract using the programming model. This interface is marked with <xref:System.ServiceModel.ServiceContractAttribute> and its methods that correspond to endpoint operations are marked with the <xref:System.ServiceModel.OperationContractAttribute>.  
+  
+ A *duplex* contract defines the following logical sets of operations:  
+  
+-   A set that the service exposes for the client to call.  
+  
+-   A set that the client exposes for the service to call.  
+  
+ The programming model for defining a duplex contract is to split each set in a separate interface and apply attributes to each interface. In this case, <xref:System.ServiceModel.Description.ContractDescription> contains a reference to each of the interfaces that groups them into one duplex contract.  
+  
+ Similar to bindings, each contract has a <xref:System.ServiceModel.Description.ContractDescription.Name%2A> and <xref:System.ServiceModel.Description.ContractDescription.Namespace%2A> that uniquely identify it in the metadata of the service.  
+  
+   
+  
+## Examples  
+ The following example shows a number of ways to create or retrieve a <xref:System.ServiceModel.Description.ContractDescription> object. It then displays the various pieces of information that are stored in the <xref:System.ServiceModel.Description.ContractDescription> object.  
+  
+ [!code-csharp[S_UE_ContractDescription#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#0)]
+ [!code-vb[S_UE_ContractDescription#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContractDescription (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the contract.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ContractDescription" /> class with a specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#1)]
+ [!code-vb[S_UE_ContractDescription#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="name" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContractDescription (string name, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the contract.</param>
+        <param name="ns">The namespace that contains the name of the contract.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ContractDescription" /> class with a namespace-qualified name specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace can be an empty string ("").  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#2)]
+ [!code-vb[S_UE_ContractDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="name" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Behaviors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IContractBehavior&gt; Behaviors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.KeyedByTypeCollection`1&lt;class System.ServiceModel.Description.IContractBehavior&gt; Behaviors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Behaviors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IContractBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the behaviors associated with the contract description.</summary>
+        <value>The <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> of type <see cref="T:System.ServiceModel.Description.IContractBehavior" /> associated with the contract description.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#3)]
+ [!code-vb[S_UE_ContractDescription#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallbackContractType">
+      <MemberSignature Language="C#" Value="public Type CallbackContractType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type CallbackContractType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.CallbackContractType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of callback contract that the contract description specifies.</summary>
+        <value>The <see cref="T:System.Type" /> of callback contract that the contract description specifies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Description.ContractDescription.CallbackContractType%2A> property is not serializable, so it is only available when the description is bound to runtime. It cannot be imported or exported as part of the metadata.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#4)]
+ [!code-vb[S_UE_ContractDescription#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigurationName">
+      <MemberSignature Language="C#" Value="public string ConfigurationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ConfigurationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the configuration name for the contract description.</summary>
+        <value>The configuration name for the contract.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#2)]
+ [!code-vb[S_UE_ContractDescription#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractBehaviors">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.KeyedCollection&lt;Type,System.ServiceModel.Description.IContractBehavior&gt; ContractBehaviors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.KeyedCollection`2&lt;class System.Type, class System.ServiceModel.Description.IContractBehavior&gt; ContractBehaviors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ContractBehaviors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.Type,System.ServiceModel.Description.IContractBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of behavior for the contract.</summary>
+        <value>The collection of behavior for the contract.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContractType">
+      <MemberSignature Language="C#" Value="public Type ContractType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContractType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ContractType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the contract type that the contract description specifies.</summary>
+        <value>The <see cref="T:System.Type" /> of contract that the contract description specifies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Description.ContractDescription.ContractType%2A> property is not serializable, so it is only available when the description is bound to runtime. It cannot be imported or exported as part of the metadata.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#6)]
+ [!code-vb[S_UE_ContractDescription#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContract">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ContractDescription GetContract (Type contractType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>
+        <summary>Returns the contract description for a specified type of contract.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#13](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#13)]
+ [!code-vb[S_UE_ContractDescription#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContract">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ContractDescription GetContract (Type contractType, object serviceImplementation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType, object serviceImplementation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractType" Type="System.Type" />
+        <Parameter Name="serviceImplementation" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>
+        <param name="serviceImplementation">The <see cref="T:System.Object" /> that implements the service.</param>
+        <summary>Returns the contract description for a specified type of contract and service implementation.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract and service implementation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#14](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#14)]
+ [!code-vb[S_UE_ContractDescription#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContract">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ContractDescription GetContract (Type contractType, Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType, class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractType" Type="System.Type" />
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="contractType">The <see cref="T:System.Type" /> of contract.</param>
+        <param name="serviceType">The <see cref="T:System.Type" /> of service.</param>
+        <summary>Returns the contract description for a specified type of contract and a specified type of service.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the specified type of contract and type of service.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#15](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#15)]
+ [!code-vb[S_UE_ContractDescription#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInheritedContracts">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ContractDescription&gt; GetInheritedContracts ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ContractDescription&gt; GetInheritedContracts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetInheritedContracts" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ContractDescription&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of contract descriptions that are inherited by the current contract description.</summary>
+        <returns>The <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.ServiceModel.Description.ContractDescription" /> that is inherited by the current contract description.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#16](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#16)]
+ [!code-vb[S_UE_ContractDescription#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasProtectionLevel">
+      <MemberSignature Language="C#" Value="public bool HasProtectionLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.HasProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the contract has had a protection level set.</summary>
+        <value>
+          <see langword="true" /> if the protection level has been set; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A> is set, the <xref:System.ServiceModel.Description.ContractDescription.HasProtectionLevel%2A> property is set to `true`.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#7)]
+ [!code-vb[S_UE_ContractDescription#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the contract.</summary>
+        <value>The name of the contract description.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#8)]
+ [!code-vb[S_UE_ContractDescription#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the namespace for the contract.</summary>
+        <value>The namespace of the contract.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace can be an empty string ("").  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#9)]
+ [!code-vb[S_UE_ContractDescription#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value set is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Operations">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.OperationDescriptionCollection Operations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.OperationDescriptionCollection Operations" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Operations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.OperationDescriptionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of operation descriptions associated with the contract.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.OperationDescriptionCollection" /> that contains the operation descriptions associated with the contract description.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#10](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#10)]
+ [!code-vb[S_UE_ContractDescription#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionLevel">
+      <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ProtectionLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the level of security protection associated with the contract.</summary>
+        <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> for the operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.ServiceModel.Description.ContractDescription.ProtectionLevel%2A> is set, the <xref:System.ServiceModel.Description.ContractDescription.HasProtectionLevel%2A> property is set to `true`.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#11](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#11)]
+ [!code-vb[S_UE_ContractDescription#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.SessionMode SessionMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.SessionMode SessionMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.SessionMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.SessionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a session is required by the contract.</summary>
+        <value>The <see cref="T:System.ServiceModel.SessionMode" /> that specifies the support for reliable sessions that a contract requires or supports.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A reliable session is a way of correlating a set of messages exchanged between two or more endpoints (using the [WS-ReliableMessaging](http://go.microsoft.com/fwlink/?LinkId=96680) specification) to provide assurances of the reliability of the connection.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ContractDescription#12](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_contractdescription/cs/calculatorservice.cs#12)]
+ [!code-vb[S_UE_ContractDescription#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_contractdescription/vb/calculatorservice.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeProtectionLevel">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeProtectionLevel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeProtectionLevel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.ShouldSerializeProtectionLevel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.Description.ContractDescription.ProtectionLevel" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.Description.ContractDescription.ProtectionLevel" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="GetContract">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the contract description for a specified type of contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The difference between the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A> overloads is that the ones with two arguments allow you to find attributes from the service (for example, <xref:System.ServiceModel.OperationBehaviorAttribute>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
+  </Members>
+</Type>

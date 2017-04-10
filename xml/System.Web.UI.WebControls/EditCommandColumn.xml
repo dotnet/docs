@@ -1,0 +1,364 @@
+<Type Name="EditCommandColumn" FullName="System.Web.UI.WebControls.EditCommandColumn">
+  <TypeSignature Language="C#" Value="public class EditCommandColumn : System.Web.UI.WebControls.DataGridColumn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EditCommandColumn extends System.Web.UI.WebControls.DataGridColumn" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EditCommandColumn" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.DataGridColumn</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A special column type for the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control that contains the <see langword="Edit" /> buttons for editing data items in each row.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.EditCommandColumn> class to create a special column for the <xref:System.Web.UI.WebControls.DataGrid> control that contains the `Edit`, `Update`, and `Cancel` buttons for each data row in the grid. These buttons allow you to edit the values of a row in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ If no row is selected, an `Edit` button displays in the <xref:System.Web.UI.WebControls.EditCommandColumn> object for each data row in the <xref:System.Web.UI.WebControls.DataGrid> control. When the `Edit` button for an item is clicked, the <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event is raised and the `Edit` button is replaced with the `Update` and `Cancel` buttons. You need to provide code to handle the <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event. A typical event handler sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to the selected row, and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!NOTE]
+>  You must provide values for the <xref:System.Web.UI.WebControls.EditCommandColumn.CancelText%2A>, <xref:System.Web.UI.WebControls.EditCommandColumn.EditText%2A>, and <xref:System.Web.UI.WebControls.EditCommandColumn.UpdateText%2A> properties. Otherwise, the associated buttons will not appear in the <xref:System.Web.UI.WebControls.EditCommandColumn>.  
+  
+ The buttons in the <xref:System.Web.UI.WebControls.EditCommandColumn> can be set to display as hyperlinks or push buttons by setting the <xref:System.Web.UI.WebControls.EditCommandColumn.ButtonType%2A> property.  
+  
+ Clicking the `Update` or `Cancel` button raises the <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> or <xref:System.Web.UI.WebControls.DataGrid.CancelCommand> event, respectively. You need to provide code to handle these events.  
+  
+ A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> event updates the data, sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to `-1` (to deselect the item), and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ A typical handler for the <xref:System.Web.UI.WebControls.DataGrid.CancelCommand> event sets the <xref:System.Web.UI.WebControls.DataGrid.EditItemIndex%2A> property to `-1` (to deselect the item), and then rebinds the data to the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+> [!CAUTION]
+>  The <xref:System.Web.UI.WebControls.EditCommandColumn> object can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a <xref:System.Web.UI.WebControls.DataGrid> control.  ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+ By default, page validation is performed when an `Update` button in the  <xref:System.Web.UI.WebControls.EditCommandColumn> control is clicked. Page validation determines whether the input controls that are associated with a validation control on the page all pass the validation rules that are specified by the validation control. To prevent page validation from occurring, set the <xref:System.Web.UI.WebControls.EditCommandColumn.CausesValidation%2A> property to `false`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to add an <xref:System.Web.UI.WebControls.EditCommandColumn> object to a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EditCommandColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EditCommandColumn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.EditCommandColumn> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.EditCommandColumn> class.  
+  
+ [!code-csharp[Classic EditCommandColumn.EditCommandColumn Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic EditCommandColumn.EditCommandColumn Example/CS/source.cs#1)]
+ [!code-vb[Classic EditCommandColumn.EditCommandColumn Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic EditCommandColumn.EditCommandColumn Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonType">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonColumnType ButtonType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonColumnType ButtonType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.ButtonType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ButtonColumnType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the button type for the column.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.ButtonColumnType" /> values. The default value is <see langword="LinkButton" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.EditCommandColumn.ButtonType%2A> property to specify whether the buttons in the column display as push buttons or hyperlinks.  
+  
+ The value of this property is stored in view state.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.EditCommandColumn.ButtonType%2A> property to display the `Edit` command buttons as push buttons.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified button type is not one of the <see cref="T:System.Web.UI.WebControls.ButtonColumnType" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelText">
+      <MemberSignature Language="C#" Value="public virtual string CancelText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CancelText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.CancelText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text to display for the <see langword="Cancel" /> command button in the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" />.</summary>
+        <value>The caption to display for the <see langword="Cancel" /> command button in the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.EditCommandColumn.CancelText%2A> property to specify the text to display for the `Cancel` command button in the <xref:System.Web.UI.WebControls.EditCommandColumn>.  
+  
+> [!NOTE]
+>  You must provide a value for the <xref:System.Web.UI.WebControls.EditCommandColumn.CancelText%2A> property. Otherwise, the `Cancel` command button will not appear in the <xref:System.Web.UI.WebControls.EditCommandColumn>.  
+  
+ The value of this property is stored in view state.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.EditCommandColumn.CancelText%2A> property to provide custom text for the `Cancel` command button.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CausesValidation">
+      <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.CausesValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether validation is performed when an <see langword="Update" /> button in the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" /> object is clicked.</summary>
+        <value>
+          <see langword="true" /> if validation is performed when an <see langword="Update" /> button in the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" /> is clicked; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, page validation is performed when an `Update` button in a <xref:System.Web.UI.WebControls.EditCommandColumn> control is clicked. Page validation determines whether the input controls that are associated with a validation control on the page all pass the validation rules that are specified by the validation control.  
+  
+ You can specify or determine whether validation is performed on both the client and the server when an `Update` button in an <xref:System.Web.UI.WebControls.EditCommandColumn> control is clicked by using the <xref:System.Web.UI.WebControls.EditCommandColumn.CausesValidation%2A> property. To prevent validation from being performed, set the <xref:System.Web.UI.WebControls.EditCommandColumn.CausesValidation%2A> property to `false`.  
+  
+ When the value of the <xref:System.Web.UI.WebControls.EditCommandColumn.CausesValidation%2A> property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup%2A> property to specify the name of the validation group for which an `Update` button in the <xref:System.Web.UI.WebControls.EditCommandColumn> object causes validation.  
+  
+ The value of this property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditText">
+      <MemberSignature Language="C#" Value="public virtual string EditText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EditText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.EditText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text to display for the <see langword="Edit" /> button in the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" />.</summary>
+        <value>The caption to display for the <see langword="Edit" /> button in the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.EditCommandColumn.EditText%2A> property to specify the text to display for the `Edit` button in the <xref:System.Web.UI.WebControls.EditCommandColumn> control.  
+  
+> [!NOTE]
+>  You must provide a value for the <xref:System.Web.UI.WebControls.EditCommandColumn.EditText%2A> property. Otherwise, the `Edit` button will not appear in the <xref:System.Web.UI.WebControls.EditCommandColumn>.  
+  
+ The value of this property is stored in view state.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.EditCommandColumn.EditText%2A> property to provide custom text for the `Edit` button.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeCell">
+      <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.TableCell cell, int columnIndex, System.Web.UI.WebControls.ListItemType itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.TableCell cell, int32 columnIndex, valuetype System.Web.UI.WebControls.ListItemType itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EditCommandColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.TableCell" />
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
+      </Parameters>
+      <Docs>
+        <param name="cell">A <see cref="T:System.Web.UI.WebControls.TableCell" /> that contains information about the cell to initialize.</param>
+        <param name="columnIndex">The column number where the cell is located.</param>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</param>
+        <summary>Initializes a cell within the column.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateText">
+      <MemberSignature Language="C#" Value="public virtual string UpdateText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UpdateText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.UpdateText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text to display for the <see langword="Update" /> command button in the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" />.</summary>
+        <value>The caption to display for the <see langword="Update" /> command button in the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.EditCommandColumn.UpdateText%2A> property to specify the text to display for the `Update` command button in the <xref:System.Web.UI.WebControls.EditCommandColumn>.  
+  
+> [!NOTE]
+>  You must provide a value for the <xref:System.Web.UI.WebControls.EditCommandColumn.UpdateText%2A> property. Otherwise, the `Update` command button will not appear in the <xref:System.Web.UI.WebControls.EditCommandColumn>.  
+  
+ The value of this property is stored in view state.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.EditCommandColumn.UpdateText%2A> property to provide custom text for the `Update` command button.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationGroup">
+      <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the group of validation controls for which the <see cref="T:System.Web.UI.WebControls.EditCommandColumn" /> object causes validation when it posts back to the server.</summary>
+        <value>The group of validation controls for which the Update button in an <see cref="T:System.Web.UI.WebControls.EditCommandColumn" /> causes validation when it posts back to the server. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently of other validation groups on the page. Use the <xref:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup%2A> property to specify the name of the validation group for which the Update button in an <xref:System.Web.UI.WebControls.EditCommandColumn> object causes validation when it posts back to the server.  
+  
+ The <xref:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup%2A> property has an effect only when the value of the <xref:System.Web.UI.WebControls.EditCommandColumn.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the Update button in an <xref:System.Web.UI.WebControls.EditCommandColumn> object posts back to the server. If you do not specify a value for the <xref:System.Web.UI.WebControls.EditCommandColumn.ValidationGroup%2A> property and the <xref:System.Web.UI.WebControls.EditCommandColumn.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the Update button in an <xref:System.Web.UI.WebControls.EditCommandColumn> object posts back to the server.  
+  
+ The value of this property is stored in view state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

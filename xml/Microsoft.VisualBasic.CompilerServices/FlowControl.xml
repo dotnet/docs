@@ -1,0 +1,325 @@
+<Type Name="FlowControl" FullName="Microsoft.VisualBasic.CompilerServices.FlowControl">
+  <TypeSignature Language="C#" Value="public sealed class FlowControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlowControl extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.FlowControl" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides services to the Visual Basic compiler for compiling <see langword="For...Next" /> and <see langword="For Each" /> loops.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckForSyncLockOnValueType">
+      <MemberSignature Language="C#" Value="public static void CheckForSyncLockOnValueType (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void CheckForSyncLockOnValueType(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.CheckForSyncLockOnValueType(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The data type for which to check for synchronization lock.</param>
+        <summary>Checks for a synchronization lock on the specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForEachInArr">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerator ForEachInArr (Array ary);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.IEnumerator ForEachInArr(class System.Array ary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachInArr(System.Array)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ary" Type="System.Array" />
+      </Parameters>
+      <Docs>
+        <param name="ary">An array being iterated over in a <see langword="For Each" /> loop.</param>
+        <summary>Gets the enumerator for an array being iterated over in a <see langword="For Each" /> loop.</summary>
+        <returns>The enumerator for <paramref name="ary" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForEachInObj">
+      <MemberSignature Language="C#" Value="public static System.Collections.IEnumerator ForEachInObj (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.IEnumerator ForEachInObj(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachInObj(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object being iterated over in a <see langword="For Each" /> loop.</param>
+        <summary>Gets the enumerator for an object being iterated over in a <see langword="For Each" /> loop.</summary>
+        <returns>The enumerator for <paramref name="obj" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForEachNextObj">
+      <MemberSignature Language="C#" Value="public static bool ForEachNextObj (ref object obj, System.Collections.IEnumerator enumerator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForEachNextObj(object obj, class System.Collections.IEnumerator enumerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForEachNextObj(System.Object@,System.Collections.IEnumerator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="enumerator" Type="System.Collections.IEnumerator" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The range variable of the <see langword="For Each" /> loop.</param>
+        <param name="enumerator">The <see cref="T:System.Collections.IEnumerator" /> of the object being iterated over in the <see langword="For Each" /> loop.</param>
+        <summary>Sets a reference to the next object in a <see langword="For Each" /> loop.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="obj" /> refers to the next object; <see langword="False" /> if there are no more objects and <paramref name="obj" /> is <see langword="Nothing" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForLoopInitObj">
+      <MemberSignature Language="C#" Value="public static bool ForLoopInitObj (object Counter, object Start, object Limit, object StepValue, ref object LoopForResult, ref object CounterResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForLoopInitObj(object Counter, object Start, object Limit, object StepValue, object LoopForResult, object CounterResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForLoopInitObj(System.Object,System.Object,System.Object,System.Object,System.Object@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Counter" Type="System.Object" />
+        <Parameter Name="Start" Type="System.Object" />
+        <Parameter Name="Limit" Type="System.Object" />
+        <Parameter Name="StepValue" Type="System.Object" />
+        <Parameter Name="LoopForResult" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="CounterResult" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Counter">The loop counter variable.</param>
+        <param name="Start">The initial value of the loop counter.</param>
+        <param name="Limit">The value of the <see langword="To" /> option.</param>
+        <param name="StepValue">The value of the <see langword="Step" /> option.</param>
+        <param name="LoopForResult">An object that contains verified values for loop values.</param>
+        <param name="CounterResult">The counter value for the next loop iteration.</param>
+        <summary>Initializes a <see langword="For...Next" /> loop.</summary>
+        <returns>
+          <see langword="False" /> if the loop has terminated; otherwise, <see langword="True" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForNextCheckDec">
+      <MemberSignature Language="C#" Value="public static bool ForNextCheckDec (decimal count, decimal limit, decimal StepValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckDec(valuetype System.Decimal count, valuetype System.Decimal limit, valuetype System.Decimal StepValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckDec(System.Decimal,System.Decimal,System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Decimal" />
+        <Parameter Name="limit" Type="System.Decimal" />
+        <Parameter Name="StepValue" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="count">Required. A <see langword="Decimal" /> value that represents the initial value passed for the loop counter variable.</param>
+        <param name="limit">Required. A <see langword="Decimal" /> value that represents the value passed by using the <see langword="To" /> keyword.</param>
+        <param name="StepValue">Required. A <see langword="Decimal" /> value that represents the value passed by using the <see langword="Step" /> keyword.</param>
+        <summary>Checks for valid values for the loop counter, <see langword="Step" />, and <see langword="To" /> values.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="StepValue" /> is greater than zero and <paramref name="count" /> is less than or equal to <paramref name="limit" />, or if <paramref name="StepValue" /> is less than or equal to zero and <paramref name="count" /> is greater than or equal to <paramref name="limit" />; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForNextCheckObj">
+      <MemberSignature Language="C#" Value="public static bool ForNextCheckObj (object Counter, object LoopObj, ref object CounterResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckObj(object Counter, object LoopObj, object CounterResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckObj(System.Object,System.Object,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Counter" Type="System.Object" />
+        <Parameter Name="LoopObj" Type="System.Object" />
+        <Parameter Name="CounterResult" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Counter">The loop counter variable.</param>
+        <param name="LoopObj">An object that contains verified values for loop values.</param>
+        <param name="CounterResult">The counter value for the next loop iteration.</param>
+        <summary>Increments a <see langword="For...Next" /> loop.</summary>
+        <returns>
+          <see langword="False" /> if the loop has terminated; otherwise, <see langword="True" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForNextCheckR4">
+      <MemberSignature Language="C#" Value="public static bool ForNextCheckR4 (float count, float limit, float StepValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckR4(float32 count, float32 limit, float32 StepValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckR4(System.Single,System.Single,System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Single" />
+        <Parameter Name="limit" Type="System.Single" />
+        <Parameter Name="StepValue" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="count">Required. A <see langword="Single" /> value that represents the initial value passed for the loop counter variable.</param>
+        <param name="limit">Required. A <see langword="Single" /> value that represents the value passed by using the <see langword="To" /> keyword.</param>
+        <param name="StepValue">Required. A <see langword="Single" /> value that represents the value passed by using the <see langword="Step" /> keyword.</param>
+        <summary>Checks for valid values for the loop counter, <see langword="Step" />, and <see langword="To" /> values.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="StepValue" /> is greater than zero and <paramref name="count" /> is less than or equal to <paramref name="limit" />, or if <paramref name="StepValue" /> is less than or equal to zero and <paramref name="count" /> is greater than or equal to <paramref name="limit" />; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForNextCheckR8">
+      <MemberSignature Language="C#" Value="public static bool ForNextCheckR8 (double count, double limit, double StepValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForNextCheckR8(float64 count, float64 limit, float64 StepValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.FlowControl.ForNextCheckR8(System.Double,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Double" />
+        <Parameter Name="limit" Type="System.Double" />
+        <Parameter Name="StepValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="count">Required. A <see langword="Double" /> value that represents the initial value passed for the loop counter variable.</param>
+        <param name="limit">Required. A <see langword="Double" /> value that represents the value passed by using the <see langword="To" /> keyword.</param>
+        <param name="StepValue">Required. A <see langword="Double" /> value that represents the value passed by using the <see langword="Step" /> keyword.</param>
+        <summary>Checks for valid values for the loop counter, <see langword="Step" />, and <see langword="To" /> values.</summary>
+        <returns>
+          <see langword="True" /> if <paramref name="StepValue" /> is greater than zero and <paramref name="count" /> is less than or equal to <paramref name="limit" />, or if <paramref name="StepValue" /> is less than or equal to zero and <paramref name="count" /> is greater than or equal to <paramref name="limit" />; otherwise, <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

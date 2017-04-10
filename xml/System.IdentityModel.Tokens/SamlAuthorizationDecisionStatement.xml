@@ -1,0 +1,445 @@
+<Type Name="SamlAuthorizationDecisionStatement" FullName="System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement">
+  <TypeSignature Language="C#" Value="public class SamlAuthorizationDecisionStatement : System.IdentityModel.Tokens.SamlSubjectStatement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlAuthorizationDecisionStatement extends System.IdentityModel.Tokens.SamlSubjectStatement" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SamlSubjectStatement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a claim for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token that asserts that an authorization decision regarding access by the subject to the specified resource has been made.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify whether a subject is authorized to access a specific resource. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement>. An <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> asserts an authorization decision regarding access by the subject to the specified resource has been made. The following table summarizes the properties that are associated with the authorization decision.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A>|The authorization decision rendered by the SAML authority with respect to the resource represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A> property.|  
+|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence%2A>|A set of SAML assertions that the SAML authority relied on to render the decision.|  
+|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A>|A URI reference that identifies the resource to which access is sought.|  
+|<xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A>|The set of actions that the subject is authorized to perform on the resource represented by the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A> property.|  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAuthorizationDecisionStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false` and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAuthorizationDecisionStatement (System.IdentityModel.Tokens.SamlSubject samlSubject, string resource, System.IdentityModel.Tokens.SamlAccessDecision accessDecision, System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAction&gt; samlActions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SamlSubject samlSubject, string resource, valuetype System.IdentityModel.Tokens.SamlAccessDecision accessDecision, class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlAction&gt; samlActions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.String,System.IdentityModel.Tokens.SamlAccessDecision,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAction})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="samlSubject" Type="System.IdentityModel.Tokens.SamlSubject" />
+        <Parameter Name="resource" Type="System.String" />
+        <Parameter Name="accessDecision" Type="System.IdentityModel.Tokens.SamlAccessDecision" />
+        <Parameter Name="samlActions" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAction&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="samlSubject">A <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> that represents the subject of the claim. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject" /> property.</param>
+        <param name="resource">A URI reference that identifies the resource to which access is sought. Sets the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource" /> property.</param>
+        <param name="accessDecision">A <see cref="T:System.IdentityModel.Tokens.SamlAccessDecision" /> that specifies the authorization decision rendered by the SAML authority with respect to access by the subject to the specified resource. Sets the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision" /> property.</param>
+        <param name="samlActions">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAction" /> that specifies the set of actions that the subject is authorized to perform on the resource. Sets the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> class.  using the specified subject, resource, authorization decision, and the actions sought by the subject on the resource.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false`, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`, and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence%2A> property to `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="samlActions" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="samlActions" /> contains a member that is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="samlSubject" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authorityBindings" /> contains a member that is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="resource" /> is <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAuthorizationDecisionStatement (System.IdentityModel.Tokens.SamlSubject samlSubject, string resource, System.IdentityModel.Tokens.SamlAccessDecision accessDecision, System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAction&gt; samlActions, System.IdentityModel.Tokens.SamlEvidence samlEvidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SamlSubject samlSubject, string resource, valuetype System.IdentityModel.Tokens.SamlAccessDecision accessDecision, class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SamlAction&gt; samlActions, class System.IdentityModel.Tokens.SamlEvidence samlEvidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.String,System.IdentityModel.Tokens.SamlAccessDecision,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAction},System.IdentityModel.Tokens.SamlEvidence)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="samlSubject" Type="System.IdentityModel.Tokens.SamlSubject" />
+        <Parameter Name="resource" Type="System.String" />
+        <Parameter Name="accessDecision" Type="System.IdentityModel.Tokens.SamlAccessDecision" />
+        <Parameter Name="samlActions" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SamlAction&gt;" />
+        <Parameter Name="samlEvidence" Type="System.IdentityModel.Tokens.SamlEvidence" />
+      </Parameters>
+      <Docs>
+        <param name="samlSubject">A <see cref="T:System.IdentityModel.Tokens.SamlSubject" /> that represents the subject of the claim. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubjectStatement.SamlSubject" /> property.</param>
+        <param name="resource">A URI reference that identifies the resource to which access is sought. Sets the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource" /> property.</param>
+        <param name="accessDecision">A <see cref="T:System.IdentityModel.Tokens.SamlAccessDecision" /> that specifies the authorization decision rendered by the SAML authority with respect to access by the subject to the specified resource. Sets the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision" /> property.</param>
+        <param name="samlActions">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAction" /> that specifies the set of actions that the subject is authorized to perform on the resource. Sets the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions" /> property.</param>
+        <param name="samlEvidence">A <see cref="T:System.IdentityModel.Tokens.SamlEvidence" /> that contains a set of SAML assertions that the SAML authority relied on to render the authorization decision. Sets the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement" /> class.  using the specified subject, resource, authorization decision, and the actions sought by the subject on the resource.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property to `false`, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A> property to `http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessDecision">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SamlAccessDecision AccessDecision { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Tokens.SamlAccessDecision AccessDecision" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SamlAccessDecision</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the authorization decision rendered by the SAML authority with respect to access by the subject to the specified resource.</summary>
+        <value>One of the <see cref="T:System.IdentityModel.Tokens.SamlAccessDecision" /> values that specify the authorization decision rendered by the SAML authority with respect to access by the subject to the specified resource.  
+  
+ <list type="table">  
+<listheader>  
+<term> Exception type  
+  
+ </term>  
+<description> Condition  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> <see cref="T:System.InvalidOperationException" />  
+  
+ </term>  
+<description> The <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly" /> property is <see langword="true" />.  
+  
+ </description>  
+</item>  
+</list></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `Decision` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddClaimsToList">
+      <MemberSignature Language="C#" Value="protected override void AddClaimsToList (System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddClaimsToList(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AddClaimsToList(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="claims">An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that contains the set of claims to add to.</param>
+        <summary>Adds claims based on the properties of this instance to the specified collection of claims.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AddClaimsToList%28System.Collections.Generic.IList%7BSystem.IdentityModel.Claims.Claim%7D%29> method adds a claim to the `claims` parameter for each action specified in the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A> property. Each claim that is added to the collection is based on the action, and the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType%2A>, <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A>, and <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> properties. The claim resource type is <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionClaimResource>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claims" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClaimType">
+      <MemberSignature Language="C#" Value="public static string ClaimType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string ClaimType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ClaimType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of security claim.</summary>
+        <value>The type of security claim. Always <c>http://schemas.microsoft.com/mb/2005/09/ClaimType/SamlAuthorizationDecision</c>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evidence">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SamlEvidence Evidence { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SamlEvidence Evidence" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SamlEvidence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the evidence that the SAML authority relied on to render the authorization decision.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SamlEvidence" /> that contains a set of SAML assertions that the SAML authority relied on to render the authorization decision.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `<Evidence>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the properties of this instance are read-only.</summary>
+        <value>
+          <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make this instance of the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeReadOnly">
+      <MemberSignature Language="C#" Value="public override void MakeReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void MakeReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes this instance to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadXml">
+      <MemberSignature Language="C#" Value="public override void ReadXml (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, System.IdentityModel.Selectors.SecurityTokenResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+        <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+      </Parameters>
+      <Docs>
+        <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML authorization statement.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML authorization statement that is defined in the SAML specification.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that reads the <see langword="KeyInfo" /> clause of the digital signature.</param>
+        <param name="resolver">To be added.</param>
+        <summary>Reads the SAML authorization statement from the specified XML reader.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method sets the following properties:  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Evidence%2A>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource%2A>  
+  
+-   <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">
+          <paramref name="reader" /> refers to an XML element that does not contain the <see langword="Resource" /> and <see langword="Decision" /> attributes.  
+  
+ -or-  
+  
+ <paramref name="reader" /> refers to an XML element that does not have <see langword="&lt;saml:Subject&gt;" />, <see langword="&lt;saml:Evidence&gt;" />, and <see langword="&lt;saml:Action&gt;" /> child elements.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Resource">
+      <MemberSignature Language="C#" Value="public string Resource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Resource" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.Resource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The resource to which access is sought by the subject of the <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</summary>
+        <value>A URI reference that identifies the resource to which access is sought.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision%2A> property corresponds to the `Decision` attribute of the `<AuthorizationDecisionStatement>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SamlActions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlAction&gt; SamlActions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Tokens.SamlAction&gt; SamlActions" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.IdentityModel.Tokens.SamlAction&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the set of actions that the subject is authorized to perform on the resource.</summary>
+        <value>An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.IdentityModel.Tokens.SamlAction" /> that specifies the set of actions that the subject is authorized to perform on the resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions%2A> property corresponds to the `<Action>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXml">
+      <MemberSignature Language="C#" Value="public override void WriteXml (System.Xml.XmlDictionaryWriter writer, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the SAML authorization statement.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing XML elements in a SAML assertion.</param>
+        <param name="keyInfoSerializer">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that is capable of writing <see langword="KeyInfo" /> clauses.</param>
+        <summary>Writes the SAML authorization statement into the specified XML serializer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.WriteXml%28System.Xml.XmlDictionaryWriter%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%29> method to write the current <xref:System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement> instance into a `<AuthorizationDecisionStatement>` element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

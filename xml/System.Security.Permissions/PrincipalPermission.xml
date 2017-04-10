@@ -1,0 +1,512 @@
+<Type Name="PrincipalPermission" FullName="System.Security.Permissions.PrincipalPermission">
+  <TypeSignature Language="C#" Value="public sealed class PrincipalPermission : System.Security.IPermission, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PrincipalPermission extends System.Object implements class System.Security.IPermission, class System.Security.ISecurityEncodable, class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.PrincipalPermission" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.IPermission</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows checks against the active principal (see <see cref="T:System.Security.Principal.IPrincipal" />) using the language constructs defined for both declarative and imperative security actions. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By passing identity information (user name and role) to the constructor, <xref:System.Security.Permissions.PrincipalPermission> can be used to demand that the identity of the active principal matches this information.  
+  
+ To match the active <xref:System.Security.Principal.IPrincipal> and associated <xref:System.Security.Principal.IIdentity>, both the specified identity and role must match. If `null` identity string is used, it is interpreted as a request to match any identity. Use of `null` role string will match any role. By implication, passing `null` parameter for `name` or `role` to <xref:System.Security.Permissions.PrincipalPermission> will match the identity and roles in any <xref:System.Security.Principal.IPrincipal>. It is also possible to construct a <xref:System.Security.Permissions.PrincipalPermission> that only determines whether the <xref:System.Security.Principal.IIdentity> represents an authenticated or unauthenticated entity. In this case, `name` and `role` are ignored.  
+  
+ Unlike most other permissions, <xref:System.Security.Permissions.PrincipalPermission> does not extend <xref:System.Security.CodeAccessPermission>. It does, however, implement the <xref:System.Security.IPermission> interface. This is because <xref:System.Security.Permissions.PrincipalPermission> is not a code access permission; that is, it is not granted based on the identity of the executing assembly. Instead, it allows code to perform actions (<xref:System.Security.Permissions.PrincipalPermission.Demand%2A>, <xref:System.Security.Permissions.PrincipalPermission.Union%2A>, <xref:System.Security.Permissions.PrincipalPermission.Intersect%2A>, and so on) against the current user identity in a manner consistent with the way those actions are performed for code access and code identity permissions.  
+  
+> [!IMPORTANT]
+>  Prior to a demand for principal permission it is necessary to set the current application domain's principal policy to the enumeration value <xref:System.Security.Principal.PrincipalPolicy>. By default, the principal policy is set to <xref:System.Security.Principal.PrincipalPolicy>. If you do not set the principal policy to <xref:System.Security.Principal.PrincipalPolicy>, a demand for principal permission will fail. The following code should be executed before the principal permission is demanded:  
+>   
+>  `AppDomain.CurrentDomain.SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal).`  
+  
+   
+  
+## Examples  
+ The following example requires the active principal to be an administrator. The `name` parameter is `null`, which enables any user who is an administrator to pass the demand.  
+  
+> [!NOTE]
+>  In Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that requires you to be an administrator, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+ [!code-cpp[Classic PrincipalPermission Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PrincipalPermission Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrincipalPermission Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PrincipalPermission Example/CS/source.cs#1)]
+ [!code-vb[Classic PrincipalPermission Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PrincipalPermission Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalPermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.PrincipalPermission" /> class with the specified <see cref="T:System.Security.Permissions.PermissionState" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `None` matches only the unauthenticated principal (<xref:System.Security.Permissions.PrincipalPermissionAttribute.Name%2A> is the empty string (""), no <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A>, <xref:System.Security.Permissions.PrincipalPermissionAttribute.Authenticated%2A> is `false`). `Unrestricted` matches all principals (<xref:System.Security.Permissions.PrincipalPermissionAttribute.Name%2A> is `null`, <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A> is `null`).  
+  
+> [!NOTE]
+>  This constructor is included for consistency with the design of other permissions, but is not useful in practice.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="state" /> parameter is not a valid <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalPermission (string name, string role);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string role) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="role" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Security.Principal.IPrincipal" /> object's user.</param>
+        <param name="role">The role of the <see cref="T:System.Security.Principal.IPrincipal" /> object's user (for example, Administrator).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.PrincipalPermission" /> class for the specified <paramref name="name" /> and <paramref name="role" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both the `name` parameter and the `role` parameter must match for this permission to match the active <xref:System.Security.Principal.IPrincipal> and associated <xref:System.Security.Principal.IIdentity>. Set `name` to `null` to check for any user in a role.  
+  
+   
+  
+## Examples  
+ The following example requires the active principal to be an administrator. The `name` parameter is `null`, which enables any user who is an administrator to pass the demand.  
+  
+ **Note** In Windows Vista, User Account Control (UAC) determines the privileges of a user. If you are a member of the Built-in Administrators group, you are assigned two run-time access tokens: a standard user access token and an administrator access token. By default, you are in the standard user role. To execute the code that requires you to be an administrator, you must first elevate your privileges from standard user to administrator. You can do this when you start an application by right-clicking the application icon and indicating that you want to run as an administrator.  
+  
+ [!code-cpp[Classic PrincipalPermission Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PrincipalPermission Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrincipalPermission Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PrincipalPermission Example/CS/source.cs#1)]
+ [!code-vb[Classic PrincipalPermission Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PrincipalPermission Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrincipalPermission (string name, string role, bool isAuthenticated);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string role, bool isAuthenticated) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="role" Type="System.String" />
+        <Parameter Name="isAuthenticated" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Security.Principal.IPrincipal" /> object's user.</param>
+        <param name="role">The role of the <see cref="T:System.Security.Principal.IPrincipal" /> object's user (for example, Administrator).</param>
+        <param name="isAuthenticated">
+          <see langword="true" /> to signify that the user is authenticated; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.PrincipalPermission" /> class for the specified <paramref name="name" />, <paramref name="role" />, and authentication status.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Both the `name` parameter and the `role` parameter must match for this permission to match the active <xref:System.Security.Principal.IPrincipal> and associated <xref:System.Security.Principal.IIdentity>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public System.Security.IPermission Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns an identical copy of the current permission.</summary>
+        <returns>A copy of the current permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A copy of the permission represents the same principal and identity as the original permission.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Demand">
+      <MemberSignature Language="C#" Value="public void Demand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Demand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Demand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines at run time whether the current principal matches the principal specified by the current permission.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no <xref:System.Security.SecurityException> is raised, <xref:System.Security.Permissions.PrincipalPermission.Demand%2A> succeeds.  
+  
+ This method acts against the principal attached to the calling thread.  
+  
+> [!IMPORTANT]
+>  Prior to calling the <xref:System.Security.Permissions.PrincipalPermission.Demand%2A> method, it is necessary to set the current application domain's principal policy to the enumeration value <xref:System.Security.Principal.PrincipalPolicy>. By default the principal policy is set to <xref:System.Security.Principal.PrincipalPolicy>. If you do not set the principal policy to <xref:System.Security.Principal.PrincipalPolicy>, a demand for principal permission will fail. The following code should be executed before the demand for principal permission occurs:  
+>   
+>  `AppDomain.CurrentDomain.SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal).`  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The current principal does not pass the security check for the principal specified by the current permission.  
+  
+ -or-  
+  
+ The current <see cref="T:System.Security.Principal.IPrincipal" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Security.Permissions.PrincipalPermission" /> object to compare with the current <see cref="T:System.Security.Permissions.PrincipalPermission" />.</param>
+        <summary>Determines whether the specified <see cref="T:System.Security.Permissions.PrincipalPermission" /> object is equal to the current <see cref="T:System.Security.Permissions.PrincipalPermission" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Security.Permissions.PrincipalPermission" /> is equal to the current <see cref="T:System.Security.Permissions.PrincipalPermission" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:System.Object.Equals%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement elem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement elem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elem" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="elem">The XML encoding to use to reconstruct the permission.</param>
+        <summary>Reconstructs a permission with a specified state from an XML encoding.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="elem" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="elem" /> parameter is not a valid permission element.  
+  
+ -or-  
+  
+ The <paramref name="elem" /> parameter's version number is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for the <see cref="T:System.Security.Permissions.PrincipalPermission" /> object that is suitable for use in hashing algorithms and data structures such as a hash table.</summary>
+        <returns>A hash code for the current <see cref="T:System.Security.Permissions.PrincipalPermission" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hash code for two instances of the same permission might be different, hence a hash code should not be used to compare two <xref:System.Security.Permissions.PrincipalPermission> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public System.Security.IPermission Intersect (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Intersect(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission to intersect with the current permission. It must be of the same type as the current permission.</param>
+        <summary>Creates and returns a permission that is the intersection of the current permission and the specified permission.</summary>
+        <returns>A new permission that represents the intersection of the current permission and the specified permission. This new permission will be <see langword="null" /> if the intersection is empty.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because two users never intersect, this method is not useful for <xref:System.Security.Permissions.PrincipalPermission>. For example,  
+  
+ [!code-cpp[System.Security.Permissions.PrincipalPermission#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.security.permissions.principalpermission/cpp/remarks.cpp#1)]
+ [!code-csharp[System.Security.Permissions.PrincipalPermission#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.permissions.principalpermission/cs/remarks.cs#1)]
+ [!code-vb[System.Security.Permissions.PrincipalPermission#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.permissions.principalpermission/vb/remarks.vb#1)]  
+  
+ is equivalent to  
+  
+ [!code-cpp[System.Security.Permissions.PrincipalPermission#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.security.permissions.principalpermission/cpp/remarks.cpp#2)]
+ [!code-csharp[System.Security.Permissions.PrincipalPermission#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.permissions.principalpermission/cs/remarks.cs#2)]
+ [!code-vb[System.Security.Permissions.PrincipalPermission#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.permissions.principalpermission/vb/remarks.vb#2)]  
+  
+ because no identity can simultaneously represent both Bob and Louise. In effect, `pp1.Demand()` only succeeds if an unauthenticated principal (with name equal to the empty string ("")) is allowed to act in the Administrator role.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not <see langword="null" /> and is not an instance of the same class as the current permission.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public bool IsSubsetOf (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A permission that is to be tested for the subset relationship. This permission must be of the same type as the current permission.</param>
+        <summary>Determines whether the current permission is a subset of the specified permission.</summary>
+        <returns>
+          <see langword="true" /> if the current permission is a subset of the specified permission; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current permission is a subset of the specified permission if all demands that succeed for the current permission also succeed for the specified permission.  
+  
+   
+  
+## Examples  
+ The following example defines instances of <xref:System.Security.Permissions.PrincipalPermission> corresponding to three distinct users. Two additional instances are then created as groups of users. `pp1` represents Bob and Louise, `pp2` represents Bob, Louise, and Greg.  
+  
+ [!code-cpp[Classic PrincipalPermission.IsSubsetOf Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic PrincipalPermission.IsSubsetOf Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic PrincipalPermission.IsSubsetOf Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic PrincipalPermission.IsSubsetOf Example/CS/source.cs#1)]
+ [!code-vb[Classic PrincipalPermission.IsSubsetOf Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic PrincipalPermission.IsSubsetOf Example/VB/source.vb#1)]  
+  
+ With the preceding declarations, `pp1.IsSubsetOf(pp2)` returns `true`, and `pp2.IsSubsetOf(pp1)` returns `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is an object that is not of the same type as the current permission.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether the current permission is unrestricted.</summary>
+        <returns>
+          <see langword="true" /> if the current permission is unrestricted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An unrestricted <xref:System.Security.Permissions.PrincipalPermission> matches any principal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns a string representing the current permission.</summary>
+        <returns>A representation of the current permission.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the permission and its current state.</summary>
+        <returns>An XML encoding of the permission, including any state information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public System.Security.IPermission Union (System.Security.IPermission other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission Union(class System.Security.IPermission other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Permissions.PrincipalPermission.Union(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="other">A permission to combine with the current permission. It must be of the same type as the current permission.</param>
+        <summary>Creates a permission that is the union of the current permission and the specified permission.</summary>
+        <returns>A new permission that represents the union of the current permission and the specified permission.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Permissions.PrincipalPermission.Union%2A> creates a permission representing the criteria of a given set of individual <xref:System.Security.Permissions.PrincipalPermission> objects. It is useful for compactly representing a set of conditions to test. For example, with the declarations  
+  
+ [!code-cpp[System.Security.Permissions.PrincipalPermission#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.security.permissions.principalpermission/cpp/remarks.cpp#3)]
+ [!code-csharp[System.Security.Permissions.PrincipalPermission#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.security.permissions.principalpermission/cs/remarks.cs#3)]
+ [!code-vb[System.Security.Permissions.PrincipalPermission#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.security.permissions.principalpermission/vb/remarks.vb#3)]  
+  
+ `(ppBob.Union(ppLouise)).Demand()` will succeed if the current principal represents Bob in the role of Administrator or Louise in the role of Administrator.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="other" /> parameter is an object that is not of the same type as the current permission.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

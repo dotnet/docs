@@ -1,0 +1,73 @@
+<Type Name="TrustDirection" FullName="System.DirectoryServices.ActiveDirectory.TrustDirection">
+  <TypeSignature Language="C#" Value="public enum TrustDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrustDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.TrustDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the direction of a trust.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The trust direction is always relative to one side of a trust. For example, if domain A has an inbound trust relationship with domain B, then by definition, domain B has an outbound trust with domain A.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bidirectional">
+      <MemberSignature Language="C#" Value="Bidirectional" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustDirection Bidirectional = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustDirection.Bidirectional" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Each domain or forest has access to the resources of the other domain or forest.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inbound">
+      <MemberSignature Language="C#" Value="Inbound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustDirection Inbound = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustDirection.Inbound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This is a trusting domain or forest. The other domain or forest has access to the resources of this domain or forest. This domain or forest does not have access to resources that belong to the other domain or forest.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Outbound">
+      <MemberSignature Language="C#" Value="Outbound" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.TrustDirection Outbound = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.TrustDirection.Outbound" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TrustDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This is a trusted domain or forest. This domain or forest has access to resources of the other domain or forest. The other domain or forest does not have access to the resources of this domain or forest.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

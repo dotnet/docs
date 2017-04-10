@@ -1,0 +1,52 @@
+<Type Name="ChallengeResponse2" FullName="Mono.Security.Protocol.Ntlm.ChallengeResponse2">
+  <TypeSignature Language="C#" Value="public static class ChallengeResponse2" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ChallengeResponse2 extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.ChallengeResponse2" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compute">
+      <MemberSignature Language="C#" Value="public static void Compute (Mono.Security.Protocol.Ntlm.Type2Message type2, Mono.Security.Protocol.Ntlm.NtlmAuthLevel level, string username, string password, string domain, out byte[] lm, out byte[] ntlm);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Compute(class Mono.Security.Protocol.Ntlm.Type2Message type2, valuetype Mono.Security.Protocol.Ntlm.NtlmAuthLevel level, string username, string password, string domain, unsigned int8[] lm, unsigned int8[] ntlm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.ChallengeResponse2.Compute(Mono.Security.Protocol.Ntlm.Type2Message,Mono.Security.Protocol.Ntlm.NtlmAuthLevel,System.String,System.String,System.String,System.Byte[]@,System.Byte[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type2" Type="Mono.Security.Protocol.Ntlm.Type2Message" />
+        <Parameter Name="level" Type="Mono.Security.Protocol.Ntlm.NtlmAuthLevel" />
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="domain" Type="System.String" />
+        <Parameter Name="lm" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="ntlm" Type="System.Byte[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="type2">To be added.</param>
+        <param name="level">To be added.</param>
+        <param name="username">To be added.</param>
+        <param name="password">To be added.</param>
+        <param name="domain">To be added.</param>
+        <param name="lm">To be added.</param>
+        <param name="ntlm">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

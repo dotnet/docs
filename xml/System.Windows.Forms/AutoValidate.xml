@@ -1,0 +1,99 @@
+<Type Name="AutoValidate" FullName="System.Windows.Forms.AutoValidate">
+  <TypeSignature Language="C#" Value="public enum AutoValidate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoValidate extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoValidate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines how a control validates its data when it loses user input focus.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a user switches focus off of a Windows Forms control, the control will use <xref:System.Windows.Forms.AutoValidate> to determine how to validate its data. This type of validation is called implicit validation, because it occurs without the application developer having to make an explicit call to <xref:System.Windows.Forms.ContainerControl.Validate%2A> or <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A>.  
+  
+ The property corresponding to this value will have different defaults based on the type of control. For more information, see [User Input Validation in Windows Forms](~/docs/framework/winforms/user-input-validation-in-windows-forms.md).  
+  
+   
+  
+## Examples  
+ The following code example turns off implicit validation for a form and all of its contained controls, and instead manually performs validation of all of the form's children when a mouse button is clicked.  
+  
+ [!code-csharp[ValidateChildren#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ValidateChildren/CS/Form1.cs#1)]
+ [!code-vb[ValidateChildren#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ValidateChildren/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="Disable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoValidate Disable = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoValidate.Disable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Implicit validation will not occur. Setting this value will not interfere with explicit calls to <see cref="M:System.Windows.Forms.ContainerControl.Validate" /> or <see cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableAllowFocusChange">
+      <MemberSignature Language="C#" Value="EnableAllowFocusChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoValidate EnableAllowFocusChange = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoValidate.EnableAllowFocusChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Implicit validation occurs, but if validation fails, focus will still change to the new control. If validation fails, the <see cref="E:System.Windows.Forms.Control.Validated" /> event will not fire.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnablePreventFocusChange">
+      <MemberSignature Language="C#" Value="EnablePreventFocusChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoValidate EnablePreventFocusChange = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoValidate.EnablePreventFocusChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Implicit validation occurs when the control loses focus.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoValidate Inherit = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoValidate.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control inherits its <see cref="T:System.Windows.Forms.AutoValidate" /> behavior from its container (such as a form or another control). If there is no container control, it defaults to <see cref="F:System.Windows.Forms.AutoValidate.EnablePreventFocusChange" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

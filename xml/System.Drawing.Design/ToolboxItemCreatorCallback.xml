@@ -1,0 +1,44 @@
+<Type Name="ToolboxItemCreatorCallback" FullName="System.Drawing.Design.ToolboxItemCreatorCallback">
+  <TypeSignature Language="C#" Value="public delegate System.Drawing.Design.ToolboxItem ToolboxItemCreatorCallback(object serializedObject, string format);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolboxItemCreatorCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItemCreatorCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="serializedObject" Type="System.Object" />
+    <Parameter Name="format" Type="System.String" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Drawing.Design.ToolboxItem</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="serializedObject">The object which contains the data to create a <see cref="T:System.Drawing.Design.ToolboxItem" /> for.</param>
+    <param name="format">The name of the clipboard data format to create a <see cref="T:System.Drawing.Design.ToolboxItem" /> for.</param>
+    <summary>Provides a callback mechanism that can create a <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+    <returns>The deserialized <see cref="T:System.Drawing.Design.ToolboxItem" /> object specified by <paramref name="serializedObject" />.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can implement a toolbox item creator method with a method signature matching the method signature of this delegate type that creates a toolbox item from any object of a particular clipboard data format placed on the toolbox. For example, you can design a toolbox item creator that creates a <xref:System.Windows.Forms.TextBox> to store text pasted to the toolbox from the clipboard. You can use the <xref:System.Drawing.Design.IToolboxService.AddCreator%2A> method of the <xref:System.Drawing.Design.IToolboxService> to add a <xref:System.Drawing.Design.ToolboxItemCreatorCallback> event handler for a particular data type to the toolbox. The `serializedObject` parameter contains the data object.  
+  
+ When you create a <xref:System.Drawing.Design.ToolboxItemCreatorCallback> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following example provides a component that uses the <xref:System.Drawing.Design.IToolboxService> to add a "Text" data format handler, or <xref:System.Drawing.Design.ToolboxItemCreatorCallback>, to the toolbox. The data creator callback delegate passes any text data pasted to the toolbox and dragged onto a form to a custom <xref:System.Drawing.Design.ToolboxItem> that creates a <xref:System.Windows.Forms.TextBox> containing the text.  
+  
+ [!code-cpp[ToolboxCreatorCallbackSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/CPP/textdatatextboxcomponent.cpp#1)]
+ [!code-csharp[ToolboxCreatorCallbackSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/CS/textdatatextboxcomponent.cs#1)]
+ [!code-vb[ToolboxCreatorCallbackSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolboxCreatorCallbackSample/VB/textdatatextboxcomponent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

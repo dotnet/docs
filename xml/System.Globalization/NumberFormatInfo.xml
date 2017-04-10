@@ -1,0 +1,1938 @@
+<Type Name="NumberFormatInfo" FullName="System.Globalization.NumberFormatInfo">
+  <TypeSignature Language="C#" Value="public sealed class NumberFormatInfo : ICloneable, IFormatProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit NumberFormatInfo extends System.Object implements class System.ICloneable, class System.IFormatProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Globalization.NumberFormatInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Globalization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IFormatProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides culture-specific information for formatting and parsing numeric values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo> class contains culture-specific information that is used when you format and parse numeric values. This information includes the currency symbol, the decimal symbol, the group separator symbol, and the symbols for positive and negative signs.  
+  
+-   [Instantiating a NumberFormatInfo object](#Instantiating)  
+  
+    -   [For the current culture](#Instantiating_Current)  
+  
+    -   [For the invariant culture](#Instantiating_Invariant)  
+  
+    -   [For a specific culture](#Instantiating_Specific)  
+  
+    -   [For a neutral culture](#Instantiating_Neutral)  
+  
+-   [NumberFormatInfo and dynamic data](#dynamic)  
+  
+-   [IFormatProvider, NumberFormatInfo, and numeric formatting](#formatProvider)  
+  
+-   [Format strings and NumberFormatInfo properties](#properties)  
+  
+-   [Modifying NumberFormatInfo properties](#modifying)  
+  
+    -   [Modifying the currency symbol and pattern](#currency)  
+  
+    -   [Formatting a national identification number](#id)  
+  
+-   [Parsing numeric strings](#parsing)  
+  
+    -   [Parsing user strings](#ParseUser)  
+  
+    -   [Serializing and deserializing numeric data](#ParseSerial)  
+  
+<a name="Instantiating"></a>   
+## Instantiating a NumberFormatInfo object  
+ You can instantiate a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of the current culture, the invariant culture, a specific culture, or a neutral culture.  
+  
+<a name="Instantiating_Current"></a>   
+## Instantiating a NumberFormatInfo object for the current culture  
+ You can instantiate a <xref:System.Globalization.NumberFormatInfo> object for the current thread culture in any of the following ways. In each case, the returned <xref:System.Globalization.NumberFormatInfo> object is read-only.  
+  
+-   By retrieving a <xref:System.Globalization.CultureInfo> object that represents the current thread culture from the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property, and retrieving the <xref:System.Globalization.CultureInfo> object from its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property.  
+  
+-   By retrieving the <xref:System.Globalization.NumberFormatInfo> object returned by the `static` (`Shared` in Visual Basic) <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> property.  
+  
+-   By calling the <xref:System.Globalization.NumberFormatInfo.GetInstance%2A> method with a <xref:System.Globalization.CultureInfo> object that represents the current culture.  
+  
+ The following example uses these three ways to create <xref:System.Globalization.NumberFormatInfo> objects that represent the formatting conventions of the current culture. It also retrieves the value of the <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property to illustrate that each object is read-only.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class.Instantiate#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/cs/instantiate1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class.Instantiate#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate1.vb#1)]  
+  
+ You can create a writable <xref:System.Globalization.NumberFormatInfo> object that represents the conventions of the current thread culture in any of the following ways:  
+  
+-   By retrieving a <xref:System.Globalization.NumberFormatInfo> object in any of the ways illustrated in the previous code example, and calling the <xref:System.Globalization.NumberFormatInfo.Clone%2A> method on the returned <xref:System.Globalization.NumberFormatInfo> object. This creates a copy of the original <xref:System.Globalization.NumberFormatInfo> object, except that its <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property is `false`.  
+  
+-   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method to create a <xref:System.Globalization.CultureInfo> object that represents the current culture, and then using its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property to retrieve the <xref:System.Globalization.NumberFormatInfo> object.  
+  
+ The following example illustrates these two ways of instantiating a <xref:System.Globalization.NumberFormatInfo> object, and displays the value of its <xref:System.Globalization.NumberFormatInfo.IsReadOnly%2A> property to illustrate that the object is not read-only.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class.Instantiate#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/cs/instantiate2.cs#2)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class.Instantiate#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate2.vb#2)]  
+  
+ Note that the Windows operating system allows the user to override some of the <xref:System.Globalization.NumberFormatInfo> property values used in numeric formatting and parsing operations through the **Region and Language** item in Control Panel. For example, a user whose culture is English (United States) might choose to display currency values as 1.1 USD instead of the default of $1.1. The <xref:System.Globalization.NumberFormatInfo> objects retrieved in the ways discussed previously all reflect these user overrides. If this is undesirable, you can create a <xref:System.Globalization.NumberFormatInfo> object that does not reflect user overrides (and that is also read/write rather than read-only) by calling the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=fullName> constructor and supplying a value of `false` for the `useUserOverride` argument. The following example provides an illustration for a system whose current culture is English (United States) and whose currency symbol has been changed from the default of $ to USD.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class.Instantiate#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/cs/instantiate3.cs#3)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class.Instantiate#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate3.vb#3)]  
+  
+ If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=fullName> property is set to `true`, the properties <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName>, <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName>, and <xref:System.Globalization.CultureInfo.TextInfo%2A?displayProperty=fullName> are also retrieved from the user settings. If the user settings are incompatible with the culture associated with the <xref:System.Globalization.CultureInfo> object (for example, if the selected calendar is not one of the calendars listed by the <xref:System.Globalization.CultureInfo.OptionalCalendars%2A> property), the results of the methods and the values of the properties are undefined.  
+  
+<a name="Instantiating_Invariant"></a>   
+## Instantiating a NumberFormatInfo object for the invariant culture  
+ The invariant culture represents a culture that is culture-insensitive. It is based on the English language but not on any specific English-speaking country/region. Although the data of specific cultures can be dynamic and can change to reflect new cultural conventions or user preferences, the data of the invariant culture does not change. A <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of the invariant culture can be used for formatting operations in which result strings should not vary by culture.  
+  
+ You can instantiate a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of the invariant culture in the following ways:  
+  
+-   By retrieving the value of the <xref:System.Globalization.NumberFormatInfo.InvariantInfo%2A> property. The returned  <xref:System.Globalization.NumberFormatInfo> object is read-only.  
+  
+-   By retrieving the value of the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property from the <xref:System.Globalization.CultureInfo> object that is returned by the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.  
+  
+-   By calling the parameterless <xref:System.Globalization.NumberFormatInfo.%23ctor%2A> class constructor. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
+  
+ The following example uses each of these methods to instantiate a <xref:System.Globalization.NumberFormatInfo> object that represents the invariant culture. It then indicates whether the object is read-only,  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class.Instantiate#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/cs/instantiate4.cs#4)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class.Instantiate#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate4.vb#4)]  
+  
+<a name="Instantiating_Specific"></a>   
+## Instantiating a NumberFormatInfo object for a specific culture  
+ A specific culture represents a language that is spoken in a particular country/region. For example, en-US is a specific culture that represents the English language spoken in the United States, and en-CA is a specific culture that represents the English language spoken in Canada. You can instantiate a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of a specific culture in the following ways:  
+  
+-   By calling the <xref:System.Globalization.CultureInfo.GetCultureInfo%28System.String%29?displayProperty=fullName> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read-only.  
+  
+-   By passing a <xref:System.Globalization.CultureInfo> object that represents the culture whose <xref:System.Globalization.NumberFormatInfo> object you want to retrieve to the static <xref:System.Globalization.NumberFormatInfo.GetInstance%2A> method. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
+  
+-   By calling the <xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
+  
+-   By calling one of the <xref:System.Globalization.CultureInfo.%23ctor%2A?displayProperty=fullName> class constructors and retrieving the value of the returned <xref:System.Globalization.CultureInfo> object's <xref:System.Globalization.CultureInfo.NumberFormat%2A> property. The returned <xref:System.Globalization.NumberFormatInfo> object is read/write.  
+  
+ The following example uses these four ways to create a <xref:System.Globalization.NumberFormatInfo> object that reflects the formatting conventions of the Indonesian (Indonesia) culture. It also indicates whether each object is read-only.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class.Instantiate#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/cs/instantiate5.cs#5)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class.Instantiate#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate5.vb#5)]  
+  
+<a name="Instantiating_Neutral"></a>   
+## Instantiating a NumberFormatInfo object for a neutral culture  
+ A neutral culture represents a culture or language that is independent of a country/region. It is typically the parent of one or more specific cultures. For example, fr is a neutral culture for the French language and the parent of the fr-FR culture. You create a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of a neutral culture in the same way that you create a <xref:System.Globalization.NumberFormatInfo> object that represents the formatting conventions of a specific culture.  
+  
+> [!NOTE]
+>  In the [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)] and earlier versions, trying to retrieve a <xref:System.Globalization.NumberFormatInfo> object that reflects the formatting conventions of a neutral culture throws a <xref:System.NotSupportedException> exception.  
+  
+ However, because it is independent of a specific country/region, a neutral culture lacks culture-specific formatting information. Rather than populating the <xref:System.Globalization.NumberFormatInfo> object with generic values, the .NET Framework returns a <xref:System.Globalization.NumberFormatInfo> object that reflects the formatting conventions of a specific culture that is a child of the neutral culture. For example, the <xref:System.Globalization.NumberFormatInfo> object for the neutral en culture reflects the formatting conventions of the en-US culture, and the <xref:System.Globalization.NumberFormatInfo> object for the fr culture reflects the formatting conventions of the fr-FR culture.  
+  
+ You can use code like the following to determine which specific culture's formatting conventions each neutral culture represents.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class.Instantiate#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/cs/instantiate6c.cs#6)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class.Instantiate#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class.instantiate/vb/instantiate6c.vb#6)]  
+  
+<a name="dynamic"></a>   
+## NumberFormatInfo and dynamic data  
+ The culture-specific data for formatting numeric values provided by the <xref:System.Globalization.NumberFormatInfo> class is dynamic, just like the cultural data provided by the <xref:System.Globalization.CultureInfo> class. You should not make any assumptions about the stability of values for <xref:System.Globalization.NumberFormatInfo> objects that are associated with particular <xref:System.Globalization.CultureInfo> objects. Only the data provided by the invariant culture and its associated <xref:System.Globalization.NumberFormatInfo> object is stable. Other data can change between application sessions, or even within a single session, for the following reasons:  
+  
+-   **System updates.** Cultural preferences such as the currency symbol or currency formats change over time. When this happens, Windows Update includes changes to the <xref:System.Globalization.NumberFormatInfo> property value for a particular culture.  
+  
+-   **Replacement cultures.** The <xref:System.Globalization.CultureAndRegionInfoBuilder> class can be used to replace the data of an existing culture.  
+  
+-   **Cascading changes to property values.** A number of culture-related properties can change at run time, which, in turn, causes <xref:System.Globalization.NumberFormatInfo> data to change. For example, the current culture can be changed either programmatically or through user action. When this happens, the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> property changes to an object associated with the current culture.  
+  
+-   **User preferences.** Users of your application might override some of the values associated with the current system culture through the region and language options in Control Panel. For example, users might choose a different currency symbol or a different decimal separator symbol. If the <xref:System.Globalization.CultureInfo.UseUserOverride%2A?displayProperty=fullName> property is set to `true` (its default value), the properties of the <xref:System.Globalization.NumberFormatInfo> object are also retrieved from the user settings.  
+  
+ Starting with the .NET Framework 2.0, all user-overridable properties of a <xref:System.Globalization.NumberFormatInfo> object are initialized when the object is created. There is still a possibility of inconsistency, because neither object creation nor the user override process is atomic, and the relevant values may change during object creation. However, these inconsistencies should be extremely rare.  
+  
+ You can control whether user overrides are reflected in <xref:System.Globalization.NumberFormatInfo> objects that represent the same culture as the current thread culture. The following table lists the ways in which a <xref:System.Globalization.NumberFormatInfo> object can be retrieved and indicates whether the resulting object reflects user overrides.  
+  
+|Source of CultureInfo and NumberFormatInfo object|Reflects user overrides|  
+|-------------------------------------------------------|-----------------------------|  
+|`CultureInfo.CurrentCulture.NumberFormat` property|Yes|  
+|<xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=fullName> property|Yes|  
+|<xref:System.Globalization.CultureInfo.CreateSpecificCulture%2A?displayProperty=fullName> method|Yes|  
+|<xref:System.Globalization.CultureInfo.GetCultureInfo%2A?displayProperty=fullName> method|No|  
+|<xref:System.Globalization.CultureInfo.%23ctor%28System.String%29> constructor|Yes|  
+|<xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=fullName> constructor|Depends on value of `useUserOverride` parameter|  
+  
+ Unless there is a compelling reason to do otherwise, you should respect user overrides when you use the <xref:System.Globalization.NumberFormatInfo> object in client applications to format and parse user input or to display numeric data. For server applications or unattended applications, you should not respect user overrides. However, if you are using the <xref:System.Globalization.NumberFormatInfo> object either explicitly or implicitly to persist numeric data in string form, you should either use a <xref:System.Globalization.NumberFormatInfo> object that reflects the formatting conventions of the invariant culture, or you should specify a custom numeric format string that you use regardless of culture.  
+  
+<a name="formatProvider"></a>   
+## IFormatProvider, NumberFormatInfo, and numeric formatting  
+ A <xref:System.Globalization.NumberFormatInfo> object is used implicitly or explicitly in all numeric formatting operations. These include calls to the following methods:  
+  
+-   All numeric formatting methods, such as <xref:System.Int32.ToString%2A?displayProperty=fullName>, <xref:System.Double.ToString%2A?displayProperty=fullName>, and <xref:System.Convert.ToString%28System.Int32%29?displayProperty=fullName>.  
+  
+-   The major composite formatting method, <xref:System.String.Format%2A?displayProperty=fullName>.  
+  
+-   Other composite formatting methods, such as [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> and [StringBuilder.AppendFormat(String, Object\<xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+  
+ All numeric formatting operations make use of an <xref:System.IFormatProvider> implementation. The <xref:System.IFormatProvider> interface includes a single method, <xref:System.IFormatProvider.GetFormat%28System.Type%29>. This is a callback method that is passed a <xref:System.Type> object that represents the type needed to provide formatting information. The method is responsible for returning either an instance of that type or `null`, if it cannot provide an instance of the type. The .NET Framework provides two <xref:System.IFormatProvider> implementations for formatting numbers:  
+  
+-   The <xref:System.Globalization.CultureInfo> class, which represents a specific culture (or a specific language in a specific country/region). In a numeric formatting operation, the <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=fullName> method returns the <xref:System.Globalization.NumberFormatInfo> object associated with its <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property.  
+  
+-   The <xref:System.Globalization.NumberFormatInfo> class, which provides information about the formatting conventions of its associated culture. The <xref:System.Globalization.NumberFormatInfo.GetFormat%2A?displayProperty=fullName> method returns an instance of itself.  
+  
+ If an <xref:System.IFormatProvider> implementation is not provided to a formatting method explicitly, a <xref:System.Globalization.CultureInfo> object returned by the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property that represents the current thread culture is used.  
+  
+ The following example illustrates the relationship between the <xref:System.IFormatProvider> interface and the <xref:System.Globalization.NumberFormatInfo> class in formatting operations by defining a custom <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method displays the type name of the object requested by the formatting operation. If the interface is requesting a <xref:System.Globalization.NumberFormatInfo> object, this method provides the <xref:System.Globalization.NumberFormatInfo> object for the current thread culture. As the output from the example shows, the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName> method requests a <xref:System.Globalization.NumberFormatInfo> object to provide formatting information, whereas the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method requests <xref:System.Globalization.NumberFormatInfo> and <xref:System.Globalization.DateTimeFormatInfo> objects as well as an <xref:System.ICustomFormatter> implementation.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/formatprovider1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/formatprovider1.vb#1)]  
+  
+ If an <xref:System.IFormatProvider> implementation is not explicitly provided in a numeric formatting method call, the method calls the `CultureInfo.CurrentCulture.GetFormat` method, which returns the <xref:System.Globalization.NumberFormatInfo> object that corresponds to the current thread culture.  
+  
+<a name="properties"></a>   
+## Format strings and NumberFormatInfo properties  
+ Every formatting operation uses either a standard or a custom numeric format string to produce a result string from a number. In some cases, the use of a format string to produce a result string is explicit, as in the following example. This code calls the <xref:System.Decimal.ToString%28System.IFormatProvider%29?displayProperty=fullName> method to convert a <xref:System.Decimal> value to a number of different string representations by using the formatting conventions of the en-US culture.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/properties1.cs#2)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/properties1.vb#2)]  
+  
+ In other cases, the use of a format string is implicit. For example, in the following method calls to the default or parameterless <xref:System.Decimal.ToString?displayProperty=fullName> method, the value of the <xref:System.Decimal> instance is formatted by using the general ("G") format specifier and the conventions of the current culture, which in this case is the en-US culture.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/properties2.cs#3)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/properties2.vb#3)]  
+  
+ Each standard numeric format string uses one or more <xref:System.Globalization.NumberFormatInfo> properties to determine the pattern or the symbols used in the result string. Similarly, each custom numeric format specifier except "0" and "#" insert symbols in the result string that are defined by <xref:System.Globalization.NumberFormatInfo> properties. The following table lists the standard and custom numeric format specifiers and their associated <xref:System.Globalization.NumberFormatInfo> properties.  To change the appearance of the result string for a particular culture, see the [Modifying NumberFormatInfo properties](#modifying) section. For details about the use of these format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
+  
+|Format specifier|Associated properties|  
+|----------------------|---------------------------|  
+|"C" or "c" (currency format specifier)|<xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A>, to define the default number of fractional digits.<br /><br /> <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A>, to define the decimal separator symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A>, to define the group or thousands separator.<br /><br /> <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSizes%2A>, to define the sizes of integral groups.<br /><br /> <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A>, to define the pattern of negative currency values.<br /><br /> <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A>, to define the pattern of positive currency values.<br /><br /> <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A>, to define the currency symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol.|  
+|"D" or "d" (decimal format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol.|  
+|"E" or "e" (exponential or scientific format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol in the mantissa and exponent.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, to define the decimal separator symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A>, to define the positive sign symbol in the exponent.|  
+|"F" or "f" (fixed-point format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A>, to define the default number of fractional digits.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, to define the decimal separator symbol.|  
+|"G" or "g" (general format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, to define the decimal separator symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A>, to define the positive sign symbol for result strings in exponential format.|  
+|"N" or "n" (number format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A>, to define the default number of fractional digits.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, to define the decimal separator symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A>, to define the group separator (thousands) symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A>, to define the number of integral digits in a group.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberNegativePattern%2A>, to define the format of negative values.|  
+|"P" or "p" (percent format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits%2A>, to define the default number of fractional digits.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PercentDecimalSeparator%2A>, to define the decimal separator symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PercentGroupSeparator%2A>, to define the group separator symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PercentGroupSizes%2A>, to define the number of integral digits in a group.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PercentNegativePattern%2A>, to define the placement of the percent symbol and the negative symbol for negative values.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PercentPositivePattern%2A>, to define the placement of the percent symbol for positive values.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PercentSymbol%2A>, to define the percent symbol.|  
+|"R" or "r" (round-trip format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, to define the decimal separator symbol.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A>, to define the positive sign symbol in an exponent.|  
+|"X" or "x" (hexadecimal format specifier)|None.|  
+|"." (decimal point custom format specifier)|<xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>, to define the decimal separator symbol.|  
+|"," (group separator custom format specifier)|<xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A>, to define the group (thousands) separator symbol.|  
+|"%" (percentage placeholder custom format specifier)|<xref:System.Globalization.NumberFormatInfo.PercentSymbol%2A>, to define the percent symbol.|  
+|"‰" (per mille placeholder custom format specifier)|<xref:System.Globalization.NumberFormatInfo.PerMilleSymbol%2A>, to define the per mille symbol.|  
+|"E" (exponential notation custom format specifier)|<xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, to define the negative sign symbol in the mantissa and exponent.<br /><br /> <xref:System.Globalization.NumberFormatInfo.PositiveSign%2A>, to define the positive sign symbol in the exponent.|  
+  
+ Note that the <xref:System.Globalization.NumberFormatInfo> class includes a <xref:System.Globalization.NumberFormatInfo.NativeDigits%2A> property that specifies the base 10 digits used by a specific culture. However, the property is not used in formatting operations; only the Basic Latin digits 0 (U+0030) through 9 (U+0039) are used in the result string. In addition, for <xref:System.Single> and <xref:System.Double> values of `NaN`, `PositiveInfinity`, and `NegativeInfinity`, the result string consists exclusively of the symbols defined by the <xref:System.Globalization.NumberFormatInfo.NaNSymbol%2A>, <xref:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol%2A>, and <xref:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol%2A> properties, respectively.  
+  
+<a name="modifying"></a>   
+## Modifying NumberFormatInfo properties  
+ You can modify the properties of a <xref:System.Globalization.NumberFormatInfo> object to customize the result string produced in a numeric formatting operation. To do this:  
+  
+1.  Create a read/write copy of a <xref:System.Globalization.NumberFormatInfo> object whose formatting conventions you want to modify. For more information, see the [Instantiating a NumberFormatInfo object](#Instantiating) section.  
+  
+2.  Modify the property or properties that are used to produce the desired result string. For information about how formatting methods use <xref:System.Globalization.NumberFormatInfo> properties to define result strings, see the [Format strings and NumberFormatInfo properties](#properties) section.  
+  
+3.  Use the custom <xref:System.Globalization.NumberFormatInfo> object as the <xref:System.IFormatProvider> argument in calls to formatting methods.  
+  
+> [!NOTE]
+>  Instead of dynamically modifying a culture's property values each time an application is started, you can use the <xref:System.Globalization.CultureAndRegionInfoBuilder> class to define either a custom culture (a culture that has a unique name and that supplements existing cultures) or a replacement culture (one that is used instead of a specific culture).  
+  
+ The following sections provide some examples.  
+  
+<a name="currency"></a>   
+### Modifying the currency symbol and pattern  
+ The following example modifies a <xref:System.Globalization.NumberFormatInfo> object that that represents the formatting conventions of the en-US culture. It assigns the ISO-4217 currency symbol to the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> property and defines a pattern for currency values that consists of the currency symbol followed by a space and a numeric value.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Customize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.customize/cs/customize_currency1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Customize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.customize/vb/customize_currency1.vb#1)]  
+  
+<a name="id"></a>   
+### Formatting a national identification number  
+ Many national identification numbers consist exclusively of digits and so can easily be formatted by modifying the properties of a <xref:System.Globalization.NumberFormatInfo> object. For example, a social security number in the United States consists of 9 digits arranged as follows: `XXX-XX-XXXX`. The following example assumes that social security numbers are stored as integer values and formats them appropriately.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Customize#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.customize/cs/customize_ssn1.cs#2)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Customize#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.customize/vb/customize_ssn1.vb#2)]  
+  
+<a name="parsing"></a>   
+## Parsing numeric strings  
+ Parsing involves converting the string representation of a number to a number. Each numeric type in the .NET Framework includes two overloaded parsing methods: `Parse` and `TryParse`. The `Parse` method converts a string to a number and throws an exception if the conversion fails. The `TryParse` method converts a string to a number, assigns the number to an `out` argument, and returns a <xref:System.Boolean> value that indicates whether the conversion succeeded.  
+  
+ The parsing methods implicitly or explicitly use a <xref:System.Globalization.NumberStyles> enumeration value to determine what style elements (such as group separators, a decimal separator, or a currency symbol) can be present in a string if the parsing operation is to succeed. If a <xref:System.Globalization.NumberStyles> value is not provided in the method call, the default is a <xref:System.Globalization.NumberStyles> value that includes the <xref:System.Globalization.NumberStyles> and <xref:System.Globalization.NumberStyles> flags, which specifies that the parsed string can include group symbols, a decimal separator, a negative sign, and white-space characters, or it can be the string representation of a number in exponential notation.  
+  
+ The parsing methods also implicitly or explicitly use a <xref:System.Globalization.NumberFormatInfo> object that defines the specific symbols and patterns that can occur in the string to be parsed. If a <xref:System.Globalization.NumberFormatInfo> object is not provided, the default is the <xref:System.Globalization.NumberFormatInfo> for the current thread culture. For more information about parsing, see the individual parsing methods, such as <xref:System.Int16.Parse%28System.String%29?displayProperty=fullName>, <xref:System.Int32.Parse%28System.String%2CSystem.Globalization.NumberStyles%29?displayProperty=fullName>, <xref:System.Int64.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>, <xref:System.Decimal.Parse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%29?displayProperty=fullName>, <xref:System.Double.TryParse%28System.String%2CSystem.Double%40%29?displayProperty=fullName>, and <xref:System.Numerics.BigInteger.TryParse%28System.String%2CSystem.Globalization.NumberStyles%2CSystem.IFormatProvider%2CSystem.Numerics.BigInteger%40%29?displayProperty=fullName>.  
+  
+ The following example illustrates the culture-sensitive nature of parsing strings. It tries to parse a string that include thousands separators by using the conventions of the en-US, fr-FR, and invariant cultures. A string that includes the comma as a group separator and the period as a decimal separator fails to parse in the fr-FR culture, and a string with white space as a group separator and a comma as a decimal separator fails to parse in the en-US and invariant cultures.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/parse1.cs#4)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/parse1.vb#4)]  
+  
+ Parsing generally occurs in two contexts:  
+  
+-   As an operation that is designed to convert user input into a numeric value.  
+  
+-   As an operation that is designed to round-trip a numeric value; that is, to deserialize a numeric value that was previously serialized as a string.  
+  
+ The following sections discuss these two operations in greater detail.  
+  
+<a name="ParseUser"></a>   
+### Parsing user strings  
+ When you are parsing numeric strings input by the user, you should always instantiate a <xref:System.Globalization.NumberFormatInfo> object that reflects the user's cultural settings. For information about how to instantiate a <xref:System.Globalization.NumberFormatInfo> object that reflects user customizations, see the [NumberFormatInfo and dynamic data](#dynamic) section.  
+  
+ The following example illustrates the difference between a parsing operation that reflects user cultural settings and one that does not. In this case, the default system culture is en-US, but the user has defined "," as the decimal symbol and "." as the group separator in Control Panel, **Region and Language**. Ordinarily, these symbols are reversed in the default en-US culture. When the user enters a string that reflects user settings, and the string is parsed by a <xref:System.Globalization.NumberFormatInfo> object that also reflects user settings (overrides), the parsing operation returns a correct result. However, when the string is parsed by a <xref:System.Globalization.NumberFormatInfo> object that reflects standard en-US cultural settings, it mistakes the comma symbol for a group separator and returns an incorrect result.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/parseuser1.cs#5)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/parseuser1.vb#5)]  
+  
+<a name="ParseSerial"></a>   
+### Serializing and deserializing numeric data  
+ When numeric data is serialized in string format and later deserialized and parsed, the strings should be generated and parsed by using the conventions of the invariant culture. The formatting and parsing operations should never reflect the conventions of a specific culture. If culture-specific settings are used, the portability of the data is strictly limited; it can be successfully deserialized only on a thread whose culture-specific settings are identical to those of the thread on which it was serialized. In some cases, this means that the data cannot even be successfully deserialized on the same system on which it was serialized.  
+  
+ The following example illustrates what can happen when this principle is violated. Floating-point values in an array are converted to strings when the current thread uses the culture-specific settings of the en-US culture. The data is then parsed by a thread that uses the culture-specific settings of the en-GB culture. In this case, although each parsing operation succeeds, the data does not round-trip successfully and data corruption occurs. In other cases, a parsing operation could fail and a <xref:System.FormatException> exception could be thrown.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/cs/parsepersisted.cs#6)]
+ [!code-vb[System.Globalization.NumberFormatInfo.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.class/vb/parsepersisted.vb#6)]  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve a <xref:System.Globalization.NumberFormatInfo> object for a corresponding <xref:System.Globalization.CultureInfo> object, and use the retrieved object to query number formatting information for the particular culture.  
+  
+ [!code-cpp[NumberFormatInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberFormatInfo/cpp/NumberFormatInfo.cpp#1)]
+ [!code-csharp[NumberFormatInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberFormatInfo/CS/NumberFormatInfo.cs#1)]
+ [!code-vb[NumberFormatInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberFormatInfo/vb/numberformatinfo.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NumberFormatInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new writable instance of the <see cref="T:System.Globalization.NumberFormatInfo" /> class that is culture-independent (invariant).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties of the new instance can be modified if your application needs user-defined formatting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a shallow copy of the <see cref="T:System.Globalization.NumberFormatInfo" /> object.</summary>
+        <returns>A new object copied from the original <see cref="T:System.Globalization.NumberFormatInfo" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The clone is writable even if the original <xref:System.Globalization.NumberFormatInfo> object is read-only. Therefore, the properties of the clone can be modified with user-defined patterns.  
+  
+ A shallow copy of an object is a copy of the object only. If the object contains references to other objects, the shallow copy will not create copies of the referred objects. It will refer to the original objects instead. On the other hand, a deep copy of an object creates a copy of the object and a copy of everything directly or indirectly referenced by that object. In the case of a <xref:System.Globalization.NumberFormatInfo> object, a shallow copy is sufficient for copying all instance properties, because all properties that return object references are `static` (`Shared` in Visual Basic).  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Globalization.NumberFormatInfo.Clone%2A> method to create a read/write copy of a <xref:System.Globalization.NumberFormatInfo> object that represents the numeric formatting conventions of the current thread culture.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.IsReadOnly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.isreadonly/cs/isreadonly1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.IsReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.isreadonly/vb/isreadonly1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencyDecimalDigits">
+      <MemberSignature Language="C#" Value="public int CurrencyDecimalDigits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrencyDecimalDigits" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of decimal places to use in currency values.</summary>
+        <value>The number of decimal places to use in currency values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is 2.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A> property is used with the "C" standard format string without a precision specifier in numeric formatting operations. It defines the default number of fractional digits that appear after the decimal separator. This value is overridden if a precision specifier is used. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalDigits%2A> property.  
+  
+ [!code-cpp[CurrencyDecimalDigits#1](~/samples/snippets/cpp/VS_Snippets_CLR/CurrencyDecimalDigits/CPP/currencydecimaldigits.cpp#1)]
+ [!code-csharp[CurrencyDecimalDigits#1](~/samples/snippets/csharp/VS_Snippets_CLR/CurrencyDecimalDigits/CS/currencydecimaldigits.cs#1)]
+ [!code-vb[CurrencyDecimalDigits#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CurrencyDecimalDigits/VB/currencydecimaldigits.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 99.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencyDecimalSeparator">
+      <MemberSignature Language="C#" Value="public string CurrencyDecimalSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrencyDecimalSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string to use as the decimal separator in currency values.</summary>
+        <value>The string to use as the decimal separator in currency values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is ".".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The initial value of this property is derived from the settings in the **Region and Language** item in Control Panel.  
+  
+ The <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A> property is used with the "C" standard format string to define the symbol that separates integral from fractional digits. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A> property.  
+  
+ [!code-cpp[CurrencyDecimalSeparator#1](~/samples/snippets/cpp/VS_Snippets_CLR/CurrencyDecimalSeparator/CPP/currencydecimalseparator.cpp#1)]
+ [!code-csharp[CurrencyDecimalSeparator#1](~/samples/snippets/csharp/VS_Snippets_CLR/CurrencyDecimalSeparator/CS/currencydecimalseparator.cs#1)]
+ [!code-vb[CurrencyDecimalSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CurrencyDecimalSeparator/VB/currencydecimalseparator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set to an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencyGroupSeparator">
+      <MemberSignature Language="C#" Value="public string CurrencyGroupSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrencyGroupSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that separates groups of digits to the left of the decimal in currency values.</summary>
+        <value>The string that separates groups of digits to the left of the decimal in currency values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is ",".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The initial value of this property is derived from the settings in the **Regional and Language** item in Control Panel.  
+  
+ The <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A> property is used with the "C" standard format string to define the symbol that separates groups of integral digits. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSeparator%2A> property.  
+  
+ [!code-cpp[CurrencyGroupSeparator#1](~/samples/snippets/cpp/VS_Snippets_CLR/CurrencyGroupSeparator/CPP/currencygroupseparator.cpp#1)]
+ [!code-csharp[CurrencyGroupSeparator#1](~/samples/snippets/csharp/VS_Snippets_CLR/CurrencyGroupSeparator/CS/currencygroupseparator.cs#1)]
+ [!code-vb[CurrencyGroupSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CurrencyGroupSeparator/VB/currencygroupseparator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencyGroupSizes">
+      <MemberSignature Language="C#" Value="public int[] CurrencyGroupSizes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] CurrencyGroupSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyGroupSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of digits in each group to the left of the decimal in currency values.</summary>
+        <value>The number of digits in each group to the left of the decimal in currency values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is a one-dimensional array with only one element, which is set to 3.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSizes%2A> property is used with the "C" standard format string to define the number of digits that appear in integral groups. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md). Every element in the one-dimensional array must be an integer from 1 through 9. The last element can be 0.  
+  
+ The first element of the array defines the number of elements in the least significant group of digits immediately to the left of the <xref:System.Globalization.NumberFormatInfo.CurrencyDecimalSeparator%2A>. Each subsequent element refers to the next significant group of digits to the left of the previous group. If the last element of the array is not 0, the remaining digits are grouped based on the last element of the array. If the last element is 0, the remaining digits are not grouped.  
+  
+ For example, if the array contains { 3, 4, 5 }, the digits are grouped similar to "$55,55555,55555,55555,4444,333.00". If the array contains { 3, 4, 0 }, the digits are grouped similar to "$55555555555555555,4444,333.00".  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.CurrencyGroupSizes%2A> property.  
+  
+ [!code-cpp[CurrencyGroupSizes#1](~/samples/snippets/cpp/VS_Snippets_CLR/CurrencyGroupSizes/CPP/currencygroupsizes.cpp#1)]
+ [!code-csharp[CurrencyGroupSizes#1](~/samples/snippets/csharp/VS_Snippets_CLR/CurrencyGroupSizes/CS/currencygroupsizes.cs#1)]
+ [!code-vb[CurrencyGroupSizes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CurrencyGroupSizes/VB/currencygroupsizes.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set and the array contains an entry that is less than 0 or greater than 9.  
+  
+ -or-  
+  
+ The property is being set and the array contains an entry, other than the last entry, that is set to 0.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencyNegativePattern">
+      <MemberSignature Language="C#" Value="public int CurrencyNegativePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrencyNegativePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyNegativePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format pattern for negative currency values.</summary>
+        <value>The format pattern for negative currency values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is 0, which represents "($n)", where "$" is the <see cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" /> and <paramref name="n" /> is a number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> property is used with the "C" standard format string to define the pattern of negative currency values. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md). This property has one of the values in the following table. The symbol "$" is the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A>, the symbol "-" is the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, and `n` is a number.  
+  
+|Value|Associated pattern|  
+|-----------|------------------------|  
+|0|($n)|  
+|1|-$n|  
+|2|$-n|  
+|3|$n-|  
+|4|(n$)|  
+|5|-n$|  
+|6|n-$|  
+|7|n$-|  
+|8|-n $|  
+|9|-$ n|  
+|10|n $-|  
+|11|$ n-|  
+|12|$ -n|  
+|13|n- $|  
+|14|($ n)|  
+|15|(n $)|  
+  
+   
+  
+## Examples  
+ The following example shows how the <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> property defines the format of negative currency values.  It retrieves all the specific cultures that are defined on the host computer and displays each culture's <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> property value, its associated pattern, and a number formatted as a currency value.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.CurrencyNegativePattern#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.currencynegativepattern/cs/currencynegativepattern1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.CurrencyNegativePattern#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.currencynegativepattern/vb/currencynegativepattern1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 15.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencyPositivePattern">
+      <MemberSignature Language="C#" Value="public int CurrencyPositivePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrencyPositivePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencyPositivePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format pattern for positive currency values.</summary>
+        <value>The format pattern for positive currency values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is 0, which represents "$n", where "$" is the <see cref="P:System.Globalization.NumberFormatInfo.CurrencySymbol" /> and <paramref name="n" /> is a number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property is used with the "C" standard format string to define pattern of positive currency values. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md). This property has one of the values in the following table. The symbol "$" is the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> and `n` is a number.  
+  
+|Value|Associated pattern|  
+|-----------|------------------------|  
+|0|$n|  
+|1|n$|  
+|2|$ n|  
+|3|n $|  
+  
+ Note that the pattern does not support a positive sign.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 3.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrencySymbol">
+      <MemberSignature Language="C#" Value="public string CurrencySymbol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrencySymbol" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrencySymbol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string to use as the currency symbol.</summary>
+        <value>The string to use as the currency symbol. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is "¤".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string assigned to the <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> property is included in the result string when a numeric value is formatted with the "C" [standard numeric format string](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example displays the currency symbol for the current culture and uses the "C" standard numeric format string to format a currency value.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.CurrencySymbol#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.currencysymbol/cs/currencysymbolex1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.CurrencySymbol#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.currencysymbol/vb/currencysymbolex1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentInfo">
+      <MemberSignature Language="C#" Value="public static System.Globalization.NumberFormatInfo CurrentInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Globalization.NumberFormatInfo CurrentInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.CurrentInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberFormatInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a read-only <see cref="T:System.Globalization.NumberFormatInfo" /> that formats values based on the current culture.</summary>
+        <value>A read-only <see cref="T:System.Globalization.NumberFormatInfo" /> based on the culture of the current thread.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Retrieving a <xref:System.Globalization.NumberFormatInfo> object from the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> property is equivalent to retrieving a <xref:System.Globalization.NumberFormatInfo> object from the `CultureInfo.CurrentCulture.NumberFormat` property.  
+  
+   
+  
+## Examples  
+ The following example shows that the objects returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> and   `CultureInfo.CurrentCulture.NumberFormat` properties are identical. It then uses reflection to display the property values of the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A> property on a system whose current culture is en-US.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.CurrentInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.currentinfo/cs/currentinfo1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.CurrentInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.currentinfo/vb/currentinfo1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DigitSubstitution">
+      <MemberSignature Language="C#" Value="public System.Globalization.DigitShapes DigitSubstitution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.DigitShapes DigitSubstitution" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.DigitSubstitution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Globalization.DigitShapes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies how the graphical user interface displays the shape of a digit.</summary>
+        <value>One of the enumeration values that specifies the culture-specific digit shape.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A> property is reserved for future use. Currently, it is not used in either parsing or formatting operations for the current <xref:System.Globalization.NumberFormatInfo> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <exception cref="T:System.ArgumentException">The value in a set operation is not a valid <see cref="T:System.Globalization.DigitShapes" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFormat">
+      <MemberSignature Language="C#" Value="public object GetFormat (Type formatType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetFormat(class System.Type formatType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.GetFormat(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="formatType">The <see cref="T:System.Type" /> of the required formatting service.</param>
+        <summary>Gets an object of the specified type that provides a number formatting service.</summary>
+        <returns>The current <see cref="T:System.Globalization.NumberFormatInfo" />, if <paramref name="formatType" /> is the same as the type of the current <see cref="T:System.Globalization.NumberFormatInfo" />; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Format(String, IFormatProvider)` methods supported by the base data types invoke this method when the current <xref:System.Globalization.NumberFormatInfo> is passed as the <xref:System.IFormatProvider> parameter. This method implements <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInstance">
+      <MemberSignature Language="C#" Value="public static System.Globalization.NumberFormatInfo GetInstance (IFormatProvider formatProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.NumberFormatInfo GetInstance(class System.IFormatProvider formatProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.GetInstance(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberFormatInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatProvider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="formatProvider">The <see cref="T:System.IFormatProvider" /> used to get the <see cref="T:System.Globalization.NumberFormatInfo" />.  
+  
+ -or-  
+  
+ <see langword="null" /> to get <see cref="P:System.Globalization.NumberFormatInfo.CurrentInfo" />.</param>
+        <summary>Gets the <see cref="T:System.Globalization.NumberFormatInfo" /> associated with the specified <see cref="T:System.IFormatProvider" />.</summary>
+        <returns>The <see cref="T:System.Globalization.NumberFormatInfo" /> associated with the specified <see cref="T:System.IFormatProvider" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses the <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method of `formatProvider` using <xref:System.Globalization.NumberFormatInfo> as the Type parameter. If `formatProvider` is `null` or if <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> returns `null`, this method returns <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A>.  
+  
+ Your application gets a <xref:System.Globalization.NumberFormatInfo> object for a specific culture using one of the following methods:  
+  
+-   Through the <xref:System.Globalization.CultureInfo.NumberFormat%2A?displayProperty=fullName> property.  
+  
+-   Through the <xref:System.Globalization.NumberFormatInfo.GetInstance%2A> method where `provider` is a <xref:System.Globalization.CultureInfo>.  
+  
+ A <xref:System.Globalization.NumberFormatInfo> object is created only for the invariant culture or for specific cultures, not for neutral cultures. For more information about the invariant culture, specific cultures, and neutral cultures, see the <xref:System.Globalization.CultureInfo> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvariantInfo">
+      <MemberSignature Language="C#" Value="public static System.Globalization.NumberFormatInfo InvariantInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Globalization.NumberFormatInfo InvariantInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.InvariantInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberFormatInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a read-only <see cref="T:System.Globalization.NumberFormatInfo" /> object that is culture-independent (invariant).</summary>
+        <value>A read-only  object that is culture-independent (invariant).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Globalization.NumberFormatInfo> object returned by this property does not change, regardless of the current culture. It represents the formatting conventions of the invariant culture, which is a culture associated with the English language but not with any country/region. The invariant culture is used in formatting operations that are culture-independent or that produce result strings suitable for display across multiple cultures.  
+  
+   
+  
+## Examples  
+ The following example displays the default property values of the <xref:System.Globalization.NumberFormatInfo.InvariantInfo%2A>.  
+  
+ [!code-cpp[System.Globalization.NumberFormatInfo.InvariantInfo#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Globalization.NumberFormatInfo.InvariantInfo/CPP/invariantinfo.cpp#1)]
+ [!code-csharp[System.Globalization.NumberFormatInfo.InvariantInfo#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Globalization.NumberFormatInfo.InvariantInfo/CS/invariantinfo.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.InvariantInfo#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Globalization.NumberFormatInfo.InvariantInfo/VB/invariantinfo.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Globalization.NumberFormatInfo" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Attempting to perform an assignment to a property of a read-only <xref:System.Globalization.NumberFormatInfo> causes an <xref:System.InvalidOperationException>.  
+  
+ You can call the <xref:System.Globalization.NumberFormatInfo.Clone%2A> method to create a read/write <xref:System.Globalization.NumberFormatInfo> object from a read-only object, as the following example illustrates.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.IsReadOnly#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.isreadonly/cs/isreadonly1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.IsReadOnly#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.isreadonly/vb/isreadonly1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NaNSymbol">
+      <MemberSignature Language="C#" Value="public string NaNSymbol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NaNSymbol" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NaNSymbol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that represents the IEEE NaN (not a number) value.</summary>
+        <value>The string that represents the IEEE NaN (not a number) value. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is "NaN".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on NaN values, see <xref:System.Double> or <xref:System.Single>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeDigits">
+      <MemberSignature Language="C#" Value="public string[] NativeDigits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] NativeDigits" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NativeDigits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string array of native digits equivalent to the Western digits 0 through 9.</summary>
+        <value>A string array that contains the native equivalent of the Western digits 0 through 9. The default is an array having the elements "0", "1", "2", "3", "4", "5", "6", "7", "8", and "9".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The character set that is specified by the <xref:System.Globalization.NumberFormatInfo.NativeDigits%2A> property has no effect on parsing or formatting operations. Only the Basic Latin digits 0 (U+0030) through 9 (U+0039) are used when formatting or parsing numeric values or date and time values.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Globalization.NumberFormatInfo.NativeDigits%2A> property.  
+  
+ [!code-cpp[sys.glob.NFI.nativeDigits#1](~/samples/snippets/cpp/VS_Snippets_CLR/sys.glob.NFI.nativeDigits/cpp/nd.cpp#1)]
+ [!code-csharp[sys.glob.NFI.nativeDigits#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.glob.NFI.nativeDigits/cs/nd.cs#1)]
+ [!code-vb[sys.glob.NFI.nativeDigits#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.glob.NFI.nativeDigits/vb/nd.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The current <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <exception cref="T:System.ArgumentNullException">In a set operation, the value is <see langword="null" />.  
+  
+ -or-  
+  
+ In a set operation, an element of the value array is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">In a set operation, the value array does not contain 10 elements.  
+  
+ -or-  
+  
+ In a set operation, an element of the value array does not contain either a single <see cref="T:System.Char" /> object or a pair of <see cref="T:System.Char" /> objects that comprise a surrogate pair.  
+  
+ -or-  
+  
+ In a set operation, an element of the value array is not a number digit as defined by the [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123). That is, the digit in the array element does not have the Unicode <see langword="Number, Decimal Digit" /> (Nd) General Category value.  
+  
+ -or-  
+  
+ In a set operation, the numeric value of an element in the value array does not correspond to the element's position in the array. That is, the element at index 0, which is the first element of the array, does not have a numeric value of 0, or the element at index 1 does not have a numeric value of 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NegativeInfinitySymbol">
+      <MemberSignature Language="C#" Value="public string NegativeInfinitySymbol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NegativeInfinitySymbol" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NegativeInfinitySymbol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that represents negative infinity.</summary>
+        <value>The string that represents negative infinity. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is "-Infinity".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on negative infinity, see <xref:System.Double> or <xref:System.Single>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NegativeSign">
+      <MemberSignature Language="C#" Value="public string NegativeSign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NegativeSign" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NegativeSign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that denotes that the associated number is negative.</summary>
+        <value>The string that denotes that the associated number is negative. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is "-".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used in both formatting and parsing operations. For more information on its use in formatting operations, see the [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md) topics.  
+  
+   
+  
+## Examples  
+ The following example instantiates a read-write <xref:System.Globalization.CultureInfo> object that represents the invariant culture and assigns the OVERLINE character (U+203E) to its <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A> property. It then uses this <xref:System.Globalization.CultureInfo> object to format an array of negative floating-point numbers.  
+  
+ [!code-csharp[System.Globalization.NumberFormatInfo.NegativeSign#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.numberformatinfo.negativesign/cs/negativesign1.cs#1)]
+ [!code-vb[System.Globalization.NumberFormatInfo.NegativeSign#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.numberformatinfo.negativesign/vb/negativesign1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberDecimalDigits">
+      <MemberSignature Language="C#" Value="public int NumberDecimalDigits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberDecimalDigits" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberDecimalDigits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of decimal places to use in numeric values.</summary>
+        <value>The number of decimal places to use in numeric values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is 2.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A> property is used with the "F" and "N" standard format strings without a precision specifier in numeric formatting operations. It defines the default number of fractional digits that appear after the decimal separator. This value is overridden if a precision specifier is used. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.NumberDecimalDigits%2A> property.  
+  
+ [!code-cpp[NumberDecimalDigits#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberDecimalDigits/CPP/numberdecimaldigits.cpp#1)]
+ [!code-csharp[NumberDecimalDigits#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberDecimalDigits/CS/numberdecimaldigits.cs#1)]
+ [!code-vb[NumberDecimalDigits#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberDecimalDigits/VB/numberdecimaldigits.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 99.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberDecimalSeparator">
+      <MemberSignature Language="C#" Value="public string NumberDecimalSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NumberDecimalSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberDecimalSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string to use as the decimal separator in numeric values.</summary>
+        <value>The string to use as the decimal separator in numeric values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is ".".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A> property is used with the "E", "F", "G", "N", and "R" standard format strings to define the symbol that separates integral from fractional digits. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+ The initial value of this property is derived from the settings in the **Region and Language** item in Control Panel.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A> property.  
+  
+ [!code-cpp[NumberDecimalSeparator#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberDecimalSeparator/CPP/numberdecimalseparator.cpp#1)]
+ [!code-csharp[NumberDecimalSeparator#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberDecimalSeparator/CS/numberdecimalseparator.cs#1)]
+ [!code-vb[NumberDecimalSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberDecimalSeparator/VB/numberdecimalseparator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set to an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberGroupSeparator">
+      <MemberSignature Language="C#" Value="public string NumberGroupSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NumberGroupSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberGroupSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that separates groups of digits to the left of the decimal in numeric values.</summary>
+        <value>The string that separates groups of digits to the left of the decimal in numeric values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is ",".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A> property is used with the "N" standard format string to define the symbol that separates groups of integral digits. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+ The initial value of this property is derived from the settings in the **Region and Language** item in Control Panel.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A> property.  
+  
+ [!code-cpp[NumberGroupSeparator#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberGroupSeparator/CPP/numbergroupseparator.cpp#1)]
+ [!code-csharp[NumberGroupSeparator#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberGroupSeparator/CS/numbergroupseparator.cs#1)]
+ [!code-vb[NumberGroupSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberGroupSeparator/VB/numbergroupseparator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberGroupSizes">
+      <MemberSignature Language="C#" Value="public int[] NumberGroupSizes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] NumberGroupSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberGroupSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of digits in each group to the left of the decimal in numeric values.</summary>
+        <value>The number of digits in each group to the left of the decimal in numeric values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is a one-dimensional array with only one element, which is set to 3.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A> property affects the result of number values that are formatted by using the "N" . If a custom numeric format string or other standard numeric format strings are used, the value of the <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A> property is ignored.  
+  
+ Every element in the one-dimensional array must be an integer from 1 through 9. The last element can be 0.  
+  
+ The first element of the array defines the number of elements in the least significant group of digits immediately to the left of the <xref:System.Globalization.NumberFormatInfo.NumberDecimalSeparator%2A>. Each subsequent element refers to the next significant group of digits to the left of the previous group. If the last element of the array is not 0, the remaining digits are grouped based on the last element of the array. If the last element is 0, the remaining digits are not grouped.  
+  
+ For example, if the array contains { 3, 4, 5 }, the digits are grouped similar to "55,55555,55555,55555,4444,333.00". If the array contains { 3, 4, 0 }, the digits are grouped similar to "55555555555555555,4444,333.00".  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A> property.  
+  
+ [!code-cpp[NumberGroupSizes#1](~/samples/snippets/cpp/VS_Snippets_CLR/NumberGroupSizes/CPP/numbergroupsizes.cpp#1)]
+ [!code-csharp[NumberGroupSizes#1](~/samples/snippets/csharp/VS_Snippets_CLR/NumberGroupSizes/CS/numbergroupsizes.cs#1)]
+ [!code-vb[NumberGroupSizes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/NumberGroupSizes/VB/numbergroupsizes.vb#1)]  
+  
+ The following example prints a value using different <xref:System.Globalization.NumberFormatInfo.NumberGroupSizes%2A> arrays.  
+  
+ [!code-cpp[Classic NumberFormatInfo.NumberGroupSizes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic NumberFormatInfo.NumberGroupSizes Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic NumberFormatInfo.NumberGroupSizes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic NumberFormatInfo.NumberGroupSizes Example/CS/source.cs#1)]
+ [!code-vb[Classic NumberFormatInfo.NumberGroupSizes Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic NumberFormatInfo.NumberGroupSizes Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set and the array contains an entry that is less than 0 or greater than 9.  
+  
+ -or-  
+  
+ The property is being set and the array contains an entry, other than the last entry, that is set to 0.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberNegativePattern">
+      <MemberSignature Language="C#" Value="public int NumberNegativePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NumberNegativePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.NumberNegativePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format pattern for negative numeric values.</summary>
+        <value>The format pattern for negative numeric values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.NumberNegativePattern%2A> property defines the format of negative values formatted with the "N" standard numeric format string. This property has one of the values in the following table. The symbol "-" is the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A> and `n` is a number.  
+  
+|Value|Associated pattern|  
+|-----------|------------------------|  
+|0|(n)|  
+|1|-n|  
+|2|- n|  
+|3|n-|  
+|4|n -|  
+  
+ The default value for the invariant culture returned by the <xref:System.Globalization.NumberFormatInfo.InvariantInfo%2A> property is 1, which represents "-n", where *n* is a number.  
+  
+   
+  
+## Examples  
+ The following example displays a value using different <xref:System.Globalization.NumberFormatInfo.NumberNegativePattern%2A> patterns.  
+  
+ [!code-cpp[Classic NumberFormatInfo.NumberNegativePattern Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic NumberFormatInfo.NumberNegativePattern Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic NumberFormatInfo.NumberNegativePattern Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic NumberFormatInfo.NumberNegativePattern Example/CS/source.cs#1)]
+ [!code-vb[Classic NumberFormatInfo.NumberNegativePattern Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic NumberFormatInfo.NumberNegativePattern Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 4.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentDecimalDigits">
+      <MemberSignature Language="C#" Value="public int PercentDecimalDigits { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentDecimalDigits" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentDecimalDigits" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of decimal places to use in percent values.</summary>
+        <value>The number of decimal places to use in percent values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is 2.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits%2A> property is used with the "P" standard format string without a precision specifier in numeric formatting operations. It defines the default number of fractional digits that appear after the decimal separator. This value is overridden if a precision specifier is used. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.PercentDecimalDigits%2A> property.  
+  
+ [!code-cpp[PercentDecimalDigits#1](~/samples/snippets/cpp/VS_Snippets_CLR/PercentDecimalDigits/CPP/percentdecimaldigits.cpp#1)]
+ [!code-csharp[PercentDecimalDigits#1](~/samples/snippets/csharp/VS_Snippets_CLR/PercentDecimalDigits/CS/percentdecimaldigits.cs#1)]
+ [!code-vb[PercentDecimalDigits#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PercentDecimalDigits/VB/percentdecimaldigits.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 99.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentDecimalSeparator">
+      <MemberSignature Language="C#" Value="public string PercentDecimalSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PercentDecimalSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentDecimalSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string to use as the decimal separator in percent values.</summary>
+        <value>The string to use as the decimal separator in percent values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is ".".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.PercentDecimalSeparator%2A> property is used with the "P" standard format string to define the symbol that separates integral from fractional digits. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.PercentDecimalSeparator%2A> property.  
+  
+ [!code-cpp[PercentDecimalSeparator#1](~/samples/snippets/cpp/VS_Snippets_CLR/PercentDecimalSeparator/CPP/percentdecimalseparator.cpp#1)]
+ [!code-csharp[PercentDecimalSeparator#1](~/samples/snippets/csharp/VS_Snippets_CLR/PercentDecimalSeparator/CS/percentdecimalseparator.cs#1)]
+ [!code-vb[PercentDecimalSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PercentDecimalSeparator/VB/percentdecimalseparator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set to an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentGroupSeparator">
+      <MemberSignature Language="C#" Value="public string PercentGroupSeparator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PercentGroupSeparator" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentGroupSeparator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that separates groups of digits to the left of the decimal in percent values.</summary>
+        <value>The string that separates groups of digits to the left of the decimal in percent values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is ",".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.PercentGroupSeparator%2A> property is used with the "P" standard format string to define the symbol that separates groups of integers. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.PercentGroupSeparator%2A> property.  
+  
+ [!code-cpp[PercentGroupSeparator#1](~/samples/snippets/cpp/VS_Snippets_CLR/PercentGroupSeparator/CPP/percentgroupseparator.cpp#1)]
+ [!code-csharp[PercentGroupSeparator#1](~/samples/snippets/csharp/VS_Snippets_CLR/PercentGroupSeparator/CS/percentgroupseparator.cs#1)]
+ [!code-vb[PercentGroupSeparator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PercentGroupSeparator/VB/percentgroupseparator.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentGroupSizes">
+      <MemberSignature Language="C#" Value="public int[] PercentGroupSizes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] PercentGroupSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentGroupSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of digits in each group to the left of the decimal in percent values.</summary>
+        <value>The number of digits in each group to the left of the decimal in percent values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is a one-dimensional array with only one element, which is set to 3.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.PercentGroupSizes%2A> property is used with the "P" standard format string to define the number of digits that appear in integral groups. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md). Every element in the one-dimensional array must be an integer from 1 through 9. The last element can be 0.  
+  
+ The first element of the array defines the number of elements in the least significant group of digits immediately to the left of the <xref:System.Globalization.NumberFormatInfo.PercentDecimalSeparator%2A>. Each subsequent element refers to the next significant group of digits to the left of the previous group. If the last element of the array is not 0, the remaining digits are grouped based on the last element of the array. If the last element is 0, the remaining digits are not grouped.  
+  
+ For example, if the array contains { 3, 4, 5 }, the digits are grouped similar to "55,55555,55555,55555,4444,333.00%". If the array contains { 3, 4, 0 }, the digits are grouped similar to "55555555555555555,4444,333.00%".  
+  
+   
+  
+## Examples  
+ The following example demonstrates the effect of changing the <xref:System.Globalization.NumberFormatInfo.PercentGroupSizes%2A> property.  
+  
+ [!code-cpp[PercentGroupSizes#1](~/samples/snippets/cpp/VS_Snippets_CLR/PercentGroupSizes/CPP/percentgroupsizes.cpp#1)]
+ [!code-csharp[PercentGroupSizes#1](~/samples/snippets/csharp/VS_Snippets_CLR/PercentGroupSizes/CS/percentgroupsizes.cs#1)]
+ [!code-vb[PercentGroupSizes#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/PercentGroupSizes/VB/percentgroupsizes.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The property is being set and the array contains an entry that is less than 0 or greater than 9.  
+  
+ -or-  
+  
+ The property is being set and the array contains an entry, other than the last entry, that is set to 0.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentNegativePattern">
+      <MemberSignature Language="C#" Value="public int PercentNegativePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentNegativePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentNegativePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format pattern for negative percent values.</summary>
+        <value>The format pattern for negative percent values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is 0, which represents "-n %", where "%" is the <see cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" /> and <paramref name="n" /> is a number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.PercentNegativePattern%2A> property is used with the "P" standard format string to define the pattern of negative percentage values. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md). This property has one of the values in the following table. The symbol "%" is the <xref:System.Globalization.NumberFormatInfo.PercentSymbol%2A>, the symbol "-" is the <xref:System.Globalization.NumberFormatInfo.NegativeSign%2A>, and `n` is a number. Values 3-11 were introduced in the .NET Framework 2.0 and cannot be used in earlier versions.  
+  
+|Value|Associated pattern|  
+|-----------|------------------------|  
+|0|-n %|  
+|1|-n%|  
+|2|-%n|  
+|3|%-n|  
+|4|%n-|  
+|5|n-%|  
+|6|n%-|  
+|7|-% n|  
+|8|n %-|  
+|9|% n-|  
+|10|% -n|  
+|11|n- %|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 11.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentPositivePattern">
+      <MemberSignature Language="C#" Value="public int PercentPositivePattern { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PercentPositivePattern" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentPositivePattern" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format pattern for positive percent values.</summary>
+        <value>The format pattern for positive percent values. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is 0, which represents "n %", where "%" is the <see cref="P:System.Globalization.NumberFormatInfo.PercentSymbol" /> and <paramref name="n" /> is a number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Globalization.NumberFormatInfo.PercentPositivePattern%2A> property is used with the "P" standard format string to define pattern of positive percentage values. For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md). This property has one of the values in the following table. The symbol "%" is the <xref:System.Globalization.NumberFormatInfo.PercentSymbol%2A> and `n` is a number.  
+  
+|Value|Associated pattern|  
+|-----------|------------------------|  
+|0|n %|  
+|1|n%|  
+|2|%n|  
+|3|% n|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than 0 or greater than 3.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PercentSymbol">
+      <MemberSignature Language="C#" Value="public string PercentSymbol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PercentSymbol" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PercentSymbol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string to use as the percent symbol.</summary>
+        <value>The string to use as the percent symbol. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is "%".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string assigned to the <xref:System.Globalization.NumberFormatInfo.PercentSymbol%2A> property is included in the result string when a numeric value is formatted with the "P"  or with a format string that includes the "%" .  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PerMilleSymbol">
+      <MemberSignature Language="C#" Value="public string PerMilleSymbol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PerMilleSymbol" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PerMilleSymbol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string to use as the per mille symbol.</summary>
+        <value>The string to use as the per mille symbol. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is "‰", which is the Unicode character U+2030.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string assigned to the <xref:System.Globalization.NumberFormatInfo.PerMilleSymbol%2A> property is included in the result string when a numeric value is formatted with a format string that includes the "‰" .  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PositiveInfinitySymbol">
+      <MemberSignature Language="C#" Value="public string PositiveInfinitySymbol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PositiveInfinitySymbol" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PositiveInfinitySymbol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that represents positive infinity.</summary>
+        <value>The string that represents positive infinity. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is "Infinity".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on positive infinity, see <xref:System.Double> or <xref:System.Single>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The property is being set to <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PositiveSign">
+      <MemberSignature Language="C#" Value="public string PositiveSign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PositiveSign" />
+      <MemberSignature Language="DocId" Value="P:System.Globalization.NumberFormatInfo.PositiveSign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that denotes that the associated number is positive.</summary>
+        <value>The string that denotes that the associated number is positive. The default for <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo" /> is "+".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is used only for parsing numeric strings, not for formatting.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">In a set operation, the value to be assigned is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The property is being set and the <see cref="T:System.Globalization.NumberFormatInfo" /> object is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="public static System.Globalization.NumberFormatInfo ReadOnly (System.Globalization.NumberFormatInfo nfi);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.NumberFormatInfo ReadOnly(class System.Globalization.NumberFormatInfo nfi) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.NumberFormatInfo.ReadOnly(System.Globalization.NumberFormatInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.NumberFormatInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nfi" Type="System.Globalization.NumberFormatInfo" />
+      </Parameters>
+      <Docs>
+        <param name="nfi">The <see cref="T:System.Globalization.NumberFormatInfo" /> to wrap.</param>
+        <summary>Returns a read-only <see cref="T:System.Globalization.NumberFormatInfo" /> wrapper.</summary>
+        <returns>A read-only <see cref="T:System.Globalization.NumberFormatInfo" /> wrapper around <paramref name="nfi" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This wrapper prevents any modifications to `nfi`.  
+  
+ Attempting to perform an assignment to a property of a read-only <xref:System.Globalization.NumberFormatInfo> causes an <xref:System.InvalidOperationException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="nfi" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,658 @@
+<Type Name="BuiltInTypeKind" FullName="System.Data.Metadata.Edm.BuiltInTypeKind">
+  <TypeSignature Language="C#" Value="public enum BuiltInTypeKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuiltInTypeKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.BuiltInTypeKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents an enumeration that specifies the list of all built-in types in a conceptual model.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AssociationEndMember">
+      <MemberSignature Language="C#" Value="AssociationEndMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind AssociationEndMember = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.AssociationEndMember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.AssociationEndMember" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssociationSet">
+      <MemberSignature Language="C#" Value="AssociationSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind AssociationSet = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.AssociationSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.AssociationSet" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssociationSetEnd">
+      <MemberSignature Language="C#" Value="AssociationSetEnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind AssociationSetEnd = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.AssociationSetEnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.AssociationSetEnd" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssociationType">
+      <MemberSignature Language="C#" Value="AssociationType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind AssociationType = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.AssociationType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.AssociationType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionKind">
+      <MemberSignature Language="C#" Value="CollectionKind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind CollectionKind = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.CollectionKind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.CollectionKind" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectionType">
+      <MemberSignature Language="C#" Value="CollectionType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind CollectionType = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.CollectionType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.CollectionType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ComplexType">
+      <MemberSignature Language="C#" Value="ComplexType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind ComplexType = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.ComplexType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.ComplexType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Documentation">
+      <MemberSignature Language="C#" Value="Documentation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind Documentation = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.Documentation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.Documentation" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmFunction">
+      <MemberSignature Language="C#" Value="EdmFunction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EdmFunction = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EdmFunction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EdmFunction" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmMember">
+      <MemberSignature Language="C#" Value="EdmMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EdmMember = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EdmMember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EdmMember" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmProperty">
+      <MemberSignature Language="C#" Value="EdmProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EdmProperty = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EdmProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EdmProperty" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmType">
+      <MemberSignature Language="C#" Value="EdmType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EdmType = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EdmType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EdmType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityContainer">
+      <MemberSignature Language="C#" Value="EntityContainer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EntityContainer = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EntityContainer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntitySet">
+      <MemberSignature Language="C#" Value="EntitySet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EntitySet = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EntitySet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntitySet" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntitySetBase">
+      <MemberSignature Language="C#" Value="EntitySetBase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EntitySetBase = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EntitySetBase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntitySetBase" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityType">
+      <MemberSignature Language="C#" Value="EntityType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EntityType = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EntityType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntityType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityTypeBase">
+      <MemberSignature Language="C#" Value="EntityTypeBase" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EntityTypeBase = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EntityTypeBase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EntityTypeBase" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumMember">
+      <MemberSignature Language="C#" Value="EnumMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EnumMember = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EnumMember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.EdmEnumMember" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumType">
+      <MemberSignature Language="C#" Value="EnumType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind EnumType = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.EnumType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.EnumType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Facet">
+      <MemberSignature Language="C#" Value="Facet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind Facet = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.Facet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.Facet" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionParameter">
+      <MemberSignature Language="C#" Value="FunctionParameter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind FunctionParameter = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.FunctionParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.FunctionParameter" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalItem">
+      <MemberSignature Language="C#" Value="GlobalItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind GlobalItem = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.GlobalItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.GlobalItem" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataItem">
+      <MemberSignature Language="C#" Value="MetadataItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind MetadataItem = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.MetadataItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.MetadataItem" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataProperty">
+      <MemberSignature Language="C#" Value="MetadataProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind MetadataProperty = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.MetadataProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.MetadataProperty" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigationProperty">
+      <MemberSignature Language="C#" Value="NavigationProperty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind NavigationProperty = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.NavigationProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.NavigationProperty" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationAction">
+      <MemberSignature Language="C#" Value="OperationAction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind OperationAction = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.OperationAction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.OperationAction" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterMode">
+      <MemberSignature Language="C#" Value="ParameterMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind ParameterMode = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.ParameterMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.ParameterMode" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimitiveType">
+      <MemberSignature Language="C#" Value="PrimitiveType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind PrimitiveType = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.PrimitiveType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.PrimitiveType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimitiveTypeKind">
+      <MemberSignature Language="C#" Value="PrimitiveTypeKind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind PrimitiveTypeKind = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.PrimitiveTypeKind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.PrimitiveTypeKind" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderManifest">
+      <MemberSignature Language="C#" Value="ProviderManifest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind ProviderManifest = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.ProviderManifest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.ProviderManifest" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferentialConstraint">
+      <MemberSignature Language="C#" Value="ReferentialConstraint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind ReferentialConstraint = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.ReferentialConstraint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.ReferentialConstraint" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RefType">
+      <MemberSignature Language="C#" Value="RefType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind RefType = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.RefType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RefType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipEndMember">
+      <MemberSignature Language="C#" Value="RelationshipEndMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind RelationshipEndMember = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.RelationshipEndMember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RelationshipEndMember" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipMultiplicity">
+      <MemberSignature Language="C#" Value="RelationshipMultiplicity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind RelationshipMultiplicity = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.RelationshipMultiplicity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RelationshipMultiplicity" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipSet">
+      <MemberSignature Language="C#" Value="RelationshipSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind RelationshipSet = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.RelationshipSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RelationshipSet" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationshipType">
+      <MemberSignature Language="C#" Value="RelationshipType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind RelationshipType = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.RelationshipType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RelationshipType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RowType">
+      <MemberSignature Language="C#" Value="RowType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind RowType = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.RowType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.RowType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SimpleType">
+      <MemberSignature Language="C#" Value="SimpleType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind SimpleType = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.SimpleType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.SimpleType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StructuralType">
+      <MemberSignature Language="C#" Value="StructuralType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind StructuralType = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.StructuralType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.StructuralType" /> type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeUsage">
+      <MemberSignature Language="C#" Value="TypeUsage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.BuiltInTypeKind TypeUsage = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.BuiltInTypeKind.TypeUsage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An enumeration member that indicates the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

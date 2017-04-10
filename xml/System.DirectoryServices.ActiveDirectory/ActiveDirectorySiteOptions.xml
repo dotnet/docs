@@ -1,0 +1,215 @@
+<Type Name="ActiveDirectorySiteOptions" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions">
+  <TypeSignature Language="C#" Value="public enum ActiveDirectorySiteOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActiveDirectorySiteOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the bit identifiers for the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" /> object site options.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoInterSiteTopologyDisabled">
+      <MemberSignature Language="C#" Value="AutoInterSiteTopologyDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions AutoInterSiteTopologyDisabled = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.AutoInterSiteTopologyDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Automatic intra-site topology generation is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoMinimumHopDisabled">
+      <MemberSignature Language="C#" Value="AutoMinimumHopDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions AutoMinimumHopDisabled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.AutoMinimumHopDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Automatic minimum hops topology is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoTopologyDisabled">
+      <MemberSignature Language="C#" Value="AutoTopologyDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions AutoTopologyDisabled = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.AutoTopologyDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Inter-site topology generation is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceKccWindows2003Behavior">
+      <MemberSignature Language="C#" Value="ForceKccWindows2003Behavior" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions ForceKccWindows2003Behavior = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.ForceKccWindows2003Behavior" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The KCC (Knowledge Consistency Checker) is forced to operate in Windows Server 2003 behavior mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupMembershipCachingEnabled">
+      <MemberSignature Language="C#" Value="GroupMembershipCachingEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions GroupMembershipCachingEnabled = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.GroupMembershipCachingEnabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Group memberships for users is enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No site options are set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RandomBridgeHeaderServerSelectionDisabled">
+      <MemberSignature Language="C#" Value="RandomBridgeHeaderServerSelectionDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions RandomBridgeHeaderServerSelectionDisabled = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.RandomBridgeHeaderServerSelectionDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The KCC can randomly pick a bridgehead server when creating a connection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RedundantServerTopologyEnabled">
+      <MemberSignature Language="C#" Value="RedundantServerTopologyEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions RedundantServerTopologyEnabled = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.RedundantServerTopologyEnabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creation of static failover connections is enabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaleServerDetectDisabled">
+      <MemberSignature Language="C#" Value="StaleServerDetectDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions StaleServerDetectDisabled = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.StaleServerDetectDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stale server detection is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopologyCleanupDisabled">
+      <MemberSignature Language="C#" Value="TopologyCleanupDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions TopologyCleanupDisabled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.TopologyCleanupDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Topology cleanup is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseHashingForReplicationSchedule">
+      <MemberSignature Language="C#" Value="UseHashingForReplicationSchedule" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions UseHashingForReplicationSchedule = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.UseHashingForReplicationSchedule" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The KCC is allowed to use hashing when creating a replication schedule.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseWindows2000IstgElection">
+      <MemberSignature Language="C#" Value="UseWindows2000IstgElection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions UseWindows2000IstgElection = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions.UseWindows2000IstgElection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The KCC is forced to use the Windows 2000 ISTG election algorithm.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

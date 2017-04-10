@@ -1,0 +1,81 @@
+<Type Name="CompilerGlobalScopeAttribute" FullName="System.Runtime.CompilerServices.CompilerGlobalScopeAttribute">
+  <TypeSignature Language="C#" Value="public class CompilerGlobalScopeAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompilerGlobalScopeAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a class should be treated as if it has global scope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to classes.  
+  
+ This class is used only for communication with debugger tools.  
+  
+ The classes in <xref:System.Runtime.CompilerServices> are for compiler writers use only.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute>.  
+  
+ [!code-csharp[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.CompilerGlobalScopeAttribute/cs/example.cs#1)]
+ [!code-vb[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.CompilerGlobalScopeAttribute/vb/example.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompilerGlobalScopeAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to apply the <xref:System.Runtime.CompilerServices.CompilerGlobalScopeAttribute>.  
+  
+ [!code-csharp[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/Runtime.CompilerServices.CompilerGlobalScopeAttribute/cs/example.cs#1)]
+ [!code-vb[Runtime.CompilerServices.CompilerGlobalScopeAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Runtime.CompilerServices.CompilerGlobalScopeAttribute/vb/example.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

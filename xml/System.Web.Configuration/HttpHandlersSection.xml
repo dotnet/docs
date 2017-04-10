@@ -1,0 +1,125 @@
+<Type Name="HttpHandlersSection" FullName="System.Web.Configuration.HttpHandlersSection">
+  <TypeSignature Language="C#" Value="public sealed class HttpHandlersSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpHandlersSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpHandlersSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Configures an HTTP handler for a Web application. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpHandlersSection> class provides a way to programmatically access and modify the `httpHandlers` section of a configuration file. This type is part of a group that includes the <xref:System.Web.Configuration.HttpHandlerAction> and the <xref:System.Web.Configuration.HttpHandlerActionCollection> types.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Configuration.HttpHandlersSection> can read and write information from and to the related section of the configuration file according to the <xref:System.Configuration.SectionInformation.AllowDefinition%2A> section property whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.HttpHandlersSection> class to access the `httpHandlers` section of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.HttpHandlers#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpHandlers/CS/httphandlers.cs#1)]
+ [!code-vb[System.Web.Configuration.HttpHandlers#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpHandlers/VB/httphandlers.vb#1)]  
+  
+ The following configuration excerpt shows how to specify values declaratively for the `httpHandlers` section.  
+  
+```  
+<httpHandlers>  
+  <add path="Calculator.custom"  
+    type="Samples.Aspnet.SystemWebConfiguration.Calculator, CalculatorHandler"  
+    verb="GET" validate="false" />  
+</httpHandlers>   
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpHandlersSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlersSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpHandlersSection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpHandlersSection.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.HttpHandlersSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handlers">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpHandlerActionCollection Handlers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpHandlerActionCollection Handlers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlersSection.Handlers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("", IsDefaultCollection=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.HttpHandlerActionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Configuration.HttpHandlerActionCollection" /> collection of <see cref="T:System.Web.Configuration.HttpHandlerAction" /> objects contained by the <see cref="T:System.Web.Configuration.HttpHandlersSection" /> object.</summary>
+        <value>An <see cref="T:System.Web.Configuration.HttpHandlerActionCollection" /> that contains the <see cref="T:System.Web.Configuration.HttpHandlerAction" /> objects, or handlers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpHandlersSection.Handlers%2A> property collection returned by this method does not refer to any actual element in the underlying configuration file. It is a <xref:System.Web.Configuration> construct that allows easy access to the handlers it contains. This is a common pattern for handling the elements of a configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Configuration.HttpHandlerAction> handlers.  
+  
+ [!code-csharp[System.Web.Configuration.HttpHandlers#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpHandlers/CS/httphandlers.cs#4)]
+ [!code-vb[System.Web.Configuration.HttpHandlers#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpHandlers/VB/httphandlers.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlersSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,138 @@
+<Type Name="LenientObjectPrototype" FullName="Microsoft.JScript.LenientObjectPrototype">
+  <TypeSignature Language="C#" Value="public class LenientObjectPrototype : Microsoft.JScript.ObjectPrototype" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LenientObjectPrototype extends Microsoft.JScript.ObjectPrototype" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientObjectPrototype" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.ObjectPrototype</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientObjectPrototype" /> class belongs to the built-in object model category.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="constructor">
+      <MemberSignature Language="C#" Value="public object constructor;" />
+      <MemberSignature Language="ILAsm" Value=".field public object constructor" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.constructor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="hasOwnProperty">
+      <MemberSignature Language="C#" Value="public object hasOwnProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public object hasOwnProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.hasOwnProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ObjectPrototype.hasOwnProperty(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="isPrototypeOf">
+      <MemberSignature Language="C#" Value="public object isPrototypeOf;" />
+      <MemberSignature Language="ILAsm" Value=".field public object isPrototypeOf" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.isPrototypeOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ObjectPrototype.isPrototypeOf(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="propertyIsEnumerable">
+      <MemberSignature Language="C#" Value="public object propertyIsEnumerable;" />
+      <MemberSignature Language="ILAsm" Value=".field public object propertyIsEnumerable" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.propertyIsEnumerable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ObjectPrototype.propertyIsEnumerable(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toLocaleString">
+      <MemberSignature Language="C#" Value="public object toLocaleString;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toLocaleString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.toLocaleString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ObjectPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="toString">
+      <MemberSignature Language="C#" Value="public object toString;" />
+      <MemberSignature Language="ILAsm" Value=".field public object toString" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.toString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ObjectPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="valueOf">
+      <MemberSignature Language="C#" Value="public object valueOf;" />
+      <MemberSignature Language="ILAsm" Value=".field public object valueOf" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientObjectPrototype.valueOf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ObjectPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

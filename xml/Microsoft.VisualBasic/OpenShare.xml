@@ -1,0 +1,110 @@
+<Type Name="OpenShare" FullName="Microsoft.VisualBasic.OpenShare">
+  <TypeSignature Language="C#" Value="public enum OpenShare" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenShare extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenShare" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates how to open a file when calling file-access functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call file access–related functions, you can use enumeration members in your code in place of the actual values.  
+  
+ The `OpenShare` enumeration defines constants that specify whether or not other processes can access the file while your application has it open. The following table lists the `OpenShare` enumeration members.  
+  
+ When performing file I/O operations, the `My.Computer.FileSystem` object provides greater performance and ease of use than legacy file I/O methods. For more information, see <xref:Microsoft.VisualBasic.FileSystem> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenShare Default = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenShare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see langword="LockReadWrite" />. This is the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LockRead">
+      <MemberSignature Language="C#" Value="LockRead" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenShare LockRead = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.LockRead" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenShare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Other processes cannot read the file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LockReadWrite">
+      <MemberSignature Language="C#" Value="LockReadWrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenShare LockReadWrite = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.LockReadWrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenShare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Other processes cannot read or write to the file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LockWrite">
+      <MemberSignature Language="C#" Value="LockWrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenShare LockWrite = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.LockWrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenShare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Other processes cannot write to the file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shared">
+      <MemberSignature Language="C#" Value="Shared" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenShare Shared = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenShare.Shared" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.OpenShare</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Any process can read or write to the file.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

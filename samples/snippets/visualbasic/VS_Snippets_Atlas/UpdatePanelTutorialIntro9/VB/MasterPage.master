@@ -1,0 +1,70 @@
+<%-- <Snippet1> --%>
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+    ' <Snippet4>
+    Public Property Offset() As Integer
+        Get
+            If ViewState("Offset") Is Nothing Then
+                Return 0
+            Else : Return ViewState("Offset")
+            End If
+        End Get
+        Set(ByVal value As Integer)
+            ViewState("Offset") = value
+        End Set
+    End Property
+    ' </Snippet4>
+    ' <Snippet3>
+    Protected Sub MasterButton_Click(ByVal Sender As Object, ByVal E As EventArgs)
+    
+        Select Case Sender.ID
+        
+            Case "IncrementButton"
+                Me.Offset = Me.Offset + 1
+            Case "DecrementButton"
+                Me.Offset = Me.Offset - 1
+        End Select
+        Dim upl As UpdatePanel
+        upl = ContentPlaceHolder1.FindControl("UpdatePanel1")
+        upl.Update()
+        Dim cal As Calendar
+        cal = ContentPlaceHolder1.FindControl("Calendar1")
+        Dim newDateTime As DateTime
+        newDateTime = DateTime.Today.Add(New TimeSpan(Offset, 0, 0, 0))
+        cal.SelectedDate = newDateTime
+    End Sub
+    ' </Snippet3>
+    ' <Snippet2>
+    Protected Sub Page_Load(ByVal Sender As Object, ByVal E As EventArgs)
+        ScriptManager1.RegisterAsyncPostBackControl(DecrementButton)
+        ScriptManager1.RegisterAsyncPostBackControl(IncrementButton)
+    End Sub
+    ' </Snippet2>
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>UpdatePanel in Master Pages</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        Master Page<br />
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        Change date &nbsp;
+        <asp:Button ID="DecrementButton" runat="server" Text="-" OnClick="MasterButton_Click" />
+        <asp:Button ID="IncrementButton" runat="server" Text="+" OnClick="MasterButton_Click" />
+        <hr />
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>
+<%-- </Snippet1> --%>

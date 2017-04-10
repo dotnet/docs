@@ -1,0 +1,84 @@
+<Type Name="ResolveCompletedEventArgs" FullName="System.Net.PeerToPeer.ResolveCompletedEventArgs">
+  <TypeSignature Language="C#" Value="public class ResolveCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.ResolveCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used in conjunction with the <see cref="E:System.Net.PeerToPeer.PeerNameResolver.ResolveCompleted" /> event, which is signaled when a resolve request for a specific <see cref="T:System.Net.PeerToPeer.PeerName" /> has completed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To use the ResolveCompletedEventArgs object, instantiate a <xref:System.Net.PeerToPeer.PeerNameResolver> object and utilize one of the Resolve methods. For asynchronous processing, use the <xref:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync%2A> method.  
+  
+ When the Resolver has reached the end of the Cloud(s) to query for the <xref:System.Net.PeerToPeer.PeerName>, or it has reached the maximum number of record entries for the <xref:System.Net.PeerToPeer.PeerNameRecordCollection> it is constructing, the event to complete the resolve process is raised, and the associated delegate causes ResolveAsync to complete. The event can also be raised for abnormal completions, which do not return a collection.  
+  
+ This event is raised only once when all endpoints have been found.  
+  
+ All references to this instance of the Resolver object are coordinated with a supplied token, which is a unique, developer-determined identifier for this asynchronous resolve request.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResolveCompletedEventArgs (System.Net.PeerToPeer.PeerNameRecordCollection peerNameRecordCollection, Exception error, bool canceled, object userToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.PeerToPeer.PeerNameRecordCollection peerNameRecordCollection, class System.Exception error, bool canceled, object userToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.ResolveCompletedEventArgs.#ctor(System.Net.PeerToPeer.PeerNameRecordCollection,System.Exception,System.Boolean,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="peerNameRecordCollection" Type="System.Net.PeerToPeer.PeerNameRecordCollection" />
+        <Parameter Name="error" Type="System.Exception" />
+        <Parameter Name="canceled" Type="System.Boolean" />
+        <Parameter Name="userToken" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="peerNameRecordCollection">The collection associated with the peer name that was resolved.</param>
+        <param name="error">Returns an exception if an error occurred.</param>
+        <param name="canceled">
+          <see langword="True" /> if the <see cref="Overload:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync" /> operation was cancelled, otherwise <see langword="False" />.</param>
+        <param name="userToken">The user token specified when a <see cref="Overload:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync" /> operation was started.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.PeerToPeer.ResolveCompletedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PeerNameRecordCollection">
+      <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.PeerNameRecordCollection PeerNameRecordCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.PeerNameRecordCollection PeerNameRecordCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.ResolveCompletedEventArgs.PeerNameRecordCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.PeerNameRecordCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Net.PeerToPeer.PeerNameRecordCollection" /> object to resolve.</summary>
+        <value>The <see cref="T:System.Net.PeerToPeer.PeerNameRecordCollection" /> object to resolve is the one found in response to a <see cref="Overload:System.Net.PeerToPeer.PeerNameResolver.ResolveAsync" /> operation on a specific <see cref="T:System.Net.PeerToPeer.PeerName" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is raised when all clouds have been queried for this peer name, or when the maximum number of peer name records has been retrieved. It is raised by putting the peer name record collection into the <xref:System.Net.PeerToPeer.ResolveCompletedEventArgs> event argument for which the OnResolveCompleted method is waiting.  The change in state awakens the process.  
+  
+ Unless explicitly specified, the default value for all properties is `null` for reference types and zero (0) for properties of type `int`. If no records were found, `null` is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

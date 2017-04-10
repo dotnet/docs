@@ -1,0 +1,55 @@
+<Type Name="ProjectCollection+ProjectAddedToProjectCollectionEventArgs" FullName="Microsoft.Build.Evaluation.ProjectCollection+ProjectAddedToProjectCollectionEventArgs">
+  <TypeSignature Language="C#" Value="public class ProjectCollection.ProjectAddedToProjectCollectionEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ProjectCollection/ProjectAddedToProjectCollectionEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about what project just got added to the <see cref="T:Microsoft.Build.Evaluation.ProjectCollection" /> project collection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProjectAddedToProjectCollectionEventArgs (Microsoft.Build.Construction.ProjectRootElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Construction.ProjectRootElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs.#ctor(Microsoft.Build.Construction.ProjectRootElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.Build.Construction.ProjectRootElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The root element which was added to the project collection.</param>
+        <summary>The root element which was added to the project collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProjectRootElement">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectRootElement ProjectRootElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ProjectRootElement ProjectRootElement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.ProjectCollection.ProjectAddedToProjectCollectionEventArgs.ProjectRootElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Construction.ProjectRootElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Root element which was added to the project collection.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Construction.ProjectRootElement" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

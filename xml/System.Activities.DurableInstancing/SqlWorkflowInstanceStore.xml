@@ -1,0 +1,430 @@
+<Type Name="SqlWorkflowInstanceStore" FullName="System.Activities.DurableInstancing.SqlWorkflowInstanceStore">
+  <TypeSignature Language="C#" Value="public sealed class SqlWorkflowInstanceStore : System.Runtime.DurableInstancing.InstanceStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlWorkflowInstanceStore extends System.Runtime.DurableInstancing.InstanceStore" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.DurableInstancing.InstanceStore</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Derives from the abstract <see cref="T:System.Runtime.DurableInstancing.InstanceStore" /> class of the persistence functionality and provides implementation to allow saving instance state information to and loading instance state information from an SQL Server 2005 or SQL Server 2008 database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> uses the <xref:System.Runtime.Serialization.NetDataContractSerializer> to serialize complex types; all types used in workflows to be persisted with this instance store must be serializable using <xref:System.Runtime.Serialization.NetDataContractSerializer>.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Persistence Participants](~/docs/framework/windows-workflow-foundation/persistence-participants.md) sample.  
+  
+<!-- TODO: review snippet reference  [!CODE [wfs_PersistenceParticipant#2](wfs_PersistenceParticipant#2)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlWorkflowInstanceStore ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlWorkflowInstanceStore (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">The connection string to a persistence database.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> class by using the <paramref name="connectionString" /> parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTryCommand">
+      <MemberSignature Language="C#" Value="protected override IAsyncResult BeginTryCommand (System.Runtime.DurableInstancing.InstancePersistenceContext context, System.Runtime.DurableInstancing.InstancePersistenceCommand command, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.IAsyncResult BeginTryCommand(class System.Runtime.DurableInstancing.InstancePersistenceContext context, class System.Runtime.DurableInstancing.InstancePersistenceCommand command, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.BeginTryCommand(System.Runtime.DurableInstancing.InstancePersistenceContext,System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Runtime.DurableInstancing.InstancePersistenceContext" />
+        <Parameter Name="command" Type="System.Runtime.DurableInstancing.InstancePersistenceCommand" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="command">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <param name="callback">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a connection string with parameters that are used to connect to an underlying persistence database.</summary>
+        <value>The connection string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTryCommand">
+      <MemberSignature Language="C#" Value="protected override bool EndTryCommand (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool EndTryCommand(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.EndTryCommand(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnqueueRunCommands">
+      <MemberSignature Language="C#" Value="public bool EnqueueRunCommands { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnqueueRunCommands" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.EnqueueRunCommands" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or set a value that indicates whether Run commands are enqueued. This property is used internally by the SQL Workflow Instance Store and it should not be used in your applications.</summary>
+        <value>
+          <see langword="true" /> if the Run commands are enqueued; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostLockRenewalPeriod">
+      <MemberSignature Language="C#" Value="public TimeSpan HostLockRenewalPeriod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan HostLockRenewalPeriod" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.HostLockRenewalPeriod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the time period within which the host renews its lock on a workflow service instance.</summary>
+        <value>The time period.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the host does not renew the lock (in other words, extend the lease) with this in this time period, the persistence provider unlocks the instance and another host may lock the instance. The value is a <xref:System.TimeSpan> of the form “hh:mm:ss”. The minimum permitted value is “00:00:01” (1 sec). The default value of this property is “00:00:30” (30 seconds).  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using HostLockRenewalPeriod in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/windows-workflow-foundation/samples/built-in-configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceCompletionAction">
+      <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceCompletionAction InstanceCompletionAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceCompletionAction InstanceCompletionAction" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DurableInstancing.InstanceCompletionAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the action to be taken after a workflow instance completes. Possible values are “DeleteNothing” and “DeleteAll”. The default value is “DeleteAll”. If the property is set to “DeleteNothing”, the persistence provider keeps all the instance data and metadata in the persistence database after the workflow instance completes. If the property is set to “DeleteAll”, the persistence provider deletes all the instance data and metadata after the workflow instance completes.</summary>
+        <value>The action to be taken after a workflow completes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Possible values are “DeleteNothing” and “DeleteAll”. The default value is “DeleteAll”. If the property is set to “DeleteNothing”, the persistence provider keeps all the instance data and metadata in the persistence database after the workflow instance completes. If the property is set to “DeleteAll”, the persistence provider deletes all the instance data and metadata after the workflow instance completes.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using InstanceCompletionAction in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/windows-workflow-foundation/samples/built-in-configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceEncodingOption">
+      <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceEncodingOption InstanceEncodingOption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceEncodingOption InstanceEncodingOption" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceEncodingOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DurableInstancing.InstanceEncodingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a value that indicates whether the instance data must be compressed.</summary>
+        <value>The possible values are “None” and “GZip”. The default is “None”.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value is set to “GZip”, the instance data is compressed using the GZip algorithm.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using InstanceEncodingOption in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/windows-workflow-foundation/samples/built-in-configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceLockedExceptionAction">
+      <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceLockedExceptionAction InstanceLockedExceptionAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceLockedExceptionAction InstanceLockedExceptionAction" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DurableInstancing.InstanceLockedExceptionAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the action to be taken when the persistence provider catches an <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" />.</summary>
+        <value>The action to be taken when the persistence provider catches an <see cref="T:System.Runtime.DurableInstancing.InstanceLockedException" /></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify what action a service host should take when a workflow service instance experiences an <xref:System.Runtime.DurableInstancing.InstanceLockedException>. The service host receives an <xref:System.Runtime.DurableInstancing.InstanceLockedException> when it tries to lock an instance that is already locked by another owner. The possible values are in the following list:  
+  
+-   **None**. The service host does not attempt to lock the instance and passes the <xref:System.Runtime.DurableInstancing.InstanceLockedException> to the caller.  
+  
+-   **BasicRetry**. The service host reattempts to lock the instance with a linear retry interval and passes the exception to the caller at the end of the sequence.  
+  
+-   **AggressiveRetry**. The service host reattempts to lock the instance with an exponentially increasing delay and passes the <xref:System.Runtime.DurableInstancing.InstanceLockedException> to the caller at the end of the sequence. The intervals are short in the beginning in an attempt to acquire the lock as quickly as possible and the intervals gets bigger with every unsuccessful attempt.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using InstanceLockedExceptionAction in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/windows-workflow-foundation/samples/built-in-configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConnectionRetries">
+      <MemberSignature Language="C#" Value="public int MaxConnectionRetries { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConnectionRetries" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.MaxConnectionRetries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of SQL connection retries.  The default value is 4.</summary>
+        <value>An integer representing the maximum number of SQL connection retries.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnFreeInstanceHandle">
+      <MemberSignature Language="C#" Value="protected override void OnFreeInstanceHandle (System.Runtime.DurableInstancing.InstanceHandle instanceHandle, object userContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFreeInstanceHandle(class System.Runtime.DurableInstancing.InstanceHandle instanceHandle, object userContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.OnFreeInstanceHandle(System.Runtime.DurableInstancing.InstanceHandle,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceHandle" Type="System.Runtime.DurableInstancing.InstanceHandle" />
+        <Parameter Name="userContext" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceHandle">To be added.</param>
+        <param name="userContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnNewInstanceHandle">
+      <MemberSignature Language="C#" Value="protected override object OnNewInstanceHandle (System.Runtime.DurableInstancing.InstanceHandle instanceHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object OnNewInstanceHandle(class System.Runtime.DurableInstancing.InstanceHandle instanceHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.OnNewInstanceHandle(System.Runtime.DurableInstancing.InstanceHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceHandle" Type="System.Runtime.DurableInstancing.InstanceHandle" />
+      </Parameters>
+      <Docs>
+        <param name="instanceHandle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Promote">
+      <MemberSignature Language="C#" Value="public void Promote (string name, System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XName&gt; promoteAsVariant, System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XName&gt; promoteAsBinary);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Promote(string name, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XName&gt; promoteAsVariant, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XName&gt; promoteAsBinary) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.Promote(System.String,System.Collections.Generic.IEnumerable{System.Xml.Linq.XName},System.Collections.Generic.IEnumerable{System.Xml.Linq.XName})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="promoteAsVariant" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XName&gt;" />
+        <Parameter Name="promoteAsBinary" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XName&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the promotion itself.</param>
+        <param name="promoteAsVariant">The properties that must be promoted as variants.</param>
+        <param name="promoteAsBinary">The properties that must be promoted as a binary stream.</param>
+        <summary>Associates the specified properties with a workflow instance so that you can query for instances based on specific values for these properties. These properties that can be used in external queries can be of simple types (for example: Int64, String, and so on) or of a serialized binary type (byte[]). Binary properties are typically used to store tracking data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates using Promote in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [SQLStoreExtensibility](~/docs/framework/windows-workflow-foundation/samples/sqlstoreextensibility.md) sample.  
+  
+ [!code-csharp[wfs_SQLStoreExtensibility#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_sqlstoreextensibility/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunnableInstancesDetectionPeriod">
+      <MemberSignature Language="C#" Value="public TimeSpan RunnableInstancesDetectionPeriod { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RunnableInstancesDetectionPeriod" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.RunnableInstancesDetectionPeriod" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the time period after which the SQL Workflow Instance Store runs a detection task to detect any runnable or activatable workflow instances in the persistence database after the previous detection cycle.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> runs an internal task that periodically wakes up and checks if any runnable instances exist in the persistence database. An instance is *runnable*, if it is not in the suspended state or the completed state and satisfies the following conditions:  
+  
+-   The instance is unlocked and has a pending timer that has expired.  
+  
+-   The instance is unlocked and its status is **Executing**.  
+  
+-   The instance has an expired lock on it.  
+  
+ The SQL Workflow Instance Store raises the <xref:System.Activities.DurableInstancing.HasRunnableWorkflowEvent> when it finds a runnable instance in the database and also finds a workflow host capable of loading the instance running on the computer.  
+  
+ When a workflow host receives this event, it executes the <xref:System.Activities.DurableInstancing.TryLoadRunnableWorkflowCommand> against the instance store to load the instance into the memory.  
+  
+ The type of the property is TimeSpan and the value is of the form “hh:mm:ss”. The minimum value is “00:00:01” (1 sec). If omitted, defaults to “00:00:05” (5 secs). This parameter is an optional parameter.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates using RunnableInstancesDetectionPeriod in a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Built-in Configuration](~/docs/framework/windows-workflow-foundation/samples/built-in-configuration.md) sample.  
+  
+ [!code-csharp[wfs_BuiltInConfiguration#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_builtinconfiguration/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

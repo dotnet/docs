@@ -1,0 +1,364 @@
+<Type Name="Hash" FullName="System.Security.Policy.Hash">
+  <TypeSignature Language="C#" Value="public sealed class Hash : System.Security.Policy.EvidenceBase, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Hash extends System.Security.Policy.EvidenceBase implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Policy.Hash" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Policy.EvidenceBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides evidence about the hash value for an assembly. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A hash value represents a unique value that corresponds to a particular set of bytes. Rather than referring to an assembly by name, version, or other designation, a hash value designates the assembly without ambiguity. Names are subject to collisions in rare cases where the same name is given to completely different code. Different variations of code can accidentally be marked with the same version. However, even changing a single bit results in a very different hash value.  
+  
+ Hash values are a cryptographically secure way to refer to specific assemblies in policy without the use of digital signatures. A secure hash algorithm is designed so that it is computationally infeasible to construct a different assembly with the identical hash value by either an accidental or malicious attempt. By default, evidence from the <xref:System.Security.Cryptography.SHA1> and <xref:System.Security.Cryptography.MD5> hash algorithms is supported, although any hash algorithm can be used through <xref:System.Security.Policy.Hash.GenerateHash%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Hash (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.#ctor(System.Reflection.Assembly)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">The assembly for which to compute the hash value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.Hash" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hash value computation is not performed until one of the properties or methods is called.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="assembly" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="assembly" /> is not a run-time <see cref="T:System.Reflection.Assembly" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override System.Security.Policy.EvidenceBase Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.EvidenceBase</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A new object that is a copy of this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMD5">
+      <MemberSignature Language="C#" Value="public static System.Security.Policy.Hash CreateMD5 (byte[] md5);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.Hash CreateMD5(unsigned int8[] md5) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.CreateMD5(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Hash</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="md5" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="md5">A byte array that contains an <see cref="T:System.Security.Cryptography.MD5" /> hash value.</param>
+        <summary>Creates a <see cref="T:System.Security.Policy.Hash" /> object that contains an <see cref="T:System.Security.Cryptography.MD5" /> hash value.</summary>
+        <returns>An object that contains the hash value provided by the <paramref name="md5" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Security.Policy.Hash> object contains only the <xref:System.Security.Policy.Hash.MD5%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="md5" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSHA1">
+      <MemberSignature Language="C#" Value="public static System.Security.Policy.Hash CreateSHA1 (byte[] sha1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.Hash CreateSHA1(unsigned int8[] sha1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.CreateSHA1(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Hash</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sha1" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="sha1">A byte array that contains a <see cref="T:System.Security.Cryptography.SHA1" /> hash value.</param>
+        <summary>Creates a <see cref="T:System.Security.Policy.Hash" /> object that contains a <see cref="T:System.Security.Cryptography.SHA1" /> hash value.</summary>
+        <returns>An object that contains the hash value provided by the <paramref name="sha1" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Security.Policy.Hash> object contains only the <xref:System.Security.Policy.Hash.SHA1%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="sha1" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSHA256">
+      <MemberSignature Language="C#" Value="public static System.Security.Policy.Hash CreateSHA256 (byte[] sha256);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.Hash CreateSHA256(unsigned int8[] sha256) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.CreateSHA256(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.Hash</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sha256" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="sha256">A byte array that contains a <see cref="T:System.Security.Cryptography.SHA256" /> hash value.</param>
+        <summary>Creates a <see cref="T:System.Security.Policy.Hash" /> object that contains a <see cref="T:System.Security.Cryptography.SHA256" /> hash value.</summary>
+        <returns>A hash object that contains the hash value provided by the <paramref name="sha256" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Security.Policy.Hash> object contains only the <xref:System.Security.Policy.Hash.SHA256%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="sha256" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateHash">
+      <MemberSignature Language="C#" Value="public byte[] GenerateHash (System.Security.Cryptography.HashAlgorithm hashAlg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GenerateHash(class System.Security.Cryptography.HashAlgorithm hashAlg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.GenerateHash(System.Security.Cryptography.HashAlgorithm)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hashAlg" Type="System.Security.Cryptography.HashAlgorithm" />
+      </Parameters>
+      <Docs>
+        <param name="hashAlg">The hash algorithm to use to compute the hash value for the assembly.</param>
+        <summary>Computes the hash value for the assembly using the specified hash algorithm.</summary>
+        <returns>A byte array that represents the hash value for the assembly.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The assembly specified in the class constructor provides the bytes for computing the hash value. The `hashAlg` parameter is an object derived from a specific <xref:System.Security.Cryptography.HashAlgorithm>. The returned hash value is of the type identified by `hashAlg`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="hashAlg" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.SecurityException">The hash value for the assembly cannot be generated.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Gets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the parameter name and additional exception information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided to support inheritance of the <xref:System.Runtime.Serialization.ISerializable> interface.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="MD5">
+      <MemberSignature Language="C#" Value="public byte[] MD5 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] MD5" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.Hash.MD5" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.MD5" /> hash value for the assembly.</summary>
+        <value>A byte array that represents the <see cref="T:System.Security.Cryptography.MD5" /> hash value for the assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The assembly specified in the class constructor provides the bytes for the hash computation.  
+  
+   
+  
+## Examples  
+ The following example computes the <xref:System.Security.Cryptography.MD5> hash for `myAssembly` and stores it in `hashcode`.  
+  
+ [!code-cpp[Classic Hash.MD5 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Hash.MD5 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Hash.MD5 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Hash.MD5 Example/CS/source.cs#1)]
+ [!code-vb[Classic Hash.MD5 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Hash.MD5 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SHA1">
+      <MemberSignature Language="C#" Value="public byte[] SHA1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SHA1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.Hash.SHA1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.SHA1" /> hash value for the assembly.</summary>
+        <value>A byte array that represents the <see cref="T:System.Security.Cryptography.SHA1" /> hash value for the assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The assembly specified in the constructor provides the bytes for the hash computation.  
+  
+   
+  
+## Examples  
+ The following example computes the <xref:System.Security.Cryptography.SHA1> hash for `myAssembly` and stores it in `hashcode`.  
+  
+ [!code-cpp[Classic Hash.SHA1 Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic Hash.SHA1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Hash.SHA1 Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic Hash.SHA1 Example/CS/source.cs#1)]
+ [!code-vb[Classic Hash.SHA1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic Hash.SHA1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SHA256">
+      <MemberSignature Language="C#" Value="public byte[] SHA256 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SHA256" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.Hash.SHA256" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Security.Cryptography.SHA256" /> hash value for the assembly.</summary>
+        <value>A byte array that represents the <see cref="T:System.Security.Cryptography.SHA256" /> hash value for the assembly.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The assembly that is specified in the <xref:System.Security.Policy.Hash.%23ctor%2A> constructor provides the bytes for the hash computation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.Hash.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the current <see cref="T:System.Security.Policy.Hash" />.</summary>
+        <returns>A representation of the current <see cref="T:System.Security.Policy.Hash" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is useful during debugging to get an easy-to-read representation of the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

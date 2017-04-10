@@ -1,0 +1,382 @@
+<Type Name="XmlDictionaryReaderQuotas" FullName="System.Xml.XmlDictionaryReaderQuotas">
+  <TypeSignature Language="C#" Value="public sealed class XmlDictionaryReaderQuotas" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlDictionaryReaderQuotas extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionaryReaderQuotas" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains configurable quota values for XmlDictionaryReaders.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xml.XmlDictionary> instances are used by WCF when serializing and deserializing SOAP messages. The <xref:System.Xml.XmlDictionary> contains string/value pairs which are used to decrease the size of the SOAP message. When serializing a message the value is written in place of the string. When deserializing the message the value is read but the string is written to the message object.  <xref:System.Xml.XmlDictionaryReaderQuotas> is a class that contains a number of quotas used by the <xref:System.Xml.XmlDictionaryReader> class. The most important security feature of the dictionary readers is quotas. A quotas instance must be given to the dictionary reader factory methods. The default constructor creates "secure" defaults (same as encoded defaults), and the class has a static `Max` property for creating a reader without quotas.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlDictionaryReaderQuotas ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReaderQuotas.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of this class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the properties to "secure" defaults:  
+  
+ MaxDepth = 32;  
+  
+ MaxStringContentLength = 8192;  
+  
+ MaxArrayLength = 16384;  
+  
+ MaxBytesPerRead = 4096;  
+  
+ MaxNameTableCharCount = 16384.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Xml.XmlDictionaryReaderQuotas quotas);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Xml.XmlDictionaryReaderQuotas quotas) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryReaderQuotas.CopyTo(System.Xml.XmlDictionaryReaderQuotas)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="quotas" Type="System.Xml.XmlDictionaryReaderQuotas" />
+      </Parameters>
+      <Docs>
+        <param name="quotas">The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> instance to which to copy values.</param>
+        <summary>Sets the properties on a passed-in quotas instance, based on the values in this instance.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Trying to <see langword="set" /> the value, but quota values are read-only for the passed in instance.</exception>
+        <exception cref="T:System.ArgumentNullException">Passed in target<paramref name=" quotas" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryReaderQuotas Max { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Xml.XmlDictionaryReaderQuotas Max" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryReaderQuotas.Max" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of this class with all properties set to maximum values.</summary>
+        <value>An instance of <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> with properties set to <see cref="F:System.Int32.MaxValue" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instance returned is read-only. Use the property to create a reader without quotas.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxArrayLength">
+      <MemberSignature Language="C#" Value="public int MaxArrayLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxArrayLength" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryReaderQuotas.MaxArrayLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(16384)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the maximum allowed array length.</summary>
+        <value>The maximum allowed array length. The default is 16384.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This quota governs the maximum array length that is created and returned by various API calls. It affects special array APIs as well as byte arrays returned from ReadContentAsBase64(). This limit does not affect the ReadContentAsBase64() override that takes an array to be populated with data.  
+  
+ Note that this property value applies to every step of message processing. This includes some steps that can expand the size of a message or message part. In particular, encryption can dramatically increase the size of a message. When setting this value, you must take this into account.  
+  
+ Instances created with the public constructor have properties that can be `set`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Trying to <see langword="set" /> the value, but quota values are read-only for this instance.</exception>
+        <exception cref="T:System.ArgumentException">Trying to <see langword="set" /> the value to less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBytesPerRead">
+      <MemberSignature Language="C#" Value="public int MaxBytesPerRead { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBytesPerRead" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryReaderQuotas.MaxBytesPerRead" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(4096)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the maximum allowed bytes returned for each read.</summary>
+        <value>The maximum allowed bytes returned for each read. The default is 4096.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This quota limits the number of bytes that can be consumed by the reader during a single call to `Read`().  
+  
+ This quota is an approximation, because transformations in the encoding layer happen before this quota is applied. This quota is closely tied to the number of bytes received on the wire at the transport level, but its purpose is to control the quantity of data we receive for each read. In practice, it is used to limit the size of start tags. Because the entire start tag must be buffered to be processed (attributes uniqueness must be verified), the size must be limited to mitigate DOS attacks.  
+  
+ Instances created with the public constructor have properties that can be `set`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Trying to <see langword="set" /> the value, but quota values are read-only for this instance.</exception>
+        <exception cref="T:System.ArgumentException">Trying to <see langword="set" /> the value to less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDepth">
+      <MemberSignature Language="C#" Value="public int MaxDepth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDepth" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryReaderQuotas.MaxDepth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(32)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the maximum nested node depth.</summary>
+        <value>The maximum nested node depth. The default is 32;</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This quota sets a limit on the nested node depth for the XML.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Trying to <see langword="set" /> the value and quota values are read-only for this instance.</exception>
+        <exception cref="T:System.ArgumentException">Trying to <see langword="set" /> the value is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxNameTableCharCount">
+      <MemberSignature Language="C#" Value="public int MaxNameTableCharCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxNameTableCharCount" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryReaderQuotas.MaxNameTableCharCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(16384)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the maximum characters allowed in a table name.</summary>
+        <value>The maximum characters allowed in a table name. The default is 16384.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This quota limits the total number of characters in strings that are atomized in the NameTable for the reader. When strings are atomized they are inserted into a NameTable and never removed. This can cause the buildup of large amounts of character data in a NameTable. This quota places a limit on how much data can be buffered in the reader's NameTable.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Trying to <see langword="set" /> the value, but quota values are read-only for this instance.</exception>
+        <exception cref="T:System.ArgumentException">Trying to <see langword="set" /> the value to less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxStringContentLength">
+      <MemberSignature Language="C#" Value="public int MaxStringContentLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxStringContentLength" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(8192)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the maximum string length returned by the reader.</summary>
+        <value>The maximum string length returned by the reader. The default is 8192.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This quota limits the length of strings that are created and returned by various APIs. When calling `Read`() and checking the `Value` property, the reader chunks string values into manageable pieces (when in streaming mode). However, calling `ReadContentAsString`() concatenates all these pieces and return one large string. In the binary format, if the value of an element node is a sequence of dictionary string IDs then the values of those strings are concatenated. This can be an extremely large expansion and is mitigated by this limit.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Trying to <see langword="set" /> the value, but quota values are read-only for this instance.</exception>
+        <exception cref="T:System.ArgumentException">Trying to <see langword="set" /> the value to less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifiedQuotas">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotaTypes ModifiedQuotas { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlDictionaryReaderQuotaTypes ModifiedQuotas" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryReaderQuotas.ModifiedQuotas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotaTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the modified quotas for the <see cref="T:System.Xml.XmlDictionaryReaderQuotas" />.</summary>
+        <value>The modified quotas for the <see cref="T:System.Xml.XmlDictionaryReaderQuotas" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

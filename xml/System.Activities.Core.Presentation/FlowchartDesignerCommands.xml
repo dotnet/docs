@@ -1,0 +1,43 @@
+<Type Name="FlowchartDesignerCommands" FullName="System.Activities.Core.Presentation.FlowchartDesignerCommands">
+  <TypeSignature Language="C#" Value="public static class FlowchartDesignerCommands" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit FlowchartDesignerCommands extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.FlowchartDesignerCommands" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used by [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)] to raise flowchart designer commands.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_FlowchartDesignerCommands#0](WFD_FlowchartDesignerCommands#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConnectNodesCommand">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Input.RoutedCommand ConnectNodesCommand;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Input.RoutedCommand ConnectNodesCommand" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Core.Presentation.FlowchartDesignerCommands.ConnectNodesCommand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the command used to link flowchart nodes in the flowchart designer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

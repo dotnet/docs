@@ -1,0 +1,121 @@
+<Type Name="PromptRate" FullName="System.Speech.Synthesis.PromptRate">
+  <TypeSignature Language="C#" Value="public enum PromptRate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PromptRate extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.PromptRate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates values for the speaking rate of prompts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Members of the <xref:System.Speech.Synthesis.PromptRate> enumeration are used by the <xref:System.Speech.Synthesis.PromptStyle.%23ctor%2A> constructor, by the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A> method, and by the <xref:System.Speech.Synthesis.PromptBuilder.StartStyle%2A> method to specify the rate of speech for spoken text. The <xref:System.Speech.Synthesis.PromptStyle.Rate%2A> property gets the rate for a <xref:System.Speech.Synthesis.PromptStyle> object using a <xref:System.Speech.Synthesis.PromptRate> instance.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExtraFast">
+      <MemberSignature Language="C#" Value="ExtraFast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptRate ExtraFast = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.ExtraFast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates an extra-fast rate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtraSlow">
+      <MemberSignature Language="C#" Value="ExtraSlow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptRate ExtraSlow = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.ExtraSlow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates an extra-slow rate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Fast">
+      <MemberSignature Language="C#" Value="Fast" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptRate Fast = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.Fast" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a fast rate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Medium">
+      <MemberSignature Language="C#" Value="Medium" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptRate Medium = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.Medium" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a medium rate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptRate NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates no rate is specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Slow">
+      <MemberSignature Language="C#" Value="Slow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.PromptRate Slow = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.PromptRate.Slow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.PromptRate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates a slow rate.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

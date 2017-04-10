@@ -1,0 +1,157 @@
+<Type Name="ITableMapping" FullName="System.Data.ITableMapping">
+  <TypeSignature Language="C#" Value="public interface ITableMapping" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITableMapping" />
+  <TypeSignature Language="DocId" Value="T:System.Data.ITableMapping" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Associates a source table with a table in a <see cref="T:System.Data.DataSet" />, and is implemented by the <see cref="T:System.Data.Common.DataTableMapping" /> class, which is used in common by .NET Framework data providers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.ITableMapping> interface allows an inheriting class to implement a TableMapping class, which associates a data source column with a <xref:System.Data.DataSet> column. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
+  
+ An application does not create an instance of the <xref:System.Data.ITableMapping> interface directly, but creates an instance of a class that inherits <xref:System.Data.ITableMapping>.  
+  
+ Classes that inherit <xref:System.Data.ITableMapping> must implement the inherited members, and typically define additional members to add provider-specific functionality. For example, the <xref:System.Data.ITableMapping> interface defines the <xref:System.Data.ITableMapping.DataSetTable%2A> property. In turn, the <xref:System.Data.Common.DataTableMapping> class inherits this property, and also defines the <xref:System.Data.Common.DataTableMapping.GetDataTableBySchemaAction%2A> method.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, and adds it to a <xref:System.Data.Common.DataTableMappingCollection> collection. It then informs the user that the mapping was added to the collection and displays the parent mapping.  
+  
+ [!code-csharp[Classic WebData DataTableMapping Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableMapping Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataTableMapping Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableMapping Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from the <see cref="T:System.Data.ITableMapping" /> interface, you should implement the following constructors:  
+  
+ <list type="table">  
+<listheader>  
+<term> Item  
+  
+ </term>  
+<description> Description  
+  
+ </description>  
+</listheader>  
+<item>  
+<term> DataTableMapping()  
+  
+ </term>  
+<description> Initializes a new instance of the TableMapping class.  
+  
+ </description>  
+</item>  
+<item>  
+<term> TableMapping(string sourceTable, string dataSetTable)  
+  
+ </term>  
+<description> Initializes a new instance of the TableMapping class with a source when given a source table name and a <see cref="T:System.Data.DataTable" /> name.  
+  
+ </description>  
+</item>  
+<item>  
+<term> TableMapping(string sourceTable, string dataSetTable, DataColumnMapping[] columnMappings)  
+  
+ </term>  
+<description> Initializes a new instance of the TableMapping class when given a source table name, a <see cref="T:System.Data.DataTable" /> name, and an array of ColumnMapping objects.  
+  
+ </description>  
+</item>  
+</list></para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="ColumnMappings">
+      <MemberSignature Language="C#" Value="public System.Data.IColumnMappingCollection ColumnMappings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IColumnMappingCollection ColumnMappings" />
+      <MemberSignature Language="DocId" Value="P:System.Data.ITableMapping.ColumnMappings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IColumnMappingCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the derived <see cref="T:System.Data.Common.DataColumnMappingCollection" /> for the <see cref="T:System.Data.DataTable" />.</summary>
+        <value>A collection of data column mappings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the derived class, <xref:System.Data.Common.DataTableMapping>, sets some of its properties, and copies its <xref:System.Data.Common.DataTableMapping.ColumnMappings%2A> to an array. This example assumes that a <xref:System.Data.Common.DataColumnMappingCollection> has been created.  
+  
+ [!code-csharp[Classic WebData DataTableMapping.ColumnMappings Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataTableMapping.ColumnMappings Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataTableMapping.ColumnMappings Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataTableMapping.ColumnMappings Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSetTable">
+      <MemberSignature Language="C#" Value="public string DataSetTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataSetTable" />
+      <MemberSignature Language="DocId" Value="P:System.Data.ITableMapping.DataSetTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the case-insensitive name of the table within the <see cref="T:System.Data.DataSet" />.</summary>
+        <value>The case-insensitive name of the table within the <see cref="T:System.Data.DataSet" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceTable">
+      <MemberSignature Language="C#" Value="public string SourceTable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceTable" />
+      <MemberSignature Language="DocId" Value="P:System.Data.ITableMapping.SourceTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the case-sensitive name of the source table.</summary>
+        <value>The case-sensitive name of the source table.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

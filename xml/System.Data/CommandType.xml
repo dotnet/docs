@@ -1,0 +1,116 @@
+<Type Name="CommandType" FullName="System.Data.CommandType">
+  <TypeSignature Language="C#" Value="public enum CommandType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.CommandType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a command string is interpreted.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Data.CommandType> property is set to StoredProcedure, the <xref:System.Data.IDbCommand.CommandText%2A> property should be set to the name of the stored procedure to be accessed. The user may be required to use escape character syntax or include qualifying characters if any of the specified tables named contain any special characters. All rows and columns of the named table or tables will be returned when you call one of the Execute methods of a Command object.  
+  
+ When the <xref:System.Data.CommandType> property is set to TableDirect, the <xref:System.Data.IDbCommand.CommandText%2A> property should be set to the name of the table to be accessed. The user may be required to use escape character syntax or include qualifying characters if any of the tables named contain any special characters. All rows and columns of the named table will be returned when you call one of the Execute methods.  
+  
+ In order to access multiple tables, use a comma delimited list, without spaces or padding, containing the names of the tables to access. When the `CommandText` property names multiple tables, a join of the specified tables is returned.  
+  
+> [!NOTE]
+>  `TableDirect` is only supported by the .NET Framework Data Provider for OLE DB. Multiple table access is not supported when <xref:System.Data.CommandType> is set to `TableDirect`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="StoredProcedure">
+      <MemberSignature Language="C#" Value="StoredProcedure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandType StoredProcedure = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandType.StoredProcedure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of a stored procedure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TableDirect">
+      <MemberSignature Language="C#" Value="TableDirect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandType TableDirect = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandType.TableDirect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of a table.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.CommandType Text = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.CommandType.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.CommandType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An SQL text command. (Default.)</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

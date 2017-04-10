@@ -1,0 +1,80 @@
+<Type Name="IProfileNotification" FullName="System.Workflow.Runtime.Tracking.IProfileNotification">
+  <TypeSignature Language="C#" Value="public interface IProfileNotification" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProfileNotification" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.IProfileNotification" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a notification mechanism for a tracking service to inform the runtime tracking infrastructure about changes to the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> for a particular workflow <see cref="T:System.Type" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Tracking services manage the tracking profiles available to the runtime tracking infrastructure. A tracking service that implements <xref:System.Workflow.Runtime.Tracking.IProfileNotification> can provide notifications to the runtime tracking infrastructure when a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for a particular workflow <xref:System.Type> either changes or is no longer valid. The runtime tracking infrastructure subscribes to the <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> and <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> events and updates its cache when these events are raised. This decreases the number of requests for tracking profiles that the runtime tracking infrastructure makes to a tracking service. Note: the runtime tracking infrastructure still uses the overloaded <xref:System.Workflow.Runtime.Tracking.TrackingService.GetProfile%2A> methods of the tracking service, but it does not call them as frequently.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ProfileRemoved">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; ProfileRemoved;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; ProfileRemoved" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> for a specific workflow Type is removed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tracking service can raise the <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> event to inform the runtime tracking infrastructure that new instances of the workflow <xref:System.Type> specified in <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs> should not be tracked.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileUpdated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; ProfileUpdated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; ProfileUpdated" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> for a specific workflow <see cref="T:System.Type" /> is updated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A tracking service can raise the <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event to inform the runtime tracking infrastructure that a new <xref:System.Workflow.Runtime.Tracking.TrackingProfile> is available for the indicated workflow <xref:System.Type>. The workflow <xref:System.Type> and the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> are passed in a <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,82 @@
+<Type Name="INullable" FullName="System.Data.SqlTypes.INullable">
+  <TypeSignature Language="C#" Value="public interface INullable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INullable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.INullable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>All the <see cref="N:System.Data.SqlTypes" /> objects and structures implement the <see langword="INullable" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `SqlTypes` can contain the value null and use database semantics for evaluating nulls. Nulls are used in a database to indicate an unknown or missing value.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsNull">
+      <MemberSignature Language="C#" Value="public bool IsNull { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
+      <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.INullable.IsNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether a structure is null. This property is read-only.</summary>
+        <value>
+          <see cref="T:System.Data.SqlTypes.SqlBoolean" /> <see langword="true" /> if the value of this object is null. Otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value for any <xref:System.Data.SqlTypes> instance is null. Use <xref:System.Data.SqlTypes.INullable.IsNull%2A> property to test for null values.  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Data.DataTable> with two columns defined as <xref:System.Data.SqlTypes.SqlInt32> and <xref:System.Data.SqlTypes.SqlString>. The code adds one row of known values, one row of null values and then iterates through the <xref:System.Data.DataTable>, assigning the values to variables and displaying the output in the console window.  
+  
+ [!code-csharp[DataWorks SqlTypes.IsNull#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlTypes.IsNull/CS/source.cs#1)]
+ [!code-vb[DataWorks SqlTypes.IsNull#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlTypes.IsNull/VB/source.vb#1)]  
+  
+ This example displays the following results:  
+  
+```  
+isColumnNull=False, ID=123, Description=Side Mirror  
+isColumnNull=True, ID=Null, Description=Null  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

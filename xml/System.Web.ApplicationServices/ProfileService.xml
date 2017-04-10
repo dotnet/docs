@@ -1,0 +1,259 @@
+<Type Name="ProfileService" FullName="System.Web.ApplicationServices.ProfileService">
+  <TypeSignature Language="C#" Value="public class ProfileService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.ProfileService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.Activation.AspNetCompatibilityRequirements(RequirementsMode=System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceBehavior(ConcurrencyMode=System.ServiceModel.ConcurrencyMode.Multiple, InstanceContextMode=System.ServiceModel.InstanceContextMode.Single, Namespace="http://asp.net/ApplicationServices/v200")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceContract(Namespace="http://asp.net/ApplicationServices/v200")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceKnownType("GetKnownTypes", typeof(System.Web.ApplicationServices.KnownTypesProvider))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables access to ASP.NET user profiles through a Web service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ApplicationServices.ProfileService> class enables you to get and set a user's profile properties through a Windows Communication Foundation (WCF) service. You can keep custom information for users through profile properties. For information about profile properties, see [ASP.NET Profile Properties Overview](http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d).  
+  
+ The <xref:System.Web.ApplicationServices.ProfileService> class contains the following methods that should be accessed only through a WCF service:  
+  
+-   <xref:System.Web.ApplicationServices.ProfileService.GetPropertiesForCurrentUser%2A>  
+  
+-   <xref:System.Web.ApplicationServices.ProfileService.GetAllPropertiesForCurrentUser%2A>  
+  
+-   <xref:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser%2A>  
+  
+-   <xref:System.Web.ApplicationServices.ProfileService.GetPropertiesMetadata%2A>  
+  
+ To call these methods, you must enable the profile service on the Web server and then connect a WCF-compatible client application to the Web service. For information about how to configure the profile service, see [How to: Enable the WCF Profile Service](http://msdn.microsoft.com/library/46a16bc2-8c01-4eed-aed9-2286c85f094a).  
+  
+ The <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event is raised when a user's profile properties are set. You can create an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event to validate property values or to dynamically change their values.  
+  
+ For an example of how to use the WCF profile service from a console application, see [Walkthrough: Using ASP.NET Application Services](http://msdn.microsoft.com/library/f3f394f0-20d6-4361-aa8f-4b21bf4933eb).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ApplicationServices.ProfileService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllPropertiesForCurrentUser">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt; GetAllPropertiesForCurrentUser (bool authenticatedUserOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; GetAllPropertiesForCurrentUser(bool authenticatedUserOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.GetAllPropertiesForCurrentUser(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authenticatedUserOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="authenticatedUserOnly">A value that indicates whether properties are returned only for users who have been authenticated.</param>
+        <summary>Retrieves all the profile properties and values that are available to the profile service for the current user.</summary>
+        <returns>The profile properties and values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.ApplicationServices.ProfileService.GetAllPropertiesForCurrentUser%2A> method to retrieve all the user's profile properties through one Web service call. For example, you can call this method and then store the profile properties in the client application and retrieve values as needed. The <xref:System.Web.ApplicationServices.ProfileService.GetAllPropertiesForCurrentUser%2A> method returns values only for the profile properties that have been configured to be accessed through a Web service. You set whether a profile property can be accessed through a Web service by setting either the <xref:System.Web.Configuration.ScriptingProfileServiceSection.ReadAccessProperties%2A> property or the <xref:System.Web.Configuration.ScriptingProfileServiceSection.WriteAccessProperties%2A> property to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertiesForCurrentUser">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt; GetPropertiesForCurrentUser (System.Collections.Generic.IEnumerable&lt;string&gt; properties, bool authenticatedUserOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; GetPropertiesForCurrentUser(class System.Collections.Generic.IEnumerable`1&lt;string&gt; properties, bool authenticatedUserOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.GetPropertiesForCurrentUser(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="authenticatedUserOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="properties">A collection of string values that contains the names of the profile properties to retrieve.</param>
+        <param name="authenticatedUserOnly">A value that indicates whether properties are returned only for users who have been authenticated.</param>
+        <summary>Retrieves the specified profile properties and values for the current user.</summary>
+        <returns>The profile property information and values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get specific profile property values for the current users, you use the <xref:System.Web.ApplicationServices.ProfileService.GetPropertiesForCurrentUser%2A> method to specify which profile properties are retrieved. The <xref:System.Web.ApplicationServices.ProfileService.GetPropertiesForCurrentUser%2A> method returns values only for profile properties that are configured for access through a Web service. You configure a profile property for access through a Web service by setting the <xref:System.Web.Configuration.ScriptingProfileServiceSection.ReadAccessProperties%2A> property or <xref:System.Web.Configuration.ScriptingProfileServiceSection.WriteAccessProperties%2A> property to `true`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="properties" /> parameter or an item in the <paramref name="properties" /> collection is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertiesMetadata">
+      <MemberSignature Language="C#" Value="public System.Web.ApplicationServices.ProfilePropertyMetadata[] GetPropertiesMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.ApplicationServices.ProfilePropertyMetadata[] GetPropertiesMetadata() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.GetPropertiesMetadata" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.ApplicationServices.ProfilePropertyMetadata[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves information about the profile properties that are available through the profile service.</summary>
+        <returns>An array of <see cref="T:System.Web.ApplicationServices.ProfilePropertyMetadata" /> objects that contain information about the profile properties.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.ApplicationServices.ProfileService.GetPropertiesMetadata%2A> method to retrieve information about profile properties from a client application that is compatible with the Windows Communication Framework (WCF). You can retrieve information such as the following:  
+  
+-   The name and type of the properties.  
+  
+-   Whether they are read-only.  
+  
+-   Whether they can be accessed by users who have not been authenticated.  
+  
+-   The default values for the properties.  
+  
+ After retrieving these values, a client application can take appropriate actions such as not trying to set a read-only property. The current user does not have to be authenticated in order to call the <xref:System.Web.ApplicationServices.ProfileService.GetPropertiesMetadata%2A> method, because the properties apply to all users.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertiesForCurrentUser">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; SetPropertiesForCurrentUser (System.Collections.Generic.IDictionary&lt;string,object&gt; values, bool authenticatedUserOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; SetPropertiesForCurrentUser(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; values, bool authenticatedUserOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser(System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="authenticatedUserOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="values">A collection that contains names and values of the profile properties to set.</param>
+        <param name="authenticatedUserOnly">A value that indicates whether properties are set only for users who have been authenticated.</param>
+        <summary>Sets the values of the specified properties in the user profile.</summary>
+        <returns>The properties that were not set for the user profile, if any.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser%2A> method to set a user's profile properties from an application that is compatible with the Windows Communication Foundation (WCF). The <xref:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser%2A> method returns any values that are not set, which might be for any one of the following reasons:  
+  
+-   The specified profile property is read only (the <xref:System.Web.Configuration.ScriptingProfileServiceSection.WriteAccessProperties%2A> property for a specified profile property is not set to `true`).  
+  
+-   The user profile does not have a profile property that has the matching name.  
+  
+-   Validation of the value failed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatingProperties">
+      <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Web.ApplicationServices.ValidatingPropertiesEventArgs&gt; ValidatingProperties;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.ApplicationServices.ValidatingPropertiesEventArgs&gt; ValidatingProperties" />
+      <MemberSignature Language="DocId" Value="E:System.Web.ApplicationServices.ProfileService.ValidatingProperties" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Web.ApplicationServices.ValidatingPropertiesEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a user's profile properties are set.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event to validate property values or to dynamically change their values. The <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event is raised when the <xref:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser%2A> method is called. If the value for a property fails validation, add that property to the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> collection of the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs> class. Any properties that are in the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> collection will not be saved to the user profile.  
+  
+ You can add and register the event handler in the Global.asax file.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event. When the value passed for `FirstName` property is empty or `null`, the `FirstName` property is added to the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> collection.  
+  
+ [!code-csharp[System.Web.ApplicationServices.ProfileService#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ApplicationServices.ProfileService/cs/Global.asax#1)]
+ [!code-vb[System.Web.ApplicationServices.ProfileService#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ApplicationServices.ProfileService/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

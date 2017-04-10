@@ -1,0 +1,39 @@
+<StackPanel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="Pane1"
+>
+    
+    <TextBlock FontSize = "24.0">Control Properties</TextBlock>
+    <TextBlock FontSize = "12.0">Click the buttons to 
+            see the properties change.</TextBlock>
+
+    <Button Name="btn" Background="Red" 
+            Click="ChangeBackground">Background</Button>
+
+    <Button Name="btn1" Foreground="Black" 
+            Click="ChangeForeground">Foreground</Button>
+
+    <Button Name="btn2" FontFamily="Arial" 
+            Click="ChangeFontFamily">FontFamily</Button>
+
+    <Button Name="btn3" FontSize="10.0" 
+            Click="ChangeFontSize">FontSize</Button>
+
+    <Button Name="btn4" FontStyle="Normal" 
+            Click="ChangeFontStyle">FontStyle</Button>
+
+    <Button Name="btn5" FontWeight="Normal" 
+            Click="ChangeFontWeight">FontWeight</Button>
+
+    <Button Name="btn6" BorderBrush="Red" 
+            Click="ChangeBorderBrush">BorderBrush</Button>
+
+    <Button Name="btn7" HorizontalContentAlignment="Left" 
+            Click="ChangeHorizontalContentAlignment">HorizontalContentAlignment</Button>
+
+    <Button Name="btn8" Height="50"  VerticalContentAlignment="Top" 
+            Click="ChangeVerticalContentAlignment">VerticalContentAlignment</Button>
+
+ 
+</StackPanel>

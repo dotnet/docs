@@ -1,0 +1,584 @@
+<Type Name="ContainerVisual" FullName="System.Windows.Media.ContainerVisual">
+  <TypeSignature Language="C#" Value="public class ContainerVisual : System.Windows.Media.Visual" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerVisual extends System.Windows.Media.Visual" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.ContainerVisual" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Visual</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages a collection of <see cref="T:System.Windows.Media.Visual" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.ContainerVisual> class is used as a container for a collection of <xref:System.Windows.Media.Visual> objects. The <xref:System.Windows.Media.DrawingVisual> class derives from the <xref:System.Windows.Media.ContainerVisual> class, such that the <xref:System.Windows.Media.DrawingVisual> class can also contain a collection of visual objects.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
+  
+ [!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
+ [!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainerVisual ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ContainerVisual.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Media.ContainerVisual" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a new instance of a <xref:System.Windows.Media.ContainerVisual> object, and then add child visual objects to it.  
+  
+ [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet1)]
+ [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitmapEffect">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BitmapEffect BitmapEffect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.BitmapEffect BitmapEffect" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.BitmapEffect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.BitmapEffect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Media.Effects.BitmapEffect" /> value for the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>The bitmap effect for this visual object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitmapEffectInput">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BitmapEffectInput BitmapEffectInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.BitmapEffectInput BitmapEffectInput" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.BitmapEffectInput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("BitmapEffects are deprecated and no longer function.  Consider using Effects where appropriate instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.BitmapEffectInput</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Media.Effects.BitmapEffectInput" /> value for the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>The bitmap effect input value for this visual object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.CacheMode CacheMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.CacheMode CacheMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.CacheMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.CacheMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a cached representation of the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.CacheMode" /> that holds a cached representation of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set the <xref:System.Windows.Media.ContainerVisual.CacheMode%2A> property when you need to increase performance for content that is time-consuming to render. For more information, see <xref:System.Windows.Media.BitmapCache>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.VisualCollection Children { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.VisualCollection Children" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Children" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.VisualCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the child collection of the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.VisualCollection" /> that contains the children of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to retrieve the <xref:System.Windows.Media.VisualCollection> from a <xref:System.Windows.Media.ContainerVisual> object.  
+  
+ [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet3)]
+ [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clip">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry Clip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry Clip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Clip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the clipping region of the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.Geometry" /> that defines the clipping region.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentBounds">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect ContentBounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect ContentBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.ContentBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounding box for the contents of the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>A <see cref="T:System.Windows.Rect" /> that specifies the bounding box.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Media.ContainerVisual.DescendantBounds%2A> property to return the union of all the content bounding boxes for all of the descendants of a <xref:System.Windows.Media.ContainerVisual> object, but not the object itself.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the bounding rectangle of a <xref:System.Windows.Media.ContainerVisual> object.  
+  
+ [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet4)]
+ [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DescendantBounds">
+      <MemberSignature Language="C#" Value="public System.Windows.Rect DescendantBounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect DescendantBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.DescendantBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the union of all the content bounding boxes for all of the descendants of the <see cref="T:System.Windows.Media.ContainerVisual" />, but not including the contents of the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>A <see cref="T:System.Windows.Rect" /> that specifies the combination bounding box.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Get the <xref:System.Windows.Media.ContainerVisual.ContentBounds%2A> property to return the cached bounding box rectangle for the <xref:System.Windows.Media.ContainerVisual> itself.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the bounding rectangle of a <xref:System.Windows.Media.ContainerVisual> object's descendants.  
+  
+ [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet4)]
+ [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Effect">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.Effect Effect { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Effects.Effect Effect" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Effect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.Effect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the bitmap effect to apply to the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>An <see cref="T:System.Windows.Media.Effects.Effect" /> that represents the bitmap effect.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetVisualChild">
+      <MemberSignature Language="C#" Value="protected override sealed System.Windows.Media.Visual GetVisualChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ContainerVisual.GetVisualChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">A 32-bit signed integer that represents the index value of the child <see cref="T:System.Windows.Media.Visual" />. The value of <c>index</c> must be between 0 and <see cref="P:System.Windows.Media.ContainerVisual.VisualChildrenCount" /> - 1.</param>
+        <summary>Returns a specified child <see cref="T:System.Windows.Media.Visual" /> for the parent <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <returns>The child <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, a <xref:System.Windows.Media.ContainerVisual> does not have any children.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
+  
+ [!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
+ [!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The visual tree cannot be modified during this call.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.HitTestResult HitTest (System.Windows.Point point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.HitTestResult HitTest(valuetype System.Windows.Point point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ContainerVisual.HitTest(System.Windows.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.HitTestResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point">The point value to hit test.</param>
+        <summary>Returns the top-most visual object of a hit test by specifying a <see cref="T:System.Windows.Point" />.</summary>
+        <returns>The hit test result of the visual returned as a <see cref="T:System.Windows.Media.HitTestResult" /> type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.HitTestResult.VisualHit%2A> property of the return value represents the <xref:System.Windows.Media.Visual> object that was hit.  
+  
+   
+  
+## Examples  
+ The following example shows how to retrieve the <xref:System.Windows.Media.HitTestResult> return value from the <xref:System.Windows.Media.ContainerVisual.HitTest%2A> method.  
+  
+ [!code-csharp[ContainerVisualSnippets#ContainerVisualSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualSnippets/CSharp/Window1.xaml.cs#containervisualsnippet2)]
+ [!code-vb[ContainerVisualSnippets#ContainerVisualSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualSnippets/visualbasic/window1.xaml.vb#containervisualsnippet2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitTest">
+      <MemberSignature Language="C#" Value="public void HitTest (System.Windows.Media.HitTestFilterCallback filterCallback, System.Windows.Media.HitTestResultCallback resultCallback, System.Windows.Media.HitTestParameters hitTestParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void HitTest(class System.Windows.Media.HitTestFilterCallback filterCallback, class System.Windows.Media.HitTestResultCallback resultCallback, class System.Windows.Media.HitTestParameters hitTestParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.ContainerVisual.HitTest(System.Windows.Media.HitTestFilterCallback,System.Windows.Media.HitTestResultCallback,System.Windows.Media.HitTestParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filterCallback" Type="System.Windows.Media.HitTestFilterCallback" />
+        <Parameter Name="resultCallback" Type="System.Windows.Media.HitTestResultCallback" />
+        <Parameter Name="hitTestParameters" Type="System.Windows.Media.HitTestParameters" />
+      </Parameters>
+      <Docs>
+        <param name="filterCallback">The delegate that allows you to ignore parts of the visual tree that you are not interested in processing in your hit test results.</param>
+        <param name="resultCallback">The delegate that is used to control the return of hit test information.</param>
+        <param name="hitTestParameters">Defines the set of parameters for a hit test.</param>
+        <summary>Initiates a hit test on the <see cref="T:System.Windows.Media.ContainerVisual" /> by using the <see cref="T:System.Windows.Media.HitTestFilterCallback" /> and <see cref="T:System.Windows.Media.HitTestResultCallback" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `filterCallback` parameter can be null, in which case, it is ignored. If `filterCallback` is not `null`, it is invoked before `resultCallback`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public System.Windows.Vector Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the offset value of the <see cref="T:System.Windows.Media.ContainerVisual" /> from its reference point.</summary>
+        <value>A <see cref="T:System.Windows.Vector" /> that represents the offset value of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opacity">
+      <MemberSignature Language="C#" Value="public double Opacity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Opacity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Opacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the opacity of the <see cref="T:System.Windows.Media.ContainerVisual" />, based on 0=transparent, 1=opaque.</summary>
+        <value>A value from 0 through 1 that specifies a range from fully transparent to fully opaque. A value of 0 indicates that the <see cref="T:System.Windows.Media.ContainerVisual" /> is completely transparent, while a value of 1 indicates that the <see cref="T:System.Windows.Media.ContainerVisual" /> is completely opaque. A value 0.5 indicates 50 percent opaque, a value of 0.725 indicates 72.5 percent opaque, and so on. Values less than 0 are treated as 0, while values greater than 1 are treated as 1.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpacityMask">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Brush OpacityMask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush OpacityMask" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.OpacityMask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a brush that specifies a possible opacity mask for the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>A value of type <see cref="T:System.Windows.Media.Brush" /> that represents the opacity mask value of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Opacity masks can be used to create effects such as vignettes, based on the alpha channel values of the brush.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent <see cref="T:System.Windows.Media.Visual" /> for the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>The parent of the visual.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that this is returned as <xref:System.Windows.DependencyObject>, rather than a raw object.  
+  
+ This property might return `null` in a disconnected tree, or if you have traversed to the tree root at the window level.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Transform Transform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Transform Transform" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.Transform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Transform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the transform that is applied to the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>The transform value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.Transform> is a base class that unifies many different forms of transforms. For details, see <xref:System.Windows.Media.Transform>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualChildrenCount">
+      <MemberSignature Language="C#" Value="protected override sealed int VisualChildrenCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.VisualChildrenCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of children for the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>The number of children in the <see cref="T:System.Windows.Media.VisualCollection" /> of the <see cref="T:System.Windows.Media.ContainerVisual" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, a <xref:System.Windows.Media.ContainerVisual> does not have any children.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Media.ContainerVisual> object that is used as the parent for two <xref:System.Windows.Media.DrawingVisual> objects. Objects that are added to the <xref:System.Windows.Media.ContainerVisual> object must be added in reverse z-order (bottom to top) to ensure they are rendering in the correct drawing order. In order for the visual tree to be enumerated correctly, the example provides overridden implementations of the <xref:System.Windows.Media.ContainerVisual.GetVisualChild%2A> method and <xref:System.Windows.Media.ContainerVisual.VisualChildrenCount%2A> property.  
+  
+ [!code-csharp[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/csharp/VS_Snippets_Wpf/ContainerVisualHost/CSharp/Window1.xaml.cs#containervisualhost01)]
+ [!code-vb[ContainerVisualHost#ContainerVisualHost01](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ContainerVisualHost/visualbasic/window1.xaml.vb#containervisualhost01)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Classes that derive from <see cref="T:System.Windows.Media.ContainerVisual" /> must implement the <see cref="P:System.Windows.Media.ContainerVisual.VisualChildrenCount" /> property to enumerate the visual children. The derived property must return the number of children for the <see cref="T:System.Windows.Media.ContainerVisual" />.  
+  
+ The visual tree cannot be modified during this call.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="XSnappingGuidelines">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.DoubleCollection XSnappingGuidelines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.DoubleCollection XSnappingGuidelines" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.XSnappingGuidelines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the X (horizontal) guideline for the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>The horizontal guideline.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
+  
+ However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels through pixel snapping, eliminating the soft edges produced by anti-aliasing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YSnappingGuidelines">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.DoubleCollection YSnappingGuidelines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.DoubleCollection YSnappingGuidelines" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.ContainerVisual.YSnappingGuidelines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DoubleCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Y (vertical) guideline for the <see cref="T:System.Windows.Media.ContainerVisual" />.</summary>
+        <value>The vertical guideline.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Pixel snapping is the process in which content layout is fixed so that object edges are rendered on device-specific pixels. The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] graphics system uses device-independent units to enable resolution and device independence. Each device independent pixel automatically scales with the system's [!INCLUDE[TLA#tla_dpi](~/includes/tlasharptla-dpi-md.md)] setting. This provides [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] applications proper scaling for different [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] settings and makes the application automatically [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)]-aware.  
+  
+ However, this [!INCLUDE[TLA2#tla_dpi](~/includes/tla2sharptla-dpi-md.md)] independence can create irregular edge rendering due to anti-aliasing. These artifacts, commonly seen as blurry, or "soft" edges, can occur when the location of an edge falls in the middle of a device pixel rather than between device pixels. To address this issue, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] provides a way for object edges in a visual tree to "snap" to device pixels through pixel snapping, eliminating the soft edges produced by anti-aliasing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

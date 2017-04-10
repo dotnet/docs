@@ -1,0 +1,228 @@
+<Type Name="DetailsViewRow" FullName="System.Web.UI.WebControls.DetailsViewRow">
+  <TypeSignature Language="C#" Value="public class DetailsViewRow : System.Web.UI.WebControls.TableRow" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DetailsViewRow extends System.Web.UI.WebControls.TableRow" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewRow" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.TableRow</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a row within a <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DetailsViewRow> class is used to represent an individual row in a <xref:System.Web.UI.WebControls.DetailsView> control. Each row in the <xref:System.Web.UI.WebControls.DetailsView> control has a designated row type. The following table lists the row types that are valid for the <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+|Row type|Description|  
+|--------------|-----------------|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|A data row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|The empty data row in the <xref:System.Web.UI.WebControls.DetailsView> control. The empty data row is displayed in a <xref:System.Web.UI.WebControls.DetailsView> control when there are no records to display.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|The footer row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|The header row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType>|A pager row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+  
+ To determine the row type of a <xref:System.Web.UI.WebControls.DetailsViewRow> object, use the <xref:System.Web.UI.WebControls.DetailsViewRow.RowType%2A> property. A <xref:System.Web.UI.WebControls.DetailsViewRow> object also has a state associated with it. The state can be a bitwise combination of the values in the following table.  
+  
+|State value|Description|  
+|-----------------|-----------------|  
+|<xref:System.Web.UI.WebControls.DataControlRowState>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is an alternate row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowState>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in edit mode.|  
+|<xref:System.Web.UI.WebControls.DataControlRowState>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in insert mode.|  
+|<xref:System.Web.UI.WebControls.DataControlRowState>|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in its normal (default) state.|  
+  
+ To determine the state of a <xref:System.Web.UI.WebControls.DetailsViewRow> object, use the <xref:System.Web.UI.WebControls.DetailsViewRow.RowState%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.DetailsView> control stores all its data rows in the <xref:System.Web.UI.WebControls.DetailsView.Rows%2A> collection. To determine the index of a <xref:System.Web.UI.WebControls.DetailsViewRow> object in the <xref:System.Web.UI.WebControls.DetailsView.Rows%2A> collection, use the <xref:System.Web.UI.WebControls.DetailsViewRow.RowIndex%2A> property.  
+  
+ You can access the individual cells of the <xref:System.Web.UI.WebControls.DetailsViewRow> object by using the <xref:System.Web.UI.WebControls.TableRow.Cells%2A> property. If a cell contains controls, you can retrieve a control from the cell by using the <xref:System.Web.UI.Control.Controls%2A> collection of the cell. You can also use the <xref:System.Web.UI.Control.FindControl%2A> method of the cell to find the control, if the control has an <xref:System.Web.UI.Control.ID%2A> property specified.  
+  
+ To retrieve a field value from a <xref:System.Web.UI.WebControls.BoundField> field column or an automatically generated field column, use the <xref:System.Web.UI.WebControls.TableCell.Text%2A> property of the cell. To retrieve a field value from other field column types where the field value is bound to a control, first retrieve the control from the appropriate cell and then access the appropriate property of the control.  
+  
+> [!NOTE]
+>  It is possible to use a data-binding expression directly in a <xref:System.Web.UI.WebControls.TemplateField> field column without binding the value to a property of a control. In this case, the field value is automatically placed in a <xref:System.Web.UI.DataBoundLiteralControl> control. To retrieve the field value, you must first retrieve the <xref:System.Web.UI.DataBoundLiteralControl> control from the appropriate cell and then use its <xref:System.Web.UI.DataBoundLiteralControl.Text%2A> property.  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewRow> class, see the <xref:System.Web.UI.WebControls.DetailsViewRow.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve the value of a field from a <xref:System.Web.UI.WebControls.DetailsViewRow> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowText#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowText/CS/detailsviewrowcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewRowText#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowText/VB/detailsviewrowvb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to retrieve an <xref:System.Web.UI.WebControls.Image> control from the <xref:System.Web.UI.WebControls.DetailsViewRow> object that represents the header row. The <xref:System.Web.UI.WebControls.Image> control is declared in the header template.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DetailsViewRowFindControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DetailsViewRowFindControl/CS/detailsviewrow2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DetailsViewRowFindControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DetailsViewRowFindControl/VB/detailsviewrow2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DetailsViewRow (int rowIndex, System.Web.UI.WebControls.DataControlRowType rowType, System.Web.UI.WebControls.DataControlRowState rowState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rowIndex, valuetype System.Web.UI.WebControls.DataControlRowType rowType, valuetype System.Web.UI.WebControls.DataControlRowState rowState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewRow.#ctor(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rowIndex" Type="System.Int32" />
+        <Parameter Name="rowType" Type="System.Web.UI.WebControls.DataControlRowType" />
+        <Parameter Name="rowState" Type="System.Web.UI.WebControls.DataControlRowState" />
+      </Parameters>
+      <Docs>
+        <param name="rowIndex">The index of the row in the <see cref="P:System.Web.UI.WebControls.DetailsView.Rows" /> collection of the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</param>
+        <param name="rowType">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowType" /> enumeration values.</param>
+        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> enumeration values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DetailsViewRow" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.DetailsViewRow> class.  
+  
+ The following table shows initial property values for an instance of the <xref:System.Web.UI.WebControls.DetailsViewRow> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.DetailsViewRow.RowIndex%2A>|The value specified by the `itemIndex` parameter.|  
+|<xref:System.Web.UI.WebControls.DetailsViewRow.RowType%2A>|The value specified by the `rowType` parameter.|  
+|<xref:System.Web.UI.WebControls.DetailsViewRow.RowState%2A>|The value specified by the `rowState` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBubbleEvent">
+      <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewRow.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Determines whether to pass an event up the page's ASP.NET server control hierarchy.</summary>
+        <returns>
+          <see langword="true" /> if the event has been canceled; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public virtual int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewRow.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the <see cref="T:System.Web.UI.WebControls.DetailsViewRow" /> object in the <see cref="P:System.Web.UI.WebControls.DetailsView.Rows" /> collection of the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</summary>
+        <value>The index of the <see cref="T:System.Web.UI.WebControls.DetailsViewRow" /> in the <see cref="P:System.Web.UI.WebControls.DetailsView.Rows" /> collection of the <see cref="T:System.Web.UI.WebControls.DetailsView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DetailsViewRow.RowIndex%2A> property to determine the index of a <xref:System.Web.UI.WebControls.DetailsViewRow> object in the <xref:System.Web.UI.WebControls.DetailsView.Rows%2A> collection of the <xref:System.Web.UI.WebControls.DetailsView> control.  
+  
+> [!NOTE]
+>  This property applies only to data rows.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowState">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataControlRowState RowState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DataControlRowState RowState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewRow.RowState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the <see cref="T:System.Web.UI.WebControls.DetailsViewRow" /> object.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DetailsViewRow.RowState%2A> property to determine the state of the row. The state can be a bitwise combination of the values in the following table.  
+  
+|State value|Description|  
+|-----------------|-----------------|  
+|`DataControlRowState.Alternate`|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is an alternate row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|`DataControlRowState.Edit`|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in edit mode.|  
+|`DataControlRowState.Insert`|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in insert mode.|  
+|`DataControlRowState.Normal`|The <xref:System.Web.UI.WebControls.DetailsViewRow> object is in its normal (default) state.|  
+  
+ This property is commonly used to determine the state of a row before performing an operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowType">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataControlRowType RowType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DataControlRowType RowType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewRow.RowType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row type of the <see cref="T:System.Web.UI.WebControls.DetailsViewRow" /> object.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.DataControlRowType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DetailsViewRow.RowType%2A> property to determine the type of row that the <xref:System.Web.UI.WebControls.DetailsViewRow> object represents. The following table lists the valid row type values.  
+  
+|Row type|Description|  
+|--------------|-----------------|  
+|`DataControlRowType.DataRow`|A data row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|`DataControlRowType.EmptyDataRow`|The empty data row in the <xref:System.Web.UI.WebControls.DetailsView> control. The empty data row is displayed in a <xref:System.Web.UI.WebControls.DetailsView> control when there are no records to display.|  
+|`DataControlRowType.Footer`|The footer row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|`DataControlRowType.Header`|The header row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+|`DataControlRowType.Pager`|A pager row in the <xref:System.Web.UI.WebControls.DetailsView> control.|  
+  
+ This property is commonly used to determine a row's type before performing an operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

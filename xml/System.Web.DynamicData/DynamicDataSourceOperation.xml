@@ -1,0 +1,98 @@
+<Type Name="DynamicDataSourceOperation" FullName="System.Web.DynamicData.DynamicDataSourceOperation">
+  <TypeSignature Language="C#" Value="public enum DynamicDataSourceOperation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DynamicDataSourceOperation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicDataSourceOperation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the type of operation that is being performed by the data source object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContextCreate">
+      <MemberSignature Language="C#" Value="ContextCreate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.DynamicDataSourceOperation ContextCreate = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.ContextCreate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.DynamicDataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The data source object is creating the data context object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.DynamicDataSourceOperation Delete = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.DynamicDataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The data source object is performing a delete operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.DynamicDataSourceOperation Insert = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.DynamicDataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The data source object is performing an insert operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="Select" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.DynamicDataSourceOperation Select = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.Select" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.DynamicDataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The data source object is performing a select operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="Update" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.DynamicDataSourceOperation Update = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.DynamicDataSourceOperation.Update" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.DynamicDataSourceOperation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The data source object is performing an update operation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,60 @@
+<Canvas 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ToolBarSimple.Pane1"
+>
+  <Grid Background ="White" >
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="300"/>
+      <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Margin="10,10,3,3" Grid.Column="0" Grid.Row="0" FontSize="24">Tool Bars
+    </TextBlock>
+    <TextBlock Margin="10,10,3,3" Grid.Column="0" Grid.Row="1" FontSize="14" 
+      Grid.ColumnSpan="2">The following tool bar examples demonstrate:
+    </TextBlock>
+
+
+    <DockPanel Margin="10,10,3,3" Grid.Column="0" Grid.Row="5">
+      <ToolBarTray Background="White" Orientation="Vertical" Grid.RowSpan="2">
+        <ToolBar Name="tb1" Band="1" BandIndex="1">
+          <Button Name="btn1" Click="OnClick">COPY</Button>
+          <Button Name="btn2" Click="OnClick">PASTE</Button>
+        </ToolBar>
+        <ToolBar Name="tb2" Band="2" BandIndex="1" Grid.RowSpan="2">
+          <Button Name="btn3" Click="OnClick">UNDO</Button>
+          <Button Name="btn4" Click="OnClick">REDO</Button>
+        </ToolBar>
+        <ToolBar Name="tb3" Band="3" BandIndex="1" Grid.RowSpan="2">
+          <Button Name="btnText">Click the toolbar buttons.</Button>
+        </ToolBar>
+      </ToolBarTray>
+    </DockPanel>
+    <TextBlock Margin="10,10,3,3" Grid.Column="1" Grid.Row="5" FontSize="12" 
+     TextWrapping="WrapWithOverflow" VerticalAlignment="Center">Test orientation
+     property.
+    </TextBlock>
+
+    <Border  Margin="10,10,3,3" Grid.Column="0" Grid.Row="6" Name="bd1"/>
+
+  </Grid>
+
+</Canvas>

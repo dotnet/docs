@@ -1,0 +1,201 @@
+<Type Name="FaultReason" FullName="System.ServiceModel.FaultReason">
+  <TypeSignature Language="C#" Value="public class FaultReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FaultReason extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultReason" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a text description of a SOAP fault.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.FaultReason> class contains a set of <xref:System.ServiceModel.FaultReasonText?displayProperty=fullName> objects, each of which contains a description of the fault in a specific language.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FaultReason (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.FaultReasonText&gt; translations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.FaultReasonText&gt; translations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.FaultReasonText})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="translations" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.FaultReasonText&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="translations">A list of <see cref="T:System.ServiceModel.FaultReasonText" /> objects; each object describes the fault in a specific language.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReason" /> class using the specified list of fault translations.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="translations" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="translations" /> is empty or one or more items is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FaultReason (System.ServiceModel.FaultReasonText translation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.FaultReasonText translation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.#ctor(System.ServiceModel.FaultReasonText)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="translation" Type="System.ServiceModel.FaultReasonText" />
+      </Parameters>
+      <Docs>
+        <param name="translation">An array of <see cref="T:System.ServiceModel.FaultReasonText" /> objects that correspond to fault descriptions in different languages.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReason" /> class using the specified text element that describes the fault in a specific language.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FaultReason (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">A description of the reason the fault occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReason" /> class using the specified fault description.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMatchingTranslation">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.FaultReasonText GetMatchingTranslation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.FaultReasonText GetMatchingTranslation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.GetMatchingTranslation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.FaultReasonText</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the fault description in the language used by the current thread.</summary>
+        <returns>A <see cref="T:System.ServiceModel.FaultReasonText" /> object that contains the fault description.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A translation is always returned.  
+  
+-   If only one translation exists, it is returned.  
+  
+-   If there is an exact match for a <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>, that is returned.  
+  
+-   If there is a translation for a parent language of <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>, that is returned.  
+  
+-   Otherwise, the first translation in the set is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMatchingTranslation">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.FaultReasonText GetMatchingTranslation (System.Globalization.CultureInfo cultureInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.FaultReasonText GetMatchingTranslation(class System.Globalization.CultureInfo cultureInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.GetMatchingTranslation(System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.FaultReasonText</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="cultureInfo">A <see cref="T:System.Globalization.CultureInfo" /> object that specifies the language of the fault description.</param>
+        <summary>Gets the fault description in the specified language.</summary>
+        <returns>The fault text in the specified language.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A translation is always returned.  
+  
+-   If only one translation exists, it is returned.  
+  
+-   If there is an exact match for a <xref:System.Globalization.CultureInfo?displayProperty=fullName>, that is returned.  
+  
+-   If there is a translation for a parent language of <xref:System.Globalization.CultureInfo?displayProperty=fullName>, that is returned.  
+  
+-   Otherwise, the first translation in the set is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Globalization.CultureInfo" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fault reason as a string.</summary>
+        <returns>A string containing the reason for the fault.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedReadOnlyCollection&lt;System.ServiceModel.FaultReasonText&gt; Translations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedReadOnlyCollection`1&lt;class System.ServiceModel.FaultReasonText&gt; Translations" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultReason.Translations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.SynchronizedReadOnlyCollection&lt;System.ServiceModel.FaultReasonText&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of fault descriptions in different languages.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.FaultReasonText" /> objects, where each object describes the fault in a different language.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

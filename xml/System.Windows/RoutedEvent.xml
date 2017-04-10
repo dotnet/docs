@@ -1,0 +1,216 @@
+<Type Name="RoutedEvent" FullName="System.Windows.RoutedEvent">
+  <TypeSignature Language="C#" Value="public sealed class RoutedEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoutedEvent extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.RoutedEvent" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Markup.RoutedEventConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer("System.Windows.Markup.RoutedEventValueSerializer, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents and identifies a routed event and declares its characteristics.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class contains the <xref:System.Windows.RoutedEvent.Name%2A>, <xref:System.Windows.RoutedEvent.RoutingStrategy%2A>, <xref:System.Windows.RoutedEvent.HandlerType%2A>, and <xref:System.Windows.RoutedEvent.OwnerType%2A> properties. None of these members can have null values.  
+  
+ This class has a XAML usage that is exclusively intended for providing the value of the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of an <xref:System.Windows.EventTrigger> (or derived class), or for the <xref:System.Windows.EventSetter.Event%2A> property of an <xref:System.Windows.EventSetter> (or derived class). For more information about <xref:System.Windows.EventTrigger>, <xref:System.Windows.EventSetter>, and the XAML usages for those classes, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+  
+<a name="xamlAttributeUsage_RoutedEvent"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="eventName"/>  
+- or -  
+<object property="type.eventName"/>  
+  
+```  
+  
+<a name="xamlValues_RoutedEvent"></a>   
+## XAML Values  
+ *eventName*  
+ An unqualified event name, equivalent to the <xref:System.Windows.RoutedEvent.Name%2A> property of the <xref:System.Windows.RoutedEvent> field, not the actual member name of the <xref:System.Windows.RoutedEvent> identifier field within a type. Without qualification, *eventName* must name an event as found in the type that is the <xref:System.Windows.Style.TargetType%2A> of the current style containing the <xref:System.Windows.EventSetter> or <xref:System.Windows.EventTrigger>.  
+  
+ *type*  
+ The type to use to qualify the event name. If provided without a prefix, *type* is expected to be a type within the default XAML namespace, and that can be mapped to an existing CLR type. For custom events, or events that are on types outside of the default XAML namespace, the string for *type* can include a prefix for a mapped XAML namespace. That XAML namespace should contain the XAML type that can map to a backing CLR type, and that CLR type should define the desired routed event identifier. For details on XAML namespace mapping, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddOwner">
+      <MemberSignature Language="C#" Value="public System.Windows.RoutedEvent AddOwner (Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.RoutedEvent AddOwner(class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEvent.AddOwner(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="ownerType">The type where the routed event is added.</param>
+        <summary>Associates another owner type with the routed event represented by a <see cref="T:System.Windows.RoutedEvent" /> instance, and enables routing of the event and its handling.</summary>
+        <returns>The identifier field for the event. This return value should be used to set a public static read-only field that will store the identifier for the representation of the routed event on the owning type. This field is typically defined with public access, because user code must reference the field in order to attach any instance handlers for the routed event when using the <see cref="M:System.Windows.UIElement.AddHandler(System.Windows.RoutedEvent,System.Delegate,System.Boolean)" /> utility method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The owner type is used internally when resolving an event by name.  
+  
+   
+  
+## Examples  
+ The following example adds the current class as another owner of an event defined in a different class. Here, `AnotherEditContainer` is the current class, and the `EditStateChangedEvent`<xref:System.Windows.RoutedEvent> field is defined as a member of that class. The `MyEditContainer` class originally defined the event, registering it with the identically named `EditStateChangedEvent`identifier.  
+  
+ [!code-csharp[ClassHandling#RoutedEventAddOwner](~/samples/snippets/csharp/VS_Snippets_Wpf/ClassHandling/CSharp/SDKSampleLibrary/class1.cs#routedeventaddowner)]
+ [!code-vb[ClassHandling#RoutedEventAddOwner](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClassHandling/visualbasic/sdksamplelibrary/class1.vb#routedeventaddowner)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HandlerType">
+      <MemberSignature Language="C#" Value="public Type HandlerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type HandlerType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEvent.HandlerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the handler type of the routed event.</summary>
+        <value>The handler type of the routed event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The handler type is the event handler delegate that should be used when implementing handlers that will listen for the event represented by this <xref:System.Windows.RoutedEvent>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEvent.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifying name of the routed event.</summary>
+        <value>The name of the routed event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name of a routed event must be unique within each owner type, but is not required to be globally unique.  
+  
+ The value of this property originates from the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method that defines a <xref:System.Windows.RoutedEvent>. Specifically, the value of <xref:System.Windows.RoutedEvent.Name%2A> is the `name` parameter value that was passed to <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerType">
+      <MemberSignature Language="C#" Value="public Type OwnerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type OwnerType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEvent.OwnerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the registered owner type of the routed event.</summary>
+        <value>The owner type of the routed event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type can be any object type, not necessarily limited to <xref:System.Windows.DependencyObject>. In cases of routed events that have owners added, this property will return the first declared owner.  
+  
+ The value of this property originates from the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method that defines a <xref:System.Windows.RoutedEvent>. Specifically, the value of <xref:System.Windows.RoutedEvent.OwnerType%2A> is the `ownerType` parameter value that was passed to <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoutingStrategy">
+      <MemberSignature Language="C#" Value="public System.Windows.RoutingStrategy RoutingStrategy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.RoutingStrategy RoutingStrategy" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedEvent.RoutingStrategy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutingStrategy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the routing strategy of the routed event.</summary>
+        <value>One of the enumeration values. The default is the enumeration default, <see cref="F:System.Windows.RoutingStrategy.Bubble" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By convention, tunneling routed events have the name prefix "Preview" and an associated bubbling event defined. It should be rare that there would be only a tunneling version and not a matching bubbling version. For more information, see [How to: Create a Custom Routed Event](~/docs/framework/wpf/advanced/how-to-create-a-custom-routed-event.md).  
+  
+ The value of this property originates from the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method that defines a <xref:System.Windows.RoutedEvent>. Specifically, the value of <xref:System.Windows.RoutedEvent.RoutingStrategy%2A> is the `routingStrategy` parameter value that was passed to <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedEvent.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the string representation of this <see cref="T:System.Windows.RoutedEvent" />.</summary>
+        <returns>A string representation for this object, which is identical to the value returned by <see cref="P:System.Windows.RoutedEvent.Name" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,156 @@
+<Type Name="UrlBuilder" FullName="System.Web.UI.Design.UrlBuilder">
+  <TypeSignature Language="C#" Value="public sealed class UrlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UrlBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.UrlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Starts a URL editor that allows a user to select or create a URL. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method starts a user interface for selecting a URL.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method to launch a URL builder from a menu command at design time.  
+  
+ [!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
+ [!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
+ [!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildUrl">
+      <MemberSignature Language="C#" Value="public static string BuildUrl (System.ComponentModel.IComponent component, System.Windows.Forms.Control owner, string initialUrl, string caption, string filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BuildUrl(class System.ComponentModel.IComponent component, class System.Windows.Forms.Control owner, string initialUrl, string caption, string filter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UrlBuilder.BuildUrl(System.ComponentModel.IComponent,System.Windows.Forms.Control,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="owner" Type="System.Windows.Forms.Control" />
+        <Parameter Name="initialUrl" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> whose site is to be used to access design-time services.</param>
+        <param name="owner">The <see cref="T:System.Windows.Forms.Control" /> used as the parent for the picker window.</param>
+        <param name="initialUrl">The initial URL to be shown in the picker window.</param>
+        <param name="caption">The caption of the picker window.</param>
+        <param name="filter">The filter string to use to optionally filter the files displayed in the picker window.</param>
+        <summary>Creates a UI to create or pick a URL.</summary>
+        <returns>The URL returned from the UI.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.Design.UrlBuilder.BuildUrl%2A> method to launch a URL builder from a menu command at design time.  
+  
+ [!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
+ [!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
+ [!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildUrl">
+      <MemberSignature Language="C#" Value="public static string BuildUrl (System.ComponentModel.IComponent component, System.Windows.Forms.Control owner, string initialUrl, string caption, string filter, System.Web.UI.Design.UrlBuilderOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BuildUrl(class System.ComponentModel.IComponent component, class System.Windows.Forms.Control owner, string initialUrl, string caption, string filter, valuetype System.Web.UI.Design.UrlBuilderOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UrlBuilder.BuildUrl(System.ComponentModel.IComponent,System.Windows.Forms.Control,System.String,System.String,System.String,System.Web.UI.Design.UrlBuilderOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="owner" Type="System.Windows.Forms.Control" />
+        <Parameter Name="initialUrl" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="options" Type="System.Web.UI.Design.UrlBuilderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> whose site is to be used to access design-time services.</param>
+        <param name="owner">The <see cref="T:System.Windows.Forms.Control" /> used as the parent for the picker window.</param>
+        <param name="initialUrl">The initial URL to be shown in the picker window.</param>
+        <param name="caption">The caption of the picker window.</param>
+        <param name="filter">The filter string to use to optionally filter the files displayed in the picker window.</param>
+        <param name="options">A <see cref="T:System.Web.UI.Design.UrlBuilderOptions" /> indicating the options for URL selection.</param>
+        <summary>Creates a UI to create or pick a URL, using the specified <see cref="T:System.Web.UI.Design.UrlBuilderOptions" /> object.</summary>
+        <returns>The URL returned from the UI.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[UrlBuilderExample#1](~/samples/snippets/cpp/VS_Snippets_WebNet/UrlBuilderExample/CPP/urlbuilderdesigner.cpp#1)]
+ [!code-csharp[UrlBuilderExample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UrlBuilderExample/CS/urlbuilderdesigner.cs#1)]
+ [!code-vb[UrlBuilderExample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UrlBuilderExample/VB/urlbuilderdesigner.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildUrl">
+      <MemberSignature Language="C#" Value="public static string BuildUrl (IServiceProvider serviceProvider, System.Windows.Forms.Control owner, string initialUrl, string caption, string filter, System.Web.UI.Design.UrlBuilderOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BuildUrl(class System.IServiceProvider serviceProvider, class System.Windows.Forms.Control owner, string initialUrl, string caption, string filter, valuetype System.Web.UI.Design.UrlBuilderOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UrlBuilder.BuildUrl(System.IServiceProvider,System.Windows.Forms.Control,System.String,System.String,System.String,System.Web.UI.Design.UrlBuilderOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="owner" Type="System.Windows.Forms.Control" />
+        <Parameter Name="initialUrl" Type="System.String" />
+        <Parameter Name="caption" Type="System.String" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="options" Type="System.Web.UI.Design.UrlBuilderOptions" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The <see cref="T:System.IServiceProvider" /> to be used to access design-time services.</param>
+        <param name="owner">The <see cref="T:System.Windows.Forms.Control" /> used as the parent for the picker window.</param>
+        <param name="initialUrl">The initial URL to be shown in the picker window.</param>
+        <param name="caption">The caption of the picker window.</param>
+        <param name="filter">The filter string to use to optionally filter the files displayed in the picker window.</param>
+        <param name="options">A <see cref="T:System.Web.UI.Design.UrlBuilderOptions" /> indicating the options for URL selection.</param>
+        <summary>Creates a UI to create or pick a URL, using the specified <see cref="T:System.Web.UI.Design.UrlBuilderOptions" /> object.</summary>
+        <returns>The URL returned from the UI.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IServiceProvider> interface is used to obtain the <xref:System.ComponentModel.Design.IDesignerHost> implementation for the designer host.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

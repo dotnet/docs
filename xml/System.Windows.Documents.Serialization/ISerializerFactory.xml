@@ -1,0 +1,130 @@
+<Type Name="ISerializerFactory" FullName="System.Windows.Documents.Serialization.ISerializerFactory">
+  <TypeSignature Language="C#" Value="public interface ISerializerFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISerializerFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.ISerializerFactory" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a means for creating a software component that can serialize any part of a [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] application's content to a manufacturer's proprietary format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Xps.Serialization.XpsSerializerFactory> in the <xref:System.Windows.Xps.Serialization> namespace is Microsoft's implementation of this interface for serialized [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] content.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="usage">
+      <para>We recommend that you implement this interface only with a document format serializer that you wish to register using the <see cref="M:System.Windows.Documents.Serialization.SerializerProvider.RegisterSerializer(System.Windows.Documents.Serialization.SerializerDescriptor,System.Boolean)" /> method. Accordingly, we recommend that you not call your implementations of <see cref="T:System.Windows.Documents.Serialization.ISerializerFactory" /> methods directly.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateSerializerWriter">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.Serialization.SerializerWriter CreateSerializerWriter (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Documents.Serialization.SerializerWriter CreateSerializerWriter(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.ISerializerFactory.CreateSerializerWriter(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.Serialization.SerializerWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> to which the returned object writes.</param>
+        <summary>Initializes an object derived from the abstract <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" /> class for the specified <see cref="T:System.IO.Stream" />.</summary>
+        <returns>An object of a class derived from <see cref="T:System.Windows.Documents.Serialization.SerializerWriter" />.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="usage">
+          <para>We recommend that you not call your implementation of this method directly. Instead, use the <see cref="M:System.Windows.Documents.Serialization.SerializerProvider.CreateSerializerWriter(System.Windows.Documents.Serialization.SerializerDescriptor,System.IO.Stream)" /> method of the <see cref="T:System.Windows.Documents.Serialization.SerializerProvider" /> class.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFileExtension">
+      <MemberSignature Language="C#" Value="public string DefaultFileExtension { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultFileExtension" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.DefaultFileExtension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default extension for files of the manufacturer's proprietary format.</summary>
+        <value>A <see cref="T:System.String" /> representing the proprietary format's default file extension.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is most useful if the leading period is included, for example, ".zzz"  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the public name of the manufacturer's serializing component.</summary>
+        <value>A <see cref="T:System.String" /> representing the public name of the serializing component.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManufacturerName">
+      <MemberSignature Language="C#" Value="public string ManufacturerName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ManufacturerName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the serializing component's manufacturer.</summary>
+        <value>A <see cref="T:System.String" /> representing the manufacturer's name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ManufacturerWebsite">
+      <MemberSignature Language="C#" Value="public Uri ManufacturerWebsite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ManufacturerWebsite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Serialization.ISerializerFactory.ManufacturerWebsite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the web address of the serializing component's manufacturer.</summary>
+        <value>A <see cref="T:System.Uri" /> representing the manufacturer's website.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "controls [WPF], ScrollViewer"
 ms.assetid: 2163666e-04da-4036-841f-40947c9c034d
 caps.latest.revision: 67
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ScrollViewer

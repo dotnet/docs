@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "text boxes, validating user input"
 ms.assetid: 235d6121-027d-481d-8d59-4f6794d15d0c
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # MaskedTextBox Control (Windows Forms)

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "LayoutEngine class"
 ms.assetid: f91aa91c-29f4-4089-95ca-5d48b774b00e
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement a Custom Layout Engine

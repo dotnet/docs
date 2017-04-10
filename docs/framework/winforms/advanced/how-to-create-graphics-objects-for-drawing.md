@@ -2,7 +2,7 @@
 title: "How to: Create Graphics Objects for Drawing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "GDI+, creating images"
 ms.assetid: 162861f9-f050-445e-8abb-b2c43a918b8b
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Graphics Objects for Drawing

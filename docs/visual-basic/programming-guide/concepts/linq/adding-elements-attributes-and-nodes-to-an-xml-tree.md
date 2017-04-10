@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: e243e694-c987-43aa-8b22-1e33dace582c
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic)

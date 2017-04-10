@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "clauses [Visual Basic]"
 ms.assetid: 5e89f5f3-d129-4ed1-8857-30cd71cff95e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

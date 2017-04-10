@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Splitter control [Windows Forms], examples"
 ms.assetid: e79f6bcc-3740-4d1e-b46a-c5594d9b7327
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Multipane User Interface with Windows Forms

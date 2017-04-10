@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "UIElement [WPF], caching"
 ms.assetid: 4739c1fc-60ba-4c46-aba6-f6c1a2688f19
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Improve Rendering Performance by Caching an Element

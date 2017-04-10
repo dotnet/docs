@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 36018532-a55c-4538-8a27-98f475ea3415
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Advanced LINQ to XML Programming (Visual Basic)

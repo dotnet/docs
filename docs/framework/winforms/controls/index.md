@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms controls, about Windows Forms controls"
 ms.assetid: f050de8f-4ebd-4042-94b8-edf9a1dbd52a
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows Forms Controls

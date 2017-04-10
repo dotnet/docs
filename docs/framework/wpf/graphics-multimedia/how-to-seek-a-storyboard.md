@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "seeking Storyboards"
 ms.assetid: 887bb39a-0c2a-4ae8-956d-1d9f6f8ebbfc
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Seek a Storyboard

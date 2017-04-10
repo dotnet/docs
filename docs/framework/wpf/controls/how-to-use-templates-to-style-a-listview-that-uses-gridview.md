@@ -2,7 +2,7 @@
 title: "How to: Use Templates to Style a ListView That Uses GridView | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "ListView controls, styling"
 ms.assetid: 94bf964b-96c8-4bdf-a0c3-f5271b7cb565
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Templates to Style a ListView That Uses GridView

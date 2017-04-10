@@ -2,7 +2,7 @@
 title: "How to: Implement User Login with Client Application Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "client application services, authenticate users"
 ms.assetid: 5431a671-eb02-4e18-a651-24764fccec9a
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement User Login with Client Application Services

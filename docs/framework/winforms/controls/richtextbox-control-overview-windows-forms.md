@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "text boxes, about text boxes"
 ms.assetid: 95081194-3dd4-4b84-9545-dd373e491eca
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # RichTextBox Control Overview (Windows Forms)

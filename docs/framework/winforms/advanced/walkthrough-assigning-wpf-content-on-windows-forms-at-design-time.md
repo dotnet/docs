@@ -2,7 +2,7 @@
 title: "Walkthrough: Assigning WPF Content on Windows Forms at Design Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "WPF user control, hosting in Windows Forms"
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Assigning WPF Content on Windows Forms at Design Time

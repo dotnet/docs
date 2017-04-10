@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "seeking clocks synchronously"
 ms.assetid: e5b7529b-b7d0-40d2-9e1d-fa4b5e736e96
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Seek a Clock Synchronously

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 06ea104b-f44c-4bb2-9c34-889ae025c80d
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Pre-Atomization of XName Objects (LINQ to XML) (Visual Basic)

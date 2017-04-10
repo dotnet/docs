@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "files, opening with OpenFileDialog component"
 ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Open Files Using the OpenFileDialog Component

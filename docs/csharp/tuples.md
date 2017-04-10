@@ -2,7 +2,7 @@
 title: Tuples | C# Guide
 description: Learn about unnamed and named tuple types in C#
 keywords: .NET, .NET Core, C#
-author:  BillWagner
+author: BillWagner
 ms-author: wiwagn
 ms.date: 11/23/2016
 ms.topic: article

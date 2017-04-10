@@ -2,8 +2,8 @@
 title: "Regular expression example: changing date formats"
 description: Regular expression example changing date formats
 keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 ms.date: 07/28/2016
 ms.topic: article
 ms.prod: .net

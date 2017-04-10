@@ -2,7 +2,7 @@
 title: "How to: Set the Height of a Window from a Page | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "height of window, setting from a page"
 ms.assetid: 4e4488ff-ab5c-4ee9-81a4-e1addb55c5cc
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Height of a Window from a Page

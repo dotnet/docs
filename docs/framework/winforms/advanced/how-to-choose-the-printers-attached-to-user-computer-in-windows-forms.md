@@ -2,7 +2,7 @@
 title: "How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "printers, choosing"
 ms.assetid: 63c1172b-2931-4ac0-953f-37f629494bbf
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms

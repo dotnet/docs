@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "XML literals [Visual Basic], element names"
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

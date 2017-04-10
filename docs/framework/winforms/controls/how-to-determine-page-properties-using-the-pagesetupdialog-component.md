@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "PageSetupDialog component"
 ms.assetid: 6dae05bc-c0fd-4357-bb93-841a1631d98f
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Determine Page Properties Using the PageSetupDialog Component

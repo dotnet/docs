@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Separator control [WPF]"
 ms.assetid: 1b872bc6-1a26-401c-989b-3fafecc5a4ef
 caps.latest.revision: 67
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Separator

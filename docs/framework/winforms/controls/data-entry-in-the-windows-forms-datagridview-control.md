@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, data entry"
 ms.assetid: 4a6d4676-d4e7-4b0e-9c22-50ce65ffe0d6
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Data Entry in the Windows Forms DataGridView Control

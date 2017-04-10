@@ -38,8 +38,8 @@ helpviewer_keywords:
   - "XAML, property element syntax"
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML Syntax In Detail

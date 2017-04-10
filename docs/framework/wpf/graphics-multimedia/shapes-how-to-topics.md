@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Shape types"
 ms.assetid: 91a371f1-81e4-40da-ad61-ec24167152e6
 caps.latest.revision: 71
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Shapes How-to Topics

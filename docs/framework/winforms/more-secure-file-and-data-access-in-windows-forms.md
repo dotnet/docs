@@ -2,7 +2,7 @@
 title: "More Secure File and Data Access in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "security [Windows Forms], data access"
 ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # More Secure File and Data Access in Windows Forms

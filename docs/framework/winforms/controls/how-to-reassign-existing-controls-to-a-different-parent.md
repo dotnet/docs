@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "layout [Windows Forms], child controls"
 ms.assetid: 5a5723ff-34e0-4b6f-a57b-be4ebe35cb34
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Reassign Existing Controls to a Different Parent

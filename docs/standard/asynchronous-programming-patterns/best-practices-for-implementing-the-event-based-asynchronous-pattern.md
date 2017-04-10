@@ -2,11 +2,10 @@
 title: "Best Practices for Implementing the Event-based Asynchronous Pattern | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -20,8 +19,8 @@ helpviewer_keywords:
   - "AsyncCompletedEventArgs class"
 ms.assetid: 4acd2094-4f46-4eff-9190-92d0d9ff47db
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Best Practices for Implementing the Event-based Asynchronous Pattern

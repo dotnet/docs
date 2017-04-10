@@ -2,7 +2,7 @@
 title: "How to: Control a MediaElement by Using a Storyboard | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "playback of media, controlling with Storyboards"
 ms.assetid: 6128ca77-b826-4e36-b968-6f237157c543
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Control a MediaElement by Using a Storyboard

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "user settings, persisting"
 ms.assetid: 0e5e6415-b6e2-4602-9be0-a65fa167d007
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

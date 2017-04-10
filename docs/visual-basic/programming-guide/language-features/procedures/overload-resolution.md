@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "overloads, resolution"
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

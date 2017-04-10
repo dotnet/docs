@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "TextBox control, about TextBox control"
 ms.assetid: 1ba6dc5b-11a7-4247-9213-36c6729ee35f
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TextBox Overview

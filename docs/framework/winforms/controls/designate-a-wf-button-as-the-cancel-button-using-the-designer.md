@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Button control [Windows Forms], designating as cancel button"
 ms.assetid: 30e77d9c-d565-4ab5-a84a-62c043af8822
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Designate a Windows Forms Button as the Cancel Button Using the Designer

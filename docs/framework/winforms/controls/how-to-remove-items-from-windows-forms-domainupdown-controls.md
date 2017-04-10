@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "spin button control, removing items"
 ms.assetid: e70f5cbc-b497-41a9-975a-344c00e56ed2
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Remove Items from Windows Forms DomainUpDown Controls

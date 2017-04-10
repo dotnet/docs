@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "PrintForm component [Visual Basic], deploying"
 ms.assetid: b595ea44-a712-4625-a761-190c64f59bbe
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

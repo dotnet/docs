@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Splitter control [Windows Forms], about Splitter control"
 ms.assetid: e2b6ab83-dfdd-40ec-9762-850702c82dcb
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Splitter Control Overview (Windows Forms)

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "templates"
 ms.assetid: 7fd571fd-d54a-40fc-b332-4c4015a5b6ff
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Styles and Templates

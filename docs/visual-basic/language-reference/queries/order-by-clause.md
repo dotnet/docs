@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Order By statement"
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

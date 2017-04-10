@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "TabControl control [Windows Forms], disabling pages"
 ms.assetid: adcc6618-8a34-4ee1-bbe3-47e732de6a59
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Disable Tab Pages

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "composite controls, creating"
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Author Composite Controls

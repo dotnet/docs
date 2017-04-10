@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "inferred variable declaration"
 ms.assetid: 4ad3e6e9-8f5b-4209-a248-de22ef6e4652
 caps.latest.revision: 72
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], creating"
 ms.assetid: 7570e982-545b-4c3a-a7c7-55581d313400
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Author Controls for Windows Forms

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "procedures, calling"
 ms.assetid: e5b31571-6867-406f-b8e7-a3f9aae4723a
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "images [Windows Forms], adding to PictureBox control"
 ms.assetid: f900eb93-25d5-40e5-b5df-b3cea0e831b6
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PictureBox Control (Windows Forms)

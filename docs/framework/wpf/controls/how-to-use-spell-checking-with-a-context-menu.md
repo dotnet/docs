@@ -2,7 +2,7 @@
 title: "How to: Use Spell Checking with a Context Menu | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "spell checking with a context menu [WPF]"
 ms.assetid: 61f69a20-2ff3-4056-9060-e32f4483ec5e
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Spell Checking with a Context Menu

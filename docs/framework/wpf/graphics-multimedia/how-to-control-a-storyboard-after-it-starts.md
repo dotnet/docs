@@ -2,7 +2,7 @@
 title: "How to: Control a Storyboard After It Starts | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "Storyboards, controlling after start"
 ms.assetid: 040f13f0-69f9-4ab5-be2b-079f4f80c7c0
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Control a Storyboard After It Starts

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "visual styles, rendering Windows Forms controls"
 ms.assetid: a207781b-1baa-4ce9-b788-1e951bd4b5df
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Render a Visual Style Element

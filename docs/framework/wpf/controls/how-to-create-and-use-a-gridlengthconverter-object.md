@@ -2,7 +2,7 @@
 title: "How to: Create and Use a GridLengthConverter Object | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "Grid control, creating, GridLengthConverter objects"
 ms.assetid: 5ab75911-e36a-4825-80e4-081c57e8e182
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create and Use a GridLengthConverter Object

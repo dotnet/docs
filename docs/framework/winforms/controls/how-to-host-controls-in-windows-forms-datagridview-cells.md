@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "cells, hosting controls"
 ms.assetid: e79a9d4e-64ec-41f5-93ec-f5492633cbb2
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Host Controls in Windows Forms DataGridView Cells

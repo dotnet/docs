@@ -2,7 +2,7 @@
 title: "How to: Create a Style for a Dragged GridView Column Header | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "ListView controls, styling"
 ms.assetid: 0b999645-0313-4b33-80b9-19ece08b5459
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Style for a Dragged GridView Column Header

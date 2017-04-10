@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "processing instruction literal [Visual Basic]"
 ms.assetid: cef4f7f8-0011-4f64-8602-795077ad4f15
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

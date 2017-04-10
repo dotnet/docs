@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "TextBox control, how-to topics"
 ms.assetid: 006aa461-fe37-4cd8-860a-d38d76e8b9f7
 caps.latest.revision: 65
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TextBox How-to Topics

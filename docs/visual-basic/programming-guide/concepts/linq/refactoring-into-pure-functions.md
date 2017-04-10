@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 99e7d27b-a3ff-4577-bdb2-5a8278d6d7af
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Refactoring Into Pure Functions (Visual Basic)

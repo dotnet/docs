@@ -2,7 +2,7 @@
 title: "How to: Build a Standard UI Dialog Box by Using Grid | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Grid control, creating, dialog box"
 ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Build a Standard UI Dialog Box by Using Grid

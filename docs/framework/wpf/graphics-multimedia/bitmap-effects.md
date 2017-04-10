@@ -2,7 +2,7 @@
 title: "Bitmap Effects | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "images, bitmap"
 ms.assetid: be180b56-ca6e-4da3-a839-f6b0bf482f7d
 caps.latest.revision: 62
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Bitmap Effects

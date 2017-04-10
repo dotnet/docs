@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls, StackPanel"
 ms.assetid: c9849df3-d000-4cdf-8345-5edcd053919d
 caps.latest.revision: 65
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # StackPanel How-to Topics

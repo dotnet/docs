@@ -2,7 +2,7 @@
 title: "Using a Pen to Draw Lines and Shapes | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "drawing"
 ms.assetid: 8a7542ab-3e9e-443f-8405-2d6053528e20
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Using a Pen to Draw Lines and Shapes

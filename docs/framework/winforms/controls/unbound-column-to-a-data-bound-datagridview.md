@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], unbound data"
 ms.assetid: f7bdc4d8-ba8e-421b-ad62-82d936f01372
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add an Unbound Column to a Data-Bound Windows Forms DataGridView Control

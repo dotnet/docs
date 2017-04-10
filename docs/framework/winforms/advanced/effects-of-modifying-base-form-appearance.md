@@ -2,7 +2,7 @@
 title: "Effects of Modifying a Base Form&#39;s Appearance | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "inheritance, forms"
 ms.assetid: 1c3f2b29-a05c-4c6f-aa1a-4e66b94f343a
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Effects of Modifying a Base Form&#39;s Appearance

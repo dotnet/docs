@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrTextFieldParser_NumberOfCharsMustBePositive"
 ms.assetid: 3eea4bbf-cd49-4d19-adfb-0e2adf087065
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

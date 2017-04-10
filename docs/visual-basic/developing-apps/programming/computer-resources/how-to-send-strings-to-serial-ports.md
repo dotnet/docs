@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "serial ports, sending strings to"
 ms.assetid: 6ebf46cd-b2d0-4b2c-9a1f-be177b22ad52
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

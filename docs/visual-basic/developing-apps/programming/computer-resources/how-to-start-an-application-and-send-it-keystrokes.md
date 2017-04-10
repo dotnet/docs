@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "SendKeys.SendWait examples"
 ms.assetid: f1303184-fce4-44fb-88b4-aac5f42d5d77
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "operator overloading"
 ms.assetid: 54203dfa-c24b-463f-9942-d5153e89e762
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

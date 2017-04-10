@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "rotating contents of Brushes"
 ms.assetid: ebada2f9-f01f-4863-9ea2-c2e4e51610f1
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Transform a Brush

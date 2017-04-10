@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], samples"
 ms.assetid: 7fe3956f-5b8f-4f78-8aae-c9eb0b28f13a
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a Background Thread to Search for Files

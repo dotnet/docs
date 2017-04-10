@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "decision structures"
 ms.assetid: 6885d426-fa87-4e1c-881f-f0e9ec8d98af
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

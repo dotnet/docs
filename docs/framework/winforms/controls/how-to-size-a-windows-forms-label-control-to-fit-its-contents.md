@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Label control [Windows Forms], sizing to fit contents"
 ms.assetid: 99648964-63b2-438c-980e-d24103ad602b
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Size a Windows Forms Label Control to Fit Its Contents

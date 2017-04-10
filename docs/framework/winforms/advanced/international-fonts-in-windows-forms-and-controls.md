@@ -2,7 +2,7 @@
 title: "International Fonts in Windows Forms and Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "globalization [Windows Forms], character sets"
 ms.assetid: 2c3066df-9bac-479a-82b2-79e484b346a3
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # International Fonts in Windows Forms and Controls

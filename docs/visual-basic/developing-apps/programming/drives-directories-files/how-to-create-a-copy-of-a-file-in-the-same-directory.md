@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "I/O [Visual Basic], copying files"
 ms.assetid: b2fdda86-e666-42c2-9706-9527e9fa68ff
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Clipboard, copying multiple cells"
 ms.assetid: fd0403b2-d0e3-4ae0-839c-0f737e1eb4a9
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control

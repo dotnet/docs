@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "tab pages, adding controls"
 ms.assetid: b092532e-7346-469f-b9a1-897f9bea4fb7
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add a Control to a Tab Page

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XAML, reusing resources"
 ms.assetid: 91580b89-a0a8-4889-aecb-fddf8e63175f
 caps.latest.revision: 33
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML Resources

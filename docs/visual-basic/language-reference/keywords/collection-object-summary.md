@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Collection object, summary"
 ms.assetid: c4586369-d817-4453-9cb0-1a272fc66737
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

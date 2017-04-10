@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrCollection_BeforeAfterExclusive"
 ms.assetid: f55fb8d2-746d-45de-b350-5a47f83e5ab4
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

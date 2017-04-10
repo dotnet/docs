@@ -32,8 +32,8 @@ helpviewer_keywords:
   - "ToolStripMenuItems, showing separator bars"
 ms.assetid: aa5f19bb-b545-4378-bfa6-36ba592f0d7c
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Enhancements to ToolStripMenuItems

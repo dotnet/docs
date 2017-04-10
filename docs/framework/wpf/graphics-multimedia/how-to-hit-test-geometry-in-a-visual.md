@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Geometry objects, visual objects comprising"
 ms.assetid: 8bf2643f-d7f9-4cb4-9ea6-5b893c23200d
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hit Test Geometry in a Visual

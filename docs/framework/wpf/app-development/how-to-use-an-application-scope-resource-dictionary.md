@@ -2,7 +2,7 @@
 title: "How to: Use an Application-Scope Resource Dictionary | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "application-scope resource dictionaries"
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use an Application-Scope Resource Dictionary

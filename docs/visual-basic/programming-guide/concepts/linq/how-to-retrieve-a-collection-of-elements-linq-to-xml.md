@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 2269f9de-8fb9-4666-b8a1-a4e754fa6a81
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve a Collection of Elements (LINQ to XML) (Visual Basic)

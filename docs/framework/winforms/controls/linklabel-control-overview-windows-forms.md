@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "LinkLabel control [Windows Forms], about LinkLabel control"
 ms.assetid: 9e248549-10ca-43a3-bb5e-60f583d369f1
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # LinkLabel Control Overview (Windows Forms)

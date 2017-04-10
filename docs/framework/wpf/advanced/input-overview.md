@@ -2,7 +2,7 @@
 title: "Input Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,8 +30,8 @@ helpviewer_keywords:
   - "mouse position [WPF]"
 ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
 caps.latest.revision: 50
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Input Overview

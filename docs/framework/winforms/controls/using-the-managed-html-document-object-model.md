@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "managed HTML DOM"
 ms.assetid: a017dd5c-cd7b-47e4-952c-f4f54cb48409
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Using the Managed HTML Document Object Model

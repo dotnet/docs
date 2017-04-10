@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "RadioButton control [Windows Forms]"
 ms.assetid: e895b2a5-9bcb-4486-b165-eaf4c3ea9644
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # RadioButton Control (Windows Forms)

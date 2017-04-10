@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms]"
 ms.assetid: fddbe951-4485-459d-a5fd-665ea346dbc1
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Overview of Using Controls in Windows Forms

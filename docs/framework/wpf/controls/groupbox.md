@@ -2,7 +2,7 @@
 title: "GroupBox | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "GroupBox control [WPF]"
 ms.assetid: 1f4ed3d9-a171-4623-bc4f-3314e3576271
 caps.latest.revision: 70
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # GroupBox

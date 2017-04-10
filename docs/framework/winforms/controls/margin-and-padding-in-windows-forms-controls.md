@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Margin property [Windows Forms]"
 ms.assetid: 3781b5a1-3085-4072-bed0-44670c23ffdc
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Margin and Padding in Windows Forms Controls

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 53caa336-ab83-4181-b0f6-5c87c5f9e4ee
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Query An Assembly&#39;s Metadata with Reflection (LINQ) (Visual Basic)

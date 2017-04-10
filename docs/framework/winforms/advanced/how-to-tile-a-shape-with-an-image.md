@@ -2,7 +2,7 @@
 title: "How to: Tile a Shape with an Image | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], filling shapes with"
 ms.assetid: 6d407891-6e5c-4495-a546-3da5604e9fb8
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Tile a Shape with an Image

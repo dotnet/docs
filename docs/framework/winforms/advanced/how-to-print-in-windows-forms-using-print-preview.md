@@ -2,7 +2,7 @@
 title: "How to: Print in Windows Forms Using Print Preview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "print preview"
 ms.assetid: 4a16f7e2-ae10-4485-b0ae-3d558334d0fe
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Print in Windows Forms Using Print Preview

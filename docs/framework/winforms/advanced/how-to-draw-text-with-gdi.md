@@ -2,7 +2,7 @@
 title: "How to: Draw Text with GDI | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms, drawing text with GDI"
 ms.assetid: 2a19fe5d-2ace-451c-94db-01cb1118ef7b
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw Text with GDI

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], strings"
 ms.assetid: ae4c79e0-08ea-489f-bdb2-5eb6d355f284
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

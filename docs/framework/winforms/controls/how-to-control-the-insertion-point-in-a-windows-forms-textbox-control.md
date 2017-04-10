@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "text boxes, controlling insertion point"
 ms.assetid: 5bee7d34-5121-429e-ab1f-d8ff67bc74c1
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Control the Insertion Point in a Windows Forms TextBox Control

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "file encoding"
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

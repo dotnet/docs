@@ -2,7 +2,7 @@
 title: "Walkthrough: Hosting a Win32 Control in WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Win32 code, WPF interoperation"
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Hosting a Win32 Control in WPF

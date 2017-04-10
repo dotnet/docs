@@ -2,7 +2,7 @@
 title: "How to: Set Up Notification of Binding Updates | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "binding, updates, notifications of"
 ms.assetid: 5673073e-dbe1-49da-980a-484a88f9595a
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Up Notification of Binding Updates

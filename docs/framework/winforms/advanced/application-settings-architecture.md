@@ -2,7 +2,7 @@
 title: "Application Settings Architecture | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], architecture"
 ms.assetid: c8eb2ad0-fac6-4ea2-9140-675a4a44d562
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Application Settings Architecture

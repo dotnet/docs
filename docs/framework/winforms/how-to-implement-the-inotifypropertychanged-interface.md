@@ -2,7 +2,7 @@
 title: "How to: Implement the INotifyPropertyChanged Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "INotifyPropertyChanged interface, implementing"
 ms.assetid: eac428af-b43b-46ac-80d9-1a5f88658725
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement the INotifyPropertyChanged Interface

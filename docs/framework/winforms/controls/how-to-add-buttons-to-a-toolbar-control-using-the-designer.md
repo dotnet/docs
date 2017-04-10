@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ToolBar control [Windows Forms], adding drop-down menus"
 ms.assetid: d9ce3040-3e21-4e2d-80ae-b430982b2db8
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Buttons to a ToolBar Control Using the Designer

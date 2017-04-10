@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "/keycontainer compiler option [Visual Basic]"
 ms.assetid: 6a9bc861-1752-4db1-9f64-b5252f0482cc
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "print preview, default interface (using designer)"
 ms.assetid: bfb5a3d7-021e-44f4-90f3-d435467f51d6
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PrintPreviewDialog Control (Windows Forms)

@@ -2,7 +2,7 @@
 title: "How to: Animate the Color or Opacity of a SolidColorBrush | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "SolidColorBrush, animating opacity of"
 ms.assetid: d9154354-843f-4713-bad1-35bb0ba6eaeb
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate the Color or Opacity of a SolidColorBrush

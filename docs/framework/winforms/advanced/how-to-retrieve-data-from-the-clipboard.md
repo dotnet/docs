@@ -2,7 +2,7 @@
 title: "How to: Retrieve Data from the Clipboard | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Clipboard, retrieving data"
 ms.assetid: 99612537-2c8a-449f-aab5-2b3b28d656e7
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Retrieve Data from the Clipboard

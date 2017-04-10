@@ -2,7 +2,7 @@
 title: "How to: Animate a Double by Using Key Frames | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "key frames, animating Doubles with"
 ms.assetid: 3a1a7dba-7694-4907-8a2f-3408baebfa82
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate a Double by Using Key Frames

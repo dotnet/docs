@@ -2,7 +2,7 @@
 title: "Best Practices for the TableLayoutPanel Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "automatic sizing"
 ms.assetid: b6706efb-d7a4-45ec-8cf4-08fa993e3afb
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Best Practices for the TableLayoutPanel Control

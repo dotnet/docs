@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: e19289c4-26d1-435b-b0db-fb8bc856b753
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: List All Nodes in a Tree (Visual Basic)

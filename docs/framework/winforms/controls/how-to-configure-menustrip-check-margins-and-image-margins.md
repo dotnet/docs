@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms], configuring check and image margins"
 ms.assetid: 45a9075d-4bea-4ce2-9b2c-7619aa39f8ce
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Configure MenuStrip Check Margins and Image Margins

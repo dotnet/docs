@@ -2,7 +2,7 @@
 title: "How to: Bind to XML Data Using an XMLDataProvider and XPath Queries | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "binding, to XML data using XmlDataProvider queries"
 ms.assetid: 7dcd018f-16aa-4870-8e47-c1b4ea31e574
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind to XML Data Using an XMLDataProvider and XPath Queries

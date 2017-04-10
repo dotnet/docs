@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Windows Forms, creating document viewers"
 ms.assetid: 6a6338fe-f7ee-4f5e-9d8f-0465c57e9039
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create an HTML Document Viewer in a Windows Forms Application

@@ -2,7 +2,7 @@
 title: "How to: Add and Remove Items with the Windows Forms ListView Control Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], adding list items"
 ms.assetid: 217611ee-fd11-4d39-9a54-a37c3e781be1
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add and Remove Items with the Windows Forms ListView Control Using the Designer

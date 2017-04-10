@@ -2,7 +2,7 @@
 title: "Walkthrough: Creating Your First Touch Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "creating a touchscreen application [WPF]"
 ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Creating Your First Touch Application

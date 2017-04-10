@@ -2,7 +2,7 @@
 title: "Glyphs | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "glyphs [WPF]"
 ms.assetid: d5d9274c-23b3-4859-8869-6e64403c9ca7
 caps.latest.revision: 54
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Glyphs

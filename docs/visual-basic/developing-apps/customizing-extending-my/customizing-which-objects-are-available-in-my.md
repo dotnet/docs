@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "My namespace"
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

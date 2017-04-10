@@ -33,8 +33,8 @@ helpviewer_keywords:
   - "child tables, DataGrid control"
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DataGrid Control Overview (Windows Forms)

@@ -2,7 +2,7 @@
 title: "IEnumRAWINPUTDEVIC:Clone | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "Clone method"
 ms.assetid: 2a6a1900-aa55-45fa-9382-241d569a2dc4
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # IEnumRAWINPUTDEVIC:Clone

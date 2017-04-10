@@ -2,7 +2,7 @@
 title: "How to: Use Antialiasing with Text | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "strings [Windows Forms], antialiasing when drawing"
 ms.assetid: 48fc34f3-f236-4b01-a0cb-f0752e6d22ae
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Antialiasing with Text

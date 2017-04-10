@@ -2,7 +2,7 @@
 title: "How to: Apply a GuidelineSet to a Drawing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "graphics [WPF], GuidelineSet property"
 ms.assetid: 45f3e0b4-8820-45a7-b865-b8ea5b17b0c8
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Apply a GuidelineSet to a Drawing

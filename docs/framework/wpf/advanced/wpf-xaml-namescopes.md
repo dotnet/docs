@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "classes, FrameworkContentElement"
 ms.assetid: 52bbf4f2-15fc-40d4-837b-bb4c21ead7d4
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF XAML Namescopes

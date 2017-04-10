@@ -2,7 +2,7 @@
 title: "How to: Draw Text at a Specified Location | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms, drawing text a a specified location"
 ms.assetid: 60816423-1c38-465e-980d-2c2b64d74086
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw Text at a Specified Location

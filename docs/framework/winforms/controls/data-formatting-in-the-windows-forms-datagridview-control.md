@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, formatting data"
 ms.assetid: 07bf558d-3748-42ba-8ba0-37fdef924081
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Data Formatting in the Windows Forms DataGridView Control

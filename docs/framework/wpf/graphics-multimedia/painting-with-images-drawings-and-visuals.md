@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "brushes, painting with visuals"
 ms.assetid: 779aac3f-8d41-49d8-8130-768244aa2240
 caps.latest.revision: 28
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Painting with Images, Drawings, and Visuals

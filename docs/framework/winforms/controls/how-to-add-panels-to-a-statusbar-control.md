@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "StatusBar control [Windows Forms], adding panels"
 ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Panels to a StatusBar Control

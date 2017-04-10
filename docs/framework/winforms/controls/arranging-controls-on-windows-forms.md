@@ -2,7 +2,7 @@
 title: "Arranging Controls on Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms controls, positioning on form"
 ms.assetid: b2d62ed8-c391-4a7e-b72e-6bbabfca73dc
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Arranging Controls on Windows Forms

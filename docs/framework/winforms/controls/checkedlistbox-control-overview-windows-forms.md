@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "list boxes, about list boxes"
 ms.assetid: e6cff3ce-e2ba-458e-851f-299e8e9c8abf
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # CheckedListBox Control Overview (Windows Forms)

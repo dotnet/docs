@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "parts [WPF], Thumb"
 ms.assetid: 86a49235-62d9-414e-923e-53126e3f930a
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Thumb Syles and Templates

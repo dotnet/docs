@@ -2,7 +2,7 @@
 title: "Drag and Drop How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "drag-and-drop [WPF], how-to topics"
 ms.assetid: 559c0804-c62a-4640-b6b9-cbd2aa9fb99c
 caps.latest.revision: 80
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Drag and Drop How-to Topics

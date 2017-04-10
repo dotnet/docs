@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Button control [Windows Forms], selecting"
 ms.assetid: fe2fc058-5118-4f70-b264-6147d64a7a8d
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Ways to Select a Windows Forms Button Control

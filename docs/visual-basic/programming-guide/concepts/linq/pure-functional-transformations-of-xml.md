@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 5e19b74a-7773-4b58-b110-953ffd364c55
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Pure Functional Transformations of XML (Visual Basic)

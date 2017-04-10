@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "MaskedTextBox control [Windows Forms]"
 ms.assetid: 779b3a12-cd74-4e58-b46e-04983bda5b2c
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Input Mask

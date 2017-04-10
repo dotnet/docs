@@ -2,7 +2,7 @@
 title: "Walkthrough: Enabling Drag and Drop on a User Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "drag-and-drop [WPF], walkthrough"
 ms.assetid: cc844419-1a77-4906-95d9-060d79107fc7
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Enabling Drag and Drop on a User Control

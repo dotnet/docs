@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "text boxes, read-only"
 ms.assetid: 60baa9ab-fa57-44ad-bb7c-61b05aa64296
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Read-Only Text Box (Windows Forms)

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "PrintPreviewControl control"
 ms.assetid: 4513c6c7-5e9b-4f4c-82ca-00f993a26955
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PrintPreviewControl Control Overview (Windows Forms)

@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "ADO.NET [Windows Forms]"
 ms.assetid: 6c206daf-d706-4602-9dbe-435343052063
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component

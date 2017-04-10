@@ -2,7 +2,7 @@
 title: "Performance Considerations for Direct3D9 and WPF Interoperability | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Direct3D9 [WPF interoperability], performance"
 ms.assetid: ea8baf91-12fe-4b44-ac4d-477110ab14dd
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Performance Considerations for Direct3D9 and WPF Interoperability

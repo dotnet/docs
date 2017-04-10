@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "FlashTrackBar custom control"
 ms.assetid: 24c5a2e3-058c-4b8d-a217-c06e6a130c2f
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Windows Forms Control That Shows Progress

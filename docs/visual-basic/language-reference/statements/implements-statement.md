@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "interface implementation, Implements statement"
 ms.assetid: 1fafb83f-f55a-4215-8ea9-681e8622613d
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

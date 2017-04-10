@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "rotating objects"
 ms.assetid: ee3466cd-e66f-4e8f-8a5a-71d77bc1e390
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Rotate an Object

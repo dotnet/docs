@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "brushes, painting with a video"
 ms.assetid: 04dd6600-4a6e-4b43-a93e-21cce7dfbcb8
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Paint an Area with a Video

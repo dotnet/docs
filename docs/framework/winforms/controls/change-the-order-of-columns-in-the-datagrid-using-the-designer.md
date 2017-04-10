@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data [Windows Forms], displaying"
 ms.assetid: 7fe52a98-75d6-448c-97a5-65ca2c568c1a
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Order of Columns in the Windows Forms DataGridView Control Using the Designer

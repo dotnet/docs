@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "/bugreport compiler option [Visual Basic]"
 ms.assetid: e4325406-8dbd-4b48-b311-9ee0799e48bb
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

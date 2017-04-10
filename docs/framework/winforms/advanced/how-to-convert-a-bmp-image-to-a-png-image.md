@@ -2,7 +2,7 @@
 title: "How to: Convert a BMP image to a PNG image | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "image formats, converting between"
 ms.assetid: 9d4a692d-73ac-4ce3-9e05-9ec321e8fbd6
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Convert a BMP image to a PNG image

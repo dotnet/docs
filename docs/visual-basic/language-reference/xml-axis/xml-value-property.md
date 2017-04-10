@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "XML Value property [Visual Basic]"
 ms.assetid: 7ddd057a-a195-4e9b-ad8b-2ee0e615a20f
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

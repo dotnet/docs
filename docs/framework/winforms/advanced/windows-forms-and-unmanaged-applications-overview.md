@@ -2,7 +2,7 @@
 title: "Windows Forms and Unmanaged Applications Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Windows Forms, interop"
 ms.assetid: 0a26d99d-8135-4895-8760-c9a2b5f67f14
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows Forms and Unmanaged Applications Overview

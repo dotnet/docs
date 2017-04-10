@@ -2,7 +2,7 @@
 title: "How to: Bind the Properties of Two Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "controls, binding properties of"
 ms.assetid: 06318fac-6afd-4c7d-a277-6d7ef50f47bc
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind the Properties of Two Controls

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "thumbnails, loading images as"
 ms.assetid: 02e055a0-54df-499a-b8b6-ab6ff7535cff
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Load an Image as a Thumbnail

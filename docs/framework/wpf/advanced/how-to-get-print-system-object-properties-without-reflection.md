@@ -2,7 +2,7 @@
 title: "How to: Get Print System Object Properties Without Reflection | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "PrintSystemObject, getting properties"
 ms.assetid: 43560f28-183d-41c1-b9d1-de7c2552273e
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Get Print System Object Properties Without Reflection

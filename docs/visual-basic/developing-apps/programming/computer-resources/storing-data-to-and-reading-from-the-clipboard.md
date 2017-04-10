@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "reading data, from Clipboard"
 ms.assetid: f690119a-4378-4f7d-b20e-d9377ef49496
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

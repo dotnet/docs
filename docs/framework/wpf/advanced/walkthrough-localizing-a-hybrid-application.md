@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
 ms.assetid: fbc0c54e-930a-4c13-8e9c-27b83665010a
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Localizing a Hybrid Application

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "multipane user interface"
 ms.assetid: c3f9294d-a26c-4198-9242-f237f55f7573
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Multipane User Interface with Windows Forms Using the Designer

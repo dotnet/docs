@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrFileSystem_FileNotFound1"
 ms.assetid: b45bffc9-5b16-4b9b-a413-98a8d726e226
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

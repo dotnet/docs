@@ -2,7 +2,7 @@
 title: "How to: Create a Custom View Mode for a ListView | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "ListView controls, creating custom View mode"
 ms.assetid: 71077349-eeb9-4344-ab29-b5df96df3314
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Custom View Mode for a ListView

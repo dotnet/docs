@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "check boxes, responding to events"
 ms.assetid: c39f901e-8899-43b6-aa31-939cbf7089fb
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Respond to Windows Forms CheckBox Clicks

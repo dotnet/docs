@@ -2,7 +2,7 @@
 title: "mc:Ignorable Attribute | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "XAML, mc:ProcessContent attribute"
 ms.assetid: acd9a6ef-b7ca-4146-abb6-60f3b366e9ec
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # mc:Ignorable Attribute

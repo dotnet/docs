@@ -2,7 +2,7 @@
 title: "FlowDocumentReader | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "FlowDocumentReader control [WPF]"
 ms.assetid: ba7aaa70-f77b-4555-a79d-68a12c8e134b
 caps.latest.revision: 66
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FlowDocumentReader

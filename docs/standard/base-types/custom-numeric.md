@@ -2,8 +2,8 @@
 title: Custom numeric format strings
 description: Custom numeric format strings
 keywords: .NET, .NET Core
-author: stevehoag
-ms.author: shoag
+author: dotnet-bot
+ms.author: dotnetcontent
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: .net

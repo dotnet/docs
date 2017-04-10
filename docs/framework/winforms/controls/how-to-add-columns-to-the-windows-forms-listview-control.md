@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "list views, adding columns"
 ms.assetid: 79174274-12ee-4a5d-80db-6ec02976d010
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Columns to the Windows Forms ListView Control

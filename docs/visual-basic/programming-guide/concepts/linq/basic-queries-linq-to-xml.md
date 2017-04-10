@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: aec6ef60-f6f4-4548-b3db-cf6c94bb0008
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Basic Queries (LINQ to XML) (Visual Basic)

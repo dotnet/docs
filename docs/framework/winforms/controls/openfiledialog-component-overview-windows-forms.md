@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Open File dialog box, displaying in Windows Forms"
 ms.assetid: cd717300-46b6-4f82-8207-b218fa7fa407
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # OpenFileDialog Component Overview (Windows Forms)

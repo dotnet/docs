@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "WindowsFormsHost element property mapping"
 ms.assetid: 999d8298-9c04-467d-a453-86e41002057d
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows Forms and WPF Property Mapping

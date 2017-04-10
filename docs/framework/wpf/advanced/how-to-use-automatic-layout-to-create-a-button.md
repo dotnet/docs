@@ -2,7 +2,7 @@
 title: "How to: Use Automatic Layout to Create a Button | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "automatic layout, creating buttons"
 ms.assetid: 96c206d0-9e77-4784-9d2d-5045aed2021c
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Automatic Layout to Create a Button

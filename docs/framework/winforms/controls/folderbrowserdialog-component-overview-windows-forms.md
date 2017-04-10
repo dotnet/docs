@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "folders [Windows Forms], enabling browsing in applications"
 ms.assetid: 796b622c-3ba9-4356-93bb-e217fc52f2c7
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FolderBrowserDialog Component Overview (Windows Forms)

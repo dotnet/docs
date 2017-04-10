@@ -45,7 +45,6 @@ Package maintainers may decide to include preview versions of the shared framewo
 
 Some maintainers may choose to provide additional packages such as:
 
-* `dotnet`: the latest shared framework. This is useful for better discoverability, and for hosters who want to maintain cumulative availability of shared frameworks, but it is not strictly necessary. **dependencies**: the latest `dotnet-[major].[minor]`.
 * `dotnet-lts`: the latest "Long-Term Support" version of the shared framework. [LTS and Current release trains](https://docs.microsoft.com/en-us/dotnet/articles/core/versions/lts-current) correspond to different cadences at which .NET Core gets released. Users have a choice of adopting one or the other train, based on how often they are willing to update. This is a concept that is also tied to support levels, so it may or may not make sense depending on the distro being considered.
 
 Disk layout

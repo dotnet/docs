@@ -37,6 +37,10 @@ These are recommendations, and a specific package maintainer may choose to diver
 * `dotnet-sdk-[major].[minor]`: the SDK with the specified version. The version specified is the highest included version of included shared frameworks, so that users can easily relate an SDK to a shared framework. **dependencies**: `dotnet-host`, one or more `dotnet-[major].[minor]` (one of those is used by the SDK code itself, the others are here for users to build and run against).
 * `dotnet-host`: the latest host.
 
+#### Preview versions
+
+Package maintainers may decide to include preview versions of the shared framework and SDK. Those should never be included in the unversioned package (`dotnet` and `dotnet-sdk`), but may be released as versioned packages with an additional preview marker appended to the major and minor version sections of the name. For example, there may be a `dotnet-sdk-2.0-preview-final` package.
+
 ### Optional additional packages
 
 Some maintainers may choose to provide additional packages such as:
@@ -50,6 +54,8 @@ Disk layout
 When installing .NET Core packages, the relative placement of their target destinations on disk matter.
 The `dotnet.exe` host should be placed next to `sdk` and `shared` folders that contain the versioned contents of the `dotnet-sdk` SDK package, and `dotnet` shared framework package.
 
+The disk layout of files and directories inside the packages is versioned. This means that updating to the latest `dotnet` will effectively install the new version side-by-side with the ones that were previously there, reducing the possibility of breaking existing applications by updating the package. Package updates should not remove previous versions.
+
 Update policies
 ---------------
 
@@ -58,5 +64,5 @@ When an `update` is performed, the behavior of each package is as follows:
 * `dotnet`: `update` rolls forward major, minor, and patch versions.
 * `dotnet-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.
 * `dotnet-sdk`: `update` rolls forward major, minor, and patch versions.
-* `dotnet-sdk-[major].minor]`: new patch versions update the package, but new minor or major versions are separate packages.
+* `dotnet-sdk-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.
 * `dotnet-lts`: `update` rolls forward major, minor, and patch versions.
